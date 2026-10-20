@@ -1,0 +1,14 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+    "-u",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\void_identity\\reconstruct_verify.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "VOID_RECONSTRUCTION_INDEPENDENT_PASS",
+  "matched": true,
+  "output_sha256": "efc49b0c940b86e45c63fab28320e273672ed5accedf0eb6d9e40e3051448e2e",
+  "seconds": 2.0416042804718018
+}

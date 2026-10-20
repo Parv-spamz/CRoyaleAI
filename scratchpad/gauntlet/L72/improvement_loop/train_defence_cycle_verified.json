@@ -1,0 +1,32 @@
+{
+  "report_sha256": "852d8fb2f1daec0b99b3020f04e5dd77df67c7db31a132b8f973cf90f9db1fdb",
+  "verifier_sha256": "e8eb970e1574513083e0c72b6632df5197b27f74897275e6b08fe2222e088a3a",
+  "matched": true,
+  "unique_bows": 7748,
+  "windows": 23244,
+  "primary": {
+    "other": {
+      "windows": 5482,
+      "covered": 4924,
+      "with_princess_rocket": 240,
+      "same_tower_repeat": 8,
+      "spending_known": 3661,
+      "own_spent": 76568,
+      "opponent_spent": 69795,
+      "damage_known": 4924,
+      "own_princess_hp_drop": 1711863
+    },
+    "defensive": {
+      "windows": 2266,
+      "covered": 2137,
+      "with_princess_rocket": 265,
+      "same_tower_repeat": 15,
+      "spending_known": 1512,
+      "own_spent": 37230,
+      "opponent_spent": 32730,
+      "damage_known": 2137,
+      "own_princess_hp_drop": 578095
+    }
+  },
+  "scope": "Membership, raw cache recount and existing label joins. Not independent re-simulation or causal proof."
+}

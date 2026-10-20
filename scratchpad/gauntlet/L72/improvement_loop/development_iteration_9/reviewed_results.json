@@ -1,0 +1,75 @@
+{
+  "complete": true,
+  "receipts": {
+    "prepare": {
+      "receipt_sha256": "bb5787ce6f0ffab833a3422bf3225ac665c547c833859800e20cb693a066606c",
+      "output_sha256": "c2740f19e7037ddc8a1b62b9189230075064ba246af997f487d88b180e902610",
+      "seconds": 74.4177348613739
+    },
+    "train": {
+      "receipt_sha256": "b431b6c477ca473a6bc128de40eeb0ea79a80ac7cd3053fa53dc07e001412e9e",
+      "output_sha256": "d99f76f76c672759208880b603ff1338a9a4743f39853b112bef60205d92f7e8",
+      "seconds": 1334.245839357376
+    },
+    "training-independent": {
+      "receipt_sha256": "cf2f8a2364a5dbed06dd5c64517b5045b5f552fe7102f701efa8fcb1889fc52c",
+      "output_sha256": "13c5ce6f56ebe710b189f5b96c70db28377dc45cdc7d1cf4efb04dcb0e11bb49",
+      "seconds": 3.8701906204223633
+    },
+    "eval": {
+      "receipt_sha256": "1ff9120870e96e90fa569c40000993bd4543f3e10cf75155dfe6b63c796b4819",
+      "output_sha256": "b679273ef14a64f21a59193a7a8daca82d3bad55c02093bf8e5086c314f7b577",
+      "seconds": 79.8873507976532
+    },
+    "results-independent": {
+      "receipt_sha256": "0229155b3367ebcd4e4243de8f4e1722116e6890b03a3b0dc705a791dcd402c0",
+      "output_sha256": "439388ed235bbc667d7ad002b39dfc9d6a0ec3dd1ab46cdb0ebd0134895c6047",
+      "seconds": 68.62686800956726
+    },
+    "reviewed-evidence": {
+      "receipt_sha256": "831e1d5d848c55e15bef86e8479ce5ca0b5b7c8913af204bb2c39da3590dadfc",
+      "output_sha256": "212f5eb510dcef7bea7a96299eb32637a9a208a522a9efe6e09ae2fa954ce1b6",
+      "seconds": 0.763361930847168
+    },
+    "discord": {
+      "receipt_sha256": "327dc8f6116b03155a650d243bdb98e867b4aa8e7e86547782104928ae2199a3",
+      "output_sha256": "b32df62445aca5820f68d3eee6ceadb6022d6fa1f29839d914c7277d1e4e7b9b",
+      "seconds": 0.9161760807037354
+    }
+  },
+  "continuation_passed": false,
+  "filters": {
+    "denominators_present": true,
+    "rocket_aim_material": false,
+    "rocket_action_material": false,
+    "late_rocket_material": false,
+    "general_card_noninferior": true,
+    "barrel_correct_nonregression": true,
+    "barrel_wrong_nonregression": true,
+    "witch_nonregression": false,
+    "night_witch_nonregression": true,
+    "furnace_nonregression": true,
+    "defensive_sequence_nonregression": false,
+    "phase_late_overtime_clock_nonregression": false
+  },
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\close_development9_report.py": "e14c9a76d60fd64beb89bf483d064aa4aefea8099b8fafedf95f092862b66245",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_9\\message.md": "c7ae0ec093ecf71f0a66356a5c78c082bc4fb501a790eb098a815bdb3c86f5cb",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_9\\reviewed_evidence.json": "bab722c275938e7bbabf1b4232af42b8bcd2cd8d170600805569fd605b429f1e",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_9\\prepared.json": "cd489867071971e9aab0c9803d53b35ad8217c54f6f1cd7332dd2cd16a1848cd",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_9\\trained.json": "7c76d6a799c0b32582e8fe330c3b1b7e9fbf1d4422ca2f57aef4c887e42a6685",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_9\\training_verified.json": "e8c8da4b1b3e2838be64f6c0e887c3aae674d38d46013f0d2fc94c3c87faa980",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_9\\evaluated.json": "f0adfce885b47ab752453183d0fea1a87a5d375ee7cd0050021e6931bbac6177",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_9\\results_verified.json": "7fedbbdd15a6901dcfeb41da7ae570b9a97e5ee2492b79e65e057d13212adcb6",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_9\\chain_complete.json": "bc6c3c988a2447c327bac90f044cc17be0c54184608aadd708ee435cf456c601"
+  },
+  "delivery_path": "reports\\discord\\deliveries\\model-ordinary-extended-v5-final\\delivery.json",
+  "delivery_sha256": "f46908033a8e2d24544c6102f9a640ee7dfe2d476d307158f1e06483a17714e5",
+  "message_sha256": "c7ae0ec093ecf71f0a66356a5c78c082bc4fb501a790eb098a815bdb3c86f5cb",
+  "message_ids": [
+    "1556955901855006731",
+    "1556955903335464961"
+  ],
+  "accepted": false,
+  "deployed": false
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "C:/Users/benpe/ClashBot/icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L71/context_teaching/verify_predictions.py",
+    "--heldout",
+    "icebow/data/bench/expert_context_20261005/r1e_heldout",
+    "--out",
+    "scratchpad/gauntlet/L71/context_teaching/baseline_verified.json"
+  ],
+  "cwd": "C:\\Users\\benpe\\.codex\\worktrees\\learned-defence\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "EXPERT_PREDICTIONS_INDEPENDENTLY_RECOUNTED",
+  "matched": true,
+  "output_sha256": "a3b13079b18fffc3beac85f8e4f78c1c534d62f1a19d05639554b828a95d7b34",
+  "seconds": 67.92517614364624
+}

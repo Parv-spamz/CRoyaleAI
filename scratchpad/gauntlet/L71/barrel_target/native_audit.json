@@ -1,0 +1,1133 @@
+{
+  "counts": {
+    "replays": 161,
+    "accepted_barrel_plays": 1010,
+    "projectile_observations": 7040,
+    "target_within_half_tile_of_cast": 5977,
+    "target_opposite_lane_to_cast": 1063,
+    "target_exact_cast": 3045,
+    "landed_in_26_tick_lookahead": 3431,
+    "orientation_and_lookahead_checks": 14080,
+    "barrel_plays_with_linked_flight": 1010
+  },
+  "examples": [
+    {
+      "tag": "f77c984e9361448ba7d493bf3e4968ce",
+      "tick": 235,
+      "raw_projectile": [
+        "goblin-barrel",
+        0,
+        10310,
+        6770,
+        16500,
+        24500,
+        null
+      ],
+      "cast": {
+        "play_index": 0,
+        "tick": 225,
+        "side": 0,
+        "card": "goblin-barrel",
+        "x": 16501,
+        "y": 24501,
+        "cost": 3,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Barbarians",
+          "GoblinBarrel",
+          "GoblinGang",
+          "Miner"
+        ],
+        "delay_ticks": 0,
+        "accepted": true,
+        "result_code": 0,
+        "result_name": "accepted",
+        "hand_index": 1,
+        "placement_valid": true,
+        "placement_reason": "valid",
+        "engine_tick": 225
+      },
+      "target_error_milli": 1.4142135623730951
+    },
+    {
+      "tag": "f77c984e9361448ba7d493bf3e4968ce",
+      "tick": 245,
+      "raw_projectile": [
+        "goblin-barrel",
+        0,
+        11620,
+        10540,
+        16500,
+        24500,
+        null
+      ],
+      "cast": {
+        "play_index": 0,
+        "tick": 225,
+        "side": 0,
+        "card": "goblin-barrel",
+        "x": 16501,
+        "y": 24501,
+        "cost": 3,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Barbarians",
+          "GoblinBarrel",
+          "GoblinGang",
+          "Miner"
+        ],
+        "delay_ticks": 0,
+        "accepted": true,
+        "result_code": 0,
+        "result_name": "accepted",
+        "hand_index": 1,
+        "placement_valid": true,
+        "placement_reason": "valid",
+        "engine_tick": 225
+      },
+      "target_error_milli": 1.4142135623730951
+    },
+    {
+      "tag": "f77c984e9361448ba7d493bf3e4968ce",
+      "tick": 255,
+      "raw_projectile": [
+        "goblin-barrel",
+        0,
+        12937,
+        14310,
+        16500,
+        24500,
+        null
+      ],
+      "cast": {
+        "play_index": 0,
+        "tick": 225,
+        "side": 0,
+        "card": "goblin-barrel",
+        "x": 16501,
+        "y": 24501,
+        "cost": 3,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Barbarians",
+          "GoblinBarrel",
+          "GoblinGang",
+          "Miner"
+        ],
+        "delay_ticks": 0,
+        "accepted": true,
+        "result_code": 0,
+        "result_name": "accepted",
+        "hand_index": 1,
+        "placement_valid": true,
+        "placement_reason": "valid",
+        "engine_tick": 225
+      },
+      "target_error_milli": 1.4142135623730951
+    },
+    {
+      "tag": "f77c984e9361448ba7d493bf3e4968ce",
+      "tick": 261,
+      "raw_projectile": [
+        "goblin-barrel",
+        0,
+        13728,
+        16572,
+        16500,
+        24500,
+        null
+      ],
+      "cast": {
+        "play_index": 0,
+        "tick": 225,
+        "side": 0,
+        "card": "goblin-barrel",
+        "x": 16501,
+        "y": 24501,
+        "cost": 3,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Barbarians",
+          "GoblinBarrel",
+          "GoblinGang",
+          "Miner"
+        ],
+        "delay_ticks": 0,
+        "accepted": true,
+        "result_code": 0,
+        "result_name": "accepted",
+        "hand_index": 1,
+        "placement_valid": true,
+        "placement_reason": "valid",
+        "engine_tick": 225
+      },
+      "target_error_milli": 1.4142135623730951
+    },
+    {
+      "tag": "f77c984e9361448ba7d493bf3e4968ce",
+      "tick": 271,
+      "raw_projectile": [
+        "goblin-barrel",
+        0,
+        15046,
+        20342,
+        16500,
+        24500,
+        null
+      ],
+      "cast": {
+        "play_index": 0,
+        "tick": 225,
+        "side": 0,
+        "card": "goblin-barrel",
+        "x": 16501,
+        "y": 24501,
+        "cost": 3,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Barbarians",
+          "GoblinBarrel",
+          "GoblinGang",
+          "Miner"
+        ],
+        "delay_ticks": 0,
+        "accepted": true,
+        "result_code": 0,
+        "result_name": "accepted",
+        "hand_index": 1,
+        "placement_valid": true,
+        "placement_reason": "valid",
+        "engine_tick": 225
+      },
+      "target_error_milli": 1.4142135623730951
+    },
+    {
+      "tag": "f77c984e9361448ba7d493bf3e4968ce",
+      "tick": 281,
+      "raw_projectile": [
+        "goblin-barrel",
+        0,
+        16364,
+        24112,
+        16500,
+        24500,
+        null
+      ],
+      "cast": {
+        "play_index": 0,
+        "tick": 225,
+        "side": 0,
+        "card": "goblin-barrel",
+        "x": 16501,
+        "y": 24501,
+        "cost": 3,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Barbarians",
+          "GoblinBarrel",
+          "GoblinGang",
+          "Miner"
+        ],
+        "delay_ticks": 0,
+        "accepted": true,
+        "result_code": 0,
+        "result_name": "accepted",
+        "hand_index": 1,
+        "placement_valid": true,
+        "placement_reason": "valid",
+        "engine_tick": 225
+      },
+      "target_error_milli": 1.4142135623730951
+    },
+    {
+      "tag": "f77c984e9361448ba7d493bf3e4968ce",
+      "tick": 1862,
+      "raw_projectile": [
+        "goblin-barrel",
+        0,
+        8010,
+        6870,
+        3499,
+        24500,
+        null
+      ],
+      "cast": {
+        "play_index": 19,
+        "tick": 1852,
+        "side": 0,
+        "card": "goblin-barrel",
+        "x": 3500,
+        "y": 24501,
+        "cost": 3,
+        "elixir_before": 9.3158,
+        "hand_before": [
+          "GoblinBarrel",
+          "Log",
+          "Princess",
+          "Barbarians"
+        ],
+        "delay_ticks": 0,
+        "accepted": true,
+        "result_code": 0,
+        "result_name": "accepted",
+        "hand_index": 0,
+        "placement_valid": true,
+        "placement_reason": "valid",
+        "engine_tick": 1852
+      },
+      "target_error_milli": 1.4142135623730951
+    },
+    {
+      "tag": "f77c984e9361448ba7d493bf3e4968ce",
+      "tick": 1872,
+      "raw_projectile": [
+        "goblin-barrel",
+        0,
+        7020,
+        10740,
+        3499,
+        24500,
+        null
+      ],
+      "cast": {
+        "play_index": 19,
+        "tick": 1852,
+        "side": 0,
+        "card": "goblin-barrel",
+        "x": 3500,
+        "y": 24501,
+        "cost": 3,
+        "elixir_before": 9.3158,
+        "hand_before": [
+          "GoblinBarrel",
+          "Log",
+          "Princess",
+          "Barbarians"
+        ],
+        "delay_ticks": 0,
+        "accepted": true,
+        "result_code": 0,
+        "result_name": "accepted",
+        "hand_index": 0,
+        "placement_valid": true,
+        "placement_reason": "valid",
+        "engine_tick": 1852
+      },
+      "target_error_milli": 1.4142135623730951
+    }
+  ],
+  "source_manifest_sha256": "fa3a5d5780f1a84f3c18ebd68a02512446b4070e4a9ca159d082ca23ae2459fa",
+  "source_evidence": [
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s0_public_v1\\j014\\replay_f77c984e9361448ba7d493bf3e4968ce.json",
+      "tag": "f77c984e9361448ba7d493bf3e4968ce",
+      "sha256": "91fa2535c82fc9a9ec5190d14e621942d2083a7ab034ff35ac7a56d15df6dd66"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s0_public_v1\\j020\\replay_93367126d7144d7885c74014a865e397.json",
+      "tag": "93367126d7144d7885c74014a865e397",
+      "sha256": "d636ca091e5885b098cd7ffec1dffeb6a9d2e1036df6b10875d053c98672494d"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s0_public_v1\\j022\\replay_c4d6628de619471c853064bf81572e1c.json",
+      "tag": "c4d6628de619471c853064bf81572e1c",
+      "sha256": "f5bc8417d36b2a76e7d5384fabfe51e2614ac2db96ffd83d292ac40abdab0ae9"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s1_public_v1\\j025\\replay_7a47ff659d73423cb7433da9237ab381.json",
+      "tag": "7a47ff659d73423cb7433da9237ab381",
+      "sha256": "3fa40ea58807ceb50b7d1735d2c8102cd01afc3a5b1b02547c2e6649a28e86b3"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s1_public_v1\\j035\\replay_3dff6fb05c3448e2af58b99c76df03d0.json",
+      "tag": "3dff6fb05c3448e2af58b99c76df03d0",
+      "sha256": "f2c11d5f6d80a02fc0ab8377c148fa44f5bc6af26ad381b66e972c5a03fd16c3"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s1_public_v1\\j040\\replay_29235858c00343ffad7cf214baa69c09.json",
+      "tag": "29235858c00343ffad7cf214baa69c09",
+      "sha256": "c715a08e68f95765277080fa186d1e891b121b2d2d4a21d9844b98c5b4d8da5c"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s2_public_v1\\j043\\replay_8f16a8b36134403f8ade98c966982b5b.json",
+      "tag": "8f16a8b36134403f8ade98c966982b5b",
+      "sha256": "4e7ab4a0d63f761afa00acbf527176cb0c2ccdd5fc4c0080ffe7b3dae61d1ae1"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s2_public_v1\\j056\\replay_4fe0415ba9964fd880e7822f466fcf48.json",
+      "tag": "4fe0415ba9964fd880e7822f466fcf48",
+      "sha256": "582f2ca24ad3c0921b6168ab025dc079ee7506a0a811f95dc74209b81cfbd164"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s2_public_v1\\j056\\replay_ab9648676dad4181b735fdafd9ea2549.json",
+      "tag": "ab9648676dad4181b735fdafd9ea2549",
+      "sha256": "89c646f8147791ca6d2edf723a1cc4246babc5d7b4bc641bdfa313bd1d142ace"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_000YLLP9GUCJ.json",
+      "tag": "000YLLP9GUCJ",
+      "sha256": "de582dab75e9a29a4ac1f48ccc637cff0457d89ad5056d98066331a32ada10a1"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_002YLG0G80Y9.json",
+      "tag": "002YLG0G80Y9",
+      "sha256": "78680dbd64af729177fc301df8f2bdeb97f5acc1a844dd0ba31614006f6b6976"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_002YLQGGG0PG.json",
+      "tag": "002YLQGGG0PG",
+      "sha256": "28ceddbb0d39c3d7c80a37f52ef22ea964ee992eba8da4e8669ab324fc38cdce"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_002YLQGPLUG2.json",
+      "tag": "002YLQGPLUG2",
+      "sha256": "6dd6c50251652c0618f4805e5136698253448b8587bb92c27418699fab229789"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_008YLQ8RGJJ0.json",
+      "tag": "008YLQ8RGJJ0",
+      "sha256": "f55291a75efcf3a1e7b3cdf19a76b37fa569a0fb53eec5726f05977db081b903"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_009PLQG0GQY0.json",
+      "tag": "009PLQG0GQY0",
+      "sha256": "c4ac912d7776b4b11b14556a72c6d1acc668a4f1afc3f5264dec546445d1904d"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_009YLGY2P2C8.json",
+      "tag": "009YLGY2P2C8",
+      "sha256": "90c14a9d5e033d58433f7f5ca4a12af264d2b0aea0bde4020d79de9dcd8e270d"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_009YLQVLGVV9.json",
+      "tag": "009YLQVLGVV9",
+      "sha256": "4e7b53166f8412ed59c3633b9982defd4ed44b72a9a41cdc8242eb542a09a35e"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00CYPLQY80CL.json",
+      "tag": "00CYPLQY80CL",
+      "sha256": "75a2b2ba18eedcd545fa11058c71417068420fc4cd774ffa91e8f10f20210fd3"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00CYPQ0290GL.json",
+      "tag": "00CYPQ0290GL",
+      "sha256": "d60f6803ea6317ad46d7cff6cc0697ab6c75065b19432bc77f9531c0183594a6"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00CYPQ28082G.json",
+      "tag": "00CYPQ28082G",
+      "sha256": "d866593f61b9a62ae8ef7f468286f459b9ec424da0456d2ebef23b287512c46c"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00CYPQ28LQUR.json",
+      "tag": "00CYPQ28LQUR",
+      "sha256": "7ede550131af8c5b3bb04905b83c72460136ceecc11bfc31d20bb7f75f111e42"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00GYPYVQRQPR.json",
+      "tag": "00GYPYVQRQPR",
+      "sha256": "b4629b980d4a79ed02253c7e6be4f812d316d1cbf21935629831273fdc86f2b8"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00JYPG98JCJR.json",
+      "tag": "00JYPG98JCJR",
+      "sha256": "751d1a381884be9ca2c5426724288025050c3c981f6c369504e94268405b7d96"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00JYPQYV8VRQ.json",
+      "tag": "00JYPQYV8VRQ",
+      "sha256": "07a0d895ac2d83b2eff1889b94b8b5e1cba51198bb8773a4e484d2fddd9983fb"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00LYPGPQ0G28.json",
+      "tag": "00LYPGPQ0G28",
+      "sha256": "434c338ad7a27dde5069340cacd22c3ffa6e8728785da49a6ac70b35d68102b4"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00LYPQQJRQ20.json",
+      "tag": "00LYPQQJRQ20",
+      "sha256": "c2ea0707f9a0717b09bca825a4d6fb5f19317711cb5e81dbdb68e3b06fcce02e"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00PYLLR0JQJU.json",
+      "tag": "00PYLLR0JQJU",
+      "sha256": "16edcd3f0fe9955553b9b7666fe075930baacfd6fe1e2f2dd3ee1d6200d4d323"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00PYLPVRP9LR.json",
+      "tag": "00PYLPVRP9LR",
+      "sha256": "a5f6691fc49ba6fbd2556dd8c8ea0e4469d7d667188687ebbfe4fd531d8f0655"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00QYPQQGCJ0G.json",
+      "tag": "00QYPQQGCJ0G",
+      "sha256": "887135d8eaa57ff3e4062db0293316a35a3189b5d85abdae33657607ed5f6767"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00VY8RGR0Y9G.json",
+      "tag": "00VY8RGR0Y9G",
+      "sha256": "5a58762e0fe56ed8f1ec09b48d8bd4f1ce6a0d1559941af04ed09daeada8456c"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00VYPLQ9QUQ2.json",
+      "tag": "00VYPLQ9QUQ2",
+      "sha256": "cc637b431da00d1b3d35b8c958daf1e28479a4795db6360368955b03312266b4"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00VYPLVG98PY.json",
+      "tag": "00VYPLVG98PY",
+      "sha256": "a69e1afafcc104a19c819f65379637129510dbaaa1275717da33c5b3bce9b71c"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00YYPL9CC2CR.json",
+      "tag": "00YYPL9CC2CR",
+      "sha256": "c1c7f194c3897240e9566ff509854d7b9fbc509e52908e9e5b7606063ff9ed94"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00YYPLLV2GCP.json",
+      "tag": "00YYPLLV2GCP",
+      "sha256": "dbcdea65f971bb96eb3d346a5c559e9789f736b467414dfdb69f8848164eaf8d"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_022YYG0GU0RQ.json",
+      "tag": "022YYG0GU0RQ",
+      "sha256": "f934817d3904124ae4f20c19bd2abc5a5420e351d6da74112a3988f54c09099f"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_022YYGQC8RP9.json",
+      "tag": "022YYGQC8RP9",
+      "sha256": "3091efdf4258ef49463269303467b125786c16a1b78a8e4789bf799c7ca9b5dc"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_022YYQV0LJRR.json",
+      "tag": "022YYQV0LJRR",
+      "sha256": "10ea82e54e2047ddb66c9881680182cf934d54604a407295a9438e14b259ea1f"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_028YPCJG82UV.json",
+      "tag": "028YPCJG82UV",
+      "sha256": "5504c5852d663d2eb26a1cf210075731c17cfc197583f06fad297ecef8edfa64"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_028YPUV9V8GY.json",
+      "tag": "028YPUV9V8GY",
+      "sha256": "4acf764aaf2b39ca88661db2c1e22d2fdbb33aadd79204587a15d9ca955f7d40"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_028YPUY9JQGC.json",
+      "tag": "028YPUY9JQGC",
+      "sha256": "adb3729bb43c0a5f88da64d3618f5c24ecc1b28fc5683b099d4779a543a0a20b"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_028YPV228J8C.json",
+      "tag": "028YPV228J8C",
+      "sha256": "8cca270469a77bdd472bf48e5002c2b3f7a869356df4e19706597c092ba7d2f3"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_029YPCVVG8VU.json",
+      "tag": "029YPCVVG8VU",
+      "sha256": "901924aee5bd9b1115a13e94ce69e2b0c598cc561eebab20526254f9f7e5b35b"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_029YPU90Q09G.json",
+      "tag": "029YPU90Q09G",
+      "sha256": "e2b9ddb55d67369d82976e41b823c2bd6db2dc09c1c216fe201992be94647bdf"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02CP8J9PJ8PR.json",
+      "tag": "02CP8J9PJ8PR",
+      "sha256": "6b915913e8d3245a95f99cf82c420e7ebdf2023486641ec69890753ad2a6f8e4"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02CY8LQQV0QU.json",
+      "tag": "02CY8LQQV0QU",
+      "sha256": "d9e09ccfd59b359ca23f1448071bd6ad50de23e290994901af27d4c3c2b6e9b5"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02CY8P2RJ989.json",
+      "tag": "02CY8P2RJ989",
+      "sha256": "2121da6f601820fa8653482b38903a2d8452a2936ffadf762f1bff1f017b0e25"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02CY8Y009Q00.json",
+      "tag": "02CY8Y009Q00",
+      "sha256": "b1ab25d914234b792aa43b6134a0e6e7289d0f7de76c1fe537391b2c9c479045"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02CY8YU0VQLY.json",
+      "tag": "02CY8YU0VQLY",
+      "sha256": "b35b5881a21c1828d61993bf2d42158d0237dd4cd6569b9b2f07cfd7bcd394a3"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02GY9GY2U8UQ.json",
+      "tag": "02GY9GY2U8UQ",
+      "sha256": "2ceba2b1e744f09b477e15c8326b58e1a374a74d5ebc7e5c6faa1affa3311b6f"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02GY9R0CUVLL.json",
+      "tag": "02GY9R0CUVLL",
+      "sha256": "e0725eb860c6396a1ddc1e5d43fa73c5e018adf97d0e430635f9617dc9cdfa52"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02GY9RGPQP0L.json",
+      "tag": "02GY9RGPQP0L",
+      "sha256": "dc2d2f5b6a137bea953bb963fe710dd7f34df3319ec52dc4dbd9ead817e6e6fc"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02JY9GJ9VCU0.json",
+      "tag": "02JY9GJ9VCU0",
+      "sha256": "2450f35c736eb96211fca914993aacd270b1ae49e5397a2de19654afec1f99ed"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02JY9GL0PVY2.json",
+      "tag": "02JY9GL0PVY2",
+      "sha256": "d3a3b86a6cf6291c49022a4a5159661adc7bd153954c7bbdbc46f8eead2739c5"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02JY9GRCP908.json",
+      "tag": "02JY9GRCP908",
+      "sha256": "9524ad58a4695226024f6915a3192ee680897bfc02d667e60b456f1e37c5b6f5"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02LY9G09L09R.json",
+      "tag": "02LY9G09L09R",
+      "sha256": "b368712fd57785c771e06d5cbd1c9536b1bdfa1d8c76027dba063a8388ab98fe"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02LY9QVVJJUL.json",
+      "tag": "02LY9QVVJJUL",
+      "sha256": "fd75d21c17cd60850f63d05d64545adf0f5017a553fd4db41138692e0bcc6852"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02PYPU8J2G0R.json",
+      "tag": "02PYPU8J2G0R",
+      "sha256": "932842daacfb4596608aa62ea9e166f53220f49cad9325f7bb2e7cfb73982d8a"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02QY9G0VVQGG.json",
+      "tag": "02QY9G0VVQGG",
+      "sha256": "6e342ec45124f95a4a099c7e6353b45e65fe936ec4719c08af72f725633e153a"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02RY9GUQQ9QG.json",
+      "tag": "02RY9GUQQ9QG",
+      "sha256": "dba286ac13295d8bc376b28873862171bfe544ed1bf6e19bf5600559308ab278"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02VY8LCRRJ2Q.json",
+      "tag": "02VY8LCRRJ2Q",
+      "sha256": "f1b844a2270e501193e6b395623ef73c1e96142aa5f91c1de1ef3a795d19b724"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02VY8QVPQQ2G.json",
+      "tag": "02VY8QVPQQ2G",
+      "sha256": "a7b86afe758edea4524c506efb7713412c654c8657bca581d17937ee6e2cf8e4"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02YYPCRQ2QLY.json",
+      "tag": "02YYPCRQ2QLY",
+      "sha256": "1207a8dc231f1f28cf281c32dcb2985df14d1626d1051c466ebfc6a313bad07a"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_082Y8G0C92U0.json",
+      "tag": "082Y8G0C92U0",
+      "sha256": "c7591b81c065490542207f05c8a5237bd1a3dd14aab512d03f6bb8bb06fcf7db"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_082Y8QPV8QJ2.json",
+      "tag": "082Y8QPV8QJ2",
+      "sha256": "e8f9a91e629d8694338cb474c6e8ec867f0f3a9d5816cb81a9bfa2539ed7ef04"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_088Y89CPPY9Q.json",
+      "tag": "088Y89CPPY9Q",
+      "sha256": "0b055379ebb48cf0ba743c049cd61dcca64d69eef89b11d4cf3e37384229ab52"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_089Y89828908.json",
+      "tag": "089Y89828908",
+      "sha256": "e87eaaf12e35dd13b31ab69e5d87679dd144b745383b470d89c39060d9c9fa95"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_089Y89JGLJLQ.json",
+      "tag": "089Y89JGLJLQ",
+      "sha256": "fd8bbe5799930ed123df6a0329ff812f058cd18002f9e736b798b06b401db9eb"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_08CPVJP99UY9.json",
+      "tag": "08CPVJP99UY9",
+      "sha256": "63be0ed942891153afeaefb6595de6f67ee24c979f64c7e416d80491a152eed2"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_08GPVGVUL8YG.json",
+      "tag": "08GPVGVUL8YG",
+      "sha256": "3c882fa0cd02f780b9be0192f131bad4a4e58d0a3b2fcdee5394bf71058d0c20"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_08GPVRJPUVV0.json",
+      "tag": "08GPVRJPUVV0",
+      "sha256": "682ff23c1654f9aeaffeb99e578b7fb9fefa49274e91715adac1e6133d5df829"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_08LY82R0JGJ0.json",
+      "tag": "08LY82R0JGJ0",
+      "sha256": "826f06e7c6c451442d01178e2eb0bb8c25c8132099ed66ccd12f59aa05cbab99"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_08LY880JLVP8.json",
+      "tag": "08LY880JLVP8",
+      "sha256": "d92ff6bf59c2ab8204d42497aff56da6a674ac3b688409e9aeb77096ec7a4b69"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_08LY880Y2PCL.json",
+      "tag": "08LY880Y2PCL",
+      "sha256": "cd477d433c41a27062c45dcc8a35a40bda6f0ec80767c3ed5741906282c4cf58"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_08PY8998CR0R.json",
+      "tag": "08PY8998CR0R",
+      "sha256": "500ed90e7e87cf185c830a4be05919c027e90f496e8553157c792de464f8e330"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_08PY89LGU20C.json",
+      "tag": "08PY89LGU20C",
+      "sha256": "182beddc55279ebd9e348175d35fd198212ea7d557f0273597adddff9ff61354"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_08QPVCQU988J.json",
+      "tag": "08QPVCQU988J",
+      "sha256": "661756346b8c7e6fbf6c79847a6d36ea73642b1f4bff8a62f4da1161a4c78c2f"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_08QPVCU8R229.json",
+      "tag": "08QPVCU8R229",
+      "sha256": "9114e9dee53d654c431baec6cd9ab05552d9029c9d5ec6ec3b44a1bb28c10c7d"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_08QPVUL0YVYQ.json",
+      "tag": "08QPVUL0YVYQ",
+      "sha256": "41a784edb7ea4343ac322042db9bb7a4700bd5abd547a9e81a9f1835b3d2e332"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_08QPVUYVPPLQ.json",
+      "tag": "08QPVUYVPPLQ",
+      "sha256": "15e66ec0bf898e097a976955b2115f270b1a2bb2abd9b68d66fcd781d003136a"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_08UPPCCJ8QQV.json",
+      "tag": "08UPPCCJ8QQV",
+      "sha256": "1b4c2a93ec0fac7adc51fc3cdb587362efc2a718de2584d46ed9762b38eef5d4"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_08UPPVR8CYJV.json",
+      "tag": "08UPPVR8CYJV",
+      "sha256": "beac52fd4e203018a43b708b4c9edb7f8841eb5d5b8edcb4bf9fe077770b8a66"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_08UPPVRC8YCY.json",
+      "tag": "08UPPVRC8YCY",
+      "sha256": "b9f9b05aeeae1d51621de305092961b5e36244900eb482d87b83e32595aa4b4b"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_090PPCCR8QJQ.json",
+      "tag": "090PPCCR8QJQ",
+      "sha256": "5ebc332d8c9643afe6e7d06077a65246b85b66bc43343d3b5d17a35e2b28cb01"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_090PPV008QP8.json",
+      "tag": "090PPV008QP8",
+      "sha256": "392fcf726b1834e315cc964f72efc9bc2087e3fc6d9e14c8879061fb29170cb0"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_090PY0P29Q9U.json",
+      "tag": "090PY0P29Q9U",
+      "sha256": "42f5839e1a1bb7d1b052af0976183586447d6220a134be8a05d0f3d2c0aa0935"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_098989VQLY29.json",
+      "tag": "098989VQLY29",
+      "sha256": "183e52ba2f3ff0f9e50bb83879dedd4ca7a8935d4e8dee32e425fb8d9126393f"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_098PPU9ULJL9.json",
+      "tag": "098PPU9ULJL9",
+      "sha256": "7b3672d5debc1a004d054acf344e66ebf36842b09d04b393e4b0c7ea82e0bc42"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_098PPVPLRGR8.json",
+      "tag": "098PPVPLRGR8",
+      "sha256": "cb38537c18ba1e0379e06e397e603e14d6abf2d9e3f3cc336d885af66496de00"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_099P9C2VPUGY.json",
+      "tag": "099P9C2VPUGY",
+      "sha256": "3c2c099e9f512e2fea11c39904081bc6d4ae45d0e85a2108f7fbf56fc21097ca"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_099P9CYGRUCQ.json",
+      "tag": "099P9CYGRUCQ",
+      "sha256": "b58f9c9ada040c17288a88da877889a4385a67627b6afd0c4002701be818d984"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_09G8U0UYYRYY.json",
+      "tag": "09G8U0UYYRYY",
+      "sha256": "5c78578a710f862c71cc7b2c0942b37be635a92a43e259da79ecad84d0d0e806"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_09G9JCQR8CRV.json",
+      "tag": "09G9JCQR8CRV",
+      "sha256": "3ec0e58939c1b52eeb508e41c2a6ed754ccbc96cb9bb0cbd10f9851cd2492b87"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_09G9JUP9YQR8.json",
+      "tag": "09G9JUP9YQR8",
+      "sha256": "4b09f9b5ad36ffab53b533550bdeca2b5d5c6b3fa3cba32ae6240367d8e85b63"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_09PP9J908PYU.json",
+      "tag": "09PP9J908PYU",
+      "sha256": "1e3557bedc457e6fc0865a23bb6716efe13cfeb634fab50c568ab0b1978c5fec"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_09QP9CVJ20QQ.json",
+      "tag": "09QP9CVJ20QQ",
+      "sha256": "44ce8c421174306d6cb2b27b7c14b33840afeff39216a3a8b45e8be3bbf0460f"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_09U9JU2C9P8Y.json",
+      "tag": "09U9JU2C9P8Y",
+      "sha256": "bd7729f43e7f4830bac0dc83e77cab2cd7f8a0cc5aac3264b606d0ef01aba591"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_000YLY0PYYQY.json",
+      "tag": "000YLY0PYYQY",
+      "sha256": "68c71ee2f44d89f546b9b2efec7665bb636db8e58c3abd673d5fef1e37c93c30"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_00LYPLCUGYJ2.json",
+      "tag": "00LYPLCUGYJ2",
+      "sha256": "f9e88f7ed00450d257471c1456212dbd08cce15f4293fa2a687543dc59789f2b"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_00UYPL99PV2P.json",
+      "tag": "00UYPL99PV2P",
+      "sha256": "e193c3f6bd8ba780751f00923258883e946d2edcec9def1ddbe52a8b8bf13c67"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_00UYPL99UQCG.json",
+      "tag": "00UYPL99UQCG",
+      "sha256": "cd602d1917b210c9b1bdd5a615305bacde979a90ba9e0226d9090db0748f1a0e"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_00UYPL9P0VQL.json",
+      "tag": "00UYPL9P0VQL",
+      "sha256": "9a2828447dc00125ce681b3ab85affdcf9571b8b0867399ede62607d535bd9fe"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_00UYPLLJ9P0R.json",
+      "tag": "00UYPLLJ9P0R",
+      "sha256": "62ea9825805d3bee92f54556822053808fe874e6cb20e4d29886a896fe18263b"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_00VYPLPJRYRY.json",
+      "tag": "00VYPLPJRYRY",
+      "sha256": "838209b016f60e892ff0e990c20a49a7c854ff4d37488f6e3bcc987f52a7839e"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_00VYPQ8LYLJQ.json",
+      "tag": "00VYPQ8LYLJQ",
+      "sha256": "f90933314400caf19dffca84781da1ab87b15f3155368e5e510d2aaec9788008"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_020YPYLLQUV0.json",
+      "tag": "020YPYLLQUV0",
+      "sha256": "3d6206f26494c29715080e36532b5987f5f334aedd49155c24834ca0dfe05c43"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_022YYLUUPYYV.json",
+      "tag": "022YYLUUPYYV",
+      "sha256": "9922f21a69cbe5b902d4b169438f1f84b59b9f45981916e5f5bdbf33de7b46ed"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_02JY9G090029.json",
+      "tag": "02JY9G090029",
+      "sha256": "22efc8643714bd097eb4c8eb7ea8507a3f42ea25fb1f2b87db9dd70e7f50342b"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_02JY9GYQ0Q9G.json",
+      "tag": "02JY9GYQ0Q9G",
+      "sha256": "83f44ffb4f04a9a007ee91d53a1b791e8c3ff74d64eb5e518890ba6a192c0d90"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_02QY9Q90VQ02.json",
+      "tag": "02QY9Q90VQ02",
+      "sha256": "b2413bc1fe11f4e38b03038e8b112ae4dfbc9f6b408569386f175c758794b6d1"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_02QY9Q98C0J8.json",
+      "tag": "02QY9Q98C0J8",
+      "sha256": "299f8e823c0a5831dceb63a3af409a2a16ed2c05c873b9b44ac8e6b092154e42"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_02QY9Q9L9CLL.json",
+      "tag": "02QY9Q9L9CLL",
+      "sha256": "be9f765eb7cdafdb459290d3ecb0b3df6cba87d408c9ccf6c8ce7ed049d16e01"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_02QY9QCQQ9YY.json",
+      "tag": "02QY9QCQQ9YY",
+      "sha256": "6dd4b444676f2ad98f912cba9d2bfe138e6b6c9e8759e107f4e6f97a34906b45"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_02QY9QRV8GU8.json",
+      "tag": "02QY9QRV8GU8",
+      "sha256": "1420c73f2efb4cb6371374eb490970fcac5a232f25d8a6da72953ec2ffcfcc87"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_02QY9QURVJR8.json",
+      "tag": "02QY9QURVJR8",
+      "sha256": "b23728c763ec13d647990b29e54b322979358d37f0b9d8506ae5fa964f50139c"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_02YYPUJ220L2.json",
+      "tag": "02YYPUJ220L2",
+      "sha256": "dd5c7a0cf223e92fd8eded8a1abf55aca261330ce2234c754ce3e7cb35c59953"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_089Y82RUVYR0.json",
+      "tag": "089Y82RUVYR0",
+      "sha256": "af79878203a8f7f3a7a932159988fb8a9a39a753f3760d7b8b902edbd236eb44"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_08GPVR800YY9.json",
+      "tag": "08GPVR800YY9",
+      "sha256": "6d18383ef25ab38382d0296cf9ff6e89c4073dce90e93b275764505c662a7510"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_08JPVCCPP8Y9.json",
+      "tag": "08JPVCCPP8Y9",
+      "sha256": "7923b95715af538c3348e39dd0d479a50e2e78a4c95feb39fb66750a1ba25bf1"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_08QPVCPC9QQU.json",
+      "tag": "08QPVCPC9QQU",
+      "sha256": "58514ef4c6d7ac2af0aa610dfe01563dc40415c1646df361847564291d519f02"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_08QPVCPCG8L9.json",
+      "tag": "08QPVCPCG8L9",
+      "sha256": "26410c0b52db6d1b9f1f9cf186936e0a3fcfade2819b3d2406b1d42120a9ce1c"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_08UPPVRUG889.json",
+      "tag": "08UPPVRUG889",
+      "sha256": "552139b901872936fac488599dded42bbf20d151e765c83222d54df2f6bc349d"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_08YY898LY8G8.json",
+      "tag": "08YY898LY8G8",
+      "sha256": "29563795c71959465333daf3be0f2b11ce5c88b0a079b0f5e10a1e7e46e9b5d9"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_08YY898YJ8LY.json",
+      "tag": "08YY898YJ8LY",
+      "sha256": "f3d003a92b5f9ba0ffdc6a3a70335ea84264a2af5259a1cf783538e50ffa28db"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_08YY89PUQUUR.json",
+      "tag": "08YY89PUQUUR",
+      "sha256": "0070d897efd588396a26073e066e5adae8adb5e8f03ef0c82543f0af0811d96a"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_092PPVPU00LV.json",
+      "tag": "092PPVPU00LV",
+      "sha256": "5555ec2aa432cf44c42ef1defbefc23fac138d423a30f9106f32e1fddb58a6c2"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_092PPVY2CGG8.json",
+      "tag": "092PPVY2CGG8",
+      "sha256": "df0fc0c63224ada5975dfdcceb572fd10cbf68bdfba301e1a8be3c331171ee5f"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_099P9CUVPYRP.json",
+      "tag": "099P9CUVPYRP",
+      "sha256": "5a605c37e97fb4213a5b006865356e7a5b9cf9a1f62187d8649b01b0b685911e"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_099P9CVQUYVR.json",
+      "tag": "099P9CVQUYVR",
+      "sha256": "9a33b47e654784adc7dc24f363c3e0129f37109b6610f2fbc97b7316d1a848ed"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_09G9JU290J8J.json",
+      "tag": "09G9JU290J8J",
+      "sha256": "05a7060d26d40944b2d7f876004979e12c6081b8b6bfe6eb1522a1b698c9e570"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_09G9JUYPUPRQ.json",
+      "tag": "09G9JUYPUPRQ",
+      "sha256": "1adf17318a87a6be128e0c66524f56946ff211dea469dd30ac5deb891be78e79"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_09LP9U9LUYYR.json",
+      "tag": "09LP9U9LUYYR",
+      "sha256": "b92e36896e30dd54c7f32075fbb5b1e09ad701f4cd217d813084efcc14d71960"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_09LP9UY02R8C.json",
+      "tag": "09LP9UY02R8C",
+      "sha256": "07e739681a5b24fab9375315da35a9942f238021d4877dc2532433c137aa9a67"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_011290db7a5a48bcb988559a1e4dff3a.json",
+      "tag": "011290db7a5a48bcb988559a1e4dff3a",
+      "sha256": "78a78ef24b770195930b7f036a9b5de1f2d59c2d2f842b6cb1078b79b73c7534"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_112831c6755f47e6bfee870f9a09b6fc.json",
+      "tag": "112831c6755f47e6bfee870f9a09b6fc",
+      "sha256": "ec46bd462e576d4de3ab467be15378956601b4f91a7cfd0156793a3ebf074e64"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_1f503c44f7334b1d82281eed8ed8a794.json",
+      "tag": "1f503c44f7334b1d82281eed8ed8a794",
+      "sha256": "1d3f08649e2c0248d2333e95811a725bb94021a4ed860aaf8870d237f266083d"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_216325748f4e415ab76de4ad6bf7fbcb.json",
+      "tag": "216325748f4e415ab76de4ad6bf7fbcb",
+      "sha256": "ad2fd482f8abeff127cb7b043e57c25b1954942982d6ee2a7dd6ac0bccf05690"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_22d2cc7fd6574a77926c02ba87687528.json",
+      "tag": "22d2cc7fd6574a77926c02ba87687528",
+      "sha256": "ebd925a415acbaea291c5bac8222d39ac10e8c2f774af3c6b94891cb04cb3c07"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_39648d4afe414ed0a6bfc08bc508466b.json",
+      "tag": "39648d4afe414ed0a6bfc08bc508466b",
+      "sha256": "78a5f8aa8b46121398f136eb050b31b59b67ee89aa724686f109b8c74c33af7b"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_3cb989df830d4119b19b95b9c96b30fa.json",
+      "tag": "3cb989df830d4119b19b95b9c96b30fa",
+      "sha256": "a244295e452016d531601aa96ecfe974bfbc1fc61a165b12eb13a30076b484b1"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_412ee040afce4e67a18e2c4490879838.json",
+      "tag": "412ee040afce4e67a18e2c4490879838",
+      "sha256": "9237b2cab2bfa23c815751742bcb46259619fe25db593e2e82eb77ffdee8ded2"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_445d8a5a397649298de59a36c3ce9072.json",
+      "tag": "445d8a5a397649298de59a36c3ce9072",
+      "sha256": "864b586dcf435549259c008d2b59f4937b62f159fa1d292b0d5ed400e614a5c8"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_45aedfb5957e46179de7e0726572e64e.json",
+      "tag": "45aedfb5957e46179de7e0726572e64e",
+      "sha256": "9261bcff4f0159ef57e9ba2bd6bd087d135f8a7adfc93319e509403dca23ceab"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_4beffa6706de4393b144699a9407f7c4.json",
+      "tag": "4beffa6706de4393b144699a9407f7c4",
+      "sha256": "f803f5a523b61c566fbd9b2b934a31fc31a6a8211fb0f35389683be6a4f0fe57"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_55d7ddeba44b4197b178e7cb3f5cbdfe.json",
+      "tag": "55d7ddeba44b4197b178e7cb3f5cbdfe",
+      "sha256": "79796f6064c4b8273b941358d0cb9ae5543a07bc239cb4e8e701f8ab5ab3469a"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_60ae4b74e10746ddaf88fa3c4e0001da.json",
+      "tag": "60ae4b74e10746ddaf88fa3c4e0001da",
+      "sha256": "eb0dc5cc11bb16c08308f03446a7c68b7fbf87f14de1f1f3637d14b0046a427e"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_68ac6a3e21ea4b2a9815b04b16a111e6.json",
+      "tag": "68ac6a3e21ea4b2a9815b04b16a111e6",
+      "sha256": "320d0e5a5d51fa206e3f85abaf847eee8b361fad3bdf7d95e9f3e9f4d740df20"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_6ac631bb4246481799200b4867408daf.json",
+      "tag": "6ac631bb4246481799200b4867408daf",
+      "sha256": "348f10ce4621565b007798f3e3ae4634957f0bafdc01b9b89cca70a2996f0563"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_7677a0bf1f674a169e76620b57f46786.json",
+      "tag": "7677a0bf1f674a169e76620b57f46786",
+      "sha256": "2b639fb87a9e2ddc3029eafb61cdc492894aa43a98247c8ee8ee3fb60d014f4b"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_78e59386c8254e9187ce9d5aaf3bb73e.json",
+      "tag": "78e59386c8254e9187ce9d5aaf3bb73e",
+      "sha256": "ef42baa3e5acad9b1ab202d8df32065b7d12c1bd6725f4adfbf326f4ef5540d7"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_844db3de7006445c98a93e6153105872.json",
+      "tag": "844db3de7006445c98a93e6153105872",
+      "sha256": "094d70f05d41b59f6b4770654e52f79149154c0babf332341009a0094888ce3a"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_86055c0ca9bf4fd48dfcbb5e8adaf7a6.json",
+      "tag": "86055c0ca9bf4fd48dfcbb5e8adaf7a6",
+      "sha256": "ed867f74a1065e0a96be48ee91bbf0d0e0e2ede9a4c5fb8f81881f31ca398f1e"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_866cc67f74104d3c885b242c1af21811.json",
+      "tag": "866cc67f74104d3c885b242c1af21811",
+      "sha256": "76c30c580736dd61865fe13536fb6513f24d272cb1f3f31e222aca743cecc417"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_8af218c003194ae1b64f1dd0f5f4e3d3.json",
+      "tag": "8af218c003194ae1b64f1dd0f5f4e3d3",
+      "sha256": "1c3b9d4f9c2e8ea5b2aa5d9529b593b7c4b76cf023a1bbce866267fc6c55891f"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_a29566293097479fb7aa1fe2fc1fe7e3.json",
+      "tag": "a29566293097479fb7aa1fe2fc1fe7e3",
+      "sha256": "96445c154032a391e60d31aeb13a9c5514d3205033a0da508a1932ad1852f3d9"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_a3674fb6151548f48a032f7e52f33336.json",
+      "tag": "a3674fb6151548f48a032f7e52f33336",
+      "sha256": "27d330381ebaa3e59f755b0e7ebaf4e4bcf7964cc41ad1bb3a38042fba4be4c8"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_c4c1d3f1b62f49af87e6f74f802ba273.json",
+      "tag": "c4c1d3f1b62f49af87e6f74f802ba273",
+      "sha256": "6300f85ce80c491d587d62e52a3ca412e347f0193d260f99e23437d400b39588"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_d45edcae65d64614a247b3bdb5548292.json",
+      "tag": "d45edcae65d64614a247b3bdb5548292",
+      "sha256": "a8b429020b6e2830666f35ce906c18d3d6391934311fd45cd5e68093d75f7f81"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_de8d09e0e4d544899cbe7990cd7d098e.json",
+      "tag": "de8d09e0e4d544899cbe7990cd7d098e",
+      "sha256": "aadd97f93f80d97a70e3c96d2d4b842f0916aa46cb03091824227af2d477a856"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_df92d538dd0e444b8d5873d2bd16c56d.json",
+      "tag": "df92d538dd0e444b8d5873d2bd16c56d",
+      "sha256": "8b9bf699b0852506984ff99f472deffdc86b26897c9ba5a83c9d2bdf1e798b32"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_e467de5432fb460195a3ed1aa7602cd2.json",
+      "tag": "e467de5432fb460195a3ed1aa7602cd2",
+      "sha256": "c516e04ecb4f1838a6fbc60a12af1789ad1997e68ef6e9a444f8138fb3a141b8"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_febfdc5354c444cbb51ce67ea93a7f5b.json",
+      "tag": "febfdc5354c444cbb51ce67ea93a7f5b",
+      "sha256": "fa3b6356d90770d94c30a5b2dae73f0aa9f956861595ce0c8fc9bc6e87fd3506"
+    }
+  ],
+  "seconds": 84.75741696357727,
+  "limitations": [
+    "Cast linkage is nearest same-side accepted Barrel within 160 ticks; overlap may be ambiguous.",
+    "This validates native source and shared transforms, not historical live reader aim offsets.",
+    "Correct target encoding does not demonstrate that the learned Log head uses it."
+  ]
+}

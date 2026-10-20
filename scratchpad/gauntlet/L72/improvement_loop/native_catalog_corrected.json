@@ -1,0 +1,45 @@
+{
+  "complete": true,
+  "package_root": "C:\\Users\\benpe\\ClashBot\\icebow\\data\\bench\\native_confirmation_20261005\\catalog_corrected",
+  "native_python_unchanged": true,
+  "original_hashes": {
+    "research\\ext\\cr-native-sandbox\\native_core\\__init__.py": "2788d4756ed16a9d8e6820978ab2bd22cc72c69122b17bbf14b7f190c87f5260",
+    "research\\ext\\cr-native-sandbox\\native_core\\card_catalog.py": "11338206b0707fb165e4ff6d8bfcffe5ce494e87e6796c9c21bf3ef20c8a59df",
+    "research\\ext\\cr-native-sandbox\\native_core\\client.py": "eb49a3d3d0cfe051ea77add9d03a6f093b3cea49f77a38164ef2866b5b028e9e",
+    "research\\ext\\cr-native-sandbox\\native_core\\decks.py": "09ecc6f1888766c0f84b163ea923603d24dc23294ac1290954ac638029fea6e4",
+    "research\\ext\\cr-native-sandbox\\native_core\\deployment.py": "1e443b706d9d7a582cdbce1ee40e1aed039705840636e600e99038cbac04c14e",
+    "research\\ext\\cr-native-sandbox\\native_core\\env.py": "f50aa75e05aafa6460bec3c3b650c76e92044135c7105a824dbb704dee9141bc",
+    "research\\ext\\cr-native-sandbox\\native_core\\worker.py": "f62a52ae3c30eaa6c8cc18ddc65695b377d53fe8868609633f2111dc6180eed6",
+    "research\\ext\\cr-native-sandbox\\native_core\\data\\live_card_catalog.json": "7b01d9ac62e5035493131e974913fd00d6b67dd735703c28f5f496ec6a11722b"
+  },
+  "corrected_hashes": {
+    "icebow\\data\\bench\\native_confirmation_20261005\\catalog_corrected\\native_core\\__init__.py": "2788d4756ed16a9d8e6820978ab2bd22cc72c69122b17bbf14b7f190c87f5260",
+    "icebow\\data\\bench\\native_confirmation_20261005\\catalog_corrected\\native_core\\card_catalog.py": "11338206b0707fb165e4ff6d8bfcffe5ce494e87e6796c9c21bf3ef20c8a59df",
+    "icebow\\data\\bench\\native_confirmation_20261005\\catalog_corrected\\native_core\\client.py": "eb49a3d3d0cfe051ea77add9d03a6f093b3cea49f77a38164ef2866b5b028e9e",
+    "icebow\\data\\bench\\native_confirmation_20261005\\catalog_corrected\\native_core\\decks.py": "09ecc6f1888766c0f84b163ea923603d24dc23294ac1290954ac638029fea6e4",
+    "icebow\\data\\bench\\native_confirmation_20261005\\catalog_corrected\\native_core\\deployment.py": "1e443b706d9d7a582cdbce1ee40e1aed039705840636e600e99038cbac04c14e",
+    "icebow\\data\\bench\\native_confirmation_20261005\\catalog_corrected\\native_core\\env.py": "f50aa75e05aafa6460bec3c3b650c76e92044135c7105a824dbb704dee9141bc",
+    "icebow\\data\\bench\\native_confirmation_20261005\\catalog_corrected\\native_core\\worker.py": "f62a52ae3c30eaa6c8cc18ddc65695b377d53fe8868609633f2111dc6180eed6",
+    "icebow\\data\\bench\\native_confirmation_20261005\\catalog_corrected\\native_core\\data\\live_card_catalog.json": "4088ea9b0baeb53cb692d1190630050c2d4ccb843b9873f1d2f3fc16c59a53f8"
+  },
+  "changes": {
+    "card_id": 26000043,
+    "evolution_form": "AngryBarbarians_EV1",
+    "evolution_form_id": 13000043,
+    "evolution_cycles": 2,
+    "evolution_count": [
+      41,
+      42
+    ]
+  },
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\prepare_native_catalog_correction.py": "5e7c5e6cdbe0bd6f20d152348f60a468994031609c33ff90c456439b37e76454",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\native_elite_form_probe_v3.json": "b4d85b9762c077b229170ef6df1a88d43d8674d2255310486b9cc1cc2ddb2933",
+    "research\\ext\\cr-native-sandbox\\runtime\\extracted-assets\\csv_logic\\characters\\angry_barbarian_evo.toml": "3eb4f253d6012a5454b7ae5c5c51a3e288d8daac59db56589b3ac01d05b8b23d",
+    "research\\ext\\cr-native-sandbox\\runtime\\extracted-assets\\csv_logic\\spells_characters.csv": "4dee874cc2bb07532693bd04c1c7f0439810cc54b8c5c3f91f83b435539f95f5",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\NATIVE_CATALOG_CORRECTION_PLAN.md": "d61a5b76c12724c5d34403d0f63957f918ca0c07fb7f1f26f31556a693fc8cfb"
+  },
+  "model_predictions": 0,
+  "production_catalog_changed": false,
+  "confirmation_qualified": false
+}

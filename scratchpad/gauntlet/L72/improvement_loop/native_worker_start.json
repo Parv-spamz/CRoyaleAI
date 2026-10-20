@@ -1,0 +1,47 @@
+{
+  "started_at": "2026-10-05T06:58:18",
+  "manifest_sha256": "0fe3cb4be0fdd905fbdee2ef25e86a4e0d80e0e999895a6dd5adc2589249b702",
+  "driver_sha256": "c38a784f4e7d2343b56125383eb78fbdda054bfde25ed8f3351ff875096c4501",
+  "worker_source_sha256": "f62a52ae3c30eaa6c8cc18ddc65695b377d53fe8868609633f2111dc6180eed6",
+  "service_script_sha256": "845a7df120042ccd7615ae1ec4487b55d764e5117b9657793f6db7c1a9785186",
+  "native_bridge_sha256": "82887463deee1f2c92acb70368dbb7d8f323433980a5c1b1abddd15241c81289",
+  "native_jar_sha256": "5f998d0f1f62efd75ec450e9a31b7cd9c742c1f500b3ac5fb6646b4886821098",
+  "emulator_serial": "emulator-5560",
+  "cores": 2,
+  "memory_mb": 4096,
+  "system_policy_changed": false,
+  "vm": {
+    "ready": true,
+    "started": true,
+    "serial": "emulator-5560",
+    "launcher_pid": 37516
+  },
+  "package": {
+    "complete": true,
+    "installed": false
+  },
+  "installed_version_verified": true,
+  "service_command": [
+    "C:\\Users\\benpe\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+    "-NoProfile",
+    "-File",
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\cr-native-sandbox\\scripts\\start_direct_service.ps1",
+    "-Adb",
+    "C:\\Android\\Sdk\\platform-tools\\adb.exe",
+    "-Serial",
+    "emulator-5560",
+    "-Port",
+    "37031",
+    "-Slot",
+    "0",
+    "-DataRoot",
+    "C:\\Users\\benpe\\ClashBot\\icebow\\data\\bench\\native_confirmation_20261005\\runtime",
+    "-ReadyTimeoutSeconds",
+    "300"
+  ],
+  "service_exit_code": 1,
+  "service_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "service_stderr_sha256": "4c6c690382a86430b437d26fab782fbff31efdae8db86031c5b4f4c7b83ef172",
+  "complete": false,
+  "error": "ValueError('Native service start failed; inspect preserved stdout/stderr')"
+}

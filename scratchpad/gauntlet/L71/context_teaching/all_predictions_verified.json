@@ -1,0 +1,69 @@
+{
+  "source_sha256": "297763ea0ecaa3be863d2859d3b5c74f1b627ab0ecfef89a80404112ebf9b1a4",
+  "verifier_sha256": "7bb5abea93cdf90dbb2b5faf0bf7437795d6a180cc27521065afa1306c394c3a",
+  "results": [
+    {
+      "heldout": "icebow\\data\\bench\\expert_context_20261005\\r1e_heldout",
+      "rows": 38317,
+      "report_sha256": "08687bef7cfaaeebc7af73694fd4098361e8d139b35ae665285aad19b3350e3b",
+      "predictions_sha256": "d4b07cbe845e353f819b118ee6816b7d88e3df5d615c82c67ad6bd7a8fb7d16a",
+      "matches": true
+    },
+    {
+      "heldout": "icebow\\data\\bench\\expert_context_20261005\\v4_uniform\\heldout",
+      "rows": 38317,
+      "report_sha256": "75f6c77635d7a6cbad8cd9440a1fe0c58f9e9f082af103b60ab36654af84c814",
+      "predictions_sha256": "636c556b78ba88fcf9e647ef3bac0534cc13c838c8e824ad76920d871f8d563f",
+      "matches": true
+    },
+    {
+      "heldout": "icebow\\data\\bench\\expert_context_20261005\\v4_rocket\\heldout",
+      "rows": 38317,
+      "report_sha256": "8dff3d9c33a3b808b2b813947a8a2a02dd0e8c5e9b0f0ee22fc0de28c2fc57c6",
+      "predictions_sha256": "314c444b6adec490ea2e789e2fed79bcbb27a1a4c8f82f07406247ceb07c8c02",
+      "matches": true
+    },
+    {
+      "heldout": "icebow\\data\\bench\\expert_context_20261005\\v5_uniform\\heldout",
+      "rows": 38317,
+      "report_sha256": "ebac87f294e269f8469d97cf8e1d2365be0ac694720eea1294f9d2b27e9bbbf3",
+      "predictions_sha256": "2847d9db64d4b81d84da859b1746a762b63e7b749b4af58508aa3b0d2c1809ec",
+      "matches": true
+    },
+    {
+      "heldout": "icebow\\data\\bench\\expert_context_20261005\\v5_rocket\\heldout",
+      "rows": 38317,
+      "report_sha256": "53c7525db37dcc65b799cb1dc8e681dbc4957f5555d186009f564fd7483212d5",
+      "predictions_sha256": "e08464a92bc73897ff6aef109d554d3fc90f4d93e00a8b4b8b361f4c961e0344",
+      "matches": true
+    },
+    {
+      "heldout": "icebow\\data\\bench\\expert_context_20261005\\v5_rocket_xbow\\heldout",
+      "rows": 38317,
+      "report_sha256": "41c0c3327f2276506a768416a34a7dc48fe00493de7b22446b2e3785236a5fb9",
+      "predictions_sha256": "047707b7a97d5f5beff4d0c835d48155249672aee7618bb6029d61eb5296951d",
+      "matches": true
+    },
+    {
+      "heldout": "icebow\\data\\bench\\expert_context_20261005\\v5_rocket_barrel\\heldout",
+      "rows": 38317,
+      "report_sha256": "3901c6fea96062cf41a05c73bdd3e25ea5bce9f55579c0c3d979fcc1e606ac2f",
+      "predictions_sha256": "090b93179c6d3d7bf8295bb7edd59960922e7203ac40ab318d93f2a9be23f182",
+      "matches": true
+    },
+    {
+      "heldout": "icebow\\data\\bench\\expert_context_20261005\\v6_rocket_barrel\\heldout",
+      "rows": 38317,
+      "report_sha256": "135b083c1c7306d00b08deb04faf60e3947e15b2aea223ef1534fe722793e586",
+      "predictions_sha256": "f4fcabc1e7290cf82f2e1f24e477a71cabbb40a786ca925f4879fc81d7babae4",
+      "matches": true
+    },
+    {
+      "heldout": "icebow\\data\\bench\\expert_context_20261005\\v6_rocket_both\\heldout",
+      "rows": 38317,
+      "report_sha256": "8607ad623541222ea23f1f20cc2fb151c7cb0dfe1c4988e967a739d0bf8be63f",
+      "predictions_sha256": "0995f171f20b0663b96b854cce1965f3e5474812a1a36a242803830455094ddf",
+      "matches": true
+    }
+  ]
+}

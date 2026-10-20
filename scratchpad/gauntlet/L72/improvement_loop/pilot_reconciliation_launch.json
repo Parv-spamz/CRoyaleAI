@@ -1,0 +1,23 @@
+﻿{
+    "purpose":  "Read-only independent reconciliation after existing645 collection; no model or native service calls",
+    "pid":  44044,
+    "command":  [
+                    "-u",
+                    "scratchpad/gauntlet/L71/integration/run_check.py",
+                    "--name",
+                    "l72-reserved-pilot-independent",
+                    "--expect",
+                    "RESERVED_PILOT_INDEPENDENTLY_VERIFIED",
+                    "--",
+                    "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+                    "-u",
+                    "scratchpad/gauntlet/L72/improvement_loop/verify_reserved_pilot.py",
+                    "--wait-for-completion"
+                ],
+    "source_hashes":  {
+                          "verify_reserved_pilot.py":  "84d7591a34359255df3ffe870e246a97fc20df44e9ccc8791a110c686f73937a",
+                          "verify_native_preflight.py":  "6e03d1cbbe87e5c11601f42020d024419d0641e0f949cfbe5021e90063abd152",
+                          "PILOT_RECONCILIATION_PLAN.md":  "7c37151b072779727d432c768fa332ddadbc5b6235f06ee1c3bf581c3b21b391"
+                      },
+    "started_at":  "2026-10-05T08:13:44.1837092-04:00"
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L69/discord/send_report.py",
+    "--id",
+    "model-impact-learning2-aux-final",
+    "--file",
+    "scratchpad/gauntlet/L72/improvement_loop/impact_learnability_2_recovery/message.md"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "DELIVERED model-impact-learning2-aux-final",
+  "matched": true,
+  "output_sha256": "cf75412f4a8e61e2d5cf1caa5993a46e766fd8085e719577442394b26eee91d2",
+  "seconds": 1.1188511848449707
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\moving_impact_readiness\collect.py", line 180, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\moving_impact_readiness\collect.py", line 148, in main
+    assert not f['projectiles'] and not f['spells']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

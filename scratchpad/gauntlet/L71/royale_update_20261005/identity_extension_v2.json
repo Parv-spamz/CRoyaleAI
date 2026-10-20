@@ -1,0 +1,398 @@
+{
+  "prior_source_sha256": "b024e931aefd17aed6df246255b59689eb6acf66e4848694c24211302f97f59c",
+  "current_source_sha256": "49cc205c1400df6ca2bb4a6a8900a6e9a5a6048c93b0f084f9758292f28a8dc8",
+  "previous_unambiguous_cases": 228,
+  "regressions": [],
+  "added": [
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 101,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 111,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 122,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 134,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 147,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 162,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 178,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 195,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 215,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 236,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 259,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 284,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 312,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 101,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 111,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 122,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 134,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 147,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 162,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 178,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 195,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 215,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 236,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 259,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 284,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 312,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    }
+  ],
+  "ambiguous_retaining_legacy_identity": [
+    [
+      [
+        "furnace",
+        0
+      ],
+      343,
+      {
+        "cls": 47,
+        "form": 0,
+        "reason": "ambiguous_hp"
+      }
+    ],
+    [
+      [
+        "furnace",
+        1
+      ],
+      343,
+      {
+        "cls": 47,
+        "form": 1,
+        "reason": "ambiguous_hp"
+      }
+    ]
+  ]
+}

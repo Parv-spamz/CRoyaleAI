@@ -1,0 +1,21 @@
+START prepare
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\dropout_free_fit\\prepare.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "DROPOUT_FREE_FIT_PREPARED", "matched": true, "output_sha256": "9462b53dec67d5879f9715acdaf0d3bab70325dd9dedd01f9d376b3a0c5da257", "seconds": 90.6323676109314}
+INSPECTED_CHECK_PASS
+COMPLETE prepare
+START train
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\dropout_free_fit\\train.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "DROPOUT_FREE_FIT_TRAINED", "matched": true, "output_sha256": "0f5d8bd299451afbdc102ba3ee6b379e03a45c48cd0830291146c5dc47a8c7b0", "seconds": 665.1778788566589}
+INSPECTED_CHECK_PASS
+COMPLETE train
+START training-independent
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\dropout_free_fit\\verify_training.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "DROPOUT_FREE_FIT_TRAINING_VERIFIED", "matched": true, "output_sha256": "28cd91e36b6697893f87f5bca01c3c7a4ad7f0eac2a918c208329cc134c2594d", "seconds": 6.791633367538452}
+INSPECTED_CHECK_PASS
+COMPLETE training-independent
+START eval
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\dropout_free_fit\\evaluate.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "DROPOUT_FREE_FIT_EVALUATED", "matched": true, "output_sha256": "92cd4803a3194e0247ccbe04602fb4ec4bfd7269625e247a2a08b35b0de588b8", "seconds": 52.74337410926819}
+INSPECTED_CHECK_PASS
+COMPLETE eval
+START results-independent
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\dropout_free_fit\\verify_results.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "DROPOUT_FREE_FIT_RESULTS_VERIFIED", "matched": true, "output_sha256": "b3e92d4c8aac2d1f3928b3f7792cf550f385964e8fc1ac8ef6de6e8b32d26a42", "seconds": 7.602766752243042}
+INSPECTED_CHECK_PASS
+COMPLETE results-independent
+DROPOUT_FREE_FIT_CHAIN_COMPLETE

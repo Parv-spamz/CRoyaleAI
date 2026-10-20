@@ -1,0 +1,14 @@
+{
+  "command": [
+    "C:/Users/benpe/ClashBot/icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/verify_reserved_pilot.py",
+    "--training-smoke"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 1,
+  "expected": "RESERVED_PILOT_TRAINING_SMOKE_PASS",
+  "matched": false,
+  "output_sha256": "ecbc2fe88c41178f63eaa3378bea7b3cc339064ed69bf914c51bb6627da1feb8",
+  "seconds": 6.483523607254028
+}

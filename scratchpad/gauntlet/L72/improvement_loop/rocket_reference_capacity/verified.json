@@ -1,0 +1,55 @@
+{
+  "complete": true,
+  "report_sha256": "a239370735b50c3221598c81345b2135eb3ee01a2e68860579ace59559b5c6be",
+  "script_sha256": "f2979b145464bef4eede60e56a1cc3d30a233a7879a1bbd282e30af3249522ab",
+  "references_sha256": "3ca02dc616a261ae479e4d12436cb932ec1cbf00d14788bff1394e4f3c7acc48",
+  "controls": {
+    "positive": 1,
+    "negative": 9
+  },
+  "metrics": {
+    "all_casts": {
+      "casts": 260,
+      "replay_clusters": 100
+    },
+    "landing_unobserved": {
+      "casts": 0,
+      "replay_clusters": 0
+    },
+    "hp_window_known": {
+      "casts": 260,
+      "replay_clusters": 100
+    },
+    "hp_confirmation_within_two_ticks": {
+      "casts": 5,
+      "replay_clusters": 5
+    },
+    "princess_geometric_reference": {
+      "casts": 31,
+      "replay_clusters": 22
+    },
+    "princess_observed_hp_drop": {
+      "casts": 30,
+      "replay_clusters": 21
+    },
+    "princess_observed_finish": {
+      "casts": 0,
+      "replay_clusters": 0
+    },
+    "princess_repeat_reference": {
+      "casts": 5,
+      "replay_clusters": 4
+    },
+    "rocket_then_tornado": {
+      "casts": 26,
+      "replay_clusters": 24
+    },
+    "tornado_then_rocket": {
+      "casts": 1,
+      "replay_clusters": 1
+    }
+  },
+  "landing_sources": {
+    "public_aim_catalog_speed": 260
+  }
+}

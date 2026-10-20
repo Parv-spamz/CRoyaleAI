@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/review_rl_failure.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "RL_FAILURE_REVIEWED",
+  "matched": true,
+  "output_sha256": "c01e53f07a8d30b75f0f7d71a4531cb9aef655e28c7503251071576607f946e8",
+  "seconds": 0.549321174621582
+}

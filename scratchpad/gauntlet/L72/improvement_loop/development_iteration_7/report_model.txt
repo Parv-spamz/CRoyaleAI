@@ -1,0 +1,15 @@
+ClashBot NEW model: frozen_base_projectile_v6. DEVELOPMENT ONLY - REJECTED / NOT ACCEPTED / NO DEPLOYMENT.
+
+1000 finite branch-only updates from ordinary_v5; all base tensors unchanged. Same fixed54723 development rows/405 replay groups; parent exposure disclosed. R1e below uses the SAME corrected observations, not its original gameplay input path.
+
+Counts R1e / ordinary_v5 control / new candidate:
+Barrel correct/wrong/not-fired:36/20/7,40/22/1,56/6/1 of63rows/26groups. Full actions18/20/32. Correct gain+25.40pp, wrong lanes22->6; both branch floors pass.
+Rocket forced aim<=1tile:290/292/290 of955rows/336groups; full action54/77/76. Both Rocket nonregression floors FAIL.
+Late Rocket action14/22/22 of320rows/171groups; late-all1949/1984/1992 of6422.
+Witch332/339/341 of726; Night Witch156/161/161 of373; Furnace538/549/549 of1174. Defensive actions3952/4011/4012 of8183. These protection floors pass.
+General card11348/11403/11403 of17192 PLAY; all actions30968/31962/31984 of54723. No gate-threshold or chosen-card changes versus v5 on any row.
+End-to-end v6 reference:Barrel55/7/1,full30; Rocket aim293/action73,late21. Gameplay gain unproved.
+
+Original independent check failed required exact cached logits:156 gate values differ(max1.19e-6),625 card values(max2.86e-6); base tensors remain byte-identical. Exact-output floor remains FAILED, not relaxed. Separate completion recount preserves original failure and independently verifies all raw labels/caches/paired counts; no training or inference rerun. Rocket regressions independently reject continuation regardless of numeric issue.
+
+Train119.37s/eval52.42s; independent completion40.97s exit0. No physical damage/cycle/strategy/gameplay proof. Useful isolated Barrel learning remains evidence; overall replacement is unfinished. Live STOP intact; final untouched/component/gameplay/statistical/Q4/Q5 gates remain open.

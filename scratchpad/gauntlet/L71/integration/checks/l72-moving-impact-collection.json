@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/moving_impact_readiness/collect.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 1,
+  "expected": "MOVING_IMPACT_COLLECTED",
+  "matched": false,
+  "output_sha256": "cdcc748f6999de7f4150669f8e879ebbc1e96607ba368294bf298db0179a7e3d",
+  "seconds": 0.8863866329193115
+}

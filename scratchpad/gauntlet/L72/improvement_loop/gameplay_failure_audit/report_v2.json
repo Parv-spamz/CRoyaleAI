@@ -1,0 +1,5293 @@
+{
+  "complete": true,
+  "started_sha256": "be8f7244b58a747c9fd5d99190bd6094cada8dee1c8367b7c799a86cfe807762",
+  "matches": [
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100500",
+      "outcome": "win",
+      "end_tick": 6084,
+      "reasons": {
+        "game_over": 3,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 5980,
+          "land_tick": 6006,
+          "reason": "game_over",
+          "card": "skeletons"
+        },
+        {
+          "tick": 6010,
+          "land_tick": 6036,
+          "reason": "game_over",
+          "card": "skeletons"
+        },
+        {
+          "tick": 6040,
+          "land_tick": 6066,
+          "reason": "game_over",
+          "card": "skeletons"
+        },
+        {
+          "tick": 6070,
+          "land_tick": 6096,
+          "reason": "match_over_before_landing",
+          "card": "rocket"
+        }
+      ],
+      "game_over_decided_before": 1,
+      "game_over_decided_after": 2,
+      "pre_end": {
+        "margin": 733,
+        "own_min": 804,
+        "enemy_min": 71,
+        "crowns": [
+          0,
+          0
+        ]
+      },
+      "after_clear": {
+        "margin": 733,
+        "own_min": 804,
+        "enemy_min": 71,
+        "crowns": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100500",
+      "outcome": "loss",
+      "end_tick": 3600,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3590,
+          "land_tick": 3616,
+          "reason": "match_over_before_landing",
+          "card": "tornado"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100500",
+      "outcome": "loss",
+      "end_tick": 3600,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3590,
+          "land_tick": 3616,
+          "reason": "match_over_before_landing",
+          "card": "tornado"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100501",
+      "outcome": "loss",
+      "end_tick": 4402,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 4380,
+          "land_tick": 4406,
+          "reason": "match_over_before_landing",
+          "card": "knight_evo"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100501",
+      "outcome": "loss",
+      "end_tick": 5715,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 5710,
+          "land_tick": 5736,
+          "reason": "match_over_before_landing",
+          "card": "knight_evo"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100501",
+      "outcome": "win",
+      "end_tick": 6101,
+      "reasons": {
+        "game_over": 3,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 5980,
+          "land_tick": 6006,
+          "reason": "game_over",
+          "card": "skeletons"
+        },
+        {
+          "tick": 6020,
+          "land_tick": 6046,
+          "reason": "game_over",
+          "card": "skeletons"
+        },
+        {
+          "tick": 6050,
+          "land_tick": 6076,
+          "reason": "game_over",
+          "card": "rocket"
+        },
+        {
+          "tick": 6080,
+          "land_tick": 6106,
+          "reason": "match_over_before_landing",
+          "card": "rocket"
+        }
+      ],
+      "game_over_decided_before": 1,
+      "game_over_decided_after": 2,
+      "pre_end": {
+        "margin": 554,
+        "own_min": 826,
+        "enemy_min": 272,
+        "crowns": [
+          0,
+          0
+        ]
+      },
+      "after_clear": {
+        "margin": 554,
+        "own_min": 826,
+        "enemy_min": 272,
+        "crowns": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100502",
+      "outcome": "loss",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100502",
+      "outcome": "loss",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100502",
+      "outcome": "loss",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100503",
+      "outcome": "loss",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100503",
+      "outcome": "loss",
+      "end_tick": 2689,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100503",
+      "outcome": "loss",
+      "end_tick": 2689,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100504",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100504",
+      "outcome": "win",
+      "end_tick": 6134,
+      "reasons": {
+        "game_over": 4,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 5980,
+          "land_tick": 6006,
+          "reason": "game_over",
+          "card": "ice_wizard"
+        },
+        {
+          "tick": 6030,
+          "land_tick": 6056,
+          "reason": "game_over",
+          "card": "ice_wizard"
+        },
+        {
+          "tick": 6060,
+          "land_tick": 6086,
+          "reason": "game_over",
+          "card": "rocket"
+        },
+        {
+          "tick": 6090,
+          "land_tick": 6116,
+          "reason": "game_over",
+          "card": "rocket"
+        },
+        {
+          "tick": 6120,
+          "land_tick": 6146,
+          "reason": "match_over_before_landing",
+          "card": "rocket"
+        }
+      ],
+      "game_over_decided_before": 1,
+      "game_over_decided_after": 3,
+      "pre_end": {
+        "margin": 791,
+        "own_min": 1940,
+        "enemy_min": 1149,
+        "crowns": [
+          0,
+          0
+        ]
+      },
+      "after_clear": {
+        "margin": 791,
+        "own_min": 1940,
+        "enemy_min": 1149,
+        "crowns": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100504",
+      "outcome": "win",
+      "end_tick": 6134,
+      "reasons": {
+        "game_over": 4,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 5980,
+          "land_tick": 6006,
+          "reason": "game_over",
+          "card": "ice_wizard"
+        },
+        {
+          "tick": 6030,
+          "land_tick": 6056,
+          "reason": "game_over",
+          "card": "ice_wizard"
+        },
+        {
+          "tick": 6060,
+          "land_tick": 6086,
+          "reason": "game_over",
+          "card": "rocket"
+        },
+        {
+          "tick": 6090,
+          "land_tick": 6116,
+          "reason": "game_over",
+          "card": "rocket"
+        },
+        {
+          "tick": 6120,
+          "land_tick": 6146,
+          "reason": "match_over_before_landing",
+          "card": "rocket"
+        }
+      ],
+      "game_over_decided_before": 1,
+      "game_over_decided_after": 3,
+      "pre_end": {
+        "margin": 791,
+        "own_min": 1940,
+        "enemy_min": 1149,
+        "crowns": [
+          0,
+          0
+        ]
+      },
+      "after_clear": {
+        "margin": 791,
+        "own_min": 1940,
+        "enemy_min": 1149,
+        "crowns": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100505",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3590,
+          "land_tick": 3616,
+          "reason": "match_over_before_landing",
+          "card": "knight_evo"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100505",
+      "outcome": "loss",
+      "end_tick": 5487,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100505",
+      "outcome": "loss",
+      "end_tick": 3600,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3590,
+          "land_tick": 3616,
+          "reason": "match_over_before_landing",
+          "card": "tesla_evo"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100506",
+      "outcome": "loss",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100506",
+      "outcome": "loss",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100506",
+      "outcome": "loss",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100507",
+      "outcome": "loss",
+      "end_tick": 4372,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100507",
+      "outcome": "loss",
+      "end_tick": 3807,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100507",
+      "outcome": "loss",
+      "end_tick": 3807,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100508",
+      "outcome": "win",
+      "end_tick": 4947,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100508",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100508",
+      "outcome": "win",
+      "end_tick": 6102,
+      "reasons": {
+        "game_over": 2,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 6040,
+          "land_tick": 6066,
+          "reason": "game_over",
+          "card": "ice_wizard"
+        },
+        {
+          "tick": 6070,
+          "land_tick": 6096,
+          "reason": "game_over",
+          "card": "ice_wizard"
+        },
+        {
+          "tick": 6100,
+          "land_tick": 6126,
+          "reason": "match_over_before_landing",
+          "card": "rocket"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 2,
+      "pre_end": {
+        "margin": 1654,
+        "own_min": 1965,
+        "enemy_min": 311,
+        "crowns": [
+          0,
+          0
+        ]
+      },
+      "after_clear": {
+        "margin": 1654,
+        "own_min": 1965,
+        "enemy_min": 311,
+        "crowns": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100509",
+      "outcome": "win",
+      "end_tick": 3893,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100509",
+      "outcome": "win",
+      "end_tick": 6130,
+      "reasons": {
+        "game_over": 2,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 5980,
+          "land_tick": 6006,
+          "reason": "game_over",
+          "card": "ice_wizard"
+        },
+        {
+          "tick": 6080,
+          "land_tick": 6106,
+          "reason": "game_over",
+          "card": "rocket"
+        },
+        {
+          "tick": 6110,
+          "land_tick": 6136,
+          "reason": "match_over_before_landing",
+          "card": "rocket"
+        }
+      ],
+      "game_over_decided_before": 1,
+      "game_over_decided_after": 1,
+      "pre_end": {
+        "margin": 580,
+        "own_min": 1560,
+        "enemy_min": 980,
+        "crowns": [
+          0,
+          0
+        ]
+      },
+      "after_clear": {
+        "margin": 580,
+        "own_min": 1560,
+        "enemy_min": 980,
+        "crowns": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100509",
+      "outcome": "win",
+      "end_tick": 4102,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 4100,
+          "land_tick": 4126,
+          "reason": "match_over_before_landing",
+          "card": "x_bow"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100510",
+      "outcome": "loss",
+      "end_tick": 3756,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100510",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100510",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100511",
+      "outcome": "win",
+      "end_tick": 5123,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100511",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100511",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100512",
+      "outcome": "loss",
+      "end_tick": 4944,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100512",
+      "outcome": "loss",
+      "end_tick": 6082,
+      "reasons": {
+        "game_over": 1,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 6030,
+          "land_tick": 6056,
+          "reason": "game_over",
+          "card": "skeletons"
+        },
+        {
+          "tick": 6060,
+          "land_tick": 6086,
+          "reason": "match_over_before_landing",
+          "card": "skeletons"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 1,
+      "pre_end": {
+        "margin": -301,
+        "own_min": 42,
+        "enemy_min": 343,
+        "crowns": [
+          0,
+          0
+        ]
+      },
+      "after_clear": {
+        "margin": -301,
+        "own_min": 42,
+        "enemy_min": 343,
+        "crowns": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100512",
+      "outcome": "loss",
+      "end_tick": 3714,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3710,
+          "land_tick": 3736,
+          "reason": "match_over_before_landing",
+          "card": "skeletons"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100513",
+      "outcome": "loss",
+      "end_tick": 6133,
+      "reasons": {
+        "out_of_territory": 1,
+        "game_over": 1,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 5390,
+          "land_tick": 5416,
+          "reason": "out_of_territory",
+          "card": "the_log"
+        },
+        {
+          "tick": 6080,
+          "land_tick": 6106,
+          "reason": "game_over",
+          "card": "knight_evo"
+        },
+        {
+          "tick": 6110,
+          "land_tick": 6136,
+          "reason": "match_over_before_landing",
+          "card": "knight_evo"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 1,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100513",
+      "outcome": "loss",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100513",
+      "outcome": "loss",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100514",
+      "outcome": "loss",
+      "end_tick": 4000,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100514",
+      "outcome": "loss",
+      "end_tick": 3720,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100514",
+      "outcome": "loss",
+      "end_tick": 3657,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100515",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100515",
+      "outcome": "loss",
+      "end_tick": 6119,
+      "reasons": {
+        "game_over": 1,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 6070,
+          "land_tick": 6096,
+          "reason": "game_over",
+          "card": "rocket"
+        },
+        {
+          "tick": 6100,
+          "land_tick": 6126,
+          "reason": "match_over_before_landing",
+          "card": "rocket"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 1,
+      "pre_end": {
+        "margin": -1150,
+        "own_min": 627,
+        "enemy_min": 1777,
+        "crowns": [
+          0,
+          0
+        ]
+      },
+      "after_clear": {
+        "margin": -1150,
+        "own_min": 627,
+        "enemy_min": 1777,
+        "crowns": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100515",
+      "outcome": "loss",
+      "end_tick": 4243,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100516",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3580,
+          "land_tick": 3606,
+          "reason": "match_over_before_landing",
+          "card": "skeletons"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100516",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100516",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100517",
+      "outcome": "loss",
+      "end_tick": 5155,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 5150,
+          "land_tick": 5176,
+          "reason": "match_over_before_landing",
+          "card": "ice_wizard"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100517",
+      "outcome": "loss",
+      "end_tick": 6108,
+      "reasons": {
+        "game_over": 1
+      },
+      "rejected": [
+        {
+          "tick": 6080,
+          "land_tick": 6106,
+          "reason": "game_over",
+          "card": "knight_evo"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 1,
+      "pre_end": {
+        "margin": -1364,
+        "own_min": 422,
+        "enemy_min": 1786,
+        "crowns": [
+          0,
+          0
+        ]
+      },
+      "after_clear": {
+        "margin": -1364,
+        "own_min": 422,
+        "enemy_min": 1786,
+        "crowns": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100517",
+      "outcome": "loss",
+      "end_tick": 6115,
+      "reasons": {
+        "game_over": 2,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 5990,
+          "land_tick": 6016,
+          "reason": "game_over",
+          "card": "tesla_evo"
+        },
+        {
+          "tick": 6060,
+          "land_tick": 6086,
+          "reason": "game_over",
+          "card": "skeletons"
+        },
+        {
+          "tick": 6090,
+          "land_tick": 6116,
+          "reason": "match_over_before_landing",
+          "card": "ice_wizard"
+        }
+      ],
+      "game_over_decided_before": 1,
+      "game_over_decided_after": 1,
+      "pre_end": {
+        "margin": -1073,
+        "own_min": 515,
+        "enemy_min": 1588,
+        "crowns": [
+          0,
+          0
+        ]
+      },
+      "after_clear": {
+        "margin": -1073,
+        "own_min": 515,
+        "enemy_min": 1588,
+        "crowns": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100518",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100518",
+      "outcome": "win",
+      "end_tick": 6094,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 6080,
+          "land_tick": 6106,
+          "reason": "match_over_before_landing",
+          "card": "skeletons"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": {
+        "margin": 960,
+        "own_min": 1077,
+        "enemy_min": 117,
+        "crowns": [
+          0,
+          0
+        ]
+      },
+      "after_clear": {
+        "margin": 960,
+        "own_min": 1077,
+        "enemy_min": 117,
+        "crowns": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100518",
+      "outcome": "loss",
+      "end_tick": 6075,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 6050,
+          "land_tick": 6076,
+          "reason": "match_over_before_landing",
+          "card": "tesla_evo"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": {
+        "margin": -369,
+        "own_min": 8,
+        "enemy_min": 377,
+        "crowns": [
+          0,
+          0
+        ]
+      },
+      "after_clear": {
+        "margin": -369,
+        "own_min": 8,
+        "enemy_min": 377,
+        "crowns": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100519",
+      "outcome": "loss",
+      "end_tick": 6127,
+      "reasons": {
+        "game_over": 2,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 6050,
+          "land_tick": 6076,
+          "reason": "game_over",
+          "card": "x_bow"
+        },
+        {
+          "tick": 6080,
+          "land_tick": 6106,
+          "reason": "game_over",
+          "card": "x_bow"
+        },
+        {
+          "tick": 6110,
+          "land_tick": 6136,
+          "reason": "match_over_before_landing",
+          "card": "x_bow"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 2,
+      "pre_end": {
+        "margin": -1137,
+        "own_min": 995,
+        "enemy_min": 2132,
+        "crowns": [
+          0,
+          0
+        ]
+      },
+      "after_clear": {
+        "margin": -1137,
+        "own_min": 995,
+        "enemy_min": 2132,
+        "crowns": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100519",
+      "outcome": "loss",
+      "end_tick": 6140,
+      "reasons": {
+        "game_over": 1,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 6090,
+          "land_tick": 6116,
+          "reason": "game_over",
+          "card": "x_bow"
+        },
+        {
+          "tick": 6120,
+          "land_tick": 6146,
+          "reason": "match_over_before_landing",
+          "card": "x_bow"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 1,
+      "pre_end": {
+        "margin": -639,
+        "own_min": 1459,
+        "enemy_min": 2098,
+        "crowns": [
+          0,
+          0
+        ]
+      },
+      "after_clear": {
+        "margin": -639,
+        "own_min": 1459,
+        "enemy_min": 2098,
+        "crowns": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100519",
+      "outcome": "loss",
+      "end_tick": 6123,
+      "reasons": {
+        "game_over": 1,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 6090,
+          "land_tick": 6116,
+          "reason": "game_over",
+          "card": "rocket"
+        },
+        {
+          "tick": 6120,
+          "land_tick": 6146,
+          "reason": "match_over_before_landing",
+          "card": "rocket"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 1,
+      "pre_end": {
+        "margin": -1136,
+        "own_min": 913,
+        "enemy_min": 2049,
+        "crowns": [
+          0,
+          0
+        ]
+      },
+      "after_clear": {
+        "margin": -1136,
+        "own_min": 913,
+        "enemy_min": 2049,
+        "crowns": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100520",
+      "outcome": "win",
+      "end_tick": 6126,
+      "reasons": {
+        "game_over": 1,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 6080,
+          "land_tick": 6106,
+          "reason": "game_over",
+          "card": "rocket"
+        },
+        {
+          "tick": 6110,
+          "land_tick": 6136,
+          "reason": "match_over_before_landing",
+          "card": "rocket"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 1,
+      "pre_end": {
+        "margin": 80,
+        "own_min": 1084,
+        "enemy_min": 1004,
+        "crowns": [
+          0,
+          0
+        ]
+      },
+      "after_clear": {
+        "margin": 80,
+        "own_min": 1084,
+        "enemy_min": 1004,
+        "crowns": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100520",
+      "outcome": "win",
+      "end_tick": 3926,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3920,
+          "land_tick": 3946,
+          "reason": "match_over_before_landing",
+          "card": "tesla_evo"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100520",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3590,
+          "land_tick": 3616,
+          "reason": "match_over_before_landing",
+          "card": "knight_evo"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100521",
+      "outcome": "loss",
+      "end_tick": 6135,
+      "reasons": {
+        "game_over": 2,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 6070,
+          "land_tick": 6096,
+          "reason": "game_over",
+          "card": "ice_wizard"
+        },
+        {
+          "tick": 6100,
+          "land_tick": 6126,
+          "reason": "game_over",
+          "card": "rocket"
+        },
+        {
+          "tick": 6130,
+          "land_tick": 6156,
+          "reason": "match_over_before_landing",
+          "card": "rocket"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 2,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100521",
+      "outcome": "win",
+      "end_tick": 4882,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100521",
+      "outcome": "win",
+      "end_tick": 3822,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3820,
+          "land_tick": 3846,
+          "reason": "match_over_before_landing",
+          "card": "the_log"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100522",
+      "outcome": "win",
+      "end_tick": 6122,
+      "reasons": {
+        "game_over": 2,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 6050,
+          "land_tick": 6076,
+          "reason": "game_over",
+          "card": "tesla_evo"
+        },
+        {
+          "tick": 6080,
+          "land_tick": 6106,
+          "reason": "game_over",
+          "card": "rocket"
+        },
+        {
+          "tick": 6110,
+          "land_tick": 6136,
+          "reason": "match_over_before_landing",
+          "card": "rocket"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 2,
+      "pre_end": {
+        "margin": 53,
+        "own_min": 906,
+        "enemy_min": 853,
+        "crowns": [
+          0,
+          0
+        ]
+      },
+      "after_clear": {
+        "margin": 53,
+        "own_min": 906,
+        "enemy_min": 853,
+        "crowns": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100522",
+      "outcome": "loss",
+      "end_tick": 6115,
+      "reasons": {
+        "game_over": 3,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 6000,
+          "land_tick": 6026,
+          "reason": "game_over",
+          "card": "skeletons"
+        },
+        {
+          "tick": 6050,
+          "land_tick": 6076,
+          "reason": "game_over",
+          "card": "skeletons"
+        },
+        {
+          "tick": 6080,
+          "land_tick": 6106,
+          "reason": "game_over",
+          "card": "rocket"
+        },
+        {
+          "tick": 6110,
+          "land_tick": 6136,
+          "reason": "match_over_before_landing",
+          "card": "x_bow"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 3,
+      "pre_end": {
+        "margin": -1396,
+        "own_min": 420,
+        "enemy_min": 1816,
+        "crowns": [
+          0,
+          0
+        ]
+      },
+      "after_clear": {
+        "margin": -1396,
+        "own_min": 420,
+        "enemy_min": 1816,
+        "crowns": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100522",
+      "outcome": "loss",
+      "end_tick": 4351,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 4330,
+          "land_tick": 4356,
+          "reason": "match_over_before_landing",
+          "card": "the_log"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100523",
+      "outcome": "loss",
+      "end_tick": 3656,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100523",
+      "outcome": "loss",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100523",
+      "outcome": "loss",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100524",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100524",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3580,
+          "land_tick": 3606,
+          "reason": "match_over_before_landing",
+          "card": "ice_wizard"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100524",
+      "outcome": "loss",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100525",
+      "outcome": "loss",
+      "end_tick": 4378,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100525",
+      "outcome": "loss",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100525",
+      "outcome": "loss",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100526",
+      "outcome": "loss",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100526",
+      "outcome": "win",
+      "end_tick": 4726,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100526",
+      "outcome": "win",
+      "end_tick": 4726,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100527",
+      "outcome": "win",
+      "end_tick": 6090,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": {
+        "margin": 2013,
+        "own_min": 2090,
+        "enemy_min": 77,
+        "crowns": [
+          0,
+          0
+        ]
+      },
+      "after_clear": {
+        "margin": 2013,
+        "own_min": 2090,
+        "enemy_min": 77,
+        "crowns": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100527",
+      "outcome": "win",
+      "end_tick": 4139,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 4120,
+          "land_tick": 4146,
+          "reason": "match_over_before_landing",
+          "card": "tesla_evo"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100527",
+      "outcome": "loss",
+      "end_tick": 5823,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 5800,
+          "land_tick": 5826,
+          "reason": "match_over_before_landing",
+          "card": "tornado"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100528",
+      "outcome": "loss",
+      "end_tick": 3357,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100528",
+      "outcome": "loss",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100528",
+      "outcome": "loss",
+      "end_tick": 3271,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3270,
+          "land_tick": 3296,
+          "reason": "match_over_before_landing",
+          "card": "tesla_evo"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100529",
+      "outcome": "win",
+      "end_tick": 5620,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100529",
+      "outcome": "win",
+      "end_tick": 4498,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100529",
+      "outcome": "loss",
+      "end_tick": 6147,
+      "reasons": {
+        "game_over": 2,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 6080,
+          "land_tick": 6106,
+          "reason": "game_over",
+          "card": "skeletons"
+        },
+        {
+          "tick": 6110,
+          "land_tick": 6136,
+          "reason": "game_over",
+          "card": "x_bow"
+        },
+        {
+          "tick": 6140,
+          "land_tick": 6166,
+          "reason": "match_over_before_landing",
+          "card": "x_bow"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 2,
+      "pre_end": {
+        "margin": -228,
+        "own_min": 1888,
+        "enemy_min": 2116,
+        "crowns": [
+          0,
+          0
+        ]
+      },
+      "after_clear": {
+        "margin": -228,
+        "own_min": 1888,
+        "enemy_min": 2116,
+        "crowns": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100530",
+      "outcome": "win",
+      "end_tick": 4374,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 4360,
+          "land_tick": 4386,
+          "reason": "match_over_before_landing",
+          "card": "ice_wizard"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100530",
+      "outcome": "loss",
+      "end_tick": 5949,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 5930,
+          "land_tick": 5956,
+          "reason": "match_over_before_landing",
+          "card": "ice_wizard"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100530",
+      "outcome": "loss",
+      "end_tick": 3600,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3590,
+          "land_tick": 3616,
+          "reason": "match_over_before_landing",
+          "card": "the_log"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100531",
+      "outcome": "loss",
+      "end_tick": 4769,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 4750,
+          "land_tick": 4776,
+          "reason": "match_over_before_landing",
+          "card": "knight_evo"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100531",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100531",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100500",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100500",
+      "outcome": "win",
+      "end_tick": 4092,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100500",
+      "outcome": "win",
+      "end_tick": 4092,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100501",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100501",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3590,
+          "land_tick": 3616,
+          "reason": "match_over_before_landing",
+          "card": "ice_wizard"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100501",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3590,
+          "land_tick": 3616,
+          "reason": "match_over_before_landing",
+          "card": "ice_wizard"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100502",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3590,
+          "land_tick": 3616,
+          "reason": "match_over_before_landing",
+          "card": "skeletons"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100502",
+      "outcome": "loss",
+      "end_tick": 4176,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 4150,
+          "land_tick": 4176,
+          "reason": "match_over_before_landing",
+          "card": "skeletons"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100502",
+      "outcome": "loss",
+      "end_tick": 4176,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 4150,
+          "land_tick": 4176,
+          "reason": "match_over_before_landing",
+          "card": "skeletons"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100503",
+      "outcome": "win",
+      "end_tick": 5782,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100503",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100503",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3590,
+          "land_tick": 3616,
+          "reason": "match_over_before_landing",
+          "card": "x_bow"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100504",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100504",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100504",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100505",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100505",
+      "outcome": "loss",
+      "end_tick": 4642,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100505",
+      "outcome": "loss",
+      "end_tick": 5402,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100506",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100506",
+      "outcome": "loss",
+      "end_tick": 4038,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100506",
+      "outcome": "win",
+      "end_tick": 3806,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100507",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100507",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100507",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100508",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100508",
+      "outcome": "win",
+      "end_tick": 6152,
+      "reasons": {
+        "game_over": 5,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 5990,
+          "land_tick": 6016,
+          "reason": "game_over",
+          "card": "skeletons"
+        },
+        {
+          "tick": 6020,
+          "land_tick": 6046,
+          "reason": "game_over",
+          "card": "skeletons"
+        },
+        {
+          "tick": 6050,
+          "land_tick": 6076,
+          "reason": "game_over",
+          "card": "skeletons"
+        },
+        {
+          "tick": 6080,
+          "land_tick": 6106,
+          "reason": "game_over",
+          "card": "rocket"
+        },
+        {
+          "tick": 6110,
+          "land_tick": 6136,
+          "reason": "game_over",
+          "card": "rocket"
+        },
+        {
+          "tick": 6140,
+          "land_tick": 6166,
+          "reason": "match_over_before_landing",
+          "card": "rocket"
+        }
+      ],
+      "game_over_decided_before": 1,
+      "game_over_decided_after": 4,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100508",
+      "outcome": "win",
+      "end_tick": 6119,
+      "reasons": {
+        "out_of_territory": 1,
+        "game_over": 4,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 5810,
+          "land_tick": 5836,
+          "reason": "out_of_territory",
+          "card": "knight_evo"
+        },
+        {
+          "tick": 5990,
+          "land_tick": 6016,
+          "reason": "game_over",
+          "card": "ice_wizard"
+        },
+        {
+          "tick": 6020,
+          "land_tick": 6046,
+          "reason": "game_over",
+          "card": "ice_wizard"
+        },
+        {
+          "tick": 6050,
+          "land_tick": 6076,
+          "reason": "game_over",
+          "card": "rocket"
+        },
+        {
+          "tick": 6080,
+          "land_tick": 6106,
+          "reason": "game_over",
+          "card": "rocket"
+        },
+        {
+          "tick": 6110,
+          "land_tick": 6136,
+          "reason": "match_over_before_landing",
+          "card": "rocket"
+        }
+      ],
+      "game_over_decided_before": 1,
+      "game_over_decided_after": 3,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100509",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100509",
+      "outcome": "win",
+      "end_tick": 5350,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100509",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3580,
+          "land_tick": 3606,
+          "reason": "match_over_before_landing",
+          "card": "ice_wizard"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100510",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100510",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100510",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100511",
+      "outcome": "win",
+      "end_tick": 4250,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100511",
+      "outcome": "win",
+      "end_tick": 4154,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100511",
+      "outcome": "win",
+      "end_tick": 4532,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 4530,
+          "land_tick": 4556,
+          "reason": "match_over_before_landing",
+          "card": "the_log"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100512",
+      "outcome": "win",
+      "end_tick": 4378,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100512",
+      "outcome": "win",
+      "end_tick": 3959,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100512",
+      "outcome": "win",
+      "end_tick": 4545,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 4530,
+          "land_tick": 4556,
+          "reason": "match_over_before_landing",
+          "card": "skeletons"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100513",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100513",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100513",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100514",
+      "outcome": "win",
+      "end_tick": 6137,
+      "reasons": {
+        "game_over": 2
+      },
+      "rejected": [
+        {
+          "tick": 6080,
+          "land_tick": 6106,
+          "reason": "game_over",
+          "card": "rocket"
+        },
+        {
+          "tick": 6110,
+          "land_tick": 6136,
+          "reason": "game_over",
+          "card": "x_bow"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 2,
+      "pre_end": {
+        "margin": 609,
+        "own_min": 2320,
+        "enemy_min": 1711,
+        "crowns": [
+          0,
+          0
+        ]
+      },
+      "after_clear": {
+        "margin": 609,
+        "own_min": 2320,
+        "enemy_min": 1711,
+        "crowns": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100514",
+      "outcome": "win",
+      "end_tick": 5381,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 5370,
+          "land_tick": 5396,
+          "reason": "match_over_before_landing",
+          "card": "knight_evo"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100514",
+      "outcome": "win",
+      "end_tick": 5381,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 5370,
+          "land_tick": 5396,
+          "reason": "match_over_before_landing",
+          "card": "knight_evo"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100515",
+      "outcome": "win",
+      "end_tick": 3698,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3680,
+          "land_tick": 3706,
+          "reason": "match_over_before_landing",
+          "card": "skeletons"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100515",
+      "outcome": "win",
+      "end_tick": 5833,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 5830,
+          "land_tick": 5856,
+          "reason": "match_over_before_landing",
+          "card": "tornado"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100515",
+      "outcome": "win",
+      "end_tick": 5833,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 5830,
+          "land_tick": 5856,
+          "reason": "match_over_before_landing",
+          "card": "tornado"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100516",
+      "outcome": "win",
+      "end_tick": 4041,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100516",
+      "outcome": "win",
+      "end_tick": 5422,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 5400,
+          "land_tick": 5426,
+          "reason": "match_over_before_landing",
+          "card": "the_log"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100516",
+      "outcome": "loss",
+      "end_tick": 6100,
+      "reasons": {
+        "game_over": 1,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 6050,
+          "land_tick": 6076,
+          "reason": "game_over",
+          "card": "tornado"
+        },
+        {
+          "tick": 6080,
+          "land_tick": 6106,
+          "reason": "match_over_before_landing",
+          "card": "rocket"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 1,
+      "pre_end": {
+        "margin": -776,
+        "own_min": 195,
+        "enemy_min": 971,
+        "crowns": [
+          0,
+          0
+        ]
+      },
+      "after_clear": {
+        "margin": -776,
+        "own_min": 195,
+        "enemy_min": 971,
+        "crowns": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100517",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100517",
+      "outcome": "win",
+      "end_tick": 4299,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 4280,
+          "land_tick": 4306,
+          "reason": "match_over_before_landing",
+          "card": "tesla_evo"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100517",
+      "outcome": "win",
+      "end_tick": 4299,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 4280,
+          "land_tick": 4306,
+          "reason": "match_over_before_landing",
+          "card": "tesla_evo"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100518",
+      "outcome": "loss",
+      "end_tick": 5756,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 5750,
+          "land_tick": 5776,
+          "reason": "match_over_before_landing",
+          "card": "skeletons"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100518",
+      "outcome": "win",
+      "end_tick": 5663,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 5660,
+          "land_tick": 5686,
+          "reason": "match_over_before_landing",
+          "card": "skeletons"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100518",
+      "outcome": "win",
+      "end_tick": 5620,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100519",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100519",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3580,
+          "land_tick": 3606,
+          "reason": "match_over_before_landing",
+          "card": "ice_wizard"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100519",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3580,
+          "land_tick": 3606,
+          "reason": "match_over_before_landing",
+          "card": "ice_wizard"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100520",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100520",
+      "outcome": "win",
+      "end_tick": 5553,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100520",
+      "outcome": "win",
+      "end_tick": 5553,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100521",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3590,
+          "land_tick": 3616,
+          "reason": "match_over_before_landing",
+          "card": "knight_evo"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100521",
+      "outcome": "win",
+      "end_tick": 5592,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 5570,
+          "land_tick": 5596,
+          "reason": "match_over_before_landing",
+          "card": "knight_evo"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100521",
+      "outcome": "win",
+      "end_tick": 6160,
+      "reasons": {
+        "game_over": 5,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 5990,
+          "land_tick": 6016,
+          "reason": "game_over",
+          "card": "ice_wizard"
+        },
+        {
+          "tick": 6020,
+          "land_tick": 6046,
+          "reason": "game_over",
+          "card": "ice_wizard"
+        },
+        {
+          "tick": 6050,
+          "land_tick": 6076,
+          "reason": "game_over",
+          "card": "ice_wizard"
+        },
+        {
+          "tick": 6080,
+          "land_tick": 6106,
+          "reason": "game_over",
+          "card": "rocket"
+        },
+        {
+          "tick": 6110,
+          "land_tick": 6136,
+          "reason": "game_over",
+          "card": "rocket"
+        },
+        {
+          "tick": 6140,
+          "land_tick": 6166,
+          "reason": "match_over_before_landing",
+          "card": "rocket"
+        }
+      ],
+      "game_over_decided_before": 1,
+      "game_over_decided_after": 4,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100522",
+      "outcome": "loss",
+      "end_tick": 4793,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100522",
+      "outcome": "win",
+      "end_tick": 5090,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100522",
+      "outcome": "win",
+      "end_tick": 6091,
+      "reasons": {
+        "game_over": 3,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 5990,
+          "land_tick": 6016,
+          "reason": "game_over",
+          "card": "ice_wizard"
+        },
+        {
+          "tick": 6020,
+          "land_tick": 6046,
+          "reason": "game_over",
+          "card": "ice_wizard"
+        },
+        {
+          "tick": 6050,
+          "land_tick": 6076,
+          "reason": "game_over",
+          "card": "ice_wizard"
+        },
+        {
+          "tick": 6080,
+          "land_tick": 6106,
+          "reason": "match_over_before_landing",
+          "card": "rocket"
+        }
+      ],
+      "game_over_decided_before": 1,
+      "game_over_decided_after": 2,
+      "pre_end": {
+        "margin": 1522,
+        "own_min": 1663,
+        "enemy_min": 141,
+        "crowns": [
+          0,
+          0
+        ]
+      },
+      "after_clear": {
+        "margin": 1522,
+        "own_min": 1663,
+        "enemy_min": 141,
+        "crowns": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100523",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3590,
+          "land_tick": 3616,
+          "reason": "match_over_before_landing",
+          "card": "ice_wizard"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100523",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100523",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100524",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3580,
+          "land_tick": 3606,
+          "reason": "match_over_before_landing",
+          "card": "tornado"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100524",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3590,
+          "land_tick": 3616,
+          "reason": "match_over_before_landing",
+          "card": "skeletons"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100524",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3590,
+          "land_tick": 3616,
+          "reason": "match_over_before_landing",
+          "card": "skeletons"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100525",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100525",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100525",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100526",
+      "outcome": "win",
+      "end_tick": 3996,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100526",
+      "outcome": "win",
+      "end_tick": 4427,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100526",
+      "outcome": "win",
+      "end_tick": 4427,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100527",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100527",
+      "outcome": "win",
+      "end_tick": 3761,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3750,
+          "land_tick": 3776,
+          "reason": "match_over_before_landing",
+          "card": "knight_evo"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100527",
+      "outcome": "win",
+      "end_tick": 3761,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3750,
+          "land_tick": 3776,
+          "reason": "match_over_before_landing",
+          "card": "knight_evo"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100528",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 3580,
+          "land_tick": 3606,
+          "reason": "match_over_before_landing",
+          "card": "knight_evo"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100528",
+      "outcome": "loss",
+      "end_tick": 4251,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 4250,
+          "land_tick": 4276,
+          "reason": "match_over_before_landing",
+          "card": "tesla_evo"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100528",
+      "outcome": "loss",
+      "end_tick": 4251,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 4250,
+          "land_tick": 4276,
+          "reason": "match_over_before_landing",
+          "card": "tesla_evo"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100529",
+      "outcome": "win",
+      "end_tick": 4935,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100529",
+      "outcome": "win",
+      "end_tick": 6121,
+      "reasons": {
+        "game_over": 3,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 6020,
+          "land_tick": 6046,
+          "reason": "game_over",
+          "card": "ice_wizard"
+        },
+        {
+          "tick": 6050,
+          "land_tick": 6076,
+          "reason": "game_over",
+          "card": "ice_wizard"
+        },
+        {
+          "tick": 6080,
+          "land_tick": 6106,
+          "reason": "game_over",
+          "card": "rocket"
+        },
+        {
+          "tick": 6110,
+          "land_tick": 6136,
+          "reason": "match_over_before_landing",
+          "card": "rocket"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 3,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100529",
+      "outcome": "win",
+      "end_tick": 6149,
+      "reasons": {
+        "game_over": 4,
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 6010,
+          "land_tick": 6036,
+          "reason": "game_over",
+          "card": "ice_wizard"
+        },
+        {
+          "tick": 6040,
+          "land_tick": 6066,
+          "reason": "game_over",
+          "card": "ice_wizard"
+        },
+        {
+          "tick": 6070,
+          "land_tick": 6096,
+          "reason": "game_over",
+          "card": "rocket"
+        },
+        {
+          "tick": 6100,
+          "land_tick": 6126,
+          "reason": "game_over",
+          "card": "rocket"
+        },
+        {
+          "tick": 6130,
+          "land_tick": 6156,
+          "reason": "match_over_before_landing",
+          "card": "rocket"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 4,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100530",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100530",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100530",
+      "outcome": "win",
+      "end_tick": 3600,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100531",
+      "outcome": "win",
+      "end_tick": 4677,
+      "reasons": {
+        "match_over_before_landing": 1
+      },
+      "rejected": [
+        {
+          "tick": 4670,
+          "land_tick": 4696,
+          "reason": "match_over_before_landing",
+          "card": "skeletons"
+        }
+      ],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100531",
+      "outcome": "win",
+      "end_tick": 3933,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100531",
+      "outcome": "win",
+      "end_tick": 3933,
+      "reasons": {},
+      "rejected": [],
+      "game_over_decided_before": 0,
+      "game_over_decided_after": 0,
+      "pre_end": null,
+      "after_clear": null
+    }
+  ],
+  "pairs": [
+    {
+      "first_tick": null,
+      "frames_equal_before": null,
+      "commands_v5": [],
+      "commands_v6": [],
+      "different_roles": [],
+      "tag": "l72-development-gameplay1:gen:2026100500",
+      "v5_outcome": "loss",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": 3426,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          1,
+          "IceWizard",
+          9500,
+          21500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          1,
+          "IceWizard",
+          17500,
+          20500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:gen:2026100501",
+      "v5_outcome": "loss",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": null,
+      "frames_equal_before": null,
+      "commands_v5": [],
+      "commands_v6": [],
+      "different_roles": [],
+      "tag": "l72-development-gameplay1:gen:2026100502",
+      "v5_outcome": "loss",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": null,
+      "frames_equal_before": null,
+      "commands_v5": [],
+      "commands_v6": [],
+      "different_roles": [],
+      "tag": "l72-development-gameplay1:gen:2026100503",
+      "v5_outcome": "loss",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": 5666,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          0,
+          "Tornado",
+          3500,
+          17500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          0,
+          "Tornado",
+          4500,
+          19500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:gen:2026100504",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": 2366,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          1,
+          "Log",
+          3500,
+          17500,
+          false
+        ]
+      ],
+      "commands_v6": [],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:gen:2026100505",
+      "v5_outcome": "loss",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": null,
+      "frames_equal_before": null,
+      "commands_v5": [],
+      "commands_v6": [],
+      "different_roles": [],
+      "tag": "l72-development-gameplay1:gen:2026100506",
+      "v5_outcome": "loss",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": null,
+      "frames_equal_before": null,
+      "commands_v5": [],
+      "commands_v6": [],
+      "different_roles": [],
+      "tag": "l72-development-gameplay1:gen:2026100507",
+      "v5_outcome": "loss",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": 1776,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          0,
+          "Skeletons",
+          10500,
+          8500,
+          false
+        ]
+      ],
+      "commands_v6": [],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:gen:2026100508",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": 3706,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          1,
+          "Skeletons",
+          14500,
+          27500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          1,
+          "Skeletons",
+          16500,
+          26500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:gen:2026100509",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": null,
+      "frames_equal_before": null,
+      "commands_v5": [],
+      "commands_v6": [],
+      "different_roles": [],
+      "tag": "l72-development-gameplay1:gen:2026100510",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": null,
+      "frames_equal_before": null,
+      "commands_v5": [],
+      "commands_v6": [],
+      "different_roles": [],
+      "tag": "l72-development-gameplay1:gen:2026100511",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": 2466,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          0,
+          "Skeletons",
+          3500,
+          4500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          0,
+          "Skeletons",
+          14500,
+          4500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:gen:2026100512",
+      "v5_outcome": "loss",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": null,
+      "frames_equal_before": null,
+      "commands_v5": [],
+      "commands_v6": [],
+      "different_roles": [],
+      "tag": "l72-development-gameplay1:gen:2026100513",
+      "v5_outcome": "loss",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": 1626,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          0,
+          "Skeletons",
+          3500,
+          14500,
+          false
+        ]
+      ],
+      "commands_v6": [],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:gen:2026100514",
+      "v5_outcome": "loss",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": 3096,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          1,
+          "Knight",
+          13500,
+          17500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          1,
+          "Knight",
+          15500,
+          17500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:gen:2026100515",
+      "v5_outcome": "loss",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": 306,
+      "frames_equal_before": true,
+      "commands_v5": [],
+      "commands_v6": [
+        [
+          0,
+          "Log",
+          14500,
+          14500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:gen:2026100516",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": 2606,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          0,
+          "BarbLog",
+          14500,
+          14500,
+          false
+        ],
+        [
+          1,
+          "Knight",
+          13500,
+          17500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          0,
+          "BarbLog",
+          14500,
+          14500,
+          false
+        ],
+        [
+          1,
+          "Knight",
+          15500,
+          17500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:gen:2026100517",
+      "v5_outcome": "loss",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": 4346,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          0,
+          "Tesla",
+          9000,
+          14000,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          0,
+          "Skeletons",
+          7500,
+          14500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:gen:2026100518",
+      "v5_outcome": "win",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": 1616,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          1,
+          "Knight",
+          16500,
+          17500,
+          false
+        ]
+      ],
+      "commands_v6": [],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:gen:2026100519",
+      "v5_outcome": "loss",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": 1996,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          0,
+          "Tesla",
+          9000,
+          10000,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          0,
+          "Tesla",
+          9000,
+          11000,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:gen:2026100520",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": 3186,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          1,
+          "Xbow",
+          2500,
+          19500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          1,
+          "Xbow",
+          15500,
+          19500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:gen:2026100521",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": 636,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          0,
+          "IceWizard",
+          500,
+          8500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          0,
+          "IceWizard",
+          1500,
+          14500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:gen:2026100522",
+      "v5_outcome": "loss",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": 3506,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          1,
+          "Tesla",
+          9000,
+          21000,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          1,
+          "Tesla",
+          9000,
+          22000,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:gen:2026100523",
+      "v5_outcome": "loss",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": 1186,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          0,
+          "Skeletons",
+          1500,
+          14500,
+          false
+        ]
+      ],
+      "commands_v6": [],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:gen:2026100524",
+      "v5_outcome": "win",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": null,
+      "frames_equal_before": null,
+      "commands_v5": [],
+      "commands_v6": [],
+      "different_roles": [],
+      "tag": "l72-development-gameplay1:gen:2026100525",
+      "v5_outcome": "loss",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": null,
+      "frames_equal_before": null,
+      "commands_v5": [],
+      "commands_v6": [],
+      "different_roles": [],
+      "tag": "l72-development-gameplay1:gen:2026100526",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": 1536,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          1,
+          "IceWizard",
+          8500,
+          24500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          1,
+          "IceWizard",
+          13500,
+          20500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:gen:2026100527",
+      "v5_outcome": "win",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": 1366,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          0,
+          "Knight",
+          15500,
+          14500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          0,
+          "Knight",
+          13500,
+          14500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:gen:2026100528",
+      "v5_outcome": "loss",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": 2206,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          1,
+          "Tornado",
+          13500,
+          15500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          1,
+          "Tornado",
+          13500,
+          12500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:gen:2026100529",
+      "v5_outcome": "win",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": 2286,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          0,
+          "Knight",
+          7500,
+          14500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          0,
+          "Knight",
+          7500,
+          12500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:gen:2026100530",
+      "v5_outcome": "loss",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": 3076,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          1,
+          "Log",
+          4500,
+          20500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          1,
+          "Log",
+          6500,
+          21500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:gen:2026100531",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": 1526,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          0,
+          "Knight",
+          9500,
+          10500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          0,
+          "Knight",
+          8500,
+          10500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:s1:2026100500",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": null,
+      "frames_equal_before": null,
+      "commands_v5": [],
+      "commands_v6": [],
+      "different_roles": [],
+      "tag": "l72-development-gameplay1:s1:2026100501",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": 3446,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          0,
+          "Skeletons",
+          4500,
+          14500,
+          false
+        ],
+        [
+          1,
+          "Skeletons",
+          3500,
+          17500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          1,
+          "Skeletons",
+          3500,
+          17500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:s1:2026100502",
+      "v5_outcome": "loss",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": 476,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          1,
+          "Skeletons",
+          4500,
+          17500,
+          false
+        ]
+      ],
+      "commands_v6": [],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:s1:2026100503",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": null,
+      "frames_equal_before": null,
+      "commands_v5": [],
+      "commands_v6": [],
+      "different_roles": [],
+      "tag": "l72-development-gameplay1:s1:2026100504",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": 4316,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          1,
+          "Tornado",
+          4500,
+          11500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          1,
+          "Tornado",
+          3500,
+          9500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:s1:2026100505",
+      "v5_outcome": "loss",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": 3316,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          0,
+          "Knight",
+          16500,
+          14500,
+          false
+        ]
+      ],
+      "commands_v6": [],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:s1:2026100506",
+      "v5_outcome": "loss",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": 3326,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          1,
+          "Xbow",
+          2500,
+          19500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          1,
+          "Xbow",
+          15500,
+          19500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:s1:2026100507",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": 3126,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          0,
+          "Knight",
+          4500,
+          14500,
+          false
+        ],
+        [
+          1,
+          "Knight",
+          3500,
+          11500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          0,
+          "Knight",
+          2500,
+          14500,
+          false
+        ],
+        [
+          1,
+          "Knight",
+          3500,
+          11500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:s1:2026100508",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": 1006,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          1,
+          "Knight",
+          14500,
+          17500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          1,
+          "Knight",
+          13500,
+          17500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:s1:2026100509",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": null,
+      "frames_equal_before": null,
+      "commands_v5": [],
+      "commands_v6": [],
+      "different_roles": [],
+      "tag": "l72-development-gameplay1:s1:2026100510",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": 2316,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          1,
+          "IceWizard",
+          16500,
+          17500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          1,
+          "IceWizard",
+          17500,
+          18500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:s1:2026100511",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": 656,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          0,
+          "Tornado",
+          4500,
+          20500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          0,
+          "Tornado",
+          8500,
+          25500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:s1:2026100512",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": null,
+      "frames_equal_before": null,
+      "commands_v5": [],
+      "commands_v6": [],
+      "different_roles": [],
+      "tag": "l72-development-gameplay1:s1:2026100513",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": null,
+      "frames_equal_before": null,
+      "commands_v5": [],
+      "commands_v6": [],
+      "different_roles": [],
+      "tag": "l72-development-gameplay1:s1:2026100514",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": 5766,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          1,
+          "Skeletons",
+          1500,
+          17500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          1,
+          "Skeletons",
+          500,
+          18500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:s1:2026100515",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": 3246,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          0,
+          "Tesla",
+          9000,
+          14000,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          0,
+          "Xbow",
+          2500,
+          12500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:s1:2026100516",
+      "v5_outcome": "win",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": null,
+      "frames_equal_before": null,
+      "commands_v5": [],
+      "commands_v6": [],
+      "different_roles": [],
+      "tag": "l72-development-gameplay1:s1:2026100517",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": 4976,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          0,
+          "Log",
+          7500,
+          14500,
+          false
+        ],
+        [
+          1,
+          "Log",
+          4500,
+          17500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          0,
+          "Log",
+          9500,
+          14500,
+          false
+        ],
+        [
+          1,
+          "Log",
+          4500,
+          17500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:s1:2026100518",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": null,
+      "frames_equal_before": null,
+      "commands_v5": [],
+      "commands_v6": [],
+      "different_roles": [],
+      "tag": "l72-development-gameplay1:s1:2026100519",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": null,
+      "frames_equal_before": null,
+      "commands_v5": [],
+      "commands_v6": [],
+      "different_roles": [],
+      "tag": "l72-development-gameplay1:s1:2026100520",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": 3946,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          1,
+          "Tornado",
+          4500,
+          9500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          1,
+          "Tornado",
+          13500,
+          11500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:s1:2026100521",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": 796,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          0,
+          "IceWizard",
+          16500,
+          14500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          0,
+          "IceWizard",
+          15500,
+          14500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:s1:2026100522",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": null,
+      "frames_equal_before": null,
+      "commands_v5": [],
+      "commands_v6": [],
+      "different_roles": [],
+      "tag": "l72-development-gameplay1:s1:2026100523",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": null,
+      "frames_equal_before": null,
+      "commands_v5": [],
+      "commands_v6": [],
+      "different_roles": [],
+      "tag": "l72-development-gameplay1:s1:2026100524",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": 2656,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          1,
+          "Knight",
+          2500,
+          17500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          1,
+          "Knight",
+          4500,
+          17500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:s1:2026100525",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": 4316,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          0,
+          "Knight",
+          3500,
+          14500,
+          false
+        ],
+        [
+          1,
+          "Knight",
+          3500,
+          17500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          0,
+          "Knight",
+          1500,
+          14500,
+          false
+        ],
+        [
+          1,
+          "Knight",
+          3500,
+          17500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:s1:2026100526",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": null,
+      "frames_equal_before": null,
+      "commands_v5": [],
+      "commands_v6": [],
+      "different_roles": [],
+      "tag": "l72-development-gameplay1:s1:2026100527",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": 3626,
+      "frames_equal_before": true,
+      "commands_v5": [
+        [
+          0,
+          "Skeletons",
+          1500,
+          14500,
+          false
+        ]
+      ],
+      "commands_v6": [
+        [
+          0,
+          "Skeletons",
+          500,
+          13500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:s1:2026100528",
+      "v5_outcome": "loss",
+      "v6_outcome": "loss"
+    },
+    {
+      "first_tick": 3206,
+      "frames_equal_before": true,
+      "commands_v5": [],
+      "commands_v6": [
+        [
+          1,
+          "Skeletons",
+          3500,
+          17500,
+          false
+        ]
+      ],
+      "different_roles": [
+        "learner"
+      ],
+      "tag": "l72-development-gameplay1:s1:2026100529",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": null,
+      "frames_equal_before": null,
+      "commands_v5": [],
+      "commands_v6": [],
+      "different_roles": [],
+      "tag": "l72-development-gameplay1:s1:2026100530",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    },
+    {
+      "first_tick": null,
+      "frames_equal_before": null,
+      "commands_v5": [],
+      "commands_v6": [],
+      "different_roles": [],
+      "tag": "l72-development-gameplay1:s1:2026100531",
+      "v5_outcome": "win",
+      "v6_outcome": "win"
+    }
+  ],
+  "totals": {
+    "r1e": {
+      "games": 64,
+      "reached6000": 8,
+      "game_over_decided_before": 1,
+      "game_over_decided_after": 12,
+      "game_over": 13,
+      "match_over_before_landing": 20,
+      "after_clear_known": 6,
+      "after_clear_win": 5,
+      "after_clear_ahead": 5,
+      "after_clear_sign_matches_winner": 6,
+      "out_of_territory": 1,
+      "after_clear_loss": 1,
+      "after_clear_behind": 1
+    },
+    "ordinary_v5": {
+      "games": 64,
+      "reached6000": 10,
+      "game_over_decided_before": 3,
+      "game_over_decided_after": 18,
+      "match_over_before_landing": 27,
+      "game_over": 21,
+      "after_clear_known": 8,
+      "after_clear_win": 3,
+      "after_clear_ahead": 3,
+      "after_clear_sign_matches_winner": 8,
+      "after_clear_loss": 5,
+      "after_clear_behind": 5
+    },
+    "ordinary_v6": {
+      "games": 64,
+      "reached6000": 12,
+      "game_over_decided_before": 6,
+      "game_over_decided_after": 25,
+      "match_over_before_landing": 35,
+      "game_over": 31,
+      "after_clear_known": 9,
+      "after_clear_win": 4,
+      "after_clear_ahead": 4,
+      "after_clear_sign_matches_winner": 9,
+      "after_clear_loss": 5,
+      "after_clear_behind": 5,
+      "out_of_territory": 1
+    }
+  },
+  "pair_counts": {
+    "pairs": 64,
+    "no_command_difference": 23,
+    "different": 41,
+    "equal_prior_frames": 41,
+    "first_roles_learner": 41
+  },
+  "first_learner_cards": {
+    "('IceWizard',) -> ('IceWizard',)": 5,
+    "('Tornado',) -> ('Tornado',)": 5,
+    "('Log',) -> ()": 1,
+    "('Skeletons',) -> ()": 5,
+    "('Skeletons',) -> ('Skeletons',)": 4,
+    "('Knight',) -> ('Knight',)": 9,
+    "() -> ('Log',)": 1,
+    "('Tesla',) -> ('Skeletons',)": 1,
+    "('Knight',) -> ()": 2,
+    "('Tesla',) -> ('Tesla',)": 2,
+    "('Xbow',) -> ('Xbow',)": 2,
+    "('Log',) -> ('Log',)": 2,
+    "('Tesla',) -> ('Xbow',)": 1,
+    "() -> ('Skeletons',)": 1
+  },
+  "developmental_only": true,
+  "deployment_accepted": false
+}

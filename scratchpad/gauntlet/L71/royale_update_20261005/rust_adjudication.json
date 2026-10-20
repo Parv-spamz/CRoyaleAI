@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "exit_code": 101,
+  "output_sha256": "2656924c25a004b3a0bb53136e75d0825a139cfd8bc66b16fbaa4d1d6630d512",
+  "runtime_manifest_sha256": "eb455896367d94107dbf3fd35ffc8f01de097a1ac2c3beebdca00445b2f45903",
+  "parsed_test_summaries": 278,
+  "executed_test_totals": {
+    "passed": 1541,
+    "failed": 0,
+    "ignored": 3,
+    "measured": 0,
+    "filtered": 0
+  },
+  "blocked_targets": [
+    "corpse_switch_reach",
+    "curse",
+    "death_spawn_at_emission",
+    "doomed_lane_tower",
+    "evo_battle_ram",
+    "evo_dart_goblin",
+    "first_step_dying_contact",
+    "ghost_pair_first_frame",
+    "hero_barbarian_barrel",
+    "knocked_doomed_avoidance",
+    "line_frame",
+    "relocation_ties",
+    "retarget_wait_arms",
+    "unit_refs",
+    "variant_card",
+    "warp_hiding"
+  ],
+  "blocked_target_count": 16,
+  "blocked_reason": "Windows Application Control, OS error 4551; never executed",
+  "ignored_test_lines": [
+    "test throughput_brawl_20_to_40_entities ... ignored, timing; run with --release -- --ignored --nocapture",
+    "test throughput_scripted_battle ... ignored, timing; run with --release -- --ignored --nocapture",
+    "test throughput_scripted_battle_with_spells ... ignored, timing; run with --release -- --ignored --nocapture"
+  ],
+  "all_tests_passed": false,
+  "runtime_acceptance_complete": false,
+  "security_policy_changed": false,
+  "blocked_binaries_reexecuted": false
+}

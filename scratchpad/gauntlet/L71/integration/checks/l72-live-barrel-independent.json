@@ -1,0 +1,13 @@
+{
+  "command": [
+    ".\\icebow\\.venv\\Scripts\\python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/verify_live_barrel_landings.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "LIVE_BARREL_LANDINGS_INDEPENDENTLY_VERIFIED",
+  "matched": true,
+  "output_sha256": "76834b93edacbe5d6de2e0995c636f70737a081985ed9d995ddcd4773cb66492",
+  "seconds": 0.952986478805542
+}

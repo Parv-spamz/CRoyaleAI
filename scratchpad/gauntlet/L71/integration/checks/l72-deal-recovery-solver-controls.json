@@ -1,0 +1,14 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/deal_recovery/solver.py",
+    "--self-test"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "DEAL_RECOVERY_SOLVER_CONTROLS_PASS",
+  "matched": true,
+  "output_sha256": "eddad82b34e39eed006bd093d23ec38a810f9fdd057f7ba005e2dd759479f142",
+  "seconds": 0.15422964096069336
+}

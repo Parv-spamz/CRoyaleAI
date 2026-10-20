@@ -1,0 +1,8 @@
+
+running 3 tests
+test a_tie_on_a_tile_edge_is_seen_from_the_tap ... ok
+test the_client_arm_ties_in_the_arena_order ... ok
+test the_shipped_arm_mirrors_the_seats ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+

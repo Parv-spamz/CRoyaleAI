@@ -1,0 +1,62 @@
+{
+  "complete": true,
+  "selected": 10,
+  "commands_verified": 990,
+  "repeat_count": 10,
+  "jobs_path": "C:\\Users\\benpe\\ClashBot\\icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\jobs.json",
+  "jobs_sha256": "2559d0a8ce5300d0e653b0d70bfe1268868c4609f938cc614d4f6f01df92c495",
+  "csv_hashes": {
+    "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\crawl\\2b117f8ee53347bdb164c32d02d65c98\\plays_ext.csv": "6502feed2be66082af4840e6e1ecd0c1e2badb579058886fd16cd0a190c6229a",
+    "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\crawl\\2b117f8ee53347bdb164c32d02d65c98\\battles.csv": "085b0adfdaa6ad92a11bf38a93cdf3610cb76f533a24d9e597deabd09f27b30b",
+    "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\crawl\\2ecbb87db5924ebcb3f6e94728506b12\\plays_ext.csv": "bafc9c5d3b697bed0c1061a4352c3e43930d7c4d7656586108ffb3b53c4030ae",
+    "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\crawl\\2ecbb87db5924ebcb3f6e94728506b12\\battles.csv": "eb580a3165425dcee1ee2346fbf04ef109bb8f22603a70626a5f0ee7ad1558a6",
+    "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\crawl\\4717f22bf06841ff993bdf2eebfdd479\\plays_ext.csv": "8d039dc5bc36359cbf8d392ec4b3b5a6da18ad43f1848f6a57b1370e070d8d41",
+    "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\crawl\\4717f22bf06841ff993bdf2eebfdd479\\battles.csv": "67a0a018254d5e91c499f69d46e242bd9e1d5ae9ed3c4c6a9f44590469f5d552",
+    "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\crawl\\543d171900e24c6998b15f26b0943249\\plays_ext.csv": "abc46bcaa7f58d8a2275a5d4f1a6bc924248e86b54d40d3dd711a0e9b77a2318",
+    "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\crawl\\543d171900e24c6998b15f26b0943249\\battles.csv": "90eda2e068eb1f5716dd5b5abefe6d43bd5e618a18c30382fccbe6ad1264b82a",
+    "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\crawl\\5edd1464c1694599a9047ce4514f6b5e\\plays_ext.csv": "a70e2bbbfa8b60a2142fbfd617a8f0068662b6585ec05a18759b5ed3f589767c",
+    "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\crawl\\5edd1464c1694599a9047ce4514f6b5e\\battles.csv": "ece28330f97c58dd60f411025d0d1155b99980dd92478269d351e500b49dc2f3",
+    "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\crawl\\8e19bbf73846446c99414cea042b0047\\plays_ext.csv": "1c5ccc62fe140c06c46cb3ab8a34a221c5158f25a697eef285a221f9ef6af882",
+    "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\crawl\\8e19bbf73846446c99414cea042b0047\\battles.csv": "4ff0f8fd00c3b2ae54d57dfb6ef4ca22762644ddc61a4402df502062267bc068",
+    "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\crawl\\9b1151e5aa3d4ee48943ae29b6047f03\\plays_ext.csv": "b4ed52e897243a0ab026a4ef8908a211576d7803bcd8b45931a6e8056e79c7b4",
+    "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\crawl\\9b1151e5aa3d4ee48943ae29b6047f03\\battles.csv": "fee7db9df47d1f86699163c4a8620f05341d4a209d583e7689071fe5a679ab55",
+    "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\crawl\\9d3fb8c7748846dcb6b384a2664c207a\\plays_ext.csv": "f9e14db5f5b144e4bc7fb3ed4b30df3a917cfebfe9fe9d5b1ee0bdff54253c0c",
+    "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\crawl\\9d3fb8c7748846dcb6b384a2664c207a\\battles.csv": "21010d222bb8ce8ebbf4cf319ff1ac26f1c3bc00bb66e1f303da1cda95c8f829",
+    "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\crawl\\d210185c225f4826bc10a045a2b5834a\\plays_ext.csv": "630c308f0086eaebbab6604a95d142bfe1f928b79983ee4c332b4fc636e1ad04",
+    "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\crawl\\d210185c225f4826bc10a045a2b5834a\\battles.csv": "41620a50fcebf901c5a31da2c2284c4d79fb5fd71f46c29406e1eaf9a90d023c",
+    "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\crawl\\f4d7af9e4625459887dddd5eb0773f8e\\plays_ext.csv": "0d4b69381b44dff30028236e9e8595acd01bff0d917ea3cf41fdf632f64d8960",
+    "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\crawl\\f4d7af9e4625459887dddd5eb0773f8e\\battles.csv": "9a60362a89082afaa3de563c0c182c4a8f77bf9b04a1bdb272748f6c1cdd699d"
+  },
+  "raw_part_hashes": {
+    "part-000003.parquet": "ace3f0c0a0a7b002ebf95340f9cf1e0bc25a9bc087014ab1a1ad18dc301e3942",
+    "part-000005.parquet": "41d900961bd633427bf6b5500c2f131ea74f90d1b836d617f0c35bdff9f52f98",
+    "part-000009.parquet": "de4054aa29c02e7bbd195ba9bc57530d87f443ffd4d4d7aa03a06e0e4050e511",
+    "part-000016.parquet": "d22166ddddc247d2a9fa5298b022e2f16ce6f9157e14fed841da4dc80d022f98",
+    "part-000017.parquet": "d199748009ab296c5d7418d97549bc6e20bc972f5b4aa131657e862eae6d094d",
+    "part-000026.parquet": "14d1c7b0eb3d9b965a1a5992c7d88162628f68385d749143f96d7487d778ca50",
+    "part-000035.parquet": "b521567b7a44ad2dca14d42d5eaa595fbed0fb582a4b606bd55fcab1695fcebd",
+    "part-000045.parquet": "4343a1ae74c27a000b509070a657f2da3396b4c7b837e457a1266bcdbb5a152e",
+    "part-000047.parquet": "b538df31534e6f6c707cb994dde8c5bfb9e1402fb8a77493a78876fc14159695"
+  },
+  "controls": {
+    "positive_checks": 2,
+    "rejected_forms": [
+      "evolution",
+      "hero",
+      "invalid"
+    ],
+    "original_unverified_unchanged": true
+  },
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\void_identity\\reconstruct_prepare.py": "b09de412fc67973f53c74561e3672660bf35d22262155bb9e46fde5ef2800a15",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\void_identity\\driver.py": "7a6a6d6c7e848b30226cdf8619e601b92e9b64b3c440133b82778522082834f3",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\void_identity\\verified.json": "acfc5c597bd8c666f66b3c8fddb02f7989de787a1751041295ef69fc1878ad03",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\void_identity\\RECONSTRUCTION_PLAN.md": "d848fbbc7a562865b54d5eaab5236450147cbda6114f7f7aed92183be14bb04e",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\native_compatibility_corrected.json": "4cff228bbb2e836a815c5a9256950211a08045dc5fceb89a2be94d18db2edd39",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\replay_reservation.json": "c959f83d5dd42d8bf3267f1a4940505a2b7e1a9d4a46a2964a21ed10a1956f76",
+    "tools\\hf_to_crawl.py": "8a3ae6f1ab75b47d6ba3b5041224d1382bfb1f5c0c90b7d53fa63d6df9e921ca"
+  },
+  "model_predictions": 0,
+  "trainable": false,
+  "N2_complete": false
+}

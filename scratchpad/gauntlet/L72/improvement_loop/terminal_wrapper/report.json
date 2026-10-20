@@ -1,0 +1,68 @@
+{
+  "complete": true,
+  "cases": 10,
+  "runs": 30,
+  "runtime": {
+    "schema": 1,
+    "pins": {
+      "RoyaleSim": "015f9b0084afe574915e3f6ce2f0764c6dec6099",
+      "RoyaleGym": "3117816366b00754da1b56c9543412e4706de62a"
+    },
+    "wheels": {
+      "royalegym-0.1.15-py3-none-any.whl": "51219cef17867069abf22c206c1fbc309b3e8f93927a658e19b543b6ba96156b",
+      "royalesim-0.1.13-cp310-abi3-win_amd64.whl": "ab61577d3926df7a43463f41c479ec31e6864d3702c13075f170d97f3b30406c"
+    },
+    "manifest_sha256": "eb455896367d94107dbf3fd35ffc8f01de097a1ac2c3beebdca00445b2f45903",
+    "card_table": {
+      "cards_json_fnv1a64": "21935265e615e337",
+      "cards_vintage": "15.535.29 client (2026, LIVE build family)",
+      "cards_json_hash_source": "embedded"
+    }
+  },
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\terminal_wrapper\\adapter.py": "7aa1078d2d50e92ac317bf55bfeb0aa911bb4c746abe29a78a6e9aefd4c7b9e6",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\terminal_wrapper\\check_native.py": "867704e25c19554b288db8cfa5be50bc5172163102788f52993b73c6efccdaf0",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\terminal_wrapper\\verify.py": "4d141717875f32339fd446cca94e28d6db1c6f2a23ba1c65d2b25c56599b026d",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\terminal_wrapper\\PLAN.md": "1ab5f980152c0fbf047fdd631575c6728f3ff056e348d4e3f13cb1b3c71d9231",
+    "pipeline\\e1_eval.py": "55199f822f035e3ddf3fab0d74926158aaea92b23abd9fa1425fdbb5e398827d",
+    "pipeline\\royale_env.py": "0935c50759dc8e9ef8d226a1b6d8e017d6025c88fd79db5cfe8a5295231a068f",
+    "pipeline\\royale_runtime.py": "dcd2115fdd4de9aeaef5f9dbe7c08669e4b4a4f603ec3f02e0b6618aa5cfdca9",
+    "scratchpad\\gauntlet\\L71\\royale_update_20261005\\build_manifest.json": "eb455896367d94107dbf3fd35ffc8f01de097a1ac2c3beebdca00445b2f45903"
+  },
+  "boundary_controls": 7,
+  "records": {
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\0_5995_disabled.json": "779be64c7302ac90748d9bb44a437cc29f55490f0ba9c8328ec3279d7ad2b1b4",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\0_5995_enabled.json": "cda3f71bc6b36519a46e569c42fde39675a31c60ad54e17b3174f41ff987b080",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\0_5995_original.json": "8d6618ccff8bd55c657ef58427dbf17446d0f2960fa7c469eedc0a5770be8bb1",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\0_7200_disabled.json": "95089919303ecfa5ad77b47287cb0fab176bba118641010a117e7bde0ca91ae5",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\0_7200_enabled.json": "d9300361a9e4cc0513f48ddda9920e3f3af925d8131b0569d91f6c14d2a1c5eb",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\0_7200_original.json": "3b4fd5decf1b1cedbb5d4fbe2aa68475d4e2adbfe442d9cb7d6104a6e845b538",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\1_5995_disabled.json": "3dabc2ac428d795b11322b33bf128a7744c3d6aa9ea74a726c7ed7e73813890a",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\1_5995_enabled.json": "94617829c40604f2da03d6c99ca28fb7d829e843141d98fdd1aa06354781b446",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\1_5995_original.json": "e733f6bb0949f8db492df7d1b88e520bdfb7643efd09430eacafc689a880dc99",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\1_7200_disabled.json": "afff19a77a87cb2433ba3681cb9a3f1494e97584e7833456accc9dbaf58e3a30",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\1_7200_enabled.json": "0a69723a324545edccf52740ea69aa45b01155fbcb0ee576f3e4acca1132cb46",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\1_7200_original.json": "59283c419931ab1ee0a880489467df934f971655449950d5445e8a13c33438ca",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\2_7200_disabled.json": "76d6fda86256bf21cc5a1a4d6444e7becb88dfccd237d58b115c9244ab50d328",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\2_7200_enabled.json": "b551ecba6682b6f3699ae19e9153585776db398aa4fff36e3151806f39165c40",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\2_7200_original.json": "f463bebbdc3b206e5c5acafbb4c7d0e0c25f30479282c0cd10862d3b5ede67d2",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\3_7200_disabled.json": "1bb79fc480c8b229b78f14c64d18e6e304ea52a5807c2231b0f1689f82b31ba8",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\3_7200_enabled.json": "6cc98865a2e72f8948caf0e9bd6545208a608a3dfb535b59b1703416a33796d1",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\3_7200_original.json": "081eec3328598d449c3b822f4cbce1f10fafcf69cbc5b6cc6f81c7fdede2adf7",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\4_7200_disabled.json": "3483dcca7acda1a79b382c585f02a3b4209789192c7f4cfdbc0ac2fe749c4d98",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\4_7200_enabled.json": "14a05bd2641a35419f546d073a01f94dd21c859a3660044d3cf8371f81ba436c",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\4_7200_original.json": "a7ad325a47e6d1ff017f59b9401cd391dc7206ded6a5b499c0e9f9985212ab4a",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\5_7200_disabled.json": "70697ec7223ded826fa9849ec1f793e4b3b382df941cc350fc407b0f4a49b3cb",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\5_7200_enabled.json": "0c78d99c9d7c98231bf140e15330cf0c2cefe0008afb64d5625e34e35015a908",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\5_7200_original.json": "8071d0921db90265b41f1653a7d682b52613c4e4982cfad36474ac2f230b19cf",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\6_7200_disabled.json": "ec8e8f6b706a90bd23a7c17726d89104dddd48a3f4085f563ae6208e8e4bc2d3",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\6_7200_enabled.json": "e5bdecc2aefe35ec11c9b13714820e02f33d35e2790dadcae95396b5940bc7a1",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\6_7200_original.json": "5a215cee1c4fba77306e84716d90f88d6adf97e4a80198bfce230d6542d9b66e",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\7_7200_disabled.json": "f0c4cb71046524498f93deac066f938ee4746d316602926d419fa725521dbd34",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\7_7200_enabled.json": "4f8bc7d833574727f1deba7925daba0fe8483129ad6dba0ee2fe172302ebc007",
+    "icebow\\data\\bench\\terminal_wrapper_20261005\\7_7200_original.json": "410c7312c40c667117eb609d1e5737299371851da9ecd55a5c217509dd6d8df6"
+  },
+  "model_inference": false,
+  "production_changed": false,
+  "performance_acceptance": false
+}

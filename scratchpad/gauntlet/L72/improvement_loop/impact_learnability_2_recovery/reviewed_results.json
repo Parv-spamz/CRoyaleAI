@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "reviewed_evidence_sha256": "51a90fe6abc3983e06142d2a465d40fa731770c6b3dca170ba470a67cfeab7c6",
+  "receipts": {
+    "l72-impact-learning2-recovery-reviewed-evidence": {
+      "receipt_sha256": "5d5a0b3b11afcb92f97bdbdea05ea595d24b2f8ab76859a101cc603e500ce7b2",
+      "output_sha256": "eda26588db31e42dd85a3637d7337278bde3c3758230c595b5e7e6d367caa6fb",
+      "seconds": 0.2558751106262207
+    },
+    "l72-impact-learning2-aux-discord": {
+      "receipt_sha256": "7e45154fa3de2892d16c6a82f99ada1639a142de8db9b80c50000ce5212fa3d8",
+      "output_sha256": "a952e9a6dd405af26e052cff7ae4917f8e859cd5e1bd79f867acc5edb8e3529f",
+      "seconds": 1.1188511848449707
+    }
+  },
+  "message_sha256": "11f86ae8d59d90df24a55b00751e3f629c120214f461c25ae47ba350e8bff04d",
+  "delivery_path": "reports\\discord\\deliveries\\model-impact-learning2-aux-final\\delivery.json",
+  "delivery_sha256": "0c2412b6635154df2711b9fe8c7b17f54d553efbd475dada61273e6ba0c0c6d3",
+  "message_ids": [
+    "1556866658860142605",
+    "1556866659799801991",
+    "1556866661464670239"
+  ],
+  "continuation_pass": false,
+  "policy_acceptance": false,
+  "deployed": false,
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\close_impact_learning2_report.py": "73f023018ee910c3986b8dbd9c59e3d0ad811194071f8b6653d1d4ae91b2f9aa",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\impact_learnability_2_recovery\\trained.json": "013b90a4cb061bd17b4c234f6e7b9fba3885f14253a32860bc4b59f01e2cd8ca",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\impact_learnability_2_recovery\\results_verified.json": "a65d6b6b43954eafd54121385c48d6fa2ad464c8bc5612d7938438d0cd81bd62",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\impact_learnability_2_recovery\\reviewed_evidence.json": "51a90fe6abc3983e06142d2a465d40fa731770c6b3dca170ba470a67cfeab7c6"
+  }
+}

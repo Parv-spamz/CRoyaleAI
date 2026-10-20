@@ -1,0 +1,6 @@
+{
+  "wheel_smoke": 0,
+  "sim_python": 1,
+  "gym_python": 2,
+  "sim_rust": 101
+}

@@ -1,0 +1,20 @@
+match_20260912_223554.mp4: 175 s, drops 34 = 11.7/min, median gap 3.6s, longest 18s, >10s 7, >15s 2, in >10s gaps 58%, at 10 elixir 7s
+data/overlayed_replays/match_20260912_223903.mp4: too few in-match samples
+data/overlayed_replays/match_20260912_224502.mp4: too few in-match samples
+match_20260912_224819.mp4: 251 s, drops 51 = 12.2/min, median gap 3.6s, longest 22s, >10s 7, >15s 2, in >10s gaps 40%, at 10 elixir 12s
+match_20260912_225238.mp4: 175 s, drops 29 = 9.9/min, median gap 3.6s, longest 22s, >10s 6, >15s 3, in >10s gaps 58%, at 10 elixir 8s
+match_20260912_225547.mp4: 176 s, drops 32 = 10.9/min, median gap 3.4s, longest 26s, >10s 5, >15s 2, in >10s gaps 47%, at 10 elixir 6s
+match_20260912_225857.mp4: 175 s, drops 28 = 9.6/min, median gap 3.4s, longest 23s, >10s 6, >15s 3, in >10s gaps 55%, at 10 elixir 7s
+match_20260912_230206.mp4: 306 s, drops 90 = 17.6/min, median gap 2.8s, longest 14s, >10s 5, >15s 0, in >10s gaps 20%, at 10 elixir 6s
+match_20260912_230720.mp4: 169 s, drops 30 = 10.6/min, median gap 3.6s, longest 21s, >10s 5, >15s 3, in >10s gaps 50%, at 10 elixir 9s
+data/overlayed_replays/match_20260912_231023.mp4: too few in-match samples
+TOTAL v6aug_s1 tau 0.24 (tonight 22:35-23:13): 23.8 min, 12.4 plays/min, median gap 3.4s, >10s 1.72/min, >15s 0.63/min, in >10s gaps 44%, at 10 elixir 4% of match time
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0000021d318d7cc0] moov atom not found
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0000021d318d7a00] moov atom not found
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0000021d318d7a00] moov atom not found
+match_20260912_202932.mp4: 254 s, drops 54 = 12.7/min, median gap 3.0s, longest 22s, >10s 7, >15s 2, in >10s gaps 40%, at 10 elixir 17s
+match_20260912_203354.mp4: 308 s, drops 82 = 16.0/min, median gap 2.6s, longest 25s, >10s 3, >15s 2, in >10s gaps 19%, at 10 elixir 10s
+match_20260912_203910.mp4: 176 s, drops 29 = 9.9/min, median gap 3.8s, longest 24s, >10s 7, >15s 3, in >10s gaps 59%, at 10 elixir 9s
+data/overlayed_replays/match_20260912_204220.mp4: too few in-match samples
+TOTAL v6aug_s1 tau 0.27 (20:29-20:45): 12.3 min, 13.4 plays/min, median gap 3.0s, >10s 1.38/min, >15s 0.57/min, in >10s gaps 36%, at 10 elixir 5% of match time
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0000019ac272aa80] moov atom not found

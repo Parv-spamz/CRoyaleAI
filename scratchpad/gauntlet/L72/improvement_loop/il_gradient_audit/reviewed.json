@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "receipts": {
+    "collect": {
+      "receipt_sha256": "9ed747a29d8e2d7e7de2a9ea39ba1b5c8859807a93678bc8748b069a28bf6c27",
+      "output_sha256": "5e5f4674f1f63be2b32bd9e730387f7e43d493187b79581707075a078072f03b",
+      "seconds": 160.69968676567078
+    },
+    "independent": {
+      "receipt_sha256": "62f2aca17574181ddba3c6598d9ddac69ace4aa87bddcaee500d2c48325df151",
+      "output_sha256": "cd3fbd117a3f5b2366dbe15d7d792819f006b58dc628ea51eb4b59df0aca8c95",
+      "seconds": 24.850927591323853
+    }
+  },
+  "source_sha256": "4422dc621a562bb531d4951968f2851f6cf6e7f0fd35eaecb86c71782dd64faa",
+  "bindings": {
+    "started.json": "db9c44d18d1fc6849807c87ec2e4bbe92a67d4f0e60d688bfee039fe4074fc9a",
+    "collected.json": "6315b855919671478a086bb0332e4c99555b49d28156952fb46cef2271851d95",
+    "verified.json": "76edcb004c863086188ec2ac251f10389d063e7a795fd6e1dc32e12fe0049783",
+    "chain_complete.json": "bc6c3c988a2447c327bac90f044cc17be0c54184608aadd708ee435cf456c601"
+  },
+  "optimizer_updates": 0,
+  "new_checkpoint": false,
+  "accepted": false,
+  "deployed": false
+}

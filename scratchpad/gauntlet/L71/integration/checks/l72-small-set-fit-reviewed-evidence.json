@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/review_small_set_fit.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "SMALL_SET_FIT_EVIDENCE_REVIEWED",
+  "matched": true,
+  "output_sha256": "5eb303cf7026b9a7693a4e616c1709ca07fc18555289b3a191ce10d812d86112",
+  "seconds": 0.5782880783081055
+}

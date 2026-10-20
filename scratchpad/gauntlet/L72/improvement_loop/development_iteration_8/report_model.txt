@@ -1,0 +1,10 @@
+ClashBot NEW model aim_heads_v6 (development iteration8): REJECTED / NOT ACCEPTED, no deployment.
+
+1000 finite updates; all54,723 development predictions independently recounted. Same corrected observations: R1e / ordinary_v5 control / ordinary_v6 / trial7 frozen branch / NEW aim-only candidate:
+Rocket aim within1 tile:290/292/293/290/289 of955; full expert Rocket actions54/77/73/76/75; late Rocket actions14/22/21/22/22 of320.
+Barrel correct/wrong/not-fired:36/20/7,40/22/1,55/7/1,56/6/1,56/6/1 of63. Full Barrel actions18/20/30/32/31.
+R1e/v5/NEW: Witch332/339/339 of726; NightWitch156/161/161 of373; Furnace538/549/549 of1174; defense3952/4011/4012 of8183; all late actions1949/1984/1993 of6422. General card11348/11403/11403 of17192; all actions30968/31962/31976 of54723.
+
+Versus v5, Rocket aim -0.314pp and action -0.209pp; late Rocket unchanged. Required +5/+2/+2pp all fail. Barrel gain and other point protections pass. All non-aim tensors, chosen cards and >.35 gate decisions unchanged, but164 gate logits/633 card logits differ slightly (max7.15e-7/2.86e-6): exact-output criterion also FAILS, no tolerance waiver.
+
+Only aim parameter trainability changed from trial7's recipe, starting the same v5 parent. Original labels/draws/loss retained. Independent recount recovered from two preserved import-only failures; no training/evaluation rerun. Parent exposure and repeated replay rows disclosed. These are developmental label-agreement counts, not original-live-input R1e or proven gameplay/damage-lead cycling. All final gameplay/component/untouched/statistical gates remain open. Owner STOP remains intact.

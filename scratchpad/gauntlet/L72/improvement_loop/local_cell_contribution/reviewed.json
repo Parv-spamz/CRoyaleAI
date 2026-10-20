@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "receipts": {
+    "collect": {
+      "receipt_sha256": "20612c97d501dc5376ae49446cbfdc557622ffc5030adbb028fbdb59ca6d63da",
+      "output_sha256": "9e433f4a0abc24c46e2b86ad5c335b00712e7472c6822c655c812002904d2582",
+      "seconds": 64.11942076683044
+    },
+    "independent": {
+      "receipt_sha256": "9389a2f90aeccf6059cb78063a892e8d36ebf7ddb12bf29ded1bcc9232752025",
+      "output_sha256": "4e7ff600eccd2ac521f5c8e403f1d2560ff5234035935a39e325c56c2c1c856d",
+      "seconds": 12.59214735031128
+    }
+  },
+  "collected_sha256": "9783d323d56bfec1ab89a2a145432a5d70d6c7e85812eaa2f92e5f86ab62f8e5",
+  "verified_sha256": "80269ea934f0e859b89d36a0c45875c66b09bf77512ea6358ecda26d6a7e275e",
+  "source_sha256": "8dec31f4e86d14899dedbb28be4236986b6144ab199645056250ee3d1ab4d9ad",
+  "forward_views": 2048,
+  "backward": 0,
+  "optimizer_updates": 0,
+  "accepted": false,
+  "deployed": false
+}

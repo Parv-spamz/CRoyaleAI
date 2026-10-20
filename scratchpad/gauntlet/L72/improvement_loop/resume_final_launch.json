@@ -1,0 +1,8 @@
+{
+  "pid": 44928,
+  "stdout": "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\chain_resume_final.out",
+  "stderr": "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\chain_resume_final.err",
+  "timestamp": "2026-10-05T06:38:28.6637139-04:00",
+  "driver_sha256": "48e27525d61529a6efb89f3bc0a7fa15876260586afe71dfdcae8235d342f3d9",
+  "reason": "Owner separately authorized FramePack stop; it had already exited. Owner live run stopped after match and recording finished. Resume final original job only."
+}

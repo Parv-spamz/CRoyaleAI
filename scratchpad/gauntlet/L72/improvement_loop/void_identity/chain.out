@@ -1,0 +1,5 @@
+{"command": ["C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe", "-u", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\void_identity\\reconstruct_collect.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "VOID_RECONSTRUCTION_CAPTURE_COMPLETE", "matched": true, "output_sha256": "a8fa73776a423c84db0597c69af34c440f90f92f84d74221357458e5e3900569", "seconds": 133.0934398174286}
+INSPECTED_CHECK_PASS
+{"command": ["C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe", "-u", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\void_identity\\reconstruct_verify.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "VOID_RECONSTRUCTION_INDEPENDENT_PASS", "matched": true, "output_sha256": "efc49b0c940b86e45c63fab28320e273672ed5accedf0eb6d9e40e3051448e2e", "seconds": 2.0416042804718018}
+INSPECTED_CHECK_PASS
+VOID_RECONSTRUCTION_CHAIN_COMPLETE

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L69/discord/send_report.py",
+    "--id",
+    "model-dropout-free-fit-v5-diagnostic",
+    "--file",
+    "scratchpad/gauntlet/L72/improvement_loop/dropout_free_fit/message.md"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "DELIVERED model-dropout-free-fit-v5-diagnostic",
+  "matched": true,
+  "output_sha256": "0e3a7388828419edfbe666372c7260fea7d74bef7b8ce7cc6019c02b3f3706d1",
+  "seconds": 1.0752842426300049
+}

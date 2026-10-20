@@ -1,0 +1,14 @@
+[drv] start Tue Sep 29 20:57:23 EDT 2026
+[drv] tau 0.27 done Tue Sep 29 21:11:44 EDT 2026: {"DONE": {"matches": 299, "skipped_jobs": 0, "skipped_entries": 0, "wall_s": 811.6}}
+[drv] tau 0.5 done Tue Sep 29 21:24:48 EDT 2026: {"DONE": {"matches": 299, "skipped_jobs": 0, "skipped_entries": 0, "wall_s": 737.8}}
+[drv] tau 0.15 done Tue Sep 29 21:36:57 EDT 2026: {"DONE": {"matches": 299, "skipped_jobs": 0, "skipped_entries": 0, "wall_s": 681.4}}
+[drv] tau 0.2 done Tue Sep 29 21:42:16 EDT 2026: {"DONE": {"matches": 299, "skipped_jobs": 0, "skipped_entries": 0, "wall_s": 303.4}}
+[drv] tau 0.35 done Tue Sep 29 21:47:41 EDT 2026: {"DONE": {"matches": 299, "skipped_jobs": 0, "skipped_entries": 0, "wall_s": 316.6}}
+[drv] tau 0.65 done Tue Sep 29 21:53:28 EDT 2026: {"DONE": {"matches": 299, "skipped_jobs": 0, "skipped_entries": 0, "wall_s": 338.1}}
+[drv] pairs done Tue Sep 29 21:54:07 EDT 2026
+[drv] league1b exited 1 Tue Sep 29 21:54:19 EDT 2026: 
+[drv] league1b exited 3 Wed Sep 30 01:45:39 EDT 2026: 
+[rl] crash save failed: AcceleratorError("CUDA error: out of memory\nSearch for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n")
+[res] orphan screen done Wed Sep 30 02:09:57 EDT 2026
+[res] resume league1b on gpu Wed Sep 30 02:09:57 EDT 2026
+[res] league1b (gpu) exited 0 Wed Sep 30 06:10:40 EDT 2026: STOP after update 74: STOP file present

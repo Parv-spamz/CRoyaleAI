@@ -1,0 +1,302 @@
+{
+  "complete": true,
+  "report_sha256": "4ef7d0b9fb9a548ee27e8697e5f8f8466055c3c84cb1b2be93539cdc878c6a80",
+  "selection_sha256": "7a6cfcfc3c031f7b63787b0a82c6e96288be24e32ad0d6bb5b2c108cdb762cae",
+  "script_sha256": "766bbc4cf3bf9ff6cec26c43c546127a3e08bc224686007c7935125fa18fd617",
+  "rows": 789,
+  "strata": {
+    "single_pro_log": {
+      "full_rows": 203,
+      "full_replays": 89,
+      "selected": 89
+    },
+    "single_other_play": {
+      "full_rows": 113,
+      "full_replays": 73,
+      "selected": 73
+    },
+    "single_wait": {
+      "full_rows": 207,
+      "full_replays": 103,
+      "selected": 103
+    },
+    "multiple_barrel": {
+      "full_rows": 257,
+      "full_replays": 81,
+      "selected": 81
+    },
+    "ambiguous_barrel": {
+      "full_rows": 262,
+      "full_replays": 83,
+      "selected": 83
+    },
+    "other_projectile": {
+      "full_rows": 86475,
+      "full_replays": 1976,
+      "selected": 200
+    },
+    "no_valid_target": {
+      "full_rows": 180893,
+      "full_replays": 1978,
+      "selected": 200
+    }
+  },
+  "controls": {
+    "positive_checks": 1,
+    "rejected_corruptions": [
+      "membership",
+      "heldout",
+      "label",
+      "logits",
+      "gate_invariance",
+      "card_invariance",
+      "zero_target",
+      "reported_count"
+    ]
+  },
+  "paired_transitions": {
+    "v6_rocket_barrel": {
+      "single_pro_log": {
+        "action": {
+          "off_only": 3,
+          "full_only": 16,
+          "both": 20,
+          "neither": 50
+        },
+        "aim": {
+          "off_only": 4,
+          "full_only": 18,
+          "both": 22,
+          "neither": 45
+        },
+        "gated_correct_lane": {
+          "off_only": 0,
+          "full_only": 21,
+          "both": 62,
+          "neither": 6
+        },
+        "gated_wrong_lane": {
+          "off_only": 21,
+          "full_only": 0,
+          "both": 0,
+          "neither": 68
+        },
+        "forced_log_same_lane": {
+          "off_only": 0,
+          "full_only": 21,
+          "both": 68,
+          "neither": 0
+        }
+      },
+      "single_other_play": {
+        "action": {
+          "off_only": 0,
+          "full_only": 0,
+          "both": 8,
+          "neither": 65
+        },
+        "aim": {
+          "off_only": 0,
+          "full_only": 3,
+          "both": 14,
+          "neither": 56
+        }
+      },
+      "single_wait": {
+        "action": {
+          "off_only": 0,
+          "full_only": 0,
+          "both": 63,
+          "neither": 40
+        },
+        "aim": {
+          "off_only": 0,
+          "full_only": 0,
+          "both": 0,
+          "neither": 103
+        }
+      },
+      "multiple_barrel": {
+        "action": {
+          "off_only": 0,
+          "full_only": 1,
+          "both": 30,
+          "neither": 50
+        },
+        "aim": {
+          "off_only": 0,
+          "full_only": 2,
+          "both": 11,
+          "neither": 68
+        }
+      },
+      "ambiguous_barrel": {
+        "action": {
+          "off_only": 0,
+          "full_only": 1,
+          "both": 22,
+          "neither": 60
+        },
+        "aim": {
+          "off_only": 0,
+          "full_only": 1,
+          "both": 8,
+          "neither": 74
+        }
+      },
+      "other_projectile": {
+        "action": {
+          "off_only": 0,
+          "full_only": 0,
+          "both": 120,
+          "neither": 80
+        },
+        "aim": {
+          "off_only": 1,
+          "full_only": 1,
+          "both": 19,
+          "neither": 179
+        }
+      },
+      "no_valid_target": {
+        "action": {
+          "off_only": 0,
+          "full_only": 0,
+          "both": 119,
+          "neither": 81
+        },
+        "aim": {
+          "off_only": 0,
+          "full_only": 0,
+          "both": 20,
+          "neither": 180
+        }
+      }
+    },
+    "v6_rocket_both": {
+      "single_pro_log": {
+        "action": {
+          "off_only": 2,
+          "full_only": 16,
+          "both": 21,
+          "neither": 50
+        },
+        "aim": {
+          "off_only": 3,
+          "full_only": 18,
+          "both": 23,
+          "neither": 45
+        },
+        "gated_correct_lane": {
+          "off_only": 0,
+          "full_only": 21,
+          "both": 62,
+          "neither": 6
+        },
+        "gated_wrong_lane": {
+          "off_only": 21,
+          "full_only": 0,
+          "both": 0,
+          "neither": 68
+        },
+        "forced_log_same_lane": {
+          "off_only": 1,
+          "full_only": 21,
+          "both": 67,
+          "neither": 0
+        }
+      },
+      "single_other_play": {
+        "action": {
+          "off_only": 0,
+          "full_only": 1,
+          "both": 10,
+          "neither": 62
+        },
+        "aim": {
+          "off_only": 0,
+          "full_only": 5,
+          "both": 15,
+          "neither": 53
+        }
+      },
+      "single_wait": {
+        "action": {
+          "off_only": 0,
+          "full_only": 0,
+          "both": 59,
+          "neither": 44
+        },
+        "aim": {
+          "off_only": 0,
+          "full_only": 0,
+          "both": 0,
+          "neither": 103
+        }
+      },
+      "multiple_barrel": {
+        "action": {
+          "off_only": 0,
+          "full_only": 2,
+          "both": 29,
+          "neither": 50
+        },
+        "aim": {
+          "off_only": 0,
+          "full_only": 4,
+          "both": 10,
+          "neither": 67
+        }
+      },
+      "ambiguous_barrel": {
+        "action": {
+          "off_only": 0,
+          "full_only": 1,
+          "both": 22,
+          "neither": 60
+        },
+        "aim": {
+          "off_only": 0,
+          "full_only": 1,
+          "both": 8,
+          "neither": 74
+        }
+      },
+      "other_projectile": {
+        "action": {
+          "off_only": 0,
+          "full_only": 0,
+          "both": 117,
+          "neither": 83
+        },
+        "aim": {
+          "off_only": 0,
+          "full_only": 1,
+          "both": 20,
+          "neither": 179
+        }
+      },
+      "no_valid_target": {
+        "action": {
+          "off_only": 0,
+          "full_only": 0,
+          "both": 122,
+          "neither": 78
+        },
+        "aim": {
+          "off_only": 0,
+          "full_only": 0,
+          "both": 22,
+          "neither": 178
+        }
+      }
+    }
+  },
+  "zero_target_rows": 200,
+  "optimizer_updates": 0,
+  "new_checkpoint": false,
+  "limitations": [
+    "Training-only evidence; residual-off is not a qualified candidate.",
+    "No physical landing, gameplay or fresh confirmation inference."
+  ]
+}

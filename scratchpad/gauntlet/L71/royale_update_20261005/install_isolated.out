@@ -1,0 +1,5 @@
+Processing .\wheels\royalegym-0.1.15-py3-none-any.whl
+Processing .\wheels\royalesim-0.1.13-cp310-abi3-win_amd64.whl
+Installing collected packages: royalesim, royalegym
+
+Successfully installed royalegym-0.1.15 royalesim-0.1.13

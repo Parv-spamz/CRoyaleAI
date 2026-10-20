@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/hand_retention_integration/review_sequence.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "HAND_SEQUENCE_REVIEWED",
+  "matched": true,
+  "output_sha256": "bf3374284a4e6d9e1f03a1446e4b2345963b073faa88adea2ca5b5e94ee01017",
+  "seconds": 1.2109415531158447
+}

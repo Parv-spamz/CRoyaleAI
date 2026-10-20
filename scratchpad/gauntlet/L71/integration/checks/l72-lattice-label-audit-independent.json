@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\lattice_label_audit\\verify.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "LATTICE_LABEL_AUDIT_VERIFIED",
+  "matched": true,
+  "output_sha256": "4f583bb3cc4faa654c0da3c5735aef5c4fe7dc73b90f01ecf17b62889afaad6b",
+  "seconds": 7.343947649002075
+}

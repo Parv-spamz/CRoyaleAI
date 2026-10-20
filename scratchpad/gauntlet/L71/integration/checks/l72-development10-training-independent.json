@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_10\\verify_training.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "ORDINARY_NO_DROPOUT_TRAINING_VERIFIED",
+  "matched": true,
+  "output_sha256": "30da7d1e078860eb2a5e583a8d935123e82075e9fc8b1049187449b02f9b9828",
+  "seconds": 4.482316017150879
+}

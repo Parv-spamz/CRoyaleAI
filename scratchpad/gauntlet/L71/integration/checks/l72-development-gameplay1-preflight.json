@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/development_gameplay_1/preflight.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 1,
+  "expected": "GAMEPLAY_PREFLIGHT_COMPLETE",
+  "matched": false,
+  "output_sha256": "a9f139edc0085a6f44efcbad5113d13ba5553f9ecf510a0c2c577394c50d71af",
+  "seconds": 0.17400431632995605
+}

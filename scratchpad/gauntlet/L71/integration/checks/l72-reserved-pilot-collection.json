@@ -1,0 +1,14 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+    "-u",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\collect_reserved_pilot.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "RESERVED_PILOT_COLLECTION_COMPLETE",
+  "matched": true,
+  "output_sha256": "d0d04dc02478c7e48a902e019376b72e397091d2d9b2643e2a781a3a8fb1f9ab",
+  "seconds": 3419.2611196041107
+}

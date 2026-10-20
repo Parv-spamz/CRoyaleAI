@@ -1,0 +1,13 @@
+{
+  "command": [
+    ".\\icebow\\.venv\\Scripts\\python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/reconcile_frozen_supplement.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "FROZEN_COMPONENT_SUPPLEMENT_VERIFIED",
+  "matched": true,
+  "output_sha256": "60e35ad0b3a1374e707527c070dbf465e8014915354dea6deebad5ae3be49dc6",
+  "seconds": 0.5703988075256348
+}

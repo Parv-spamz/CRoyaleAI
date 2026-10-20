@@ -1,0 +1,9 @@
+START collection
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\terminal_wrapper_policy\\collect.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "TERMINAL_POLICY_COLLECTION_COMPLETE", "matched": true, "output_sha256": "0b1975a4969166c0d2d1c0073e171289fee4209caf1aacb1b2f1f610b7ee2cba", "seconds": 513.3768529891968}
+INSPECTED_CHECK_PASS
+COMPLETE collection
+START independent
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\terminal_wrapper_policy\\verify.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "TERMINAL_POLICY_VERIFIED", "matched": true, "output_sha256": "93c09abbe93d82c85cde5d315711125fec3c3a5e8df46e36ed5341b44d3db7c0", "seconds": 70.8196792602539}
+INSPECTED_CHECK_PASS
+COMPLETE independent
+TERMINAL_POLICY_CHAIN_COMPLETE

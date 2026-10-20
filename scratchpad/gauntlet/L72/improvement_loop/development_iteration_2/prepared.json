@@ -1,0 +1,45 @@
+{
+  "complete": true,
+  "trainable": false,
+  "optimizer_allowed": false,
+  "next_gate": "C2/C3",
+  "sources": {
+    "icebow\\data\\bench\\defence_sequence_v5_binding_20261005\\index.npz": "a186307cb59ba42ae82a967c67b12a42c334b34608df75f2f28e53564667c6c4",
+    "icebow\\data\\bench\\defence_sequence_v5_binding_20261005\\crosswalk.npz": "f85f4dde5931f14001e39e1faf29a507369105f147c1b757a833308aded3ce30",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\defence_crosswalk_bound.json": "fd8968a89583fc7307988b1e908880ac4dfd581d2d2c1eb6e28db1ac38875d90",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\defence_crosswalk_verified.json": "89bced9359299989465ae50710f379ee51f88135eb638cd16bc9406768c4da3b",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\prepared.json": "f2d47910c14e2f2776f5bba1ae3f33775cfcf2125b4de97d7f396d641fdd90b9",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\verified.json": "b6cf77940e59670f1787165d5d68a215e712cfc57e1611dc1e3aaf83de61af5f",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\prelaunch.json": "df8b198a6fa87e8a5429f4fa94261eee42c4c16220b5809bdc3a560edf82c164",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\indices.npz": "e539566223e9e109b736175832fc1003a0bdce0636760e9116f495288556a8c3",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\draws.npz": "f7a66504b93a5727e31e8d62b51f71ac4592d513c0f083c5573788a8f4f1d0fe",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_2\\PLAN.md": "488c9315ed96e0e5c7cace1192b13045fded415c080244f06592c2a0068f47f2",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_2\\prepare.py": "d8ab999936516457586dac04c2b0d578a7a178bc899597e6afe542abd5261166",
+    "icebow\\data\\bench\\spawner_identity_20261005\\gen_dataset_v5_public.npz": "a48f1bbd09ef177fbec27aa5ef15b961f0c4100b6475438f0124fec00f2be461"
+  },
+  "schedule": "icebow\\data\\bench\\development_iteration_2_20261005\\schedule.npz",
+  "schedule_sha256": "e7eebb2ef2041f6afc4537d42efdce58dfbb07f55c47fe68a678702b2f121e79",
+  "counts": {
+    "training": {
+      "rows": 32187,
+      "replays": 856,
+      "plays": 12385,
+      "waits": 19802,
+      "expert_rockets": 767
+    },
+    "development": {
+      "rows": 8183,
+      "replays": 212,
+      "plays": 3152,
+      "waits": 5031,
+      "expert_rockets": 223
+    }
+  },
+  "draws": 128000,
+  "replacement_draws": 25221,
+  "ordinary_defensive_draws": 19429,
+  "candidate_defensive_draws": 40899,
+  "labels_changed": false,
+  "model_predictions": 0,
+  "optimizer_updates": 0
+}

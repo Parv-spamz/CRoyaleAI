@@ -1,0 +1,14 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L69/discord/post.py",
+    "scratchpad/gauntlet/L72/improvement_loop/development_iteration_6/report_model.txt"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "HTTP 204",
+  "matched": true,
+  "output_sha256": "c7aa8b9fd3a1e4213e9327ab3158eb4203ee26a7837b0d23ec4ce181eff6e1d3",
+  "seconds": 1.355287790298462
+}

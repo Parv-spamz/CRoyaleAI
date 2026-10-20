@@ -1,0 +1,93 @@
+{
+  "complete": true,
+  "receipts": {
+    "prepare": {
+      "receipt_sha256": "6ef30d6821c2d0f0825f9aa345c4239818c7d04e4f1b84ccfb7c38b0fbabcf39",
+      "output_sha256": "9ba4291a81996aa1f4410d8517599ac52029c738a9ad50ae2601bbe718846bb0",
+      "seconds": 72.82383561134338
+    },
+    "train": {
+      "receipt_sha256": "24096c8358e58c4794bf8518bfc36c573a42a9791a19cdd2f9dfee4d40c03d55",
+      "output_sha256": "95803f1e0e493f132a50bd5700329c5ad00d2d346bd952d173393a4c3974a076",
+      "seconds": 1257.577097415924
+    },
+    "training-independent": {
+      "receipt_sha256": "6c0d04eab244cedcaa8c8e0df1b74b919e88c47a8ec121c5d931af48761aeb7d",
+      "output_sha256": "47af12ff15d8f069f0adf46eb5215ee77a048aef150dfff7935654ef0e618919",
+      "seconds": 4.482316017150879
+    },
+    "eval": {
+      "receipt_sha256": "4dc9a556fad3876b12437e5db8b241f6cd84b3c3261d04e6bc0cf4fe54e81085",
+      "output_sha256": "8c5adbfedcea71568d66653ad13d94242aee45530772c626541c76c89e2111a0",
+      "seconds": 79.59463906288147
+    },
+    "results-independent": {
+      "receipt_sha256": "10bc531febbe115453879a15da9e473f6a3981f2d1d8f89d4e6a92eba6bbf16c",
+      "output_sha256": "76bc92e38c4e5c60849fc3b2d3f258e9c2da2e6e2358d21396d0646c10594f2d",
+      "seconds": 69.31998634338379
+    },
+    "reviewed-evidence": {
+      "receipt_sha256": "945e17c82342b18b083d22f6889616b01074b3cf76e55715841212c68d4426f6",
+      "output_sha256": "c56c6d25b6a7562a7a85f5f6a2db29d795e3ecff3804c6431557bb83d8a2b8e2",
+      "seconds": 0.7749519348144531
+    },
+    "discord": {
+      "receipt_sha256": "bf0982f5653f2be18a1515cc2567e3d4c41ad8eb85cb37a84b48e736e96dee10",
+      "output_sha256": "970c5938c4564809c15c5d46d7d91304f8e67c27b3ec2d3d3b2e287a01955608",
+      "seconds": 1.5342659950256348
+    }
+  },
+  "continuation_passed": false,
+  "filters": {
+    "ordinary_v5": {
+      "denominators_present": true,
+      "rocket_aim_material": false,
+      "rocket_action_material": false,
+      "late_rocket_material": false,
+      "general_card_noninferior": true,
+      "barrel_correct_nonregression": true,
+      "barrel_wrong_nonregression": true,
+      "witch_nonregression": true,
+      "night_witch_nonregression": true,
+      "furnace_nonregression": true,
+      "defensive_sequence_nonregression": false,
+      "phase_late_overtime_clock_nonregression": true
+    },
+    "ordinary_extended_v5": {
+      "denominators_present": true,
+      "rocket_aim_material": false,
+      "rocket_action_material": false,
+      "late_rocket_material": false,
+      "general_card_noninferior": true,
+      "barrel_correct_nonregression": false,
+      "barrel_wrong_nonregression": false,
+      "witch_nonregression": true,
+      "night_witch_nonregression": true,
+      "furnace_nonregression": true,
+      "defensive_sequence_nonregression": true,
+      "phase_late_overtime_clock_nonregression": true
+    }
+  },
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\close_development10_report.py": "173288c8911475f0c64e4a6c24a8dfb43d7f5feb9eec0c1f0ba5df4d544aea64",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_10\\message.md": "ab21b214ae7f42c73853b897081564c1deb5a2297597c1fc3c5575c74b4ec18c",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_10\\reviewed_evidence.json": "14c3d6a82e4e2842e4ccce7d123bb8436f42809e9c308a2686517d519b471108",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_10\\prepared.json": "e21986735298f2aff2264c7a7f2a442d02cf1b85c0aed190f38e5bbc68e9c5eb",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_10\\trained.json": "368f61139a18a0a429521583275267312f3ce3c00152da1aae45123308bc6f7f",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_10\\training_verified.json": "1d37fdb2436c2ef7aa16ba4fb774b97575d4c5139a9d3fc7751bc7f56be59155",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_10\\evaluated.json": "dda39506c927d2a19265d6727bc7dec88445366dffdfcc57946c9277242c3109",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_10\\results_verified.json": "9e28514414823a04ae0dd57190550736ea21323eac88cb1b14eb7ad297357194",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_10\\chain_complete.json": "bc6c3c988a2447c327bac90f044cc17be0c54184608aadd708ee435cf456c601"
+  },
+  "delivery_path": "reports\\discord\\deliveries\\model-ordinary-no-dropout-v5-final\\delivery.json",
+  "delivery_sha256": "42e0bfe124affaa5ad9be34a60293f4eee4c47c54cd0041eea6fe61b35bf78f2",
+  "message_sha256": "ab21b214ae7f42c73853b897081564c1deb5a2297597c1fc3c5575c74b4ec18c",
+  "message_ids": [
+    "1556999756784336927",
+    "1556999757887438923",
+    "1556999759515090945",
+    "1556999761188495463"
+  ],
+  "accepted": false,
+  "deployed": false
+}

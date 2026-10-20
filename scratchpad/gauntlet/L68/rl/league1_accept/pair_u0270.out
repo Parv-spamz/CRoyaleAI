@@ -1,0 +1,41 @@
+{
+ "A": "scratchpad\\gauntlet\\L68\\rl\\league1_accept\\train_init.jsonl",
+ "B": "scratchpad\\gauntlet\\L68\\rl\\league1_accept\\train_u0270.jsonl",
+ "A_screen": {
+  "n": 299,
+  "winrate": 0.919732441471572,
+  "exploit": {
+   "outlived_win_share": 0.24,
+   "low_delivered_win_share": 0.06545454545454546,
+   "ghost_refused_per_match": 0.2508361204013378
+  },
+  "plays_per_min": 10.607504888690377
+ },
+ "B_vs_A": {
+  "n": 299,
+  "winrate": 0.919732441471572,
+  "exploit": {
+   "outlived_win_share": 0.2509090909090909,
+   "low_delivered_win_share": 0.07272727272727272,
+   "ghost_refused_per_match": 0.23745819397993312
+  },
+  "plays_per_min": 9.9642835742573,
+  "paired": 299,
+  "paired_entries": 299,
+  "delta_pp": 0.0,
+  "ci_lo_pp": -3.678929765886288,
+  "ci_hi_pp": 3.678929765886288,
+  "better": 16,
+  "worse": 16,
+  "exploit_init": {
+   "outlived_win_share": 0.24,
+   "low_delivered_win_share": 0.06545454545454546,
+   "ghost_refused_per_match": 0.2508361204013378
+  },
+  "exploit_cand": {
+   "outlived_win_share": 0.2509090909090909,
+   "low_delivered_win_share": 0.07272727272727272,
+   "ghost_refused_per_match": 0.23745819397993312
+  }
+ }
+}

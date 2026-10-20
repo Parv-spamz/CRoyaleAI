@@ -1,0 +1,52 @@
+{
+  "complete": true,
+  "original_gate_pass": false,
+  "producer_completed_roots": 152,
+  "independently_qualified_roots": 0,
+  "saved_cast_branches": 2432,
+  "saved_total_branches": 2736,
+  "failure": {
+    "status": "NO_DEPLOY",
+    "command": {
+      "team": 1,
+      "hand_slot": 2,
+      "x": 135000,
+      "y": 531000
+    },
+    "king_uid": 1,
+    "king_footprint": [
+      126000,
+      486000,
+      198000,
+      558000
+    ],
+    "elixir_spent": 0
+  },
+  "controls": {
+    "positive": 1,
+    "negative": 4
+  },
+  "optimizer_updates": 0,
+  "source_sha256": "8cf15d8305b41c91d931e39c9a79ff68658fdecb6a6859b8a308f9c7a317686c",
+  "original_sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\impact_learnability_1\\collect.py": "c32dd1b1fffdbb99a0f5206d679a1571eb763a04acb28d8fb5cf5ee8ab75005e",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\impact_learnability_1\\common.py": "01c478d3673fb2fdf7e40c15dbfda7aa7ecb26e6ba6eaa2b436820c59e2e20b6",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\impact_learnability_1\\run_chain.py": "d682146a24e432fbcc489111047743b0bf4f2f2ab7a4e30fc9b561827cc3b079",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\impact_learnability_1\\train.py": "ac3bdc95f88ccbcb558422bc7b042f08d6cb21166302d0ffd22f26b3f5094c63",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\impact_learnability_1\\verify_data.py": "9f5aea2d9a9ec28738d0a932ec4a28fb41de2b508e99e43005a234f9702ff54b",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\impact_learnability_1\\verify_results.py": "1b39a13faa10274376736af45de7b55b4d0a2343e95dc32d14348dce614d8b61",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\impact_learnability_1\\PLAN.md": "fbdc13fa4db821ed6caefb467485a8597f05d92e182ca72dae665a0e6ae06562",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\impact_learnability_1\\METRICS.md": "ca230c1ce298bd99a88f68d966641d68fde7f22c2525cc01adae513f2034097f",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\moving_impact_readiness_v4\\collect.py": "c8f431894d41512faf1707aa328f8cc7f653a0fbc51bf1379724c6ea80e88363",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\moving_impact_readiness_v4\\verified.json": "2045814faf5e8515d3684605792cc249fd86f43d858cd4eb17531671dd6b4c41",
+    "pipeline\\royale_runtime.py": "dcd2115fdd4de9aeaef5f9dbe7c08669e4b4a4f603ec3f02e0b6618aa5cfdca9",
+    "scratchpad\\gauntlet\\L71\\royale_update_20261005\\build_manifest.json": "eb455896367d94107dbf3fd35ffc8f01de097a1ac2c3beebdca00445b2f45903"
+  },
+  "original_receipt_sha256": "c8c84ab970be688f735e0d46929f71674f1ae6e86cb9c19e436704f10eba928d",
+  "original_output_sha256": "e125d40aa178a6ef0adc17cc5f1bc9541ad9b9cd22cd2ef42e98d1d8758f5cf5",
+  "original_seconds": 844.9755825996399,
+  "protocol_sha256": "d4288ad269ceb1c524d8665c8a4d2cf15e88f260c020da07febd8cfe84d2b0b4",
+  "inventory_sha256": "fe0eba1fd5d36e2b8e2998d563b2d91ea7227bfa3587ed44222cbada29d1bc6d",
+  "original_started_sha256": "193f9db6d541f06039459c01c45df696f1f9057b8967991797d8a9bcb697bbc4",
+  "original_failure_sha256": "25259d7fd6d490aaa7010ab5e08cecb880a85cd517eadffc03abfe80df60640b"
+}

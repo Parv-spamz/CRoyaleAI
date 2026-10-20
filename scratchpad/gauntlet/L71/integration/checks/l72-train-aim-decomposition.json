@@ -1,0 +1,14 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "-u",
+    "scratchpad/gauntlet/L72/improvement_loop/decompose_train_aim.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "TRAIN_AIM_DECOMPOSITION_COMPLETE",
+  "matched": true,
+  "output_sha256": "3f1db7b32642630d9cc7077f8ad010401b0d823a1778960109ba6b45aa4ad83e",
+  "seconds": 116.63893437385559
+}

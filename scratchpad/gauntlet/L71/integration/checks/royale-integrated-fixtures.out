@@ -1,0 +1,47 @@
+F.                                                                       [100%]
+================================== FAILURES ===================================
+_ RuntimeFiles.test_checkpoint_and_actor_configuration_retain_stamp_and_refuse_old_resume _
+
+self = <pipeline.tests.test_royale_runtime.RuntimeFiles testMethod=test_checkpoint_and_actor_configuration_retain_stamp_and_refuse_old_resume>
+
+    def test_checkpoint_and_actor_configuration_retain_stamp_and_refuse_old_resume(self):
+        import torch
+        from pipeline import rl_royale as RL
+        from pipeline.tests.test_rl_royale import TestCheckpointRoundTrip, _tiny_model
+        fixture = TestCheckpointRoundTrip()
+        fixture.setUp()
+        try:
+            first = fixture._learner(_tiny_model(5))
+            first.cfg = RL.load_config(runtime.REPO/'pipeline/rl_royale.yaml', [], smoke=False) | first.cfg
+            first.runtime = runtime.activate()
+            checkpoint = first._payload(None)
+            self.assertEqual(checkpoint['rl']['runtime'], first.runtime)
+>           self.assertEqual(first.actor_base()['runtime'], first.runtime)
+                             ^^^^^^^^^^^^^^^^^^
+
+pipeline\tests\test_royale_runtime.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <pipeline.rl_royale.Learner object at 0x0000026981E102F0>
+
+    def actor_base(self) -> dict:
+        """What every actor process gets: the decide-rule keys, the model shape (``gen`` = GenModel extras or None)
+        and the condition keys (``COND_KEYS``) that ``actor_cfg`` puts into rollout AND screen matches."""
+        a = self.init_meta["args"]
+        base = {k: self.cfg[k] for k in ("actor_threads", "actor_device", "tau", "T", "afford_mask", "stall_elixir",
+                                         "stall_seconds", "obs", "decide_every", "in_flight")}
+>       base.update({"d": int(a.get("d", 128)), "layers": int(a.get("layers", 4)), "grid": self.grid})
+                                                                                           ^^^^^^^^^
+E       AttributeError: 'Learner' object has no attribute 'grid'
+
+pipeline\rl_royale.py:1838: AttributeError
+============================== warnings summary ===============================
+pipeline/tests/test_royale_runtime.py::RuntimeFiles::test_checkpoint_and_actor_configuration_retain_stamp_and_refuse_old_resume
+pipeline/tests/test_royale_forms.py::TestPlumbing::test_rl_config_key_and_actor
+  C:\Users\benpe\ClashBot\pipeline\model_v3.py:92: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+    self.encoder = nn.TransformerEncoder(enc, layers)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED pipeline/tests/test_royale_runtime.py::RuntimeFiles::test_checkpoint_and_actor_configuration_retain_stamp_and_refuse_old_resume
+1 failed, 1 passed, 2 warnings in 11.74s

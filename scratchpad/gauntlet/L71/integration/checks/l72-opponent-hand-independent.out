@@ -1,0 +1,2 @@
+{"complete": true, "replays": 160, "queries": 12696, "controls": {"positive": 3, "negative": 8}, "collected_sha256": "b92f572d42721105610f695c04c3402c4a5a92eba631beb15500bd82fc7651be", "all_raw_hands_and_prefix_predictions_reconciled": true, "all_scalar_and_per_replay_counts_reconciled": true, "no_model_calls": true}
+OPPONENT_HAND_VERIFIED

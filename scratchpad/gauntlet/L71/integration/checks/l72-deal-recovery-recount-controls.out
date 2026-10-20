@@ -1,0 +1,2 @@
+{"positive_checks": 2, "rejected": ["missing_card_frame", "wrong_frame_tick", "changed_command", "dropped_ability", "wrong_opening_position", "wrong_opening_card", "changed_form"]}
+DEAL_RECOUNT_CONTROLS_PASS

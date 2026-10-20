@@ -1,0 +1,33 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pipeline.train_expert_context",
+    "--data",
+    "icebow/data/bench/spawner_identity_20261005/gen_dataset_v5_public.npz",
+    "--source-data",
+    "icebow/data/pipeline/gen_dataset_v31_public.npz",
+    "--correction-manifest",
+    "icebow/data/bench/spawner_identity_20261005/manifest.json",
+    "--contexts",
+    "icebow/data/bench/context_teaching_20261005",
+    "--init-ckpt",
+    "icebow/data/bench/rl_royale/rseries_r1e31/rseries_r1e31_u0155.pt",
+    "--out",
+    "icebow/data/bench/expert_context_smoke_20261005/v6",
+    "--arm",
+    "rocket_both",
+    "--feature-version",
+    "6",
+    "--smoke-one-batch",
+    "--bs",
+    "8"
+  ],
+  "cwd": "C:\\Users\\benpe\\.codex\\worktrees\\learned-defence\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "EXPERT_CONTEXT_SMOKE_PASS",
+  "matched": true,
+  "output_sha256": "b1aa637c73ad71cc7b36ed64fa747626095bed108eb29aa25ea566a5c0b0ea52",
+  "seconds": 60.82303810119629
+}

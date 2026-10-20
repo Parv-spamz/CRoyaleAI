@@ -1,0 +1,3 @@
+{"rocket_aim_material": false, "rocket_action_material": false, "late_rocket_material": false, "general_card_noninferior": true, "barrel_correct_nonregression": true, "barrel_wrong_nonregression": true, "witch_nonregression": true, "night_witch_nonregression": true, "furnace_nonregression": true, "defensive_sequence_nonregression": true, "phase_late_overtime_clock_nonregression": true}
+OUTCOME_RL_VERIFIED
+OUTCOME_RL_RECOUNT_COMPLETE_WITH_FAILED_EXACTNESS

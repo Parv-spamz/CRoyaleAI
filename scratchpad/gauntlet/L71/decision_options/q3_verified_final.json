@@ -1,0 +1,628 @@
+{
+  "schema": 1,
+  "complete": true,
+  "pending": [],
+  "plan_sha256": "de37bec27f0566c71839bae28e9d3b270ebe56cfbaba1765389d9a540dd1f2ff",
+  "receipts": {
+    "ghost_r1e_baseline": "5f921133a7cea5af0e17fa250eb2f3570dc33a642b6fb807a4382ccc11dbf967",
+    "reactive_r1e_baseline": "5caebc899d48a9dc4bce199eb32df8b5cadf448d4946d5dc60c4862b14d99067",
+    "ghost_r1e_filtered_T1": "f8f2046868abaa9044b821906aa9a1b6e243786a3a6e59db233037c3744f3f11",
+    "reactive_r1e_filtered_T1": "0a3b2d61a7051b784cdca9238e51adbab319f74475e856206b4d20c507ef2a82",
+    "ghost_r1e_filtered_T07": "394d7d6891fe56d17a4f3715b6e16d79f4c98e8a73638c655b33f3e39aa1351f",
+    "reactive_r1e_filtered_T07": "f48f058ee25bd7bea72d28caed93309a6f6c5fd82d3b03e923ad3eec8c7baffc",
+    "ghost_r1e_area": "b001a9d9707c9f3d91899a18e6f9441c085185db70bbb6576eda9c19ea64bfc7",
+    "reactive_r1e_area": "bf195be4a7034f87c4f2b2bd12aeffc107f9b8c87894d7eb2925eee429c54a8c",
+    "ghost_r1e_combined": "c42d9ef46e0f3caf219d9e0f7dfb90d24e223059729c04513e036f7c3fc6d266",
+    "reactive_r1e_combined": "03b2016edd481901fc40825da95d539f04d670b52606adfc188f443530c6314e",
+    "ghost_r1_baseline": "68c0cb9dc1839f252c19948e2c89d45b3615a794208a3e1496c04d531955037e",
+    "reactive_r1_baseline": "9dafcafb8142e917072524b6104a689a7d288113fcfc43caa4a5fc579f62d238",
+    "ghost_r1_filtered_T1": "68d712e1a139b61fbc44ed0b30675ac079790c7c2a0f45c434d96222846efb8a",
+    "reactive_r1_filtered_T1": "8d337067fee769c1e1ee6eef7ad8f0eb005470478e5ab5d70d767d6bf1bedb53",
+    "ghost_r1_filtered_T07": "50c8a00e0965d0c485cf40a9fc885809bbc50d74c7ef84b68b9e9bc410717d9e",
+    "reactive_r1_filtered_T07": "af70fde526ff95529610f94013ddd52b6d99ff08d4f969b009cf8fb51704d426",
+    "ghost_r1_area": "a363e827aadd86a86e9d21e8a9fc888fe852f15ab5b89bb4bcd41c2ac13ef1a2",
+    "reactive_r1_area": "9578a9ef47aabec3bcf3d44af6204d5dd1c77ad05b0159e35fb80f113a59da2a",
+    "ghost_r1_combined": "ab5e032456ef0b6da55eba21c9fdb4262a3661107339edee8f248326345e09ce",
+    "reactive_r1_combined": "505484519cb4b6b910d58ca4ee148c30017e7677bfc1683146ed70680104602b"
+  },
+  "models": {
+    "r1e": {
+      "baseline": {
+        "ghost": {
+          "n": 299,
+          "outcomes": {
+            "win": 285,
+            "loss": 14
+          },
+          "wins": 285,
+          "accepted_plays": 9140,
+          "rockets": 42,
+          "rocket_share": 0.004595185995623632,
+          "tower_rockets": 5,
+          "tower_rockets_hp_confirmed": 5,
+          "finish_offs": 0,
+          "multi_rocket_cycles": 0,
+          "defensive_rockets": 26,
+          "rocket_then_tornado": 0,
+          "tornado_then_rocket": 0,
+          "unknown_rocket_impacts": 2,
+          "preemptive_log_n": 123,
+          "preemptive_log_denominator": 278
+        },
+        "reactive": {
+          "n": 48,
+          "outcomes": {
+            "win": 32,
+            "loss": 16
+          },
+          "wins": 32,
+          "accepted_plays": 1732,
+          "rockets": 43,
+          "rocket_share": 0.024826789838337183,
+          "tower_rockets": 1,
+          "tower_rockets_hp_confirmed": 1,
+          "finish_offs": 0,
+          "multi_rocket_cycles": 0,
+          "defensive_rockets": 29,
+          "rocket_then_tornado": 1,
+          "tornado_then_rocket": 0,
+          "unknown_rocket_impacts": 0,
+          "preemptive_log_n": 9,
+          "preemptive_log_denominator": 15
+        }
+      },
+      "arms": {
+        "filtered_T1": {
+          "ghost": {
+            "n": 299,
+            "outcomes": {
+              "win": 279,
+              "loss": 20
+            },
+            "wins": 279,
+            "accepted_plays": 9049,
+            "rockets": 48,
+            "rocket_share": 0.005304453530776881,
+            "tower_rockets": 6,
+            "tower_rockets_hp_confirmed": 6,
+            "finish_offs": 0,
+            "multi_rocket_cycles": 0,
+            "defensive_rockets": 25,
+            "rocket_then_tornado": 1,
+            "tornado_then_rocket": 0,
+            "unknown_rocket_impacts": 2,
+            "preemptive_log_n": 121,
+            "preemptive_log_denominator": 276
+          },
+          "reactive": {
+            "n": 48,
+            "outcomes": {
+              "loss": 17,
+              "win": 31
+            },
+            "wins": 31,
+            "accepted_plays": 1899,
+            "rockets": 45,
+            "rocket_share": 0.023696682464454975,
+            "tower_rockets": 2,
+            "tower_rockets_hp_confirmed": 2,
+            "finish_offs": 0,
+            "multi_rocket_cycles": 0,
+            "defensive_rockets": 30,
+            "rocket_then_tornado": 0,
+            "tornado_then_rocket": 0,
+            "unknown_rocket_impacts": 0,
+            "preemptive_log_n": 9,
+            "preemptive_log_denominator": 15
+          },
+          "paired": {
+            "delta_pp": -2.0066889632107023,
+            "ci95_pp": [
+              -4.3478260869565215,
+              0.33444816053511706
+            ],
+            "paired": 299,
+            "entries": 299,
+            "better": 4,
+            "worse": 10
+          },
+          "gates": {
+            "ghost_nonnegative": false,
+            "reactive_within_two": true,
+            "rocket_share_closer": true,
+            "tower_rockets_increase": true
+          },
+          "passes": false
+        },
+        "filtered_T07": {
+          "ghost": {
+            "n": 299,
+            "outcomes": {
+              "win": 278,
+              "loss": 21
+            },
+            "wins": 278,
+            "accepted_plays": 9058,
+            "rockets": 48,
+            "rocket_share": 0.0052991830426142635,
+            "tower_rockets": 6,
+            "tower_rockets_hp_confirmed": 6,
+            "finish_offs": 0,
+            "multi_rocket_cycles": 0,
+            "defensive_rockets": 25,
+            "rocket_then_tornado": 1,
+            "tornado_then_rocket": 0,
+            "unknown_rocket_impacts": 2,
+            "preemptive_log_n": 122,
+            "preemptive_log_denominator": 276
+          },
+          "reactive": {
+            "n": 48,
+            "outcomes": {
+              "loss": 17,
+              "win": 31
+            },
+            "wins": 31,
+            "accepted_plays": 1851,
+            "rockets": 44,
+            "rocket_share": 0.02377093462992977,
+            "tower_rockets": 2,
+            "tower_rockets_hp_confirmed": 2,
+            "finish_offs": 0,
+            "multi_rocket_cycles": 0,
+            "defensive_rockets": 30,
+            "rocket_then_tornado": 0,
+            "tornado_then_rocket": 0,
+            "unknown_rocket_impacts": 0,
+            "preemptive_log_n": 9,
+            "preemptive_log_denominator": 15
+          },
+          "paired": {
+            "delta_pp": -2.341137123745819,
+            "ci95_pp": [
+              -5.016722408026756,
+              0.0
+            ],
+            "paired": 299,
+            "entries": 299,
+            "better": 4,
+            "worse": 11
+          },
+          "gates": {
+            "ghost_nonnegative": false,
+            "reactive_within_two": true,
+            "rocket_share_closer": true,
+            "tower_rockets_increase": true
+          },
+          "passes": false
+        },
+        "area": {
+          "ghost": {
+            "n": 299,
+            "outcomes": {
+              "win": 286,
+              "loss": 13
+            },
+            "wins": 286,
+            "accepted_plays": 9142,
+            "rockets": 41,
+            "rocket_share": 0.004484795449573397,
+            "tower_rockets": 4,
+            "tower_rockets_hp_confirmed": 4,
+            "finish_offs": 0,
+            "multi_rocket_cycles": 0,
+            "defensive_rockets": 31,
+            "rocket_then_tornado": 0,
+            "tornado_then_rocket": 0,
+            "unknown_rocket_impacts": 2,
+            "preemptive_log_n": 123,
+            "preemptive_log_denominator": 278
+          },
+          "reactive": {
+            "n": 48,
+            "outcomes": {
+              "win": 31,
+              "loss": 17
+            },
+            "wins": 31,
+            "accepted_plays": 1724,
+            "rockets": 44,
+            "rocket_share": 0.025522041763341066,
+            "tower_rockets": 2,
+            "tower_rockets_hp_confirmed": 2,
+            "finish_offs": 0,
+            "multi_rocket_cycles": 0,
+            "defensive_rockets": 34,
+            "rocket_then_tornado": 0,
+            "tornado_then_rocket": 0,
+            "unknown_rocket_impacts": 0,
+            "preemptive_log_n": 9,
+            "preemptive_log_denominator": 15
+          },
+          "paired": {
+            "delta_pp": 0.33444816053511706,
+            "ci95_pp": [
+              0.0,
+              1.0033444816053512
+            ],
+            "paired": 299,
+            "entries": 299,
+            "better": 1,
+            "worse": 0
+          },
+          "gates": {
+            "ghost_nonnegative": true,
+            "reactive_within_two": true,
+            "rocket_share_closer": false,
+            "tower_rockets_increase": false
+          },
+          "passes": false
+        },
+        "combined": {
+          "ghost": {
+            "n": 299,
+            "outcomes": {
+              "win": 279,
+              "loss": 20
+            },
+            "wins": 279,
+            "accepted_plays": 9047,
+            "rockets": 48,
+            "rocket_share": 0.005305626174422461,
+            "tower_rockets": 11,
+            "tower_rockets_hp_confirmed": 11,
+            "finish_offs": 0,
+            "multi_rocket_cycles": 0,
+            "defensive_rockets": 31,
+            "rocket_then_tornado": 0,
+            "tornado_then_rocket": 0,
+            "unknown_rocket_impacts": 2,
+            "preemptive_log_n": 121,
+            "preemptive_log_denominator": 276
+          },
+          "reactive": {
+            "n": 48,
+            "outcomes": {
+              "loss": 16,
+              "win": 32
+            },
+            "wins": 32,
+            "accepted_plays": 1952,
+            "rockets": 44,
+            "rocket_share": 0.022540983606557378,
+            "tower_rockets": 5,
+            "tower_rockets_hp_confirmed": 5,
+            "finish_offs": 0,
+            "multi_rocket_cycles": 0,
+            "defensive_rockets": 31,
+            "rocket_then_tornado": 0,
+            "tornado_then_rocket": 0,
+            "unknown_rocket_impacts": 0,
+            "preemptive_log_n": 9,
+            "preemptive_log_denominator": 15
+          },
+          "paired": {
+            "delta_pp": -2.0066889632107023,
+            "ci95_pp": [
+              -4.3478260869565215,
+              0.33444816053511706
+            ],
+            "paired": 299,
+            "entries": 299,
+            "better": 4,
+            "worse": 10
+          },
+          "gates": {
+            "ghost_nonnegative": false,
+            "reactive_within_two": true,
+            "rocket_share_closer": true,
+            "tower_rockets_increase": true
+          },
+          "passes": false
+        }
+      }
+    },
+    "r1": {
+      "baseline": {
+        "ghost": {
+          "n": 299,
+          "outcomes": {
+            "win": 286,
+            "loss": 13
+          },
+          "wins": 286,
+          "accepted_plays": 9001,
+          "rockets": 50,
+          "rocket_share": 0.005554938340184424,
+          "tower_rockets": 7,
+          "tower_rockets_hp_confirmed": 7,
+          "finish_offs": 0,
+          "multi_rocket_cycles": 1,
+          "defensive_rockets": 34,
+          "rocket_then_tornado": 0,
+          "tornado_then_rocket": 0,
+          "unknown_rocket_impacts": 1,
+          "preemptive_log_n": 44,
+          "preemptive_log_denominator": 272
+        },
+        "reactive": {
+          "n": 48,
+          "outcomes": {
+            "loss": 12,
+            "win": 36
+          },
+          "wins": 36,
+          "accepted_plays": 1769,
+          "rockets": 25,
+          "rocket_share": 0.014132278123233465,
+          "tower_rockets": 0,
+          "tower_rockets_hp_confirmed": 0,
+          "finish_offs": 0,
+          "multi_rocket_cycles": 0,
+          "defensive_rockets": 17,
+          "rocket_then_tornado": 0,
+          "tornado_then_rocket": 0,
+          "unknown_rocket_impacts": 1,
+          "preemptive_log_n": 4,
+          "preemptive_log_denominator": 10
+        }
+      },
+      "arms": {
+        "filtered_T1": {
+          "ghost": {
+            "n": 299,
+            "outcomes": {
+              "loss": 17,
+              "win": 282
+            },
+            "wins": 282,
+            "accepted_plays": 8912,
+            "rockets": 54,
+            "rocket_share": 0.006059245960502693,
+            "tower_rockets": 8,
+            "tower_rockets_hp_confirmed": 8,
+            "finish_offs": 0,
+            "multi_rocket_cycles": 0,
+            "defensive_rockets": 39,
+            "rocket_then_tornado": 0,
+            "tornado_then_rocket": 0,
+            "unknown_rocket_impacts": 1,
+            "preemptive_log_n": 54,
+            "preemptive_log_denominator": 275
+          },
+          "reactive": {
+            "n": 48,
+            "outcomes": {
+              "loss": 17,
+              "win": 31
+            },
+            "wins": 31,
+            "accepted_plays": 1618,
+            "rockets": 38,
+            "rocket_share": 0.023485784919653894,
+            "tower_rockets": 2,
+            "tower_rockets_hp_confirmed": 2,
+            "finish_offs": 0,
+            "multi_rocket_cycles": 0,
+            "defensive_rockets": 27,
+            "rocket_then_tornado": 0,
+            "tornado_then_rocket": 0,
+            "unknown_rocket_impacts": 1,
+            "preemptive_log_n": 4,
+            "preemptive_log_denominator": 10
+          },
+          "paired": {
+            "delta_pp": -1.3377926421404682,
+            "ci95_pp": [
+              -3.678929765886288,
+              1.0033444816053512
+            ],
+            "paired": 299,
+            "entries": 299,
+            "better": 4,
+            "worse": 8
+          },
+          "gates": {
+            "ghost_nonnegative": false,
+            "reactive_within_two": false,
+            "rocket_share_closer": true,
+            "tower_rockets_increase": true
+          },
+          "passes": false
+        },
+        "filtered_T07": {
+          "ghost": {
+            "n": 299,
+            "outcomes": {
+              "loss": 18,
+              "win": 281
+            },
+            "wins": 281,
+            "accepted_plays": 8872,
+            "rockets": 53,
+            "rocket_share": 0.0059738503155996395,
+            "tower_rockets": 8,
+            "tower_rockets_hp_confirmed": 8,
+            "finish_offs": 0,
+            "multi_rocket_cycles": 0,
+            "defensive_rockets": 38,
+            "rocket_then_tornado": 0,
+            "tornado_then_rocket": 0,
+            "unknown_rocket_impacts": 1,
+            "preemptive_log_n": 54,
+            "preemptive_log_denominator": 275
+          },
+          "reactive": {
+            "n": 48,
+            "outcomes": {
+              "loss": 15,
+              "win": 33
+            },
+            "wins": 33,
+            "accepted_plays": 1644,
+            "rockets": 39,
+            "rocket_share": 0.023722627737226276,
+            "tower_rockets": 1,
+            "tower_rockets_hp_confirmed": 1,
+            "finish_offs": 0,
+            "multi_rocket_cycles": 0,
+            "defensive_rockets": 30,
+            "rocket_then_tornado": 0,
+            "tornado_then_rocket": 0,
+            "unknown_rocket_impacts": 1,
+            "preemptive_log_n": 4,
+            "preemptive_log_denominator": 10
+          },
+          "paired": {
+            "delta_pp": -1.6722408026755853,
+            "ci95_pp": [
+              -4.013377926421405,
+              0.6688963210702341
+            ],
+            "paired": 299,
+            "entries": 299,
+            "better": 4,
+            "worse": 9
+          },
+          "gates": {
+            "ghost_nonnegative": false,
+            "reactive_within_two": false,
+            "rocket_share_closer": true,
+            "tower_rockets_increase": true
+          },
+          "passes": false
+        },
+        "area": {
+          "ghost": {
+            "n": 299,
+            "outcomes": {
+              "win": 286,
+              "loss": 13
+            },
+            "wins": 286,
+            "accepted_plays": 9016,
+            "rockets": 50,
+            "rocket_share": 0.005545696539485359,
+            "tower_rockets": 11,
+            "tower_rockets_hp_confirmed": 11,
+            "finish_offs": 0,
+            "multi_rocket_cycles": 0,
+            "defensive_rockets": 40,
+            "rocket_then_tornado": 0,
+            "tornado_then_rocket": 0,
+            "unknown_rocket_impacts": 1,
+            "preemptive_log_n": 44,
+            "preemptive_log_denominator": 272
+          },
+          "reactive": {
+            "n": 48,
+            "outcomes": {
+              "loss": 12,
+              "win": 36
+            },
+            "wins": 36,
+            "accepted_plays": 1790,
+            "rockets": 26,
+            "rocket_share": 0.01452513966480447,
+            "tower_rockets": 0,
+            "tower_rockets_hp_confirmed": 0,
+            "finish_offs": 0,
+            "multi_rocket_cycles": 0,
+            "defensive_rockets": 19,
+            "rocket_then_tornado": 0,
+            "tornado_then_rocket": 0,
+            "unknown_rocket_impacts": 0,
+            "preemptive_log_n": 4,
+            "preemptive_log_denominator": 10
+          },
+          "paired": {
+            "delta_pp": 0.0,
+            "ci95_pp": [
+              0.0,
+              0.0
+            ],
+            "paired": 299,
+            "entries": 299,
+            "better": 0,
+            "worse": 0
+          },
+          "gates": {
+            "ghost_nonnegative": true,
+            "reactive_within_two": true,
+            "rocket_share_closer": false,
+            "tower_rockets_increase": true
+          },
+          "passes": false
+        },
+        "combined": {
+          "ghost": {
+            "n": 299,
+            "outcomes": {
+              "loss": 17,
+              "win": 282
+            },
+            "wins": 282,
+            "accepted_plays": 8943,
+            "rockets": 55,
+            "rocket_share": 0.006150061500615006,
+            "tower_rockets": 11,
+            "tower_rockets_hp_confirmed": 11,
+            "finish_offs": 0,
+            "multi_rocket_cycles": 0,
+            "defensive_rockets": 45,
+            "rocket_then_tornado": 0,
+            "tornado_then_rocket": 0,
+            "unknown_rocket_impacts": 1,
+            "preemptive_log_n": 54,
+            "preemptive_log_denominator": 275
+          },
+          "reactive": {
+            "n": 48,
+            "outcomes": {
+              "loss": 15,
+              "win": 33
+            },
+            "wins": 33,
+            "accepted_plays": 1657,
+            "rockets": 38,
+            "rocket_share": 0.022933011466505733,
+            "tower_rockets": 3,
+            "tower_rockets_hp_confirmed": 3,
+            "finish_offs": 0,
+            "multi_rocket_cycles": 0,
+            "defensive_rockets": 29,
+            "rocket_then_tornado": 0,
+            "tornado_then_rocket": 0,
+            "unknown_rocket_impacts": 0,
+            "preemptive_log_n": 4,
+            "preemptive_log_denominator": 10
+          },
+          "paired": {
+            "delta_pp": -1.3377926421404682,
+            "ci95_pp": [
+              -3.678929765886288,
+              1.0033444816053512
+            ],
+            "paired": 299,
+            "entries": 299,
+            "better": 4,
+            "worse": 8
+          },
+          "gates": {
+            "ghost_nonnegative": false,
+            "reactive_within_two": false,
+            "rocket_share_closer": true,
+            "tower_rockets_increase": true
+          },
+          "passes": false
+        }
+      }
+    }
+  },
+  "acceptance": "ghost delta >=0, reactive wins >=baseline-2/48, Rocket share closer to .058 and tower Rocket hits increase",
+  "limitations": [
+    "Ghost screen uses recorded nonreactive opponents and unchanged SIM anti-stall.",
+    "Tower hits are interpolated geometry; HP confirmation is reported separately.",
+    "A pass does not establish a statistically significant win improvement or authorize an unchecked checkpoint."
+  ]
+}

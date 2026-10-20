@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/recovered_capacity/verify.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "RECOVERED_CAPACITY_INDEPENDENT_PASS",
+  "matched": true,
+  "output_sha256": "a9eba6792b98aa049664e28675620ed4774883d5e94fd6fd06b5b4d63a430484",
+  "seconds": 0.6888508796691895
+}

@@ -1,0 +1,91 @@
+"""Runtime pin, actual spawned actor startup, and failed-resume controls (CPU only)."""
+import hashlib
+import json
+import multiprocessing as mp
+import os
+from pathlib import Path
+import subprocess
+import sys
+import tempfile
+import unittest
+from unittest.mock import patch
+
+from pipeline import royale_runtime as runtime
+
+
+class RuntimeFiles(unittest.TestCase):
+    def test_missing_and_changed_bytes_are_rejected(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            file = root/'engine.py'
+            file.write_bytes(b'reviewed')
+            manifest = {'files': {'engine.py': hashlib.sha256(b'reviewed').hexdigest()}}
+            runtime._verify_files(root, manifest)
+            file.write_bytes(b'stale')
+            with self.assertRaisesRegex(RuntimeError, 'changed'):
+                runtime._verify_files(root, manifest)
+            with self.assertRaisesRegex(RuntimeError, 'missing'):
+                runtime._verify_files(root, {'files': {'missing.py': '0'}})
+            with self.assertRaisesRegex(RuntimeError, 'outside'):
+                runtime._verify_files(root, {'files': {'../outside.py': '0'}})
+
+    def test_compiled_stamp_and_checkpoint_runtime_match(self):
+        stamp = runtime.activate()
+        self.assertEqual(stamp['pins']['RoyaleSim'], '015f9b0084afe574915e3f6ce2f0764c6dec6099')
+        self.assertEqual(stamp['pins']['RoyaleGym'], '3117816366b00754da1b56c9543412e4706de62a')
+        self.assertEqual(runtime.require_same(stamp), stamp)
+        with self.assertRaisesRegex(RuntimeError, 'differs'):
+            runtime.require_same(None)
+        changed = json.loads(json.dumps(stamp))
+        changed['pins']['RoyaleSim'] = 'old'
+        with self.assertRaisesRegex(RuntimeError, 'differs'):
+            runtime.require_same(changed)
+
+    def test_old_preloaded_module_is_rejected_in_fresh_process(self):
+        env = dict(os.environ, PYTHONPATH=str(runtime.REPO))
+        result = subprocess.run([sys.executable, '-c',
+            'import royalesim; from pipeline.royale_runtime import activate; activate()'],
+            cwd=runtime.REPO, env=env, capture_output=True, text=True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn('unpinned Royale module', result.stderr)
+
+    def test_data_override_is_rejected(self):
+        with patch.dict(os.environ, ROYALESIM_DATA_DIR=str(runtime.REPO)):
+            with self.assertRaisesRegex(RuntimeError, 'override'):
+                runtime.activate()
+
+    def test_standard_rl_entry_refuses_missing_runtime_before_training(self):
+        from pipeline.rl_royale import main
+        with tempfile.TemporaryDirectory() as folder:
+            with patch.object(runtime, 'MANIFEST', Path(folder)/'missing.json'), patch.object(runtime, '_STAMP', None):
+                with self.assertRaisesRegex(RuntimeError, 'manifest missing'):
+                    main(['--run', 'runtime-refusal-probe'])
+
+    def test_actual_actor_spawn_checks_learner_stamp(self):
+        from pipeline.rl_royale import actor_main
+        ctx = mp.get_context('spawn')
+        for expected, kind in [(runtime.activate(), 'ready'), (None, 'error')]:
+            incoming, outgoing = ctx.Queue(), ctx.Queue()
+            incoming.put(None)
+            base = dict(actor_threads=1, actor_device='cpu', d=16, layers=1,
+                        gen=None, runtime=expected)
+            proc = ctx.Process(target=actor_main, args=(0, 0, incoming, outgoing, base))
+            proc.start()
+            try:
+                message = outgoing.get(timeout=45)
+                self.assertEqual(message[0], kind, message)
+                if kind == 'error':
+                    self.assertIn('Royale runtime differs', message[-1])
+                proc.join(timeout=15)
+                self.assertFalse(proc.is_alive())
+                self.assertEqual(proc.exitcode, 0)
+            finally:
+                if proc.is_alive():
+                    proc.terminate()
+                    proc.join()
+                incoming.close()
+                outgoing.close()
+
+
+if __name__ == '__main__':
+    unittest.main()

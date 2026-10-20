@@ -1,0 +1,166 @@
+{
+  "complete": true,
+  "optimizer_allowed": true,
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_3\\aim_loss.py": "219e25c20798d62531a93459b9d4f7d62a1d5d6cb989ea1501e90bdf6c3aa594",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_3\\evaluate.py": "c2d406e334c868219f52fee2e054faa93538348731ee57b0e2ad564bf29c4fc3",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_3\\experiment.py": "0be66a6d4f174b98440772f327066c83ece6e725fdbfdb3901ba358317b621f9",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_3\\preflight.py": "5e591dca75c0c3a672e99d7d72dff3b722c170a2b601cf9087bf0c116f0ebbab",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_3\\recount.py": "505830044ec72583f94afc668fc0e15af63679d7464d4c567653954e6112c47d",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_3\\run_chain.py": "7e410729967cbf1253bededb72a3495d9b6ca5225af7bf202dc1079df2914ef5",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_3\\train.py": "c7aa721877a108028cf9269d43cc3ba87dddf157f443e09878b5b61c0ce075e0",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_3\\PLAN.md": "a8e3ebc99b0556cb147610f523c4a27df98938cf5fc3332c8ef39197cfa32d90",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_3\\METRICS.md": "c08ef345a2104351ab666f63a77e3a8473872bbc9055f4f8617875dbc12bf38c",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\results_verified_v2.json": "dde17a484ce0694274dbd76e99bd9d6d4b658cb6b8eea4d961b484e9b6b6dd94",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\ordinary_v6_portable.json": "8ee37fcecb50b55159d621d086284c19b959a298cb1b4182665f6874868728cc",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_2\\results_verified.json": "34ef860bb8b223d8df635696b502fec90112210c6b0583e9e432632a5f9f6128",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_2\\chain_complete.json": "ee630b6d9d15539e040428adfd78b389449183285101fbb09cc81df1653377b1",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_2\\prelaunch.json": "980d1481449d78f3e67c8721e52f09796ee31bb6537a62191fb98941d6b01bc9",
+    "icebow\\data\\bench\\development_iteration_2_20261005\\schedule.npz": "e7eebb2ef2041f6afc4537d42efdce58dfbb07f55c47fe68a678702b2f121e79",
+    "icebow\\data\\bench\\development_iteration_2_20261005\\development_masks.npz": "0c826b5177136a7dbe6364a5032f5a86dba8dd730924f71dff379d63c0d5e2fb",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\ordinary_v6\\candidate_portable.pt": "1e948b0517b95a1692ba40774fdbecb4fd22d0f0fcc8a984825634d2294913a5",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\ordinary_v6\\train.jsonl": "3fac0e004d90c31dd4f46de25ce8f1ff85d156d985cf63e57735377cddedb2c7"
+  },
+  "denominators": {
+    "witch": {
+      "rows": 726,
+      "replays": 20,
+      "plays": 300
+    },
+    "witch_parent": {
+      "rows": 558,
+      "replays": 20,
+      "plays": 233
+    },
+    "witch_child_only": {
+      "rows": 168,
+      "replays": 18,
+      "plays": 67
+    },
+    "night_witch": {
+      "rows": 373,
+      "replays": 12,
+      "plays": 160
+    },
+    "night_witch_parent": {
+      "rows": 332,
+      "replays": 12,
+      "plays": 145
+    },
+    "night_witch_child_only": {
+      "rows": 41,
+      "replays": 8,
+      "plays": 15
+    },
+    "furnace": {
+      "rows": 1174,
+      "replays": 20,
+      "plays": 480
+    },
+    "furnace_parent": {
+      "rows": 1159,
+      "replays": 20,
+      "plays": 474
+    },
+    "furnace_child_only": {
+      "rows": 15,
+      "replays": 6,
+      "plays": 6
+    },
+    "barrel_pro": {
+      "rows": 63,
+      "replays": 26,
+      "plays": 63
+    },
+    "barrel_other_play": {
+      "rows": 36,
+      "replays": 22,
+      "plays": 36
+    },
+    "barrel_wait": {
+      "rows": 55,
+      "replays": 25,
+      "plays": 0
+    },
+    "barrel_multiple": {
+      "rows": 54,
+      "replays": 18,
+      "plays": 33
+    },
+    "barrel_ambiguous": {
+      "rows": 55,
+      "replays": 19,
+      "plays": 34
+    },
+    "barrel_absent": {
+      "rows": 54372,
+      "replays": 405,
+      "plays": 16973
+    },
+    "rocket": {
+      "rows": 955,
+      "replays": 336,
+      "plays": 955
+    },
+    "all": {
+      "rows": 54723,
+      "replays": 405,
+      "plays": 17192
+    },
+    "finish": {
+      "rows": 31,
+      "replays": 13,
+      "plays": 21
+    },
+    "combo": {
+      "rows": 320,
+      "replays": 75,
+      "plays": 200
+    },
+    "xbow": {
+      "rows": 105,
+      "replays": 10,
+      "plays": 36
+    },
+    "xbow_no_lifetime_target": {
+      "rows": 0,
+      "replays": 0,
+      "plays": 0
+    },
+    "defensive_sequence": {
+      "rows": 8183,
+      "replays": 212,
+      "plays": 3152
+    },
+    "defensive_rocket": {
+      "rows": 223,
+      "replays": 129,
+      "plays": 223
+    }
+  },
+  "loss1_exact": true,
+  "gradients1_exact": true,
+  "noncell_terms_unchanged": true,
+  "nonrocket_cell_gradient_zero": true,
+  "rocket_cell_gradient_nonzero": true,
+  "no_rocket_and_wait_controls_passed": true,
+  "primitive_metadata_roundtrip": true,
+  "smoke": {
+    "loss": 5.9850544929504395,
+    "parts": {
+      "cell": 3.1469085216522217,
+      "card": 0.8522143363952637,
+      "wait": 0.46799615025520325,
+      "gate": 0.49604129791259766,
+      "value": 0.37193629145622253,
+      "rocket_cell_extra": 0.6499574780464172
+    },
+    "counts_as_training": false,
+    "checkpoint_saved": false,
+    "updates": 1
+  },
+  "first_batch_expert_rockets": 2,
+  "development_policy_predictions": 0,
+  "full_training_updates": 0,
+  "deployment_accepted": false
+}

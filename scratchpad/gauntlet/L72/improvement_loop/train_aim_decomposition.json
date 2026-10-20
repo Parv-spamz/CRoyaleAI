@@ -1,0 +1,611 @@
+{
+  "complete": true,
+  "training_only": true,
+  "optimization_steps": 0,
+  "new_models": 0,
+  "source_sha256": "297763ea0ecaa3be863d2859d3b5c74f1b627ab0ecfef89a80404112ebf9b1a4",
+  "contexts_sha256": "e6ba7b7556ec8176356e777c5f74f9a680daf6d1bd54ebedee2f059f8c980f75",
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\decompose_train_aim.py": "72aa50451303f1cac695aa522d6aa4415f93b2e3ad13f6d86f56f1e0291a4a05",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\train_rocket_diagnosis.json": "28bcfcc0385049147491f391fa47f9cef5630ea19325f90306258cd6d0a369c4",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\TRAIN_AIM_DECOMPOSITION_PLAN.md": "2d6691b45c4e71aefe9741c651028a89f1b351ac21f97a9998242c6fb7e46fef",
+    "pipeline\\model_gen.py": "826c14cdef9db44378ccd613fc6b5f09ffafd5218e6d18bb6a9d2e15841468db",
+    "pipeline\\model_v3.py": "104f7f297499cfd8c20e45b75441fd7b6062f133062429974542794bf8177f1d",
+    "pipeline\\eval_gen.py": "e963da3a35510de556551e568c82fa758d2ba5bd7857ab0ed0b388e8d3ab35dd",
+    "pipeline\\train_rocket_curriculum.py": "7b354744803678fcc6a5d25748898af8f7ad867989611e1401752b7b3f5aa39e",
+    "icebow/data/bench/rl_royale/rseries_r1e31/rseries_r1e31_u0155.pt": "76fdfaacbd9c2049cc88792278f06e3f73a56eaf9653791e922d9332dd6751cd",
+    "icebow/data/bench/expert_context_20261005/v4_uniform/candidate.pt": "de98a465affe3c71a12f46c5f0c6bbad10d3917cc172eb1b6bfe6a1497fb6617",
+    "icebow/data/bench/expert_context_20261005/v4_rocket/candidate.pt": "ab98da7882ae4e559d87e834089cb80b5be50cb6dd17da740aa0c674b96de0a3"
+  },
+  "selected_ids_sha256": "7cd5f121ff6500063f54185ac9f08ed52a0bfc2833aa717ecee3267d66abd576",
+  "cache_path": "C:\\Users\\benpe\\ClashBot\\icebow\\data\\bench\\train_aim_decomposition_20261005\\components.npz",
+  "cache_sha256": "b886df3c3c2078d24fb6642588658c85789c978620caacb12efc1ca5a8a4c3e2",
+  "rows": 830,
+  "max_reconstruction_error": {
+    "r1e": 3.814697265625e-06,
+    "ordinary_il": 3.814697265625e-06,
+    "rocket_il": 3.814697265625e-06
+  },
+  "previous_full_aim_matches": true,
+  "summaries": {
+    "r1e": {
+      "finish": {
+        "rows": 65,
+        "replays": 65,
+        "modes": {
+          "full": {
+            "correct": 13,
+            "gained": 0,
+            "lost": 0,
+            "mean_expert_region_mass": 0.27896451488582613
+          },
+          "no_patch": {
+            "correct": 11,
+            "gained": 6,
+            "lost": 8,
+            "mean_expert_region_mass": 0.05052155121762324
+          },
+          "no_position": {
+            "correct": 18,
+            "gained": 9,
+            "lost": 4,
+            "mean_expert_region_mass": 0.18957135070975178
+          },
+          "no_bias": {
+            "correct": 13,
+            "gained": 0,
+            "lost": 0,
+            "mean_expert_region_mass": 0.2787648066702283
+          },
+          "patch_only": {
+            "correct": 17,
+            "gained": 11,
+            "lost": 7,
+            "mean_expert_region_mass": 0.19599867944556507
+          },
+          "position_only": {
+            "correct": 10,
+            "gained": 6,
+            "lost": 9,
+            "mean_expert_region_mass": 0.04946073389672675
+          },
+          "bias_only": {
+            "correct": 0,
+            "gained": 0,
+            "lost": 13,
+            "mean_expert_region_mass": 0.01997611973493958
+          }
+        },
+        "full_misses": 52,
+        "miss_margin_contributions": {
+          "patch": {
+            "mean": 0.7558011246415285,
+            "dominant_rows": 24
+          },
+          "position": {
+            "mean": 0.4815194776568275,
+            "dominant_rows": 28
+          },
+          "bias": {
+            "mean": 0.017933515979586027,
+            "dominant_rows": 0
+          }
+        }
+      },
+      "combo_rocket": {
+        "rows": 256,
+        "replays": 222,
+        "modes": {
+          "full": {
+            "correct": 140,
+            "gained": 0,
+            "lost": 0,
+            "mean_expert_region_mass": 0.3999020014564367
+          },
+          "no_patch": {
+            "correct": 42,
+            "gained": 14,
+            "lost": 112,
+            "mean_expert_region_mass": 0.04922382665763161
+          },
+          "no_position": {
+            "correct": 111,
+            "gained": 12,
+            "lost": 41,
+            "mean_expert_region_mass": 0.2644610534608056
+          },
+          "no_bias": {
+            "correct": 141,
+            "gained": 1,
+            "lost": 0,
+            "mean_expert_region_mass": 0.3984728057356517
+          },
+          "patch_only": {
+            "correct": 79,
+            "gained": 13,
+            "lost": 74,
+            "mean_expert_region_mass": 0.26216370544229534
+          },
+          "position_only": {
+            "correct": 40,
+            "gained": 14,
+            "lost": 114,
+            "mean_expert_region_mass": 0.0484180270461127
+          },
+          "bias_only": {
+            "correct": 2,
+            "gained": 2,
+            "lost": 140,
+            "mean_expert_region_mass": 0.020013149699634778
+          }
+        },
+        "full_misses": 116,
+        "miss_margin_contributions": {
+          "patch": {
+            "mean": 1.0092995094841923,
+            "dominant_rows": 66
+          },
+          "position": {
+            "mean": 0.19638186140344197,
+            "dominant_rows": 50
+          },
+          "bias": {
+            "mean": 0.0025615766983813452,
+            "dominant_rows": 0
+          }
+        }
+      },
+      "ordinary_rocket": {
+        "rows": 256,
+        "replays": 230,
+        "modes": {
+          "full": {
+            "correct": 143,
+            "gained": 0,
+            "lost": 0,
+            "mean_expert_region_mass": 0.4649383331318537
+          },
+          "no_patch": {
+            "correct": 38,
+            "gained": 12,
+            "lost": 117,
+            "mean_expert_region_mass": 0.048963909333581274
+          },
+          "no_position": {
+            "correct": 152,
+            "gained": 27,
+            "lost": 18,
+            "mean_expert_region_mass": 0.348507506462602
+          },
+          "no_bias": {
+            "correct": 144,
+            "gained": 1,
+            "lost": 0,
+            "mean_expert_region_mass": 0.46429516532055387
+          },
+          "patch_only": {
+            "correct": 89,
+            "gained": 22,
+            "lost": 76,
+            "mean_expert_region_mass": 0.3460030320726474
+          },
+          "position_only": {
+            "correct": 39,
+            "gained": 12,
+            "lost": 116,
+            "mean_expert_region_mass": 0.04812101615688413
+          },
+          "bias_only": {
+            "correct": 7,
+            "gained": 3,
+            "lost": 139,
+            "mean_expert_region_mass": 0.020179275903396666
+          }
+        },
+        "full_misses": 113,
+        "miss_margin_contributions": {
+          "patch": {
+            "mean": 0.744235569561741,
+            "dominant_rows": 57
+          },
+          "position": {
+            "mean": 0.33642622657054294,
+            "dominant_rows": 56
+          },
+          "bias": {
+            "mean": 0.008128667714391562,
+            "dominant_rows": 0
+          }
+        }
+      }
+    },
+    "ordinary_il": {
+      "finish": {
+        "rows": 65,
+        "replays": 65,
+        "modes": {
+          "full": {
+            "correct": 15,
+            "gained": 0,
+            "lost": 0,
+            "mean_expert_region_mass": 0.2864255770920682
+          },
+          "no_patch": {
+            "correct": 12,
+            "gained": 6,
+            "lost": 9,
+            "mean_expert_region_mass": 0.05180922280870021
+          },
+          "no_position": {
+            "correct": 16,
+            "gained": 7,
+            "lost": 6,
+            "mean_expert_region_mass": 0.19711026458849643
+          },
+          "no_bias": {
+            "correct": 15,
+            "gained": 0,
+            "lost": 0,
+            "mean_expert_region_mass": 0.2863083784714593
+          },
+          "patch_only": {
+            "correct": 16,
+            "gained": 10,
+            "lost": 9,
+            "mean_expert_region_mass": 0.20360439146185713
+          },
+          "position_only": {
+            "correct": 12,
+            "gained": 6,
+            "lost": 9,
+            "mean_expert_region_mass": 0.05077655968335879
+          },
+          "bias_only": {
+            "correct": 0,
+            "gained": 0,
+            "lost": 15,
+            "mean_expert_region_mass": 0.01997635777896406
+          }
+        },
+        "full_misses": 50,
+        "miss_margin_contributions": {
+          "patch": {
+            "mean": 0.5372638475894927,
+            "dominant_rows": 19
+          },
+          "position": {
+            "mean": 0.5620131638273597,
+            "dominant_rows": 31
+          },
+          "bias": {
+            "mean": 0.018638061699457465,
+            "dominant_rows": 0
+          }
+        }
+      },
+      "combo_rocket": {
+        "rows": 256,
+        "replays": 222,
+        "modes": {
+          "full": {
+            "correct": 143,
+            "gained": 0,
+            "lost": 0,
+            "mean_expert_region_mass": 0.4048634875696743
+          },
+          "no_patch": {
+            "correct": 48,
+            "gained": 14,
+            "lost": 109,
+            "mean_expert_region_mass": 0.050467653499871326
+          },
+          "no_position": {
+            "correct": 127,
+            "gained": 19,
+            "lost": 35,
+            "mean_expert_region_mass": 0.2651744663963956
+          },
+          "no_bias": {
+            "correct": 144,
+            "gained": 1,
+            "lost": 0,
+            "mean_expert_region_mass": 0.4035710281328192
+          },
+          "patch_only": {
+            "correct": 79,
+            "gained": 13,
+            "lost": 77,
+            "mean_expert_region_mass": 0.26253264799869214
+          },
+          "position_only": {
+            "correct": 47,
+            "gained": 13,
+            "lost": 109,
+            "mean_expert_region_mass": 0.04967725705702373
+          },
+          "bias_only": {
+            "correct": 2,
+            "gained": 1,
+            "lost": 142,
+            "mean_expert_region_mass": 0.020012230676583514
+          }
+        },
+        "full_misses": 113,
+        "miss_margin_contributions": {
+          "patch": {
+            "mean": 0.8017789025222306,
+            "dominant_rows": 59
+          },
+          "position": {
+            "mean": 0.3209055672704646,
+            "dominant_rows": 54
+          },
+          "bias": {
+            "mean": 0.0046101857380595355,
+            "dominant_rows": 0
+          }
+        }
+      },
+      "ordinary_rocket": {
+        "rows": 256,
+        "replays": 230,
+        "modes": {
+          "full": {
+            "correct": 146,
+            "gained": 0,
+            "lost": 0,
+            "mean_expert_region_mass": 0.4614617732480093
+          },
+          "no_patch": {
+            "correct": 45,
+            "gained": 14,
+            "lost": 115,
+            "mean_expert_region_mass": 0.04998437026754024
+          },
+          "no_position": {
+            "correct": 149,
+            "gained": 26,
+            "lost": 23,
+            "mean_expert_region_mass": 0.34265218487946963
+          },
+          "no_bias": {
+            "correct": 146,
+            "gained": 1,
+            "lost": 1,
+            "mean_expert_region_mass": 0.46078496473093544
+          },
+          "patch_only": {
+            "correct": 85,
+            "gained": 19,
+            "lost": 80,
+            "mean_expert_region_mass": 0.3392314251985345
+          },
+          "position_only": {
+            "correct": 45,
+            "gained": 13,
+            "lost": 114,
+            "mean_expert_region_mass": 0.049155118102328185
+          },
+          "bias_only": {
+            "correct": 7,
+            "gained": 3,
+            "lost": 142,
+            "mean_expert_region_mass": 0.020178822829523907
+          }
+        },
+        "full_misses": 110,
+        "miss_margin_contributions": {
+          "patch": {
+            "mean": 0.6731196425177834,
+            "dominant_rows": 57
+          },
+          "position": {
+            "mean": 0.36195670930160717,
+            "dominant_rows": 53
+          },
+          "bias": {
+            "mean": 0.0072808887492018665,
+            "dominant_rows": 0
+          }
+        }
+      }
+    },
+    "rocket_il": {
+      "finish": {
+        "rows": 65,
+        "replays": 65,
+        "modes": {
+          "full": {
+            "correct": 16,
+            "gained": 0,
+            "lost": 0,
+            "mean_expert_region_mass": 0.28655387312923847
+          },
+          "no_patch": {
+            "correct": 12,
+            "gained": 6,
+            "lost": 10,
+            "mean_expert_region_mass": 0.05317337278728357
+          },
+          "no_position": {
+            "correct": 19,
+            "gained": 8,
+            "lost": 5,
+            "mean_expert_region_mass": 0.1993336037380846
+          },
+          "no_bias": {
+            "correct": 17,
+            "gained": 1,
+            "lost": 0,
+            "mean_expert_region_mass": 0.2865224106011258
+          },
+          "patch_only": {
+            "correct": 19,
+            "gained": 10,
+            "lost": 7,
+            "mean_expert_region_mass": 0.20579941010074254
+          },
+          "position_only": {
+            "correct": 12,
+            "gained": 6,
+            "lost": 10,
+            "mean_expert_region_mass": 0.05217070960789373
+          },
+          "bias_only": {
+            "correct": 0,
+            "gained": 0,
+            "lost": 16,
+            "mean_expert_region_mass": 0.019977368821954434
+          }
+        },
+        "full_misses": 49,
+        "miss_margin_contributions": {
+          "patch": {
+            "mean": 0.556887607185208,
+            "dominant_rows": 18
+          },
+          "position": {
+            "mean": 0.611432000462498,
+            "dominant_rows": 31
+          },
+          "bias": {
+            "mean": 0.01834716595238911,
+            "dominant_rows": 0
+          }
+        }
+      },
+      "combo_rocket": {
+        "rows": 256,
+        "replays": 222,
+        "modes": {
+          "full": {
+            "correct": 145,
+            "gained": 0,
+            "lost": 0,
+            "mean_expert_region_mass": 0.4109233140507406
+          },
+          "no_patch": {
+            "correct": 49,
+            "gained": 13,
+            "lost": 109,
+            "mean_expert_region_mass": 0.051330179552686796
+          },
+          "no_position": {
+            "correct": 120,
+            "gained": 15,
+            "lost": 40,
+            "mean_expert_region_mass": 0.26981560831476564
+          },
+          "no_bias": {
+            "correct": 146,
+            "gained": 1,
+            "lost": 0,
+            "mean_expert_region_mass": 0.4096362521400464
+          },
+          "patch_only": {
+            "correct": 82,
+            "gained": 17,
+            "lost": 80,
+            "mean_expert_region_mass": 0.2671984275788503
+          },
+          "position_only": {
+            "correct": 48,
+            "gained": 14,
+            "lost": 111,
+            "mean_expert_region_mass": 0.050564120284716185
+          },
+          "bias_only": {
+            "correct": 2,
+            "gained": 2,
+            "lost": 145,
+            "mean_expert_region_mass": 0.020011988190854906
+          }
+        },
+        "full_misses": 111,
+        "miss_margin_contributions": {
+          "patch": {
+            "mean": 0.8312765413576418,
+            "dominant_rows": 55
+          },
+          "position": {
+            "mean": 0.3282560184991264,
+            "dominant_rows": 54
+          },
+          "bias": {
+            "mean": 0.005584469622762471,
+            "dominant_rows": 2
+          }
+        }
+      },
+      "ordinary_rocket": {
+        "rows": 256,
+        "replays": 230,
+        "modes": {
+          "full": {
+            "correct": 146,
+            "gained": 0,
+            "lost": 0,
+            "mean_expert_region_mass": 0.4721059666622651
+          },
+          "no_patch": {
+            "correct": 47,
+            "gained": 16,
+            "lost": 115,
+            "mean_expert_region_mass": 0.05081553003947917
+          },
+          "no_position": {
+            "correct": 150,
+            "gained": 25,
+            "lost": 21,
+            "mean_expert_region_mass": 0.3523358786912775
+          },
+          "no_bias": {
+            "correct": 147,
+            "gained": 1,
+            "lost": 0,
+            "mean_expert_region_mass": 0.47150272534840937
+          },
+          "patch_only": {
+            "correct": 90,
+            "gained": 18,
+            "lost": 74,
+            "mean_expert_region_mass": 0.34903364427847816
+          },
+          "position_only": {
+            "correct": 46,
+            "gained": 16,
+            "lost": 116,
+            "mean_expert_region_mass": 0.050010947380334264
+          },
+          "bias_only": {
+            "correct": 7,
+            "gained": 2,
+            "lost": 141,
+            "mean_expert_region_mass": 0.02017837068403891
+          }
+        },
+        "full_misses": 110,
+        "miss_margin_contributions": {
+          "patch": {
+            "mean": 0.6826424650170586,
+            "dominant_rows": 56
+          },
+          "position": {
+            "mean": 0.3465622116134248,
+            "dominant_rows": 54
+          },
+          "bias": {
+            "mean": 0.0058544936711603605,
+            "dominant_rows": 0
+          }
+        }
+      }
+    }
+  },
+  "limits": [
+    "Fixed training diagnosis only; no confirmation predictions or deployment approval.",
+    "Teacher-forced distance to expert cast, not Rocket impact or game outcome.",
+    "Removing a term changes the decoder; diagnostic ablations are not trained candidates.",
+    "Spatial features contain transformed global context, not only local unit information."
+  ]
+}

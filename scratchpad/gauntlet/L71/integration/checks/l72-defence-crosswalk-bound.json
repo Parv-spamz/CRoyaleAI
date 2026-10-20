@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/bind_defence_sequences.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "DEFENCE_SEQUENCE_V5_BOUND_NOT_TRAINABLE",
+  "matched": true,
+  "output_sha256": "0988eddbb4460dc4054bdfa94fa6593b68a990c7729c8116d216fcdd9f58de24",
+  "seconds": 5.650339603424072
+}

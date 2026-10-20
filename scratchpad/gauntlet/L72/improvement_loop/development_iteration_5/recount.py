@@ -1,0 +1,61 @@
+"""Independent raw-label/membership recount, reusing verified control caches."""
+import numpy as np
+from experiment import *
+from recount_v2 import independently_count,independent_masks
+from extra_masks import independently_verify_extra
+
+def main():
+    if (HERE/'results_verified.json').exists():raise ValueError('Preserve existing recount')
+    c.setup();check_active();ids=c.indices('development');s,meta=c.load_subset(c.DATA,ids);cv=meta['card_vocab']
+    masks,target,allowed=independent_masks(ids,s,cv)
+    with np.load(SECOND_OUT/'schedule.npz') as z:defdev=set(map(int,z['defensive_development']))
+    masks['defensive_sequence']=np.array([int(row) in defdev for row in ids])
+    masks['defensive_rocket']=np.array([int(row) in defdev and gate==1 and card==cv.index('rocket') for row,gate,card in zip(ids,s['y_gate'],s['y_card'])])
+    with np.load(MASKS) as z:
+        assert np.array_equal(ids,z['ids']) and np.array_equal(target,z['target'])
+        for key,m in masks.items():assert np.array_equal(m,z['mask_'+key])
+        extra={key[5:]:z[key] for key in z.files if key.startswith('mask_') and key[5:] not in masks}
+    independently_verify_extra(ids,s,cv,extra);masks.update(extra)
+    reports={};hashes={}
+    for arm,folder in [('r1e_corrected',c.OUT/'r1e_corrected_eval'),('ordinary_v6',c.OUT/'ordinary_v6_eval_v2'),(ARM,OUT/(ARM+'_eval'))]:
+        original=c.read(folder/'report.json');cache=folder/'predictions.npz'
+        assert original['cache_sha256']==c.sha(cache)
+        with np.load(cache) as z:
+            assert np.array_equal(ids,z['ids']);p={k:z[k] for k in z.files if k!='ids'}
+        assert np.array_equal(allowed,p['allowed'])
+        result=independently_count(s,p,cv,masks,target)
+        for key,value in original['counts'].items():assert result[key]==value,(arm,key)
+        reports[arm]=result;hashes[arm]=dict(cache=c.sha(cache),report=c.sha(folder/'report.json'))
+    folder=OUT/ARM;result=c.read(folder/'result.json');run=c.read(folder/'run.json')
+    logs=[c.json.loads(line) for line in (folder/'train.jsonl').read_text().splitlines()]
+    assert [x['step'] for x in logs]==list(range(1,1001))
+    assert all(np.isfinite(x['loss']) and all(np.isfinite(v) for v in x['parts'].values()) for x in logs)
+    assert result['finite_updates']==1000 and result['checkpoint_sha256']==c.sha(folder/'candidate.pt')
+    assert run['schedule_sha256']==c.sha(SCHEDULE)
+    hashes[ARM]['checkpoint']=result['checkpoint_sha256']
+    a,b=reports['ordinary_v6'],reports[ARM]
+    late='phase_late_overtime_clock';rocket='rocket_late_overtime_clock'
+    late_delta=b[late]['action']/b[late]['rows']-a[late]['action']/a[late]['rows']
+    rocket_delta=b[rocket]['action']/b[rocket]['rows']-a[rocket]['action']/a[rocket]['rows']
+    card_delta=b['all']['card']/b['all']['play']-a['all']['card']/a['all']['play']
+    filters=dict(denominators_present=all(a[k]['rows']>0 for k in (late,rocket,'rocket','defensive_sequence','barrel_pro','witch','night_witch','furnace')),
+        late_action_nonregression=late_delta>=0,late_rocket_action_material=rocket_delta>=.02,
+        general_card_noninferior=card_delta>=-.005,barrel_correct_nonregression=b['barrel_pro']['log_correct']>=a['barrel_pro']['log_correct'],
+        barrel_wrong_nonregression=b['barrel_pro']['log_wrong']<=a['barrel_pro']['log_wrong'],
+        defensive_action_nonregression=b['defensive_sequence']['action']>=a['defensive_sequence']['action'],
+        rocket_aim_material=(b['rocket']['aim1']-a['rocket']['aim1'])/a['rocket']['rows']>=.05,rocket_action_material=(b['rocket']['action']-a['rocket']['action'])/a['rocket']['rows']>=.02,
+        **{key+'_nonregression':b[key]['action']>=a[key]['action'] for key in ('witch','night_witch','furnace')})
+    paired={}
+    for control in ('r1e_corrected','ordinary_v6'):
+        paired[control]={}
+        for group,value in b.items():
+            paired[control][group]={rep:{k:v-reports[control][group]['by_replay'][rep][k] for k,v in counts.items()} for rep,counts in value['by_replay'].items()}
+    c.write(OUT/'all_replay_counts.json',reports);c.write(OUT/'paired_replay_counts.json',paired)
+    summary={arm:{key:{k:v for k,v in counts.items() if k!='by_replay'} for key,counts in r.items()} for arm,r in reports.items()}
+    c.write(HERE/'results_verified.json',dict(complete=True,rows=len(ids),hashes=hashes,counts=summary,
+        filters=filters,continuation_point_filter_passed=all(filters.values()),late_action_delta=late_delta,late_rocket_action_delta=rocket_delta,card_delta=card_delta,
+        replay_counts_sha256=c.sha(OUT/'all_replay_counts.json'),paired_sha256=c.sha(OUT/'paired_replay_counts.json'),
+        developmental_only=True,untouched_generalization=False,deployment_accepted=False))
+    check_active();print(c.json.dumps(filters));print('TOWER_RECOUNT_COMPLETE')
+
+if __name__=='__main__':main()

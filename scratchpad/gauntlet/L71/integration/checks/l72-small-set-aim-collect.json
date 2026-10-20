@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/small_set_aim_audit/collect.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "SMALL_SET_AIM_COLLECTED",
+  "matched": true,
+  "output_sha256": "35a007ad915ec7dcff3bf5e98bdb9f6ee18f01e193ab6a9515bf9884a28367d5",
+  "seconds": 1.1976349353790283
+}

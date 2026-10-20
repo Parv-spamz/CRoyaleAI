@@ -1,0 +1,10 @@
+{
+  "automation_id": "continue-clashbot-acceptance-and-deployment",
+  "status": "ACTIVE",
+  "rrule": "FREQ=MINUTELY;INTERVAL=20;UNTIL=20261006T130000Z",
+  "target_thread_id": "01a10896-9400-7eb2-b119-5b540626c14a",
+  "prompt_sha256": "1609fd5a6b3987df1c348807ff002cc7950043238cfff4d0285bbe35c9907d16",
+  "verified_persisted": true,
+  "existing_schedule_updated": true,
+  "not_a_delivery_guarantee": true
+}

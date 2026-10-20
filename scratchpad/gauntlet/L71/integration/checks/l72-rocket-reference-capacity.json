@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/rocket_reference_capacity/run.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "ROCKET_REFERENCE_CAPACITY_COMPLETE",
+  "matched": true,
+  "output_sha256": "de1de309fc2a81d562788cb0110b95a6c4a61aad2f99d81122b3f43cf3ff795e",
+  "seconds": 7.345623254776001
+}

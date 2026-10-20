@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_7\\train.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "FROZEN_PROJECTILE_FULL_ARM_COMPLETE",
+  "matched": true,
+  "output_sha256": "6dd7f350bd3145a3dae6f45ab84319703981084189efb2cde812f4f85100b249",
+  "seconds": 119.37087965011597
+}

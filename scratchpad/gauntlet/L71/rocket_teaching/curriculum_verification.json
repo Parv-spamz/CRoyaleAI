@@ -1,0 +1,12 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+    "scratchpad/gauntlet/L71/rocket_teaching/verify_curriculum.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "PowerShell invoking Python direct subprocess",
+  "exit_code": 0,
+  "expect": "ROCKET_CURRICULUM_VERIFIED",
+  "matched": true,
+  "output_sha256": "5bcbc1024799cc2919eca715275a9d9e31fca2d81807385a5ab0912e82952114"
+}

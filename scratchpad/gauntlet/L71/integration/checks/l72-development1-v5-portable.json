@@ -1,0 +1,15 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/development_iteration_1/portable_checkpoint.py",
+    "--arm",
+    "ordinary_v5"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "DEVELOPMENT_1_PORTABLE_CHECKPOINT_VERIFIED",
+  "matched": true,
+  "output_sha256": "9af2705b3d7114236a8512904196936dd3c68495d7ef3fc3002d525649ed4a3c",
+  "seconds": 5.221429824829102
+}

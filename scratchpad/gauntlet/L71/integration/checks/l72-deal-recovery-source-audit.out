@@ -1,0 +1,2 @@
+{"exact_metadata_count": 183, "opposing_metadata_counts": {"goblin-barrel": 0, "witch": 5, "night-witch": 22, "furnace": 17}, "record_count": 807, "training_counts": {"position_based=True;usable=True": 110, "position_based=False;usable=False": 13, "position_based=True;usable=False": 86}, "fallback_counts_by_split": {"training": 13, "confirmation": 53, "development": 12}}
+DEAL_RECOVERY_SOURCE_AUDIT_PASS

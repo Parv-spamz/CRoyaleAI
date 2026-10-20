@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:/Users/benpe/ClashBot/icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L71/royale_update_20261005/retry_blocked_rust.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "OWNER_RUST_RETRY_PASS",
+  "matched": true,
+  "output_sha256": "95c9170ce7b164ccefb47be0de34601744d0f9c85f9907c32880b691929777c9",
+  "seconds": 39.318819761276245
+}

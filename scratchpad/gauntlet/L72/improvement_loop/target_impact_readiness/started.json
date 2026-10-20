@@ -1,0 +1,29 @@
+{
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\target_impact_readiness\\collect.py": "4122960ddf573224f97c90a3a6d37572105305b2a51922894f779ecb0ac80fcd",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\target_impact_readiness\\verify.py": "bd041f903a28fa1aca1d31604d70f52eec69f2a76c0a45c736edbe1f5f3e6ef8",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\target_impact_readiness\\PLAN.md": "0ddf9606208dc3b2e914f1fd2133cc4044ad2339849798ee5e9ba9cc0b8e82c3",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\target_impact_readiness\\METRICS.md": "5287e42c8c1a569d58d55e34a23edca9822f68d9e4054b1681f60fd70c74c41b",
+    "pipeline\\royale_runtime.py": "dcd2115fdd4de9aeaef5f9dbe7c08669e4b4a4f603ec3f02e0b6618aa5cfdca9",
+    "scratchpad\\gauntlet\\L71\\royale_update_20261005\\build_manifest.json": "eb455896367d94107dbf3fd35ffc8f01de097a1ac2c3beebdca00445b2f45903"
+  },
+  "runtime": {
+    "schema": 1,
+    "pins": {
+      "RoyaleSim": "015f9b0084afe574915e3f6ce2f0764c6dec6099",
+      "RoyaleGym": "3117816366b00754da1b56c9543412e4706de62a"
+    },
+    "wheels": {
+      "royalegym-0.1.15-py3-none-any.whl": "51219cef17867069abf22c206c1fbc309b3e8f93927a658e19b543b6ba96156b",
+      "royalesim-0.1.13-cp310-abi3-win_amd64.whl": "ab61577d3926df7a43463f41c479ec31e6864d3702c13075f170d97f3b30406c"
+    },
+    "manifest_sha256": "eb455896367d94107dbf3fd35ffc8f01de097a1ac2c3beebdca00445b2f45903",
+    "card_table": {
+      "cards_json_fnv1a64": "21935265e615e337",
+      "cards_vintage": "15.535.29 client (2026, LIVE build family)",
+      "cards_json_hash_source": "embedded"
+    }
+  },
+  "models_loaded": 0,
+  "optimizer_updates": 0
+}

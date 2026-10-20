@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:/Users/benpe/ClashBot/icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L71/context_teaching/score_experiments.py",
+    "--directory",
+    "scratchpad/gauntlet/L71/context_teaching/experiments",
+    "--out",
+    "scratchpad/gauntlet/L71/context_teaching/owner_status_0500.json",
+    "--partial"
+  ],
+  "cwd": "C:\\Users\\benpe\\.codex\\worktrees\\learned-defence\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "EXPERT_EXPERIMENTS_PARTIAL",
+  "matched": true,
+  "output_sha256": "df2f71c42c1a2ea21456e2b1ae8a8f8a0d609b4a1f54d7b4e0527f58b40cee75",
+  "seconds": 3.6934947967529297
+}

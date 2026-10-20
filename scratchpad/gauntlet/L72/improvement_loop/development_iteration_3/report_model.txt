@@ -1,0 +1,12 @@
+ClashBot development iteration 3: rocket_aim3_v6 -- REJECTED / NOT ACCEPTED for deployment.
+
+Only change versus ordinary_v6: 3x cell-loss weight on original expert PLAY Rocket labels. Same R1e initialization, corrected observations, ordinary draws and 1000 finite updates. All 54,723 development rows / 405 replay groups independently recounted. Inner development had parent-model exposure; this is not fresh generalization or a gameplay test.
+
+Counts below: R1e (same corrected inputs) / ordinary_v6 control / new candidate.
+Expert Rocket forced aim within 1 tile: 290 / 293 / 286 of 955. Full expert Rocket actions: 54 / 73 / 74. Versus control, aim -0.733pp and action +0.105pp miss the registered +5pp/+2pp requirements.
+Barrel correct/wrong/not fired: 36/20/7, 55/7/1, 56/6/1 of 63 rows in 26 replays.
+Witch actions: 332 / 341 / 341 of 726; Night Witch: 156 / 161 / 162 of 373; Furnace: 538 / 550 / 548 of 1174. Furnace protection fails.
+Defensive-sequence actions: 3952 / 4009 / 4015 of 8183; Rocket actions within these: 15 / 23 / 21 of 223.
+General card agreement: 11348 / 11399 / 11393 of 17192 PLAY rows. All full actions: 30968 / 31988 / 32006 of 54723.
+
+More Rocket aim loss did not solve the gap; no deployment, live restart or options change. This does not reject the owner's broader strategy of defensive Rocket cycling to gain/preserve a weakest-tower damage lead, including non-finishing overtime cycles and adaptation after blocked offensive X-Bows. Next diagnosis separates match phase, damage margin and public matchup/history before another recipe. Final untouched component, outcome, statistical and same-runtime gameplay gates remain open.

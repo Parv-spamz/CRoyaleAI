@@ -1,0 +1,15 @@
+{
+  "started": "2026-10-05T10:31:10.9487358-04:00",
+  "pid": 40576,
+  "args": [
+    "scratchpad/gauntlet/L71/integration/run_check.py",
+    "--name",
+    "l72-deal-recovery-training",
+    "--expect",
+    "DEAL_RECOVERY_TRAINING_COMPLETE",
+    "--",
+    "icebow/.venv/Scripts/python.exe",
+    "-u",
+    "scratchpad/gauntlet/L72/improvement_loop/deal_recovery/run_training.py"
+  ]
+}

@@ -1,0 +1,5591 @@
+{
+  "complete": true,
+  "accepted": [],
+  "final_verdict": "REJECT ALL EIGHT; CONTINUE L72",
+  "scorer_sha256": "c4b3004a70316fab6d4450a06d54a571f4e845474a8ff1aced5be061ba93cc38",
+  "recount_sha256": "42c2818d86ff15923780104152ff98e4042a7c7e570b94bf64e603e3e0d292f0",
+  "metrics_sha256": "dfc13ef96dc12fe3565704f62724c3ea277b651eaaf700ab00b8b3188c70c4cb",
+  "reviewer_sha256": "cab0a1bf9d112bf57e96d438fff1f298dc4aaf111718625c03d322b47ada8d1e",
+  "bound_prediction_rows": 344853,
+  "baseline": {
+    "ghost": {
+      "n": 299,
+      "outcomes": {
+        "win": 285,
+        "loss": 14
+      },
+      "wins": 285,
+      "accepted_plays": 9140,
+      "rockets": 42,
+      "rocket_share": 0.004595185995623632,
+      "tower_rockets": 5,
+      "tower_rockets_hp_confirmed": 5,
+      "finish_offs": 0,
+      "multi_rocket_cycles": 0,
+      "defensive_rockets": 26,
+      "rocket_then_tornado": 0,
+      "tornado_then_rocket": 0,
+      "unknown_rocket_impacts": 2,
+      "preemptive_log_n": 123,
+      "preemptive_log_denominator": 278
+    },
+    "reactive": {
+      "n": 48,
+      "outcomes": {
+        "win": 32,
+        "loss": 16
+      },
+      "wins": 32,
+      "accepted_plays": 1732,
+      "rockets": 43,
+      "rocket_share": 0.024826789838337183,
+      "tower_rockets": 1,
+      "tower_rockets_hp_confirmed": 1,
+      "finish_offs": 0,
+      "multi_rocket_cycles": 0,
+      "defensive_rockets": 29,
+      "rocket_then_tornado": 1,
+      "tornado_then_rocket": 0,
+      "unknown_rocket_impacts": 0,
+      "preemptive_log_n": 9,
+      "preemptive_log_denominator": 15
+    }
+  },
+  "additions": {
+    "v4_uniform": {
+      "primary_control": "r1e",
+      "extra_rocket_gates": {},
+      "primary_action_comparisons": {
+        "witch": {
+          "candidate": {
+            "n": 261,
+            "denominator": 519,
+            "rate": 0.5028901734104047
+          },
+          "control": {
+            "n": 255,
+            "denominator": 519,
+            "rate": 0.4913294797687861
+          },
+          "change_n": 6
+        },
+        "night_witch": {
+          "candidate": {
+            "n": 179,
+            "denominator": 390,
+            "rate": 0.45897435897435895
+          },
+          "control": {
+            "n": 179,
+            "denominator": 390,
+            "rate": 0.45897435897435895
+          },
+          "change_n": 0
+        },
+        "furnace": {
+          "candidate": {
+            "n": 285,
+            "denominator": 534,
+            "rate": 0.5337078651685393
+          },
+          "control": {
+            "n": 273,
+            "denominator": 534,
+            "rate": 0.5112359550561798
+          },
+          "change_n": 12
+        },
+        "xbow": {
+          "candidate": {
+            "n": 99,
+            "denominator": 157,
+            "rate": 0.6305732484076433
+          },
+          "control": {
+            "n": 99,
+            "denominator": 157,
+            "rate": 0.6305732484076433
+          },
+          "change_n": 0
+        }
+      },
+      "failed_existing": [
+        "ghost_vs_r1e",
+        "reactive_vs_r1e"
+      ],
+      "failed_extra": [],
+      "final_accept": false
+    },
+    "v4_rocket": {
+      "primary_control": "v4_uniform",
+      "extra_rocket_gates": {
+        "primary_rocket_share_closer": true,
+        "primary_tower_rockets_increase": true
+      },
+      "primary_action_comparisons": {
+        "witch": {
+          "candidate": {
+            "n": 259,
+            "denominator": 519,
+            "rate": 0.49903660886319845
+          },
+          "control": {
+            "n": 261,
+            "denominator": 519,
+            "rate": 0.5028901734104047
+          },
+          "change_n": -2
+        },
+        "night_witch": {
+          "candidate": {
+            "n": 181,
+            "denominator": 390,
+            "rate": 0.4641025641025641
+          },
+          "control": {
+            "n": 179,
+            "denominator": 390,
+            "rate": 0.45897435897435895
+          },
+          "change_n": 2
+        },
+        "furnace": {
+          "candidate": {
+            "n": 278,
+            "denominator": 534,
+            "rate": 0.5205992509363296
+          },
+          "control": {
+            "n": 285,
+            "denominator": 534,
+            "rate": 0.5337078651685393
+          },
+          "change_n": -7
+        },
+        "xbow": {
+          "candidate": {
+            "n": 99,
+            "denominator": 157,
+            "rate": 0.6305732484076433
+          },
+          "control": {
+            "n": 99,
+            "denominator": 157,
+            "rate": 0.6305732484076433
+          },
+          "change_n": 0
+        }
+      },
+      "failed_existing": [
+        "finishing_rocket_observed",
+        "combo_tornado_improves",
+        "ghost_vs_r1e",
+        "reactive_vs_r1e",
+        "ghost_vs_v4_uniform"
+      ],
+      "failed_extra": [],
+      "final_accept": false
+    },
+    "v5_uniform": {
+      "primary_control": "v4_uniform",
+      "extra_rocket_gates": {},
+      "primary_action_comparisons": {
+        "witch": {
+          "candidate": {
+            "n": 251,
+            "denominator": 519,
+            "rate": 0.4836223506743738
+          },
+          "control": {
+            "n": 261,
+            "denominator": 519,
+            "rate": 0.5028901734104047
+          },
+          "change_n": -10
+        },
+        "night_witch": {
+          "candidate": {
+            "n": 171,
+            "denominator": 390,
+            "rate": 0.43846153846153846
+          },
+          "control": {
+            "n": 179,
+            "denominator": 390,
+            "rate": 0.45897435897435895
+          },
+          "change_n": -8
+        },
+        "furnace": {
+          "candidate": {
+            "n": 281,
+            "denominator": 534,
+            "rate": 0.5262172284644194
+          },
+          "control": {
+            "n": 285,
+            "denominator": 534,
+            "rate": 0.5337078651685393
+          },
+          "change_n": -4
+        },
+        "xbow": {
+          "candidate": {
+            "n": 99,
+            "denominator": 157,
+            "rate": 0.6305732484076433
+          },
+          "control": {
+            "n": 99,
+            "denominator": 157,
+            "rate": 0.6305732484076433
+          },
+          "change_n": 0
+        }
+      },
+      "failed_existing": [
+        "spawner_action_improves",
+        "night_witch_within_two_pp",
+        "ghost_vs_r1e",
+        "reactive_vs_r1e",
+        "ghost_vs_v4_uniform"
+      ],
+      "failed_extra": [],
+      "final_accept": false
+    },
+    "v5_rocket": {
+      "primary_control": "v5_uniform",
+      "extra_rocket_gates": {
+        "primary_rocket_share_closer": true,
+        "primary_tower_rockets_increase": true
+      },
+      "primary_action_comparisons": {
+        "witch": {
+          "candidate": {
+            "n": 253,
+            "denominator": 519,
+            "rate": 0.48747591522157996
+          },
+          "control": {
+            "n": 251,
+            "denominator": 519,
+            "rate": 0.4836223506743738
+          },
+          "change_n": 2
+        },
+        "night_witch": {
+          "candidate": {
+            "n": 174,
+            "denominator": 390,
+            "rate": 0.4461538461538462
+          },
+          "control": {
+            "n": 171,
+            "denominator": 390,
+            "rate": 0.43846153846153846
+          },
+          "change_n": 3
+        },
+        "furnace": {
+          "candidate": {
+            "n": 278,
+            "denominator": 534,
+            "rate": 0.5205992509363296
+          },
+          "control": {
+            "n": 281,
+            "denominator": 534,
+            "rate": 0.5262172284644194
+          },
+          "change_n": -3
+        },
+        "xbow": {
+          "candidate": {
+            "n": 99,
+            "denominator": 157,
+            "rate": 0.6305732484076433
+          },
+          "control": {
+            "n": 99,
+            "denominator": 157,
+            "rate": 0.6305732484076433
+          },
+          "change_n": 0
+        }
+      },
+      "failed_existing": [
+        "spawner_action_improves",
+        "finishing_rocket_observed",
+        "combo_tornado_improves",
+        "ghost_vs_r1e",
+        "reactive_vs_r1e"
+      ],
+      "failed_extra": [],
+      "final_accept": false
+    },
+    "v5_rocket_xbow": {
+      "primary_control": "v5_rocket",
+      "extra_rocket_gates": {
+        "primary_rocket_share_closer": false,
+        "primary_tower_rockets_increase": false
+      },
+      "primary_action_comparisons": {
+        "witch": {
+          "candidate": {
+            "n": 250,
+            "denominator": 519,
+            "rate": 0.4816955684007707
+          },
+          "control": {
+            "n": 253,
+            "denominator": 519,
+            "rate": 0.48747591522157996
+          },
+          "change_n": -3
+        },
+        "night_witch": {
+          "candidate": {
+            "n": 172,
+            "denominator": 390,
+            "rate": 0.441025641025641
+          },
+          "control": {
+            "n": 174,
+            "denominator": 390,
+            "rate": 0.4461538461538462
+          },
+          "change_n": -2
+        },
+        "furnace": {
+          "candidate": {
+            "n": 282,
+            "denominator": 534,
+            "rate": 0.5280898876404494
+          },
+          "control": {
+            "n": 278,
+            "denominator": 534,
+            "rate": 0.5205992509363296
+          },
+          "change_n": 4
+        },
+        "xbow": {
+          "candidate": {
+            "n": 99,
+            "denominator": 157,
+            "rate": 0.6305732484076433
+          },
+          "control": {
+            "n": 99,
+            "denominator": 157,
+            "rate": 0.6305732484076433
+          },
+          "change_n": 0
+        }
+      },
+      "failed_existing": [
+        "spawner_action_improves",
+        "night_witch_within_two_pp",
+        "finishing_rocket_observed",
+        "combo_tornado_improves",
+        "xbow_action_improves",
+        "ghost_vs_r1e",
+        "reactive_vs_r1e"
+      ],
+      "failed_extra": [
+        "primary_rocket_share_closer",
+        "primary_tower_rockets_increase"
+      ],
+      "final_accept": false
+    },
+    "v5_rocket_barrel": {
+      "primary_control": "v5_rocket",
+      "extra_rocket_gates": {
+        "primary_rocket_share_closer": true,
+        "primary_tower_rockets_increase": true
+      },
+      "primary_action_comparisons": {
+        "witch": {
+          "candidate": {
+            "n": 257,
+            "denominator": 519,
+            "rate": 0.4951830443159923
+          },
+          "control": {
+            "n": 253,
+            "denominator": 519,
+            "rate": 0.48747591522157996
+          },
+          "change_n": 4
+        },
+        "night_witch": {
+          "candidate": {
+            "n": 173,
+            "denominator": 390,
+            "rate": 0.44358974358974357
+          },
+          "control": {
+            "n": 174,
+            "denominator": 390,
+            "rate": 0.4461538461538462
+          },
+          "change_n": -1
+        },
+        "furnace": {
+          "candidate": {
+            "n": 279,
+            "denominator": 534,
+            "rate": 0.5224719101123596
+          },
+          "control": {
+            "n": 278,
+            "denominator": 534,
+            "rate": 0.5205992509363296
+          },
+          "change_n": 1
+        },
+        "xbow": {
+          "candidate": {
+            "n": 99,
+            "denominator": 157,
+            "rate": 0.6305732484076433
+          },
+          "control": {
+            "n": 99,
+            "denominator": 157,
+            "rate": 0.6305732484076433
+          },
+          "change_n": 0
+        }
+      },
+      "failed_existing": [
+        "spawner_action_improves",
+        "night_witch_within_two_pp",
+        "finishing_rocket_observed",
+        "ghost_vs_r1e",
+        "reactive_vs_r1e",
+        "reactive_vs_v5_rocket"
+      ],
+      "failed_extra": [],
+      "final_accept": false
+    },
+    "v6_rocket_barrel": {
+      "primary_control": "v5_rocket_barrel",
+      "extra_rocket_gates": {
+        "primary_rocket_share_closer": false,
+        "primary_tower_rockets_increase": true
+      },
+      "primary_action_comparisons": {
+        "witch": {
+          "candidate": {
+            "n": 256,
+            "denominator": 519,
+            "rate": 0.4932562620423892
+          },
+          "control": {
+            "n": 257,
+            "denominator": 519,
+            "rate": 0.4951830443159923
+          },
+          "change_n": -1
+        },
+        "night_witch": {
+          "candidate": {
+            "n": 172,
+            "denominator": 390,
+            "rate": 0.441025641025641
+          },
+          "control": {
+            "n": 173,
+            "denominator": 390,
+            "rate": 0.44358974358974357
+          },
+          "change_n": -1
+        },
+        "furnace": {
+          "candidate": {
+            "n": 276,
+            "denominator": 534,
+            "rate": 0.5168539325842697
+          },
+          "control": {
+            "n": 279,
+            "denominator": 534,
+            "rate": 0.5224719101123596
+          },
+          "change_n": -3
+        },
+        "xbow": {
+          "candidate": {
+            "n": 99,
+            "denominator": 157,
+            "rate": 0.6305732484076433
+          },
+          "control": {
+            "n": 99,
+            "denominator": 157,
+            "rate": 0.6305732484076433
+          },
+          "change_n": 0
+        }
+      },
+      "failed_existing": [
+        "global_vs_source",
+        "spawner_action_improves",
+        "night_witch_within_two_pp",
+        "finishing_rocket_observed",
+        "ghost_vs_r1e",
+        "reactive_vs_r1e",
+        "ghost_vs_v5_rocket_barrel"
+      ],
+      "failed_extra": [
+        "primary_rocket_share_closer"
+      ],
+      "final_accept": false
+    },
+    "v6_rocket_both": {
+      "primary_control": "v6_rocket_barrel",
+      "extra_rocket_gates": {
+        "primary_rocket_share_closer": false,
+        "primary_tower_rockets_increase": false
+      },
+      "primary_action_comparisons": {
+        "witch": {
+          "candidate": {
+            "n": 247,
+            "denominator": 519,
+            "rate": 0.47591522157996147
+          },
+          "control": {
+            "n": 256,
+            "denominator": 519,
+            "rate": 0.4932562620423892
+          },
+          "change_n": -9
+        },
+        "night_witch": {
+          "candidate": {
+            "n": 172,
+            "denominator": 390,
+            "rate": 0.441025641025641
+          },
+          "control": {
+            "n": 172,
+            "denominator": 390,
+            "rate": 0.441025641025641
+          },
+          "change_n": 0
+        },
+        "furnace": {
+          "candidate": {
+            "n": 274,
+            "denominator": 534,
+            "rate": 0.5131086142322098
+          },
+          "control": {
+            "n": 276,
+            "denominator": 534,
+            "rate": 0.5168539325842697
+          },
+          "change_n": -2
+        },
+        "xbow": {
+          "candidate": {
+            "n": 100,
+            "denominator": 157,
+            "rate": 0.6369426751592356
+          },
+          "control": {
+            "n": 99,
+            "denominator": 157,
+            "rate": 0.6305732484076433
+          },
+          "change_n": 1
+        }
+      },
+      "failed_existing": [
+        "spawner_action_improves",
+        "night_witch_within_two_pp",
+        "finishing_rocket_observed",
+        "ghost_vs_r1e",
+        "ghost_vs_v6_rocket_barrel"
+      ],
+      "failed_extra": [
+        "primary_rocket_share_closer",
+        "primary_tower_rockets_increase"
+      ],
+      "final_accept": false
+    }
+  },
+  "metrics": {
+    "r1e": {
+      "global_card_agreement": {
+        "n": 7708,
+        "denominator": 11934,
+        "rate": 0.6458857047092341
+      },
+      "rocket_recall": {
+        "n": 81,
+        "denominator": 671,
+        "rate": 0.12071535022354694
+      },
+      "rocket_finish": {
+        "n": 0,
+        "denominator": 10,
+        "rate": 0.0
+      },
+      "combo_rocket": {
+        "n": 5,
+        "denominator": 69,
+        "rate": 0.07246376811594203
+      },
+      "combo_tornado": {
+        "n": 16,
+        "denominator": 69,
+        "rate": 0.2318840579710145
+      },
+      "contexts": {
+        "pool": {
+          "rows": 38317,
+          "plays": 11934,
+          "card_agreement": {
+            "n": 7708,
+            "denominator": 11934,
+            "rate": 0.6458857047092341
+          },
+          "action_agreement": {
+            "n": 21726,
+            "denominator": 38317,
+            "rate": 0.5670068115979853
+          },
+          "gate_play": {
+            "n": 16006,
+            "denominator": 38317,
+            "rate": 0.41772581360753713
+          },
+          "rocket_gated": {
+            "n": 264,
+            "denominator": 38317,
+            "rate": 0.006889892214943759
+          }
+        },
+        "opportunity": {
+          "rows": 285,
+          "plays": 157,
+          "card_agreement": {
+            "n": 111,
+            "denominator": 157,
+            "rate": 0.7070063694267515
+          },
+          "action_agreement": {
+            "n": 87,
+            "denominator": 285,
+            "rate": 0.30526315789473685
+          },
+          "gate_play": {
+            "n": 206,
+            "denominator": 285,
+            "rate": 0.7228070175438597
+          },
+          "rocket_gated": {
+            "n": 2,
+            "denominator": 285,
+            "rate": 0.007017543859649123
+          }
+        },
+        "compact": {
+          "rows": 101,
+          "plays": 56,
+          "card_agreement": {
+            "n": 33,
+            "denominator": 56,
+            "rate": 0.5892857142857143
+          },
+          "action_agreement": {
+            "n": 37,
+            "denominator": 101,
+            "rate": 0.36633663366336633
+          },
+          "gate_play": {
+            "n": 65,
+            "denominator": 101,
+            "rate": 0.6435643564356436
+          },
+          "rocket_gated": {
+            "n": 1,
+            "denominator": 101,
+            "rate": 0.009900990099009901
+          }
+        },
+        "pull": {
+          "rows": 216,
+          "plays": 123,
+          "card_agreement": {
+            "n": 92,
+            "denominator": 123,
+            "rate": 0.7479674796747967
+          },
+          "action_agreement": {
+            "n": 61,
+            "denominator": 216,
+            "rate": 0.2824074074074074
+          },
+          "gate_play": {
+            "n": 166,
+            "denominator": 216,
+            "rate": 0.7685185185185185
+          },
+          "rocket_gated": {
+            "n": 1,
+            "denominator": 216,
+            "rate": 0.004629629629629629
+          }
+        },
+        "known": {
+          "rows": 38317,
+          "plays": 11934,
+          "card_agreement": {
+            "n": 7708,
+            "denominator": 11934,
+            "rate": 0.6458857047092341
+          },
+          "action_agreement": {
+            "n": 21726,
+            "denominator": 38317,
+            "rate": 0.5670068115979853
+          },
+          "gate_play": {
+            "n": 16006,
+            "denominator": 38317,
+            "rate": 0.41772581360753713
+          },
+          "rocket_gated": {
+            "n": 264,
+            "denominator": 38317,
+            "rate": 0.006889892214943759
+          }
+        },
+        "sequence": {
+          "rows": 2284,
+          "plays": 1042,
+          "card_agreement": {
+            "n": 332,
+            "denominator": 1042,
+            "rate": 0.31861804222648754
+          },
+          "action_agreement": {
+            "n": 970,
+            "denominator": 2284,
+            "rate": 0.4246935201401051
+          },
+          "gate_play": {
+            "n": 1235,
+            "denominator": 2284,
+            "rate": 0.5407180385288967
+          },
+          "rocket_gated": {
+            "n": 111,
+            "denominator": 2284,
+            "rate": 0.04859894921190893
+          }
+        },
+        "combo": {
+          "rows": 271,
+          "plays": 154,
+          "card_agreement": {
+            "n": 61,
+            "denominator": 154,
+            "rate": 0.3961038961038961
+          },
+          "action_agreement": {
+            "n": 84,
+            "denominator": 271,
+            "rate": 0.30996309963099633
+          },
+          "gate_play": {
+            "n": 150,
+            "denominator": 271,
+            "rate": 0.5535055350553506
+          },
+          "rocket_gated": {
+            "n": 14,
+            "denominator": 271,
+            "rate": 0.05166051660516605
+          }
+        },
+        "finish": {
+          "rows": 20,
+          "plays": 13,
+          "card_agreement": {
+            "n": 2,
+            "denominator": 13,
+            "rate": 0.15384615384615385
+          },
+          "action_agreement": {
+            "n": 3,
+            "denominator": 20,
+            "rate": 0.15
+          },
+          "gate_play": {
+            "n": 16,
+            "denominator": 20,
+            "rate": 0.8
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 20,
+            "rate": 0.0
+          }
+        },
+        "barrel": {
+          "rows": 249,
+          "plays": 146,
+          "card_agreement": {
+            "n": 100,
+            "denominator": 146,
+            "rate": 0.684931506849315
+          },
+          "action_agreement": {
+            "n": 85,
+            "denominator": 249,
+            "rate": 0.3413654618473896
+          },
+          "gate_play": {
+            "n": 184,
+            "denominator": 249,
+            "rate": 0.7389558232931727
+          },
+          "rocket_gated": {
+            "n": 1,
+            "denominator": 249,
+            "rate": 0.004016064257028112
+          }
+        },
+        "barrel_multiple": {
+          "rows": 49,
+          "plays": 33,
+          "card_agreement": {
+            "n": 21,
+            "denominator": 33,
+            "rate": 0.6363636363636364
+          },
+          "action_agreement": {
+            "n": 16,
+            "denominator": 49,
+            "rate": 0.32653061224489793
+          },
+          "gate_play": {
+            "n": 36,
+            "denominator": 49,
+            "rate": 0.7346938775510204
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 49,
+            "rate": 0.0
+          }
+        },
+        "xbow": {
+          "rows": 157,
+          "plays": 48,
+          "card_agreement": {
+            "n": 30,
+            "denominator": 48,
+            "rate": 0.625
+          },
+          "action_agreement": {
+            "n": 99,
+            "denominator": 157,
+            "rate": 0.6305732484076433
+          },
+          "gate_play": {
+            "n": 43,
+            "denominator": 157,
+            "rate": 0.27388535031847133
+          },
+          "rocket_gated": {
+            "n": 3,
+            "denominator": 157,
+            "rate": 0.01910828025477707
+          }
+        },
+        "xbow_no_lifetime_target": {
+          "rows": 6,
+          "plays": 2,
+          "card_agreement": {
+            "n": 1,
+            "denominator": 2,
+            "rate": 0.5
+          },
+          "action_agreement": {
+            "n": 4,
+            "denominator": 6,
+            "rate": 0.6666666666666666
+          },
+          "gate_play": {
+            "n": 0,
+            "denominator": 6,
+            "rate": 0.0
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 6,
+            "rate": 0.0
+          }
+        },
+        "night_witch": {
+          "rows": 390,
+          "plays": 152,
+          "card_agreement": {
+            "n": 115,
+            "denominator": 152,
+            "rate": 0.756578947368421
+          },
+          "action_agreement": {
+            "n": 179,
+            "denominator": 390,
+            "rate": 0.45897435897435895
+          },
+          "gate_play": {
+            "n": 200,
+            "denominator": 390,
+            "rate": 0.5128205128205128
+          },
+          "rocket_gated": {
+            "n": 3,
+            "denominator": 390,
+            "rate": 0.007692307692307693
+          }
+        },
+        "tombstone": {
+          "rows": 1109,
+          "plays": 385,
+          "card_agreement": {
+            "n": 241,
+            "denominator": 385,
+            "rate": 0.625974025974026
+          },
+          "action_agreement": {
+            "n": 542,
+            "denominator": 1109,
+            "rate": 0.48872858431018934
+          },
+          "gate_play": {
+            "n": 516,
+            "denominator": 1109,
+            "rate": 0.46528403967538323
+          },
+          "rocket_gated": {
+            "n": 6,
+            "denominator": 1109,
+            "rate": 0.005410279531109108
+          }
+        },
+        "furnace": {
+          "rows": 534,
+          "plays": 213,
+          "card_agreement": {
+            "n": 140,
+            "denominator": 213,
+            "rate": 0.6572769953051644
+          },
+          "action_agreement": {
+            "n": 273,
+            "denominator": 534,
+            "rate": 0.5112359550561798
+          },
+          "gate_play": {
+            "n": 256,
+            "denominator": 534,
+            "rate": 0.4794007490636704
+          },
+          "rocket_gated": {
+            "n": 2,
+            "denominator": 534,
+            "rate": 0.003745318352059925
+          }
+        },
+        "witch": {
+          "rows": 519,
+          "plays": 186,
+          "card_agreement": {
+            "n": 113,
+            "denominator": 186,
+            "rate": 0.6075268817204301
+          },
+          "action_agreement": {
+            "n": 255,
+            "denominator": 519,
+            "rate": 0.4913294797687861
+          },
+          "gate_play": {
+            "n": 249,
+            "denominator": 519,
+            "rate": 0.4797687861271676
+          },
+          "rocket_gated": {
+            "n": 5,
+            "denominator": 519,
+            "rate": 0.009633911368015413
+          }
+        },
+        "goblin_hut": {
+          "rows": 644,
+          "plays": 211,
+          "card_agreement": {
+            "n": 130,
+            "denominator": 211,
+            "rate": 0.6161137440758294
+          },
+          "action_agreement": {
+            "n": 334,
+            "denominator": 644,
+            "rate": 0.5186335403726708
+          },
+          "gate_play": {
+            "n": 320,
+            "denominator": 644,
+            "rate": 0.4968944099378882
+          },
+          "rocket_gated": {
+            "n": 4,
+            "denominator": 644,
+            "rate": 0.006211180124223602
+          }
+        },
+        "barbarian_hut": {
+          "rows": 0,
+          "plays": 0,
+          "card_agreement": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "action_agreement": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "gate_play": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "spawners": {
+          "rows": 3107,
+          "plays": 1112,
+          "card_agreement": {
+            "n": 717,
+            "denominator": 1112,
+            "rate": 0.6447841726618705
+          },
+          "action_agreement": {
+            "n": 1545,
+            "denominator": 3107,
+            "rate": 0.4972642420341165
+          },
+          "gate_play": {
+            "n": 1492,
+            "denominator": 3107,
+            "rate": 0.48020598648213714
+          },
+          "rocket_gated": {
+            "n": 18,
+            "denominator": 3107,
+            "rate": 0.005793369810106212
+          }
+        },
+        "xbow_useful": {
+          "rows": 151,
+          "plays": 46,
+          "card_agreement": {
+            "n": 29,
+            "denominator": 46,
+            "rate": 0.6304347826086957
+          },
+          "action_agreement": {
+            "n": 95,
+            "denominator": 151,
+            "rate": 0.6291390728476821
+          },
+          "gate_play": {
+            "n": 43,
+            "denominator": 151,
+            "rate": 0.2847682119205298
+          },
+          "rocket_gated": {
+            "n": 3,
+            "denominator": 151,
+            "rate": 0.019867549668874173
+          }
+        },
+        "pro_rocket": {
+          "rows": 671,
+          "plays": 671,
+          "card_agreement": {
+            "n": 95,
+            "denominator": 671,
+            "rate": 0.14157973174366617
+          },
+          "action_agreement": {
+            "n": 36,
+            "denominator": 671,
+            "rate": 0.05365126676602087
+          },
+          "gate_play": {
+            "n": 597,
+            "denominator": 671,
+            "rate": 0.8897168405365127
+          },
+          "rocket_gated": {
+            "n": 81,
+            "denominator": 671,
+            "rate": 0.12071535022354694
+          }
+        }
+      },
+      "barrel": {
+        "pro_same_lane_rows": 39,
+        "forced_log_same_lane": {
+          "n": 28,
+          "denominator": 39,
+          "rate": 0.717948717948718
+        },
+        "gated_correct_lane": {
+          "n": 23,
+          "denominator": 39,
+          "rate": 0.5897435897435898
+        },
+        "gated_wrong_lane": {
+          "n": 11,
+          "denominator": 39,
+          "rate": 0.28205128205128205
+        },
+        "known_playable_rows": 95
+      }
+    },
+    "v4_uniform": {
+      "global_card_agreement": {
+        "n": 7738,
+        "denominator": 11934,
+        "rate": 0.6483995307524719
+      },
+      "rocket_recall": {
+        "n": 151,
+        "denominator": 671,
+        "rate": 0.22503725782414308
+      },
+      "rocket_finish": {
+        "n": 0,
+        "denominator": 10,
+        "rate": 0.0
+      },
+      "combo_rocket": {
+        "n": 17,
+        "denominator": 69,
+        "rate": 0.2463768115942029
+      },
+      "combo_tornado": {
+        "n": 21,
+        "denominator": 69,
+        "rate": 0.30434782608695654
+      },
+      "contexts": {
+        "pool": {
+          "rows": 38317,
+          "plays": 11934,
+          "card_agreement": {
+            "n": 7738,
+            "denominator": 11934,
+            "rate": 0.6483995307524719
+          },
+          "action_agreement": {
+            "n": 22568,
+            "denominator": 38317,
+            "rate": 0.5889813920714043
+          },
+          "gate_play": {
+            "n": 14858,
+            "denominator": 38317,
+            "rate": 0.38776522170316047
+          },
+          "rocket_gated": {
+            "n": 490,
+            "denominator": 38317,
+            "rate": 0.012788057520160764
+          }
+        },
+        "opportunity": {
+          "rows": 285,
+          "plays": 157,
+          "card_agreement": {
+            "n": 110,
+            "denominator": 157,
+            "rate": 0.7006369426751592
+          },
+          "action_agreement": {
+            "n": 96,
+            "denominator": 285,
+            "rate": 0.3368421052631579
+          },
+          "gate_play": {
+            "n": 192,
+            "denominator": 285,
+            "rate": 0.6736842105263158
+          },
+          "rocket_gated": {
+            "n": 1,
+            "denominator": 285,
+            "rate": 0.0035087719298245615
+          }
+        },
+        "compact": {
+          "rows": 101,
+          "plays": 56,
+          "card_agreement": {
+            "n": 34,
+            "denominator": 56,
+            "rate": 0.6071428571428571
+          },
+          "action_agreement": {
+            "n": 41,
+            "denominator": 101,
+            "rate": 0.40594059405940597
+          },
+          "gate_play": {
+            "n": 59,
+            "denominator": 101,
+            "rate": 0.5841584158415841
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 101,
+            "rate": 0.0
+          }
+        },
+        "pull": {
+          "rows": 216,
+          "plays": 123,
+          "card_agreement": {
+            "n": 90,
+            "denominator": 123,
+            "rate": 0.7317073170731707
+          },
+          "action_agreement": {
+            "n": 67,
+            "denominator": 216,
+            "rate": 0.3101851851851852
+          },
+          "gate_play": {
+            "n": 156,
+            "denominator": 216,
+            "rate": 0.7222222222222222
+          },
+          "rocket_gated": {
+            "n": 1,
+            "denominator": 216,
+            "rate": 0.004629629629629629
+          }
+        },
+        "known": {
+          "rows": 38317,
+          "plays": 11934,
+          "card_agreement": {
+            "n": 7738,
+            "denominator": 11934,
+            "rate": 0.6483995307524719
+          },
+          "action_agreement": {
+            "n": 22568,
+            "denominator": 38317,
+            "rate": 0.5889813920714043
+          },
+          "gate_play": {
+            "n": 14858,
+            "denominator": 38317,
+            "rate": 0.38776522170316047
+          },
+          "rocket_gated": {
+            "n": 490,
+            "denominator": 38317,
+            "rate": 0.012788057520160764
+          }
+        },
+        "sequence": {
+          "rows": 2284,
+          "plays": 1042,
+          "card_agreement": {
+            "n": 408,
+            "denominator": 1042,
+            "rate": 0.3915547024952015
+          },
+          "action_agreement": {
+            "n": 978,
+            "denominator": 2284,
+            "rate": 0.42819614711033277
+          },
+          "gate_play": {
+            "n": 1236,
+            "denominator": 2284,
+            "rate": 0.5411558669001751
+          },
+          "rocket_gated": {
+            "n": 203,
+            "denominator": 2284,
+            "rate": 0.08887915936952714
+          }
+        },
+        "combo": {
+          "rows": 271,
+          "plays": 154,
+          "card_agreement": {
+            "n": 78,
+            "denominator": 154,
+            "rate": 0.5064935064935064
+          },
+          "action_agreement": {
+            "n": 87,
+            "denominator": 271,
+            "rate": 0.3210332103321033
+          },
+          "gate_play": {
+            "n": 157,
+            "denominator": 271,
+            "rate": 0.5793357933579336
+          },
+          "rocket_gated": {
+            "n": 28,
+            "denominator": 271,
+            "rate": 0.1033210332103321
+          }
+        },
+        "finish": {
+          "rows": 20,
+          "plays": 13,
+          "card_agreement": {
+            "n": 2,
+            "denominator": 13,
+            "rate": 0.15384615384615385
+          },
+          "action_agreement": {
+            "n": 3,
+            "denominator": 20,
+            "rate": 0.15
+          },
+          "gate_play": {
+            "n": 16,
+            "denominator": 20,
+            "rate": 0.8
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 20,
+            "rate": 0.0
+          }
+        },
+        "barrel": {
+          "rows": 249,
+          "plays": 146,
+          "card_agreement": {
+            "n": 105,
+            "denominator": 146,
+            "rate": 0.7191780821917808
+          },
+          "action_agreement": {
+            "n": 86,
+            "denominator": 249,
+            "rate": 0.3453815261044177
+          },
+          "gate_play": {
+            "n": 183,
+            "denominator": 249,
+            "rate": 0.7349397590361446
+          },
+          "rocket_gated": {
+            "n": 1,
+            "denominator": 249,
+            "rate": 0.004016064257028112
+          }
+        },
+        "barrel_multiple": {
+          "rows": 49,
+          "plays": 33,
+          "card_agreement": {
+            "n": 21,
+            "denominator": 33,
+            "rate": 0.6363636363636364
+          },
+          "action_agreement": {
+            "n": 15,
+            "denominator": 49,
+            "rate": 0.30612244897959184
+          },
+          "gate_play": {
+            "n": 36,
+            "denominator": 49,
+            "rate": 0.7346938775510204
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 49,
+            "rate": 0.0
+          }
+        },
+        "xbow": {
+          "rows": 157,
+          "plays": 48,
+          "card_agreement": {
+            "n": 30,
+            "denominator": 48,
+            "rate": 0.625
+          },
+          "action_agreement": {
+            "n": 99,
+            "denominator": 157,
+            "rate": 0.6305732484076433
+          },
+          "gate_play": {
+            "n": 43,
+            "denominator": 157,
+            "rate": 0.27388535031847133
+          },
+          "rocket_gated": {
+            "n": 4,
+            "denominator": 157,
+            "rate": 0.025477707006369428
+          }
+        },
+        "xbow_no_lifetime_target": {
+          "rows": 6,
+          "plays": 2,
+          "card_agreement": {
+            "n": 1,
+            "denominator": 2,
+            "rate": 0.5
+          },
+          "action_agreement": {
+            "n": 4,
+            "denominator": 6,
+            "rate": 0.6666666666666666
+          },
+          "gate_play": {
+            "n": 1,
+            "denominator": 6,
+            "rate": 0.16666666666666666
+          },
+          "rocket_gated": {
+            "n": 1,
+            "denominator": 6,
+            "rate": 0.16666666666666666
+          }
+        },
+        "witch": {
+          "rows": 519,
+          "plays": 186,
+          "card_agreement": {
+            "n": 118,
+            "denominator": 186,
+            "rate": 0.6344086021505376
+          },
+          "action_agreement": {
+            "n": 261,
+            "denominator": 519,
+            "rate": 0.5028901734104047
+          },
+          "gate_play": {
+            "n": 244,
+            "denominator": 519,
+            "rate": 0.4701348747591522
+          },
+          "rocket_gated": {
+            "n": 16,
+            "denominator": 519,
+            "rate": 0.030828516377649325
+          }
+        },
+        "barbarian_hut": {
+          "rows": 0,
+          "plays": 0,
+          "card_agreement": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "action_agreement": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "gate_play": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "tombstone": {
+          "rows": 1109,
+          "plays": 385,
+          "card_agreement": {
+            "n": 240,
+            "denominator": 385,
+            "rate": 0.6233766233766234
+          },
+          "action_agreement": {
+            "n": 566,
+            "denominator": 1109,
+            "rate": 0.5103697024346258
+          },
+          "gate_play": {
+            "n": 490,
+            "denominator": 1109,
+            "rate": 0.4418394950405771
+          },
+          "rocket_gated": {
+            "n": 10,
+            "denominator": 1109,
+            "rate": 0.009017132551848512
+          }
+        },
+        "goblin_hut": {
+          "rows": 644,
+          "plays": 211,
+          "card_agreement": {
+            "n": 136,
+            "denominator": 211,
+            "rate": 0.6445497630331753
+          },
+          "action_agreement": {
+            "n": 343,
+            "denominator": 644,
+            "rate": 0.532608695652174
+          },
+          "gate_play": {
+            "n": 310,
+            "denominator": 644,
+            "rate": 0.4813664596273292
+          },
+          "rocket_gated": {
+            "n": 10,
+            "denominator": 644,
+            "rate": 0.015527950310559006
+          }
+        },
+        "furnace": {
+          "rows": 534,
+          "plays": 213,
+          "card_agreement": {
+            "n": 140,
+            "denominator": 213,
+            "rate": 0.6572769953051644
+          },
+          "action_agreement": {
+            "n": 285,
+            "denominator": 534,
+            "rate": 0.5337078651685393
+          },
+          "gate_play": {
+            "n": 245,
+            "denominator": 534,
+            "rate": 0.45880149812734083
+          },
+          "rocket_gated": {
+            "n": 7,
+            "denominator": 534,
+            "rate": 0.013108614232209739
+          }
+        },
+        "night_witch": {
+          "rows": 390,
+          "plays": 152,
+          "card_agreement": {
+            "n": 114,
+            "denominator": 152,
+            "rate": 0.75
+          },
+          "action_agreement": {
+            "n": 179,
+            "denominator": 390,
+            "rate": 0.45897435897435895
+          },
+          "gate_play": {
+            "n": 192,
+            "denominator": 390,
+            "rate": 0.49230769230769234
+          },
+          "rocket_gated": {
+            "n": 6,
+            "denominator": 390,
+            "rate": 0.015384615384615385
+          }
+        },
+        "spawners": {
+          "rows": 3107,
+          "plays": 1112,
+          "card_agreement": {
+            "n": 726,
+            "denominator": 1112,
+            "rate": 0.6528776978417267
+          },
+          "action_agreement": {
+            "n": 1593,
+            "denominator": 3107,
+            "rate": 0.5127132281943998
+          },
+          "gate_play": {
+            "n": 1435,
+            "denominator": 3107,
+            "rate": 0.4618603154168008
+          },
+          "rocket_gated": {
+            "n": 47,
+            "denominator": 3107,
+            "rate": 0.015127132281943997
+          }
+        },
+        "xbow_useful": {
+          "rows": 151,
+          "plays": 46,
+          "card_agreement": {
+            "n": 29,
+            "denominator": 46,
+            "rate": 0.6304347826086957
+          },
+          "action_agreement": {
+            "n": 95,
+            "denominator": 151,
+            "rate": 0.6291390728476821
+          },
+          "gate_play": {
+            "n": 42,
+            "denominator": 151,
+            "rate": 0.2781456953642384
+          },
+          "rocket_gated": {
+            "n": 3,
+            "denominator": 151,
+            "rate": 0.019867549668874173
+          }
+        },
+        "pro_rocket": {
+          "rows": 671,
+          "plays": 671,
+          "card_agreement": {
+            "n": 171,
+            "denominator": 671,
+            "rate": 0.2548435171385991
+          },
+          "action_agreement": {
+            "n": 52,
+            "denominator": 671,
+            "rate": 0.07749627421758569
+          },
+          "gate_play": {
+            "n": 593,
+            "denominator": 671,
+            "rate": 0.8837555886736215
+          },
+          "rocket_gated": {
+            "n": 151,
+            "denominator": 671,
+            "rate": 0.22503725782414308
+          }
+        }
+      },
+      "barrel": {
+        "pro_same_lane_rows": 39,
+        "forced_log_same_lane": {
+          "n": 27,
+          "denominator": 39,
+          "rate": 0.6923076923076923
+        },
+        "gated_correct_lane": {
+          "n": 26,
+          "denominator": 39,
+          "rate": 0.6666666666666666
+        },
+        "gated_wrong_lane": {
+          "n": 12,
+          "denominator": 39,
+          "rate": 0.3076923076923077
+        },
+        "known_playable_rows": 95
+      }
+    },
+    "v4_rocket": {
+      "global_card_agreement": {
+        "n": 7621,
+        "denominator": 11934,
+        "rate": 0.6385956091838445
+      },
+      "rocket_recall": {
+        "n": 342,
+        "denominator": 671,
+        "rate": 0.5096870342771982
+      },
+      "rocket_finish": {
+        "n": 0,
+        "denominator": 10,
+        "rate": 0.0
+      },
+      "combo_rocket": {
+        "n": 41,
+        "denominator": 69,
+        "rate": 0.5942028985507246
+      },
+      "combo_tornado": {
+        "n": 21,
+        "denominator": 69,
+        "rate": 0.30434782608695654
+      },
+      "contexts": {
+        "pool": {
+          "rows": 38317,
+          "plays": 11934,
+          "card_agreement": {
+            "n": 7621,
+            "denominator": 11934,
+            "rate": 0.6385956091838445
+          },
+          "action_agreement": {
+            "n": 22445,
+            "denominator": 38317,
+            "rate": 0.5857713286530782
+          },
+          "gate_play": {
+            "n": 15066,
+            "denominator": 38317,
+            "rate": 0.39319362163008587
+          },
+          "rocket_gated": {
+            "n": 1548,
+            "denominator": 38317,
+            "rate": 0.04039982253307931
+          }
+        },
+        "opportunity": {
+          "rows": 285,
+          "plays": 157,
+          "card_agreement": {
+            "n": 113,
+            "denominator": 157,
+            "rate": 0.7197452229299363
+          },
+          "action_agreement": {
+            "n": 94,
+            "denominator": 285,
+            "rate": 0.3298245614035088
+          },
+          "gate_play": {
+            "n": 195,
+            "denominator": 285,
+            "rate": 0.6842105263157895
+          },
+          "rocket_gated": {
+            "n": 11,
+            "denominator": 285,
+            "rate": 0.03859649122807018
+          }
+        },
+        "compact": {
+          "rows": 101,
+          "plays": 56,
+          "card_agreement": {
+            "n": 33,
+            "denominator": 56,
+            "rate": 0.5892857142857143
+          },
+          "action_agreement": {
+            "n": 40,
+            "denominator": 101,
+            "rate": 0.39603960396039606
+          },
+          "gate_play": {
+            "n": 59,
+            "denominator": 101,
+            "rate": 0.5841584158415841
+          },
+          "rocket_gated": {
+            "n": 3,
+            "denominator": 101,
+            "rate": 0.0297029702970297
+          }
+        },
+        "pull": {
+          "rows": 216,
+          "plays": 123,
+          "card_agreement": {
+            "n": 94,
+            "denominator": 123,
+            "rate": 0.7642276422764228
+          },
+          "action_agreement": {
+            "n": 66,
+            "denominator": 216,
+            "rate": 0.3055555555555556
+          },
+          "gate_play": {
+            "n": 159,
+            "denominator": 216,
+            "rate": 0.7361111111111112
+          },
+          "rocket_gated": {
+            "n": 11,
+            "denominator": 216,
+            "rate": 0.05092592592592592
+          }
+        },
+        "known": {
+          "rows": 38317,
+          "plays": 11934,
+          "card_agreement": {
+            "n": 7621,
+            "denominator": 11934,
+            "rate": 0.6385956091838445
+          },
+          "action_agreement": {
+            "n": 22445,
+            "denominator": 38317,
+            "rate": 0.5857713286530782
+          },
+          "gate_play": {
+            "n": 15066,
+            "denominator": 38317,
+            "rate": 0.39319362163008587
+          },
+          "rocket_gated": {
+            "n": 1548,
+            "denominator": 38317,
+            "rate": 0.04039982253307931
+          }
+        },
+        "sequence": {
+          "rows": 2284,
+          "plays": 1042,
+          "card_agreement": {
+            "n": 597,
+            "denominator": 1042,
+            "rate": 0.572936660268714
+          },
+          "action_agreement": {
+            "n": 1018,
+            "denominator": 2284,
+            "rate": 0.4457092819614711
+          },
+          "gate_play": {
+            "n": 1256,
+            "denominator": 2284,
+            "rate": 0.5499124343257443
+          },
+          "rocket_gated": {
+            "n": 461,
+            "denominator": 2284,
+            "rate": 0.20183887915936952
+          }
+        },
+        "combo": {
+          "rows": 271,
+          "plays": 154,
+          "card_agreement": {
+            "n": 100,
+            "denominator": 154,
+            "rate": 0.6493506493506493
+          },
+          "action_agreement": {
+            "n": 91,
+            "denominator": 271,
+            "rate": 0.33579335793357934
+          },
+          "gate_play": {
+            "n": 159,
+            "denominator": 271,
+            "rate": 0.5867158671586716
+          },
+          "rocket_gated": {
+            "n": 69,
+            "denominator": 271,
+            "rate": 0.25461254612546125
+          }
+        },
+        "finish": {
+          "rows": 20,
+          "plays": 13,
+          "card_agreement": {
+            "n": 8,
+            "denominator": 13,
+            "rate": 0.6153846153846154
+          },
+          "action_agreement": {
+            "n": 3,
+            "denominator": 20,
+            "rate": 0.15
+          },
+          "gate_play": {
+            "n": 16,
+            "denominator": 20,
+            "rate": 0.8
+          },
+          "rocket_gated": {
+            "n": 6,
+            "denominator": 20,
+            "rate": 0.3
+          }
+        },
+        "barrel": {
+          "rows": 249,
+          "plays": 146,
+          "card_agreement": {
+            "n": 102,
+            "denominator": 146,
+            "rate": 0.6986301369863014
+          },
+          "action_agreement": {
+            "n": 87,
+            "denominator": 249,
+            "rate": 0.3493975903614458
+          },
+          "gate_play": {
+            "n": 182,
+            "denominator": 249,
+            "rate": 0.7309236947791165
+          },
+          "rocket_gated": {
+            "n": 7,
+            "denominator": 249,
+            "rate": 0.028112449799196786
+          }
+        },
+        "barrel_multiple": {
+          "rows": 49,
+          "plays": 33,
+          "card_agreement": {
+            "n": 21,
+            "denominator": 33,
+            "rate": 0.6363636363636364
+          },
+          "action_agreement": {
+            "n": 15,
+            "denominator": 49,
+            "rate": 0.30612244897959184
+          },
+          "gate_play": {
+            "n": 36,
+            "denominator": 49,
+            "rate": 0.7346938775510204
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 49,
+            "rate": 0.0
+          }
+        },
+        "xbow": {
+          "rows": 157,
+          "plays": 48,
+          "card_agreement": {
+            "n": 28,
+            "denominator": 48,
+            "rate": 0.5833333333333334
+          },
+          "action_agreement": {
+            "n": 99,
+            "denominator": 157,
+            "rate": 0.6305732484076433
+          },
+          "gate_play": {
+            "n": 43,
+            "denominator": 157,
+            "rate": 0.27388535031847133
+          },
+          "rocket_gated": {
+            "n": 5,
+            "denominator": 157,
+            "rate": 0.03184713375796178
+          }
+        },
+        "xbow_no_lifetime_target": {
+          "rows": 6,
+          "plays": 2,
+          "card_agreement": {
+            "n": 0,
+            "denominator": 2,
+            "rate": 0.0
+          },
+          "action_agreement": {
+            "n": 4,
+            "denominator": 6,
+            "rate": 0.6666666666666666
+          },
+          "gate_play": {
+            "n": 1,
+            "denominator": 6,
+            "rate": 0.16666666666666666
+          },
+          "rocket_gated": {
+            "n": 1,
+            "denominator": 6,
+            "rate": 0.16666666666666666
+          }
+        },
+        "goblin_hut": {
+          "rows": 644,
+          "plays": 211,
+          "card_agreement": {
+            "n": 136,
+            "denominator": 211,
+            "rate": 0.6445497630331753
+          },
+          "action_agreement": {
+            "n": 342,
+            "denominator": 644,
+            "rate": 0.531055900621118
+          },
+          "gate_play": {
+            "n": 313,
+            "denominator": 644,
+            "rate": 0.4860248447204969
+          },
+          "rocket_gated": {
+            "n": 26,
+            "denominator": 644,
+            "rate": 0.040372670807453416
+          }
+        },
+        "furnace": {
+          "rows": 534,
+          "plays": 213,
+          "card_agreement": {
+            "n": 130,
+            "denominator": 213,
+            "rate": 0.6103286384976526
+          },
+          "action_agreement": {
+            "n": 278,
+            "denominator": 534,
+            "rate": 0.5205992509363296
+          },
+          "gate_play": {
+            "n": 259,
+            "denominator": 534,
+            "rate": 0.4850187265917603
+          },
+          "rocket_gated": {
+            "n": 37,
+            "denominator": 534,
+            "rate": 0.06928838951310862
+          }
+        },
+        "tombstone": {
+          "rows": 1109,
+          "plays": 385,
+          "card_agreement": {
+            "n": 236,
+            "denominator": 385,
+            "rate": 0.612987012987013
+          },
+          "action_agreement": {
+            "n": 558,
+            "denominator": 1109,
+            "rate": 0.503155996393147
+          },
+          "gate_play": {
+            "n": 496,
+            "denominator": 1109,
+            "rate": 0.4472497745716862
+          },
+          "rocket_gated": {
+            "n": 41,
+            "denominator": 1109,
+            "rate": 0.0369702434625789
+          }
+        },
+        "barbarian_hut": {
+          "rows": 0,
+          "plays": 0,
+          "card_agreement": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "action_agreement": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "gate_play": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "witch": {
+          "rows": 519,
+          "plays": 186,
+          "card_agreement": {
+            "n": 116,
+            "denominator": 186,
+            "rate": 0.6236559139784946
+          },
+          "action_agreement": {
+            "n": 259,
+            "denominator": 519,
+            "rate": 0.49903660886319845
+          },
+          "gate_play": {
+            "n": 249,
+            "denominator": 519,
+            "rate": 0.4797687861271676
+          },
+          "rocket_gated": {
+            "n": 52,
+            "denominator": 519,
+            "rate": 0.1001926782273603
+          }
+        },
+        "night_witch": {
+          "rows": 390,
+          "plays": 152,
+          "card_agreement": {
+            "n": 109,
+            "denominator": 152,
+            "rate": 0.7171052631578947
+          },
+          "action_agreement": {
+            "n": 181,
+            "denominator": 390,
+            "rate": 0.4641025641025641
+          },
+          "gate_play": {
+            "n": 191,
+            "denominator": 390,
+            "rate": 0.4897435897435897
+          },
+          "rocket_gated": {
+            "n": 16,
+            "denominator": 390,
+            "rate": 0.041025641025641026
+          }
+        },
+        "spawners": {
+          "rows": 3107,
+          "plays": 1112,
+          "card_agreement": {
+            "n": 704,
+            "denominator": 1112,
+            "rate": 0.6330935251798561
+          },
+          "action_agreement": {
+            "n": 1579,
+            "denominator": 3107,
+            "rate": 0.5082072738976504
+          },
+          "gate_play": {
+            "n": 1459,
+            "denominator": 3107,
+            "rate": 0.4695848084969424
+          },
+          "rocket_gated": {
+            "n": 168,
+            "denominator": 3107,
+            "rate": 0.05407145156099131
+          }
+        },
+        "xbow_useful": {
+          "rows": 151,
+          "plays": 46,
+          "card_agreement": {
+            "n": 28,
+            "denominator": 46,
+            "rate": 0.6086956521739131
+          },
+          "action_agreement": {
+            "n": 95,
+            "denominator": 151,
+            "rate": 0.6291390728476821
+          },
+          "gate_play": {
+            "n": 42,
+            "denominator": 151,
+            "rate": 0.2781456953642384
+          },
+          "rocket_gated": {
+            "n": 4,
+            "denominator": 151,
+            "rate": 0.026490066225165563
+          }
+        },
+        "pro_rocket": {
+          "rows": 671,
+          "plays": 671,
+          "card_agreement": {
+            "n": 377,
+            "denominator": 671,
+            "rate": 0.5618479880774963
+          },
+          "action_agreement": {
+            "n": 103,
+            "denominator": 671,
+            "rate": 0.15350223546944858
+          },
+          "gate_play": {
+            "n": 598,
+            "denominator": 671,
+            "rate": 0.8912071535022354
+          },
+          "rocket_gated": {
+            "n": 342,
+            "denominator": 671,
+            "rate": 0.5096870342771982
+          }
+        }
+      },
+      "barrel": {
+        "pro_same_lane_rows": 39,
+        "forced_log_same_lane": {
+          "n": 29,
+          "denominator": 39,
+          "rate": 0.7435897435897436
+        },
+        "gated_correct_lane": {
+          "n": 28,
+          "denominator": 39,
+          "rate": 0.717948717948718
+        },
+        "gated_wrong_lane": {
+          "n": 10,
+          "denominator": 39,
+          "rate": 0.2564102564102564
+        },
+        "known_playable_rows": 95
+      }
+    },
+    "v5_uniform": {
+      "global_card_agreement": {
+        "n": 7727,
+        "denominator": 11934,
+        "rate": 0.647477794536618
+      },
+      "rocket_recall": {
+        "n": 147,
+        "denominator": 671,
+        "rate": 0.21907600596125187
+      },
+      "rocket_finish": {
+        "n": 0,
+        "denominator": 10,
+        "rate": 0.0
+      },
+      "combo_rocket": {
+        "n": 16,
+        "denominator": 69,
+        "rate": 0.2318840579710145
+      },
+      "combo_tornado": {
+        "n": 21,
+        "denominator": 69,
+        "rate": 0.30434782608695654
+      },
+      "contexts": {
+        "pool": {
+          "rows": 38317,
+          "plays": 11934,
+          "card_agreement": {
+            "n": 7727,
+            "denominator": 11934,
+            "rate": 0.647477794536618
+          },
+          "action_agreement": {
+            "n": 22553,
+            "denominator": 38317,
+            "rate": 0.588589920922828
+          },
+          "gate_play": {
+            "n": 14869,
+            "denominator": 38317,
+            "rate": 0.3880523005454498
+          },
+          "rocket_gated": {
+            "n": 481,
+            "denominator": 38317,
+            "rate": 0.012553174831014955
+          }
+        },
+        "opportunity": {
+          "rows": 285,
+          "plays": 157,
+          "card_agreement": {
+            "n": 110,
+            "denominator": 157,
+            "rate": 0.7006369426751592
+          },
+          "action_agreement": {
+            "n": 98,
+            "denominator": 285,
+            "rate": 0.34385964912280703
+          },
+          "gate_play": {
+            "n": 191,
+            "denominator": 285,
+            "rate": 0.6701754385964912
+          },
+          "rocket_gated": {
+            "n": 1,
+            "denominator": 285,
+            "rate": 0.0035087719298245615
+          }
+        },
+        "compact": {
+          "rows": 101,
+          "plays": 56,
+          "card_agreement": {
+            "n": 34,
+            "denominator": 56,
+            "rate": 0.6071428571428571
+          },
+          "action_agreement": {
+            "n": 41,
+            "denominator": 101,
+            "rate": 0.40594059405940597
+          },
+          "gate_play": {
+            "n": 59,
+            "denominator": 101,
+            "rate": 0.5841584158415841
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 101,
+            "rate": 0.0
+          }
+        },
+        "pull": {
+          "rows": 216,
+          "plays": 123,
+          "card_agreement": {
+            "n": 90,
+            "denominator": 123,
+            "rate": 0.7317073170731707
+          },
+          "action_agreement": {
+            "n": 69,
+            "denominator": 216,
+            "rate": 0.3194444444444444
+          },
+          "gate_play": {
+            "n": 155,
+            "denominator": 216,
+            "rate": 0.7175925925925926
+          },
+          "rocket_gated": {
+            "n": 1,
+            "denominator": 216,
+            "rate": 0.004629629629629629
+          }
+        },
+        "known": {
+          "rows": 38317,
+          "plays": 11934,
+          "card_agreement": {
+            "n": 7727,
+            "denominator": 11934,
+            "rate": 0.647477794536618
+          },
+          "action_agreement": {
+            "n": 22553,
+            "denominator": 38317,
+            "rate": 0.588589920922828
+          },
+          "gate_play": {
+            "n": 14869,
+            "denominator": 38317,
+            "rate": 0.3880523005454498
+          },
+          "rocket_gated": {
+            "n": 481,
+            "denominator": 38317,
+            "rate": 0.012553174831014955
+          }
+        },
+        "sequence": {
+          "rows": 2284,
+          "plays": 1042,
+          "card_agreement": {
+            "n": 402,
+            "denominator": 1042,
+            "rate": 0.3857965451055662
+          },
+          "action_agreement": {
+            "n": 977,
+            "denominator": 2284,
+            "rate": 0.4277583187390543
+          },
+          "gate_play": {
+            "n": 1234,
+            "denominator": 2284,
+            "rate": 0.5402802101576182
+          },
+          "rocket_gated": {
+            "n": 199,
+            "denominator": 2284,
+            "rate": 0.08712784588441332
+          }
+        },
+        "combo": {
+          "rows": 271,
+          "plays": 154,
+          "card_agreement": {
+            "n": 77,
+            "denominator": 154,
+            "rate": 0.5
+          },
+          "action_agreement": {
+            "n": 87,
+            "denominator": 271,
+            "rate": 0.3210332103321033
+          },
+          "gate_play": {
+            "n": 157,
+            "denominator": 271,
+            "rate": 0.5793357933579336
+          },
+          "rocket_gated": {
+            "n": 27,
+            "denominator": 271,
+            "rate": 0.0996309963099631
+          }
+        },
+        "finish": {
+          "rows": 20,
+          "plays": 13,
+          "card_agreement": {
+            "n": 2,
+            "denominator": 13,
+            "rate": 0.15384615384615385
+          },
+          "action_agreement": {
+            "n": 3,
+            "denominator": 20,
+            "rate": 0.15
+          },
+          "gate_play": {
+            "n": 16,
+            "denominator": 20,
+            "rate": 0.8
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 20,
+            "rate": 0.0
+          }
+        },
+        "barrel": {
+          "rows": 249,
+          "plays": 146,
+          "card_agreement": {
+            "n": 105,
+            "denominator": 146,
+            "rate": 0.7191780821917808
+          },
+          "action_agreement": {
+            "n": 85,
+            "denominator": 249,
+            "rate": 0.3413654618473896
+          },
+          "gate_play": {
+            "n": 183,
+            "denominator": 249,
+            "rate": 0.7349397590361446
+          },
+          "rocket_gated": {
+            "n": 1,
+            "denominator": 249,
+            "rate": 0.004016064257028112
+          }
+        },
+        "barrel_multiple": {
+          "rows": 49,
+          "plays": 33,
+          "card_agreement": {
+            "n": 21,
+            "denominator": 33,
+            "rate": 0.6363636363636364
+          },
+          "action_agreement": {
+            "n": 15,
+            "denominator": 49,
+            "rate": 0.30612244897959184
+          },
+          "gate_play": {
+            "n": 36,
+            "denominator": 49,
+            "rate": 0.7346938775510204
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 49,
+            "rate": 0.0
+          }
+        },
+        "xbow": {
+          "rows": 157,
+          "plays": 48,
+          "card_agreement": {
+            "n": 30,
+            "denominator": 48,
+            "rate": 0.625
+          },
+          "action_agreement": {
+            "n": 99,
+            "denominator": 157,
+            "rate": 0.6305732484076433
+          },
+          "gate_play": {
+            "n": 43,
+            "denominator": 157,
+            "rate": 0.27388535031847133
+          },
+          "rocket_gated": {
+            "n": 4,
+            "denominator": 157,
+            "rate": 0.025477707006369428
+          }
+        },
+        "xbow_no_lifetime_target": {
+          "rows": 6,
+          "plays": 2,
+          "card_agreement": {
+            "n": 1,
+            "denominator": 2,
+            "rate": 0.5
+          },
+          "action_agreement": {
+            "n": 4,
+            "denominator": 6,
+            "rate": 0.6666666666666666
+          },
+          "gate_play": {
+            "n": 1,
+            "denominator": 6,
+            "rate": 0.16666666666666666
+          },
+          "rocket_gated": {
+            "n": 1,
+            "denominator": 6,
+            "rate": 0.16666666666666666
+          }
+        },
+        "witch": {
+          "rows": 519,
+          "plays": 186,
+          "card_agreement": {
+            "n": 111,
+            "denominator": 186,
+            "rate": 0.5967741935483871
+          },
+          "action_agreement": {
+            "n": 251,
+            "denominator": 519,
+            "rate": 0.4836223506743738
+          },
+          "gate_play": {
+            "n": 255,
+            "denominator": 519,
+            "rate": 0.4913294797687861
+          },
+          "rocket_gated": {
+            "n": 11,
+            "denominator": 519,
+            "rate": 0.02119460500963391
+          }
+        },
+        "night_witch": {
+          "rows": 390,
+          "plays": 152,
+          "card_agreement": {
+            "n": 115,
+            "denominator": 152,
+            "rate": 0.756578947368421
+          },
+          "action_agreement": {
+            "n": 171,
+            "denominator": 390,
+            "rate": 0.43846153846153846
+          },
+          "gate_play": {
+            "n": 204,
+            "denominator": 390,
+            "rate": 0.5230769230769231
+          },
+          "rocket_gated": {
+            "n": 3,
+            "denominator": 390,
+            "rate": 0.007692307692307693
+          }
+        },
+        "goblin_hut": {
+          "rows": 644,
+          "plays": 211,
+          "card_agreement": {
+            "n": 134,
+            "denominator": 211,
+            "rate": 0.6350710900473934
+          },
+          "action_agreement": {
+            "n": 340,
+            "denominator": 644,
+            "rate": 0.5279503105590062
+          },
+          "gate_play": {
+            "n": 312,
+            "denominator": 644,
+            "rate": 0.484472049689441
+          },
+          "rocket_gated": {
+            "n": 9,
+            "denominator": 644,
+            "rate": 0.013975155279503106
+          }
+        },
+        "furnace": {
+          "rows": 534,
+          "plays": 213,
+          "card_agreement": {
+            "n": 136,
+            "denominator": 213,
+            "rate": 0.6384976525821596
+          },
+          "action_agreement": {
+            "n": 281,
+            "denominator": 534,
+            "rate": 0.5262172284644194
+          },
+          "gate_play": {
+            "n": 247,
+            "denominator": 534,
+            "rate": 0.46254681647940077
+          },
+          "rocket_gated": {
+            "n": 5,
+            "denominator": 534,
+            "rate": 0.009363295880149813
+          }
+        },
+        "barbarian_hut": {
+          "rows": 0,
+          "plays": 0,
+          "card_agreement": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "action_agreement": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "gate_play": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "tombstone": {
+          "rows": 1109,
+          "plays": 385,
+          "card_agreement": {
+            "n": 241,
+            "denominator": 385,
+            "rate": 0.625974025974026
+          },
+          "action_agreement": {
+            "n": 565,
+            "denominator": 1109,
+            "rate": 0.5094679891794409
+          },
+          "gate_play": {
+            "n": 494,
+            "denominator": 1109,
+            "rate": 0.4454463480613165
+          },
+          "rocket_gated": {
+            "n": 12,
+            "denominator": 1109,
+            "rate": 0.010820559062218215
+          }
+        },
+        "spawners": {
+          "rows": 3107,
+          "plays": 1112,
+          "card_agreement": {
+            "n": 719,
+            "denominator": 1112,
+            "rate": 0.6465827338129496
+          },
+          "action_agreement": {
+            "n": 1572,
+            "denominator": 3107,
+            "rate": 0.5059542967492758
+          },
+          "gate_play": {
+            "n": 1460,
+            "denominator": 3107,
+            "rate": 0.4699066623752816
+          },
+          "rocket_gated": {
+            "n": 38,
+            "denominator": 3107,
+            "rate": 0.012230447376890892
+          }
+        },
+        "xbow_useful": {
+          "rows": 151,
+          "plays": 46,
+          "card_agreement": {
+            "n": 29,
+            "denominator": 46,
+            "rate": 0.6304347826086957
+          },
+          "action_agreement": {
+            "n": 95,
+            "denominator": 151,
+            "rate": 0.6291390728476821
+          },
+          "gate_play": {
+            "n": 42,
+            "denominator": 151,
+            "rate": 0.2781456953642384
+          },
+          "rocket_gated": {
+            "n": 3,
+            "denominator": 151,
+            "rate": 0.019867549668874173
+          }
+        },
+        "pro_rocket": {
+          "rows": 671,
+          "plays": 671,
+          "card_agreement": {
+            "n": 165,
+            "denominator": 671,
+            "rate": 0.2459016393442623
+          },
+          "action_agreement": {
+            "n": 50,
+            "denominator": 671,
+            "rate": 0.07451564828614009
+          },
+          "gate_play": {
+            "n": 593,
+            "denominator": 671,
+            "rate": 0.8837555886736215
+          },
+          "rocket_gated": {
+            "n": 147,
+            "denominator": 671,
+            "rate": 0.21907600596125187
+          }
+        }
+      },
+      "barrel": {
+        "pro_same_lane_rows": 39,
+        "forced_log_same_lane": {
+          "n": 26,
+          "denominator": 39,
+          "rate": 0.6666666666666666
+        },
+        "gated_correct_lane": {
+          "n": 25,
+          "denominator": 39,
+          "rate": 0.6410256410256411
+        },
+        "gated_wrong_lane": {
+          "n": 13,
+          "denominator": 39,
+          "rate": 0.3333333333333333
+        },
+        "known_playable_rows": 95
+      }
+    },
+    "v5_rocket": {
+      "global_card_agreement": {
+        "n": 7623,
+        "denominator": 11934,
+        "rate": 0.638763197586727
+      },
+      "rocket_recall": {
+        "n": 345,
+        "denominator": 671,
+        "rate": 0.5141579731743666
+      },
+      "rocket_finish": {
+        "n": 0,
+        "denominator": 10,
+        "rate": 0.0
+      },
+      "combo_rocket": {
+        "n": 41,
+        "denominator": 69,
+        "rate": 0.5942028985507246
+      },
+      "combo_tornado": {
+        "n": 21,
+        "denominator": 69,
+        "rate": 0.30434782608695654
+      },
+      "contexts": {
+        "pool": {
+          "rows": 38317,
+          "plays": 11934,
+          "card_agreement": {
+            "n": 7623,
+            "denominator": 11934,
+            "rate": 0.638763197586727
+          },
+          "action_agreement": {
+            "n": 22453,
+            "denominator": 38317,
+            "rate": 0.5859801132656524
+          },
+          "gate_play": {
+            "n": 15059,
+            "denominator": 38317,
+            "rate": 0.3930109350940836
+          },
+          "rocket_gated": {
+            "n": 1563,
+            "denominator": 38317,
+            "rate": 0.04079129368165566
+          }
+        },
+        "opportunity": {
+          "rows": 285,
+          "plays": 157,
+          "card_agreement": {
+            "n": 113,
+            "denominator": 157,
+            "rate": 0.7197452229299363
+          },
+          "action_agreement": {
+            "n": 94,
+            "denominator": 285,
+            "rate": 0.3298245614035088
+          },
+          "gate_play": {
+            "n": 195,
+            "denominator": 285,
+            "rate": 0.6842105263157895
+          },
+          "rocket_gated": {
+            "n": 11,
+            "denominator": 285,
+            "rate": 0.03859649122807018
+          }
+        },
+        "compact": {
+          "rows": 101,
+          "plays": 56,
+          "card_agreement": {
+            "n": 34,
+            "denominator": 56,
+            "rate": 0.6071428571428571
+          },
+          "action_agreement": {
+            "n": 40,
+            "denominator": 101,
+            "rate": 0.39603960396039606
+          },
+          "gate_play": {
+            "n": 59,
+            "denominator": 101,
+            "rate": 0.5841584158415841
+          },
+          "rocket_gated": {
+            "n": 3,
+            "denominator": 101,
+            "rate": 0.0297029702970297
+          }
+        },
+        "pull": {
+          "rows": 216,
+          "plays": 123,
+          "card_agreement": {
+            "n": 93,
+            "denominator": 123,
+            "rate": 0.7560975609756098
+          },
+          "action_agreement": {
+            "n": 66,
+            "denominator": 216,
+            "rate": 0.3055555555555556
+          },
+          "gate_play": {
+            "n": 159,
+            "denominator": 216,
+            "rate": 0.7361111111111112
+          },
+          "rocket_gated": {
+            "n": 11,
+            "denominator": 216,
+            "rate": 0.05092592592592592
+          }
+        },
+        "known": {
+          "rows": 38317,
+          "plays": 11934,
+          "card_agreement": {
+            "n": 7623,
+            "denominator": 11934,
+            "rate": 0.638763197586727
+          },
+          "action_agreement": {
+            "n": 22453,
+            "denominator": 38317,
+            "rate": 0.5859801132656524
+          },
+          "gate_play": {
+            "n": 15059,
+            "denominator": 38317,
+            "rate": 0.3930109350940836
+          },
+          "rocket_gated": {
+            "n": 1563,
+            "denominator": 38317,
+            "rate": 0.04079129368165566
+          }
+        },
+        "sequence": {
+          "rows": 2284,
+          "plays": 1042,
+          "card_agreement": {
+            "n": 602,
+            "denominator": 1042,
+            "rate": 0.5777351247600768
+          },
+          "action_agreement": {
+            "n": 1020,
+            "denominator": 2284,
+            "rate": 0.44658493870402804
+          },
+          "gate_play": {
+            "n": 1253,
+            "denominator": 2284,
+            "rate": 0.5485989492119089
+          },
+          "rocket_gated": {
+            "n": 465,
+            "denominator": 2284,
+            "rate": 0.20359019264448336
+          }
+        },
+        "combo": {
+          "rows": 271,
+          "plays": 154,
+          "card_agreement": {
+            "n": 101,
+            "denominator": 154,
+            "rate": 0.6558441558441559
+          },
+          "action_agreement": {
+            "n": 91,
+            "denominator": 271,
+            "rate": 0.33579335793357934
+          },
+          "gate_play": {
+            "n": 159,
+            "denominator": 271,
+            "rate": 0.5867158671586716
+          },
+          "rocket_gated": {
+            "n": 69,
+            "denominator": 271,
+            "rate": 0.25461254612546125
+          }
+        },
+        "finish": {
+          "rows": 20,
+          "plays": 13,
+          "card_agreement": {
+            "n": 8,
+            "denominator": 13,
+            "rate": 0.6153846153846154
+          },
+          "action_agreement": {
+            "n": 3,
+            "denominator": 20,
+            "rate": 0.15
+          },
+          "gate_play": {
+            "n": 16,
+            "denominator": 20,
+            "rate": 0.8
+          },
+          "rocket_gated": {
+            "n": 6,
+            "denominator": 20,
+            "rate": 0.3
+          }
+        },
+        "barrel": {
+          "rows": 249,
+          "plays": 146,
+          "card_agreement": {
+            "n": 103,
+            "denominator": 146,
+            "rate": 0.7054794520547946
+          },
+          "action_agreement": {
+            "n": 87,
+            "denominator": 249,
+            "rate": 0.3493975903614458
+          },
+          "gate_play": {
+            "n": 182,
+            "denominator": 249,
+            "rate": 0.7309236947791165
+          },
+          "rocket_gated": {
+            "n": 7,
+            "denominator": 249,
+            "rate": 0.028112449799196786
+          }
+        },
+        "barrel_multiple": {
+          "rows": 49,
+          "plays": 33,
+          "card_agreement": {
+            "n": 21,
+            "denominator": 33,
+            "rate": 0.6363636363636364
+          },
+          "action_agreement": {
+            "n": 15,
+            "denominator": 49,
+            "rate": 0.30612244897959184
+          },
+          "gate_play": {
+            "n": 36,
+            "denominator": 49,
+            "rate": 0.7346938775510204
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 49,
+            "rate": 0.0
+          }
+        },
+        "xbow": {
+          "rows": 157,
+          "plays": 48,
+          "card_agreement": {
+            "n": 28,
+            "denominator": 48,
+            "rate": 0.5833333333333334
+          },
+          "action_agreement": {
+            "n": 99,
+            "denominator": 157,
+            "rate": 0.6305732484076433
+          },
+          "gate_play": {
+            "n": 43,
+            "denominator": 157,
+            "rate": 0.27388535031847133
+          },
+          "rocket_gated": {
+            "n": 5,
+            "denominator": 157,
+            "rate": 0.03184713375796178
+          }
+        },
+        "xbow_no_lifetime_target": {
+          "rows": 6,
+          "plays": 2,
+          "card_agreement": {
+            "n": 0,
+            "denominator": 2,
+            "rate": 0.0
+          },
+          "action_agreement": {
+            "n": 4,
+            "denominator": 6,
+            "rate": 0.6666666666666666
+          },
+          "gate_play": {
+            "n": 1,
+            "denominator": 6,
+            "rate": 0.16666666666666666
+          },
+          "rocket_gated": {
+            "n": 1,
+            "denominator": 6,
+            "rate": 0.16666666666666666
+          }
+        },
+        "night_witch": {
+          "rows": 390,
+          "plays": 152,
+          "card_agreement": {
+            "n": 107,
+            "denominator": 152,
+            "rate": 0.7039473684210527
+          },
+          "action_agreement": {
+            "n": 174,
+            "denominator": 390,
+            "rate": 0.4461538461538462
+          },
+          "gate_play": {
+            "n": 200,
+            "denominator": 390,
+            "rate": 0.5128205128205128
+          },
+          "rocket_gated": {
+            "n": 16,
+            "denominator": 390,
+            "rate": 0.041025641025641026
+          }
+        },
+        "barbarian_hut": {
+          "rows": 0,
+          "plays": 0,
+          "card_agreement": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "action_agreement": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "gate_play": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "witch": {
+          "rows": 519,
+          "plays": 186,
+          "card_agreement": {
+            "n": 115,
+            "denominator": 186,
+            "rate": 0.6182795698924731
+          },
+          "action_agreement": {
+            "n": 253,
+            "denominator": 519,
+            "rate": 0.48747591522157996
+          },
+          "gate_play": {
+            "n": 254,
+            "denominator": 519,
+            "rate": 0.48940269749518306
+          },
+          "rocket_gated": {
+            "n": 41,
+            "denominator": 519,
+            "rate": 0.0789980732177264
+          }
+        },
+        "furnace": {
+          "rows": 534,
+          "plays": 213,
+          "card_agreement": {
+            "n": 129,
+            "denominator": 213,
+            "rate": 0.6056338028169014
+          },
+          "action_agreement": {
+            "n": 278,
+            "denominator": 534,
+            "rate": 0.5205992509363296
+          },
+          "gate_play": {
+            "n": 262,
+            "denominator": 534,
+            "rate": 0.49063670411985016
+          },
+          "rocket_gated": {
+            "n": 37,
+            "denominator": 534,
+            "rate": 0.06928838951310862
+          }
+        },
+        "tombstone": {
+          "rows": 1109,
+          "plays": 385,
+          "card_agreement": {
+            "n": 238,
+            "denominator": 385,
+            "rate": 0.6181818181818182
+          },
+          "action_agreement": {
+            "n": 558,
+            "denominator": 1109,
+            "rate": 0.503155996393147
+          },
+          "gate_play": {
+            "n": 492,
+            "denominator": 1109,
+            "rate": 0.4436429215509468
+          },
+          "rocket_gated": {
+            "n": 47,
+            "denominator": 1109,
+            "rate": 0.04238052299368801
+          }
+        },
+        "goblin_hut": {
+          "rows": 644,
+          "plays": 211,
+          "card_agreement": {
+            "n": 136,
+            "denominator": 211,
+            "rate": 0.6445497630331753
+          },
+          "action_agreement": {
+            "n": 340,
+            "denominator": 644,
+            "rate": 0.5279503105590062
+          },
+          "gate_play": {
+            "n": 314,
+            "denominator": 644,
+            "rate": 0.48757763975155277
+          },
+          "rocket_gated": {
+            "n": 24,
+            "denominator": 644,
+            "rate": 0.037267080745341616
+          }
+        },
+        "spawners": {
+          "rows": 3107,
+          "plays": 1112,
+          "card_agreement": {
+            "n": 705,
+            "denominator": 1112,
+            "rate": 0.6339928057553957
+          },
+          "action_agreement": {
+            "n": 1567,
+            "denominator": 3107,
+            "rate": 0.5043450273575797
+          },
+          "gate_play": {
+            "n": 1470,
+            "denominator": 3107,
+            "rate": 0.47312520115867396
+          },
+          "rocket_gated": {
+            "n": 161,
+            "denominator": 3107,
+            "rate": 0.05181847441261667
+          }
+        },
+        "xbow_useful": {
+          "rows": 151,
+          "plays": 46,
+          "card_agreement": {
+            "n": 28,
+            "denominator": 46,
+            "rate": 0.6086956521739131
+          },
+          "action_agreement": {
+            "n": 95,
+            "denominator": 151,
+            "rate": 0.6291390728476821
+          },
+          "gate_play": {
+            "n": 42,
+            "denominator": 151,
+            "rate": 0.2781456953642384
+          },
+          "rocket_gated": {
+            "n": 4,
+            "denominator": 151,
+            "rate": 0.026490066225165563
+          }
+        },
+        "pro_rocket": {
+          "rows": 671,
+          "plays": 671,
+          "card_agreement": {
+            "n": 381,
+            "denominator": 671,
+            "rate": 0.5678092399403875
+          },
+          "action_agreement": {
+            "n": 103,
+            "denominator": 671,
+            "rate": 0.15350223546944858
+          },
+          "gate_play": {
+            "n": 597,
+            "denominator": 671,
+            "rate": 0.8897168405365127
+          },
+          "rocket_gated": {
+            "n": 345,
+            "denominator": 671,
+            "rate": 0.5141579731743666
+          }
+        }
+      },
+      "barrel": {
+        "pro_same_lane_rows": 39,
+        "forced_log_same_lane": {
+          "n": 29,
+          "denominator": 39,
+          "rate": 0.7435897435897436
+        },
+        "gated_correct_lane": {
+          "n": 28,
+          "denominator": 39,
+          "rate": 0.717948717948718
+        },
+        "gated_wrong_lane": {
+          "n": 10,
+          "denominator": 39,
+          "rate": 0.2564102564102564
+        },
+        "known_playable_rows": 95
+      }
+    },
+    "v5_rocket_xbow": {
+      "global_card_agreement": {
+        "n": 7635,
+        "denominator": 11934,
+        "rate": 0.6397687280040221
+      },
+      "rocket_recall": {
+        "n": 318,
+        "denominator": 671,
+        "rate": 0.47391952309985097
+      },
+      "rocket_finish": {
+        "n": 0,
+        "denominator": 10,
+        "rate": 0.0
+      },
+      "combo_rocket": {
+        "n": 39,
+        "denominator": 69,
+        "rate": 0.5652173913043478
+      },
+      "combo_tornado": {
+        "n": 19,
+        "denominator": 69,
+        "rate": 0.2753623188405797
+      },
+      "contexts": {
+        "pool": {
+          "rows": 38317,
+          "plays": 11934,
+          "card_agreement": {
+            "n": 7635,
+            "denominator": 11934,
+            "rate": 0.6397687280040221
+          },
+          "action_agreement": {
+            "n": 22414,
+            "denominator": 38317,
+            "rate": 0.5849622882793538
+          },
+          "gate_play": {
+            "n": 15061,
+            "denominator": 38317,
+            "rate": 0.3930631312472271
+          },
+          "rocket_gated": {
+            "n": 1403,
+            "denominator": 38317,
+            "rate": 0.036615601430174595
+          }
+        },
+        "opportunity": {
+          "rows": 285,
+          "plays": 157,
+          "card_agreement": {
+            "n": 114,
+            "denominator": 157,
+            "rate": 0.7261146496815286
+          },
+          "action_agreement": {
+            "n": 91,
+            "denominator": 285,
+            "rate": 0.3192982456140351
+          },
+          "gate_play": {
+            "n": 194,
+            "denominator": 285,
+            "rate": 0.6807017543859649
+          },
+          "rocket_gated": {
+            "n": 11,
+            "denominator": 285,
+            "rate": 0.03859649122807018
+          }
+        },
+        "compact": {
+          "rows": 101,
+          "plays": 56,
+          "card_agreement": {
+            "n": 33,
+            "denominator": 56,
+            "rate": 0.5892857142857143
+          },
+          "action_agreement": {
+            "n": 39,
+            "denominator": 101,
+            "rate": 0.38613861386138615
+          },
+          "gate_play": {
+            "n": 60,
+            "denominator": 101,
+            "rate": 0.594059405940594
+          },
+          "rocket_gated": {
+            "n": 4,
+            "denominator": 101,
+            "rate": 0.039603960396039604
+          }
+        },
+        "pull": {
+          "rows": 216,
+          "plays": 123,
+          "card_agreement": {
+            "n": 94,
+            "denominator": 123,
+            "rate": 0.7642276422764228
+          },
+          "action_agreement": {
+            "n": 64,
+            "denominator": 216,
+            "rate": 0.2962962962962963
+          },
+          "gate_play": {
+            "n": 157,
+            "denominator": 216,
+            "rate": 0.7268518518518519
+          },
+          "rocket_gated": {
+            "n": 10,
+            "denominator": 216,
+            "rate": 0.046296296296296294
+          }
+        },
+        "known": {
+          "rows": 38317,
+          "plays": 11934,
+          "card_agreement": {
+            "n": 7635,
+            "denominator": 11934,
+            "rate": 0.6397687280040221
+          },
+          "action_agreement": {
+            "n": 22414,
+            "denominator": 38317,
+            "rate": 0.5849622882793538
+          },
+          "gate_play": {
+            "n": 15061,
+            "denominator": 38317,
+            "rate": 0.3930631312472271
+          },
+          "rocket_gated": {
+            "n": 1403,
+            "denominator": 38317,
+            "rate": 0.036615601430174595
+          }
+        },
+        "sequence": {
+          "rows": 2284,
+          "plays": 1042,
+          "card_agreement": {
+            "n": 572,
+            "denominator": 1042,
+            "rate": 0.5489443378119002
+          },
+          "action_agreement": {
+            "n": 1011,
+            "denominator": 2284,
+            "rate": 0.4426444833625219
+          },
+          "gate_play": {
+            "n": 1248,
+            "denominator": 2284,
+            "rate": 0.5464098073555166
+          },
+          "rocket_gated": {
+            "n": 430,
+            "denominator": 2284,
+            "rate": 0.18826619964973731
+          }
+        },
+        "combo": {
+          "rows": 271,
+          "plays": 154,
+          "card_agreement": {
+            "n": 96,
+            "denominator": 154,
+            "rate": 0.6233766233766234
+          },
+          "action_agreement": {
+            "n": 88,
+            "denominator": 271,
+            "rate": 0.3247232472324723
+          },
+          "gate_play": {
+            "n": 157,
+            "denominator": 271,
+            "rate": 0.5793357933579336
+          },
+          "rocket_gated": {
+            "n": 65,
+            "denominator": 271,
+            "rate": 0.23985239852398524
+          }
+        },
+        "finish": {
+          "rows": 20,
+          "plays": 13,
+          "card_agreement": {
+            "n": 6,
+            "denominator": 13,
+            "rate": 0.46153846153846156
+          },
+          "action_agreement": {
+            "n": 3,
+            "denominator": 20,
+            "rate": 0.15
+          },
+          "gate_play": {
+            "n": 16,
+            "denominator": 20,
+            "rate": 0.8
+          },
+          "rocket_gated": {
+            "n": 5,
+            "denominator": 20,
+            "rate": 0.25
+          }
+        },
+        "barrel": {
+          "rows": 249,
+          "plays": 146,
+          "card_agreement": {
+            "n": 103,
+            "denominator": 146,
+            "rate": 0.7054794520547946
+          },
+          "action_agreement": {
+            "n": 86,
+            "denominator": 249,
+            "rate": 0.3453815261044177
+          },
+          "gate_play": {
+            "n": 184,
+            "denominator": 249,
+            "rate": 0.7389558232931727
+          },
+          "rocket_gated": {
+            "n": 5,
+            "denominator": 249,
+            "rate": 0.020080321285140562
+          }
+        },
+        "barrel_multiple": {
+          "rows": 49,
+          "plays": 33,
+          "card_agreement": {
+            "n": 21,
+            "denominator": 33,
+            "rate": 0.6363636363636364
+          },
+          "action_agreement": {
+            "n": 15,
+            "denominator": 49,
+            "rate": 0.30612244897959184
+          },
+          "gate_play": {
+            "n": 36,
+            "denominator": 49,
+            "rate": 0.7346938775510204
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 49,
+            "rate": 0.0
+          }
+        },
+        "xbow": {
+          "rows": 157,
+          "plays": 48,
+          "card_agreement": {
+            "n": 28,
+            "denominator": 48,
+            "rate": 0.5833333333333334
+          },
+          "action_agreement": {
+            "n": 99,
+            "denominator": 157,
+            "rate": 0.6305732484076433
+          },
+          "gate_play": {
+            "n": 43,
+            "denominator": 157,
+            "rate": 0.27388535031847133
+          },
+          "rocket_gated": {
+            "n": 3,
+            "denominator": 157,
+            "rate": 0.01910828025477707
+          }
+        },
+        "xbow_no_lifetime_target": {
+          "rows": 6,
+          "plays": 2,
+          "card_agreement": {
+            "n": 0,
+            "denominator": 2,
+            "rate": 0.0
+          },
+          "action_agreement": {
+            "n": 4,
+            "denominator": 6,
+            "rate": 0.6666666666666666
+          },
+          "gate_play": {
+            "n": 0,
+            "denominator": 6,
+            "rate": 0.0
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 6,
+            "rate": 0.0
+          }
+        },
+        "witch": {
+          "rows": 519,
+          "plays": 186,
+          "card_agreement": {
+            "n": 111,
+            "denominator": 186,
+            "rate": 0.5967741935483871
+          },
+          "action_agreement": {
+            "n": 250,
+            "denominator": 519,
+            "rate": 0.4816955684007707
+          },
+          "gate_play": {
+            "n": 256,
+            "denominator": 519,
+            "rate": 0.4932562620423892
+          },
+          "rocket_gated": {
+            "n": 35,
+            "denominator": 519,
+            "rate": 0.0674373795761079
+          }
+        },
+        "goblin_hut": {
+          "rows": 644,
+          "plays": 211,
+          "card_agreement": {
+            "n": 139,
+            "denominator": 211,
+            "rate": 0.6587677725118484
+          },
+          "action_agreement": {
+            "n": 344,
+            "denominator": 644,
+            "rate": 0.5341614906832298
+          },
+          "gate_play": {
+            "n": 308,
+            "denominator": 644,
+            "rate": 0.4782608695652174
+          },
+          "rocket_gated": {
+            "n": 24,
+            "denominator": 644,
+            "rate": 0.037267080745341616
+          }
+        },
+        "furnace": {
+          "rows": 534,
+          "plays": 213,
+          "card_agreement": {
+            "n": 132,
+            "denominator": 213,
+            "rate": 0.6197183098591549
+          },
+          "action_agreement": {
+            "n": 282,
+            "denominator": 534,
+            "rate": 0.5280898876404494
+          },
+          "gate_play": {
+            "n": 252,
+            "denominator": 534,
+            "rate": 0.47191011235955055
+          },
+          "rocket_gated": {
+            "n": 32,
+            "denominator": 534,
+            "rate": 0.0599250936329588
+          }
+        },
+        "barbarian_hut": {
+          "rows": 0,
+          "plays": 0,
+          "card_agreement": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "action_agreement": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "gate_play": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "night_witch": {
+          "rows": 390,
+          "plays": 152,
+          "card_agreement": {
+            "n": 110,
+            "denominator": 152,
+            "rate": 0.7236842105263158
+          },
+          "action_agreement": {
+            "n": 172,
+            "denominator": 390,
+            "rate": 0.441025641025641
+          },
+          "gate_play": {
+            "n": 200,
+            "denominator": 390,
+            "rate": 0.5128205128205128
+          },
+          "rocket_gated": {
+            "n": 12,
+            "denominator": 390,
+            "rate": 0.03076923076923077
+          }
+        },
+        "tombstone": {
+          "rows": 1109,
+          "plays": 385,
+          "card_agreement": {
+            "n": 243,
+            "denominator": 385,
+            "rate": 0.6311688311688312
+          },
+          "action_agreement": {
+            "n": 557,
+            "denominator": 1109,
+            "rate": 0.5022542831379622
+          },
+          "gate_play": {
+            "n": 491,
+            "denominator": 1109,
+            "rate": 0.44274120829576197
+          },
+          "rocket_gated": {
+            "n": 46,
+            "denominator": 1109,
+            "rate": 0.04147880973850315
+          }
+        },
+        "spawners": {
+          "rows": 3107,
+          "plays": 1112,
+          "card_agreement": {
+            "n": 715,
+            "denominator": 1112,
+            "rate": 0.6429856115107914
+          },
+          "action_agreement": {
+            "n": 1568,
+            "denominator": 3107,
+            "rate": 0.5046668812359189
+          },
+          "gate_play": {
+            "n": 1458,
+            "denominator": 3107,
+            "rate": 0.4692629546186032
+          },
+          "rocket_gated": {
+            "n": 145,
+            "denominator": 3107,
+            "rate": 0.046668812359188926
+          }
+        },
+        "xbow_useful": {
+          "rows": 151,
+          "plays": 46,
+          "card_agreement": {
+            "n": 28,
+            "denominator": 46,
+            "rate": 0.6086956521739131
+          },
+          "action_agreement": {
+            "n": 95,
+            "denominator": 151,
+            "rate": 0.6291390728476821
+          },
+          "gate_play": {
+            "n": 43,
+            "denominator": 151,
+            "rate": 0.2847682119205298
+          },
+          "rocket_gated": {
+            "n": 3,
+            "denominator": 151,
+            "rate": 0.019867549668874173
+          }
+        },
+        "pro_rocket": {
+          "rows": 671,
+          "plays": 671,
+          "card_agreement": {
+            "n": 353,
+            "denominator": 671,
+            "rate": 0.526080476900149
+          },
+          "action_agreement": {
+            "n": 93,
+            "denominator": 671,
+            "rate": 0.13859910581222057
+          },
+          "gate_play": {
+            "n": 594,
+            "denominator": 671,
+            "rate": 0.8852459016393442
+          },
+          "rocket_gated": {
+            "n": 318,
+            "denominator": 671,
+            "rate": 0.47391952309985097
+          }
+        }
+      },
+      "barrel": {
+        "pro_same_lane_rows": 39,
+        "forced_log_same_lane": {
+          "n": 30,
+          "denominator": 39,
+          "rate": 0.7692307692307693
+        },
+        "gated_correct_lane": {
+          "n": 28,
+          "denominator": 39,
+          "rate": 0.717948717948718
+        },
+        "gated_wrong_lane": {
+          "n": 9,
+          "denominator": 39,
+          "rate": 0.23076923076923078
+        },
+        "known_playable_rows": 95
+      }
+    },
+    "v5_rocket_barrel": {
+      "global_card_agreement": {
+        "n": 7600,
+        "denominator": 11934,
+        "rate": 0.636835930953578
+      },
+      "rocket_recall": {
+        "n": 328,
+        "denominator": 671,
+        "rate": 0.488822652757079
+      },
+      "rocket_finish": {
+        "n": 0,
+        "denominator": 10,
+        "rate": 0.0
+      },
+      "combo_rocket": {
+        "n": 42,
+        "denominator": 69,
+        "rate": 0.6086956521739131
+      },
+      "combo_tornado": {
+        "n": 22,
+        "denominator": 69,
+        "rate": 0.3188405797101449
+      },
+      "contexts": {
+        "pool": {
+          "rows": 38317,
+          "plays": 11934,
+          "card_agreement": {
+            "n": 7600,
+            "denominator": 11934,
+            "rate": 0.636835930953578
+          },
+          "action_agreement": {
+            "n": 22353,
+            "denominator": 38317,
+            "rate": 0.5833703056084767
+          },
+          "gate_play": {
+            "n": 15208,
+            "denominator": 38317,
+            "rate": 0.3968995485032753
+          },
+          "rocket_gated": {
+            "n": 1499,
+            "denominator": 38317,
+            "rate": 0.039121016781063236
+          }
+        },
+        "opportunity": {
+          "rows": 285,
+          "plays": 157,
+          "card_agreement": {
+            "n": 112,
+            "denominator": 157,
+            "rate": 0.7133757961783439
+          },
+          "action_agreement": {
+            "n": 93,
+            "denominator": 285,
+            "rate": 0.3263157894736842
+          },
+          "gate_play": {
+            "n": 197,
+            "denominator": 285,
+            "rate": 0.6912280701754386
+          },
+          "rocket_gated": {
+            "n": 11,
+            "denominator": 285,
+            "rate": 0.03859649122807018
+          }
+        },
+        "compact": {
+          "rows": 101,
+          "plays": 56,
+          "card_agreement": {
+            "n": 34,
+            "denominator": 56,
+            "rate": 0.6071428571428571
+          },
+          "action_agreement": {
+            "n": 39,
+            "denominator": 101,
+            "rate": 0.38613861386138615
+          },
+          "gate_play": {
+            "n": 62,
+            "denominator": 101,
+            "rate": 0.6138613861386139
+          },
+          "rocket_gated": {
+            "n": 3,
+            "denominator": 101,
+            "rate": 0.0297029702970297
+          }
+        },
+        "pull": {
+          "rows": 216,
+          "plays": 123,
+          "card_agreement": {
+            "n": 91,
+            "denominator": 123,
+            "rate": 0.7398373983739838
+          },
+          "action_agreement": {
+            "n": 66,
+            "denominator": 216,
+            "rate": 0.3055555555555556
+          },
+          "gate_play": {
+            "n": 158,
+            "denominator": 216,
+            "rate": 0.7314814814814815
+          },
+          "rocket_gated": {
+            "n": 11,
+            "denominator": 216,
+            "rate": 0.05092592592592592
+          }
+        },
+        "known": {
+          "rows": 38317,
+          "plays": 11934,
+          "card_agreement": {
+            "n": 7600,
+            "denominator": 11934,
+            "rate": 0.636835930953578
+          },
+          "action_agreement": {
+            "n": 22353,
+            "denominator": 38317,
+            "rate": 0.5833703056084767
+          },
+          "gate_play": {
+            "n": 15208,
+            "denominator": 38317,
+            "rate": 0.3968995485032753
+          },
+          "rocket_gated": {
+            "n": 1499,
+            "denominator": 38317,
+            "rate": 0.039121016781063236
+          }
+        },
+        "sequence": {
+          "rows": 2284,
+          "plays": 1042,
+          "card_agreement": {
+            "n": 586,
+            "denominator": 1042,
+            "rate": 0.5623800383877159
+          },
+          "action_agreement": {
+            "n": 1018,
+            "denominator": 2284,
+            "rate": 0.4457092819614711
+          },
+          "gate_play": {
+            "n": 1257,
+            "denominator": 2284,
+            "rate": 0.5503502626970228
+          },
+          "rocket_gated": {
+            "n": 447,
+            "denominator": 2284,
+            "rate": 0.1957092819614711
+          }
+        },
+        "combo": {
+          "rows": 271,
+          "plays": 154,
+          "card_agreement": {
+            "n": 101,
+            "denominator": 154,
+            "rate": 0.6558441558441559
+          },
+          "action_agreement": {
+            "n": 93,
+            "denominator": 271,
+            "rate": 0.34317343173431736
+          },
+          "gate_play": {
+            "n": 158,
+            "denominator": 271,
+            "rate": 0.5830258302583026
+          },
+          "rocket_gated": {
+            "n": 68,
+            "denominator": 271,
+            "rate": 0.25092250922509224
+          }
+        },
+        "finish": {
+          "rows": 20,
+          "plays": 13,
+          "card_agreement": {
+            "n": 7,
+            "denominator": 13,
+            "rate": 0.5384615384615384
+          },
+          "action_agreement": {
+            "n": 3,
+            "denominator": 20,
+            "rate": 0.15
+          },
+          "gate_play": {
+            "n": 16,
+            "denominator": 20,
+            "rate": 0.8
+          },
+          "rocket_gated": {
+            "n": 5,
+            "denominator": 20,
+            "rate": 0.25
+          }
+        },
+        "barrel": {
+          "rows": 249,
+          "plays": 146,
+          "card_agreement": {
+            "n": 101,
+            "denominator": 146,
+            "rate": 0.6917808219178082
+          },
+          "action_agreement": {
+            "n": 95,
+            "denominator": 249,
+            "rate": 0.3815261044176707
+          },
+          "gate_play": {
+            "n": 172,
+            "denominator": 249,
+            "rate": 0.6907630522088354
+          },
+          "rocket_gated": {
+            "n": 3,
+            "denominator": 249,
+            "rate": 0.012048192771084338
+          }
+        },
+        "barrel_multiple": {
+          "rows": 49,
+          "plays": 33,
+          "card_agreement": {
+            "n": 21,
+            "denominator": 33,
+            "rate": 0.6363636363636364
+          },
+          "action_agreement": {
+            "n": 14,
+            "denominator": 49,
+            "rate": 0.2857142857142857
+          },
+          "gate_play": {
+            "n": 35,
+            "denominator": 49,
+            "rate": 0.7142857142857143
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 49,
+            "rate": 0.0
+          }
+        },
+        "xbow": {
+          "rows": 157,
+          "plays": 48,
+          "card_agreement": {
+            "n": 28,
+            "denominator": 48,
+            "rate": 0.5833333333333334
+          },
+          "action_agreement": {
+            "n": 99,
+            "denominator": 157,
+            "rate": 0.6305732484076433
+          },
+          "gate_play": {
+            "n": 44,
+            "denominator": 157,
+            "rate": 0.2802547770700637
+          },
+          "rocket_gated": {
+            "n": 5,
+            "denominator": 157,
+            "rate": 0.03184713375796178
+          }
+        },
+        "xbow_no_lifetime_target": {
+          "rows": 6,
+          "plays": 2,
+          "card_agreement": {
+            "n": 0,
+            "denominator": 2,
+            "rate": 0.0
+          },
+          "action_agreement": {
+            "n": 4,
+            "denominator": 6,
+            "rate": 0.6666666666666666
+          },
+          "gate_play": {
+            "n": 1,
+            "denominator": 6,
+            "rate": 0.16666666666666666
+          },
+          "rocket_gated": {
+            "n": 1,
+            "denominator": 6,
+            "rate": 0.16666666666666666
+          }
+        },
+        "night_witch": {
+          "rows": 390,
+          "plays": 152,
+          "card_agreement": {
+            "n": 103,
+            "denominator": 152,
+            "rate": 0.6776315789473685
+          },
+          "action_agreement": {
+            "n": 173,
+            "denominator": 390,
+            "rate": 0.44358974358974357
+          },
+          "gate_play": {
+            "n": 205,
+            "denominator": 390,
+            "rate": 0.5256410256410257
+          },
+          "rocket_gated": {
+            "n": 19,
+            "denominator": 390,
+            "rate": 0.04871794871794872
+          }
+        },
+        "barbarian_hut": {
+          "rows": 0,
+          "plays": 0,
+          "card_agreement": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "action_agreement": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "gate_play": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "furnace": {
+          "rows": 534,
+          "plays": 213,
+          "card_agreement": {
+            "n": 131,
+            "denominator": 213,
+            "rate": 0.6150234741784038
+          },
+          "action_agreement": {
+            "n": 279,
+            "denominator": 534,
+            "rate": 0.5224719101123596
+          },
+          "gate_play": {
+            "n": 264,
+            "denominator": 534,
+            "rate": 0.4943820224719101
+          },
+          "rocket_gated": {
+            "n": 34,
+            "denominator": 534,
+            "rate": 0.06367041198501873
+          }
+        },
+        "goblin_hut": {
+          "rows": 644,
+          "plays": 211,
+          "card_agreement": {
+            "n": 133,
+            "denominator": 211,
+            "rate": 0.6303317535545023
+          },
+          "action_agreement": {
+            "n": 340,
+            "denominator": 644,
+            "rate": 0.5279503105590062
+          },
+          "gate_play": {
+            "n": 315,
+            "denominator": 644,
+            "rate": 0.4891304347826087
+          },
+          "rocket_gated": {
+            "n": 24,
+            "denominator": 644,
+            "rate": 0.037267080745341616
+          }
+        },
+        "witch": {
+          "rows": 519,
+          "plays": 186,
+          "card_agreement": {
+            "n": 109,
+            "denominator": 186,
+            "rate": 0.5860215053763441
+          },
+          "action_agreement": {
+            "n": 257,
+            "denominator": 519,
+            "rate": 0.4951830443159923
+          },
+          "gate_play": {
+            "n": 249,
+            "denominator": 519,
+            "rate": 0.4797687861271676
+          },
+          "rocket_gated": {
+            "n": 39,
+            "denominator": 519,
+            "rate": 0.07514450867052024
+          }
+        },
+        "tombstone": {
+          "rows": 1109,
+          "plays": 385,
+          "card_agreement": {
+            "n": 234,
+            "denominator": 385,
+            "rate": 0.6077922077922078
+          },
+          "action_agreement": {
+            "n": 556,
+            "denominator": 1109,
+            "rate": 0.5013525698827773
+          },
+          "gate_play": {
+            "n": 492,
+            "denominator": 1109,
+            "rate": 0.4436429215509468
+          },
+          "rocket_gated": {
+            "n": 46,
+            "denominator": 1109,
+            "rate": 0.04147880973850315
+          }
+        },
+        "spawners": {
+          "rows": 3107,
+          "plays": 1112,
+          "card_agreement": {
+            "n": 692,
+            "denominator": 1112,
+            "rate": 0.6223021582733813
+          },
+          "action_agreement": {
+            "n": 1567,
+            "denominator": 3107,
+            "rate": 0.5043450273575797
+          },
+          "gate_play": {
+            "n": 1476,
+            "denominator": 3107,
+            "rate": 0.4750563244287094
+          },
+          "rocket_gated": {
+            "n": 157,
+            "denominator": 3107,
+            "rate": 0.05053105889925973
+          }
+        },
+        "xbow_useful": {
+          "rows": 151,
+          "plays": 46,
+          "card_agreement": {
+            "n": 28,
+            "denominator": 46,
+            "rate": 0.6086956521739131
+          },
+          "action_agreement": {
+            "n": 95,
+            "denominator": 151,
+            "rate": 0.6291390728476821
+          },
+          "gate_play": {
+            "n": 43,
+            "denominator": 151,
+            "rate": 0.2847682119205298
+          },
+          "rocket_gated": {
+            "n": 4,
+            "denominator": 151,
+            "rate": 0.026490066225165563
+          }
+        },
+        "pro_rocket": {
+          "rows": 671,
+          "plays": 671,
+          "card_agreement": {
+            "n": 365,
+            "denominator": 671,
+            "rate": 0.5439642324888226
+          },
+          "action_agreement": {
+            "n": 97,
+            "denominator": 671,
+            "rate": 0.14456035767511177
+          },
+          "gate_play": {
+            "n": 597,
+            "denominator": 671,
+            "rate": 0.8897168405365127
+          },
+          "rocket_gated": {
+            "n": 328,
+            "denominator": 671,
+            "rate": 0.488822652757079
+          }
+        }
+      },
+      "barrel": {
+        "pro_same_lane_rows": 39,
+        "forced_log_same_lane": {
+          "n": 31,
+          "denominator": 39,
+          "rate": 0.7948717948717948
+        },
+        "gated_correct_lane": {
+          "n": 29,
+          "denominator": 39,
+          "rate": 0.7435897435897436
+        },
+        "gated_wrong_lane": {
+          "n": 8,
+          "denominator": 39,
+          "rate": 0.20512820512820512
+        },
+        "known_playable_rows": 95
+      }
+    },
+    "v6_rocket_barrel": {
+      "global_card_agreement": {
+        "n": 7585,
+        "denominator": 11934,
+        "rate": 0.6355790179319591
+      },
+      "rocket_recall": {
+        "n": 327,
+        "denominator": 671,
+        "rate": 0.4873323397913562
+      },
+      "rocket_finish": {
+        "n": 0,
+        "denominator": 10,
+        "rate": 0.0
+      },
+      "combo_rocket": {
+        "n": 42,
+        "denominator": 69,
+        "rate": 0.6086956521739131
+      },
+      "combo_tornado": {
+        "n": 22,
+        "denominator": 69,
+        "rate": 0.3188405797101449
+      },
+      "contexts": {
+        "pool": {
+          "rows": 38317,
+          "plays": 11934,
+          "card_agreement": {
+            "n": 7585,
+            "denominator": 11934,
+            "rate": 0.6355790179319591
+          },
+          "action_agreement": {
+            "n": 22327,
+            "denominator": 38317,
+            "rate": 0.582691755617611
+          },
+          "gate_play": {
+            "n": 15222,
+            "denominator": 38317,
+            "rate": 0.39726492157527993
+          },
+          "rocket_gated": {
+            "n": 1508,
+            "denominator": 38317,
+            "rate": 0.039355899470209045
+          }
+        },
+        "opportunity": {
+          "rows": 285,
+          "plays": 157,
+          "card_agreement": {
+            "n": 112,
+            "denominator": 157,
+            "rate": 0.7133757961783439
+          },
+          "action_agreement": {
+            "n": 92,
+            "denominator": 285,
+            "rate": 0.32280701754385965
+          },
+          "gate_play": {
+            "n": 198,
+            "denominator": 285,
+            "rate": 0.6947368421052632
+          },
+          "rocket_gated": {
+            "n": 11,
+            "denominator": 285,
+            "rate": 0.03859649122807018
+          }
+        },
+        "compact": {
+          "rows": 101,
+          "plays": 56,
+          "card_agreement": {
+            "n": 34,
+            "denominator": 56,
+            "rate": 0.6071428571428571
+          },
+          "action_agreement": {
+            "n": 39,
+            "denominator": 101,
+            "rate": 0.38613861386138615
+          },
+          "gate_play": {
+            "n": 62,
+            "denominator": 101,
+            "rate": 0.6138613861386139
+          },
+          "rocket_gated": {
+            "n": 3,
+            "denominator": 101,
+            "rate": 0.0297029702970297
+          }
+        },
+        "pull": {
+          "rows": 216,
+          "plays": 123,
+          "card_agreement": {
+            "n": 91,
+            "denominator": 123,
+            "rate": 0.7398373983739838
+          },
+          "action_agreement": {
+            "n": 65,
+            "denominator": 216,
+            "rate": 0.30092592592592593
+          },
+          "gate_play": {
+            "n": 159,
+            "denominator": 216,
+            "rate": 0.7361111111111112
+          },
+          "rocket_gated": {
+            "n": 11,
+            "denominator": 216,
+            "rate": 0.05092592592592592
+          }
+        },
+        "known": {
+          "rows": 38317,
+          "plays": 11934,
+          "card_agreement": {
+            "n": 7585,
+            "denominator": 11934,
+            "rate": 0.6355790179319591
+          },
+          "action_agreement": {
+            "n": 22327,
+            "denominator": 38317,
+            "rate": 0.582691755617611
+          },
+          "gate_play": {
+            "n": 15222,
+            "denominator": 38317,
+            "rate": 0.39726492157527993
+          },
+          "rocket_gated": {
+            "n": 1508,
+            "denominator": 38317,
+            "rate": 0.039355899470209045
+          }
+        },
+        "sequence": {
+          "rows": 2284,
+          "plays": 1042,
+          "card_agreement": {
+            "n": 585,
+            "denominator": 1042,
+            "rate": 0.5614203454894434
+          },
+          "action_agreement": {
+            "n": 1014,
+            "denominator": 2284,
+            "rate": 0.44395796847635727
+          },
+          "gate_play": {
+            "n": 1260,
+            "denominator": 2284,
+            "rate": 0.5516637478108581
+          },
+          "rocket_gated": {
+            "n": 447,
+            "denominator": 2284,
+            "rate": 0.1957092819614711
+          }
+        },
+        "combo": {
+          "rows": 271,
+          "plays": 154,
+          "card_agreement": {
+            "n": 101,
+            "denominator": 154,
+            "rate": 0.6558441558441559
+          },
+          "action_agreement": {
+            "n": 93,
+            "denominator": 271,
+            "rate": 0.34317343173431736
+          },
+          "gate_play": {
+            "n": 159,
+            "denominator": 271,
+            "rate": 0.5867158671586716
+          },
+          "rocket_gated": {
+            "n": 69,
+            "denominator": 271,
+            "rate": 0.25461254612546125
+          }
+        },
+        "finish": {
+          "rows": 20,
+          "plays": 13,
+          "card_agreement": {
+            "n": 7,
+            "denominator": 13,
+            "rate": 0.5384615384615384
+          },
+          "action_agreement": {
+            "n": 3,
+            "denominator": 20,
+            "rate": 0.15
+          },
+          "gate_play": {
+            "n": 16,
+            "denominator": 20,
+            "rate": 0.8
+          },
+          "rocket_gated": {
+            "n": 5,
+            "denominator": 20,
+            "rate": 0.25
+          }
+        },
+        "barrel": {
+          "rows": 249,
+          "plays": 146,
+          "card_agreement": {
+            "n": 101,
+            "denominator": 146,
+            "rate": 0.6917808219178082
+          },
+          "action_agreement": {
+            "n": 100,
+            "denominator": 249,
+            "rate": 0.40160642570281124
+          },
+          "gate_play": {
+            "n": 173,
+            "denominator": 249,
+            "rate": 0.6947791164658634
+          },
+          "rocket_gated": {
+            "n": 3,
+            "denominator": 249,
+            "rate": 0.012048192771084338
+          }
+        },
+        "barrel_multiple": {
+          "rows": 49,
+          "plays": 33,
+          "card_agreement": {
+            "n": 21,
+            "denominator": 33,
+            "rate": 0.6363636363636364
+          },
+          "action_agreement": {
+            "n": 16,
+            "denominator": 49,
+            "rate": 0.32653061224489793
+          },
+          "gate_play": {
+            "n": 35,
+            "denominator": 49,
+            "rate": 0.7142857142857143
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 49,
+            "rate": 0.0
+          }
+        },
+        "xbow": {
+          "rows": 157,
+          "plays": 48,
+          "card_agreement": {
+            "n": 28,
+            "denominator": 48,
+            "rate": 0.5833333333333334
+          },
+          "action_agreement": {
+            "n": 99,
+            "denominator": 157,
+            "rate": 0.6305732484076433
+          },
+          "gate_play": {
+            "n": 44,
+            "denominator": 157,
+            "rate": 0.2802547770700637
+          },
+          "rocket_gated": {
+            "n": 5,
+            "denominator": 157,
+            "rate": 0.03184713375796178
+          }
+        },
+        "xbow_no_lifetime_target": {
+          "rows": 6,
+          "plays": 2,
+          "card_agreement": {
+            "n": 0,
+            "denominator": 2,
+            "rate": 0.0
+          },
+          "action_agreement": {
+            "n": 4,
+            "denominator": 6,
+            "rate": 0.6666666666666666
+          },
+          "gate_play": {
+            "n": 1,
+            "denominator": 6,
+            "rate": 0.16666666666666666
+          },
+          "rocket_gated": {
+            "n": 1,
+            "denominator": 6,
+            "rate": 0.16666666666666666
+          }
+        },
+        "furnace": {
+          "rows": 534,
+          "plays": 213,
+          "card_agreement": {
+            "n": 129,
+            "denominator": 213,
+            "rate": 0.6056338028169014
+          },
+          "action_agreement": {
+            "n": 276,
+            "denominator": 534,
+            "rate": 0.5168539325842697
+          },
+          "gate_play": {
+            "n": 264,
+            "denominator": 534,
+            "rate": 0.4943820224719101
+          },
+          "rocket_gated": {
+            "n": 33,
+            "denominator": 534,
+            "rate": 0.06179775280898876
+          }
+        },
+        "tombstone": {
+          "rows": 1109,
+          "plays": 385,
+          "card_agreement": {
+            "n": 232,
+            "denominator": 385,
+            "rate": 0.6025974025974026
+          },
+          "action_agreement": {
+            "n": 553,
+            "denominator": 1109,
+            "rate": 0.49864743011722273
+          },
+          "gate_play": {
+            "n": 493,
+            "denominator": 1109,
+            "rate": 0.44454463480613166
+          },
+          "rocket_gated": {
+            "n": 47,
+            "denominator": 1109,
+            "rate": 0.04238052299368801
+          }
+        },
+        "witch": {
+          "rows": 519,
+          "plays": 186,
+          "card_agreement": {
+            "n": 109,
+            "denominator": 186,
+            "rate": 0.5860215053763441
+          },
+          "action_agreement": {
+            "n": 256,
+            "denominator": 519,
+            "rate": 0.4932562620423892
+          },
+          "gate_play": {
+            "n": 250,
+            "denominator": 519,
+            "rate": 0.4816955684007707
+          },
+          "rocket_gated": {
+            "n": 39,
+            "denominator": 519,
+            "rate": 0.07514450867052024
+          }
+        },
+        "barbarian_hut": {
+          "rows": 0,
+          "plays": 0,
+          "card_agreement": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "action_agreement": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "gate_play": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "night_witch": {
+          "rows": 390,
+          "plays": 152,
+          "card_agreement": {
+            "n": 103,
+            "denominator": 152,
+            "rate": 0.6776315789473685
+          },
+          "action_agreement": {
+            "n": 172,
+            "denominator": 390,
+            "rate": 0.441025641025641
+          },
+          "gate_play": {
+            "n": 205,
+            "denominator": 390,
+            "rate": 0.5256410256410257
+          },
+          "rocket_gated": {
+            "n": 19,
+            "denominator": 390,
+            "rate": 0.04871794871794872
+          }
+        },
+        "goblin_hut": {
+          "rows": 644,
+          "plays": 211,
+          "card_agreement": {
+            "n": 133,
+            "denominator": 211,
+            "rate": 0.6303317535545023
+          },
+          "action_agreement": {
+            "n": 339,
+            "denominator": 644,
+            "rate": 0.5263975155279503
+          },
+          "gate_play": {
+            "n": 316,
+            "denominator": 644,
+            "rate": 0.4906832298136646
+          },
+          "rocket_gated": {
+            "n": 24,
+            "denominator": 644,
+            "rate": 0.037267080745341616
+          }
+        },
+        "spawners": {
+          "rows": 3107,
+          "plays": 1112,
+          "card_agreement": {
+            "n": 688,
+            "denominator": 1112,
+            "rate": 0.6187050359712231
+          },
+          "action_agreement": {
+            "n": 1559,
+            "denominator": 3107,
+            "rate": 0.5017701963308658
+          },
+          "gate_play": {
+            "n": 1478,
+            "denominator": 3107,
+            "rate": 0.4757000321853878
+          },
+          "rocket_gated": {
+            "n": 157,
+            "denominator": 3107,
+            "rate": 0.05053105889925973
+          }
+        },
+        "xbow_useful": {
+          "rows": 151,
+          "plays": 46,
+          "card_agreement": {
+            "n": 28,
+            "denominator": 46,
+            "rate": 0.6086956521739131
+          },
+          "action_agreement": {
+            "n": 95,
+            "denominator": 151,
+            "rate": 0.6291390728476821
+          },
+          "gate_play": {
+            "n": 43,
+            "denominator": 151,
+            "rate": 0.2847682119205298
+          },
+          "rocket_gated": {
+            "n": 4,
+            "denominator": 151,
+            "rate": 0.026490066225165563
+          }
+        },
+        "pro_rocket": {
+          "rows": 671,
+          "plays": 671,
+          "card_agreement": {
+            "n": 364,
+            "denominator": 671,
+            "rate": 0.5424739195230999
+          },
+          "action_agreement": {
+            "n": 98,
+            "denominator": 671,
+            "rate": 0.14605067064083457
+          },
+          "gate_play": {
+            "n": 597,
+            "denominator": 671,
+            "rate": 0.8897168405365127
+          },
+          "rocket_gated": {
+            "n": 327,
+            "denominator": 671,
+            "rate": 0.4873323397913562
+          }
+        }
+      },
+      "barrel": {
+        "pro_same_lane_rows": 39,
+        "forced_log_same_lane": {
+          "n": 38,
+          "denominator": 39,
+          "rate": 0.9743589743589743
+        },
+        "gated_correct_lane": {
+          "n": 36,
+          "denominator": 39,
+          "rate": 0.9230769230769231
+        },
+        "gated_wrong_lane": {
+          "n": 1,
+          "denominator": 39,
+          "rate": 0.02564102564102564
+        },
+        "known_playable_rows": 95
+      }
+    },
+    "v6_rocket_both": {
+      "global_card_agreement": {
+        "n": 7617,
+        "denominator": 11934,
+        "rate": 0.6382604323780794
+      },
+      "rocket_recall": {
+        "n": 321,
+        "denominator": 671,
+        "rate": 0.4783904619970194
+      },
+      "rocket_finish": {
+        "n": 0,
+        "denominator": 10,
+        "rate": 0.0
+      },
+      "combo_rocket": {
+        "n": 41,
+        "denominator": 69,
+        "rate": 0.5942028985507246
+      },
+      "combo_tornado": {
+        "n": 22,
+        "denominator": 69,
+        "rate": 0.3188405797101449
+      },
+      "contexts": {
+        "pool": {
+          "rows": 38317,
+          "plays": 11934,
+          "card_agreement": {
+            "n": 7617,
+            "denominator": 11934,
+            "rate": 0.6382604323780794
+          },
+          "action_agreement": {
+            "n": 22159,
+            "denominator": 38317,
+            "rate": 0.5783072787535558
+          },
+          "gate_play": {
+            "n": 15483,
+            "denominator": 38317,
+            "rate": 0.4040765195605084
+          },
+          "rocket_gated": {
+            "n": 1481,
+            "denominator": 38317,
+            "rate": 0.03865125140277162
+          }
+        },
+        "opportunity": {
+          "rows": 285,
+          "plays": 157,
+          "card_agreement": {
+            "n": 115,
+            "denominator": 157,
+            "rate": 0.732484076433121
+          },
+          "action_agreement": {
+            "n": 93,
+            "denominator": 285,
+            "rate": 0.3263157894736842
+          },
+          "gate_play": {
+            "n": 197,
+            "denominator": 285,
+            "rate": 0.6912280701754386
+          },
+          "rocket_gated": {
+            "n": 11,
+            "denominator": 285,
+            "rate": 0.03859649122807018
+          }
+        },
+        "compact": {
+          "rows": 101,
+          "plays": 56,
+          "card_agreement": {
+            "n": 34,
+            "denominator": 56,
+            "rate": 0.6071428571428571
+          },
+          "action_agreement": {
+            "n": 39,
+            "denominator": 101,
+            "rate": 0.38613861386138615
+          },
+          "gate_play": {
+            "n": 60,
+            "denominator": 101,
+            "rate": 0.594059405940594
+          },
+          "rocket_gated": {
+            "n": 4,
+            "denominator": 101,
+            "rate": 0.039603960396039604
+          }
+        },
+        "pull": {
+          "rows": 216,
+          "plays": 123,
+          "card_agreement": {
+            "n": 94,
+            "denominator": 123,
+            "rate": 0.7642276422764228
+          },
+          "action_agreement": {
+            "n": 66,
+            "denominator": 216,
+            "rate": 0.3055555555555556
+          },
+          "gate_play": {
+            "n": 160,
+            "denominator": 216,
+            "rate": 0.7407407407407407
+          },
+          "rocket_gated": {
+            "n": 10,
+            "denominator": 216,
+            "rate": 0.046296296296296294
+          }
+        },
+        "known": {
+          "rows": 38317,
+          "plays": 11934,
+          "card_agreement": {
+            "n": 7617,
+            "denominator": 11934,
+            "rate": 0.6382604323780794
+          },
+          "action_agreement": {
+            "n": 22159,
+            "denominator": 38317,
+            "rate": 0.5783072787535558
+          },
+          "gate_play": {
+            "n": 15483,
+            "denominator": 38317,
+            "rate": 0.4040765195605084
+          },
+          "rocket_gated": {
+            "n": 1481,
+            "denominator": 38317,
+            "rate": 0.03865125140277162
+          }
+        },
+        "sequence": {
+          "rows": 2284,
+          "plays": 1042,
+          "card_agreement": {
+            "n": 570,
+            "denominator": 1042,
+            "rate": 0.5470249520153551
+          },
+          "action_agreement": {
+            "n": 983,
+            "denominator": 2284,
+            "rate": 0.43038528896672507
+          },
+          "gate_play": {
+            "n": 1288,
+            "denominator": 2284,
+            "rate": 0.563922942206655
+          },
+          "rocket_gated": {
+            "n": 443,
+            "denominator": 2284,
+            "rate": 0.19395796847635727
+          }
+        },
+        "combo": {
+          "rows": 271,
+          "plays": 154,
+          "card_agreement": {
+            "n": 100,
+            "denominator": 154,
+            "rate": 0.6493506493506493
+          },
+          "action_agreement": {
+            "n": 90,
+            "denominator": 271,
+            "rate": 0.33210332103321033
+          },
+          "gate_play": {
+            "n": 162,
+            "denominator": 271,
+            "rate": 0.5977859778597786
+          },
+          "rocket_gated": {
+            "n": 71,
+            "denominator": 271,
+            "rate": 0.26199261992619927
+          }
+        },
+        "finish": {
+          "rows": 20,
+          "plays": 13,
+          "card_agreement": {
+            "n": 6,
+            "denominator": 13,
+            "rate": 0.46153846153846156
+          },
+          "action_agreement": {
+            "n": 3,
+            "denominator": 20,
+            "rate": 0.15
+          },
+          "gate_play": {
+            "n": 16,
+            "denominator": 20,
+            "rate": 0.8
+          },
+          "rocket_gated": {
+            "n": 5,
+            "denominator": 20,
+            "rate": 0.25
+          }
+        },
+        "barrel": {
+          "rows": 249,
+          "plays": 146,
+          "card_agreement": {
+            "n": 101,
+            "denominator": 146,
+            "rate": 0.6917808219178082
+          },
+          "action_agreement": {
+            "n": 100,
+            "denominator": 249,
+            "rate": 0.40160642570281124
+          },
+          "gate_play": {
+            "n": 174,
+            "denominator": 249,
+            "rate": 0.6987951807228916
+          },
+          "rocket_gated": {
+            "n": 3,
+            "denominator": 249,
+            "rate": 0.012048192771084338
+          }
+        },
+        "barrel_multiple": {
+          "rows": 49,
+          "plays": 33,
+          "card_agreement": {
+            "n": 21,
+            "denominator": 33,
+            "rate": 0.6363636363636364
+          },
+          "action_agreement": {
+            "n": 15,
+            "denominator": 49,
+            "rate": 0.30612244897959184
+          },
+          "gate_play": {
+            "n": 35,
+            "denominator": 49,
+            "rate": 0.7142857142857143
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 49,
+            "rate": 0.0
+          }
+        },
+        "xbow": {
+          "rows": 157,
+          "plays": 48,
+          "card_agreement": {
+            "n": 28,
+            "denominator": 48,
+            "rate": 0.5833333333333334
+          },
+          "action_agreement": {
+            "n": 100,
+            "denominator": 157,
+            "rate": 0.6369426751592356
+          },
+          "gate_play": {
+            "n": 45,
+            "denominator": 157,
+            "rate": 0.28662420382165604
+          },
+          "rocket_gated": {
+            "n": 5,
+            "denominator": 157,
+            "rate": 0.03184713375796178
+          }
+        },
+        "xbow_no_lifetime_target": {
+          "rows": 6,
+          "plays": 2,
+          "card_agreement": {
+            "n": 0,
+            "denominator": 2,
+            "rate": 0.0
+          },
+          "action_agreement": {
+            "n": 4,
+            "denominator": 6,
+            "rate": 0.6666666666666666
+          },
+          "gate_play": {
+            "n": 1,
+            "denominator": 6,
+            "rate": 0.16666666666666666
+          },
+          "rocket_gated": {
+            "n": 1,
+            "denominator": 6,
+            "rate": 0.16666666666666666
+          }
+        },
+        "night_witch": {
+          "rows": 390,
+          "plays": 152,
+          "card_agreement": {
+            "n": 108,
+            "denominator": 152,
+            "rate": 0.7105263157894737
+          },
+          "action_agreement": {
+            "n": 172,
+            "denominator": 390,
+            "rate": 0.441025641025641
+          },
+          "gate_play": {
+            "n": 205,
+            "denominator": 390,
+            "rate": 0.5256410256410257
+          },
+          "rocket_gated": {
+            "n": 15,
+            "denominator": 390,
+            "rate": 0.038461538461538464
+          }
+        },
+        "barbarian_hut": {
+          "rows": 0,
+          "plays": 0,
+          "card_agreement": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "action_agreement": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "gate_play": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "rocket_gated": {
+            "n": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "tombstone": {
+          "rows": 1109,
+          "plays": 385,
+          "card_agreement": {
+            "n": 234,
+            "denominator": 385,
+            "rate": 0.6077922077922078
+          },
+          "action_agreement": {
+            "n": 554,
+            "denominator": 1109,
+            "rate": 0.4995491433724076
+          },
+          "gate_play": {
+            "n": 503,
+            "denominator": 1109,
+            "rate": 0.45356176735798015
+          },
+          "rocket_gated": {
+            "n": 45,
+            "denominator": 1109,
+            "rate": 0.0405770964833183
+          }
+        },
+        "witch": {
+          "rows": 519,
+          "plays": 186,
+          "card_agreement": {
+            "n": 116,
+            "denominator": 186,
+            "rate": 0.6236559139784946
+          },
+          "action_agreement": {
+            "n": 247,
+            "denominator": 519,
+            "rate": 0.47591522157996147
+          },
+          "gate_play": {
+            "n": 259,
+            "denominator": 519,
+            "rate": 0.49903660886319845
+          },
+          "rocket_gated": {
+            "n": 36,
+            "denominator": 519,
+            "rate": 0.06936416184971098
+          }
+        },
+        "goblin_hut": {
+          "rows": 644,
+          "plays": 211,
+          "card_agreement": {
+            "n": 136,
+            "denominator": 211,
+            "rate": 0.6445497630331753
+          },
+          "action_agreement": {
+            "n": 333,
+            "denominator": 644,
+            "rate": 0.5170807453416149
+          },
+          "gate_play": {
+            "n": 320,
+            "denominator": 644,
+            "rate": 0.4968944099378882
+          },
+          "rocket_gated": {
+            "n": 21,
+            "denominator": 644,
+            "rate": 0.03260869565217391
+          }
+        },
+        "furnace": {
+          "rows": 534,
+          "plays": 213,
+          "card_agreement": {
+            "n": 131,
+            "denominator": 213,
+            "rate": 0.6150234741784038
+          },
+          "action_agreement": {
+            "n": 274,
+            "denominator": 534,
+            "rate": 0.5131086142322098
+          },
+          "gate_play": {
+            "n": 265,
+            "denominator": 534,
+            "rate": 0.49625468164794007
+          },
+          "rocket_gated": {
+            "n": 30,
+            "denominator": 534,
+            "rate": 0.056179775280898875
+          }
+        },
+        "spawners": {
+          "rows": 3107,
+          "plays": 1112,
+          "card_agreement": {
+            "n": 703,
+            "denominator": 1112,
+            "rate": 0.6321942446043165
+          },
+          "action_agreement": {
+            "n": 1546,
+            "denominator": 3107,
+            "rate": 0.49758609591245573
+          },
+          "gate_play": {
+            "n": 1499,
+            "denominator": 3107,
+            "rate": 0.4824589636305118
+          },
+          "rocket_gated": {
+            "n": 143,
+            "denominator": 3107,
+            "rate": 0.04602510460251046
+          }
+        },
+        "xbow_useful": {
+          "rows": 151,
+          "plays": 46,
+          "card_agreement": {
+            "n": 28,
+            "denominator": 46,
+            "rate": 0.6086956521739131
+          },
+          "action_agreement": {
+            "n": 96,
+            "denominator": 151,
+            "rate": 0.6357615894039735
+          },
+          "gate_play": {
+            "n": 44,
+            "denominator": 151,
+            "rate": 0.2913907284768212
+          },
+          "rocket_gated": {
+            "n": 4,
+            "denominator": 151,
+            "rate": 0.026490066225165563
+          }
+        },
+        "pro_rocket": {
+          "rows": 671,
+          "plays": 671,
+          "card_agreement": {
+            "n": 354,
+            "denominator": 671,
+            "rate": 0.5275707898658718
+          },
+          "action_agreement": {
+            "n": 93,
+            "denominator": 671,
+            "rate": 0.13859910581222057
+          },
+          "gate_play": {
+            "n": 602,
+            "denominator": 671,
+            "rate": 0.8971684053651267
+          },
+          "rocket_gated": {
+            "n": 321,
+            "denominator": 671,
+            "rate": 0.4783904619970194
+          }
+        }
+      },
+      "barrel": {
+        "pro_same_lane_rows": 39,
+        "forced_log_same_lane": {
+          "n": 38,
+          "denominator": 39,
+          "rate": 0.9743589743589743
+        },
+        "gated_correct_lane": {
+          "n": 37,
+          "denominator": 39,
+          "rate": 0.9487179487179487
+        },
+        "gated_wrong_lane": {
+          "n": 1,
+          "denominator": 39,
+          "rate": 0.02564102564102564
+        },
+        "known_playable_rows": 95
+      }
+    }
+  },
+  "interpretation": "Learning failures and same-code gameplay reject every arm. Added literal primary controls and isolated component deltas cannot rescue them. Historical old-runtime tests are not new-runtime confirmation, component mastery or live-landing evidence."
+}

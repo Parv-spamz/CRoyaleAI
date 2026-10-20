@@ -1,0 +1,28 @@
+{"seed": 0, "outcome": "win", "events": 0}
+{"seed": 1, "outcome": "loss", "events": 0}
+{"seed": 2, "outcome": "win", "events": 0}
+{"seed": 3, "outcome": "win", "events": 0}
+{"seed": 4, "outcome": "win", "events": 0}
+{"seed": 5, "outcome": "loss", "events": 0}
+{"seed": 6, "outcome": "win", "events": 0}
+{"seed": 7, "outcome": "win", "events": 0}
+{"seed": 8, "outcome": "win", "events": 0}
+{"seed": 9, "outcome": "loss", "events": 0}
+{"seed": 10, "outcome": "win", "events": 0}
+{"seed": 11, "outcome": "loss", "events": 0}
+{"seed": 12, "outcome": "loss", "events": 0}
+{"seed": 13, "outcome": "loss", "events": 0}
+{"seed": 14, "outcome": "loss", "events": 0}
+{"seed": 15, "outcome": "win", "events": 0}
+{"seed": 16, "outcome": "loss", "events": 0}
+{"seed": 17, "outcome": "loss", "events": 0}
+{"seed": 18, "outcome": "loss", "events": 0}
+{"seed": 19, "outcome": "loss", "events": 0}
+{"seed": 20, "outcome": "loss", "events": 0}
+{"event": "matched_support", "root": 0, "tick": 2990, "no_target": true, "score_delta": -0.14932178648109073}
+{"seed": 21, "outcome": "win", "events": 1}
+{"seed": 22, "outcome": "loss", "events": 1}
+{"seed": 23, "outcome": "win", "events": 1}
+XBOW_MATCHED_COUNTERFACTUAL_COMPLETE
+C:\Users\benpe\.codex\worktrees\learned-defence\ClashBot\pipeline\model_v3.py:92: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(enc, layers)

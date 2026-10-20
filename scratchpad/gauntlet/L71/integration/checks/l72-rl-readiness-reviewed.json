@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/review_rl_readiness.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "RL_READINESS_REVIEW_COMPLETE",
+  "matched": true,
+  "output_sha256": "b4e261ba8a343602d6f5930476ee18c9fdc797cb87f5ff3069caee0251b72b8a",
+  "seconds": 0.9452779293060303
+}

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "C:/Users/benpe/ClashBot/research/ext/Royale/.venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "pipeline/tests/test_dataset_spool.py",
+    "-q"
+  ],
+  "cwd": "C:\\Users\\benpe\\.codex\\worktrees\\learned-defence\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "2 passed",
+  "matched": true,
+  "output_sha256": "54c6863df5fbae1767b85327e0b31054d7550bb9786ada42e9004149e8bb90ee",
+  "seconds": 7.679213285446167
+}

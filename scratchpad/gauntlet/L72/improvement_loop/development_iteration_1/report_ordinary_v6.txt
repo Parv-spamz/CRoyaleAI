@@ -1,0 +1,10 @@
+ClashBot L72 development model: ordinary_v6
+Verdict: PASSES registered development continuation filter; NOT ACCEPTED for deployment. Only the generic learned projectile-target residual differs from ordinary_v5, with identical ordinary exposure/draws and1000 finite updates.
+
+Independent recount on54723 rows/405 replay groups. R1e uses SAME corrected observations; parent exposure means developmental evidence, not untouched generalization.
+Primary Barrel63 rows/26 replays:55 correct-lane Logs,7 wrong,1 not fired. Ordinary_v5:40/22/1; R1e:36/20/7. Full expert action30/63 vs20 control vs18 R1e. This is predicted aim agreement, not measured live landings or damage.
+All-row full action31988/54723 vs31962 control vs30968 R1e. Expert-card agreement11399/17192 vs11403 control vs11348 R1e (control difference -0.023pp).
+Witch action341/726 vs339 control vs332 R1e; Night Witch161/373 vs161 vs156; Furnace550/1174 vs549 vs538. Thus all registered spawner point checks pass.
+Expert Rocket full actions73/955 vs77 control vs54 R1e: a remaining tradeoff. Legacy narrow finishing forced-expert aim within1tile1/21 PLAY rows vs1 control vs2 R1e; Rocket/Tornado-context action98/320 vs96 vs91. No safe1-3Rocket-cycle or successful physical combo claim.
+
+No new match win-rate, statistical final acceptance or live change. Next: separate original-label defensive-X-Bow sequence exposure, then outcome tests when prerequisites support them. Both original and metadata-only portable checkpoint hashes are retained; every trained tensor is identical. Owner farming remains R1e; failed sampling/aim options remain off.

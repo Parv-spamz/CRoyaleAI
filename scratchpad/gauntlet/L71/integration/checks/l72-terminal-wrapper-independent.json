@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/terminal_wrapper/verify.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "TERMINAL_WRAPPER_VERIFIED",
+  "matched": true,
+  "output_sha256": "701e637762889f33326f2b35993335a899fbba57ea7b88120ccd99f3219db241",
+  "seconds": 0.10949826240539551
+}

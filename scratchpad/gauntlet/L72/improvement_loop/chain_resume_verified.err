@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\resume_verified_chain.py", line 113, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\resume_verified_chain.py", line 95, in main
+    frozen.idle_gpu()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\benpe\.codex\worktrees\learned-defence\ClashBot\scratchpad\gauntlet\L71\decision_options\run_q3.py", line 52, in idle_gpu
+    raise RuntimeError('GPU Python already running: ' + line)
+RuntimeError: GPU Python already running: 44652, C:\Users\benpe\Downloads\framepack_cu126_torch26\framepack_cu126_torch26\system\python\python.exe

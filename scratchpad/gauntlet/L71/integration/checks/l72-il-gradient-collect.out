@@ -1,0 +1,37 @@
+IL_GRADIENT_BATCH 1 ordinary_v5 0
+IL_GRADIENT_BATCH 2 ordinary_v5 500
+IL_GRADIENT_BATCH 3 ordinary_v5 1000
+IL_GRADIENT_BATCH 4 ordinary_v5 1500
+IL_GRADIENT_BATCH 5 ordinary_v5 2000
+IL_GRADIENT_BATCH 6 ordinary_v5 2500
+IL_GRADIENT_BATCH 7 ordinary_v5 3000
+IL_GRADIENT_BATCH 8 ordinary_v5 3500
+IL_GRADIENT_BATCH 9 ordinary_v5 4000
+IL_GRADIENT_BATCH 10 ordinary_v5 4500
+IL_GRADIENT_BATCH 11 ordinary_v5 5000
+IL_GRADIENT_BATCH 12 ordinary_v5 5500
+IL_GRADIENT_BATCH 13 ordinary_v5 6000
+IL_GRADIENT_BATCH 14 ordinary_v5 6500
+IL_GRADIENT_BATCH 15 ordinary_v5 7000
+IL_GRADIENT_BATCH 16 ordinary_v5 7500
+IL_GRADIENT_BATCH 17 ordinary_no_dropout_v5 0
+IL_GRADIENT_BATCH 18 ordinary_no_dropout_v5 500
+IL_GRADIENT_BATCH 19 ordinary_no_dropout_v5 1000
+IL_GRADIENT_BATCH 20 ordinary_no_dropout_v5 1500
+IL_GRADIENT_BATCH 21 ordinary_no_dropout_v5 2000
+IL_GRADIENT_BATCH 22 ordinary_no_dropout_v5 2500
+IL_GRADIENT_BATCH 23 ordinary_no_dropout_v5 3000
+IL_GRADIENT_BATCH 24 ordinary_no_dropout_v5 3500
+IL_GRADIENT_BATCH 25 ordinary_no_dropout_v5 4000
+IL_GRADIENT_BATCH 26 ordinary_no_dropout_v5 4500
+IL_GRADIENT_BATCH 27 ordinary_no_dropout_v5 5000
+IL_GRADIENT_BATCH 28 ordinary_no_dropout_v5 5500
+IL_GRADIENT_BATCH 29 ordinary_no_dropout_v5 6000
+IL_GRADIENT_BATCH 30 ordinary_no_dropout_v5 6500
+IL_GRADIENT_BATCH 31 ordinary_no_dropout_v5 7000
+IL_GRADIENT_BATCH 32 ordinary_no_dropout_v5 7500
+IL_GRADIENT_COLLECTED
+C:\Users\benpe\ClashBot\pipeline\model_v3.py:92: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(enc, layers)
+C:\Users\benpe\ClashBot\pipeline\model_v3.py:92: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(enc, layers)

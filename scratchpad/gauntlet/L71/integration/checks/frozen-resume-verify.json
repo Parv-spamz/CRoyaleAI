@@ -1,0 +1,14 @@
+{
+  "command": [
+    "C:/Users/benpe/ClashBot/icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/resume_verified_chain.py",
+    "--verify-only"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "FROZEN_RESUME_VERIFIED",
+  "matched": true,
+  "output_sha256": "4b1ef6097a74575737f6fbd98ad4368a90878faeefe0aac76eb82e77a4f4e02f",
+  "seconds": 1.5778725147247314
+}

@@ -1,0 +1,2 @@
+{"counts": {"ambiguous_multi_projectile_frames": 4, "log_files": 17, "flight_segments": 14, "matched_spawns": 8, "matched_lanes": 8, "spawning_triplets": 8, "preemptive_log:confirmed:wrong_lane": 4, "unmatched:observation_gap": 2, "unmatched:not_exactly_three_new_goblins": 4, "preemptive_log:confirmed:correct_lane": 2}, "error": {"n": 8, "median": 0.0974079824171776, "maximum": 0.3823995874009861}}
+PUBLIC_LIVE_BARREL_LANDING_AUDIT_COMPLETE

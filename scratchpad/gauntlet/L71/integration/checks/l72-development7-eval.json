@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_7\\evaluate.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "FROZEN_PROJECTILE_EVALUATION_COMPLETE",
+  "matched": true,
+  "output_sha256": "da6ca772e10852a1df3f46ef31736d9bf07398d2b4e31e9566bf7bf457d39071",
+  "seconds": 52.420923948287964
+}

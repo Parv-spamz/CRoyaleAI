@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/late_game_readiness_coverage/audit.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "LATE_COVERAGE_DIAGNOSED",
+  "matched": true,
+  "output_sha256": "8a76cfa625866276f300d5bbace036abfcbc6761399a25e3b17e8d845115192c",
+  "seconds": 0.5413427352905273
+}

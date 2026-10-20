@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_2\\train.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "OUTCOME_RL_TRAIN_COMPLETE",
+  "matched": true,
+  "output_sha256": "65e2e8e0f296777e80d3770c8ae5cf5e4acceb23ef5db2de75b38626a4fb364d",
+  "seconds": 1311.2244944572449
+}

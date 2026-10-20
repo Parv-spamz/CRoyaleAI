@@ -1,0 +1,2 @@
+{"counts": {"replays": 161, "accepted_barrel_plays": 1010, "projectile_observations": 7040, "target_within_half_tile_of_cast": 5977, "target_opposite_lane_to_cast": 1063, "target_exact_cast": 3045, "landed_in_26_tick_lookahead": 3431, "orientation_and_lookahead_checks": 14080, "barrel_plays_with_linked_flight": 1010}, "seconds": 84.75741696357727}
+BARREL_NATIVE_TARGET_AUDIT_PASS

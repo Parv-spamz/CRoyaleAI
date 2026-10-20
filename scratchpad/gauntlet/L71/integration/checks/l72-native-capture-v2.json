@@ -1,0 +1,14 @@
+{
+  "command": [
+    ".\\icebow\\.venv\\Scripts\\python.exe",
+    "-u",
+    "scratchpad/gauntlet/L72/improvement_loop/capture_native_preflight_v2.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "NATIVE_CAPTURE_V2_PREFLIGHT_PASS",
+  "matched": true,
+  "output_sha256": "647e87208f3dbd7ee333e26a25fcdf385d2d784f8319452656259fd0166714a1",
+  "seconds": 1185.3758509159088
+}

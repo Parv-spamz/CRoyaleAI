@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\gameplay_failure_audit\audit.py", line 81, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\gameplay_failure_audit\audit.py", line 60, in main
+    pre_end=margin(f.get(5999),m['learner_side']),after_clear=margin(f.get(6003),m['learner_side']))
+            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\gameplay_failure_audit\audit.py", line 16, in margin
+    assert len(towers)==len(set(ids))==6
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

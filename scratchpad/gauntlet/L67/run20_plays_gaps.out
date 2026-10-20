@@ -1,0 +1,16 @@
+== run20 (23:30) -- new tau 0.24 run
+   23:30: 3.0 min, plays 31 (3 anti-stall) = 10.2/min, median gap 4.2s, longest 25s, >10s 6, >15s 1
+   23:33: 3.3 min, plays 32 (1 anti-stall) = 9.8/min, median gap 3.7s, longest 28s, >10s 5, >15s 3
+   23:37: 3.3 min, plays 32 (1 anti-stall) = 9.6/min, median gap 4.5s, longest 19s, >10s 7, >15s 2
+   TOTAL 3 matches 9.6 min: 9.9 plays/min, anti-stall 5/95 = 5%, median gap 4.2s, >10s 1.87/min, >15s 0.62/min, in >10s pauses 49%
+== 20:29 -- v6aug_s1 tau 0.27 (reference)
+   20:29: 4.2 min, plays 48 (3 anti-stall) = 11.3/min, median gap 3.3s, longest 22s, >10s 6, >15s 3
+   20:33: 5.1 min, plays 74 (1 anti-stall) = 14.4/min, median gap 3.2s, longest 26s, >10s 4, >15s 2
+   20:39: 3.0 min, plays 29 (2 anti-stall) = 9.6/min, median gap 4.7s, longest 24s, >10s 6, >15s 3
+   TOTAL 3 matches 12.4 min: 12.2 plays/min, anti-stall 6/151 = 4%, median gap 3.5s, >10s 1.29/min, >15s 0.64/min, in >10s pauses 35%
+== 15:22 -- v6lat_s0 tau 0.27 (reference)
+   15:22: 3.0 min, plays 35 (0 anti-stall) = 11.5/min, median gap 3.8s, longest 19s, >10s 5, >15s 1
+   15:25: 3.0 min, plays 33 (0 anti-stall) = 10.8/min, median gap 4.4s, longest 16s, >10s 4, >15s 2
+   15:28: 3.0 min, plays 30 (1 anti-stall) = 9.9/min, median gap 5.2s, longest 18s, >10s 4, >15s 1
+   15:32: 3.7 min, plays 42 (0 anti-stall) = 11.4/min, median gap 4.3s, longest 19s, >10s 2, >15s 1
+   TOTAL 4 matches 12.8 min: 10.9 plays/min, anti-stall 1/140 = 1%, median gap 4.3s, >10s 1.17/min, >15s 0.39/min, in >10s pauses 27%

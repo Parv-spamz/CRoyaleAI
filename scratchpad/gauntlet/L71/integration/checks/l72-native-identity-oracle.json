@@ -1,0 +1,13 @@
+{
+  "command": [
+    ".\\icebow\\.venv\\Scripts\\python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/native_capture_identity.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "NATIVE_IDENTITY_ORACLE_PASS",
+  "matched": true,
+  "output_sha256": "4465c578e2d23595984dec31a80a3e49928f509a6ce016a12aeba961f03bbed5",
+  "seconds": 5.675897121429443
+}

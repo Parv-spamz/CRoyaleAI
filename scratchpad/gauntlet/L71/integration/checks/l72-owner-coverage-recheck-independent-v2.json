@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/coverage_recheck/verify_v2.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "OWNER_COVERAGE_RECHECK_INDEPENDENT_PASS",
+  "matched": true,
+  "output_sha256": "0fa4867d90ef28440b370b2fa5a0485785c9a3d3d914b6b220cddbfa5cd86300",
+  "seconds": 9.27389144897461
+}

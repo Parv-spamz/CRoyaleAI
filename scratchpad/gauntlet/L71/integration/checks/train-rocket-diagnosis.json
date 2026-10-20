@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:/Users/benpe/ClashBot/icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/diagnose_train_rocket.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "TRAIN_ROCKET_DIAGNOSIS_COMPLETE",
+  "matched": true,
+  "output_sha256": "82122378a5d230a0bd62c87e85d4a1adcb4fde62fe84cdca04576f9a051a9973",
+  "seconds": 138.14289355278015
+}

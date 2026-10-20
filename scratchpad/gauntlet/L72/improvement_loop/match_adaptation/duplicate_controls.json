@@ -1,0 +1,9 @@
+{
+  "positive": 2,
+  "negative": 2,
+  "sources": {
+    "audit_v2.py": "d8eb72163318d2ad98bbe7e85411cc8625313866a72e44cfbc8d2afe7237aec7",
+    "duplicate_controls.py": "0d2b3fb8c5913e27acf066808f23066d0a0a3a0cc7b5d4ee622303c46ddec456",
+    "DUPLICATE_FRAME_CORRECTION.md": "6dd60e57ae81a4e3cf0d0afd948abc931522b9236a0efd48ac66db7a15cc3e9d"
+  }
+}

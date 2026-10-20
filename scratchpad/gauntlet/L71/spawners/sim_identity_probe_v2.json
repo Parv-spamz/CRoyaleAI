@@ -1,0 +1,265 @@
+{
+  "Witch": {
+    "seed": 1,
+    "accepted": {
+      "accepted": true,
+      "result_code": 0
+    },
+    "bodies": [
+      {
+        "tick": 100,
+        "name": "Witch",
+        "max_hp": 839,
+        "legacy": "witch",
+        "corrected": "witch",
+        "reason": "parent"
+      },
+      {
+        "tick": 130,
+        "name": "Witch",
+        "max_hp": 81,
+        "legacy": "witch",
+        "corrected": "skeletons",
+        "reason": "child"
+      },
+      {
+        "tick": 130,
+        "name": "Witch",
+        "max_hp": 81,
+        "legacy": "witch",
+        "corrected": "skeletons",
+        "reason": "child"
+      },
+      {
+        "tick": 130,
+        "name": "Witch",
+        "max_hp": 81,
+        "legacy": "witch",
+        "corrected": "skeletons",
+        "reason": "child"
+      },
+      {
+        "tick": 130,
+        "name": "Witch",
+        "max_hp": 81,
+        "legacy": "witch",
+        "corrected": "skeletons",
+        "reason": "child"
+      },
+      {
+        "tick": 270,
+        "name": "Witch",
+        "max_hp": 81,
+        "legacy": "witch",
+        "corrected": "skeletons",
+        "reason": "child"
+      },
+      {
+        "tick": 270,
+        "name": "Witch",
+        "max_hp": 81,
+        "legacy": "witch",
+        "corrected": "skeletons",
+        "reason": "child"
+      },
+      {
+        "tick": 270,
+        "name": "Witch",
+        "max_hp": 81,
+        "legacy": "witch",
+        "corrected": "skeletons",
+        "reason": "child"
+      },
+      {
+        "tick": 270,
+        "name": "Witch",
+        "max_hp": 81,
+        "legacy": "witch",
+        "corrected": "skeletons",
+        "reason": "child"
+      },
+      {
+        "tick": 410,
+        "name": "Witch",
+        "max_hp": 81,
+        "legacy": "witch",
+        "corrected": "skeletons",
+        "reason": "child"
+      },
+      {
+        "tick": 410,
+        "name": "Witch",
+        "max_hp": 81,
+        "legacy": "witch",
+        "corrected": "skeletons",
+        "reason": "child"
+      },
+      {
+        "tick": 410,
+        "name": "Witch",
+        "max_hp": 81,
+        "legacy": "witch",
+        "corrected": "skeletons",
+        "reason": "child"
+      },
+      {
+        "tick": 410,
+        "name": "Witch",
+        "max_hp": 81,
+        "legacy": "witch",
+        "corrected": "skeletons",
+        "reason": "child"
+      }
+    ],
+    "counts": {
+      "witch": 1,
+      "skeletons": 12
+    }
+  },
+  "DarkWitch": {
+    "seed": 1,
+    "accepted": {
+      "accepted": true,
+      "result_code": 0
+    },
+    "bodies": [
+      {
+        "tick": 100,
+        "name": "DarkWitch",
+        "max_hp": 906,
+        "legacy": "night_witch",
+        "corrected": "night_witch",
+        "reason": "parent"
+      },
+      {
+        "tick": 130,
+        "name": "DarkWitch",
+        "max_hp": 81,
+        "legacy": "night_witch",
+        "corrected": "bats",
+        "reason": "child"
+      },
+      {
+        "tick": 130,
+        "name": "DarkWitch",
+        "max_hp": 81,
+        "legacy": "night_witch",
+        "corrected": "bats",
+        "reason": "child"
+      },
+      {
+        "tick": 230,
+        "name": "DarkWitch",
+        "max_hp": 81,
+        "legacy": "night_witch",
+        "corrected": "bats",
+        "reason": "child"
+      },
+      {
+        "tick": 230,
+        "name": "DarkWitch",
+        "max_hp": 81,
+        "legacy": "night_witch",
+        "corrected": "bats",
+        "reason": "child"
+      },
+      {
+        "tick": 330,
+        "name": "DarkWitch",
+        "max_hp": 81,
+        "legacy": "night_witch",
+        "corrected": "bats",
+        "reason": "child"
+      },
+      {
+        "tick": 330,
+        "name": "DarkWitch",
+        "max_hp": 81,
+        "legacy": "night_witch",
+        "corrected": "bats",
+        "reason": "child"
+      },
+      {
+        "tick": 430,
+        "name": "DarkWitch",
+        "max_hp": 81,
+        "legacy": "night_witch",
+        "corrected": "bats",
+        "reason": "child"
+      },
+      {
+        "tick": 430,
+        "name": "DarkWitch",
+        "max_hp": 81,
+        "legacy": "night_witch",
+        "corrected": "bats",
+        "reason": "child"
+      },
+      {
+        "tick": 520,
+        "name": "DarkWitch",
+        "max_hp": 81,
+        "legacy": "night_witch",
+        "corrected": "bats",
+        "reason": "child"
+      }
+    ],
+    "counts": {
+      "night_witch": 1,
+      "bats": 9
+    }
+  },
+  "FirespiritHut": {
+    "seed": 1,
+    "accepted": {
+      "accepted": true,
+      "result_code": 0
+    },
+    "bodies": [
+      {
+        "tick": 100,
+        "name": "FirespiritHut",
+        "max_hp": 727,
+        "legacy": "furnace",
+        "corrected": "furnace",
+        "reason": "parent"
+      },
+      {
+        "tick": 130,
+        "name": "FireSpirits",
+        "max_hp": 215,
+        "legacy": "fire_spirit",
+        "corrected": "fire_spirit",
+        "reason": "legacy"
+      },
+      {
+        "tick": 230,
+        "name": "FireSpirits",
+        "max_hp": 215,
+        "legacy": "fire_spirit",
+        "corrected": "fire_spirit",
+        "reason": "legacy"
+      },
+      {
+        "tick": 330,
+        "name": "FireSpirits",
+        "max_hp": 215,
+        "legacy": "fire_spirit",
+        "corrected": "fire_spirit",
+        "reason": "legacy"
+      },
+      {
+        "tick": 430,
+        "name": "FireSpirits",
+        "max_hp": 215,
+        "legacy": "fire_spirit",
+        "corrected": "fire_spirit",
+        "reason": "legacy"
+      }
+    ],
+    "counts": {
+      "furnace": 1,
+      "fire_spirit": 4
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "source_paths": [
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\prepared.json",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_4\\prelaunch.json",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\match_adaptation\\prepared.json",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1\\results_verified.json",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1\\reviewed_results.json",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_failure_audit\\audit.py",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_failure_audit\\data_io.py",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_failure_audit\\verify.py",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_failure_audit\\PLAN.md",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_failure_audit\\METRICS.md"
+  ],
+  "verified_sha256": "b83b6afea1f7f0a1df771f3b5376745ba642a06e266617475841103e4c4176d9",
+  "source_sha256": "f8509b53e8fb7b439af5c9b582be1c316ef4867e410c5e3f7d5044062f0cf1f4",
+  "reason": "Outer review used a slash prefix on Windows relative paths; exact Path.parts supplement, no counter rerun"
+}

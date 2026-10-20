@@ -1,0 +1,33 @@
+{
+  "command": [
+    "C:/Users/benpe/ClashBot/icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L71/context_teaching/verify_predictions.py",
+    "--heldout",
+    "icebow/data/bench/expert_context_20261005/r1e_heldout",
+    "--heldout",
+    "icebow/data/bench/expert_context_20261005/v4_uniform/heldout",
+    "--heldout",
+    "icebow/data/bench/expert_context_20261005/v4_rocket/heldout",
+    "--heldout",
+    "icebow/data/bench/expert_context_20261005/v5_uniform/heldout",
+    "--heldout",
+    "icebow/data/bench/expert_context_20261005/v5_rocket/heldout",
+    "--heldout",
+    "icebow/data/bench/expert_context_20261005/v5_rocket_xbow/heldout",
+    "--heldout",
+    "icebow/data/bench/expert_context_20261005/v5_rocket_barrel/heldout",
+    "--heldout",
+    "icebow/data/bench/expert_context_20261005/v6_rocket_barrel/heldout",
+    "--heldout",
+    "icebow/data/bench/expert_context_20261005/v6_rocket_both/heldout",
+    "--out",
+    "scratchpad/gauntlet/L71/context_teaching/all_predictions_verified.json"
+  ],
+  "cwd": "C:\\Users\\benpe\\.codex\\worktrees\\learned-defence\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "EXPERT_PREDICTIONS_INDEPENDENTLY_RECOUNTED",
+  "matched": true,
+  "output_sha256": "98680408fe855ac6528a5ecba11eac032713fa9f49b4456c08b1c586fda8d9ab",
+  "seconds": 94.58877229690552
+}

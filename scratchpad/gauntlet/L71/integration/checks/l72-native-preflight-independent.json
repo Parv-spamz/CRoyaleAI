@@ -1,0 +1,13 @@
+{
+  "command": [
+    ".\\icebow\\.venv\\Scripts\\python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/verify_native_preflight.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 1,
+  "expected": "NATIVE_PREFLIGHT_INDEPENDENTLY_VERIFIED",
+  "matched": false,
+  "output_sha256": "7f58536b7861825884e57f9873c328d552287b53b240c1567f26e4bd56ccef07",
+  "seconds": 12.580734729766846
+}

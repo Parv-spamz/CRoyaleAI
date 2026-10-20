@@ -1,0 +1,109 @@
+{
+  "revision": "ba54d0c89db86fd6e31096179a0141635fbef816",
+  "selection_salt": "clashbot-l72-additional-schema-v1:",
+  "files": [
+    {
+      "remote_path": "raw/08/08PY2JU9VYLG.json",
+      "path": "icebow\\data\\bench\\native_confirmation_20261005\\additional_source\\raw_schema\\08PY2JU9VYLG.json",
+      "bytes": 80271,
+      "sha256": "ae715d360541d5c70a4254b3c9353c45004e7f5d8462b6d8156fcf4be2c0d295",
+      "keys": [
+        "schema_version",
+        "captured_at",
+        "request_url",
+        "referrer_url",
+        "payload"
+      ],
+      "payload_keys": [
+        "success",
+        "html"
+      ]
+    },
+    {
+      "remote_path": "raw/00/00QYP2LJGQ9G.json",
+      "path": "icebow\\data\\bench\\native_confirmation_20261005\\additional_source\\raw_schema\\00QYP2LJGQ9G.json",
+      "bytes": 56033,
+      "sha256": "65fe8405f8ba55293de632bea3dd0443b6fb756e036c06bf57a832afeef9e61c",
+      "keys": [
+        "schema_version",
+        "captured_at",
+        "request_url",
+        "referrer_url",
+        "payload"
+      ],
+      "payload_keys": [
+        "success",
+        "html"
+      ]
+    },
+    {
+      "remote_path": "raw/09/09U9JLLR2C2L.json",
+      "path": "icebow\\data\\bench\\native_confirmation_20261005\\additional_source\\raw_schema\\09U9JLLR2C2L.json",
+      "bytes": 38295,
+      "sha256": "4797e922760232207542dfdb11f056fa2c48ca742d6e36599f35d6e007b16b97",
+      "keys": [
+        "schema_version",
+        "captured_at",
+        "request_url",
+        "referrer_url",
+        "payload"
+      ],
+      "payload_keys": [
+        "success",
+        "html"
+      ]
+    },
+    {
+      "remote_path": "raw/08/08YY2CG9GLLG.json",
+      "path": "icebow\\data\\bench\\native_confirmation_20261005\\additional_source\\raw_schema\\08YY2CG9GLLG.json",
+      "bytes": 65223,
+      "sha256": "f1f04b5fd07f6a4600469a8e08b40bc8c614c4c4eecc4974122bea83a3c0438f",
+      "keys": [
+        "schema_version",
+        "captured_at",
+        "request_url",
+        "referrer_url",
+        "payload"
+      ],
+      "payload_keys": [
+        "success",
+        "html"
+      ]
+    },
+    {
+      "remote_path": "raw/00/00CYP0R8PPLL.json",
+      "path": "icebow\\data\\bench\\native_confirmation_20261005\\additional_source\\raw_schema\\00CYP0R8PPLL.json",
+      "bytes": 111544,
+      "sha256": "a8420a7bb9f093924809fd0fea70fdb0f9366366781b3d6b948248491fa29804",
+      "keys": [
+        "schema_version",
+        "captured_at",
+        "request_url",
+        "referrer_url",
+        "payload"
+      ],
+      "payload_keys": [
+        "success",
+        "html"
+      ]
+    },
+    {
+      "remote_path": "raw/02/02GY998UPP80.json",
+      "path": "icebow\\data\\bench\\native_confirmation_20261005\\additional_source\\raw_schema\\02GY998UPP80.json",
+      "bytes": 54195,
+      "sha256": "19587f6584ed2d572aa3210e722dc7b909a1cea89407214f39cb8ad0bc80b14b",
+      "keys": [
+        "schema_version",
+        "captured_at",
+        "request_url",
+        "referrer_url",
+        "payload"
+      ],
+      "payload_keys": [
+        "success",
+        "html"
+      ]
+    }
+  ],
+  "model_predictions": 0
+}

@@ -1,0 +1,52 @@
+{
+ "ckpt": "icebow\\data\\bench\\rl_royale\\league1\\league1_u0250.pt",
+ "ckpt_sha256": "224e778407cffca8bc4a2521a17b9b6c58095ac5707c84e28c72b4d8a58fff8d",
+ "model": {
+  "gen": true,
+  "epoch": 4,
+  "n_params": 1337678,
+  "deck": "generalist",
+  "grid": "lattice"
+ },
+ "cfg": {
+  "policy": "live",
+  "tau": 0.27,
+  "afford_mask": true,
+  "stall_elixir": 9,
+  "stall_seconds": 12.0,
+  "obs": "live",
+  "p_random": 0.0,
+  "random_hand_only": false,
+  "grid": "lattice",
+  "device": "cuda",
+  "decide_every": 10,
+  "slot": 0,
+  "port": 0,
+  "T": 0.5,
+  "record": false,
+  "opp_elixir": "counter",
+  "action_delay_ticks": 26,
+  "extrapolate_ticks": 26
+ },
+ "noise_off": [
+  "conf",
+  "deploying",
+  "false_pos",
+  "king_hp",
+  "my_elixir",
+  "position",
+  "recall",
+  "team",
+  "unit_hp"
+ ],
+ "opp_elixir_arg": "counter",
+ "action_delay_ticks": 26,
+ "extrapolate_ticks": 26,
+ "screen_seeds": [
+  0
+ ],
+ "split": "train",
+ "jobs": 1505,
+ "resumed_done": 0,
+ "started": "2026-09-26 13:20:14"
+}

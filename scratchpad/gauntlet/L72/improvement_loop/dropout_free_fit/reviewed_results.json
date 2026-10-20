@@ -1,0 +1,130 @@
+{
+  "complete": true,
+  "receipts": {
+    "prepare": {
+      "receipt_sha256": "2c2c40d6e64f1454fa0a33e0fb59d60c349b0f4665eefa264868a6c4750a419c",
+      "output_sha256": "bd1ffbef70f3be6462f85dea1947af7fc25d3c03a3d8f2456738ed25e2222a9d",
+      "seconds": 90.6323676109314
+    },
+    "train": {
+      "receipt_sha256": "fa421722f2cd3bc4bda33d317fd4e3751f8c0685a8116def57778cc53983a5c6",
+      "output_sha256": "04d291322a7c00185ef26954a683110295cffc78df46953519e0418154bbc5bf",
+      "seconds": 665.1778788566589
+    },
+    "training-independent": {
+      "receipt_sha256": "a3f1146dd0e3ab19c654bb96e58f27236c3e1a8ea4c84f847567b936732c2a75",
+      "output_sha256": "ccfb482aa2013349059794f9c500b454e077dc40eff0041777f03902f109c41d",
+      "seconds": 6.791633367538452
+    },
+    "eval": {
+      "receipt_sha256": "28275db3d6b847e6195de8089f0d384e514ca5aff013b2a11fc181587f9d4efb",
+      "output_sha256": "4b7d7ad4a21f2d28c645c9f001b8ef1f409c4f107b48a750fd7bfa47432a7df5",
+      "seconds": 52.74337410926819
+    },
+    "results-independent": {
+      "receipt_sha256": "61271da9400728f46cc745e595be1a89f63be3db338eceedb9037663a673299c",
+      "output_sha256": "3a53ca55725024e19d71b2c71f448bbb447e53ed1fda5988d245878637c40da2",
+      "seconds": 7.602766752243042
+    },
+    "reviewed-evidence": {
+      "receipt_sha256": "d8a457b17d60837fb096029c9720169d437ab546484009486899748f4ef626bb",
+      "output_sha256": "16af8c5d83ba87913f7819624794f713918e3926126f57c4e58b058133f7c6bf",
+      "seconds": 0.5850107669830322
+    },
+    "discord": {
+      "receipt_sha256": "6f7c28fcab2e942706f45830ccac4c88b28595d1cf03539a982a173bdd126dee",
+      "output_sha256": "39859cddc571c72344e4a876d8b01d5a7f6bf3dd8e23237cf46c5245d1611af7",
+      "seconds": 1.0752842426300049
+    }
+  },
+  "diagnostic_fit": true,
+  "filters": {
+    "r1e_corrected/native": {
+      "play_fit": false,
+      "rocket_card_fit": false,
+      "rocket_aim_fit": false,
+      "wait_fit": false,
+      "all_card_preserved": false,
+      "all_wait_preserved": false
+    },
+    "r1e_corrected/mirrored": {
+      "play_fit": false,
+      "rocket_card_fit": false,
+      "rocket_aim_fit": false,
+      "wait_fit": false,
+      "all_card_preserved": false,
+      "all_wait_preserved": false
+    },
+    "ordinary_v5/native": {
+      "play_fit": false,
+      "rocket_card_fit": false,
+      "rocket_aim_fit": false,
+      "wait_fit": false,
+      "all_card_preserved": false,
+      "all_wait_preserved": false
+    },
+    "ordinary_v5/mirrored": {
+      "play_fit": false,
+      "rocket_card_fit": false,
+      "rocket_aim_fit": false,
+      "wait_fit": false,
+      "all_card_preserved": false,
+      "all_wait_preserved": false
+    },
+    "assay_final/native": {
+      "play_fit": false,
+      "rocket_card_fit": true,
+      "rocket_aim_fit": false,
+      "wait_fit": true,
+      "all_card_preserved": true,
+      "all_wait_preserved": true
+    },
+    "assay_final/mirrored": {
+      "play_fit": false,
+      "rocket_card_fit": true,
+      "rocket_aim_fit": false,
+      "wait_fit": true,
+      "all_card_preserved": true,
+      "all_wait_preserved": true
+    },
+    "dropout_free_final/native": {
+      "play_fit": true,
+      "rocket_card_fit": true,
+      "rocket_aim_fit": true,
+      "wait_fit": true,
+      "all_card_preserved": true,
+      "all_wait_preserved": true
+    },
+    "dropout_free_final/mirrored": {
+      "play_fit": true,
+      "rocket_card_fit": true,
+      "rocket_aim_fit": true,
+      "wait_fit": true,
+      "all_card_preserved": true,
+      "all_wait_preserved": true
+    }
+  },
+  "quarantined": true,
+  "eligible_policy_parent": false,
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\close_dropout_free_fit_report.py": "75de607ea87d36a0ea81ca1e68da2885aad28b37c71640f308e7fbb9300344a0",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\dropout_free_fit\\message.md": "02e225de1867c284bba47f92499de492f61b41cdcccecd24abeebb1fc0a0e5df",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\dropout_free_fit\\reviewed_evidence.json": "7cb6ed25fd8d037ff22ea76e2d2a82adf2b6ff985056a985140b947ba576b771",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\dropout_free_fit\\prepared.json": "92a1c5537a44b1df914fcad3525a7d83736419923c699f14c6d1bf91cf899a7a",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\dropout_free_fit\\trained.json": "9cdccae011a75b55e1828249d76506644e76dc88ff251e7443d033da3e10d070",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\dropout_free_fit\\training_verified.json": "4db4f58887491cb0fba69738c019fc1aadb327d69d43a4e214d66c40b077da17",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\dropout_free_fit\\evaluated.json": "b67c64672687d73a7de7ebb80f7924fd4d8e13be5fbcf632c308225511e17b25",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\dropout_free_fit\\results_verified.json": "8bde7bc11625d9779efbf5601dc54a68af618ef691d49d75d04d5e9533af2e18",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\dropout_free_fit\\chain_complete.json": "bc6c3c988a2447c327bac90f044cc17be0c54184608aadd708ee435cf456c601"
+  },
+  "delivery_path": "reports\\discord\\deliveries\\model-dropout-free-fit-v5-diagnostic\\delivery.json",
+  "delivery_sha256": "917c8bad1cba54701839970b3c9cb6bb109bd9085896977c373689b7567a909e",
+  "message_sha256": "02e225de1867c284bba47f92499de492f61b41cdcccecd24abeebb1fc0a0e5df",
+  "message_ids": [
+    "1556989315786219562",
+    "1556989317501685872",
+    "1556989318843605084"
+  ],
+  "accepted": false,
+  "deployed": false
+}

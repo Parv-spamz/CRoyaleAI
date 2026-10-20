@@ -1,0 +1,418 @@
+{
+  "complete": true,
+  "report_sha256": "d2b97cb764a63de8ebdb86ed927c1a1420c16c9af6f22fef689bf40aa25a7845",
+  "roots": 16,
+  "branches": 112,
+  "frames": 33712,
+  "controls": {
+    "positive": 16,
+    "negative": 12
+  },
+  "summary": [
+    {
+      "root_id": "t90_l11_s0_p0",
+      "level": 11,
+      "side": 0,
+      "lane": 0,
+      "phase": 90,
+      "effects": {
+        "wait": 0,
+        "wait_repeat": 0,
+        "center": 342,
+        "inward1": 342,
+        "inward2": 342,
+        "inward3": 0,
+        "far6": 0
+      },
+      "first_tick": {
+        "wait": null,
+        "wait_repeat": null,
+        "center": 183,
+        "inward1": 182,
+        "inward2": 182,
+        "inward3": null,
+        "far6": null
+      }
+    },
+    {
+      "root_id": "t90_l11_s0_p1",
+      "level": 11,
+      "side": 0,
+      "lane": 1,
+      "phase": 90,
+      "effects": {
+        "wait": 0,
+        "wait_repeat": 0,
+        "center": 342,
+        "inward1": 342,
+        "inward2": 342,
+        "inward3": 0,
+        "far6": 0
+      },
+      "first_tick": {
+        "wait": null,
+        "wait_repeat": null,
+        "center": 183,
+        "inward1": 182,
+        "inward2": 182,
+        "inward3": null,
+        "far6": null
+      }
+    },
+    {
+      "root_id": "t90_l11_s1_p0",
+      "level": 11,
+      "side": 1,
+      "lane": 0,
+      "phase": 90,
+      "effects": {
+        "wait": 0,
+        "wait_repeat": 0,
+        "center": 342,
+        "inward1": 342,
+        "inward2": 342,
+        "inward3": 0,
+        "far6": 0
+      },
+      "first_tick": {
+        "wait": null,
+        "wait_repeat": null,
+        "center": 183,
+        "inward1": 182,
+        "inward2": 182,
+        "inward3": null,
+        "far6": null
+      }
+    },
+    {
+      "root_id": "t90_l11_s1_p1",
+      "level": 11,
+      "side": 1,
+      "lane": 1,
+      "phase": 90,
+      "effects": {
+        "wait": 0,
+        "wait_repeat": 0,
+        "center": 342,
+        "inward1": 342,
+        "inward2": 342,
+        "inward3": 0,
+        "far6": 0
+      },
+      "first_tick": {
+        "wait": null,
+        "wait_repeat": null,
+        "center": 183,
+        "inward1": 182,
+        "inward2": 182,
+        "inward3": null,
+        "far6": null
+      }
+    },
+    {
+      "root_id": "t90_l14_s0_p0",
+      "level": 14,
+      "side": 0,
+      "lane": 0,
+      "phase": 90,
+      "effects": {
+        "wait": 0,
+        "wait_repeat": 0,
+        "center": 453,
+        "inward1": 453,
+        "inward2": 453,
+        "inward3": 0,
+        "far6": 0
+      },
+      "first_tick": {
+        "wait": null,
+        "wait_repeat": null,
+        "center": 183,
+        "inward1": 182,
+        "inward2": 182,
+        "inward3": null,
+        "far6": null
+      }
+    },
+    {
+      "root_id": "t90_l14_s0_p1",
+      "level": 14,
+      "side": 0,
+      "lane": 1,
+      "phase": 90,
+      "effects": {
+        "wait": 0,
+        "wait_repeat": 0,
+        "center": 453,
+        "inward1": 453,
+        "inward2": 453,
+        "inward3": 0,
+        "far6": 0
+      },
+      "first_tick": {
+        "wait": null,
+        "wait_repeat": null,
+        "center": 183,
+        "inward1": 182,
+        "inward2": 182,
+        "inward3": null,
+        "far6": null
+      }
+    },
+    {
+      "root_id": "t90_l14_s1_p0",
+      "level": 14,
+      "side": 1,
+      "lane": 0,
+      "phase": 90,
+      "effects": {
+        "wait": 0,
+        "wait_repeat": 0,
+        "center": 453,
+        "inward1": 453,
+        "inward2": 453,
+        "inward3": 0,
+        "far6": 0
+      },
+      "first_tick": {
+        "wait": null,
+        "wait_repeat": null,
+        "center": 183,
+        "inward1": 182,
+        "inward2": 182,
+        "inward3": null,
+        "far6": null
+      }
+    },
+    {
+      "root_id": "t90_l14_s1_p1",
+      "level": 14,
+      "side": 1,
+      "lane": 1,
+      "phase": 90,
+      "effects": {
+        "wait": 0,
+        "wait_repeat": 0,
+        "center": 453,
+        "inward1": 453,
+        "inward2": 453,
+        "inward3": 0,
+        "far6": 0
+      },
+      "first_tick": {
+        "wait": null,
+        "wait_repeat": null,
+        "center": 183,
+        "inward1": 182,
+        "inward2": 182,
+        "inward3": null,
+        "far6": null
+      }
+    },
+    {
+      "root_id": "t4800_l11_s0_p0",
+      "level": 11,
+      "side": 0,
+      "lane": 0,
+      "phase": 4800,
+      "effects": {
+        "wait": 0,
+        "wait_repeat": 0,
+        "center": 342,
+        "inward1": 342,
+        "inward2": 342,
+        "inward3": 0,
+        "far6": 0
+      },
+      "first_tick": {
+        "wait": null,
+        "wait_repeat": null,
+        "center": 4893,
+        "inward1": 4892,
+        "inward2": 4892,
+        "inward3": null,
+        "far6": null
+      }
+    },
+    {
+      "root_id": "t4800_l11_s0_p1",
+      "level": 11,
+      "side": 0,
+      "lane": 1,
+      "phase": 4800,
+      "effects": {
+        "wait": 0,
+        "wait_repeat": 0,
+        "center": 342,
+        "inward1": 342,
+        "inward2": 342,
+        "inward3": 0,
+        "far6": 0
+      },
+      "first_tick": {
+        "wait": null,
+        "wait_repeat": null,
+        "center": 4893,
+        "inward1": 4892,
+        "inward2": 4892,
+        "inward3": null,
+        "far6": null
+      }
+    },
+    {
+      "root_id": "t4800_l11_s1_p0",
+      "level": 11,
+      "side": 1,
+      "lane": 0,
+      "phase": 4800,
+      "effects": {
+        "wait": 0,
+        "wait_repeat": 0,
+        "center": 342,
+        "inward1": 342,
+        "inward2": 342,
+        "inward3": 0,
+        "far6": 0
+      },
+      "first_tick": {
+        "wait": null,
+        "wait_repeat": null,
+        "center": 4893,
+        "inward1": 4892,
+        "inward2": 4892,
+        "inward3": null,
+        "far6": null
+      }
+    },
+    {
+      "root_id": "t4800_l11_s1_p1",
+      "level": 11,
+      "side": 1,
+      "lane": 1,
+      "phase": 4800,
+      "effects": {
+        "wait": 0,
+        "wait_repeat": 0,
+        "center": 342,
+        "inward1": 342,
+        "inward2": 342,
+        "inward3": 0,
+        "far6": 0
+      },
+      "first_tick": {
+        "wait": null,
+        "wait_repeat": null,
+        "center": 4893,
+        "inward1": 4892,
+        "inward2": 4892,
+        "inward3": null,
+        "far6": null
+      }
+    },
+    {
+      "root_id": "t4800_l14_s0_p0",
+      "level": 14,
+      "side": 0,
+      "lane": 0,
+      "phase": 4800,
+      "effects": {
+        "wait": 0,
+        "wait_repeat": 0,
+        "center": 453,
+        "inward1": 453,
+        "inward2": 453,
+        "inward3": 0,
+        "far6": 0
+      },
+      "first_tick": {
+        "wait": null,
+        "wait_repeat": null,
+        "center": 4893,
+        "inward1": 4892,
+        "inward2": 4892,
+        "inward3": null,
+        "far6": null
+      }
+    },
+    {
+      "root_id": "t4800_l14_s0_p1",
+      "level": 14,
+      "side": 0,
+      "lane": 1,
+      "phase": 4800,
+      "effects": {
+        "wait": 0,
+        "wait_repeat": 0,
+        "center": 453,
+        "inward1": 453,
+        "inward2": 453,
+        "inward3": 0,
+        "far6": 0
+      },
+      "first_tick": {
+        "wait": null,
+        "wait_repeat": null,
+        "center": 4893,
+        "inward1": 4892,
+        "inward2": 4892,
+        "inward3": null,
+        "far6": null
+      }
+    },
+    {
+      "root_id": "t4800_l14_s1_p0",
+      "level": 14,
+      "side": 1,
+      "lane": 0,
+      "phase": 4800,
+      "effects": {
+        "wait": 0,
+        "wait_repeat": 0,
+        "center": 453,
+        "inward1": 453,
+        "inward2": 453,
+        "inward3": 0,
+        "far6": 0
+      },
+      "first_tick": {
+        "wait": null,
+        "wait_repeat": null,
+        "center": 4893,
+        "inward1": 4892,
+        "inward2": 4892,
+        "inward3": null,
+        "far6": null
+      }
+    },
+    {
+      "root_id": "t4800_l14_s1_p1",
+      "level": 14,
+      "side": 1,
+      "lane": 1,
+      "phase": 4800,
+      "effects": {
+        "wait": 0,
+        "wait_repeat": 0,
+        "center": 453,
+        "inward1": 453,
+        "inward2": 453,
+        "inward3": 0,
+        "far6": 0
+      },
+      "first_tick": {
+        "wait": null,
+        "wait_repeat": null,
+        "center": 4893,
+        "inward1": 4892,
+        "inward2": 4892,
+        "inward3": null,
+        "far6": null
+      }
+    }
+  ],
+  "models_loaded": 0,
+  "optimizer_updates": 0,
+  "native_client_parity": false,
+  "policy_acceptance": false,
+  "source_sha256": "bd041f903a28fa1aca1d31604d70f52eec69f2a76c0a45c736edbe1f5f3e6ef8"
+}

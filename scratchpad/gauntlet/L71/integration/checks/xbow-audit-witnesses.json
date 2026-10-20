@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+    "scratchpad/gauntlet/L71/xbow_support/verify_audit.py",
+    "--source-root",
+    "C:\\Users\\benpe\\ClashBot"
+  ],
+  "cwd": "C:\\Users\\benpe\\.codex\\worktrees\\learned-defence\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "XBOW_AUDIT_WITNESSES_VERIFIED",
+  "matched": true,
+  "output_sha256": "612d1e19df38381ef2a4c8f5e7663e90358cf1971d0a322317c5d772c4028a7b",
+  "seconds": 2.32228422164917
+}

@@ -1,0 +1,150 @@
+{
+  "complete": true,
+  "attempted": 162,
+  "selected": 162,
+  "totals": {
+    "usable": 80,
+    "excluded": 82,
+    "reason:undriven_commands": 47,
+    "reason:rejected_commands": 59,
+    "reason:skipped_commands": 47,
+    "reason:crown_mismatch": 48
+  },
+  "by_split": {
+    "confirmation": {
+      "usable": 80,
+      "excluded": 82
+    }
+  },
+  "by_stratum": {
+    "confirmation:exact_icebow": {
+      "usable": 80,
+      "excluded": 82
+    },
+    "confirmation:rocket_deck": {
+      "usable": 80,
+      "excluded": 82
+    },
+    "confirmation:rocket_tornado_deck": {
+      "usable": 80,
+      "excluded": 82
+    },
+    "confirmation:xbow_deck": {
+      "usable": 80,
+      "excluded": 82
+    },
+    "confirmation:icebow_vs_furnace": {
+      "usable": 10,
+      "excluded": 5
+    },
+    "confirmation:versus_furnace": {
+      "usable": 10,
+      "excluded": 5
+    },
+    "confirmation:icebow_vs_witch": {
+      "excluded": 3
+    },
+    "confirmation:versus_witch": {
+      "excluded": 3
+    },
+    "confirmation:icebow_vs_night-witch": {
+      "excluded": 11,
+      "usable": 9
+    },
+    "confirmation:versus_night-witch": {
+      "excluded": 11,
+      "usable": 9
+    }
+  },
+  "summary_path": "C:\\Users\\benpe\\ClashBot\\icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\summary.jsonl",
+  "summary_sha256": "572be3d6624decff0f9b52852afc1348b92ab3c56231446bc4c709c2f1f88930",
+  "provenance_sha256": "a4948bf3921e9f14156ba34ca988c296a7bd77d1de60ab61d51ab9d4c3a543fe",
+  "qualified_tags": {
+    "training": [],
+    "development": [],
+    "confirmation": [
+      "01c90c5ccc3a401888c7c42d47c18813",
+      "04d87cf157b14e0e85ff84fe059e0db8",
+      "060812c75cdf45f08e8e58c9b05fdecc",
+      "0818a443d2c54d20b9ef005406648fca",
+      "09f639f7623a43c085d9af0dd433494e",
+      "0cf0fb5888444adf8cde74db3b5caccd",
+      "119428f46a034eeea84309af4029cf43",
+      "17b000ad9ce84c41923b528265409fb1",
+      "1948b877654a475280242c05d725266b",
+      "1e3bca5da52a4d729d6ffec1e3c2f431",
+      "223c88e8753c4c348bc0091850e74b89",
+      "223f1e3737ab4779b74e12de9fbcae4c",
+      "23a756de18dd42a78a9481930070b837",
+      "23c6012eccd646dc98cc9238e8063029",
+      "24305607d87b4332847f999adf9e45ec",
+      "265d434f17244e9590e584473225349f",
+      "2b6e9b281212497ca169cd2688cfcba4",
+      "31a0056abcb24f639996a5e012f3417d",
+      "338f575506704ea08601e4441b8bfa36",
+      "3412868827c343dd956322304040940b",
+      "3483356a35d64123a374dc4d0127e620",
+      "3519f449b6d14e118deb073744e5af21",
+      "3f7b9bf3703a4d738be08c7804f78023",
+      "4b5e1f45d2d845a4aed4268d401d95dd",
+      "4e8d7608cf29486eb5e354fe2e2eac15",
+      "57cf318d53a445abb63377893b5ee142",
+      "6163c45baaf44dec9cbcff3ed50b5edd",
+      "62e5470add1e474a9998eefafe8628b5",
+      "6674819abccb4b8d889ad238a4123606",
+      "6c914bdaf0c546809c1a659345e9f9fc",
+      "6f78959ef6f4467aa1075a70d4268ea4",
+      "70e058e1feab41f39b27494d429b8a10",
+      "71bbd482dc1149c9a5fe89a0019601a1",
+      "76c98259919746fd96d409e7f15f84e4",
+      "7a143770ce7740ca9000fed6e02b6551",
+      "7a4c0a1289354f2aba963f178feb48d3",
+      "7f9ee8a66ab64c758a4bec1edf3f8b04",
+      "8314a953979842c784299abee7d6e136",
+      "83a1caa8c5414b4c995208b6c59e5099",
+      "88fdfed7c878442b813ad7ec28865522",
+      "89170b08166b45f9a224365d7a5657fd",
+      "8ca3b501f4cc4ec8a15648370e28cc63",
+      "924702e1ab994e19be81dfbac101f5b2",
+      "9427dd3582294d2abbeff8eb27247737",
+      "98504ee4d78c4b84853a4b4907fad1db",
+      "99245605759040deb5ac5f70eac81b66",
+      "9ff5b8e7949d41f29657ac60db1b9f00",
+      "a3d3fe34595f46f98edebaad0904269b",
+      "a42592796c424ee697b1022b5784895b",
+      "a584dac6636447aa924b6329e084c7f1",
+      "a889defd83bd4a7ab00385da5acb6ee6",
+      "aaf81e8bcac0403d89adec9f444226eb",
+      "b0b2d5a4ab22467ebfd4cd12673e59f0",
+      "b1e3c6b0cc584a9a968f9e64fa47825d",
+      "b224463b3ff34e8f885ce06703033cbb",
+      "b3ad1419424a4db79b84a0676a77e4a9",
+      "b8426d420aee466a83338e6bd1c34b2c",
+      "bb953f7e10214949b482c9151adacc32",
+      "c225b97964804aed94a02b9794fa8beb",
+      "c4922ad823824a9aa7c4516801a52bec",
+      "cbe9b9e086d040aeb78612d43bdbf453",
+      "cf58ba065f6e462ca027486bc2b37531",
+      "d464d55efa444efab6a6a75e694d5bdb",
+      "d48f923bdd344a15bdbda25a655e4818",
+      "d527d55826174eb690948962ff47433b",
+      "d746eddf56c240968e51baa362a82991",
+      "de448754ddde46cc90ed9b89d28082f8",
+      "e27a876a33cb4f6ea71a4f277af55bec",
+      "e64c2a2fc35742388d6487e2504be106",
+      "e6a8072d48a644a6bff64c87fd3d5b18",
+      "e858bee960234bc8af8b485e67cce092",
+      "e90160a2c22f4764b76d7dd2160046ca",
+      "e917eb783ada4727b08eb050facba97a",
+      "eb10135e86f645b19b4cc14e4c82f2b2",
+      "f407974c05eb4b3495d71e674059ea3f",
+      "f6284757db38417a9c23c3bd139e334c",
+      "f68b8e84e45f45b382831489c3c90465",
+      "f78229c994f94e348164fbb60897c08e",
+      "fc327c9941d4490b9acc7f801e662e25",
+      "ff967e6be8f24bd080d65f9a2b4c23dd"
+    ]
+  },
+  "new_model_trained": false,
+  "N2_complete": false
+}

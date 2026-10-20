@@ -1,0 +1,97 @@
+[
+  {
+    "name": "environment",
+    "pass": true,
+    "detail": "CR_SANDBOX_* variables present"
+  },
+  {
+    "name": "python",
+    "pass": true,
+    "detail": "C:\\Users\\benpe\\AppData\\Local\\Programs\\Python\\Python313\\python.exe"
+  },
+  {
+    "name": "python 3.11+",
+    "pass": true,
+    "detail": "python 3.13"
+  },
+  {
+    "name": "adb",
+    "pass": true,
+    "detail": "C:\\Android\\Sdk\\platform-tools\\adb.exe"
+  },
+  {
+    "name": "emulator",
+    "pass": true,
+    "detail": "C:\\Android\\Sdk\\emulator\\emulator.exe"
+  },
+  {
+    "name": "sdkmanager",
+    "pass": true,
+    "detail": "C:\\Android\\Sdk\\cmdline-tools\\latest\\bin\\sdkmanager.bat"
+  },
+  {
+    "name": "avdmanager",
+    "pass": true,
+    "detail": "C:\\Android\\Sdk\\cmdline-tools\\latest\\bin\\avdmanager.bat"
+  },
+  {
+    "name": "android.jar (platform 35)",
+    "pass": true,
+    "detail": "C:\\Android\\Sdk\\platforms\\android-35\\android.jar"
+  },
+  {
+    "name": "r8.jar",
+    "pass": true,
+    "detail": "C:\\Android\\Sdk\\cmdline-tools\\latest\\lib\\r8.jar"
+  },
+  {
+    "name": "javac",
+    "pass": true,
+    "detail": "C:\\Android\\jdk-17\\bin\\javac.exe"
+  },
+  {
+    "name": "clang++ (NDK r27d)",
+    "pass": true,
+    "detail": "C:\\Android\\Sdk\\ndk\\27.3.13750724\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+  },
+  {
+    "name": "avd home",
+    "pass": true,
+    "detail": "C:\\Users\\benpe\\AppData\\Local\\Android\\avd"
+  },
+  {
+    "name": "runtime hashes",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "runtime assets",
+    "pass": true,
+    "detail": "csv_client=True csv_logic=True arena=True tilemap=True csv_files=127"
+  },
+  {
+    "name": "avd",
+    "pass": true,
+    "detail": "royale_worker_api31 (run bootstrap.ps1 if missing)"
+  },
+  {
+    "name": "virtualization/WHPX",
+    "pass": false,
+    "detail": "VT-x/AMD-V firmware enabled=False (enable virtualization in BIOS/UEFI)"
+  },
+  {
+    "name": "ports",
+    "pass": false,
+    "detail": "port 5555 in use;"
+  },
+  {
+    "name": "disk space",
+    "pass": true,
+    "detail": "unable to probe free space"
+  },
+  {
+    "name": "execution policy",
+    "pass": true,
+    "detail": "process=Undefined (scripts self-bypass)"
+  }
+]

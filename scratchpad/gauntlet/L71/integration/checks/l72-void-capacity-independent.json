@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/void_capacity/inventory.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "VOID_CAPACITY_INDEPENDENT_PASS",
+  "matched": true,
+  "output_sha256": "9c6b808b732068816ad460f59106abfb34a4bb479912f0cd28f0ddc8c10f12a8",
+  "seconds": 0.4666733741760254
+}

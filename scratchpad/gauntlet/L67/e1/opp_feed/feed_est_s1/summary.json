@@ -1,0 +1,4822 @@
+{
+ "n_ticks": 74229,
+ "n_matches": 100,
+ "port": 38031,
+ "split": "heldout",
+ "entries": "0:100",
+ "seeds": "0",
+ "ckpt": "icebow\\data\\pipeline\\s1_icebow_v6lat_s0.pt",
+ "decide_every": 10,
+ "estimator_step": 5,
+ "n_detector_cards": 46,
+ "matches": [
+  {
+   "tag": "000YLL9RURY8",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 29,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "000YLLP2UC98",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 3,
+   "crowns_against": 1,
+   "plays_accepted": 66,
+   "decisions": 545,
+   "end_tick": 5534,
+   "n_ticks": 1089
+  },
+  {
+   "tag": "000YLY2VQ92P",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 0,
+   "crowns_against": 1,
+   "plays_accepted": 34,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "000YLYJULG22",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 1,
+   "crowns_against": 3,
+   "plays_accepted": 34,
+   "decisions": 371,
+   "end_tick": 3794,
+   "n_ticks": 741
+  },
+  {
+   "tag": "000YLYYCJ8VY",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 3,
+   "crowns_against": 0,
+   "plays_accepted": 24,
+   "decisions": 301,
+   "end_tick": 3090,
+   "n_ticks": 601
+  },
+  {
+   "tag": "002YLQQ0J90P",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 2,
+   "crowns_against": 0,
+   "plays_accepted": 33,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "008YLL2CQVUP",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 34,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "008YLQ2RJ00L",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 32,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "009Y20G9UY9R",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 2,
+   "crowns_against": 1,
+   "plays_accepted": 29,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "009Y2C2CJ08G",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 31,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "009YLG90RURQ",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 35,
+   "decisions": 382,
+   "end_tick": 3900,
+   "n_ticks": 763
+  },
+  {
+   "tag": "009YLGLPG8JR",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 3,
+   "crowns_against": 1,
+   "plays_accepted": 68,
+   "decisions": 566,
+   "end_tick": 5748,
+   "n_ticks": 1132
+  },
+  {
+   "tag": "009YLQLLLUPY",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 2,
+   "crowns_against": 1,
+   "plays_accepted": 31,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "00CYPL820VRL",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 33,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "00CYPLYYLPL9",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 2,
+   "crowns_against": 1,
+   "plays_accepted": 33,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "00CYPY9GJQLV",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 33,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "00GYP9UGJYLQ",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 31,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "00GYPL2GC9CG",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 0,
+   "crowns_against": 1,
+   "plays_accepted": 32,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "00GYPYUCG2GQ",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 1,
+   "crowns_against": 2,
+   "plays_accepted": 76,
+   "decisions": 605,
+   "end_tick": 6133,
+   "n_ticks": 1209
+  },
+  {
+   "tag": "00JYPGYLRP88",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 1,
+   "crowns_against": 2,
+   "plays_accepted": 49,
+   "decisions": 475,
+   "end_tick": 4833,
+   "n_ticks": 949
+  },
+  {
+   "tag": "00JYPQPRYCPP",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 1,
+   "crowns_against": 3,
+   "plays_accepted": 17,
+   "decisions": 223,
+   "end_tick": 2316,
+   "n_ticks": 446
+  },
+  {
+   "tag": "00JYPQYV8VRQ",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 1,
+   "crowns_against": 3,
+   "plays_accepted": 33,
+   "decisions": 377,
+   "end_tick": 3859,
+   "n_ticks": 754
+  },
+  {
+   "tag": "00LYPLCVRCCV",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 32,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "00LYPLJLQ80J",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 0,
+   "crowns_against": 1,
+   "plays_accepted": 44,
+   "decisions": 438,
+   "end_tick": 4463,
+   "n_ticks": 875
+  },
+  {
+   "tag": "00LYPLR200VU",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 40,
+   "decisions": 403,
+   "end_tick": 4112,
+   "n_ticks": 805
+  },
+  {
+   "tag": "00LYPLY0GRQP",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 33,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "00LYPQVCRJJL",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 2,
+   "crowns_against": 1,
+   "plays_accepted": 64,
+   "decisions": 564,
+   "end_tick": 5722,
+   "n_ticks": 1127
+  },
+  {
+   "tag": "00PYLLC9QJ0L",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 31,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "00PYLLJPQ0G0",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 31,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "00PYLLJPYJ0Q",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 33,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "00QYPG00YLQP",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 1,
+   "crowns_against": 3,
+   "plays_accepted": 28,
+   "decisions": 349,
+   "end_tick": 3570,
+   "n_ticks": 697
+  },
+  {
+   "tag": "00QYPG28P8QV",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 2,
+   "crowns_against": 1,
+   "plays_accepted": 39,
+   "decisions": 417,
+   "end_tick": 4255,
+   "n_ticks": 834
+  },
+  {
+   "tag": "00QYPQLC9CQY",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 29,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "00QYPQP0802Q",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 0,
+   "crowns_against": 1,
+   "plays_accepted": 50,
+   "decisions": 466,
+   "end_tick": 4740,
+   "n_ticks": 931
+  },
+  {
+   "tag": "00QYPQR0C02V",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 2,
+   "crowns_against": 0,
+   "plays_accepted": 31,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "00UYPL92ULUL",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 33,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "00UYPL9P0VQL",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 32,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "00UYPQ9ULVP2",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 1,
+   "crowns_against": 3,
+   "plays_accepted": 30,
+   "decisions": 343,
+   "end_tick": 3517,
+   "n_ticks": 686
+  },
+  {
+   "tag": "00UYPQ9VJ2VL",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 1,
+   "crowns_against": 2,
+   "plays_accepted": 69,
+   "decisions": 605,
+   "end_tick": 6131,
+   "n_ticks": 1209
+  },
+  {
+   "tag": "00VYPLPJGYLY",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 38,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "00VYPLPJRYRY",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 33,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "00VYPLQPYCRU",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 30,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "00VYPLRPJUVG",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 0,
+   "crowns_against": 3,
+   "plays_accepted": 7,
+   "decisions": 97,
+   "end_tick": 1050,
+   "n_ticks": 193
+  },
+  {
+   "tag": "00VYPQLPVVYU",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 3,
+   "crowns_against": 1,
+   "plays_accepted": 52,
+   "decisions": 517,
+   "end_tick": 5254,
+   "n_ticks": 1033
+  },
+  {
+   "tag": "00VYPQYLP2L9",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 0,
+   "crowns_against": 1,
+   "plays_accepted": 32,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "00VYPQYU90CG",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 0,
+   "crowns_against": 3,
+   "plays_accepted": 16,
+   "decisions": 213,
+   "end_tick": 2214,
+   "n_ticks": 425
+  },
+  {
+   "tag": "00VYPQYYV8C0",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 2,
+   "crowns_against": 1,
+   "plays_accepted": 38,
+   "decisions": 409,
+   "end_tick": 4174,
+   "n_ticks": 817
+  },
+  {
+   "tag": "00YYPLJ2J2LQ",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 1,
+   "crowns_against": 3,
+   "plays_accepted": 8,
+   "decisions": 124,
+   "end_tick": 1320,
+   "n_ticks": 247
+  },
+  {
+   "tag": "00YYPLR299UQ",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 1,
+   "crowns_against": 2,
+   "plays_accepted": 50,
+   "decisions": 475,
+   "end_tick": 4830,
+   "n_ticks": 949
+  },
+  {
+   "tag": "01852645ef994048bbdecb079c42cbe5",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 2,
+   "crowns_against": 1,
+   "plays_accepted": 39,
+   "decisions": 404,
+   "end_tick": 4127,
+   "n_ticks": 808
+  },
+  {
+   "tag": "020YPLR0U0RU",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 1,
+   "crowns_against": 3,
+   "plays_accepted": 15,
+   "decisions": 205,
+   "end_tick": 2135,
+   "n_ticks": 410
+  },
+  {
+   "tag": "020YPYL89Y8Y",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 1,
+   "crowns_against": 3,
+   "plays_accepted": 32,
+   "decisions": 352,
+   "end_tick": 3608,
+   "n_ticks": 704
+  },
+  {
+   "tag": "020YPYP8R2VV",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 2,
+   "crowns_against": 0,
+   "plays_accepted": 33,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "022YYLV9QLQJ",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 32,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "022YYLV9V90G",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 1,
+   "crowns_against": 3,
+   "plays_accepted": 30,
+   "decisions": 339,
+   "end_tick": 3474,
+   "n_ticks": 677
+  },
+  {
+   "tag": "022YYQYV2C2J",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 3,
+   "crowns_against": 1,
+   "plays_accepted": 53,
+   "decisions": 512,
+   "end_tick": 5208,
+   "n_ticks": 1024
+  },
+  {
+   "tag": "022YYYUVGPUU",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 1,
+   "crowns_against": 2,
+   "plays_accepted": 43,
+   "decisions": 433,
+   "end_tick": 4412,
+   "n_ticks": 865
+  },
+  {
+   "tag": "028YPV08RU2V",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 2,
+   "crowns_against": 1,
+   "plays_accepted": 38,
+   "decisions": 397,
+   "end_tick": 4058,
+   "n_ticks": 794
+  },
+  {
+   "tag": "028YPV9P0PJ2",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 31,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "029YPUPRUYQ0",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 3,
+   "crowns_against": 0,
+   "plays_accepted": 21,
+   "decisions": 280,
+   "end_tick": 2887,
+   "n_ticks": 560
+  },
+  {
+   "tag": "02CY8P2RJ989",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 2,
+   "crowns_against": 1,
+   "plays_accepted": 34,
+   "decisions": 395,
+   "end_tick": 4030,
+   "n_ticks": 789
+  },
+  {
+   "tag": "02CY8YRG9JP9",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 3,
+   "crowns_against": 0,
+   "plays_accepted": 25,
+   "decisions": 310,
+   "end_tick": 3181,
+   "n_ticks": 619
+  },
+  {
+   "tag": "02GY9GCC0V9Q",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 1,
+   "crowns_against": 2,
+   "plays_accepted": 34,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02GY9GJURY8G",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 29,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02GY9GJVUP00",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 42,
+   "decisions": 420,
+   "end_tick": 4285,
+   "n_ticks": 840
+  },
+  {
+   "tag": "02GY9GY2U8UQ",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 2,
+   "crowns_against": 1,
+   "plays_accepted": 34,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02GY9QVU0G0R",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 34,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02GY9R00Q82Q",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 30,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02GY9R02LUU8",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 33,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02JY9G08YCQG",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 30,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02JY9G99CGPC",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 1,
+   "crowns_against": 3,
+   "plays_accepted": 20,
+   "decisions": 261,
+   "end_tick": 2690,
+   "n_ticks": 521
+  },
+  {
+   "tag": "02JY9GL9VP9C",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 0,
+   "crowns_against": 1,
+   "plays_accepted": 32,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02JY9GL9Y90C",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 3,
+   "crowns_against": 1,
+   "plays_accepted": 29,
+   "decisions": 328,
+   "end_tick": 3365,
+   "n_ticks": 656
+  },
+  {
+   "tag": "02JY9GQY2VCU",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 2,
+   "crowns_against": 3,
+   "plays_accepted": 36,
+   "decisions": 375,
+   "end_tick": 3832,
+   "n_ticks": 749
+  },
+  {
+   "tag": "02JY9GQYLVLV",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 33,
+   "decisions": 365,
+   "end_tick": 3736,
+   "n_ticks": 730
+  },
+  {
+   "tag": "02JY9QJPY29U",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 2,
+   "crowns_against": 0,
+   "plays_accepted": 32,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02JY9R2JJ0GG",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 33,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02PP9CQ0Q2U2",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 3,
+   "crowns_against": 0,
+   "plays_accepted": 31,
+   "decisions": 347,
+   "end_tick": 3551,
+   "n_ticks": 693
+  },
+  {
+   "tag": "02PYPCUP2LRJ",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 35,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02PYPULRYPQP",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 33,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02PYPUP2VP0P",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 0,
+   "crowns_against": 1,
+   "plays_accepted": 31,
+   "decisions": 361,
+   "end_tick": 3690,
+   "n_ticks": 721
+  },
+  {
+   "tag": "02QP8GGQLRYU",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 3,
+   "crowns_against": 0,
+   "plays_accepted": 31,
+   "decisions": 342,
+   "end_tick": 3503,
+   "n_ticks": 683
+  },
+  {
+   "tag": "02QY9G0RLQUY",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 3,
+   "crowns_against": 1,
+   "plays_accepted": 36,
+   "decisions": 400,
+   "end_tick": 4087,
+   "n_ticks": 800
+  },
+  {
+   "tag": "02QY9G22J9UJ",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 2,
+   "crowns_against": 0,
+   "plays_accepted": 34,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02QY9LVGPVQP",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 33,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02QY9Q0QP2Q9",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 1,
+   "crowns_against": 2,
+   "plays_accepted": 31,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02QY9Q980YV0",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 31,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02QY9Q98C0J8",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 32,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02QY9Q9P0CRP",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 31,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02QY9Q9PY29C",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 34,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02QY9Q9YY089",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 1,
+   "crowns_against": 2,
+   "plays_accepted": 61,
+   "decisions": 524,
+   "end_tick": 5322,
+   "n_ticks": 1047
+  },
+  {
+   "tag": "02QY9QV8Y908",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 2,
+   "crowns_against": 0,
+   "plays_accepted": 31,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02RY9GC0U9RV",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 34,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02RY9GR9C92G",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 33,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02RY9QV8UR8P",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 2,
+   "crowns_against": 1,
+   "plays_accepted": 31,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02RY9RVV8R29",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 1,
+   "crowns_against": 2,
+   "plays_accepted": 32,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02UY8YV2CJLJ",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 2,
+   "crowns_against": 0,
+   "plays_accepted": 31,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "02VY8LCYLY2R",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 3,
+   "crowns_against": 1,
+   "plays_accepted": 34,
+   "decisions": 366,
+   "end_tick": 3748,
+   "n_ticks": 732
+  },
+  {
+   "tag": "02YYPCRQ2QLY",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 35,
+   "decisions": 375,
+   "end_tick": 3838,
+   "n_ticks": 750
+  },
+  {
+   "tag": "02YYPU0CV82L",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 0,
+   "crowns_against": 1,
+   "plays_accepted": 34,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  }
+ ],
+ "winrate": {
+  "n": 100,
+  "wins": 70,
+  "winrate": 0.7,
+  "winrate_entry_weighted": {
+   "point": 0.7,
+   "lo": 0.61,
+   "hi": 0.79,
+   "n_entries": 100,
+   "draws": 10000,
+   "seed": 20260912
+  }
+ },
+ "feed_opp_elixir": "estimated",
+ "feed_noise": "live",
+ "plays_accepted_by_match": {
+  "000YLL9RURY8:0": 29,
+  "000YLLP2UC98:0": 66,
+  "000YLY2VQ92P:0": 34,
+  "000YLYJULG22:0": 34,
+  "000YLYYCJ8VY:0": 24,
+  "002YLQQ0J90P:0": 33,
+  "008YLL2CQVUP:0": 34,
+  "008YLQ2RJ00L:0": 32,
+  "009Y20G9UY9R:0": 29,
+  "009Y2C2CJ08G:0": 31,
+  "009YLG90RURQ:0": 35,
+  "009YLGLPG8JR:0": 68,
+  "009YLQLLLUPY:0": 31,
+  "00CYPL820VRL:0": 33,
+  "00CYPLYYLPL9:0": 33,
+  "00CYPY9GJQLV:0": 33,
+  "00GYP9UGJYLQ:0": 31,
+  "00GYPL2GC9CG:0": 32,
+  "00GYPYUCG2GQ:0": 76,
+  "00JYPGYLRP88:0": 49,
+  "00JYPQPRYCPP:0": 17,
+  "00JYPQYV8VRQ:0": 33,
+  "00LYPLCVRCCV:0": 32,
+  "00LYPLJLQ80J:0": 44,
+  "00LYPLR200VU:0": 40,
+  "00LYPLY0GRQP:0": 33,
+  "00LYPQVCRJJL:0": 64,
+  "00PYLLC9QJ0L:0": 31,
+  "00PYLLJPQ0G0:0": 31,
+  "00PYLLJPYJ0Q:0": 33,
+  "00QYPG00YLQP:0": 28,
+  "00QYPG28P8QV:0": 39,
+  "00QYPQLC9CQY:0": 29,
+  "00QYPQP0802Q:0": 50,
+  "00QYPQR0C02V:0": 31,
+  "00UYPL92ULUL:0": 33,
+  "00UYPL9P0VQL:0": 32,
+  "00UYPQ9ULVP2:0": 30,
+  "00UYPQ9VJ2VL:0": 69,
+  "00VYPLPJGYLY:0": 38,
+  "00VYPLPJRYRY:0": 33,
+  "00VYPLQPYCRU:0": 30,
+  "00VYPLRPJUVG:0": 7,
+  "00VYPQLPVVYU:0": 52,
+  "00VYPQYLP2L9:0": 32,
+  "00VYPQYU90CG:0": 16,
+  "00VYPQYYV8C0:0": 38,
+  "00YYPLJ2J2LQ:0": 8,
+  "00YYPLR299UQ:0": 50,
+  "01852645ef994048bbdecb079c42cbe5:0": 39,
+  "020YPLR0U0RU:0": 15,
+  "020YPYL89Y8Y:0": 32,
+  "020YPYP8R2VV:0": 33,
+  "022YYLV9QLQJ:0": 32,
+  "022YYLV9V90G:0": 30,
+  "022YYQYV2C2J:0": 53,
+  "022YYYUVGPUU:0": 43,
+  "028YPV08RU2V:0": 38,
+  "028YPV9P0PJ2:0": 31,
+  "029YPUPRUYQ0:0": 21,
+  "02CY8P2RJ989:0": 34,
+  "02CY8YRG9JP9:0": 25,
+  "02GY9GCC0V9Q:0": 34,
+  "02GY9GJURY8G:0": 29,
+  "02GY9GJVUP00:0": 42,
+  "02GY9GY2U8UQ:0": 34,
+  "02GY9QVU0G0R:0": 34,
+  "02GY9R00Q82Q:0": 30,
+  "02GY9R02LUU8:0": 33,
+  "02JY9G08YCQG:0": 30,
+  "02JY9G99CGPC:0": 20,
+  "02JY9GL9VP9C:0": 32,
+  "02JY9GL9Y90C:0": 29,
+  "02JY9GQY2VCU:0": 36,
+  "02JY9GQYLVLV:0": 33,
+  "02JY9QJPY29U:0": 32,
+  "02JY9R2JJ0GG:0": 33,
+  "02PP9CQ0Q2U2:0": 31,
+  "02PYPCUP2LRJ:0": 35,
+  "02PYPULRYPQP:0": 33,
+  "02PYPUP2VP0P:0": 31,
+  "02QP8GGQLRYU:0": 31,
+  "02QY9G0RLQUY:0": 36,
+  "02QY9G22J9UJ:0": 34,
+  "02QY9LVGPVQP:0": 33,
+  "02QY9Q0QP2Q9:0": 31,
+  "02QY9Q980YV0:0": 31,
+  "02QY9Q98C0J8:0": 32,
+  "02QY9Q9P0CRP:0": 31,
+  "02QY9Q9PY29C:0": 34,
+  "02QY9Q9YY089:0": 61,
+  "02QY9QV8Y908:0": 31,
+  "02RY9GC0U9RV:0": 34,
+  "02RY9GR9C92G:0": 33,
+  "02RY9QV8UR8P:0": 31,
+  "02RY9RVV8R29:0": 32,
+  "02UY8YV2CJLJ:0": 31,
+  "02VY8LCYLY2R:0": 34,
+  "02YYPCRQ2QLY:0": 35,
+  "02YYPU0CV82L:0": 34
+ },
+ "over_charge_at_end_by_match": [
+  {
+   "tag": "000YLL9RURY8",
+   "k": 0,
+   "Aplus": -7.0,
+   "A": -7.0,
+   "A_wl": -15.0,
+   "B": 996.0,
+   "B_tt": 75.5,
+   "B_tt_wl": 33.0
+  },
+  {
+   "tag": "000YLLP2UC98",
+   "k": 0,
+   "Aplus": -8.5,
+   "A": -8.5,
+   "A_wl": -84.0,
+   "B": 1627.5,
+   "B_tt": 138.0,
+   "B_tt_wl": -18.0
+  },
+  {
+   "tag": "000YLY2VQ92P",
+   "k": 0,
+   "Aplus": 16.0,
+   "A": 16.0,
+   "A_wl": -37.0,
+   "B": 837.0,
+   "B_tt": 23.0,
+   "B_tt_wl": -30.0
+  },
+  {
+   "tag": "000YLYJULG22",
+   "k": 0,
+   "Aplus": -9.0,
+   "A": -9.0,
+   "A_wl": -30.0,
+   "B": 1000.0,
+   "B_tt": 48.0,
+   "B_tt_wl": -12.0
+  },
+  {
+   "tag": "000YLYYCJ8VY",
+   "k": 0,
+   "Aplus": -3.0,
+   "A": -3.0,
+   "A_wl": -13.0,
+   "B": 707.0,
+   "B_tt": 121.0,
+   "B_tt_wl": 56.0
+  },
+  {
+   "tag": "002YLQQ0J90P",
+   "k": 0,
+   "Aplus": 16.0,
+   "A": 16.0,
+   "A_wl": -51.0,
+   "B": 1093.5,
+   "B_tt": 109.0,
+   "B_tt_wl": -3.0
+  },
+  {
+   "tag": "008YLL2CQVUP",
+   "k": 0,
+   "Aplus": 15.0,
+   "A": 15.0,
+   "A_wl": -29.0,
+   "B": 1188.0,
+   "B_tt": 61.0,
+   "B_tt_wl": 1.0
+  },
+  {
+   "tag": "008YLQ2RJ00L",
+   "k": 0,
+   "Aplus": 75.0,
+   "A": 75.0,
+   "A_wl": 67.0,
+   "B": 861.0,
+   "B_tt": 55.0,
+   "B_tt_wl": 19.0
+  },
+  {
+   "tag": "009Y20G9UY9R",
+   "k": 0,
+   "Aplus": -10.0,
+   "A": -10.0,
+   "A_wl": -59.0,
+   "B": 855.5,
+   "B_tt": 70.0,
+   "B_tt_wl": -27.0
+  },
+  {
+   "tag": "009Y2C2CJ08G",
+   "k": 0,
+   "Aplus": 2.0,
+   "A": 2.0,
+   "A_wl": -55.0,
+   "B": 694.0,
+   "B_tt": 44.0,
+   "B_tt_wl": -29.0
+  },
+  {
+   "tag": "009YLG90RURQ",
+   "k": 0,
+   "Aplus": 9.0,
+   "A": 9.0,
+   "A_wl": -16.0,
+   "B": 822.5,
+   "B_tt": 43.5,
+   "B_tt_wl": 2.0
+  },
+  {
+   "tag": "009YLGLPG8JR",
+   "k": 0,
+   "Aplus": -22.0,
+   "A": -22.0,
+   "A_wl": -22.0,
+   "B": 1658.5,
+   "B_tt": 71.0,
+   "B_tt_wl": 52.0
+  },
+  {
+   "tag": "009YLQLLLUPY",
+   "k": 0,
+   "Aplus": 9.0,
+   "A": 9.0,
+   "A_wl": -7.0,
+   "B": 946.0,
+   "B_tt": 148.5,
+   "B_tt_wl": 79.0
+  },
+  {
+   "tag": "00CYPL820VRL",
+   "k": 0,
+   "Aplus": -24.0,
+   "A": -24.0,
+   "A_wl": -59.0,
+   "B": 651.5,
+   "B_tt": 30.0,
+   "B_tt_wl": -23.0
+  },
+  {
+   "tag": "00CYPLYYLPL9",
+   "k": 0,
+   "Aplus": 18.0,
+   "A": 18.0,
+   "A_wl": 2.0,
+   "B": 1053.5,
+   "B_tt": 60.0,
+   "B_tt_wl": 17.0
+  },
+  {
+   "tag": "00CYPY9GJQLV",
+   "k": 0,
+   "Aplus": 31.0,
+   "A": 31.0,
+   "A_wl": -28.0,
+   "B": 981.0,
+   "B_tt": 117.0,
+   "B_tt_wl": 32.0
+  },
+  {
+   "tag": "00GYP9UGJYLQ",
+   "k": 0,
+   "Aplus": -12.0,
+   "A": -12.0,
+   "A_wl": -40.0,
+   "B": 788.5,
+   "B_tt": 36.0,
+   "B_tt_wl": -15.0
+  },
+  {
+   "tag": "00GYPL2GC9CG",
+   "k": 0,
+   "Aplus": -4.0,
+   "A": -4.0,
+   "A_wl": -13.0,
+   "B": 1094.0,
+   "B_tt": 174.5,
+   "B_tt_wl": 69.0
+  },
+  {
+   "tag": "00GYPYUCG2GQ",
+   "k": 0,
+   "Aplus": 9.0,
+   "A": 9.0,
+   "A_wl": -182.0,
+   "B": 1861.0,
+   "B_tt": 178.5,
+   "B_tt_wl": -123.0
+  },
+  {
+   "tag": "00JYPGYLRP88",
+   "k": 0,
+   "Aplus": 12.0,
+   "A": 12.0,
+   "A_wl": -52.0,
+   "B": 1837.5,
+   "B_tt": 145.0,
+   "B_tt_wl": 14.0
+  },
+  {
+   "tag": "00JYPQPRYCPP",
+   "k": 0,
+   "Aplus": 0.5,
+   "A": 0.5,
+   "A_wl": -22.0,
+   "B": 794.5,
+   "B_tt": 62.0,
+   "B_tt_wl": 22.0
+  },
+  {
+   "tag": "00JYPQYV8VRQ",
+   "k": 0,
+   "Aplus": -5.0,
+   "A": -5.0,
+   "A_wl": -64.0,
+   "B": 860.0,
+   "B_tt": 67.0,
+   "B_tt_wl": -39.0
+  },
+  {
+   "tag": "00LYPLCVRCCV",
+   "k": 0,
+   "Aplus": -30.0,
+   "A": -30.0,
+   "A_wl": -57.0,
+   "B": 730.0,
+   "B_tt": 21.0,
+   "B_tt_wl": -25.0
+  },
+  {
+   "tag": "00LYPLJLQ80J",
+   "k": 0,
+   "Aplus": -15.0,
+   "A": -15.0,
+   "A_wl": -51.0,
+   "B": 1202.0,
+   "B_tt": 57.0,
+   "B_tt_wl": 3.0
+  },
+  {
+   "tag": "00LYPLR200VU",
+   "k": 0,
+   "Aplus": 5.0,
+   "A": 5.0,
+   "A_wl": -7.0,
+   "B": 833.0,
+   "B_tt": 44.0,
+   "B_tt_wl": 23.0
+  },
+  {
+   "tag": "00LYPLY0GRQP",
+   "k": 0,
+   "Aplus": -1.0,
+   "A": -1.0,
+   "A_wl": -26.0,
+   "B": 677.5,
+   "B_tt": 35.0,
+   "B_tt_wl": -18.0
+  },
+  {
+   "tag": "00LYPQVCRJJL",
+   "k": 0,
+   "Aplus": 23.0,
+   "A": 23.0,
+   "A_wl": -41.0,
+   "B": 1914.0,
+   "B_tt": 248.0,
+   "B_tt_wl": 71.0
+  },
+  {
+   "tag": "00PYLLC9QJ0L",
+   "k": 0,
+   "Aplus": -10.0,
+   "A": -10.0,
+   "A_wl": -10.0,
+   "B": 837.5,
+   "B_tt": 15.0,
+   "B_tt_wl": -1.0
+  },
+  {
+   "tag": "00PYLLJPQ0G0",
+   "k": 0,
+   "Aplus": -10.0,
+   "A": -10.0,
+   "A_wl": -35.0,
+   "B": 873.5,
+   "B_tt": 55.0,
+   "B_tt_wl": -8.0
+  },
+  {
+   "tag": "00PYLLJPYJ0Q",
+   "k": 0,
+   "Aplus": -12.0,
+   "A": -12.0,
+   "A_wl": -50.0,
+   "B": 644.0,
+   "B_tt": 25.0,
+   "B_tt_wl": -31.0
+  },
+  {
+   "tag": "00QYPG00YLQP",
+   "k": 0,
+   "Aplus": 4.0,
+   "A": 4.0,
+   "A_wl": -52.0,
+   "B": 929.5,
+   "B_tt": 63.0,
+   "B_tt_wl": -36.0
+  },
+  {
+   "tag": "00QYPG28P8QV",
+   "k": 0,
+   "Aplus": 13.0,
+   "A": 13.0,
+   "A_wl": -47.0,
+   "B": 1282.5,
+   "B_tt": 97.0,
+   "B_tt_wl": -14.0
+  },
+  {
+   "tag": "00QYPQLC9CQY",
+   "k": 0,
+   "Aplus": 0.0,
+   "A": 0.0,
+   "A_wl": -42.0,
+   "B": 803.5,
+   "B_tt": 48.0,
+   "B_tt_wl": -3.0
+  },
+  {
+   "tag": "00QYPQP0802Q",
+   "k": 0,
+   "Aplus": -6.0,
+   "A": -6.0,
+   "A_wl": -33.0,
+   "B": 1403.0,
+   "B_tt": 170.0,
+   "B_tt_wl": 66.0
+  },
+  {
+   "tag": "00QYPQR0C02V",
+   "k": 0,
+   "Aplus": 10.0,
+   "A": 10.0,
+   "A_wl": -19.0,
+   "B": 953.5,
+   "B_tt": 83.5,
+   "B_tt_wl": 14.5
+  },
+  {
+   "tag": "00UYPL92ULUL",
+   "k": 0,
+   "Aplus": 6.0,
+   "A": 6.0,
+   "A_wl": -80.0,
+   "B": 1322.0,
+   "B_tt": 83.0,
+   "B_tt_wl": -47.0
+  },
+  {
+   "tag": "00UYPL9P0VQL",
+   "k": 0,
+   "Aplus": -6.0,
+   "A": -6.0,
+   "A_wl": -33.0,
+   "B": 789.0,
+   "B_tt": 47.0,
+   "B_tt_wl": 14.0
+  },
+  {
+   "tag": "00UYPQ9ULVP2",
+   "k": 0,
+   "Aplus": 1.0,
+   "A": 1.0,
+   "A_wl": -25.0,
+   "B": 1159.0,
+   "B_tt": 117.0,
+   "B_tt_wl": 23.0
+  },
+  {
+   "tag": "00UYPQ9VJ2VL",
+   "k": 0,
+   "Aplus": -17.0,
+   "A": -17.0,
+   "A_wl": -149.0,
+   "B": 1549.5,
+   "B_tt": 84.0,
+   "B_tt_wl": -86.0
+  },
+  {
+   "tag": "00VYPLPJGYLY",
+   "k": 0,
+   "Aplus": -4.5,
+   "A": -4.5,
+   "A_wl": -79.0,
+   "B": 1378.0,
+   "B_tt": 160.0,
+   "B_tt_wl": -4.0
+  },
+  {
+   "tag": "00VYPLPJRYRY",
+   "k": 0,
+   "Aplus": -6.0,
+   "A": -6.0,
+   "A_wl": -46.0,
+   "B": 757.0,
+   "B_tt": 21.0,
+   "B_tt_wl": -30.0
+  },
+  {
+   "tag": "00VYPLQPYCRU",
+   "k": 0,
+   "Aplus": -18.0,
+   "A": -18.0,
+   "A_wl": -30.0,
+   "B": 728.5,
+   "B_tt": 29.0,
+   "B_tt_wl": -5.0
+  },
+  {
+   "tag": "00VYPLRPJUVG",
+   "k": 0,
+   "Aplus": 3.0,
+   "A": 3.0,
+   "A_wl": 3.0,
+   "B": 250.5,
+   "B_tt": 26.0,
+   "B_tt_wl": 13.0
+  },
+  {
+   "tag": "00VYPQLPVVYU",
+   "k": 0,
+   "Aplus": -21.0,
+   "A": -21.0,
+   "A_wl": -68.0,
+   "B": 1352.0,
+   "B_tt": 51.0,
+   "B_tt_wl": -32.0
+  },
+  {
+   "tag": "00VYPQYLP2L9",
+   "k": 0,
+   "Aplus": 14.0,
+   "A": 14.0,
+   "A_wl": -81.0,
+   "B": 1078.5,
+   "B_tt": 78.0,
+   "B_tt_wl": -48.0
+  },
+  {
+   "tag": "00VYPQYU90CG",
+   "k": 0,
+   "Aplus": 37.0,
+   "A": 37.0,
+   "A_wl": 15.0,
+   "B": 669.5,
+   "B_tt": 120.0,
+   "B_tt_wl": 46.0
+  },
+  {
+   "tag": "00VYPQYYV8C0",
+   "k": 0,
+   "Aplus": -6.0,
+   "A": -6.0,
+   "A_wl": -38.0,
+   "B": 1020.5,
+   "B_tt": 128.0,
+   "B_tt_wl": 25.0
+  },
+  {
+   "tag": "00YYPLJ2J2LQ",
+   "k": 0,
+   "Aplus": 3.0,
+   "A": 3.0,
+   "A_wl": -9.0,
+   "B": 236.5,
+   "B_tt": 29.0,
+   "B_tt_wl": 1.0
+  },
+  {
+   "tag": "00YYPLR299UQ",
+   "k": 0,
+   "Aplus": 48.0,
+   "A": 48.0,
+   "A_wl": -24.0,
+   "B": 1730.5,
+   "B_tt": 207.0,
+   "B_tt_wl": 75.0
+  },
+  {
+   "tag": "01852645ef994048bbdecb079c42cbe5",
+   "k": 0,
+   "Aplus": 27.0,
+   "A": 27.0,
+   "A_wl": -15.0,
+   "B": 1323.5,
+   "B_tt": 144.0,
+   "B_tt_wl": 32.0
+  },
+  {
+   "tag": "020YPLR0U0RU",
+   "k": 0,
+   "Aplus": 2.0,
+   "A": 2.0,
+   "A_wl": -4.0,
+   "B": 495.0,
+   "B_tt": 29.0,
+   "B_tt_wl": 15.0
+  },
+  {
+   "tag": "020YPYL89Y8Y",
+   "k": 0,
+   "Aplus": 5.0,
+   "A": 5.0,
+   "A_wl": -52.0,
+   "B": 789.5,
+   "B_tt": 53.0,
+   "B_tt_wl": -36.0
+  },
+  {
+   "tag": "020YPYP8R2VV",
+   "k": 0,
+   "Aplus": -10.0,
+   "A": -10.0,
+   "A_wl": -22.0,
+   "B": 855.0,
+   "B_tt": 117.0,
+   "B_tt_wl": 54.0
+  },
+  {
+   "tag": "022YYLV9QLQJ",
+   "k": 0,
+   "Aplus": -19.0,
+   "A": -19.0,
+   "A_wl": -51.0,
+   "B": 864.5,
+   "B_tt": 58.0,
+   "B_tt_wl": -3.0
+  },
+  {
+   "tag": "022YYLV9V90G",
+   "k": 0,
+   "Aplus": -10.0,
+   "A": -10.0,
+   "A_wl": -24.0,
+   "B": 774.5,
+   "B_tt": 48.0,
+   "B_tt_wl": 16.0
+  },
+  {
+   "tag": "022YYQYV2C2J",
+   "k": 0,
+   "Aplus": 6.0,
+   "A": 6.0,
+   "A_wl": -80.0,
+   "B": 1360.0,
+   "B_tt": 108.0,
+   "B_tt_wl": -12.0
+  },
+  {
+   "tag": "022YYYUVGPUU",
+   "k": 0,
+   "Aplus": 119.0,
+   "A": 119.0,
+   "A_wl": 111.0,
+   "B": 1340.0,
+   "B_tt": 116.0,
+   "B_tt_wl": 68.0
+  },
+  {
+   "tag": "028YPV08RU2V",
+   "k": 0,
+   "Aplus": 26.0,
+   "A": 26.0,
+   "A_wl": -31.0,
+   "B": 1297.5,
+   "B_tt": 115.0,
+   "B_tt_wl": 41.0
+  },
+  {
+   "tag": "028YPV9P0PJ2",
+   "k": 0,
+   "Aplus": 14.0,
+   "A": 14.0,
+   "A_wl": -17.0,
+   "B": 951.5,
+   "B_tt": 102.0,
+   "B_tt_wl": 21.0
+  },
+  {
+   "tag": "029YPUPRUYQ0",
+   "k": 0,
+   "Aplus": -9.0,
+   "A": -9.0,
+   "A_wl": -24.0,
+   "B": 496.5,
+   "B_tt": 24.0,
+   "B_tt_wl": 1.0
+  },
+  {
+   "tag": "02CY8P2RJ989",
+   "k": 0,
+   "Aplus": -3.0,
+   "A": -3.0,
+   "A_wl": -59.0,
+   "B": 902.5,
+   "B_tt": 80.0,
+   "B_tt_wl": -25.0
+  },
+  {
+   "tag": "02CY8YRG9JP9",
+   "k": 0,
+   "Aplus": 10.0,
+   "A": 10.0,
+   "A_wl": 10.0,
+   "B": 417.0,
+   "B_tt": 50.0,
+   "B_tt_wl": 33.0
+  },
+  {
+   "tag": "02GY9GCC0V9Q",
+   "k": 0,
+   "Aplus": 18.0,
+   "A": 18.0,
+   "A_wl": -7.0,
+   "B": 934.0,
+   "B_tt": 105.0,
+   "B_tt_wl": 16.0
+  },
+  {
+   "tag": "02GY9GJURY8G",
+   "k": 0,
+   "Aplus": -6.0,
+   "A": -6.0,
+   "A_wl": -34.0,
+   "B": 699.5,
+   "B_tt": 30.0,
+   "B_tt_wl": -9.0
+  },
+  {
+   "tag": "02GY9GJVUP00",
+   "k": 0,
+   "Aplus": -10.0,
+   "A": -10.0,
+   "A_wl": -25.0,
+   "B": 1084.0,
+   "B_tt": 141.0,
+   "B_tt_wl": 54.0
+  },
+  {
+   "tag": "02GY9GY2U8UQ",
+   "k": 0,
+   "Aplus": 7.0,
+   "A": 7.0,
+   "A_wl": -27.0,
+   "B": 1326.5,
+   "B_tt": 114.0,
+   "B_tt_wl": 32.0
+  },
+  {
+   "tag": "02GY9QVU0G0R",
+   "k": 0,
+   "Aplus": 98.0,
+   "A": 98.0,
+   "A_wl": 63.0,
+   "B": 1039.0,
+   "B_tt": 68.0,
+   "B_tt_wl": 15.0
+  },
+  {
+   "tag": "02GY9R00Q82Q",
+   "k": 0,
+   "Aplus": -33.0,
+   "A": -33.0,
+   "A_wl": -64.0,
+   "B": 789.5,
+   "B_tt": 17.0,
+   "B_tt_wl": -51.0
+  },
+  {
+   "tag": "02GY9R02LUU8",
+   "k": 0,
+   "Aplus": -17.0,
+   "A": -17.0,
+   "A_wl": -55.0,
+   "B": 998.0,
+   "B_tt": 54.0,
+   "B_tt_wl": -21.0
+  },
+  {
+   "tag": "02JY9G08YCQG",
+   "k": 0,
+   "Aplus": -10.0,
+   "A": -10.0,
+   "A_wl": -15.0,
+   "B": 967.0,
+   "B_tt": 114.0,
+   "B_tt_wl": 51.0
+  },
+  {
+   "tag": "02JY9G99CGPC",
+   "k": 0,
+   "Aplus": -1.0,
+   "A": -1.0,
+   "A_wl": -5.0,
+   "B": 833.0,
+   "B_tt": 84.5,
+   "B_tt_wl": 43.0
+  },
+  {
+   "tag": "02JY9GL9VP9C",
+   "k": 0,
+   "Aplus": 4.0,
+   "A": 4.0,
+   "A_wl": -52.0,
+   "B": 901.0,
+   "B_tt": 54.0,
+   "B_tt_wl": -11.0
+  },
+  {
+   "tag": "02JY9GL9Y90C",
+   "k": 0,
+   "Aplus": 42.0,
+   "A": 42.0,
+   "A_wl": 38.0,
+   "B": 724.0,
+   "B_tt": 72.0,
+   "B_tt_wl": 40.0
+  },
+  {
+   "tag": "02JY9GQY2VCU",
+   "k": 0,
+   "Aplus": 9.0,
+   "A": 9.0,
+   "A_wl": -52.0,
+   "B": 1141.0,
+   "B_tt": 81.0,
+   "B_tt_wl": -12.0
+  },
+  {
+   "tag": "02JY9GQYLVLV",
+   "k": 0,
+   "Aplus": 0.0,
+   "A": 0.0,
+   "A_wl": -6.0,
+   "B": 932.5,
+   "B_tt": 34.0,
+   "B_tt_wl": 18.0
+  },
+  {
+   "tag": "02JY9QJPY29U",
+   "k": 0,
+   "Aplus": -12.0,
+   "A": -12.0,
+   "A_wl": -34.0,
+   "B": 821.5,
+   "B_tt": 81.0,
+   "B_tt_wl": 6.0
+  },
+  {
+   "tag": "02JY9R2JJ0GG",
+   "k": 0,
+   "Aplus": 1.0,
+   "A": 1.0,
+   "A_wl": -30.0,
+   "B": 884.0,
+   "B_tt": 81.0,
+   "B_tt_wl": 21.0
+  },
+  {
+   "tag": "02PP9CQ0Q2U2",
+   "k": 0,
+   "Aplus": 0.0,
+   "A": 0.0,
+   "A_wl": 0.0,
+   "B": 485.5,
+   "B_tt": 36.0,
+   "B_tt_wl": 24.0
+  },
+  {
+   "tag": "02PYPCUP2LRJ",
+   "k": 0,
+   "Aplus": 28.0,
+   "A": 28.0,
+   "A_wl": -15.0,
+   "B": 1023.0,
+   "B_tt": 101.0,
+   "B_tt_wl": 48.0
+  },
+  {
+   "tag": "02PYPULRYPQP",
+   "k": 0,
+   "Aplus": 11.0,
+   "A": 11.0,
+   "A_wl": -25.0,
+   "B": 850.0,
+   "B_tt": 76.0,
+   "B_tt_wl": 15.0
+  },
+  {
+   "tag": "02PYPUP2VP0P",
+   "k": 0,
+   "Aplus": 21.0,
+   "A": 21.0,
+   "A_wl": -37.0,
+   "B": 667.0,
+   "B_tt": 49.0,
+   "B_tt_wl": -3.0
+  },
+  {
+   "tag": "02QP8GGQLRYU",
+   "k": 0,
+   "Aplus": 4.0,
+   "A": 4.0,
+   "A_wl": -4.0,
+   "B": 592.5,
+   "B_tt": 58.0,
+   "B_tt_wl": 25.5
+  },
+  {
+   "tag": "02QY9G0RLQUY",
+   "k": 0,
+   "Aplus": 88.0,
+   "A": 88.0,
+   "A_wl": 59.0,
+   "B": 970.5,
+   "B_tt": 87.5,
+   "B_tt_wl": 9.0
+  },
+  {
+   "tag": "02QY9G22J9UJ",
+   "k": 0,
+   "Aplus": 0.0,
+   "A": 0.0,
+   "A_wl": -32.0,
+   "B": 961.5,
+   "B_tt": 95.0,
+   "B_tt_wl": 27.0
+  },
+  {
+   "tag": "02QY9LVGPVQP",
+   "k": 0,
+   "Aplus": -4.0,
+   "A": -4.0,
+   "A_wl": -43.0,
+   "B": 786.0,
+   "B_tt": 71.0,
+   "B_tt_wl": -3.0
+  },
+  {
+   "tag": "02QY9Q0QP2Q9",
+   "k": 0,
+   "Aplus": 15.0,
+   "A": 15.0,
+   "A_wl": 15.0,
+   "B": 872.5,
+   "B_tt": 68.0,
+   "B_tt_wl": 52.0
+  },
+  {
+   "tag": "02QY9Q980YV0",
+   "k": 0,
+   "Aplus": -3.0,
+   "A": -3.0,
+   "A_wl": -44.0,
+   "B": 823.0,
+   "B_tt": 69.0,
+   "B_tt_wl": -21.0
+  },
+  {
+   "tag": "02QY9Q98C0J8",
+   "k": 0,
+   "Aplus": -11.0,
+   "A": -11.0,
+   "A_wl": -24.0,
+   "B": 825.5,
+   "B_tt": 43.0,
+   "B_tt_wl": -19.0
+  },
+  {
+   "tag": "02QY9Q9P0CRP",
+   "k": 0,
+   "Aplus": -18.0,
+   "A": -18.0,
+   "A_wl": -57.0,
+   "B": 672.0,
+   "B_tt": 39.0,
+   "B_tt_wl": -28.0
+  },
+  {
+   "tag": "02QY9Q9PY29C",
+   "k": 0,
+   "Aplus": -5.5,
+   "A": -5.5,
+   "A_wl": -15.0,
+   "B": 902.5,
+   "B_tt": 80.5,
+   "B_tt_wl": 38.0
+  },
+  {
+   "tag": "02QY9Q9YY089",
+   "k": 0,
+   "Aplus": -7.0,
+   "A": -7.0,
+   "A_wl": -54.0,
+   "B": 1976.0,
+   "B_tt": 193.0,
+   "B_tt_wl": 66.0
+  },
+  {
+   "tag": "02QY9QV8Y908",
+   "k": 0,
+   "Aplus": 18.0,
+   "A": 18.0,
+   "A_wl": -25.0,
+   "B": 861.5,
+   "B_tt": 150.0,
+   "B_tt_wl": 33.0
+  },
+  {
+   "tag": "02RY9GC0U9RV",
+   "k": 0,
+   "Aplus": -23.0,
+   "A": -23.0,
+   "A_wl": -27.0,
+   "B": 973.5,
+   "B_tt": 36.0,
+   "B_tt_wl": 6.0
+  },
+  {
+   "tag": "02RY9GR9C92G",
+   "k": 0,
+   "Aplus": -6.0,
+   "A": -6.0,
+   "A_wl": -18.0,
+   "B": 1077.5,
+   "B_tt": 171.0,
+   "B_tt_wl": 57.0
+  },
+  {
+   "tag": "02RY9QV8UR8P",
+   "k": 0,
+   "Aplus": 15.0,
+   "A": 15.0,
+   "A_wl": -50.0,
+   "B": 921.5,
+   "B_tt": 53.0,
+   "B_tt_wl": -40.0
+  },
+  {
+   "tag": "02RY9RVV8R29",
+   "k": 0,
+   "Aplus": 8.5,
+   "A": 8.5,
+   "A_wl": -31.0,
+   "B": 1320.5,
+   "B_tt": 192.5,
+   "B_tt_wl": 37.0
+  },
+  {
+   "tag": "02UY8YV2CJLJ",
+   "k": 0,
+   "Aplus": 0.0,
+   "A": 0.0,
+   "A_wl": -24.0,
+   "B": 742.0,
+   "B_tt": 65.0,
+   "B_tt_wl": 9.0
+  },
+  {
+   "tag": "02VY8LCYLY2R",
+   "k": 0,
+   "Aplus": 4.0,
+   "A": 4.0,
+   "A_wl": -8.0,
+   "B": 657.5,
+   "B_tt": 71.5,
+   "B_tt_wl": 22.0
+  },
+  {
+   "tag": "02YYPCRQ2QLY",
+   "k": 0,
+   "Aplus": -6.0,
+   "A": -6.0,
+   "A_wl": -32.0,
+   "B": 1023.5,
+   "B_tt": 45.0,
+   "B_tt_wl": 8.0
+  },
+  {
+   "tag": "02YYPU0CV82L",
+   "k": 0,
+   "Aplus": 100.0,
+   "A": 100.0,
+   "A_wl": 100.0,
+   "B": 798.0,
+   "B_tt": 58.0,
+   "B_tt_wl": 42.0
+  }
+ ],
+ "ghost_delivered_by_base": {
+  "witch": [
+   12,
+   60.0
+  ],
+  "bowler": [
+   39,
+   195.0
+  ],
+  "giant": [
+   31,
+   155.0
+  ],
+  "graveyard": [
+   21,
+   105.0
+  ],
+  "giant_snowball": [
+   36,
+   72.0
+  ],
+  "guards": [
+   4,
+   12.0
+  ],
+  "zappies": [
+   30,
+   120.0
+  ],
+  "arrows": [
+   24,
+   72.0
+  ],
+  "archers": [
+   34,
+   102.0
+  ],
+  "elixir_golem": [
+   9,
+   27.0
+  ],
+  "night_witch": [
+   13,
+   52.0
+  ],
+  "electro_dragon": [
+   5,
+   25.0
+  ],
+  "skeleton_king": [
+   7,
+   28.0
+  ],
+  "goblin_machine": [
+   2,
+   10.0
+  ],
+  "lightning": [
+   25,
+   150.0
+  ],
+  "wall_breakers": [
+   19,
+   38.0
+  ],
+  "mega_knight": [
+   10,
+   70.0
+  ],
+  "prince": [
+   7,
+   35.0
+  ],
+  "minions": [
+   19,
+   57.0
+  ],
+  "bandit": [
+   4,
+   12.0
+  ],
+  "archer_queen": [
+   18,
+   90.0
+  ],
+  "zap": [
+   49,
+   98.0
+  ],
+  "mini_pekka": [
+   39,
+   156.0
+  ],
+  "skeleton_army": [
+   27,
+   81.0
+  ],
+  "sparky": [
+   15,
+   90.0
+  ],
+  "minion_horde": [
+   14,
+   70.0
+  ],
+  "inferno_dragon": [
+   35,
+   140.0
+  ],
+  "poison": [
+   17,
+   68.0
+  ],
+  "valkyrie": [
+   31,
+   124.0
+  ],
+  "tombstone": [
+   49,
+   147.0
+  ],
+  "mortar": [
+   6,
+   24.0
+  ],
+  "skeleton_barrel": [
+   26,
+   78.0
+  ],
+  "cannon_cart": [
+   12,
+   60.0
+  ],
+  "rascals": [
+   21,
+   105.0
+  ],
+  "barbarian_barrel": [
+   112,
+   224.0
+  ],
+  "goblins": [
+   10,
+   20.0
+  ],
+  "skeletons": [
+   133,
+   133.0
+  ],
+  "electro_spirit": [
+   97,
+   97.0
+  ],
+  "royal_hogs": [
+   49,
+   245.0
+  ],
+  "goblinstein": [
+   33,
+   165.0
+  ],
+  "bomb_tower": [
+   11,
+   44.0
+  ],
+  "musketeer": [
+   44,
+   176.0
+  ],
+  "ice_golem": [
+   40,
+   80.0
+  ],
+  "miner": [
+   31,
+   93.0
+  ],
+  "balloon": [
+   37,
+   185.0
+  ],
+  "bats": [
+   18,
+   36.0
+  ],
+  "lumberjack": [
+   23,
+   92.0
+  ],
+  "rage": [
+   12,
+   24.0
+  ],
+  "elixir_collector": [
+   10,
+   60.0
+  ],
+  "three_musketeers": [
+   2,
+   18.0
+  ],
+  "golden_knight": [
+   33,
+   132.0
+  ],
+  "heal_spirit": [
+   6,
+   6.0
+  ],
+  "elite_barbarians": [
+   2,
+   12.0
+  ],
+  "royal_ghost": [
+   49,
+   147.0
+  ],
+  "ram_rider": [
+   12,
+   60.0
+  ],
+  "baby_dragon": [
+   48,
+   192.0
+  ],
+  "mighty_miner": [
+   13,
+   52.0
+  ],
+  "firecracker": [
+   16,
+   48.0
+  ],
+  "hog_rider": [
+   34,
+   136.0
+  ],
+  "tesla": [
+   16,
+   64.0
+  ],
+  "princess": [
+   39,
+   117.0
+  ],
+  "the_log": [
+   36,
+   72.0
+  ],
+  "freeze": [
+   10,
+   40.0
+  ],
+  "dark_prince": [
+   22,
+   88.0
+  ],
+  "dart_goblin": [
+   38,
+   114.0
+  ],
+  "goblin_gang": [
+   25,
+   75.0
+  ],
+  "berserker": [
+   45,
+   90.0
+  ],
+  "rocket": [
+   20,
+   120.0
+  ],
+  "vines": [
+   14,
+   42.0
+  ],
+  "electro_wizard": [
+   10,
+   40.0
+  ],
+  "magic_archer": [
+   3,
+   12.0
+  ],
+  "barbarians": [
+   14,
+   70.0
+  ],
+  "ice_wizard": [
+   20,
+   60.0
+  ],
+  "knight": [
+   47,
+   141.0
+  ],
+  "suspicious_bush": [
+   19,
+   38.0
+  ],
+  "giant_skeleton": [
+   26,
+   156.0
+  ],
+  "fisherman": [
+   4,
+   12.0
+  ],
+  "fireball": [
+   23,
+   92.0
+  ],
+  "lava_hound": [
+   16,
+   112.0
+  ],
+  "skeleton_dragons": [
+   11,
+   44.0
+  ],
+  "mega_minion": [
+   16,
+   48.0
+  ],
+  "goblin_barrel": [
+   30,
+   90.0
+  ],
+  "executioner": [
+   10,
+   50.0
+  ],
+  "fire_spirit": [
+   11,
+   11.0
+  ],
+  "mother_witch": [
+   22,
+   88.0
+  ],
+  "cannon": [
+   11,
+   33.0
+  ],
+  "earthquake": [
+   2,
+   6.0
+  ],
+  "goblin_hut": [
+   15,
+   60.0
+  ],
+  "ice_spirit": [
+   24,
+   24.0
+  ],
+  "pekka": [
+   16,
+   112.0
+  ],
+  "tornado": [
+   11,
+   33.0
+  ],
+  "golem": [
+   7,
+   56.0
+  ],
+  "phoenix": [
+   8,
+   32.0
+  ],
+  "goblin_cage": [
+   8,
+   32.0
+  ],
+  "flying_machine": [
+   7,
+   28.0
+  ],
+  "wizard": [
+   14,
+   70.0
+  ],
+  "royal_recruits": [
+   4,
+   28.0
+  ],
+  "battle_ram": [
+   19,
+   76.0
+  ],
+  "furnace": [
+   5,
+   20.0
+  ],
+  "goblin_curse": [
+   5,
+   10.0
+  ],
+  "electro_giant": [
+   5,
+   35.0
+  ],
+  "bomber": [
+   18,
+   36.0
+  ],
+  "goblin_drill": [
+   14,
+   56.0
+  ],
+  "spirit_empress": [
+   3,
+   9.0
+  ],
+  "spear_goblins": [
+   5,
+   10.0
+  ],
+  "little_prince": [
+   7,
+   21.0
+  ],
+  "rune_giant": [
+   9,
+   36.0
+  ],
+  "x_bow": [
+   4,
+   24.0
+  ],
+  "goblin_giant": [
+   3,
+   18.0
+  ],
+  "hunter": [
+   2,
+   8.0
+  ],
+  "inferno_tower": [
+   5,
+   25.0
+  ]
+ },
+ "ghost_scripted_by_base": {
+  "witch": [
+   20,
+   100.0
+  ],
+  "bowler": [
+   70,
+   350.0
+  ],
+  "giant": [
+   54,
+   270.0
+  ],
+  "graveyard": [
+   40,
+   200.0
+  ],
+  "giant_snowball": [
+   59,
+   118.0
+  ],
+  "guards": [
+   4,
+   12.0
+  ],
+  "zappies": [
+   53,
+   212.0
+  ],
+  "arrows": [
+   41,
+   123.0
+  ],
+  "archers": [
+   48,
+   144.0
+  ],
+  "elixir_golem": [
+   13,
+   39.0
+  ],
+  "night_witch": [
+   18,
+   72.0
+  ],
+  "electro_dragon": [
+   8,
+   40.0
+  ],
+  "skeleton_king": [
+   14,
+   56.0
+  ],
+  "goblin_machine": [
+   2,
+   10.0
+  ],
+  "lightning": [
+   51,
+   306.0
+  ],
+  "wall_breakers": [
+   25,
+   50.0
+  ],
+  "mega_knight": [
+   14,
+   98.0
+  ],
+  "prince": [
+   7,
+   35.0
+  ],
+  "minions": [
+   31,
+   93.0
+  ],
+  "bandit": [
+   4,
+   12.0
+  ],
+  "archer_queen": [
+   26,
+   130.0
+  ],
+  "zap": [
+   69,
+   138.0
+  ],
+  "mini_pekka": [
+   62,
+   248.0
+  ],
+  "skeleton_army": [
+   38,
+   114.0
+  ],
+  "sparky": [
+   24,
+   144.0
+  ],
+  "minion_horde": [
+   26,
+   130.0
+  ],
+  "inferno_dragon": [
+   53,
+   212.0
+  ],
+  "poison": [
+   38,
+   152.0
+  ],
+  "valkyrie": [
+   53,
+   212.0
+  ],
+  "tombstone": [
+   67,
+   201.0
+  ],
+  "mortar": [
+   13,
+   52.0
+  ],
+  "skeleton_barrel": [
+   38,
+   114.0
+  ],
+  "cannon_cart": [
+   20,
+   100.0
+  ],
+  "rascals": [
+   34,
+   170.0
+  ],
+  "barbarian_barrel": [
+   216,
+   432.0
+  ],
+  "goblins": [
+   19,
+   38.0
+  ],
+  "skeletons": [
+   212,
+   212.0
+  ],
+  "electro_spirit": [
+   171,
+   171.0
+  ],
+  "royal_hogs": [
+   76,
+   380.0
+  ],
+  "goblinstein": [
+   54,
+   270.0
+  ],
+  "bomb_tower": [
+   20,
+   80.0
+  ],
+  "musketeer": [
+   72,
+   288.0
+  ],
+  "ice_golem": [
+   54,
+   108.0
+  ],
+  "miner": [
+   51,
+   153.0
+  ],
+  "balloon": [
+   64,
+   320.0
+  ],
+  "bats": [
+   20,
+   40.0
+  ],
+  "three_musketeers": [
+   3,
+   27.0
+  ],
+  "lumberjack": [
+   37,
+   148.0
+  ],
+  "rage": [
+   17,
+   34.0
+  ],
+  "heal_spirit": [
+   14,
+   14.0
+  ],
+  "elixir_collector": [
+   13,
+   78.0
+  ],
+  "golden_knight": [
+   43,
+   172.0
+  ],
+  "elite_barbarians": [
+   2,
+   12.0
+  ],
+  "royal_ghost": [
+   77,
+   231.0
+  ],
+  "ram_rider": [
+   19,
+   95.0
+  ],
+  "baby_dragon": [
+   82,
+   328.0
+  ],
+  "mighty_miner": [
+   25,
+   100.0
+  ],
+  "firecracker": [
+   41,
+   123.0
+  ],
+  "hog_rider": [
+   60,
+   240.0
+  ],
+  "tesla": [
+   28,
+   112.0
+  ],
+  "princess": [
+   51,
+   153.0
+  ],
+  "the_log": [
+   60,
+   120.0
+  ],
+  "freeze": [
+   26,
+   104.0
+  ],
+  "dark_prince": [
+   30,
+   120.0
+  ],
+  "dart_goblin": [
+   52,
+   156.0
+  ],
+  "goblin_gang": [
+   39,
+   117.0
+  ],
+  "berserker": [
+   66,
+   132.0
+  ],
+  "rocket": [
+   24,
+   144.0
+  ],
+  "vines": [
+   32,
+   96.0
+  ],
+  "electro_wizard": [
+   13,
+   52.0
+  ],
+  "magic_archer": [
+   3,
+   12.0
+  ],
+  "barbarians": [
+   14,
+   70.0
+  ],
+  "ice_wizard": [
+   30,
+   90.0
+  ],
+  "knight": [
+   75,
+   225.0
+  ],
+  "suspicious_bush": [
+   25,
+   50.0
+  ],
+  "giant_skeleton": [
+   48,
+   288.0
+  ],
+  "fisherman": [
+   6,
+   18.0
+  ],
+  "fireball": [
+   43,
+   172.0
+  ],
+  "lava_hound": [
+   18,
+   126.0
+  ],
+  "skeleton_dragons": [
+   11,
+   44.0
+  ],
+  "mega_minion": [
+   19,
+   57.0
+  ],
+  "goblin_barrel": [
+   41,
+   123.0
+  ],
+  "executioner": [
+   15,
+   75.0
+  ],
+  "fire_spirit": [
+   18,
+   18.0
+  ],
+  "mother_witch": [
+   40,
+   160.0
+  ],
+  "tornado": [
+   28,
+   84.0
+  ],
+  "cannon": [
+   19,
+   57.0
+  ],
+  "earthquake": [
+   17,
+   51.0
+  ],
+  "goblin_hut": [
+   19,
+   76.0
+  ],
+  "ice_spirit": [
+   39,
+   39.0
+  ],
+  "pekka": [
+   20,
+   140.0
+  ],
+  "golem": [
+   9,
+   72.0
+  ],
+  "phoenix": [
+   11,
+   44.0
+  ],
+  "goblin_cage": [
+   9,
+   36.0
+  ],
+  "flying_machine": [
+   8,
+   32.0
+  ],
+  "wizard": [
+   29,
+   145.0
+  ],
+  "royal_recruits": [
+   4,
+   28.0
+  ],
+  "battle_ram": [
+   39,
+   156.0
+  ],
+  "furnace": [
+   5,
+   20.0
+  ],
+  "goblin_curse": [
+   8,
+   16.0
+  ],
+  "electro_giant": [
+   11,
+   77.0
+  ],
+  "bomber": [
+   21,
+   42.0
+  ],
+  "goblin_drill": [
+   17,
+   68.0
+  ],
+  "spirit_empress": [
+   3,
+   9.0
+  ],
+  "spear_goblins": [
+   6,
+   12.0
+  ],
+  "little_prince": [
+   13,
+   39.0
+  ],
+  "rune_giant": [
+   15,
+   60.0
+  ],
+  "x_bow": [
+   10,
+   60.0
+  ],
+  "goblin_giant": [
+   3,
+   18.0
+  ],
+  "hunter": [
+   2,
+   8.0
+  ],
+  "inferno_tower": [
+   5,
+   25.0
+  ]
+ },
+ "estimator": "v2",
+ "finished": "2026-09-17 19:26:05",
+ "v2_params": {
+  "match_radius": 0.07,
+  "cluster_radius": 0.1,
+  "forget_s": 6.0,
+  "r_spawn": 0.12,
+  "death_spawn_window_s": 1.0,
+  "spawns": {
+   "tombstone": [
+    "skeletons",
+    "tombstone"
+   ],
+   "witch": [
+    "skeletons",
+    "witch"
+   ],
+   "night_witch": [
+    "bats",
+    "night_witch"
+   ],
+   "goblin_hut": [
+    "goblin_hut",
+    "spear_goblins"
+   ],
+   "barbarian_hut": [
+    "barbarian_hut",
+    "barbarians"
+   ],
+   "furnace": [
+    "fire_spirit",
+    "furnace"
+   ],
+   "graveyard": [
+    "graveyard",
+    "skeletons"
+   ],
+   "goblin_drill": [
+    "goblin_drill",
+    "goblins"
+   ],
+   "mother_witch": [
+    "mother_witch",
+    "mother_witch_hog"
+   ],
+   "golem": [
+    "golem",
+    "golemite"
+   ],
+   "lava_hound": [
+    "lava_hound",
+    "lava_pups"
+   ],
+   "elixir_golem": [
+    "elixir_blob",
+    "elixir_golem",
+    "elixir_golemite"
+   ],
+   "skeleton_king": [
+    "skeleton_king",
+    "skeletons"
+   ],
+   "skeleton_barrel": [
+    "skeleton_barrel",
+    "skeletons"
+   ],
+   "battle_ram": [
+    "barbarians",
+    "battle_ram"
+   ],
+   "goblin_gang": [
+    "goblin_gang",
+    "goblins",
+    "spear_goblins"
+   ]
+  },
+  "body_group_window_s": 1.0,
+  "r_body": 0.2,
+  "bodies": {
+   "skeletons": 3,
+   "skeleton_army": 15,
+   "wall_breakers": 2,
+   "barbarians": 5,
+   "elite_barbarians": 2,
+   "royal_hogs": 4,
+   "goblin_gang": 6,
+   "goblins": 4,
+   "spear_goblins": 3,
+   "minions": 3,
+   "minion_horde": 6,
+   "guards": 3,
+   "three_musketeers": 3,
+   "royal_recruits": 6,
+   "rascals": 3,
+   "bats": 5,
+   "zappies": 3,
+   "lava_pups": 6,
+   "goblin_giant": 1,
+   "archers": 2,
+   "dart_goblin": 1,
+   "firecracker": 1,
+   "ice_spirit": 1,
+   "fire_spirit": 1,
+   "heal_spirit": 1,
+   "electro_spirit": 1,
+   "mini_pekka": 1
+  },
+  "speed_k": 1.5,
+  "speed_radius_cap": 0.25,
+  "speed_axis": "x:/18 (larger of x:/18, y:/32 per-axis normalized speed)",
+  "singleton_window_s": 4.0,
+  "singleton_double_window_s": 0.5
+ },
+ "Aplus_perfect_detection_with_spells": {
+  "n_ticks": 74229,
+  "mae": 1.4026629578736074,
+  "mean_bias": -0.12069085802045022,
+  "p90_abs_err": 3.9822,
+  "share_abs_err_le_1_0": 0.5594848374624473,
+  "share_abs_err_le_2_0": 0.7079173907771895,
+  "by_phase": {
+   "single": {
+    "n": 45611,
+    "mae": 1.2733856218894566,
+    "mean_bias": -0.19839169498585868,
+    "p90_abs_err": 3.5002
+   },
+   "double": {
+    "n": 22173,
+    "mae": 1.6134627339557122,
+    "mean_bias": -0.07359176475894105,
+    "p90_abs_err": 4.3558
+   },
+   "overtime": {
+    "n": 6445,
+    "mae": 1.59233016291699,
+    "mean_bias": 0.26715781225756396,
+    "p90_abs_err": 4.303120000000001
+   }
+  },
+  "opp_play_ticks": {
+   "n": 2362,
+   "mae": 1.8535272226926331,
+   "bias": 0.4372343353090601
+  },
+  "my_play_ticks": {
+   "n": 3456,
+   "mae": 1.4755614004629631,
+   "bias": -0.15549230324074073
+  },
+  "by_match": {
+   "n_matches": 100,
+   "mae_median": 1.3846081363004172,
+   "mae_p90": 2.2719795126412254
+  },
+  "by_truth_cap": {
+   "near_cap_ge_9": {
+    "n": 15444,
+    "mae": 0.6770165954415955,
+    "mean_bias": -0.5764147176897177
+   },
+   "below_cap": {
+    "n": 58785,
+    "mae": 1.5933048294632985,
+    "mean_bias": -0.0009630483966998339
+   }
+  },
+  "overcharge": {
+   "top": [
+    {
+     "base": "miner",
+     "ghost_plays": 31,
+     "ghost_elixir": 93.0,
+     "charges": 228,
+     "charged_elixir": 684.0,
+     "over_charge": 591.0
+    },
+    {
+     "base": "barbarians",
+     "ghost_plays": 14,
+     "ghost_elixir": 70.0,
+     "charges": 125,
+     "charged_elixir": 625.0,
+     "over_charge": 555.0
+    },
+    {
+     "base": "barbarian_barrel",
+     "ghost_plays": 112,
+     "ghost_elixir": 224.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -224.0
+    },
+    {
+     "base": "goblinstein",
+     "ghost_plays": 33,
+     "ghost_elixir": 165.0,
+     "charges": 65,
+     "charged_elixir": 325.0,
+     "over_charge": 160.0
+    },
+    {
+     "base": "lightning",
+     "ghost_plays": 25,
+     "ghost_elixir": 150.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -150.0
+    },
+    {
+     "base": "rocket",
+     "ghost_plays": 20,
+     "ghost_elixir": 120.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -120.0
+    },
+    {
+     "base": "witch",
+     "ghost_plays": 12,
+     "ghost_elixir": 60.0,
+     "charges": 35,
+     "charged_elixir": 175.0,
+     "over_charge": 115.0
+    },
+    {
+     "base": "graveyard",
+     "ghost_plays": 21,
+     "ghost_elixir": 105.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -105.0
+    },
+    {
+     "base": "zap",
+     "ghost_plays": 49,
+     "ghost_elixir": 98.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -98.0
+    },
+    {
+     "base": "fireball",
+     "ghost_plays": 23,
+     "ghost_elixir": 92.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -92.0
+    },
+    {
+     "base": "goblin_barrel",
+     "ghost_plays": 30,
+     "ghost_elixir": 90.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -90.0
+    },
+    {
+     "base": "goblins",
+     "ghost_plays": 10,
+     "ghost_elixir": 20.0,
+     "charges": 50,
+     "charged_elixir": 100.0,
+     "over_charge": 80.0
+    },
+    {
+     "base": "arrows",
+     "ghost_plays": 24,
+     "ghost_elixir": 72.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -72.0
+    },
+    {
+     "base": "giant_snowball",
+     "ghost_plays": 36,
+     "ghost_elixir": 72.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -72.0
+    },
+    {
+     "base": "royal_ghost",
+     "ghost_plays": 49,
+     "ghost_elixir": 147.0,
+     "charges": 73,
+     "charged_elixir": 219.0,
+     "over_charge": 72.0
+    },
+    {
+     "base": "the_log",
+     "ghost_plays": 36,
+     "ghost_elixir": 72.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -72.0
+    },
+    {
+     "base": "poison",
+     "ghost_plays": 17,
+     "ghost_elixir": 68.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -68.0
+    },
+    {
+     "base": "hog_rider",
+     "ghost_plays": 34,
+     "ghost_elixir": 136.0,
+     "charges": 50,
+     "charged_elixir": 200.0,
+     "over_charge": 64.0
+    },
+    {
+     "base": "lumberjack",
+     "ghost_plays": 23,
+     "ghost_elixir": 92.0,
+     "charges": 35,
+     "charged_elixir": 140.0,
+     "over_charge": 48.0
+    },
+    {
+     "base": "skeletons",
+     "ghost_plays": 133,
+     "ghost_elixir": 133.0,
+     "charges": 178,
+     "charged_elixir": 178.0,
+     "over_charge": 45.0
+    },
+    {
+     "base": "skeleton_barrel",
+     "ghost_plays": 26,
+     "ghost_elixir": 78.0,
+     "charges": 40,
+     "charged_elixir": 120.0,
+     "over_charge": 42.0
+    },
+    {
+     "base": "vines",
+     "ghost_plays": 14,
+     "ghost_elixir": 42.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -42.0
+    },
+    {
+     "base": "freeze",
+     "ghost_plays": 10,
+     "ghost_elixir": 40.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -40.0
+    },
+    {
+     "base": "royal_recruit",
+     "ghost_plays": 0,
+     "ghost_elixir": 0.0,
+     "charges": 24,
+     "charged_elixir": 36.0,
+     "over_charge": 36.0
+    },
+    {
+     "base": "skeleton_dragons",
+     "ghost_plays": 11,
+     "ghost_elixir": 44.0,
+     "charges": 20,
+     "charged_elixir": 80.0,
+     "over_charge": 36.0
+    }
+   ],
+   "n_bases": 115,
+   "total_charged_elixir": 8578.5,
+   "total_ghost_elixir": 7989.0,
+   "total_over_charge": 589.5,
+   "over_charge_share_from_bases_never_played": 0.0079
+  }
+ },
+ "A_perfect_detection": {
+  "n_ticks": 74229,
+  "mae": 1.4026629578736074,
+  "mean_bias": -0.12069085802045022,
+  "p90_abs_err": 3.9822,
+  "share_abs_err_le_1_0": 0.5594848374624473,
+  "share_abs_err_le_2_0": 0.7079173907771895,
+  "by_phase": {
+   "single": {
+    "n": 45611,
+    "mae": 1.2733856218894566,
+    "mean_bias": -0.19839169498585868,
+    "p90_abs_err": 3.5002
+   },
+   "double": {
+    "n": 22173,
+    "mae": 1.6134627339557122,
+    "mean_bias": -0.07359176475894105,
+    "p90_abs_err": 4.3558
+   },
+   "overtime": {
+    "n": 6445,
+    "mae": 1.59233016291699,
+    "mean_bias": 0.26715781225756396,
+    "p90_abs_err": 4.303120000000001
+   }
+  },
+  "opp_play_ticks": {
+   "n": 2362,
+   "mae": 1.8535272226926331,
+   "bias": 0.4372343353090601
+  },
+  "my_play_ticks": {
+   "n": 3456,
+   "mae": 1.4755614004629631,
+   "bias": -0.15549230324074073
+  },
+  "by_match": {
+   "n_matches": 100,
+   "mae_median": 1.3846081363004172,
+   "mae_p90": 2.2719795126412254
+  },
+  "by_truth_cap": {
+   "near_cap_ge_9": {
+    "n": 15444,
+    "mae": 0.6770165954415955,
+    "mean_bias": -0.5764147176897177
+   },
+   "below_cap": {
+    "n": 58785,
+    "mae": 1.5933048294632985,
+    "mean_bias": -0.0009630483966998339
+   }
+  },
+  "overcharge": {
+   "top": [
+    {
+     "base": "miner",
+     "ghost_plays": 31,
+     "ghost_elixir": 93.0,
+     "charges": 228,
+     "charged_elixir": 684.0,
+     "over_charge": 591.0
+    },
+    {
+     "base": "barbarians",
+     "ghost_plays": 14,
+     "ghost_elixir": 70.0,
+     "charges": 125,
+     "charged_elixir": 625.0,
+     "over_charge": 555.0
+    },
+    {
+     "base": "barbarian_barrel",
+     "ghost_plays": 112,
+     "ghost_elixir": 224.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -224.0
+    },
+    {
+     "base": "goblinstein",
+     "ghost_plays": 33,
+     "ghost_elixir": 165.0,
+     "charges": 65,
+     "charged_elixir": 325.0,
+     "over_charge": 160.0
+    },
+    {
+     "base": "lightning",
+     "ghost_plays": 25,
+     "ghost_elixir": 150.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -150.0
+    },
+    {
+     "base": "rocket",
+     "ghost_plays": 20,
+     "ghost_elixir": 120.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -120.0
+    },
+    {
+     "base": "witch",
+     "ghost_plays": 12,
+     "ghost_elixir": 60.0,
+     "charges": 35,
+     "charged_elixir": 175.0,
+     "over_charge": 115.0
+    },
+    {
+     "base": "graveyard",
+     "ghost_plays": 21,
+     "ghost_elixir": 105.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -105.0
+    },
+    {
+     "base": "zap",
+     "ghost_plays": 49,
+     "ghost_elixir": 98.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -98.0
+    },
+    {
+     "base": "fireball",
+     "ghost_plays": 23,
+     "ghost_elixir": 92.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -92.0
+    },
+    {
+     "base": "goblin_barrel",
+     "ghost_plays": 30,
+     "ghost_elixir": 90.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -90.0
+    },
+    {
+     "base": "goblins",
+     "ghost_plays": 10,
+     "ghost_elixir": 20.0,
+     "charges": 50,
+     "charged_elixir": 100.0,
+     "over_charge": 80.0
+    },
+    {
+     "base": "arrows",
+     "ghost_plays": 24,
+     "ghost_elixir": 72.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -72.0
+    },
+    {
+     "base": "giant_snowball",
+     "ghost_plays": 36,
+     "ghost_elixir": 72.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -72.0
+    },
+    {
+     "base": "royal_ghost",
+     "ghost_plays": 49,
+     "ghost_elixir": 147.0,
+     "charges": 73,
+     "charged_elixir": 219.0,
+     "over_charge": 72.0
+    },
+    {
+     "base": "the_log",
+     "ghost_plays": 36,
+     "ghost_elixir": 72.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -72.0
+    },
+    {
+     "base": "poison",
+     "ghost_plays": 17,
+     "ghost_elixir": 68.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -68.0
+    },
+    {
+     "base": "hog_rider",
+     "ghost_plays": 34,
+     "ghost_elixir": 136.0,
+     "charges": 50,
+     "charged_elixir": 200.0,
+     "over_charge": 64.0
+    },
+    {
+     "base": "lumberjack",
+     "ghost_plays": 23,
+     "ghost_elixir": 92.0,
+     "charges": 35,
+     "charged_elixir": 140.0,
+     "over_charge": 48.0
+    },
+    {
+     "base": "skeletons",
+     "ghost_plays": 133,
+     "ghost_elixir": 133.0,
+     "charges": 178,
+     "charged_elixir": 178.0,
+     "over_charge": 45.0
+    },
+    {
+     "base": "skeleton_barrel",
+     "ghost_plays": 26,
+     "ghost_elixir": 78.0,
+     "charges": 40,
+     "charged_elixir": 120.0,
+     "over_charge": 42.0
+    },
+    {
+     "base": "vines",
+     "ghost_plays": 14,
+     "ghost_elixir": 42.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -42.0
+    },
+    {
+     "base": "freeze",
+     "ghost_plays": 10,
+     "ghost_elixir": 40.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -40.0
+    },
+    {
+     "base": "royal_recruit",
+     "ghost_plays": 0,
+     "ghost_elixir": 0.0,
+     "charges": 24,
+     "charged_elixir": 36.0,
+     "over_charge": 36.0
+    },
+    {
+     "base": "skeleton_dragons",
+     "ghost_plays": 11,
+     "ghost_elixir": 44.0,
+     "charges": 20,
+     "charged_elixir": 80.0,
+     "over_charge": 36.0
+    }
+   ],
+   "n_bases": 115,
+   "total_charged_elixir": 8578.5,
+   "total_ghost_elixir": 7989.0,
+   "total_over_charge": 589.5,
+   "over_charge_share_from_bases_never_played": 0.0079
+  }
+ },
+ "A_wl_live_whitelist": {
+  "n_ticks": 74229,
+  "mae": 2.2637178878874833,
+  "mean_bias": 1.7156089762761184,
+  "p90_abs_err": 5.4783,
+  "share_abs_err_le_1_0": 0.3933907233022134,
+  "share_abs_err_le_2_0": 0.5294830861253688,
+  "by_phase": {
+   "single": {
+    "n": 45611,
+    "mae": 2.0863940014470193,
+    "mean_bias": 1.5209379579487403,
+    "p90_abs_err": 5.1274
+   },
+   "double": {
+    "n": 22173,
+    "mae": 2.610495260000902,
+    "mean_bias": 2.033537175844496,
+    "p90_abs_err": 5.902819999999999
+   },
+   "overtime": {
+    "n": 6445,
+    "mae": 2.325599208688906,
+    "mean_bias": 1.9995062373933281,
+    "p90_abs_err": 5.57706
+   }
+  },
+  "opp_play_ticks": {
+   "n": 2362,
+   "mae": 3.3786663420829806,
+   "bias": 2.979167019475021
+  },
+  "my_play_ticks": {
+   "n": 3456,
+   "mae": 2.4738756655092593,
+   "bias": 1.8425758391203704
+  },
+  "by_match": {
+   "n_matches": 100,
+   "mae_median": 2.1045744192380353,
+   "mae_p90": 3.4120339777468707
+  },
+  "by_truth_cap": {
+   "near_cap_ge_9": {
+    "n": 15444,
+    "mae": 0.44178563843563845,
+    "mean_bias": -0.18465297850297852
+   },
+   "below_cap": {
+    "n": 58785,
+    "mae": 2.742376077230586,
+    "mean_bias": 2.21484595219869
+   }
+  },
+  "overcharge": {
+   "top": [
+    {
+     "base": "miner",
+     "ghost_plays": 31,
+     "ghost_elixir": 93.0,
+     "charges": 228,
+     "charged_elixir": 684.0,
+     "over_charge": 591.0
+    },
+    {
+     "base": "barbarians",
+     "ghost_plays": 14,
+     "ghost_elixir": 70.0,
+     "charges": 125,
+     "charged_elixir": 625.0,
+     "over_charge": 555.0
+    },
+    {
+     "base": "barbarian_barrel",
+     "ghost_plays": 112,
+     "ghost_elixir": 224.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -224.0
+    },
+    {
+     "base": "goblinstein",
+     "ghost_plays": 33,
+     "ghost_elixir": 165.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -165.0
+    },
+    {
+     "base": "lightning",
+     "ghost_plays": 25,
+     "ghost_elixir": 150.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -150.0
+    },
+    {
+     "base": "royal_ghost",
+     "ghost_plays": 49,
+     "ghost_elixir": 147.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -147.0
+    },
+    {
+     "base": "tombstone",
+     "ghost_plays": 49,
+     "ghost_elixir": 147.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -147.0
+    },
+    {
+     "base": "golden_knight",
+     "ghost_plays": 33,
+     "ghost_elixir": 132.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -132.0
+    },
+    {
+     "base": "rocket",
+     "ghost_plays": 20,
+     "ghost_elixir": 120.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -120.0
+    },
+    {
+     "base": "zappies",
+     "ghost_plays": 30,
+     "ghost_elixir": 120.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -120.0
+    },
+    {
+     "base": "witch",
+     "ghost_plays": 12,
+     "ghost_elixir": 60.0,
+     "charges": 35,
+     "charged_elixir": 175.0,
+     "over_charge": 115.0
+    },
+    {
+     "base": "dart_goblin",
+     "ghost_plays": 38,
+     "ghost_elixir": 114.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -114.0
+    },
+    {
+     "base": "graveyard",
+     "ghost_plays": 21,
+     "ghost_elixir": 105.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -105.0
+    },
+    {
+     "base": "rascals",
+     "ghost_plays": 21,
+     "ghost_elixir": 105.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -105.0
+    },
+    {
+     "base": "zap",
+     "ghost_plays": 49,
+     "ghost_elixir": 98.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -98.0
+    },
+    {
+     "base": "electro_spirit",
+     "ghost_plays": 97,
+     "ghost_elixir": 97.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -97.0
+    },
+    {
+     "base": "fireball",
+     "ghost_plays": 23,
+     "ghost_elixir": 92.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -92.0
+    },
+    {
+     "base": "lumberjack",
+     "ghost_plays": 23,
+     "ghost_elixir": 92.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -92.0
+    },
+    {
+     "base": "archer_queen",
+     "ghost_plays": 18,
+     "ghost_elixir": 90.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -90.0
+    },
+    {
+     "base": "berserker",
+     "ghost_plays": 45,
+     "ghost_elixir": 90.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -90.0
+    },
+    {
+     "base": "goblin_barrel",
+     "ghost_plays": 30,
+     "ghost_elixir": 90.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -90.0
+    },
+    {
+     "base": "dark_prince",
+     "ghost_plays": 22,
+     "ghost_elixir": 88.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -88.0
+    },
+    {
+     "base": "mother_witch",
+     "ghost_plays": 22,
+     "ghost_elixir": 88.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -88.0
+    },
+    {
+     "base": "skeleton_army",
+     "ghost_plays": 27,
+     "ghost_elixir": 81.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -81.0
+    },
+    {
+     "base": "goblins",
+     "ghost_plays": 10,
+     "ghost_elixir": 20.0,
+     "charges": 50,
+     "charged_elixir": 100.0,
+     "over_charge": 80.0
+    }
+   ],
+   "n_bases": 112,
+   "total_charged_elixir": 5112.0,
+   "total_ghost_elixir": 7989.0,
+   "total_over_charge": -2877.0,
+   "over_charge_share_from_bases_never_played": 0.007
+  }
+ },
+ "B_degraded_live": {
+  "n_ticks": 74229,
+  "mae": 5.728380114241065,
+  "mean_bias": -5.719079121367659,
+  "p90_abs_err": 9.0812,
+  "share_abs_err_le_1_0": 0.06116207951070336,
+  "share_abs_err_le_2_0": 0.1085963706907004,
+  "by_phase": {
+   "single": {
+    "n": 45611,
+    "mae": 5.571211878713468,
+    "mean_bias": -5.557480217491395,
+    "p90_abs_err": 9.0
+   },
+   "double": {
+    "n": 22173,
+    "mae": 5.874953713976458,
+    "mean_bias": -5.872088138727281,
+    "p90_abs_err": 9.1777
+   },
+   "overtime": {
+    "n": 6445,
+    "mae": 6.336390038789759,
+    "mean_bias": -6.336304670287044,
+    "p90_abs_err": 10.0
+   }
+  },
+  "opp_play_ticks": {
+   "n": 2362,
+   "mae": 3.9824158340389504,
+   "bias": -3.9071422523285353
+  },
+  "my_play_ticks": {
+   "n": 3456,
+   "mae": 5.476925462962964,
+   "bias": -5.464125694444444
+  },
+  "by_match": {
+   "n_matches": 100,
+   "mae_median": 5.750937766662358,
+   "mae_p90": 6.800035853773778
+  },
+  "by_truth_cap": {
+   "near_cap_ge_9": {
+    "n": 15444,
+    "mae": 8.222850110075111,
+    "mean_bias": -8.222163474488474
+   },
+   "below_cap": {
+    "n": 58785,
+    "mae": 5.073032753253381,
+    "mean_bias": -5.0614685957302035
+   }
+  },
+  "overcharge": {
+   "top": [
+    {
+     "base": "knight",
+     "ghost_plays": 47,
+     "ghost_elixir": 141.0,
+     "charges": 961,
+     "charged_elixir": 2883.0,
+     "over_charge": 2742.0
+    },
+    {
+     "base": "tesla",
+     "ghost_plays": 16,
+     "ghost_elixir": 64.0,
+     "charges": 633,
+     "charged_elixir": 2532.0,
+     "over_charge": 2468.0
+    },
+    {
+     "base": "ice_wizard",
+     "ghost_plays": 20,
+     "ghost_elixir": 60.0,
+     "charges": 717,
+     "charged_elixir": 2151.0,
+     "over_charge": 2091.0
+    },
+    {
+     "base": "wizard",
+     "ghost_plays": 14,
+     "ghost_elixir": 70.0,
+     "charges": 428,
+     "charged_elixir": 2140.0,
+     "over_charge": 2070.0
+    },
+    {
+     "base": "x_bow",
+     "ghost_plays": 4,
+     "ghost_elixir": 24.0,
+     "charges": 342,
+     "charged_elixir": 2052.0,
+     "over_charge": 2028.0
+    },
+    {
+     "base": "musketeer",
+     "ghost_plays": 44,
+     "ghost_elixir": 176.0,
+     "charges": 519,
+     "charged_elixir": 2076.0,
+     "over_charge": 1900.0
+    },
+    {
+     "base": "bowler",
+     "ghost_plays": 39,
+     "ghost_elixir": 195.0,
+     "charges": 416,
+     "charged_elixir": 2080.0,
+     "over_charge": 1885.0
+    },
+    {
+     "base": "balloon",
+     "ghost_plays": 37,
+     "ghost_elixir": 185.0,
+     "charges": 407,
+     "charged_elixir": 2035.0,
+     "over_charge": 1850.0
+    },
+    {
+     "base": "valkyrie",
+     "ghost_plays": 31,
+     "ghost_elixir": 124.0,
+     "charges": 483,
+     "charged_elixir": 1932.0,
+     "over_charge": 1808.0
+    },
+    {
+     "base": "giant",
+     "ghost_plays": 31,
+     "ghost_elixir": 155.0,
+     "charges": 386,
+     "charged_elixir": 1930.0,
+     "over_charge": 1775.0
+    },
+    {
+     "base": "mega_knight",
+     "ghost_plays": 10,
+     "ghost_elixir": 70.0,
+     "charges": 253,
+     "charged_elixir": 1771.0,
+     "over_charge": 1701.0
+    },
+    {
+     "base": "pekka",
+     "ghost_plays": 16,
+     "ghost_elixir": 112.0,
+     "charges": 254,
+     "charged_elixir": 1778.0,
+     "over_charge": 1666.0
+    },
+    {
+     "base": "royal_recruits",
+     "ghost_plays": 4,
+     "ghost_elixir": 28.0,
+     "charges": 230,
+     "charged_elixir": 1610.0,
+     "over_charge": 1582.0
+    },
+    {
+     "base": "goblin_giant",
+     "ghost_plays": 3,
+     "ghost_elixir": 18.0,
+     "charges": 263,
+     "charged_elixir": 1578.0,
+     "over_charge": 1560.0
+    },
+    {
+     "base": "barbarians",
+     "ghost_plays": 14,
+     "ghost_elixir": 70.0,
+     "charges": 319,
+     "charged_elixir": 1595.0,
+     "over_charge": 1525.0
+    },
+    {
+     "base": "goblin_cage",
+     "ghost_plays": 8,
+     "ghost_elixir": 32.0,
+     "charges": 389,
+     "charged_elixir": 1556.0,
+     "over_charge": 1524.0
+    },
+    {
+     "base": "goblinstein",
+     "ghost_plays": 33,
+     "ghost_elixir": 165.0,
+     "charges": 332,
+     "charged_elixir": 1660.0,
+     "over_charge": 1495.0
+    },
+    {
+     "base": "elite_barbarians",
+     "ghost_plays": 2,
+     "ghost_elixir": 12.0,
+     "charges": 246,
+     "charged_elixir": 1476.0,
+     "over_charge": 1464.0
+    },
+    {
+     "base": "goblin_drill",
+     "ghost_plays": 14,
+     "ghost_elixir": 56.0,
+     "charges": 373,
+     "charged_elixir": 1492.0,
+     "over_charge": 1436.0
+    },
+    {
+     "base": "mini_pekka",
+     "ghost_plays": 39,
+     "ghost_elixir": 156.0,
+     "charges": 385,
+     "charged_elixir": 1540.0,
+     "over_charge": 1384.0
+    },
+    {
+     "base": "elixir_collector",
+     "ghost_plays": 10,
+     "ghost_elixir": 60.0,
+     "charges": 238,
+     "charged_elixir": 1428.0,
+     "over_charge": 1368.0
+    },
+    {
+     "base": "boss_bandit",
+     "ghost_plays": 0,
+     "ghost_elixir": 0.0,
+     "charges": 226,
+     "charged_elixir": 1356.0,
+     "over_charge": 1356.0
+    },
+    {
+     "base": "dark_prince",
+     "ghost_plays": 22,
+     "ghost_elixir": 88.0,
+     "charges": 361,
+     "charged_elixir": 1444.0,
+     "over_charge": 1356.0
+    },
+    {
+     "base": "royal_giant",
+     "ghost_plays": 0,
+     "ghost_elixir": 0.0,
+     "charges": 225,
+     "charged_elixir": 1350.0,
+     "over_charge": 1350.0
+    },
+    {
+     "base": "magic_archer",
+     "ghost_plays": 3,
+     "ghost_elixir": 12.0,
+     "charges": 326,
+     "charged_elixir": 1304.0,
+     "over_charge": 1292.0
+    }
+   ],
+   "n_bases": 125,
+   "total_charged_elixir": 105026.0,
+   "total_ghost_elixir": 7989.0,
+   "total_over_charge": 97037.0,
+   "over_charge_share_from_bases_never_played": 0.0714
+  }
+ },
+ "B_tt_tracker_input_idealised": {
+  "n_ticks": 74229,
+  "mae": 3.2930584798394156,
+  "mean_bias": -3.01901580379636,
+  "p90_abs_err": 6.896559999999999,
+  "share_abs_err_le_1_0": 0.25002357569144135,
+  "share_abs_err_le_2_0": 0.38701855070120844,
+  "by_phase": {
+   "single": {
+    "n": 45611,
+    "mae": 3.138239394005832,
+    "mean_bias": -2.8726563811361294,
+    "p90_abs_err": 6.764
+   },
+   "double": {
+    "n": 22173,
+    "mae": 3.5442357055878775,
+    "mean_bias": -3.2771754070265637,
+    "p90_abs_err": 7.0
+   },
+   "overtime": {
+    "n": 6445,
+    "mae": 3.5245713886733903,
+    "mean_bias": -3.166638262218774,
+    "p90_abs_err": 7.142
+   }
+  },
+  "opp_play_ticks": {
+   "n": 2362,
+   "mae": 2.479329551227773,
+   "bias": -0.5000719729043184
+  },
+  "my_play_ticks": {
+   "n": 3456,
+   "mae": 3.2098115162037035,
+   "bias": -2.897140740740741
+  },
+  "by_match": {
+   "n_matches": 100,
+   "mae_median": 3.1161162726008342,
+   "mae_p90": 4.543447251821837
+  },
+  "by_truth_cap": {
+   "near_cap_ge_9": {
+    "n": 15444,
+    "mae": 3.9632883255633256,
+    "mean_bias": -3.9382344405594405
+   },
+   "below_cap": {
+    "n": 58785,
+    "mae": 3.116975640044229,
+    "mean_bias": -2.77751860848856
+   }
+  },
+  "overcharge": {
+   "top": [
+    {
+     "base": "barbarians",
+     "ghost_plays": 14,
+     "ghost_elixir": 70.0,
+     "charges": 136,
+     "charged_elixir": 680.0,
+     "over_charge": 610.0
+    },
+    {
+     "base": "tombstone",
+     "ghost_plays": 49,
+     "ghost_elixir": 147.0,
+     "charges": 245,
+     "charged_elixir": 735.0,
+     "over_charge": 588.0
+    },
+    {
+     "base": "goblin_cage",
+     "ghost_plays": 8,
+     "ghost_elixir": 32.0,
+     "charges": 126,
+     "charged_elixir": 504.0,
+     "over_charge": 472.0
+    },
+    {
+     "base": "goblin_drill",
+     "ghost_plays": 14,
+     "ghost_elixir": 56.0,
+     "charges": 118,
+     "charged_elixir": 472.0,
+     "over_charge": 416.0
+    },
+    {
+     "base": "tesla",
+     "ghost_plays": 16,
+     "ghost_elixir": 64.0,
+     "charges": 94,
+     "charged_elixir": 376.0,
+     "over_charge": 312.0
+    },
+    {
+     "base": "elixir_collector",
+     "ghost_plays": 10,
+     "ghost_elixir": 60.0,
+     "charges": 53,
+     "charged_elixir": 318.0,
+     "over_charge": 258.0
+    },
+    {
+     "base": "barbarian_hut",
+     "ghost_plays": 0,
+     "ghost_elixir": 0.0,
+     "charges": 42,
+     "charged_elixir": 252.0,
+     "over_charge": 252.0
+    },
+    {
+     "base": "knight",
+     "ghost_plays": 47,
+     "ghost_elixir": 141.0,
+     "charges": 131,
+     "charged_elixir": 393.0,
+     "over_charge": 252.0
+    },
+    {
+     "base": "goblinstein",
+     "ghost_plays": 33,
+     "ghost_elixir": 165.0,
+     "charges": 82,
+     "charged_elixir": 410.0,
+     "over_charge": 245.0
+    },
+    {
+     "base": "mortar",
+     "ghost_plays": 6,
+     "ghost_elixir": 24.0,
+     "charges": 67,
+     "charged_elixir": 268.0,
+     "over_charge": 244.0
+    },
+    {
+     "base": "barbarian_barrel",
+     "ghost_plays": 112,
+     "ghost_elixir": 224.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -224.0
+    },
+    {
+     "base": "witch",
+     "ghost_plays": 12,
+     "ghost_elixir": 60.0,
+     "charges": 55,
+     "charged_elixir": 275.0,
+     "over_charge": 215.0
+    },
+    {
+     "base": "x_bow",
+     "ghost_plays": 4,
+     "ghost_elixir": 24.0,
+     "charges": 38,
+     "charged_elixir": 228.0,
+     "over_charge": 204.0
+    },
+    {
+     "base": "musketeer",
+     "ghost_plays": 44,
+     "ghost_elixir": 176.0,
+     "charges": 93,
+     "charged_elixir": 372.0,
+     "over_charge": 196.0
+    },
+    {
+     "base": "valkyrie",
+     "ghost_plays": 31,
+     "ghost_elixir": 124.0,
+     "charges": 72,
+     "charged_elixir": 288.0,
+     "over_charge": 164.0
+    },
+    {
+     "base": "cannon",
+     "ghost_plays": 11,
+     "ghost_elixir": 33.0,
+     "charges": 64,
+     "charged_elixir": 192.0,
+     "over_charge": 159.0
+    },
+    {
+     "base": "goblin_hut",
+     "ghost_plays": 15,
+     "ghost_elixir": 60.0,
+     "charges": 54,
+     "charged_elixir": 216.0,
+     "over_charge": 156.0
+    },
+    {
+     "base": "skeletons",
+     "ghost_plays": 133,
+     "ghost_elixir": 133.0,
+     "charges": 287,
+     "charged_elixir": 287.0,
+     "over_charge": 154.0
+    },
+    {
+     "base": "bowler",
+     "ghost_plays": 39,
+     "ghost_elixir": 195.0,
+     "charges": 69,
+     "charged_elixir": 345.0,
+     "over_charge": 150.0
+    },
+    {
+     "base": "inferno_tower",
+     "ghost_plays": 5,
+     "ghost_elixir": 25.0,
+     "charges": 35,
+     "charged_elixir": 175.0,
+     "over_charge": 150.0
+    },
+    {
+     "base": "lightning",
+     "ghost_plays": 25,
+     "ghost_elixir": 150.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -150.0
+    },
+    {
+     "base": "bomb_tower",
+     "ghost_plays": 11,
+     "ghost_elixir": 44.0,
+     "charges": 47,
+     "charged_elixir": 188.0,
+     "over_charge": 144.0
+    },
+    {
+     "base": "giant",
+     "ghost_plays": 31,
+     "ghost_elixir": 155.0,
+     "charges": 58,
+     "charged_elixir": 290.0,
+     "over_charge": 135.0
+    },
+    {
+     "base": "skeleton_barrel",
+     "ghost_plays": 26,
+     "ghost_elixir": 78.0,
+     "charges": 69,
+     "charged_elixir": 207.0,
+     "over_charge": 129.0
+    },
+    {
+     "base": "ice_wizard",
+     "ghost_plays": 20,
+     "ghost_elixir": 60.0,
+     "charges": 62,
+     "charged_elixir": 186.0,
+     "over_charge": 126.0
+    }
+   ],
+   "n_bases": 125,
+   "total_charged_elixir": 16090.5,
+   "total_ghost_elixir": 7989.0,
+   "total_over_charge": 8101.5,
+   "over_charge_share_from_bases_never_played": 0.0385
+  }
+ },
+ "B_tt_wl_tracker_input_live_whitelist": {
+  "n_ticks": 74229,
+  "mae": 2.659734369316574,
+  "mean_bias": -0.4971308262269464,
+  "p90_abs_err": 6.0,
+  "share_abs_err_le_1_0": 0.31844696816608065,
+  "share_abs_err_le_2_0": 0.47387139797114336,
+  "by_phase": {
+   "single": {
+    "n": 45611,
+    "mae": 2.558759084431387,
+    "mean_bias": -0.6046837429567429,
+    "p90_abs_err": 6.0
+   },
+   "double": {
+    "n": 22173,
+    "mae": 2.8503577368872053,
+    "mean_bias": -0.26375818788616784,
+    "p90_abs_err": 6.009419999999999
+   },
+   "overtime": {
+    "n": 6445,
+    "mae": 2.718522854926299,
+    "mean_bias": -0.5388647944142746,
+    "p90_abs_err": 6.071
+   }
+  },
+  "opp_play_ticks": {
+   "n": 2362,
+   "mae": 3.3621155800169347,
+   "bias": 1.9961176968670618
+  },
+  "my_play_ticks": {
+   "n": 3456,
+   "mae": 2.736236226851852,
+   "bias": -0.3669034722222222
+  },
+  "by_match": {
+   "n_matches": 100,
+   "mae_median": 2.6184855041468262,
+   "mae_p90": 3.65072793539479
+  },
+  "by_truth_cap": {
+   "near_cap_ge_9": {
+    "n": 15444,
+    "mae": 2.1454694832944834,
+    "mean_bias": -2.010463137788138
+   },
+   "below_cap": {
+    "n": 58785,
+    "mae": 2.7948420821638176,
+    "mean_bias": -0.0995480377647359
+   }
+  },
+  "overcharge": {
+   "top": [
+    {
+     "base": "barbarians",
+     "ghost_plays": 14,
+     "ghost_elixir": 70.0,
+     "charges": 136,
+     "charged_elixir": 680.0,
+     "over_charge": 610.0
+    },
+    {
+     "base": "goblin_cage",
+     "ghost_plays": 8,
+     "ghost_elixir": 32.0,
+     "charges": 126,
+     "charged_elixir": 504.0,
+     "over_charge": 472.0
+    },
+    {
+     "base": "tesla",
+     "ghost_plays": 16,
+     "ghost_elixir": 64.0,
+     "charges": 94,
+     "charged_elixir": 376.0,
+     "over_charge": 312.0
+    },
+    {
+     "base": "elixir_collector",
+     "ghost_plays": 10,
+     "ghost_elixir": 60.0,
+     "charges": 53,
+     "charged_elixir": 318.0,
+     "over_charge": 258.0
+    },
+    {
+     "base": "knight",
+     "ghost_plays": 47,
+     "ghost_elixir": 141.0,
+     "charges": 131,
+     "charged_elixir": 393.0,
+     "over_charge": 252.0
+    },
+    {
+     "base": "barbarian_barrel",
+     "ghost_plays": 112,
+     "ghost_elixir": 224.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -224.0
+    },
+    {
+     "base": "witch",
+     "ghost_plays": 12,
+     "ghost_elixir": 60.0,
+     "charges": 55,
+     "charged_elixir": 275.0,
+     "over_charge": 215.0
+    },
+    {
+     "base": "x_bow",
+     "ghost_plays": 4,
+     "ghost_elixir": 24.0,
+     "charges": 38,
+     "charged_elixir": 228.0,
+     "over_charge": 204.0
+    },
+    {
+     "base": "musketeer",
+     "ghost_plays": 44,
+     "ghost_elixir": 176.0,
+     "charges": 93,
+     "charged_elixir": 372.0,
+     "over_charge": 196.0
+    },
+    {
+     "base": "goblinstein",
+     "ghost_plays": 33,
+     "ghost_elixir": 165.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -165.0
+    },
+    {
+     "base": "valkyrie",
+     "ghost_plays": 31,
+     "ghost_elixir": 124.0,
+     "charges": 72,
+     "charged_elixir": 288.0,
+     "over_charge": 164.0
+    },
+    {
+     "base": "cannon",
+     "ghost_plays": 11,
+     "ghost_elixir": 33.0,
+     "charges": 64,
+     "charged_elixir": 192.0,
+     "over_charge": 159.0
+    },
+    {
+     "base": "skeletons",
+     "ghost_plays": 133,
+     "ghost_elixir": 133.0,
+     "charges": 290,
+     "charged_elixir": 290.0,
+     "over_charge": 157.0
+    },
+    {
+     "base": "goblin_hut",
+     "ghost_plays": 15,
+     "ghost_elixir": 60.0,
+     "charges": 54,
+     "charged_elixir": 216.0,
+     "over_charge": 156.0
+    },
+    {
+     "base": "bowler",
+     "ghost_plays": 39,
+     "ghost_elixir": 195.0,
+     "charges": 69,
+     "charged_elixir": 345.0,
+     "over_charge": 150.0
+    },
+    {
+     "base": "lightning",
+     "ghost_plays": 25,
+     "ghost_elixir": 150.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -150.0
+    },
+    {
+     "base": "royal_ghost",
+     "ghost_plays": 49,
+     "ghost_elixir": 147.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -147.0
+    },
+    {
+     "base": "tombstone",
+     "ghost_plays": 49,
+     "ghost_elixir": 147.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -147.0
+    },
+    {
+     "base": "giant",
+     "ghost_plays": 31,
+     "ghost_elixir": 155.0,
+     "charges": 58,
+     "charged_elixir": 290.0,
+     "over_charge": 135.0
+    },
+    {
+     "base": "golden_knight",
+     "ghost_plays": 33,
+     "ghost_elixir": 132.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -132.0
+    },
+    {
+     "base": "ice_wizard",
+     "ghost_plays": 20,
+     "ghost_elixir": 60.0,
+     "charges": 62,
+     "charged_elixir": 186.0,
+     "over_charge": 126.0
+    },
+    {
+     "base": "rocket",
+     "ghost_plays": 20,
+     "ghost_elixir": 120.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -120.0
+    },
+    {
+     "base": "zappies",
+     "ghost_plays": 30,
+     "ghost_elixir": 120.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -120.0
+    },
+    {
+     "base": "goblins",
+     "ghost_plays": 10,
+     "ghost_elixir": 20.0,
+     "charges": 68,
+     "charged_elixir": 136.0,
+     "over_charge": 116.0
+    },
+    {
+     "base": "magic_archer",
+     "ghost_plays": 3,
+     "ghost_elixir": 12.0,
+     "charges": 32,
+     "charged_elixir": 128.0,
+     "over_charge": 116.0
+    }
+   ],
+   "n_bases": 114,
+   "total_charged_elixir": 8854.0,
+   "total_ghost_elixir": 7989.0,
+   "total_over_charge": 865.0,
+   "over_charge_share_from_bases_never_played": 0.0167
+  }
+ }
+}

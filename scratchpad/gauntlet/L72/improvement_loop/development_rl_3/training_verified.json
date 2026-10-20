@@ -1,0 +1,334 @@
+{
+  "complete": true,
+  "updates": [
+    {
+      "arm": "full_budget_v5",
+      "update": 1,
+      "games": 64,
+      "eligible_games": 64,
+      "rows": 17703,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 1.0177035010031349e-05
+    },
+    {
+      "arm": "late_budget_v5",
+      "update": 1,
+      "games": 64,
+      "eligible_games": 14,
+      "rows": 703,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 6.312049535442201e-06
+    },
+    {
+      "arm": "full_budget_v5",
+      "update": 2,
+      "games": 64,
+      "eligible_games": 64,
+      "rows": 18423,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 1.0536219468197151e-05
+    },
+    {
+      "arm": "late_budget_v5",
+      "update": 2,
+      "games": 64,
+      "eligible_games": 19,
+      "rows": 980,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 1.0599379844230586e-05
+    },
+    {
+      "arm": "full_budget_v5",
+      "update": 3,
+      "games": 64,
+      "eligible_games": 64,
+      "rows": 18433,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 1.089155498148996e-05
+    },
+    {
+      "arm": "late_budget_v5",
+      "update": 3,
+      "games": 64,
+      "eligible_games": 20,
+      "rows": 892,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 8.08325190459328e-06
+    },
+    {
+      "arm": "full_budget_v5",
+      "update": 4,
+      "games": 64,
+      "eligible_games": 64,
+      "rows": 17294,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 1.1186840400752596e-05
+    },
+    {
+      "arm": "late_budget_v5",
+      "update": 4,
+      "games": 64,
+      "eligible_games": 14,
+      "rows": 611,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 7.263454307236186e-06
+    },
+    {
+      "arm": "full_budget_v5",
+      "update": 5,
+      "games": 64,
+      "eligible_games": 64,
+      "rows": 18363,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 1.5644710704245222e-05
+    },
+    {
+      "arm": "late_budget_v5",
+      "update": 5,
+      "games": 64,
+      "eligible_games": 18,
+      "rows": 920,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 1.5644710704245222e-05
+    },
+    {
+      "arm": "full_budget_v5",
+      "update": 6,
+      "games": 64,
+      "eligible_games": 64,
+      "rows": 18181,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 1.0062639002560868e-05
+    },
+    {
+      "arm": "late_budget_v5",
+      "update": 6,
+      "games": 64,
+      "eligible_games": 19,
+      "rows": 923,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 6.450099452101696e-06
+    },
+    {
+      "arm": "full_budget_v5",
+      "update": 7,
+      "games": 64,
+      "eligible_games": 64,
+      "rows": 18350,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 1.2853316417881778e-05
+    },
+    {
+      "arm": "late_budget_v5",
+      "update": 7,
+      "games": 64,
+      "eligible_games": 17,
+      "rows": 792,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 6.031249215671043e-06
+    },
+    {
+      "arm": "full_budget_v5",
+      "update": 8,
+      "games": 64,
+      "eligible_games": 64,
+      "rows": 18079,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 1.1359730651668777e-05
+    },
+    {
+      "arm": "late_budget_v5",
+      "update": 8,
+      "games": 64,
+      "eligible_games": 20,
+      "rows": 811,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 8.41871534336454e-06
+    },
+    {
+      "arm": "full_budget_v5",
+      "update": 9,
+      "games": 64,
+      "eligible_games": 64,
+      "rows": 18248,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 9.889718007473414e-06
+    },
+    {
+      "arm": "late_budget_v5",
+      "update": 9,
+      "games": 64,
+      "eligible_games": 16,
+      "rows": 646,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 1.3697997951778282e-05
+    },
+    {
+      "arm": "full_budget_v5",
+      "update": 10,
+      "games": 64,
+      "eligible_games": 64,
+      "rows": 18091,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 9.071858095152343e-06
+    },
+    {
+      "arm": "late_budget_v5",
+      "update": 10,
+      "games": 64,
+      "eligible_games": 21,
+      "rows": 873,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 1.2061211160712795e-05
+    },
+    {
+      "arm": "full_budget_v5",
+      "update": 11,
+      "games": 64,
+      "eligible_games": 64,
+      "rows": 17149,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 1.073185441980036e-05
+    },
+    {
+      "arm": "late_budget_v5",
+      "update": 11,
+      "games": 64,
+      "eligible_games": 19,
+      "rows": 993,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 7.379054105724223e-06
+    },
+    {
+      "arm": "full_budget_v5",
+      "update": 12,
+      "games": 64,
+      "eligible_games": 64,
+      "rows": 18001,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 9.601765461045701e-06
+    },
+    {
+      "arm": "late_budget_v5",
+      "update": 12,
+      "games": 64,
+      "eligible_games": 20,
+      "rows": 947,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 7.972187614529446e-06
+    },
+    {
+      "arm": "full_budget_v5",
+      "update": 13,
+      "games": 64,
+      "eligible_games": 64,
+      "rows": 18363,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 1.024777200681396e-05
+    },
+    {
+      "arm": "late_budget_v5",
+      "update": 13,
+      "games": 64,
+      "eligible_games": 18,
+      "rows": 874,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 8.466563469904963e-06
+    },
+    {
+      "arm": "full_budget_v5",
+      "update": 14,
+      "games": 64,
+      "eligible_games": 64,
+      "rows": 18933,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 1.1450608155394439e-05
+    },
+    {
+      "arm": "late_budget_v5",
+      "update": 14,
+      "games": 64,
+      "eligible_games": 20,
+      "rows": 956,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 6.617776777699598e-06
+    },
+    {
+      "arm": "full_budget_v5",
+      "update": 15,
+      "games": 64,
+      "eligible_games": 64,
+      "rows": 19216,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 1.3225038986821751e-05
+    },
+    {
+      "arm": "late_budget_v5",
+      "update": 15,
+      "games": 64,
+      "eligible_games": 24,
+      "rows": 934,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 1.0598914819279284e-05
+    },
+    {
+      "arm": "full_budget_v5",
+      "update": 16,
+      "games": 64,
+      "eligible_games": 64,
+      "rows": 19011,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 1.4380835856437627e-05
+    },
+    {
+      "arm": "late_budget_v5",
+      "update": 16,
+      "games": 64,
+      "eligible_games": 17,
+      "rows": 812,
+      "draws": 2048,
+      "steps": 16,
+      "ratio_maxdev": 7.536551511467957e-06
+    }
+  ],
+  "games": 2048,
+  "optimizer_steps": 512,
+  "controls": {
+    "positive": 32,
+    "negative": 17
+  },
+  "trained_sha256": "b7c7c1c0354272d1281808ab78f87487f6cc4b7c87a43e9170eab26aa6ec1cf4",
+  "source_sha256": "4a5c2914c7bd60e4cab6d29b97008e0ce75a36f96559dbde33e72a479712e744",
+  "deployment_accepted": false
+}

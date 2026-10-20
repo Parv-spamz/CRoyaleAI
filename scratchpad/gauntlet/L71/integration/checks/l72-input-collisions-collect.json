@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\input_collision_audit\\collect.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "INPUT_COLLISIONS_COLLECTED",
+  "matched": true,
+  "output_sha256": "e69849d110834db0d0f65ed1de0f2a52f2849f8feb5d9513f941935ee1f5a1e8",
+  "seconds": 90.86022400856018
+}

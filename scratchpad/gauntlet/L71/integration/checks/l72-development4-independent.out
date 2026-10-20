@@ -1,0 +1,2 @@
+{"denominators_present": true, "late_action_material": false, "late_rocket_action_material": false, "general_card_noninferior": true, "barrel_correct_nonregression": true, "barrel_wrong_nonregression": true, "defensive_action_nonregression": true, "rocket_aim_nonregression": false, "rocket_action_nonregression": false, "witch_nonregression": true, "night_witch_nonregression": true, "furnace_nonregression": true, "phase_single_clock_noninferior": true, "phase_double_regulation_clock_noninferior": true, "phase_early_overtime_clock_noninferior": true}
+PHASE_RECOUNT_COMPLETE

@@ -1,0 +1,280 @@
+{
+ "frame": [
+  900,
+  1600
+ ],
+ "templates": {
+  "play_again": {
+   "file": "play_again.png",
+   "source": "res_8.png",
+   "box": [
+    195,
+    1408,
+    425,
+    1500
+   ],
+   "region": [
+    100,
+    1300,
+    520,
+    1600
+   ],
+   "threshold": 0.85
+  },
+  "results_ok": {
+   "file": "results_ok.png",
+   "source": "res_8.png",
+   "box": [
+    478,
+    1408,
+    705,
+    1500
+   ],
+   "region": [
+    380,
+    1300,
+    800,
+    1600
+   ],
+   "threshold": 0.85
+  },
+  "winner": {
+   "file": "winner.png",
+   "source": "res_8.png",
+   "box": [
+    330,
+    152,
+    570,
+    196
+   ],
+   "region": [
+    150,
+    60,
+    750,
+    1000
+   ],
+   "threshold": 0.8
+  },
+  "battle": {
+   "file": "battle.png",
+   "source": "main4.png",
+   "box": [
+    345,
+    1180,
+    575,
+    1258
+   ],
+   "region": [
+    250,
+    1100,
+    650,
+    1400
+   ],
+   "threshold": 0.85
+  },
+  "daily_bonus": {
+   "file": "daily_bonus.png",
+   "source": "main4.png",
+   "box": [
+    335,
+    1268,
+    600,
+    1318
+   ],
+   "region": [
+    250,
+    1200,
+    650,
+    1400
+   ],
+   "threshold": 0.85
+  },
+  "red_x": {
+   "file": "red_x.png",
+   "source": "promo_pass_x.png",
+   "box": [
+    782,
+    197,
+    833,
+    248
+   ],
+   "region": [
+    560,
+    60,
+    900,
+    600
+   ],
+   "threshold": 0.85
+  },
+  "modes_hdr": {
+   "file": "modes_hdr.png",
+   "source": "trophy_btn.png",
+   "box": [
+    240,
+    330,
+    660,
+    400
+   ],
+   "region": [
+    150,
+    250,
+    750,
+    500
+   ],
+   "threshold": 0.85
+  },
+  "logo": {
+   "file": "logo.png",
+   "source": "queue1.png",
+   "box": [
+    180,
+    60,
+    710,
+    260
+   ],
+   "region": [
+    100,
+    0,
+    800,
+    360
+   ],
+   "threshold": 0.8
+  },
+  "collect": {
+   "file": "collect.png",
+   "source": "trophy_road.png",
+   "box": [
+    280,
+    1292,
+    425,
+    1350
+   ],
+   "region": [
+    0,
+    150,
+    900,
+    1480
+   ],
+   "threshold": 0.85
+  },
+  "bottom_ok": {
+   "file": "bottom_ok.png",
+   "source": "trophy_road.png",
+   "box": [
+    365,
+    1508,
+    535,
+    1578
+   ],
+   "region": [
+    250,
+    1460,
+    650,
+    1600
+   ],
+   "threshold": 0.85
+  },
+  "conn_lost": {
+   "file": "conn_lost.png",
+   "source": "conn_lost.png",
+   "box": [
+    145,
+    702,
+    368,
+    748
+   ],
+   "region": [
+    0,
+    400,
+    900,
+    1200
+   ],
+   "threshold": 0.85
+  },
+  "another_device": {
+   "file": "another_device.png",
+   "source": "conn_lost.png",
+   "box": [
+    145,
+    757,
+    610,
+    795
+   ],
+   "region": [
+    0,
+    400,
+    900,
+    1200
+   ],
+   "threshold": 0.85
+  },
+  "reload": {
+   "file": "reload.png",
+   "source": "conn_lost.png",
+   "box": [
+    145,
+    860,
+    235,
+    893
+   ],
+   "region": [
+    0,
+    600,
+    900,
+    1300
+   ],
+   "threshold": 0.85
+  },
+  "cu_title": {
+   "file": "cu_title.png",
+   "source": "content_update.png",
+   "box": [
+    92,
+    706,
+    314,
+    750
+   ],
+   "region": [
+    0,
+    400,
+    900,
+    1200
+   ],
+   "threshold": 0.85
+  },
+  "cu_restart": {
+   "file": "cu_restart.png",
+   "source": "content_update.png",
+   "box": [
+    94,
+    860,
+    194,
+    893
+   ],
+   "region": [
+    0,
+    600,
+    900,
+    1300
+   ],
+   "threshold": 0.85
+  },
+  "ranked_btn": {
+   "file": "ranked_btn.png",
+   "source": "ranked_home.png",
+   "box": [
+    655,
+    1222,
+    735,
+    1320
+   ],
+   "region": [
+    560,
+    1100,
+    900,
+    1420
+   ],
+   "threshold": 0.85
+  }
+ }
+}

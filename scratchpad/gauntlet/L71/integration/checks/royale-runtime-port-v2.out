@@ -1,0 +1,28 @@
+......F.........................                                         [100%]
+================================== FAILURES ===================================
+________ test_empty_refill_slot_is_omitted_then_returns_to_public_hand ________
+
+    def test_empty_refill_slot_is_omitted_then_returns_to_public_hand():
+        env = RoyaleSelfPlayEnv()
+        try:
+            before = env.reset(DECK, DECK, seed=7)
+            available = [x['name'] for x in before['players'][0]['hand']]
+            name = min(available, key=lambda n: env.costs(0)[DECK.index(n)])
+            result = env.act(0, DECK.index(name), 9000, 10000)
+            assert result['accepted']
+            # An idle timer refills the first play immediately; a second play waits.
+            first = env.raw()['players'][0]['hand']
+            assert len(first) == 4
+            name = min((x['name'] for x in first), key=lambda n: env.costs(0)[DECK.index(n)])
+            assert env.act(0, DECK.index(name), 9000, 10000)['accepted']
+            after = env.raw()['players'][0]['hand']
+            assert len(after) == 3
+            assert name not in [x['name'] for x in after]
+>           assert len(env.advance_to(env.tick+20)['players'][0]['hand']) == 4
+E           AssertionError: assert 3 == 4
+E            +  where 3 = len([{'hand_index': 1, 'name': 'Xbow'}, {'hand_index': 2, 'name': 'Tesla'}, {'hand_index': 3, 'name': 'IceWizard'}])
+
+pipeline\tests\test_royale_port.py:32: AssertionError
+=========================== short test summary info ===========================
+FAILED pipeline/tests/test_royale_port.py::test_empty_refill_slot_is_omitted_then_returns_to_public_hand
+1 failed, 31 passed in 19.01s

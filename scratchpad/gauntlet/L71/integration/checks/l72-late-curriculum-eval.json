@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_3\\evaluate.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "LATE_CURRICULUM_EVALUATED",
+  "matched": true,
+  "output_sha256": "c498a027686b71292065bbe38c0ccae340a59e6d2cc47666696337e62dcebbb5",
+  "seconds": 152.88523292541504
+}

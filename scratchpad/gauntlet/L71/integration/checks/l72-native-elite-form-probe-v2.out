@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\probe_native_elite_form_v2.py", line 123, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\probe_native_elite_form_v2.py", line 105, in main
+    assert len(arm['target_plays'])==3, name+' incomplete target cycles'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: elite_base incomplete target cycles

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\il_gradient_audit\\collect.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "IL_GRADIENT_COLLECTED",
+  "matched": true,
+  "output_sha256": "6f0c0cc968a5b7d05e323feda94f3867a29d9bd13ea94b5338c69ff3cec3a004",
+  "seconds": 160.69968676567078
+}

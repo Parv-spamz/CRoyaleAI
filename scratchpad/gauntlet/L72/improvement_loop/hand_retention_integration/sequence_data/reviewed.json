@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "receipts": {
+    "preflight": {
+      "seconds": 4.857271194458008,
+      "receipt_sha256": "378e77bc4a0eb1aa39f32426f512cf04697a89df8579d3cbeb234ec95a4ae7fd",
+      "output_sha256": "665f1095f988ce15ca85289e38f7dcc7fed021ab376fa943f6106b215556766e"
+    },
+    "collect": {
+      "seconds": 592.7732787132263,
+      "receipt_sha256": "8561db94952d57bcb8185cc87978c93dfc33acb1f7790c4eb74fda27af72e76a",
+      "output_sha256": "4deec05f9a140159c2511d20dd78989ba33bb142ceba8376051f2c66d1443080"
+    },
+    "verify": {
+      "seconds": 322.45165395736694,
+      "receipt_sha256": "00580fc6e8acf48fc004ccb4b361118d09163bfd585539439d68ab04582ed1ea",
+      "output_sha256": "8ec5793b7127178b54ead9ce971b444bef97c8cee0b22cdda7a32dbcd8e1d23b"
+    }
+  },
+  "bindings": {
+    "started.json": "27651dd157a6ded27c7cf2ce6c97e44c4659483c38a36c65bfaa9a6d6df6fd0f",
+    "collected.json": "6ff437ffa0007d8a1ac8d3acc8186cadbe4183f26a3d39d1eecc741884a44e60",
+    "verified.json": "147910f01494eb9b7c0b48d6839fe23466f080213a0e8c6e05ec9624163cc35a",
+    "chain_complete.json": "b72933527b2fc6c50fa434a94b748480f4ba6da992ec20d0961c78b1e572bf96"
+  },
+  "source_sha256": "25fce70626d86bd44243ac28f023d824bc1595ee98203a794043d5bb8ddabe9e",
+  "no_model": true,
+  "accepted": false,
+  "deployed": false
+}

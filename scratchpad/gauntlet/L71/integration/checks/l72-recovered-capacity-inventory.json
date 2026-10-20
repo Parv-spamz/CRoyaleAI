@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/recovered_capacity/inventory.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "RECOVERED_CAPACITY_INVENTORY_COMPLETE",
+  "matched": true,
+  "output_sha256": "2ed5e1dbb63ebe9bf063071954a7f2cd37d750e303c1d79526215a26714fe1e1",
+  "seconds": 2.7015011310577393
+}

@@ -1,0 +1,360 @@
+{
+  "complete": true,
+  "counts": {
+    "captured_source_commands": 990,
+    "captured_accepted_commands": 924,
+    "usable": 7,
+    "selections": 10,
+    "repeats": 10
+  },
+  "component_casts": {
+    "goblin-barrel": 0,
+    "witch": 8,
+    "night-witch": 4,
+    "furnace": 8
+  },
+  "component_replays": {
+    "goblin-barrel": 0,
+    "witch": 1,
+    "night-witch": 1,
+    "furnace": 1
+  },
+  "qualified": [
+    {
+      "tag": "2b117f8ee53347bdb164c32d02d65c98",
+      "signature": "2144536ccaa84d1e27ed2a67119bf66b96ea7ed967711576b25ee823f0b7833f",
+      "split": "confirmation",
+      "decks": [
+        [
+          "elite-barbarians-ev1",
+          "barbarian-barrel-hero",
+          "battle-ram-ev1",
+          "heal-spirit",
+          "void",
+          "electro-wizard",
+          "mother-witch",
+          "lumberjack"
+        ],
+        [
+          "tesla-ev1",
+          "skeletons",
+          "knight-ev1",
+          "ice-wizard",
+          "rocket",
+          "x-bow",
+          "the-log",
+          "tornado"
+        ]
+      ],
+      "status": "captured",
+      "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\2b117f8ee53347bdb164c32d02d65c98_0.json",
+      "sha256": "0bdb4cdc9d9e5a73b324c6571448c4746c9ce7b8a2e46c48acc61c346153de31",
+      "grade": {
+        "plays_total": 106,
+        "plays_driven": 106,
+        "accepted": 106,
+        "rejected_by_reason": {},
+        "invalid_placement": 0,
+        "elixir_delays": {
+          "n": 0,
+          "max_ticks": 0,
+          "sum_ticks": 0
+        },
+        "skipped": [],
+        "crowns_match": true,
+        "terminal_vs_last_play_ticks": 171
+      },
+      "reasons": [],
+      "usable": true
+    },
+    {
+      "tag": "2ecbb87db5924ebcb3f6e94728506b12",
+      "signature": "fa0ba14286b6c5e915f172759bc425937cca12d691dc5c073856bc5ecb0d7320",
+      "split": "confirmation",
+      "decks": [
+        [
+          "knight-ev1",
+          "x-bow",
+          "tesla-ev1",
+          "rocket",
+          "ice-wizard",
+          "tornado",
+          "skeletons",
+          "the-log"
+        ],
+        [
+          "elite-barbarians-ev1",
+          "berserker-hero",
+          "witch-ev1",
+          "void",
+          "mini-pekka",
+          "rascals",
+          "skeleton-barrel",
+          "the-log"
+        ]
+      ],
+      "status": "captured",
+      "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\2ecbb87db5924ebcb3f6e94728506b12_0.json",
+      "sha256": "c07ebd395f2d919a02c5346caf4db91318f3cb20a6a3d728c66f5a06877fbdd2",
+      "grade": {
+        "plays_total": 99,
+        "plays_driven": 99,
+        "accepted": 99,
+        "rejected_by_reason": {},
+        "invalid_placement": 0,
+        "elixir_delays": {
+          "n": 0,
+          "max_ticks": 0,
+          "sum_ticks": 0
+        },
+        "skipped": [],
+        "crowns_match": true,
+        "terminal_vs_last_play_ticks": 159
+      },
+      "reasons": [],
+      "usable": true
+    },
+    {
+      "tag": "5edd1464c1694599a9047ce4514f6b5e",
+      "signature": "e9b1297786b08563a12b8782bab1858f69386ee320fefb26da619161535fbd8b",
+      "split": "confirmation",
+      "decks": [
+        [
+          "knight-ev1",
+          "skeletons",
+          "tesla-ev1",
+          "ice-wizard",
+          "the-log",
+          "tornado",
+          "rocket",
+          "x-bow"
+        ],
+        [
+          "zap-ev1",
+          "mega-minion-hero",
+          "elite-barbarians-ev1",
+          "golem",
+          "void",
+          "bomber",
+          "night-witch",
+          "berserker"
+        ]
+      ],
+      "status": "captured",
+      "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\5edd1464c1694599a9047ce4514f6b5e_0.json",
+      "sha256": "bd335143fa30ded14f0429f43650d909b163d4369f9ff0d976bb4c3abbb180bc",
+      "grade": {
+        "plays_total": 117,
+        "plays_driven": 117,
+        "accepted": 117,
+        "rejected_by_reason": {},
+        "invalid_placement": 0,
+        "elixir_delays": {
+          "n": 0,
+          "max_ticks": 0,
+          "sum_ticks": 0
+        },
+        "skipped": [],
+        "crowns_match": true,
+        "terminal_vs_last_play_ticks": 149
+      },
+      "reasons": [],
+      "usable": true
+    },
+    {
+      "tag": "9b1151e5aa3d4ee48943ae29b6047f03",
+      "signature": "bead61bb2921c13dcf77b6feae607f93d5e761ef3282db223dfe37fc75811330",
+      "split": "confirmation",
+      "decks": [
+        [
+          "elite-barbarians-ev1",
+          "berserker-hero",
+          "giant-snowball-ev1",
+          "hog-rider",
+          "spirit-empress",
+          "void",
+          "goblin-curse",
+          "furnace"
+        ],
+        [
+          "knight-ev1",
+          "the-log",
+          "tesla-ev1",
+          "x-bow",
+          "tornado",
+          "rocket",
+          "ice-wizard",
+          "skeletons"
+        ]
+      ],
+      "status": "captured",
+      "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\9b1151e5aa3d4ee48943ae29b6047f03_0.json",
+      "sha256": "2ccf580c3945fd8810ad55fd46d96461637386e613edcf2fe02e51810d84de4b",
+      "grade": {
+        "plays_total": 113,
+        "plays_driven": 113,
+        "accepted": 113,
+        "rejected_by_reason": {},
+        "invalid_placement": 0,
+        "elixir_delays": {
+          "n": 0,
+          "max_ticks": 0,
+          "sum_ticks": 0
+        },
+        "skipped": [],
+        "crowns_match": true,
+        "terminal_vs_last_play_ticks": 135
+      },
+      "reasons": [],
+      "usable": true
+    },
+    {
+      "tag": "9d3fb8c7748846dcb6b384a2664c207a",
+      "signature": "3f5bda40fee726d9257b48afc3d0e2851c648f94f83115b97128402985346b4f",
+      "split": "confirmation",
+      "decks": [
+        [
+          "princess-ev1",
+          "bowler-hero",
+          "elite-barbarians-ev1",
+          "rage",
+          "knight",
+          "minions",
+          "void",
+          "ram-rider"
+        ],
+        [
+          "knight-ev1",
+          "skeletons",
+          "tesla-ev1",
+          "rocket",
+          "x-bow",
+          "the-log",
+          "ice-wizard",
+          "tornado"
+        ]
+      ],
+      "status": "captured",
+      "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\9d3fb8c7748846dcb6b384a2664c207a_0.json",
+      "sha256": "bc215886e25707c992b1515bb5585d021f203e898232a00e017beabf6803b95e",
+      "grade": {
+        "plays_total": 42,
+        "plays_driven": 42,
+        "accepted": 42,
+        "rejected_by_reason": {},
+        "invalid_placement": 0,
+        "elixir_delays": {
+          "n": 0,
+          "max_ticks": 0,
+          "sum_ticks": 0
+        },
+        "skipped": [],
+        "crowns_match": true,
+        "terminal_vs_last_play_ticks": 154
+      },
+      "reasons": [],
+      "usable": true
+    },
+    {
+      "tag": "d210185c225f4826bc10a045a2b5834a",
+      "signature": "205b02b77a1f7f70e9da0cb504a5ee82b848fa541081a78aabfc1cee85014cd6",
+      "split": "confirmation",
+      "decks": [
+        [
+          "knight-ev1",
+          "skeletons",
+          "tesla-ev1",
+          "ice-wizard",
+          "tornado",
+          "the-log",
+          "x-bow",
+          "rocket"
+        ],
+        [
+          "battle-ram-ev1",
+          "valkyrie-hero",
+          "elite-barbarians-ev1",
+          "pekka",
+          "mother-witch",
+          "void",
+          "zap",
+          "electro-spirit"
+        ]
+      ],
+      "status": "captured",
+      "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\d210185c225f4826bc10a045a2b5834a_0.json",
+      "sha256": "b61d9bd064c6d179af8db86bd07db8d5f9e7afb3926d3c45884c18a4be3899a3",
+      "grade": {
+        "plays_total": 96,
+        "plays_driven": 96,
+        "accepted": 96,
+        "rejected_by_reason": {},
+        "invalid_placement": 0,
+        "elixir_delays": {
+          "n": 0,
+          "max_ticks": 0,
+          "sum_ticks": 0
+        },
+        "skipped": [],
+        "crowns_match": true,
+        "terminal_vs_last_play_ticks": 94
+      },
+      "reasons": [],
+      "usable": true
+    },
+    {
+      "tag": "f4d7af9e4625459887dddd5eb0773f8e",
+      "signature": "df71eaa5c1557cf5da01e414e7503db318067018d3576a11816f777133005b7e",
+      "split": "confirmation",
+      "decks": [
+        [
+          "knight-ev1",
+          "skeletons",
+          "tesla-ev1",
+          "ice-wizard",
+          "the-log",
+          "tornado",
+          "rocket",
+          "x-bow"
+        ],
+        [
+          "battle-ram-ev1",
+          "goblinstein",
+          "elite-barbarians-ev1",
+          "royal-ghost",
+          "void",
+          "bandit",
+          "electro-spirit",
+          "mother-witch"
+        ]
+      ],
+      "status": "captured",
+      "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\f4d7af9e4625459887dddd5eb0773f8e_0.json",
+      "sha256": "7d279b02425036eb870118b18f00bfd9e2a7085b3536950eeb160b6b80fe03ec",
+      "grade": {
+        "plays_total": 123,
+        "plays_driven": 123,
+        "accepted": 123,
+        "rejected_by_reason": {},
+        "invalid_placement": 0,
+        "elixir_delays": {
+          "n": 0,
+          "max_ticks": 0,
+          "sum_ticks": 0
+        },
+        "skipped": [],
+        "crowns_match": true,
+        "terminal_vs_last_play_ticks": 167
+      },
+      "reasons": [],
+      "usable": true
+    }
+  ],
+  "complete_sha256": "e3939d4a7dde00c3e9b40d9f4f0006ff8c99b47a0aaa165713fcc1e2a3f9544c",
+  "script_sha256": "a2c9581b81c79d8bad6fbe8ae4628cb2b73e4e825fb5020547975f01a494ae47",
+  "model_predictions": 0,
+  "N2_complete": false,
+  "limits": [
+    "Casts/replays are not qualified tactical opportunities or sufficient power."
+  ]
+}

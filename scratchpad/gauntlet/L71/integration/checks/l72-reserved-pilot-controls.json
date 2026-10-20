@@ -1,0 +1,14 @@
+{
+  "command": [
+    ".\\icebow\\.venv\\Scripts\\python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/collect_reserved_pilot.py",
+    "--self-test"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "RESERVED_PILOT_QUALIFICATION_CONTROLS_PASS",
+  "matched": true,
+  "output_sha256": "b1c8f62a4cf755e2628948d5b09d65d64706085d383f83b31e62558ca0ebb149",
+  "seconds": 0.40053844451904297
+}

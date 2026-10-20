@@ -1,0 +1,2 @@
+{"denominators_present": true, "exact_gate_card_logits": false, "late_action_nonregression": true, "late_rocket_action_nonregression": true, "general_card_exact": true, "barrel_correct_material": true, "barrel_wrong_halved": true, "barrel_action_nonregression": true, "defensive_action_nonregression": true, "rocket_aim_nonregression": false, "rocket_action_nonregression": false, "witch_nonregression": true, "night_witch_nonregression": true, "furnace_nonregression": true}
+FROZEN_PROJECTILE_RECOUNT_V2_COMPLETE

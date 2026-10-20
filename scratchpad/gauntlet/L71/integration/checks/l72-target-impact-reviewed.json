@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/review_target_impact.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "TARGET_IMPACT_REVIEWED",
+  "matched": true,
+  "output_sha256": "a5048f4caa4bec09cc8cc10381cdf30eb1f8a2f6a4dab0da6de4d0ac4ffc595d",
+  "seconds": 0.20434212684631348
+}

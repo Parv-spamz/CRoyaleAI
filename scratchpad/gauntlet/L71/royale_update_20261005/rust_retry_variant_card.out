@@ -1,0 +1,16 @@
+
+running 11 tests
+test a_form_resolves_by_the_cards_own_name_where_a_released_unit_shares_it ... ok
+test a_mirror_after_the_empress_copies_the_form_she_played ... ok
+test below_the_last_trigger_the_play_is_the_last_form_refused_for_elixir ... ok
+test exactly_six_elixir_is_the_mounted_form_under_at_least_and_the_normal_under_greater_than ... ok
+test the_elixir_at_the_play_picks_the_form_and_its_cost ... ok
+test the_empress_is_never_set_down_by_name_and_her_forms_are ... ok
+test the_form_is_placed_by_its_own_rule ... ok
+test the_loader_reads_two_forms_each_a_registered_card ... ok
+test the_loader_takes_the_variant_block_in_its_one_shape ... ok
+test the_verdict_the_play_and_the_price_read_one_resolution ... ok
+test two_seats_playing_the_empress_at_rotated_taps_stay_rotations ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+

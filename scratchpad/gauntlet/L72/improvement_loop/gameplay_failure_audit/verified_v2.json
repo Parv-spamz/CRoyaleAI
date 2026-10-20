@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "report_sha256": "80d4f20a233c9179e933ab916dc902c3c8ba938fb05ac6fe15346507990e84dc",
+  "started_sha256": "be8f7244b58a747c9fd5d99190bd6094cada8dee1c8367b7c799a86cfe807762",
+  "matches": 192,
+  "pairs": 64,
+  "controls": {
+    "tower_positive": 4,
+    "tower_corruptions": 5,
+    "command_positive": 2,
+    "prior_frame_negative": 1
+  },
+  "policy_predictions": 0,
+  "optimizer_updates": 0,
+  "new_games": 0
+}

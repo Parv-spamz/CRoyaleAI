@@ -1,0 +1,3491 @@
+{
+  "exact_icebow_candidates": 183,
+  "status": {
+    "no_local_attempt_receipt": 16,
+    "prior_failed": 167
+  },
+  "unique_replays_by_error": {
+    "card has no native evolution form: 26000043": 167
+  },
+  "raw_availability_report_sha256": "5b26736a64be4762064ba2f4f5eea49433ce8f6b766ea713a3d346b3f0590350",
+  "script_sha256": "4faca859b2e6736198ea98bdc2a617e7c49ef948a108824b94cefc36af596201",
+  "summary_sources": [
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s0\\summary.jsonl",
+      "sha256": "b131d1bdeb06af223fb38ac862210aa3d0a9f3f8e262ae92af7d8fe8d31df494"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s1\\summary.jsonl",
+      "sha256": "f791207e33dfa34fa57babc911083e03081ded6653155557b4a4d80bbddc4c40"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s2\\summary.jsonl",
+      "sha256": "ba3d6f3c0b0bd7a824fdc7e0e36ead46c8296754a2232923a7ea6b176e77eaa8"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s3\\summary.jsonl",
+      "sha256": "5d7ad8984c83ebfa4872b8c62285a6154535ca8f46c2150beb196c12ea21061a"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+      "sha256": "e511088a8680ec118d50896177fa9a2f1da5b57e00ad4121c4ad6762f1922050"
+    }
+  ],
+  "candidates": [
+    {
+      "tag": "01c90c5ccc3a401888c7c42d47c18813",
+      "status": "no_local_attempt_receipt",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": []
+    },
+    {
+      "tag": "02f3776ec00145a094be0628d209b0ed",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "04d87cf157b14e0e85ff84fe059e0db8",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "060812c75cdf45f08e8e58c9b05fdecc",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "0818a443d2c54d20b9ef005406648fca",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s1\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "097bee258c3a4bb89464ba7df04dd9d4",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "09f639f7623a43c085d9af0dd433494e",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_furnace",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_furnace",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "0a128d17c14943c3854d1da3ea295200",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "0cb8fa88758b4d99bc2016e16c7bbabc",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s0\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "0cf0fb5888444adf8cde74db3b5caccd",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "107c0e855cde4699b873ea4b83f0b945",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_night-witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_night-witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "119428f46a034eeea84309af4029cf43",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "12f39bd51bd84ab598b990cfbadca787",
+      "status": "no_local_attempt_receipt",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": []
+    },
+    {
+      "tag": "13f41783d44b43bb9ac36ee7fde9c181",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s0\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "17b000ad9ce84c41923b528265409fb1",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "1948b877654a475280242c05d725266b",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "1aa421d46a904cd881af65918dd4303c",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_night-witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_night-witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s3\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "1e3bca5da52a4d729d6ffec1e3c2f431",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "1fbc71140efe485c8f6ff6c181e794de",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "203d3b9e5c9349c0b04ecbd24552786c",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s3\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "21bf959d61da4d7093a8afbc93e3d0f0",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "21c067772f434c69a9cefb52d0f3148b",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "223c88e8753c4c348bc0091850e74b89",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s0\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "223f1e3737ab4779b74e12de9fbcae4c",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "23a756de18dd42a78a9481930070b837",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "23c6012eccd646dc98cc9238e8063029",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_night-witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_night-witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "24305607d87b4332847f999adf9e45ec",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "265d434f17244e9590e584473225349f",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "2b117f8ee53347bdb164c32d02d65c98",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "2b6e9b281212497ca169cd2688cfcba4",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "2ecbb87db5924ebcb3f6e94728506b12",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s2\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "31a0056abcb24f639996a5e012f3417d",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "338f575506704ea08601e4441b8bfa36",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "3412868827c343dd956322304040940b",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "344af528739240f0ac2f6dac1b059412",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s2\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "346f992be3074c09ac5c46108dac1984",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s2\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "3483356a35d64123a374dc4d0127e620",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "3519f449b6d14e118deb073744e5af21",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "351e5815bbb040f1bfba6a5ef2c12b7e",
+      "status": "no_local_attempt_receipt",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": []
+    },
+    {
+      "tag": "3acb13f0c30e4f46b4505f0a044946a2",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "3bbbd763494640c49d3d7b21e1a5e9ef",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "3d9adf2e5ac248e39ec0846bcb7a821b",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "3f7b9bf3703a4d738be08c7804f78023",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "40471282469242aeb861e6571a17209e",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s0\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "439f84fb0b94416fb6f33e0624803ab5",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_night-witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_night-witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "43d4199ed82243e8a5ba4e92f4f5f8ea",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "4717f22bf06841ff993bdf2eebfdd479",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "4809e34081164cb4910409b430865099",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "488af28ae0f04dc6a17bb44358af84c4",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "4b5e1f45d2d845a4aed4268d401d95dd",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "4caca5b71eaa46f08639da3815ff2f03",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "4e8d7608cf29486eb5e354fe2e2eac15",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "4ed92fa6084e4e11b50cd810613714b0",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_night-witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_night-witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "4f7fed54033c462391b10bf8467e58b8",
+      "status": "no_local_attempt_receipt",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": []
+    },
+    {
+      "tag": "4fbafe34ce6a47728b0519b350ed7962",
+      "status": "no_local_attempt_receipt",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_night-witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_night-witch",
+        "xbow_deck"
+      ],
+      "attempts": []
+    },
+    {
+      "tag": "511962d005fe49b498e6af92a84e3066",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "52d42408fd934f5ca851c53a27adbad6",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s2\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "530419bd4ea840ce81468b61927850bf",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_night-witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_night-witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "543d171900e24c6998b15f26b0943249",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_furnace",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_furnace",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "54689ea27a86424e9fe73f7ffcbc411d",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "577c8f2e1af84d9fb3b848af3879d6d8",
+      "status": "no_local_attempt_receipt",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": []
+    },
+    {
+      "tag": "57cf318d53a445abb63377893b5ee142",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_night-witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_night-witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s2\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "5a8a3cbc6e934701a51bd25256c8a72c",
+      "status": "no_local_attempt_receipt",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": []
+    },
+    {
+      "tag": "5d59ab7ed1084312a770fc82117a5222",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s0\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "5edd1464c1694599a9047ce4514f6b5e",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_night-witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_night-witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "5fbbbbc1898243c89d3bd1a4c17667fb",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "5fdeb94c6c7f4b1eb32cd44813071a2a",
+      "status": "no_local_attempt_receipt",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": []
+    },
+    {
+      "tag": "615758134ea34df68a36bc7925b9b434",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "6163c45baaf44dec9cbcff3ed50b5edd",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "62e5470add1e474a9998eefafe8628b5",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "6674819abccb4b8d889ad238a4123606",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_furnace",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_furnace",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "6b586b4bba144177b82cb24790c7e24e",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "6c914bdaf0c546809c1a659345e9f9fc",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "6f78959ef6f4467aa1075a70d4268ea4",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_night-witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_night-witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s0\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "70e058e1feab41f39b27494d429b8a10",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s2\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "71bbd482dc1149c9a5fe89a0019601a1",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "76c98259919746fd96d409e7f15f84e4",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s0\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "77659a9010204e1cbacd7c847a00b1e6",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_furnace",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_furnace",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "7830e7981d804f2186ae530916c3de32",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "784dc82e4409483f8968066deff7cb6b",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_furnace",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_furnace",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "7a143770ce7740ca9000fed6e02b6551",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "7a4c0a1289354f2aba963f178feb48d3",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_furnace",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_furnace",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "7c79fdf6dc9d40e2ae5d32bfd702d8fe",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "7da70cd8831f41e08afc7db3a3fdf057",
+      "status": "no_local_attempt_receipt",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": []
+    },
+    {
+      "tag": "7f9ee8a66ab64c758a4bec1edf3f8b04",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_furnace",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_furnace",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "801ce7c91f34480a9367334fa8f98b19",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "8314a953979842c784299abee7d6e136",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "83a1caa8c5414b4c995208b6c59e5099",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_night-witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_night-witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "852827f4d7ce44b186a0306379f272fc",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "877aebf867c646ffae7ff4d883c9e5a0",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s3\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "88fdfed7c878442b813ad7ec28865522",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_furnace",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_furnace",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "89170b08166b45f9a224365d7a5657fd",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s0\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "8af66b53f9e347aaa813b9998c3fedaa",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "8ca3b501f4cc4ec8a15648370e28cc63",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s2\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "8e19bbf73846446c99414cea042b0047",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_night-witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_night-witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s1\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "8f287422a7944fe88bd671af4f848d62",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "8f2e53307aba4dc8ab2a6d7653397e80",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_furnace",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_furnace",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "91ee15fcdad14930a71b46efc7f1d082",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s1\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "924702e1ab994e19be81dfbac101f5b2",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "9427dd3582294d2abbeff8eb27247737",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "9467ae8cb1ee4709ba5593edc043cf76",
+      "status": "no_local_attempt_receipt",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": []
+    },
+    {
+      "tag": "97cbb6b5f94b4e5bbb4b944ff3b8d6b1",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "98504ee4d78c4b84853a4b4907fad1db",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "99245605759040deb5ac5f70eac81b66",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_furnace",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_furnace",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "9b1151e5aa3d4ee48943ae29b6047f03",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_furnace",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_furnace",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "9d3fb8c7748846dcb6b384a2664c207a",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s2\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "9ff5b8e7949d41f29657ac60db1b9f00",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "a11cb21ba6324d39ace590b6b989922f",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "a2652dfe5d73461a9ec108652ad1c2fa",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "a2c223b0767f48e19e4984f375c0d52b",
+      "status": "no_local_attempt_receipt",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": []
+    },
+    {
+      "tag": "a3d3fe34595f46f98edebaad0904269b",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "a42592796c424ee697b1022b5784895b",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "a584dac6636447aa924b6329e084c7f1",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_night-witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_night-witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "a889defd83bd4a7ab00385da5acb6ee6",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "a9508e5e17fd4ac8a787eaab8496f50b",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "aaf81e8bcac0403d89adec9f444226eb",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s0\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "acb8a793ac4d467e8aca001a846a4bcc",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "b0b2d5a4ab22467ebfd4cd12673e59f0",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "b1e3c6b0cc584a9a968f9e64fa47825d",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_furnace",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_furnace",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "b224463b3ff34e8f885ce06703033cbb",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_furnace",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_furnace",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "b3ad1419424a4db79b84a0676a77e4a9",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_night-witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_night-witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s0\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "b485911b0f0d42508b827650f3dfa248",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_night-witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_night-witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "b66a7949bd60428dac09407012d84674",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_furnace",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_furnace",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "b8426d420aee466a83338e6bd1c34b2c",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "bb953f7e10214949b482c9151adacc32",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s0\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "bd28df2aac2343278962c7d8f93d2e50",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "be958deefe5a46ae859d8b10c14a2087",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "c02730f55b924c37ba5a82c70f9c7b07",
+      "status": "no_local_attempt_receipt",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": []
+    },
+    {
+      "tag": "c225b97964804aed94a02b9794fa8beb",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s1\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "c4922ad823824a9aa7c4516801a52bec",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "c4cf2d38a96240fc957708abce6c159b",
+      "status": "no_local_attempt_receipt",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_night-witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_night-witch",
+        "xbow_deck"
+      ],
+      "attempts": []
+    },
+    {
+      "tag": "c848be440ab045e99adeda6277a8f4c2",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "c8947d53adfc4f71ba0586c9c8c30a10",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "c8b574c234d64552999c588d5b766792",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "c90dc96d02d141cb8986ab5f0d40c465",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_night-witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_night-witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "c949e62bdb5946b8bd51eec235f02ede",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "ca1d3a6d7a9d411eac7376b8bf67acd9",
+      "status": "no_local_attempt_receipt",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": []
+    },
+    {
+      "tag": "cbe9b9e086d040aeb78612d43bdbf453",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s2\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "cc5d306ec1a544daa33dfafd4121f5be",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_night-witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_night-witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "cd1ac5db265e4349a424d90efdadb6ab",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "cd259d6944b64330b2b9bc044b917b75",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "cf58ba065f6e462ca027486bc2b37531",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_furnace",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_furnace",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "cff95751b1684ea88f0b5809fb737e93",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "d0ba63315ad7458ba169f1ed46df3924",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "d169c30339fb463abcfcdabfb5c53c8d",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "d210185c225f4826bc10a045a2b5834a",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s0\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "d382035ac9a64175897ab8a71c4ddce4",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "d43f9316080d48a0916138d2c70d11a3",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "d464d55efa444efab6a6a75e694d5bdb",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s1\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "d48f923bdd344a15bdbda25a655e4818",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "d527d55826174eb690948962ff47433b",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "d742d9a3856e4615b5ad092a382c59b6",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "d746eddf56c240968e51baa362a82991",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "d8c58c2b433342b5bcab2398f3a229ca",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "d9bd4e3449124192a32e1dbc628d492c",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "de1f0be2d15e4667a4b07818edc138a7",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "de448754ddde46cc90ed9b89d28082f8",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "df53d2b014ad4379b6d132e9835615c1",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "e27a876a33cb4f6ea71a4f277af55bec",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "e5661b7efd4d4ccc840e0204c0634600",
+      "status": "no_local_attempt_receipt",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": []
+    },
+    {
+      "tag": "e5762a068cd944f282da509ff6897d14",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "e64c2a2fc35742388d6487e2504be106",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_night-witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_night-witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "e6a8072d48a644a6bff64c87fd3d5b18",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_furnace",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_furnace",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "e858bee960234bc8af8b485e67cce092",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "e90160a2c22f4764b76d7dd2160046ca",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "e917eb783ada4727b08eb050facba97a",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "e9d7d5f4689e4902b67c12fe2874d471",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "eb0e603f52ad4ccfb45be4c7d1512309",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "eb10135e86f645b19b4cc14e4c82f2b2",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_night-witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_night-witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "ecc0c88447ce40c3bdbe6c5b06ee13bd",
+      "status": "no_local_attempt_receipt",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": []
+    },
+    {
+      "tag": "ef5b178b49a644c9a3d6fd5afd6dc360",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "f14c0e22682049d9a5286791a7345c33",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "f33c8074ed43437aa796805403215085",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_night-witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_night-witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s3\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "f407974c05eb4b3495d71e674059ea3f",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "f4d7af9e4625459887dddd5eb0773f8e",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "f4fea504b07942bc856df4443f4f6f5e",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_furnace",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_furnace",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s3\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "f6284757db38417a9c23c3bd139e334c",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "f68b8e84e45f45b382831489c3c90465",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "f78229c994f94e348164fbb60897c08e",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s3\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "f8158e8fb0df425987ac99750969bd0d",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "f966736cef974f65a1b6f8e034737e46",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s1\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "fc327c9941d4490b9acc7f801e662e25",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "icebow_vs_night-witch",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "versus_night-witch",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    },
+    {
+      "tag": "ff967e6be8f24bd080d65f9a2b4c23dd",
+      "status": "prior_failed",
+      "strata": [
+        "exact_icebow",
+        "rocket_deck",
+        "rocket_tornado_deck",
+        "xbow_deck"
+      ],
+      "attempts": [
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s1\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        },
+        {
+          "source": "scratchpad\\gauntlet\\ext\\corpus_v6_new\\icebow\\summary.jsonl",
+          "ok": false,
+          "error_type": "ValueError",
+          "error": "card has no native evolution form: 26000043"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Prior reconstruction error is not model exposure or evidence of current support.",
+    "No match outcome, tower damage or model prediction inspected.",
+    "Successful public feature reconstruction is required before confirmation can qualify."
+  ]
+}

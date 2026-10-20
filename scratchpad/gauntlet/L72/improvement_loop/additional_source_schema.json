@@ -1,0 +1,232 @@
+{
+  "revision": "ba54d0c89db86fd6e31096179a0141635fbef816",
+  "cleaned_matches": 1592,
+  "cleaned_events": 125093,
+  "cleaned_event_types": {
+    "card_play": 120416,
+    "ability_activation": 4677
+  },
+  "cleaned_form_markers": 0,
+  "cleaned_exact_icebow_ids": [
+    "000Y2G2Y2R0C",
+    "08VP0LLGJC80",
+    "0999VPRVUQQL",
+    "09G9LL0U0LY9",
+    "09G9LL22QVVV"
+  ],
+  "cleaned_exact_raw_path_matches": [],
+  "raw_schema_sample": [
+    {
+      "tag": "08PY2JU9VYLG",
+      "sha256": "ae715d360541d5c70a4254b3c9353c45004e7f5d8462b6d8156fcf4be2c0d295",
+      "success": true,
+      "markers": 74,
+      "timeline_events": 74,
+      "explicit_form_tokens": [],
+      "positioned_markers": 56,
+      "orientation_markers": 74,
+      "query_keys": [
+        "crworker",
+        "opponent_crowns",
+        "opponent_tags",
+        "referrer_path",
+        "tag",
+        "team_crowns",
+        "team_tags"
+      ],
+      "html_data_attributes": [
+        "data-ability",
+        "data-c",
+        "data-card",
+        "data-height",
+        "data-i",
+        "data-s",
+        "data-t",
+        "data-tag",
+        "data-width",
+        "data-x",
+        "data-y"
+      ],
+      "original_deck_forms_certified": false
+    },
+    {
+      "tag": "00QYP2LJGQ9G",
+      "sha256": "65fe8405f8ba55293de632bea3dd0443b6fb756e036c06bf57a832afeef9e61c",
+      "success": true,
+      "markers": 46,
+      "timeline_events": 46,
+      "explicit_form_tokens": [],
+      "positioned_markers": 45,
+      "orientation_markers": 46,
+      "query_keys": [
+        "crworker",
+        "opponent_crowns",
+        "opponent_tags",
+        "referrer_path",
+        "tag",
+        "team_crowns",
+        "team_tags"
+      ],
+      "html_data_attributes": [
+        "data-ability",
+        "data-c",
+        "data-card",
+        "data-height",
+        "data-i",
+        "data-s",
+        "data-t",
+        "data-tag",
+        "data-width",
+        "data-x",
+        "data-y"
+      ],
+      "original_deck_forms_certified": false
+    },
+    {
+      "tag": "09U9JLLR2C2L",
+      "sha256": "4797e922760232207542dfdb11f056fa2c48ca742d6e36599f35d6e007b16b97",
+      "success": true,
+      "markers": 26,
+      "timeline_events": 26,
+      "explicit_form_tokens": [],
+      "positioned_markers": 25,
+      "orientation_markers": 26,
+      "query_keys": [
+        "crworker",
+        "opponent_crowns",
+        "opponent_tags",
+        "referrer_path",
+        "tag",
+        "team_crowns",
+        "team_tags"
+      ],
+      "html_data_attributes": [
+        "data-ability",
+        "data-c",
+        "data-card",
+        "data-height",
+        "data-i",
+        "data-s",
+        "data-t",
+        "data-tag",
+        "data-width",
+        "data-x",
+        "data-y"
+      ],
+      "original_deck_forms_certified": false
+    },
+    {
+      "tag": "08YY2CG9GLLG",
+      "sha256": "f1f04b5fd07f6a4600469a8e08b40bc8c614c4c4eecc4974122bea83a3c0438f",
+      "success": true,
+      "markers": 56,
+      "timeline_events": 56,
+      "explicit_form_tokens": [],
+      "positioned_markers": 55,
+      "orientation_markers": 56,
+      "query_keys": [
+        "crworker",
+        "opponent_crowns",
+        "opponent_tags",
+        "referrer_path",
+        "tag",
+        "team_crowns",
+        "team_tags"
+      ],
+      "html_data_attributes": [
+        "data-ability",
+        "data-c",
+        "data-card",
+        "data-height",
+        "data-i",
+        "data-s",
+        "data-t",
+        "data-tag",
+        "data-width",
+        "data-x",
+        "data-y"
+      ],
+      "original_deck_forms_certified": false
+    },
+    {
+      "tag": "00CYP0R8PPLL",
+      "sha256": "a8420a7bb9f093924809fd0fea70fdb0f9366366781b3d6b948248491fa29804",
+      "success": true,
+      "markers": 109,
+      "timeline_events": 109,
+      "explicit_form_tokens": [],
+      "positioned_markers": 105,
+      "orientation_markers": 109,
+      "query_keys": [
+        "crworker",
+        "opponent_crowns",
+        "opponent_tags",
+        "referrer_path",
+        "tag",
+        "team_crowns",
+        "team_tags"
+      ],
+      "html_data_attributes": [
+        "data-ability",
+        "data-c",
+        "data-card",
+        "data-height",
+        "data-i",
+        "data-s",
+        "data-t",
+        "data-tag",
+        "data-width",
+        "data-x",
+        "data-y"
+      ],
+      "original_deck_forms_certified": false
+    },
+    {
+      "tag": "02GY998UPP80",
+      "sha256": "19587f6584ed2d572aa3210e722dc7b909a1cea89407214f39cb8ad0bc80b14b",
+      "success": true,
+      "markers": 44,
+      "timeline_events": 44,
+      "explicit_form_tokens": [],
+      "positioned_markers": 42,
+      "orientation_markers": 44,
+      "query_keys": [
+        "crworker",
+        "opponent_crowns",
+        "opponent_tags",
+        "referrer_path",
+        "tag",
+        "team_crowns",
+        "team_tags"
+      ],
+      "html_data_attributes": [
+        "data-ability",
+        "data-c",
+        "data-card",
+        "data-height",
+        "data-i",
+        "data-s",
+        "data-t",
+        "data-tag",
+        "data-width",
+        "data-x",
+        "data-y"
+      ],
+      "original_deck_forms_certified": false
+    }
+  ],
+  "model_predictions": 0,
+  "source_qualified_for_native_reconstruction": false,
+  "script_sha256": "23d6e8363249dee33c71583f87efbf9889bba644287915cbca5970187326875f",
+  "inputs": {
+    "additional_source_discovery.json": "c23bc63c283aa9c100cfab2157f60311fac456136d99f27dfec98783b7ce3b99",
+    "additional_source_metadata.json": "d3dca9ec948e1c5ffacd1c91350121a738e489b84cfec6e223de4195a97c0e1e",
+    "additional_raw_schema_download.json": "c535510625fab8bffc6f3d7235d6212cf3a36d561b43f2a9fb2dd544bc44cf5e"
+  },
+  "limitations": [
+    "Sampled raw action HTML and query fields do not certify complete original deck forms.",
+    "Cleaned legacy metadata has no original form suffixes; no form substitution is allowed.",
+    "Filename freshness has not established command-signature separation.",
+    "No conclusion about every unsampled raw file; no bulk acquisition authorized by this audit."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "recovery_sha256": "0fb4cc4ae0f9990e375fae2e6821618636661e050adac6f146d21002ae29ad6e",
+  "started_at": "2026-10-05T13:38:50.5670901-04:00",
+  "live_settings_changed": false,
+  "driver": "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\resume_chain.py",
+  "serial": true,
+  "launcher_pid": 44912,
+  "python": "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe"
+}

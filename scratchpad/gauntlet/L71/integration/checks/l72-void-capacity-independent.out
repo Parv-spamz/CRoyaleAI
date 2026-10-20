@@ -1,0 +1,2 @@
+{"distinct_selected_groups": 817, "qualified_by_split": {"confirmation": 215, "development": 112, "training": 117}, "exact_icebow_qualified_replays": {"training": 0, "development": 0, "confirmation": 115}, "component_replay_counts": {"goblin-barrel": 0, "witch": 3, "night-witch": 10, "furnace": 12}, "delta_accounting": {"selections": 10, "source": 990, "driven": 928, "accepted": 924, "explicitly_skipped": 5, "usable": 7, "excluded": 3}, "delta_exclusions": {"undriven_commands": 3, "rejected_commands": 2, "skipped_commands": 3}}
+VOID_CAPACITY_INDEPENDENT_PASS

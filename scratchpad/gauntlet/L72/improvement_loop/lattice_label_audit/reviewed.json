@@ -1,0 +1,21 @@
+{
+  "complete": true,
+  "source_sha256": "14415cd3c210e4f5d6c76eca44f431a408302c80ca168c6af925fdd750f5bac1",
+  "collected_sha256": "66f277e71f3bbc186710b1a26305a03cbeb950220a18efd83854da24a4c21f9d",
+  "verified_sha256": "99ce7701439b3ac548c42a5862bf082a830a6a6a80a1e78173ba9293695873cf",
+  "receipts": {
+    "collect": {
+      "receipt_sha256": "d20cc7deb2a918c69067b4bff33967d749f1f1fcf3374801ff467df9a41cf347",
+      "output_sha256": "8bfcd68d28273fae612dc98b4dd29bc49568170aa73bc2311b275387745f3ac3",
+      "seconds": 2.1738483905792236
+    },
+    "independent": {
+      "receipt_sha256": "a1b0d32c1e6b7121117aed0422a2a5d2642915db081058fa54c1d80ebf7a16f8",
+      "output_sha256": "49403ad469a6c4351f882f31476ec65f592e934458de1234cad34ecca3dc6c08",
+      "seconds": 7.343947649002075
+    }
+  },
+  "original_fit_verdicts_unchanged": true,
+  "accepted": false,
+  "deployed": false
+}

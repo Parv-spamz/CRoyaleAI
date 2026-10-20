@@ -1,0 +1,14 @@
+{
+  "command": [
+    ".\\icebow\\.venv\\Scripts\\python.exe",
+    "scratchpad/gauntlet/L69/discord/post.py",
+    "scratchpad/gauntlet/L72/improvement_loop/discord_frozen_model_report.txt"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "HTTP 204",
+  "matched": true,
+  "output_sha256": "eaa4fda6f3789dae1b1b65b315b93dbad43a5dbc86116e306c5d2adfc5dd2390",
+  "seconds": 1.1472561359405518
+}

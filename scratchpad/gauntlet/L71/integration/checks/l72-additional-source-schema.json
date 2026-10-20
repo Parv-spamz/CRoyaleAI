@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:/Users/benpe/ClashBot/icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/audit_additional_source.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "ADDITIONAL_SOURCE_SCHEMA_AUDIT_COMPLETE",
+  "matched": true,
+  "output_sha256": "55b069f9ba8029762c937c54b23fb896b4246cd6afed3eca9d51867c54bb8fe1",
+  "seconds": 1.5444586277008057
+}

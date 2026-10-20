@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/probe_native_elite_form_v2.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 1,
+  "expected": "NATIVE_ELITE_FORM_PROBE_V2_COMPLETE",
+  "matched": false,
+  "output_sha256": "c8822869c1ec22242d9857b0e5ed9811f3f3b42f8b3477abae85a46932ae9abe",
+  "seconds": 1.8613877296447754
+}

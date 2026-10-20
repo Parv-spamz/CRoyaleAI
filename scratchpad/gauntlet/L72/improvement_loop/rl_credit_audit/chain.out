@@ -1,0 +1,7 @@
+START producer
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\rl_credit_audit\\audit.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "RL_CREDIT_AUDIT_COMPLETE", "matched": true, "output_sha256": "42ade848ce0e7be95cd03d8514850522c531b31db50061b3262b029713e936fe", "seconds": 3.538363456726074}
+INSPECTED_CHECK_PASS
+START independent
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\rl_credit_audit\\verify.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "RL_CREDIT_VERIFIED", "matched": true, "output_sha256": "81db80a67c64abf1bd7cf629529c3110139fe76c24b6631c1e04965205e42be7", "seconds": 8.635452032089233}
+INSPECTED_CHECK_PASS
+RL_CREDIT_CHAIN_COMPLETE

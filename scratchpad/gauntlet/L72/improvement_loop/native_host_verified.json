@@ -1,0 +1,20 @@
+{
+  "owner_local_template_sha256": "73dd249a0faa79ac1ab701882ef7d07e8f3fc845eadca89e3aff36fa3eaedbe3",
+  "runtime_manifest": "C:\\Users\\benpe\\ClashBot\\icebow\\data\\bench\\native_confirmation_20261005\\runtime\\manifest\\runtime-manifest.json",
+  "runtime_manifest_sha256": "0fe3cb4be0fdd905fbdee2ef25e86a4e0d80e0e999895a6dd5adc2589249b702",
+  "package": "package: name='com.supercell.clashroyale' versionCode='150535029' versionName='150535029' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'",
+  "doctor_exit": 0,
+  "doctor_sha256": "8925e1ff5d7009d0c53bebd9afaf536a7cc25056e410de9e51691aa1d83608fd",
+  "acceleration_exit": 0,
+  "acceleration": "accel:\r\n0\r\nWHPX(10.0.26200) is installed and usable.\r\naccel",
+  "selected_emulator_serial": "emulator-5560",
+  "selected_ports": [
+    5560,
+    5561,
+    37031,
+    38031
+  ],
+  "started_emulator": false,
+  "system_policy_changed": false,
+  "note": "Original doctor preserves upstream APK mismatch. Local owner Play-derived APKs separately version-checked and pinned; all14 native libraries and asset pack retain original exact hashes. Firmware flag is misleading under the active hypervisor. MuMu port5555 is left unchanged."
+}

@@ -1,0 +1,23 @@
+{
+  "/data/local/tmp/cr-native-direct-0/libandroidx.graphics.path.so": "4e56c996f13670e70082658de7880c4020eabf4f25e43387f88ed78a713fc9f0",
+  "/data/local/tmp/cr-native-direct-0/libapp.so": "af9d991113af4fcba023044d474ea8b6a64d59567dcb6df248a0ff237dcceeaf",
+  "/data/local/tmp/cr-native-direct-0/libc++_shared.so": "db9609240e60ca18b816a5e95a6bbc784e799261efbd5b30c8e2e03b540b3fa8",
+  "/data/local/tmp/cr-native-direct-0/libdatastore_shared_counter.so": "fb6c9208988c49ae94943bc3236fa763ba584722e044fa4ea9a12d2941027105",
+  "/data/local/tmp/cr-native-direct-0/libflutter.so": "94a457f1f2de2ed4831460f9426a8e7bd3424b9a398564415bbf14349afc29e4",
+  "/data/local/tmp/cr-native-direct-0/libfmod.so": "c35d05b0968c79b31e35903c64cd6e7172cbbb92a0f5e57fadf996ab9a0c2367",
+  "/data/local/tmp/cr-native-direct-0/libfmodstudio.so": "bd562d3ebd95848d14da4904f4bae96578367821714cb3900dda63414d35c28e",
+  "/data/local/tmp/cr-native-direct-0/libg.so": "<libg/sampler hash, local>",
+  "/data/local/tmp/cr-native-direct-0/libimage_processing_util_jni.so": "676e3e280c10dcb9b71ef5bb727552610dc73c7ec85af54c7c898f82785c33d7",
+  "/data/local/tmp/cr-native-direct-0/libQuagoTool.so": "809ba462b389a590ad1b17f471fff2d546b3264abd745d353f024e754a4eecd3",
+  "/data/local/tmp/cr-native-direct-0/libscid_sdk.so": "0e89ddac52ed75c234b76d2ce551fd7109e08d602a98ac4154941e17bfe6755c",
+  "/data/local/tmp/cr-native-direct-0/libsentry-android.so": "12f93144c1a66d375550473aa88ecbfe78126fde0748dd61628709d7b21ba55c",
+  "/data/local/tmp/cr-native-direct-0/libsentry.so": "3885778f4ea8c73b6261e54273a92d1289fddfaf7b0bb285bdb65a8d386b5194",
+  "/data/local/tmp/cr-native-direct-0/libsupercell_clashroyale.so": "db6bbe728bf480faa1622d27d627966c72689cc7d1d9cf6d276a9fe26b7ba5e9",
+  "/data/local/tmp/cr-native-direct-0/libnative_host_bridge.so": "701d6a5d4b3fe9cf7635f7fadb04ad78d9a5b006f0bfc7cc95995b178614608d",
+  "/data/local/tmp/cr-native-direct-0/lifecycle-probe.jar": "5f998d0f1f62efd75ec450e9a31b7cd9c742c1f500b3ac5fb6646b4886821098",
+  "/data/app/~~oxHCbkLfymB7IMTAdkuo2A==/com.supercell.clashroyale-q3Zdn3JbQJgJ0MXOJYsUYA==/base.apk": "a28a7ff373e30c44a6cbc06304cb4a5fc5336be99f1cdc6d062eb983378277b3",
+  "/data/app/~~oxHCbkLfymB7IMTAdkuo2A==/com.supercell.clashroyale-q3Zdn3JbQJgJ0MXOJYsUYA==/split_config.en.apk": "14539287b92ddb82edf425a649f5ac8edefb5367f0b29e895da0c5f0fc71d2bc",
+  "/data/app/~~oxHCbkLfymB7IMTAdkuo2A==/com.supercell.clashroyale-q3Zdn3JbQJgJ0MXOJYsUYA==/split_config.hdpi.apk": "e2765639cee2bc64d67593880ebe0156deb14a462be25a21269e8a26f396e9e9",
+  "/data/app/~~oxHCbkLfymB7IMTAdkuo2A==/com.supercell.clashroyale-q3Zdn3JbQJgJ0MXOJYsUYA==/split_config.x86_64.apk": "60e2f4d045d3f0a6b8af25c773fc593d443b504be2afa08be866ad7874838b02",
+  "/data/app/~~oxHCbkLfymB7IMTAdkuo2A==/com.supercell.clashroyale-q3Zdn3JbQJgJ0MXOJYsUYA==/split_install_time_asset_pack.apk": "ff8986f7a2f5fdac54956a628f8dbc8572cb0ef23b287bd24e59f5e2ee3a3da8"
+}

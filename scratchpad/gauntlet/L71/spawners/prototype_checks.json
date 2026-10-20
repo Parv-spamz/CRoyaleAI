@@ -1,0 +1,29 @@
+[
+  {
+    "command": [
+      "icebow/.venv/Scripts/python.exe",
+      "-m",
+      "pytest",
+      "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L71\\spawners\\test_body_identity.py",
+      "-q"
+    ],
+    "cwd": "C:\\Users\\benpe\\ClashBot",
+    "shell": "none; subprocess argument vector",
+    "exit_code": 0,
+    "expected": "13 passed",
+    "matched": true,
+    "output_sha256": "499a67bff3d5411b5c5391eb0ed53e818c7522e93ed0c36c92c79e1ae33f8786"
+  },
+  {
+    "command": [
+      "research/ext/Royale/.venv/Scripts/python.exe",
+      "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L71\\spawners\\probe_sim.py"
+    ],
+    "cwd": "C:\\Users\\benpe\\ClashBot",
+    "shell": "none; subprocess argument vector",
+    "exit_code": 0,
+    "expected": "SPAWNER_SIM_WAVES_PASS",
+    "matched": true,
+    "output_sha256": "9cf025cf76bbd355409196afd3295d549fe0e5066d18c244538473fcc8f2cd20"
+  }
+]

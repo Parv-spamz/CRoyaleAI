@@ -1,0 +1,20 @@
+C:\Users\benpe\ClashBot\pipeline\model_v3.py:92: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(enc, layers)
+{"e1_eval": "eval", "policy": "live", "port": 0, "tasks": 73, "already_done": 0, "grid": "lattice", "tau": 0.27, "noise_off": []}
+[e1_eval] 1/73 00JYPGYLRP88 k=0 loss 0-1 238.7s plays 49/49 wall 54.3s
+[e1_eval] 2/73 00PYLLC9QJ0L k=0 win 2-1 284.9s plays 62/62 wall 46.8s
+[e1_eval] 3/73 02QY9Q98C0J8 k=0 win 3-1 207.1s plays 38/38 wall 33.2s
+[e1_eval] 4/73 02RY9RVV8R29 k=0 win 1-0 180.0s plays 32/32 wall 23.2s
+[e1_eval] 5/73 08CPVJP99UY9 k=0 win 1-0 180.0s plays 33/33 wall 24.6s
+[e1_eval] 6/73 08JPVCQ0JCG2 k=0 loss 1-3 177.5s plays 31/31 wall 20.4s
+[e1_eval] 7/73 08PY88PJYJUR k=0 win 1-0 180.0s plays 32/33 wall 42.2s
+[e1_eval] 8/73 08QPVCP8C0CP k=0 win 1-1 300.0s plays 64/64 wall 76.1s
+[e1_eval] 9/73 092PY0Y9YC99 k=0 win 1-0 180.0s plays 34/34 wall 59.6s
+[e1_eval] 10/73 09PP9J908PYU k=0 win 2-1 204.2s plays 39/39 wall 28.1s
+[e1_eval] 11/73 09R9JCJ8LQRU k=0 win 1-1 300.0s plays 65/65 wall 25.9s
+[e1_eval] 12/73 25d003faed8c441a8e6e23ad6f07bc0f k=0 win 3-0 154.8s plays 26/26 wall 12.0s
+[e1_eval] 13/73 5bdb5c3daeff466b9d970e6c13d70bbe k=0 win 1-1 300.0s plays 66/66 wall 22.7s
+[e1_eval] 14/73 78e59386c8254e9187ce9d5aaf3bb73e k=0 loss 0-1 180.0s plays 33/33 wall 12.2s
+[e1_eval] 15/73 93367126d7144d7885c74014a865e397 k=0 loss 1-2 284.5s plays 61/62 wall 18.2s
+[e1_eval] 16/73 a4250541fc8a4eda93a7a733267dae71 k=0 win 1-0 180.0s plays 34/34 wall 10.6s
+{"DONE": {"new_matches": 16, "finished": "2026-09-23 13:16:40", "engine": "royale", "skipped_unsupported": 57, "wall_s_mean": 31.9, "win": 12, "draw": 0, "loss": 4}}

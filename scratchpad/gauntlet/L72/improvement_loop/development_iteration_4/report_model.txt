@@ -1,0 +1,12 @@
+ClashBot phase_balanced_v6: DEVELOPMENT / NOT ACCEPTED. Fixed 1000-update trial and independent 54,723-row/405-replay recount completed. Same corrected observations; R1e parent exposure disclosed. No gameplay or untouched-generalization claim.
+
+R1e / ordinary_v6 control / phase-balanced candidate:
+- Late-clock full actions: 1949 / 1993 / 2051 of6422 (215 replay groups). Candidate +0.903pp vs control, below required +2pp; 72 groups improve,35 worsen,108 tie.
+- Late expert Rocket full actions:14 /21 /20 of320 (171 groups), -0.313pp vs required +2pp;2 improve,3 worsen,166 tie. Forced aim within1tile:60 /61 /62.
+- All expert Rocket actions:54 /73 /71 of955; aim290 /293 /287. Both global Rocket protections fail.
+- Barrel correct/wrong/not-fired:36/20/7,55/7/1,56/3/4 of63; full actions18/30/32.
+- Witch actions332/341/352 of726; Night Witch156/161/167 of373; Furnace538/550/558 of1174.
+- Defense actions3952/4009/4090 of8183; candidate-control81 groups improve,31 worsen,100 tie.
+- General card11348/11399/11381 of17192 (-0.105pp vs control); all actions30968/31988/32599 of54723.
+
+Verdict: REJECT this equal-phase exposure recipe. Broader action/defense improvements do not rescue failed late-Rocket/material and global-Rocket floors. All final gameplay/component/statistical gates remain. No live change; owner STOP intact. Next investigate direct public tower-state spatial representation, separately from exposure and without tactical Rocket rules.

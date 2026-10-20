@@ -1,0 +1,12 @@
+
+running 7 tests
+test a_containers_units_report_their_card_and_pass_level_checks ... ok
+test a_rejected_card_keeps_no_unit_block ... ok
+test a_unit_that_fails_a_check_is_caught_through_every_block ... ok
+test every_registered_cards_units_pass_their_level_checks ... ok
+test every_unit_a_catalogue_card_puts_on_the_board_reports_its_card ... ok
+test every_unit_block_is_enumerated ... ok
+test summon_only_numbering_is_breadth_first ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+

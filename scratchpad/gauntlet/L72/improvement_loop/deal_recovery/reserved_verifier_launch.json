@@ -1,0 +1,16 @@
+{
+  "started": "2026-10-05T10:44:35.0408402-04:00",
+  "args": [
+    "scratchpad/gauntlet/L71/integration/run_check.py",
+    "--name",
+    "l72-deal-recovery-reserved-independent",
+    "--expect",
+    "RESERVED_DEAL_RECOVERY_INDEPENDENT_PASS",
+    "--",
+    "icebow/.venv/Scripts/python.exe",
+    "-u",
+    "scratchpad/gauntlet/L72/improvement_loop/deal_recovery/verify_reserved.py",
+    "--wait-for-completion"
+  ],
+  "pid": 18592
+}

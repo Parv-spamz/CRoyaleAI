@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "counts": {
+    "training": {
+      "rows": 213995,
+      "replays": 1573,
+      "plays": 67106,
+      "waits": 146889
+    },
+    "development": {
+      "rows": 54723,
+      "replays": 405,
+      "plays": 17192,
+      "waits": 37531
+    }
+  },
+  "controls": {
+    "positive": 1,
+    "negative": 8
+  },
+  "reserved_overlap": 0,
+  "prepared_sha256": "f2d47910c14e2f2776f5bba1ae3f33775cfcf2125b4de97d7f396d641fdd90b9",
+  "script_sha256": "0abcdc2a2f0c5ee13bde9f068972f48cc0e874a06b8c668da230dc752099fc6a",
+  "optimizer_updates": 0,
+  "training_launched": false,
+  "final_acceptance": false
+}

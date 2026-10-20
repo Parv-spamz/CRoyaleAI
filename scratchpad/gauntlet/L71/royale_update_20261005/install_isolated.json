@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pip",
+    "install",
+    "--no-deps",
+    "--no-index",
+    "--target",
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\runtime",
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\wheels\\royalegym-0.1.15-py3-none-any.whl",
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\wheels\\royalesim-0.1.13-cp310-abi3-win_amd64.whl"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005",
+  "exit_code": 0,
+  "output_sha256": "26095c611d8951a802aa2d64fcd002a67a36e1110474cc1a64b56516ada1afd7",
+  "seconds": 1.8966701030731201
+}

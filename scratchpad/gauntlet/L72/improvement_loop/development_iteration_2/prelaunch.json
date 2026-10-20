@@ -1,0 +1,162 @@
+{
+  "complete": true,
+  "optimizer_allowed": true,
+  "trainable": true,
+  "activation": "only development_iteration_2 defense_sequence_v5 fixed1000 updates",
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_2\\evaluate.py": "965e5e06facf6b7f6bd51e65ef8c6a0a6070ff929c2d3bead70aa316299a70cc",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_2\\experiment.py": "6777c98cc4a4997d477af03f733546edc06f8d58c225bdacb1657221b045f413",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_2\\preflight.py": "3ee8f3fe1afa2f8be0cee8c111e2ff0fe865db9d3fe17fbd133dfa0c046a8709",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_2\\prepare.py": "d8ab999936516457586dac04c2b0d578a7a178bc899597e6afe542abd5261166",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_2\\recount.py": "709199cf274db76f891cef1db2ca399c18afbf48adc93a8ce35ed4c1744d582e",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_2\\run_chain.py": "d05beda1f3bde06a8d842047e3e85896c49b92f1d885c9c0f257d5318337f712",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_2\\train.py": "87a4c03bb27ad8fc142cb33d1681857d6c235e636b1d51a229c779b9250f8b59",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_2\\verify.py": "acf79cfb9d472cb32217bd86d196dcd176ff530d5ba136dd91d0ed845b21e6b6",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_2\\PLAN.md": "488c9315ed96e0e5c7cace1192b13045fded415c080244f06592c2a0068f47f2",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_2\\METRICS.md": "3e4a55f3d7ca9b43755ddf3004edb30d2f3cc2cc32975eb915d6946bc5fc7c7d",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_2\\prepared.json": "699fd78f69b8582826e5063e234305840cc3560d47984f766355868f389611c4",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_2\\verified.json": "0589a38f70dfc6c71d56db1675807b35da868625c83439d8b4c9463d68cdaed9",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\results_verified_v2.json": "dde17a484ce0694274dbd76e99bd9d6d4b658cb6b8eea4d961b484e9b6b6dd94",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\resume_complete.json": "d9f2360aceac8a5e936f4cc07c0747270e51b6a273d3af6d17cd97854e9cff37",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\ordinary_v5_portable.json": "ea9bc9390c811a52b76e5f4df855d54114909503c8018b84671279ad5d8fd320",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\ordinary_v5\\candidate_portable.pt": "c0ba1ab910df50fdcbe1fcf4191aedd584c86fe94c5a6d3248359bda059db419",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\ordinary_v5\\train.jsonl": "1c8d7164b5f437d28d5b8e59af65866949ad897582818cfe652f3cab95dba174"
+  },
+  "masks_sha256": "0c826b5177136a7dbe6364a5032f5a86dba8dd730924f71dff379d63c0d5e2fb",
+  "denominators": {
+    "witch": {
+      "rows": 726,
+      "replays": 20,
+      "plays": 300
+    },
+    "witch_parent": {
+      "rows": 558,
+      "replays": 20,
+      "plays": 233
+    },
+    "witch_child_only": {
+      "rows": 168,
+      "replays": 18,
+      "plays": 67
+    },
+    "night_witch": {
+      "rows": 373,
+      "replays": 12,
+      "plays": 160
+    },
+    "night_witch_parent": {
+      "rows": 332,
+      "replays": 12,
+      "plays": 145
+    },
+    "night_witch_child_only": {
+      "rows": 41,
+      "replays": 8,
+      "plays": 15
+    },
+    "furnace": {
+      "rows": 1174,
+      "replays": 20,
+      "plays": 480
+    },
+    "furnace_parent": {
+      "rows": 1159,
+      "replays": 20,
+      "plays": 474
+    },
+    "furnace_child_only": {
+      "rows": 15,
+      "replays": 6,
+      "plays": 6
+    },
+    "barrel_pro": {
+      "rows": 63,
+      "replays": 26,
+      "plays": 63
+    },
+    "barrel_other_play": {
+      "rows": 36,
+      "replays": 22,
+      "plays": 36
+    },
+    "barrel_wait": {
+      "rows": 55,
+      "replays": 25,
+      "plays": 0
+    },
+    "barrel_multiple": {
+      "rows": 54,
+      "replays": 18,
+      "plays": 33
+    },
+    "barrel_ambiguous": {
+      "rows": 55,
+      "replays": 19,
+      "plays": 34
+    },
+    "barrel_absent": {
+      "rows": 54372,
+      "replays": 405,
+      "plays": 16973
+    },
+    "rocket": {
+      "rows": 955,
+      "replays": 336,
+      "plays": 955
+    },
+    "all": {
+      "rows": 54723,
+      "replays": 405,
+      "plays": 17192
+    },
+    "finish": {
+      "rows": 31,
+      "replays": 13,
+      "plays": 21
+    },
+    "combo": {
+      "rows": 320,
+      "replays": 75,
+      "plays": 200
+    },
+    "xbow": {
+      "rows": 105,
+      "replays": 10,
+      "plays": 36
+    },
+    "xbow_no_lifetime_target": {
+      "rows": 0,
+      "replays": 0,
+      "plays": 0
+    },
+    "defensive_sequence": {
+      "rows": 8183,
+      "replays": 212,
+      "plays": 3152
+    },
+    "defensive_rocket": {
+      "rows": 223,
+      "replays": 129,
+      "plays": 223
+    }
+  },
+  "finite_smoke": {
+    "loss": 5.456310272216797,
+    "parts": {
+      "cell": 3.1669270992279053,
+      "card": 0.9291893243789673,
+      "wait": 0.5000295639038086,
+      "gate": 0.4590936601161957,
+      "value": 0.40107038617134094
+    },
+    "updates": 1,
+    "counts_as_training": false,
+    "checkpoint_saved": false
+  },
+  "primitive_metadata_roundtrip": true,
+  "weight_bytes_equal": true,
+  "development_policy_predictions": 0,
+  "full_training_updates": 0,
+  "control": "verified iteration1 ordinary_v5",
+  "deployment_accepted": false
+}

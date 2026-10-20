@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/hand_retention_integration/sequence_data/preflight.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "HAND_SEQUENCE_PREFLIGHT",
+  "matched": true,
+  "output_sha256": "366f2fe25442b04c60d6a0e37bec277812ce4b16d40a6668c274a11abe69cfbb",
+  "seconds": 4.857271194458008
+}

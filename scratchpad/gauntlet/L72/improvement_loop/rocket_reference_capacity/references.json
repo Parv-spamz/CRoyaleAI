@@ -1,0 +1,5437 @@
+[
+  {
+    "tag": "01c90c5ccc3a401888c7c42d47c18813",
+    "side": 0,
+    "tick": 1629,
+    "card": "rocket",
+    "x": 3500,
+    "y": 17500,
+    "landing_tick": 1674,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      17500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "01c90c5ccc3a401888c7c42d47c18813",
+    "side": 0,
+    "tick": 5806,
+    "card": "rocket",
+    "x": 4500,
+    "y": 12500,
+    "landing_tick": 5837,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      12500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "02f3776ec00145a094be0628d209b0ed",
+    "side": 0,
+    "tick": 1531,
+    "card": "rocket",
+    "x": 13500,
+    "y": 15500,
+    "landing_tick": 1569,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      15500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "04d87cf157b14e0e85ff84fe059e0db8",
+    "side": 1,
+    "tick": 2722,
+    "card": "rocket",
+    "x": 15500,
+    "y": 22500,
+    "landing_tick": 2749,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      15500,
+      22500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "060812c75cdf45f08e8e58c9b05fdecc",
+    "side": 1,
+    "tick": 712,
+    "card": "rocket",
+    "x": 15500,
+    "y": 8500,
+    "landing_tick": 774,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      15500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": true,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "060812c75cdf45f08e8e58c9b05fdecc",
+    "side": 1,
+    "tick": 2661,
+    "card": "rocket",
+    "x": 13500,
+    "y": 8500,
+    "landing_tick": 2722,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "060812c75cdf45f08e8e58c9b05fdecc",
+    "side": 1,
+    "tick": 3021,
+    "card": "rocket",
+    "x": 2500,
+    "y": 14500,
+    "landing_tick": 3067,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      2500,
+      14500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "0818a443d2c54d20b9ef005406648fca",
+    "side": 0,
+    "tick": 1085,
+    "card": "rocket",
+    "x": 12500,
+    "y": 21500,
+    "landing_tick": 1139,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      21500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "09f639f7623a43c085d9af0dd433494e",
+    "side": 1,
+    "tick": 5061,
+    "card": "rocket",
+    "x": 4500,
+    "y": 8500,
+    "landing_tick": 5122,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "0a128d17c14943c3854d1da3ea295200",
+    "side": 1,
+    "tick": 1481,
+    "card": "rocket",
+    "x": 4500,
+    "y": 4500,
+    "landing_tick": 1553,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      4500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "0cb8fa88758b4d99bc2016e16c7bbabc",
+    "side": 1,
+    "tick": 1322,
+    "card": "rocket",
+    "x": 8500,
+    "y": 8500,
+    "landing_tick": 1381,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      8500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "0cb8fa88758b4d99bc2016e16c7bbabc",
+    "side": 1,
+    "tick": 2566,
+    "card": "rocket",
+    "x": 13500,
+    "y": 15500,
+    "landing_tick": 2607,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      15500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "0cb8fa88758b4d99bc2016e16c7bbabc",
+    "side": 1,
+    "tick": 3311,
+    "card": "rocket",
+    "x": 12500,
+    "y": 15500,
+    "landing_tick": 3351,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      15500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "0cf0fb5888444adf8cde74db3b5caccd",
+    "side": 0,
+    "tick": 3287,
+    "card": "rocket",
+    "x": 14500,
+    "y": 23500,
+    "landing_tick": 3348,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "princess",
+          14500,
+          25500
+        ],
+        "hp_before": 2601,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "119428f46a034eeea84309af4029cf43",
+    "side": 1,
+    "tick": 1288,
+    "card": "rocket",
+    "x": 3500,
+    "y": 19500,
+    "landing_tick": 1320,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      19500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "119428f46a034eeea84309af4029cf43",
+    "side": 1,
+    "tick": 2751,
+    "card": "rocket",
+    "x": 13500,
+    "y": 5500,
+    "landing_tick": 2820,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      5500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          0,
+          "princess",
+          14500,
+          6500
+        ],
+        "hp_before": 3052,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "119428f46a034eeea84309af4029cf43",
+    "side": 1,
+    "tick": 4106,
+    "card": "rocket",
+    "x": 4500,
+    "y": 5500,
+    "landing_tick": 4175,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      5500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          0,
+          "princess",
+          3500,
+          6500
+        ],
+        "hp_before": 3017,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "119428f46a034eeea84309af4029cf43",
+    "side": 1,
+    "tick": 5796,
+    "card": "rocket",
+    "x": 14500,
+    "y": 18500,
+    "landing_tick": 5830,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      18500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "12f39bd51bd84ab598b990cfbadca787",
+    "side": 0,
+    "tick": 718,
+    "card": "rocket",
+    "x": 3500,
+    "y": 16500,
+    "landing_tick": 760,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      16500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "12f39bd51bd84ab598b990cfbadca787",
+    "side": 0,
+    "tick": 2177,
+    "card": "rocket",
+    "x": 3500,
+    "y": 17500,
+    "landing_tick": 2222,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      17500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "12f39bd51bd84ab598b990cfbadca787",
+    "side": 0,
+    "tick": 3104,
+    "card": "rocket",
+    "x": 3500,
+    "y": 17500,
+    "landing_tick": 3149,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      17500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "13f41783d44b43bb9ac36ee7fde9c181",
+    "side": 1,
+    "tick": 1358,
+    "card": "rocket",
+    "x": 4500,
+    "y": 4500,
+    "landing_tick": 1430,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      4500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "13f41783d44b43bb9ac36ee7fde9c181",
+    "side": 1,
+    "tick": 3736,
+    "card": "rocket",
+    "x": 14500,
+    "y": 17500,
+    "landing_tick": 3773,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      17500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "13f41783d44b43bb9ac36ee7fde9c181",
+    "side": 1,
+    "tick": 4575,
+    "card": "rocket",
+    "x": 9500,
+    "y": 14500,
+    "landing_tick": 4617,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      9500,
+      14500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "17b000ad9ce84c41923b528265409fb1",
+    "side": 0,
+    "tick": 2647,
+    "card": "rocket",
+    "x": 14500,
+    "y": 15500,
+    "landing_tick": 2687,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      15500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "1e3bca5da52a4d729d6ffec1e3c2f431",
+    "side": 0,
+    "tick": 1246,
+    "card": "rocket",
+    "x": 3500,
+    "y": 14500,
+    "landing_tick": 1283,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      14500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "1e3bca5da52a4d729d6ffec1e3c2f431",
+    "side": 0,
+    "tick": 4318,
+    "card": "rocket",
+    "x": 7500,
+    "y": 20500,
+    "landing_tick": 4369,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      7500,
+      20500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "1e3bca5da52a4d729d6ffec1e3c2f431",
+    "side": 0,
+    "tick": 5377,
+    "card": "rocket",
+    "x": 4500,
+    "y": 16500,
+    "landing_tick": 5418,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      16500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "1e3bca5da52a4d729d6ffec1e3c2f431",
+    "side": 0,
+    "tick": 5885,
+    "card": "rocket",
+    "x": 4500,
+    "y": 25500,
+    "landing_tick": 5951,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      25500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "princess",
+          3500,
+          25500
+        ],
+        "hp_before": 2340,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "223c88e8753c4c348bc0091850e74b89",
+    "side": 0,
+    "tick": 2571,
+    "card": "rocket",
+    "x": 13500,
+    "y": 24500,
+    "landing_tick": 2634,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      24500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "princess",
+          14500,
+          25500
+        ],
+        "hp_before": 2874,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "223f1e3737ab4779b74e12de9fbcae4c",
+    "side": 1,
+    "tick": 1193,
+    "card": "rocket",
+    "x": 3500,
+    "y": 17500,
+    "landing_tick": 1230,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      17500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "223f1e3737ab4779b74e12de9fbcae4c",
+    "side": 1,
+    "tick": 5831,
+    "card": "rocket",
+    "x": 3500,
+    "y": 8500,
+    "landing_tick": 5892,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          0,
+          "princess",
+          3500,
+          6500
+        ],
+        "hp_before": 2305,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "23a756de18dd42a78a9481930070b837",
+    "side": 0,
+    "tick": 668,
+    "card": "rocket",
+    "x": 4500,
+    "y": 24500,
+    "landing_tick": 731,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      24500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "princess",
+          3500,
+          25500
+        ],
+        "hp_before": 3017,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "23a756de18dd42a78a9481930070b837",
+    "side": 0,
+    "tick": 5271,
+    "card": "rocket",
+    "x": 15500,
+    "y": 23500,
+    "landing_tick": 5333,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      15500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "24305607d87b4332847f999adf9e45ec",
+    "side": 0,
+    "tick": 1267,
+    "card": "rocket",
+    "x": 4500,
+    "y": 23500,
+    "landing_tick": 1328,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "24305607d87b4332847f999adf9e45ec",
+    "side": 0,
+    "tick": 2445,
+    "card": "rocket",
+    "x": 4500,
+    "y": 23500,
+    "landing_tick": 2506,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "24305607d87b4332847f999adf9e45ec",
+    "side": 0,
+    "tick": 3411,
+    "card": "rocket",
+    "x": 13500,
+    "y": 24500,
+    "landing_tick": 3474,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      24500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "princess",
+          14500,
+          25500
+        ],
+        "hp_before": 1598,
+        "hp_drop": 489,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "265d434f17244e9590e584473225349f",
+    "side": 0,
+    "tick": 3532,
+    "card": "rocket",
+    "x": 14500,
+    "y": 16500,
+    "landing_tick": 3574,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      16500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "265d434f17244e9590e584473225349f",
+    "side": 0,
+    "tick": 5081,
+    "card": "rocket",
+    "x": 4500,
+    "y": 14500,
+    "landing_tick": 5117,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      14500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "265d434f17244e9590e584473225349f",
+    "side": 0,
+    "tick": 5523,
+    "card": "rocket",
+    "x": 12500,
+    "y": 23500,
+    "landing_tick": 5583,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "265d434f17244e9590e584473225349f",
+    "side": 0,
+    "tick": 5787,
+    "card": "rocket",
+    "x": 12500,
+    "y": 23500,
+    "landing_tick": 5847,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "2b117f8ee53347bdb164c32d02d65c98",
+    "side": 0,
+    "tick": 4387,
+    "card": "rocket",
+    "x": 3500,
+    "y": 16500,
+    "landing_tick": 4429,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      16500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "2b117f8ee53347bdb164c32d02d65c98",
+    "side": 0,
+    "tick": 5959,
+    "card": "rocket",
+    "x": 2500,
+    "y": 24500,
+    "landing_tick": 6024,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      2500,
+      24500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "princess",
+          3500,
+          25500
+        ],
+        "hp_before": 1126,
+        "hp_drop": 0,
+        "hp_confirmed": false,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "2b6e9b281212497ca169cd2688cfcba4",
+    "side": 1,
+    "tick": 4466,
+    "card": "rocket",
+    "x": 12500,
+    "y": 8500,
+    "landing_tick": 4526,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "2b6e9b281212497ca169cd2688cfcba4",
+    "side": 1,
+    "tick": 5553,
+    "card": "rocket",
+    "x": 13500,
+    "y": 13500,
+    "landing_tick": 5600,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      13500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "2b6e9b281212497ca169cd2688cfcba4",
+    "side": 1,
+    "tick": 5863,
+    "card": "rocket",
+    "x": 13500,
+    "y": 8500,
+    "landing_tick": 5924,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "2ecbb87db5924ebcb3f6e94728506b12",
+    "side": 1,
+    "tick": 2763,
+    "card": "rocket",
+    "x": 4500,
+    "y": 6500,
+    "landing_tick": 2829,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      6500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          0,
+          "princess",
+          3500,
+          6500
+        ],
+        "hp_before": 3052,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "2ecbb87db5924ebcb3f6e94728506b12",
+    "side": 1,
+    "tick": 3648,
+    "card": "rocket",
+    "x": 4500,
+    "y": 17500,
+    "landing_tick": 3684,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      17500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "2ecbb87db5924ebcb3f6e94728506b12",
+    "side": 1,
+    "tick": 4344,
+    "card": "rocket",
+    "x": 5500,
+    "y": 16500,
+    "landing_tick": 4382,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      16500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "2ecbb87db5924ebcb3f6e94728506b12",
+    "side": 1,
+    "tick": 5253,
+    "card": "rocket",
+    "x": 13500,
+    "y": 14500,
+    "landing_tick": 5297,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      14500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "2ecbb87db5924ebcb3f6e94728506b12",
+    "side": 1,
+    "tick": 5638,
+    "card": "rocket",
+    "x": 5500,
+    "y": 15500,
+    "landing_tick": 5678,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      15500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "31a0056abcb24f639996a5e012f3417d",
+    "side": 0,
+    "tick": 1481,
+    "card": "rocket",
+    "x": 14500,
+    "y": 13500,
+    "landing_tick": 1515,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      13500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "31a0056abcb24f639996a5e012f3417d",
+    "side": 0,
+    "tick": 3337,
+    "card": "rocket",
+    "x": 9500,
+    "y": 28500,
+    "landing_tick": 3411,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      9500,
+      28500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "king",
+          9000,
+          29000
+        ],
+        "hp_before": 909,
+        "hp_drop": 431,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "338f575506704ea08601e4441b8bfa36",
+    "side": 1,
+    "tick": 2148,
+    "card": "rocket",
+    "x": 13500,
+    "y": 8500,
+    "landing_tick": 2209,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "338f575506704ea08601e4441b8bfa36",
+    "side": 1,
+    "tick": 3013,
+    "card": "rocket",
+    "x": 3500,
+    "y": 14500,
+    "landing_tick": 3058,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      14500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "338f575506704ea08601e4441b8bfa36",
+    "side": 1,
+    "tick": 4821,
+    "card": "rocket",
+    "x": 13500,
+    "y": 7500,
+    "landing_tick": 4884,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      7500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          0,
+          "princess",
+          14500,
+          6500
+        ],
+        "hp_before": 2640,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "338f575506704ea08601e4441b8bfa36",
+    "side": 1,
+    "tick": 5236,
+    "card": "rocket",
+    "x": 12500,
+    "y": 8500,
+    "landing_tick": 5296,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "338f575506704ea08601e4441b8bfa36",
+    "side": 1,
+    "tick": 5871,
+    "card": "rocket",
+    "x": 12500,
+    "y": 8500,
+    "landing_tick": 5931,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "346f992be3074c09ac5c46108dac1984",
+    "side": 0,
+    "tick": 1064,
+    "card": "rocket",
+    "x": 4500,
+    "y": 27500,
+    "landing_tick": 1136,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      27500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "346f992be3074c09ac5c46108dac1984",
+    "side": 0,
+    "tick": 1936,
+    "card": "rocket",
+    "x": 3500,
+    "y": 9500,
+    "landing_tick": 1961,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      9500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "346f992be3074c09ac5c46108dac1984",
+    "side": 0,
+    "tick": 2723,
+    "card": "rocket",
+    "x": 3500,
+    "y": 17500,
+    "landing_tick": 2768,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      17500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "3483356a35d64123a374dc4d0127e620",
+    "side": 1,
+    "tick": 396,
+    "card": "rocket",
+    "x": 3500,
+    "y": 20500,
+    "landing_tick": 425,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      20500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "3483356a35d64123a374dc4d0127e620",
+    "side": 1,
+    "tick": 2683,
+    "card": "rocket",
+    "x": 13500,
+    "y": 8500,
+    "landing_tick": 2744,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "3483356a35d64123a374dc4d0127e620",
+    "side": 1,
+    "tick": 4391,
+    "card": "rocket",
+    "x": 3500,
+    "y": 17500,
+    "landing_tick": 4428,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      17500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "3483356a35d64123a374dc4d0127e620",
+    "side": 1,
+    "tick": 4891,
+    "card": "rocket",
+    "x": 13500,
+    "y": 8500,
+    "landing_tick": 4952,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "3483356a35d64123a374dc4d0127e620",
+    "side": 1,
+    "tick": 5318,
+    "card": "rocket",
+    "x": 3500,
+    "y": 16500,
+    "landing_tick": 5358,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      16500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "3483356a35d64123a374dc4d0127e620",
+    "side": 1,
+    "tick": 5651,
+    "card": "rocket",
+    "x": 12500,
+    "y": 8500,
+    "landing_tick": 5711,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "3483356a35d64123a374dc4d0127e620",
+    "side": 1,
+    "tick": 5901,
+    "card": "rocket",
+    "x": 13500,
+    "y": 8500,
+    "landing_tick": 5962,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "3519f449b6d14e118deb073744e5af21",
+    "side": 0,
+    "tick": 2906,
+    "card": "rocket",
+    "x": 3500,
+    "y": 15500,
+    "landing_tick": 2946,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      15500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "3519f449b6d14e118deb073744e5af21",
+    "side": 0,
+    "tick": 4345,
+    "card": "rocket",
+    "x": 13500,
+    "y": 15500,
+    "landing_tick": 4383,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      15500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "3519f449b6d14e118deb073744e5af21",
+    "side": 0,
+    "tick": 5013,
+    "card": "rocket",
+    "x": 4500,
+    "y": 18500,
+    "landing_tick": 5060,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      18500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "3519f449b6d14e118deb073744e5af21",
+    "side": 0,
+    "tick": 5361,
+    "card": "rocket",
+    "x": 3500,
+    "y": 15500,
+    "landing_tick": 5401,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      15500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "3519f449b6d14e118deb073744e5af21",
+    "side": 0,
+    "tick": 5831,
+    "card": "rocket",
+    "x": 13500,
+    "y": 23500,
+    "landing_tick": 5892,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "351e5815bbb040f1bfba6a5ef2c12b7e",
+    "side": 0,
+    "tick": 2991,
+    "card": "rocket",
+    "x": 5500,
+    "y": 9500,
+    "landing_tick": 3013,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      9500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "3f7b9bf3703a4d738be08c7804f78023",
+    "side": 1,
+    "tick": 1526,
+    "card": "rocket",
+    "x": 2500,
+    "y": 15500,
+    "landing_tick": 1569,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      2500,
+      15500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "3f7b9bf3703a4d738be08c7804f78023",
+    "side": 1,
+    "tick": 4354,
+    "card": "rocket",
+    "x": 3500,
+    "y": 17500,
+    "landing_tick": 4391,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      17500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "3f7b9bf3703a4d738be08c7804f78023",
+    "side": 1,
+    "tick": 5151,
+    "card": "rocket",
+    "x": 14500,
+    "y": 19500,
+    "landing_tick": 5183,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      19500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "3f7b9bf3703a4d738be08c7804f78023",
+    "side": 1,
+    "tick": 5545,
+    "card": "rocket",
+    "x": 5500,
+    "y": 19500,
+    "landing_tick": 5574,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      19500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "40471282469242aeb861e6571a17209e",
+    "side": 0,
+    "tick": 1601,
+    "card": "rocket",
+    "x": 8500,
+    "y": 23500,
+    "landing_tick": 1660,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      8500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "4809e34081164cb4910409b430865099",
+    "side": 1,
+    "tick": 1422,
+    "card": "rocket",
+    "x": 8500,
+    "y": 8500,
+    "landing_tick": 1481,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      8500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "488af28ae0f04dc6a17bb44358af84c4",
+    "side": 0,
+    "tick": 3693,
+    "card": "rocket",
+    "x": 3500,
+    "y": 15500,
+    "landing_tick": 3733,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      15500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "488af28ae0f04dc6a17bb44358af84c4",
+    "side": 0,
+    "tick": 4854,
+    "card": "rocket",
+    "x": 5500,
+    "y": 23500,
+    "landing_tick": 4914,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": true,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "4e8d7608cf29486eb5e354fe2e2eac15",
+    "side": 1,
+    "tick": 1346,
+    "card": "rocket",
+    "x": 3500,
+    "y": 19500,
+    "landing_tick": 1378,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      19500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "4e8d7608cf29486eb5e354fe2e2eac15",
+    "side": 1,
+    "tick": 4905,
+    "card": "rocket",
+    "x": 4500,
+    "y": 8500,
+    "landing_tick": 4966,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "4e8d7608cf29486eb5e354fe2e2eac15",
+    "side": 1,
+    "tick": 5864,
+    "card": "rocket",
+    "x": 3500,
+    "y": 15500,
+    "landing_tick": 5906,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      15500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "511962d005fe49b498e6af92a84e3066",
+    "side": 0,
+    "tick": 2065,
+    "card": "rocket",
+    "x": 6500,
+    "y": 17500,
+    "landing_tick": 2108,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      6500,
+      17500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "511962d005fe49b498e6af92a84e3066",
+    "side": 0,
+    "tick": 3063,
+    "card": "rocket",
+    "x": 14500,
+    "y": 16500,
+    "landing_tick": 3105,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      16500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "52d42408fd934f5ca851c53a27adbad6",
+    "side": 1,
+    "tick": 2791,
+    "card": "rocket",
+    "x": 13500,
+    "y": 18500,
+    "landing_tick": 2824,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      18500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "52d42408fd934f5ca851c53a27adbad6",
+    "side": 1,
+    "tick": 4056,
+    "card": "rocket",
+    "x": 8500,
+    "y": 17500,
+    "landing_tick": 4089,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      8500,
+      17500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "52d42408fd934f5ca851c53a27adbad6",
+    "side": 1,
+    "tick": 4931,
+    "card": "rocket",
+    "x": 5500,
+    "y": 8500,
+    "landing_tick": 4991,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "52d42408fd934f5ca851c53a27adbad6",
+    "side": 1,
+    "tick": 5317,
+    "card": "rocket",
+    "x": 6500,
+    "y": 18500,
+    "landing_tick": 5348,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      6500,
+      18500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "52d42408fd934f5ca851c53a27adbad6",
+    "side": 1,
+    "tick": 5784,
+    "card": "rocket",
+    "x": 5500,
+    "y": 19500,
+    "landing_tick": 5813,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      19500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "577c8f2e1af84d9fb3b848af3879d6d8",
+    "side": 0,
+    "tick": 1563,
+    "card": "rocket",
+    "x": 14500,
+    "y": 17500,
+    "landing_tick": 1608,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      17500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "57cf318d53a445abb63377893b5ee142",
+    "side": 0,
+    "tick": 707,
+    "card": "rocket",
+    "x": 5500,
+    "y": 12500,
+    "landing_tick": 736,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      12500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "5edd1464c1694599a9047ce4514f6b5e",
+    "side": 1,
+    "tick": 5523,
+    "card": "rocket",
+    "x": 12500,
+    "y": 8500,
+    "landing_tick": 5583,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "5edd1464c1694599a9047ce4514f6b5e",
+    "side": 1,
+    "tick": 5813,
+    "card": "rocket",
+    "x": 12500,
+    "y": 7500,
+    "landing_tick": 5876,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      7500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "5fdeb94c6c7f4b1eb32cd44813071a2a",
+    "side": 1,
+    "tick": 1365,
+    "card": "rocket",
+    "x": 2500,
+    "y": 20500,
+    "landing_tick": 1396,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      2500,
+      20500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "62e5470add1e474a9998eefafe8628b5",
+    "side": 1,
+    "tick": 1115,
+    "card": "rocket",
+    "x": 15500,
+    "y": 15500,
+    "landing_tick": 1158,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      15500,
+      15500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "6674819abccb4b8d889ad238a4123606",
+    "side": 1,
+    "tick": 4306,
+    "card": "rocket",
+    "x": 13500,
+    "y": 17500,
+    "landing_tick": 4342,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      17500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "6674819abccb4b8d889ad238a4123606",
+    "side": 1,
+    "tick": 4861,
+    "card": "rocket",
+    "x": 13500,
+    "y": 15500,
+    "landing_tick": 4902,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      15500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "6674819abccb4b8d889ad238a4123606",
+    "side": 1,
+    "tick": 5243,
+    "card": "rocket",
+    "x": 14500,
+    "y": 22500,
+    "landing_tick": 5268,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      22500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "6674819abccb4b8d889ad238a4123606",
+    "side": 1,
+    "tick": 5597,
+    "card": "rocket",
+    "x": 5500,
+    "y": 8500,
+    "landing_tick": 5657,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "6674819abccb4b8d889ad238a4123606",
+    "side": 1,
+    "tick": 5877,
+    "card": "rocket",
+    "x": 5500,
+    "y": 8500,
+    "landing_tick": 5937,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "6c914bdaf0c546809c1a659345e9f9fc",
+    "side": 1,
+    "tick": 2526,
+    "card": "rocket",
+    "x": 13500,
+    "y": 8500,
+    "landing_tick": 2587,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "6c914bdaf0c546809c1a659345e9f9fc",
+    "side": 1,
+    "tick": 4652,
+    "card": "rocket",
+    "x": 13500,
+    "y": 7500,
+    "landing_tick": 4715,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      7500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          0,
+          "princess",
+          14500,
+          6500
+        ],
+        "hp_before": 1776,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "6c914bdaf0c546809c1a659345e9f9fc",
+    "side": 1,
+    "tick": 4972,
+    "card": "rocket",
+    "x": 12500,
+    "y": 7500,
+    "landing_tick": 5035,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      7500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "6c914bdaf0c546809c1a659345e9f9fc",
+    "side": 1,
+    "tick": 5439,
+    "card": "rocket",
+    "x": 12500,
+    "y": 8500,
+    "landing_tick": 5499,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "6c914bdaf0c546809c1a659345e9f9fc",
+    "side": 1,
+    "tick": 5798,
+    "card": "rocket",
+    "x": 13500,
+    "y": 8500,
+    "landing_tick": 5859,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "6f78959ef6f4467aa1075a70d4268ea4",
+    "side": 0,
+    "tick": 2938,
+    "card": "rocket",
+    "x": 14500,
+    "y": 14500,
+    "landing_tick": 2975,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      14500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "6f78959ef6f4467aa1075a70d4268ea4",
+    "side": 0,
+    "tick": 3828,
+    "card": "rocket",
+    "x": 14500,
+    "y": 9500,
+    "landing_tick": 3853,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      9500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "6f78959ef6f4467aa1075a70d4268ea4",
+    "side": 0,
+    "tick": 4562,
+    "card": "rocket",
+    "x": 8500,
+    "y": 12500,
+    "landing_tick": 4590,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      8500,
+      12500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "6f78959ef6f4467aa1075a70d4268ea4",
+    "side": 0,
+    "tick": 5437,
+    "card": "rocket",
+    "x": 14500,
+    "y": 14500,
+    "landing_tick": 5474,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      14500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": true,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "70e058e1feab41f39b27494d429b8a10",
+    "side": 1,
+    "tick": 1906,
+    "card": "rocket",
+    "x": 4500,
+    "y": 7500,
+    "landing_tick": 1969,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      7500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          0,
+          "princess",
+          3500,
+          6500
+        ],
+        "hp_before": 2982,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "70e058e1feab41f39b27494d429b8a10",
+    "side": 1,
+    "tick": 4631,
+    "card": "rocket",
+    "x": 5500,
+    "y": 19500,
+    "landing_tick": 4660,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      19500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "71bbd482dc1149c9a5fe89a0019601a1",
+    "side": 0,
+    "tick": 1395,
+    "card": "rocket",
+    "x": 3500,
+    "y": 13500,
+    "landing_tick": 1429,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      13500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "71bbd482dc1149c9a5fe89a0019601a1",
+    "side": 0,
+    "tick": 4522,
+    "card": "rocket",
+    "x": 14500,
+    "y": 12500,
+    "landing_tick": 4554,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      12500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "71bbd482dc1149c9a5fe89a0019601a1",
+    "side": 0,
+    "tick": 5691,
+    "card": "rocket",
+    "x": 6500,
+    "y": 17500,
+    "landing_tick": 5734,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      6500,
+      17500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "76c98259919746fd96d409e7f15f84e4",
+    "side": 0,
+    "tick": 2433,
+    "card": "rocket",
+    "x": 8500,
+    "y": 27500,
+    "landing_tick": 2504,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      8500,
+      27500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "king",
+          9000,
+          29000
+        ],
+        "hp_before": 4799,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "784dc82e4409483f8968066deff7cb6b",
+    "side": 1,
+    "tick": 843,
+    "card": "rocket",
+    "x": 14500,
+    "y": 20500,
+    "landing_tick": 872,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      20500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "7a4c0a1289354f2aba963f178feb48d3",
+    "side": 1,
+    "tick": 3112,
+    "card": "rocket",
+    "x": 5500,
+    "y": 14500,
+    "landing_tick": 3155,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      14500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "7a4c0a1289354f2aba963f178feb48d3",
+    "side": 1,
+    "tick": 5378,
+    "card": "rocket",
+    "x": 13500,
+    "y": 16500,
+    "landing_tick": 5416,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      16500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "7da70cd8831f41e08afc7db3a3fdf057",
+    "side": 0,
+    "tick": 3591,
+    "card": "rocket",
+    "x": 4500,
+    "y": 24500,
+    "landing_tick": 3654,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      24500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "princess",
+          3500,
+          25500
+        ],
+        "hp_before": 2957,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "7da70cd8831f41e08afc7db3a3fdf057",
+    "side": 0,
+    "tick": 5061,
+    "card": "rocket",
+    "x": 3500,
+    "y": 24500,
+    "landing_tick": 5125,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      24500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "princess",
+          3500,
+          25500
+        ],
+        "hp_before": 2615,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 1,
+        "gap_s": 73.5
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "7f9ee8a66ab64c758a4bec1edf3f8b04",
+    "side": 0,
+    "tick": 1748,
+    "card": "rocket",
+    "x": 2500,
+    "y": 13500,
+    "landing_tick": 1784,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      2500,
+      13500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "7f9ee8a66ab64c758a4bec1edf3f8b04",
+    "side": 0,
+    "tick": 2871,
+    "card": "rocket",
+    "x": 5500,
+    "y": 16500,
+    "landing_tick": 2911,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      16500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "7f9ee8a66ab64c758a4bec1edf3f8b04",
+    "side": 0,
+    "tick": 4071,
+    "card": "rocket",
+    "x": 14500,
+    "y": 13500,
+    "landing_tick": 4105,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      13500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "7f9ee8a66ab64c758a4bec1edf3f8b04",
+    "side": 0,
+    "tick": 5711,
+    "card": "rocket",
+    "x": 12500,
+    "y": 14500,
+    "landing_tick": 5746,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      14500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "8314a953979842c784299abee7d6e136",
+    "side": 1,
+    "tick": 2681,
+    "card": "rocket",
+    "x": 14500,
+    "y": 15500,
+    "landing_tick": 2723,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      15500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "83a1caa8c5414b4c995208b6c59e5099",
+    "side": 0,
+    "tick": 743,
+    "card": "rocket",
+    "x": 3500,
+    "y": 11500,
+    "landing_tick": 772,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      11500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "852827f4d7ce44b186a0306379f272fc",
+    "side": 0,
+    "tick": 694,
+    "card": "rocket",
+    "x": 14500,
+    "y": 23500,
+    "landing_tick": 755,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "princess",
+          14500,
+          25500
+        ],
+        "hp_before": 3052,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "852827f4d7ce44b186a0306379f272fc",
+    "side": 0,
+    "tick": 2643,
+    "card": "rocket",
+    "x": 4500,
+    "y": 24500,
+    "landing_tick": 2706,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      24500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "princess",
+          3500,
+          25500
+        ],
+        "hp_before": 2174,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "852827f4d7ce44b186a0306379f272fc",
+    "side": 0,
+    "tick": 4069,
+    "card": "rocket",
+    "x": 5500,
+    "y": 18500,
+    "landing_tick": 4115,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      18500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "88fdfed7c878442b813ad7ec28865522",
+    "side": 1,
+    "tick": 4893,
+    "card": "rocket",
+    "x": 13500,
+    "y": 8500,
+    "landing_tick": 4954,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "88fdfed7c878442b813ad7ec28865522",
+    "side": 1,
+    "tick": 5313,
+    "card": "rocket",
+    "x": 3500,
+    "y": 19500,
+    "landing_tick": 5345,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      19500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": true,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "89170b08166b45f9a224365d7a5657fd",
+    "side": 0,
+    "tick": 2926,
+    "card": "rocket",
+    "x": 15500,
+    "y": 23500,
+    "landing_tick": 2988,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      15500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "8ca3b501f4cc4ec8a15648370e28cc63",
+    "side": 1,
+    "tick": 2818,
+    "card": "rocket",
+    "x": 3500,
+    "y": 18500,
+    "landing_tick": 2852,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      18500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "8ca3b501f4cc4ec8a15648370e28cc63",
+    "side": 1,
+    "tick": 4213,
+    "card": "rocket",
+    "x": 5500,
+    "y": 8500,
+    "landing_tick": 4273,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "8ca3b501f4cc4ec8a15648370e28cc63",
+    "side": 1,
+    "tick": 5121,
+    "card": "rocket",
+    "x": 5500,
+    "y": 8500,
+    "landing_tick": 5181,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "8f287422a7944fe88bd671af4f848d62",
+    "side": 0,
+    "tick": 767,
+    "card": "rocket",
+    "x": 9500,
+    "y": 24500,
+    "landing_tick": 829,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      9500,
+      24500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "91ee15fcdad14930a71b46efc7f1d082",
+    "side": 0,
+    "tick": 401,
+    "card": "rocket",
+    "x": 5500,
+    "y": 23500,
+    "landing_tick": 461,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "91ee15fcdad14930a71b46efc7f1d082",
+    "side": 0,
+    "tick": 1367,
+    "card": "rocket",
+    "x": 13500,
+    "y": 11500,
+    "landing_tick": 1395,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      11500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "924702e1ab994e19be81dfbac101f5b2",
+    "side": 0,
+    "tick": 857,
+    "card": "rocket",
+    "x": 14500,
+    "y": 15500,
+    "landing_tick": 897,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      15500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "924702e1ab994e19be81dfbac101f5b2",
+    "side": 0,
+    "tick": 1689,
+    "card": "rocket",
+    "x": 13500,
+    "y": 11500,
+    "landing_tick": 1717,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      11500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "924702e1ab994e19be81dfbac101f5b2",
+    "side": 0,
+    "tick": 3353,
+    "card": "rocket",
+    "x": 2500,
+    "y": 16500,
+    "landing_tick": 3396,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      2500,
+      16500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "924702e1ab994e19be81dfbac101f5b2",
+    "side": 0,
+    "tick": 5068,
+    "card": "rocket",
+    "x": 8500,
+    "y": 21500,
+    "landing_tick": 5121,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      8500,
+      21500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "9427dd3582294d2abbeff8eb27247737",
+    "side": 1,
+    "tick": 906,
+    "card": "rocket",
+    "x": 13500,
+    "y": 8500,
+    "landing_tick": 967,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "9427dd3582294d2abbeff8eb27247737",
+    "side": 1,
+    "tick": 3447,
+    "card": "rocket",
+    "x": 1500,
+    "y": 13500,
+    "landing_tick": 3497,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      1500,
+      13500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "9427dd3582294d2abbeff8eb27247737",
+    "side": 1,
+    "tick": 5271,
+    "card": "rocket",
+    "x": 12500,
+    "y": 8500,
+    "landing_tick": 5331,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "9427dd3582294d2abbeff8eb27247737",
+    "side": 1,
+    "tick": 5661,
+    "card": "rocket",
+    "x": 12500,
+    "y": 8500,
+    "landing_tick": 5721,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "9467ae8cb1ee4709ba5593edc043cf76",
+    "side": 0,
+    "tick": 1588,
+    "card": "rocket",
+    "x": 13500,
+    "y": 23500,
+    "landing_tick": 1649,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "9467ae8cb1ee4709ba5593edc043cf76",
+    "side": 0,
+    "tick": 4006,
+    "card": "rocket",
+    "x": 14500,
+    "y": 23500,
+    "landing_tick": 4067,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "princess",
+          14500,
+          25500
+        ],
+        "hp_before": 2211,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "9467ae8cb1ee4709ba5593edc043cf76",
+    "side": 0,
+    "tick": 4981,
+    "card": "rocket",
+    "x": 13500,
+    "y": 24500,
+    "landing_tick": 5044,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      24500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "princess",
+          14500,
+          25500
+        ],
+        "hp_before": 1869,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 1,
+        "gap_s": 48.75
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "9467ae8cb1ee4709ba5593edc043cf76",
+    "side": 0,
+    "tick": 5393,
+    "card": "rocket",
+    "x": 13500,
+    "y": 24500,
+    "landing_tick": 5456,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      24500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "princess",
+          14500,
+          25500
+        ],
+        "hp_before": 1492,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 2,
+        "gap_s": 20.6
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "98504ee4d78c4b84853a4b4907fad1db",
+    "side": 0,
+    "tick": 2477,
+    "card": "rocket",
+    "x": 3500,
+    "y": 13500,
+    "landing_tick": 2511,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      13500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "98504ee4d78c4b84853a4b4907fad1db",
+    "side": 0,
+    "tick": 3102,
+    "card": "rocket",
+    "x": 12500,
+    "y": 13500,
+    "landing_tick": 3134,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      13500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "99245605759040deb5ac5f70eac81b66",
+    "side": 1,
+    "tick": 1094,
+    "card": "rocket",
+    "x": 3500,
+    "y": 13500,
+    "landing_tick": 1142,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      13500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "99245605759040deb5ac5f70eac81b66",
+    "side": 1,
+    "tick": 5899,
+    "card": "rocket",
+    "x": 12500,
+    "y": 8500,
+    "landing_tick": 5959,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "9b1151e5aa3d4ee48943ae29b6047f03",
+    "side": 0,
+    "tick": 746,
+    "card": "rocket",
+    "x": 5500,
+    "y": 24500,
+    "landing_tick": 809,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      24500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "9b1151e5aa3d4ee48943ae29b6047f03",
+    "side": 0,
+    "tick": 2575,
+    "card": "rocket",
+    "x": 3500,
+    "y": 16500,
+    "landing_tick": 2617,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      16500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "9b1151e5aa3d4ee48943ae29b6047f03",
+    "side": 0,
+    "tick": 5369,
+    "card": "rocket",
+    "x": 3500,
+    "y": 23500,
+    "landing_tick": 5430,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "princess",
+          3500,
+          25500
+        ],
+        "hp_before": 1209,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "9b1151e5aa3d4ee48943ae29b6047f03",
+    "side": 0,
+    "tick": 5804,
+    "card": "rocket",
+    "x": 3500,
+    "y": 23500,
+    "landing_tick": 5865,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "princess",
+          3500,
+          25500
+        ],
+        "hp_before": 832,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 1,
+        "gap_s": 21.75
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "9ff5b8e7949d41f29657ac60db1b9f00",
+    "side": 0,
+    "tick": 3101,
+    "card": "rocket",
+    "x": 4500,
+    "y": 15500,
+    "landing_tick": 3139,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      15500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "9ff5b8e7949d41f29657ac60db1b9f00",
+    "side": 0,
+    "tick": 5021,
+    "card": "rocket",
+    "x": 13500,
+    "y": 23500,
+    "landing_tick": 5082,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "a3d3fe34595f46f98edebaad0904269b",
+    "side": 0,
+    "tick": 2941,
+    "card": "rocket",
+    "x": 15500,
+    "y": 13500,
+    "landing_tick": 2977,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      15500,
+      13500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "a42592796c424ee697b1022b5784895b",
+    "side": 1,
+    "tick": 4962,
+    "card": "rocket",
+    "x": 5500,
+    "y": 15500,
+    "landing_tick": 5002,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      15500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "a42592796c424ee697b1022b5784895b",
+    "side": 1,
+    "tick": 5583,
+    "card": "rocket",
+    "x": 12500,
+    "y": 8500,
+    "landing_tick": 5643,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "a42592796c424ee697b1022b5784895b",
+    "side": 1,
+    "tick": 5853,
+    "card": "rocket",
+    "x": 12500,
+    "y": 7500,
+    "landing_tick": 5916,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      7500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "a584dac6636447aa924b6329e084c7f1",
+    "side": 0,
+    "tick": 994,
+    "card": "rocket",
+    "x": 8500,
+    "y": 8500,
+    "landing_tick": 1010,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      8500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "aaf81e8bcac0403d89adec9f444226eb",
+    "side": 1,
+    "tick": 2617,
+    "card": "rocket",
+    "x": 12500,
+    "y": 8500,
+    "landing_tick": 2677,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "aaf81e8bcac0403d89adec9f444226eb",
+    "side": 1,
+    "tick": 3491,
+    "card": "rocket",
+    "x": 12500,
+    "y": 8500,
+    "landing_tick": 3551,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "aaf81e8bcac0403d89adec9f444226eb",
+    "side": 1,
+    "tick": 5045,
+    "card": "rocket",
+    "x": 14500,
+    "y": 14500,
+    "landing_tick": 5090,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      14500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "aaf81e8bcac0403d89adec9f444226eb",
+    "side": 1,
+    "tick": 5271,
+    "card": "rocket",
+    "x": 14500,
+    "y": 14500,
+    "landing_tick": 5316,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      14500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "aaf81e8bcac0403d89adec9f444226eb",
+    "side": 1,
+    "tick": 5832,
+    "card": "rocket",
+    "x": 12500,
+    "y": 8500,
+    "landing_tick": 5892,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "acb8a793ac4d467e8aca001a846a4bcc",
+    "side": 1,
+    "tick": 451,
+    "card": "rocket",
+    "x": 4500,
+    "y": 4500,
+    "landing_tick": 523,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      4500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "acb8a793ac4d467e8aca001a846a4bcc",
+    "side": 1,
+    "tick": 3478,
+    "card": "rocket",
+    "x": 14500,
+    "y": 4500,
+    "landing_tick": 3550,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      4500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          0,
+          "princess",
+          14500,
+          6500
+        ],
+        "hp_before": 3052,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "acb8a793ac4d467e8aca001a846a4bcc",
+    "side": 1,
+    "tick": 5029,
+    "card": "rocket",
+    "x": 13500,
+    "y": 12500,
+    "landing_tick": 5078,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      12500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "acb8a793ac4d467e8aca001a846a4bcc",
+    "side": 1,
+    "tick": 5426,
+    "card": "rocket",
+    "x": 4500,
+    "y": 11500,
+    "landing_tick": 5478,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      11500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "b1e3c6b0cc584a9a968f9e64fa47825d",
+    "side": 1,
+    "tick": 1103,
+    "card": "rocket",
+    "x": 14500,
+    "y": 19500,
+    "landing_tick": 1135,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      19500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "b224463b3ff34e8f885ce06703033cbb",
+    "side": 0,
+    "tick": 861,
+    "card": "rocket",
+    "x": 13500,
+    "y": 15500,
+    "landing_tick": 899,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      15500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "b3ad1419424a4db79b84a0676a77e4a9",
+    "side": 1,
+    "tick": 4116,
+    "card": "rocket",
+    "x": 4500,
+    "y": 8500,
+    "landing_tick": 4177,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "b3ad1419424a4db79b84a0676a77e4a9",
+    "side": 1,
+    "tick": 5281,
+    "card": "rocket",
+    "x": 5500,
+    "y": 20500,
+    "landing_tick": 5308,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      20500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "b8426d420aee466a83338e6bd1c34b2c",
+    "side": 1,
+    "tick": 3024,
+    "card": "rocket",
+    "x": 14500,
+    "y": 19500,
+    "landing_tick": 3056,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      19500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "b8426d420aee466a83338e6bd1c34b2c",
+    "side": 1,
+    "tick": 5031,
+    "card": "rocket",
+    "x": 3500,
+    "y": 15500,
+    "landing_tick": 5073,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      15500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "b8426d420aee466a83338e6bd1c34b2c",
+    "side": 1,
+    "tick": 5889,
+    "card": "rocket",
+    "x": 5500,
+    "y": 7500,
+    "landing_tick": 5952,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      7500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "bb953f7e10214949b482c9151adacc32",
+    "side": 0,
+    "tick": 841,
+    "card": "rocket",
+    "x": 13500,
+    "y": 26500,
+    "landing_tick": 910,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      26500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "princess",
+          14500,
+          25500
+        ],
+        "hp_before": 3017,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "bb953f7e10214949b482c9151adacc32",
+    "side": 0,
+    "tick": 1951,
+    "card": "rocket",
+    "x": 3500,
+    "y": 12500,
+    "landing_tick": 1983,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      12500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "bb953f7e10214949b482c9151adacc32",
+    "side": 0,
+    "tick": 2882,
+    "card": "rocket",
+    "x": 4500,
+    "y": 16500,
+    "landing_tick": 2923,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      16500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "bb953f7e10214949b482c9151adacc32",
+    "side": 0,
+    "tick": 3388,
+    "card": "rocket",
+    "x": 4500,
+    "y": 26500,
+    "landing_tick": 3457,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      26500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "princess",
+          3500,
+          25500
+        ],
+        "hp_before": 3052,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "c225b97964804aed94a02b9794fa8beb",
+    "side": 1,
+    "tick": 2451,
+    "card": "rocket",
+    "x": 12500,
+    "y": 8500,
+    "landing_tick": 2511,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "cbe9b9e086d040aeb78612d43bdbf453",
+    "side": 0,
+    "tick": 4739,
+    "card": "rocket",
+    "x": 2500,
+    "y": 23500,
+    "landing_tick": 4801,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      2500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "cbe9b9e086d040aeb78612d43bdbf453",
+    "side": 0,
+    "tick": 5584,
+    "card": "rocket",
+    "x": 2500,
+    "y": 23500,
+    "landing_tick": 5646,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      2500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "cbe9b9e086d040aeb78612d43bdbf453",
+    "side": 0,
+    "tick": 5931,
+    "card": "rocket",
+    "x": 2500,
+    "y": 23500,
+    "landing_tick": 5993,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      2500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "cf58ba065f6e462ca027486bc2b37531",
+    "side": 1,
+    "tick": 1294,
+    "card": "rocket",
+    "x": 3500,
+    "y": 23500,
+    "landing_tick": 1317,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "d210185c225f4826bc10a045a2b5834a",
+    "side": 1,
+    "tick": 1223,
+    "card": "rocket",
+    "x": 14500,
+    "y": 19500,
+    "landing_tick": 1255,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      19500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "d210185c225f4826bc10a045a2b5834a",
+    "side": 1,
+    "tick": 4032,
+    "card": "rocket",
+    "x": 13500,
+    "y": 17500,
+    "landing_tick": 4068,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      17500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "d210185c225f4826bc10a045a2b5834a",
+    "side": 1,
+    "tick": 5525,
+    "card": "rocket",
+    "x": 5500,
+    "y": 8500,
+    "landing_tick": 5585,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "d464d55efa444efab6a6a75e694d5bdb",
+    "side": 0,
+    "tick": 781,
+    "card": "rocket",
+    "x": 12500,
+    "y": 23500,
+    "landing_tick": 841,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "d464d55efa444efab6a6a75e694d5bdb",
+    "side": 0,
+    "tick": 2626,
+    "card": "rocket",
+    "x": 14500,
+    "y": 11500,
+    "landing_tick": 2655,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      11500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "d48f923bdd344a15bdbda25a655e4818",
+    "side": 0,
+    "tick": 391,
+    "card": "rocket",
+    "x": 14500,
+    "y": 23500,
+    "landing_tick": 452,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "princess",
+          14500,
+          25500
+        ],
+        "hp_before": 3052,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "d48f923bdd344a15bdbda25a655e4818",
+    "side": 0,
+    "tick": 2434,
+    "card": "rocket",
+    "x": 13500,
+    "y": 9500,
+    "landing_tick": 2457,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      9500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": true
+  },
+  {
+    "tag": "d48f923bdd344a15bdbda25a655e4818",
+    "side": 0,
+    "tick": 3138,
+    "card": "rocket",
+    "x": 14500,
+    "y": 13500,
+    "landing_tick": 3172,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      13500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "d527d55826174eb690948962ff47433b",
+    "side": 1,
+    "tick": 1573,
+    "card": "rocket",
+    "x": 4500,
+    "y": 18500,
+    "landing_tick": 1606,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      18500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "d527d55826174eb690948962ff47433b",
+    "side": 1,
+    "tick": 2942,
+    "card": "rocket",
+    "x": 12500,
+    "y": 21500,
+    "landing_tick": 2966,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      21500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "d9bd4e3449124192a32e1dbc628d492c",
+    "side": 0,
+    "tick": 1071,
+    "card": "rocket",
+    "x": 9500,
+    "y": 24500,
+    "landing_tick": 1133,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      9500,
+      24500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "d9bd4e3449124192a32e1dbc628d492c",
+    "side": 0,
+    "tick": 2388,
+    "card": "rocket",
+    "x": 8500,
+    "y": 24500,
+    "landing_tick": 2450,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      8500,
+      24500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "d9bd4e3449124192a32e1dbc628d492c",
+    "side": 0,
+    "tick": 5296,
+    "card": "rocket",
+    "x": 12500,
+    "y": 19500,
+    "landing_tick": 5345,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      19500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "d9bd4e3449124192a32e1dbc628d492c",
+    "side": 0,
+    "tick": 5726,
+    "card": "rocket",
+    "x": 13500,
+    "y": 16500,
+    "landing_tick": 5767,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      16500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "de448754ddde46cc90ed9b89d28082f8",
+    "side": 1,
+    "tick": 2328,
+    "card": "rocket",
+    "x": 15500,
+    "y": 21500,
+    "landing_tick": 2357,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      15500,
+      21500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "de448754ddde46cc90ed9b89d28082f8",
+    "side": 1,
+    "tick": 3781,
+    "card": "rocket",
+    "x": 4500,
+    "y": 17500,
+    "landing_tick": 3817,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      17500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "de448754ddde46cc90ed9b89d28082f8",
+    "side": 1,
+    "tick": 5264,
+    "card": "rocket",
+    "x": 5500,
+    "y": 7500,
+    "landing_tick": 5327,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      7500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e27a876a33cb4f6ea71a4f277af55bec",
+    "side": 0,
+    "tick": 3146,
+    "card": "rocket",
+    "x": 3500,
+    "y": 23500,
+    "landing_tick": 3207,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "princess",
+          3500,
+          25500
+        ],
+        "hp_before": 2815,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e27a876a33cb4f6ea71a4f277af55bec",
+    "side": 0,
+    "tick": 5588,
+    "card": "rocket",
+    "x": 14500,
+    "y": 9500,
+    "landing_tick": 5613,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      9500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e5661b7efd4d4ccc840e0204c0634600",
+    "side": 0,
+    "tick": 603,
+    "card": "rocket",
+    "x": 13500,
+    "y": 23500,
+    "landing_tick": 664,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e5661b7efd4d4ccc840e0204c0634600",
+    "side": 0,
+    "tick": 2054,
+    "card": "rocket",
+    "x": 2500,
+    "y": 12500,
+    "landing_tick": 2087,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      2500,
+      12500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e5661b7efd4d4ccc840e0204c0634600",
+    "side": 0,
+    "tick": 2681,
+    "card": "rocket",
+    "x": 3500,
+    "y": 11500,
+    "landing_tick": 2710,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      11500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e5661b7efd4d4ccc840e0204c0634600",
+    "side": 0,
+    "tick": 3439,
+    "card": "rocket",
+    "x": 2500,
+    "y": 25500,
+    "landing_tick": 3506,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      2500,
+      25500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "princess",
+          3500,
+          25500
+        ],
+        "hp_before": 2607,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e5661b7efd4d4ccc840e0204c0634600",
+    "side": 0,
+    "tick": 5036,
+    "card": "rocket",
+    "x": 14500,
+    "y": 25500,
+    "landing_tick": 5103,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      25500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": true,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "princess",
+          14500,
+          25500
+        ],
+        "hp_before": 2516,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e5661b7efd4d4ccc840e0204c0634600",
+    "side": 0,
+    "tick": 5322,
+    "card": "rocket",
+    "x": 14500,
+    "y": 24500,
+    "landing_tick": 5386,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      24500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          1,
+          "princess",
+          14500,
+          25500
+        ],
+        "hp_before": 2174,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 1,
+        "gap_s": 14.3
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e64c2a2fc35742388d6487e2504be106",
+    "side": 1,
+    "tick": 853,
+    "card": "rocket",
+    "x": 4500,
+    "y": 18500,
+    "landing_tick": 886,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      18500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e6a8072d48a644a6bff64c87fd3d5b18",
+    "side": 1,
+    "tick": 2795,
+    "card": "rocket",
+    "x": 5500,
+    "y": 11500,
+    "landing_tick": 2847,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      11500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e6a8072d48a644a6bff64c87fd3d5b18",
+    "side": 1,
+    "tick": 3566,
+    "card": "rocket",
+    "x": 13500,
+    "y": 17500,
+    "landing_tick": 3602,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      17500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e6a8072d48a644a6bff64c87fd3d5b18",
+    "side": 1,
+    "tick": 4905,
+    "card": "rocket",
+    "x": 14500,
+    "y": 13500,
+    "landing_tick": 4953,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      13500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e6a8072d48a644a6bff64c87fd3d5b18",
+    "side": 1,
+    "tick": 5548,
+    "card": "rocket",
+    "x": 2500,
+    "y": 15500,
+    "landing_tick": 5591,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      2500,
+      15500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e6a8072d48a644a6bff64c87fd3d5b18",
+    "side": 1,
+    "tick": 5922,
+    "card": "rocket",
+    "x": 12500,
+    "y": 8500,
+    "landing_tick": 5982,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e858bee960234bc8af8b485e67cce092",
+    "side": 0,
+    "tick": 1651,
+    "card": "rocket",
+    "x": 14500,
+    "y": 12500,
+    "landing_tick": 1683,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      12500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e858bee960234bc8af8b485e67cce092",
+    "side": 0,
+    "tick": 3484,
+    "card": "rocket",
+    "x": 4500,
+    "y": 23500,
+    "landing_tick": 3545,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e90160a2c22f4764b76d7dd2160046ca",
+    "side": 1,
+    "tick": 531,
+    "card": "rocket",
+    "x": 1500,
+    "y": 13500,
+    "landing_tick": 581,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      1500,
+      13500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e90160a2c22f4764b76d7dd2160046ca",
+    "side": 1,
+    "tick": 2496,
+    "card": "rocket",
+    "x": 14500,
+    "y": 19500,
+    "landing_tick": 2528,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      19500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e90160a2c22f4764b76d7dd2160046ca",
+    "side": 1,
+    "tick": 3215,
+    "card": "rocket",
+    "x": 2500,
+    "y": 13500,
+    "landing_tick": 3264,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      2500,
+      13500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e90160a2c22f4764b76d7dd2160046ca",
+    "side": 1,
+    "tick": 3957,
+    "card": "rocket",
+    "x": 13500,
+    "y": 11500,
+    "landing_tick": 4009,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      11500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e90160a2c22f4764b76d7dd2160046ca",
+    "side": 1,
+    "tick": 4803,
+    "card": "rocket",
+    "x": 13500,
+    "y": 16500,
+    "landing_tick": 4841,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      16500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e90160a2c22f4764b76d7dd2160046ca",
+    "side": 1,
+    "tick": 5221,
+    "card": "rocket",
+    "x": 4500,
+    "y": 13500,
+    "landing_tick": 5268,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      13500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e90160a2c22f4764b76d7dd2160046ca",
+    "side": 1,
+    "tick": 5601,
+    "card": "rocket",
+    "x": 13500,
+    "y": 13500,
+    "landing_tick": 5648,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      13500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e90160a2c22f4764b76d7dd2160046ca",
+    "side": 1,
+    "tick": 5865,
+    "card": "rocket",
+    "x": 3500,
+    "y": 15500,
+    "landing_tick": 5907,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      15500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e917eb783ada4727b08eb050facba97a",
+    "side": 0,
+    "tick": 2119,
+    "card": "rocket",
+    "x": 14500,
+    "y": 10500,
+    "landing_tick": 2146,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      14500,
+      10500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e917eb783ada4727b08eb050facba97a",
+    "side": 0,
+    "tick": 4288,
+    "card": "rocket",
+    "x": 15500,
+    "y": 17500,
+    "landing_tick": 4334,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      15500,
+      17500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e917eb783ada4727b08eb050facba97a",
+    "side": 0,
+    "tick": 5942,
+    "card": "rocket",
+    "x": 12500,
+    "y": 23500,
+    "landing_tick": 6002,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      23500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e9d7d5f4689e4902b67c12fe2874d471",
+    "side": 0,
+    "tick": 3207,
+    "card": "rocket",
+    "x": 4500,
+    "y": 16500,
+    "landing_tick": 3248,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      16500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "e9d7d5f4689e4902b67c12fe2874d471",
+    "side": 0,
+    "tick": 3874,
+    "card": "rocket",
+    "x": 4500,
+    "y": 17500,
+    "landing_tick": 3918,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      17500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "ef5b178b49a644c9a3d6fd5afd6dc360",
+    "side": 1,
+    "tick": 426,
+    "card": "rocket",
+    "x": 8500,
+    "y": 8500,
+    "landing_tick": 485,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      8500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "ef5b178b49a644c9a3d6fd5afd6dc360",
+    "side": 1,
+    "tick": 1438,
+    "card": "rocket",
+    "x": 8500,
+    "y": 7500,
+    "landing_tick": 1500,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      8500,
+      7500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "ef5b178b49a644c9a3d6fd5afd6dc360",
+    "side": 1,
+    "tick": 4621,
+    "card": "rocket",
+    "x": 13500,
+    "y": 8500,
+    "landing_tick": 4682,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "f407974c05eb4b3495d71e674059ea3f",
+    "side": 0,
+    "tick": 4547,
+    "card": "rocket",
+    "x": 9500,
+    "y": 21500,
+    "landing_tick": 4600,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      9500,
+      21500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "f407974c05eb4b3495d71e674059ea3f",
+    "side": 0,
+    "tick": 5226,
+    "card": "rocket",
+    "x": 4500,
+    "y": 15500,
+    "landing_tick": 5264,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      15500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "f407974c05eb4b3495d71e674059ea3f",
+    "side": 0,
+    "tick": 5875,
+    "card": "rocket",
+    "x": 4500,
+    "y": 18500,
+    "landing_tick": 5922,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      18500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "f4d7af9e4625459887dddd5eb0773f8e",
+    "side": 1,
+    "tick": 4884,
+    "card": "rocket",
+    "x": 4500,
+    "y": 19500,
+    "landing_tick": 4915,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      19500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "f4d7af9e4625459887dddd5eb0773f8e",
+    "side": 1,
+    "tick": 5892,
+    "card": "rocket",
+    "x": 5500,
+    "y": 8500,
+    "landing_tick": 5952,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "f6284757db38417a9c23c3bd139e334c",
+    "side": 1,
+    "tick": 2221,
+    "card": "rocket",
+    "x": 4500,
+    "y": 14500,
+    "landing_tick": 2265,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      14500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "f6284757db38417a9c23c3bd139e334c",
+    "side": 1,
+    "tick": 5804,
+    "card": "rocket",
+    "x": 4500,
+    "y": 7500,
+    "landing_tick": 5867,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      7500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [
+      {
+        "tower": [
+          0,
+          "princess",
+          3500,
+          6500
+        ],
+        "hp_before": 2620,
+        "hp_drop": 342,
+        "hp_confirmed": true,
+        "finish": false,
+        "prior_rockets": 0,
+        "gap_s": null
+      }
+    ],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "f68b8e84e45f45b382831489c3c90465",
+    "side": 1,
+    "tick": 4107,
+    "card": "rocket",
+    "x": 5500,
+    "y": 12500,
+    "landing_tick": 4156,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      5500,
+      12500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "f68b8e84e45f45b382831489c3c90465",
+    "side": 1,
+    "tick": 5047,
+    "card": "rocket",
+    "x": 2500,
+    "y": 8500,
+    "landing_tick": 5109,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      2500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": true,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "f68b8e84e45f45b382831489c3c90465",
+    "side": 1,
+    "tick": 5451,
+    "card": "rocket",
+    "x": 4500,
+    "y": 8500,
+    "landing_tick": 5512,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "f68b8e84e45f45b382831489c3c90465",
+    "side": 1,
+    "tick": 5771,
+    "card": "rocket",
+    "x": 4500,
+    "y": 17500,
+    "landing_tick": 5807,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      4500,
+      17500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "f78229c994f94e348164fbb60897c08e",
+    "side": 1,
+    "tick": 4201,
+    "card": "rocket",
+    "x": 13500,
+    "y": 13500,
+    "landing_tick": 4248,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      13500,
+      13500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "f78229c994f94e348164fbb60897c08e",
+    "side": 1,
+    "tick": 5153,
+    "card": "rocket",
+    "x": 3500,
+    "y": 17500,
+    "landing_tick": 5190,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      17500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "fc327c9941d4490b9acc7f801e662e25",
+    "side": 1,
+    "tick": 791,
+    "card": "rocket",
+    "x": 12500,
+    "y": 18500,
+    "landing_tick": 823,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      12500,
+      18500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "fc327c9941d4490b9acc7f801e662e25",
+    "side": 1,
+    "tick": 3371,
+    "card": "rocket",
+    "x": 15500,
+    "y": 8500,
+    "landing_tick": 3433,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      15500,
+      8500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "fc327c9941d4490b9acc7f801e662e25",
+    "side": 1,
+    "tick": 4147,
+    "card": "rocket",
+    "x": 15500,
+    "y": 14500,
+    "landing_tick": 4193,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      15500,
+      14500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "fc327c9941d4490b9acc7f801e662e25",
+    "side": 1,
+    "tick": 5473,
+    "card": "rocket",
+    "x": 9500,
+    "y": 17500,
+    "landing_tick": 5506,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      9500,
+      17500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  },
+  {
+    "tag": "ff967e6be8f24bd080d65f9a2b4c23dd",
+    "side": 0,
+    "tick": 2618,
+    "card": "rocket",
+    "x": 3500,
+    "y": 14500,
+    "landing_tick": 2655,
+    "landing_source": "public_aim_catalog_speed",
+    "landing_point": [
+      3500,
+      14500
+    ],
+    "hp_window_known": true,
+    "hp_confirmation_within_two_ticks": false,
+    "tower_hits": [],
+    "rocket_then_tornado": false,
+    "tornado_then_rocket": false
+  }
+]

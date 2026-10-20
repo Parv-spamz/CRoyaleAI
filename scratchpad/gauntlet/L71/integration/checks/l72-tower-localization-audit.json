@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/tower_aim_localization/audit.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "TOWER_LOCALIZATION_AUDIT_COMPLETE",
+  "matched": true,
+  "output_sha256": "d95946d9ba8b90bb799a59b2fbc674796c736879105852e57204561270d022d7",
+  "seconds": 39.60347008705139
+}

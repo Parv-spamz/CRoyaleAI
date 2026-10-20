@@ -1,0 +1,609 @@
+..ssssssssssss.s........................................................ [  5%]
+...s...s................................................................ [ 10%]
+..............x......................................................... [ 16%]
+........................................................................ [ 21%]
+..........................ss...........s................................ [ 27%]
+........................................................................ [ 32%]
+......................xxxxxx............................................ [ 38%]
+........................................................................ [ 43%]
+........................................................................ [ 49%]
+........................................................................ [ 54%]
+........................................................................ [ 60%]
+........................................................................ [ 65%]
+..................................................sss.........ssss...... [ 71%]
+........................................................................ [ 76%]
+................................s.ss.............sss...s...s.ss......... [ 81%]
+s..............ssss..................................................... [ 87%]
+............................s......sssss................................ [ 92%]
+sss.....................sss.....................s.....................EE [ 98%]
+EEEEEEEE..F...........                                                   [100%]
+=================================== ERRORS ====================================
+______ ERROR at setup of test_the_baseline_battle_is_green_on_every_gate ______
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x000001C6DC3935C0>, _basetemp=WindowsPath('C:/Users/benpe/AppData/Local/Temp/pytest-of-benpe/pytest-80'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def baseline(tmp_path_factory: pytest.TempPathFactory) -> object:
+>       return W.run_once(args(tmp_path_factory.mktemp("base")), None)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_watch_battle.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tools\watch_battle.py:460: in run_once
+    trace, played = play(args.engine, args.seed, args.steps, args.decision_ms, noop_prob)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tools\watch_battle.py:168: in play
+    engine = make_engine(engine_kind)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+tools\watch_battle.py:145: in make_engine
+    return MockEngine()
+           ^^^^^^^^^^^^
+..\runtime\royalegym\mock_engine.py:524: in __init__
+    self._load_cards(card_names)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <royalegym.mock_engine.MockEngine object at 0x000001C6E3E5EF90>
+names = ('Knight', 'Archer', 'Goblins', 'Giant', 'MiniPekka', 'Musketeer', ...)
+
+    def _load_cards(self, names: Sequence[str]) -> None:
+        # joinpath, not "/": the source scan in tests/test_env_protocol.py reads a
+        # division of two non-literals as arithmetic, and this module may hold none.
+        base = data_dir().joinpath("raw", RAW_CARD_PACK, "csv_logic")
+        tables = (
+            "characters.csv", "buildings.csv", "projectiles.csv", "area_effect_objects.csv",
+            "spells_characters.csv", "spells_buildings.csv", "spells_other.csv",
+        )
+        missing = [name for name in tables if not base.joinpath(name).is_file()]
+        if missing:
+            # An installed engine (pip) carries derived tables only: the raw 2018 pack is
+            # Supercell's, and the wheel ships just the two files the engine itself reads.
+>           raise FileNotFoundError(
+                f"MockEngine reads the 2018 card tables from {base}, and {', '.join(missing)} "
+                "is not there. An installed engine does not carry them. Use the real engine "
+                "instead (make_env() does by default, or pass engine=RustEngine()), or set "
+                f"{DATA_DIR_ENV} to the data/ folder of a RoyaleSim checkout."
+            )
+E           FileNotFoundError: MockEngine reads the 2018 card tables from C:\Users\benpe\ClashBot\research\ext\Royale-20261005\runtime\royalesim\data\raw\retroroyale-2018\csv_logic, and characters.csv, buildings.csv, projectiles.csv, area_effect_objects.csv, spells_characters.csv, spells_buildings.csv, spells_other.csv is not there. An installed engine does not carry them. Use the real engine instead (make_env() does by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.
+
+..\runtime\royalegym\mock_engine.py:599: FileNotFoundError
+_____________ ERROR at setup of test_the_baseline_is_not_vacuous ______________
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x000001C6DC3935C0>, _basetemp=WindowsPath('C:/Users/benpe/AppData/Local/Temp/pytest-of-benpe/pytest-80'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def baseline(tmp_path_factory: pytest.TempPathFactory) -> object:
+>       return W.run_once(args(tmp_path_factory.mktemp("base")), None)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_watch_battle.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tools\watch_battle.py:460: in run_once
+    trace, played = play(args.engine, args.seed, args.steps, args.decision_ms, noop_prob)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tools\watch_battle.py:168: in play
+    engine = make_engine(engine_kind)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+tools\watch_battle.py:145: in make_engine
+    return MockEngine()
+           ^^^^^^^^^^^^
+..\runtime\royalegym\mock_engine.py:524: in __init__
+    self._load_cards(card_names)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <royalegym.mock_engine.MockEngine object at 0x000001C6E3E5EF90>
+names = ('Knight', 'Archer', 'Goblins', 'Giant', 'MiniPekka', 'Musketeer', ...)
+
+    def _load_cards(self, names: Sequence[str]) -> None:
+        # joinpath, not "/": the source scan in tests/test_env_protocol.py reads a
+        # division of two non-literals as arithmetic, and this module may hold none.
+        base = data_dir().joinpath("raw", RAW_CARD_PACK, "csv_logic")
+        tables = (
+            "characters.csv", "buildings.csv", "projectiles.csv", "area_effect_objects.csv",
+            "spells_characters.csv", "spells_buildings.csv", "spells_other.csv",
+        )
+        missing = [name for name in tables if not base.joinpath(name).is_file()]
+        if missing:
+            # An installed engine (pip) carries derived tables only: the raw 2018 pack is
+            # Supercell's, and the wheel ships just the two files the engine itself reads.
+>           raise FileNotFoundError(
+                f"MockEngine reads the 2018 card tables from {base}, and {', '.join(missing)} "
+                "is not there. An installed engine does not carry them. Use the real engine "
+                "instead (make_env() does by default, or pass engine=RustEngine()), or set "
+                f"{DATA_DIR_ENV} to the data/ folder of a RoyaleSim checkout."
+            )
+E           FileNotFoundError: MockEngine reads the 2018 card tables from C:\Users\benpe\ClashBot\research\ext\Royale-20261005\runtime\royalesim\data\raw\retroroyale-2018\csv_logic, and characters.csv, buildings.csv, projectiles.csv, area_effect_objects.csv, spells_characters.csv, spells_buildings.csv, spells_other.csv is not there. An installed engine does not carry them. Use the real engine instead (make_env() does by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.
+
+..\runtime\royalegym\mock_engine.py:599: FileNotFoundError
+___ ERROR at setup of test_every_plant_lands_on_the_gate_it_aims_at[desync] ___
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x000001C6DC3935C0>, _basetemp=WindowsPath('C:/Users/benpe/AppData/Local/Temp/pytest-of-benpe/pytest-80'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def baseline(tmp_path_factory: pytest.TempPathFactory) -> object:
+>       return W.run_once(args(tmp_path_factory.mktemp("base")), None)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_watch_battle.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tools\watch_battle.py:460: in run_once
+    trace, played = play(args.engine, args.seed, args.steps, args.decision_ms, noop_prob)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tools\watch_battle.py:168: in play
+    engine = make_engine(engine_kind)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+tools\watch_battle.py:145: in make_engine
+    return MockEngine()
+           ^^^^^^^^^^^^
+..\runtime\royalegym\mock_engine.py:524: in __init__
+    self._load_cards(card_names)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <royalegym.mock_engine.MockEngine object at 0x000001C6E3E5EF90>
+names = ('Knight', 'Archer', 'Goblins', 'Giant', 'MiniPekka', 'Musketeer', ...)
+
+    def _load_cards(self, names: Sequence[str]) -> None:
+        # joinpath, not "/": the source scan in tests/test_env_protocol.py reads a
+        # division of two non-literals as arithmetic, and this module may hold none.
+        base = data_dir().joinpath("raw", RAW_CARD_PACK, "csv_logic")
+        tables = (
+            "characters.csv", "buildings.csv", "projectiles.csv", "area_effect_objects.csv",
+            "spells_characters.csv", "spells_buildings.csv", "spells_other.csv",
+        )
+        missing = [name for name in tables if not base.joinpath(name).is_file()]
+        if missing:
+            # An installed engine (pip) carries derived tables only: the raw 2018 pack is
+            # Supercell's, and the wheel ships just the two files the engine itself reads.
+>           raise FileNotFoundError(
+                f"MockEngine reads the 2018 card tables from {base}, and {', '.join(missing)} "
+                "is not there. An installed engine does not carry them. Use the real engine "
+                "instead (make_env() does by default, or pass engine=RustEngine()), or set "
+                f"{DATA_DIR_ENV} to the data/ folder of a RoyaleSim checkout."
+            )
+E           FileNotFoundError: MockEngine reads the 2018 card tables from C:\Users\benpe\ClashBot\research\ext\Royale-20261005\runtime\royalesim\data\raw\retroroyale-2018\csv_logic, and characters.csv, buildings.csv, projectiles.csv, area_effect_objects.csv, spells_characters.csv, spells_buildings.csv, spells_other.csv is not there. An installed engine does not carry them. Use the real engine instead (make_env() does by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.
+
+..\runtime\royalegym\mock_engine.py:599: FileNotFoundError
+___ ERROR at setup of test_every_plant_lands_on_the_gate_it_aims_at[frozen] ___
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x000001C6DC3935C0>, _basetemp=WindowsPath('C:/Users/benpe/AppData/Local/Temp/pytest-of-benpe/pytest-80'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def baseline(tmp_path_factory: pytest.TempPathFactory) -> object:
+>       return W.run_once(args(tmp_path_factory.mktemp("base")), None)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_watch_battle.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tools\watch_battle.py:460: in run_once
+    trace, played = play(args.engine, args.seed, args.steps, args.decision_ms, noop_prob)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tools\watch_battle.py:168: in play
+    engine = make_engine(engine_kind)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+tools\watch_battle.py:145: in make_engine
+    return MockEngine()
+           ^^^^^^^^^^^^
+..\runtime\royalegym\mock_engine.py:524: in __init__
+    self._load_cards(card_names)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <royalegym.mock_engine.MockEngine object at 0x000001C6E3E5EF90>
+names = ('Knight', 'Archer', 'Goblins', 'Giant', 'MiniPekka', 'Musketeer', ...)
+
+    def _load_cards(self, names: Sequence[str]) -> None:
+        # joinpath, not "/": the source scan in tests/test_env_protocol.py reads a
+        # division of two non-literals as arithmetic, and this module may hold none.
+        base = data_dir().joinpath("raw", RAW_CARD_PACK, "csv_logic")
+        tables = (
+            "characters.csv", "buildings.csv", "projectiles.csv", "area_effect_objects.csv",
+            "spells_characters.csv", "spells_buildings.csv", "spells_other.csv",
+        )
+        missing = [name for name in tables if not base.joinpath(name).is_file()]
+        if missing:
+            # An installed engine (pip) carries derived tables only: the raw 2018 pack is
+            # Supercell's, and the wheel ships just the two files the engine itself reads.
+>           raise FileNotFoundError(
+                f"MockEngine reads the 2018 card tables from {base}, and {', '.join(missing)} "
+                "is not there. An installed engine does not carry them. Use the real engine "
+                "instead (make_env() does by default, or pass engine=RustEngine()), or set "
+                f"{DATA_DIR_ENV} to the data/ folder of a RoyaleSim checkout."
+            )
+E           FileNotFoundError: MockEngine reads the 2018 card tables from C:\Users\benpe\ClashBot\research\ext\Royale-20261005\runtime\royalesim\data\raw\retroroyale-2018\csv_logic, and characters.csv, buildings.csv, projectiles.csv, area_effect_objects.csv, spells_characters.csv, spells_buildings.csv, spells_other.csv is not there. An installed engine does not carry them. Use the real engine instead (make_env() does by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.
+
+..\runtime\royalegym\mock_engine.py:599: FileNotFoundError
+_ ERROR at setup of test_every_plant_lands_on_the_gate_it_aims_at[no_deploys] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x000001C6DC3935C0>, _basetemp=WindowsPath('C:/Users/benpe/AppData/Local/Temp/pytest-of-benpe/pytest-80'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def baseline(tmp_path_factory: pytest.TempPathFactory) -> object:
+>       return W.run_once(args(tmp_path_factory.mktemp("base")), None)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_watch_battle.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tools\watch_battle.py:460: in run_once
+    trace, played = play(args.engine, args.seed, args.steps, args.decision_ms, noop_prob)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tools\watch_battle.py:168: in play
+    engine = make_engine(engine_kind)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+tools\watch_battle.py:145: in make_engine
+    return MockEngine()
+           ^^^^^^^^^^^^
+..\runtime\royalegym\mock_engine.py:524: in __init__
+    self._load_cards(card_names)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <royalegym.mock_engine.MockEngine object at 0x000001C6E3E5EF90>
+names = ('Knight', 'Archer', 'Goblins', 'Giant', 'MiniPekka', 'Musketeer', ...)
+
+    def _load_cards(self, names: Sequence[str]) -> None:
+        # joinpath, not "/": the source scan in tests/test_env_protocol.py reads a
+        # division of two non-literals as arithmetic, and this module may hold none.
+        base = data_dir().joinpath("raw", RAW_CARD_PACK, "csv_logic")
+        tables = (
+            "characters.csv", "buildings.csv", "projectiles.csv", "area_effect_objects.csv",
+            "spells_characters.csv", "spells_buildings.csv", "spells_other.csv",
+        )
+        missing = [name for name in tables if not base.joinpath(name).is_file()]
+        if missing:
+            # An installed engine (pip) carries derived tables only: the raw 2018 pack is
+            # Supercell's, and the wheel ships just the two files the engine itself reads.
+>           raise FileNotFoundError(
+                f"MockEngine reads the 2018 card tables from {base}, and {', '.join(missing)} "
+                "is not there. An installed engine does not carry them. Use the real engine "
+                "instead (make_env() does by default, or pass engine=RustEngine()), or set "
+                f"{DATA_DIR_ENV} to the data/ folder of a RoyaleSim checkout."
+            )
+E           FileNotFoundError: MockEngine reads the 2018 card tables from C:\Users\benpe\ClashBot\research\ext\Royale-20261005\runtime\royalesim\data\raw\retroroyale-2018\csv_logic, and characters.csv, buildings.csv, projectiles.csv, area_effect_objects.csv, spells_characters.csv, spells_buildings.csv, spells_other.csv is not there. An installed engine does not carry them. Use the real engine instead (make_env() does by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.
+
+..\runtime\royalegym\mock_engine.py:599: FileNotFoundError
+_ ERROR at setup of test_every_plant_lands_on_the_gate_it_aims_at[stale_arena] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x000001C6DC3935C0>, _basetemp=WindowsPath('C:/Users/benpe/AppData/Local/Temp/pytest-of-benpe/pytest-80'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def baseline(tmp_path_factory: pytest.TempPathFactory) -> object:
+>       return W.run_once(args(tmp_path_factory.mktemp("base")), None)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_watch_battle.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tools\watch_battle.py:460: in run_once
+    trace, played = play(args.engine, args.seed, args.steps, args.decision_ms, noop_prob)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tools\watch_battle.py:168: in play
+    engine = make_engine(engine_kind)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+tools\watch_battle.py:145: in make_engine
+    return MockEngine()
+           ^^^^^^^^^^^^
+..\runtime\royalegym\mock_engine.py:524: in __init__
+    self._load_cards(card_names)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <royalegym.mock_engine.MockEngine object at 0x000001C6E3E5EF90>
+names = ('Knight', 'Archer', 'Goblins', 'Giant', 'MiniPekka', 'Musketeer', ...)
+
+    def _load_cards(self, names: Sequence[str]) -> None:
+        # joinpath, not "/": the source scan in tests/test_env_protocol.py reads a
+        # division of two non-literals as arithmetic, and this module may hold none.
+        base = data_dir().joinpath("raw", RAW_CARD_PACK, "csv_logic")
+        tables = (
+            "characters.csv", "buildings.csv", "projectiles.csv", "area_effect_objects.csv",
+            "spells_characters.csv", "spells_buildings.csv", "spells_other.csv",
+        )
+        missing = [name for name in tables if not base.joinpath(name).is_file()]
+        if missing:
+            # An installed engine (pip) carries derived tables only: the raw 2018 pack is
+            # Supercell's, and the wheel ships just the two files the engine itself reads.
+>           raise FileNotFoundError(
+                f"MockEngine reads the 2018 card tables from {base}, and {', '.join(missing)} "
+                "is not there. An installed engine does not carry them. Use the real engine "
+                "instead (make_env() does by default, or pass engine=RustEngine()), or set "
+                f"{DATA_DIR_ENV} to the data/ folder of a RoyaleSim checkout."
+            )
+E           FileNotFoundError: MockEngine reads the 2018 card tables from C:\Users\benpe\ClashBot\research\ext\Royale-20261005\runtime\royalesim\data\raw\retroroyale-2018\csv_logic, and characters.csv, buildings.csv, projectiles.csv, area_effect_objects.csv, spells_characters.csv, spells_buildings.csv, spells_other.csv is not there. An installed engine does not carry them. Use the real engine instead (make_env() does by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.
+
+..\runtime\royalegym\mock_engine.py:599: FileNotFoundError
+_ ERROR at setup of test_every_plant_lands_on_the_gate_it_aims_at[wet_troop] __
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x000001C6DC3935C0>, _basetemp=WindowsPath('C:/Users/benpe/AppData/Local/Temp/pytest-of-benpe/pytest-80'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def baseline(tmp_path_factory: pytest.TempPathFactory) -> object:
+>       return W.run_once(args(tmp_path_factory.mktemp("base")), None)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_watch_battle.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tools\watch_battle.py:460: in run_once
+    trace, played = play(args.engine, args.seed, args.steps, args.decision_ms, noop_prob)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tools\watch_battle.py:168: in play
+    engine = make_engine(engine_kind)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+tools\watch_battle.py:145: in make_engine
+    return MockEngine()
+           ^^^^^^^^^^^^
+..\runtime\royalegym\mock_engine.py:524: in __init__
+    self._load_cards(card_names)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <royalegym.mock_engine.MockEngine object at 0x000001C6E3E5EF90>
+names = ('Knight', 'Archer', 'Goblins', 'Giant', 'MiniPekka', 'Musketeer', ...)
+
+    def _load_cards(self, names: Sequence[str]) -> None:
+        # joinpath, not "/": the source scan in tests/test_env_protocol.py reads a
+        # division of two non-literals as arithmetic, and this module may hold none.
+        base = data_dir().joinpath("raw", RAW_CARD_PACK, "csv_logic")
+        tables = (
+            "characters.csv", "buildings.csv", "projectiles.csv", "area_effect_objects.csv",
+            "spells_characters.csv", "spells_buildings.csv", "spells_other.csv",
+        )
+        missing = [name for name in tables if not base.joinpath(name).is_file()]
+        if missing:
+            # An installed engine (pip) carries derived tables only: the raw 2018 pack is
+            # Supercell's, and the wheel ships just the two files the engine itself reads.
+>           raise FileNotFoundError(
+                f"MockEngine reads the 2018 card tables from {base}, and {', '.join(missing)} "
+                "is not there. An installed engine does not carry them. Use the real engine "
+                "instead (make_env() does by default, or pass engine=RustEngine()), or set "
+                f"{DATA_DIR_ENV} to the data/ folder of a RoyaleSim checkout."
+            )
+E           FileNotFoundError: MockEngine reads the 2018 card tables from C:\Users\benpe\ClashBot\research\ext\Royale-20261005\runtime\royalesim\data\raw\retroroyale-2018\csv_logic, and characters.csv, buildings.csv, projectiles.csv, area_effect_objects.csv, spells_characters.csv, spells_buildings.csv, spells_other.csv is not there. An installed engine does not carry them. Use the real engine instead (make_env() does by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.
+
+..\runtime\royalegym\mock_engine.py:599: FileNotFoundError
+_ ERROR at setup of test_every_plant_lands_on_the_gate_it_aims_at[torn_render] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x000001C6DC3935C0>, _basetemp=WindowsPath('C:/Users/benpe/AppData/Local/Temp/pytest-of-benpe/pytest-80'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def baseline(tmp_path_factory: pytest.TempPathFactory) -> object:
+>       return W.run_once(args(tmp_path_factory.mktemp("base")), None)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_watch_battle.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tools\watch_battle.py:460: in run_once
+    trace, played = play(args.engine, args.seed, args.steps, args.decision_ms, noop_prob)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tools\watch_battle.py:168: in play
+    engine = make_engine(engine_kind)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+tools\watch_battle.py:145: in make_engine
+    return MockEngine()
+           ^^^^^^^^^^^^
+..\runtime\royalegym\mock_engine.py:524: in __init__
+    self._load_cards(card_names)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <royalegym.mock_engine.MockEngine object at 0x000001C6E3E5EF90>
+names = ('Knight', 'Archer', 'Goblins', 'Giant', 'MiniPekka', 'Musketeer', ...)
+
+    def _load_cards(self, names: Sequence[str]) -> None:
+        # joinpath, not "/": the source scan in tests/test_env_protocol.py reads a
+        # division of two non-literals as arithmetic, and this module may hold none.
+        base = data_dir().joinpath("raw", RAW_CARD_PACK, "csv_logic")
+        tables = (
+            "characters.csv", "buildings.csv", "projectiles.csv", "area_effect_objects.csv",
+            "spells_characters.csv", "spells_buildings.csv", "spells_other.csv",
+        )
+        missing = [name for name in tables if not base.joinpath(name).is_file()]
+        if missing:
+            # An installed engine (pip) carries derived tables only: the raw 2018 pack is
+            # Supercell's, and the wheel ships just the two files the engine itself reads.
+>           raise FileNotFoundError(
+                f"MockEngine reads the 2018 card tables from {base}, and {', '.join(missing)} "
+                "is not there. An installed engine does not carry them. Use the real engine "
+                "instead (make_env() does by default, or pass engine=RustEngine()), or set "
+                f"{DATA_DIR_ENV} to the data/ folder of a RoyaleSim checkout."
+            )
+E           FileNotFoundError: MockEngine reads the 2018 card tables from C:\Users\benpe\ClashBot\research\ext\Royale-20261005\runtime\royalesim\data\raw\retroroyale-2018\csv_logic, and characters.csv, buildings.csv, projectiles.csv, area_effect_objects.csv, spells_characters.csv, spells_buildings.csv, spells_other.csv is not there. An installed engine does not carry them. Use the real engine instead (make_env() does by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.
+
+..\runtime\royalegym\mock_engine.py:599: FileNotFoundError
+_______ ERROR at setup of test_an_unknown_plant_is_refused_not_ignored ________
+
+    @pytest.fixture(scope="module")
+    def tiny_trace() -> object:
+        """A two-step battle: crown towers only, so no troop exists to move."""
+>       trace, _ = W.play("mock", 3, 2, 500, 1.0)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_watch_battle.py:116: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tools\watch_battle.py:168: in play
+    engine = make_engine(engine_kind)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+tools\watch_battle.py:145: in make_engine
+    return MockEngine()
+           ^^^^^^^^^^^^
+..\runtime\royalegym\mock_engine.py:524: in __init__
+    self._load_cards(card_names)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <royalegym.mock_engine.MockEngine object at 0x000001C6E3E32350>
+names = ('Knight', 'Archer', 'Goblins', 'Giant', 'MiniPekka', 'Musketeer', ...)
+
+    def _load_cards(self, names: Sequence[str]) -> None:
+        # joinpath, not "/": the source scan in tests/test_env_protocol.py reads a
+        # division of two non-literals as arithmetic, and this module may hold none.
+        base = data_dir().joinpath("raw", RAW_CARD_PACK, "csv_logic")
+        tables = (
+            "characters.csv", "buildings.csv", "projectiles.csv", "area_effect_objects.csv",
+            "spells_characters.csv", "spells_buildings.csv", "spells_other.csv",
+        )
+        missing = [name for name in tables if not base.joinpath(name).is_file()]
+        if missing:
+            # An installed engine (pip) carries derived tables only: the raw 2018 pack is
+            # Supercell's, and the wheel ships just the two files the engine itself reads.
+>           raise FileNotFoundError(
+                f"MockEngine reads the 2018 card tables from {base}, and {', '.join(missing)} "
+                "is not there. An installed engine does not carry them. Use the real engine "
+                "instead (make_env() does by default, or pass engine=RustEngine()), or set "
+                f"{DATA_DIR_ENV} to the data/ folder of a RoyaleSim checkout."
+            )
+E           FileNotFoundError: MockEngine reads the 2018 card tables from C:\Users\benpe\ClashBot\research\ext\Royale-20261005\runtime\royalesim\data\raw\retroroyale-2018\csv_logic, and characters.csv, buildings.csv, projectiles.csv, area_effect_objects.csv, spells_characters.csv, spells_buildings.csv, spells_other.csv is not there. An installed engine does not carry them. Use the real engine instead (make_env() does by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.
+
+..\runtime\royalegym\mock_engine.py:599: FileNotFoundError
+________ ERROR at setup of test_a_plant_with_nothing_to_patch_refuses _________
+
+    @pytest.fixture(scope="module")
+    def tiny_trace() -> object:
+        """A two-step battle: crown towers only, so no troop exists to move."""
+>       trace, _ = W.play("mock", 3, 2, 500, 1.0)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_watch_battle.py:116: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tools\watch_battle.py:168: in play
+    engine = make_engine(engine_kind)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+tools\watch_battle.py:145: in make_engine
+    return MockEngine()
+           ^^^^^^^^^^^^
+..\runtime\royalegym\mock_engine.py:524: in __init__
+    self._load_cards(card_names)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <royalegym.mock_engine.MockEngine object at 0x000001C6E3E32350>
+names = ('Knight', 'Archer', 'Goblins', 'Giant', 'MiniPekka', 'Musketeer', ...)
+
+    def _load_cards(self, names: Sequence[str]) -> None:
+        # joinpath, not "/": the source scan in tests/test_env_protocol.py reads a
+        # division of two non-literals as arithmetic, and this module may hold none.
+        base = data_dir().joinpath("raw", RAW_CARD_PACK, "csv_logic")
+        tables = (
+            "characters.csv", "buildings.csv", "projectiles.csv", "area_effect_objects.csv",
+            "spells_characters.csv", "spells_buildings.csv", "spells_other.csv",
+        )
+        missing = [name for name in tables if not base.joinpath(name).is_file()]
+        if missing:
+            # An installed engine (pip) carries derived tables only: the raw 2018 pack is
+            # Supercell's, and the wheel ships just the two files the engine itself reads.
+>           raise FileNotFoundError(
+                f"MockEngine reads the 2018 card tables from {base}, and {', '.join(missing)} "
+                "is not there. An installed engine does not carry them. Use the real engine "
+                "instead (make_env() does by default, or pass engine=RustEngine()), or set "
+                f"{DATA_DIR_ENV} to the data/ folder of a RoyaleSim checkout."
+            )
+E           FileNotFoundError: MockEngine reads the 2018 card tables from C:\Users\benpe\ClashBot\research\ext\Royale-20261005\runtime\royalesim\data\raw\retroroyale-2018\csv_logic, and characters.csv, buildings.csv, projectiles.csv, area_effect_objects.csv, spells_characters.csv, spells_buildings.csv, spells_other.csv is not there. An installed engine does not carry them. Use the real engine instead (make_env() does by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.
+
+..\runtime\royalegym\mock_engine.py:599: FileNotFoundError
+================================== FAILURES ===================================
+___________________ test_the_cli_writes_a_page_and_exits_0 ____________________
+
+tmp_path = WindowsPath('C:/Users/benpe/AppData/Local/Temp/pytest-of-benpe/pytest-80/test_the_cli_writes_a_page_and0')
+
+    def test_the_cli_writes_a_page_and_exits_0(tmp_path: Path) -> None:
+        out = tmp_path / "b.html"
+        r = subprocess.run(
+            [
+                PY,
+                str(ROOT / "tools" / "watch_battle.py"),
+                "--engine",
+                "mock",
+                "--steps",
+                str(STEPS),
+                "--noop-prob",
+                "0.2",
+                "--out",
+                str(out),
+            ],
+            capture_output=True,
+            text=True,
+            cwd=ROOT,
+        )
+>       assert r.returncode == 0, r.stdout + r.stderr
+E       AssertionError: Traceback (most recent call last):
+E           File "C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\tools\watch_battle.py", line 576, in <module>
+E             raise SystemExit(main())
+E                              ~~~~^^
+E           File "C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\tools\watch_battle.py", line 527, in main
+E             base = run_once(args, None)
+E           File "C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\tools\watch_battle.py", line 460, in run_once
+E             trace, played = play(args.engine, args.seed, args.steps, args.decision_ms, noop_prob)
+E                             ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           File "C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\tools\watch_battle.py", line 168, in play
+E             engine = make_engine(engine_kind)
+E           File "C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\tools\watch_battle.py", line 145, in make_engine
+E             return MockEngine()
+E           File "C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleGym\royalegym\mock_engine.py", line 524, in __init__
+E             self._load_cards(card_names)
+E             ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+E           File "C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleGym\royalegym\mock_engine.py", line 599, in _load_cards
+E             raise FileNotFoundError(
+E             ...<4 lines>...
+E             )
+E         FileNotFoundError: MockEngine reads the 2018 card tables from C:\Users\benpe\ClashBot\research\ext\Royale-20261005\runtime\royalesim\data\raw\retroroyale-2018\csv_logic, and characters.csv, buildings.csv, projectiles.csv, area_effect_objects.csv, spells_characters.csv, spells_buildings.csv, spells_other.csv is not there. An installed engine does not carry them. Use the real engine instead (make_env() does by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe', 'C:\\Users\\be...es by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.\n').returncode
+
+tests\test_watch_battle.py:173: AssertionError
+=========================== short test summary info ===========================
+SKIPPED [1] tests\test_action_blocks.py:109: SKIPPED, NOT PASSED: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29\csv_logic is absent, so the builder against the client's tables was not checked
+SKIPPED [1] tests\test_action_blocks.py:137: SKIPPED, NOT PASSED: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29\csv_logic is absent, so the builder against the client's tables was not checked
+SKIPPED [1] tests\test_action_blocks.py:143: SKIPPED, NOT PASSED: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29\csv_logic is absent, so the builder against the client's tables was not checked
+SKIPPED [1] tests\test_action_blocks.py:149: SKIPPED, NOT PASSED: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29\csv_logic is absent, so the builder against the client's tables was not checked
+SKIPPED [1] tests\test_action_graph_inline.py:69: SKIPPED, NOT PASSED: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent. It is the decoded 15.535.29 asset pack, which a clone never has; nothing about the inline walk has been checked here.
+SKIPPED [1] tests\test_action_graph_inline.py:76: SKIPPED, NOT PASSED: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent. It is the decoded 15.535.29 asset pack, which a clone never has; nothing about the inline walk has been checked here.
+SKIPPED [1] tests\test_action_graph_inline.py:89: SKIPPED, NOT PASSED: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent. It is the decoded 15.535.29 asset pack, which a clone never has; nothing about the inline walk has been checked here.
+SKIPPED [1] tests\test_action_graph_inline.py:105: SKIPPED, NOT PASSED: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent. It is the decoded 15.535.29 asset pack, which a clone never has; nothing about the inline walk has been checked here.
+SKIPPED [1] tests\test_action_schedule.py:55: SKIPPED, NOT PASSED: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent. It is the decoded 15.535.29 asset pack, which a clone never has; nothing about the action schedule has been checked here.
+SKIPPED [1] tests\test_action_schedule.py:69: SKIPPED, NOT PASSED: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent. It is the decoded 15.535.29 asset pack, which a clone never has; nothing about the action schedule has been checked here.
+SKIPPED [1] tests\test_action_schedule.py:92: SKIPPED, NOT PASSED: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent. It is the decoded 15.535.29 asset pack, which a clone never has; nothing about the action schedule has been checked here.
+SKIPPED [1] tests\test_action_schedule.py:100: SKIPPED, NOT PASSED: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent. It is the decoded 15.535.29 asset pack, which a clone never has; nothing about the action schedule has been checked here.
+SKIPPED [1] tests\test_action_schedule.py:138: SKIPPED, NOT PASSED: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent. It is the decoded 15.535.29 asset pack, which a clone never has; nothing about the action schedule has been checked here.
+SKIPPED [1] tests\test_card_reads.py:229: mechanic_register.json is generated and absent
+SKIPPED [1] tests\test_card_reads.py:349: SKIPPED, NOT PASSED: the catalogue-gap pin was measured with the register pass RUNNING, and data/derived/mechanic_register.json is absent here, so its flags are missing and this population is not the pinned one. The register is generated by tools/mechanic_register.py from data/raw/cr-15.535.29/, the decoded asset pack, which a CLONE NEVER HAS -- so this is permanently local coverage rather than a setup step somebody forgot. Do NOT re-pin to the degraded number.
+SKIPPED [1] tests\test_furnace.py:75: SKIPPED, NOT PASSED: data\raw\cr-15.535.29 is absent; the builder reads the 15.535.29 tables
+SKIPPED [1] tests\test_furnace.py:96: SKIPPED, NOT PASSED: data\raw\cr-15.535.29 is absent; the builder reads the 15.535.29 tables
+SKIPPED [1] tests\test_globals_gate.py:92: PLANT 'vintage' INCONCLUSIVE -- globals of 15.535.29 not on disk -- a skip here is not a pass
+SKIPPED [1] tests\test_oracle_native_diff.py:56: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\oracle-native\walk is absent; run tools/oracle_diff.py where the recorded 15.535.29 traces are
+SKIPPED [1] tests\test_oracle_native_diff.py:98: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\oracle-native\walk is absent; run tools/oracle_diff.py where the recorded 15.535.29 traces are
+SKIPPED [1] tests\test_oracle_native_diff.py:113: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\oracle-native\walk is absent; run tools/oracle_diff.py where the recorded 15.535.29 traces are
+SKIPPED [1] tests\test_parry_row.py:97: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent: the client 15.535.29 tables are not in this checkout, so the counter builder was NOT checked. This is not a pass.
+SKIPPED [1] tests\test_parry_row.py:101: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent: the client 15.535.29 tables are not in this checkout, so the counter builder was NOT checked. This is not a pass.
+SKIPPED [1] tests\test_parry_row.py:108: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent: the client 15.535.29 tables are not in this checkout, so the counter builder was NOT checked. This is not a pass.
+SKIPPED [1] tests\test_parry_row.py:148: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent: the client 15.535.29 tables are not in this checkout, so the counter builder was NOT checked. This is not a pass.
+SKIPPED [1] tests\test_replay_fixture.py:566: SKIPPED, NOT PASSED: ROYALELIVE_REPORTS is not set, so the committed sample was not rebuilt from its capture and may be stale. That variable names the folder holding the recorded battles, which are not public and which a CLONE NEVER HAS -- this is permanently local coverage rather than a setup step somebody forgot. A green run of this suite has not checked that the sample still matches the capture it was made from.
+SKIPPED [1] tests\test_replay_fixture.py:632: SKIPPED, NOT PASSED: the 15.535.29 pack is absent, so the form rows cannot be read
+SKIPPED [1] tests\test_replay_fixture.py:649: SKIPPED, NOT PASSED: the capture 20260918-122757.b2 or the 15.535.29 pack is not here
+SKIPPED [8] tests\test_replay_fixture.py:1145: SKIPPED, NOT PASSED: 5 of the id table's files are absent, so no recorded deploy can resolve to a card name. It is read from data/raw/cr-15.535.29/csv_logic/, the decoded asset pack, which is excluded on rights grounds and which a CLONE NEVER HAS -- permanently local coverage rather than a setup step somebody forgot. Nothing about the fixture maker's deploy or spell publishing has been checked here.
+SKIPPED [1] tests\test_scheduled_rows.py:63: SKIPPED, NOT PASSED: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent. It is the decoded 15.535.29 asset pack, which a clone never has; nothing about the scheduled areas' rows has been checked here.
+SKIPPED [1] tests\test_scheduled_rows.py:84: SKIPPED, NOT PASSED: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent. It is the decoded 15.535.29 asset pack, which a clone never has; nothing about the scheduled areas' rows has been checked here.
+SKIPPED [1] tests\test_scheduled_rows.py:102: SKIPPED, NOT PASSED: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent. It is the decoded 15.535.29 asset pack, which a clone never has; nothing about the scheduled areas' rows has been checked here.
+SKIPPED [1] tests\test_scheduled_rows.py:114: SKIPPED, NOT PASSED: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent. It is the decoded 15.535.29 asset pack, which a clone never has; nothing about the scheduled areas' rows has been checked here.
+SKIPPED [1] tests\test_spell_impact_fixture.py:229: SKIPPED, NOT PASSED: needs ROYALELIVE_REPORTS, the folder holding the recorded battles, and data/derived/cards.json. The recordings are not public and a CLONE NEVER HAS THEM, so this is permanently local coverage rather than a setup step somebody forgot. Nothing here has been checked against a real battle.
+SKIPPED [1] tests\test_strike_area_blocks.py:72: SKIPPED, NOT PASSED: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent. It is the decoded 15.535.29 asset pack, which a clone never has; nothing about the striking-area blocks has been checked here.
+SKIPPED [1] tests\test_strike_area_blocks.py:111: SKIPPED, NOT PASSED: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent. It is the decoded 15.535.29 asset pack, which a clone never has; nothing about the striking-area blocks has been checked here.
+SKIPPED [1] tests\test_strike_area_blocks.py:153: SKIPPED, NOT PASSED: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent. It is the decoded 15.535.29 asset pack, which a clone never has; nothing about the striking-area blocks has been checked here.
+SKIPPED [1] tests\test_strike_area_blocks.py:185: SKIPPED, NOT PASSED: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent. It is the decoded 15.535.29 asset pack, which a clone never has; nothing about the striking-area blocks has been checked here.
+SKIPPED [1] tests\test_strike_area_blocks.py:217: SKIPPED, NOT PASSED: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent. It is the decoded 15.535.29 asset pack, which a clone never has; nothing about the striking-area blocks has been checked here.
+SKIPPED [1] tests\test_three_musketeers.py:95: SKIPPED, NOT PASSED: data\raw\cr-15.535.29 is absent; the builders read the 15.535.29 tables
+SKIPPED [1] tests\test_three_musketeers.py:132: SKIPPED, NOT PASSED: data\raw\cr-15.535.29 is absent; the builders read the 15.535.29 tables
+SKIPPED [1] tests\test_three_musketeers.py:142: SKIPPED, NOT PASSED: data\raw\cr-15.535.29 is absent; the builders read the 15.535.29 tables
+SKIPPED [1] tests\test_transform_rows.py:69: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent: the client 15.535.29 tables are not in this checkout, so the transformation builder was NOT checked. This is not a pass.
+SKIPPED [1] tests\test_transform_rows.py:74: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent: the client 15.535.29 tables are not in this checkout, so the transformation builder was NOT checked. This is not a pass.
+SKIPPED [1] tests\test_transform_rows.py:117: C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\data\raw\cr-15.535.29 is absent: the client 15.535.29 tables are not in this checkout, so the transformation builder was NOT checked. This is not a pass.
+SKIPPED [1] tests\test_variant_export.py:125: SKIPPED, NOT PASSED: data\raw\cr-15.535.29 is absent; the builder reads the 15.535.29 tables
+XFAIL tests/test_death_spawn_projectile.py::test_the_egg_is_gone_once_its_phoenix_is_out - the PhoenixEgg row's DestroyAtLimit is not read: the egg outlives its hatch
+XFAIL tests/test_king_area_placement.py::test_a_king_area_tap_lands_as_on_client_15535[ring_nearest-1-Knight-tile75-True-members75] - ring_nearest's tie order: the engine's column-major placer frame, not the client's arena -y, -x, +y, +x
+XFAIL tests/test_king_area_placement.py::test_a_king_area_tap_lands_as_on_client_15535[ring_nearest-1-Goblins-tile76-True-members76] - ring_nearest's tie order: the engine's column-major placer frame, not the client's arena -y, -x, +y, +x
+XFAIL tests/test_king_area_placement.py::test_a_king_area_tap_lands_as_on_client_15535[ring_nearest-1-Minions-tile77-True-members77] - ring_nearest's tie order: the engine's column-major placer frame, not the client's arena -y, -x, +y, +x
+XFAIL tests/test_king_area_placement.py::test_a_king_area_tap_lands_as_on_client_15535[ring_nearest-1-Knight-tile78-True-members78] - ring_nearest's tie order: the engine's column-major placer frame, not the client's arena -y, -x, +y, +x
+XFAIL tests/test_king_area_placement.py::test_a_king_area_tap_lands_as_on_client_15535[ring_nearest-1-Goblins-tile79-True-members79] - ring_nearest's tie order: the engine's column-major placer frame, not the client's arena -y, -x, +y, +x
+XFAIL tests/test_king_area_placement.py::test_a_king_area_tap_lands_as_on_client_15535[ring_nearest-1-Minions-tile80-True-members80] - ring_nearest's tie order: the engine's column-major placer frame, not the client's arena -y, -x, +y, +x
+ERROR tests/test_watch_battle.py::test_the_baseline_battle_is_green_on_every_gate
+ERROR tests/test_watch_battle.py::test_the_baseline_is_not_vacuous - FileNotF...
+ERROR tests/test_watch_battle.py::test_every_plant_lands_on_the_gate_it_aims_at[desync]
+ERROR tests/test_watch_battle.py::test_every_plant_lands_on_the_gate_it_aims_at[frozen]
+ERROR tests/test_watch_battle.py::test_every_plant_lands_on_the_gate_it_aims_at[no_deploys]
+ERROR tests/test_watch_battle.py::test_every_plant_lands_on_the_gate_it_aims_at[stale_arena]
+ERROR tests/test_watch_battle.py::test_every_plant_lands_on_the_gate_it_aims_at[wet_troop]
+ERROR tests/test_watch_battle.py::test_every_plant_lands_on_the_gate_it_aims_at[torn_render]
+ERROR tests/test_watch_battle.py::test_an_unknown_plant_is_refused_not_ignored
+ERROR tests/test_watch_battle.py::test_a_plant_with_nothing_to_patch_refuses
+FAILED tests/test_watch_battle.py::test_the_cli_writes_a_page_and_exits_0 - A...
+1 failed, 1247 passed, 53 skipped, 7 xfailed, 10 errors in 340.05s (0:05:40)

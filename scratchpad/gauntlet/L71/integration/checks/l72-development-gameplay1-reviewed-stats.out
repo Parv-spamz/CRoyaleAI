@@ -1,0 +1,117 @@
+{
+  "paired_games": {
+    "r1e": {
+      "gen": {
+        "better": 5,
+        "worse": 9,
+        "same": 18,
+        "net": -4
+      },
+      "s1": {
+        "better": 2,
+        "worse": 4,
+        "same": 26,
+        "net": -2
+      },
+      "all": {
+        "better": 7,
+        "worse": 13,
+        "same": 44,
+        "net": -6
+      }
+    },
+    "ordinary_v5": {
+      "gen": {
+        "better": 1,
+        "worse": 4,
+        "same": 27,
+        "net": -3
+      },
+      "s1": {
+        "better": 1,
+        "worse": 1,
+        "same": 30,
+        "net": 0
+      },
+      "all": {
+        "better": 2,
+        "worse": 5,
+        "same": 57,
+        "net": -3
+      }
+    }
+  },
+  "refusal_reasons": {
+    "r1e": {
+      "game_over": 13,
+      "match_over_before_landing": 20,
+      "out_of_territory": 1
+    },
+    "ordinary_v5": {
+      "match_over_before_landing": 27,
+      "game_over": 21
+    },
+    "ordinary_v6": {
+      "match_over_before_landing": 35,
+      "game_over": 31,
+      "out_of_territory": 1
+    }
+  },
+  "behaviour_descriptive": {
+    "r1e": {
+      "accepted": 2443,
+      "rocket_share_n": 42,
+      "rocket_share_denominator": 2443,
+      "tower_rocket_share_n": 3,
+      "tower_rocket_share_denominator": 42,
+      "tower_hit_hp_confirmation_n": 3,
+      "tower_hit_hp_confirmation_denominator": 3,
+      "preemptive_log_n": 8,
+      "preemptive_log_denominator": 20,
+      "finish_offs": 0,
+      "multi_rocket_cycles": 0,
+      "defensive_rockets": 28,
+      "rocket_then_tornado": 0,
+      "tornado_then_rocket": 0,
+      "defensive_xbows": 56,
+      "unknown_rocket_impacts": 0
+    },
+    "ordinary_v5": {
+      "accepted": 2668,
+      "rocket_share_n": 73,
+      "rocket_share_denominator": 2668,
+      "tower_rocket_share_n": 8,
+      "tower_rocket_share_denominator": 73,
+      "tower_hit_hp_confirmation_n": 8,
+      "tower_hit_hp_confirmation_denominator": 8,
+      "preemptive_log_n": 11,
+      "preemptive_log_denominator": 29,
+      "finish_offs": 0,
+      "multi_rocket_cycles": 1,
+      "defensive_rockets": 53,
+      "rocket_then_tornado": 0,
+      "tornado_then_rocket": 0,
+      "defensive_xbows": 32,
+      "unknown_rocket_impacts": 0
+    },
+    "ordinary_v6": {
+      "accepted": 2586,
+      "rocket_share_n": 70,
+      "rocket_share_denominator": 2586,
+      "tower_rocket_share_n": 4,
+      "tower_rocket_share_denominator": 69,
+      "tower_hit_hp_confirmation_n": 4,
+      "tower_hit_hp_confirmation_denominator": 4,
+      "preemptive_log_n": 6,
+      "preemptive_log_denominator": 18,
+      "finish_offs": 0,
+      "multi_rocket_cycles": 0,
+      "defensive_rockets": 48,
+      "rocket_then_tornado": 0,
+      "tornado_then_rocket": 0,
+      "defensive_xbows": 30,
+      "unknown_rocket_impacts": 1
+    }
+  }
+}
+GAMEPLAY_REVIEW_COMPLETE

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "C:/Users/benpe/ClashBot/icebow/.venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "scratchpad/gauntlet/L72/improvement_loop/test_resume_verified_chain.py",
+    "-q"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "passed",
+  "matched": true,
+  "output_sha256": "3be6ffcaecf85b5bd3eef3693ab214b0e7c9eb4e36d117fcf1825652de5eb298",
+  "seconds": 0.8505744934082031
+}

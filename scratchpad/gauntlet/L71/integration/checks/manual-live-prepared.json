@@ -1,0 +1,14 @@
+{
+  "command": [
+    "C:/Users/benpe/ClashBot/icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/live_entry/run_checks.py",
+    "live_play_v2"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "passed",
+  "matched": true,
+  "output_sha256": "04d03590dd50a8d5cfbf437efb475fa11f6943369a72c77eb241645832f208ba",
+  "seconds": 174.17869591712952
+}

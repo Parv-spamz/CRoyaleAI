@@ -1,0 +1,33 @@
+{
+  "pid": 54732,
+  "utc": "2026-10-06T00:17:13.792392+00:00",
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_gradient_audit\\collect.py": "73f61d46003b20897b8199d097826633fd5f1278091a428dd3f6cb039c0fa9cf",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_gradient_audit\\common.py": "8ad20a263adbd88b72ae9e287237803923ea34466fb25758480abfec4a9263cc",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_gradient_audit\\run_chain.py": "107b27f22011b459c5442f08060d37f6443bb80f8ae6aced1764439c9f6e5346",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_gradient_audit\\verify.py": "1876d5683d8be5c0f048385df31da14ce980e5ec2a592256a8532e2b618f34c9",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_gradient_audit\\PLAN.md": "765782fb8ad3455a1677976c91a4b44fcf24852fd15e39fcf710b9c1e6f0535b",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_failure_audit\\verified.json": "b83b6afea1f7f0a1df771f3b5376745ba642a06e266617475841103e4c4176d9",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1\\trained.json": "14acac557fa51f0ed0d702c21bc10bc7840a530041097e67d82a824d4b2d0ac5",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1\\prepared.json": "dd4cd5620ee8103a4ddb3ccd996afd083288cd69abacc3c2685bda9eb4ce1c11",
+    "icebow\\data\\bench\\development_rl_1_20261005\\train.jsonl": "c416faa2af5f0624997f307a2da0667ec448876394c1b7adb544fcb6efa49ab7"
+  },
+  "runtime": {
+    "schema": 1,
+    "pins": {
+      "RoyaleSim": "015f9b0084afe574915e3f6ce2f0764c6dec6099",
+      "RoyaleGym": "3117816366b00754da1b56c9543412e4706de62a"
+    },
+    "wheels": {
+      "royalegym-0.1.15-py3-none-any.whl": "51219cef17867069abf22c206c1fbc309b3e8f93927a658e19b543b6ba96156b",
+      "royalesim-0.1.13-cp310-abi3-win_amd64.whl": "ab61577d3926df7a43463f41c479ec31e6864d3702c13075f170d97f3b30406c"
+    },
+    "manifest_sha256": "eb455896367d94107dbf3fd35ffc8f01de097a1ac2c3beebdca00445b2f45903",
+    "card_table": {
+      "cards_json_fnv1a64": "21935265e615e337",
+      "cards_vintage": "15.535.29 client (2026, LIVE build family)",
+      "cards_json_hash_source": "embedded"
+    }
+  },
+  "optimizer_updates": 0
+}

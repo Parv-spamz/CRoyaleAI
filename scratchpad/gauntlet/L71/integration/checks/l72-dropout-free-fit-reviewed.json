@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/close_dropout_free_fit_report.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "DROPOUT_FREE_FIT_REPORT_REVIEWED",
+  "matched": true,
+  "output_sha256": "060dca845dd1eaf0ae7a1bb78babc0a066ec248598a833ad2d5a165799e5345f",
+  "seconds": 0.08658313751220703
+}

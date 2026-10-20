@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/inventory_confirmation_capacity.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "CONFIRMATION_CAPACITY_INDEPENDENT_COMMAND_COUNTS_VERIFIED",
+  "matched": true,
+  "output_sha256": "32e0a01813fb62ae90cd499d8f4cb3e9b4b159246a323d309f64b9f56244e41c",
+  "seconds": 2.0543832778930664
+}

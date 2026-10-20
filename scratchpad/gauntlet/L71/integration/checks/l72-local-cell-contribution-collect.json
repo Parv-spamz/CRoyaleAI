@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\local_cell_contribution\\collect.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "LOCAL_CELL_CONTRIBUTION_COLLECTED",
+  "matched": true,
+  "output_sha256": "f9bb44ce771f27ff5a4a5f280b34664bc40ad18ba69ae4dccfaf63964d8c058f",
+  "seconds": 64.11942076683044
+}

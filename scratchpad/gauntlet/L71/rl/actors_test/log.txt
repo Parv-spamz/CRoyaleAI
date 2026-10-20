@@ -1,0 +1,13 @@
+== n_actors 3 start 13:43:52
+== n_actors 3 exit 0 13:57:23
+== n_actors 5 start 13:57:23
+== n_actors 5 exit 0 14:09:06
+per-update stat lines equal: False 3 3
+ 3: [rl] u0000 W/L/D 5/7/0 ppm 12.76 pgate 0.119 KL g/c/x 0.0000/0.0000/0.0000 beta 0.3->0.3 (leash max: cell) clip 0.000 mixed 1/6 rows 3065  | gae WARMUP (critic only) vloss 0.0221 ev 0.811 A -0.0193/0.2180 ret +0.028 V +0.047 vshare - | league wr init 0.38/8 snapshot -/0 s1 0.50/4 D 0
+ 5: [rl] u0000 W/L/D 5/7/0 ppm 12.76 pgate 0.119 KL g/c/x 0.0000/0.0000/0.0000 beta 0.3->0.3 (leash max: cell) clip 0.000 mixed 1/6 rows 3065  | gae WARMUP (critic only) vloss 0.0222 ev 0.811 A -0.0193/0.2180 ret +0.028 V +0.047 vshare - | league wr init 0.38/8 snapshot -/0 s1 0.50/4 D 0
+ 3: [rl] u0001 W/L/D 8/4/0 ppm 13.29 pgate 0.118 KL g/c/x 0.0009/0.0012/0.0013 beta 0.3->0.15 (leash max: cell) clip 0.011 mixed 4/6 rows 3352  | gae vloss 0.0244 ev 0.651 A +0.0163/0.2296 ret +0.168 V +0.152 vshare 0.067 | league wr init 0.62/8 snapshot -/0 s1 0.75/4 D 0
+ 5: [rl] u0001 W/L/D 8/4/0 ppm 13.29 pgate 0.118 KL g/c/x 0.0027/0.0019/0.0014 beta 0.3->0.15 (leash max: gate) clip 0.029 mixed 4/6 rows 3352  | gae vloss 0.0234 ev 0.651 A +0.0163/0.2296 ret +0.168 V +0.151 vshare 0.064 | league wr init 0.62/8 snapshot -/0 s1 0.75/4 D 0
+ 3: [rl] u0002 W/L/D 5/7/0 ppm 12.34 pgate 0.122 KL g/c/x 0.0010/0.0025/0.0018 beta 0.15->0.075 (leash max: card) clip 0.003 mixed 3/6 rows 3031  | gae vloss 0.0210 ev 0.795 A -0.0199/0.2098 ret +0.135 V +0.155 vshare 0.085 | league wr init 0.25/8 snapshot -/0 s1 0.75/4 D 0
+ 5: [rl] u0002 W/L/D 6/6/0 ppm 13.11 pgate 0.122 KL g/c/x 0.0025/0.0015/0.0020 beta 0.15->0.075 (leash max: gate) clip 0.009 mixed 4/6 rows 3098  | gae vloss 0.0233 ev 0.716 A -0.0041/0.2231 ret +0.080 V +0.084 vshare 0.044 | league wr init 0.38/8 snapshot -/0 s1 0.75/4 D 0
+final weights identical: False max abs diff 0.00036690011620521545
+== DONE 14:09:11

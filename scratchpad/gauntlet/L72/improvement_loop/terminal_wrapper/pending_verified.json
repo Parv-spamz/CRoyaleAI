@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "cases": 10,
+  "pending_commands": 20,
+  "positive": 1,
+  "corruptions": 5,
+  "report_sha256": "1f2aea4760b679ec6761a1cf16f08cadb238870246c28e04c174e53f2e4370e7",
+  "verified_sha256": "dc6dfd97a677af416cbeb7da809019a24fbc82a01759a852b1d377494ff1b218",
+  "source_sha256": "fc7ff4a124b7706f8750db5ce6c0853325abec6aafb5600f104012aa56134a07"
+}

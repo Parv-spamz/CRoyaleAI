@@ -1,0 +1,17 @@
+{
+  "inputs": {
+    "icebow\\data\\bench\\match_adaptation_20261005\\rows.npz": "1ffadb6ec8a81942c6aad7742d4f30bfb6568b672b4d912e788092c52422f829",
+    "icebow\\data\\bench\\development_iteration_4_20261005\\development_masks.npz": "6d1649235ca0227f45ec3188e151aaf1af81aa30519b2e68bb919008d8c4b9a8",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\indices.npz": "e539566223e9e109b736175832fc1003a0bdce0636760e9116f495288556a8c3",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\match_adaptation\\prepared.json": "b4156cb9e80ba4047210ac5a8c06e68dc99c78117f9cd02dbd84e6a15a240ade",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_5\\results_verified.json": "2f7ad2a3c0004436d21be6b0fa99a3cec6cc631a3c3e4bd57f47352d0aa403b1",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\r1e_corrected_eval\\predictions.npz": "6bae7d05fe8a9eeb67301168007b4c2a90c759a113ec5ab439bab8505b63ffac",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\ordinary_v6_eval_v2\\predictions.npz": "96812f6053f6ad6d847e51fbdeadb256302a562d1551edf322066b287b148f3f",
+    "icebow\\data\\bench\\development_iteration_5_20261005\\tower_spatial_v7_eval\\predictions.npz": "40ce0237d84c571eadc775de90fcc3c6681d72a114ab7d67bae45e45b1247709",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\tower_aim_localization\\audit.py": "c162ed4b3ffa562f75174e99cb5d05e02015f70657efead3cc5427e9c0959377",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\tower_aim_localization\\verify.py": "75065f0706e0929f119f8d596b9797d141894d70e7272097fc489fda204a0d3e",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\tower_aim_localization\\PLAN.md": "8d52705e14aa46620d4b593b1ba6f5c88ec559db6e28ea7f9d8548779a02c5d9"
+  },
+  "predictions": 0,
+  "optimizer_updates": 0
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "pipeline/tests/test_body_identity.py",
+    "pipeline/tests/test_gen_v31.py",
+    "pipeline/tests/test_gen_v31_legacy.py",
+    "pipeline/tests/test_live_gen_afford.py",
+    "pipeline/tests/test_native_recording.py",
+    "pipeline/tests/test_decision_options.py",
+    "pipeline/tests/test_rocket_teaching.py",
+    "pipeline/tests/test_public_decision_audit.py",
+    "pipeline/tests/test_spatial_projectiles.py",
+    "scratchpad/gauntlet/L71/barrel_target/test_learned_target.py",
+    "-q"
+  ],
+  "cwd": "C:\\Users\\benpe\\.codex\\worktrees\\learned-defence\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "90 passed",
+  "matched": true,
+  "output_sha256": "0ce7bb9425cc52039d3eafbae0655f332a7eb9f249f5e11e5c871091e1607da2",
+  "seconds": 25.705026388168335
+}

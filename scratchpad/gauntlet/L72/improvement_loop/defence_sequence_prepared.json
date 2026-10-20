@@ -1,0 +1,154 @@
+{
+  "schema": 1,
+  "training_only": true,
+  "training_launched": false,
+  "trainable": false,
+  "release_block": "N2 fresh-cohort and experiment-design prerequisites unmet",
+  "predictions_run": false,
+  "policy_inputs_changed": false,
+  "pre_ticks": 40,
+  "post_ticks": 600,
+  "ticks_per_second": 20,
+  "sources": {
+    "icebow\\data\\pipeline\\gen_dataset_v31_public.npz": "297763ea0ecaa3be863d2859d3b5c74f1b627ab0ecfef89a80404112ebf9b1a4",
+    "icebow\\data\\bench\\context_teaching_20261005\\cohorts.npz": "e6ba7b7556ec8176356e777c5f74f9a680daf6d1bd54ebedee2f059f8c980f75",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\train_defence_cycle.json": "852d8fb2f1daec0b99b3020f04e5dd77df67c7db31a132b8f973cf90f9db1fdb",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\train_defence_cycle_verified.json": "9c00b59ec15022833412e5001ca381ec34c7fd3bbe4ba1adb09957c2b1524361",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\prepare_defence_sequences.py": "ed3a4e3b5393cc78d5374043c692883900d4dbdbcd6492ae1920cd1b8ada8f62",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\DEFENCE_SEQUENCE_PREP_PLAN.md": "6b05bca118c9cac124e53407ae33962106228777f60507413ef6058c2724346f"
+  },
+  "windows_sha256": "29ea8a7fd7cb21d8412bc1dd4cd5e36d269fdc42fb7d92b258e731582f4de937",
+  "index_path": "C:\\Users\\benpe\\ClashBot\\icebow\\data\\bench\\defence_sequence_prep_20261005\\index.npz",
+  "index_sha256": "a186307cb59ba42ae82a967c67b12a42c334b34608df75f2f28e53564667c6c4",
+  "original_target_hashes": {
+    "y_card": {
+      "pool": "23cafa7877efe3e1014d9f4de79648f29f336ac141af7f1380fdd3d9bf5df63d",
+      "sequence_union": "1c2f41dad64ca60379ca1dec9ed0ad15ca2ed8090cfa2eb45b025053fdcecfd0"
+    },
+    "y_cell": {
+      "pool": "8ae0fc35ead834c6c6f661928ffda247234c31a522bc0738026e497d945eba89",
+      "sequence_union": "4aca8068d2d03f2f5ae4bbf4577d3064a902275aa88840652ed883d253428cdc"
+    },
+    "y_crowns": {
+      "pool": "91e8cab7380b3319576fe9683e9cab8efd180bb5d3e4e43ecc7b6cc4066e5f4c",
+      "sequence_union": "d1ca4d5c7af20725d4ea8842cdc0b11205992c43844b81a93be1a9ff59530974"
+    },
+    "y_gate": {
+      "pool": "658ad6b908952704cbece5ac532b4063f601a5d0b8813359ebd30f45a090b9dc",
+      "sequence_union": "f7d43b3ca84b94e0671eb23d6dd7f650c5e7d5feb79acdfc6ebd744c6051fed5"
+    },
+    "y_hand_pos": {
+      "pool": "e52906bc5400e39c291873cc401c7bf1fbca7bb00c5ebea6d7838ac04e97c15e",
+      "sequence_union": "341dd8388c916b82154ebfadac891db880be5edc055530768bc9bb584e26a79e"
+    },
+    "y_wait_card": {
+      "pool": "a2431a98c773f460bd721887596ce3943982aae288b720aef827165937712b0f",
+      "sequence_union": "cde47408e6c1fd18a510f40f82214adf15f2a915e24a32d88619b5288b97d8d3"
+    },
+    "y_wait_dt": {
+      "pool": "1cb3f7f9883275fe58906c9bfe8d2b117ef27653ec0590a2a0a577f4a4b3347e",
+      "sequence_union": "ff9036481eef14501ad17d0df780d0cd0a909f87bb35ac8ae4d05dbedd602ad6"
+    },
+    "y_xy": {
+      "pool": "ed7dffec7aef91c5633b829414b9668bfd33e1177ce4d69d84147a28efab5319",
+      "sequence_union": "ec085ec0b4a94f9cf5d163245ff46e211233d7db24d419ae7641be563aebfd09"
+    }
+  },
+  "summaries": {
+    "ordinary": {
+      "unique_rows": 268718,
+      "play_rows": 84298,
+      "wait_rows": 184420,
+      "replays": 1978,
+      "cards": {
+        "skeletons": 14010,
+        "tesla": 11873,
+        "x-bow": 7748,
+        "tornado": 6822,
+        "ice-wizard": 13355,
+        "knight": 13760,
+        "the-log": 11923,
+        "rocket": 4807
+      }
+    },
+    "defensive": {
+      "unique_rows": 40370,
+      "play_rows": 15537,
+      "wait_rows": 24833,
+      "replays": 1068,
+      "cards": {
+        "x-bow": 2673,
+        "tornado": 964,
+        "ice-wizard": 2266,
+        "knight": 2350,
+        "skeletons": 2376,
+        "tesla": 1943,
+        "the-log": 1975,
+        "rocket": 990
+      }
+    },
+    "other": {
+      "unique_rows": 89828,
+      "play_rows": 30687,
+      "wait_rows": 59141,
+      "replays": 1829,
+      "cards": {
+        "x-bow": 5742,
+        "knight": 4533,
+        "rocket": 1280,
+        "the-log": 4058,
+        "skeletons": 4757,
+        "tesla": 3825,
+        "tornado": 2261,
+        "ice-wizard": 4231
+      }
+    },
+    "all_windows": {
+      "unique_rows": 126802,
+      "play_rows": 44793,
+      "wait_rows": 82009,
+      "replays": 1920,
+      "cards": {
+        "x-bow": 7748,
+        "tornado": 3154,
+        "ice-wizard": 6391,
+        "knight": 6735,
+        "skeletons": 7002,
+        "rocket": 2225,
+        "the-log": 5910,
+        "tesla": 5628
+      }
+    }
+  },
+  "descriptive_window_outcomes": {
+    "defensive": {
+      "windows": 2266,
+      "no_princess_rocket": 1978,
+      "incomplete_coverage": 129,
+      "own_princess_damage": 1451,
+      "unknown_princess_damage": 129
+    },
+    "other": {
+      "windows": 5482,
+      "no_princess_rocket": 5194,
+      "incomplete_coverage": 558,
+      "own_princess_damage": 3324,
+      "unknown_princess_damage": 558
+    }
+  },
+  "window_count": 7748,
+  "window_row_references": 138108,
+  "internal_row_gaps": {
+    "max_ticks": 60,
+    "windows_with_gap_over_one_second": 7712,
+    "note": "Existing sparse supervision; no rows synthesized or windows excluded."
+  },
+  "defensive_other_shared_rows": 3396,
+  "limitations": [
+    "Historical v4 training only; changed feature datasets require a validated row crosswalk and new binding.",
+    "Original sparse per-decision rows and causal history retained; not a recurrent sequence model or complete timeline.",
+    "Future outcomes are descriptive only, never selection criteria or model inputs.",
+    "Overlapping windows are not independent trials; unions avoid repeated-row weighting.",
+    "No successor training, sampling ratio or acceptance claim."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/development_iteration_6/verify_weights.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "SPATIAL_WEIGHTS_INDEPENDENT_COMPLETE",
+  "matched": true,
+  "output_sha256": "0879e9adbed0ba4b332ef876754bfdf44a9182250e96ead5adac550be39dc705",
+  "seconds": 5.019169330596924
+}

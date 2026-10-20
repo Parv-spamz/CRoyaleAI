@@ -1,0 +1,10 @@
+L72 development6 spatial_cell_balance_v6: REJECTED, NOT ACCEPTED for deployment.
+One-factor generic spatial-frequency cell loss; same R1e start/v6 architecture, ordinary rows, original expert choices and1000 finite updates. All54723 development predictions independently recounted. Parent-model exposure disclosed; these are imitation statistics, not fresh win rates.
+Same corrected-input R1e / ordinary_v6 control / candidate:
+- Expert Rocket aim within1tile:290/293/287 of955; full action54/73/76. Candidate-control aim-0.628pp/action+0.314pp miss required+5pp/+2pp.
+- Late Rocket action14/21/25 of320(+1.25pp<required2pp); all late actions1949/1993/1980 of6422 regress.
+- Barrel correct/wrong/not-fired:36/20/7,55/7/1,61/1/1 of63(26replays). Better lane agreement is not physical defense/gameplay proof.
+- Witch332/341/336 of726 fails protection; Night Witch156/161/164 of373 and Furnace538/550/552 of1174 improve.
+- Defense3952/4009/4021 of8183; defense Rocket15/23/22 of223. General card11348/11399/11416 of17192; total actions30968/31988/32024 of54723.
+Paired replay groups versus control: Rocket aim23better/31worse/282same; Rocket action10/7/319; late Rocket6/2/163; Witch1/4/15. Repeated rows are not independent matches. Combo-context action remains98/320, not useful-combo proof.
+No accepted new model, demonstrated gameplay/tower-cycle benefit or live change. Owner STOP remains intact. Next: assess closed-loop developmental consequences of the supported ordinary-v6 change before more loss recipes; freeze comparison/runtime and scenarios first. All final untouched/component/statistical/Q4/Q5 requirements stay open.

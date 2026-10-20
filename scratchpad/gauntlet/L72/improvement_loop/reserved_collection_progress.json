@@ -1,0 +1,118 @@
+{
+  "attempted": 645,
+  "selected": 645,
+  "totals": {
+    "usable": 318,
+    "excluded": 327,
+    "reason:undriven_commands": 240,
+    "reason:skipped_commands": 240,
+    "reason:rejected_commands": 190,
+    "reason:crown_mismatch": 162
+  },
+  "last_tag": "ecc0c88447ce40c3bdbe6c5b06ee13bd",
+  "by_split": {
+    "training": {
+      "usable": 110,
+      "excluded": 99
+    },
+    "confirmation": {
+      "excluded": 118,
+      "usable": 102
+    },
+    "development": {
+      "excluded": 110,
+      "usable": 106
+    }
+  },
+  "by_stratum": {
+    "confirmation:rocket_deck": {
+      "usable": 44,
+      "excluded": 39
+    },
+    "confirmation:versus_night-witch": {
+      "usable": 15,
+      "excluded": 18
+    },
+    "training:versus_furnace": {
+      "usable": 18,
+      "excluded": 20
+    },
+    "confirmation:versus_furnace": {
+      "usable": 18,
+      "excluded": 24
+    },
+    "training:rocket_deck": {
+      "usable": 44,
+      "excluded": 35
+    },
+    "training:versus_night-witch": {
+      "usable": 15,
+      "excluded": 17
+    },
+    "training:versus_witch": {
+      "excluded": 20,
+      "usable": 13
+    },
+    "training:xbow_deck": {
+      "excluded": 17,
+      "usable": 16
+    },
+    "training:log_vs_barrel": {
+      "usable": 24,
+      "excluded": 8
+    },
+    "development:versus_witch": {
+      "excluded": 25,
+      "usable": 12
+    },
+    "development:versus_night-witch": {
+      "excluded": 20,
+      "usable": 13
+    },
+    "confirmation:versus_witch": {
+      "excluded": 17,
+      "usable": 15
+    },
+    "development:xbow_deck": {
+      "excluded": 18,
+      "usable": 16
+    },
+    "confirmation:log_vs_barrel": {
+      "usable": 21,
+      "excluded": 11
+    },
+    "confirmation:rocket_tornado_deck": {
+      "usable": 22,
+      "excluded": 20
+    },
+    "development:rocket_deck": {
+      "usable": 38,
+      "excluded": 33
+    },
+    "development:versus_furnace": {
+      "usable": 18,
+      "excluded": 18
+    },
+    "training:rocket_tornado_deck": {
+      "usable": 15,
+      "excluded": 18
+    },
+    "confirmation:xbow_deck": {
+      "usable": 28,
+      "excluded": 20
+    },
+    "development:log_vs_barrel": {
+      "excluded": 14,
+      "usable": 19
+    },
+    "development:rocket_tornado_deck": {
+      "excluded": 17,
+      "usable": 15
+    },
+    "confirmation:exact_icebow": {
+      "usable": 8,
+      "excluded": 3
+    }
+  },
+  "fatal": null
+}

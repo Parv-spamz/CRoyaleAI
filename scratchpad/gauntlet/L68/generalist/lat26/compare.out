@@ -1,0 +1,18 @@
+vocab identical: True
+rows         v1  3,745,692  lat26  3,106,343  delta   -639,349 (-17.07%)
+play         v1    928,165  lat26    895,394  delta    -32,771 (-3.53%)
+wait         v1  2,817,527  lat26  2,210,949  delta   -606,578 (-21.53%)
+val          v1    372,239  lat26    308,924  delta    -63,315 (-17.01%)
+val_play     v1     92,189  lat26     89,111  delta     -3,078 (-3.34%)
+v3val        v1     13,761  lat26     11,093  delta     -2,668 (-19.39%)
+v3val_play   v1      3,796  lat26      3,613  delta       -183 (-4.82%)
+icebow_play  v1     93,159  lat26     89,237  delta     -3,922 (-4.21%)
+icebow_wait  v1    248,708  lat26    187,261  delta    -61,447 (-24.71%)
+replays      v1     14,661  lat26     14,661  delta         +0 (+0.00%)
+decks        v1      4,283  lat26      4,283  delta         +0 (+0.00%)
+card_vocab   v1        122  lat26        122  delta         +0 (+0.00%)
+drops: {'shift_drop_combo': 32767, 'shift_no_hand': 4} of 928,165 candidate play rows -> 3.53% (combo 3.53%)
+icebow deck-sides: play rows 93,159 -> 89,237, dropped 4.21%
+offset (ticks) n=895,394 min 16 max 35 mean 25.33 median 25
+offset histogram: {16: 41544, 17: 41067, 18: 38001, 19: 39120, 20: 64726, 21: 43885, 22: 42623, 23: 48493, 24: 50311, 25: 50282, 26: 50911, 27: 48656, 28: 42478, 29: 40502, 30: 62279, 31: 39317, 32: 36426, 33: 38952, 34: 38388, 35: 37433}
+other stat deltas: {'play_rows': (928165, 895394), 'wait_in_window': (506165, 1112744), 'wait_no_hand': (1, None), 'wait_rows': (2817527, 2210949)}

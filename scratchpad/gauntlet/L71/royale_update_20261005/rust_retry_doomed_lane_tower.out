@@ -1,0 +1,8 @@
+
+running 3 tests
+test a_projectile_walker_walks_to_the_king_once_its_princess_is_doomed ... ok
+test a_walker_without_a_projectile_keeps_a_doomed_princess_unless_every_walker_lets_go ... ok
+test the_shipped_value_is_projectile_walkers_take_king ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+

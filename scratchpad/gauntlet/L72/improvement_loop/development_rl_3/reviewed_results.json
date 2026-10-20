@@ -1,0 +1,112 @@
+{
+  "complete": true,
+  "receipts": {
+    "prepare": {
+      "receipt_sha256": "f7c5351a2253be63750972b18317001497600e7c57fc142a19cc850741a72db3",
+      "output_sha256": "6a9d7bf896c9600d195b9a4ff6dfd94812a2401eb9d3be555ae2c950c9bf6e19",
+      "seconds": 15.206881999969482
+    },
+    "train": {
+      "receipt_sha256": "e093adedd6243c3f8daea5e3a9c13d5d95f2bbb7db0baba9d2fafc0b25ce21ed",
+      "output_sha256": "ed101927f6c0b221f132324b4087f46e7063a1033e2398a54efa7223794e692c",
+      "seconds": 13810.484160423279
+    },
+    "training-independent": {
+      "receipt_sha256": "b9d4dc8b66c4784dcbbc1dc3e2e0b7de165ab72a3ecd1ad04b9ac00382739290",
+      "output_sha256": "768174e6d950c0194c88bd39b716585238be97746f90b6df93e39249f712b58b",
+      "seconds": 58.893232583999634
+    },
+    "eval": {
+      "receipt_sha256": "55c68b17d4e4ba53fe0a829a457e4603503ea78af93e661a9054b795ef5c12e4",
+      "output_sha256": "8e92239a51dc528119c8e3d5b210ca8fc5c2fe746a7c9c3de975c7b5c9c48e78",
+      "seconds": 152.88523292541504
+    },
+    "results-independent": {
+      "receipt_sha256": "53c60e754be7313261e8a01ff9b8018d8bf895c6dd0710349485fc6c040c3b23",
+      "output_sha256": "af6310d18dd080f28e22e69f71cea4c5dd21fab27acf78d72b15b015172c19ac",
+      "seconds": 52.11477828025818
+    },
+    "reviewed-evidence": {
+      "receipt_sha256": "ec5158a1384d48c8af711b670965ae639b0c405fc514d2783e53cdcfc650dd18",
+      "output_sha256": "7d905f92373b25a1d9cab4935ec9ad1af65132186f21b8928724606b45ef6aab",
+      "seconds": 0.35120391845703125
+    },
+    "discord": {
+      "receipt_sha256": "ca653ad8a446badb3a767cd6884220c10c63b6b308e91953ddec73aa3c3a6d88",
+      "output_sha256": "4f50833431cb984f93cc9b9b266070f66e14a006f86c0dcc96915b8b7d785a33",
+      "seconds": 2.075859785079956
+    }
+  },
+  "verdicts": {
+    "full_budget_v5": {
+      "filters": {
+        "ordinary_v5": {
+          "rocket_aim_material": false,
+          "rocket_action_material": false,
+          "late_rocket_material": false,
+          "general_card_noninferior": true,
+          "barrel_correct_nonregression": false,
+          "barrel_wrong_nonregression": false,
+          "witch_nonregression": false,
+          "night_witch_nonregression": false,
+          "furnace_nonregression": false,
+          "defensive_sequence_nonregression": false,
+          "phase_late_overtime_clock_nonregression": false
+        }
+      },
+      "continuation_passed": false
+    },
+    "late_budget_v5": {
+      "filters": {
+        "ordinary_v5": {
+          "rocket_aim_material": false,
+          "rocket_action_material": false,
+          "late_rocket_material": false,
+          "general_card_noninferior": true,
+          "barrel_correct_nonregression": true,
+          "barrel_wrong_nonregression": true,
+          "witch_nonregression": false,
+          "night_witch_nonregression": true,
+          "furnace_nonregression": false,
+          "defensive_sequence_nonregression": false,
+          "phase_late_overtime_clock_nonregression": false
+        },
+        "full_budget_v5": {
+          "rocket_aim_material": false,
+          "rocket_action_material": false,
+          "late_rocket_material": false,
+          "general_card_noninferior": true,
+          "barrel_correct_nonregression": true,
+          "barrel_wrong_nonregression": true,
+          "witch_nonregression": true,
+          "night_witch_nonregression": true,
+          "furnace_nonregression": true,
+          "defensive_sequence_nonregression": true,
+          "phase_late_overtime_clock_nonregression": true
+        }
+      },
+      "continuation_passed": false
+    }
+  },
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\close_late_curriculum_report.py": "cd1bdbad65ec0eead095b0f69fde8fb7c1c9da81a6488cf981df2b335bf5239a",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_3\\prepared.json": "6818a5cd4780ef72ba23293af67c02c8871f0fb7f9c4abc5c251c6ec4d5a8a5c",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_3\\trained.json": "b7c7c1c0354272d1281808ab78f87487f6cc4b7c87a43e9170eab26aa6ec1cf4",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_3\\training_verified.json": "5a2933d0369ab6e6f44b98cd5cb3f36ae28e18fbfc0bc5a931515b9ee514d0fd",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_3\\evaluated.json": "932e6c5e35ec1deabe8cb618d934c99e3b19dcd7b7342b6ebe58cda7b2a225b0",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_3\\results_verified.json": "8a33cce108f833d46114b3bc08250ccc405b04c1967a04b22771553bc7ae4a73",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_3\\reviewed_evidence.json": "96ac3b038223587dea9389007b4566bb781c230e7619c8f388e6eecf8f5e5004",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_3\\chain_complete.json": "e353d2fe562b507e9b378dd4113bcd29da69937c94e4f45da6cc50de2e31b72a",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_3\\message.md": "ed78384f430d9a44937f349a420262cfcc7571ed6e5d5878c10f1ef5245a9bd0"
+  },
+  "delivery_path": "reports\\discord\\deliveries\\model-late-curriculum-pair-final\\delivery.json",
+  "delivery_sha256": "41bc9b785a766794055b6c82b4ab6b859ca5edf119e46a9014c85feffbd73644",
+  "message_sha256": "ed78384f430d9a44937f349a420262cfcc7571ed6e5d5878c10f1ef5245a9bd0",
+  "message_ids": [
+    "1556943087035752540",
+    "1556943089581559821",
+    "1556943092488208385"
+  ],
+  "accepted": false,
+  "deployed": false
+}

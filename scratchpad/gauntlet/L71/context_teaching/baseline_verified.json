@@ -1,0 +1,13 @@
+{
+  "source_sha256": "297763ea0ecaa3be863d2859d3b5c74f1b627ab0ecfef89a80404112ebf9b1a4",
+  "verifier_sha256": "7bb5abea93cdf90dbb2b5faf0bf7437795d6a180cc27521065afa1306c394c3a",
+  "results": [
+    {
+      "heldout": "icebow\\data\\bench\\expert_context_20261005\\r1e_heldout",
+      "rows": 38317,
+      "report_sha256": "08687bef7cfaaeebc7af73694fd4098361e8d139b35ae665285aad19b3350e3b",
+      "predictions_sha256": "d4b07cbe845e353f819b118ee6816b7d88e3df5d615c82c67ad6bd7a8fb7d16a",
+      "matches": true
+    }
+  ]
+}

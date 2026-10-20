@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/deal_recovery/audit.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "DEAL_RECOVERY_SOURCE_AUDIT_PASS",
+  "matched": true,
+  "output_sha256": "85d8824f7443d4aa3affbf1ac3c3677f9449753383c887feb8cc592dfe0c2eae",
+  "seconds": 17.048744440078735
+}

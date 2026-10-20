@@ -1,0 +1,8 @@
+ISOLATED_NATIVE_VM_READY
+Traceback (most recent call last):
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\start_native_worker.py", line 92, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\start_native_worker.py", line 77, in main
+    raise ValueError('Native service start failed; inspect preserved stdout/stderr')
+ValueError: Native service start failed; inspect preserved stdout/stderr

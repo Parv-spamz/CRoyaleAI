@@ -1,0 +1,1416 @@
+"""Run the bot live: scripted menu navigation + learned in-match card play.
+
+Navigation (HOME -> queue -> exit -> re-queue) is a scripted state machine
+reused from trol, so the bot runs match-to-match unattended. In a match, the
+trained CNN policy chooses (slot, placement) on a fixed cadence. After RL
+fine-tuning, the same loop plays toward the tower/crown/win rewards.
+"""
+from __future__ import annotations
+
+import itertools
+import json
+import math
+import random
+import signal
+import time
+from datetime import datetime
+from pathlib import Path
+
+import numpy as np
+
+from .actions import ActionSpace
+from .capture import WindowCapture
+from .controller import Controller
+from .reward import (TowerTracker, pump_rocket_cell, spell_intercept_cell, weaker_princess_cell,
+                     xbow_lock_cell, xbow_offense_depth_cell, xbow_target_lane_cell,
+                     tesla_pull_cell, log_corridor_cell, nado_king_cell)
+from .reward import spell_whiffed          # live spell target mask (see use site)
+from .reward import lead_point, lead_velocity   # 2026-09-03: cast-delay lead for log + rocket
+from .reward import SPAWN_SPELL_BASES, spawn_spell_landing   # L67h: aim at a barrel's LANDING, not the barrel
+from .reward import tornado_pullable                        # L67aa N1: a Tornado never aims at a building
+from .reward import log_only_hits_air                       # L67ae: never roll a Log under air units only
+from .reward import xbow_pocket_cell
+from .hero_ability import (UIMaskedDetector, ability_button_state, frosty_fella_decision,   # L67ag D1 + H3
+                           tiles_between)                        # L67ae X2: offensive X-Bow in a dead tower's pocket
+from .reward import TILE as _TILE
+from .states import GameState
+from .threats import ThreatTracker, THREAT_DIM
+from . import detect_obs
+from . import interactions
+from . import card_threat
+from .cycle import CycleTracker
+from .tower_hp import TowerHpTracker
+from .vision import Vision
+from .opponent_elixir import OpponentElixirEstimator, OpponentElixirEstimatorV2
+from .detect_obs import (canvas_enabled, canvas_stack_dt, channels_to_uint8, detection_channels,
+                         CanvasStack, N_CHANNELS)
+# O19 attempt 2 FIX 1: _BilledDet/_opp_elixir_v2_bill now live in .perception (a lightweight, stdlib-only
+# module play.py already imports PerceptionLoop from), so PerceptionLoop.bill_confirmed can run the WHOLE
+# scan under its own lock without a play.py<->perception.py import cycle. Re-exported here at module level
+# (not just inside play()) so this stays directly importable/testable exactly as before -- `play._BilledDet`
+# and `play._opp_elixir_v2_bill` still resolve, now as aliases of the .perception originals.
+from .perception import _BilledDet, _opp_elixir_v2_bill
+
+
+def _pick_device(cfg):
+    import torch
+    dev = cfg.get("train", "device", default="cuda")
+    if dev != "cuda":
+        return dev
+    if not torch.cuda.is_available():
+        return "cpu"
+    try:
+        _ = (torch.zeros(1, device="cuda") + 1).item()
+        return "cuda"
+    except Exception:  # noqa: BLE001
+        print("[play] GPU present but this torch build can't run on it; using CPU "
+              "(install the cu128 build for your RTX 50-series GPU).")
+        return "cpu"
+
+
+class InMatchGrace:
+    """Sticky in-match hold: the OVERTIME failsafe.
+
+    At overtime the game replaces the 'Time left:' label, and if the strict OT banner
+    template misses too (scale drift), the state reads UNKNOWN mid-match -- the bot would
+    freeze and, after ``play.stuck_timeout``, the nav watchdog would start dismiss-tapping
+    near the hand tray. Bridge: an UNKNOWN read within ``grace_s`` of the last positive
+    IN_MATCH read is HELD as IN_MATCH. Any OTHER positively identified screen
+    (MATCH_END / HOME / PARTY) cancels the anchor, so results screens and menus are never
+    grace-held; the hold can only bridge UNKNOWN stretches that FOLLOW a real match read.
+    """
+
+    def __init__(self, grace_s: float, log):
+        self.grace_s = float(grace_s)
+        self._log = log
+        self._anchor = None          # time of the last positive IN_MATCH detection
+        self._holding = False
+
+    def update(self, state: GameState, now: float) -> GameState:
+        if state == GameState.IN_MATCH:
+            self._anchor = now
+            if self._holding:
+                self._holding = False
+                self._log("[play] in-match read re-acquired -> grace hold released")
+        elif state == GameState.UNKNOWN:
+            if self.grace_s > 0 and self._anchor is not None:
+                gap = now - self._anchor
+                if gap <= self.grace_s:
+                    if not self._holding:
+                        self._holding = True
+                        self._log(f"[play] UNKNOWN {gap:.1f}s after in-match -> grace hold "
+                                  f"(label lost: overtime / end animation / dropout; up to "
+                                  f"{self.grace_s:.0f}s)")
+                    return GameState.IN_MATCH
+            if self._holding:
+                self._holding = False
+                self._log("[play] grace hold expired -> UNKNOWN (nav takes over)")
+        else:                        # MATCH_END / HOME / PARTY positively identified
+            self._anchor = None
+            self._holding = False
+        return state
+
+
+def play(cfg) -> None:
+    try:
+        import torch
+        from .model import PolicyNet
+    except ImportError as exc:
+        print(f"[play] PyTorch required ({exc}). Install the CUDA build "
+              "(see README) then retry.")
+        return
+
+    ckpt_path = cfg.path(cfg.get("train", "checkpoint", default="data/policy.pt"))
+    rl_path = cfg.path(cfg.get("train", "rl_checkpoint", default="data/policy_rl.pt"))
+    if rl_path.exists():
+        ckpt_path = rl_path   # prefer the RL-fine-tuned policy when available
+    # L67an (owner 2026-09-12): the old CNN is OPTIONAL when the S1 student is set (--student / play.student_ckpt).
+    # With a student, the student makes every play and every wait (STUDENT OVERRIDE below); the CNN only fed the
+    # hand/affordability masks, which neutral logits reproduce. Without a student nothing changed: no checkpoint,
+    # no play.
+    _no_cnn = not ckpt_path.exists()
+    if _no_cnn and not cfg.get("play", "student_ckpt", default=None):
+        print(f"[play] no policy at {ckpt_path}. Pass an S1 student with --student <ckpt> "
+              f"(or train the old CNN with `train-bc`).")
+        return
+
+    if _no_cnn:
+        ckpt, net, gate, is_ppo = None, None, None, False
+        device = _pick_device(cfg)
+        gate_tau = float(cfg.get("sim", "ppo_gate_threshold", default=0.25))
+        # Perception widths mirror the live CNNs (policy_rl.pt in both decks: threat_dim 52 = base + identity +
+        # opponent memory + interactions + tower), so the detector, trackers and threat blocks run as before.
+        # No canvas: only the CNN read it.
+        threat_dim = (THREAT_DIM + card_threat.IDENTITY_DIM + card_threat.OPP_MEMORY_DIM
+                      + interactions.INTERACTION_DIM + 6)
+        in_ch = 3
+        gw = gh = n_cards = n_cells = None      # set from ActionSpace and the deck once they exist
+        print(f"[play] no old policy at {ckpt_path.name} -- running on the S1 student alone.")
+    else:
+        ckpt = torch.load(ckpt_path, map_location="cpu")
+        gw, gh = int(ckpt["grid"][0]), int(ckpt["grid"][1])
+        n_cards, n_cells = int(ckpt["n_cards"]), int(ckpt["n_cells"])
+        threat_dim = int(ckpt.get("threat_dim", 14))
+        device = _pick_device(cfg)
+        # Image-branch width is a property of the CHECKPOINT (3 = RGB only, 9 = RGB + semantic canvas),
+        # so a policy trained before the obs-canvas flip still deploys unchanged.
+        in_ch = int(ckpt.get("in_ch", 3))
+        net = PolicyNet(in_ch, n_cards, n_cells, threat_dim=threat_dim).to(device)
+        net.load_state_dict(ckpt["model"])
+        net.eval()
+        # The RL checkpoint also carries the learned WAIT/PLAY gate head (train-rl's no-op). Load it so
+        # play is SYNCED with training: without it, play fired a card every act_period regardless (the
+        # old trol behaviour). A BC-only checkpoint has no gate -> play just gates on affordability.
+        gate = None
+        if "gate" in ckpt:
+            gate = torch.nn.Linear(net.embed_dim, 2).to(device)
+            gate.load_state_dict(ckpt["gate"])
+            gate.eval()
+        is_ppo = ckpt.get("algo") == "ppo"   # PPO heads are LOGITS -> the gate is a thresholded probability
+        # Deploy gate threshold, shared with the sim benchmark and the self-play snapshots so live play
+        # deploys at the SAME rate it was trained/benchmarked at. A raw logit compare is tau=0.5, which
+        # a calibrated gate rarely clears -> the bot hoards elixir and under-deploys. See config.yaml.
+        gate_tau = float(cfg.get("sim", "ppo_gate_threshold", default=0.25))
+        print(f"[play] policy {ckpt_path.name} loaded "
+              f"({'PPO gate ON' if (gate is not None and is_ppo) else 'RL gate ON' if gate is not None else 'BC, no gate'})"
+              + (f", gate tau {gate_tau:g}" if (gate is not None and is_ppo) else "") + ".")
+
+    capture = WindowCapture(cfg.get("window", "title_contains", default=None),
+                            cfg.get("window", "region", default=None))
+    if capture.region is None:
+        print("[play] no capture region; set window.region in config.yaml.")
+        return
+    vision = Vision(cfg)
+    actions = ActionSpace(cfg)
+    if _no_cnn:   # L67an: grid and card count come from the config and the deck, not a checkpoint
+        gw, gh, n_cells = int(actions.gw), int(actions.gh), int(actions.n_cells)
+        n_cards = len(vision.deck_keys)
+    controller = Controller(capture, cfg)
+    # --- L67d: OPTIONAL S1 student (pipeline/) as the decision maker. OFF unless play.student_ckpt is set.
+    # It replaces only the (card, cell) CHOICE; every safety and aim step below still runs on its answer,
+    # so an unset key leaves this file behaving exactly as it did before the student existed.
+    _student = None
+    _student_ckpt = cfg.get("play", "student_ckpt", default=None)
+    _student_opp_elixir = bool(cfg.get("play", "student_opp_elixir", default=False))   # L67g: see below
+    # O19: which estimator COMPUTES the number (V2 + TeamTracker-confirmed billing vs V1 + raw dets).
+    # Independent of _student_opp_elixir above (whether the number REACHES S1 at all). Default OFF --
+    # unset, behaviour is byte-identical to before this ticket. See _opp_elixir_v2_bill above.
+    _opp_elixir_v2 = bool(cfg.get("play", "opp_elixir_v2", default=False))
+    # O19 attempt 2 FIX 2: OBSERVE-ONLY twin of the flag above (default OFF; live-path matrix in the O19
+    # progress file). Computes V2 beside whichever estimator is actually driving mem[5]/S1 and logs the
+    # agreement, WITHOUT ever feeding V2's number to mem[5] or S1 itself -- that still comes from
+    # `opp_elixir_v2` alone. If BOTH this and `opp_elixir_v2` are on, `opp_elixir_v2` wins the drive seat
+    # (unchanged meaning) and the shadow log becomes "V1 (now the non-driving side) vs V2 (driving)".
+    _opp_elixir_v2_shadow = bool(cfg.get("play", "opp_elixir_v2_shadow", default=False))
+    # O19 attempt 3 FIX 1 (verifier): the shadow log below is throttled to at most once per this many
+    # seconds -- same cfg.get(..., default=...) source/shape every other play() cadence constant uses
+    # (e.g. `_react_min_gap` a few lines below in the file), not a bespoke mechanism. Read even when the
+    # shadow flag is off (free -- one float() call) so it stays byte-identical in spirit to how every other
+    # flag-gated constant here is read unconditionally.
+    _opp_elixir_v2_shadow_log_every_s = float(
+        cfg.get("play", "opp_elixir_v2_shadow_log_every_s", default=10.0))
+    # L67u F3 (LOGGING ONLY, owner 2026-09-11): wall-clock stamps on every [student] line, and the tray re-read after
+    # each student tap, so the overlay clips can be aligned and a repeated tap told apart -- the card still in its
+    # slot (the tap did not deploy) vs a different card that slid in (HANDOFF 5cs.99 Z). No decision reads these.
+    _student_tap: dict = {}
+    # L67w P1: tray slots whose elixir badge is not pink (greyed = unaffordable, or empty) are never offered to the tap
+    # path; null disables that half (a card read in two slots is always refused). See student_live.tap_tray.
+    _tray_min_pink = cfg.get("play", "tray_min_badge_pink", default=0.05)
+
+    def _wall() -> str:
+        return datetime.now().strftime("%H:%M:%S.%f")[:-3]
+
+    def _tray_names(ids) -> list:
+        return [vision.deck_keys[int(h)] if 0 <= int(h) < len(vision.deck_keys) else "?" for h in list(ids)[:4]]
+    if _student_ckpt:
+        try:
+            from .student_live import StudentPolicy, live_reads as _student_reads, badge_pink, tap_tray
+            _stall_elx = cfg.get("play", "stall_elixir", default=9.0)
+            _student = StudentPolicy(cfg.path(_student_ckpt), str(cfg.get("play", "student_deck", default="icebow")),
+                                     actions, device=str(device),
+                                     gate_tau=float(cfg.get("play", "student_gate_tau", default=0.5)),
+                                     stall_elixir=(None if _stall_elx is None else float(_stall_elx)),
+                                     stall_seconds=float(cfg.get("play", "stall_seconds", default=12.0)))
+            _student.dump_low_gate = cfg.path("data/freeze_states.jsonl")   # L67q: anti-stall + late pinned states
+            print(f"[play] S1 STUDENT ON: {Path(_student_ckpt).name} (epoch {_student.epoch}, "
+                  f"grid {_student.grid_kind}, gate tau {_student.gate_tau:g}, anti-stall "
+                  f"{'off' if _student.stall_elixir is None else f'{_student.stall_elixir:g} elixir / {_student.stall_seconds:g}s'}"
+                  f") -- the student makes every play and every wait"
+                  f"{'' if net is None else '; the old policy only feeds the affordability masks'}.")
+        except Exception as exc:                                # noqa: BLE001
+            print(f"[play] student_ckpt set but the student failed to load ({exc}); staying on the old policy.")
+            _student = None
+    if _no_cnn and _student is None:   # L67an: without the old CNN the student is the only decision maker
+        print("[play] the S1 student did not load and there is no old policy -- nothing to play with; stopping.")
+        return
+    rocket_ids = {i for i, key in enumerate(vision.deck_keys)
+                  if (key[:-4] if key.endswith("_evo") else key) == "rocket"}
+    # LOG + TORNADO AIM ASSISTS. Both cards were flying blind live: every other card with geometry
+    # that matters (rocket, X-Bow, Tesla) had an assist and these two had none, which is why the Log
+    # kept landing beside its target and the king-activation pull never once appeared. Distances are
+    # the LIVE screen-space normalised ones, not the sim's tile counts.
+    _log_ids = {i for i, key in enumerate(vision.deck_keys)
+                if (key[:-4] if key.endswith("_evo") else key) == "the_log"}
+    _nado_ids = {i for i, key in enumerate(vision.deck_keys)
+                 if (key[:-4] if key.endswith("_evo") else key) == "tornado"}
+    _log_half_w = float(cfg.get("env", "log_half_width", default=0.064))   # 2.2 tiles of corridor
+    _log_roll = float(cfg.get("env", "log_roll_len", default=0.28))        # 9.6 tiles of travel
+    _nado_pull_r = float(cfg.get("env", "nado_pull_radius", default=0.16))  # 5.5-tile vortex
+    # --- live spell target mask (play.spell_target_mask); see the use site for why ---
+    _spell_mask_live = bool(cfg.get("play", "spell_target_mask", default=False))
+    _spell_ids = {i for i, key in enumerate(vision.deck_keys)
+                  if str(key).replace("_evo", "") in ("rocket", "the_log", "tornado")}
+    _spell_waste_tiles = float(cfg.get("env", "spell_waste_tiles", default=4.5))
+    _nado_pull_tiles = float(cfg.get("env", "nado_pull_tiles", default=5.5))
+    _spell_aim_radius = float(cfg.get("env", "spell_aim_radius", default=0.10))
+    _spell_aim_tiles = cfg.get("env", "spell_aim_tiles", default=None)
+
+    class _AirSet:
+        """Which detected classes FLY, answered from the card KB rather than a hand-kept list --
+        a hardcoded roster silently stops being true the next time a card is released."""
+
+        def __init__(self, db):
+            self._db, self._memo = db, {}
+
+        def __contains__(self, base):
+            if base is None:
+                return False
+            hit = self._memo.get(base)
+            if hit is None:
+                hit = self._memo[base] = bool(card_threat.profile(self._db, base).flying)
+            return hit
+
+    hp_tracker = TowerHpTracker(cfg)          # enemy princess HP, for the rocket redirect
+    tower_tracker = TowerTracker(cfg)         # tower alive/destroyed flags
+    threat_tracker = ThreatTracker(cfg)       # live enemy-threat vector -> policy input
+    from .clock import ElixirClock
+    from .cards import CardDB as _PlayCardDB
+    _pdb = _PlayCardDB(cfg)                  # card kinds decide which cards may be aimed anywhere
+    clock = ElixirClock(cfg, vision)          # 2x/3x elixir multiplier (feeds the phase machine)
+    aim_radius = float(cfg.get("env", "spell_tower_aim_radius", default=0.12))
+    # EVERY SPELL GOES ANYWHERE (the game's rule); Miner / Goblin Drill are the deploy-anywhere
+    # troops. The old literal {rocket, miner} clamped Tornado, Log and Earthquake back to our own
+    # half, which deleted the offensive Log, the river sneaky-lock and the Hog+EQ combo outright.
+    # RULING 18 (owner, 2026-08-27): a spell carrying `own_half_only` is placed like a TROOP --
+    # Royal Delivery drops a Recruit, it does not land an effect. Same carve-out as sim/env.py and
+    # env.py, from the same KB flag, so the three cannot drift.
+    _own_half_ids = {i for i, key in enumerate(vision.deck_keys)
+                     if "own_half_only" in set(
+                         (_pdb.get(card_threat.base_key(key)) or {}).get("flags") or ())}
+    anywhere_ids = {i for i, key in enumerate(vision.deck_keys)
+                    if ((_pdb.get(card_threat.base_key(key)) or {}).get("kind") == "spell"
+                        or card_threat.base_key(key) in ("miner", "goblin_drill"))} - _own_half_ids
+    # A PULL SPELL MUST NOT BE SNAPPED ONTO A TOWER. `weaker_princess_cell` exists so a ROCKET
+    # finishes the weaker princess instead of splitting damage -- but the branch that calls it is
+    # gated on `anywhere_ids`, which is EVERY anywhere-spell, and for this deck that set is
+    # {rocket, TORNADO}. A Tornado centred on a Crown Tower pulls nothing (buildings are anchored,
+    # engine `_tick_vortex`) and chips it for a rounding error, so the snap converts a chosen cast
+    # into a guaranteed whiff. MEASURED 2026-08-27: 80 of 432 cells (18.5% of the board) sit inside
+    # the +/- env.spell_tower_aim_radius box of an enemy princess, i.e. roughly one tornado cast in
+    # five was being redirected onto a building. The sim's own `spell_target_mask` already states
+    # the rule -- "a live enemy princess is a valid chip target for a DAMAGE spell (never for a
+    # pull)" -- it simply never reached live.
+    _pull_ids = {i for i, key in enumerate(vision.deck_keys)
+                 if "pull" in set((_pdb.get(card_threat.base_key(key)) or {}).get("flags") or ())}
+    xbow_ids = {i for i, key in enumerate(vision.deck_keys)
+                if (key[:-4] if key.endswith("_evo") else key) == "x_bow"}
+    xbow_range = float(cfg.get("env", "xbow_range", default=0.36))
+    xbow_defense_front = float(cfg.get("env", "xbow_defense_front", default=0.52))
+    # L67ac X1: the LIVE X-Bow assists judge "offensive bow" by BOARD depth, not by env.xbow_defense_front (a frame-y
+    # reward band that train-rl's env.py also reads, left unchanged). That 0.52 frame cut put the pro X-Bow row (board y
+    # 0.604 = frame y 0.503) on the offensive side, so xbow_offense_depth_cell pushed 16 of 17 run15 X-Bows to the bridge
+    # (board y 0.521), where pros place 6.5% of theirs (HANDOFF 5cs.99 AH). play.xbow_forward_board_y 0.58 is the depth
+    # past which pros place those 6.5%; it goes through the board warp, so it follows the calibration.
+    _xbow_forward_board_y = float(cfg.get("play", "xbow_forward_board_y", default=0.58))
+    xbow_live_defense_y = float(actions.warp.board_to_frame(0.5, _xbow_forward_board_y)[1])
+    # L67ae X2: once an enemy princess is down, an X-Bow goes to that tower's POCKET (reward.xbow_pocket_cell); the lane
+    # sticks for the rest of the match. play.xbow_pocket_after_tower false restores X1's always-defensive X-Bow.
+    _xbow_pocket_on = bool(cfg.get("play", "xbow_pocket_after_tower", default=True))
+    # L67bz: run the dead-lane rule at ANY depth, not just forward of xbow_forward_board_y. The
+    # owner has reported dead-lane bows three times (2026-08-16, 2026-09-18 x2); the rule existed
+    # the whole time but was gated behind the offensive cut, and the model's bows sit behind it.
+    _xbow_dead_lane_any_depth = bool(cfg.get("play", "xbow_dead_lane_any_depth", default=True))
+    _xbow_pocket_y = float(cfg.get("play", "xbow_pocket_board_y", default=0.391))
+    _xbow_pocket = {"side": None}
+    tesla_ids = {i for i, key in enumerate(vision.deck_keys)
+                 if (key[:-4] if key.endswith("_evo") else key) == "tesla"}
+    _deploy_top = float(cfg.get("action", "deploy_top", default=0.44))
+    _pull_front = float(cfg.get("env", "tesla_pull_front", default=0.52))
+    _pull_back = float(cfg.get("env", "tesla_pull_back", default=0.59))
+    _intercept_lane = float(cfg.get("env", "intercept_lane", default=0.15))
+    _wincon = {"xy": None, "sight": 0.0, "last": 0.0}   # deepest lane win condition, for the Tesla pull
+    from .detect import OverlayReplayRecorder
+    _replay_rec = OverlayReplayRecorder(cfg)            # overlay_replay gate: clip each match opening
+    # Cell-head DEPLOYABLE mask: anywhere cards (rocket / miner) -> all cells; every other card only
+    # YOUR half. Applied before the cell argmax so play never taps an enemy-half cell that can't
+    # deploy (the 'impossible coordinate' that made the bot look inactive).
+    yourhalf_mask = torch.tensor(actions.deployable_mask(False), dtype=torch.bool, device=device)
+    # ...except the enemy KING keep-out: a spell that reaches their king wakes it, which buys
+    # them a third defensive tower for the rest of the match and is worth far more to them than
+    # the chip is to us. Masked out of selection so it cannot be chosen at all, greedily or
+    # while exploring (user, 2026-08-16).
+    allcells_mask = torch.tensor(actions.deployable_mask(True), dtype=torch.bool, device=device)
+    yourhalf_cells = [c for c in range(n_cells) if bool(yourhalf_mask[c])]
+    anywhere_cells = [c for c in range(n_cells) if bool(allcells_mask[c])]
+    # Connect each hand-card identity to its ELIXIR COST from the card DB, so play never taps a card
+    # it can't afford (and can track its own spend). Indexed by deck/card id, same as the policy heads.
+    from .cards import CardDB
+    _db = CardDB(cfg)
+    _AIR_BASES = _AirSet(_db)          # the Log rolls UNDER flyers -- never aim it at one
+    # L67h: aim the Log at where a thrown barrel LANDS instead of at the barrel in the air. Set
+    # `play.barrel_landing_aim: false` to restore the pre-L67h behaviour (aim at the projectile).
+    _barrel_landing_aim = bool(cfg.get("play", "barrel_landing_aim", default=True))
+    # HARD GUARD: the checkpoint must match the CONFIGURED deck (same check as train-rl). After a
+    # deck change an old net's heads are the wrong width and its card ids mean different cards --
+    # here that would surface as a torch shape error (10-wide hand one-hots into a 9-card net) or,
+    # worse, silent nonsense plays.
+    _ckpt_deck = ckpt.get("deck") if ckpt is not None else None
+    if ckpt is not None and (n_cards != len(vision.deck_keys)
+                             or (_ckpt_deck and list(_ckpt_deck) != list(vision.deck_keys))):
+        print(f"[play] checkpoint/deck MISMATCH -- {ckpt_path.name} was trained for:")
+        print(f"[play]   ckpt deck ({n_cards}): {', '.join(map(str, _ckpt_deck or ['?'] * n_cards))}")
+        print(f"[play]   config deck ({len(vision.deck_keys)}): {', '.join(vision.deck_keys)}")
+        print("[play] train a fresh sim policy for this deck (run.py train-sim), or restore the old")
+        print("[play] deck in config/cards.yaml to keep using this checkpoint.")
+        return
+    card_elixir = [(_db.elixir(k) or _db.elixir(k[:-4] if k.endswith("_evo") else k) or 0)
+                   for k in vision.deck_keys]
+
+    # Stage 3: when the checkpoint was trained WITH the identity block (threat_dim > THREAT_DIM),
+    # append card_threat's identity features for the RECOGNISED, HIGH-confidence enemy cards the
+    # detector names on your half. Gated on the checkpoint width so play always matches the net.
+    extra_dim = threat_dim - THREAT_DIM
+    # Crown-tower HP block (6 dims, always LAST) -- mirrors sim/view.TOWER_DIM and env._tower_frac.
+    _TOWER_DIM = 6
+    _known_no_tower = (0,
+                       card_threat.IDENTITY_DIM + card_threat.OPP_MEMORY_DIM,
+                       interactions.INTERACTION_DIM,
+                       card_threat.IDENTITY_DIM + card_threat.OPP_MEMORY_DIM
+                       + interactions.INTERACTION_DIM)
+    # Peel the tower block off FIRST so the identity/interaction combo math below is unchanged from
+    # before the block existed. It is present when the checkpoint width exceeds a no-tower combo by
+    # EXACTLY _TOWER_DIM; the guard keeps the one ambiguous width (identity+memory == interactions+
+    # tower, both 18) reading as identity+memory -- its meaning before the tower block was added.
+    want_tower = (extra_dim not in _known_no_tower) and ((extra_dim - _TOWER_DIM) in _known_no_tower)
+    if want_tower:
+        extra_dim -= _TOWER_DIM
+    want_identity = extra_dim in (card_threat.IDENTITY_DIM + card_threat.OPP_MEMORY_DIM,
+                                  card_threat.IDENTITY_DIM + card_threat.OPP_MEMORY_DIM
+                                  + interactions.INTERACTION_DIM)
+    want_memory = want_identity
+    want_interactions = extra_dim in (interactions.INTERACTION_DIM,
+                                      card_threat.IDENTITY_DIM + card_threat.OPP_MEMORY_DIM
+                                      + interactions.INTERACTION_DIM)
+    detector_conf = float(cfg.get("observation", "detector_conf", default=0.75))
+    detector_cards = set(cfg.get("observation", "detector_cards", default=[]))
+    predict_horizon = float(cfg.get("observation", "predict_horizon_s", default=1.0))
+    _ident_front = card_threat.identity_front(cfg)   # identity watch line (shared with sim/env/label)
+    sight_range = float(cfg.get("sim", "sight_range", default=0.12))
+    _detector = None
+    if want_identity or want_interactions:
+        try:
+            from .replay_mine import load_detector
+            _det = load_detector(cfg)
+            _detector = _det if _det.available else None
+        except Exception:
+            _detector = None
+    # L67ag D1 (run17): the hero's ability button is boxed as an ENEMY earthquake (0.91-0.95, ~30% of frames it
+    # shows). Drop detections centred on it while it is on screen. Revert: hero.mask_ability_button: false.
+    if _detector is not None and bool(cfg.get("hero", "mask_ability_button", default=False)):
+        _hb = cfg.get("hero", "button", default=[0.909, 0.765])
+        _detector = UIMaskedDetector(_detector,
+                                     [(float(_hb[0]), float(_hb[1]), float(cfg.get("hero", "mask_radius", default=0.062)))],
+                                     state_radius=float(cfg.get("hero", "state_radius", default=0.045)),
+                                     blue_min=float(cfg.get("hero", "blue_min", default=0.30)),
+                                     grey_min=float(cfg.get("hero", "grey_min", default=0.35)))
+        print("[play] hero: detections on the ability button are dropped while it shows (L67ag D1)", flush=True)
+    _ident_state = {"depth": 0.0, "t": None}   # deepest-threat depth + time, for the approach velocity
+    _opp_mem = card_threat.OpponentMemory(_db)  # per-match opponent short-term memory (Stage 3)
+    # O19: play.opp_elixir_v2 (default OFF) swaps in OpponentElixirEstimatorV2, billed once per
+    # TeamTracker-confirmed track (see _opp_elixir_v2_bill) instead of every raw per-frame detection --
+    # measured (offline, HANDOFF 5cs.99 BF) MAE 2.68-3.88 vs V1's 5.77. OFF keeps the original V1 object,
+    # constructed exactly as before this ticket.
+    _opp_elx = OpponentElixirEstimatorV2(_db) if _opp_elixir_v2 else OpponentElixirEstimator(_db)
+    # O19 attempt 2 FIX 2: the shadow estimator is ALWAYS the OTHER class from `_opp_elx` above, so its log
+    # line is a genuine V1-vs-V2 comparison no matter which flag is driving. None (never constructed, never
+    # updated) unless play.opp_elixir_v2_shadow is set -- no extra cost at all when it is off.
+    _opp_elx_shadow = ((OpponentElixirEstimator(_db) if _opp_elixir_v2 else OpponentElixirEstimatorV2(_db))
+                       if _opp_elixir_v2_shadow else None)
+    # O19 attempt 3 FIX 1 (verifier): the shadow log was an UNTHROTTLED print on every decision -- a long
+    # session would drown the console in it. `last_t` gates the PRINT to at most once per
+    # `_opp_elixir_v2_shadow_log_every_s`; `sum_abs_diff`/`n` accumulate on EVERY decision regardless (so a
+    # 10 s-apart pair of prints still reports the true mean over everything in between, not just the two
+    # samples that happened to land on a print tick) and are reset with the match (below), so the mean is
+    # "since match start", per match, not since process start.
+    _shadow_log = {"last_t": 0.0, "sum_abs_diff": 0.0, "n": 0}
+    _opp_bill = {"uid_counter": itertools.count(1), "billed": set()}   # O19: per-track billing state; used
+    # whenever opp_elixir_v2 or opp_elixir_v2_shadow is True (see the update() call site and match-reset).
+    # SIM/LIVE PARITY of opponent-memory slot 5 (HANDOFF 5cr.8, owner ruling 23:4x): the sim wrote OUR elixir into this
+    # slot during training (sim/env.py mem[5] = eng.elixir[0]/10) while live wrote the opponent-elixir ESTIMATE (mean
+    # 0.035 in a live session) -- the trained gate read "no elixir" and waited. Same switch as train-rl's env:
+    # 'opp_estimate' (legacy, default) or 'own_elixir' (what the checkpoint was trained on).
+    _mem5_source = str(cfg.get("env", "opp_mem_slot5", default="opp_estimate"))
+    if _mem5_source not in ("opp_estimate", "own_elixir"):
+        raise ValueError("env.opp_mem_slot5 must be 'opp_estimate' or 'own_elixir', got %r" % _mem5_source)
+    print("[play] opp-memory slot 5 source: %s" % _mem5_source)
+    _last_dets = {"all": []}                    # newest tagged detections (feeds the semantic canvas)
+    # The canvas is fed only when the LOADED policy was trained with it -- the config gate decides
+    # what a NEW training run sees, the checkpoint decides what THIS net expects.
+    _use_canvas = canvas_enabled(cfg) and in_ch > 3
+    # Stack DEPTH comes from the CHECKPOINT, not the config: `play` deploys whatever net it is given,
+    # and in_ch records how many canvas slices that net was trained on (3 RGB + N_CHANNELS each).
+    _canvas_slices = max(1, (in_ch - 3) // N_CHANNELS) if _use_canvas else 1
+    _canvas_stack = CanvasStack(_canvas_slices, canvas_stack_dt(cfg))
+    if _use_canvas and _canvas_slices > 1:
+        print(f"[play] canvas stack: {_canvas_slices} slices @ {canvas_stack_dt(cfg):g}s (motion input).")
+    # LIVE team verdicts by evidence fusion (own plays / motion / HP bars / side prior with pocket gating)
+    # so your units aren't read as enemy threats -- see replay_mine.TeamTracker.
+    from .replay_mine import TeamTracker, own_card_bases
+    _team_tracker = TeamTracker(
+        own_cards=own_card_bases(_db),               # DECK VETO: 'mine' must name a card we own
+        is_building=lambda b, _db=_db: _db.kind(b) == "building",      # building side prior
+        spawn_radius=float(cfg.get("observation", "team_spawn_radius", default=0.10)),
+        spawn_window_s=float(cfg.get("observation", "team_spawn_window_s", default=2.5)),
+        enemy_window_s=float(cfg.get("observation", "team_enemy_window_s", default=4.0)),
+        track_radius=float(cfg.get("observation", "team_track_radius", default=0.12)),
+        forget_s=float(cfg.get("observation", "team_forget_s", default=4.5)),
+        motion_min=float(cfg.get("observation", "team_motion_min", default=0.05)),
+        deep_mine_y=float(cfg.get("observation", "team_deep_mine_y", default=0.62)),
+        deep_enemy_y=float(cfg.get("observation", "team_deep_enemy_y", default=0.38)),
+        # L67y T1: the three filters train-rl's env.py already passes. play.py built the tracker WITHOUT `is_spell`, so
+        # live enemy SPELL detections were served to the aim assists and the threat gate -- among them a false enemy
+        # "earthquake" on our own king tower (48 of 270 captured states), which the Tornado king-activation assist
+        # aims at (41 of 106 run12 Tornados redirected to that spot; HANDOFF 5cs.99 AD).
+        min_hits=int(cfg.get("observation", "team_track_min_hits", default=2)),
+        # enemy spells are never targets (spawn spells still are). Folded through base_key: CardDB.kind("earthquake_aoe")
+        # is None, so the detector's AoE-ring classes would otherwise slip past a plain kind() check.
+        is_spell=lambda b, _db=_db: _db.kind(card_threat.base_key(str(b))) == "spell",
+        phantom_stale_s=float(cfg.get("observation", "team_phantom_stale_s", default=6.0)))
+    _cycle_tracker = CycleTracker(n_cards)   # live estimate of the upcoming-card order (graded next_vec)
+    # ---- LIVE ROLLOUT SEARCH (sim.live_search_enabled, OFF by default) ----------------------
+    # Search is the only thing that has moved this project's outcome (37.0% -> 85.7% in sim on
+    # frozen weights). Live it plans over a RECONSTRUCTED board, so its ceiling is capped and
+    # poorly determined -- 13-27% of the sim gain across four arms at n=30, with an INCOHERENT
+    # ordering that says n=30 cannot resolve it. It is off unless explicitly enabled, and every
+    # failure path inside returns None, which means "keep the policy's action".
+    _live_search = None
+    try:
+        if bool(cfg.get("sim", "live_search_enabled", default=False)):
+            from .sim.live_search import LiveSearch
+            _live_search = LiveSearch(
+                cfg, card_db, random.Random(0), net, device, actions,
+                horizon=float(cfg.get("sim", "live_search_horizon", default=12.0)),
+                cells=int(cfg.get("sim", "live_search_cells", default=3)),
+                gate_tau=float(cfg.get("sim", "ppo_gate_threshold", default=0.25)),
+                timeout_ms=float(cfg.get("sim", "live_search_timeout_ms", default=250.0)),
+                min_confidence=float(cfg.get("sim", "live_search_min_confidence", default=0.5)),
+                enabled=True)
+            print("[play] LIVE SEARCH ENABLED -- ceiling is measured at 13-27% of the sim gain "
+                  "and poorly determined; the policy remains the fallback on every skip path")
+    except Exception as _e:                                    # noqa: BLE001
+        print(f"[play] live search unavailable ({_e}); continuing on the policy alone")
+        _live_search = None
+    # PUMP PUNISH (elixir collector -> rocket): sighting state + king-safe aim assist (mirrors env.py)
+    _rocket_ids = {i for i, k in enumerate(vision.deck_keys) if card_threat.base_key(k) == "rocket"}
+    _pump = {"t0": None, "last": 0.0, "xy": None}
+    _pump_window = float(cfg.get("env", "pump_rocket_window_s", default=12.0))
+    _pump_aim_radius = float(cfg.get("env", "pump_aim_radius", default=0.10))
+    _pump_pair_gap = float(cfg.get("env", "pump_pair_gap", default=0.11))
+    _pump_king_guard = float(cfg.get("env", "pump_king_guard", default=0.15))
+    # ROCKET LEAD ASSIST (mirrors env._aim_rocket_intercept): predict where the tracked enemies near
+    # the aim will be at impact (flight time grows with distance from the launch point) and snap there.
+    _lead_radius = float(cfg.get("env", "spell_lead_radius", default=0.12))
+    _rocket_org = list(cfg.get("env", "rocket_origin", default=[0.5, 1.05]))
+    _rocket_base = float(cfg.get("env", "rocket_base_time", default=0.3))
+    _rocket_rate = float(cfg.get("env", "rocket_travel_rate", default=2.2))
+    _rocket_speed = float(cfg.get("env", "rocket_speed_tiles", default=14.0))
+    _spell_eval = float(cfg.get("env", "spell_eval_time", default=4.0))
+    # CAST DELAY (owner, 2026-09-03): ~1 s from tap to the spell existing on the board. This path
+    # led rockets with the DEPRECATED normalised-rate flight and no cast delay, and never led the
+    # Log at all -- the corridor was drawn through the push where it STOOD, 1-2 tiles ahead of
+    # where it would be when the log appeared. Same fix as env.py: lead every target by
+    # velocity x (cast delay [+ rocket flight]) before aiming, KB walking speed for young tracks.
+    _cast_delay = float(cfg.get("env", "spell_cast_delay_s", default=1.0))
+    _nado_eta = max(float(cfg.get("env", "tornado_time", default=1.2)), _cast_delay)
+    _nado_r_tiles = float((_db.get("tornado") or {}).get("radius_tiles") or 5.5) + 1.0   # env.py's gate
+    # CONTINUOUS PERCEPTION (~10Hz): detector + team tracker run in a background thread; the act
+    # loop reads a fresh snapshot at decision time instead of being blind between decisions.
+    _ploop = None
+    _phz = float(cfg.get("observation", "perception_hz", default=10.0))
+    _react_min_gap = float(cfg.get("play", "react_min_gap_s", default=0.3))
+    if _detector is not None and _phz > 0:
+        from .perception import PerceptionLoop
+        _ploop = PerceptionLoop(cfg, _detector, _team_tracker, detector_conf, _phz,
+                                recorder=_replay_rec)
+        _ploop.start()
+
+    def _threat_extra(frame, my_elixir: float):
+        """The obs blocks appended AFTER the base threat vector when the checkpoint was trained with them,
+        sized to the net: the identity block (RECOGNISED enemies on YOUR half) + the opponent MEMORY block
+        (whole-match read, BOTH halves). ONE detector pass shared by both. Zeros where unavailable."""
+        dets_all = []
+        if _detector is not None:
+            fresh = False
+            if _ploop is not None and _ploop.running:
+                _ploop.set_towers(tower_tracker.mine_alive, tower_tracker.enemy_alive)
+                dets_all, age = _ploop.snapshot()          # tagged in the perception thread
+                fresh = age <= 2.0
+            if not fresh:
+                try:
+                    dets_all = _detector.detect(frame, conf=detector_conf)
+                except Exception:
+                    dets_all = []
+                # a fallen princess opens the deploy POCKET in front of it -> void the side prior for that lane
+                _team_tracker.set_towers(tower_tracker.mine_alive, tower_tracker.enemy_alive)
+                _team_tracker.tag(dets_all, time.time())     # evidence-fused team (plays/motion/bars/pockets)
+            now_p = time.time()                          # pump sighting -> the punish window (see env.py)
+            pumps = [d for d in dets_all if d.base == "elixir_collector" and d.team != "mine" and d.gy < 0.5]
+            if pumps:
+                if _pump["t0"] is None:
+                    _pump["t0"] = now_p
+                _pump["last"] = now_p
+                _pump["xy"] = (pumps[0].cx, pumps[0].gy)
+            elif _pump["t0"] is not None and now_p - _pump["last"] > 6.0:
+                _pump["t0"] = None
+                _pump["xy"] = None
+            # LANE WIN CONDITION -> the Tesla centre-pull target. Deepest recognised enemy wincon that is
+            # committed to ONE side; its own KB aggro radius sets how far the Tesla can sit toward mid-board.
+            wc = None
+            for d in dets_all:
+                if d.team == "mine" or d.gy < 0.5 or abs(d.cx - 0.5) < _intercept_lane:
+                    continue
+                if not card_threat.profile(_db, card_threat.base_key(d.base)).win_condition:
+                    continue
+                if wc is None or d.gy > wc.gy:
+                    wc = d
+            if wc is not None:
+                _wincon["xy"] = (wc.cx, wc.gy)
+                _wincon["sight"] = float(_db.sight_range_tiles(card_threat.base_key(wc.base))) * _TILE
+                _wincon["last"] = now_p
+            elif _wincon["xy"] is not None and now_p - _wincon["last"] > 3.0:
+                _wincon["xy"] = None                     # stale -- the push is gone
+        _replay_rec.update(dets_all)                 # overlay replay: newest boxes for the clip
+        _last_dets["all"] = dets_all                 # ...and the source for the semantic canvas
+        dets = [d for d in dets_all if d.team == "enemy" and d.base in detector_cards]
+        # identity: from the WATCH LINE (the bridge) rather than "already across the river", so an
+        # incoming win condition lights its role flags while a defender still has time to deploy.
+        items = [(d.base, card_threat.identity_depth(d.gy, _ident_front))
+                 for d in dets if d.gy >= _ident_front]
+        now = time.time()
+        dt = (now - _ident_state["t"]) if _ident_state["t"] else 0.0
+        ident = card_threat.identity_threat_vector(items, _db, prev_depth=_ident_state["depth"],
+                                                    dt=dt, horizon=predict_horizon)
+        _ident_state["depth"] = float(ident[7]); _ident_state["t"] = now
+        mem = _opp_mem.update([(d.base, d.gy) for d in dets], dt=dt)          # memory: BOTH halves (incl. staging)
+        # O19 attempt 2 FIX 1 (verifier, MEDIUM): _team_tracker's track dicts are mutated IN PLACE by the
+        # perception thread's own tag() call under its lock (TeamTracker.tag, replay_mine.py --
+        # `trk["x"], trk["y"], trk["t"] = ...`) whenever `_ploop` is running. Reading those fields here
+        # without that SAME lock could observe a torn write (this pass's x paired with the PREVIOUS pass's
+        # y), which then feeds the estimator's own match_radius proximity/clustering test a point that never
+        # existed on screen. So: when perception owns the tracker, go through its locked passthrough
+        # (`bill_confirmed`, matching every other `if _ploop is not None and _ploop.running:`-guarded access
+        # to `_team_tracker`/`_ploop` elsewhere in this function -- record_play, enemy_tracks, reset_tracker,
+        # etc.); only when NOTHING else can be mutating `_team_tracker` concurrently (no perception thread --
+        # this act loop is then the tracker's only reader/writer, exactly like the unlocked `dets`/`ident`/
+        # `mem` reads directly above) is the direct, unlocked call safe.
+        if _opp_elixir_v2 or _opp_elixir_v2_shadow:
+            if _ploop is not None and _ploop.running:
+                _billed = _ploop.bill_confirmed(_opp_bill, detector_cards)
+            else:
+                _billed = [d for d in _opp_elixir_v2_bill(_team_tracker, _opp_bill) if d.base in detector_cards]
+        if _opp_elixir_v2:
+            _est = _opp_elx.update(float(my_elixir), _billed, now)            # V2, tracker-billed -- DRIVES mem[5]/S1
+        else:
+            _est = _opp_elx.update(float(my_elixir), dets, now)               # V1, normalized opponent-elixir estimate
+        # O19 attempt 2 FIX 2: play.opp_elixir_v2_shadow (default OFF) is OBSERVE-ONLY. `_opp_elx_shadow` is
+        # ALWAYS the class OTHER than whichever `_opp_elx` actually is (constructed at :~460), so this is a
+        # genuine V1-vs-V2 comparison regardless of which flag drives mem[5]/S1 -- never a comparison of V2
+        # against itself when both flags happen to be on. Neither `mem[5]` nor S1 ever read `_shadow_est`;
+        # it exists purely for this log line.
+        # O19 attempt 3 FIX 1 (verifier, the one that matters for a real session): this used to `print` on
+        # EVERY decision, unthrottled -- a long session would drown the console in it, and it would be the
+        # first thing the owner saw. `_shadow_log["last_t"]`/`_opp_elixir_v2_shadow_log_every_s` gate the
+        # PRINT to at most once per that many seconds, same `now - last >= period` cadence shape play()
+        # already uses for its own act cadence (`trigger = now - last_act >= act_period`, further down this
+        # function) -- reused rather than a bespoke throttle. The running |diff| mean accumulates every
+        # decision regardless of whether this tick prints, so the eventual print is a genuine summary of
+        # everything since the last one (and, at the FIRST print, since match start), not just whatever the
+        # two samples on a print tick happened to show.
+        if _opp_elixir_v2_shadow:
+            if _opp_elixir_v2:
+                _shadow_est = _opp_elx_shadow.update(float(my_elixir), dets, now)   # shadow = V1, raw dets
+                _v1_val, _v2_val = _shadow_est, _est
+            else:
+                _shadow_est = _opp_elx_shadow.update(float(my_elixir), _billed, now)  # shadow = V2, billed dets
+                _v1_val, _v2_val = _est, _shadow_est
+            _diff = (_v2_val - _v1_val) * 10.0
+            _shadow_log["sum_abs_diff"] += abs(_diff)
+            _shadow_log["n"] += 1
+            if now - _shadow_log["last_t"] >= _opp_elixir_v2_shadow_log_every_s:
+                _mean_abs = _shadow_log["sum_abs_diff"] / _shadow_log["n"]
+                print(f"[play] opp_elixir_v2_shadow V1={_v1_val * 10.0:.2f} V2={_v2_val * 10.0:.2f} "
+                      f"diff={_diff:+.2f} mean_abs_diff={_mean_abs:.2f} (n={_shadow_log['n']} since match "
+                      f"start) driving={'V2' if _opp_elixir_v2 else 'V1'} wall={_wall()}", flush=True)
+                _shadow_log["last_t"] = now
+        mem[5] = _est if _mem5_source == "opp_estimate" else float(my_elixir) / 10.0
+        blocks = []
+        if want_identity:
+            blocks.append(ident)
+        if want_memory:
+            blocks.append(mem)
+        if want_interactions:                          # predicted tower pressure from ALL tagged detections
+            my_t = [(ax, ay, bool(tower_tracker.mine_alive[i]))
+                    for i, (ax, ay) in enumerate(tower_tracker.mine_a[:3])]
+            en_t = [(ax, ay, bool(tower_tracker.enemy_alive[i]))
+                    for i, (ax, ay) in enumerate(tower_tracker.enemy_a[:3])]
+            units = [("mine" if d.team == "mine" else "enemy", d.base, d.cx, d.gy)
+                     for d in dets_all if d.team in ("mine", "enemy") and d.base in detector_cards]
+            blocks.append(interactions.interaction_vector(units, my_t, en_t, _db))
+        return np.concatenate(blocks).astype(np.float32) if blocks else np.zeros(0, np.float32)
+
+    def _tower_frac() -> np.ndarray:
+        """6-dim crown-tower HP block, byte-identical to sim/view.tower_vector and env._tower_frac:
+        HP FRACTION of (L princess, R princess, king) for MINE then THEIRS, 0.0 == destroyed. Princess
+        HP is the live digit read (hp_tracker); the KING's HP is never printed on screen, so its alive
+        flag is the proxy (1.0 until it falls). Destroyed towers are forced to 0.0 via the alive flags."""
+        v = np.zeros(_TOWER_DIM, np.float32)
+        mine_alive = list(getattr(tower_tracker, "mine_alive", []) or [])
+        enemy_alive = list(getattr(tower_tracker, "enemy_alive", []) or [])
+        my_full = hp_tracker.my_full if getattr(hp_tracker, "my_full", 0) > 0 else 1.0
+        en_full = hp_tracker.full if getattr(hp_tracker, "full", 0) > 0 else 1.0
+        for i in range(2):                                    # L, R princess (index 0, 1)
+            if i < len(mine_alive) and mine_alive[i] and i < len(hp_tracker.my_hp):
+                v[i] = min(1.0, max(0.0, float(hp_tracker.my_hp[i]) / my_full))
+            if i < len(enemy_alive) and enemy_alive[i] and i < len(hp_tracker.enemy_hp):
+                v[3 + i] = min(1.0, max(0.0, float(hp_tracker.enemy_hp[i]) / en_full))
+        v[2] = 1.0 if (len(mine_alive) > 2 and mine_alive[2]) else 0.0    # king: alive proxy (no live HP)
+        v[5] = 1.0 if (len(enemy_alive) > 2 and enemy_alive[2]) else 0.0
+        return v
+
+    eps = float(cfg.get("play", "epsilon", default=0.0))
+    act_period = float(cfg.get("play", "act_period", default=1.5))
+    poll_dt = 1.0 / float(cfg.get("nav", "poll_hz", default=6))
+    menu_delay = float(cfg.get("nav", "menu_delay", default=1.0))
+    battle = cfg.get("buttons", "battle_button", default=[0.5, 0.9])
+    quick = cfg.get("buttons", "quick_match", default=[0.5, 0.55])
+    results_ok = cfg.get("buttons", "results_ok", default=[0.5, 0.9])
+    results_dc = cfg.get("buttons", "results_ok_dc", default=results_ok)
+    play_again = cfg.get("buttons", "play_again", default=results_ok)
+    _home = cfg.get("states", "home_menu", default={}) or {}
+    home_tpl, home_thr = _home.get("template", "home_menu.png"), float(_home.get("threshold", 0.8))
+
+    # L67ag H3 (owner 2026-09-12): the hero Ice Wizard's Frosty Fella is pressed by RULE (clashrl/hero_ability.py),
+    # outside the model's action space. Availability = the button's pixels. Every press logs its reason, whether the
+    # game ACCEPTED it (button gone at +1.5 s) and its outcome at +7 s. Revert: hero.enabled: false.
+    _hero_on = bool(cfg.get("hero", "enabled", default=False))
+    _hero_card = str(cfg.get("hero", "card", default="ice_wizard"))
+    _hero_btn = tuple(float(v) for v in cfg.get("hero", "button", default=[0.909, 0.765]))
+    _hero_state = (float(cfg.get("hero", "state_radius", default=0.045)),
+                   float(cfg.get("hero", "blue_min", default=0.30)),
+                   float(cfg.get("hero", "grey_min", default=0.35)))
+    _hero_rule = dict(cost=float(cfg.get("hero", "cost", default=2)),
+                      radius=float(cfg.get("hero", "freeze_radius_tiles", default=2.5)),
+                      wincon_reach=float(cfg.get("hero", "wincon_reach_tiles", default=4.0)),
+                      cluster_min=int(cfg.get("hero", "cluster_min", default=3)),
+                      guard=float(cfg.get("hero", "xbow_guard_tiles", default=3.0)),
+                      hero_reach=float(cfg.get("hero", "hero_reach_tiles", default=7.0)))
+    _hero_min_age = float(cfg.get("hero", "min_age_s", default=1.5))
+    _hero_check_after = float(cfg.get("hero", "check_after_s", default=1.5))
+    _hero_outcome_after = float(cfg.get("hero", "outcome_after_s", default=7.0))
+    _hero = {"t": None, "xy": None, "press": None}
+
+    def _is_wincon(base) -> bool:
+        try:
+            return bool(card_threat.profile(_db, card_threat.base_key(base)).win_condition)
+        except Exception:  # noqa: BLE001 -- an unknown class is simply not a win condition
+            return False
+
+    def _frosty_check(frame, elixir: float) -> bool:
+        """True when Frosty Fella was pressed this tick (the caller then skips the card decision)."""
+        now = time.time()
+        st, blue, _grey = ability_button_state(frame, _hero_btn, *_hero_state)
+        if _hero["press"] is None and st != "ready":
+            return False
+        if _ploop is not None and _ploop.running:
+            dets, _age = _ploop.snapshot()
+            tracks = _ploop.enemy_tracks(now, True, 1.0)
+        else:
+            dets = _last_dets["all"]
+            tracks = _team_tracker.enemy_tracks(now, True, 1.0)
+        enemies = [(t[0], t[1], (t[4] if len(t) > 4 else None)) for t in tracks]
+        mine = [d for d in dets if d.team == "mine"]
+        buildings = [(d.cx, d.gy) for d in mine if d.base in ("x_bow", "tesla")]
+        xbows = [(d.cx, d.gy) for d in mine if d.base == "x_bow"]
+        towers = [tuple(a) for a, alive in zip(tower_tracker.mine_a[:3], list(tower_tracker.mine_alive)[:3]) if alive]
+        p = _hero["press"]
+        if p is not None:
+            if "accepted" not in p and now - p["t"] >= _hero_check_after:
+                p["accepted"] = st != "ready"
+                print(f"[ability] FROSTY {'accepted' if p['accepted'] else 'NOT accepted (button still ready)'} "
+                      f"+{now - p['t']:.1f}s button {st} elixir {p['elixir']:.0f}->{elixir:.0f} wall={_wall()}",
+                      flush=True)
+            if now - p["t"] >= _hero_outcome_after:
+                still = sum(1 for e in enemies if tiles_between(e, p["center"]) <= _hero_rule["radius"])
+                wc = ""
+                if p["wincon"]:
+                    ds = [min((tiles_between(e, a) for a in buildings + towers), default=float("inf"))
+                          for e in enemies if e[2] == p["wincon"]]
+                    wc = (f" {p['wincon']} nearest-building {min(ds):.1f} tiles" if ds
+                          else f" {p['wincon']} not tracked")
+                print(f"[ability] FROSTY outcome +{now - p['t']:.1f}s reason {p['reason']} enemies_in_zone "
+                      f"{p['n']}->{still}{wc} wall={_wall()}", flush=True)
+                _hero["press"] = None
+            return False
+        age = (now - _hero["t"]) if _hero["t"] is not None else None
+        if age is not None and age < _hero_min_age:
+            return False
+        seen = [(d.cx, d.gy) for d in mine if d.base == _hero_card]
+        if seen:
+            hero_xy, hsrc = seen[0], "detector"
+        elif _hero["xy"] is not None:
+            hero_xy, hsrc = _hero["xy"], "deploy"
+        else:
+            hero_xy, hsrc = None, "unknown"
+        r = frosty_fella_decision(enemies, buildings, towers, hero_xy, elixir=elixir, is_wincon=_is_wincon,
+                                  xbows=xbows, **_hero_rule)
+        if r is None:
+            return False
+        if cfg.get("play", "ensure_focus", default=True):
+            controller.ensure_focus()  # L67ag: same guard as play_card -- an unfocused window eats the tap
+        controller.tap(*_hero_btn)
+        _hero["press"] = dict(r, t=now, elixir=float(elixir))
+        if _student is not None:
+            _student.stats["frosty_press"] = _student.stats.get("frosty_press", 0) + 1
+        print(f"[ability] FROSTY press reason {r['reason']} centre ({r['center'][0]:.2f},{r['center'][1]:.2f}) "
+              f"enemies_in_zone {r['n']} wincon {r['wincon']} hero {hsrc} age "
+              f"{('%.1fs' % age) if age is not None else '?'} elixir {elixir:.0f} button blue {blue:.2f} "
+              f"wall={_wall()}", flush=True)
+        return True
+
+    def act_in_match(frame) -> None:
+        hp_tracker.step(frame)                # keep enemy princess HP + alive flags current
+        # L67i: NOT during a grace hold. TowerTracker latches a tower destroyed after 3 consecutive "gone"
+        # colour reads (~0.3 s at 10 Hz) and the latch is ONE-WAY, while a grace hold means the screen has
+        # stopped reading as in-match at all (end animation, overlay, dropout) -- so a 1.1 s blip, four times
+        # what the latch needs, could permanently convince the bot its own towers were gone. Observed in the
+        # owner's 22:29 run, where the collapse began at the exact frame the hold released.
+        if not getattr(grace, "_holding", False):
+            tower_tracker.step(frame)
+        obs = vision.observe(frame)
+        hand_ids = vision.recognize_hand(frame)
+        hand_vec = vision.hand_multihot(hand_ids)
+        if hand_vec.sum() == 0:               # no card recognized -> can't act this tick
+            return
+        _next_id = vision.recognize_next(frame)   # read ONCE: the student below reuses it
+        next_vec = _cycle_tracker.observe(hand_ids, _next_id)
+        elixir = vision.read_elixir(frame)
+        if _hero_on and _frosty_check(frame, float(elixir)):   # L67ag H3: an ability press ends this tick
+            return
+        # L67u F3 (logging only): the tray after the last student tap -- at the FIRST read after it (what the bot sees
+        # before it may tap again) and at the first read >= 0.5 s after it (the settled tray). One line if the first
+        # read is already >= 0.5 s late.
+        if _student_tap:
+            _dt = time.time() - _student_tap["t"]
+            _stage = "first" if not _student_tap.get("first_done") else ("settled" if _dt >= 0.5 else None)
+            if _stage is not None:
+                _now = _tray_names(hand_ids)
+                _k = _student_tap["slot"]
+                print(f"[student] TRAY {_stage} +{_dt:.2f}s tapped slot {_k} meant {_student_tap['card']} "
+                      f"before [{','.join(_student_tap['before'])}] now [{','.join(_now)}] "
+                      f"slot_now {(_now[_k] if 0 <= _k < len(_now) else '?')} "
+                      f"elixir {_student_tap['elixir']:.0f}->{elixir:.0f} wall={_wall()}", flush=True)
+                if _stage == "first" and _dt < 0.5:
+                    _student_tap["first_done"] = True
+                else:
+                    _student_tap.clear()
+        threat_vec = threat_tracker.update(frame, time.time()).vector()
+        if want_identity or want_interactions:
+            threat_vec = np.concatenate([threat_vec, _threat_extra(frame, float(elixir))]).astype(np.float32)
+        if want_tower:                        # crown-tower HP -- appended LAST, matching sim/view + env
+            threat_vec = np.concatenate([threat_vec, _tower_frac()]).astype(np.float32)
+        if _use_canvas:                       # semantic channels from the SAME detections as the threat blocks
+            # WARP FIX (2026-08-15): this painter never passed the board warp, so `play`
+            # showed the policy a FRAME-space canvas while training (sim board-true, env
+            # warped) never did -- an out-of-distribution image on every single frame, and
+            # the likely driver of the single-tile live collapse. Warped now, like env.py.
+            chf = detection_channels(_last_dets["all"], _db, obs.shape[0], obs.shape[1],
+                                     warp=actions.warp)
+            if detect_obs.predictive_enabled(cfg):
+                w = actions.warp
+                my_t = [(*w.frame_to_board(ax, ay), bool(tower_tracker.mine_alive[i]))
+                        for i, (ax, ay) in enumerate(tower_tracker.mine_a[:3])]
+                en_t = [(*w.frame_to_board(ax, ay), bool(tower_tracker.enemy_alive[i]))
+                        for i, (ax, ay) in enumerate(tower_tracker.enemy_a[:3])]
+                units, confs = [], []
+                for d in _last_dets["all"]:
+                    if d.team in ("mine", "enemy") and d.base in detector_cards:
+                        bx, by = w.frame_to_board(d.cx, d.gy)
+                        units.append((d.team, d.base, bx, by))
+                        confs.append(min(1.0, float(d.conf)))
+                pred = detect_obs.predictive_channels(units, my_t, en_t, _db,
+                                                      obs.shape[0], obs.shape[1], confs,
+                                                      dt_s=detect_obs.predictive_dt(cfg),
+                                                      horizon_s=detect_obs.eta_horizon(cfg))
+                chf = np.concatenate([chf, pred], axis=2)
+            if detect_obs.hp_enabled(cfg):
+                w = actions.warp
+                items = []
+                for d in _last_dets["all"]:
+                    if d.team in ("mine", "enemy"):
+                        bx, by = w.frame_to_board(d.cx, d.gy)
+                        items.append((d.team, d.base, bx, by, detect_obs.read_hp_frac(frame, d)))
+                chf = np.concatenate(
+                    [chf, detect_obs.hp_channels(items, obs.shape[0], obs.shape[1])], axis=2)
+            ch = channels_to_uint8(chf)
+            obs = np.concatenate([obs, _canvas_stack.push(ch, time.time())], axis=2)
+        x = torch.from_numpy(obs).float().permute(2, 0, 1).unsqueeze(0).to(device) / 255.0
+        hv = torch.from_numpy(hand_vec).unsqueeze(0).to(device)
+        nv = torch.from_numpy(next_vec).unsqueeze(0).to(device)
+        ev = torch.tensor([[elixir / 10.0]], dtype=torch.float32, device=device)
+        tv = torch.from_numpy(threat_vec).unsqueeze(0).float().to(device)
+        if net is not None:
+            with torch.no_grad():
+                z, card_logits, cell_logits = net.forward_parts(x, hv, nv, ev, tv)
+                gate_logits = gate(z) if gate is not None else None
+        else:   # L67an: no old CNN -- neutral logits keep the hand/affordability masks and the placement path valid
+            card_logits = torch.zeros((1, n_cards), device=device)
+            cell_logits = torch.zeros((1, n_cards, n_cells), device=device)
+            gate_logits = None
+        card_logits = card_logits.masked_fill(hv < 0.5, float("-inf"))   # only cards in hand
+        # ELIXIR: mask out any card you can't currently AFFORD (cost from the card DB). This is the
+        # hand-card -> elixir-cost tracking: play never taps an unaffordable card (the old fixed
+        # 1.5s cadence tapped regardless, which just wasted the tap).
+        for i in range(n_cards):
+            if elixir + 1e-6 < card_elixir[i]:
+                card_logits[0, i] = float("-inf")
+        # Tesla is deliberately NOT masked: the policy DECIDES when to play vs HOLD it, exactly as in
+        # training (no forced choice). It observes 'a win condition is on the board now' (identity block)
+        # and 'the enemy has shown a win condition this match' (opponent-memory block), and the correctness
+        # reward teaches the tradeoff -- wasting Tesla on a non-wincon earns a threat_miss when the win
+        # condition later arrives with no answer in hand. So it can still play Tesla when that's the best
+        # current defence (or when the opponent has no win condition at all).
+        if bool(torch.isinf(card_logits).all()):
+            return                              # nothing in hand is affordable / allowed -> wait
+        if random.random() < eps:
+            choices = [i for i in range(n_cards) if not bool(torch.isinf(card_logits[0, i]))]
+            card_id = random.choice(choices)
+            cells = anywhere_cells if card_id in anywhere_ids else (yourhalf_cells or anywhere_cells)
+            cell = random.choice(cells)
+        else:
+            card_id = int(card_logits.argmax(1).item())
+            cmask = allcells_mask if card_id in anywhere_ids else yourhalf_mask   # DEPLOYABLE cells for this card
+            # SPELL TARGET MASK (live). A whiffed spell is the biggest weakness in live play, and
+            # the cost is not the -0.3 spell_waste charges -- it is the ELIXIR, which is then
+            # missing for the counter to the next push, so one bad cast becomes a missed defence
+            # too. The precedent is no_king_mask: a reward cannot stop a choice the policy makes
+            # for reasons the reward never reaches; only a mask can.
+            #
+            # Uses the SAME spell_whiffed() the live reward verifies casts with, over the tracked
+            # enemies, so it forbids exactly what would have been charged as a whiff. If nothing on
+            # the board is hittable the mask is skipped rather than blocking the cast, so the model
+            # can still choose to spend a spell when it judges that right.
+            if _spell_mask_live and card_id in _spell_ids:
+                try:
+                    _tr = (_ploop.enemy_tracks(time.time()) if _ploop is not None and _ploop.running
+                           else _team_tracker.enemy_tracks(time.time()))
+                    _r = (_nado_pull_tiles if card_id in _nado_ids else _spell_waste_tiles)
+                    _ok = np.fromiter(
+                        (not spell_whiffed(*actions.cell_center(c % actions.gw, c // actions.gw),
+                                           _r, _tr,
+                                           tower_anchors=tower_tracker.enemy_a[:2],
+                                           tower_alive=list(tower_tracker.enemy_alive)[:2],
+                                           tower_aim_radius=_spell_aim_radius,
+                                           tower_aim_tiles=_spell_aim_tiles)
+                         for c in range(n_cells)), dtype=bool, count=n_cells)
+                    if _ok.any():
+                        cmask = cmask & torch.tensor(_ok, dtype=torch.bool, device=device)
+                except Exception as _ex:
+                    # never let the mask break a live match -- but say so ONCE, because a mask that
+                    # silently disables itself looks enabled in the config and protects nothing.
+                    if not globals().get("_spell_mask_warned"):
+                        globals()["_spell_mask_warned"] = True
+                        print("[play] spell target mask DISABLED after error: %s: %s"
+                              % (type(_ex).__name__, _ex))
+            # PER-CARD map: pick the chosen card's placement map (PolicyNet.cell_conv).
+            cell_logits_m = cell_logits[0, card_id].masked_fill(~cmask, float("-inf")).unsqueeze(0)
+            # GATE -- MUST MATCH THE TRAINER, and for DDQN it did not. train_rl compares the two gate
+            # logits ALONE, because its card and cell heads are dueling-style ADVANTAGES: their
+            # legal maxima are 0 at their own argmax, so max over (card, cell) of Q(play) IS
+            # gate[play] and the decision is one head against one head. This path still added
+            # `+ max_card + max_cell`, which is three heads against one -- the exact "passivity
+            # ratchet" train_rl's own comment describes removing. A DDQN checkpoint therefore
+            # learned one WAIT/PLAY rule and was DEPLOYED under another. policy_stats already used
+            # the gate-only rule, so live play was the odd one out of the three.
+            # PPO heads are logits, not advantages, so that branch keeps its thresholded probability.
+            # L67e FIX: when the S1 student is driving, the STUDENT'S gate is the only gate. This branch
+            # returned first, so the old (near-catatonic, tau 0.25) CNN gate decided WAIT before the student
+            # was ever consulted -- the bot sat still for a whole match with the student loaded.
+            if gate_logits is not None and _student is None:
+                if is_ppo:
+                    wait = bool(torch.sigmoid(gate_logits[0, 1] - gate_logits[0, 0]) <= gate_tau)
+                else:
+                    wait = bool(gate_logits[0, 0] >= gate_logits[0, 1])
+                if wait:
+                    return
+            cell = int(cell_logits_m.argmax(1).item())
+        # ---- L67d: S1 STUDENT OVERRIDE (play.student_ckpt). Off by default; see student_live.py. ------
+        # The student answers from the CONTRACT's BoardState (detector + screen reads), not from the CNN's
+        # image tensor, so it needs its own call here. It decides (card, cell) ONLY: the deploy clamp, the
+        # aim assists and the tap below are untouched, and an unaffordable or unreadable answer is a WAIT
+        # rather than a silent fall-back to the other policy -- mixing two policies mid-match would make
+        # any live reading uninterpretable.
+        if _student is not None:
+            _nname = (vision.deck_keys[_next_id] if 0 <= int(_next_id) < len(vision.deck_keys) else None)
+            # L67f: hand the student the opponent-elixir estimate play.py already computes (`_opp_elx`
+            # returns it NORMALISED 0-1, the contract wants 0-10) and the king alive-proxy. Both were being
+            # thrown away as "unknown", and supplying them measured better against pro labels than the
+            # unknown flag (blank_both 18.78 exact cell -> fill_both 20.15).
+            # `_opp_elx._est` is already in ELIXIR units (0-10); `update()` is the one that returns it
+            # normalised. Do not rescale -- a genuine 0.8-elixir estimate must not become 8.
+            #
+            # L67g: DEFAULT OFF. Measured on 835 real detector frames (live_gate_elixir.json), supplying this
+            # estimate suppresses the gate monotonically -- frames over tau 0.27: 0.278 with it absent, 0.156
+            # at opp 5, 0.087 at opp 10 (a 3.2x cut), and even opp 0.0 suppresses (0.236), so it is the
+            # opp_known FLAG as much as the value. The estimator cannot be trusted to a value: `_est =
+            # my_elixir + my_spent - opp_spent` clipped to [0, 10], so every enemy play the detector MISSES
+            # ratchets it upward and it never comes back, drifting a long match toward the pinned 10 that
+            # costs the most gate. On ENGINE labels the TRUE opponent elixir is worth +6.8 pp of gate accuracy
+            # (0.755 -> 0.823), which is why it was wired in (5cs.98 F) -- but that is ground truth, not this.
+            # Set `play.student_opp_elixir: true` to restore the L67f behaviour.
+            _oe = getattr(_opp_elx, "_est", None) if _student_opp_elixir else None
+            # L67j: the MODEL's hand is stabilised across the tray's cycle animation; the tap path below
+            # keeps the RAW hand_ids, so the bot still never plays a slot it cannot identify.
+            _hand_model = _student.hand_memory.stabilize(hand_ids, time.time())
+            _sreads = _student_reads(elixir=float(elixir), hand_ids=_hand_model, deck_keys=vision.deck_keys,
+                                     next_name=_nname, hp_tracker=hp_tracker, tower_tracker=tower_tracker,
+                                     t_sec=max(0.0, time.time() - clock._start),
+                                     opp_elixir=(None if _oe is None else float(_oe)))
+            # L67w P1: the TAP path only gets slots the game will play -- a pink cost badge and a card read once. The
+            # model's hand view above (HandMemory) is unchanged; this stops the phantom taps of run12 (31% of taps
+            # dropped no elixir: greyed cards read as cheap ones, one card read in two slots, HANDOFF 5cs.99 AB/AC).
+            _tap_ids, _tap_why = tap_tray(hand_ids, vision.deck_keys, pink=badge_pink(frame, vision.hand_slots),
+                                          min_pink=_tray_min_pink)
+            for _w in _tap_why:
+                if _w in ("grey", "double"):
+                    _student.stats[f"tray_{_w}"] = _student.stats.get(f"tray_{_w}", 0) + 1
+            _sact = _student.decide(_last_dets["all"], _sreads, _tap_ids, vision.deck_keys,
+                                    card_elixir=card_elixir)
+            _slast = _student.last or {}
+            if _sact is None:                                 # student says WAIT (or nothing mappable)
+                _student.stats["log_n"] = _student.stats.get("log_n", 0) + 1
+                if _student.stats["log_n"] % 10 == 0:         # rate-limited so a match is still readable
+                    _why = " NO-TRAY-MATCH" if _slast.get("no_mappable_card") else ""
+                    if float(_slast.get("p_play", 1.0)) < 0.05 and _slast.get("digest"):
+                        _why += " | " + str(_slast["digest"])   # L67i: why is the gate pinned at zero?
+                    print(f"[student] WAIT{_why} p={_slast.get('p_play', float('nan')):.2f} "
+                          f"elixir {elixir:.0f} opp~{('?' if _oe is None else f'{float(_oe):.1f}')} "
+                          f"units {_slast.get('units', 0)} dets {len(_last_dets['all'])} "
+                          f"(waits {_student.stats.get('wait', 0)}/{_student.stats.get('decisions', 0)}"
+                          f" badhand {_student.stats.get('hand_unmapped', 0)}/{_student.stats.get('frames', 0)})"
+                          f" tap [{','.join(_tray_names(_tap_ids))}] wall={_wall()}",
+                          flush=True)
+                return
+            _scard, _scell = int(_sact[0]), int(_sact[1])
+            if elixir + 1e-6 < card_elixir[_scard] or not any(h == _scard for h in hand_ids):
+                _student.stats["skip_unaffordable"] = _student.stats.get("skip_unaffordable", 0) + 1
+                print(f"[student] SKIP unaffordable {vision.deck_keys[_scard]} "
+                      f"(cost {card_elixir[_scard]}, elixir {elixir:.0f}) wall={_wall()}", flush=True)
+                return
+            card_id, cell = _scard, _scell
+            print(f"[student] {'STALL-PLAY' if _slast.get('stall') else 'PLAY'} "
+                  f"{vision.deck_keys[card_id]} p={_slast.get('p_play', 0):.2f} "
+                  f"cell {cell} board {tuple(round(v, 2) for v in _slast.get('board_xy', (0, 0)))} "
+                  f"units {_slast.get('units', 0)} {_slast.get('ms', 0):.0f} ms "
+                  f"tap [{','.join(_tray_names(_tap_ids))}] "
+                  f"hand [{','.join(_tray_names(hand_ids))}] elixir {elixir:.0f} wall={_wall()}", flush=True)
+        # ---- LIVE SEARCH OVERRIDE. Set sim.live_search_enabled false to switch it off. --------
+        # The policy's (card_id, cell) is already decided above and stays the fallback: decide()
+        # returns None to keep it. Placed BEFORE the aim-assist so a searched cell gets the same
+        # clamping, snapping and deploy rules the policy's choice would have.
+        # L67e: the live rollout search plans over the CNN's action, and it can both override a card and
+        # return WAIT -- with the student driving that would silently blend two policies, so it is off
+        # whenever the student is on (sim.live_search_enabled still governs the CNN path).
+        if _live_search is not None and _student is None:
+            try:
+                # with_base=True or the track carries NO CARD IDENTITY and the bridge
+                # correctly drops every one of them (see live_bridge.tracks_to_bodies).
+                _tr = (_ploop.enemy_tracks(time.time(), with_base=True)
+                       if _ploop is not None and _ploop.running else
+                       _team_tracker.enemy_tracks(time.time(), with_base=True))
+                _sa = _live_search.decide(_tr, hand_ids, float(elixir), (card_id, cell),
+                                          frame=frame, frame_t=time.time())
+                if _sa == _live_search.WAIT:
+                    return
+                if _sa is not None:
+                    # /!\ RESPECT THE AFFORDABILITY FILTER THIS HOOK JUMPS OVER. The block above
+                    # builds `playable` precisely so play never taps a card it cannot pay for --
+                    # and overwriting card_id here walked straight past it. An unaffordable tap
+                    # does NOTHING in game while the bot believes it played, which is the
+                    # "it keeps tapping cards it cannot afford" the owner reported.
+                    _c, _cl = int(_sa[0]), int(_sa[1])
+                    if 0 <= _c < len(card_elixir) and elixir + 1e-6 >= card_elixir[_c]                             and any(h == _c for h in hand_ids):
+                        card_id, cell = _c, _cl
+                    else:
+                        _live_search.stats["skip_unaffordable"] =                             _live_search.stats.get("skip_unaffordable", 0) + 1
+            except Exception:                                  # noqa: BLE001
+                pass                                           # never let it take the match down
+        if card_id in anywhere_ids and card_id not in _pull_ids:   # DAMAGE spell / miner at a
+            # princess -> aim the weaker one. Pull spells are excluded (see _pull_ids).
+            gx, gy = cell % gw, cell // gw
+            cx, cy = actions.cell_center(gx, gy)
+            tgt = None
+            # PUMP PUNISH aim assist: a rocket already aimed near a FRESH enemy pump is snapped to the
+            # king-safe optimum (midpoint with an adjacent princess when one blast covers both).
+            if (card_id in _rocket_ids and _pump["t0"] is not None and _pump["xy"] is not None
+                    and time.time() - _pump["t0"] <= _pump_window
+                    and np.hypot(cx - _pump["xy"][0], cy - _pump["xy"][1]) <= _pump_aim_radius * 1.5):
+                tgt = pump_rocket_cell(_pump["xy"][0], _pump["xy"][1], tower_tracker.enemy_a,
+                                       tower_tracker.enemy_alive, _pump_pair_gap, _pump_king_guard, actions)
+            if tgt is None:
+                tgt = weaker_princess_cell(cx, cy, aim_radius, tower_tracker.enemy_a,
+                                           hp_tracker.enemy_hp, tower_tracker.enemy_alive, actions)
+            if tgt is None and card_id in _rocket_ids:     # no tower/pump snap -> LEAD the tracked troops
+                # cast delay + TRUE tile-distance flight (env.py's _impact_time, same clamp)
+                d_tiles = float(np.hypot((cx - _rocket_org[0]) * 18.0, (cy - _rocket_org[1]) * 32.0))
+                impact = min(max(max(_rocket_base, _cast_delay) + d_tiles / _rocket_speed, 0.6), _spell_eval)
+                tracks = (_ploop.enemy_tracks(time.time(), True) if _ploop is not None and _ploop.running
+                          else _team_tracker.enemy_tracks(time.time(), True))
+                _lp = lead_point(cx, cy, tracks, impact, _lead_radius * 18.0, _db)
+                tgt = actions.cell_at(_lp[0], _lp[1]) if _lp is not None else None
+            if tgt is not None:
+                cell = tgt
+        # Defensive units (Tesla / Ice Wizard / Ronin) are NO LONGER forced to the centre: the
+        # model chooses where to place them (centre is only a rewarded default in training), so it
+        # can block a lane or drop a Ronin up front to catch a ranged unit when that's better.
+        slot = next((s for s, c in enumerate(hand_ids) if c == card_id), -1)
+        if slot < 0:
+            return
+        cell = actions.deploy_clamp(card_id in anywhere_ids, cell)   # only rocket/miner go anywhere
+        if (card_id in xbow_ids and _xbow_pocket_on
+                and (_pk := xbow_pocket_cell(tower_tracker.enemy_alive, actions, _xbow_pocket["side"],
+                                             board_y=_xbow_pocket_y)) is not None):
+            # L67ae X2: an enemy princess is down -> the pro play, an X-Bow in that tower's pocket (sticky lane).
+            print(f"[assist] XBOW pocket cell {cell}->{_pk[0]} side {'left' if _pk[1] == 0 else 'right'} "
+                  f"enemy_alive {list(tower_tracker.enemy_alive)[:3]} wall={_wall()}", flush=True)
+            cell = _pk[0]
+            _xbow_pocket["side"] = _pk[1]
+        elif card_id in xbow_ids:             # snap a forward X-Bow onto the nearer lane so it LOCKS the tower
+            gx, gy = cell % gw, cell // gw
+            cx, cy = actions.cell_center(gx, gy)
+            # WHICH TOWER FIRST. xbow_lock_cell snaps to the NEARER princess, so on a board
+            # with a tower already down it will happily cement a bow into the dead lane --
+            # which is what live overtime actually did, several times in one match.
+            _raw = list(hp_tracker.enemy_hp or [])[:2]
+            _ehp = ([float(v) for v in _raw]
+                    if len(_raw) == 2 and all(v is not None for v in _raw) else None)
+            lane = xbow_target_lane_cell(cx, cy, tower_tracker.enemy_a, _ehp,
+                                         tower_tracker.enemy_alive, xbow_live_defense_y, actions,
+                                         dead_lane_any_depth=_xbow_dead_lane_any_depth)
+            if lane is not None and lane != cell:
+                print(f"[assist] XBOW dead-lane cell {cell}->{lane} "
+                      f"enemy_alive {[int(b) for b in tower_tracker.enemy_alive][:2]} wall={_wall()}", flush=True)
+            if lane is not None:
+                cell = lane
+                gx, gy = cell % gw, cell // gw
+                cx, cy = actions.cell_center(gx, gy)
+            # O22: filter the lock's candidates by aliveness too, so it cannot re-snap the bow
+            # onto a dead lane that xbow_target_lane_cell just moved it off of (see reward.xbow_lock_cell).
+            snapped = xbow_lock_cell(cx, cy, tower_tracker.enemy_a, xbow_range, xbow_live_defense_y, actions,
+                                     enemy_alive=tower_tracker.enemy_alive)
+            if snapped is not None:
+                cell = snapped
+            # ...then set its DEPTH from the column: behind a bridge it sits a row back (room to
+            # body-block the answer in front of it); off-lane it must be on the frontmost row or the
+            # diagonal to the tower is too long. See reward.xbow_offense_depth_cell.
+            gx, gy = cell % gw, cell // gw
+            cx, cy = actions.cell_center(gx, gy)
+            depth = xbow_offense_depth_cell(cx, cy, xbow_live_defense_y, _deploy_top, actions)
+            if depth is not None:
+                cell = depth
+        elif card_id in _log_ids:
+            # THE LOG IS A CORRIDOR, NOT A BLAST: line it up with the push instead of beside it.
+            gx, gy = cell % gw, cell // gw
+            cx, cy = actions.cell_center(gx, gy)
+            _raw_tk = (_ploop.enemy_tracks(time.time(), True) if _ploop is not None and _ploop.running
+                       else _team_tracker.enemy_tracks(time.time(), True))
+            # where each body will be when the log APPEARS, not where it is at the tap -- EXCEPT an
+            # in-flight spawn spell, which is a projectile and not a body at all (owner report,
+            # 2026-09-08). Its landing point already accounts for the flight, so it must NOT be led
+            # again, and a barrel we cannot predict is dropped rather than aimed at.
+            _tk = []
+            for _t in _raw_tk:
+                _tbase = _t[4] if len(_t) > 4 else None
+                if _barrel_landing_aim and _tbase in SPAWN_SPELL_BASES:
+                    _lp = spawn_spell_landing(_t, actions)
+                    if _lp is None:
+                        continue
+                    _tk.append((float(_lp[0]), float(_lp[1])) + tuple(_t[2:]))
+                    continue
+                _vx, _vy = lead_velocity(_t, _db)
+                _tk.append((_t[0] + _vx * _cast_delay, _t[1] + _vy * _cast_delay) + tuple(_t[2:]))
+            aim = log_corridor_cell(cx, cy, _tk, actions, _log_half_w, _log_roll, _AIR_BASES)
+            if aim is not None:
+                cell = aim
+            # L67ae LOG ON AIR (owner report, run15/16): log_corridor_cell leaves the model's aim alone when no GROUND
+            # enemy is near, so a Log could be cast straight at air units it rolls underneath. Judged on the FINAL cell
+            # and the same led tracks: a corridor holding only flyers skips the play (no tap, nothing recorded).
+            _lgx, _lgy = cell % gw, cell // gw
+            _lcx, _lcy = actions.cell_center(_lgx, _lgy)
+            if log_only_hits_air(_lcx, _lcy, _tk, _log_half_w, _log_roll, _AIR_BASES):
+                if _student is not None:
+                    _student.stats["log_air_veto"] = _student.stats.get("log_air_veto", 0) + 1
+                print(f"[assist] LOG skip: only air units in the roll at cell {cell} "
+                      f"(air {[t[4] for t in _tk if len(t) > 4 and t[4] in _AIR_BASES][:4]}) wall={_wall()}", flush=True)
+                return
+        elif card_id in _nado_ids:
+            # KING ACTIVATION: the highest-value Tornado in the deck, and the one the model has
+            # never attempted live. Only fires when an attacker is actually deep enough to be
+            # worth waking the king -- otherwise the policy's own cast stands.
+            # LEAD THE TORNADO TOO (owner, 2026-09-03): in the cast delay a unit at the edge of the
+            # pull walks clean out of it. Judge and aim on where the units will be when it activates.
+            _tk = (_ploop.enemy_tracks(time.time(), True) if _ploop is not None and _ploop.running
+                   else _team_tracker.enemy_tracks(time.time(), True))
+            _tk = [(t[0] + vx * _nado_eta, t[1] + vy * _nado_eta) + tuple(t[2:])
+                   for t in _tk for vx, vy in (lead_velocity(t, _db),)]
+            # L67aa N1: a Tornado cannot move BUILDINGS, so a building track is never the pull target (nearest
+            # fallback) or the king-activation trigger. run14: 2 of 8 assist moves aimed at one (HANDOFF 5cs.99 AF).
+            _tk = tornado_pullable(_tk, lambda b: _db.kind(card_threat.base_key(str(b))))
+            _cell0 = cell
+            aim = nado_king_cell(_tk, tower_tracker.mine_a, actions, _nado_pull_r)
+            if aim is not None:
+                cell = aim
+                # L67y T2 (logging only): WHICH track fired the king-activation pull -- the deepest enemy track inside
+                # the band nado_king_cell uses (its defaults band 0.10, y_off 0.131) -- so a phantom trigger such as the
+                # false enemy earthquake on our king (HANDOFF 5cs.99 AD) is read from the log instead of inferred.
+                _ky = tower_tracker.mine_a[2][1]
+                _trig = max((t for t in _tk if t[1] >= _ky - 0.10 - 0.131), key=lambda t: t[1], default=None)
+                print(f"[assist] TORNADO king-spot cell {_cell0}->{cell} trigger "
+                      f"{(_trig[4] if _trig is not None and len(_trig) > 4 else '?')} at "
+                      f"{('(%.2f,%.2f)' % (_trig[0], _trig[1])) if _trig is not None else '?'} "
+                      f"enemy tracks {len(_tk)} wall={_wall()}", flush=True)
+            elif _tk:
+                gx, gy = cell % gw, cell // gw
+                cx, cy = actions.cell_center(gx, gy)
+                _dist = lambda t: math.hypot((t[0] - cx) * 18.0, (t[1] - cy) * 32.0)
+                if not any(_dist(t) <= _nado_r_tiles for t in _tk):
+                    # the model's aim pulls NOTHING at the predicted positions (it did at the
+                    # current ones, or it was never near anything) -> nearest predicted enemy,
+                    # the same fallback the train-rl env uses. A 3-elixir pull of nothing is worse.
+                    _best = min(_tk, key=_dist)
+                    cell = actions.cell_at(_best[0], _best[1])
+                    print(f"[assist] TORNADO nearest cell {_cell0}->{cell} target "
+                          f"{(_best[4] if len(_best) > 4 else '?')} at ({_best[0]:.2f},{_best[1]:.2f}) "
+                          f"enemy tracks {len(_tk)} wall={_wall()}", flush=True)
+        elif card_id in tesla_ids and _wincon["xy"] is not None:
+            # CENTRE-PULL: sit at the far edge of the win condition's OWN aggro radius so it is dragged
+            # across the middle instead of beelining the near princess tower.
+            pull = tesla_pull_cell(_wincon["xy"][0], _wincon["xy"][1], _wincon["sight"],
+                                   _pull_front, _pull_back, actions)
+            if pull is not None:
+                cell = pull
+        gx, gy = cell % gw, cell // gw
+        controller.play_card(*actions.decode(slot, gx, gy))
+        if _student is not None:                   # L67u F3 (logging only): remember the tap for the TRAY re-reads
+            _student_tap.clear()
+            _student_tap.update(t=time.time(), slot=int(slot), card=vision.deck_keys[card_id], elixir=float(elixir),
+                                before=_tray_names(hand_ids))
+            # L67by (LOGGING ONLY, owner 2026-09-18): stamp MATCH STATE on every tap, so "how does it
+            # behave in OVERTIME" and "does it defend when AHEAD on towers" become answerable from the
+            # stdout log. Both questions were unauditable when the owner asked them -- overtime is not
+            # marked anywhere in the log today and tower state is tracked but never emitted.
+            # APPENDED AFTER wall= DELIBERATELY: tap_audit.py's regex ends at `wall=([\d:.]+)` and uses
+            # re.match, so fields added after it cannot break the existing parser (fields added BEFORE
+            # it would). Decisions are unchanged by this block -- it only prints.
+            try:
+                _st = (f" ot={int(bool(clock.overtime))} ot_s={float(clock.overtime_s):.0f}"
+                       f" enemy_alive={[int(b) for b in tower_tracker.enemy_alive]}"
+                       f" mine_alive={[int(b) for b in tower_tracker.mine_alive]}")
+            except Exception:              # a logging line must never be able to kill the live loop
+                _st = " ot=? enemy_alive=? mine_alive=?"
+            print(f"[student] TAP slot {int(slot)} {vision.deck_keys[card_id]} cell {cell} wall={_wall()}{_st}",
+                  flush=True)
+        _cycle_tracker.record_play(card_id)        # a card left the hand -> it rotates to the queue back
+        if _student is not None:                   # L67d: the student's `past` = my last 3 accepted plays
+            _cx, _cy = actions.cell_center(gx, gy)
+            _student.record_play(card_id, actions.warp.frame_to_board(_cx, _cy), vision.deck_keys)
+            # the played slot is the ONE whose identity actually changes -- drop its cached read so the
+            # long hand-memory TTL can never serve a card that has just been cycled out (L67k)
+            for _si, _cid in enumerate(list(hand_ids)[:4]):
+                if int(_cid) == int(card_id):
+                    _student.hand_memory.invalidate(_si)
+                    break
+        # ANY play (troop or spell) anchors its own detection 'mine' -- base-matched, so your rolling Log
+        # is claimed at the cast point while an enemy answer dropped on the same spot is not.
+        cx, cy = actions.cell_center(gx, gy)
+        if _hero_on and card_threat.base_key(vision.deck_keys[card_id]) == _hero_card:
+            _hero["t"], _hero["xy"] = time.time(), (cx, cy)   # L67ag H3: the hero's reach is judged from here
+        _opp_elx.record_my_play(card_threat.base_key(vision.deck_keys[card_id]))
+        if _ploop is not None and _ploop.running:
+            _ploop.record_play(cx, cy, time.time(), base=card_threat.base_key(vision.deck_keys[card_id]))
+        else:
+            _team_tracker.record_play(cx, cy, time.time(),
+                                      base=card_threat.base_key(vision.deck_keys[card_id]))
+
+    running = {"v": True}
+
+    def _on_sigint(*_a):
+        """First Ctrl+C = stop cleanly. Second = abort NOW.
+
+        A flag-only handler disarms Ctrl+C anywhere the flag is not polled. The main loop here does
+        poll it every iteration, but restoring the default handler on the second press guarantees an
+        escape hatch even if something inside an iteration blocks (nav, taps, a wedged capture)."""
+        if running["v"]:
+            running["v"] = False
+            print("\n[play] stop requested -- finishing this iteration. "
+                  "Press Ctrl+C again to abort immediately.", flush=True)
+        else:
+            signal.signal(signal.SIGINT, signal.SIG_DFL)
+            raise KeyboardInterrupt
+
+    signal.signal(signal.SIGINT, _on_sigint)
+
+    log_path = Path(cfg.path("data")) / f"play_{datetime.now():%Y%m%d_%H%M%S}.log"
+    try:
+        log_path.parent.mkdir(parents=True, exist_ok=True)
+    except OSError:
+        pass
+
+    def log(msg: str) -> None:
+        line = f"{datetime.now():%H:%M:%S} {msg}"
+        print(line)
+        try:
+            with open(log_path, "a", encoding="utf-8") as fh:
+                fh.write(line + "\n")
+        except OSError:
+            pass
+
+    log(f"[play] running on {device}. Ctrl+C to stop, or slam the mouse into a screen corner "
+        "for the failsafe. It navigates menus and plays in-match on its own.")
+    log(f"[play] logging to {log_path}")
+
+    from .nav import MenuNavigator
+    nav = MenuNavigator(cfg, controller, vision, label="play", log=log)
+    grace = InMatchGrace(float(cfg.get("play", "in_match_grace_s", default=150)), log)
+    prev = None
+    last_act = 0.0
+    prev_mult = 1
+    # L67cb LIVE OUTCOME LEDGER: this project has never recorded a single live match result, so no
+    # live winrate has ever existed. One JSONL row per match, alongside the session log.
+    _ledger = log_path.with_name(log_path.name.replace("play_", "live_matches_")).with_suffix(".jsonl")
+    _match = {"t0": 0.0, "n": 0, "w": 0, "l": 0, "d": 0}
+    while running["v"]:
+        try:
+            frame = capture.grab()
+            if frame is None:
+                capture.refresh_region()
+                time.sleep(0.3)
+                continue
+            state = grace.update(vision.detect_state(frame), time.time())
+            if state != prev:
+                log(f"[play] state: {state.name}")
+                if state == GameState.IN_MATCH:   # new match -> reset the tower trackers
+                    hp_tracker.reset()
+                    tower_tracker.reset()
+                    threat_tracker.reset()
+                    clock.reset()                 # zero the 2x/3x elixir clock at match start
+                    _opp_mem.reset()              # forget the previous opponent's deck/archetype
+                    _opp_elx.reset(my_elixir=float(vision.read_elixir(frame)), now=time.time())
+                    if _opp_elx_shadow is not None:
+                        _opp_elx_shadow.reset(my_elixir=float(vision.read_elixir(frame)), now=time.time())
+                    _opp_bill["billed"].clear()   # O19: last match's billed uids must not block this match
+                    _shadow_log.update(last_t=0.0, sum_abs_diff=0.0, n=0)   # O19 attempt 3: mean is PER MATCH
+                    if _student is not None:
+                        _student.reset_match()    # L67i: play history must not cross a match boundary
+                    if _ploop is not None and _ploop.running:
+                        _ploop.reset_tracker()        # forget last match's own-unit tracks
+                    else:
+                        _team_tracker.reset()
+                    _cycle_tracker.reset()        # forget last match's cycle order
+                    _xbow_pocket["side"] = None   # L67ae X2: the pocket lane is per match
+                    _hero.update(t=None, xy=None, press=None)   # L67ag H3: hero state is per match
+                    _canvas_stack.reset()         # ...and last match's canvas motion history
+                    _replay_rec.new_match()       # arm a fresh overlay-replay clip for this match
+                    _match["t0"] = time.time()    # L67cb: match start, for the outcome ledger
+                    prev_mult = 1
+                elif prev == GameState.IN_MATCH:
+                    # L67g: CLOSE the clip when the match ends. play.py armed clips (new_match) but never
+                    # ended one, so the only thing that ever closed a live clip was the `seconds` SAFETY CAP
+                    # -- env.py (train-rl) has always called this and that is why its overlays were written
+                    # per match. Any non-IN_MATCH read (MATCH_END / HOME / UNKNOWN past the grace hold) ends it.
+                    _replay_rec.end_match()
+                    # L67cb LIVE OUTCOME LEDGER. The owner's bar is a live winrate and this project has
+                    # never recorded one live match result -- vision.py has no results-screen reader (its
+                    # line 11 is a NOTE, not an implementation). So read the outcome from the IN-MATCH
+                    # destruction latch: TowerTracker.crown_counts() (reward.py:722), plus
+                    # king_trending_down() (reward.py:737), which exists precisely because a king fall
+                    # ends the match instantly and its latch often cannot finish before the frame cuts to
+                    # the results screen -- without it 3-crown wins are systematically under-read.
+                    # Crowns decide a Clash Royale match (equal crowns = draw), so this gives win/loss/draw.
+                    # SAFE HERE: tower_tracker.reset() runs at match START (see the IN_MATCH branch above),
+                    # so the latches still hold THIS match when we read them.
+                    # try/except: a ledger line must NEVER be able to kill the live loop.
+                    try:
+                        _blue, _red, _ek, _mk = tower_tracker.crown_counts()
+                        _tek, _tmk = tower_tracker.king_trending_down()
+                        if _ek or _tek:
+                            _blue = 3
+                        if _mk or _tmk:
+                            _red = 3
+                        _res = "win" if _blue > _red else ("loss" if _red > _blue else "draw")
+                        _secs = (time.time() - _match["t0"]) if _match["t0"] else None
+                        _match["n"] += 1
+                        _match[{"win": "w", "loss": "l", "draw": "d"}[_res]] += 1
+                        with open(_ledger, "a", encoding="utf-8") as fh:
+                            fh.write(json.dumps({
+                                "n": _match["n"],
+                                "t_end": datetime.now().isoformat(timespec="seconds"),
+                                "seconds": round(_secs, 1) if _secs else None,
+                                "outcome": _res,
+                                "crowns_for": _blue,
+                                "crowns_against": _red,
+                                "king_latched": [bool(_ek), bool(_mk)],
+                                "king_trending": [bool(_tek), bool(_tmk)],
+                                "overtime_hint": bool(getattr(clock, "overtime", False)),
+                                "ckpt": Path(_student_ckpt).name if _student_ckpt else None,
+                                "tau": getattr(_student, "gate_tau", None),
+                            }) + "\n")
+                        log(f"[match] {_res.upper()} {_blue}-{_red} "
+                            f"{(f'{_secs:.0f}s' if _secs else '?')} | session "
+                            f"{_match['w']}W-{_match['l']}L-{_match['d']}D of {_match['n']}")
+                    except Exception as exc:  # noqa: BLE001 -- the ledger must never kill the live loop
+                        log(f"[match] ledger FAILED: {exc}")
+                prev = state
+
+            if state == GameState.IN_MATCH:
+                nav.reset_state()             # not on a menu -> clear the nav stuck timers
+                m = clock.update(frame)       # 2x/3x elixir clock (time + optional badge)
+                if m != prev_mult:
+                    log(f"[play] elixir x{m}")
+                    prev_mult = m
+                now = time.time()
+                trigger = now - last_act >= act_period
+                if (not trigger and _ploop is not None and _ploop.running
+                        and now - last_act >= _react_min_gap):
+                    trigger = _ploop.consume_event()      # new enemy commitment -> react NOW
+                if trigger:
+                    act_in_match(frame)
+                    last_act = now
+                time.sleep(poll_dt)
+            else:
+                nav.handle(frame, state)      # HOME / MATCH_END / UNKNOWN: located buttons + escalation + watchdog
+                if nav.give_up:               # L67q: no match for nav.give_up_after_s -- stop, don't tap for hours
+                    log("[play] navigation gave up (no match started for too long) -> stopping. "
+                        "Desktop screenshots in data/nav_stall.")
+                    break
+        except KeyboardInterrupt:
+            break
+        except Exception as exc:  # noqa: BLE001 -- log + keep navigating instead of dying silently
+            import traceback
+            log(f"[play] ERROR in loop: {exc!r}")
+            log(traceback.format_exc())
+            if type(exc).__name__ == "FailSafeException":
+                log("[play] pyautogui failsafe triggered -> stopping")
+                break
+            time.sleep(poll_dt)
+
+    log("[play] stopped.")

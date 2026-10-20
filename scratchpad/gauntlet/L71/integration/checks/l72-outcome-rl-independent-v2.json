@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/development_rl_1_recount/verify_completion.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "OUTCOME_RL_RECOUNT_COMPLETE_WITH_FAILED_EXACTNESS",
+  "matched": true,
+  "output_sha256": "669c7f1ac4c01c9925a7abf24689c0e4ad3416ca63105da612de37718ea04f86",
+  "seconds": 177.53310370445251
+}

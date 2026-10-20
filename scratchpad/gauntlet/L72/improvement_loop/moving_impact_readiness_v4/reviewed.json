@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "report_sha256": "ee6ee3db1a496587b3fd39598cb3133eb40a5e51db4caee90f663f783f183ad3",
+  "verified_sha256": "2045814faf5e8515d3684605792cc249fd86f43d858cd4eb17531671dd6b4c41",
+  "receipts": {
+    "collection": {
+      "receipt_sha256": "202f8c1085c043eb72a72a15a6ce808daec20270cf3f242da4dbae2f74958909",
+      "output_file_sha256": "f58fa9145d36c0d3db12bb1bf8951c27bea9b9d395237e64d8a9f7e0c61a270d",
+      "seconds": 6.441844701766968
+    },
+    "independent": {
+      "receipt_sha256": "9a72c600f42ee6c0c813d29e6771e9d9e9cd24fd0c312f83a84ec698cfd5ffca",
+      "output_file_sha256": "26615dc3ec06cd1c228d30d44d796d56e10b1d11277bd0ee31a8374ec9c942cf",
+      "seconds": 3.0728588104248047
+    }
+  },
+  "roots": 16,
+  "branches": 96,
+  "frames": 15072,
+  "controls": {
+    "positive": 16,
+    "negative": 17
+  },
+  "categories": {
+    "no_damage": 8,
+    "body_only": 12,
+    "crown_only": 32,
+    "body_and_crown": 12
+  },
+  "casts_with_body_damage": 24,
+  "casts_without_damage": 8,
+  "casts_with_two_hits": 8,
+  "models_loaded": 0,
+  "optimizer_updates": 0,
+  "native_client_parity": false,
+  "policy_acceptance": false,
+  "source_sha256": "d0b835991d5e05e1418e830ae38da3dcfdee01d1ed2d72a217a2bf2d70c51d90"
+}

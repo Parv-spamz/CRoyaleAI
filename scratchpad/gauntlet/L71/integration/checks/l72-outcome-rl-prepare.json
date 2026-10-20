@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1\\prepare.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "OUTCOME_RL_PREPARED",
+  "matched": true,
+  "output_sha256": "3d40e5b0c384ec0314e1b19b08204c99bc39451f91e3fe13b69b2f7fbe321728",
+  "seconds": 49.549784660339355
+}

@@ -1,0 +1,109 @@
+{
+  "machine": {
+    "gpu": "NVIDIA GeForce RTX 5050 Laptop GPU",
+    "vram_total_mb": 8151,
+    "max_sm_clock_mhz": 3090,
+    "compute_capability": "12.0",
+    "ram_total_mb": 32164,
+    "cpu": "Intel64 Family 6 Model 204 Stepping 2, GenuineIntel",
+    "cpu_count": 16,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "profile": "laptop",
+  "sweep": [
+    {
+      "workers": 1,
+      "exit_code": 0,
+      "env_ms_per_game_step": 2.31186,
+      "update_timesteps_per_second": 356.021,
+      "env_share_of_iteration": 0.33156167979002626,
+      "gpu": {
+        "sm_clock_mhz": {
+          "min": 1950,
+          "max": 2865,
+          "mean": 2746.4
+        },
+        "utilisation_pct": {
+          "min": 23,
+          "max": 98,
+          "mean": 64.4
+        },
+        "temperature_c": {
+          "min": 55,
+          "max": 71,
+          "mean": 64.1
+        },
+        "throttled_by": [],
+        "samples": 143
+      }
+    },
+    {
+      "workers": 2,
+      "exit_code": 0,
+      "env_ms_per_game_step": 2.77565,
+      "update_timesteps_per_second": 338.266,
+      "env_share_of_iteration": 0.43579626972740315,
+      "gpu": {
+        "sm_clock_mhz": {
+          "min": 1965,
+          "max": 2857,
+          "mean": 2748.7
+        },
+        "utilisation_pct": {
+          "min": 21,
+          "max": 99,
+          "mean": 66.7
+        },
+        "temperature_c": {
+          "min": 59,
+          "max": 70,
+          "mean": 65.4
+        },
+        "throttled_by": [],
+        "samples": 125
+      }
+    },
+    {
+      "workers": 3,
+      "exit_code": 0,
+      "env_ms_per_game_step": 2.40045,
+      "update_timesteps_per_second": 148.553,
+      "env_share_of_iteration": 0.20579710144927535,
+      "gpu": {
+        "sm_clock_mhz": {
+          "min": 1560,
+          "max": 2865,
+          "mean": 2589.2
+        },
+        "utilisation_pct": {
+          "min": 18,
+          "max": 97,
+          "mean": 50.7
+        },
+        "temperature_c": {
+          "min": 57,
+          "max": 68,
+          "mean": 61.6
+        },
+        "throttled_by": [],
+        "samples": 106
+      }
+    }
+  ],
+  "reference": {
+    "label": "RTX 3050 Laptop / 7.9 GB RAM (the development machine)",
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "vram_total_mb": 4096,
+    "ram_total_mb": 7938,
+    "profile": "laptop",
+    "dtype": "float32",
+    "seconds_per_iteration_cold": 62.0,
+    "seconds_per_iteration_power_capped": 90.9,
+    "critic_pass_seconds_cold": 25.3,
+    "critic_pass_seconds_power_capped": 48.5,
+    "collected_steps_per_second": 2905,
+    "vram_peak_mb": 1882,
+    "note": "The two columns are the SAME run seven hours apart. The slowdown is the GPU falling to 1620 MHz of 2100 with sw_power_cap active, not a software change. bfloat16 on this machine is 26.9 s/iteration but cannot carry a large no-op bias: its rounding breaks PPO's importance-ratio invariant."
+  }
+}

@@ -1,0 +1,2971 @@
+{
+ "data": {
+  "npz": "icebow\\data\\pipeline\\gen_dataset_v31_public.npz",
+  "ckpt": "icebow\\data\\pipeline\\gen_v31a_s0\\gen_s0.pt",
+  "feature_version": 4,
+  "deck_id": 90,
+  "split": "val",
+  "n_rows": 38317,
+  "n_play_rows": 11934,
+  "n_replays": 284,
+  "n_pro_rocket_plays": 671,
+  "n_pro_rocket_replays": 242,
+  "pro_rocket_share_of_plays": 0.056225909167085635,
+  "costs": {
+   "rocket": 6.0,
+   "x-bow": 6.0
+  },
+  "label_join": {
+   "late_sc_vs_label": 1.0,
+   "crowns_sc_vs_label(mine,theirs)": 1.0
+  },
+  "taus": [
+   0.27,
+   0.35
+  ],
+  "late_def": "sc: overtime flag or t>=120 s (last 60 s of regulation)",
+  "deficit_def": "behind on crowns (princesses down) OR level crowns and sum(my 3 tower hp frac) < sum(opp 3) - 0.05",
+  "anti_stall": "not modelled (live stall override ignored)"
+ },
+ "rocket_contexts": {
+  "ALL Rockets": {
+   "n": 669,
+   "n_replays": 241,
+   "P(play)_mean": [
+    0.6543114532776603,
+    0.6343340694499505,
+    0.6713414746378072
+   ],
+   "gate_pass_tau0.27": [
+    0.9207772795216741,
+    0.8986779217027646,
+    0.941345967151191
+   ],
+   "gate_pass_tau0.35": [
+    0.8699551569506726,
+    0.8425723246287762,
+    0.8959347413579738
+   ],
+   "affordable_share": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "P(Rocket)_over_hand_mean": [
+    0.24458783904318102,
+    0.22870760268716972,
+    0.2615206183028139
+   ],
+   "P(Rocket)_over_affordable_mean(0 if unaffordable)": [
+    0.24458783904318102,
+    0.22691654898594957,
+    0.26191219545835925
+   ],
+   "P(Rocket)_over_affordable_mean|affordable": [
+    0.24458783904318102,
+    0.22833730291006446,
+    0.2609505699557196
+   ],
+   "P(Rocket)_over_hand_median": 0.1970625019235645,
+   "rank_in_hand_dist(1..4)": {
+    "1": 0.22122571001494767,
+    "2": 0.31988041853512705,
+    "3": 0.3423019431988042,
+    "4": 0.11659192825112108
+   },
+   "rank_among_affordable_dist": {
+    "1": 0.22122571001494767,
+    "2": 0.31988041853512705,
+    "3": 0.3423019431988042,
+    "4": 0.11659192825112108,
+    "unaffordable": 0.0
+   },
+   "argmax_is_Rocket_share(all rows)": [
+    0.22122571001494767,
+    0.1857631586742099,
+    0.25727066705655705
+   ],
+   "argmax_is_Rocket|affordable": [
+    0.22122571001494767,
+    0.18675246433367967,
+    0.2554437511090081
+   ],
+   "rank2_lost_to_argmax_share(affordable, rank 2)": 0.31988041853512705,
+   "WOULD_FIRE_Rocket_tau0.27(gate&argmax)": [
+    0.19581464872944693,
+    0.16144457414971292,
+    0.22897312585581153
+   ],
+   "nofire_cause_tau0.27": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.025411061285500747,
+    "affordable_but_argmax_other_only": 0.7249626307922272,
+    "both_gate_and_argmax": 0.053811659192825115
+   },
+   "WOULD_FIRE_Rocket_tau0.35(gate&argmax)": [
+    0.18236173393124067,
+    0.14727999572634354,
+    0.21598627980206925
+   ],
+   "nofire_cause_tau0.35": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.03886397608370702,
+    "affordable_but_argmax_other_only": 0.6875934230194319,
+    "both_gate_and_argmax": 0.09118086696562033
+   }
+  },
+  "label unknown (8 rows, excluded below)": {
+   "n": 2,
+   "n_replays": 2,
+   "P(play)_mean": [
+    0.09533633487585266,
+    0.028466777014925657,
+    0.16220589273677968
+   ],
+   "gate_pass_tau0.27": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "gate_pass_tau0.35": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "affordable_share": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "P(Rocket)_over_hand_mean": [
+    0.15488196482925246,
+    0.09207105218170113,
+    0.2176928774768038
+   ],
+   "P(Rocket)_over_affordable_mean(0 if unaffordable)": [
+    0.15488196482925246,
+    0.09207105218170113,
+    0.2176928774768038
+   ],
+   "P(Rocket)_over_affordable_mean|affordable": [
+    0.15488196482925246,
+    0.09207105218170113,
+    0.2176928774768038
+   ],
+   "P(Rocket)_over_hand_median": 0.15488196482925246,
+   "rank_in_hand_dist(1..4)": {
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.5,
+    "4": 0.5
+   },
+   "rank_among_affordable_dist": {
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.5,
+    "4": 0.5,
+    "unaffordable": 0.0
+   },
+   "argmax_is_Rocket_share(all rows)": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "argmax_is_Rocket|affordable": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rank2_lost_to_argmax_share(affordable, rank 2)": 0.0,
+   "WOULD_FIRE_Rocket_tau0.27(gate&argmax)": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nofire_cause_tau0.27": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.0,
+    "affordable_but_argmax_other_only": 0.0,
+    "both_gate_and_argmax": 1.0
+   },
+   "WOULD_FIRE_Rocket_tau0.35(gate&argmax)": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nofire_cause_tau0.35": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.0,
+    "affordable_but_argmax_other_only": 0.0,
+    "both_gate_and_argmax": 1.0
+   }
+  },
+  "TOWER Rocket (hit an enemy tower)": {
+   "n": 179,
+   "n_replays": 115,
+   "P(play)_mean": [
+    0.6215352343367488,
+    0.5831040023570796,
+    0.6593101649980226
+   ],
+   "gate_pass_tau0.27": [
+    0.8938547486033519,
+    0.8433702377075871,
+    0.9375287576687116
+   ],
+   "gate_pass_tau0.35": [
+    0.8324022346368715,
+    0.7784407988147417,
+    0.8852533083152281
+   ],
+   "affordable_share": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "P(Rocket)_over_hand_mean": [
+    0.262745001291783,
+    0.23275673203749733,
+    0.29176382588355343
+   ],
+   "P(Rocket)_over_affordable_mean(0 if unaffordable)": [
+    0.262745001291783,
+    0.2326672814019133,
+    0.2949096050304366
+   ],
+   "P(Rocket)_over_affordable_mean|affordable": [
+    0.262745001291783,
+    0.23336630364132477,
+    0.2894143735105554
+   ],
+   "P(Rocket)_over_hand_median": 0.22578665551890212,
+   "rank_in_hand_dist(1..4)": {
+    "1": 0.21787709497206703,
+    "2": 0.37988826815642457,
+    "3": 0.3016759776536313,
+    "4": 0.1005586592178771
+   },
+   "rank_among_affordable_dist": {
+    "1": 0.21787709497206703,
+    "2": 0.37988826815642457,
+    "3": 0.3016759776536313,
+    "4": 0.1005586592178771,
+    "unaffordable": 0.0
+   },
+   "argmax_is_Rocket_share(all rows)": [
+    0.21787709497206703,
+    0.15696798823199776,
+    0.28110192639447956
+   ],
+   "argmax_is_Rocket|affordable": [
+    0.21787709497206703,
+    0.15555555555555556,
+    0.27425360329444054
+   ],
+   "rank2_lost_to_argmax_share(affordable, rank 2)": 0.37988826815642457,
+   "WOULD_FIRE_Rocket_tau0.27(gate&argmax)": [
+    0.1787709497206704,
+    0.1213698425353797,
+    0.2289304760023701
+   ],
+   "nofire_cause_tau0.27": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.03910614525139665,
+    "affordable_but_argmax_other_only": 0.7150837988826816,
+    "both_gate_and_argmax": 0.0670391061452514
+   },
+   "WOULD_FIRE_Rocket_tau0.35(gate&argmax)": [
+    0.17318435754189945,
+    0.11655353255491786,
+    0.22873780322536927
+   ],
+   "nofire_cause_tau0.35": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.0446927374301676,
+    "affordable_but_argmax_other_only": 0.659217877094972,
+    "both_gate_and_argmax": 0.12290502793296089
+   }
+  },
+  "  tower, NOT also troop-hit": {
+   "n": 122,
+   "n_replays": 82,
+   "P(play)_mean": [
+    0.6339119327127138,
+    0.5920971390619375,
+    0.6747401407601827
+   ],
+   "gate_pass_tau0.27": [
+    0.9098360655737705,
+    0.8611050724637682,
+    0.9549650096525096
+   ],
+   "gate_pass_tau0.35": [
+    0.8442622950819673,
+    0.7819235588972431,
+    0.9056751179245283
+   ],
+   "affordable_share": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "P(Rocket)_over_hand_mean": [
+    0.24500961586681475,
+    0.21348073455760197,
+    0.28100634429390775
+   ],
+   "P(Rocket)_over_affordable_mean(0 if unaffordable)": [
+    0.24500961586681475,
+    0.20937418304727032,
+    0.2790731221390929
+   ],
+   "P(Rocket)_over_affordable_mean|affordable": [
+    0.24500961586681475,
+    0.2105496034193128,
+    0.27755590008764897
+   ],
+   "P(Rocket)_over_hand_median": 0.20952669700747117,
+   "rank_in_hand_dist(1..4)": {
+    "1": 0.1885245901639344,
+    "2": 0.36885245901639346,
+    "3": 0.3360655737704918,
+    "4": 0.10655737704918032
+   },
+   "rank_among_affordable_dist": {
+    "1": 0.1885245901639344,
+    "2": 0.36885245901639346,
+    "3": 0.3360655737704918,
+    "4": 0.10655737704918032,
+    "unaffordable": 0.0
+   },
+   "argmax_is_Rocket_share(all rows)": [
+    0.1885245901639344,
+    0.1111111111111111,
+    0.2615677966101695
+   ],
+   "argmax_is_Rocket|affordable": [
+    0.1885245901639344,
+    0.11503699405193675,
+    0.2598849182313749
+   ],
+   "rank2_lost_to_argmax_share(affordable, rank 2)": 0.36885245901639346,
+   "WOULD_FIRE_Rocket_tau0.27(gate&argmax)": [
+    0.16393442622950818,
+    0.09345200380167908,
+    0.22962962962962963
+   ],
+   "nofire_cause_tau0.27": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.02459016393442623,
+    "affordable_but_argmax_other_only": 0.7459016393442623,
+    "both_gate_and_argmax": 0.06557377049180328
+   },
+   "WOULD_FIRE_Rocket_tau0.35(gate&argmax)": [
+    0.16393442622950818,
+    0.09006998069498069,
+    0.2353439680957128
+   ],
+   "nofire_cause_tau0.35": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.02459016393442623,
+    "affordable_but_argmax_other_only": 0.680327868852459,
+    "both_gate_and_argmax": 0.13114754098360656
+   }
+  },
+  "  tower, late (overtime or last 60s), any score": {
+   "n": 146,
+   "n_replays": 96,
+   "P(play)_mean": [
+    0.6637582794867651,
+    0.6263033811459491,
+    0.7010704513757654
+   ],
+   "gate_pass_tau0.27": [
+    0.9246575342465754,
+    0.8789808917197452,
+    0.9652777777777778
+   ],
+   "gate_pass_tau0.35": [
+    0.8698630136986302,
+    0.8175397707834416,
+    0.9225363471149477
+   ],
+   "affordable_share": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "P(Rocket)_over_hand_mean": [
+    0.24594190240280756,
+    0.21917404508216165,
+    0.2741235673081583
+   ],
+   "P(Rocket)_over_affordable_mean(0 if unaffordable)": [
+    0.24594190240280756,
+    0.2133799656308646,
+    0.2731952481293733
+   ],
+   "P(Rocket)_over_affordable_mean|affordable": [
+    0.24594190240280756,
+    0.21706887169109074,
+    0.2749217111116732
+   ],
+   "P(Rocket)_over_hand_median": 0.22084138140838355,
+   "rank_in_hand_dist(1..4)": {
+    "1": 0.18493150684931506,
+    "2": 0.3972602739726027,
+    "3": 0.3356164383561644,
+    "4": 0.0821917808219178
+   },
+   "rank_among_affordable_dist": {
+    "1": 0.18493150684931506,
+    "2": 0.3972602739726027,
+    "3": 0.3356164383561644,
+    "4": 0.0821917808219178,
+    "unaffordable": 0.0
+   },
+   "argmax_is_Rocket_share(all rows)": [
+    0.18493150684931506,
+    0.1222749073468498,
+    0.2518518518518518
+   ],
+   "argmax_is_Rocket|affordable": [
+    0.18493150684931506,
+    0.11764705882352941,
+    0.24683925575720606
+   ],
+   "rank2_lost_to_argmax_share(affordable, rank 2)": 0.3972602739726027,
+   "WOULD_FIRE_Rocket_tau0.27(gate&argmax)": [
+    0.1643835616438356,
+    0.11021754123800219,
+    0.22668862275449098
+   ],
+   "nofire_cause_tau0.27": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.02054794520547945,
+    "affordable_but_argmax_other_only": 0.7602739726027398,
+    "both_gate_and_argmax": 0.0547945205479452
+   },
+   "WOULD_FIRE_Rocket_tau0.35(gate&argmax)": [
+    0.1643835616438356,
+    0.10273972602739725,
+    0.22930761972163247
+   ],
+   "nofire_cause_tau0.35": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.02054794520547945,
+    "affordable_but_argmax_other_only": 0.7054794520547946,
+    "both_gate_and_argmax": 0.1095890410958904
+   }
+  },
+  "  tower, late, level crowns": {
+   "n": 143,
+   "n_replays": 93,
+   "P(play)_mean": [
+    0.6699754916395084,
+    0.6340784226978,
+    0.7056209468934073
+   ],
+   "gate_pass_tau0.27": [
+    0.9370629370629371,
+    0.8946966653274407,
+    0.9767486583184257
+   ],
+   "gate_pass_tau0.35": [
+    0.8811188811188811,
+    0.8285714285714286,
+    0.9323308270676691
+   ],
+   "affordable_share": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "P(Rocket)_over_hand_mean": [
+    0.24957005449858058,
+    0.21904508510147183,
+    0.2754499201430136
+   ],
+   "P(Rocket)_over_affordable_mean(0 if unaffordable)": [
+    0.24957005449858058,
+    0.2206890998967082,
+    0.27736702921910616
+   ],
+   "P(Rocket)_over_affordable_mean|affordable": [
+    0.24957005449858058,
+    0.22199925949590238,
+    0.2784709586514317
+   ],
+   "P(Rocket)_over_hand_median": 0.22512512168544366,
+   "rank_in_hand_dist(1..4)": {
+    "1": 0.1888111888111888,
+    "2": 0.3986013986013986,
+    "3": 0.34265734265734266,
+    "4": 0.06993006993006994
+   },
+   "rank_among_affordable_dist": {
+    "1": 0.1888111888111888,
+    "2": 0.3986013986013986,
+    "3": 0.34265734265734266,
+    "4": 0.06993006993006994,
+    "unaffordable": 0.0
+   },
+   "argmax_is_Rocket_share(all rows)": [
+    0.1888111888111888,
+    0.11886184681460273,
+    0.25325120085394054
+   ],
+   "argmax_is_Rocket|affordable": [
+    0.1888111888111888,
+    0.12142857142857143,
+    0.25333561643835617
+   ],
+   "rank2_lost_to_argmax_share(affordable, rank 2)": 0.3986013986013986,
+   "WOULD_FIRE_Rocket_tau0.27(gate&argmax)": [
+    0.16783216783216784,
+    0.10555447722567289,
+    0.22963423050379572
+   ],
+   "nofire_cause_tau0.27": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.02097902097902098,
+    "affordable_but_argmax_other_only": 0.7692307692307693,
+    "both_gate_and_argmax": 0.04195804195804196
+   },
+   "WOULD_FIRE_Rocket_tau0.35(gate&argmax)": [
+    0.16783216783216784,
+    0.1063749194068343,
+    0.22642332163229487
+   ],
+   "nofire_cause_tau0.35": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.02097902097902098,
+    "affordable_but_argmax_other_only": 0.7132867132867133,
+    "both_gate_and_argmax": 0.0979020979020979
+   }
+  },
+  "  tower, late, level crowns + tower-HP deficit": {
+   "n": 96,
+   "n_replays": 63,
+   "P(play)_mean": [
+    0.6721338999325481,
+    0.6259031809368978,
+    0.7199953270764634
+   ],
+   "gate_pass_tau0.27": [
+    0.9479166666666666,
+    0.8990825688073395,
+    0.9897959183673469
+   ],
+   "gate_pass_tau0.35": [
+    0.875,
+    0.8095104333868379,
+    0.940625719548699
+   ],
+   "affordable_share": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "P(Rocket)_over_hand_mean": [
+    0.24590107240796868,
+    0.20759675768082392,
+    0.28032998623185673
+   ],
+   "P(Rocket)_over_affordable_mean(0 if unaffordable)": [
+    0.24590107240796868,
+    0.20992846944668703,
+    0.2770739386691649
+   ],
+   "P(Rocket)_over_affordable_mean|affordable": [
+    0.24590107240796868,
+    0.21189438883087938,
+    0.2789376254798457
+   ],
+   "P(Rocket)_over_hand_median": 0.22084138140838355,
+   "rank_in_hand_dist(1..4)": {
+    "1": 0.16666666666666666,
+    "2": 0.4375,
+    "3": 0.3125,
+    "4": 0.08333333333333333
+   },
+   "rank_among_affordable_dist": {
+    "1": 0.16666666666666666,
+    "2": 0.4375,
+    "3": 0.3125,
+    "4": 0.08333333333333333,
+    "unaffordable": 0.0
+   },
+   "argmax_is_Rocket_share(all rows)": [
+    0.16666666666666666,
+    0.08506205673758865,
+    0.24720171214553235
+   ],
+   "argmax_is_Rocket|affordable": [
+    0.16666666666666666,
+    0.08535936689154126,
+    0.24000961538461538
+   ],
+   "rank2_lost_to_argmax_share(affordable, rank 2)": 0.4375,
+   "WOULD_FIRE_Rocket_tau0.27(gate&argmax)": [
+    0.15625,
+    0.08245318746055123,
+    0.22773622470942745
+   ],
+   "nofire_cause_tau0.27": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.010416666666666666,
+    "affordable_but_argmax_other_only": 0.7916666666666666,
+    "both_gate_and_argmax": 0.041666666666666664
+   },
+   "WOULD_FIRE_Rocket_tau0.35(gate&argmax)": [
+    0.15625,
+    0.08747299382716049,
+    0.23470888355342137
+   ],
+   "nofire_cause_tau0.35": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.010416666666666666,
+    "affordable_but_argmax_other_only": 0.71875,
+    "both_gate_and_argmax": 0.11458333333333333
+   }
+  },
+  "  tower, late, behind on crowns": {
+   "n": 2,
+   "n_replays": 2,
+   "P(play)_mean": [
+    0.4376932229311451,
+    0.0981792320848379,
+    0.7772072137774523
+   ],
+   "gate_pass_tau0.27": [
+    0.5,
+    0.0,
+    1.0
+   ],
+   "gate_pass_tau0.35": [
+    0.5,
+    0.0,
+    1.0
+   ],
+   "affordable_share": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "P(Rocket)_over_hand_mean": [
+    0.045459129724075,
+    0.029310384877497972,
+    0.06160787457065203
+   ],
+   "P(Rocket)_over_affordable_mean(0 if unaffordable)": [
+    0.045459129724075,
+    0.029310384877497972,
+    0.06160787457065203
+   ],
+   "P(Rocket)_over_affordable_mean|affordable": [
+    0.045459129724075,
+    0.029310384877497972,
+    0.06160787457065203
+   ],
+   "P(Rocket)_over_hand_median": 0.045459129724075,
+   "rank_in_hand_dist(1..4)": {
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 1.0
+   },
+   "rank_among_affordable_dist": {
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 1.0,
+    "unaffordable": 0.0
+   },
+   "argmax_is_Rocket_share(all rows)": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "argmax_is_Rocket|affordable": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rank2_lost_to_argmax_share(affordable, rank 2)": 0.0,
+   "WOULD_FIRE_Rocket_tau0.27(gate&argmax)": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nofire_cause_tau0.27": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.0,
+    "affordable_but_argmax_other_only": 0.5,
+    "both_gate_and_argmax": 0.5
+   },
+   "WOULD_FIRE_Rocket_tau0.35(gate&argmax)": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nofire_cause_tau0.35": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.0,
+    "affordable_but_argmax_other_only": 0.5,
+    "both_gate_and_argmax": 0.5
+   }
+  },
+  "  tower, late, behind (crowns, or level w/ HP deficit)": {
+   "n": 98,
+   "n_replays": 65,
+   "P(play)_mean": [
+    0.6673493963202746,
+    0.6233152085555576,
+    0.7123654853261508
+   ],
+   "gate_pass_tau0.27": [
+    0.9387755102040817,
+    0.8841926417986714,
+    0.9875148809523809
+   ],
+   "gate_pass_tau0.35": [
+    0.8673469387755102,
+    0.7941100667070952,
+    0.9346192085901769
+   ],
+   "affordable_share": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "P(Rocket)_over_hand_mean": [
+    0.24181042051646065,
+    0.20542284968005534,
+    0.278793710088401
+   ],
+   "P(Rocket)_over_affordable_mean(0 if unaffordable)": [
+    0.24181042051646065,
+    0.2031492477171091,
+    0.2774198259269026
+   ],
+   "P(Rocket)_over_affordable_mean|affordable": [
+    0.24181042051646065,
+    0.20610571419934973,
+    0.278036770109562
+   ],
+   "P(Rocket)_over_hand_median": 0.2128969834791638,
+   "rank_in_hand_dist(1..4)": {
+    "1": 0.16326530612244897,
+    "2": 0.42857142857142855,
+    "3": 0.30612244897959184,
+    "4": 0.10204081632653061
+   },
+   "rank_among_affordable_dist": {
+    "1": 0.16326530612244897,
+    "2": 0.42857142857142855,
+    "3": 0.30612244897959184,
+    "4": 0.10204081632653061,
+    "unaffordable": 0.0
+   },
+   "argmax_is_Rocket_share(all rows)": [
+    0.16326530612244897,
+    0.08329081632653061,
+    0.24273156651797428
+   ],
+   "argmax_is_Rocket|affordable": [
+    0.16326530612244897,
+    0.09195402298850575,
+    0.24077485380116956
+   ],
+   "rank2_lost_to_argmax_share(affordable, rank 2)": 0.42857142857142855,
+   "WOULD_FIRE_Rocket_tau0.27(gate&argmax)": [
+    0.15306122448979592,
+    0.07954545454545454,
+    0.23232323232323232
+   ],
+   "nofire_cause_tau0.27": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.01020408163265306,
+    "affordable_but_argmax_other_only": 0.7857142857142857,
+    "both_gate_and_argmax": 0.05102040816326531
+   },
+   "WOULD_FIRE_Rocket_tau0.35(gate&argmax)": [
+    0.15306122448979592,
+    0.08042847388187095,
+    0.21877575549450548
+   ],
+   "nofire_cause_tau0.35": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.01020408163265306,
+    "affordable_but_argmax_other_only": 0.7142857142857143,
+    "both_gate_and_argmax": 0.12244897959183673
+   }
+  },
+  "  tower, late, ahead on crowns (contrast)": {
+   "n": 1,
+   "n_replays": 1,
+   "P(play)_mean": [
+    0.22682705475571938,
+    0.22682705475571938,
+    0.22682705475571938
+   ],
+   "gate_pass_tau0.27": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "gate_pass_tau0.35": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "affordable_share": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "P(Rocket)_over_hand_mean": [
+    0.1280816980647287,
+    0.1280816980647287,
+    0.1280816980647287
+   ],
+   "P(Rocket)_over_affordable_mean(0 if unaffordable)": [
+    0.1280816980647287,
+    0.1280816980647287,
+    0.1280816980647287
+   ],
+   "P(Rocket)_over_affordable_mean|affordable": [
+    0.1280816980647287,
+    0.1280816980647287,
+    0.1280816980647287
+   ],
+   "P(Rocket)_over_hand_median": 0.1280816980647287,
+   "rank_in_hand_dist(1..4)": {
+    "1": 0.0,
+    "2": 1.0,
+    "3": 0.0,
+    "4": 0.0
+   },
+   "rank_among_affordable_dist": {
+    "1": 0.0,
+    "2": 1.0,
+    "3": 0.0,
+    "4": 0.0,
+    "unaffordable": 0.0
+   },
+   "argmax_is_Rocket_share(all rows)": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "argmax_is_Rocket|affordable": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rank2_lost_to_argmax_share(affordable, rank 2)": 1.0,
+   "WOULD_FIRE_Rocket_tau0.27(gate&argmax)": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nofire_cause_tau0.27": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.0,
+    "affordable_but_argmax_other_only": 0.0,
+    "both_gate_and_argmax": 1.0
+   },
+   "WOULD_FIRE_Rocket_tau0.35(gate&argmax)": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nofire_cause_tau0.35": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.0,
+    "affordable_but_argmax_other_only": 0.0,
+    "both_gate_and_argmax": 1.0
+   }
+  },
+  "  tower, OVERTIME only, behind (crowns or HP)": {
+   "n": 72,
+   "n_replays": 49,
+   "P(play)_mean": [
+    0.68804728559896,
+    0.6369877731659324,
+    0.7300227159452601
+   ],
+   "gate_pass_tau0.27": [
+    0.9722222222222222,
+    0.9341885964912281,
+    1.0
+   ],
+   "gate_pass_tau0.35": [
+    0.9166666666666666,
+    0.8518393393393393,
+    0.9737010796221323
+   ],
+   "affordable_share": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "P(Rocket)_over_hand_mean": [
+    0.2776481897070064,
+    0.23295242546575254,
+    0.3189186970128845
+   ],
+   "P(Rocket)_over_affordable_mean(0 if unaffordable)": [
+    0.2776481897070064,
+    0.23630447158303433,
+    0.3188962449357623
+   ],
+   "P(Rocket)_over_affordable_mean|affordable": [
+    0.2776481897070064,
+    0.2357825049395224,
+    0.32274055175410316
+   ],
+   "P(Rocket)_over_hand_median": 0.2494415287596149,
+   "rank_in_hand_dist(1..4)": {
+    "1": 0.2222222222222222,
+    "2": 0.4444444444444444,
+    "3": 0.25,
+    "4": 0.08333333333333333
+   },
+   "rank_among_affordable_dist": {
+    "1": 0.2222222222222222,
+    "2": 0.4444444444444444,
+    "3": 0.25,
+    "4": 0.08333333333333333,
+    "unaffordable": 0.0
+   },
+   "argmax_is_Rocket_share(all rows)": [
+    0.2222222222222222,
+    0.12162162162162163,
+    0.3333333333333333
+   ],
+   "argmax_is_Rocket|affordable": [
+    0.2222222222222222,
+    0.1232876712328767,
+    0.3385443037974683
+   ],
+   "rank2_lost_to_argmax_share(affordable, rank 2)": 0.4444444444444444,
+   "WOULD_FIRE_Rocket_tau0.27(gate&argmax)": [
+    0.20833333333333334,
+    0.11263693270735525,
+    0.3181818181818182
+   ],
+   "nofire_cause_tau0.27": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.013888888888888888,
+    "affordable_but_argmax_other_only": 0.7638888888888888,
+    "both_gate_and_argmax": 0.013888888888888888
+   },
+   "WOULD_FIRE_Rocket_tau0.35(gate&argmax)": [
+    0.20833333333333334,
+    0.10958369006849314,
+    0.3143052837573385
+   ],
+   "nofire_cause_tau0.35": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.013888888888888888,
+    "affordable_but_argmax_other_only": 0.7083333333333334,
+    "both_gate_and_argmax": 0.06944444444444445
+   }
+  },
+  "  tower, repeat on same tower (prior_rockets>=1)": {
+   "n": 56,
+   "n_replays": 36,
+   "P(play)_mean": [
+    0.6891985244388589,
+    0.6317238850554404,
+    0.7415395827990373
+   ],
+   "gate_pass_tau0.27": [
+    0.9642857142857143,
+    0.9166666666666666,
+    1.0
+   ],
+   "gate_pass_tau0.35": [
+    0.8928571428571429,
+    0.8235294117647058,
+    0.9622641509433962
+   ],
+   "affordable_share": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "P(Rocket)_over_hand_mean": [
+    0.28569935868903723,
+    0.22996830580679034,
+    0.3364087981330357
+   ],
+   "P(Rocket)_over_affordable_mean(0 if unaffordable)": [
+    0.28569935868903723,
+    0.23264438223439332,
+    0.3361049810583315
+   ],
+   "P(Rocket)_over_affordable_mean|affordable": [
+    0.28569935868903723,
+    0.23393168395466005,
+    0.3355665518631742
+   ],
+   "P(Rocket)_over_hand_median": 0.26980521530616963,
+   "rank_in_hand_dist(1..4)": {
+    "1": 0.25,
+    "2": 0.42857142857142855,
+    "3": 0.26785714285714285,
+    "4": 0.05357142857142857
+   },
+   "rank_among_affordable_dist": {
+    "1": 0.25,
+    "2": 0.42857142857142855,
+    "3": 0.26785714285714285,
+    "4": 0.05357142857142857,
+    "unaffordable": 0.0
+   },
+   "argmax_is_Rocket_share(all rows)": [
+    0.25,
+    0.12244897959183673,
+    0.3684412955465587
+   ],
+   "argmax_is_Rocket|affordable": [
+    0.25,
+    0.12,
+    0.3559322033898305
+   ],
+   "rank2_lost_to_argmax_share(affordable, rank 2)": 0.42857142857142855,
+   "WOULD_FIRE_Rocket_tau0.27(gate&argmax)": [
+    0.21428571428571427,
+    0.10627442466348243,
+    0.3090909090909091
+   ],
+   "nofire_cause_tau0.27": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.03571428571428571,
+    "affordable_but_argmax_other_only": 0.75,
+    "both_gate_and_argmax": 0.0
+   },
+   "WOULD_FIRE_Rocket_tau0.35(gate&argmax)": [
+    0.21428571428571427,
+    0.11105072463768116,
+    0.3182133838383838
+   ],
+   "nofire_cause_tau0.35": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.03571428571428571,
+    "affordable_but_argmax_other_only": 0.6785714285714286,
+    "both_gate_and_argmax": 0.07142857142857142
+   }
+  },
+  "DEFENSIVE Rocket (hit troops)": {
+   "n": 326,
+   "n_replays": 184,
+   "P(play)_mean": [
+    0.6768055950075015,
+    0.6502907188542385,
+    0.7039986362806129
+   ],
+   "gate_pass_tau0.27": [
+    0.9325153374233128,
+    0.9055997369050467,
+    0.9577476220962136
+   ],
+   "gate_pass_tau0.35": [
+    0.8834355828220859,
+    0.8496707397380552,
+    0.9178568247011242
+   ],
+   "affordable_share": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "P(Rocket)_over_hand_mean": [
+    0.2252505773392409,
+    0.2051650822798339,
+    0.2442599403183469
+   ],
+   "P(Rocket)_over_affordable_mean(0 if unaffordable)": [
+    0.2252505773392409,
+    0.20616773760940035,
+    0.24645902604292969
+   ],
+   "P(Rocket)_over_affordable_mean|affordable": [
+    0.2252505773392409,
+    0.20685686501808329,
+    0.24627422989665562
+   ],
+   "P(Rocket)_over_hand_median": 0.1728921411734814,
+   "rank_in_hand_dist(1..4)": {
+    "1": 0.18404907975460122,
+    "2": 0.3159509202453988,
+    "3": 0.37116564417177916,
+    "4": 0.12883435582822086
+   },
+   "rank_among_affordable_dist": {
+    "1": 0.18404907975460122,
+    "2": 0.3159509202453988,
+    "3": 0.37116564417177916,
+    "4": 0.12883435582822086,
+    "unaffordable": 0.0
+   },
+   "argmax_is_Rocket_share(all rows)": [
+    0.18404907975460122,
+    0.14555575739033996,
+    0.227021338091887
+   ],
+   "argmax_is_Rocket|affordable": [
+    0.18404907975460122,
+    0.14596108100964714,
+    0.22679191563250087
+   ],
+   "rank2_lost_to_argmax_share(affordable, rank 2)": 0.3159509202453988,
+   "WOULD_FIRE_Rocket_tau0.27(gate&argmax)": [
+    0.15950920245398773,
+    0.1212995337995338,
+    0.20402596408896143
+   ],
+   "nofire_cause_tau0.27": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.024539877300613498,
+    "affordable_but_argmax_other_only": 0.7730061349693251,
+    "both_gate_and_argmax": 0.04294478527607362
+   },
+   "WOULD_FIRE_Rocket_tau0.35(gate&argmax)": [
+    0.1441717791411043,
+    0.10558609330661005,
+    0.1813031161473088
+   ],
+   "nofire_cause_tau0.35": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.03987730061349693,
+    "affordable_but_argmax_other_only": 0.7392638036809815,
+    "both_gate_and_argmax": 0.07668711656441718
+   }
+  },
+  "  defensive, NOT tower": {
+   "n": 269,
+   "n_replays": 158,
+   "P(play)_mean": [
+    0.6941303822197715,
+    0.6676566324029868,
+    0.7218061009251592
+   ],
+   "gate_pass_tau0.27": [
+    0.9479553903345725,
+    0.9219330855018587,
+    0.9726641680743243
+   ],
+   "gate_pass_tau0.35": [
+    0.8996282527881041,
+    0.8642823450134771,
+    0.93454951577632
+   ],
+   "affordable_share": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "P(Rocket)_over_hand_mean": [
+    0.20926210452459026,
+    0.1889166967119835,
+    0.23243808787571615
+   ],
+   "P(Rocket)_over_affordable_mean(0 if unaffordable)": [
+    0.20926210452459026,
+    0.1883099656855266,
+    0.23376944594320576
+   ],
+   "P(Rocket)_over_affordable_mean|affordable": [
+    0.20926210452459026,
+    0.18676647033634539,
+    0.23024026348912124
+   ],
+   "P(Rocket)_over_hand_median": 0.1419153715487287,
+   "rank_in_hand_dist(1..4)": {
+    "1": 0.16356877323420074,
+    "2": 0.29739776951672864,
+    "3": 0.40148698884758366,
+    "4": 0.137546468401487
+   },
+   "rank_among_affordable_dist": {
+    "1": 0.16356877323420074,
+    "2": 0.29739776951672864,
+    "3": 0.40148698884758366,
+    "4": 0.137546468401487,
+    "unaffordable": 0.0
+   },
+   "argmax_is_Rocket_share(all rows)": [
+    0.16356877323420074,
+    0.12294218327994473,
+    0.21055512869765652
+   ],
+   "argmax_is_Rocket|affordable": [
+    0.16356877323420074,
+    0.11955442630670225,
+    0.20635351966873705
+   ],
+   "rank2_lost_to_argmax_share(affordable, rank 2)": 0.29739776951672864,
+   "WOULD_FIRE_Rocket_tau0.27(gate&argmax)": [
+    0.14869888475836432,
+    0.10236220472440945,
+    0.19131147040878582
+   ],
+   "nofire_cause_tau0.27": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.01486988847583643,
+    "affordable_but_argmax_other_only": 0.7992565055762082,
+    "both_gate_and_argmax": 0.03717472118959108
+   },
+   "WOULD_FIRE_Rocket_tau0.35(gate&argmax)": [
+    0.13382899628252787,
+    0.09438920454545455,
+    0.1795880281690141
+   ],
+   "nofire_cause_tau0.35": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.02973977695167286,
+    "affordable_but_argmax_other_only": 0.7657992565055762,
+    "both_gate_and_argmax": 0.07063197026022305
+   }
+  },
+  "ROCKET -> TORNADO (first cast)": {
+   "n": 69,
+   "n_replays": 60,
+   "P(play)_mean": [
+    0.7443227525296076,
+    0.7042271131865241,
+    0.7784473879587931
+   ],
+   "gate_pass_tau0.27": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "gate_pass_tau0.35": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "affordable_share": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "P(Rocket)_over_hand_mean": [
+    0.2470686121167907,
+    0.21370253506536718,
+    0.2814785653930103
+   ],
+   "P(Rocket)_over_affordable_mean(0 if unaffordable)": [
+    0.2470686121167907,
+    0.21528607982910128,
+    0.2821540622553366
+   ],
+   "P(Rocket)_over_affordable_mean|affordable": [
+    0.2470686121167907,
+    0.21396584527748366,
+    0.28172502243680825
+   ],
+   "P(Rocket)_over_hand_median": 0.2192874684338677,
+   "rank_in_hand_dist(1..4)": {
+    "1": 0.2028985507246377,
+    "2": 0.42028985507246375,
+    "3": 0.30434782608695654,
+    "4": 0.07246376811594203
+   },
+   "rank_among_affordable_dist": {
+    "1": 0.2028985507246377,
+    "2": 0.42028985507246375,
+    "3": 0.30434782608695654,
+    "4": 0.07246376811594203,
+    "unaffordable": 0.0
+   },
+   "argmax_is_Rocket_share(all rows)": [
+    0.2028985507246377,
+    0.11428571428571428,
+    0.29411764705882354
+   ],
+   "argmax_is_Rocket|affordable": [
+    0.2028985507246377,
+    0.11594202898550725,
+    0.29850746268656714
+   ],
+   "rank2_lost_to_argmax_share(affordable, rank 2)": 0.42028985507246375,
+   "WOULD_FIRE_Rocket_tau0.27(gate&argmax)": [
+    0.2028985507246377,
+    0.1076923076923077,
+    0.3000757575757575
+   ],
+   "nofire_cause_tau0.27": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.0,
+    "affordable_but_argmax_other_only": 0.7971014492753623,
+    "both_gate_and_argmax": 0.0
+   },
+   "WOULD_FIRE_Rocket_tau0.35(gate&argmax)": [
+    0.2028985507246377,
+    0.11940298507462686,
+    0.29411764705882354
+   ],
+   "nofire_cause_tau0.35": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.0,
+    "affordable_but_argmax_other_only": 0.7971014492753623,
+    "both_gate_and_argmax": 0.0
+   }
+  },
+  "TORNADO -> ROCKET": {
+   "n": 0,
+   "n_replays": 0
+  },
+  "tiebreak_cycle_context (level crowns, >=150 s)": {
+   "n": 454,
+   "n_replays": 181,
+   "P(play)_mean": [
+    0.6966242771449812,
+    0.6765982997860982,
+    0.7158353377057461
+   ],
+   "gate_pass_tau0.27": [
+    0.960352422907489,
+    0.9420563015333109,
+    0.9780701754385965
+   ],
+   "gate_pass_tau0.35": [
+    0.9185022026431718,
+    0.8921348314606742,
+    0.9440863554397916
+   ],
+   "affordable_share": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "P(Rocket)_over_hand_mean": [
+    0.2595111263850887,
+    0.23805988191812305,
+    0.2816641123350355
+   ],
+   "P(Rocket)_over_affordable_mean(0 if unaffordable)": [
+    0.2595111263850887,
+    0.23935218883214243,
+    0.2807341686750073
+   ],
+   "P(Rocket)_over_affordable_mean|affordable": [
+    0.2595111263850887,
+    0.2363837979556367,
+    0.28022927735375297
+   ],
+   "P(Rocket)_over_hand_median": 0.2245919931866852,
+   "rank_in_hand_dist(1..4)": {
+    "1": 0.2444933920704846,
+    "2": 0.3524229074889868,
+    "3": 0.30616740088105726,
+    "4": 0.09691629955947137
+   },
+   "rank_among_affordable_dist": {
+    "1": 0.2444933920704846,
+    "2": 0.3524229074889868,
+    "3": 0.30616740088105726,
+    "4": 0.09691629955947137,
+    "unaffordable": 0.0
+   },
+   "argmax_is_Rocket_share(all rows)": [
+    0.2444933920704846,
+    0.1972443983768525,
+    0.29178813330411335
+   ],
+   "argmax_is_Rocket|affordable": [
+    0.2444933920704846,
+    0.19714964370546317,
+    0.291425605448722
+   ],
+   "rank2_lost_to_argmax_share(affordable, rank 2)": 0.3524229074889868,
+   "WOULD_FIRE_Rocket_tau0.27(gate&argmax)": [
+    0.2290748898678414,
+    0.1832579185520362,
+    0.2794198626587199
+   ],
+   "nofire_cause_tau0.27": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.015418502202643172,
+    "affordable_but_argmax_other_only": 0.7312775330396476,
+    "both_gate_and_argmax": 0.024229074889867842
+   },
+   "WOULD_FIRE_Rocket_tau0.35(gate&argmax)": [
+    0.21806167400881057,
+    0.17155266058351615,
+    0.26000537634408605
+   ],
+   "nofire_cause_tau0.35": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.02643171806167401,
+    "affordable_but_argmax_other_only": 0.7004405286343612,
+    "both_gate_and_argmax": 0.05506607929515418
+   }
+  },
+  "neither tower nor troop hit (other)": {
+   "n": 221,
+   "n_replays": 125,
+   "P(play)_mean": [
+    0.6323913234360099,
+    0.6016000014048617,
+    0.6613758030455947
+   ],
+   "gate_pass_tau0.27": [
+    0.9095022624434389,
+    0.8738728214195504,
+    0.9422263374485597
+   ],
+   "gate_pass_tau0.35": [
+    0.8642533936651584,
+    0.8169609706506364,
+    0.9074940698068451
+   ],
+   "affordable_share": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "P(Rocket)_over_hand_mean": [
+    0.272879651454951,
+    0.23969752142024495,
+    0.3039554543664213
+   ],
+   "P(Rocket)_over_affordable_mean(0 if unaffordable)": [
+    0.272879651454951,
+    0.2426037480490031,
+    0.3022400211952294
+   ],
+   "P(Rocket)_over_affordable_mean|affordable": [
+    0.272879651454951,
+    0.24315723508371684,
+    0.3030605420215681
+   ],
+   "P(Rocket)_over_hand_median": 0.2296944494636042,
+   "rank_in_hand_dist(1..4)": {
+    "1": 0.29411764705882354,
+    "2": 0.2986425339366516,
+    "3": 0.3031674208144796,
+    "4": 0.10407239819004525
+   },
+   "rank_among_affordable_dist": {
+    "1": 0.29411764705882354,
+    "2": 0.2986425339366516,
+    "3": 0.3031674208144796,
+    "4": 0.10407239819004525,
+    "unaffordable": 0.0
+   },
+   "argmax_is_Rocket_share(all rows)": [
+    0.29411764705882354,
+    0.22996748878923767,
+    0.3580324074074074
+   ],
+   "argmax_is_Rocket|affordable": [
+    0.29411764705882354,
+    0.23180102915951972,
+    0.35715093729799613
+   ],
+   "rank2_lost_to_argmax_share(affordable, rank 2)": 0.2986425339366516,
+   "WOULD_FIRE_Rocket_tau0.27(gate&argmax)": [
+    0.2669683257918552,
+    0.20192307692307693,
+    0.32763298583266504
+   ],
+   "nofire_cause_tau0.27": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.027149321266968326,
+    "affordable_but_argmax_other_only": 0.6425339366515838,
+    "both_gate_and_argmax": 0.06334841628959276
+   },
+   "WOULD_FIRE_Rocket_tau0.35(gate&argmax)": [
+    0.248868778280543,
+    0.1847907349309125,
+    0.31143735109378384
+   ],
+   "nofire_cause_tau0.35": {
+    "unaffordable": 0.0,
+    "affordable_but_gate_blocked_only": 0.04524886877828054,
+    "affordable_but_argmax_other_only": 0.6153846153846154,
+    "both_gate_and_argmax": 0.09049773755656108
+   }
+  }
+ },
+ "tower_rocket_cell_head": {
+  "TOWER Rocket (hit an enemy tower)": {
+   "n": 179,
+   "P(pro cell)": [
+    0.07862294791721577,
+    0.06294558591359459,
+    0.09548005200466515
+   ],
+   "P(within 1 tile of pro)": [
+    0.2409143649394801,
+    0.21301142363055853,
+    0.27021624317040094
+   ],
+   "P(within 2 tiles of pro)": [
+    0.43794658068728803,
+    0.39972009527343244,
+    0.4808599427382023
+   ],
+   "P(any tower-hitting cell, alive tower within 2.0 tiles)": [
+    0.3863526349627106,
+    0.36387939395547814,
+    0.4094637579407178
+   ],
+   "argmax_cell_exact_pro": [
+    0.12849162011173185,
+    0.07893997634535778,
+    0.1787709497206704
+   ],
+   "argmax_cell_within_1_tile": [
+    0.17318435754189945,
+    0.11764705882352941,
+    0.2285948477751756
+   ],
+   "argmax_cell_within_2_tiles": [
+    0.5307262569832403,
+    0.4540005387931034,
+    0.6057448389760529
+   ],
+   "argmax_cell_hits_alive_tower": [
+    0.2849162011173184,
+    0.2268041237113402,
+    0.35119047619047616
+   ],
+   "pro_cell_hits_alive_tower(sanity)": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "median_dist_argmax_to_pro_tiles": 2.0,
+   "entropy_nats_mean": 3.1250689029693604
+  },
+  "  tower, NOT also troop-hit": {
+   "n": 122,
+   "P(pro cell)": [
+    0.041124131731864556,
+    0.03204505603101092,
+    0.05317961463751989
+   ],
+   "P(within 1 tile of pro)": [
+    0.16215889205627496,
+    0.14143507649284115,
+    0.1858936459635072
+   ],
+   "P(within 2 tiles of pro)": [
+    0.3282905776171991,
+    0.28891117000517297,
+    0.36588094810340577
+   ],
+   "P(any tower-hitting cell, alive tower within 2.0 tiles)": [
+    0.32752211172072615,
+    0.3051800478427954,
+    0.3488272009340479
+   ],
+   "argmax_cell_exact_pro": [
+    0.02459016393442623,
+    0.0,
+    0.05512904636920384
+   ],
+   "argmax_cell_within_1_tile": [
+    0.03278688524590164,
+    0.007575757575757576,
+    0.06722689075630252
+   ],
+   "argmax_cell_within_2_tiles": [
+    0.3524590163934426,
+    0.2755848453725893,
+    0.4344262295081967
+   ],
+   "argmax_cell_hits_alive_tower": [
+    0.08196721311475409,
+    0.037003968253968254,
+    0.13158404732762136
+   ],
+   "pro_cell_hits_alive_tower(sanity)": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "median_dist_argmax_to_pro_tiles": 2.8284271247461903,
+   "entropy_nats_mean": 3.2781574726104736
+  },
+  "  tower, late (overtime or last 60s), any score": {
+   "n": 146,
+   "P(pro cell)": [
+    0.052121002358732876,
+    0.04235215866839906,
+    0.06326844862391826
+   ],
+   "P(within 1 tile of pro)": [
+    0.19273072089808546,
+    0.16904829129782056,
+    0.2172739393469339
+   ],
+   "P(within 2 tiles of pro)": [
+    0.3775889341821511,
+    0.34076677590686955,
+    0.4145679053650614
+   ],
+   "P(any tower-hitting cell, alive tower within 2.0 tiles)": [
+    0.3522574169790908,
+    0.328765448964848,
+    0.37476647025283033
+   ],
+   "argmax_cell_exact_pro": [
+    0.0684931506849315,
+    0.029937885423183486,
+    0.11428571428571428
+   ],
+   "argmax_cell_within_1_tile": [
+    0.10273972602739725,
+    0.05844155844155844,
+    0.15650785494053734
+   ],
+   "argmax_cell_within_2_tiles": [
+    0.4520547945205479,
+    0.3671744791666667,
+    0.535974945533769
+   ],
+   "argmax_cell_hits_alive_tower": [
+    0.18493150684931506,
+    0.13285671282360023,
+    0.24638622247317898
+   ],
+   "pro_cell_hits_alive_tower(sanity)": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "median_dist_argmax_to_pro_tiles": 2.23606797749979,
+   "entropy_nats_mean": 3.2414281368255615
+  },
+  "  tower, late, level crowns": {
+   "n": 143,
+   "P(pro cell)": [
+    0.05315263398252981,
+    0.043329441699755604,
+    0.06384256245159572
+   ],
+   "P(within 1 tile of pro)": [
+    0.19643506585535678,
+    0.1732083368191528,
+    0.22215050118683569
+   ],
+   "P(within 2 tiles of pro)": [
+    0.38475415040250427,
+    0.3445356294338379,
+    0.42467942020321814
+   ],
+   "P(any tower-hitting cell, alive tower within 2.0 tiles)": [
+    0.35409060526977887,
+    0.33191850880551077,
+    0.37454689200188707
+   ],
+   "argmax_cell_exact_pro": [
+    0.06993006993006994,
+    0.029850746268656716,
+    0.1129215542521994
+   ],
+   "argmax_cell_within_1_tile": [
+    0.1048951048951049,
+    0.05517241379310345,
+    0.15506349991753254
+   ],
+   "argmax_cell_within_2_tiles": [
+    0.46153846153846156,
+    0.375,
+    0.5419914525319858
+   ],
+   "argmax_cell_hits_alive_tower": [
+    0.18181818181818182,
+    0.12422146069822232,
+    0.24479308005427405
+   ],
+   "pro_cell_hits_alive_tower(sanity)": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "median_dist_argmax_to_pro_tiles": 2.23606797749979,
+   "entropy_nats_mean": 3.2267136573791504
+  },
+  "  tower, late, level crowns + tower-HP deficit": {
+   "n": 96,
+   "P(pro cell)": [
+    0.05702697324189406,
+    0.044254859004574466,
+    0.07226901566341447
+   ],
+   "P(within 1 tile of pro)": [
+    0.20225527952425182,
+    0.17247578568718122,
+    0.23479674144493135
+   ],
+   "P(within 2 tiles of pro)": [
+    0.39584225272604573,
+    0.3493970545350376,
+    0.4431647874960544
+   ],
+   "P(any tower-hitting cell, alive tower within 2.0 tiles)": [
+    0.35297413958081353,
+    0.3264806993159183,
+    0.38203661435475894
+   ],
+   "argmax_cell_exact_pro": [
+    0.07291666666666667,
+    0.022981974921630094,
+    0.12661539593759197
+   ],
+   "argmax_cell_within_1_tile": [
+    0.10416666666666667,
+    0.047058823529411764,
+    0.17582417582417584
+   ],
+   "argmax_cell_within_2_tiles": [
+    0.5208333333333334,
+    0.4130266696548633,
+    0.6304633867276888
+   ],
+   "argmax_cell_hits_alive_tower": [
+    0.1875,
+    0.12149532710280374,
+    0.2653224055579679
+   ],
+   "pro_cell_hits_alive_tower(sanity)": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "median_dist_argmax_to_pro_tiles": 2.0,
+   "entropy_nats_mean": 3.2362051010131836
+  },
+  "  tower, late, behind on crowns": {
+   "n": 2,
+   "P(pro cell)": [
+    0.001545384460769128,
+    8.160700963344425e-05,
+    0.003009161911904812
+   ],
+   "P(within 1 tile of pro)": [
+    0.0070422429125756025,
+    0.002142015378922224,
+    0.011942470446228981
+   ],
+   "P(within 2 tiles of pro)": [
+    0.015352873597294092,
+    0.009029864333570004,
+    0.02167588286101818
+   ],
+   "P(any tower-hitting cell, alive tower within 2.0 tiles)": [
+    0.34536975622177124,
+    0.16593217849731445,
+    0.524807333946228
+   ],
+   "argmax_cell_exact_pro": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "argmax_cell_within_1_tile": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "argmax_cell_within_2_tiles": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "argmax_cell_hits_alive_tower": [
+    0.5,
+    0.0,
+    1.0
+   ],
+   "pro_cell_hits_alive_tower(sanity)": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "median_dist_argmax_to_pro_tiles": 13.613368757427127,
+   "entropy_nats_mean": 3.882376194000244
+  },
+  "  tower, late, behind (crowns, or level w/ HP deficit)": {
+   "n": 98,
+   "P(pro cell)": [
+    0.05589469591983028,
+    0.043265963159879385,
+    0.06921749878901363
+   ],
+   "P(within 1 tile of pro)": [
+    0.19827134000156454,
+    0.16917737122810525,
+    0.22912052058768745
+   ],
+   "P(within 2 tiles of pro)": [
+    0.38807716335607123,
+    0.33985882839607073,
+    0.4347640029345635
+   ],
+   "P(any tower-hitting cell, alive tower within 2.0 tiles)": [
+    0.35281894808369024,
+    0.32555524202217473,
+    0.38182148974385965
+   ],
+   "argmax_cell_exact_pro": [
+    0.07142857142857142,
+    0.027015068165510647,
+    0.12766575952498763
+   ],
+   "argmax_cell_within_1_tile": [
+    0.10204081632653061,
+    0.047619047619047616,
+    0.16162981162981163
+   ],
+   "argmax_cell_within_2_tiles": [
+    0.5102040816326531,
+    0.40623525943396227,
+    0.6146033653846154
+   ],
+   "argmax_cell_hits_alive_tower": [
+    0.19387755102040816,
+    0.1299758064516129,
+    0.2737102371312898
+   ],
+   "pro_cell_hits_alive_tower(sanity)": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "median_dist_argmax_to_pro_tiles": 2.0,
+   "entropy_nats_mean": 3.249392032623291
+  },
+  "  tower, late, ahead on crowns (contrast)": {
+   "n": 1,
+   "P(pro cell)": [
+    0.0057489159516990185,
+    0.0057489159516990185,
+    0.0057489159516990185
+   ],
+   "P(within 1 tile of pro)": [
+    0.034386347979307175,
+    0.034386347979307175,
+    0.034386347979307175
+   ],
+   "P(within 2 tiles of pro)": [
+    0.07743513584136963,
+    0.07743513584136963,
+    0.07743513584136963
+   ],
+   "P(any tower-hitting cell, alive tower within 2.0 tiles)": [
+    0.10388681292533875,
+    0.10388681292533875,
+    0.10388681292533875
+   ],
+   "argmax_cell_exact_pro": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "argmax_cell_within_1_tile": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "argmax_cell_within_2_tiles": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "argmax_cell_hits_alive_tower": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "pro_cell_hits_alive_tower(sanity)": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "median_dist_argmax_to_pro_tiles": 5.0,
+   "entropy_nats_mean": 4.063684463500977
+  },
+  "  tower, OVERTIME only, behind (crowns or HP)": {
+   "n": 72,
+   "P(pro cell)": [
+    0.0559333935949932,
+    0.04192849001567163,
+    0.0721418923851903
+   ],
+   "P(within 1 tile of pro)": [
+    0.19674564968510014,
+    0.16526209923280738,
+    0.2312096894220981
+   ],
+   "P(within 2 tiles of pro)": [
+    0.3832833783235401,
+    0.3286759548029226,
+    0.43168033384718
+   ],
+   "P(any tower-hitting cell, alive tower within 2.0 tiles)": [
+    0.32738700203804505,
+    0.3000473606278715,
+    0.35444454996923097
+   ],
+   "argmax_cell_exact_pro": [
+    0.05555555555555555,
+    0.012496141975308643,
+    0.11596014492753622
+   ],
+   "argmax_cell_within_1_tile": [
+    0.06944444444444445,
+    0.014084507042253521,
+    0.13513513513513514
+   ],
+   "argmax_cell_within_2_tiles": [
+    0.4722222222222222,
+    0.3552051083591331,
+    0.6000641025641025
+   ],
+   "argmax_cell_hits_alive_tower": [
+    0.06944444444444445,
+    0.01350900900900901,
+    0.1323529411764706
+   ],
+   "pro_cell_hits_alive_tower(sanity)": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "median_dist_argmax_to_pro_tiles": 2.23606797749979,
+   "entropy_nats_mean": 3.2592580318450928
+  },
+  "  tower, repeat on same tower (prior_rockets>=1)": {
+   "n": 56,
+   "P(pro cell)": [
+    0.036335933814241016,
+    0.0291460598659525,
+    0.0441630824431724
+   ],
+   "P(within 1 tile of pro)": [
+    0.1666716594814456,
+    0.13795746758206356,
+    0.1942322557499177
+   ],
+   "P(within 2 tiles of pro)": [
+    0.3442536384266402,
+    0.2914339649811031,
+    0.39778301865317756
+   ],
+   "P(any tower-hitting cell, alive tower within 2.0 tiles)": [
+    0.3314559619341578,
+    0.30811816136912745,
+    0.3529927993282995
+   ],
+   "argmax_cell_exact_pro": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "argmax_cell_within_1_tile": [
+    0.017857142857142856,
+    0.0,
+    0.05555555555555555
+   ],
+   "argmax_cell_within_2_tiles": [
+    0.39285714285714285,
+    0.2786885245901639,
+    0.5438995215311004
+   ],
+   "argmax_cell_hits_alive_tower": [
+    0.03571428571428571,
+    0.0,
+    0.08478229105786086
+   ],
+   "pro_cell_hits_alive_tower(sanity)": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "median_dist_argmax_to_pro_tiles": 2.53224755112299,
+   "entropy_nats_mean": 3.253680467605591
+  }
+ },
+ "defensive_rocket_cell_head": {
+  "DEFENSIVE Rocket (hit troops)": {
+   "n": 326,
+   "P(pro cell)": [
+    0.11803350805784377,
+    0.1052612285731313,
+    0.1304113652412385
+   ],
+   "P(within 1 tile of pro)": [
+    0.3639517175884708,
+    0.3395318094730584,
+    0.38644370300818076
+   ],
+   "P(within 2 tiles of pro)": [
+    0.579809432105924,
+    0.5510201526208391,
+    0.6086845525943982
+   ],
+   "P(any tower-hitting cell, alive tower within 2.0 tiles)": [
+    0.1979889952954572,
+    0.17280383947522612,
+    0.22213585920711199
+   ],
+   "argmax_cell_exact_pro": [
+    0.2085889570552147,
+    0.16513690016862442,
+    0.25478019233170973
+   ],
+   "argmax_cell_within_1_tile": [
+    0.5460122699386503,
+    0.4923705971750402,
+    0.6005833060189417
+   ],
+   "argmax_cell_within_2_tiles": [
+    0.754601226993865,
+    0.7048178427997706,
+    0.8084499552171965
+   ],
+   "argmax_cell_hits_alive_tower": [
+    0.1901840490797546,
+    0.14825312230835488,
+    0.2340520234863312
+   ],
+   "pro_cell_hits_alive_tower(sanity)": [
+    0.17484662576687116,
+    0.1355382298424467,
+    0.21428571428571427
+   ],
+   "median_dist_argmax_to_pro_tiles": 1.0,
+   "entropy_nats_mean": 2.9687814712524414
+  },
+  "ROCKET -> TORNADO (first cast)": {
+   "n": 69,
+   "P(pro cell)": [
+    0.10657518215948189,
+    0.08301624290949501,
+    0.12982245667290968
+   ],
+   "P(within 1 tile of pro)": [
+    0.29904169691355387,
+    0.25609994484473503,
+    0.3461802771281359
+   ],
+   "P(within 2 tiles of pro)": [
+    0.4619639596456419,
+    0.4128256934472094,
+    0.5141720860512631
+   ],
+   "P(any tower-hitting cell, alive tower within 2.0 tiles)": [
+    0.20452937884492448,
+    0.16449218283306552,
+    0.24362158420283647
+   ],
+   "argmax_cell_exact_pro": [
+    0.2463768115942029,
+    0.15384615384615385,
+    0.34668055555555555
+   ],
+   "argmax_cell_within_1_tile": [
+    0.5362318840579711,
+    0.4246575342465753,
+    0.6428571428571429
+   ],
+   "argmax_cell_within_2_tiles": [
+    0.6811594202898551,
+    0.5752446183953033,
+    0.7936624649859944
+   ],
+   "argmax_cell_hits_alive_tower": [
+    0.15942028985507245,
+    0.07462686567164178,
+    0.2463768115942029
+   ],
+   "pro_cell_hits_alive_tower(sanity)": [
+    0.2463768115942029,
+    0.14925373134328357,
+    0.35384615384615387
+   ],
+   "median_dist_argmax_to_pro_tiles": 1.0,
+   "entropy_nats_mean": 3.173832416534424
+  }
+ },
+ "contrast": {
+  "pro_Rocket_plays_Rocket_affordable": {
+   "n": 671,
+   "n_replays": 242,
+   "P(play)_mean": [
+    0.6526453575447191,
+    0.6320738803012721,
+    0.6705783266437598
+   ],
+   "gate_pass_tau0.27": [
+    0.9180327868852459,
+    0.8940607039769644,
+    0.9389680781317116
+   ],
+   "gate_pass_tau0.35": [
+    0.8673621460506706,
+    0.8406752397208247,
+    0.8946685967105468
+   ],
+   "P(Rocket)_over_affordable_mean": [
+    0.24432045938829597,
+    0.22773946673681197,
+    0.2615247081936683
+   ],
+   "rank_among_affordable_dist": {
+    "1": 0.22056631892697467,
+    "2": 0.31892697466467956,
+    "3": 0.34277198211624443,
+    "4": 0.11773472429210134
+   },
+   "argmax_is_Rocket_share": [
+    0.22056631892697467,
+    0.18643265786237503,
+    0.2562750758286646
+   ],
+   "WOULD_FIRE_Rocket_tau0.27": [
+    0.19523099850968703,
+    0.15922056245109012,
+    0.22927508645030295
+   ],
+   "WOULD_FIRE_Rocket_tau0.35": [
+    0.18181818181818182,
+    0.14649293148982445,
+    0.2154840922408052
+   ]
+  },
+  "pro_OTHER_plays_Rocket_in_hand_and_affordable": {
+   "n": 5871,
+   "n_replays": 284,
+   "P(play)_mean": [
+    0.5810645293033871,
+    0.5715451818924475,
+    0.5902503601936753
+   ],
+   "gate_pass_tau0.27": [
+    0.8453415091125873,
+    0.8339491084602554,
+    0.8562405080347857
+   ],
+   "gate_pass_tau0.35": [
+    0.7879407256004088,
+    0.7742834101382489,
+    0.8010133874996056
+   ],
+   "P(Rocket)_over_affordable_mean": [
+    0.0759353481824146,
+    0.07079083444860186,
+    0.08144397396132506
+   ],
+   "rank_among_affordable_dist": {
+    "1": 0.024186680292965425,
+    "2": 0.12042241526145461,
+    "3": 0.3997615397717595,
+    "4": 0.4556293646738205
+   },
+   "argmax_is_Rocket_share": [
+    0.024186680292965425,
+    0.018554692189554457,
+    0.03045273698549857
+   ],
+   "WOULD_FIRE_Rocket_tau0.27": [
+    0.022994379151762903,
+    0.017283696827884595,
+    0.029056698522158298
+   ],
+   "WOULD_FIRE_Rocket_tau0.35": [
+    0.021461420541645376,
+    0.01617101762079322,
+    0.027413759085476712
+   ]
+  }
+ },
+ "situations_play_rows_rocket_affordable": {
+  "all": {
+   "n_play_rows_rocket_affordable": 6542,
+   "n_replays": 284,
+   "pro_plays_Rocket_share": [
+    0.10256802201161724,
+    0.09329741866555032,
+    0.11278182581395982
+   ],
+   "model_argmax_is_Rocket_share": [
+    0.04432895139101192,
+    0.03708587015305101,
+    0.05282139206441135
+   ],
+   "mean_P(Rocket)_over_affordable": [
+    0.09320627597500807,
+    0.08744773931337282,
+    0.09897010732675336
+   ],
+   "model_would_fire_Rocket_tau0.27": [
+    0.04066034851727301,
+    0.03396370031310611,
+    0.04774361462734058
+   ],
+   "model_would_fire_Rocket_tau0.35": [
+    0.037908896361968814,
+    0.030523059857929823,
+    0.044980057126025604
+   ],
+   "pro_Rocket_rows_argmax_Rocket": [
+    0.22056631892697467,
+    0.18901099161023424,
+    0.2549379169755374
+   ],
+   "AUC_P(Rocket)_separates_pro_Rocket_vs_other": 0.8375218717579473
+  },
+  "late": {
+   "n_play_rows_rocket_affordable": 3929,
+   "n_replays": 262,
+   "pro_plays_Rocket_share": [
+    0.1420208704504963,
+    0.12879882569814582,
+    0.15600632303349976
+   ],
+   "model_argmax_is_Rocket_share": [
+    0.0638839399338254,
+    0.05171943255333491,
+    0.07741486209750074
+   ],
+   "mean_P(Rocket)_over_affordable": [
+    0.12722100334465433,
+    0.11860382025336366,
+    0.13580954770779824
+   ],
+   "model_would_fire_Rocket_tau0.27": [
+    0.05955713922117587,
+    0.04791991658983266,
+    0.0720301639856985
+   ],
+   "model_would_fire_Rocket_tau0.35": [
+    0.05599389157546449,
+    0.045372562377778945,
+    0.0676001426319539
+   ],
+   "pro_Rocket_rows_argmax_Rocket": [
+    0.22043010752688172,
+    0.176357694332339,
+    0.25778959370071036
+   ],
+   "AUC_P(Rocket)_separates_pro_Rocket_vs_other": 0.7801578719608212
+  },
+  "late & level crowns": {
+   "n_play_rows_rocket_affordable": 3787,
+   "n_replays": 243,
+   "pro_plays_Rocket_share": [
+    0.1407446527594402,
+    0.12695044328382044,
+    0.15604064901359038
+   ],
+   "model_argmax_is_Rocket_share": [
+    0.06390282545550567,
+    0.051082216215366724,
+    0.07758597034920789
+   ],
+   "mean_P(Rocket)_over_affordable": [
+    0.12726524893771884,
+    0.11876278065051543,
+    0.1364744908987476
+   ],
+   "model_would_fire_Rocket_tau0.27": [
+    0.059677845260100344,
+    0.04761682242990654,
+    0.07334836193244691
+   ],
+   "model_would_fire_Rocket_tau0.35": [
+    0.05598098758912068,
+    0.04503377806814423,
+    0.06791829309074336
+   ],
+   "pro_Rocket_rows_argmax_Rocket": [
+    0.22326454033771106,
+    0.17987273429213202,
+    0.26493306317873
+   ],
+   "AUC_P(Rocket)_separates_pro_Rocket_vs_other": 0.7796321686917876
+  },
+  "late & behind (crowns or level+HP deficit)": {
+   "n_play_rows_rocket_affordable": 2439,
+   "n_replays": 198,
+   "pro_plays_Rocket_share": [
+    0.14268142681426815,
+    0.1254982873678616,
+    0.16074871353333509
+   ],
+   "model_argmax_is_Rocket_share": [
+    0.06519065190651907,
+    0.04959939386668512,
+    0.08249602073385168
+   ],
+   "mean_P(Rocket)_over_affordable": [
+    0.12724234374799664,
+    0.11596998596398096,
+    0.14152529362801983
+   ],
+   "model_would_fire_Rocket_tau0.27": [
+    0.06150061500615006,
+    0.046747492591748346,
+    0.07632760365241659
+   ],
+   "model_would_fire_Rocket_tau0.35": [
+    0.05781057810578106,
+    0.04424760293704847,
+    0.07333165178693633
+   ],
+   "pro_Rocket_rows_argmax_Rocket": [
+    0.22701149425287356,
+    0.17837436446347338,
+    0.27746074112888697
+   ],
+   "AUC_P(Rocket)_separates_pro_Rocket_vs_other": 0.7816105696553923
+  },
+  "late & behind on crowns": {
+   "n_play_rows_rocket_affordable": 41,
+   "n_replays": 12,
+   "pro_plays_Rocket_share": [
+    0.14634146341463414,
+    0.03330645161290323,
+    0.4
+   ],
+   "model_argmax_is_Rocket_share": [
+    0.024390243902439025,
+    0.0,
+    0.10734890109890091
+   ],
+   "mean_P(Rocket)_over_affordable": [
+    0.09159292644404185,
+    0.06843891939319006,
+    0.13955623364234737
+   ],
+   "model_would_fire_Rocket_tau0.27": [
+    0.024390243902439025,
+    0.0,
+    0.120030303030303
+   ],
+   "model_would_fire_Rocket_tau0.35": [
+    0.024390243902439025,
+    0.0,
+    0.10714285714285714
+   ],
+   "pro_Rocket_rows_argmax_Rocket": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "AUC_P(Rocket)_separates_pro_Rocket_vs_other": 0.7857142857142857
+  },
+  "overtime & behind (crowns or HP)": {
+   "n_play_rows_rocket_affordable": 1407,
+   "n_replays": 141,
+   "pro_plays_Rocket_share": [
+    0.18336886993603413,
+    0.15942754693326816,
+    0.20978229255148115
+   ],
+   "model_argmax_is_Rocket_share": [
+    0.10092395167022032,
+    0.07731922205161951,
+    0.1296101322731336
+   ],
+   "mean_P(Rocket)_over_affordable": [
+    0.1592398764672627,
+    0.14384175690862266,
+    0.1756465540733986
+   ],
+   "model_would_fire_Rocket_tau0.27": [
+    0.09594882729211088,
+    0.07264278544864014,
+    0.12255460359239265
+   ],
+   "model_would_fire_Rocket_tau0.35": [
+    0.09026297085998579,
+    0.06849888733081332,
+    0.1163002337423825
+   ],
+   "pro_Rocket_rows_argmax_Rocket": [
+    0.26744186046511625,
+    0.2066082243115736,
+    0.33070866141732286
+   ],
+   "AUC_P(Rocket)_separates_pro_Rocket_vs_other": 0.7587858670498783
+  },
+  "late & ahead on crowns": {
+   "n_play_rows_rocket_affordable": 101,
+   "n_replays": 22,
+   "pro_plays_Rocket_share": [
+    0.18811881188118812,
+    0.11402973898160033,
+    0.2778100775193798
+   ],
+   "model_argmax_is_Rocket_share": [
+    0.07920792079207921,
+    0.02909899283186644,
+    0.13404088960963742
+   ],
+   "mean_P(Rocket)_over_affordable": [
+    0.1400248953445531,
+    0.10327961680829457,
+    0.17933148601565813
+   ],
+   "model_would_fire_Rocket_tau0.27": [
+    0.06930693069306931,
+    0.02653150747635032,
+    0.11767617938264412
+   ],
+   "model_would_fire_Rocket_tau0.35": [
+    0.06930693069306931,
+    0.02911921209858103,
+    0.1205254350736278
+   ],
+   "pro_Rocket_rows_argmax_Rocket": [
+    0.21052631578947367,
+    0.04756493506493507,
+    0.4117647058823529
+   ],
+   "AUC_P(Rocket)_separates_pro_Rocket_vs_other": 0.7958921694480102
+  },
+  "not late": {
+   "n_play_rows_rocket_affordable": 2613,
+   "n_replays": 283,
+   "pro_plays_Rocket_share": [
+    0.04324531190202832,
+    0.03531168867842186,
+    0.05133710657376493
+   ],
+   "model_argmax_is_Rocket_share": [
+    0.014925373134328358,
+    0.010784480767947387,
+    0.0198207044740494
+   ],
+   "mean_P(Rocket)_over_affordable": [
+    0.042060518671012605,
+    0.03844499283948355,
+    0.04618053051363845
+   ],
+   "model_would_fire_Rocket_tau0.27": [
+    0.012246460007654038,
+    0.008379604195955445,
+    0.0166043791679435
+   ],
+   "model_would_fire_Rocket_tau0.35": [
+    0.010715652506697282,
+    0.006929618764448009,
+    0.014605276647996884
+   ],
+   "pro_Rocket_rows_argmax_Rocket": [
+    0.22123893805309736,
+    0.14678305915849416,
+    0.2946577380952381
+   ],
+   "AUC_P(Rocket)_separates_pro_Rocket_vs_other": 0.8877628318584071
+  }
+ },
+ "sweeps": {
+  "rows": "play rows with Rocket affordable",
+  "n_pro_Rocket": 671,
+  "n_other": 5871,
+  "AUC_P(Rocket|affordable)_pro_Rocket_vs_other": 0.8375218717579473,
+  "logit_bias": {
+   "bias+0.0": {
+    "argmax_R_recall_on_pro_Rocket": [
+     0.22056631892697467,
+     0.18596980780995107,
+     0.2569345600162206
+    ],
+    "argmax_R_false_rate_on_other_plays": [
+     0.024186680292965425,
+     0.018204504419236236,
+     0.031524743530719844
+    ],
+    "fire_tau0.35_recall": [
+     0.18181818181818182,
+     0.15099573308047884,
+     0.21765000842743976
+    ],
+    "fire_tau0.35_false_rate": [
+     0.021461420541645376,
+     0.016187181707946873,
+     0.02725833331244592
+    ],
+    "precision_argmax(pro Rocket share among argmax-R rows)": 0.5103448275862069
+   },
+   "bias+0.5": {
+    "argmax_R_recall_on_pro_Rocket": [
+     0.3442622950819672,
+     0.30356641252006417,
+     0.3842933760643714
+    ],
+    "argmax_R_false_rate_on_other_plays": [
+     0.05620848237097598,
+     0.04690530693548889,
+     0.0659672794205206
+    ],
+    "fire_tau0.35_recall": [
+     0.293591654247392,
+     0.2507205463122537,
+     0.3367233369435102
+    ],
+    "fire_tau0.35_false_rate": [
+     0.04905467552376086,
+     0.0406672487233882,
+     0.05803562127847739
+    ],
+    "precision_argmax(pro Rocket share among argmax-R rows)": 0.4117647058823529
+   },
+   "bias+1.0": {
+    "argmax_R_recall_on_pro_Rocket": [
+     0.5007451564828614,
+     0.457588772695932,
+     0.5449715135001238
+    ],
+    "argmax_R_false_rate_on_other_plays": [
+     0.10764776017714188,
+     0.09422673123622431,
+     0.12295255258266287
+    ],
+    "fire_tau0.35_recall": [
+     0.43517138599105815,
+     0.3867457023856504,
+     0.4799609834644206
+    ],
+    "fire_tau0.35_false_rate": [
+     0.09453244762391415,
+     0.08253686086581247,
+     0.10756068849373791
+    ],
+    "precision_argmax(pro Rocket share among argmax-R rows)": 0.34710743801652894
+   },
+   "bias+1.5": {
+    "argmax_R_recall_on_pro_Rocket": [
+     0.6646795827123696,
+     0.6246371237458194,
+     0.7053059229896012
+    ],
+    "argmax_R_false_rate_on_other_plays": [
+     0.1945154147504684,
+     0.17668941546641723,
+     0.21265739187492574
+    ],
+    "fire_tau0.35_recall": [
+     0.5752608047690015,
+     0.5323098067750021,
+     0.6183538235957591
+    ],
+    "fire_tau0.35_false_rate": [
+     0.16947709078521547,
+     0.15303610556027142,
+     0.1874091539182664
+    ],
+    "precision_argmax(pro Rocket share among argmax-R rows)": 0.28085642317380355
+   },
+   "bias+2.0": {
+    "argmax_R_recall_on_pro_Rocket": [
+     0.7928464977645305,
+     0.7569228529839883,
+     0.8257266992266993
+    ],
+    "argmax_R_false_rate_on_other_plays": [
+     0.2990972577073752,
+     0.2799769623012314,
+     0.31906166907525624
+    ],
+    "fire_tau0.35_recall": [
+     0.684053651266766,
+     0.6428571428571429,
+     0.7247061232037193
+    ],
+    "fire_tau0.35_false_rate": [
+     0.25958099131323453,
+     0.2416581117577283,
+     0.27930066046904645
+    ],
+    "precision_argmax(pro Rocket share among argmax-R rows)": 0.23251748251748253
+   },
+   "bias+3.0": {
+    "argmax_R_recall_on_pro_Rocket": [
+     0.9582712369597616,
+     0.9417734040636823,
+     0.973413092639312
+    ],
+    "argmax_R_false_rate_on_other_plays": [
+     0.5511837847044796,
+     0.5294907652569347,
+     0.5716757467825286
+    ],
+    "fire_tau0.35_recall": [
+     0.8330849478390462,
+     0.8029967085094711,
+     0.8623505056135042
+    ],
+    "fire_tau0.35_false_rate": [
+     0.46942599216487824,
+     0.4511120608661398,
+     0.48835619428890165
+    ],
+    "precision_argmax(pro Rocket share among argmax-R rows)": 0.165764372260892
+   },
+   "bias+4.0": {
+    "argmax_R_recall_on_pro_Rocket": [
+     0.9895678092399404,
+     0.9813067254656039,
+     0.9969233128834356
+    ],
+    "argmax_R_false_rate_on_other_plays": [
+     0.7550672798501107,
+     0.7418599159768824,
+     0.7689797186507616
+    ],
+    "fire_tau0.35_recall": [
+     0.8599105812220567,
+     0.8323513276784068,
+     0.885931623931624
+    ],
+    "fire_tau0.35_false_rate": [
+     0.627150400272526,
+     0.6095886412859715,
+     0.6426531090235446
+    ],
+    "precision_argmax(pro Rocket share among argmax-R rows)": 0.13027270943692368
+   }
+  },
+  "sampling": {
+   "sample_T1.0": {
+    "E[pick Rocket] on pro Rocket rows": [
+     0.24432045938829597,
+     0.226378339319723,
+     0.2610553371650509
+    ],
+    "E[pick Rocket] on other pro plays": [
+     0.0759353481824146,
+     0.07090561469620713,
+     0.08148699817404077
+    ]
+   },
+   "sample_T0.7": {
+    "E[pick Rocket] on pro Rocket rows": [
+     0.23519158566647738,
+     0.2143749495854931,
+     0.25576657914953566
+    ],
+    "E[pick Rocket] on other pro plays": [
+     0.05447099748969758,
+     0.04929149651297807,
+     0.06071602731408349
+    ]
+   }
+  },
+  "pro_Rocket_share_in_these_rows": 0.10256802201161724
+ },
+ "decision_rule_replay": {
+  "tau0.27_play_rows": {
+   "n_decisions": 9844,
+   "rocket_share": 0.027021535960991466,
+   "decision_rate": 0.8248701189877661
+  },
+  "tau0.27_wait_rows": {
+   "n_decisions": 6505,
+   "rocket_share": 0.02336664104534973,
+   "decision_rate": 0.2465602850320282
+  },
+  "tau0.27_all_rows": {
+   "n_decisions": 16349,
+   "rocket_share": 0.0255673129855037,
+   "decision_rate": 0.4266774538716497
+  },
+  "tau0.35_play_rows": {
+   "n_decisions": 9004,
+   "rocket_share": 0.027543314082629944,
+   "decision_rate": 0.7544829897771074
+  },
+  "tau0.35_wait_rows": {
+   "n_decisions": 4827,
+   "rocket_share": 0.02610316967060286,
+   "decision_rate": 0.18295872342038433
+  },
+  "tau0.35_all_rows": {
+   "n_decisions": 13831,
+   "rocket_share": 0.027040705661195864,
+   "decision_rate": 0.3609624970639664
+  }
+ },
+ "pro_card_share_play_rows": {
+  "ice-wizard": 0.16029830735713088,
+  "knight": 0.16482319423495895,
+  "rocket": 0.056225909167085635,
+  "skeletons": 0.16457181163063517,
+  "tesla": 0.13909837439249204,
+  "the-log": 0.1404390816155522,
+  "tornado": 0.08253728841964136,
+  "x-bow": 0.09200603318250378
+ },
+ "model_argmax_card_share_play_rows_tau0.35": {
+  "ice-wizard": 0.1859173700577521,
+  "knight": 0.17825410928476232,
+  "rocket": 0.027543314082629944,
+  "skeletons": 0.1775877387827632,
+  "tesla": 0.17214571301643714,
+  "the-log": 0.1332741003998223,
+  "tornado": 0.04797867614393603,
+  "x-bow": 0.07729897823189694
+ },
+ "dead_lane_xbow_pro": {
+  "pro_all_splits_icebow_deck": {
+   "n_xbow_plays": 8846,
+   "n_one_princess_down": 201,
+   "n_replays": 151,
+   "own_half_share": 0.746268656716418,
+   "in_dead_lane": [
+    0.40298507462686567,
+    0.3299974226804124,
+    0.47476604278074863
+   ],
+   "in_alive_lane": [
+    0.3283582089552239,
+    0.25601523217982847,
+    0.40284713871401284
+   ],
+   "center(7<x<11)": [
+    0.26865671641791045,
+    0.20302004819771316,
+    0.33495205413936585
+   ],
+   "dead_lane_AND_enemy_half(pocket, cy<=32)": [
+    0.23880597014925373,
+    0.1778846153846154,
+    0.3060326134096626
+   ],
+   "dead_lane_AND_own_half": [
+    0.16417910447761194,
+    0.11163700107874866,
+    0.22774036286877417
+   ],
+   "alive_lane_AND_enemy_half": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "dead_lane_share_of_lane_placements(excl center)": [
+    0.5510204081632653,
+    0.46257213230119637,
+    0.6444565217391305
+   ]
+  },
+  "pro_val_only": {
+   "n_xbow_plays": 1098,
+   "n_one_princess_down": 30,
+   "n_replays": 21,
+   "own_half_share": 0.8,
+   "in_dead_lane": [
+    0.4,
+    0.22857142857142856,
+    0.5862068965517241
+   ],
+   "in_alive_lane": [
+    0.3333333333333333,
+    0.125,
+    0.5588235294117647
+   ],
+   "center(7<x<11)": [
+    0.26666666666666666,
+    0.1111111111111111,
+    0.41379310344827586
+   ],
+   "dead_lane_AND_enemy_half(pocket, cy<=32)": [
+    0.2,
+    0.06245265151515152,
+    0.391304347826087
+   ],
+   "dead_lane_AND_own_half": [
+    0.2,
+    0.06666666666666667,
+    0.3548387096774194
+   ],
+   "alive_lane_AND_enemy_half": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "dead_lane_share_of_lane_placements(excl center)": [
+    0.5454545454545454,
+    0.3042391304347826,
+    0.8
+   ]
+  },
+  "pro_train_only": {
+   "n_xbow_plays": 7748,
+   "n_one_princess_down": 171,
+   "n_replays": 130,
+   "own_half_share": 0.7368421052631579,
+   "in_dead_lane": [
+    0.40350877192982454,
+    0.31578164160401,
+    0.4879553930005737
+   ],
+   "in_alive_lane": [
+    0.32748538011695905,
+    0.2380677126341866,
+    0.40702959830866803
+   ],
+   "center(7<x<11)": [
+    0.26900584795321636,
+    0.20218579234972678,
+    0.3428612956810631
+   ],
+   "dead_lane_AND_enemy_half(pocket, cy<=32)": [
+    0.24561403508771928,
+    0.18230788548468108,
+    0.3167989085556313
+   ],
+   "dead_lane_AND_own_half": [
+    0.15789473684210525,
+    0.09940075479396164,
+    0.23243557510999371
+   ],
+   "alive_lane_AND_enemy_half": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "dead_lane_share_of_lane_placements(excl center)": [
+    0.552,
+    0.45733023255813954,
+    0.6589707860849509
+   ]
+  }
+ },
+ "dead_lane_xbow_model_val": {
+  "n_xbow_plays": 1098,
+  "n_one_princess_down": 30,
+  "n_replays": 21,
+  "pro_lane": {
+   "dead": [
+    0.4,
+    0.21875,
+    0.6071428571428571
+   ],
+   "alive": [
+    0.3333333333333333,
+    0.13333333333333333,
+    0.5517241379310345
+   ],
+   "center": [
+    0.26666666666666666,
+    0.11101190476190476,
+    0.42110323886639667
+   ]
+  },
+  "model_argmax_lane": {
+   "dead": [
+    0.5,
+    0.3333333333333333,
+    0.6786071428571429
+   ],
+   "alive": [
+    0.36666666666666664,
+    0.22213541666666667,
+    0.53125
+   ],
+   "center": [
+    0.13333333333333333,
+    0.0,
+    0.281361607142857
+   ]
+  },
+  "model_cell_mass": {
+   "dead": [
+    0.4198519982397556,
+    0.33873369414528665,
+    0.5059085711167236
+   ],
+   "alive": [
+    0.3254014970113834,
+    0.257790214358829,
+    0.38617480012168515
+   ],
+   "center": [
+    0.2547466479241848,
+    0.19392813828061609,
+    0.3284920150014971
+   ]
+  },
+  "argmax_lane_equals_pro_lane": [
+   0.5,
+   0.35714285714285715,
+   0.6551724137931034
+  ],
+  "pro_dead_lane_enemy_half(pocket)": [
+   0.2,
+   0.0625,
+   0.38461538461538464
+  ],
+  "pro_dead_lane_own_half": [
+   0.2,
+   0.06896551724137931,
+   0.34486074270557027
+  ],
+  "model_argmax_dead_lane_enemy_half(pocket)": [
+   0.1,
+   0.0,
+   0.2222222222222222
+  ],
+  "model_argmax_dead_lane_own_half": [
+   0.4,
+   0.2222222222222222,
+   0.5862068965517241
+  ],
+  "model_mass_dead_lane_enemy_half": [
+   0.09235892903137331,
+   0.03683940430913466,
+   0.17514349903112533
+  ],
+  "model_mass_dead_lane_own_half": [
+   0.3274930669615666,
+   0.23879122445112416,
+   0.41270076051930393
+  ],
+  "argmax_lane_in_pro_lane_given_both_non_center": [
+   0.7368421052631579,
+   0.5263157894736842,
+   0.9098930481283415
+  ],
+  "model_argmax_card_is_XBow(affordable,at pro rows)": [
+   0.6333333333333333,
+   0.49964285714285717,
+   0.8
+  ],
+  "P(X-Bow)_over_affordable_mean": [
+   0.5096163143269045,
+   0.4264542768702887,
+   0.5921907556881738
+  ],
+  "by_alive_flags": {
+   "2": 1068,
+   "1": 30
+  },
+  "label_join": 30,
+  "label_lane_state_dead_share": [
+   0.5666666666666667,
+   0.3748842592592593,
+   0.7693181818181818
+  ],
+  "label_offensive_lock_share": [
+   0.5333333333333333,
+   0.3333333333333333,
+   0.7409722222222219
+  ],
+  "label_lane_state_vs_sc_dead_lane_agree": 1.0
+ }
+}

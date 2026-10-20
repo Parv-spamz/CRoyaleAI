@@ -1,0 +1,28 @@
+{
+  "source_sha256": {
+    "pipeline/body_identity.py": "49cc205c1400df6ca2bb4a6a8900a6e9a5a6048c93b0f084f9758292f28a8dc8",
+    "pipeline/royale_env.py": "0935c50759dc8e9ef8d226a1b6d8e017d6025c88fd79db5cfe8a5295231a068f",
+    "pipeline/rl_royale.py": "e089d89b7569d5c6ee4631e058ee128696a4847970ae5413d78f40e49bed7055",
+    "pipeline/royale_runtime.py": "dcd2115fdd4de9aeaef5f9dbe7c08669e4b4a4f603ec3f02e0b6618aa5cfdca9",
+    "pipeline/tests/test_body_identity.py": "30006c664473d910b4770de9dc8b325d718c24bfe8a8aab6e4a7389905b76801",
+    "pipeline/tests/test_royale_forms.py": "d84f9353e9dc7881eddd051a43d9c9ecfaaa4abfb21981c25594054c1e1c138e",
+    "pipeline/tests/test_royale_runtime.py": "29eb25a92cd719ded70757d9ffd4ae7f71c588ae87111b3fc646d3ef2161078f",
+    "pipeline/tests/test_royale_port.py": "fbdfc4c10ec1191b27dc220fa0e887fb6f7a16bd7cb877e3e6207209f7523faf"
+  },
+  "checked_cases": 196,
+  "initial_combined_passes": 194,
+  "repaired_fixture_passes": 2,
+  "receipt_sha256": {
+    "scratchpad\\gauntlet\\L71\\integration\\checks\\royale-runtime-port.json": "f97616f9d8aa53583c3dcd04ac1cd11031a67e4f9d34a2563a523a46be408434",
+    "scratchpad\\gauntlet\\L71\\integration\\checks\\royale-runtime-port-v2.json": "a15b87e7672c783c8ab3325733a1b0bff01722b2ea571d77a2faceb4bc3e8245",
+    "scratchpad\\gauntlet\\L71\\integration\\checks\\royale-runtime-port-v3.json": "41b2e78c175c99111d6b6751ee78343669ceedbf0491b0bf89cf8bf9c8c1500d",
+    "scratchpad\\gauntlet\\L71\\integration\\checks\\royale-integrated-regression.json": "d3ab5f708df435e491dea93d3752b0dc26be3ba602c6fc097b1ee089b99fbe90",
+    "scratchpad\\gauntlet\\L71\\integration\\checks\\royale-integrated-fixtures.json": "62cc5c82d1c32f8be3737c17d5fa71658e86ac0c0b8db3db00c4de9022fd06ea",
+    "scratchpad\\gauntlet\\L71\\integration\\checks\\royale-checkpoint-runtime.json": "df5157c2e54be2b742be23a2414af9d3b0038a9d1d4fa3bdeadb20fd2bffe215"
+  },
+  "rust_pending": true,
+  "all_upstream_tests_green": false,
+  "optional_royalelearn_example_supported": false,
+  "deployed": false,
+  "frozen_worktree_changed": false
+}

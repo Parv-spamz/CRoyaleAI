@@ -1,0 +1,72 @@
+{
+  "totals": {
+    "r1e": {
+      "games": 64,
+      "reached6000": 8,
+      "game_over_decided_before": 1,
+      "game_over_decided_after": 12,
+      "game_over": 13,
+      "match_over_before_landing": 20,
+      "after_clear_known": 6,
+      "after_clear_win": 5,
+      "after_clear_ahead": 5,
+      "after_clear_sign_matches_winner": 6,
+      "out_of_territory": 1,
+      "after_clear_loss": 1,
+      "after_clear_behind": 1
+    },
+    "ordinary_v5": {
+      "games": 64,
+      "reached6000": 10,
+      "game_over_decided_before": 3,
+      "game_over_decided_after": 18,
+      "match_over_before_landing": 27,
+      "game_over": 21,
+      "after_clear_known": 8,
+      "after_clear_win": 3,
+      "after_clear_ahead": 3,
+      "after_clear_sign_matches_winner": 8,
+      "after_clear_loss": 5,
+      "after_clear_behind": 5
+    },
+    "ordinary_v6": {
+      "games": 64,
+      "reached6000": 12,
+      "game_over_decided_before": 6,
+      "game_over_decided_after": 25,
+      "match_over_before_landing": 35,
+      "game_over": 31,
+      "after_clear_known": 9,
+      "after_clear_win": 4,
+      "after_clear_ahead": 4,
+      "after_clear_sign_matches_winner": 9,
+      "after_clear_loss": 5,
+      "after_clear_behind": 5,
+      "out_of_territory": 1
+    }
+  },
+  "pair_counts": {
+    "pairs": 64,
+    "no_command_difference": 23,
+    "different": 41,
+    "equal_prior_frames": 41,
+    "first_roles_learner": 41
+  },
+  "first_learner_cards": {
+    "('IceWizard',) -> ('IceWizard',)": 5,
+    "('Tornado',) -> ('Tornado',)": 5,
+    "('Log',) -> ()": 1,
+    "('Skeletons',) -> ()": 5,
+    "('Skeletons',) -> ('Skeletons',)": 4,
+    "('Knight',) -> ('Knight',)": 9,
+    "() -> ('Log',)": 1,
+    "('Tesla',) -> ('Skeletons',)": 1,
+    "('Knight',) -> ()": 2,
+    "('Tesla',) -> ('Tesla',)": 2,
+    "('Xbow',) -> ('Xbow',)": 2,
+    "('Log',) -> ('Log',)": 2,
+    "('Tesla',) -> ('Xbow',)": 1,
+    "() -> ('Skeletons',)": 1
+  }
+}
+GAMEPLAY_FAILURE_AUDIT_COMPLETE

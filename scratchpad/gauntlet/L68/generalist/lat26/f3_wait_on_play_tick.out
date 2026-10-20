@@ -1,0 +1,2 @@
+gen_dataset_v1: wait rows 2,817,527; on an own accepted play tick 424,545 (15.07%); of them v3val 1,789 (v3val wait rows 9,965)
+gen_dataset_v1_lat26: wait rows 2,210,949; on an own accepted play tick 336,741 (15.23%); of them v3val 1,360 (v3val wait rows 7,480)

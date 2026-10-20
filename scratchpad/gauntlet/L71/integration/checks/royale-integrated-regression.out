@@ -1,0 +1,98 @@
+.F..........................................F........................... [ 36%]
+........................................................................ [ 73%]
+....................................................                     [100%]
+================================== FAILURES ===================================
+_ RuntimeFiles.test_checkpoint_and_actor_configuration_retain_stamp_and_refuse_old_resume _
+
+self = <pipeline.tests.test_royale_runtime.RuntimeFiles testMethod=test_checkpoint_and_actor_configuration_retain_stamp_and_refuse_old_resume>
+
+    def test_checkpoint_and_actor_configuration_retain_stamp_and_refuse_old_resume(self):
+        import torch
+        from pipeline.tests.test_rl_royale import TestCheckpointRoundTrip, _tiny_model
+        fixture = TestCheckpointRoundTrip()
+        fixture.setUp()
+        try:
+            first = fixture._learner(_tiny_model(5))
+            first.runtime = runtime.activate()
+            checkpoint = first._payload(None)
+            self.assertEqual(checkpoint['rl']['runtime'], first.runtime)
+>           self.assertEqual(first.actor_base()['runtime'], first.runtime)
+                             ^^^^^^^^^^^^^^^^^^
+
+pipeline\tests\test_royale_runtime.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <pipeline.rl_royale.Learner object at 0x0000026BF7B34AD0>
+
+    def actor_base(self) -> dict:
+        """What every actor process gets: the decide-rule keys, the model shape (``gen`` = GenModel extras or None)
+        and the condition keys (``COND_KEYS``) that ``actor_cfg`` puts into rollout AND screen matches."""
+        a = self.init_meta["args"]
+>       base = {k: self.cfg[k] for k in ("actor_threads", "actor_device", "tau", "T", "afford_mask", "stall_elixir",
+                   ^^^^^^^^^^^
+                                         "stall_seconds", "obs", "decide_every", "in_flight")}
+E       KeyError: 'actor_threads'
+
+pipeline\rl_royale.py:1836: KeyError
+__________________ TestPlumbing.test_rl_config_key_and_actor __________________
+
+self = <pipeline.tests.test_royale_forms.TestPlumbing testMethod=test_rl_config_key_and_actor>
+
+    def test_rl_config_key_and_actor(self):
+        """rl_royale.yaml forms_mode (default base, overridable) -> actor_base -> the actor's env: a screen job on a
+        pool entry under deck mode returns a record with forms_mode / form_fallbacks."""
+        import io
+        import torch
+        from pipeline import rl_royale as RL
+        from pipeline.model_v3 import S1Model
+        cfg = RL.load_config(REPO / "pipeline/rl_royale.yaml", [], smoke=False)
+        self.assertEqual(cfg["forms_mode"], "base")
+        cfg = RL.load_config(REPO / "pipeline/rl_royale.yaml", ["forms_mode=deck"], smoke=False)
+        L = object.__new__(RL.Learner)
+        L.cfg, L.init_meta, L.grid = cfg, {"args": {"d": 16, "layers": 1}}, "floor"
+        base = L.actor_base()
+        self.assertEqual(base["forms_mode"], "deck")
+        base["actor_device"], base["actor_threads"], base["in_flight"] = "cpu", 2, 1
+        L.cfg = dict(cfg, forms_mode="evo")
+        with self.assertRaises(SystemExit):
+            L.actor_base()
+        torch.manual_seed(0)
+        buf = io.BytesIO()
+        torch.save(S1Model(d=16, layers=1).state_dict(), buf)
+        e = pool_entries(1)[0]
+    
+        class Out(list):
+            def cancel_join_thread(self):
+                pass
+    
+            def put(self, m):
+                self.append(m)
+        in_q, out = queue.Queue(), Out()
+        in_q.put(("screen", 0, buf.getvalue(), [(0, e, 0)]))
+        in_q.put(None)
+        RL.actor_main(0, 0, in_q, out, base)
+        done = [m for m in out if m[0] == "done"]
+>       self.assertEqual(len(done), 1, [m for m in out if m[0] == "error"])
+E       AssertionError: 0 != 1 : [('error', 0, 0, 'Traceback (most recent call last):\n  File "C:\\Users\\benpe\\ClashBot\\pipeline\\rl_royale.py", line 1094, in actor_main\n    require_same(base.get("runtime"))\n    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^\n  File "C:\\Users\\benpe\\ClashBot\\pipeline\\royale_runtime.py", line 77, in require_same\n    raise RuntimeError("Royale runtime differs from the learner/checkpoint (or was not recorded). "\n                       "Use the checkpoint as init for a new run, rather than resuming across engines.")\nRuntimeError: Royale runtime differs from the learner/checkpoint (or was not recorded). Use the checkpoint as init for a new run, rather than resuming across engines.\n')]
+
+pipeline\tests\test_royale_forms.py:351: AssertionError
+============================== warnings summary ===============================
+pipeline/tests/test_royale_runtime.py: 1 warning
+pipeline/tests/test_royale_forms.py: 6 warnings
+pipeline/tests/test_royale_selfplay.py: 1 warning
+pipeline/tests/test_hero_abilities.py: 2 warnings
+pipeline/tests/test_rl_royale.py: 6 warnings
+pipeline/tests/test_rl_gen.py: 8 warnings
+pipeline/tests/test_rl_terminal_gap.py: 3 warnings
+pipeline/tests/gen_v3/test_sim_contract.py: 1 warning
+pipeline/tests/test_expert_context.py: 1 warning
+pipeline/tests/test_spatial_projectiles.py: 3 warnings
+pipeline/tests/test_dataset_spool.py: 1 warning
+  C:\Users\benpe\ClashBot\pipeline\model_v3.py:92: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+    self.encoder = nn.TransformerEncoder(enc, layers)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED pipeline/tests/test_royale_runtime.py::RuntimeFiles::test_checkpoint_and_actor_configuration_retain_stamp_and_refuse_old_resume
+FAILED pipeline/tests/test_royale_forms.py::TestPlumbing::test_rl_config_key_and_actor
+2 failed, 194 passed, 33 warnings in 143.94s (0:02:23)

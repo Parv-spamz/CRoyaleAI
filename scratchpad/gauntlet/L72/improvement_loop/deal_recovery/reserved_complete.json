@@ -1,0 +1,4083 @@
+{
+  "complete": true,
+  "training_only": false,
+  "model_predictions": 0,
+  "rows": [
+    {
+      "tag": "02f3776ec00145a094be0628d209b0ed",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\02f3776ec00145a094be0628d209b0ed_0.json",
+          "sha256": "10346b093a79d764314fc4d4977f28505da2f3f7537695a0721ea41c7a7bcad1",
+          "grade": {
+            "plays_total": 50,
+            "plays_driven": 50,
+            "accepted": 50,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 2536
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\02f3776ec00145a094be0628d209b0ed_1.json",
+          "sha256": "abcf3e49a497ae8e5be1daf2f9697ce94bc9ce7850360813dbc13dbfe6ec743c",
+          "grade": {
+            "plays_total": 50,
+            "plays_driven": 50,
+            "accepted": 50,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 2536
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "03b7c567b1ae4acd8eee0232cbcecc73",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\03b7c567b1ae4acd8eee0232cbcecc73_0.json",
+          "sha256": "fed78ce4dabfb7fe5bed565abe31c48847f1ebd284ea033dbbf1182b7b306973",
+          "grade": {
+            "plays_total": 35,
+            "plays_driven": 35,
+            "accepted": 34,
+            "rejected_by_reason": {
+              "native_rejected": 1
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 72
+          },
+          "reasons": [
+            "rejected_commands"
+          ],
+          "usable": false,
+          "solver_resets": 3
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\03b7c567b1ae4acd8eee0232cbcecc73_1.json",
+          "sha256": "03d5b687416a3a8564b85a6401c560b3f6eb2f7fdc65a4c26c45ae5a49c55d54",
+          "grade": {
+            "plays_total": 35,
+            "plays_driven": 35,
+            "accepted": 34,
+            "rejected_by_reason": {
+              "native_rejected": 1
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 72
+          },
+          "reasons": [
+            "rejected_commands"
+          ],
+          "usable": false,
+          "solver_resets": 3
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "097bee258c3a4bb89464ba7df04dd9d4",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "unresolved_opening",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\097bee258c3a4bb89464ba7df04dd9d4_0_unresolved.json",
+          "sha256": "94cdcccdf973397ab5fa272049a25fe0661dc000ea4e49fbe1680a16e8b61e87"
+        },
+        {
+          "status": "unresolved_opening",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\097bee258c3a4bb89464ba7df04dd9d4_1_unresolved.json",
+          "sha256": "94cdcccdf973397ab5fa272049a25fe0661dc000ea4e49fbe1680a16e8b61e87"
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "0a128d17c14943c3854d1da3ea295200",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\0a128d17c14943c3854d1da3ea295200_0.json",
+          "sha256": "f4aa0b92b61745f00fb02f363f6afe124861f8997d9baf2b6de0a6c93bdc489e",
+          "grade": {
+            "plays_total": 26,
+            "plays_driven": 26,
+            "accepted": 26,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 313
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\0a128d17c14943c3854d1da3ea295200_1.json",
+          "sha256": "952cc3cf4487a0a28f54d21f52c70a977f599c2e79700a6e0da2d56d18bf9c00",
+          "grade": {
+            "plays_total": 26,
+            "plays_driven": 26,
+            "accepted": 26,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 313
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "0b50a7cbb3f04286918874afa555dcfd",
+      "role": "reserved_fallback",
+      "split": "development",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\0b50a7cbb3f04286918874afa555dcfd_0.json",
+          "sha256": "80460fecb8ff31f9645e027a9561ffad77293133e0900497f25ef27309fc48c8",
+          "grade": {
+            "plays_total": 37,
+            "plays_driven": 37,
+            "accepted": 37,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 151
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\0b50a7cbb3f04286918874afa555dcfd_1.json",
+          "sha256": "0a90f3a5e7b27a0996246191bd244e1ea97bd7619468a7d06b416e023944bcbd",
+          "grade": {
+            "plays_total": 37,
+            "plays_driven": 37,
+            "accepted": 37,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 151
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "0c67bf65aaaa461189430dd37a7bc233",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\0c67bf65aaaa461189430dd37a7bc233_0.json",
+          "sha256": "d0ae2c25f474af1088acc8751f991920d252ebbc66680dba24e5a8c13f17aa28",
+          "grade": {
+            "plays_total": 63,
+            "plays_driven": 62,
+            "accepted": 59,
+            "rejected_by_reason": {
+              "native_rejected": 1,
+              "card_not_in_hand": 2
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 57,
+                "tick": 3381,
+                "side": 1,
+                "kind": "ability",
+                "ability": true,
+                "card": "berserker",
+                "candidates": [
+                  "berserker"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 3381,
+                "skipped": "ability: no eligible live entity for attributed card"
+              }
+            ],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 146
+          },
+          "reasons": [
+            "undriven_commands",
+            "rejected_commands",
+            "skipped_commands"
+          ],
+          "usable": false,
+          "solver_resets": 3
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\0c67bf65aaaa461189430dd37a7bc233_1.json",
+          "sha256": "79e7cdb443b62582271a420034102f5562155ff522158870e3afe9b407dcfdd2",
+          "grade": {
+            "plays_total": 63,
+            "plays_driven": 62,
+            "accepted": 59,
+            "rejected_by_reason": {
+              "native_rejected": 1,
+              "card_not_in_hand": 2
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 57,
+                "tick": 3381,
+                "side": 1,
+                "kind": "ability",
+                "ability": true,
+                "card": "berserker",
+                "candidates": [
+                  "berserker"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 3381,
+                "skipped": "ability: no eligible live entity for attributed card"
+              }
+            ],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 146
+          },
+          "reasons": [
+            "undriven_commands",
+            "rejected_commands",
+            "skipped_commands"
+          ],
+          "usable": false,
+          "solver_resets": 3
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "0cb8fa88758b4d99bc2016e16c7bbabc",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\0cb8fa88758b4d99bc2016e16c7bbabc_0.json",
+          "sha256": "a010ebb92d208623da1a0bc99d3a8d36594f0edf06877914b0330f10b2e891ad",
+          "grade": {
+            "plays_total": 48,
+            "plays_driven": 48,
+            "accepted": 48,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 114
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\0cb8fa88758b4d99bc2016e16c7bbabc_1.json",
+          "sha256": "e31de5dd2a29c972fc998c4e3685b5a4454f34fa8feb38b0d381e9852104d0fa",
+          "grade": {
+            "plays_total": 48,
+            "plays_driven": 48,
+            "accepted": 48,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 114
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "0f592090a11a4679891580984b531743",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\0f592090a11a4679891580984b531743_0.json",
+          "sha256": "fae6846bb1e0b75ec2579da9ed479a9e7915d45d6374238874319691ecd2717a",
+          "grade": {
+            "plays_total": 63,
+            "plays_driven": 62,
+            "accepted": 62,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 54,
+                "tick": 3309,
+                "side": 1,
+                "kind": "ability",
+                "ability": true,
+                "card": null,
+                "candidates": [
+                  "giant",
+                  "mini-pekka"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 3309,
+                "skipped": "ability attribution: multiple live candidates"
+              }
+            ],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 119
+          },
+          "reasons": [
+            "undriven_commands",
+            "skipped_commands"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\0f592090a11a4679891580984b531743_1.json",
+          "sha256": "126f6c5e32c1208a0ab4fb0f64d62b37b18593ca9ccf88b6c3dd98ca4b460873",
+          "grade": {
+            "plays_total": 63,
+            "plays_driven": 62,
+            "accepted": 62,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 54,
+                "tick": 3309,
+                "side": 1,
+                "kind": "ability",
+                "ability": true,
+                "card": null,
+                "candidates": [
+                  "giant",
+                  "mini-pekka"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 3309,
+                "skipped": "ability attribution: multiple live candidates"
+              }
+            ],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 119
+          },
+          "reasons": [
+            "undriven_commands",
+            "skipped_commands"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "13f41783d44b43bb9ac36ee7fde9c181",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\13f41783d44b43bb9ac36ee7fde9c181_0.json",
+          "sha256": "3045b68c033fb9035f685186ca736f3fb3facc93981e80c922858d9700056065",
+          "grade": {
+            "plays_total": 100,
+            "plays_driven": 100,
+            "accepted": 100,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 248
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\13f41783d44b43bb9ac36ee7fde9c181_1.json",
+          "sha256": "9e76b6dfdf7e088d583093cb731265d7f386674c20f778ac30d0fef336b2ee83",
+          "grade": {
+            "plays_total": 100,
+            "plays_driven": 100,
+            "accepted": 100,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 248
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "148359fb8b0146669d68f03600c09086",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\148359fb8b0146669d68f03600c09086_0.json",
+          "sha256": "cf8570080d8409930fdb43471525b1ce610809eed80104e61c65775cdc25e0a6",
+          "grade": {
+            "plays_total": 42,
+            "plays_driven": 39,
+            "accepted": 38,
+            "rejected_by_reason": {
+              "native_rejected": 1
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 39,
+                "tick": 3425,
+                "side": 0,
+                "card": "elixir-golem",
+                "skipped": "episode already terminal at tick 3377"
+              }
+            ],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": -174
+          },
+          "reasons": [
+            "undriven_commands",
+            "rejected_commands",
+            "skipped_commands",
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\148359fb8b0146669d68f03600c09086_1.json",
+          "sha256": "b9e91623e892debeaebc2f7c6af29a2adb7004b097a0e035ac6e9893b4620568",
+          "grade": {
+            "plays_total": 42,
+            "plays_driven": 39,
+            "accepted": 38,
+            "rejected_by_reason": {
+              "native_rejected": 1
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 39,
+                "tick": 3425,
+                "side": 0,
+                "card": "elixir-golem",
+                "skipped": "episode already terminal at tick 3377"
+              }
+            ],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": -174
+          },
+          "reasons": [
+            "undriven_commands",
+            "rejected_commands",
+            "skipped_commands",
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "1c79c28c57e8424f86b35b2ed7f4fab1",
+      "role": "reserved_fallback",
+      "split": "development",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\1c79c28c57e8424f86b35b2ed7f4fab1_0.json",
+          "sha256": "4ca055316cbb7c4487b296dfceac882f45157ff8020b51131f81cd2ceaa0b86f",
+          "grade": {
+            "plays_total": 107,
+            "plays_driven": 107,
+            "accepted": 107,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": 222
+          },
+          "reasons": [
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\1c79c28c57e8424f86b35b2ed7f4fab1_1.json",
+          "sha256": "e0d453c196b2ba389dc1f7f4479bdc6048e00e76326d74e300d79893c561876c",
+          "grade": {
+            "plays_total": 107,
+            "plays_driven": 107,
+            "accepted": 107,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": 222
+          },
+          "reasons": [
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "203d3b9e5c9349c0b04ecbd24552786c",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "unresolved_opening",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\203d3b9e5c9349c0b04ecbd24552786c_0_unresolved.json",
+          "sha256": "e4b320246be3e2c1da0624b929ada11e00cc545886e410dc441971903acc9557"
+        },
+        {
+          "status": "unresolved_opening",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\203d3b9e5c9349c0b04ecbd24552786c_1_unresolved.json",
+          "sha256": "e4b320246be3e2c1da0624b929ada11e00cc545886e410dc441971903acc9557"
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "217bd453b36e4f8b8b554e64972a2034",
+      "role": "reserved_fallback",
+      "split": "development",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\217bd453b36e4f8b8b554e64972a2034_0.json",
+          "sha256": "14b9f501c007e01d6017764eba42682b783bc1a50e5d4f369a08d0656c9faacb",
+          "grade": {
+            "plays_total": 54,
+            "plays_driven": 53,
+            "accepted": 53,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 39,
+                "tick": 2975,
+                "side": 0,
+                "kind": "ability",
+                "ability": true,
+                "card": null,
+                "candidates": [
+                  "giant",
+                  "valkyrie"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 2975,
+                "skipped": "ability attribution: multiple live candidates"
+              }
+            ],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 220
+          },
+          "reasons": [
+            "undriven_commands",
+            "skipped_commands"
+          ],
+          "usable": false,
+          "solver_resets": 3
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\217bd453b36e4f8b8b554e64972a2034_1.json",
+          "sha256": "b7c8d1b0af92c9f63a793a89671a59fccdafc6a1494b9711b8f2a4cc7a1f8c77",
+          "grade": {
+            "plays_total": 54,
+            "plays_driven": 53,
+            "accepted": 53,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 39,
+                "tick": 2975,
+                "side": 0,
+                "kind": "ability",
+                "ability": true,
+                "card": null,
+                "candidates": [
+                  "giant",
+                  "valkyrie"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 2975,
+                "skipped": "ability attribution: multiple live candidates"
+              }
+            ],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 220
+          },
+          "reasons": [
+            "undriven_commands",
+            "skipped_commands"
+          ],
+          "usable": false,
+          "solver_resets": 3
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "24752a2bac314b86b41a251562f8557f",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\24752a2bac314b86b41a251562f8557f_0.json",
+          "sha256": "e797ca85a75f217cdb2e7e312fd3c7d293e83a4ad6cb464ed6a130b5cc874fe8",
+          "grade": {
+            "plays_total": 62,
+            "plays_driven": 42,
+            "accepted": 31,
+            "rejected_by_reason": {
+              "native_rejected": 5,
+              "card_not_in_hand": 6
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 41,
+                "tick": 2878,
+                "side": 0,
+                "kind": "ability",
+                "ability": true,
+                "card": "mighty-miner",
+                "candidates": [
+                  "mighty-miner"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 2878,
+                "skipped": "ability: no eligible live entity for attributed card"
+              },
+              {
+                "play_index": 43,
+                "tick": 2931,
+                "side": 1,
+                "card": "ice-golem",
+                "skipped": "episode already terminal at tick 2895"
+              }
+            ],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": -710
+          },
+          "reasons": [
+            "undriven_commands",
+            "rejected_commands",
+            "skipped_commands",
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\24752a2bac314b86b41a251562f8557f_1.json",
+          "sha256": "3a5b849cb4029e9cbcd79c07cc36a877be97f4b2d27de2e11c34482f51eb7e4a",
+          "grade": {
+            "plays_total": 62,
+            "plays_driven": 42,
+            "accepted": 31,
+            "rejected_by_reason": {
+              "native_rejected": 5,
+              "card_not_in_hand": 6
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 41,
+                "tick": 2878,
+                "side": 0,
+                "kind": "ability",
+                "ability": true,
+                "card": "mighty-miner",
+                "candidates": [
+                  "mighty-miner"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 2878,
+                "skipped": "ability: no eligible live entity for attributed card"
+              },
+              {
+                "play_index": 43,
+                "tick": 2931,
+                "side": 1,
+                "card": "ice-golem",
+                "skipped": "episode already terminal at tick 2895"
+              }
+            ],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": -710
+          },
+          "reasons": [
+            "undriven_commands",
+            "rejected_commands",
+            "skipped_commands",
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "346f992be3074c09ac5c46108dac1984",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\346f992be3074c09ac5c46108dac1984_0.json",
+          "sha256": "e20bab28dd8fb9e4c44415c8b42f0a372c759e3fa703615ea0300ef4a12dea21",
+          "grade": {
+            "plays_total": 49,
+            "plays_driven": 49,
+            "accepted": 49,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 134
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\346f992be3074c09ac5c46108dac1984_1.json",
+          "sha256": "18f7d161d05079ef6d29760dacc4d3e9d1e2476d24a735e04a00edbb2d8984da",
+          "grade": {
+            "plays_total": 49,
+            "plays_driven": 49,
+            "accepted": 49,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 134
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "3c1e9d4472914845aa413e2abae010f9",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\3c1e9d4472914845aa413e2abae010f9_0.json",
+          "sha256": "dac808b53fc867aa0e589db9c3868942215aeb979facdb7588c8ccfff3a4e42b",
+          "grade": {
+            "plays_total": 63,
+            "plays_driven": 61,
+            "accepted": 58,
+            "rejected_by_reason": {
+              "native_rejected": 2,
+              "card_not_in_hand": 1
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 61,
+                "tick": 3723,
+                "side": 1,
+                "kind": "ability",
+                "ability": true,
+                "card": "berserker",
+                "candidates": [
+                  "berserker"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 3681,
+                "skipped": "ability: episode already terminal at tick 3681"
+              }
+            ],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": -80
+          },
+          "reasons": [
+            "undriven_commands",
+            "rejected_commands",
+            "skipped_commands",
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\3c1e9d4472914845aa413e2abae010f9_1.json",
+          "sha256": "ebee487b5c122904cb40b1c299f18f6ec94b4ee7d045f45cf6ee7d1ea8095d62",
+          "grade": {
+            "plays_total": 63,
+            "plays_driven": 61,
+            "accepted": 58,
+            "rejected_by_reason": {
+              "native_rejected": 2,
+              "card_not_in_hand": 1
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 61,
+                "tick": 3723,
+                "side": 1,
+                "kind": "ability",
+                "ability": true,
+                "card": "berserker",
+                "candidates": [
+                  "berserker"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 3681,
+                "skipped": "ability: episode already terminal at tick 3681"
+              }
+            ],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": -80
+          },
+          "reasons": [
+            "undriven_commands",
+            "rejected_commands",
+            "skipped_commands",
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "40471282469242aeb861e6571a17209e",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\40471282469242aeb861e6571a17209e_0.json",
+          "sha256": "2c992bf3f6b086c6ee46362491b856b2754e3232cb6926fdab994505c713de83",
+          "grade": {
+            "plays_total": 40,
+            "plays_driven": 40,
+            "accepted": 40,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 194
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\40471282469242aeb861e6571a17209e_1.json",
+          "sha256": "ab818aef12f27670db5bd1b7d16ba41246be5eb1b1a7388a7f1d7a36540feb7d",
+          "grade": {
+            "plays_total": 40,
+            "plays_driven": 40,
+            "accepted": 40,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 194
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "4809e34081164cb4910409b430865099",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\4809e34081164cb4910409b430865099_0.json",
+          "sha256": "8c1e6c31ee8ae73eab4aa09042404e3c90ecdc93d6e17226b6a684fed8e20ca9",
+          "grade": {
+            "plays_total": 36,
+            "plays_driven": 36,
+            "accepted": 36,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 227
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\4809e34081164cb4910409b430865099_1.json",
+          "sha256": "6416be6311a40c302584ee77170d4ece8c549fadd545f2f312d5de166ee640b1",
+          "grade": {
+            "plays_total": 36,
+            "plays_driven": 36,
+            "accepted": 36,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 227
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "488af28ae0f04dc6a17bb44358af84c4",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\488af28ae0f04dc6a17bb44358af84c4_0.json",
+          "sha256": "4be427b1358923f64867734a7ce0667fa5530294598a1f54d25fa1a2afde6ff5",
+          "grade": {
+            "plays_total": 99,
+            "plays_driven": 99,
+            "accepted": 99,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 84
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\488af28ae0f04dc6a17bb44358af84c4_1.json",
+          "sha256": "84c5d5b53bb8187a5436bd9ad5731d194d97dcd25f996649fe8f128608be4122",
+          "grade": {
+            "plays_total": 99,
+            "plays_driven": 99,
+            "accepted": 99,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 84
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "4a3f7498dd194acd89d32ca77159bf2a",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\4a3f7498dd194acd89d32ca77159bf2a_0.json",
+          "sha256": "2ec70432c55f4805d08f33fe2d9b4c7d6833a746661d50be726d39d1a2e66713",
+          "grade": {
+            "plays_total": 67,
+            "plays_driven": 67,
+            "accepted": 67,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 308
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 3
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\4a3f7498dd194acd89d32ca77159bf2a_1.json",
+          "sha256": "a95ed41ec9295577cfa629d3150d2d4907295c2bdf841d1d297e468f542f4abf",
+          "grade": {
+            "plays_total": 67,
+            "plays_driven": 67,
+            "accepted": 67,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 308
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 3
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "4f7fed54033c462391b10bf8467e58b8",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\4f7fed54033c462391b10bf8467e58b8_0.json",
+          "sha256": "0c2be319987675bfd06772dd5d3437f79a4d6b048426f2afece89dd469c18d66",
+          "grade": {
+            "plays_total": 120,
+            "plays_driven": 118,
+            "accepted": 118,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 93,
+                "tick": 5251,
+                "side": 0,
+                "kind": "ability",
+                "ability": true,
+                "card": null,
+                "candidates": [
+                  "berserker",
+                  "valkyrie"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 5251,
+                "skipped": "ability attribution: multiple live candidates"
+              },
+              {
+                "play_index": 103,
+                "tick": 5528,
+                "side": 0,
+                "kind": "ability",
+                "ability": true,
+                "card": null,
+                "candidates": [
+                  "berserker",
+                  "valkyrie"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 5528,
+                "skipped": "ability attribution: multiple live candidates"
+              }
+            ],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 138
+          },
+          "reasons": [
+            "undriven_commands",
+            "skipped_commands"
+          ],
+          "usable": false,
+          "solver_resets": 3
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\4f7fed54033c462391b10bf8467e58b8_1.json",
+          "sha256": "6e19e9bd33bcb024d5e56ca5596d944f75aefc86bc4e310800e40cd2b6ab09ee",
+          "grade": {
+            "plays_total": 120,
+            "plays_driven": 118,
+            "accepted": 118,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 93,
+                "tick": 5251,
+                "side": 0,
+                "kind": "ability",
+                "ability": true,
+                "card": null,
+                "candidates": [
+                  "berserker",
+                  "valkyrie"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 5251,
+                "skipped": "ability attribution: multiple live candidates"
+              },
+              {
+                "play_index": 103,
+                "tick": 5528,
+                "side": 0,
+                "kind": "ability",
+                "ability": true,
+                "card": null,
+                "candidates": [
+                  "berserker",
+                  "valkyrie"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 5528,
+                "skipped": "ability attribution: multiple live candidates"
+              }
+            ],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 138
+          },
+          "reasons": [
+            "undriven_commands",
+            "skipped_commands"
+          ],
+          "usable": false,
+          "solver_resets": 3
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "5111482055f448c1b84ad1f035d7d5c6",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\5111482055f448c1b84ad1f035d7d5c6_0.json",
+          "sha256": "90df5dae9f0759f76d0cc3121f07fbbdcb9c2420226ee0ba08c3ec1e477536c5",
+          "grade": {
+            "plays_total": 103,
+            "plays_driven": 103,
+            "accepted": 103,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 99
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\5111482055f448c1b84ad1f035d7d5c6_1.json",
+          "sha256": "6329ea0f29d2b6023b65287d122a3467b3d61cd3c6b0c3b561ac6fb386767656",
+          "grade": {
+            "plays_total": 103,
+            "plays_driven": 103,
+            "accepted": 103,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 99
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "511962d005fe49b498e6af92a84e3066",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\511962d005fe49b498e6af92a84e3066_0.json",
+          "sha256": "73f550dce43939b4e706c3e4aadffa874c35fc1913b522c6b7e6a9d5790c58f1",
+          "grade": {
+            "plays_total": 49,
+            "plays_driven": 49,
+            "accepted": 49,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 257
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\511962d005fe49b498e6af92a84e3066_1.json",
+          "sha256": "23942f4be2b32143b9dc4b5dfe6f7974a0c2cffb1cc040bddcb30e01fbbcf1e3",
+          "grade": {
+            "plays_total": 49,
+            "plays_driven": 49,
+            "accepted": 49,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 257
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "52d42408fd934f5ca851c53a27adbad6",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\52d42408fd934f5ca851c53a27adbad6_0.json",
+          "sha256": "0861621261056552ba1cba18c97b238a361703e0b1a7831dad421e87579ae3d5",
+          "grade": {
+            "plays_total": 104,
+            "plays_driven": 104,
+            "accepted": 104,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 115
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\52d42408fd934f5ca851c53a27adbad6_1.json",
+          "sha256": "9c3918d9c5fc3601d4ef16a73a63842a19d04bd7a7b52e511d4dc6a6e1ce126c",
+          "grade": {
+            "plays_total": 104,
+            "plays_driven": 104,
+            "accepted": 104,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 115
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "5d59ab7ed1084312a770fc82117a5222",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\5d59ab7ed1084312a770fc82117a5222_0.json",
+          "sha256": "764c027817865b708159a1bd83ad5ecd06b587186b390c02078856362102c7aa",
+          "grade": {
+            "plays_total": 47,
+            "plays_driven": 47,
+            "accepted": 47,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": 180
+          },
+          "reasons": [
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\5d59ab7ed1084312a770fc82117a5222_1.json",
+          "sha256": "6912ec15b0296893e898282ec18a2041ed9745755e5e6688cc92e8d14e44405d",
+          "grade": {
+            "plays_total": 47,
+            "plays_driven": 47,
+            "accepted": 47,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": 180
+          },
+          "reasons": [
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "5db624c4d0b54ee58010f7691d20727b",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\5db624c4d0b54ee58010f7691d20727b_0.json",
+          "sha256": "e9486e3e1e4c28ccf365128748fd999a2a7e209f6f9d268b5c239053f7ea4a4f",
+          "grade": {
+            "plays_total": 132,
+            "plays_driven": 111,
+            "accepted": 105,
+            "rejected_by_reason": {
+              "native_rejected": 5,
+              "card_not_in_hand": 1
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 48,
+                "tick": 3193,
+                "side": 1,
+                "kind": "ability",
+                "ability": true,
+                "card": "archer-queen",
+                "candidates": [
+                  "archer-queen",
+                  "berserker"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 3193,
+                "skipped": "ability: no eligible live entity for attributed card"
+              },
+              {
+                "play_index": 79,
+                "tick": 4413,
+                "side": 1,
+                "kind": "ability",
+                "ability": true,
+                "card": null,
+                "candidates": [
+                  "archer-queen",
+                  "berserker"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 4413,
+                "skipped": "ability attribution: multiple live candidates"
+              },
+              {
+                "play_index": 113,
+                "tick": 5483,
+                "side": 0,
+                "card": "goblin-cage",
+                "skipped": "episode already terminal at tick 5465"
+              }
+            ],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": -506
+          },
+          "reasons": [
+            "undriven_commands",
+            "rejected_commands",
+            "skipped_commands",
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\5db624c4d0b54ee58010f7691d20727b_1.json",
+          "sha256": "942d6c08020ef550a5822e558f8957ad95d9a71aa780c9e266ea30e87e436d14",
+          "grade": {
+            "plays_total": 132,
+            "plays_driven": 111,
+            "accepted": 105,
+            "rejected_by_reason": {
+              "native_rejected": 5,
+              "card_not_in_hand": 1
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 48,
+                "tick": 3193,
+                "side": 1,
+                "kind": "ability",
+                "ability": true,
+                "card": "archer-queen",
+                "candidates": [
+                  "archer-queen",
+                  "berserker"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 3193,
+                "skipped": "ability: no eligible live entity for attributed card"
+              },
+              {
+                "play_index": 79,
+                "tick": 4413,
+                "side": 1,
+                "kind": "ability",
+                "ability": true,
+                "card": null,
+                "candidates": [
+                  "archer-queen",
+                  "berserker"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 4413,
+                "skipped": "ability attribution: multiple live candidates"
+              },
+              {
+                "play_index": 113,
+                "tick": 5483,
+                "side": 0,
+                "card": "goblin-cage",
+                "skipped": "episode already terminal at tick 5465"
+              }
+            ],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": -506
+          },
+          "reasons": [
+            "undriven_commands",
+            "rejected_commands",
+            "skipped_commands",
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "615758134ea34df68a36bc7925b9b434",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\615758134ea34df68a36bc7925b9b434_0.json",
+          "sha256": "9b1b32a3be707b09c57afde396384c2c87a4e7c48061924dd6b64bb6dad7c70c",
+          "grade": {
+            "plays_total": 126,
+            "plays_driven": 57,
+            "accepted": 55,
+            "rejected_by_reason": {
+              "native_rejected": 2
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 57,
+                "tick": 3746,
+                "side": 0,
+                "card": "ice-golem",
+                "skipped": "episode already terminal at tick 3681"
+              }
+            ],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": -2231
+          },
+          "reasons": [
+            "undriven_commands",
+            "rejected_commands",
+            "skipped_commands"
+          ],
+          "usable": false,
+          "solver_resets": 3
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\615758134ea34df68a36bc7925b9b434_1.json",
+          "sha256": "53f55cb2a414832c1f2b64ef50e2d57b02578a9a425e2e8cd6b081ffc8f6ec61",
+          "grade": {
+            "plays_total": 126,
+            "plays_driven": 57,
+            "accepted": 55,
+            "rejected_by_reason": {
+              "native_rejected": 2
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 57,
+                "tick": 3746,
+                "side": 0,
+                "card": "ice-golem",
+                "skipped": "episode already terminal at tick 3681"
+              }
+            ],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": -2231
+          },
+          "reasons": [
+            "undriven_commands",
+            "rejected_commands",
+            "skipped_commands"
+          ],
+          "usable": false,
+          "solver_resets": 3
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "6864334f034e4e6ea43085aa24d0c206",
+      "role": "reserved_fallback",
+      "split": "development",
+      "attempts": [
+        {
+          "status": "unresolved_opening",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\6864334f034e4e6ea43085aa24d0c206_0_unresolved.json",
+          "sha256": "608c8cdd7285ce0a6b02578cafc649d0f8be1f4103e145856e1afd426bebe0a1"
+        },
+        {
+          "status": "unresolved_opening",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\6864334f034e4e6ea43085aa24d0c206_1_unresolved.json",
+          "sha256": "608c8cdd7285ce0a6b02578cafc649d0f8be1f4103e145856e1afd426bebe0a1"
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "69f9af064ca04efdbc6e791f38c916a1",
+      "role": "reserved_fallback",
+      "split": "development",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\69f9af064ca04efdbc6e791f38c916a1_0.json",
+          "sha256": "0665fd7602e27f9a39b7ae582bde4bf0675d1251d892fb85d4f8a84ce8042862",
+          "grade": {
+            "plays_total": 124,
+            "plays_driven": 103,
+            "accepted": 101,
+            "rejected_by_reason": {
+              "native_rejected": 2
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 103,
+                "tick": 5381,
+                "side": 1,
+                "card": "berserker",
+                "skipped": "episode already terminal at tick 5377"
+              }
+            ],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": -587
+          },
+          "reasons": [
+            "undriven_commands",
+            "rejected_commands",
+            "skipped_commands",
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\69f9af064ca04efdbc6e791f38c916a1_1.json",
+          "sha256": "75a21f22c89dfdf303287d0d8742b18c547b487c27bd65a0092850360493ec34",
+          "grade": {
+            "plays_total": 124,
+            "plays_driven": 103,
+            "accepted": 101,
+            "rejected_by_reason": {
+              "native_rejected": 2
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 103,
+                "tick": 5381,
+                "side": 1,
+                "card": "berserker",
+                "skipped": "episode already terminal at tick 5377"
+              }
+            ],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": -587
+          },
+          "reasons": [
+            "undriven_commands",
+            "rejected_commands",
+            "skipped_commands",
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "6b586b4bba144177b82cb24790c7e24e",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "unresolved_opening",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\6b586b4bba144177b82cb24790c7e24e_0_unresolved.json",
+          "sha256": "7ef0d239cfcca95fa31ef7ed92825a45d5419c5d7970e8879ac27fae1680a352"
+        },
+        {
+          "status": "unresolved_opening",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\6b586b4bba144177b82cb24790c7e24e_1_unresolved.json",
+          "sha256": "7ef0d239cfcca95fa31ef7ed92825a45d5419c5d7970e8879ac27fae1680a352"
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "73b8a7dff2084e119a10734ba720d6d9",
+      "role": "reserved_fallback",
+      "split": "development",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\73b8a7dff2084e119a10734ba720d6d9_0.json",
+          "sha256": "edb365e50626641cea80fb639c14864cc75e22b6e92b5ab76bf183afecbb67ed",
+          "grade": {
+            "plays_total": 47,
+            "plays_driven": 47,
+            "accepted": 47,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 93
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 3
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\73b8a7dff2084e119a10734ba720d6d9_1.json",
+          "sha256": "d00a81d65b6e5ba9e1091541e56384db6efe995ac073612979ae87d7b634bfd6",
+          "grade": {
+            "plays_total": 47,
+            "plays_driven": 47,
+            "accepted": 47,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 93
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 3
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "77659a9010204e1cbacd7c847a00b1e6",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\77659a9010204e1cbacd7c847a00b1e6_0.json",
+          "sha256": "38364af7e0c938b23d4d29f47feb46c82b7a55fe78426646253e31428a0ba9a8",
+          "grade": {
+            "plays_total": 118,
+            "plays_driven": 118,
+            "accepted": 118,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": 196
+          },
+          "reasons": [
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\77659a9010204e1cbacd7c847a00b1e6_1.json",
+          "sha256": "a20dbbe6ea9ebba856821a8de3bd108d2307feec3ea37cb21faaba6db3d486dd",
+          "grade": {
+            "plays_total": 118,
+            "plays_driven": 118,
+            "accepted": 118,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": 196
+          },
+          "reasons": [
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "7830e7981d804f2186ae530916c3de32",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\7830e7981d804f2186ae530916c3de32_0.json",
+          "sha256": "82441f19d28add25e065c78f443d074bd18601a9050d82562df1685f1639d7b0",
+          "grade": {
+            "plays_total": 97,
+            "plays_driven": 86,
+            "accepted": 84,
+            "rejected_by_reason": {
+              "native_rejected": 2
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 86,
+                "tick": 5117,
+                "side": 1,
+                "card": "tesla",
+                "skipped": "episode already terminal at tick 5097"
+              }
+            ],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": -378
+          },
+          "reasons": [
+            "undriven_commands",
+            "rejected_commands",
+            "skipped_commands"
+          ],
+          "usable": false,
+          "solver_resets": 3
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\7830e7981d804f2186ae530916c3de32_1.json",
+          "sha256": "3706c19a813278189e1a6319cfaf82b3b16f5553d225af681c8befa3a83793ae",
+          "grade": {
+            "plays_total": 97,
+            "plays_driven": 86,
+            "accepted": 84,
+            "rejected_by_reason": {
+              "native_rejected": 2
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 86,
+                "tick": 5117,
+                "side": 1,
+                "card": "tesla",
+                "skipped": "episode already terminal at tick 5097"
+              }
+            ],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": -378
+          },
+          "reasons": [
+            "undriven_commands",
+            "rejected_commands",
+            "skipped_commands"
+          ],
+          "usable": false,
+          "solver_resets": 3
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "784dc82e4409483f8968066deff7cb6b",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\784dc82e4409483f8968066deff7cb6b_0.json",
+          "sha256": "478cef5b92b1925c0ecda408fd894057404abf392d4cb2608d5a077cbd86ddd6",
+          "grade": {
+            "plays_total": 26,
+            "plays_driven": 26,
+            "accepted": 26,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 121
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\784dc82e4409483f8968066deff7cb6b_1.json",
+          "sha256": "f35316e103f315f629e5557a4ba9d1ddff26b22fadeee6a059df9ccc25b84ad8",
+          "grade": {
+            "plays_total": 26,
+            "plays_driven": 26,
+            "accepted": 26,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 121
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "7c462cbd03d04ed28530570922dff19b",
+      "role": "reserved_fallback",
+      "split": "development",
+      "attempts": [
+        {
+          "status": "unresolved_opening",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\7c462cbd03d04ed28530570922dff19b_0_unresolved.json",
+          "sha256": "e671473c82b741143e15b24ff0dc8dc7ad42b42fa8291ed49597542a1f673584"
+        },
+        {
+          "status": "unresolved_opening",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\7c462cbd03d04ed28530570922dff19b_1_unresolved.json",
+          "sha256": "e671473c82b741143e15b24ff0dc8dc7ad42b42fa8291ed49597542a1f673584"
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "852827f4d7ce44b186a0306379f272fc",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\852827f4d7ce44b186a0306379f272fc_0.json",
+          "sha256": "1e2d66b15486b6d92260cd171125ff3e784b09efb1999ee6af4e1464ceef6b5a",
+          "grade": {
+            "plays_total": 79,
+            "plays_driven": 79,
+            "accepted": 79,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 109
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\852827f4d7ce44b186a0306379f272fc_1.json",
+          "sha256": "7b6f77786a3f1a96eb4a491e5a5acae317d596760f787dd48cb0876919182467",
+          "grade": {
+            "plays_total": 79,
+            "plays_driven": 79,
+            "accepted": 79,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 109
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "8af66b53f9e347aaa813b9998c3fedaa",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\8af66b53f9e347aaa813b9998c3fedaa_0.json",
+          "sha256": "0c45779ed792cc04501f710ed4d0861fa38a75072528ff2166dcedce15aa321c",
+          "grade": {
+            "plays_total": 65,
+            "plays_driven": 51,
+            "accepted": 49,
+            "rejected_by_reason": {
+              "native_rejected": 1,
+              "card_not_in_hand": 1
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 51,
+                "tick": 3739,
+                "side": 1,
+                "card": "golem",
+                "skipped": "episode already terminal at tick 3681"
+              }
+            ],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": -640
+          },
+          "reasons": [
+            "undriven_commands",
+            "rejected_commands",
+            "skipped_commands"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\8af66b53f9e347aaa813b9998c3fedaa_1.json",
+          "sha256": "e54c0d05498286f8b43f3a52f98f986505e23c3e42b6b0b14278ce141c03cc2f",
+          "grade": {
+            "plays_total": 65,
+            "plays_driven": 51,
+            "accepted": 49,
+            "rejected_by_reason": {
+              "native_rejected": 1,
+              "card_not_in_hand": 1
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 51,
+                "tick": 3739,
+                "side": 1,
+                "card": "golem",
+                "skipped": "episode already terminal at tick 3681"
+              }
+            ],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": -640
+          },
+          "reasons": [
+            "undriven_commands",
+            "rejected_commands",
+            "skipped_commands"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "8bda3484b2bf4cb2a0ef78bddd7fb73f",
+      "role": "reserved_fallback",
+      "split": "development",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\8bda3484b2bf4cb2a0ef78bddd7fb73f_0.json",
+          "sha256": "52d5d4b026330c5cc5e17d90e43f0dcdefcbc05d64cb575e5f9fab34b09a4e9c",
+          "grade": {
+            "plays_total": 31,
+            "plays_driven": 31,
+            "accepted": 31,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 171
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 3
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\8bda3484b2bf4cb2a0ef78bddd7fb73f_1.json",
+          "sha256": "805dc8b83b1bd94ea980a51984de096e976e5911f4432aea46677038293c4851",
+          "grade": {
+            "plays_total": 31,
+            "plays_driven": 31,
+            "accepted": 31,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 171
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 3
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "8f287422a7944fe88bd671af4f848d62",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\8f287422a7944fe88bd671af4f848d62_0.json",
+          "sha256": "a68f134311e68c35e61c5a520681e7289a83becbf2396cff6dff351f804cec27",
+          "grade": {
+            "plays_total": 47,
+            "plays_driven": 47,
+            "accepted": 47,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 303
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\8f287422a7944fe88bd671af4f848d62_1.json",
+          "sha256": "004650eb91b1c598bf334698cdacf64652b0617bb0cc0de8c3cfdfc6cdadfbf1",
+          "grade": {
+            "plays_total": 47,
+            "plays_driven": 47,
+            "accepted": 47,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 303
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "91ee15fcdad14930a71b46efc7f1d082",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\91ee15fcdad14930a71b46efc7f1d082_0.json",
+          "sha256": "e0a16f5968157ac0a189e7a9d3ab84b9d5720558d180ec1f9c08bdc949b3bb4c",
+          "grade": {
+            "plays_total": 20,
+            "plays_driven": 20,
+            "accepted": 20,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 181
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\91ee15fcdad14930a71b46efc7f1d082_1.json",
+          "sha256": "bd9149d74dda97fafa6396965527433fe9407ea1392d80163d3e32f295d395b3",
+          "grade": {
+            "plays_total": 20,
+            "plays_driven": 20,
+            "accepted": 20,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 181
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "99c60e3861584fb5b83e7d6513e40ecc",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\99c60e3861584fb5b83e7d6513e40ecc_0.json",
+          "sha256": "5441cd6af98d441db4651c4ae77510cc0c36b9f2d6ece14df2f8fc598d5a3ae5",
+          "grade": {
+            "plays_total": 73,
+            "plays_driven": 73,
+            "accepted": 73,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": 254
+          },
+          "reasons": [
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\99c60e3861584fb5b83e7d6513e40ecc_1.json",
+          "sha256": "813e5f8e2d179742010fd6b816c30f8173c418cf9cfb3b7d568baed96d9c6ffa",
+          "grade": {
+            "plays_total": 73,
+            "plays_driven": 73,
+            "accepted": 73,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": 254
+          },
+          "reasons": [
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "9c70250a4b38427199173d081006aeee",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "unresolved_opening",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\9c70250a4b38427199173d081006aeee_0_unresolved.json",
+          "sha256": "c9280daa5361b9ac1b73dcd86af991011eb06908de6934e71255b25b90ab240f"
+        },
+        {
+          "status": "unresolved_opening",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\9c70250a4b38427199173d081006aeee_1_unresolved.json",
+          "sha256": "c9280daa5361b9ac1b73dcd86af991011eb06908de6934e71255b25b90ab240f"
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "a11cb21ba6324d39ace590b6b989922f",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "unresolved_opening",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\a11cb21ba6324d39ace590b6b989922f_0_unresolved.json",
+          "sha256": "6d6749931a3a8f8921cab4fe7d6a8b566e901ca1772ab3fbf54fe26836da82e5"
+        },
+        {
+          "status": "unresolved_opening",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\a11cb21ba6324d39ace590b6b989922f_1_unresolved.json",
+          "sha256": "6d6749931a3a8f8921cab4fe7d6a8b566e901ca1772ab3fbf54fe26836da82e5"
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "a9508e5e17fd4ac8a787eaab8496f50b",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\a9508e5e17fd4ac8a787eaab8496f50b_0.json",
+          "sha256": "b10a7662e3134621b53e266dfd5fec8e782b687d2d061d88056c51d80d5cac94",
+          "grade": {
+            "plays_total": 98,
+            "plays_driven": 98,
+            "accepted": 98,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 104
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\a9508e5e17fd4ac8a787eaab8496f50b_1.json",
+          "sha256": "3cbbf0df5fe6e3ff0a17ab3973d43753108259f414f194dbc1a483fda59e1090",
+          "grade": {
+            "plays_total": 98,
+            "plays_driven": 98,
+            "accepted": 98,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 104
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "aa1e0a338b694fe9afc89c53fa6249bd",
+      "role": "reserved_fallback",
+      "split": "development",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\aa1e0a338b694fe9afc89c53fa6249bd_0.json",
+          "sha256": "7068b842dd11a9a32a0256d5da00f934de4221b5199b07dbb6b581929e2ec158",
+          "grade": {
+            "plays_total": 60,
+            "plays_driven": 60,
+            "accepted": 60,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 120
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 3
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\aa1e0a338b694fe9afc89c53fa6249bd_1.json",
+          "sha256": "a59a3141bca575035ef52adca090ef5853973b45b27e0ae5afad5b283dc1c4c9",
+          "grade": {
+            "plays_total": 60,
+            "plays_driven": 60,
+            "accepted": 60,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 120
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 3
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "acb8a793ac4d467e8aca001a846a4bcc",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\acb8a793ac4d467e8aca001a846a4bcc_0.json",
+          "sha256": "15ce8eefa5105a0355c7cda77f5f68e6464f597a396c989fda4e690f7394f206",
+          "grade": {
+            "plays_total": 115,
+            "plays_driven": 115,
+            "accepted": 115,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 122
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 3
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\acb8a793ac4d467e8aca001a846a4bcc_1.json",
+          "sha256": "f0bc9992c88364c0b998f09e520167f293423dc36fc98a1beb9e3d376669e31c",
+          "grade": {
+            "plays_total": 115,
+            "plays_driven": 115,
+            "accepted": 115,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 122
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 3
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "b361615a2cc54bf1972e92b5e4fbae4a",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\b361615a2cc54bf1972e92b5e4fbae4a_0.json",
+          "sha256": "cc4881e1c0ba0ca8838fdf8746a944f3823cb8dfc374bfeb04116764b2611216",
+          "grade": {
+            "plays_total": 70,
+            "plays_driven": 70,
+            "accepted": 70,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 2243
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\b361615a2cc54bf1972e92b5e4fbae4a_1.json",
+          "sha256": "b44f545082729a93251f6cdfa6475da08f7877eb64c0d463e51097dd1ee04ab5",
+          "grade": {
+            "plays_total": 70,
+            "plays_driven": 70,
+            "accepted": 70,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 2243
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "be958deefe5a46ae859d8b10c14a2087",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\be958deefe5a46ae859d8b10c14a2087_0.json",
+          "sha256": "fff5ae8a7e823e6a354691922af7ebfcc4d2ecf7025258302e4b8a39aad2c86b",
+          "grade": {
+            "plays_total": 112,
+            "plays_driven": 112,
+            "accepted": 111,
+            "rejected_by_reason": {
+              "native_rejected": 1
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": 37
+          },
+          "reasons": [
+            "rejected_commands",
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\be958deefe5a46ae859d8b10c14a2087_1.json",
+          "sha256": "261f04ddb9ee457c84065c7607ece5bc2a93888a0adf9d327324039b5bfb42a2",
+          "grade": {
+            "plays_total": 112,
+            "plays_driven": 112,
+            "accepted": 111,
+            "rejected_by_reason": {
+              "native_rejected": 1
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": 37
+          },
+          "reasons": [
+            "rejected_commands",
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "c21f465151424331ae3ad3aa4d2be702",
+      "role": "reserved_fallback",
+      "split": "development",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\c21f465151424331ae3ad3aa4d2be702_0.json",
+          "sha256": "bc37c767853aedb3836752280fcdd9cbe479f699a5051d0f86db800e435f6936",
+          "grade": {
+            "plays_total": 93,
+            "plays_driven": 93,
+            "accepted": 93,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 99
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\c21f465151424331ae3ad3aa4d2be702_1.json",
+          "sha256": "64ca35804ce04fb3501d0e7837e57bb550b6fe32c07a1b2d2b3afff1b9754d3b",
+          "grade": {
+            "plays_total": 93,
+            "plays_driven": 93,
+            "accepted": 93,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 99
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "c848be440ab045e99adeda6277a8f4c2",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\c848be440ab045e99adeda6277a8f4c2_0.json",
+          "sha256": "26d2d1a973faf06fc85e81cbea03b00d4c77930a3b7b68a150cbf32b6472df0a",
+          "grade": {
+            "plays_total": 67,
+            "plays_driven": 67,
+            "accepted": 67,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 116
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\c848be440ab045e99adeda6277a8f4c2_1.json",
+          "sha256": "f3ba81f71d7c344e75258f73d156b4a41da2e7fcdc97343bc6b23a760910ae41",
+          "grade": {
+            "plays_total": 67,
+            "plays_driven": 67,
+            "accepted": 67,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 116
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "c8947d53adfc4f71ba0586c9c8c30a10",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "unresolved_opening",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\c8947d53adfc4f71ba0586c9c8c30a10_0_unresolved.json",
+          "sha256": "cc7b5b6f93fed73914db1d9a74d1954ce18f5c14baaa7d36c1e007c7d97968b1"
+        },
+        {
+          "status": "unresolved_opening",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\c8947d53adfc4f71ba0586c9c8c30a10_1_unresolved.json",
+          "sha256": "cc7b5b6f93fed73914db1d9a74d1954ce18f5c14baaa7d36c1e007c7d97968b1"
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "ceeaf743827345cca6a98d73a5fb764b",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\ceeaf743827345cca6a98d73a5fb764b_0.json",
+          "sha256": "363e6bd2c7da3096bfdee63a38530d377adae199c699f6980b13fc60cf7a3351",
+          "grade": {
+            "plays_total": 75,
+            "plays_driven": 75,
+            "accepted": 75,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 168
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\ceeaf743827345cca6a98d73a5fb764b_1.json",
+          "sha256": "8f933e4464ac432345a28700a52b6f1359bf6c8b6274ef5f83ab32cef7be4860",
+          "grade": {
+            "plays_total": 75,
+            "plays_driven": 75,
+            "accepted": 75,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 168
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "d43f9316080d48a0916138d2c70d11a3",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\d43f9316080d48a0916138d2c70d11a3_0.json",
+          "sha256": "3415546ce356d76ae49e86ce3f70a36eb1fe87bb59e2a661c93d4b9b56ea4921",
+          "grade": {
+            "plays_total": 72,
+            "plays_driven": 72,
+            "accepted": 71,
+            "rejected_by_reason": {
+              "native_rejected": 1
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 53
+          },
+          "reasons": [
+            "rejected_commands"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\d43f9316080d48a0916138d2c70d11a3_1.json",
+          "sha256": "758afcdaae2ea3b149f2bfffcd63a0e0fcc08be2425d18e340c486bfd50532d3",
+          "grade": {
+            "plays_total": 72,
+            "plays_driven": 72,
+            "accepted": 71,
+            "rejected_by_reason": {
+              "native_rejected": 1
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 53
+          },
+          "reasons": [
+            "rejected_commands"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "d742d9a3856e4615b5ad092a382c59b6",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\d742d9a3856e4615b5ad092a382c59b6_0.json",
+          "sha256": "f1a8f61962d71e4fd2c5d8f8ff9c312856b8b6796bddcd0c0472f9045d66bf51",
+          "grade": {
+            "plays_total": 102,
+            "plays_driven": 52,
+            "accepted": 50,
+            "rejected_by_reason": {
+              "native_rejected": 2
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 52,
+                "tick": 4101,
+                "side": 1,
+                "card": "x-bow",
+                "skipped": "episode already terminal at tick 4089"
+              }
+            ],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": -1885
+          },
+          "reasons": [
+            "undriven_commands",
+            "rejected_commands",
+            "skipped_commands",
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\d742d9a3856e4615b5ad092a382c59b6_1.json",
+          "sha256": "92b500e49ea22692860458b02985f588df3dd29110e8cfad801dad3434b1c06d",
+          "grade": {
+            "plays_total": 102,
+            "plays_driven": 52,
+            "accepted": 50,
+            "rejected_by_reason": {
+              "native_rejected": 2
+            },
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 52,
+                "tick": 4101,
+                "side": 1,
+                "card": "x-bow",
+                "skipped": "episode already terminal at tick 4089"
+              }
+            ],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": -1885
+          },
+          "reasons": [
+            "undriven_commands",
+            "rejected_commands",
+            "skipped_commands",
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "d9bd4e3449124192a32e1dbc628d492c",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\d9bd4e3449124192a32e1dbc628d492c_0.json",
+          "sha256": "9568f747e94b129557540b485f1707d76ed7cbbaabd1d47f3efab066576327d7",
+          "grade": {
+            "plays_total": 111,
+            "plays_driven": 111,
+            "accepted": 111,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 203
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\d9bd4e3449124192a32e1dbc628d492c_1.json",
+          "sha256": "0ac9fc0a9621537ef4f401fdf539c61b2fffee48e964a78e6c4a02fae658c112",
+          "grade": {
+            "plays_total": 111,
+            "plays_driven": 111,
+            "accepted": 111,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 203
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "dcc82c8fa557442bbe903d8a831ab69a",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\dcc82c8fa557442bbe903d8a831ab69a_0.json",
+          "sha256": "f8e024837b84f78d91c2b074557c5ab21f38dbca3049cf06a44167bb37f0aa23",
+          "grade": {
+            "plays_total": 52,
+            "plays_driven": 52,
+            "accepted": 52,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 169
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\dcc82c8fa557442bbe903d8a831ab69a_1.json",
+          "sha256": "25bc2ff0ba5671c631e465a6908762975aee5c23dc4c6540a48bf131a77a6cc2",
+          "grade": {
+            "plays_total": 52,
+            "plays_driven": 52,
+            "accepted": 52,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 169
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "df53d2b014ad4379b6d132e9835615c1",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "unresolved_opening",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\df53d2b014ad4379b6d132e9835615c1_0_unresolved.json",
+          "sha256": "86ab67d200d33d366f8aea7c2d10f9b3e4e8da6f97b34538f335a3a44151b9c4"
+        },
+        {
+          "status": "unresolved_opening",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\df53d2b014ad4379b6d132e9835615c1_1_unresolved.json",
+          "sha256": "86ab67d200d33d366f8aea7c2d10f9b3e4e8da6f97b34538f335a3a44151b9c4"
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "e9d7d5f4689e4902b67c12fe2874d471",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\e9d7d5f4689e4902b67c12fe2874d471_0.json",
+          "sha256": "c254b553e9338dfe157292e0fd7354eb59f1d876c86edc91bb815b35ec21dae7",
+          "grade": {
+            "plays_total": 72,
+            "plays_driven": 72,
+            "accepted": 72,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 138
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\e9d7d5f4689e4902b67c12fe2874d471_1.json",
+          "sha256": "7f045a4b80a97432f790a39af037d429d26b87cb70b60b51d6e565546473c8ee",
+          "grade": {
+            "plays_total": 72,
+            "plays_driven": 72,
+            "accepted": 72,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 138
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "eb0e603f52ad4ccfb45be4c7d1512309",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "unresolved_opening",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\eb0e603f52ad4ccfb45be4c7d1512309_0_unresolved.json",
+          "sha256": "d0b54d2ea0487a556eeb2f819f42598a26f1859470e183e741dc173d4bd87c36"
+        },
+        {
+          "status": "unresolved_opening",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\eb0e603f52ad4ccfb45be4c7d1512309_1_unresolved.json",
+          "sha256": "d0b54d2ea0487a556eeb2f819f42598a26f1859470e183e741dc173d4bd87c36"
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "ef5b178b49a644c9a3d6fd5afd6dc360",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\ef5b178b49a644c9a3d6fd5afd6dc360_0.json",
+          "sha256": "4a7349182eef08b09a10e4e69986a5ea22539aca9fda9edd0ce9a2ead9a8cc3f",
+          "grade": {
+            "plays_total": 71,
+            "plays_driven": 71,
+            "accepted": 71,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 159
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\ef5b178b49a644c9a3d6fd5afd6dc360_1.json",
+          "sha256": "e9e914281f12f5ff16716e9d6de74e2e43a98c2ecd875af4bd2e71679efa5711",
+          "grade": {
+            "plays_total": 71,
+            "plays_driven": 71,
+            "accepted": 71,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 159
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "f14c0e22682049d9a5286791a7345c33",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\f14c0e22682049d9a5286791a7345c33_0.json",
+          "sha256": "6e4b2f487ef73029b08b6e866272933893a148316cde85ade38a3b308662e5ff",
+          "grade": {
+            "plays_total": 118,
+            "plays_driven": 118,
+            "accepted": 118,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": 196
+          },
+          "reasons": [
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\f14c0e22682049d9a5286791a7345c33_1.json",
+          "sha256": "fc7a24c9f0687d57a1e26939a91b732e5e2aa84c2d5fa048bcde2892df30665d",
+          "grade": {
+            "plays_total": 118,
+            "plays_driven": 118,
+            "accepted": 118,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": 196
+          },
+          "reasons": [
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "f4fea504b07942bc856df4443f4f6f5e",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "unresolved_opening",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\f4fea504b07942bc856df4443f4f6f5e_0_unresolved.json",
+          "sha256": "c68e3beaaaf0656c564c5ee92cfcb8fafeec28f37cff9a991d790c63e8030c3f"
+        },
+        {
+          "status": "unresolved_opening",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\f4fea504b07942bc856df4443f4f6f5e_1_unresolved.json",
+          "sha256": "c68e3beaaaf0656c564c5ee92cfcb8fafeec28f37cff9a991d790c63e8030c3f"
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "f5dfd39141534d80bdbf53d8e29e345a",
+      "role": "reserved_fallback",
+      "split": "development",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\f5dfd39141534d80bdbf53d8e29e345a_0.json",
+          "sha256": "cb2bc23cf68e87724d5662da15a70a203883f165a1d681a284390846ebcf370d",
+          "grade": {
+            "plays_total": 113,
+            "plays_driven": 92,
+            "accepted": 92,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 68,
+                "tick": 3386,
+                "side": 1,
+                "kind": "ability",
+                "ability": true,
+                "card": null,
+                "candidates": [
+                  "berserker",
+                  "wizard"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 3386,
+                "skipped": "ability attribution: multiple live candidates"
+              },
+              {
+                "play_index": 72,
+                "tick": 3591,
+                "side": 1,
+                "kind": "ability",
+                "ability": true,
+                "card": null,
+                "candidates": [
+                  "berserker",
+                  "wizard"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 3591,
+                "skipped": "ability attribution: multiple live candidates"
+              },
+              {
+                "play_index": 78,
+                "tick": 3745,
+                "side": 1,
+                "kind": "ability",
+                "ability": true,
+                "card": null,
+                "candidates": [
+                  "berserker",
+                  "wizard"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 3745,
+                "skipped": "ability attribution: multiple live candidates"
+              },
+              {
+                "play_index": 95,
+                "tick": 4411,
+                "side": 0,
+                "card": "balloon",
+                "skipped": "episode already terminal at tick 4334"
+              }
+            ],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": -557
+          },
+          "reasons": [
+            "undriven_commands",
+            "skipped_commands",
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\f5dfd39141534d80bdbf53d8e29e345a_1.json",
+          "sha256": "93fd434e6b59d3887388e20e901f2f81445d1ecd1baa6d9f7888e7ae1ed6c4a9",
+          "grade": {
+            "plays_total": 113,
+            "plays_driven": 92,
+            "accepted": 92,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [
+              {
+                "play_index": 68,
+                "tick": 3386,
+                "side": 1,
+                "kind": "ability",
+                "ability": true,
+                "card": null,
+                "candidates": [
+                  "berserker",
+                  "wizard"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 3386,
+                "skipped": "ability attribution: multiple live candidates"
+              },
+              {
+                "play_index": 72,
+                "tick": 3591,
+                "side": 1,
+                "kind": "ability",
+                "ability": true,
+                "card": null,
+                "candidates": [
+                  "berserker",
+                  "wizard"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 3591,
+                "skipped": "ability attribution: multiple live candidates"
+              },
+              {
+                "play_index": 78,
+                "tick": 3745,
+                "side": 1,
+                "kind": "ability",
+                "ability": true,
+                "card": null,
+                "candidates": [
+                  "berserker",
+                  "wizard"
+                ],
+                "entity_id": null,
+                "x": null,
+                "y": null,
+                "accepted": false,
+                "result_code": null,
+                "result_name": null,
+                "delay_ticks": 0,
+                "placement_valid": null,
+                "engine_tick": 3745,
+                "skipped": "ability attribution: multiple live candidates"
+              },
+              {
+                "play_index": 95,
+                "tick": 4411,
+                "side": 0,
+                "card": "balloon",
+                "skipped": "episode already terminal at tick 4334"
+              }
+            ],
+            "crowns_match": false,
+            "terminal_vs_last_play_ticks": -557
+          },
+          "reasons": [
+            "undriven_commands",
+            "skipped_commands",
+            "crown_mismatch"
+          ],
+          "usable": false,
+          "solver_resets": 2
+        }
+      ],
+      "usable": false,
+      "repeated_equal": true
+    },
+    {
+      "tag": "f631bcf9ff8f447c91dc116b052db9a9",
+      "role": "reserved_fallback",
+      "split": "development",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\f631bcf9ff8f447c91dc116b052db9a9_0.json",
+          "sha256": "48b94277442ec9899d81ea21a6047d5624adacdb97a634725a584fe86fbaca24",
+          "grade": {
+            "plays_total": 36,
+            "plays_driven": 36,
+            "accepted": 36,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 128
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\f631bcf9ff8f447c91dc116b052db9a9_1.json",
+          "sha256": "736aa0884c6c156d2dd04339aa13e2c7e613476fbc1e7a128bf0ac6b1e5210d9",
+          "grade": {
+            "plays_total": 36,
+            "plays_driven": 36,
+            "accepted": 36,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 128
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    },
+    {
+      "tag": "fef70a8d3fb240cb8b2d239d3456641c",
+      "role": "reserved_fallback",
+      "split": "confirmation",
+      "attempts": [
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\fef70a8d3fb240cb8b2d239d3456641c_0.json",
+          "sha256": "cafac3a318832ae2ed61f7f3a6464aa7562f8784d5c2d643a712d6267da97599",
+          "grade": {
+            "plays_total": 153,
+            "plays_driven": 153,
+            "accepted": 153,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 155
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        },
+        {
+          "status": "captured",
+          "path": "icebow\\data\\bench\\native_confirmation_20261005\\deal_recovery_reserved_v1\\fef70a8d3fb240cb8b2d239d3456641c_1.json",
+          "sha256": "c772fbff53e3276857298e0a9bf8029f6cf94d2676cf99adaf0768ec148f71b7",
+          "grade": {
+            "plays_total": 153,
+            "plays_driven": 153,
+            "accepted": 153,
+            "rejected_by_reason": {},
+            "invalid_placement": 0,
+            "elixir_delays": {
+              "n": 0,
+              "max_ticks": 0,
+              "sum_ticks": 0
+            },
+            "skipped": [],
+            "crowns_match": true,
+            "terminal_vs_last_play_ticks": 155
+          },
+          "reasons": [],
+          "usable": true,
+          "solver_resets": 2
+        }
+      ],
+      "usable": true,
+      "repeated_equal": true
+    }
+  ],
+  "started_sha256": "02d6443190c5cc9a1cab18864f5a495d0b2172ad06d5ec6cadb0f210b10ce234",
+  "source_audit_sha256": "bf8ed9a91852b9499fe0897b3b16b3a383956cec6db0aa50e466d0b6354eb10d",
+  "usable_recovered": 32,
+  "controls_unchanged": 0,
+  "original_collections_modified": false,
+  "confirmation_replayed": true,
+  "N2_complete": false
+}

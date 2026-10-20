@@ -1,0 +1,13 @@
+{
+  "command": [
+    ".\\icebow\\.venv\\Scripts\\python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/audit_pilot_ability_metadata.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "TRAINING_PILOT_ABILITY_METADATA_AUDITED",
+  "matched": true,
+  "output_sha256": "b9a1adf01ae5265fb313c232be78723bb9976c158bf0aaf65fc3ca5b8e3127c0",
+  "seconds": 30.230236530303955
+}

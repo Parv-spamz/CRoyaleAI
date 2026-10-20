@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/development_gameplay_1/prepare_v2.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "GAMEPLAY_SCENARIOS_PREPARED",
+  "matched": true,
+  "output_sha256": "25517e2eef60e70a3f678dd1fd8610ee6a1471a0680e17380698f3f6abd65f12",
+  "seconds": 6.262675046920776
+}

@@ -1,0 +1,2 @@
+{"accepted": [], "verified_rows": 344853, "extra_failures": {"v4_uniform": [], "v4_rocket": [], "v5_uniform": [], "v5_rocket": [], "v5_rocket_xbow": ["primary_rocket_share_closer", "primary_tower_rockets_increase"], "v5_rocket_barrel": [], "v6_rocket_barrel": ["primary_rocket_share_closer"], "v6_rocket_both": ["primary_rocket_share_closer", "primary_tower_rockets_increase"]}}
+FROZEN_COMPONENT_SUPPLEMENT_VERIFIED

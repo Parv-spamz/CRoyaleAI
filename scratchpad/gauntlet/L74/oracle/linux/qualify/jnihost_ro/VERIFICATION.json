@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "timestamp_utc": "2026-10-13T05:09:34.999308+00:00",
+  "status": "OFFLINE_KIT_VERIFIED_RUNTIME_NOT_RUN",
+  "offline_test_count": 37,
+  "checks": [
+    {
+      "command": [
+        "python",
+        "scratchpad/gauntlet/L74/oracle/linux/qualify/jnihost_ro/test_jnihost_ro.py"
+      ],
+      "cwd": "C:\\Users\\benpe\\ClashBot",
+      "shell": "PowerShell invoking Python directly",
+      "exit_code": 0,
+      "expect": "JNIHOST_RO_TESTS_OK",
+      "matched": true,
+      "output_sha256": "ee51ecff1d07f4aec0ce888799be41206e154553b84d2dbdcff8e316cd3dad67"
+    },
+    {
+      "command": [
+        "python",
+        "scratchpad/gauntlet/L74/oracle/linux/qualify/jnihost_ro/verify.py"
+      ],
+      "cwd": "C:\\Users\\benpe\\ClashBot",
+      "shell": "PowerShell invoking Python directly",
+      "exit_code": 0,
+      "expect": "JNIHOST_RO_PRIVACY_OK",
+      "matched": true,
+      "output_sha256": "e99a0ea81411e7e06ca7fbf360dc3dbe6c28bf5696c89b031aed1657fb849078"
+    }
+  ],
+  "compile": {
+    "status": "passed",
+    "platform": "Windows host, Android x86_64 API 32 target",
+    "tools": [
+      "JDK 17 javac",
+      "D8",
+      "NDK clang++",
+      "javap"
+    ],
+    "private_build_directory": "scratchpad/gauntlet/L74/oracle/.local/jnihost-ro-compile-v6-final",
+    "separate_dex_ownership_checked": true,
+    "client_shells_compiled": false,
+    "stub_has_static_initializer": false,
+    "observer_export_count": 1,
+    "system_dependencies_only": true,
+    "final_source_and_artifact_hashes_verified": true
+  },
+  "shell_check": {
+    "status": "blocked_on_local_windows",
+    "reason": "Git Bash could not create its file mapping: Win32 error 5. Run bash -n worker.sh on the Linux worker; no Linux syntax execution claimed."
+  },
+  "runtime": {
+    "executed": false,
+    "client_launched": false,
+    "libg_loaded": false,
+    "network_access_attempted": false,
+    "patches_qualified": 0
+  },
+  "manual_review": {
+    "scope": "Child-defined stub loads observer and libg in the same namespace; host exits after load/observation with no client lifecycle calls.",
+    "fallback": "preload.txt ignored by default; flag selects before the sole attempt, six known siblings only, no retry.",
+    "classes": "Stub directly references only itself and java.lang.Object/String/System. Indirect native/JNI class initialization unmeasured.",
+    "classification": "v6 schema and exact load-only sequence; b/c require receipt-bound attribution; unknown failures remain unknown.",
+    "privacy": "Private artifacts and bindings remain ignored; public source/docs pass offset and target-hash scan."
+  },
+  "gates": {
+    "met": 4,
+    "unmet": 0,
+    "abandoned": 0,
+    "scope": "Offline build task only; Android execution and Linux Bash validation remain worker checks."
+  }
+}

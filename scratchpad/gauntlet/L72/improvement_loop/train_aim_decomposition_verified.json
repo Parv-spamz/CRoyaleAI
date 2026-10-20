@@ -1,0 +1,53 @@
+{
+  "complete": true,
+  "training_only": true,
+  "controls": {
+    "positive": 2,
+    "negative": 5
+  },
+  "checked": {
+    "r1e:finish": {
+      "rows": 65,
+      "full_correct": 13
+    },
+    "r1e:combo_rocket": {
+      "rows": 256,
+      "full_correct": 140
+    },
+    "r1e:ordinary_rocket": {
+      "rows": 256,
+      "full_correct": 143
+    },
+    "ordinary_il:finish": {
+      "rows": 65,
+      "full_correct": 15
+    },
+    "ordinary_il:combo_rocket": {
+      "rows": 256,
+      "full_correct": 143
+    },
+    "ordinary_il:ordinary_rocket": {
+      "rows": 256,
+      "full_correct": 146
+    },
+    "rocket_il:finish": {
+      "rows": 65,
+      "full_correct": 16
+    },
+    "rocket_il:combo_rocket": {
+      "rows": 256,
+      "full_correct": 145
+    },
+    "rocket_il:ordinary_rocket": {
+      "rows": 256,
+      "full_correct": 146
+    }
+  },
+  "cache_sha256": "b886df3c3c2078d24fb6642588658c85789c978620caacb12efc1ca5a8a4c3e2",
+  "producer_report_sha256": "8b1c97bc962fc84613fb0b49386fa11fd2dd25fefeacade5b3b3567972024b77",
+  "script_sha256": "df3c56465856a91803649a910ee56c5fd86e8c99427fa6b43bfa53432ed50188",
+  "model_predictions": 0,
+  "optimization_steps": 0,
+  "new_models": 0,
+  "N2_complete": false
+}

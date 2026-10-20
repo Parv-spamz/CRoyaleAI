@@ -1,0 +1,114 @@
+*** PRE-2025 VINTAGE (~2018 client data). The simulator targets the LIVE 2026 game. Every number in this file is EVIDENCE, NOT SPEC: it records what Supercell shipped in 2018, not what the live game does now.
+
+== PATHFINDING: every key or column containing PATHFIND, in every csv_logic file
+   buildings.csv: column 'SpawnPathfindSpeed'
+   buildings.csv: column 'SpawnPathfindEffect'
+   buildings.csv: column 'SpawnPathfindMorph'
+   characters.csv: column 'SpawnPathfindSpeed'
+   characters.csv: column 'SpawnPathfindEffect'
+   characters.csv: column 'SpawnPathfindMorph'
+   globals.csv: cell 'LOGIC_SPAWN_PATHFIND_REACHED_RADIUS_FROM_SPEED' (row 'LOGIC_SPAWN_PATHFIND_REACHED_RADIUS_FROM_SPEED')
+   globals.csv: cell 'LOGIC_PATHFIND_BACKWARDS_TRY_KEEP_TARGET' (row 'LOGIC_PATHFIND_BACKWARDS_TRY_KEEP_TARGET')
+   heroes.csv: column 'SpawnPathfindSpeed'
+   heroes.csv: column 'SpawnPathfindEffect'
+   heroes.csv: column 'SpawnPathfindMorph'
+   globals value: LOGIC_SPAWN_PATHFIND_REACHED_RADIUS_FROM_SPEED = True
+   globals value: LOGIC_PATHFIND_BACKWARDS_TRY_KEEP_TARGET = True
+   PATHFINDING_*_COST keys present: NONE
+   (all *COST* globals, for completeness: ['ALLIANCE_CREATE_COST', 'SPEED_UP_DIAMOND_COST_1_MIN', 'SPEED_UP_DIAMOND_COST_1_HOUR', 'SPEED_UP_DIAMOND_COST_24_HOURS', 'SPEED_UP_DIAMOND_COST_1_WEEK', 'RESOURCE_DIAMOND_COST_1', 'RESOURCE_DIAMOND_COST_10', 'RESOURCE_DIAMOND_COST_100', 'RESOURCE_DIAMOND_COST_1000', 'RESOURCE_DIAMOND_COST_10000', 'RESOURCE_DIAMOND_COST_100000', 'RESOURCE_DIAMOND_COST_1000000', 'CHEST_SPEED_UP_COST_PER_HOUR', 'COST_PER_EPIC_IN_EPIC_CHEST_WHEN_CHARGING_GEMS'])
+
+== LOGIC_* keys
+   LOGIC_SPAWN_PATHFIND_REACHED_RADIUS_FROM_SPEED = True
+   LOGIC_DEFAULT_TARGET_USE_LANE_ID = True
+   LOGIC_LANE_ID_BASED_DEPLOY_SEQUENCE = True
+   LOGIC_PATHFIND_BACKWARDS_TRY_KEEP_TARGET = True
+   LOGIC_CHARACTER_CONTINUOUS_DAMAGE_ATTACK_CLOSER = 500
+   LOGIC_CANCEL_HIT_FROM_LONG_DISTANCE = True
+   LOGIC_CANCEL_HIT_FROM_LONG_DISTANCE_RANGE = 1500
+   LOGIC_PRESERVE_TARGET_IF_HIT_STARTED = True
+   LOGIC_SYMMETRICAL_DEPLOY_SNAP = True
+   LOGIC_PENDING_DAMAGE_IGNORE_IF_DURATION_LESS = 600
+   LOGIC_PRINCESS_TOWERS_ALWAYS_AS DEFAULT_TARGET = True
+   LOGIC_LOAD_FIRST_HIT_RESET_TIMER_AFTER_ATTACK = True
+   LOGIC_LOAD_FIRST_HIT_RESET_TIMER_WHEN_ZAPPED = True
+
+== keys containing RANGE/SIGHT/PUSH/COLLISION/MASS/SPEED/TICK/MANA
+   [RANGE] 
+      MELEE_RANGE_LIMIT = 1900
+      EXTRA_SIGHT_RANGE_TO_BUILDING = 0
+      EXTRA_SIGHT_RANGE_TO_CROWN_TOWERS = 2000
+      ADD_CHARACTER_RANGE_TO_RADIUS = True
+      LOGIC_CANCEL_HIT_FROM_LONG_DISTANCE_RANGE = 1500
+   [SIGHT] 
+      EXTRA_SIGHT_RANGE_TO_BUILDING = 0
+      EXTRA_SIGHT_RANGE_TO_CROWN_TOWERS = 2000
+   [PUSH] NONE
+   [COLLISION] NONE
+   [MASS] NONE
+   [SPEED] 
+      MANA_SPEED_UP_WHEN_REMAINING_SECONDS = 60
+      PANIC_SPEED_MULTIPLIER = 175
+      SPEED_UP_DIAMOND_COST_1_MIN = 1
+      SPEED_UP_DIAMOND_COST_1_HOUR = 20
+      SPEED_UP_DIAMOND_COST_24_HOURS = 360
+      SPEED_UP_DIAMOND_COST_1_WEEK = 1800
+      SPEED_UP_FREE_SECONDS = 0
+      CHEST_SPEED_UP_COST_PER_HOUR = 6
+      LOGIC_SPAWN_PATHFIND_REACHED_RADIUS_FROM_SPEED = True
+   [TICK] NONE
+   [MANA] 
+      MAX_MANA = 10
+      MANA_REGEN_MS = 28000
+      MANA_REGEN_MS_END = 14000
+      MANA_REGEN_MS_OVERTIME = 14000
+      MANA_SPEED_UP_WHEN_REMAINING_SECONDS = 60
+      MANA_REGEN_PENALTY_FROM_TOWER = None
+      START_MANA = 5
+      CAP_SUMMONER_ACCURATE_MANA = True
+
+== calibration.json cross-check
+   AGREE   targeting.ADD_CHARACTER_RANGE_TO_RADIUS == globals.ADD_CHARACTER_RANGE_TO_RADIUS == True
+   AGREE   targeting.EXTRA_SIGHT_RANGE_TO_CROWN_TOWERS == globals.EXTRA_SIGHT_RANGE_TO_CROWN_TOWERS == 2000
+   AGREE   targeting.EXTRA_SIGHT_RANGE_TO_BUILDING == globals.EXTRA_SIGHT_RANGE_TO_BUILDING == 0
+   AGREE   targeting.LOGIC_CANCEL_HIT_FROM_LONG_DISTANCE_RANGE == globals.LOGIC_CANCEL_HIT_FROM_LONG_DISTANCE_RANGE == 1500
+   AGREE   targeting.MELEE_RANGE_LIMIT == globals.MELEE_RANGE_LIMIT == 1900
+   AGREE   targeting.LOGIC_LANE_ID_BASED_DEPLOY_SEQUENCE == globals.LOGIC_LANE_ID_BASED_DEPLOY_SEQUENCE == True
+   AGREE   pathfinding.AVOID_WATER_ATTACK_POS == globals.AVOID_WATER_ATTACK_POS == True
+   AGREE   pathfinding.LOGIC_PATHFIND_BACKWARDS_TRY_KEEP_TARGET == globals.LOGIC_PATHFIND_BACKWARDS_TRY_KEEP_TARGET == True
+   ABSENT  targeting.LOGIC_RANGE_EXTENSION_TO_KEEP_TARGET: registry cites globals.csv but no such key in this 2018 data (looked for 'LOGIC_RANGE_EXTENSION_TO_KEEP_TARGET')
+   ABSENT  targeting.LOGIC_XPOS_BASED_TOWER_TARGETING: registry cites globals.csv but no such key in this 2018 data (looked for 'LOGIC_XPOS_BASED_TOWER_TARGETING')
+   ABSENT  UNVERIFIED targeting.LOGIC_DEFAULT_TARGET_USE_LANE_ID: cited to globals of 15.535.29, which is not on disk (run tools/decode_sc_assets.py); 2018 data has True
+   ABSENT  UNVERIFIED pathfinding.PATHFINDING_COSTS.default: cited to globals of 15.535.29, which is not on disk (run tools/decode_sc_assets.py); 2018 data has '<absent in 2018 data>'
+   ABSENT  UNVERIFIED pathfinding.PATHFINDING_COSTS.road: cited to globals of 15.535.29, which is not on disk (run tools/decode_sc_assets.py); 2018 data has '<absent in 2018 data>'
+   ABSENT  UNVERIFIED pathfinding.PATHFINDING_COSTS.matchingroad: cited to globals of 15.535.29, which is not on disk (run tools/decode_sc_assets.py); 2018 data has '<absent in 2018 data>'
+   ABSENT  UNVERIFIED pathfinding.PATHFINDING_COSTS.blocked: cited to globals of 15.535.29, which is not on disk (run tools/decode_sc_assets.py); 2018 data has '<absent in 2018 data>'
+   ABSENT  UNVERIFIED pathfinding.PATHFINDING_COSTS.building: cited to globals of 15.535.29, which is not on disk (run tools/decode_sc_assets.py); 2018 data has '<absent in 2018 data>'
+   ABSENT  UNVERIFIED pathfinding.PATHFINDING_COSTS.water: cited to globals of 15.535.29, which is not on disk (run tools/decode_sc_assets.py); 2018 data has '<absent in 2018 data>'
+   ABSENT  UNVERIFIED pathfinding.PATHFINDING_COSTS.defaultheuristic: cited to globals of 15.535.29, which is not on disk (run tools/decode_sc_assets.py); 2018 data has '<absent in 2018 data>'
+   ABSENT  UNVERIFIED pathfinding.NEW_PATHFINDING_CODE: cited to globals of 15.535.29, which is not on disk (run tools/decode_sc_assets.py); 2018 data has '<absent in 2018 data>'
+   ABSENT  UNVERIFIED pathfinding.DISABLE_PATH_LINEID: cited to globals of 15.535.29, which is not on disk (run tools/decode_sc_assets.py); 2018 data has '<absent in 2018 data>'
+   ABSENT  UNVERIFIED pathfinding.PATHFINDING_DYNAMIC_OCCLUSIONS: cited to globals of 15.535.29, which is not on disk (run tools/decode_sc_assets.py); 2018 data has '<absent in 2018 data>'
+   ABSENT  UNVERIFIED pathfinding.PATHFINDING_FRIENDLYONLY_OCCLUSIONS: cited to globals of 15.535.29, which is not on disk (run tools/decode_sc_assets.py); 2018 data has '<absent in 2018 data>'
+   ABSENT  UNVERIFIED pathfinding.PATHFINDING_REFRESH_OPENNODES: cited to globals of 15.535.29, which is not on disk (run tools/decode_sc_assets.py); 2018 data has '<absent in 2018 data>'
+   ABSENT  UNVERIFIED pathfinding.PATHFINDING_REOPEN_CLOSEDNODES: cited to globals of 15.535.29, which is not on disk (run tools/decode_sc_assets.py); 2018 data has '<absent in 2018 data>'
+   ABSENT  UNVERIFIED pathfinding.PATHFINDING_HEURISTIC_METHOD: cited to globals of 15.535.29, which is not on disk (run tools/decode_sc_assets.py); 2018 data has '<absent in 2018 data>'
+   ABSENT  UNVERIFIED pathfinding.PATHFINDING_SAMEPATH_EPSILON: cited to globals of 15.535.29, which is not on disk (run tools/decode_sc_assets.py); 2018 data has '<absent in 2018 data>'
+   ABSENT  UNVERIFIED pathfinding.KS_POS_TO_TARGET_GROUND_AVOID_BUILDINGS: cited to globals of 15.535.29, which is not on disk (run tools/decode_sc_assets.py); 2018 data has '<absent in 2018 data>'
+   ABSENT  UNVERIFIED pathfinding.USE_TARGET_QUEUEING: cited to globals of 15.535.29, which is not on disk (run tools/decode_sc_assets.py); 2018 data has '<absent in 2018 data>'
+   ABSENT  UNVERIFIED pathfinding.MAX_PUSHBACK_LENGTH: cited to globals of 15.535.29, which is not on disk (run tools/decode_sc_assets.py); 2018 data has '<absent in 2018 data>'
+   ABSENT  pathfinding.WATER_RULE_GROUND: registry cites globals.csv but no such key in this 2018 data (looked for 'WATER_RULE_GROUND')
+   ABSENT  combat.TOWER_HITPOINT_LADDER: registry cites globals.csv but no such key in this 2018 data (looked for 'TOWER_HITPOINT_LADDER')
+   ABSENT  match.LOGIC_BATTLE_START_COOLDOWN_MS: registry cites globals.csv but no such key in this 2018 data (looked for 'LOGIC_BATTLE_START_COOLDOWN_MS')
+   ABSENT  match.OVERTIME_S: registry cites globals.csv but no such key in this 2018 data (looked for 'OVERTIME_S')
+   ABSENT  match.MIRROR_LEVEL_BEYOND_MAX: registry cites globals.csv but no such key in this 2018 data (looked for 'MIRROR_LEVEL_BEYOND_MAX')
+   CONTEXT spells.AOE_HIT_TEST  (globals cited as context only; value NOT compared)
+   CONTEXT spells.CLONE_OFFSET  (globals cited as context only; value NOT compared)
+   CONTEXT spells.CLONE_DEATH_SPAWNS  (globals cited as context only; value NOT compared)
+   CONTEXT spells.CLONE_HITPOINTS  (globals cited as context only; value NOT compared)
+   CONTEXT formation.LAYOUT  (globals cited as context only; value NOT compared)
+   SUPERSEDED targeting.LOGIC_PRESERVE_TARGET_IF_HIT_STARTED = 'projectile_attackers_only' deliberately differs from globals.csv.LOGIC_PRESERVE_TARGET_IF_HIT_STARTED = True  -- globals.csv's switch is on, for every attacker; measured on client 15.535.29 the hold covers projectile attackers only, so the value names that scope (see the provenance)
+   SUPERSEDED combat.KING_DAMAGE_PERCENT_PER_LEVEL = 8 deliberately differs from globals.csv.DAMAGE_INCREASE_PERCENT_PER_KING_LEVEL = 7  -- MEASURED against the live game and the 2018 table is simply older: the 16.402 king hits for 109 at level 11 (410 drops, none of 100), rate 8, the 15.535 client's globals value. The two are SUPPOSED to disagree, so tools/extract_globals.py reports this divergence instead of failing on it.
+   SUPERSEDED match.START_MANA = 6 deliberately differs from globals.csv.START_MANA = 5  -- MEASURED against the live game and the 2018 table is simply older: all 126 tick-0 readings of the recorded corpus are 6. The two are SUPPOSED to disagree, so tools/extract_globals.py reports this divergence instead of failing the setup on it. An undocumented divergence still fails.
+   SUPERSEDED match.KING_ACTIVATE_TIME_MS = 3550 deliberately differs from globals.csv.KING_ACTIVATE_TIME_MS = 3300  -- MEASURED against the live game and the 2018 table is simply older: in 36 of 36 corpus kings the first target and the first swing come together at the princess loss + 71 ticks = 3550 ms. The two are SUPPOSED to disagree, so tools/extract_globals.py reports this divergence instead of failing on it.
+
+globals -> data\derived\globals.json  (281 keys, 8 registry agreements, 4 declared divergences, 26 absent-in-vintage, 5 context-only, 0 failures)

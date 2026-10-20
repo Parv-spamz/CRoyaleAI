@@ -1,0 +1,1368 @@
+{
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\gameplay_failure_audit\\PLAN.md": "20f179393445b2eefb35664cb16edeadcd59e76c63f6a246011250399e4992a7",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\gameplay_failure_audit\\MISSING_TOWER_CORRECTION.md": "6124f0e239b7056af02104432d4661c01e4cdb0b466918df46d48db6baed1d2f",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\gameplay_failure_audit\\started.json": "14b7bd55f1af7187151f8ae6cdb292ae2bc4013ef96e43063bb7abe69505964b",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\gameplay_failure_audit\\audit.py": "753bc0e87adfaafd01cf8695638fac658af095399a111d6e9d2ca8c4e7dd2ae9",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\gameplay_failure_audit\\audit_v2.py": "984601b1d5fbd935ebf7c556ce785f8a5d585c78f2d718a617c1d7e09e723f5a",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\gameplay_failure_audit\\verify.py": "49813ee3e552636f9d12bfae0094aacbb652f5ce8873893b70198e59ee167529",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\gameplay_failure_audit\\verify_v2.py": "5321fae01ae773636df50e5f682aec44506eb9f59827d523169d264f85648d83",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_gameplay_1\\prepared.json": "0cdfebb47543e3a3244ac7e4e6e5d26cca13114adab8bdc086a5d7913010b86b",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_gameplay_1\\results_verified.json": "948d06d741c350af263a01497ed7bc9b8664541cbb2b948794c4d6ef904c2167",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_gameplay_1\\reviewed_results.json": "0e60ad466c05318828e122fa2104c5a9da21a646188ec51d2e7139f364923847",
+    "icebow\\data\\bench\\development_gameplay_1_20261005\\matches.jsonl": "33f8de6ed932977db1362728a71239a9844f44c097562e2bcc71dbaab97f1040",
+    "pipeline\\royale_env.py": "0935c50759dc8e9ef8d226a1b6d8e017d6025c88fd79db5cfe8a5295231a068f",
+    "pipeline\\e1_eval.py": "55199f822f035e3ddf3fab0d74926158aaea92b23abd9fa1425fdbb5e398827d",
+    "research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\src\\state.rs": "bbad05474b76c2b4ddba337c7f92bf539b37066d9af5a479977d856f2c6d8863",
+    "research\\ext\\Royale-20261005\\runtime\\royalesim\\data\\calibration.json": "18d074b2b33e4efccb426b5862db221c249da9934f32d383909dd078a73c273f"
+  },
+  "index": [
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100500",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\000_r1e.json.gz",
+      "sha256": "029ecf09a158fd7977536f7c6ccfdbabdd65a4bab277433042fe4390c655926f",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100500",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\000_ordinary_v5.json.gz",
+      "sha256": "0bbf9d539fcde0543da52323dfb65c8fbd3cf37ead6804e10e956e4421d97fc9",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100500",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\000_ordinary_v6.json.gz",
+      "sha256": "de549aac4f8f9ede57c800114ef2fe5f9ce803ece8e96d9803a71ff99c4718bb",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100501",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\001_r1e.json.gz",
+      "sha256": "924d7c8c5f3a682f1e5337663214e89499e99b0249d906b383b1a4b3110d5c4b",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100501",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\001_ordinary_v5.json.gz",
+      "sha256": "7879fa4f2009c55eccf21a468d215b514d10757351f5c1e85508d2c4eb301310",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100501",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\001_ordinary_v6.json.gz",
+      "sha256": "b6008c152340b77228f9dc2c8ee860362e78b541bf9ae4f4123f1d07006f3935",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100502",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\002_r1e.json.gz",
+      "sha256": "1323b715c7e33b91f86dc71c8fe12114830536b9193ca818025e40831ddda86b",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100502",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\002_ordinary_v5.json.gz",
+      "sha256": "af87eff77b56bf2abcb78259d9d22e5669b89d19e4027d21e7d80d61d4aabbc5",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100502",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\002_ordinary_v6.json.gz",
+      "sha256": "d5ebf3ce3461beee84270685ec1e635383d9f47c0e12cf995ac0f640875260c6",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100503",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\003_r1e.json.gz",
+      "sha256": "1873a407531b37ce3a125511332ffe315be72c958d7d9364951ad03cb783f82c",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100503",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\003_ordinary_v5.json.gz",
+      "sha256": "d00c163108234eca0467bf01308b66c6c5cc4e2496f76f89cbd620baa7792534",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100503",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\003_ordinary_v6.json.gz",
+      "sha256": "0697b295d937f961c893179a7d05428081d7848816e4de118d58056720c9be84",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100504",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\004_r1e.json.gz",
+      "sha256": "5717fbe81ef1beb76bdeb6b99d40cf2f503fcaae1debb45e436c957de42a3000",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100504",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\004_ordinary_v5.json.gz",
+      "sha256": "b121c7730d5223ab1ab2fdb65bd5c0749d62d7bada9ca8cdc60bc6a019f0f1d1",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100504",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\004_ordinary_v6.json.gz",
+      "sha256": "de377bdf1b80a507e2dcb2939afdfa148ace16923bae9b7b3225e0da0a4d1ea1",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100505",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\005_r1e.json.gz",
+      "sha256": "243d01037b52053609ba674d62790a72d96218bf95a53f9d051f5b213922397c",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100505",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\005_ordinary_v5.json.gz",
+      "sha256": "ce956b8a9c21a59a1050fad5697dc9b500175bcd7b500fba96fd8769445966b3",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100505",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\005_ordinary_v6.json.gz",
+      "sha256": "d69f43bf787cac43be6ecc23e306df610baf688b31d39cff663642c62d67cb9b",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100506",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\006_r1e.json.gz",
+      "sha256": "92582fb24c6f5626b93eed5bc1b44fb9a03e95fcdee12f8b18754f88d5cdc391",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100506",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\006_ordinary_v5.json.gz",
+      "sha256": "b7ae00e2b5f1225286d52c790d2d89a6f7e84e999d054d0a02f63a33f750c508",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100506",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\006_ordinary_v6.json.gz",
+      "sha256": "3b20bbf6e01ef06c627109790f167f9761a9a7bd6b1be23ff9bcb7272c82d17b",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100507",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\007_r1e.json.gz",
+      "sha256": "5b4bfa902227afe7591a3dc861d0913b07d8541eb24135941ffe35f993d17ed8",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100507",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\007_ordinary_v5.json.gz",
+      "sha256": "512772278ff05dc50df465f3318d4ebf52c7dea2712734a39f141e798fd2ca03",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100507",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\007_ordinary_v6.json.gz",
+      "sha256": "60fce21cb16f0a8cf51ff9a76efc8eb75359f14bdd97dc70da1078e2266c706b",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100508",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\008_r1e.json.gz",
+      "sha256": "3a676e15904e78ae6dd1bf98e9e215ece413b220e73bad84393bb26247f4c581",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100508",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\008_ordinary_v5.json.gz",
+      "sha256": "270182576f3ddc7f5f84eec151f528854c1a3646edceb65fcb8ce1aa526456f8",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100508",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\008_ordinary_v6.json.gz",
+      "sha256": "cecde8e0a506b0c7d38c160b16d375b6ff704771f9096c0c0989f6e010d33fdb",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100509",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\009_r1e.json.gz",
+      "sha256": "cd18d442880289c26c53971f9ee8caf7ad6eee4cf0520313435bd2fc797330b1",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100509",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\009_ordinary_v5.json.gz",
+      "sha256": "a228e6586720c34480af97a1fbcd75dd4a6748ba5ceb9dfcb4b2a1b9f5bfb51f",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100509",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\009_ordinary_v6.json.gz",
+      "sha256": "6dd46443e8c747cec189d075c40846354529aebc4c5197779c436a84b3f26742",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100510",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\010_r1e.json.gz",
+      "sha256": "6e3544d5f52a95576a19f0e9b034137f1a7a6e12224e819e30bee78cc02962b5",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100510",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\010_ordinary_v5.json.gz",
+      "sha256": "fe5ebcc685e2994d3228e4d0686e0ec10d9a681c3afab1619a9f2631dfc9d8b1",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100510",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\010_ordinary_v6.json.gz",
+      "sha256": "0a78a0f8b6607c73377b42792edba0ea545d8cea43176f8bf03e102e548f54b0",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100511",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\011_r1e.json.gz",
+      "sha256": "352b61faf4ccf1cfd6f6af2e62549341cb4165fdc0a6607c5b46ad295a9adce4",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100511",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\011_ordinary_v5.json.gz",
+      "sha256": "1de11e2588354fbfc0ae8771ab17ba23877844a60e3e5228e7645b566dbcb23a",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100511",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\011_ordinary_v6.json.gz",
+      "sha256": "fc752596256202cca708dee8625213eeab5987a1a1b9110dbaf00b5ed40307a9",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100512",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\012_r1e.json.gz",
+      "sha256": "b36d1460dcaa980161daaec2fff630343087bb869898ee5f641acf40407c3d9c",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100512",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\012_ordinary_v5.json.gz",
+      "sha256": "4e68008d190e363e0e8eefa467a65dfe4e02455776ca3926dfa3f95ff5b9b812",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100512",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\012_ordinary_v6.json.gz",
+      "sha256": "648369dd2aeeb6ee43434224ba74789f32f23c219936f233121ffeacde12dd7e",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100513",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\013_r1e.json.gz",
+      "sha256": "2c0e7e56ba0472d0778a02b0b4945072979cadd8ba605d99b7ed03a6941bceb5",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100513",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\013_ordinary_v5.json.gz",
+      "sha256": "fdabc2701346c814082ad882fbdd4469b1ecd1bb7a980635c70f2d0e7f2d1083",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100513",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\013_ordinary_v6.json.gz",
+      "sha256": "78014ad8535977c3b1e67d3eac2fd0a88bbf27422da08d969bc4d39648a46b07",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100514",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\014_r1e.json.gz",
+      "sha256": "9a0155e8a05ccac5f299790b3e13187cb334bc37a51d48340ee7fc13c998bcd9",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100514",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\014_ordinary_v5.json.gz",
+      "sha256": "64c5131e8e69f14ac6caab7aec47837a80c23618a81a997858bce7684dc6782b",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100514",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\014_ordinary_v6.json.gz",
+      "sha256": "b457af75dca5ce5ddcfc948e472ba08ee672953369382319d398fc31a23174dc",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100515",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\015_r1e.json.gz",
+      "sha256": "275b05af538f9c628a4d701571829227af4ac09f2bef20b25d70516ec87e57b4",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100515",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\015_ordinary_v5.json.gz",
+      "sha256": "009939764fb84e4cecdc8e96c2198b06bc6d28c67c074931aae638aa40b1c728",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100515",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\015_ordinary_v6.json.gz",
+      "sha256": "ea0a5af8a10fb75ba4e2c429f2f0511a06bc19b58d904bc770cd998c9f7088c8",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100516",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\016_r1e.json.gz",
+      "sha256": "39b9672dc53b21a4dc151475c54d9f74b1e9ad958d5a973ea01a6727408bcd04",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100516",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\016_ordinary_v5.json.gz",
+      "sha256": "37a7ab45f7a426194eb22de5f8e2b857a164f4361284aa10e8f4a8d45c63da28",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100516",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\016_ordinary_v6.json.gz",
+      "sha256": "2f7a69877eeac5ecb2f7b52caa69d4bb26510620b2c06d45a7d531e234e53d5a",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100517",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\017_r1e.json.gz",
+      "sha256": "f2ff3531e735c32862794b9907445aef74259ad0516adf23570fe749695d87c1",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100517",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\017_ordinary_v5.json.gz",
+      "sha256": "66a80b21f1b3264359dcdea5823b6c691ac527b6430fa7d631a7efdda1993f76",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100517",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\017_ordinary_v6.json.gz",
+      "sha256": "93b9e521176cdc5eab92f8daec51b8d532ff338d9257b5b5c9ff5e28bfd1bb2a",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100518",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\018_r1e.json.gz",
+      "sha256": "754cf8bb7eb16450db1033f4357bb892c0b92aa0f508075ceb5bb7a40f65ecf9",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100518",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\018_ordinary_v5.json.gz",
+      "sha256": "1712ac2561d5b738c60d5302e73191a2c691435c3eb89e83362e2f93d93aebb2",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100518",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\018_ordinary_v6.json.gz",
+      "sha256": "a0cf8c6623b4ca863b7d796e221c06efa6081b69f8dec31d3edd769faac5930a",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100519",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\019_r1e.json.gz",
+      "sha256": "15aee062434e085710ce7e773ceb02bfc8105186fd26ffadcd6de1c4d012f04e",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100519",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\019_ordinary_v5.json.gz",
+      "sha256": "02c28b6a86598dade8a20e7740f7a9b28e9dc03af0248645a753a25c52d22b3c",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100519",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\019_ordinary_v6.json.gz",
+      "sha256": "714d33b75722339024358410620f41bb1e2832fc14056f6c1279c48c5093cf90",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100520",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\020_r1e.json.gz",
+      "sha256": "6f726f104e31d25e9506e398b0de509dd4b9bec7832c79076f66f11f520a4c47",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100520",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\020_ordinary_v5.json.gz",
+      "sha256": "027560f28a75dc6631430c3ca3aaf59a313a831955aea25a153a30e39f709434",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100520",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\020_ordinary_v6.json.gz",
+      "sha256": "6c8dcc258351c63c971108fe6bee5764238d94ad98408037aa20b93bebd00519",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100521",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\021_r1e.json.gz",
+      "sha256": "73efaf888163f23d08e5d30eecce10372931a9a815c0cf0c27c496b6cb0881ff",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100521",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\021_ordinary_v5.json.gz",
+      "sha256": "b9ecf66cef899121484d5b9f890f17e7f597e36e697b205ba17c3567e0b83a57",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100521",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\021_ordinary_v6.json.gz",
+      "sha256": "efcaf449ca02ed18d19dd0d55ed1c3e347ec754c0514add437f591197fa981e6",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100522",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\022_r1e.json.gz",
+      "sha256": "c4d7996c503c5c72326e37a93f8356efcbcdd031cfae43aa6e78976763525ecd",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100522",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\022_ordinary_v5.json.gz",
+      "sha256": "e28dfcf555153dc6cc1142679820705aab5f3b63f413a8e148517a8adb572020",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100522",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\022_ordinary_v6.json.gz",
+      "sha256": "3db60e61216f7cca13b0ce8af7974f2d36aa49da8d5291ddd6c0af0cdba336cc",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100523",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\023_r1e.json.gz",
+      "sha256": "271b972fbeb201313f4319beecc93eff353a034c0535315892de71921b45efe6",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100523",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\023_ordinary_v5.json.gz",
+      "sha256": "33ed2a09ca42be731c430d3845194ddc76d980dd19c59a8756ff7ee68939b497",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100523",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\023_ordinary_v6.json.gz",
+      "sha256": "1274b915682e7b90688e4d974047380b213d8940e2541915eb7f8e50f426d929",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100524",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\024_r1e.json.gz",
+      "sha256": "5479595a5cbc5f7885ecfcfafbf84e3b511b386d07cd9b1efd1aee4cd487b1af",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100524",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\024_ordinary_v5.json.gz",
+      "sha256": "df94cebabb04b6294fff6826ea5b470862eaf36621cb9177db5e662599f3cdf2",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100524",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\024_ordinary_v6.json.gz",
+      "sha256": "7376af5f8633b585e8e339f052076759043481d311cb44afc6fe5236c6da2f7e",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100525",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\025_r1e.json.gz",
+      "sha256": "9d5137d7e4f6271166695b4d19664e97fa21e01fbdad950e54a619883c1d108d",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100525",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\025_ordinary_v5.json.gz",
+      "sha256": "e0c4472a3e15fc004131d77c0db2f9dbed1620c3e65515ac7b3b4744fcc08515",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100525",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\025_ordinary_v6.json.gz",
+      "sha256": "729affcc8e9d7d4218d5e115b793fc1c58172b477d36253f87c9f6c62b1bcfdb",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100526",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\026_r1e.json.gz",
+      "sha256": "c7c3706f212c223f90729b7989d18ff3c51693f75dafd70fdc0c2bb74c14795c",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100526",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\026_ordinary_v5.json.gz",
+      "sha256": "18ce24ca1337efde175a5fe43b734c81df50efe66ee33f0c21e546c85919e93b",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100526",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\026_ordinary_v6.json.gz",
+      "sha256": "5227c4b11d674e4ab394994c13c66240b077d716acf6075003c8a92f638f8659",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100527",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\027_r1e.json.gz",
+      "sha256": "e11b677ac09505e846869f6f01e1a99dce0d4dc279a16cfd1293f824f461d8fd",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100527",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\027_ordinary_v5.json.gz",
+      "sha256": "e1ab6e8061e3e88013a36ec3cb67bec8902c2a4199d21830f3afb2d526bd956f",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100527",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\027_ordinary_v6.json.gz",
+      "sha256": "d1f7950a3c61ab2f2371535393ba151659dca9dce3a4c8b07a2178830f1b273c",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100528",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\028_r1e.json.gz",
+      "sha256": "bca330fea9ad9f0cfff0ed4e5ea9615ff29e34ea19346f048cb6e873aee23c2e",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100528",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\028_ordinary_v5.json.gz",
+      "sha256": "27580901adcc2d32a281d866376cc98c3c0d6edd8d885c8d34c49ba9e53ac4dc",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100528",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\028_ordinary_v6.json.gz",
+      "sha256": "1750a9ed4dc267f1e5874b41ad7870cc33a6519ae60982d9a51b933cf360d1cd",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100529",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\029_r1e.json.gz",
+      "sha256": "9bc836407c1d04a5fc8292548664cf230891ca7f1c8e693f5e426897c5603f77",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100529",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\029_ordinary_v5.json.gz",
+      "sha256": "369a139a25e223478b839a969f3d540c890d3663ae01e452139e48c132287afb",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100529",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\029_ordinary_v6.json.gz",
+      "sha256": "36198fcf400d65cc0d15daf71e14b7e3b608ae227724fc1e7355708e7bef1b9e",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100530",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\030_r1e.json.gz",
+      "sha256": "559fe36e02fab8913a408268fd4685646ea114283ac6db25cb5feccc48587206",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100530",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\030_ordinary_v5.json.gz",
+      "sha256": "242b5e1bb81f68a086c282824a948ddfcb6c14220e7758599482885b05816e79",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100530",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\030_ordinary_v6.json.gz",
+      "sha256": "4632caa673765c1b39cbef26e78c8bc0a35555b0b62b16c8cad092cbee07d0a8",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:gen:2026100531",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\031_r1e.json.gz",
+      "sha256": "800e1fe3607a592d3cedd961b4526944fc026026ab7197ca758d02740ed70691",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:gen:2026100531",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\031_ordinary_v5.json.gz",
+      "sha256": "cd45306231d5ab20cb09c3983a7cd4a84b07b52ae39d9c0a06579eb925e2be7f",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:gen:2026100531",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\031_ordinary_v6.json.gz",
+      "sha256": "5421047978f6ba825d7d490d829d33be3294d17ba3ae1070472a620ec0f2d4a3",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100500",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\032_r1e.json.gz",
+      "sha256": "8fd4731741fd1077f50b6bc244368401ed9805c2bc9c6c87e0e5e05d4bc0e932",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100500",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\032_ordinary_v5.json.gz",
+      "sha256": "8e5ad9f82e6fb84f71026c0db41f19c992eed467953a699503892501b413c2b8",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100500",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\032_ordinary_v6.json.gz",
+      "sha256": "ce29485c4107586940fdc98e43c1fdc1c77aff1c4e7eaeec71bbc6afa242bedb",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100501",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\033_r1e.json.gz",
+      "sha256": "8eaa9beffd8ebb64f483f8ed8bd6681a04fd57ccf0d28ff913559d0de5a4ae5f",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100501",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\033_ordinary_v5.json.gz",
+      "sha256": "466fdecb567a9873c13b14c42109d40f30e189b4651e3d2bae2b1d529086fff4",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100501",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\033_ordinary_v6.json.gz",
+      "sha256": "4fdef9c5ae2a3cdc6a483f794f655e9d3abbb88366fc286ed9a08f3c999b89e7",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100502",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\034_r1e.json.gz",
+      "sha256": "b986abbc465accf9c5f24e648529548dbdea0248bd86117c3d0ffc5d09ed77f8",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100502",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\034_ordinary_v5.json.gz",
+      "sha256": "5dd50c8489fc8330ad8b2fd07e9703baa3e9ffcc29331d13d706cabc7effda8c",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100502",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\034_ordinary_v6.json.gz",
+      "sha256": "add4497574742b129eac30f15bb34cc65f4fd486d25fa9f24883db425ea7575b",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100503",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\035_r1e.json.gz",
+      "sha256": "b77a4f3e602a1a4119e772bd1ffc7144723ea8590dc0aea1e94bde54ee009304",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100503",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\035_ordinary_v5.json.gz",
+      "sha256": "5b70ce5397cfb90d107854fb52e8da15ae0fd31b2d8ac47dacf6f20f8b6a8ba3",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100503",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\035_ordinary_v6.json.gz",
+      "sha256": "80979aa03cd9326f7c0f0974a39b8b31b22024b718fd3847afb94faa16a19b4d",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100504",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\036_r1e.json.gz",
+      "sha256": "16f63c86751ba6fbf7a36801712ef5a6cecdf775c63fc2118fcb3dc7b7502343",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100504",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\036_ordinary_v5.json.gz",
+      "sha256": "37b326153fa0950b60e9cf2e5a2089dc36bfd5f10fb113ab8bfc839912781f35",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100504",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\036_ordinary_v6.json.gz",
+      "sha256": "e9d8811c1d38b64ad44844fb1a19e3638c5c282f4dccbaab1efed813ef2600ad",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100505",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\037_r1e.json.gz",
+      "sha256": "5b88413cf1568d491660188ca864a9bceaa2b9e372b9df944c4c617ae8ccf930",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100505",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\037_ordinary_v5.json.gz",
+      "sha256": "65a3a6c06efcc49130c1bc97e543e70f25cf05c164ed919218ab0c2d312b4f29",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100505",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\037_ordinary_v6.json.gz",
+      "sha256": "590c135e6c6822afa2a89914e1ca5b83abaf1b264f71b0c2fd6ecd66ee2c2344",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100506",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\038_r1e.json.gz",
+      "sha256": "18440acd75aea7d64064728eadcd72fcd7ecd5eb4174037a18d074116be894c6",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100506",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\038_ordinary_v5.json.gz",
+      "sha256": "0c14091f38339dd935de6ccd3d26897a5e7361bd294673f9ce220d6fd9fa0d3b",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100506",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\038_ordinary_v6.json.gz",
+      "sha256": "7a5946ad5df0a5d1ef2003c7fe272cee05c8ca12d51fd7e0e9735189e5018f1b",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100507",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\039_r1e.json.gz",
+      "sha256": "5d789442ac26cb8963af68067e76768faa0db2a1328ff3c76e36b905aceb3dc4",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100507",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\039_ordinary_v5.json.gz",
+      "sha256": "b095297e639d7e75a1ed1e297ceb8e11804fb2697f91b6c9015e96ebd1af260f",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100507",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\039_ordinary_v6.json.gz",
+      "sha256": "035d815193d4632c6a474ead9eadc82854974039f2fbcda21941f151bdb6333d",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100508",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\040_r1e.json.gz",
+      "sha256": "b873158e707d95589595f50795289f33ff9ab5aac86869e5f6d89ed1d7ad85d1",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100508",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\040_ordinary_v5.json.gz",
+      "sha256": "7c4033af092f1efd3850e6c1fb12875c88b257dbbbfade2557edfc256a6c53a1",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100508",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\040_ordinary_v6.json.gz",
+      "sha256": "c481efc926120bc946bdf622858dbcebf6cd791c3e15a7025feb1ccb783b4bef",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100509",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\041_r1e.json.gz",
+      "sha256": "d07ffbe0a1e9a2994bebc6874d4b52b5e68de681610608b19765464f76cdd85d",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100509",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\041_ordinary_v5.json.gz",
+      "sha256": "eae2e1049f50156d45762283def12a90e18f32d52f5ea7d1bf9c0bb7c0d8c171",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100509",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\041_ordinary_v6.json.gz",
+      "sha256": "b281a751ec7a83bd1480a946390bde5e1015eb584aa09061b21dbcde827265df",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100510",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\042_r1e.json.gz",
+      "sha256": "f9dc2ff83ede9943b19e57cd87620ef335161023cc7da1c479d7113b04b18fbf",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100510",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\042_ordinary_v5.json.gz",
+      "sha256": "748309c29c258793068d23dbdb6136602094ade2f88578a26cbafe0bd89530c0",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100510",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\042_ordinary_v6.json.gz",
+      "sha256": "cd6354a316ef5cf27478aaae881f8d6bd2d5c3620fdb182e11fb1d1164e4edba",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100511",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\043_r1e.json.gz",
+      "sha256": "ec9fee3c2bfdeca73350b32aff60f3ba39557299bbae9072d9700d32619bb36a",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100511",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\043_ordinary_v5.json.gz",
+      "sha256": "81bedd41502abb7869c55dc06b9003d52afce9e2c5cfb12d6766e21818d6c6e2",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100511",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\043_ordinary_v6.json.gz",
+      "sha256": "fbf991094637fa94e3c392929abd57c6721f848c3948fd16d65dc037669dea2d",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100512",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\044_r1e.json.gz",
+      "sha256": "72a84229da86197f48b4eb564a7a63e0ad8f081af31de14bdcfa31248d14230f",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100512",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\044_ordinary_v5.json.gz",
+      "sha256": "2b9e455d494885a0467fe3c6b8339cb5cf52414cf59c7e353bd5278fdc14cd87",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100512",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\044_ordinary_v6.json.gz",
+      "sha256": "fc951ca27cf7d99c3b4ded9e1d308361b541ac5d5f8640aba834357843d5fe09",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100513",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\045_r1e.json.gz",
+      "sha256": "2476263ea78ae73db8d9e533b71f05e5531d6351f064ee6dbbc0df2791aa842a",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100513",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\045_ordinary_v5.json.gz",
+      "sha256": "0f94ac2c4b203b5c0710197c005c07c6ab5169efa287e17b434f5d20b410df2e",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100513",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\045_ordinary_v6.json.gz",
+      "sha256": "4cab0201f8c18a5fe8db155c9db77e1f9a19f74f69cecb8da6f24f120ea9acd6",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100514",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\046_r1e.json.gz",
+      "sha256": "883f8bdd9348c5824b886acd6ed92fcc6cc45420dc2cfd2a5ce786d8054bb4af",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100514",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\046_ordinary_v5.json.gz",
+      "sha256": "e487da609b77ef13b3a775181545a485cabeabbe88162588e404439569e1473e",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100514",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\046_ordinary_v6.json.gz",
+      "sha256": "9ecb07e90355c0cff86ce1dea9de41cec3d45fe847eae19e3f882a4dedc33333",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100515",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\047_r1e.json.gz",
+      "sha256": "921cc8a45dfe8eb9a6da06f5a412048000e7760a5e2836f12133767caa216519",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100515",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\047_ordinary_v5.json.gz",
+      "sha256": "a6169c31bce9accca0b8547bae75bafc7d8b126f728ad555bd0eb12e878ed08e",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100515",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\047_ordinary_v6.json.gz",
+      "sha256": "dc8780697aaf8c85b08194557d3b127f452df609937b4bd298864f28defe6437",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100516",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\048_r1e.json.gz",
+      "sha256": "2cfda88dcdc2cb6b5f6a7a2c17721f524c8587fa52f8ae3e83c3542cd1b62d2e",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100516",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\048_ordinary_v5.json.gz",
+      "sha256": "ec3d565d562227c4c7fd1f504967ce9d1725f37f013d94eab00380f4f9958d8b",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100516",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\048_ordinary_v6.json.gz",
+      "sha256": "cf5bb6317a67bfaf318c46e9b53d76ffaba059900e8590a65f8007494e1a6323",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100517",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\049_r1e.json.gz",
+      "sha256": "0a43b58f6768d40c400e247d72a7d5691942c5be5b7e665124a8274ad8f396ee",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100517",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\049_ordinary_v5.json.gz",
+      "sha256": "0a8a037014f7ef76f7f79456dcbe49b952e2ff7d2a4e522a8cb2667550b4d11e",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100517",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\049_ordinary_v6.json.gz",
+      "sha256": "e93a0ed6492c4bf254058b527af2d0a6d546d48fa33c9275f5e0e1029e7ddc3e",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100518",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\050_r1e.json.gz",
+      "sha256": "575e8ea6e28b5b222d46e1a9a0b3a9da312ffc570c2a3ae3dcf051984c6314b4",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100518",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\050_ordinary_v5.json.gz",
+      "sha256": "85f1e2ef30d6a80deeedc2393c950252123b4c27c5228eec6bac1e70b7d519dc",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100518",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\050_ordinary_v6.json.gz",
+      "sha256": "8bab823b6fa5864e4f7dd1886932a58f01f7973a97ff4498a13610cf14aa017a",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100519",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\051_r1e.json.gz",
+      "sha256": "2143c3a54df8174ab7e05b8cae38431a4cfdf35188ff3b17d8c4193f946823f7",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100519",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\051_ordinary_v5.json.gz",
+      "sha256": "ee7cc78a24b15b8c5e2ee29d7051e6f30d1381bcf5a606c7783d192d740398de",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100519",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\051_ordinary_v6.json.gz",
+      "sha256": "3c8f63667d1e1b6573197e730878b4385c6dcd0092f3fb58408e2c013e25adc7",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100520",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\052_r1e.json.gz",
+      "sha256": "135c93f0bb948536c09b853187f1ddab18e75d63a69c3c9848502bfab1e28ff8",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100520",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\052_ordinary_v5.json.gz",
+      "sha256": "13154bfaca5edf9623702a8132661cea4ffff566181d5fefc1643b38b937321e",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100520",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\052_ordinary_v6.json.gz",
+      "sha256": "acbda033436da6da2406e4ef7ee4a0f509021d93983f2d041639aedd3cc41ed0",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100521",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\053_r1e.json.gz",
+      "sha256": "c5f4d30eaba4e213ad745ba1bad7aa256ba841136cfdce3cd2dbb5f2c949f144",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100521",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\053_ordinary_v5.json.gz",
+      "sha256": "744c5c6576c462ca031a31251d336612d294517d0f824d8be5693827c43359b7",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100521",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\053_ordinary_v6.json.gz",
+      "sha256": "4a462bfe4887603bad15c244a61df6c351443be45d4b36c33e03d4a932a2e4fb",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100522",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\054_r1e.json.gz",
+      "sha256": "e5c9bb4ec3ec022622a8bba37fd83a72c3decc62a9d7564671b61b76ae856c48",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100522",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\054_ordinary_v5.json.gz",
+      "sha256": "c7a57b5debb2b14824e1ab0aa85f707e1d81ab7313a0c916503dbd35387b4aa1",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100522",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\054_ordinary_v6.json.gz",
+      "sha256": "e6a38578f9b604996c9ed922f169f3bb9dbe81053436c5363ab7f7c1e50da07a",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100523",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\055_r1e.json.gz",
+      "sha256": "d42a310e13801cc2a4c65ebf01fc68ccdf14bc8ca1aa8eb8803b7903eb09af12",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100523",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\055_ordinary_v5.json.gz",
+      "sha256": "63ee38174e5acd75918da68ba368832cad6a4db66e182703de61a31818d87383",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100523",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\055_ordinary_v6.json.gz",
+      "sha256": "0dbc0991e15bfa1395f3755f14e65893c024db219751c42e5d63e4a7b8a79a25",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100524",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\056_r1e.json.gz",
+      "sha256": "df9ffc555934885158c83d64b332297fc3347967cd872ff1846cddfba02f0f3c",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100524",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\056_ordinary_v5.json.gz",
+      "sha256": "f9d28f84b2e78883e5528d98ac203a0de50f169d7a866825a89158524f35c085",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100524",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\056_ordinary_v6.json.gz",
+      "sha256": "a0d61ed89078f593d5d817910b2b04577448fca1d91ebb77761cee3c586596eb",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100525",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\057_r1e.json.gz",
+      "sha256": "c4433dd6524fe58dd45ce46ca67d2defef590a77111a552bbb399425d8615809",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100525",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\057_ordinary_v5.json.gz",
+      "sha256": "4398658335828529a78a124c36909778dfe2961ad5f487ec83bd4d24aeaf27c7",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100525",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\057_ordinary_v6.json.gz",
+      "sha256": "df97d2b1eac2b788d4861221df750a21d4bf3bed8c2e6d003f2316ec0ea112e9",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100526",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\058_r1e.json.gz",
+      "sha256": "c38ac81e32f54fd0d792633720f13d8b6dde428820f6ebcabd7ebae5cce87732",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100526",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\058_ordinary_v5.json.gz",
+      "sha256": "3ae85abea6bdd72421994fd3efd41979e69c6373e5ad5f3a6c52e4d6a6dcccc4",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100526",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\058_ordinary_v6.json.gz",
+      "sha256": "3da87f954732597113313e893b06881051883b86d1b37abb4e1ae9d24d90b55c",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100527",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\059_r1e.json.gz",
+      "sha256": "8c346313a8abdcbbcad44cb458fc4fa9d142bae257b683ca607e6c14473707b8",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100527",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\059_ordinary_v5.json.gz",
+      "sha256": "5b590244ccbf4c122f842e8a1cf70f03a44eefcc1c0b7768348cee248da4aeb0",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100527",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\059_ordinary_v6.json.gz",
+      "sha256": "291c40c9f26823dff057f0b2be2b23aed33ce406271ed535e10fecd0bb3ada4e",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100528",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\060_r1e.json.gz",
+      "sha256": "96cfb81b5384ba29aa9dcbaeb4a32e620a81e24bad01bc2e13a24e6becc9c955",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100528",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\060_ordinary_v5.json.gz",
+      "sha256": "2d8e67f1a0539c751d61a4c62dcd4f4f6e16e22f7373e6687ae9b292dfc3d626",
+      "outcome": "loss"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100528",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\060_ordinary_v6.json.gz",
+      "sha256": "1892eaae5a6ce511043d8f982b81e65e389fb25bcba4ac6b0f054c528c7f7ee5",
+      "outcome": "loss"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100529",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\061_r1e.json.gz",
+      "sha256": "2ad6a950382193d1ff941805522b7f2c272d052dd650d27e7ceb65381ab35e9a",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100529",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\061_ordinary_v5.json.gz",
+      "sha256": "8366b02fba9afb85e3e0b3072f5274af9ef539b988228f217f8c1983b198bb00",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100529",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\061_ordinary_v6.json.gz",
+      "sha256": "878fee40449919b1105fdd0f214a3f576112cac74222c058dd57c542803876bc",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100530",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\062_r1e.json.gz",
+      "sha256": "ae45cabf511873dda452639f6aec15e6a79182cf3dc9db72525275e8a0253fb6",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100530",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\062_ordinary_v5.json.gz",
+      "sha256": "93f68d361b4a838686090c3bb360f8122168a6bed77db580bbdfb6b9756949c3",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100530",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\062_ordinary_v6.json.gz",
+      "sha256": "d5fe51670ebef751528939ea37162fa8f27aeee1fa42633e9944c236bccf8119",
+      "outcome": "win"
+    },
+    {
+      "model": "r1e",
+      "tag": "l72-development-gameplay1:s1:2026100531",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\063_r1e.json.gz",
+      "sha256": "ecb7b5b7e7ab0656053d1b43aef62523d62fc851fc5b0fe9f92f65fba980066b",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v5",
+      "tag": "l72-development-gameplay1:s1:2026100531",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\063_ordinary_v5.json.gz",
+      "sha256": "01727533a35cec7df9a0042aef71ce713edc1c09e7b19a131fc1dd21d9992235",
+      "outcome": "win"
+    },
+    {
+      "model": "ordinary_v6",
+      "tag": "l72-development-gameplay1:s1:2026100531",
+      "path": "icebow\\data\\bench\\development_gameplay_1_20261005\\records\\063_ordinary_v6.json.gz",
+      "sha256": "c62574ed5c4146af188e0cada926e8fb66eb7ea34b72d2e8d09ddd14c334db00",
+      "outcome": "win"
+    }
+  ],
+  "policy_predictions": 0,
+  "optimizer_updates": 0,
+  "new_games": 0
+}

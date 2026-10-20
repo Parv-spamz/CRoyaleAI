@@ -1,0 +1,902 @@
+"""Import current card stats by scraping the Clash Royale Fandom wiki (MediaWiki API).
+
+The wiki is community-maintained and up to date (it reflects recent balance
+changes that other datasets lag on). Each card page defines its LEVEL-11 stats as
+MediaWiki variables -- {{#vardefine: hp_11 | 1766 }}, dmg_11, crown_dmg_11,
+atk_speed, life -- plus a {{Card Infobox|Cost=|Rarity=|Type=}}. This enumerates
+card pages via the Troop/Building/Spell/Champion card categories -- including each
+card's ``<Card>/Evolution`` subpage (evolutions live there and are keyed
+``<base>_evo``), its ``<Card>/Hero`` subpage (keyed ``<base>_hero``; body stats and
+whatever vardefines the page publishes -- ability numerics that exist only in prose
+stay absent for curation) and the Champion (hero) cards -- parses those values, and writes
+`config/cards_stats.json` (level 11). Curated `config/cards.yaml` overlays it
+(flags, abilities, deck). Re-run after balance updates: `run.py cards-import`.
+
+DRY-RUN IS THE DEFAULT. `run.py cards-import` scrapes, diffs against the existing
+config/cards_stats.json field by field, and writes NOTHING; `--write` applies. The
+old behaviour (always overwrite, never look at what was there) is how a stale wiki
+vardefine silently replaced a curated value -- see tools/crown_damage_audit.py for
+the measured example (Rocket crown 371 vs the game's 341).
+
+Behavioural attributes that live only in page prose (splash shape, abilities) stay
+curated; this importer fills the reliable numeric stats + elixir/rarity/type, plus
+the per-unit ATTRIBUTES TABLE (count / transport / speed / range / targets /
+projectile geometry / charge) -- see ``_parse_attr_tables``.
+"""
+from __future__ import annotations
+
+import datetime
+import json
+import re
+import time
+import urllib.parse
+import urllib.request
+
+WIKI = "https://clashroyale.fandom.com/api.php"
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 ClashBotResearch/1.0"
+CATEGORIES = ["Category:Troop Cards", "Category:Building Cards", "Category:Spell Cards",
+              "Category:Champion Cards"]
+# Cards the wiki files under "Removed Cards" exist ONLY in limited-time event modes (party_*,
+# super_*, Santa Hog Rider, Wizard Trio, Terry ...) or were delisted outright (Heal, Warmth,
+# Baby Goblins). None of them can appear in a trophy-ladder match, so importing them poisons
+# every downstream consumer: the sim builds opponent decks the bot will never face, the detector
+# taxonomy burns class slots that can never be labelled, and the threat model reasons about
+# cards that do not exist. Every genuine ladder card carries an Arena category instead, so this
+# one category is a clean and complete separator -- verified 2026-08-07 against all 180 imported
+# cards, which produced no false positives and no misses.
+EXCLUDE_CATEGORY = "Category:Removed Cards"
+_EVO = "/Evolution"
+_HERO = "/Hero"
+_NUM = re.compile(r"^-?\d+(?:\.\d+)?$")
+_VARDEF = re.compile(r"\{\{#vardefine:\s*([A-Za-z0-9_]+)\s*\|\s*([^}|]+?)\s*\}\}")
+_INFOBOX = re.compile(r"\|\s*(Cost|Rarity|Type)\s*=\s*([^\n|}]+)")
+
+# --- the per-unit ATTRIBUTES TABLE -----------------------------------------------------------
+# Every card page carries a wikitable id="unit-attributes-table" holding the fields that are NOT
+# vardefines: Count, Transport (air/ground), Speed, Range, Target, Deploy Time, and -- for anything
+# that shoots -- Projectile Speed/Radius/Range, Splash Radius and Charge Range. These were
+# previously taken from RoyaleAPI's cr-api-data, which has been DEAD SINCE 2023-10-18 (last commit),
+# so it predates every card and balance change since and misses the newer cards entirely.
+_ATTR_TABLE = re.compile(r"\{\|[^\n]*unit-attributes-table.*?\n\|\}", re.S)
+_ICON = re.compile(r"\{\{Icon\|[^}]*\}\}")
+_PAREN = re.compile(r"\(([\d.]+)\)")
+_ANYNUM = re.compile(r"-?\d+(?:\.\d+)?")
+# A card whose extra table rows are things it spawns WHEN IT DIES (Golem -> Golemites, Lava Hound
+# -> Pups, Battle Ram -> Barbarians, Skeleton Barrel -> Skeletons, Goblin Giant -> Spear Goblins)
+# must NOT add those to its DEPLOY count; a card that fields several unit types AT ONCE (Goblin
+# Gang 3+3, Rascals 1+2, Goblinstein 1+1) must. The wiki states the trigger in prose, and the
+# phrasings vary enough that this has to be generous -- "When he is defeated", "Once it reaches a
+# building or it is destroyed", "When defeated ... splits into", "reveal the two Barbarians".
+_DEATH_SPAWN = re.compile(
+    r"(?:when|once|after|if)\b[^.]{0,70}\b(?:destroyed|defeated|dies|die)"
+    r"|upon death|splits? into|reveals? the|drops?,[^.]*spawning", re.I)
+# CHAMPION BOILERPLATE, removed BEFORE the death-spawn test. Champion pages still carry "they will
+# stay out of the player's card cycle, and only return once they are defeated" -- prose the game
+# itself has since dropped, as champions now sit in the normal 8-card cycle like anything else. It
+# is stale on both counts: it describes a removed mechanic, and it trips the generous death clause
+# above while spawning nothing. It cost Goblinstein its components (its Monster + Doctor deploy
+# together and read as a death chain); on single-body champions it was invisible, count being 1
+# either way. Harmless once the wiki catches up -- the sentence simply stops matching.
+_CHAMPION_CYCLE = re.compile(r"[^.]*\bcard cycle\b[^.]*\.", re.I)
+
+
+def _lead_para(intro: str) -> str:
+    """The card's own description paragraph, skipping infobox templates, hatnotes and images.
+
+    Death-spawn behaviour is CORE card behaviour and every one of the seven such cards states it
+    here -- "When defeated, it splits into two Golemites". Ability prose lives in later paragraphs,
+    which is where Goblinstein's "If the Monster has already been defeated, it will drop an antenna"
+    sits: a death clause that spawns no body. Scoping the test to this paragraph is what keeps that
+    sentence, and any future ability written like it, from being read as a death chain.
+    """
+    for blk in re.split(r"\n\s*\n", intro):
+        blk = blk.strip()
+        if blk[:1] not in "{|[!" and len(blk) > 80:
+            return blk
+    return intro
+# Spirits: "It launches itself at its target when attacking, destroying itself on impact."
+_KAMIKAZE = re.compile(r"destroying itself on impact|launches itself at its target", re.I)
+# CR speed ratings are quoted as "Very Fast (120)"; 60 of these units = 1 tile/second.
+_SPEED_UNITS_PER_TILE = 60.0
+
+
+def _cell(s: str) -> str:
+    s = _ICON.sub("", s)
+    s = re.sub(r"<br\s*/?>", " ", s)
+    s = re.sub(r'scope\s*=\s*"[^"]*"\s*\|?', "", s)
+    s = re.sub(r"\{\{Rarity\|([^}]*)\}\}", r"\1", s)
+    s = re.sub(r"\[\[([^\]|]*\|)?([^\]]*)\]\]", r"\2", s)
+    return " ".join(s.split()).strip(" |")
+
+
+def _tiles(v):
+    """'Melee: Short (0.5)' -> 0.5; '6' -> 6.0; 'Very Fast (120)' -> 120.0."""
+    if not v:
+        return None
+    m = _PAREN.search(v)
+    if m:
+        return float(m.group(1))
+    m = _ANYNUM.search(v)
+    return float(m.group(0)) if m else None
+
+
+def _attr_rows(wt: str) -> list:
+    """Every row of every unit-attributes table on the page, as header->value dicts.
+
+    Each row carries a private ``_table`` ordinal (which table on the page it came from) so
+    that callers can tell the card's own body table from later ability/death tables.
+    """
+    rows_out = []
+    for ti, tb in enumerate(_ATTR_TABLE.findall(wt)):
+        heads, rows = [], []
+        for line in tb.splitlines():
+            ls = line.strip()
+            if ls.startswith("!"):
+                heads += [_cell(c) for c in ls.lstrip("!").split("!!")]
+            elif ls.startswith("|") and not ls.startswith(("|-", "|}", "|+", "{|")):
+                cells = [_cell(c) for c in ls.lstrip("|").split("||")]
+                # a row's trailing cells are often on their own continuation lines
+                if rows and len(rows[-1]) < len(heads):
+                    rows[-1] += cells
+                else:
+                    rows.append(cells)
+        rows_out += [dict(zip(heads, r), _table=ti) for r in rows]
+    return rows_out
+
+
+def _unit_groups(wt: str) -> dict:
+    """``prefix -> {hp, dmg, atk}`` for every unit body the page defines.
+
+    A multi-body card publishes ONE PREFIXED SET PER UNIT and the card's own body uses the bare
+    names: Goblin Gang has stab_/spear_, Rascals boy_/girl_, Goblinstein monster_/bare, Little
+    Prince guard_/bare. The prefixes are page-specific words, so they cannot be enumerated -- but
+    every group also carries ``<prefix>_atk_speed`` and the attributes table publishes each row's
+    ``Hit Speed``, which is the SAME NUMBER. That is the join, and it is exact.
+    """
+    out: dict = {}
+    for key, val in ((k, v.strip()) for k, v in _VARDEF.findall(wt)):
+        for suf, field in (("_hp_11", "hp"), ("_dmg_11", "dmg"), ("_atk_speed", "atk")):
+            if key.endswith(suf):
+                out.setdefault(key[: -len(suf)], {})[field] = _lit(val)
+                break
+        else:
+            if key in ("hp_11", "dmg_11", "atk_speed"):
+                out.setdefault("", {})["hp" if key == "hp_11" else
+                                       "dmg" if key == "dmg_11" else "atk"] = _lit(val)
+    return out
+
+
+def _attacks_from_target(cell: str):
+    """The wiki's Target column -> the sim's `attacks` schema, or None to assert nothing.
+
+    ⚠ A Target cell that begins "Friendly" names who the card BUFFS OR HEALS, not who it attacks
+    (Rage, Heal Spirit, Battle Healer, the Lumberjack's rage). Rage's cell reads "Friendly Troops &
+    Buildings", and a bare `"building" in cell` test turned that into attacks: ["buildings"] --
+    which in this schema means the OPPOSITE thing: "this only ever hits buildings", Hog/Rocket-style
+    targeting. Rage attacks nobody and its damage is air+ground, so the row asserted something
+    false in both directions. Return None and let curation state the truth.
+
+    Every distinct Target cell across the 200-odd archived pages, so the branches below are
+    exhaustive rather than guessed: "Ground" (185), "Air & Ground" (152), "Buildings" (52),
+    "Friendly Troops" (4), "Friendly Troops & Buildings" (3), "Air & Ground (Troops only)" (3),
+    "Building" (3), "King's Tower" (1), "Melee" (1).
+    """
+    t = (cell or "").lower()
+    if "friendly" in t:
+        return None
+    if "building" in t:
+        return ["buildings"]
+    if "air" in t and "ground" in t:
+        return ["air", "ground"]
+    if "ground" in t:
+        return ["ground"]
+    if "air" in t:
+        return ["air"]
+    return None
+
+
+def _row_stats(r: dict) -> dict:
+    """The geometry half of a component, straight off its attributes row."""
+    sp = _tiles(r.get("Speed"))
+    attacks = _attacks_from_target(r.get("Target"))
+    return {k: v for k, v in {
+        "hit_speed": _tiles(r.get("Hit Speed")),
+        "range_tiles": _tiles(r.get("Range")),
+        "speed_tiles": round(sp / _SPEED_UNITS_PER_TILE, 3) if sp else None,
+        "attacks": attacks,
+        "movement": ("air" if (r.get("Transport") or "").lower() == "air" else "ground")
+                    if r.get("Transport") else None,
+        "projectile_speed": _tiles(r.get("Projectile Speed")),
+    }.items() if v is not None}
+
+
+def _parse_attr_tables(wt: str, hero: bool = False) -> dict:
+    rows = _attr_rows(wt)
+    # THE CARD'S OWN table is the one carrying Cost -- every card page leads with it. A SPAWNER page
+    # then has a SECOND table for the unit it summons, which has no Cost. Keying on Cost is what
+    # separates them. The old filter (Transport OR Range OR Radius) skipped a spawner's own table
+    # entirely, because it lists "Spawn Range" rather than "Range" and never carries Transport -- so
+    # units[0] became the SPAWNED troop and its stats were written as the card's. goblin_hut ended up
+    # with a Spear Goblin's 133 hp / 5.0 range / 2.0 speed; a `kind: building` with a MOVEMENT SPEED
+    # is the tell. Same for tombstone (a Skeleton), barbarian_hut (a Barbarian), goblin_drill and
+    # goblin_cage.
+    owns = [r for r in rows if r.get("Cost")]
+    # A HERO page's LATER Cost-bearing tables describe the ABILITY -- their Cost is the ability's
+    # elixir, not a second deploy. Balloon/Hero's Skeletrooper table carries Cost 2 + Count +
+    # Transport and read as a second body, making the hero row claim TWO balloons deploy. The
+    # hero's own body block is always the page's first Cost-bearing table.
+    if hero and owns:
+        first = owns[0]["_table"]
+        owns = [r for r in owns if r["_table"] == first]
+    spawned = [r for r in rows if not r.get("Cost") and r.get("Transport")]
+    units = owns or [r for r in rows if r.get("Transport") or r.get("Range") or r.get("Radius")]
+    if not units:
+        return {}
+
+    def _n(r):
+        m = _ANYNUM.search(r.get("Count") or "")
+        return int(m.group()) if m else 1
+
+    main = units[0]
+    intro = _CHAMPION_CYCLE.sub("", wt.split("==Strategy==")[0])
+    lead = _lead_para(intro)
+    # A COMPONENT ROW needs BOTH Transport and Count. Requiring Count is what separates the three
+    # real cases from two look-alikes: Three Musketeers' extra rows are its two ATTACK MODES (ranged
+    # 6 / melee long, no Count, no Transport) and Little Prince's third row is the ABILITY-summoned
+    # Guardian (Transport but no Count). Neither is a simultaneous deploy, and both would otherwise
+    # have been folded in as extra bodies.
+    bodies = [r for r in units if r.get("Transport") and r.get("Count")]
+    count = sum(_n(r) for r in bodies) if (len(bodies) > 1 and not _DEATH_SPAWN.search(lead)) \
+        else _n(main)
+
+    attacks = _attacks_from_target(main.get("Target"))
+
+    speed = _tiles(main.get("Speed"))
+    out = {
+        "count": count,
+        "movement": ("air" if (main.get("Transport") or "").lower() == "air" else "ground")
+                    if main.get("Transport") else None,
+        "speed_tiles": round(speed / _SPEED_UNITS_PER_TILE, 3) if speed else None,
+        "range_tiles": _tiles(main.get("Range")),
+        "attacks": attacks,
+        "deploy_time": _tiles(main.get("Deploy Time")),
+        "projectile_speed": _tiles(main.get("Projectile Speed")),
+        "projectile_radius": _tiles(main.get("Projectile Radius")),
+        "projectile_range": _tiles(main.get("Projectile Range")),
+        "splash_radius": _tiles(main.get("Splash Radius")),
+        "radius_tiles": _tiles(main.get("Radius")),          # spells: the blast footprint
+        # SPAWNER parameters, straight off the card's own table. Goblin Hut only summons "when an
+        # enemy is within range" (Spawn Range 6) -- it stopped spawning automatically in the May 2025
+        # update, so the gate is real and not cosmetic. Buildings that spawn unconditionally simply
+        # have no Spawn Range column.
+        "spawn_interval_s": _tiles(main.get("Spawn Speed")),
+        "spawn_delay_s": _tiles(main.get("Spawn Delay")),
+        "spawn_range_tiles": _tiles(main.get("Spawn Range")),
+    }
+    # COMPONENTS: a card that fields SEVERAL UNIT TYPES AT ONCE. Without this the importer kept row
+    # 0's stats and merely SUMMED the counts, so Goblin Gang became 6 Goblins (the 3 Spear Goblins
+    # lost their 133 hp / 5-tile range), Rascals became 3 Rascal BOYS at 1940 hp each instead of one
+    # boy plus two 261 hp girls -- roughly 2.4x its real effective hitpoints, in 1 of every 20
+    # opponent decks -- and Goblinstein became a chimera with the Monster's hp/damage and the
+    # Doctor's range. Death-spawn chains (Golem -> Golemites, Lava Hound -> Pups) are excluded by the
+    # same prose test that already guards `count`, because those bodies arrive LATER, not together.
+    if len(bodies) > 1 and not _DEATH_SPAWN.search(lead):
+        groups = _unit_groups(wt)
+        comps = []
+        for r in bodies:
+            hs = _tiles(r.get("Hit Speed"))
+            g = next((v for v in groups.values()
+                      if v.get("hp") and v.get("atk") is not None and hs is not None
+                      and abs(float(v["atk"]) - float(hs)) < 1e-6), None)
+            c = {"count": _n(r), **_row_stats(r)}
+            if g:
+                c["hitpoints"], c["damage"] = g.get("hp"), g.get("dmg")
+            comps.append(c)
+        # Only worth recording if every body resolved to real hitpoints; a half-resolved list would
+        # be worse than none, since the engine would field some bodies with fallback stats.
+        if comps and all(c.get("hitpoints") for c in comps):
+            out["components"] = comps
+    if spawned:                      # the summoned troop's own row (never has Cost)
+        sp = spawned[0]
+        sp_speed = _tiles(sp.get("Speed"))
+        out["spawn_unit_stats"] = {k: v for k, v in {
+            "range_tiles": _tiles(sp.get("Range")),
+            "speed_tiles": round(sp_speed / _SPEED_UNITS_PER_TILE, 3) if sp_speed else None,
+            "hit_speed": _tiles(sp.get("Hit Speed")),
+            "flying": (sp.get("Transport") or "").lower() == "air" or None,
+        }.items() if v is not None}
+    def _any(col):
+        """First non-empty value of `col` across ANY table on the page.
+
+        These columns do not live on the card's own Cost row -- `Cycles` sits on an Evolution's
+        separate table, `Death Damage Splash Radius` on a death-effect table -- so they must be
+        searched page-wide rather than read off `main`.
+        """
+        for r in rows:
+            if r.get(col):
+                return r[col]
+        return None
+
+    cyc = _ANYNUM.search(_any("Cycles") or "")
+    pct = _ANYNUM.search(_any("Slowdown") or "")
+    out.update({
+        # EVOLUTION CYCLES: how many base plays charge the Evolution. Four cards were sitting on an
+        # UNVERIFIED guess of 1; the wiki publishes 2 for Musketeer / Valkyrie / Archers / Skeletons.
+        "evo_cycles": int(cyc.group()) if cyc else None,
+        "death_radius_tiles": _tiles(_any("Death Damage Splash Radius")),
+        "stun_duration_s": _tiles(_any("Stun Duration")),
+        "freeze_duration_s": _tiles(_any("Freeze Duration")),
+        "slow_duration_s": _tiles(_any("Slow Duration")),
+        "slow_pct": float(pct.group()) if pct else None,
+        "jump_time_s": _tiles(_any("Jump Time")),
+        "dash_time_s": _tiles(_any("Dash Time")),
+        "projectile_width_tiles": _tiles(_any("Projectile Width")),
+    })
+    if _KAMIKAZE.search(intro):
+        out["kamikaze"] = True       # spirits: leap at the target, hit once, die on impact
+    charge = next((r for r in rows if r.get("Charge Range")), None)
+    if charge:
+        out["charge_range"] = _tiles(charge.get("Charge Range"))
+        cs = _tiles(charge.get("Speed"))
+        out["charge_speed_tiles"] = round(cs / _SPEED_UNITS_PER_TILE, 3) if cs else None
+    return {k: v for k, v in out.items() if v is not None}
+
+
+def _key(name: str) -> str:
+    return (str(name).strip().lower()
+            .replace(" ", "_").replace("-", "_").replace(".", "").replace("'", ""))
+
+
+def _api(params: dict):
+    url = WIKI + "?" + urllib.parse.urlencode({**params, "format": "json"})
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return json.load(r)
+
+
+def _members(cat: str):
+    out, cont = [], None
+    while True:
+        p = {"action": "query", "list": "categorymembers", "cmtitle": cat, "cmlimit": 500}
+        if cont:
+            p["cmcontinue"] = cont
+        d = _api(p)
+        for m in d.get("query", {}).get("categorymembers", []):
+            t = m["title"]
+            if ":" in t:
+                continue                        # skip subcategories / namespaced pages
+            if "/" in t and not (t.endswith(_EVO) or t.endswith(_HERO)):
+                continue                        # skip subpages except the Evolution/Hero variants
+            out.append(t)
+        cont = d.get("continue", {}).get("cmcontinue")
+        if not cont:
+            return out
+
+
+def _wikitext(page: str):
+    """(wikitext, revid) for a page -- the revid is the row's provenance anchor."""
+    d = _api({"action": "parse", "page": page, "prop": "wikitext|revid"})["parse"]
+    return d["wikitext"]["*"], d.get("revid")
+
+
+def _lit(v):
+    return float(v) if v is not None and _NUM.match(str(v).strip()) else None
+
+
+def _pick(vd: dict, base: str):
+    """Level-11 value for a stat, trying `<base>_11` then `<base>_base`."""
+    for suf in (f"{base}_11", f"{base}_base"):
+        val = _lit(vd.get(suf))
+        if val is not None:
+            return val
+    return None
+
+
+def _parse_card(page: str, wt: str) -> dict:
+    vd = {k: v.strip() for k, v in _VARDEF.findall(wt)}
+    info = {k: v.strip() for k, v in _INFOBOX.findall(wt)}
+
+    hp, dmg, atk = _pick(vd, "hp"), _pick(vd, "dmg"), _lit(vd.get("atk_speed"))
+    crown = _pick(vd, "crown_dmg")
+    # A SPAWNER page defines HP for BOTH the card and the unit it summons, and which one gets the
+    # bare `hp_11` is NOT consistent: goblin_hut/tombstone/barbarian_hut/goblin_drill put the
+    # BUILDING behind a prefix (hut_/tomb_/drill_) and the SPAWNED unit on bare hp_11, while
+    # goblin_cage does the reverse. Taking bare hp_11 therefore gave four buildings their spawned
+    # troop's hitpoints. The one rule that holds on every page today is that the card's OWN body is
+    # the tankier of the two -- which is also the rule the old prefixed-only fallback already used,
+    # it just never applied when a bare hp_11 happened to exist.
+    hp_vars = {}
+    for k, v in vd.items():
+        m = re.fullmatch(r"(?:([a-z0-9]+)_)?hp_(?:11|base)", k)
+        lv = _lit(v)
+        if m and lv is not None:
+            hp_vars.setdefault(m.group(1) or "", lv)
+    if hp_vars:
+        pref = max(hp_vars, key=lambda k: hp_vars[k])
+        hp = hp_vars[pref]
+        if pref:                     # damage/attack MUST come from the same unit as the hitpoints,
+            p = f"{pref}_"           # with no fallback to the bare vars (those are the spawned unit)
+            dmg = _lit(vd.get(f"{p}dmg_11")) or _lit(vd.get(f"{p}dmg_base"))
+            atk = _lit(vd.get(f"{p}atk_speed"))
+    # RAMP-UP DAMAGE (Inferno Tower / Inferno Dragon / Mighty Miner). These cards publish NO plain
+    # `dmg_11`; their damage is staged as `1_dmg_11` / `2_dmg_11` / `3_dmg_11`, climbing while they
+    # stay locked on one target. The importer only ever looked for the bare key, so all three came
+    # out with damage None -> dps 0 and dealt NO DAMAGE AT ALL in the sim, to towers or to troops.
+    stages = {}
+    for k, v in vd.items():
+        m = re.fullmatch(r"([123])_dmg_(?:11|base)", k)
+        lv = _lit(v)
+        if m and lv is not None:
+            stages.setdefault(int(m.group(1)), lv)
+    damage_stages = [stages[i] for i in sorted(stages)] if stages else None
+    # A RAMP CLIMBS. Void uses the same `N_dmg_11` naming for something else entirely -- damage
+    # against 1 troop vs 2 troops, which DESCENDS (696 -> 294) -- so requiring a strictly increasing
+    # series is what separates a real ramp from a same-shaped key that means the opposite.
+    if damage_stages and (len(damage_stages) < 2
+                          or any(b <= a for a, b in zip(damage_stages, damage_stages[1:]))):
+        damage_stages = None
+    if damage_stages and dmg is None:
+        dmg = damage_stages[0]       # stage 1 is the opening damage, before any ramp
+
+    cost = info.get("Cost", "")
+    entry = {
+        "display": page,
+        "elixir": int(cost) if cost.isdigit() else None,
+        "rarity": (info.get("Rarity") or "").lower() or None,
+        "kind": (info.get("Type") or "").lower() or None,
+        "hitpoints": int(hp) if hp is not None else None,
+        "damage": int(dmg) if dmg is not None else None,
+        "hit_speed": atk,
+        "dps": round(dmg / atk) if (dmg and atk) else None,
+        "crown_tower_damage": int(crown) if crown is not None else None,
+        "lifetime_s": _lit(vd.get("life")),
+        "damage_stages": damage_stages,
+        # SECONDARY DAMAGE + SHIELD, all level-scaled vardefines the importer never read. The engine
+        # was guessing a shield as a fraction of hitpoints and had no death damage at all, so a
+        # Balloon or Giant Skeleton dying was silent -- which is most of what those cards are for.
+        # `Shield_11` is capitalised on Royal Recruits, hence the case-insensitive lookup.
+        "shield_hp": _pick(vd, "shield") or _pick({k.lower(): v for k, v in vd.items()}, "shield"),
+        "death_damage": _pick(vd, "death"),
+        "charge_damage": _pick(vd, "charge"),      # Prince 783 / Dark Prince 532 on a completed charge
+        "dash_damage": _pick(vd, "dash"),          # Bandit 389
+        "jump_damage": _pick(vd, "jump"),          # Mega Knight 537 on landing
+        "spawn_damage": _pick(vd, "spawn"),        # Mega Knight 430 / Goblin Drill 84 on surfacing
+        "spawn_crown_damage": _pick(vd, "spawn_crown"),
+        "hits_per_attack": _lit(vd.get("dmg_hits")),   # Electro Dragon chains to 3
+    }
+    entry.update(_parse_attr_tables(wt, hero=page.endswith(_HERO)))
+    if re.search(r"\b(?:jump|hop|leap)\w*\s+(?:over|across)\s+(?:the\s+)?river",
+                 wt.split("==Strategy==")[0], re.I):
+        entry["river_jump"] = True          # crosses the river without using a bridge
+    return {k: v for k, v in entry.items() if v is not None}
+
+
+# --- dry-run / diff ---------------------------------------------------------------------------
+# The importer historically never read the file it was about to replace, so nobody saw WHAT a
+# re-import changed until a sim regressed. The diff is field-level and runs in both modes; only
+# `--write` performs the overwrite.
+
+def _load_existing(path) -> dict:
+    """The current cards_stats.json's `cards` mapping, or {} if absent/unreadable."""
+    try:
+        if path.exists():
+            return json.loads(path.read_text(encoding="utf-8")).get("cards", {})
+    except Exception as exc:  # noqa: BLE001 -- a corrupt file should not block a dry run
+        print(f"[cards-import] WARNING: could not read existing {path}: {exc}")
+    return {}
+
+
+def _diff_stats(old: dict, new: dict) -> dict:
+    """Field-level diff between two `cards` mappings.
+
+    Underscore-prefixed fields (`_src` provenance) are metadata, not stats: they change on
+    every fetch by construction, so listing them would drown the real diff.
+    """
+    added = sorted(k for k in new if k not in old)
+    removed = sorted(k for k in old if k not in new)
+    changed: dict = {}
+    for k in sorted(set(old) & set(new)):
+        fields = {}
+        for f in sorted(set(old[k]) | set(new[k])):
+            if f.startswith("_"):
+                continue
+            ov, nv = old[k].get(f), new[k].get(f)
+            if ov != nv:
+                fields[f] = (ov, nv)
+        if fields:
+            changed[k] = fields
+    return {"added": added, "removed": removed, "changed": changed}
+
+
+def _print_diff(diff: dict, had_existing: bool) -> None:
+    if not had_existing:
+        print("[cards-import] no existing cards_stats.json to diff against (first import).")
+        return
+    n_fields = sum(len(v) for v in diff["changed"].values())
+    print(f"[cards-import] diff vs existing file: +{len(diff['added'])} cards, "
+          f"-{len(diff['removed'])} cards, {len(diff['changed'])} cards changed "
+          f"({n_fields} fields).")
+    for k in diff["added"]:
+        print(f"[cards-import]   + {k}")
+    for k in diff["removed"]:
+        print(f"[cards-import]   - {k}")
+    for k, fields in diff["changed"].items():
+        for f, (ov, nv) in fields.items():
+            print(f"[cards-import]   ~ {k}.{f}: {ov!r} -> {nv!r}")
+    if not (diff["added"] or diff["removed"] or diff["changed"]):
+        print("[cards-import]   (no differences)")
+
+
+# --- content allowlist ------------------------------------------------------------------------
+# THE IMPORTER DOES NOT INVENT CONTENT. Wiki editors create subpages for announced-but-unreleased
+# content ("Coming soon... Release Date: 7th September 2026" stubs for Mega Knight/Battle Healer
+# heroes) and the channel is unmoderated -- upcoming-content stubs are calendar intel, never
+# import material (decisions.md, R1 CLOSED). config/import_allowlist.json is generated from the
+# frozen R1 registry by research/sim_parity/scripts/gen_allowlist.py; an `_evo`/`_hero` key must
+# be `status: live` there to be emitted. Announced keys are EXCLUDED loudly (the run continues);
+# a key the allowlist has never heard of is a hard stop, because it means the wiki now claims
+# content the registry has not verified.
+
+def _load_allowlist(cfg) -> dict:
+    path = cfg.path("config", "import_allowlist.json")
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))["allow"]
+    except (OSError, KeyError, ValueError) as exc:
+        raise SystemExit(f"[cards-import] cannot read {path} ({exc}) -- the allowlist gates "
+                         "evolution/hero import; regenerate it with "
+                         "research/sim_parity/scripts/gen_allowlist.py.")
+
+
+def _variant_key(title: str):
+    """`Zap/Evolution` -> 'zap_evo'; `Knight/Hero` -> 'knight_hero'; base pages -> None."""
+    for suf, tag in ((_EVO, "_evo"), (_HERO, "_hero")):
+        if title.endswith(suf):
+            return _key(title[: -len(suf)]) + tag
+    return None
+
+
+def _allowlist_gate(names: list, allow: dict):
+    """Split page titles into (importable, excluded-with-reason); an unknown variant is fatal."""
+    keep, excluded = [], []
+    for n in names:
+        key = _variant_key(n)
+        if key is None:
+            keep.append(n)
+            continue
+        row = allow.get(key)
+        st = (row or {}).get("status", "unknown")
+        if st == "live":
+            keep.append(n)
+        elif row is not None:
+            excluded.append((n, key, st, row.get("release_date")))
+        else:
+            raise SystemExit(
+                f"[cards-import] REFUSING: page '{n}' would emit key '{key}', which is not in "
+                f"config/import_allowlist.json (status: unknown). The importer does not invent "
+                f"content -- verify the release (R1 process), regenerate the allowlist with "
+                f"research/sim_parity/scripts/gen_allowlist.py, and re-run.")
+    return keep, excluded
+
+
+def _assert_emittable(key: str, allow: dict) -> None:
+    """Defense in depth at the emission site: only `status: live` variant keys become rows."""
+    if not (key.endswith("_evo") or key.endswith("_hero")):
+        return
+    row = allow.get(key)
+    if row is None:
+        raise SystemExit(f"[cards-import] REFUSING to emit '{key}': not in the allowlist "
+                         "(status: unknown) -- the importer does not invent content.")
+    if row.get("status") != "live":
+        date = row.get("release_date")
+        raise SystemExit(f"[cards-import] REFUSING to emit '{key}': allowlist status is "
+                         f"'{row.get('status')}'" + (f" (release {date})" if date else "")
+                         + " -- announced content is excluded until the registry marks it live.")
+
+
+# --- pins: curated values that must survive a re-import ---------------------------------------
+# The wiki lags its own balance history (the vardefine table is hand-edited; the History section
+# is where changes land first), so a re-import can quietly ROLL BACK a curated correction --
+# measured: rocket crown 341 -> 371 on 2026-08-14. config/import_pins.json (generated by
+# research/sim_parity/scripts/gen_pins.py from the adjudicated R2 ledger + owner rulings) is the
+# registry of such values. The post-pass forces every applicable pin over the scraped row, and
+# the write guard refuses `--write` if a pinned field would still regress (which after the
+# post-pass means: the field vanished from the scrape, the pins file was tampered with, or a
+# `--force-field` deliberately released it). Pins whose field the importer does not emit
+# (cards.yaml-curated numbers, composite fields) are advisory here and enforced by stat_sweep.
+
+_ABSENT = object()
+
+
+def _load_pins(cfg) -> list:
+    path = cfg.path("config", "import_pins.json")
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))["pins"]
+    except (OSError, KeyError, ValueError) as exc:
+        raise SystemExit(f"[cards-import] cannot read {path} ({exc}) -- pins guard the curated "
+                         "values; regenerate with research/sim_parity/scripts/gen_pins.py.")
+
+
+def _pin_target(out: dict, pin: dict):
+    """The row a pin can mechanically act on, or None if the pin is advisory here.
+
+    Advisory: pins carrying `advisory: true`, composite field names (`spawns.delay`,
+    `hitpoints/damage`), keys the import does not produce, and fields whose imported value is
+    structured (dict/list) while the pin holds a scalar shorthand (barbarian_hut's `670/192/1.3`).
+
+    `advisory: true` is the explicit form, added in I5. It marks a value that is deliberately
+    ours but must NOT be pushed into cards_stats.json -- an engine-MODELLING choice (Vines
+    applies both of its hits at once, so the KB's 306 is 2 x the wiki's per-hit 153) or a curated
+    correction whose home is cards.yaml. Recording them here anyway is what lets
+    tools/stat_sweep.py read ONE registry of deliberate deviations instead of keeping its own.
+    """
+    key, field = pin.get("key"), pin.get("field")
+    if pin.get("advisory"):
+        return None
+    if not key or not field or "." in field or "/" in field:
+        return None
+    row = out.get(key)
+    if row is None:
+        return None
+    if isinstance(row.get(field), (dict, list)):
+        return None
+    return row
+
+
+def _apply_pins(out: dict, pins: list, force=frozenset()) -> list:
+    """Force every applicable pin over the scraped value; returns [(key, field, old, new)].
+
+    `value: null` pins assert the field must NOT be imported. When a pin moves `damage` or
+    `hit_speed`, the derived `dps` is recomputed with the importer's own formula so the row
+    stays coherent.
+    """
+    applied = []
+    # A key with its OWN `dps` pin must not have that pin undone by the derived recompute below.
+    # Pins are applied in file order, which is sorted by (key, field), so "damage" < "dps" <
+    # "hit_speed": a hit_speed pin lands AFTER the dps pin and used to overwrite it. Measured on
+    # bats_evo during I5 (dps pinned 68, hit_speed pin recomputed it) -- same number there, but
+    # the ordering dependence is a trap, so the explicit pin simply wins.
+    own_dps = {p.get("key") for p in pins
+               if p.get("field") == "dps" and f"{p.get('key')}.dps" not in force}
+    for p in pins:
+        key, field, val = p.get("key"), p.get("field"), p.get("value")
+        if f"{key}.{field}" in force:
+            continue
+        row = _pin_target(out, p)
+        if row is None:
+            continue
+        if val is None:
+            if field in row:
+                applied.append((key, field, row.pop(field), None))
+            continue
+        if field in row and row[field] != val:
+            applied.append((key, field, row[field], val))
+            row[field] = val
+            if field in ("damage", "hit_speed") and key not in own_dps:
+                d, a = row.get("damage"), row.get("hit_speed")
+                if d and a and "dps" in row:
+                    row["dps"] = round(d / a)
+    return applied
+
+
+def _verified_keys(cfg) -> set:
+    """Keys whose cards.yaml row carries `verified: true` -- curation the import must not
+    silently undercut. Missing/unreadable cards.yaml degrades to an empty set (the pins
+    still guard; verified is the second, softer layer)."""
+    try:
+        import yaml
+        data = yaml.safe_load(cfg.path("config", "cards.yaml").read_text(encoding="utf-8"))
+        return {k for k, v in (data.get("cards") or {}).items()
+                if isinstance(v, dict) and v.get("verified") is True}
+    except Exception as exc:  # noqa: BLE001
+        print(f"[cards-import] WARNING: could not read cards.yaml verified flags ({exc})")
+        return set()
+
+
+def _write_guard(new: dict, existing: dict, pins: list, verified: set, force=frozenset()) -> list:
+    """Violations that must block --write: a pinned field regressing, or a field on a
+    `verified: true` cards.yaml row changing -- unless --force-field names it. A change the
+    pin post-pass itself made outranks the verified check (the pin is the newer ruling)."""
+    viol = []
+    pinned = {}
+    for p in pins:
+        key, field, val = p.get("key"), p.get("field"), p.get("value")
+        if p.get("advisory") or "." in (field or "") or "/" in (field or ""):
+            continue
+        pinned[(key, field)] = val
+        if f"{key}.{field}" in force:
+            continue
+        row = new.get(key)
+        if row is None or isinstance(row.get(field), (dict, list)):
+            continue
+        if val is None:
+            if field in row:
+                viol.append(f"PIN {key}.{field}: pinned ABSENT ({p.get('source')}), "
+                            f"import would write {row[field]!r}")
+        elif field in row:
+            if row[field] != val:
+                viol.append(f"PIN {key}.{field}: pinned {val!r} ({p.get('source')}), "
+                            f"import would write {row[field]!r}")
+        elif field in (existing.get(key) or {}):
+            viol.append(f"PIN {key}.{field}: pinned {val!r} but the re-import DROPS the field "
+                        f"(existing file has {existing[key][field]!r})")
+    for key in sorted(verified):
+        if key in existing and key not in new:
+            viol.append(f"VERIFIED {key}: row would be REMOVED from cards_stats.json")
+            continue
+        if key not in existing or key not in new:
+            continue
+        for f in sorted(set(existing[key]) | set(new[key])):
+            if f.startswith("_") or f"{key}.{f}" in force:
+                continue
+            ov, nv = existing[key].get(f, _ABSENT), new[key].get(f, _ABSENT)
+            if ov is nv or ov == nv:
+                continue
+            if (key, f) in pinned and pinned[(key, f)] == (None if nv is _ABSENT else nv):
+                continue        # the pin post-pass made this change; pins outrank verified
+            o = "ABSENT" if ov is _ABSENT else repr(ov)
+            n = "ABSENT" if nv is _ABSENT else repr(nv)
+            viol.append(f"VERIFIED {key}.{f}: verified: true row would change {o} -> {n}")
+    return viol
+
+
+def import_cards(cfg, write: bool = False, force_fields=()) -> None:
+    print("[cards-import] scraping the Clash Royale Fandom wiki (level 11)...")
+    names: list = []
+    champions: set = set()
+    for cat in CATEGORIES:
+        try:
+            m = _members(cat)
+            names += m
+            if "Champion" in cat:
+                champions.update(m)
+            print(f"[cards-import] {cat}: {len(m)} pages")
+        except Exception as exc:  # noqa: BLE001
+            print(f"[cards-import] {cat} failed: {exc}")
+    names = sorted(set(names))
+    if not names:
+        print("[cards-import] no card pages found (wiki category names may have changed).")
+        return
+    # FALLBACK EVOLUTION/HERO DISCOVERY. The category walk only sees subpages the editors have
+    # already categorized -- a freshly created Evolution page (Elite Barbarians, Season 86: the
+    # page existed for days while `Category:Troop Cards` didn't list it) was silently invisible,
+    # and live `/Hero` subpages sit uncategorized the same way. Probe every base card's
+    # `/Evolution` AND `/Hero` subpage existence directly in batched title queries; anything that
+    # exists joins the import regardless of categories (the allowlist below still gates it).
+    bases = [n for n in names if "/" not in n]
+    probe = []
+    for suf in (_EVO, _HERO):
+        have = {n[: -len(suf)] for n in names if n.endswith(suf)}
+        probe += [b + suf for b in bases if b not in have]
+    found = []
+    for i in range(0, len(probe), 50):
+        d = _api({"action": "query", "titles": "|".join(probe[i:i + 50])})
+        for p in d.get("query", {}).get("pages", {}).values():
+            if "missing" not in p:
+                found.append(p["title"])
+    if found:
+        print(f"[cards-import] uncategorized Evolution/Hero pages found by probe: "
+              f"{', '.join(sorted(found))}")
+        names = sorted(set(names) | set(found))
+
+    try:
+        removed = set(_members(EXCLUDE_CATEGORY))
+    except Exception as exc:  # noqa: BLE001 -- better to import everything than to import nothing
+        removed = set()
+        print(f"[cards-import] WARNING: could not read {EXCLUDE_CATEGORY} ({exc}); "
+              "event-only cards may slip in.")
+    if removed:
+        # an Evolution/Hero subpage is dropped with its base card
+        skipped = [n for n in names if n in removed or n.split("/", 1)[0] in removed]
+        names = [n for n in names if n not in skipped]
+        print(f"[cards-import] skipping {len(skipped)} event-only/removed cards: "
+              f"{', '.join(sorted(skipped)[:6])}{'...' if len(skipped) > 6 else ''}")
+
+    allow = _load_allowlist(cfg)
+    names, excluded = _allowlist_gate(names, allow)
+    for n, key, st, date in excluded:
+        extra = f", release {date}" if date else ""
+        print(f"[cards-import] EXCLUDED by allowlist: {n} -> {key} (status: {st}{extra}); "
+              "not imported")
+
+    out: dict = {}
+    fails: list = []
+    n_evo = n_champ = n_hero = 0
+    fetched = datetime.date.today().isoformat()      # one date for the whole run
+    for i, name in enumerate(names):
+        try:
+            wt, revid = _wikitext(name)
+            entry = _parse_card(name, wt)
+            # provenance, attached after the non-null filter: which revision produced this row
+            entry["_src"] = {"revid": revid, "fetched": fetched}
+            if name.endswith(_EVO):
+                base = name[: -len(_EVO)]
+                entry["display"] = f"Evo {base}"
+                entry["evolution"] = True
+                entry["base"] = _key(base)
+                key = _key(base) + "_evo"
+                _assert_emittable(key, allow)
+                out[key] = entry
+                n_evo += 1
+            elif name.endswith(_HERO):
+                base = name[: -len(_HERO)]
+                entry["display"] = f"Hero {base}"
+                entry["hero"] = True
+                entry["base"] = _key(base)
+                key = _key(base) + "_hero"
+                _assert_emittable(key, allow)
+                out[key] = entry
+                n_hero += 1
+            else:
+                if name in champions:
+                    entry["champion"] = True
+                    n_champ += 1
+                out[_key(name)] = entry
+        except Exception:  # noqa: BLE001
+            fails.append(name)
+        time.sleep(0.15)  # be polite to the wiki
+        if (i + 1) % 25 == 0:
+            print(f"[cards-import]   {i + 1}/{len(names)} pages...")
+
+    force = frozenset(force_fields or ())
+    pins = _load_pins(cfg)
+    pinned = _apply_pins(out, pins, force)
+    print(f"[cards-import] pins: {len(pins)} loaded, {len(pinned)} enforced over scraped values"
+          + (f", {len(force)} force-field release(s)" if force else ""))
+    for key, field, old, new in pinned:
+        print(f"[cards-import]   pin {key}.{field}: scraped {old!r} -> pinned {new!r}")
+
+    path = cfg.path("config", "cards_stats.json")
+    existing = _load_existing(path)
+    diff = _diff_stats(existing, out)
+    _print_diff(diff, had_existing=bool(existing))
+
+    guard = _write_guard(out, existing, pins, _verified_keys(cfg), force)
+    if guard:
+        gate = "REFUSING --write" if write else "guard would refuse --write"
+        print(f"[cards-import] {gate}: {len(guard)} violation(s):")
+        for v in guard:
+            print(f"[cards-import]   {v}")
+        print("[cards-import] a real balance change? --force-field KEY.FIELD releases one "
+              "field; then update config/import_pins.json (gen_pins.py) in the same commit.")
+
+    wrote = False
+    if write and not guard:
+        meta = {
+            "level": 11,
+            "source": "clashroyale.fandom.com (MediaWiki, level-11 vardefines)",
+            "generated": datetime.date.today().isoformat(),
+            "count": len(out),
+            "champions": n_champ,
+            "evolutions": n_evo,
+            "heroes": n_hero,
+            "pair_note": "written ONCE by whichever deck ran --write and COPIED byte-for-byte "
+                         "to the sibling deck; never re-run per deck (_src revid/fetched would "
+                         "differ and tools/parity_check.py fails the pair)",
+        }
+        path.write_text(json.dumps({"meta": meta, "cards": out}, indent=1), encoding="utf-8")
+        wrote = True
+        print(f"[cards-import] REMINDER: copy {path} byte-for-byte to the sibling deck "
+              "(parity_check gates on it) -- do NOT re-run the import there.")
+
+    hp = sum(1 for v in out.values() if "hitpoints" in v)
+    dmg = sum(1 for v in out.values() if "damage" in v)
+    cnt = sum(1 for v in out.values() if "count" in v)
+    air = sum(1 for v in out.values() if v.get("movement") == "air")
+    proj = sum(1 for v in out.values() if "projectile_speed" in v)
+    jump = sorted(k for k, v in out.items() if v.get("river_jump"))
+    kami = sorted(k for k, v in out.items() if v.get("kamikaze"))
+    verb = ("wrote" if wrote else
+            "WRITE REFUSED (guard): would have written" if write else
+            "DRY-RUN: would write")
+    print(f"[cards-import] {verb} {len(out)} cards to {path} ({hp} with hitpoints, {dmg} with "
+          f"damage; {n_champ} champions, {n_evo} evolutions, {n_hero} heroes).")
+    if not write:
+        print("[cards-import] nothing written. Re-run with --write to apply the diff above.")
+    print(f"[cards-import]   attributes table: {cnt} counts, {air} air units, "
+          f"{proj} with projectiles")
+    print(f"[cards-import]   river-jumpers: {', '.join(jump) or 'none'}")
+    print(f"[cards-import]   kamikaze: {', '.join(kami) or 'none'}")
+    if fails:
+        print(f"[cards-import] {len(fails)} pages could not be parsed: {', '.join(fails[:12])}"
+              + (" ..." if len(fails) > 12 else ""))
+    print("[cards-import] curated config/cards.yaml overlays this (flags/abilities/deck).")

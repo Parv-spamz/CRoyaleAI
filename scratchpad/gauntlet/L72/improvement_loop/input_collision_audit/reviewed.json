@@ -1,0 +1,50 @@
+{
+  "complete": true,
+  "receipts": {
+    "collect": {
+      "receipt_sha256": "e10ec555ba9fc6109b47a718fb699821ed1ce4ffb28d83aa1e2ac975df781ee3",
+      "output_sha256": "8981cdf66bd2861c3cb227af1bff66c7acd69a22731762af9817beb79442c704",
+      "seconds": 90.86022400856018
+    },
+    "independent": {
+      "receipt_sha256": "ab28a729bf47b44506a2a33801942acd427c218a3b2dc16402c17e4285241802",
+      "output_sha256": "825f7b4155aed660d2337924b0750d537a645c5cbe93e6c3446ee537b59052a6",
+      "seconds": 96.15792870521545
+    }
+  },
+  "summary": {
+    "rows": 213995,
+    "replays": 1573,
+    "unique_inputs": 205474,
+    "duplicate_groups": 446,
+    "duplicate_rows": 8967,
+    "duplicate_replays": 1561,
+    "max_group": 605,
+    "gate_conflict_groups": 34,
+    "gate_conflict_rows": 132,
+    "minimum_gate_errors": 53,
+    "card_conflict_groups": 55,
+    "card_conflict_rows": 190,
+    "minimum_card_errors": 79,
+    "aim_condition_groups": 81,
+    "aim_conflict_groups": 64,
+    "aim_conflict_rows": 175,
+    "minimum_cell_errors": 86,
+    "minimum_aim1_errors": 57,
+    "rocket_aim_condition_groups": 0,
+    "rocket_aim_conflict_groups": 0,
+    "rocket_minimum_cell_errors": 0,
+    "rocket_minimum_aim1_errors": 0
+  },
+  "source_sha256": "b8182f13dc071279599bf6e5c6672dde9dd7e23b8adfa4d6de9ffea26fac2c90",
+  "bindings": {
+    "started.json": "a9996daa01a756cab509211bc35bd6beb1bb116d5e5bbc2688cfb9e6d910b8ce",
+    "collected.json": "3fe8181a91c26d930346e08d722765833d2202980a253aaef62f5e2115958360",
+    "verified.json": "a891960563a6638ece8c5b4f21a3aa7f1fa71986907a4619113f3bc942e6b09b",
+    "chain_complete.json": "bc6c3c988a2447c327bac90f044cc17be0c54184608aadd708ee435cf456c601"
+  },
+  "model_inference": 0,
+  "optimizer_updates": 0,
+  "accepted": false,
+  "deployed": false
+}

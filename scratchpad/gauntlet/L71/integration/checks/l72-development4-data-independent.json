@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/development_iteration_4/verify.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "PHASE_SCHEDULE_VERIFIED",
+  "matched": true,
+  "output_sha256": "3cada29b385518b5a967491941d49fe89f8a3f66c4ca130f897c0a867d5f8fd3",
+  "seconds": 16.1831636428833
+}

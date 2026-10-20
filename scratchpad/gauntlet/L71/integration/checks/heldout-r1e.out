@@ -1,0 +1,4 @@
+{"global_card_agreement": {"n": 7708, "denominator": 11934, "rate": 0.6458857047092341}, "rocket_recall": {"n": 81, "denominator": 671, "rate": 0.12071535022354694}, "rocket_finish": {"n": 0, "denominator": 10, "rate": 0.0}, "combo_rocket": {"n": 5, "denominator": 69, "rate": 0.07246376811594203}, "combo_tornado": {"n": 16, "denominator": 69, "rate": 0.2318840579710145}, "barrel": {"pro_same_lane_rows": 39, "forced_log_same_lane": {"n": 28, "denominator": 39, "rate": 0.717948717948718}, "gated_correct_lane": {"n": 23, "denominator": 39, "rate": 0.5897435897435898}, "gated_wrong_lane": {"n": 11, "denominator": 39, "rate": 0.28205128205128205}, "known_playable_rows": 95}}
+EXPERT_CONTEXT_HELDOUT_COMPLETE
+C:\Users\benpe\.codex\worktrees\learned-defence\ClashBot\pipeline\model_v3.py:92: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(enc, layers)

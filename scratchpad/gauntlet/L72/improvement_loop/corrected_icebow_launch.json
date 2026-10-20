@@ -1,0 +1,24 @@
+{
+  "command": [
+    "-u",
+    "scratchpad/gauntlet/L71/integration/run_check.py",
+    "--name",
+    "l72-corrected-icebow-collection",
+    "--expect",
+    "CORRECTED_ICEBOW_COLLECTION_COMPLETE",
+    "--",
+    "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+    "-u",
+    "scratchpad/gauntlet/L72/improvement_loop/collect_reserved_icebow_corrected.py"
+  ],
+  "started_at": "2026-10-05T09:31:11.9478477-04:00",
+  "source_hashes": {
+    "NATIVE_CATALOG_CORRECTION_PLAN.md": "d61a5b76c12724c5d34403d0f63957f918ca0c07fb7f1f26f31556a693fc8cfb",
+    "collect_reserved_icebow_corrected.py": "05a4a1f1370d7664d8a7c4e5c79cbfcb100644755e2029d0be82947b593a64e1",
+    "reserved_icebow_corrected_prepared.json": "28d1f31f094e9fe96d19a49ccabd4d1a524898b5f398f56a154de74b5af849ba",
+    "native_catalog_corrected.json": "5ffbae1bab9049ee4edd7361f2ed2d74ce00856cc7defcd9e24bf86048f2fec4",
+    "native_catalog_overlay.py": "73225a11ab2d49f5162296257fb41b978fa3a7d74222c7eaf26fbffbdf299226"
+  },
+  "pid": 43412,
+  "purpose": "162 newly compatible original-form reserved Icebow replays, one CPU native worker, no model calls"
+}

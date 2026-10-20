@@ -1,0 +1,6109 @@
+{
+  "pro": {
+    "dead_lane_bows": 114,
+    "linked": 113,
+    "crown_reachable": 51,
+    "defensive_contact_during_life": 57,
+    "no_observed_reachable_target_during_life": 8,
+    "nearby_support_plays": 141,
+    "nearby_support_elixir": 372.0,
+    "no_target_support_plays": 28,
+    "no_target_support_elixir": 79.0,
+    "no_target_support_opposite_threat_6s": 2,
+    "no_target_support_opposite_damage_6s": 0,
+    "no_target_support_outcome_unknown": 0
+  },
+  "live": {
+    "dead_lane_bows": 0
+  },
+  "pro_rows": [
+    {
+      "tag": "70d0014a27c8440fa888dfe4b205e922",
+      "source": "native_pro",
+      "bow": {
+        "tag": "70d0014a27c8440fa888dfe4b205e922",
+        "side": 1,
+        "tick": 2548,
+        "card": "x-bow",
+        "x": 2500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2576,
+          "card": "knight",
+          "x": 2499,
+          "y": 17499,
+          "cost": 3.0,
+          "elixir_before": 4.1348,
+          "approximate_after": 1.1348000000000003,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2666,
+          "card": "the-log",
+          "x": 2500,
+          "y": 17500,
+          "cost": 2.0,
+          "elixir_before": 4.3478,
+          "approximate_after": 2.3478000000000003,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2725,
+          "card": "skeletons",
+          "x": 5499,
+          "y": 17499,
+          "cost": 1.0,
+          "elixir_before": 4.4541,
+          "approximate_after": 3.4541000000000004,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000030,
+      "birth": 2558,
+      "last_seen": 3211,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "70d0014a27c8440fa888dfe4b205e922",
+      "source": "native_pro",
+      "bow": {
+        "tag": "70d0014a27c8440fa888dfe4b205e922",
+        "side": 1,
+        "tick": 3331,
+        "card": "x-bow",
+        "x": 8500,
+        "y": 22500,
+        "row_y": 0.703125,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3392,
+          "card": "ice-wizard",
+          "x": 8500,
+          "y": 17500,
+          "cost": 3.0,
+          "elixir_before": 5.266,
+          "approximate_after": 2.266,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3492,
+          "card": "skeletons",
+          "x": 11500,
+          "y": 21499,
+          "cost": 1.0,
+          "elixir_before": 2.836,
+          "approximate_after": 1.8359999999999999,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000050,
+      "birth": 3333,
+      "last_seen": 3681,
+      "end_observed": false,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "84026810036c443bb37cab924ac05888",
+      "source": "native_pro",
+      "bow": {
+        "tag": "84026810036c443bb37cab924ac05888",
+        "side": 1,
+        "tick": 2461,
+        "card": "x-bow",
+        "x": 14500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.194444,
+          0.390625
+        ],
+        "threat": true
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000038,
+      "birth": 2471,
+      "last_seen": 2882,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "b9e61420df72488c888d7ac560876624",
+      "source": "native_pro",
+      "bow": {
+        "tag": "b9e61420df72488c888d7ac560876624",
+        "side": 0,
+        "tick": 2099,
+        "card": "x-bow",
+        "x": 14500,
+        "y": 12500,
+        "row_y": 0.609375,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2251,
+          "card": "tesla",
+          "x": 11000,
+          "y": 14000,
+          "cost": 4.0,
+          "elixir_before": 4.4572,
+          "approximate_after": 0.4572000000000003,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2315,
+          "card": "skeletons",
+          "x": 14500,
+          "y": 14500,
+          "cost": 1.0,
+          "elixir_before": 1.5964,
+          "approximate_after": 0.5964,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2565,
+          "card": "the-log",
+          "x": 14500,
+          "y": 14500,
+          "cost": 2.0,
+          "elixir_before": 7.9999,
+          "approximate_after": 5.9999,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000018,
+      "birth": 2109,
+      "last_seen": 2769,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "b9e61420df72488c888d7ac560876624",
+      "source": "native_pro",
+      "bow": {
+        "tag": "b9e61420df72488c888d7ac560876624",
+        "side": 0,
+        "tick": 3405,
+        "card": "x-bow",
+        "x": 9500,
+        "y": 9500,
+        "row_y": 0.703125,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000037,
+      "birth": 3415,
+      "last_seen": 3681,
+      "end_observed": false,
+      "crown_reachable": false,
+      "defensive_contact": false
+    },
+    {
+      "tag": "060d2be902f24cedbd65280bc905a39e",
+      "source": "native_pro",
+      "bow": {
+        "tag": "060d2be902f24cedbd65280bc905a39e",
+        "side": 1,
+        "tick": 1792,
+        "card": "x-bow",
+        "x": 3500,
+        "y": 13500,
+        "row_y": 0.421875,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.805556,
+          0.421875
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 1821,
+          "card": "knight",
+          "x": 4499,
+          "y": 11499,
+          "cost": 3.0,
+          "elixir_before": 3.4138,
+          "approximate_after": 0.41380000000000017,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 1881,
+          "card": "skeletons",
+          "x": 3499,
+          "y": 11499,
+          "cost": 1.0,
+          "elixir_before": 1.4818,
+          "approximate_after": 0.4818,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 1988,
+          "card": "the-log",
+          "x": 6500,
+          "y": 11500,
+          "cost": 2.0,
+          "elixir_before": 2.3864,
+          "approximate_after": 0.3864000000000001,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000035,
+      "birth": 1802,
+      "last_seen": 2277,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "33051724cf8d4b53a2884a1d5a45644d",
+      "source": "native_pro",
+      "bow": {
+        "tag": "33051724cf8d4b53a2884a1d5a45644d",
+        "side": 1,
+        "tick": 1722,
+        "card": "x-bow",
+        "x": 4500,
+        "y": 13500,
+        "row_y": 0.421875,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.75,
+          0.421875
+        ],
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 1807,
+          "card": "knight",
+          "x": 8500,
+          "y": 11499,
+          "cost": 3.0,
+          "elixir_before": 5.0738,
+          "approximate_after": 2.0738000000000003,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 1993,
+          "card": "ice-wizard",
+          "x": 8500,
+          "y": 11500,
+          "cost": 3.0,
+          "elixir_before": 3.3846,
+          "approximate_after": 0.38459999999999983,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000026,
+      "birth": 1732,
+      "last_seen": 2367,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": true
+    },
+    {
+      "tag": "42d8a9b569ed4b839cb3554e95c4edd2",
+      "source": "native_pro",
+      "bow": {
+        "tag": "42d8a9b569ed4b839cb3554e95c4edd2",
+        "side": 1,
+        "tick": 2352,
+        "card": "x-bow",
+        "x": 16500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.083333,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000038,
+      "birth": 2362,
+      "last_seen": 2933,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "da36b53fa54e4323ab391dd40e7db8b6",
+      "source": "native_pro",
+      "bow": {
+        "tag": "da36b53fa54e4323ab391dd40e7db8b6",
+        "side": 1,
+        "tick": 2084,
+        "card": "x-bow",
+        "x": 2500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.861111,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000039,
+      "birth": 2094,
+      "last_seen": 2617,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "9697c26c3a1a49ff8247fbaaaf87981a",
+      "source": "native_pro",
+      "bow": {
+        "tag": "9697c26c3a1a49ff8247fbaaaf87981a",
+        "side": 1,
+        "tick": 3112,
+        "card": "x-bow",
+        "x": 9500,
+        "y": 22500,
+        "row_y": 0.703125,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3251,
+          "card": "tesla",
+          "x": 9000,
+          "y": 18000,
+          "cost": 4.0,
+          "elixir_before": 7.6005,
+          "approximate_after": 3.6005000000000003,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": 3251,
+          "elixir_at_threat": 7.6005,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3454,
+          "card": "knight",
+          "x": 6499,
+          "y": 20499,
+          "cost": 3.0,
+          "elixir_before": 4.8476,
+          "approximate_after": 1.8476,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": 3454,
+          "elixir_at_threat": 4.8476,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000068,
+      "birth": 3122,
+      "last_seen": 3541,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "6d463ae6b81d4f3688ac42f4d8c3fe5b",
+      "source": "native_pro",
+      "bow": {
+        "tag": "6d463ae6b81d4f3688ac42f4d8c3fe5b",
+        "side": 0,
+        "tick": 2966,
+        "card": "x-bow",
+        "x": 8500,
+        "y": 9500,
+        "row_y": 0.703125,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3126,
+          "card": "tesla",
+          "x": 8000,
+          "y": 13000,
+          "cost": 4.0,
+          "elixir_before": 6.712,
+          "approximate_after": 2.7119999999999997,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": 3126,
+          "elixir_at_threat": 6.712,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000061,
+      "birth": 2976,
+      "last_seen": 3631,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "000YLL22U0YL",
+      "source": "native_pro",
+      "bow": {
+        "tag": "000YLL22U0YL",
+        "side": 1,
+        "tick": 2437,
+        "card": "x-bow",
+        "x": 8500,
+        "y": 25500,
+        "row_y": 0.796875,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2581,
+          "card": "tesla",
+          "x": 9000,
+          "y": 22000,
+          "cost": 4.0,
+          "elixir_before": 8.9339,
+          "approximate_after": 4.9338999999999995,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000047,
+      "birth": 2447,
+      "last_seen": 2821,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "008YLQ8RGJJ0",
+      "source": "native_pro",
+      "bow": {
+        "tag": "008YLQ8RGJJ0",
+        "side": 1,
+        "tick": 2181,
+        "card": "x-bow",
+        "x": 4500,
+        "y": 13500,
+        "row_y": 0.421875,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.75,
+          0.421875
+        ],
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2666,
+          "card": "the-log",
+          "x": 8500,
+          "y": 11500,
+          "cost": 2.0,
+          "elixir_before": 8.2162,
+          "approximate_after": 6.216200000000001,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000047,
+      "birth": 2191,
+      "last_seen": 2846,
+      "end_observed": true,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "008YY98GVU9U",
+      "source": "native_pro",
+      "bow": {
+        "tag": "008YY98GVU9U",
+        "side": 0,
+        "tick": 1846,
+        "card": "x-bow",
+        "x": 16500,
+        "y": 19500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.916667,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000026,
+      "birth": 1856,
+      "last_seen": 2059,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "009Y20G9UY9R",
+      "source": "native_pro",
+      "bow": {
+        "tag": "009Y20G9UY9R",
+        "side": 1,
+        "tick": 2576,
+        "card": "x-bow",
+        "x": 8500,
+        "y": 23500,
+        "row_y": 0.734375,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3128,
+          "card": "skeletons",
+          "x": 9501,
+          "y": 19500,
+          "cost": 1.0,
+          "elixir_before": 9.4192,
+          "approximate_after": 8.4192,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000032,
+      "birth": 2586,
+      "last_seen": 3171,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "00JYPLJCYQLR",
+      "source": "native_pro",
+      "bow": {
+        "tag": "00JYPLJCYQLR",
+        "side": 1,
+        "tick": 2475,
+        "card": "x-bow",
+        "x": 10500,
+        "y": 22500,
+        "row_y": 0.703125,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2726,
+          "card": "tesla",
+          "x": 8000,
+          "y": 22000,
+          "cost": 4.0,
+          "elixir_before": 8.869,
+          "approximate_after": 4.869,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000029,
+      "birth": 2485,
+      "last_seen": 3028,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "00LYPQ0J22JP",
+      "source": "native_pro",
+      "bow": {
+        "tag": "00LYPQ0J22JP",
+        "side": 1,
+        "tick": 1351,
+        "card": "x-bow",
+        "x": 2500,
+        "y": 13500,
+        "row_y": 0.421875,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.861111,
+          0.421875
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000017,
+      "birth": 1361,
+      "last_seen": 1901,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "00LYPQ0JU2UC",
+      "source": "native_pro",
+      "bow": {
+        "tag": "00LYPQ0JU2UC",
+        "side": 1,
+        "tick": 2284,
+        "card": "x-bow",
+        "x": 2500,
+        "y": 13500,
+        "row_y": 0.421875,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.861111,
+          0.421875
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000027,
+      "birth": 2294,
+      "last_seen": 2618,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "00UYPQ2R02L0",
+      "source": "native_pro",
+      "bow": {
+        "tag": "00UYPQ2R02L0",
+        "side": 1,
+        "tick": 2993,
+        "card": "x-bow",
+        "x": 8500,
+        "y": 22500,
+        "row_y": 0.703125,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000087,
+      "birth": 3003,
+      "last_seen": 3657,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": false
+    },
+    {
+      "tag": "00VYPLQPYCRU",
+      "source": "native_pro",
+      "bow": {
+        "tag": "00VYPLQPYCRU",
+        "side": 1,
+        "tick": 1595,
+        "card": "x-bow",
+        "x": 15500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 1673,
+          "card": "knight",
+          "x": 15501,
+          "y": 17500,
+          "cost": 3.0,
+          "elixir_before": 4.5002,
+          "approximate_after": 1.5002000000000004,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 1731,
+          "card": "skeletons",
+          "x": 13501,
+          "y": 17500,
+          "cost": 1.0,
+          "elixir_before": 2.5326,
+          "approximate_after": 1.5326,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2141,
+          "card": "ice-wizard",
+          "x": 11500,
+          "y": 22500,
+          "cost": 3.0,
+          "elixir_before": 8.8306,
+          "approximate_after": 5.8306000000000004,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000039,
+      "birth": 1605,
+      "last_seen": 2263,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "00VYPLQPYCRU",
+      "source": "native_pro",
+      "bow": {
+        "tag": "00VYPLQPYCRU",
+        "side": 1,
+        "tick": 2398,
+        "card": "x-bow",
+        "x": 14500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2494,
+          "card": "the-log",
+          "x": 12500,
+          "y": 17500,
+          "cost": 2.0,
+          "elixir_before": 3.7966,
+          "approximate_after": 1.7966000000000002,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2611,
+          "card": "knight",
+          "x": 13501,
+          "y": 17500,
+          "cost": 3.0,
+          "elixir_before": 5.9735,
+          "approximate_after": 2.9734999999999996,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2627,
+          "card": "skeletons",
+          "x": 14501,
+          "y": 17500,
+          "cost": 1.0,
+          "elixir_before": 3.5447,
+          "approximate_after": 2.5447,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000062,
+      "birth": 2408,
+      "last_seen": 2736,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "00VYPLQPYCRU",
+      "source": "native_pro",
+      "bow": {
+        "tag": "00VYPLQPYCRU",
+        "side": 1,
+        "tick": 2901,
+        "card": "x-bow",
+        "x": 9500,
+        "y": 22500,
+        "row_y": 0.703125,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3054,
+          "card": "tesla",
+          "x": 9000,
+          "y": 20000,
+          "cost": 4.0,
+          "elixir_before": 8.7886,
+          "approximate_after": 4.788600000000001,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000075,
+      "birth": 2911,
+      "last_seen": 3124,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "00VYPLRLJ880",
+      "source": "native_pro",
+      "bow": {
+        "tag": "00VYPLRLJ880",
+        "side": 1,
+        "tick": 2193,
+        "card": "x-bow",
+        "x": 9500,
+        "y": 21500,
+        "row_y": 0.671875,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000030,
+      "birth": 2203,
+      "last_seen": 2466,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "00YY0RLL2QPY",
+      "source": "native_pro",
+      "bow": {
+        "tag": "00YY0RLL2QPY",
+        "side": 1,
+        "tick": 1995,
+        "card": "x-bow",
+        "x": 7500,
+        "y": 22500,
+        "row_y": 0.703125,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2291,
+          "card": "skeletons",
+          "x": 9501,
+          "y": 21500,
+          "cost": 1.0,
+          "elixir_before": 4.7798,
+          "approximate_after": 3.7798,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": 2291,
+          "elixir_at_threat": 4.7798,
+          "opposite_tower_hp_drop_6s": 70,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2368,
+          "card": "tornado",
+          "x": 10500,
+          "y": 18500,
+          "cost": 3.0,
+          "elixir_before": 5.1504,
+          "approximate_after": 2.1504000000000003,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": 2368,
+          "elixir_at_threat": 5.1504,
+          "opposite_tower_hp_drop_6s": 70,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2414,
+          "card": "knight",
+          "x": 7500,
+          "y": 21500,
+          "cost": 3.0,
+          "elixir_before": 3.2198,
+          "approximate_after": 0.21980000000000022,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": 2414,
+          "elixir_at_threat": 3.2198,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000028,
+      "birth": 2005,
+      "last_seen": 2464,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "00YY0RLL2QPY",
+      "source": "native_pro",
+      "bow": {
+        "tag": "00YY0RLL2QPY",
+        "side": 1,
+        "tick": 2773,
+        "card": "x-bow",
+        "x": 8500,
+        "y": 22500,
+        "row_y": 0.703125,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3034,
+          "card": "skeletons",
+          "x": 10501,
+          "y": 19500,
+          "cost": 1.0,
+          "elixir_before": 8.3538,
+          "approximate_after": 7.3538,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": 3076,
+          "elixir_at_threat": 9.8532,
+          "opposite_tower_hp_drop_6s": 25,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000041,
+      "birth": 2783,
+      "last_seen": 3273,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "00YYPLJ2J2LQ",
+      "source": "native_pro",
+      "bow": {
+        "tag": "00YYPLJ2J2LQ",
+        "side": 1,
+        "tick": 3651,
+        "card": "x-bow",
+        "x": 2500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3693,
+          "card": "skeletons",
+          "x": 5500,
+          "y": 17500,
+          "cost": 1.0,
+          "elixir_before": 4.8801,
+          "approximate_after": 3.8800999999999997,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3731,
+          "card": "knight",
+          "x": 4500,
+          "y": 17500,
+          "cost": 3.0,
+          "elixir_before": 5.2367,
+          "approximate_after": 2.2367,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": 3823,
+          "elixir_at_threat": 2.5211,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 4041,
+          "card": "tesla",
+          "x": 5000,
+          "y": 18000,
+          "cost": 4.0,
+          "elixir_before": 5.3037,
+          "approximate_after": 1.3037,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 4071,
+          "card": "skeletons",
+          "x": 1500,
+          "y": 17500,
+          "cost": 1.0,
+          "elixir_before": 2.3747,
+          "approximate_after": 1.3746999999999998,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000076,
+      "birth": 3661,
+      "last_seen": 4321,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "00YYPYR08P2J",
+      "source": "native_pro",
+      "bow": {
+        "tag": "00YYPYR08P2J",
+        "side": 1,
+        "tick": 1441,
+        "card": "x-bow",
+        "x": 3500,
+        "y": 13500,
+        "row_y": 0.421875,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.805556,
+          0.421875
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000022,
+      "birth": 1451,
+      "last_seen": 1942,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "028YPJRRLYV9",
+      "source": "native_pro",
+      "bow": {
+        "tag": "028YPJRRLYV9",
+        "side": 1,
+        "tick": 2265,
+        "card": "x-bow",
+        "x": 2500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.861111,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000036,
+      "birth": 2275,
+      "last_seen": 2654,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "028YPUURY2GU",
+      "source": "native_pro",
+      "bow": {
+        "tag": "028YPUURY2GU",
+        "side": 1,
+        "tick": 2869,
+        "card": "x-bow",
+        "x": 12500,
+        "y": 22500,
+        "row_y": 0.703125,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000084,
+      "birth": 2879,
+      "last_seen": 3134,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "028YPUV2JY2G",
+      "source": "native_pro",
+      "bow": {
+        "tag": "028YPUV2JY2G",
+        "side": 1,
+        "tick": 2223,
+        "card": "x-bow",
+        "x": 9500,
+        "y": 21500,
+        "row_y": 0.671875,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2701,
+          "card": "tesla",
+          "x": 9000,
+          "y": 19000,
+          "cost": 4.0,
+          "elixir_before": 10.0,
+          "approximate_after": 6.0,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000038,
+      "birth": 2233,
+      "last_seen": 2891,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "029YPCCJCPG8",
+      "source": "native_pro",
+      "bow": {
+        "tag": "029YPCCJCPG8",
+        "side": 1,
+        "tick": 3625,
+        "card": "x-bow",
+        "x": 2500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3676,
+          "card": "the-log",
+          "x": 4500,
+          "y": 17500,
+          "cost": 2.0,
+          "elixir_before": 3.499,
+          "approximate_after": 1.499,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3767,
+          "card": "ice-wizard",
+          "x": 6500,
+          "y": 17500,
+          "cost": 3.0,
+          "elixir_before": 4.7477,
+          "approximate_after": 1.7477,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3795,
+          "card": "skeletons",
+          "x": 1500,
+          "y": 17500,
+          "cost": 1.0,
+          "elixir_before": 2.7473,
+          "approximate_after": 1.7473,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3854,
+          "card": "knight",
+          "x": 2500,
+          "y": 17500,
+          "cost": 3.0,
+          "elixir_before": 3.8536,
+          "approximate_after": 0.8536000000000001,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000129,
+      "birth": 3635,
+      "last_seen": 3981,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "029YPJCVURP8",
+      "source": "native_pro",
+      "bow": {
+        "tag": "029YPJCVURP8",
+        "side": 0,
+        "tick": 3582,
+        "card": "x-bow",
+        "x": 15500,
+        "y": 12500,
+        "row_y": 0.609375,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000075,
+      "birth": 3592,
+      "last_seen": 3681,
+      "end_observed": false,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "02CY8L0RRRVL",
+      "source": "native_pro",
+      "bow": {
+        "tag": "02CY8L0RRRVL",
+        "side": 1,
+        "tick": 2943,
+        "card": "x-bow",
+        "x": 15500,
+        "y": 13500,
+        "row_y": 0.421875,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.138889,
+          0.421875
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000070,
+      "birth": 2953,
+      "last_seen": 3285,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "02CY8YRG9JP9",
+      "source": "native_pro",
+      "bow": {
+        "tag": "02CY8YRG9JP9",
+        "side": 1,
+        "tick": 1433,
+        "card": "x-bow",
+        "x": 16500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.083333,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000030,
+      "birth": 1443,
+      "last_seen": 1806,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "02CY8YRGQQCQ",
+      "source": "native_pro",
+      "bow": {
+        "tag": "02CY8YRGQQCQ",
+        "side": 1,
+        "tick": 2606,
+        "card": "x-bow",
+        "x": 2500,
+        "y": 18500,
+        "row_y": 0.578125,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2627,
+          "card": "tesla",
+          "x": 4000,
+          "y": 18000,
+          "cost": 4.0,
+          "elixir_before": 4.7497,
+          "approximate_after": 0.7496999999999998,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2661,
+          "card": "skeletons",
+          "x": 6499,
+          "y": 17499,
+          "cost": 1.0,
+          "elixir_before": 1.9635,
+          "approximate_after": 0.9635,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2761,
+          "card": "ice-wizard",
+          "x": 4500,
+          "y": 19500,
+          "cost": 3.0,
+          "elixir_before": 4.5335,
+          "approximate_after": 1.5335,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2806,
+          "card": "the-log",
+          "x": 4500,
+          "y": 17500,
+          "cost": 2.0,
+          "elixir_before": 3.14,
+          "approximate_after": 1.1400000000000001,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000040,
+      "birth": 2616,
+      "last_seen": 2914,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "02JY9R00C2UU",
+      "source": "native_pro",
+      "bow": {
+        "tag": "02JY9R00C2UU",
+        "side": 1,
+        "tick": 2722,
+        "card": "x-bow",
+        "x": 2500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2837,
+          "card": "knight",
+          "x": 3500,
+          "y": 17500,
+          "cost": 3.0,
+          "elixir_before": 4.2905,
+          "approximate_after": 1.2904999999999998,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000129,
+      "birth": 2732,
+      "last_seen": 2957,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "02LY9QVVJJUL",
+      "source": "native_pro",
+      "bow": {
+        "tag": "02LY9QVVJJUL",
+        "side": 1,
+        "tick": 1922,
+        "card": "x-bow",
+        "x": 1500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.916667,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000038,
+      "birth": 1932,
+      "last_seen": 2423,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "02PP9CQ0Q2U2",
+      "source": "native_pro",
+      "bow": {
+        "tag": "02PP9CQ0Q2U2",
+        "side": 1,
+        "tick": 2439,
+        "card": "x-bow",
+        "x": 1500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.916667,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2477,
+          "card": "skeletons",
+          "x": 3500,
+          "y": 11500,
+          "cost": 1.0,
+          "elixir_before": 5.1143,
+          "approximate_after": 4.1143,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2515,
+          "card": "ice-wizard",
+          "x": 3500,
+          "y": 11500,
+          "cost": 3.0,
+          "elixir_before": 5.4709,
+          "approximate_after": 2.4709000000000003,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000032,
+      "birth": 2449,
+      "last_seen": 2961,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "02PP9CQ0Q2U2",
+      "source": "native_pro",
+      "bow": {
+        "tag": "02PP9CQ0Q2U2",
+        "side": 1,
+        "tick": 2768,
+        "card": "x-bow",
+        "x": 7500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.583333,
+          0.390625
+        ],
+        "threat": true
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000038,
+      "birth": 2778,
+      "last_seen": 2961,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "02QY9G0VVQGG",
+      "source": "native_pro",
+      "bow": {
+        "tag": "02QY9G0VVQGG",
+        "side": 1,
+        "tick": 2901,
+        "card": "x-bow",
+        "x": 1500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.916667,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3062,
+          "card": "tesla",
+          "x": 4000,
+          "y": 12000,
+          "cost": 4.0,
+          "elixir_before": 8.7306,
+          "approximate_after": 4.730600000000001,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000114,
+      "birth": 2911,
+      "last_seen": 3392,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "02QY9G0Y020Q",
+      "source": "native_pro",
+      "bow": {
+        "tag": "02QY9G0Y020Q",
+        "side": 1,
+        "tick": 3335,
+        "card": "x-bow",
+        "x": 9500,
+        "y": 22500,
+        "row_y": 0.703125,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3525,
+          "card": "tesla",
+          "x": 9000,
+          "y": 20000,
+          "cost": 4.0,
+          "elixir_before": 7.783,
+          "approximate_after": 3.7830000000000004,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000064,
+      "birth": 3345,
+      "last_seen": 3681,
+      "end_observed": false,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "02QY9QP0CL00",
+      "source": "native_pro",
+      "bow": {
+        "tag": "02QY9QP0CL00",
+        "side": 1,
+        "tick": 2181,
+        "card": "x-bow",
+        "x": 10500,
+        "y": 22500,
+        "row_y": 0.703125,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2572,
+          "card": "knight",
+          "x": 8499,
+          "y": 20499,
+          "cost": 3.0,
+          "elixir_before": 10.0,
+          "approximate_after": 7.0,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000031,
+      "birth": 2191,
+      "last_seen": 2851,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": false
+    },
+    {
+      "tag": "02QY9QP0CL00",
+      "source": "native_pro",
+      "bow": {
+        "tag": "02QY9QP0CL00",
+        "side": 1,
+        "tick": 2684,
+        "card": "x-bow",
+        "x": 16500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.083333,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000037,
+      "birth": 2694,
+      "last_seen": 3257,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "02QY9QVP9Q8L",
+      "source": "native_pro",
+      "bow": {
+        "tag": "02QY9QVP9Q8L",
+        "side": 1,
+        "tick": 3448,
+        "card": "x-bow",
+        "x": 8500,
+        "y": 18500,
+        "row_y": 0.578125,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3502,
+          "card": "knight",
+          "x": 5500,
+          "y": 18500,
+          "cost": 3.0,
+          "elixir_before": 3.779,
+          "approximate_after": 0.7789999999999999,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000093,
+      "birth": 3458,
+      "last_seen": 3681,
+      "end_observed": false,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "02RY9R02G9UP",
+      "source": "native_pro",
+      "bow": {
+        "tag": "02RY9R02G9UP",
+        "side": 1,
+        "tick": 1951,
+        "card": "x-bow",
+        "x": 14500,
+        "y": 13500,
+        "row_y": 0.421875,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.194444,
+          0.421875
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000021,
+      "birth": 1961,
+      "last_seen": 2207,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "02RY9RPCPQL2",
+      "source": "native_pro",
+      "bow": {
+        "tag": "02RY9RPCPQL2",
+        "side": 1,
+        "tick": 2397,
+        "card": "x-bow",
+        "x": 15500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2472,
+          "card": "knight",
+          "x": 12501,
+          "y": 17500,
+          "cost": 3.0,
+          "elixir_before": 3.8048,
+          "approximate_after": 0.8048000000000002,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2566,
+          "card": "skeletons",
+          "x": 16501,
+          "y": 17500,
+          "cost": 1.0,
+          "elixir_before": 2.1606,
+          "approximate_after": 1.1606,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2849,
+          "card": "tesla",
+          "x": 12000,
+          "y": 18000,
+          "cost": 4.0,
+          "elixir_before": 10.0,
+          "approximate_after": 6.0,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000024,
+      "birth": 2407,
+      "last_seen": 2859,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "02RY9RPCPQL2",
+      "source": "native_pro",
+      "bow": {
+        "tag": "02RY9RPCPQL2",
+        "side": 1,
+        "tick": 2966,
+        "card": "x-bow",
+        "x": 15500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3125,
+          "card": "rocket",
+          "x": 14500,
+          "y": 19500,
+          "cost": 6.0,
+          "elixir_before": 6.8532,
+          "approximate_after": 0.8532000000000002,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3187,
+          "card": "the-log",
+          "x": 14500,
+          "y": 21500,
+          "cost": 2.0,
+          "elixir_before": 3.0666,
+          "approximate_after": 1.0666000000000002,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3209,
+          "card": "skeletons",
+          "x": 14501,
+          "y": 18500,
+          "cost": 1.0,
+          "elixir_before": 1.852,
+          "approximate_after": 0.8520000000000001,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000053,
+      "birth": 2976,
+      "last_seen": 3282,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "080Y8QULJ2PG",
+      "source": "native_pro",
+      "bow": {
+        "tag": "080Y8QULJ2PG",
+        "side": 1,
+        "tick": 2611,
+        "card": "x-bow",
+        "x": 2500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.861111,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2642,
+          "card": "skeletons",
+          "x": 500,
+          "y": 11500,
+          "cost": 1.0,
+          "elixir_before": 5.1067,
+          "approximate_after": 4.1067,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2673,
+          "card": "ice-wizard",
+          "x": 4500,
+          "y": 11500,
+          "cost": 3.0,
+          "elixir_before": 5.2134,
+          "approximate_after": 2.2134,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2721,
+          "card": "knight",
+          "x": 4500,
+          "y": 11500,
+          "cost": 3.0,
+          "elixir_before": 3.927,
+          "approximate_after": 0.927,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2775,
+          "card": "the-log",
+          "x": 6500,
+          "y": 11500,
+          "cost": 2.0,
+          "elixir_before": 2.8548,
+          "approximate_after": 0.8548,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000035,
+      "birth": 2621,
+      "last_seen": 2992,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "088Y88RQ2PC8",
+      "source": "native_pro",
+      "bow": {
+        "tag": "088Y88RQ2PC8",
+        "side": 1,
+        "tick": 2499,
+        "card": "x-bow",
+        "x": 1500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.916667,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000038,
+      "birth": 2509,
+      "last_seen": 2976,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "088Y89L2R20V",
+      "source": "native_pro",
+      "bow": {
+        "tag": "088Y89L2R20V",
+        "side": 1,
+        "tick": 2913,
+        "card": "x-bow",
+        "x": 8500,
+        "y": 23500,
+        "row_y": 0.734375,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000079,
+      "birth": 2923,
+      "last_seen": 3143,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": false
+    },
+    {
+      "tag": "08LY82JGPCLJ",
+      "source": "native_pro",
+      "bow": {
+        "tag": "08LY82JGPCLJ",
+        "side": 1,
+        "tick": 2067,
+        "card": "x-bow",
+        "x": 2500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.861111,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000043,
+      "birth": 2077,
+      "last_seen": 2512,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "08RPVJUGPCCQ",
+      "source": "native_pro",
+      "bow": {
+        "tag": "08RPVJUGPCCQ",
+        "side": 1,
+        "tick": 3009,
+        "card": "x-bow",
+        "x": 12500,
+        "y": 22500,
+        "row_y": 0.703125,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3278,
+          "card": "knight",
+          "x": 10501,
+          "y": 18500,
+          "cost": 3.0,
+          "elixir_before": 8.2094,
+          "approximate_after": 5.2094000000000005,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": 3278,
+          "elixir_at_threat": 8.2094,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3385,
+          "card": "the-log",
+          "x": 12500,
+          "y": 25500,
+          "cost": 2.0,
+          "elixir_before": 6.0293,
+          "approximate_after": 4.0293,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": 3385,
+          "elixir_at_threat": 6.0293,
+          "opposite_tower_hp_drop_6s": 40,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000121,
+      "birth": 3019,
+      "last_seen": 3436,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "08V99UCCQ0V0",
+      "source": "native_pro",
+      "bow": {
+        "tag": "08V99UCCQ0V0",
+        "side": 1,
+        "tick": 3575,
+        "card": "x-bow",
+        "x": 2500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000055,
+      "birth": 3585,
+      "last_seen": 3681,
+      "end_observed": false,
+      "crown_reachable": false,
+      "defensive_contact": false
+    },
+    {
+      "tag": "08YY89UULC89",
+      "source": "native_pro",
+      "bow": {
+        "tag": "08YY89UULC89",
+        "side": 1,
+        "tick": 3017,
+        "card": "x-bow",
+        "x": 16500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.083333,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3053,
+          "card": "skeletons",
+          "x": 14500,
+          "y": 11499,
+          "cost": 1.0,
+          "elixir_before": 1.9227,
+          "approximate_after": 0.9227000000000001,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000053,
+      "birth": 3027,
+      "last_seen": 3404,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "08YY89UUYQ8L",
+      "source": "native_pro",
+      "bow": {
+        "tag": "08YY89UUYQ8L",
+        "side": 1,
+        "tick": 2054,
+        "card": "x-bow",
+        "x": 16500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.083333,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000031,
+      "birth": 2064,
+      "last_seen": 2611,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "092PPU9JVLJC",
+      "source": "native_pro",
+      "bow": {
+        "tag": "092PPU9JVLJC",
+        "side": 1,
+        "tick": 2735,
+        "card": "x-bow",
+        "x": 15500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2916,
+          "card": "knight",
+          "x": 12501,
+          "y": 18500,
+          "cost": 3.0,
+          "elixir_before": 6.9396,
+          "approximate_after": 3.9396000000000004,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000048,
+      "birth": 2745,
+      "last_seen": 3067,
+      "end_observed": false,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "098PPUQRV0CR",
+      "source": "native_pro",
+      "bow": {
+        "tag": "098PPUQRV0CR",
+        "side": 1,
+        "tick": 3447,
+        "card": "x-bow",
+        "x": 2500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3558,
+          "card": "ice-wizard",
+          "x": 6499,
+          "y": 21499,
+          "cost": 3.0,
+          "elixir_before": 4.7762,
+          "approximate_after": 1.7762000000000002,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000067,
+      "birth": 3457,
+      "last_seen": 3681,
+      "end_observed": false,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "098PPURJ9CQJ",
+      "source": "native_pro",
+      "bow": {
+        "tag": "098PPURJ9CQJ",
+        "side": 1,
+        "tick": 2711,
+        "card": "x-bow",
+        "x": 8500,
+        "y": 22500,
+        "row_y": 0.703125,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000055,
+      "birth": 2721,
+      "last_seen": 2981,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": false
+    },
+    {
+      "tag": "098PPUV8RLQY",
+      "source": "native_pro",
+      "bow": {
+        "tag": "098PPUV8RLQY",
+        "side": 1,
+        "tick": 2747,
+        "card": "x-bow",
+        "x": 11500,
+        "y": 22500,
+        "row_y": 0.703125,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2953,
+          "card": "tesla",
+          "x": 8000,
+          "y": 19000,
+          "cost": 4.0,
+          "elixir_before": 7.1035,
+          "approximate_after": 3.1035000000000004,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": 2953,
+          "elixir_at_threat": 7.1035,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3039,
+          "card": "knight",
+          "x": 12501,
+          "y": 18500,
+          "cost": 3.0,
+          "elixir_before": 5.1737,
+          "approximate_after": 2.1737,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000102,
+      "birth": 2757,
+      "last_seen": 3062,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "099P9CYR0JQ9",
+      "source": "native_pro",
+      "bow": {
+        "tag": "099P9CYR0JQ9",
+        "side": 1,
+        "tick": 2244,
+        "card": "x-bow",
+        "x": 8500,
+        "y": 21500,
+        "row_y": 0.671875,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000029,
+      "birth": 2254,
+      "last_seen": 2547,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "09C9JV9GQYC8",
+      "source": "native_pro",
+      "bow": {
+        "tag": "09C9JV9GQYC8",
+        "side": 1,
+        "tick": 686,
+        "card": "x-bow",
+        "x": 16500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.083333,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 877,
+          "card": "ice-wizard",
+          "x": 14501,
+          "y": 14500,
+          "cost": 3.0,
+          "elixir_before": 5.6106,
+          "approximate_after": 2.6106,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 911,
+          "card": "knight",
+          "x": 13501,
+          "y": 11500,
+          "cost": 3.0,
+          "elixir_before": 3.2158,
+          "approximate_after": 0.2158000000000002,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000011,
+      "birth": 696,
+      "last_seen": 1214,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "09G9JCPVPQUJ",
+      "source": "native_pro",
+      "bow": {
+        "tag": "09G9JCPVPQUJ",
+        "side": 1,
+        "tick": 5377,
+        "card": "x-bow",
+        "x": 2500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000120,
+      "birth": 5387,
+      "last_seen": 5497,
+      "end_observed": false,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "09G9JUYQJ8J2",
+      "source": "native_pro",
+      "bow": {
+        "tag": "09G9JUYQJ8J2",
+        "side": 1,
+        "tick": 3154,
+        "card": "x-bow",
+        "x": 10500,
+        "y": 22500,
+        "row_y": 0.703125,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3274,
+          "card": "the-log",
+          "x": 12500,
+          "y": 20500,
+          "cost": 2.0,
+          "elixir_before": 8.284,
+          "approximate_after": 6.284000000000001,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3381,
+          "card": "ice-wizard",
+          "x": 8500,
+          "y": 21500,
+          "cost": 3.0,
+          "elixir_before": 6.1039,
+          "approximate_after": 3.1039000000000003,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000074,
+      "birth": 3164,
+      "last_seen": 3421,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "09LP9C90JU80",
+      "source": "native_pro",
+      "bow": {
+        "tag": "09LP9C90JU80",
+        "side": 1,
+        "tick": 1761,
+        "card": "x-bow",
+        "x": 1500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.916667,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 1954,
+          "card": "skeletons",
+          "x": 3500,
+          "y": 14500,
+          "cost": 1.0,
+          "elixir_before": 2.7812,
+          "approximate_after": 1.7812000000000001,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2024,
+          "card": "knight",
+          "x": 5500,
+          "y": 11500,
+          "cost": 3.0,
+          "elixir_before": 3.0272,
+          "approximate_after": 0.027200000000000113,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000035,
+      "birth": 1771,
+      "last_seen": 2379,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "09LP9CVJVCGJ",
+      "source": "native_pro",
+      "bow": {
+        "tag": "09LP9CVJVCGJ",
+        "side": 1,
+        "tick": 2481,
+        "card": "x-bow",
+        "x": 9500,
+        "y": 22500,
+        "row_y": 0.703125,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2678,
+          "card": "skeletons",
+          "x": 7500,
+          "y": 21500,
+          "cost": 1.0,
+          "elixir_before": 5.4028,
+          "approximate_after": 4.4028,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": 2678,
+          "elixir_at_threat": 5.4028,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2836,
+          "card": "tesla",
+          "x": 7000,
+          "y": 24000,
+          "cost": 4.0,
+          "elixir_before": 10.0,
+          "approximate_after": 6.0,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": 2836,
+          "elixir_at_threat": 10.0,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000031,
+      "birth": 2489,
+      "last_seen": 2896,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "09U9JU8CYG88",
+      "source": "native_pro",
+      "bow": {
+        "tag": "09U9JU8CYG88",
+        "side": 1,
+        "tick": 2531,
+        "card": "x-bow",
+        "x": 8500,
+        "y": 21500,
+        "row_y": 0.671875,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2771,
+          "card": "tesla",
+          "x": 11000,
+          "y": 22000,
+          "cost": 4.0,
+          "elixir_before": 8.5859,
+          "approximate_after": 4.5859000000000005,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": 2849,
+          "elixir_at_threat": 4.3705,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000061,
+      "birth": 2541,
+      "last_seen": 3056,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "09U9JU8CYG88",
+      "source": "native_pro",
+      "bow": {
+        "tag": "09U9JU8CYG88",
+        "side": 1,
+        "tick": 3103,
+        "card": "x-bow",
+        "x": 8500,
+        "y": 21500,
+        "row_y": 0.671875,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3294,
+          "card": "knight",
+          "x": 10501,
+          "y": 20500,
+          "cost": 3.0,
+          "elixir_before": 8.257,
+          "approximate_after": 5.257,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": 3334,
+          "elixir_at_threat": 6.685,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3485,
+          "card": "ice-wizard",
+          "x": 10500,
+          "y": 25500,
+          "cost": 3.0,
+          "elixir_before": 5.0757,
+          "approximate_after": 2.0757000000000003,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": 3485,
+          "elixir_at_threat": 5.0757,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3539,
+          "card": "skeletons",
+          "x": 11501,
+          "y": 18500,
+          "cost": 1.0,
+          "elixir_before": 4.0035,
+          "approximate_after": 3.0035,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": 3539,
+          "elixir_at_threat": 4.0035,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000095,
+      "birth": 3113,
+      "last_seen": 3681,
+      "end_observed": false,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "09YP9JRQGGPG",
+      "source": "native_pro",
+      "bow": {
+        "tag": "09YP9JRQGGPG",
+        "side": 1,
+        "tick": 2547,
+        "card": "x-bow",
+        "x": 10500,
+        "y": 21500,
+        "row_y": 0.671875,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3018,
+          "card": "tesla",
+          "x": 8000,
+          "y": 21000,
+          "cost": 4.0,
+          "elixir_before": 5.3209,
+          "approximate_after": 1.3209,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": 3018,
+          "elixir_at_threat": 5.3209,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000037,
+      "birth": 2557,
+      "last_seen": 3065,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "09YP9JRQGGPG",
+      "source": "native_pro",
+      "bow": {
+        "tag": "09YP9JRQGGPG",
+        "side": 1,
+        "tick": 3441,
+        "card": "x-bow",
+        "x": 16500,
+        "y": 29500,
+        "row_y": 0.921875,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3525,
+          "card": "rocket",
+          "x": 16500,
+          "y": 29500,
+          "cost": 6.0,
+          "elixir_before": 6.9988,
+          "approximate_after": 0.9988000000000001,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000056,
+      "birth": 3451,
+      "last_seen": 3681,
+      "end_observed": false,
+      "crown_reachable": false,
+      "defensive_contact": false
+    },
+    {
+      "tag": "000YLY0PYYQY",
+      "source": "native_pro",
+      "bow": {
+        "tag": "000YLY0PYYQY",
+        "side": 1,
+        "tick": 2484,
+        "card": "x-bow",
+        "x": 14500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.194444,
+          0.390625
+        ],
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2649,
+          "card": "ice-wizard",
+          "x": 17500,
+          "y": 12500,
+          "cost": 3.0,
+          "elixir_before": 6.1521,
+          "approximate_after": 3.1521,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2679,
+          "card": "knight",
+          "x": 12500,
+          "y": 11499,
+          "cost": 3.0,
+          "elixir_before": 4.2231,
+          "approximate_after": 1.2230999999999996,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2712,
+          "card": "skeletons",
+          "x": 16500,
+          "y": 11499,
+          "cost": 1.0,
+          "elixir_before": 2.4012,
+          "approximate_after": 1.4011999999999998,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000068,
+      "birth": 2494,
+      "last_seen": 2982,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "00JYPG9P0UUJ",
+      "source": "native_pro",
+      "bow": {
+        "tag": "00JYPG9P0UUJ",
+        "side": 1,
+        "tick": 2503,
+        "card": "x-bow",
+        "x": 1500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.916667,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2678,
+          "card": "ice-wizard",
+          "x": 3499,
+          "y": 11499,
+          "cost": 3.0,
+          "elixir_before": 4.6446,
+          "approximate_after": 1.6445999999999996,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2723,
+          "card": "knight",
+          "x": 4499,
+          "y": 11499,
+          "cost": 3.0,
+          "elixir_before": 3.2511,
+          "approximate_after": 0.2511000000000001,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000058,
+      "birth": 2513,
+      "last_seen": 2986,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "00LYPLJLYQCR",
+      "source": "native_pro",
+      "bow": {
+        "tag": "00LYPLJLYQCR",
+        "side": 1,
+        "tick": 1556,
+        "card": "x-bow",
+        "x": 15500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 1758,
+          "card": "ice-wizard",
+          "x": 15500,
+          "y": 17500,
+          "cost": 3.0,
+          "elixir_before": 3.2924,
+          "approximate_after": 0.2924000000000002,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000042,
+      "birth": 1566,
+      "last_seen": 2086,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "00LYPLJLYQCR",
+      "source": "native_pro",
+      "bow": {
+        "tag": "00LYPLJLYQCR",
+        "side": 1,
+        "tick": 2412,
+        "card": "x-bow",
+        "x": 15500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2516,
+          "card": "tesla",
+          "x": 11000,
+          "y": 18000,
+          "cost": 4.0,
+          "elixir_before": 5.8612,
+          "approximate_after": 1.8612000000000002,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2666,
+          "card": "ice-wizard",
+          "x": 16500,
+          "y": 17500,
+          "cost": 3.0,
+          "elixir_before": 5.2162,
+          "approximate_after": 2.2161999999999997,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000050,
+      "birth": 2422,
+      "last_seen": 2819,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "00LYPLJLYQCR",
+      "source": "native_pro",
+      "bow": {
+        "tag": "00LYPLJLYQCR",
+        "side": 1,
+        "tick": 3134,
+        "card": "x-bow",
+        "x": 13500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3351,
+          "card": "ice-wizard",
+          "x": 17500,
+          "y": 19500,
+          "cost": 3.0,
+          "elixir_before": 6.495,
+          "approximate_after": 3.495,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3481,
+          "card": "tesla",
+          "x": 9000,
+          "y": 21000,
+          "cost": 4.0,
+          "elixir_before": 10.0,
+          "approximate_after": 6.0,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000061,
+      "birth": 3144,
+      "last_seen": 3681,
+      "end_observed": false,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "00LYPLU8C8JP",
+      "source": "native_pro",
+      "bow": {
+        "tag": "00LYPLU8C8JP",
+        "side": 1,
+        "tick": 2441,
+        "card": "x-bow",
+        "x": 16500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.083333,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2563,
+          "card": "knight",
+          "x": 13500,
+          "y": 11499,
+          "cost": 3.0,
+          "elixir_before": 6.3554,
+          "approximate_after": 3.3554000000000004,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2591,
+          "card": "ice-wizard",
+          "x": 13500,
+          "y": 11500,
+          "cost": 3.0,
+          "elixir_before": 4.355,
+          "approximate_after": 1.3550000000000004,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000031,
+      "birth": 2451,
+      "last_seen": 2897,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "029YPUPJ0Q00",
+      "source": "native_pro",
+      "bow": {
+        "tag": "029YPUPJ0Q00",
+        "side": 1,
+        "tick": 2798,
+        "card": "x-bow",
+        "x": 5500,
+        "y": 22500,
+        "row_y": 0.703125,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000044,
+      "birth": 2808,
+      "last_seen": 3345,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "029YPUPJYJR9",
+      "source": "native_pro",
+      "bow": {
+        "tag": "029YPUPJYJR9",
+        "side": 1,
+        "tick": 3425,
+        "card": "x-bow",
+        "x": 9500,
+        "y": 21500,
+        "row_y": 0.671875,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000065,
+      "birth": 3435,
+      "last_seen": 3681,
+      "end_observed": false,
+      "crown_reachable": false,
+      "defensive_contact": false
+    },
+    {
+      "tag": "02GY9GJRQG2Q",
+      "source": "native_pro",
+      "bow": {
+        "tag": "02GY9GJRQG2Q",
+        "side": 1,
+        "tick": 551,
+        "card": "x-bow",
+        "x": 3500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.805556,
+          0.390625
+        ],
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 655,
+          "card": "the-log",
+          "x": 7500,
+          "y": 11500,
+          "cost": 2.0,
+          "elixir_before": 4.659,
+          "approximate_after": 2.659,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 688,
+          "card": "ice-wizard",
+          "x": 5500,
+          "y": 11500,
+          "cost": 3.0,
+          "elixir_before": 3.2464,
+          "approximate_after": 0.24639999999999995,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000011,
+      "birth": 561,
+      "last_seen": 1148,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "02GY9GJVUP00",
+      "source": "native_pro",
+      "bow": {
+        "tag": "02GY9GJVUP00",
+        "side": 1,
+        "tick": 2564,
+        "card": "x-bow",
+        "x": 15500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2683,
+          "card": "skeletons",
+          "x": 13500,
+          "y": 19499,
+          "cost": 1.0,
+          "elixir_before": 4.5905,
+          "approximate_after": 3.5904999999999996,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000068,
+      "birth": 2574,
+      "last_seen": 2877,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "02GY9R002Q9Y",
+      "source": "native_pro",
+      "bow": {
+        "tag": "02GY9R002Q9Y",
+        "side": 1,
+        "tick": 1377,
+        "card": "x-bow",
+        "x": 15500,
+        "y": 13500,
+        "row_y": 0.421875,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.138889,
+          0.421875
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000016,
+      "birth": 1387,
+      "last_seen": 1831,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "02JY9G020C2U",
+      "source": "native_pro",
+      "bow": {
+        "tag": "02JY9G020C2U",
+        "side": 1,
+        "tick": 2944,
+        "card": "x-bow",
+        "x": 2500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.861111,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2975,
+          "card": "ice-wizard",
+          "x": 4500,
+          "y": 11500,
+          "cost": 3.0,
+          "elixir_before": 5.1067,
+          "approximate_after": 2.1067,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000037,
+      "birth": 2954,
+      "last_seen": 3413,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": true
+    },
+    {
+      "tag": "02PYPUP88Q2Y",
+      "source": "native_pro",
+      "bow": {
+        "tag": "02PYPUP88Q2Y",
+        "side": 1,
+        "tick": 3177,
+        "card": "x-bow",
+        "x": 15500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.138889,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3284,
+          "card": "knight",
+          "x": 13500,
+          "y": 11499,
+          "cost": 3.0,
+          "elixir_before": 5.1031,
+          "approximate_after": 2.1031000000000004,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000055,
+      "birth": 3187,
+      "last_seen": 3590,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "02PYPURLPG20",
+      "source": "native_pro",
+      "bow": {
+        "tag": "02PYPURLPG20",
+        "side": 1,
+        "tick": 2396,
+        "card": "x-bow",
+        "x": 12500,
+        "y": 22500,
+        "row_y": 0.703125,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2572,
+          "card": "ice-wizard",
+          "x": 8499,
+          "y": 23499,
+          "cost": 3.0,
+          "elixir_before": 10.0,
+          "approximate_after": 7.0,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": 2662,
+          "elixir_at_threat": 10.0,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000037,
+      "birth": 2406,
+      "last_seen": 3063,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "08CPVRQ9RQUY",
+      "source": "native_pro",
+      "bow": {
+        "tag": "08CPVRQ9RQUY",
+        "side": 1,
+        "tick": 2723,
+        "card": "x-bow",
+        "x": 2500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.861111,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000037,
+      "birth": 2733,
+      "last_seen": 3008,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "08CPVRRCJY0J",
+      "source": "native_pro",
+      "bow": {
+        "tag": "08CPVRRCJY0J",
+        "side": 1,
+        "tick": 1941,
+        "card": "x-bow",
+        "x": 15500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.138889,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000025,
+      "birth": 1951,
+      "last_seen": 2450,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "08QPVCPC9QQU",
+      "source": "native_pro",
+      "bow": {
+        "tag": "08QPVCPC9QQU",
+        "side": 1,
+        "tick": 2981,
+        "card": "x-bow",
+        "x": 8500,
+        "y": 23500,
+        "row_y": 0.734375,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000139,
+      "birth": 2988,
+      "last_seen": 3394,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "090PY0QY9C02",
+      "source": "native_pro",
+      "bow": {
+        "tag": "090PY0QY9C02",
+        "side": 1,
+        "tick": 2194,
+        "card": "x-bow",
+        "x": 2500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2417,
+          "card": "skeletons",
+          "x": 2499,
+          "y": 17499,
+          "cost": 1.0,
+          "elixir_before": 8.2737,
+          "approximate_after": 7.2737,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": 2457,
+          "elixir_at_threat": 8.7017,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000039,
+      "birth": 2204,
+      "last_seen": 2546,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "090PY0QY9C02",
+      "source": "native_pro",
+      "bow": {
+        "tag": "090PY0QY9C02",
+        "side": 1,
+        "tick": 3064,
+        "card": "x-bow",
+        "x": 4500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3181,
+          "card": "ice-wizard",
+          "x": 3499,
+          "y": 17499,
+          "cost": 3.0,
+          "elixir_before": 8.1769,
+          "approximate_after": 5.1769,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3283,
+          "card": "knight",
+          "x": 5499,
+          "y": 17499,
+          "cost": 3.0,
+          "elixir_before": 8.8183,
+          "approximate_after": 5.818300000000001,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3334,
+          "card": "skeletons",
+          "x": 4499,
+          "y": 17499,
+          "cost": 1.0,
+          "elixir_before": 7.639,
+          "approximate_after": 6.639,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000061,
+      "birth": 3074,
+      "last_seen": 3344,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "090PY0QY9C02",
+      "source": "native_pro",
+      "bow": {
+        "tag": "090PY0QY9C02",
+        "side": 1,
+        "tick": 3475,
+        "card": "x-bow",
+        "x": 2500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000084,
+      "birth": 3485,
+      "last_seen": 3681,
+      "end_observed": false,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "099P9CJG0GPU",
+      "source": "native_pro",
+      "bow": {
+        "tag": "099P9CJG0GPU",
+        "side": 1,
+        "tick": 2891,
+        "card": "x-bow",
+        "x": 1500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.916667,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2921,
+          "card": "skeletons",
+          "x": 3499,
+          "y": 11499,
+          "cost": 1.0,
+          "elixir_before": 2.779,
+          "approximate_after": 1.779,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3033,
+          "card": "knight",
+          "x": 4499,
+          "y": 11499,
+          "cost": 3.0,
+          "elixir_before": 3.7774,
+          "approximate_after": 0.7774000000000001,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3117,
+          "card": "ice-wizard",
+          "x": 4499,
+          "y": 11499,
+          "cost": 3.0,
+          "elixir_before": 3.7762,
+          "approximate_after": 0.7761999999999998,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3201,
+          "card": "tornado",
+          "x": 5500,
+          "y": 10500,
+          "cost": 3.0,
+          "elixir_before": 3.775,
+          "approximate_after": 0.7749999999999999,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": null,
+          "outcome_coverage": false
+        }
+      ],
+      "entity_id": 5000142,
+      "birth": 2901,
+      "last_seen": 3298,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "09G9JU290J8J",
+      "source": "native_pro",
+      "bow": {
+        "tag": "09G9JU290J8J",
+        "side": 1,
+        "tick": 3003,
+        "card": "x-bow",
+        "x": 6500,
+        "y": 22500,
+        "row_y": 0.703125,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000077,
+      "birth": 3013,
+      "last_seen": 3571,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "09G9JUYPYQCV",
+      "source": "native_pro",
+      "bow": {
+        "tag": "09G9JUYPYQCV",
+        "side": 1,
+        "tick": 3481,
+        "card": "x-bow",
+        "x": 2500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3536,
+          "card": "knight",
+          "x": 4499,
+          "y": 17499,
+          "cost": 3.0,
+          "elixir_before": 4.3161,
+          "approximate_after": 1.3160999999999996,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000083,
+      "birth": 3491,
+      "last_seen": 3724,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "09G9JUYPYQCV",
+      "source": "native_pro",
+      "bow": {
+        "tag": "09G9JUYPYQCV",
+        "side": 1,
+        "tick": 4134,
+        "card": "x-bow",
+        "x": 7500,
+        "y": 23500,
+        "row_y": 0.734375,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 4261,
+          "card": "ice-wizard",
+          "x": 10500,
+          "y": 24499,
+          "cost": 3.0,
+          "elixir_before": 5.8159,
+          "approximate_after": 2.8159,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": 4261,
+          "elixir_at_threat": 5.8159,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 4698,
+          "card": "ice-wizard",
+          "x": 8499,
+          "y": 19499,
+          "cost": 3.0,
+          "elixir_before": 4.4168,
+          "approximate_after": 1.4168000000000003,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": 4698,
+          "elixir_at_threat": 4.4168,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000101,
+      "birth": 4144,
+      "last_seen": 4738,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "09G9JUYPYQCV",
+      "source": "native_pro",
+      "bow": {
+        "tag": "09G9JUYPYQCV",
+        "side": 1,
+        "tick": 4541,
+        "card": "x-bow",
+        "x": 4500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 4698,
+          "card": "ice-wizard",
+          "x": 8499,
+          "y": 19499,
+          "cost": 3.0,
+          "elixir_before": 4.4168,
+          "approximate_after": 1.4168000000000003,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": 4698,
+          "elixir_at_threat": 4.4168,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 4855,
+          "card": "the-log",
+          "x": 3500,
+          "y": 17500,
+          "cost": 2.0,
+          "elixir_before": 8.0117,
+          "approximate_after": 6.011699999999999,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": 4954,
+          "elixir_at_threat": 4.328,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 4904,
+          "card": "skeletons",
+          "x": 2499,
+          "y": 17499,
+          "cost": 1.0,
+          "elixir_before": 2.643,
+          "approximate_after": 1.6429999999999998,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": 4954,
+          "elixir_at_threat": 4.328,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000120,
+      "birth": 4551,
+      "last_seen": 4994,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "09R9JCJ8880P",
+      "source": "native_pro",
+      "bow": {
+        "tag": "09R9JCJ8880P",
+        "side": 1,
+        "tick": 3174,
+        "card": "x-bow",
+        "x": 4500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.75,
+          0.390625
+        ],
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3208,
+          "card": "skeletons",
+          "x": 7499,
+          "y": 11499,
+          "cost": 1.0,
+          "elixir_before": 1.5656,
+          "approximate_after": 0.5656000000000001,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3295,
+          "card": "the-log",
+          "x": 8500,
+          "y": 11500,
+          "cost": 2.0,
+          "elixir_before": 3.6715,
+          "approximate_after": 1.6715,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3347,
+          "card": "ice-wizard",
+          "x": 8500,
+          "y": 11500,
+          "cost": 3.0,
+          "elixir_before": 3.5279,
+          "approximate_after": 0.5278999999999998,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": null,
+          "outcome_coverage": false
+        }
+      ],
+      "entity_id": 5000038,
+      "birth": 3184,
+      "last_seen": 3455,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "09R9JULGCVU9",
+      "source": "native_pro",
+      "bow": {
+        "tag": "09R9JULGCVU9",
+        "side": 1,
+        "tick": 2736,
+        "card": "x-bow",
+        "x": 2500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2859,
+          "card": "knight",
+          "x": 5499,
+          "y": 18499,
+          "cost": 3.0,
+          "elixir_before": 8.1063,
+          "approximate_after": 5.106299999999999,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3013,
+          "card": "the-log",
+          "x": 2500,
+          "y": 17500,
+          "cost": 2.0,
+          "elixir_before": 4.6041,
+          "approximate_after": 2.6041,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000036,
+      "birth": 2746,
+      "last_seen": 3404,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "09R9JULGCVU9",
+      "source": "native_pro",
+      "bow": {
+        "tag": "09R9JULGCVU9",
+        "side": 1,
+        "tick": 3211,
+        "card": "x-bow",
+        "x": 2500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.861111,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3301,
+          "card": "knight",
+          "x": 4499,
+          "y": 11499,
+          "cost": 3.0,
+          "elixir_before": 5.8857,
+          "approximate_after": 2.8857,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3331,
+          "card": "ice-wizard",
+          "x": 4499,
+          "y": 11499,
+          "cost": 3.0,
+          "elixir_before": 3.9567,
+          "approximate_after": 0.9567000000000001,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3374,
+          "card": "the-log",
+          "x": 6500,
+          "y": 11500,
+          "cost": 2.0,
+          "elixir_before": 2.4918,
+          "approximate_after": 0.4918,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000044,
+      "birth": 3221,
+      "last_seen": 3494,
+      "end_observed": true,
+      "crown_reachable": true,
+      "defensive_contact": true
+    },
+    {
+      "tag": "144b189ba2564952b27c551422a260e8",
+      "source": "native_pro",
+      "bow": {
+        "tag": "144b189ba2564952b27c551422a260e8",
+        "side": 1,
+        "tick": 3365,
+        "card": "x-bow",
+        "x": 8500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.527778,
+          0.390625
+        ],
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3437,
+          "card": "the-log",
+          "x": 10500,
+          "y": 11500,
+          "cost": 2.0,
+          "elixir_before": 3.4926,
+          "approximate_after": 1.4926,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3501,
+          "card": "ice-wizard",
+          "x": 6500,
+          "y": 11500,
+          "cost": 3.0,
+          "elixir_before": 3.7774,
+          "approximate_after": 0.7774000000000001,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000051,
+      "birth": 3375,
+      "last_seen": 3681,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "2ff57d4a506f4ed89441a1b6a6658c96",
+      "source": "native_pro",
+      "bow": {
+        "tag": "2ff57d4a506f4ed89441a1b6a6658c96",
+        "side": 1,
+        "tick": 3432,
+        "card": "x-bow",
+        "x": 15500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": false,
+      "support": [],
+      "possible_bodies": 0
+    },
+    {
+      "tag": "30bd4c1d2f204f37b3589e833c3ae197",
+      "source": "native_pro",
+      "bow": {
+        "tag": "30bd4c1d2f204f37b3589e833c3ae197",
+        "side": 1,
+        "tick": 2426,
+        "card": "x-bow",
+        "x": 3500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.805556,
+          0.390625
+        ],
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2551,
+          "card": "ice-wizard",
+          "x": 5500,
+          "y": 11500,
+          "cost": 3.0,
+          "elixir_before": 4.8369,
+          "approximate_after": 1.8369,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000044,
+      "birth": 2436,
+      "last_seen": 2735,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "399d0dffd6b74634ae415fff47d97501",
+      "source": "native_pro",
+      "bow": {
+        "tag": "399d0dffd6b74634ae415fff47d97501",
+        "side": 1,
+        "tick": 1806,
+        "card": "x-bow",
+        "x": 3500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.805556,
+          0.390625
+        ],
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 1974,
+          "card": "ice-wizard",
+          "x": 1500,
+          "y": 11500,
+          "cost": 3.0,
+          "elixir_before": 3.1372,
+          "approximate_after": 0.1372,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000033,
+      "birth": 1816,
+      "last_seen": 2299,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "3a648e6c2381430babee676dfcefaaec",
+      "source": "native_pro",
+      "bow": {
+        "tag": "3a648e6c2381430babee676dfcefaaec",
+        "side": 1,
+        "tick": 3225,
+        "card": "x-bow",
+        "x": 16500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.083333,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3298,
+          "card": "ice-wizard",
+          "x": 13500,
+          "y": 11500,
+          "cost": 3.0,
+          "elixir_before": 3.7489,
+          "approximate_after": 0.7488999999999999,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000071,
+      "birth": 3235,
+      "last_seen": 3670,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "4cad6018640e4f179c521b8d242a3dd2",
+      "source": "native_pro",
+      "bow": {
+        "tag": "4cad6018640e4f179c521b8d242a3dd2",
+        "side": 1,
+        "tick": 2645,
+        "card": "x-bow",
+        "x": 14500,
+        "y": 19500,
+        "row_y": 0.609375,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000030,
+      "birth": 2655,
+      "last_seen": 3231,
+      "end_observed": false,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "55fdecffca7e4ce9b20ba1dfd25d1dbb",
+      "source": "native_pro",
+      "bow": {
+        "tag": "55fdecffca7e4ce9b20ba1dfd25d1dbb",
+        "side": 0,
+        "tick": 2648,
+        "card": "x-bow",
+        "x": 15500,
+        "y": 12500,
+        "row_y": 0.609375,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2688,
+          "card": "knight",
+          "x": 15500,
+          "y": 14500,
+          "cost": 3.0,
+          "elixir_before": 4.3678,
+          "approximate_after": 1.3678,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000037,
+      "birth": 2658,
+      "last_seen": 2878,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    },
+    {
+      "tag": "6b85d4de9f414a9183720c411d78e92f",
+      "source": "native_pro",
+      "bow": {
+        "tag": "6b85d4de9f414a9183720c411d78e92f",
+        "side": 1,
+        "tick": 1205,
+        "card": "x-bow",
+        "x": 16500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.083333,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 1374,
+          "card": "knight",
+          "x": 14501,
+          "y": 11500,
+          "cost": 3.0,
+          "elixir_before": 3.381,
+          "approximate_after": 0.3809999999999998,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 1543,
+          "card": "ice-wizard",
+          "x": 13500,
+          "y": 11500,
+          "cost": 3.0,
+          "elixir_before": 3.3892,
+          "approximate_after": 0.3892000000000002,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000020,
+      "birth": 1215,
+      "last_seen": 1818,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "89e7825fb9b44d63890d8d2b238150a2",
+      "source": "native_pro",
+      "bow": {
+        "tag": "89e7825fb9b44d63890d8d2b238150a2",
+        "side": 1,
+        "tick": 2639,
+        "card": "x-bow",
+        "x": 2500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.861111,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2838,
+          "card": "the-log",
+          "x": 6500,
+          "y": 11500,
+          "cost": 2.0,
+          "elixir_before": 5.1043,
+          "approximate_after": 3.1043000000000003,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3028,
+          "card": "ice-wizard",
+          "x": 5500,
+          "y": 11500,
+          "cost": 3.0,
+          "elixir_before": 9.8873,
+          "approximate_after": 6.8873,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3031,
+          "card": "tesla",
+          "x": 6000,
+          "y": 12000,
+          "cost": 4.0,
+          "elixir_before": 6.9944,
+          "approximate_after": 2.9943999999999997,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000054,
+      "birth": 2649,
+      "last_seen": 3248,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "8be1cf0ec9b540ba8cc916e37d406fe9",
+      "source": "native_pro",
+      "bow": {
+        "tag": "8be1cf0ec9b540ba8cc916e37d406fe9",
+        "side": 1,
+        "tick": 2278,
+        "card": "x-bow",
+        "x": 14500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.194444,
+          0.390625
+        ],
+        "threat": true
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000030,
+      "birth": 2288,
+      "last_seen": 2635,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "9811463704ca4016b0badd1395208f1f",
+      "source": "native_pro",
+      "bow": {
+        "tag": "9811463704ca4016b0badd1395208f1f",
+        "side": 0,
+        "tick": 2706,
+        "card": "x-bow",
+        "x": 1500,
+        "y": 19500,
+        "row_y": 0.390625,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.083333,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2805,
+          "card": "skeletons",
+          "x": 4499,
+          "y": 20500,
+          "cost": 1.0,
+          "elixir_before": 1.9651,
+          "approximate_after": 0.9651000000000001,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 2875,
+          "card": "ice-wizard",
+          "x": 5500,
+          "y": 20500,
+          "cost": 3.0,
+          "elixir_before": 3.4641,
+          "approximate_after": 0.4641000000000002,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000031,
+      "birth": 2716,
+      "last_seen": 3058,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "9f03461916314fdba93360a91e46aaf9",
+      "source": "native_pro",
+      "bow": {
+        "tag": "9f03461916314fdba93360a91e46aaf9",
+        "side": 0,
+        "tick": 3075,
+        "card": "x-bow",
+        "x": 14500,
+        "y": 19500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.805556,
+          0.390625
+        ],
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3255,
+          "card": "knight",
+          "x": 12501,
+          "y": 20501,
+          "cost": 3.0,
+          "elixir_before": 7.633,
+          "approximate_after": 4.633,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000057,
+      "birth": 3085,
+      "last_seen": 3539,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "a1fbf705e726479591e4ab23227ba7af",
+      "source": "native_pro",
+      "bow": {
+        "tag": "a1fbf705e726479591e4ab23227ba7af",
+        "side": 1,
+        "tick": 3224,
+        "card": "x-bow",
+        "x": 13500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.25,
+          0.390625
+        ],
+        "threat": true
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000039,
+      "birth": 3234,
+      "last_seen": 3596,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "a753743a696746eab2dd1ac834582eec",
+      "source": "native_pro",
+      "bow": {
+        "tag": "a753743a696746eab2dd1ac834582eec",
+        "side": 0,
+        "tick": 2751,
+        "card": "x-bow",
+        "x": 2500,
+        "y": 19500,
+        "row_y": 0.390625,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.138889,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 2757,
+          "card": "knight",
+          "x": 4500,
+          "y": 20501,
+          "cost": 3.0,
+          "elixir_before": 3.8475,
+          "approximate_after": 0.8475000000000001,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 3054,
+          "card": "ice-wizard",
+          "x": 4500,
+          "y": 20500,
+          "cost": 3.0,
+          "elixir_before": 3.4504,
+          "approximate_after": 0.45040000000000013,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000044,
+      "birth": 2757,
+      "last_seen": 3188,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "f2cd7f99c98b4a09a8e7da7c273ec997",
+      "source": "native_pro",
+      "bow": {
+        "tag": "f2cd7f99c98b4a09a8e7da7c273ec997",
+        "side": 1,
+        "tick": 2053,
+        "card": "x-bow",
+        "x": 15500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "left",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.138889,
+          0.390625
+        ],
+        "threat": false
+      },
+      "linked": true,
+      "support": [],
+      "entity_id": 5000026,
+      "birth": 2063,
+      "last_seen": 2542,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "faacd62ccae64a4a8950dc56d1c56577",
+      "source": "native_pro",
+      "bow": {
+        "tag": "faacd62ccae64a4a8950dc56d1c56577",
+        "side": 1,
+        "tick": 852,
+        "card": "x-bow",
+        "x": 3500,
+        "y": 12500,
+        "row_y": 0.390625,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": false,
+        "offensive_xbow": true,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": false,
+        "offensive_lock_cell": [
+          0.805556,
+          0.390625
+        ],
+        "threat": true
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 1041,
+          "card": "the-log",
+          "x": 6500,
+          "y": 11500,
+          "cost": 2.0,
+          "elixir_before": 3.5298,
+          "approximate_after": 1.5297999999999998,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        },
+        {
+          "tick": 1133,
+          "card": "knight",
+          "x": 5500,
+          "y": 11500,
+          "cost": 3.0,
+          "elixir_before": 3.1674,
+          "approximate_after": 0.16740000000000022,
+          "no_reachable_target_now": false,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000014,
+      "birth": 862,
+      "last_seen": 1399,
+      "end_observed": false,
+      "crown_reachable": true,
+      "defensive_contact": false
+    },
+    {
+      "tag": "fdb367b866d1485a83b588aa89c86920",
+      "source": "native_pro",
+      "bow": {
+        "tag": "fdb367b866d1485a83b588aa89c86920",
+        "side": 1,
+        "tick": 2858,
+        "card": "x-bow",
+        "x": 7500,
+        "y": 22500,
+        "row_y": 0.703125,
+        "lane": "right",
+        "lane_state": "dead",
+        "defensive_xbow": true,
+        "offensive_xbow": false,
+        "enemy_princess_down": true,
+        "dead_lane_xbow": true,
+        "offensive_lock_cell": null,
+        "threat": false
+      },
+      "linked": true,
+      "support": [
+        {
+          "tick": 3013,
+          "card": "tesla",
+          "x": 9000,
+          "y": 19000,
+          "cost": 4.0,
+          "elixir_before": 8.1775,
+          "approximate_after": 4.1775,
+          "no_reachable_target_now": true,
+          "next_opposite_threat_tick": null,
+          "elixir_at_threat": null,
+          "opposite_tower_hp_drop_6s": 0,
+          "outcome_coverage": true
+        }
+      ],
+      "entity_id": 5000066,
+      "birth": 2868,
+      "last_seen": 3125,
+      "end_observed": true,
+      "crown_reachable": false,
+      "defensive_contact": true
+    }
+  ],
+  "live_rows": [],
+  "source_manifest_sha256": "fa3a5d5780f1a84f3c18ebd68a02512446b4070e4a9ca159d082ca23ae2459fa",
+  "labels_sha256": "d6752a9aba1be94f49b28fe4ec0aad3d40aa0a78636fdeec4d07e6b580ba184e",
+  "pro_sources": [
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s0_public_v1\\j008\\replay_70d0014a27c8440fa888dfe4b205e922.json",
+      "tag": "70d0014a27c8440fa888dfe4b205e922",
+      "sha256": "4dad2c43c46835d08bfc8d83e2e56bd66580c648e7e3fa249478f9d3e079de8f"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s1_public_v1\\j037\\replay_84026810036c443bb37cab924ac05888.json",
+      "tag": "84026810036c443bb37cab924ac05888",
+      "sha256": "e7fd9b733e718da9110f7fc88183ec406ced9190a675a35edc4c48112f490ec7"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s1_public_v1\\j038\\replay_b9e61420df72488c888d7ac560876624.json",
+      "tag": "b9e61420df72488c888d7ac560876624",
+      "sha256": "876c15455c8936e9406d8bedcb9f8c2abec5a5162af14cbf387328a1ac785312"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s2_public_v1\\j043\\replay_060d2be902f24cedbd65280bc905a39e.json",
+      "tag": "060d2be902f24cedbd65280bc905a39e",
+      "sha256": "e3ebddb20003a11cd3336f8e57ffb4a666aa2a1f12cfdc913d2d89eea95e9649"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s2_public_v1\\j043\\replay_33051724cf8d4b53a2884a1d5a45644d.json",
+      "tag": "33051724cf8d4b53a2884a1d5a45644d",
+      "sha256": "3b5b96f61163d4aadc37b1db5cc4b366c245bc07edb54fcca66c31dd1eccb26e"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s2_public_v1\\j047\\replay_42d8a9b569ed4b839cb3554e95c4edd2.json",
+      "tag": "42d8a9b569ed4b839cb3554e95c4edd2",
+      "sha256": "b435df13c0ff3c3fe8474305b24dc8565f721317fe529533c5ccb7e38e3c4204"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s2_public_v1\\j047\\replay_da36b53fa54e4323ab391dd40e7db8b6.json",
+      "tag": "da36b53fa54e4323ab391dd40e7db8b6",
+      "sha256": "1e07ff788207cddbdd07f89eaea9dc345eb5fa0601ca9af15c5d83cfd58290e5"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s2_public_v1\\j056\\replay_9697c26c3a1a49ff8247fbaaaf87981a.json",
+      "tag": "9697c26c3a1a49ff8247fbaaaf87981a",
+      "sha256": "3b4732fee29602cdedebfa3efe75500d3b45cdd50f300b702c45c323b3a71a85"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_gen_pilot\\s3_public_v1\\j065\\replay_6d463ae6b81d4f3688ac42f4d8c3fe5b.json",
+      "tag": "6d463ae6b81d4f3688ac42f4d8c3fe5b",
+      "sha256": "bad5187853a8937428ee04f8bac8c95984492efd13bd357a1fe9a2c8e903e88d"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_000YLL22U0YL.json",
+      "tag": "000YLL22U0YL",
+      "sha256": "5674824524c95f7687e5c64c44c4e7390d6f1e277a9c1de818181df8d89a6a8f"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_008YLQ8RGJJ0.json",
+      "tag": "008YLQ8RGJJ0",
+      "sha256": "f55291a75efcf3a1e7b3cdf19a76b37fa569a0fb53eec5726f05977db081b903"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_008YY98GVU9U.json",
+      "tag": "008YY98GVU9U",
+      "sha256": "319eedde390960616055dd287208c55bfa244f795e911c51a1b1b27a97c02f7d"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_009Y20G9UY9R.json",
+      "tag": "009Y20G9UY9R",
+      "sha256": "1019a74e80e0c45166e1a0f8d690d26d4d29ce0de03807140d116de6445c7976"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00JYPLJCYQLR.json",
+      "tag": "00JYPLJCYQLR",
+      "sha256": "3f43aa35838a08fee579b4c9c90d6e1656ef33013b8ecd63bdb8036c48ea1e45"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00LYPQ0J22JP.json",
+      "tag": "00LYPQ0J22JP",
+      "sha256": "23388a6571836210b977c09e800e75ecfc4b7100583dc8f7ee1db8c961b83572"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00LYPQ0JU2UC.json",
+      "tag": "00LYPQ0JU2UC",
+      "sha256": "4b2ba5862c7c1e49577d5d6302e24b782a0031c9115da68a34727a3b94c0f7eb"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00UYPQ2R02L0.json",
+      "tag": "00UYPQ2R02L0",
+      "sha256": "b1573ed2e37ce86d6557ff2b932711468d788a016e9c6bd8254b2f28e42fbd01"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00VYPLQPYCRU.json",
+      "tag": "00VYPLQPYCRU",
+      "sha256": "c6b04a1d9f2891705cee8953f3ac38a2906acd886412bfb723eb0b8b5390a6bc"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00VYPLRLJ880.json",
+      "tag": "00VYPLRLJ880",
+      "sha256": "e31b31e367a6cd8566da9d1142ef61108a56f9cd9b2f3b7368af631945be59a6"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00YY0RLL2QPY.json",
+      "tag": "00YY0RLL2QPY",
+      "sha256": "449e5568b232e26e55e180e2bef7d7836fd90aff3cffb3be012b47f477b1ea79"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00YYPLJ2J2LQ.json",
+      "tag": "00YYPLJ2J2LQ",
+      "sha256": "0db36a5869be5b02ebfd3e87fa405921e1bbda4d1b7d13f389186f86fda78463"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_00YYPYR08P2J.json",
+      "tag": "00YYPYR08P2J",
+      "sha256": "7b07dae2276754e62afdc6994499449966b3bd9b0fd974434130f6628cacdb52"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_028YPJRRLYV9.json",
+      "tag": "028YPJRRLYV9",
+      "sha256": "c4f3abb41690174730ef6a5ccd6a9c3a6df3209f41e5f5e9c46e4268022d980a"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_028YPUURY2GU.json",
+      "tag": "028YPUURY2GU",
+      "sha256": "fb7ba5fe38c789c81b85676c410a888cbf4d2a9f39198d3c1b5018b21cddb025"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_028YPUV2JY2G.json",
+      "tag": "028YPUV2JY2G",
+      "sha256": "4229efdb8aa6c9274969a3d48344388d63557b50b5c373f4d993920e290822e9"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_029YPCCJCPG8.json",
+      "tag": "029YPCCJCPG8",
+      "sha256": "20448208a435cd6e034ccc8262ba9de7b2cbf7de9d4cfd3f5d47fc8e10cefc84"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_029YPJCVURP8.json",
+      "tag": "029YPJCVURP8",
+      "sha256": "09745e53e836356da973f94c33671d6dc9d728ccba5a3cf2aa989277cc0b1b7f"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02CY8L0RRRVL.json",
+      "tag": "02CY8L0RRRVL",
+      "sha256": "8aaa331432285b64317136dceafadac7d7bc960d4332e74e7a35e16e0594a583"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02CY8YRG9JP9.json",
+      "tag": "02CY8YRG9JP9",
+      "sha256": "a9eb21b18285fa305d4707b31895a5204b9620f67fe175f3cc2bcdf7de4f1d8a"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02CY8YRGQQCQ.json",
+      "tag": "02CY8YRGQQCQ",
+      "sha256": "6c079b6600bd9116ebc017a09b1439fab9fabb6e3149a2dca6ff1aa9bd3ba559"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02JY9R00C2UU.json",
+      "tag": "02JY9R00C2UU",
+      "sha256": "828b6cf5faf31d988c540fc2224f1315986bc65c5841ae95ced87ea70ec4c8fa"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02LY9QVVJJUL.json",
+      "tag": "02LY9QVVJJUL",
+      "sha256": "fd75d21c17cd60850f63d05d64545adf0f5017a553fd4db41138692e0bcc6852"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02PP9CQ0Q2U2.json",
+      "tag": "02PP9CQ0Q2U2",
+      "sha256": "739f3369869ff8e93d71d3bac00053c49437aaf4d534fe196128fd378ccae112"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02QY9G0VVQGG.json",
+      "tag": "02QY9G0VVQGG",
+      "sha256": "6e342ec45124f95a4a099c7e6353b45e65fe936ec4719c08af72f725633e153a"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02QY9G0Y020Q.json",
+      "tag": "02QY9G0Y020Q",
+      "sha256": "0aa6ecbb383fc11f6923936c13f43a2bd3cde20f07514c26467b18f35d66c0b2"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02QY9QP0CL00.json",
+      "tag": "02QY9QP0CL00",
+      "sha256": "12b256bcfdf5f9e8531ec03a63a358aa31472d4d67b4a9109529cf688e00d0c6"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02QY9QVP9Q8L.json",
+      "tag": "02QY9QVP9Q8L",
+      "sha256": "5ca0d19006c026ff6d61afd8f8f95f6f23e3a6c35e185dce781957c12d8b377f"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02RY9R02G9UP.json",
+      "tag": "02RY9R02G9UP",
+      "sha256": "4095ed22f89a3fe22374aa999feeefb7c813da7f9a0b1ac018045fd88a8c9285"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_02RY9RPCPQL2.json",
+      "tag": "02RY9RPCPQL2",
+      "sha256": "afe7f439135cad18d58cd738825c7c82098bd1b6e3a880d79d979c328cde583f"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_080Y8QULJ2PG.json",
+      "tag": "080Y8QULJ2PG",
+      "sha256": "baeefd80da645855156522fc3835110c4bf020b34e35ef93367b650b630bed75"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_088Y88RQ2PC8.json",
+      "tag": "088Y88RQ2PC8",
+      "sha256": "3d5f66057117c864cf5fad77422372333488f15fe3e25289af985737d7ce627b"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_088Y89L2R20V.json",
+      "tag": "088Y89L2R20V",
+      "sha256": "75cec0ac1de943c73f2b81d8ba387cd85bbf88859fd9af458dd7cd0be8e717db"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_08LY82JGPCLJ.json",
+      "tag": "08LY82JGPCLJ",
+      "sha256": "507a7bd9e7c979f0aaa55255966ea79e8ad82807547b72622c1abb9021b3bfd7"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_08RPVJUGPCCQ.json",
+      "tag": "08RPVJUGPCCQ",
+      "sha256": "28a6c25f06ffbcf353bdace1605675cec16b135e9c4c6699962f603f4d8dc9ea"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_08V99UCCQ0V0.json",
+      "tag": "08V99UCCQ0V0",
+      "sha256": "452cac1483ffe59a35f1e52874438d2c6ba52cc6e5dbcb452c958d83eac03a03"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_08YY89UULC89.json",
+      "tag": "08YY89UULC89",
+      "sha256": "bdc51f3addea864933e4168603b15d7cb43eeb3537b462c3d60e340f2e987c82"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_08YY89UUYQ8L.json",
+      "tag": "08YY89UUYQ8L",
+      "sha256": "2befaa5ac9469cb5c043af32cec87661ea682ba6909e7e15bb9e927535de0465"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_092PPU9JVLJC.json",
+      "tag": "092PPU9JVLJC",
+      "sha256": "213f47be9aef9909749db30b6f790b47ab3981a20c550583356a8d1a3712f2a1"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_098PPUQRV0CR.json",
+      "tag": "098PPUQRV0CR",
+      "sha256": "c7bf9c6173245cd676ffbe5b1a7e49de38d54a1fadfc5e79cc5b6131943a4e5e"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_098PPURJ9CQJ.json",
+      "tag": "098PPURJ9CQJ",
+      "sha256": "5abbde26d34bf38e80c1150b52225e83e798e145b7f6798ca682592def3927ad"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_098PPUV8RLQY.json",
+      "tag": "098PPUV8RLQY",
+      "sha256": "aafa29f0d7d69f48d9f39ada3594fd1cbff3f3b87a0b85b0f973273636b0d06f"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_099P9CYR0JQ9.json",
+      "tag": "099P9CYR0JQ9",
+      "sha256": "c113925fbf9d0bd849741771e790e9508e80a118fc9754e1db9abf9731f0c439"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_09C9JV9GQYC8.json",
+      "tag": "09C9JV9GQYC8",
+      "sha256": "0852fc5f1b7deffbf31c32bc885631f70a93a8ff4bd6983b77c491c1bb5c51f5"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_09G9JCPVPQUJ.json",
+      "tag": "09G9JCPVPQUJ",
+      "sha256": "051d1906d233a2487278a27e402eefd00cc811b14815f8dd72ee7f78fd924e7b"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_09G9JUYQJ8J2.json",
+      "tag": "09G9JUYQJ8J2",
+      "sha256": "eef4b7f264907c06b78018621667b20402bf7e73c3c758632c581643c56ee59b"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_09LP9C90JU80.json",
+      "tag": "09LP9C90JU80",
+      "sha256": "221eadee8a1adbf76a29ad17e3e7579cd05e7bf7b63fcb584fbba1eee7807f24"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_09LP9CVJVCGJ.json",
+      "tag": "09LP9CVJVCGJ",
+      "sha256": "e7d8c107b54032ad25301e66edf4313fe1375cffbb14754c2be01bfb50fef4cc"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_09U9JU8CYG88.json",
+      "tag": "09U9JU8CYG88",
+      "sha256": "90f45c7ac3c4e3d68aeb1d347e0c15febf7e337241d6abf032b90c61071ccc67"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_09YP9JRQGGPG.json",
+      "tag": "09YP9JRQGGPG",
+      "sha256": "e16f1fcf4373847d5f7542b61322e375688855502a3d9bc553e7d9633b0482e4"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_000YLY0PYYQY.json",
+      "tag": "000YLY0PYYQY",
+      "sha256": "68c71ee2f44d89f546b9b2efec7665bb636db8e58c3abd673d5fef1e37c93c30"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_00JYPG9P0UUJ.json",
+      "tag": "00JYPG9P0UUJ",
+      "sha256": "5d209309a3ca8ef13c2bf12bfc9f583a1b0f6fa3e0658bf26ba0a60072ef2828"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_00LYPLJLYQCR.json",
+      "tag": "00LYPLJLYQCR",
+      "sha256": "62d8b48573660b75f1833b74062dd2616bbc934cae3ba36bc341952010506d96"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_00LYPLU8C8JP.json",
+      "tag": "00LYPLU8C8JP",
+      "sha256": "98bfda30f36c2d09b02af6036795c5db613a0966b26fd79a60551fee13a548cc"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_029YPUPJ0Q00.json",
+      "tag": "029YPUPJ0Q00",
+      "sha256": "482ed1c3317c1bc5f355a07420e4c5025d33a985d392f7a752a8bbe65e9a1c8c"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_029YPUPJYJR9.json",
+      "tag": "029YPUPJYJR9",
+      "sha256": "50b83e21582ecdaa9d3b6c6b909820becc91d3837b92d2bd1428896795f2a8ac"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_02GY9GJRQG2Q.json",
+      "tag": "02GY9GJRQG2Q",
+      "sha256": "141ba874757095b1c9fd8bcdf7fa401b6933bec93560f4ada0ba0f009d662289"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_02GY9GJVUP00.json",
+      "tag": "02GY9GJVUP00",
+      "sha256": "d2d9e2006eee30943ed846e33986decfcdabb0ab45ea9090a00ea6838e61d768"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_02GY9R002Q9Y.json",
+      "tag": "02GY9R002Q9Y",
+      "sha256": "ad6584232ad00ebc0c5cbaeb13b7a1c3296aa3cc5e3959e93532afdd76e02b4f"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_02JY9G020C2U.json",
+      "tag": "02JY9G020C2U",
+      "sha256": "34d134d48e18131f879852cb2b41ac753566f7d0e8ae243aa6e9f1e99a415d92"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_02PYPUP88Q2Y.json",
+      "tag": "02PYPUP88Q2Y",
+      "sha256": "b7bfd0941ec6e9797abc9486053156e34a1ed78d0e0cfff4ff29dce122ce96eb"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_02PYPURLPG20.json",
+      "tag": "02PYPURLPG20",
+      "sha256": "8149e00cc9bb085dede4d11233ed82571f15d74ea6bf88dfbab0bca8509d3488"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_08CPVRQ9RQUY.json",
+      "tag": "08CPVRQ9RQUY",
+      "sha256": "bd3e101ed65a2f8b2720e202aa569c05089d8ec778c59b2cc82ae3a58e829c47"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_08CPVRRCJY0J.json",
+      "tag": "08CPVRRCJY0J",
+      "sha256": "4d02918ee34d391c771ee97bf36793837539177dea190b593c41590e2842d787"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_08QPVCPC9QQU.json",
+      "tag": "08QPVCPC9QQU",
+      "sha256": "58514ef4c6d7ac2af0aa610dfe01563dc40415c1646df361847564291d519f02"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_090PY0QY9C02.json",
+      "tag": "090PY0QY9C02",
+      "sha256": "9721660f02aa32526c225ae87481a7fa1917bc56d7c437ea073841e109b308a5"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_099P9CJG0GPU.json",
+      "tag": "099P9CJG0GPU",
+      "sha256": "495bc53a88f17e4201c9be807708c80bfcba63c0102ea1701e3488ed65eb240f"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_09G9JU290J8J.json",
+      "tag": "09G9JU290J8J",
+      "sha256": "05a7060d26d40944b2d7f876004979e12c6081b8b6bfe6eb1522a1b698c9e570"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_09G9JUYPYQCV.json",
+      "tag": "09G9JUYPYQCV",
+      "sha256": "eb8d45effe539df50ca5b8283dd74b8239425195aa75b8b3ebecec5d6efeecb9"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_09R9JCJ8880P.json",
+      "tag": "09R9JCJ8880P",
+      "sha256": "e0a4b526e91352ae89329ab51606999dd34e2e44c79660b01dd2aa61903120f0"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j001\\replay_09R9JULGCVU9.json",
+      "tag": "09R9JULGCVU9",
+      "sha256": "90c0b0d16b4f6cc4d948f02322bc46e76563319caab2baf6b17194355a2c372f"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_144b189ba2564952b27c551422a260e8.json",
+      "tag": "144b189ba2564952b27c551422a260e8",
+      "sha256": "342fda96d5ee3ae1780dbbeba699f1d4058456a7312e0f7086a56d539bb9a51a"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_2ff57d4a506f4ed89441a1b6a6658c96.json",
+      "tag": "2ff57d4a506f4ed89441a1b6a6658c96",
+      "sha256": "2a0ef5e74aadf655382381f7355061ed6b7763c382077c9642a8d16001fa4a6e"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_30bd4c1d2f204f37b3589e833c3ae197.json",
+      "tag": "30bd4c1d2f204f37b3589e833c3ae197",
+      "sha256": "e2423041b54100a07140f25f5a35747ea27c5849671e1c1f258a4f19befc7914"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_399d0dffd6b74634ae415fff47d97501.json",
+      "tag": "399d0dffd6b74634ae415fff47d97501",
+      "sha256": "bdbf0f7da1ffc14ede8074df7cf3404d92d1fb2ef678807dfa539b6ff00c39d0"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_3a648e6c2381430babee676dfcefaaec.json",
+      "tag": "3a648e6c2381430babee676dfcefaaec",
+      "sha256": "38534d9cb8c587cc924a4dc26f01c9a26cb6a5fd0fd6fea932ab0c8b1c4d5533"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_4cad6018640e4f179c521b8d242a3dd2.json",
+      "tag": "4cad6018640e4f179c521b8d242a3dd2",
+      "sha256": "1f3ffd40c2285b2ea4f56b0f5452af007c90f24e956086d36ee21efeed18aea4"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_55fdecffca7e4ce9b20ba1dfd25d1dbb.json",
+      "tag": "55fdecffca7e4ce9b20ba1dfd25d1dbb",
+      "sha256": "a4221f77bd545fd5a471392f0d261e33f9925b63c4b5d4edfcd1ceb5e6aa1d1c"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_6b85d4de9f414a9183720c411d78e92f.json",
+      "tag": "6b85d4de9f414a9183720c411d78e92f",
+      "sha256": "87ffd79576a2a116fc1d7d2c5ea242033c5d77d4a5b8a85a64f6649db9326f91"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_89e7825fb9b44d63890d8d2b238150a2.json",
+      "tag": "89e7825fb9b44d63890d8d2b238150a2",
+      "sha256": "df6383d9817f2738c504d3dfaca1051a4595a0d5b6bef750d749e9d33e327a1d"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_8be1cf0ec9b540ba8cc916e37d406fe9.json",
+      "tag": "8be1cf0ec9b540ba8cc916e37d406fe9",
+      "sha256": "b1cb7e45392f0fbc56681cb1ed4d48e7d2ccc7f37ecbcfbca31ac58b532cbc22"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_9811463704ca4016b0badd1395208f1f.json",
+      "tag": "9811463704ca4016b0badd1395208f1f",
+      "sha256": "4761c67c2f5f4b80f7a45b18e0e22a143f203c4095002e78087663f1c9d9610e"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_9f03461916314fdba93360a91e46aaf9.json",
+      "tag": "9f03461916314fdba93360a91e46aaf9",
+      "sha256": "acb3d70875c8e9fb22be1e2178f2ca06267c54685d7c40d0801c6959351b6d7b"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_a1fbf705e726479591e4ab23227ba7af.json",
+      "tag": "a1fbf705e726479591e4ab23227ba7af",
+      "sha256": "2b5de98ada1891dceba7704c5ca84a79bfa270ec0d60531c6a856958f51a8887"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_a753743a696746eab2dd1ac834582eec.json",
+      "tag": "a753743a696746eab2dd1ac834582eec",
+      "sha256": "5366226e945f30f087c9ed4bd4b31be6403042a2e8de3c8ab62c754ce3a86207"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_f2cd7f99c98b4a09a8e7da7c273ec997.json",
+      "tag": "f2cd7f99c98b4a09a8e7da7c273ec997",
+      "sha256": "d96846966233849d6d655b3e200cc8c28a5d985aba81ca4f0b4f6cbb286d6c60"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_faacd62ccae64a4a8950dc56d1c56577.json",
+      "tag": "faacd62ccae64a4a8950dc56d1c56577",
+      "sha256": "6fa7d4dd1c136e30d2e209d9bf05224a7ee8b3c752fb2f215cfd1dded7e9dd3e"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j002\\replay_fdb367b866d1485a83b588aa89c86920.json",
+      "tag": "fdb367b866d1485a83b588aa89c86920",
+      "sha256": "2a096330ae83e2de411f115aabdbfc3ec595a96d8b4e266cc94532bafe60f34c"
+    }
+  ],
+  "live_sources": [
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_002238.jsonl",
+      "sha256": "430fcbd4027c0577f933ddf1398bb9d90f871cbfdeeb34f3462755ef5e57153a"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_005623.jsonl",
+      "sha256": "971bb0bfc8ebdfcbc12df16ccf99cecba299e5d00ecf89097c534fcb729a6e14"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_010916.jsonl",
+      "sha256": "43ef18fd0d1e3645c43d378ddd3fcd144cde542f47ea916661c821737559f59d"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_013940.jsonl",
+      "sha256": "5a6839ff0062d80716c0a4e9bdf0f1c689f5d7dc8a04828e7a267e756677a358"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_021126.jsonl",
+      "sha256": "2ba92f9b56d42e1ede0e9a94e9e5e0e17ec64222f4276c22f6b088f3070e7fa9"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_024202.jsonl",
+      "sha256": "4eec3a4546d0f0fdddb3f9b372cbe2509fdf6df3c6b0ff8ef433843e614d7fb0"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_031309.jsonl",
+      "sha256": "a54e3258f7a8f8919e7decafc030e45505807845b79e8d216ab7ecb4dacddbb4"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_094328.jsonl",
+      "sha256": "44c906599133654c5e93e7ca5d9bd69f326ebdeab0f285701a7e92eeed701417"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_095736.jsonl",
+      "sha256": "feb41e4ed9199c7ecb031366e9c4d665de64155f55775a1879dbc65ab6b304e5"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_103534.jsonl",
+      "sha256": "a81babca1d625259f39a941ff83e44db1bd916ea14194f35c3730723b8e03ebb"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_110553.jsonl",
+      "sha256": "f6e7ac461af771602e32e0101a05c2a89e2ccd9ca8f6cc544141c94e3c76a7b8"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_113642.jsonl",
+      "sha256": "266a708ad5bddf3a6bdeac98d5b452af177136f1c76d7317eec81033ce52859d"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_120955.jsonl",
+      "sha256": "9f71ba39adf514878b6106c2f999320e46d134385319d6435b0fe0221016681b"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_122259.jsonl",
+      "sha256": "2488693994035603d154be99141c26cb1babcaff9b17ad441b45b80a7692d782"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_125726.jsonl",
+      "sha256": "c37774a7e517c521e24610fd3db0b0dbd1d085f408edc9c1b5da0ffd734a0ce8"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_132916.jsonl",
+      "sha256": "0d52ff44dc44b776762eeac1fe37163594e40a783692ff1431aa993ee3e10faf"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_205129.jsonl",
+      "sha256": "f35d5f48d6f6e6b6332124d379155e6b4fd16b3477f4cfb118a0cf4931648297"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_212221.jsonl",
+      "sha256": "7df12117764a698a660e3c874b5ecc544483d30350976b5d7150153f6c13f5b6"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_215110.jsonl",
+      "sha256": "79bcc6ca80eed53318b8ecb8baf85de06ee4463eee06c4b06cb82ec9b1900f84"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_222423.jsonl",
+      "sha256": "76e340e971b3467045d47b4d1c717a3835989dbaa2d5d108e29484d780477e71"
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_225921.jsonl",
+      "sha256": "8f1327285171519809b91587759dbcf70cb441e38ae002b8cc1fa60b8808d66e"
+    }
+  ],
+  "distance_milli": 5000,
+  "horizon_ticks": 120,
+  "limitations": [
+    "Nearby support is spatial association, not inferred intent.",
+    "Reachable targets are geometry, not proof of hits or useful distraction.",
+    "Subsequent damage and elixir are observational; no counterfactual causal claim.",
+    "Unknown flying classes conservatively count as potential ground targets.",
+    "Live coverage is limited to saved frames and confirmed plays; own hands were not logged."
+  ],
+  "seconds": 9.349029064178467
+}

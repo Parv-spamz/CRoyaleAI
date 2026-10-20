@@ -1,0 +1,2 @@
+{"verdict": "REJECTED for continuation", "failed_filters": ["rocket_aim_material", "rocket_action_material", "late_rocket_material", "barrel_correct_nonregression", "barrel_wrong_nonregression", "witch_nonregression", "night_witch_nonregression", "furnace_nonregression", "defensive_sequence_nonregression"], "message_characters": 1434}
+OUTCOME_LAMBDA1_EVIDENCE_REVIEWED

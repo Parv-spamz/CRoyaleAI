@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-10-05T08:28:14.025611",
+  "source": "https://huggingface.co/api/datasets/Cochon123/clash-royale-replays",
+  "revision": "ba54d0c89db86fd6e31096179a0141635fbef816",
+  "gated": false,
+  "private": false,
+  "api_path": "icebow\\data\\bench\\native_confirmation_20261005\\additional_source\\dataset_api.json",
+  "api_sha256": "4f593dee3f5b8c537649eac38512bfb8c0f62f3719bd0e0cfac688542f285d03",
+  "raw_files": 15452,
+  "metadata_files": [
+    ".gitattributes",
+    "README.md",
+    "card_costs.json",
+    "cleaned-legacy/events.jsonl",
+    "cleaned-legacy/manifest.json",
+    "cleaned-legacy/matches.jsonl",
+    "cleaned-legacy/quarantine.jsonl"
+  ],
+  "credentials_used": false
+}

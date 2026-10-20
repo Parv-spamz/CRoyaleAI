@@ -1,0 +1,126 @@
+{
+ "meta": {
+  "kept": 19,
+  "margin": 0.15,
+  "model": "gemma3:4b",
+  "note": "engine-verified; a proposal that did not beat holding was dropped",
+  "tested": 27,
+  "trials": 3
+ },
+ "rules": {
+  "x1|king_asleep|deep_0|worth_0|elx_7": {
+   "card": "ice_spirit",
+   "gain": 0.209,
+   "rank": 3,
+   "wins": "2/3"
+  },
+  "x1|king_asleep|deep_0|worth_1|elx_4": {
+   "card": "tesla",
+   "gain": 0.175,
+   "rank": 3,
+   "wins": "2/3"
+  },
+  "x1|king_asleep|deep_0|worth_1|elx_6": {
+   "card": "tesla",
+   "gain": 0.581,
+   "rank": 2,
+   "wins": "2/3"
+  },
+  "x1|king_asleep|deep_1|worth_0|elx_7": {
+   "card": "firecracker",
+   "gain": 0.963,
+   "rank": 3,
+   "wins": "3/3"
+  },
+  "x1|king_asleep|deep_1|worth_0|elx_8": {
+   "card": "tesla",
+   "gain": 1.35,
+   "rank": 3,
+   "wins": "2/3"
+  },
+  "x1|king_asleep|deep_1|worth_1|elx_3": {
+   "card": "earthquake",
+   "gain": 0.559,
+   "rank": 2,
+   "wins": "2/3"
+  },
+  "x1|king_asleep|deep_1|worth_1|elx_7": {
+   "card": "earthquake",
+   "gain": 1.502,
+   "rank": 3,
+   "wins": "3/3"
+  },
+  "x1|king_asleep|deep_1|worth_1|elx_9": {
+   "card": "tesla",
+   "gain": 1.817,
+   "rank": 3,
+   "wins": "2/3"
+  },
+  "x1|king_asleep|deep_1|worth_3|elx_8": {
+   "card": "tesla",
+   "gain": 2.07,
+   "rank": 1,
+   "wins": "2/3"
+  },
+  "x1|king_asleep|deep_2|worth_0|elx_9": {
+   "card": "hog_rider",
+   "gain": 0.439,
+   "rank": 1,
+   "wins": "2/3"
+  },
+  "x1|king_asleep|deep_2|worth_1|elx_7": {
+   "card": "hog_rider",
+   "gain": 0.362,
+   "rank": 1,
+   "wins": "3/3"
+  },
+  "x1|king_awake|deep_0|worth_0|elx_10": {
+   "card": "mighty_miner",
+   "gain": 1.711,
+   "rank": 2,
+   "wins": "3/3"
+  },
+  "x1|king_awake|deep_0|worth_1|elx_10": {
+   "card": "skeletons",
+   "gain": 0.2,
+   "rank": 2,
+   "wins": "2/3"
+  },
+  "x1|king_awake|deep_0|worth_1|elx_8": {
+   "card": "skeletons",
+   "gain": 0.654,
+   "rank": 1,
+   "wins": "3/3"
+  },
+  "x1|king_awake|deep_0|worth_2|elx_10": {
+   "card": "firecracker",
+   "gain": 2.104,
+   "rank": 3,
+   "wins": "2/3"
+  },
+  "x1|king_awake|deep_1|worth_0|elx_10": {
+   "card": "tesla",
+   "gain": 1.454,
+   "rank": 2,
+   "wins": "2/3"
+  },
+  "x1|king_awake|deep_1|worth_1|elx_4": {
+   "card": "hog_rider",
+   "gain": 0.318,
+   "rank": 2,
+   "wins": "2/3"
+  },
+  "x1|king_awake|deep_3|worth_0|elx_10": {
+   "card": "firecracker",
+   "gain": 1.46,
+   "rank": 3,
+   "wins": "2/3"
+  },
+  "x1|king_awake|deep_3|worth_2|elx_9": {
+   "card": "tesla",
+   "gain": 3.016,
+   "rank": 3,
+   "wins": "3/3"
+  }
+ }
+}

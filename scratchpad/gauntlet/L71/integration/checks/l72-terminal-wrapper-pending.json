@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/check_terminal_pending.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "TERMINAL_PENDING_VERIFIED",
+  "matched": true,
+  "output_sha256": "4d22e4e18fdbb550f98e58ed3e7aba2b8754ed46b98c48d3f2dbc94221b6216b",
+  "seconds": 0.08278608322143555
+}

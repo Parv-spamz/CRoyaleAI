@@ -1,0 +1,90 @@
+[
+  {
+    "index": 0,
+    "tag": "fa25595b6e7748e0bd66912242515f97",
+    "recording_sha256": "af79cb12d6a01078b3b8ddb307d1cddf5f07b1a22cebeff4636e19302a25e3fa",
+    "bytes": 5512001,
+    "fields": {
+      "tag": "fa25595b6e7748e0bd66912242515f97",
+      "errors": {},
+      "coverage": {
+        "projectiles_rows": 3875,
+        "past_motion_tti_known": 2046,
+        "area_effects_rows": 48,
+        "frames": 3674,
+        "area_tracks": 4,
+        "projectile_tracks": 380
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 44,
+        "mean": 0,
+        "median": 0.0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 4,
+        "mean": 50,
+        "median": 50.0,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 2046,
+        "mean": 0.043030756892569695,
+        "median": 0.0,
+        "max": 87.52833333333334
+      }
+    },
+    "grade": {
+      "plays_total": 57,
+      "plays_driven": 56,
+      "accepted": 56,
+      "rejected_by_reason": {},
+      "invalid_placement": 0,
+      "elixir_delays": {
+        "n": 0,
+        "max_ticks": 0,
+        "sum_ticks": 0
+      },
+      "skipped": [
+        {
+          "play_index": 51,
+          "tick": 3352,
+          "side": 0,
+          "kind": "ability",
+          "ability": true,
+          "card": null,
+          "candidates": [
+            "giant",
+            "mini-pekka"
+          ],
+          "entity_id": null,
+          "x": null,
+          "y": null,
+          "accepted": false,
+          "result_code": null,
+          "result_name": null,
+          "delay_ticks": 0,
+          "placement_valid": null,
+          "engine_tick": 3352,
+          "skipped": "ability attribution: multiple live candidates"
+        }
+      ],
+      "crowns_match": true,
+      "terminal_vs_last_play_ticks": 136
+    },
+    "historical_log_equal": true,
+    "historical_grade_equal": true,
+    "historical_final_hash_equal": true,
+    "repeat_sha256": "e68164dfec0ada323239d129acae47c148947ca30d46d2533169eb6197c730e6",
+    "repeat_equal": {
+      "final": true,
+      "log": true,
+      "frames": false,
+      "grade": true
+    },
+    "ok": false,
+    "error": "AssertionError({'final': True, 'log': True, 'frames': False, 'grade': True})",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\capture_native_preflight.py\", line 117, in main\n    assert all(row['repeat_equal'].values()), row['repeat_equal']\n           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: {'final': True, 'log': True, 'frames': False, 'grade': True}\n",
+    "seconds": 64.98
+  }
+]

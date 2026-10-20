@@ -1,0 +1,10 @@
+{
+  "launcher_pid": 56284,
+  "serial": true,
+  "existing_live_stop_preserved": true,
+  "live_settings_changed": false,
+  "prelaunch_sha256": "2387849f6d3cd7d590ce56cb6c0788b799867e40165b0a7386a648a0fddaed81",
+  "python": "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+  "driver": "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_6\\run_chain.py",
+  "started_at": "2026-10-05T15:58:25.0865503-04:00"
+}

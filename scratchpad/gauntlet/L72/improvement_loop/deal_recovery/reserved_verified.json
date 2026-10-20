@@ -1,0 +1,17 @@
+{
+  "complete": true,
+  "counts": {
+    "trials": 65,
+    "repeats": 65,
+    "usable_recovered": 32,
+    "unchanged_controls": 0,
+    "source_commands": 4039,
+    "accepted_commands": 3765
+  },
+  "complete_sha256": "7638e350bc67838c03b4d5fed2b9788ed28910650cf7e3ed4c888e279aeb1b76",
+  "verifier_sha256": "f57540c125843e632ee7e83127890c8632f2e765d879c60f2b935a16830f2360",
+  "training_only": false,
+  "confirmation_replayed": true,
+  "model_predictions": 0,
+  "N2_complete": false
+}

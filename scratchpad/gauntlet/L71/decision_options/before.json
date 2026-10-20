@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-04T22:09:18.819378-04:00",
+  "live_pids": [
+    37388,
+    5424
+  ],
+  "protected_sha256": {
+    "scratchpad/gauntlet/L68/live_reader/live_play.py": "a1f28128fdee92ddaad398d23c5ee7a83ac73d42919d431db2419fe24d180cc5",
+    "scratchpad/gauntlet/L70/live/run_live.sh": "72768c1d1f2ea47403887e9d1ad8595bc5048670e983db3303bf8d7e4db83f4a",
+    "scratchpad/gauntlet/L70/live/CKPT_OVERRIDE": "bfcb2c67e152443cf3cb7c002a94e54a8e8e5f9e9c24d57c1b93570c51cb6194",
+    "pipeline/live_gen.py": "473dfbb09c9cbd456e909515493b87856614f0e32152cfdd8812b4a9a5f5b1fc"
+  }
+}

@@ -1,0 +1,21 @@
+START v5-eval-portable
+{"command": ["C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\evaluate_v2.py", "--arm", "ordinary_v5"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "DEVELOPMENT_1_EVALUATION_COMPLETE", "matched": true, "output_sha256": "765121c7ea7dd539f0fe511d3247b14c26515ca2660aae379bf36eea8a8dd6f1", "seconds": 87.80852103233337}
+INSPECTED_CHECK_PASS
+COMPLETE v5-eval-portable
+START v6-train
+{"command": ["C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\train.py", "--arm", "ordinary_v6"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "DEVELOPMENT_1_FULL_ARM_COMPLETE", "matched": true, "output_sha256": "85c5f391ef7c48c1001c5a9b9fa8db53ce23b0385071e6b2e75b0d723e2fa326", "seconds": 255.9817295074463}
+INSPECTED_CHECK_PASS
+COMPLETE v6-train
+START v6-portable
+{"command": ["C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\portable_checkpoint.py", "--arm", "ordinary_v6"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "DEVELOPMENT_1_PORTABLE_CHECKPOINT_VERIFIED", "matched": true, "output_sha256": "9af2705b3d7114236a8512904196936dd3c68495d7ef3fc3002d525649ed4a3c", "seconds": 6.196597576141357}
+INSPECTED_CHECK_PASS
+COMPLETE v6-portable
+START v6-eval-portable
+{"command": ["C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\evaluate_v2.py", "--arm", "ordinary_v6"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "DEVELOPMENT_1_EVALUATION_COMPLETE", "matched": true, "output_sha256": "765121c7ea7dd539f0fe511d3247b14c26515ca2660aae379bf36eea8a8dd6f1", "seconds": 82.08217430114746}
+INSPECTED_CHECK_PASS
+COMPLETE v6-eval-portable
+START independent-portable
+{"command": ["C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\recount_v2.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "DEVELOPMENT_1_INDEPENDENT_RECOUNT_COMPLETE", "matched": true, "output_sha256": "2153bfad8dd07a0f1c545716e8644a63828e802a95fe2d620f020e594500803d", "seconds": 58.73679780960083}
+INSPECTED_CHECK_PASS
+COMPLETE independent-portable
+DEVELOPMENT_1_RECOVERY_CHAIN_COMPLETE

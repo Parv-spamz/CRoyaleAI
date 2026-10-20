@@ -1,0 +1,124 @@
+{
+  "checked_at": "2026-10-05T07:59:01.395515",
+  "attempted": 275,
+  "selected": 645,
+  "totals": {
+    "usable": 134,
+    "excluded": 141,
+    "reason:undriven_commands": 106,
+    "reason:skipped_commands": 106,
+    "reason:rejected_commands": 78,
+    "reason:crown_mismatch": 78
+  },
+  "last_tag": "ebb0359335ac41248a28bf4d257a6cbc",
+  "by_split": {
+    "training": {
+      "usable": 79,
+      "excluded": 74
+    },
+    "confirmation": {
+      "excluded": 41,
+      "usable": 32
+    },
+    "development": {
+      "excluded": 26,
+      "usable": 23
+    }
+  },
+  "by_stratum": {
+    "confirmation:rocket_deck": {
+      "usable": 13,
+      "excluded": 6
+    },
+    "confirmation:versus_night-witch": {
+      "usable": 7,
+      "excluded": 3
+    },
+    "training:versus_furnace": {
+      "usable": 16,
+      "excluded": 19
+    },
+    "confirmation:versus_furnace": {
+      "usable": 7,
+      "excluded": 11
+    },
+    "training:rocket_deck": {
+      "usable": 27,
+      "excluded": 22
+    },
+    "training:versus_night-witch": {
+      "usable": 12,
+      "excluded": 16
+    },
+    "training:versus_witch": {
+      "excluded": 14,
+      "usable": 11
+    },
+    "training:xbow_deck": {
+      "excluded": 11,
+      "usable": 12
+    },
+    "training:log_vs_barrel": {
+      "usable": 11,
+      "excluded": 2
+    },
+    "development:versus_witch": {
+      "excluded": 3,
+      "usable": 2
+    },
+    "development:versus_night-witch": {
+      "excluded": 3,
+      "usable": 1
+    },
+    "confirmation:versus_witch": {
+      "excluded": 5,
+      "usable": 4
+    },
+    "development:xbow_deck": {
+      "excluded": 3,
+      "usable": 1
+    },
+    "confirmation:log_vs_barrel": {
+      "usable": 5,
+      "excluded": 1
+    },
+    "confirmation:rocket_tornado_deck": {
+      "usable": 2
+    },
+    "development:rocket_deck": {
+      "usable": 3,
+      "excluded": 4
+    },
+    "development:versus_furnace": {
+      "usable": 4,
+      "excluded": 4
+    },
+    "training:rocket_tornado_deck": {
+      "usable": 4,
+      "excluded": 8
+    },
+    "confirmation:xbow_deck": {
+      "usable": 2,
+      "excluded": 1
+    },
+    "development:log_vs_barrel": {
+      "excluded": 1
+    },
+    "development:rocket_tornado_deck": {
+      "excluded": 2
+    }
+  },
+  "fatal": null,
+  "collector_launcher_pair": [
+    12548,
+    39608
+  ],
+  "chain_pair": [
+    43696,
+    40344
+  ],
+  "owner_live_pair": [
+    37424,
+    29536
+  ]
+}

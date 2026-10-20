@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/deal_recovery/recount_controls.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "DEAL_RECOUNT_CONTROLS_PASS",
+  "matched": true,
+  "output_sha256": "82e7eb769e32fed286e859b37bbfac8d04f5131e5ce9492d25ed14b11b727aa0",
+  "seconds": 0.6098237037658691
+}

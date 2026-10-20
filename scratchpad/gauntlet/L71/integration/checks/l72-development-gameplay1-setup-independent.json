@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/development_gameplay_1/verify_setup.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "GAMEPLAY_SCENARIOS_INDEPENDENT",
+  "matched": true,
+  "output_sha256": "45eaa912c16aff8ecca7c9afed9800fe49b6dc67931721fa8d523ac6a187c688",
+  "seconds": 16.928929567337036
+}

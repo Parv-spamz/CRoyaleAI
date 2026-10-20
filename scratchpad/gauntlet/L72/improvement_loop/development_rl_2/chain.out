@@ -1,0 +1,17 @@
+START prepare
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_2\\prepare.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "OUTCOME_LAMBDA1_PREPARED", "matched": true, "output_sha256": "09aaaa8bf4688373585589c9bd5bbe5dc8b36de8051cb967f257be2949ad0cb4", "seconds": 5.226836442947388}
+INSPECTED_CHECK_PASS
+COMPLETE prepare
+START train
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_2\\train.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "OUTCOME_RL_TRAIN_COMPLETE", "matched": true, "output_sha256": "65e2e8e0f296777e80d3770c8ae5cf5e4acceb23ef5db2de75b38626a4fb364d", "seconds": 1311.2244944572449}
+INSPECTED_CHECK_PASS
+COMPLETE train
+START eval
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_2\\evaluate.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "OUTCOME_RL_EVALUATED", "matched": true, "output_sha256": "1ccfa28967bebcfe64cf9a29b069ad4d6798731a6bcab59fa4c317991bfe6b73", "seconds": 78.45172619819641}
+INSPECTED_CHECK_PASS
+COMPLETE eval
+START independent
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_2\\verify.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "OUTCOME_RL_VERIFIED", "matched": true, "output_sha256": "4e839387b2944c536390d5fa7140854f345f86df9689ee194c8ff730cc276723", "seconds": 51.15428829193115}
+INSPECTED_CHECK_PASS
+COMPLETE independent
+OUTCOME_RL_CHAIN_COMPLETE

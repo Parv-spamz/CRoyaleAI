@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1_recovery\\verify_v2.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 1,
+  "expected": "OUTCOME_RL_VERIFIED",
+  "matched": false,
+  "output_sha256": "6d231957914e1df5ed7ec75a73fe15eab248ac94c6ef952c60bbe812711cdec1",
+  "seconds": 2.634293556213379
+}

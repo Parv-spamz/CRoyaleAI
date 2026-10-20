@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/hand_retention_integration/check_loader.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "TOWER_LIVE_LOADER_VERIFIED",
+  "matched": true,
+  "output_sha256": "9693571ad356f29c29a2217847ed52e2dd3257ec46cf280fb56445a61a11ee2e",
+  "seconds": 83.1533670425415
+}

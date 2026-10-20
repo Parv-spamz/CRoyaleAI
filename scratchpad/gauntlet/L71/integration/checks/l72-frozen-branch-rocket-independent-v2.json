@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/verify_frozen_branch_rocket_v2.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "FROZEN_BRANCH_ROCKET_INDEPENDENT_V2_COMPLETE",
+  "matched": true,
+  "output_sha256": "6f54b46a297e7e03ccf0784ec4a82cfad00b2f7824e6d954eb3fc165712f10db",
+  "seconds": 55.88496923446655
+}

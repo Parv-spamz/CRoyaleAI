@@ -1,0 +1,176 @@
+{
+  "counts": {
+    "frames": 3719,
+    "coherent_frames": 3631,
+    "projectiles": 602,
+    "barrel_observations": 3
+  },
+  "sources": [
+    {
+      "path": "scratchpad\\gauntlet\\L70\\reader\\decoded_a.jsonl",
+      "sha256": "d4a899700d3ef9ca780a5940094d3a4a76c148e38ccde14f5e8677ba103d5f13",
+      "counts": {
+        "frames": 720,
+        "coherent_frames": 674,
+        "projectiles": 59,
+        "barrel_observations": 3
+      }
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L70\\reader\\decoded_b.jsonl",
+      "sha256": "945aa1d2d1c8062e156b9c3ef7518e4c9e023846c0600d9da7a95262c59a019f",
+      "counts": {
+        "frames": 960,
+        "coherent_frames": 918,
+        "projectiles": 97
+      }
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L70\\reader\\sidebyside\\re_v2.jsonl",
+      "sha256": "8ce44f804f4d8c3b545bf60556b7fc6bccde7cbaa358bab663ea09d55325fcd3",
+      "counts": {
+        "frames": 24,
+        "coherent_frames": 24,
+        "projectiles": 0
+      }
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L70\\reader\\sidebyside\\re_v2b.jsonl",
+      "sha256": "712182c33dfafadd5c8668d7d5ae55317e750dbb7e365e1a21da0f76a0e225ad",
+      "counts": {
+        "frames": 996,
+        "coherent_frames": 996,
+        "projectiles": 0
+      }
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L70\\reader\\sidebyside\\re_v2x.jsonl",
+      "sha256": "2f10b136db7b199369e2ddbb6886cbb7806ba716ac33e505fb9129a10097c8df",
+      "counts": {
+        "frames": 24,
+        "coherent_frames": 24,
+        "projectiles": 0
+      }
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L70\\reader\\sidebyside\\re_v2xb.jsonl",
+      "sha256": "f73ba74fd15fe805b5140349ab4f40d6db03c1be23693f7c6c93fded3ece2b15",
+      "counts": {
+        "frames": 995,
+        "coherent_frames": 995,
+        "projectiles": 446
+      }
+    }
+  ],
+  "examples": [
+    {
+      "file": "scratchpad\\gauntlet\\L70\\reader\\decoded_a.jsonl",
+      "tick": 1553,
+      "public_shot": [
+        "goblin-barrel",
+        0,
+        5775,
+        16192,
+        3499,
+        25500,
+        null
+      ],
+      "normalized": {
+        "0": [
+          1.0,
+          0.0,
+          0.32083332538604736,
+          0.49399998784065247,
+          0.19438889622688293,
+          0.203125,
+          -1.0,
+          0.0
+        ],
+        "1": [
+          1.0,
+          1.0,
+          0.6791666746139526,
+          0.5059999823570251,
+          0.8056111335754395,
+          0.796875,
+          -1.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "file": "scratchpad\\gauntlet\\L70\\reader\\decoded_a.jsonl",
+      "tick": 1573,
+      "public_shot": [
+        "goblin-barrel",
+        0,
+        3878,
+        23952,
+        3499,
+        25500,
+        null
+      ],
+      "normalized": {
+        "0": [
+          1.0,
+          0.0,
+          0.2154444456100464,
+          0.2515000104904175,
+          0.19438889622688293,
+          0.203125,
+          -1.0,
+          0.0
+        ],
+        "1": [
+          1.0,
+          1.0,
+          0.7845555543899536,
+          0.7484999895095825,
+          0.8056111335754395,
+          0.796875,
+          -1.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "file": "scratchpad\\gauntlet\\L70\\reader\\decoded_a.jsonl",
+      "tick": 2754,
+      "public_shot": [
+        "goblin-barrel",
+        0,
+        13932,
+        23176,
+        14500,
+        25500,
+        null
+      ],
+      "normalized": {
+        "0": [
+          1.0,
+          0.0,
+          0.7739999890327454,
+          0.2757500112056732,
+          0.8055555820465088,
+          0.203125,
+          -1.0,
+          0.0
+        ],
+        "1": [
+          1.0,
+          1.0,
+          0.22599999606609344,
+          0.7242500185966492,
+          0.1944444477558136,
+          0.796875,
+          -1.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "Reader archive coverage is an inventory, not verified in-game landing evidence.",
+    "No opponent player fields are read. Zero Barrel observations means unavailable evidence."
+  ]
+}

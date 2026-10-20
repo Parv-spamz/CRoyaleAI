@@ -1,0 +1,1190 @@
+{
+  "source_manifest_sha256": "fa3a5d5780f1a84f3c18ebd68a02512446b4070e4a9ca159d082ca23ae2459fa",
+  "policy_cache_sha256": "ccf3d8e80ce5fa2fed6fe5c63c2f31718a46852050d32a9dc1f09ced9622c4ad",
+  "pro_replays": 2262,
+  "native_counts": {
+    "night-witch": {
+      "observations:parent": 12260,
+      "bodies:parent": 306,
+      "max_hp:906": 306,
+      "observations:child": 24645,
+      "bodies:child": 2488,
+      "max_hp:81": 2488,
+      "child_native_wrong": 2488,
+      "child_reader_wrong": 2488,
+      "replays": 92
+    },
+    "tombstone": {
+      "observations:parent": 36366,
+      "bodies:parent": 1100,
+      "max_hp:529": 1100,
+      "observations:child": 71418,
+      "bodies:child": 8521,
+      "max_hp:81": 8521,
+      "child_native_wrong": 8521,
+      "child_reader_wrong": 8521,
+      "replays": 165,
+      "observations:unknown": 6180
+    },
+    "furnace": {
+      "observations:parent": 27410,
+      "bodies:parent": 782,
+      "max_hp:727": 782,
+      "observations:child": 16339,
+      "bodies:child": 2743,
+      "max_hp:217": 2743,
+      "child_native_wrong": 2743,
+      "child_reader_wrong": 2743,
+      "replays": 127
+    },
+    "goblin-hut": {
+      "observations:parent": 13807,
+      "bodies:parent": 364,
+      "max_hp:1180": 364,
+      "observations:child": 12923,
+      "bodies:child": 1209,
+      "max_hp:133": 1209,
+      "child_native_wrong": 1209,
+      "child_reader_wrong": 1209,
+      "replays": 104
+    },
+    "witch": {
+      "observations:parent": 13759,
+      "bodies:parent": 483,
+      "max_hp:839": 483,
+      "observations:child": 43924,
+      "bodies:child": 4643,
+      "max_hp:81": 4643,
+      "child_native_wrong": 4643,
+      "child_reader_wrong": 4643,
+      "replays": 133
+    },
+    "barbarian-hut": {
+      "observations:parent": 424,
+      "bodies:parent": 8,
+      "max_hp:1164": 8,
+      "observations:child": 1083,
+      "bodies:child": 54,
+      "max_hp:716": 54,
+      "child_native_wrong": 54,
+      "child_reader_wrong": 54,
+      "replays": 1
+    }
+  },
+  "body_classes": {
+    "night-witch": {
+      "parent|native=night_witch|reader=night_witch|form=0": 306,
+      "child|native=night_witch|reader=night_witch|form=0": 2488
+    },
+    "tombstone": {
+      "parent|native=tombstone|reader=tombstone|form=0": 308,
+      "child|native=tombstone|reader=tombstone|form=0": 3767,
+      "parent|native=tombstone|reader=tombstone|form=2": 792,
+      "child|native=tombstone|reader=tombstone|form=2": 4754
+    },
+    "furnace": {
+      "parent|native=furnace|reader=furnace|form=0": 664,
+      "child|native=furnace|reader=furnace|form=0": 2166,
+      "parent|native=furnace|reader=furnace|form=1": 118,
+      "child|native=furnace|reader=furnace|form=1": 577
+    },
+    "goblin-hut": {
+      "parent|native=goblin_hut|reader=goblin_hut|form=0": 364,
+      "child|native=goblin_hut|reader=goblin_hut|form=0": 1209
+    },
+    "witch": {
+      "parent|native=witch|reader=witch|form=0": 294,
+      "child|native=witch|reader=witch|form=0": 2785,
+      "parent|native=witch|reader=witch|form=1": 189,
+      "child|native=witch|reader=witch|form=1": 1858
+    },
+    "barbarian-hut": {
+      "parent|native=barbarian_hut|reader=barbarian_hut|form=0": 8,
+      "child|native=barbarian_hut|reader=barbarian_hut|form=0": 54
+    }
+  },
+  "examples": {
+    "night-witch": [
+      {
+        "tag": "c3ccaa538032406ba5ab61e9de2a0ec2",
+        "tick": 1077,
+        "entity": [
+          1,
+          6613,
+          26523,
+          "DarkWitch",
+          81,
+          81,
+          15,
+          26000048,
+          5000015
+        ],
+        "expected": "bats",
+        "native_class": "night_witch",
+        "reader_class": "night_witch"
+      },
+      {
+        "tag": "c3ccaa538032406ba5ab61e9de2a0ec2",
+        "tick": 1077,
+        "entity": [
+          1,
+          8701,
+          24411,
+          "DarkWitch",
+          81,
+          81,
+          15,
+          26000048,
+          5000016
+        ],
+        "expected": "bats",
+        "native_class": "night_witch",
+        "reader_class": "night_witch"
+      },
+      {
+        "tag": "c3ccaa538032406ba5ab61e9de2a0ec2",
+        "tick": 1185,
+        "entity": [
+          1,
+          2841,
+          20259,
+          "DarkWitch",
+          81,
+          81,
+          15,
+          26000048,
+          5000024
+        ],
+        "expected": "bats",
+        "native_class": "night_witch",
+        "reader_class": "night_witch"
+      },
+      {
+        "tag": "c3ccaa538032406ba5ab61e9de2a0ec2",
+        "tick": 1185,
+        "entity": [
+          1,
+          5704,
+          20061,
+          "DarkWitch",
+          81,
+          81,
+          15,
+          26000048,
+          5000025
+        ],
+        "expected": "bats",
+        "native_class": "night_witch",
+        "reader_class": "night_witch"
+      },
+      {
+        "tag": "c3ccaa538032406ba5ab61e9de2a0ec2",
+        "tick": 1285,
+        "entity": [
+          1,
+          1459,
+          14889,
+          "DarkWitch",
+          81,
+          81,
+          15,
+          26000048,
+          5000027
+        ],
+        "expected": "bats",
+        "native_class": "night_witch",
+        "reader_class": "night_witch"
+      },
+      {
+        "tag": "c3ccaa538032406ba5ab61e9de2a0ec2",
+        "tick": 1285,
+        "entity": [
+          1,
+          4626,
+          14410,
+          "DarkWitch",
+          81,
+          81,
+          15,
+          26000048,
+          5000028
+        ],
+        "expected": "bats",
+        "native_class": "night_witch",
+        "reader_class": "night_witch"
+      }
+    ],
+    "tombstone": [
+      {
+        "tag": "2828f84fd9f749abac607d30eea1da81",
+        "tick": 505,
+        "entity": [
+          1,
+          9585,
+          20971,
+          "Tombstone",
+          81,
+          81,
+          15,
+          27000009,
+          5000010
+        ],
+        "expected": "skeletons",
+        "native_class": "tombstone",
+        "reader_class": "tombstone"
+      },
+      {
+        "tag": "2828f84fd9f749abac607d30eea1da81",
+        "tick": 515,
+        "entity": [
+          1,
+          9614,
+          20933,
+          "Tombstone",
+          81,
+          81,
+          15,
+          27000009,
+          5000011
+        ],
+        "expected": "skeletons",
+        "native_class": "tombstone",
+        "reader_class": "tombstone"
+      },
+      {
+        "tag": "2828f84fd9f749abac607d30eea1da81",
+        "tick": 585,
+        "entity": [
+          1,
+          9661,
+          20924,
+          "Tombstone",
+          81,
+          81,
+          15,
+          27000009,
+          5000012
+        ],
+        "expected": "skeletons",
+        "native_class": "tombstone",
+        "reader_class": "tombstone"
+      },
+      {
+        "tag": "2828f84fd9f749abac607d30eea1da81",
+        "tick": 595,
+        "entity": [
+          1,
+          9634,
+          20916,
+          "Tombstone",
+          81,
+          81,
+          15,
+          27000009,
+          5000013
+        ],
+        "expected": "skeletons",
+        "native_class": "tombstone",
+        "reader_class": "tombstone"
+      },
+      {
+        "tag": "2828f84fd9f749abac607d30eea1da81",
+        "tick": 665,
+        "entity": [
+          1,
+          9626,
+          20873,
+          "Tombstone",
+          81,
+          81,
+          15,
+          27000009,
+          5000014
+        ],
+        "expected": "skeletons",
+        "native_class": "tombstone",
+        "reader_class": "tombstone"
+      },
+      {
+        "tag": "2828f84fd9f749abac607d30eea1da81",
+        "tick": 675,
+        "entity": [
+          1,
+          9606,
+          20888,
+          "Tombstone",
+          81,
+          81,
+          15,
+          27000009,
+          5000015
+        ],
+        "expected": "skeletons",
+        "native_class": "tombstone",
+        "reader_class": "tombstone"
+      }
+    ],
+    "furnace": [
+      {
+        "tag": "a57fcb9f07e840b49e9a52372d0cf72a",
+        "tick": 851,
+        "entity": [
+          1,
+          10298,
+          20201,
+          "FirespiritHut",
+          217,
+          217,
+          14,
+          27000010,
+          5000019
+        ],
+        "expected": "fire_spirit",
+        "native_class": "furnace",
+        "reader_class": "furnace"
+      },
+      {
+        "tag": "a57fcb9f07e840b49e9a52372d0cf72a",
+        "tick": 951,
+        "entity": [
+          1,
+          13303,
+          16863,
+          "FirespiritHut",
+          217,
+          217,
+          14,
+          27000010,
+          5000020
+        ],
+        "expected": "fire_spirit",
+        "native_class": "furnace",
+        "reader_class": "furnace"
+      },
+      {
+        "tag": "a57fcb9f07e840b49e9a52372d0cf72a",
+        "tick": 2135,
+        "entity": [
+          1,
+          16869,
+          28069,
+          "FirespiritHut",
+          217,
+          217,
+          14,
+          27000010,
+          5000046
+        ],
+        "expected": "fire_spirit",
+        "native_class": "furnace",
+        "reader_class": "furnace"
+      },
+      {
+        "tag": "a57fcb9f07e840b49e9a52372d0cf72a",
+        "tick": 2235,
+        "entity": [
+          1,
+          16170,
+          22881,
+          "FirespiritHut",
+          217,
+          217,
+          14,
+          27000010,
+          5000048
+        ],
+        "expected": "fire_spirit",
+        "native_class": "furnace",
+        "reader_class": "furnace"
+      },
+      {
+        "tag": "a57fcb9f07e840b49e9a52372d0cf72a",
+        "tick": 2341,
+        "entity": [
+          1,
+          15229,
+          18152,
+          "FirespiritHut",
+          217,
+          217,
+          14,
+          27000010,
+          5000052
+        ],
+        "expected": "fire_spirit",
+        "native_class": "furnace",
+        "reader_class": "furnace"
+      },
+      {
+        "tag": "a57fcb9f07e840b49e9a52372d0cf72a",
+        "tick": 2443,
+        "entity": [
+          1,
+          15493,
+          18572,
+          "FirespiritHut",
+          217,
+          217,
+          14,
+          27000010,
+          5000059
+        ],
+        "expected": "fire_spirit",
+        "native_class": "furnace",
+        "reader_class": "furnace"
+      }
+    ],
+    "goblin-hut": [
+      {
+        "tag": "a57fcb9f07e840b49e9a52372d0cf72a",
+        "tick": 1704,
+        "entity": [
+          1,
+          8683,
+          20129,
+          "GoblinHut",
+          133,
+          133,
+          14,
+          27000001,
+          5000034
+        ],
+        "expected": "spear_goblins",
+        "native_class": "goblin_hut",
+        "reader_class": "goblin_hut"
+      },
+      {
+        "tag": "a57fcb9f07e840b49e9a52372d0cf72a",
+        "tick": 1744,
+        "entity": [
+          1,
+          8032,
+          21037,
+          "GoblinHut",
+          133,
+          133,
+          14,
+          27000001,
+          5000035
+        ],
+        "expected": "spear_goblins",
+        "native_class": "goblin_hut",
+        "reader_class": "goblin_hut"
+      },
+      {
+        "tag": "a57fcb9f07e840b49e9a52372d0cf72a",
+        "tick": 1791,
+        "entity": [
+          1,
+          8608,
+          20260,
+          "GoblinHut",
+          133,
+          133,
+          14,
+          27000001,
+          5000036
+        ],
+        "expected": "spear_goblins",
+        "native_class": "goblin_hut",
+        "reader_class": "goblin_hut"
+      },
+      {
+        "tag": "a57fcb9f07e840b49e9a52372d0cf72a",
+        "tick": 1965,
+        "entity": [
+          1,
+          8042,
+          20949,
+          "GoblinHut",
+          133,
+          133,
+          14,
+          27000001,
+          5000039
+        ],
+        "expected": "spear_goblins",
+        "native_class": "goblin_hut",
+        "reader_class": "goblin_hut"
+      },
+      {
+        "tag": "a57fcb9f07e840b49e9a52372d0cf72a",
+        "tick": 2041,
+        "entity": [
+          1,
+          9820,
+          19956,
+          "GoblinHut",
+          133,
+          133,
+          14,
+          27000001,
+          5000044
+        ],
+        "expected": "spear_goblins",
+        "native_class": "goblin_hut",
+        "reader_class": "goblin_hut"
+      },
+      {
+        "tag": "a57fcb9f07e840b49e9a52372d0cf72a",
+        "tick": 2255,
+        "entity": [
+          1,
+          10001,
+          21765,
+          "GoblinHut",
+          133,
+          133,
+          15,
+          27000001,
+          5000049
+        ],
+        "expected": "spear_goblins",
+        "native_class": "goblin_hut",
+        "reader_class": "goblin_hut"
+      }
+    ],
+    "witch": [
+      {
+        "tag": "d4ac40708b4249b2951d9b6e36d457af",
+        "tick": 342,
+        "entity": [
+          0,
+          7769,
+          430,
+          "Witch",
+          81,
+          81,
+          15,
+          26000007,
+          5000008
+        ],
+        "expected": "skeletons",
+        "native_class": "witch",
+        "reader_class": "witch"
+      },
+      {
+        "tag": "d4ac40708b4249b2951d9b6e36d457af",
+        "tick": 342,
+        "entity": [
+          0,
+          5767,
+          1532,
+          "Witch",
+          81,
+          81,
+          15,
+          26000007,
+          5000009
+        ],
+        "expected": "skeletons",
+        "native_class": "witch",
+        "reader_class": "witch"
+      },
+      {
+        "tag": "d4ac40708b4249b2951d9b6e36d457af",
+        "tick": 342,
+        "entity": [
+          0,
+          7326,
+          3343,
+          "Witch",
+          81,
+          81,
+          15,
+          26000007,
+          5000010
+        ],
+        "expected": "skeletons",
+        "native_class": "witch",
+        "reader_class": "witch"
+      },
+      {
+        "tag": "d4ac40708b4249b2951d9b6e36d457af",
+        "tick": 342,
+        "entity": [
+          0,
+          9921,
+          1076,
+          "Witch",
+          81,
+          81,
+          15,
+          26000007,
+          5000011
+        ],
+        "expected": "skeletons",
+        "native_class": "witch",
+        "reader_class": "witch"
+      },
+      {
+        "tag": "d4ac40708b4249b2951d9b6e36d457af",
+        "tick": 483,
+        "entity": [
+          0,
+          4886,
+          7402,
+          "Witch",
+          81,
+          81,
+          15,
+          26000007,
+          5000012
+        ],
+        "expected": "skeletons",
+        "native_class": "witch",
+        "reader_class": "witch"
+      },
+      {
+        "tag": "d4ac40708b4249b2951d9b6e36d457af",
+        "tick": 483,
+        "entity": [
+          0,
+          2496,
+          9383,
+          "Witch",
+          81,
+          81,
+          15,
+          26000007,
+          5000013
+        ],
+        "expected": "skeletons",
+        "native_class": "witch",
+        "reader_class": "witch"
+      }
+    ],
+    "barbarian-hut": [
+      {
+        "tag": "08UPPV22GCQ0",
+        "tick": 444,
+        "entity": [
+          0,
+          9668,
+          11169,
+          "BarbarianHut",
+          716,
+          716,
+          15,
+          27000005,
+          5000013
+        ],
+        "expected": "barbarians",
+        "native_class": "barbarian_hut",
+        "reader_class": "barbarian_hut"
+      },
+      {
+        "tag": "08UPPV22GCQ0",
+        "tick": 454,
+        "entity": [
+          0,
+          9568,
+          11205,
+          "BarbarianHut",
+          716,
+          716,
+          15,
+          27000005,
+          5000014
+        ],
+        "expected": "barbarians",
+        "native_class": "barbarian_hut",
+        "reader_class": "barbarian_hut"
+      },
+      {
+        "tag": "08UPPV22GCQ0",
+        "tick": 464,
+        "entity": [
+          0,
+          9547,
+          11142,
+          "BarbarianHut",
+          716,
+          716,
+          15,
+          27000005,
+          5000015
+        ],
+        "expected": "barbarians",
+        "native_class": "barbarian_hut",
+        "reader_class": "barbarian_hut"
+      },
+      {
+        "tag": "08UPPV22GCQ0",
+        "tick": 747,
+        "entity": [
+          0,
+          9836,
+          11337,
+          "BarbarianHut",
+          716,
+          716,
+          15,
+          27000005,
+          5000016
+        ],
+        "expected": "barbarians",
+        "native_class": "barbarian_hut",
+        "reader_class": "barbarian_hut"
+      },
+      {
+        "tag": "08UPPV22GCQ0",
+        "tick": 757,
+        "entity": [
+          0,
+          9724,
+          11343,
+          "BarbarianHut",
+          716,
+          716,
+          15,
+          27000005,
+          5000017
+        ],
+        "expected": "barbarians",
+        "native_class": "barbarian_hut",
+        "reader_class": "barbarian_hut"
+      },
+      {
+        "tag": "08UPPV22GCQ0",
+        "tick": 769,
+        "entity": [
+          0,
+          9787,
+          11366,
+          "BarbarianHut",
+          716,
+          716,
+          15,
+          27000005,
+          5000023
+        ],
+        "expected": "barbarians",
+        "native_class": "barbarian_hut",
+        "reader_class": "barbarian_hut"
+      }
+    ]
+  },
+  "reader_counts": {
+    "witch": {
+      "bodies:parent": 21,
+      "max_hp:1220": 11,
+      "bodies:child": 279,
+      "max_hp:119": 146,
+      "child_wrong": 279,
+      "matches_with_frames": 4,
+      "max_hp:1111": 10,
+      "max_hp:108": 133
+    },
+    "goblin-hut": {
+      "bodies:parent": 4,
+      "max_hp:1714": 4,
+      "bodies:child": 18,
+      "max_hp:193": 18,
+      "child_wrong": 18,
+      "matches_with_frames": 1
+    }
+  },
+  "live_sources": [
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_002238.jsonl",
+      "bytes": 1342440,
+      "sha256": "430fcbd4027c0577f933ddf1398bb9d90f871cbfdeeb34f3462755ef5e57153a",
+      "frames": 1770
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_005623.jsonl",
+      "bytes": 1859049,
+      "sha256": "971bb0bfc8ebdfcbc12df16ccf99cecba299e5d00ecf89097c534fcb729a6e14",
+      "frames": 2194
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_010916.jsonl",
+      "bytes": 1414534,
+      "sha256": "43ef18fd0d1e3645c43d378ddd3fcd144cde542f47ea916661c821737559f59d",
+      "frames": 1774
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_013940.jsonl",
+      "bytes": 2419425,
+      "sha256": "5a6839ff0062d80716c0a4e9bdf0f1c689f5d7dc8a04828e7a267e756677a358",
+      "frames": 3028
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_021126.jsonl",
+      "bytes": 2515477,
+      "sha256": "2ba92f9b56d42e1ede0e9a94e9e5e0e17ec64222f4276c22f6b088f3070e7fa9",
+      "frames": 2854
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_024202.jsonl",
+      "bytes": 1315678,
+      "sha256": "4eec3a4546d0f0fdddb3f9b372cbe2509fdf6df3c6b0ff8ef433843e614d7fb0",
+      "frames": 1769
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_031309.jsonl",
+      "bytes": 1185284,
+      "sha256": "a54e3258f7a8f8919e7decafc030e45505807845b79e8d216ab7ecb4dacddbb4",
+      "frames": 1565
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_094328.jsonl",
+      "bytes": 2202580,
+      "sha256": "44c906599133654c5e93e7ca5d9bd69f326ebdeab0f285701a7e92eeed701417",
+      "frames": 2454
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_095736.jsonl",
+      "bytes": 1546627,
+      "sha256": "feb41e4ed9199c7ecb031366e9c4d665de64155f55775a1879dbc65ab6b304e5",
+      "frames": 1770
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_103534.jsonl",
+      "bytes": 818195,
+      "sha256": "a81babca1d625259f39a941ff83e44db1bd916ea14194f35c3730723b8e03ebb",
+      "frames": 1185
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_110553.jsonl",
+      "bytes": 1400092,
+      "sha256": "f6e7ac461af771602e32e0101a05c2a89e2ccd9ca8f6cc544141c94e3c76a7b8",
+      "frames": 1770
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_113642.jsonl",
+      "bytes": 1336331,
+      "sha256": "266a708ad5bddf3a6bdeac98d5b452af177136f1c76d7317eec81033ce52859d",
+      "frames": 1771
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_120955.jsonl",
+      "bytes": 1390193,
+      "sha256": "9f71ba39adf514878b6106c2f999320e46d134385319d6435b0fe0221016681b",
+      "frames": 1665
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_122259.jsonl",
+      "bytes": 1359950,
+      "sha256": "2488693994035603d154be99141c26cb1babcaff9b17ad441b45b80a7692d782",
+      "frames": 1770
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_125726.jsonl",
+      "bytes": 1313504,
+      "sha256": "c37774a7e517c521e24610fd3db0b0dbd1d085f408edc9c1b5da0ffd734a0ce8",
+      "frames": 1769
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_132916.jsonl",
+      "bytes": 1372361,
+      "sha256": "0d52ff44dc44b776762eeac1fe37163594e40a783692ff1431aa993ee3e10faf",
+      "frames": 1771
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_205129.jsonl",
+      "bytes": 1808321,
+      "sha256": "f35d5f48d6f6e6b6332124d379155e6b4fd16b3477f4cfb118a0cf4931648297",
+      "frames": 2328
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_212221.jsonl",
+      "bytes": 1931992,
+      "sha256": "7df12117764a698a660e3c874b5ecc544483d30350976b5d7150153f6c13f5b6",
+      "frames": 2115
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_215110.jsonl",
+      "bytes": 2668686,
+      "sha256": "79bcc6ca80eed53318b8ecb8baf85de06ee4463eee06c4b06cb82ec9b1900f84",
+      "frames": 3025
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_222423.jsonl",
+      "bytes": 2183518,
+      "sha256": "76e340e971b3467045d47b4d1c717a3835989dbaa2d5d108e29484d780477e71",
+      "frames": 2708
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261004_225921.jsonl",
+      "bytes": 1322878,
+      "sha256": "8f1327285171519809b91587759dbcf70cb441e38ae002b8cc1fa60b8808d66e",
+      "frames": 1770
+    }
+  ],
+  "heldout_policy": {
+    "witch": {
+      "pro_play_rows": 186,
+      "pro_agreement": 0.6075268817204301,
+      "gate_pass": 0.8010752688172043
+    },
+    "furnace": {
+      "pro_play_rows": 213,
+      "pro_agreement": 0.6572769953051644,
+      "gate_pass": 0.8309859154929577
+    },
+    "night-witch": {
+      "pro_play_rows": 152,
+      "pro_agreement": 0.756578947368421,
+      "gate_pass": 0.7828947368421053
+    },
+    "goblin-hut": {
+      "pro_play_rows": 211,
+      "pro_agreement": 0.6161137440758294,
+      "gate_pass": 0.8815165876777251
+    },
+    "barbarian-hut": {
+      "pro_play_rows": 0,
+      "pro_agreement": null,
+      "gate_pass": null
+    },
+    "tombstone": {
+      "pro_play_rows": 385,
+      "pro_agreement": 0.625974025974026,
+      "gate_pass": 0.7688311688311689
+    },
+    "no_observed_spawner": {
+      "pro_play_rows": 10822,
+      "pro_agreement": 0.6459988911476622,
+      "gate_pass": 0.8075217150249492
+    }
+  },
+  "birth_group_gaps": {
+    "night-witch": {
+      "n": 1230,
+      "median_ticks": 102.0,
+      "common_ticks": [
+        [
+          100,
+          159
+        ],
+        [
+          103,
+          59
+        ],
+        [
+          99,
+          51
+        ],
+        [
+          101,
+          48
+        ],
+        [
+          105,
+          48
+        ],
+        [
+          102,
+          47
+        ],
+        [
+          104,
+          44
+        ],
+        [
+          106,
+          39
+        ]
+      ]
+    },
+    "tombstone": {
+      "n": 3291,
+      "median_ticks": 80.0,
+      "common_ticks": [
+        [
+          80,
+          721
+        ],
+        [
+          79,
+          151
+        ],
+        [
+          81,
+          140
+        ],
+        [
+          83,
+          135
+        ],
+        [
+          82,
+          129
+        ],
+        [
+          84,
+          112
+        ],
+        [
+          85,
+          109
+        ],
+        [
+          78,
+          102
+        ]
+      ]
+    },
+    "furnace": {
+      "n": 2567,
+      "median_ticks": 102.0,
+      "common_ticks": [
+        [
+          100,
+          304
+        ],
+        [
+          101,
+          111
+        ],
+        [
+          102,
+          95
+        ],
+        [
+          104,
+          95
+        ],
+        [
+          99,
+          90
+        ],
+        [
+          105,
+          86
+        ],
+        [
+          103,
+          82
+        ],
+        [
+          98,
+          73
+        ]
+      ]
+    },
+    "goblin-hut": {
+      "n": 1044,
+      "median_ticks": 52.0,
+      "common_ticks": [
+        [
+          40,
+          147
+        ],
+        [
+          50,
+          88
+        ],
+        [
+          45,
+          32
+        ],
+        [
+          43,
+          30
+        ],
+        [
+          44,
+          28
+        ],
+        [
+          47,
+          24
+        ],
+        [
+          46,
+          19
+        ],
+        [
+          41,
+          18
+        ]
+      ]
+    },
+    "witch": {
+      "n": 1044,
+      "median_ticks": 146.0,
+      "common_ticks": [
+        [
+          140,
+          106
+        ],
+        [
+          142,
+          58
+        ],
+        [
+          141,
+          47
+        ],
+        [
+          139,
+          40
+        ],
+        [
+          146,
+          38
+        ],
+        [
+          143,
+          36
+        ],
+        [
+          145,
+          35
+        ],
+        [
+          136,
+          29
+        ]
+      ]
+    },
+    "barbarian-hut": {
+      "n": 25,
+      "median_ticks": 188.0,
+      "common_ticks": [
+        [
+          23,
+          2
+        ],
+        [
+          282,
+          2
+        ],
+        [
+          303,
+          1
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          136,
+          1
+        ],
+        [
+          1048,
+          1
+        ],
+        [
+          305,
+          1
+        ],
+        [
+          296,
+          1
+        ]
+      ]
+    }
+  },
+  "limitations": [
+    "Role inference uses exact catalog max-HP matches; other bodies remain unknown.",
+    "Held-out agreement is observational, not a causal win comparison.",
+    "Birth-group gaps combine play generations and cadence; not an exact spawn-clock measurement.",
+    "Only historical logs with saved frames are covered; no missed frame becomes zero spawns."
+  ],
+  "seconds": 114.1
+}

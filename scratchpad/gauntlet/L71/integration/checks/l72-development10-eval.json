@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_10\\evaluate.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "ORDINARY_NO_DROPOUT_EVALUATED",
+  "matched": true,
+  "output_sha256": "808d88841ddba081028b1eeb881ed330de1bee73c1463ebf3fbf100912cdfaf1",
+  "seconds": 79.59463906288147
+}

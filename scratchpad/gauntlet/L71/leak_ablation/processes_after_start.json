@@ -1,0 +1,32 @@
+[
+  {
+    "ProcessId": 38856,
+    "ParentProcessId": 31032,
+    "Name": "bash.exe",
+    "CommandLine": "\"C:\\Program Files\\Git\\bin\\bash.exe\" scratchpad/gauntlet/L70/live/run_live.sh"
+  },
+  {
+    "ProcessId": 35296,
+    "ParentProcessId": 38856,
+    "Name": "bash.exe",
+    "CommandLine": "\"C:\\Program Files\\Git\\bin\\..\\usr\\bin\\bash.exe\" scratchpad/gauntlet/L70/live/run_live.sh"
+  },
+  {
+    "ProcessId": 36120,
+    "ParentProcessId": 35296,
+    "Name": "bash.exe",
+    "CommandLine": "\"C:\\Program Files\\Git\\bin\\..\\usr\\bin\\bash.exe\" scratchpad/gauntlet/L70/live/run_live.sh"
+  },
+  {
+    "ProcessId": 37388,
+    "ParentProcessId": 36120,
+    "Name": "python.exe",
+    "CommandLine": "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe -u scratchpad/gauntlet/L68/live_reader/live_play.py --ladder --matches 400 --ckpt icebow/data/bench/rl_royale/rseries_r1/rseries_r1_u0155.pt --tau 0.35 --no-anti-leak --max-seconds 600 --clip-every 1800 --overlay reader --stop-file scratchpad/gauntlet/L70/live/STOP"
+  },
+  {
+    "ProcessId": 5424,
+    "ParentProcessId": 37388,
+    "Name": "python.exe",
+    "CommandLine": "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe -u scratchpad/gauntlet/L68/live_reader/live_play.py --ladder --matches 400 --ckpt icebow/data/bench/rl_royale/rseries_r1/rseries_r1_u0155.pt --tau 0.35 --no-anti-leak --max-seconds 600 --clip-every 1800 --overlay reader --stop-file scratchpad/gauntlet/L70/live/STOP"
+  }
+]

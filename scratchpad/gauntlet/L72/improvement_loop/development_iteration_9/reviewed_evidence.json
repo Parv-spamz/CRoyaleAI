@@ -1,0 +1,42 @@
+{
+  "complete": true,
+  "receipts": {
+    "prepare": {
+      "receipt_sha256": "bb5787ce6f0ffab833a3422bf3225ac665c547c833859800e20cb693a066606c",
+      "output_sha256": "c2740f19e7037ddc8a1b62b9189230075064ba246af997f487d88b180e902610",
+      "seconds": 74.4177348613739
+    },
+    "train": {
+      "receipt_sha256": "b431b6c477ca473a6bc128de40eeb0ea79a80ac7cd3053fa53dc07e001412e9e",
+      "output_sha256": "d99f76f76c672759208880b603ff1338a9a4743f39853b112bef60205d92f7e8",
+      "seconds": 1334.245839357376
+    },
+    "training-independent": {
+      "receipt_sha256": "cf2f8a2364a5dbed06dd5c64517b5045b5f552fe7102f701efa8fcb1889fc52c",
+      "output_sha256": "13c5ce6f56ebe710b189f5b96c70db28377dc45cdc7d1cf4efb04dcb0e11bb49",
+      "seconds": 3.8701906204223633
+    },
+    "eval": {
+      "receipt_sha256": "1ff9120870e96e90fa569c40000993bd4543f3e10cf75155dfe6b63c796b4819",
+      "output_sha256": "b679273ef14a64f21a59193a7a8daca82d3bad55c02093bf8e5086c314f7b577",
+      "seconds": 79.8873507976532
+    },
+    "results-independent": {
+      "receipt_sha256": "0229155b3367ebcd4e4243de8f4e1722116e6890b03a3b0dc705a791dcd402c0",
+      "output_sha256": "439388ed235bbc667d7ad002b39dfc9d6a0ec3dd1ab46cdb0ebd0134895c6047",
+      "seconds": 68.62686800956726
+    }
+  },
+  "bindings": {
+    "prepared.json": "cd489867071971e9aab0c9803d53b35ad8217c54f6f1cd7332dd2cd16a1848cd",
+    "trained.json": "7c76d6a799c0b32582e8fe330c3b1b7e9fbf1d4422ca2f57aef4c887e42a6685",
+    "training_verified.json": "e8c8da4b1b3e2838be64f6c0e887c3aae674d38d46013f0d2fc94c3c87faa980",
+    "evaluated.json": "f0adfce885b47ab752453183d0fea1a87a5d375ee7cd0050021e6931bbac6177",
+    "results_verified.json": "7fedbbdd15a6901dcfeb41da7ae570b9a97e5ee2492b79e65e057d13212adcb6",
+    "chain_complete.json": "bc6c3c988a2447c327bac90f044cc17be0c54184608aadd708ee435cf456c601"
+  },
+  "source_sha256": "8b9a169bd6d06bcbe7c3e21454af873aca9ed616e42463c62c0bc2fbffc4a20e",
+  "continuation_passed": false,
+  "accepted": false,
+  "deployed": false
+}

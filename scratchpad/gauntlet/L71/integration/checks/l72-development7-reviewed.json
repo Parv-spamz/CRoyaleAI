@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/review_development7.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "FROZEN_PROJECTILE_REVIEW_COMPLETE",
+  "matched": true,
+  "output_sha256": "8c8ea6ed37c9438b3b87f44396f4c7c94d34f4c8dd2b3aa2f3187e44b07fdd4c",
+  "seconds": 0.20717501640319824
+}

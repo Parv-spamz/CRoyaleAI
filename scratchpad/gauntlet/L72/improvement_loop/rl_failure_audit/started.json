@@ -1,0 +1,22 @@
+{
+  "inputs": {
+    "icebow\\data\\bench\\spawner_identity_20261005\\gen_dataset_v5_public.npz": "a48f1bbd09ef177fbec27aa5ef15b961f0c4100b6475438f0124fec00f2be461",
+    "icebow\\data\\bench\\development_iteration_4_20261005\\development_masks.npz": "6d1649235ca0227f45ec3188e151aaf1af81aa30519b2e68bb919008d8c4b9a8",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\indices.npz": "e539566223e9e109b736175832fc1003a0bdce0636760e9116f495288556a8c3",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\prepared.json": "f2d47910c14e2f2776f5bba1ae3f33775cfcf2125b4de97d7f396d641fdd90b9",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_4\\prelaunch.json": "6c5cee27c242f8b83c37ef1ec898e9b53b2265878cf999bbf8fc4efdd565c19f",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\match_adaptation\\prepared.json": "b4156cb9e80ba4047210ac5a8c06e68dc99c78117f9cd02dbd84e6a15a240ade",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1\\results_verified.json": "bcbea78b70a8a7197475e894564d1942339b33a074339068d728a3c277d8513a",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1\\reviewed_results.json": "1fdd6c3d48eb6ff465667f996a6503ab23f96eb0314e83690f823df8e62c1d3b",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\r1e_corrected_eval\\predictions.npz": "6bae7d05fe8a9eeb67301168007b4c2a90c759a113ec5ab439bab8505b63ffac",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\ordinary_v5_eval_v2\\predictions.npz": "51b7cc5c050ec09480ab200e52ae0b796268975739e8354ec5f75a9471216cfd",
+    "icebow\\data\\bench\\development_rl_1_20261005\\predictions.npz": "efbca05e9231498f81168e9144a98a9e6e135d04d19ac2b82cb46584782176a8",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_failure_audit\\audit.py": "7e8b7d33b5c8fe417b01b39ef81c3815f5902bdc5d596d0e4ca82e5ff7d37011",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_failure_audit\\data_io.py": "4778bb3068e1e72ddc6fa428d31350537c3dd5bbf95e89f651d3ba75b3ee5d37",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_failure_audit\\verify.py": "147ad31f9cf761bacdb411cf66c2e61ae548544753cdefb9f8a9250a2637760a",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_failure_audit\\PLAN.md": "295aae0a60d0138aceb68ca1ff5a93e0836e5a04334094d322f339976d36be8c",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_failure_audit\\METRICS.md": "55746ed9c65628fe9eba058e56d46afc237f2207b4198b49d3fdbc73256a0df4"
+  },
+  "predictions": 0,
+  "optimizer_updates": 0
+}

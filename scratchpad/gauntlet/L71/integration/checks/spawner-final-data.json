@@ -1,0 +1,14 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+    "scratchpad/gauntlet/L71/spawners/verify_dataset.py",
+    "icebow/data/bench/spawner_identity_20261005"
+  ],
+  "cwd": "C:\\Users\\benpe\\.codex\\worktrees\\learned-defence\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "SPAWNER_DATASET_VERIFY_PASS",
+  "matched": true,
+  "output_sha256": "3d8c9c2b68a5374a6406c00f9c932db67057a80652e50cd013ad0b8964041c5e",
+  "seconds": 150.91059136390686
+}

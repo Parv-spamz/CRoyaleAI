@@ -1,0 +1,328 @@
+{
+  "owner_requested_retry": true,
+  "security_policy_changed_by_agent": false,
+  "binaries_modified": false,
+  "all_targets_passed": true,
+  "results": [
+    {
+      "target": "corpse_switch_reach",
+      "executable": "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\corpse_switch_reach-85363b95c1279d71.exe",
+      "executable_sha256": "8190b7264688344f79da04f7b1f008a870ee6ab68cb0f89d1e1a24fd6a885fba",
+      "command": [
+        "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\corpse_switch_reach-85363b95c1279d71.exe",
+        "--test-threads=1"
+      ],
+      "exit_code": 0,
+      "seconds": 2.6524975299835205,
+      "output_sha256": "eb62b582e066c6b78435ac7656766725652137e97ae7a571cd82d7f7fdbe9247",
+      "summaries": [
+        [
+          "ok",
+          "4",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "target": "curse",
+      "executable": "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\curse-b15812edb206b1bb.exe",
+      "executable_sha256": "fc4152beeae74c8f0703ee8441276a71a6b32c0cd6d9e4a8f7dab7008f1d797e",
+      "command": [
+        "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\curse-b15812edb206b1bb.exe",
+        "--test-threads=1"
+      ],
+      "exit_code": 0,
+      "seconds": 3.300265073776245,
+      "output_sha256": "6be3609a91d921206b3234c6004eeb4b726c5faee99f205fd7eda163c3d05177",
+      "summaries": [
+        [
+          "ok",
+          "9",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "target": "death_spawn_at_emission",
+      "executable": "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\death_spawn_at_emission-c8d0fa50a94bd875.exe",
+      "executable_sha256": "406bfa93c047903fa3744b05139108b4fe0bf552e55dc9513ed20746ea7c825b",
+      "command": [
+        "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\death_spawn_at_emission-c8d0fa50a94bd875.exe",
+        "--test-threads=1"
+      ],
+      "exit_code": 0,
+      "seconds": 2.0780482292175293,
+      "output_sha256": "47376f57e6895bba8bf46c32767b5e444219613d9e578fce95d953e69388a80f",
+      "summaries": [
+        [
+          "ok",
+          "1",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "target": "doomed_lane_tower",
+      "executable": "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\doomed_lane_tower-977edd8e8589b464.exe",
+      "executable_sha256": "3ab1f8c3999e8f288f7bb0a03e37a3b7e13eb5ade267b33cdc06ca975853ca5b",
+      "command": [
+        "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\doomed_lane_tower-977edd8e8589b464.exe",
+        "--test-threads=1"
+      ],
+      "exit_code": 0,
+      "seconds": 2.335829496383667,
+      "output_sha256": "c9c10b7679a42970300dbde2ca032072625ea8b8c69e64680e4ab49c2c76355c",
+      "summaries": [
+        [
+          "ok",
+          "3",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "target": "evo_battle_ram",
+      "executable": "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\evo_battle_ram-741a8cb381ee9bf3.exe",
+      "executable_sha256": "66f1572e37ce115fd7a97cbbf69f75813c651acc709ec5558c630901440d428d",
+      "command": [
+        "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\evo_battle_ram-741a8cb381ee9bf3.exe",
+        "--test-threads=1"
+      ],
+      "exit_code": 0,
+      "seconds": 2.5020673274993896,
+      "output_sha256": "e46c3e835b4b2750b18f816fd129a171e458b595b26bd3b13c82f573d841383e",
+      "summaries": [
+        [
+          "ok",
+          "5",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "target": "evo_dart_goblin",
+      "executable": "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\evo_dart_goblin-225ca4aab429edc4.exe",
+      "executable_sha256": "e86679eac9372b63266e32c259877bc03a6d075c334957ea4f955365d749dd2a",
+      "command": [
+        "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\evo_dart_goblin-225ca4aab429edc4.exe",
+        "--test-threads=1"
+      ],
+      "exit_code": 0,
+      "seconds": 2.1823477745056152,
+      "output_sha256": "d007a206b066b13e2bb32c8270c2bddff5d2b4a030f0e2d86789bf716fc37f23",
+      "summaries": [
+        [
+          "ok",
+          "1",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "target": "first_step_dying_contact",
+      "executable": "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\first_step_dying_contact-63e9d25ba9d2cfe9.exe",
+      "executable_sha256": "246ecf3cb679b8fa3c5fc0ec1ccc8a060ccddd3ac6365a6f7536c02ffe285f63",
+      "command": [
+        "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\first_step_dying_contact-63e9d25ba9d2cfe9.exe",
+        "--test-threads=1"
+      ],
+      "exit_code": 0,
+      "seconds": 2.260998487472534,
+      "output_sha256": "b6d462c745517b57c0e261d5274c9b129ba7312774a0430c945971967897ae47",
+      "summaries": [
+        [
+          "ok",
+          "3",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "target": "ghost_pair_first_frame",
+      "executable": "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\ghost_pair_first_frame-8ddff3400743d630.exe",
+      "executable_sha256": "5a96d639ad27fe4949b98dd88fc3ee9ef9bc7ed5bcafe8860911197d5f9d2f6f",
+      "command": [
+        "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\ghost_pair_first_frame-8ddff3400743d630.exe",
+        "--test-threads=1"
+      ],
+      "exit_code": 0,
+      "seconds": 4.122439384460449,
+      "output_sha256": "49d737a2b2566ea5d4a9b3b8bc1f4ee39c08cf31964e73ae724e92080697fd36",
+      "summaries": [
+        [
+          "ok",
+          "2",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "target": "hero_barbarian_barrel",
+      "executable": "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\hero_barbarian_barrel-99789f7ea1a81f7c.exe",
+      "executable_sha256": "967dae7f069648461c1a8682c82706ca1526dec6e20f39d03dadcb13eff07e07",
+      "command": [
+        "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\hero_barbarian_barrel-99789f7ea1a81f7c.exe",
+        "--test-threads=1"
+      ],
+      "exit_code": 0,
+      "seconds": 2.091891288757324,
+      "output_sha256": "d5f4c336ea83e04a46e19a0216a4b2b70f0beeebc9ab29926423f41d65450a66",
+      "summaries": [
+        [
+          "ok",
+          "1",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "target": "knocked_doomed_avoidance",
+      "executable": "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\knocked_doomed_avoidance-13806d4c8b5b4374.exe",
+      "executable_sha256": "2f3ee1fb9f53d3e8042b0012bed69f710995397bd0d71308688eba6bdd8d1960",
+      "command": [
+        "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\knocked_doomed_avoidance-13806d4c8b5b4374.exe",
+        "--test-threads=1"
+      ],
+      "exit_code": 0,
+      "seconds": 2.225154399871826,
+      "output_sha256": "7f781dbf58ccef56fffa3bb0b508320aa672cd023e2491cf2ef39b2248c292eb",
+      "summaries": [
+        [
+          "ok",
+          "1",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "target": "line_frame",
+      "executable": "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\line_frame-601c88903517274c.exe",
+      "executable_sha256": "1f20274bafdecec964cda0e372ce9d3b4b1380f497e639e27d683b8406bb92f7",
+      "command": [
+        "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\line_frame-601c88903517274c.exe",
+        "--test-threads=1"
+      ],
+      "exit_code": 0,
+      "seconds": 2.225684404373169,
+      "output_sha256": "d5efb927d6c7c945cc5f58fb66216e0028bbdd5b110a73e75eb4198f0e38e3ab",
+      "summaries": [
+        [
+          "ok",
+          "1",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "target": "relocation_ties",
+      "executable": "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\relocation_ties-aa6ea48b5ebd424c.exe",
+      "executable_sha256": "991b09c0d11293f39651a285f763f258ff8db5347bb51ea19bb93ec13be4a621",
+      "command": [
+        "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\relocation_ties-aa6ea48b5ebd424c.exe",
+        "--test-threads=1"
+      ],
+      "exit_code": 0,
+      "seconds": 2.093965768814087,
+      "output_sha256": "5417279022d68ac584ac5d52756f3ccfc6efdbf096823ea8d841b166bc8b7f4d",
+      "summaries": [
+        [
+          "ok",
+          "3",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "target": "retarget_wait_arms",
+      "executable": "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\retarget_wait_arms-20b78678d0fd9deb.exe",
+      "executable_sha256": "c5331e74ec1f8e32dde830ed02639e7844eeaf51126e5a10685db65773bc6151",
+      "command": [
+        "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\retarget_wait_arms-20b78678d0fd9deb.exe",
+        "--test-threads=1"
+      ],
+      "exit_code": 0,
+      "seconds": 2.337864398956299,
+      "output_sha256": "c96755a7502823267a5b483415379e17ce6fa42e4954d85f028f76dc6fa2bec4",
+      "summaries": [
+        [
+          "ok",
+          "7",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "target": "unit_refs",
+      "executable": "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\unit_refs-5cf35f79b5797973.exe",
+      "executable_sha256": "5227c62fc828ce5b27043e3385a74475183216a6c075ec7edb368f8590111e31",
+      "command": [
+        "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\unit_refs-5cf35f79b5797973.exe",
+        "--test-threads=1"
+      ],
+      "exit_code": 0,
+      "seconds": 1.6356515884399414,
+      "output_sha256": "6f54bc5ceba8296b448ee74d4edab76a8b72ba61c5f515aaa1009dc046192149",
+      "summaries": [
+        [
+          "ok",
+          "7",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "target": "variant_card",
+      "executable": "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\variant_card-c4720b967f68832b.exe",
+      "executable_sha256": "f8cddfbc107f269573a9b3ea9f2758353f3bb1fbe68d00ff200e40c3d776b83a",
+      "command": [
+        "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\variant_card-c4720b967f68832b.exe",
+        "--test-threads=1"
+      ],
+      "exit_code": 0,
+      "seconds": 2.4343502521514893,
+      "output_sha256": "8facc3b44bc5229de27baa5d9eeff7773fbd16afffdcb850821c202774009e15",
+      "summaries": [
+        [
+          "ok",
+          "11",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "target": "warp_hiding",
+      "executable": "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\warp_hiding-0f7f4fe2470da5a0.exe",
+      "executable_sha256": "4acc13f54be9214471b9b189025cb3444f54e5117ca24412530520c4023151d4",
+      "command": [
+        "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim\\target\\gate\\deps\\warp_hiding-0f7f4fe2470da5a0.exe",
+        "--test-threads=1"
+      ],
+      "exit_code": 0,
+      "seconds": 2.2074899673461914,
+      "output_sha256": "1aebcadf487de6af02f4c60eaf33c25d317fa746638a0556e902e4101df670a0",
+      "summaries": [
+        [
+          "ok",
+          "3",
+          "0",
+          "0"
+        ]
+      ]
+    }
+  ]
+}

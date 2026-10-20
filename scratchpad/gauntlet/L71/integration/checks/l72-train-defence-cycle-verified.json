@@ -1,0 +1,13 @@
+{
+  "command": [
+    ".\\icebow\\.venv\\Scripts\\python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/verify_defence_cycle.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "TRAIN_DEFENCE_CYCLE_RECOUNT_VERIFIED",
+  "matched": true,
+  "output_sha256": "f68d8b4feed8a5b375a9eb7a3a62728ca1cd2a46e1389da9500834b19efc02ef",
+  "seconds": 1.4518465995788574
+}

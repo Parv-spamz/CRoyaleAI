@@ -1,0 +1,7 @@
+
+running 2 tests
+test a_ghost_pair_is_no_target_on_its_first_frame ... ok
+test the_shipped_arm_lets_it_be_taken ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+

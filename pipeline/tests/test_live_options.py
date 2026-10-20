@@ -1,0 +1,450 @@
+"""LIVE_OPTIONS: deployed decision options for live_play.py; explicit flags win, --no-live-options ignores the file."""
+import argparse
+import importlib.util
+import json
+import subprocess
+import sys
+from pathlib import Path
+
+import pytest
+
+from pipeline.decision_options import add_arguments, config_from_args, options_from_config
+from pipeline.live_options import add_live_options_arguments, parse_with_live_options, tau_check
+
+REPO = Path(__file__).resolve().parents[2]
+DEPLOYED = ('--xbow-class class_sample --xbow-class-floor 0.3 --tau-phase 0.35 0.45 0.55 --spell-aim rocket_area '
+            '--own-effects\n')
+
+
+def parser(path):
+    ap = argparse.ArgumentParser()
+    add_arguments(ap)
+    ap.add_argument('--tau', type=float, default=.35)
+    ap.add_argument('--tau-alternate', type=float, nargs=2, default=None)
+    add_live_options_arguments(ap, path)
+    return ap
+
+
+def parse(argv, path):
+    a, record = parse_with_live_options(parser(path), argv)
+    return options_from_config(config_from_args(a)), record
+
+
+# owner 2026-10-08 bundle: 9+ elixir hazard gate (W4), Hero IW higher bar, Log at the Goblin Barrel, OT lethal Rocket
+BUNDLE = ('--gate-decode hazard_below_tau --gate-hazard-min-elixir 9 --iw-press-pstar 0.03 --log-aim log_barrel --lethal-rocket ot_behind '
+          '--xbow-dead-lane block --fast-input --tap-gap-ms 0 --afford-ticks 23 --extrapolate 24 '   # bundle 2 (2026-10-08 night)
+          '--hero-ability-spec supplement --gate-hazard-threatened 2 --early-release-margin 8 '   # bundle 3 (2026-10-09 00:3x)
+          '--identity-ext on '   # 2026-10-09 01:0x (blind-verified a9538ab)
+          '--rocket-dead-target block '   # 2026-10-09 03:0x (blind re-verified afe3214)
+          '--lethal-log on --tau-threatened 0.2 '   # 2026-10-09 05:xx (blind af471193, merge 766e008)
+          '--card-levels Rocket=16 Log=15 '   # 2026-10-09 13:xx (owner card levels; blind af0555f2)
+          '--log-air block '   # 2026-10-09 evening (owner: hold + Skeleton Barrel exempt; blind a1d953e2 on bd4c8ca)
+          '--rocket-value 9 --rocket-value-mode damage --rocket-value-hitbox edge --rocket-tornado only --follow-up-taps '
+          '--tornado-river full --rocket-tornado-window measured --rocket-tornado-order either --rocket-tornado-lone combo '   # 2026-10-18 owner combo plan (rule changes; +0.21 [-0.73, +1.15] vs the 10-15 river rule, verify:A deploy)
+          '--log-frames '   # 2026-10-15 owner plan: per-frame truth for the parity loop (A/B4 stopped, stop_ab4.sh)
+          '--capture-p3 '
+          '--cue-inputs on')   # 2026-10-17 owner: ICEBOW Mark CXXXVIII (cue layer) live with the merged reader   # 2026-10-16 owner goal: fight parity -- per-match phase-3 capture (device test PASS 162405)   # 2026-10-09 cb9 combo (merge f5ba591); emotes moved to start_live.sh --emotes (10-11)
+DEPLOYED_FILE = DEPLOYED.rstrip('\n') + ' ' + BUNDLE + '\n'
+
+
+def test_checked_in_file_holds_the_deployed_options():
+    assert (REPO / 'scratchpad/gauntlet/L70/live/LIVE_OPTIONS').read_text() == DEPLOYED_FILE
+
+
+def test_checked_in_file_applies_every_bundle_option():
+    f = REPO / 'scratchpad/gauntlet/L70/live/LIVE_OPTIONS'
+    ap = parser(f); ap.add_argument('--own-effects', action='store_true'); ap.add_argument('--iw-press-pstar', type=float)
+    a, rec = parse_with_live_options(ap, [])
+    opts = options_from_config(config_from_args(a))
+    assert (opts.gate_decode, opts.gate_hazard_min_elixir, opts.log_aim, opts.lethal_rocket) == \
+        ('hazard_below_tau', 9.0, 'log_barrel', 'ot_behind')
+    assert a.iw_press_pstar == 0.03 and a.own_effects is True and rec['explicit'] == []
+    assert opts.gate_hazard_threatened == 2.0 and a.hero_ability_spec == 'supplement' and a.early_release_margin == 8
+    assert a.identity_ext == 'on' and opts.rocket_dead_target == 'block'
+    assert opts.lethal_log == 'on' and opts.tau_threatened == 0.2
+    assert dict(opts.card_levels) == {'Rocket': 16, 'Log': 15}
+    assert opts.log_air == 'block'
+    assert (opts.rocket_value, opts.rocket_value_mode, opts.rocket_value_hitbox, opts.rocket_tornado) == (9.0, 'damage', 'edge', 'only')
+    assert a.follow_up_taps is True      # the Tornado follow-up is tapped; live_play refuses rocket_tornado on|only without it
+
+
+def test_file_present_applies_it(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text(DEPLOYED)
+    opts, rec = parse(['--tau', '.4'], f)
+    assert (opts.xbow_class, opts.xbow_class_floor, opts.tau_phase, opts.spell_aim) == \
+        ('class_sample', .3, (.35, .45, .55), 'rocket_area')
+    assert rec['file'] == str(f) and rec['explicit'] == [] and not rec['ignored']
+    assert sorted(rec['from_file']) == ['own_effects', 'spell_aim', 'tau_phase', 'xbow_class', 'xbow_class_floor']
+
+
+def test_file_absent_gives_plain_defaults(tmp_path):
+    opts, rec = parse([], tmp_path / 'missing')
+    assert not opts.active and rec['file'] is None and rec['from_file'] == {}
+    assert rec['status'] == 'ABSENT' and rec['path'] == str(tmp_path / 'missing')
+    assert rec['message'].startswith(f"LIVE_OPTIONS not found at {tmp_path / 'missing'}: running with PLAIN")
+
+
+def test_explicit_flags_win_flag_by_flag(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text('# deployed\n' + DEPLOYED)
+    opts, rec = parse(['--spell-aim', 'argmax', '--tau-phase', '.3', '.3', '.3', '--log-aim', 'log_barrel'], f)
+    assert opts.spell_aim == 'argmax' and opts.tau_phase == (.3, .3, .3) and opts.log_aim == 'log_barrel'
+    assert opts.xbow_class == 'class_sample' and opts.xbow_class_floor == .3      # still from the file
+    assert rec['explicit'] == ['log_aim', 'spell_aim', 'tau_phase']
+    assert sorted(rec['from_file']) == ['own_effects', 'xbow_class', 'xbow_class_floor']
+    opts, _ = parse(['--spell-aim', 'rocket_area'], f)                          # explicit = file value: same result
+    assert opts.spell_aim == 'rocket_area'
+
+
+def test_no_live_options_ignores_the_file(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text(DEPLOYED)
+    opts, rec = parse(['--no-live-options'], f)
+    assert not opts.active and rec['ignored'] and rec['file'] is None
+    opts, _ = parse(['--no-live-options', '--xbow-class', 'class_sample'], f)
+    assert opts.xbow_class == 'class_sample' and opts.spell_aim == 'argmax'
+
+
+def test_unknown_flag_in_the_file_refuses(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text('--tau 0.5\n')                 # not a decision option
+    with pytest.raises(SystemExit):
+        parse([], f)
+
+
+@pytest.mark.parametrize('text', ['--tau 0.3 0.4 0.5\n',                      # abbreviation of --tau-phase
+                                  '--spell-aim rocket_area --spell-aim argmax\n',
+                                  '--xbow-class class_sample\n--xbow-class=argmax\n'])
+def test_file_refuses_abbreviated_and_repeated_flags(tmp_path, text, capsys):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text(text)
+    with pytest.raises(SystemExit) as e:
+        parse([], f)
+    assert e.value.code == 2 and str(f) in capsys.readouterr().err
+
+
+def test_tau_alternate_with_tau_phase_refuses_and_plain_tau_gets_a_note(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text(DEPLOYED)
+    a, _ = parse_with_live_options(parser(f), ['--tau-alternate', '.35', '.45'])
+    refusal, note = tau_check(a)
+    assert refusal.startswith('refusing: --tau-alternate') and '--no-live-options' in refusal and note is None
+    a, _ = parse_with_live_options(parser(f), ['--tau-alternate', '.35', '.45', '--no-live-options'])
+    assert tau_check(a) == (None, None)
+    a, _ = parse_with_live_options(parser(f), ['--tau-alternate', '.35', '.45', '--tau-phase', '.3', '.4', '.5',
+                                               '--no-live-options'])
+    assert tau_check(a)[0] is not None                                        # an explicit tau_phase refuses too
+    a, _ = parse_with_live_options(parser(f), ['--tau', '.35'])
+    refusal, note = tau_check(a)
+    assert refusal is None and 'not used by the gate (it equals the 1x value)' in note
+    a, _ = parse_with_live_options(parser(f), ['--tau', '.5'])
+    assert 'equals' not in tau_check(a)[1]
+    a, _ = parse_with_live_options(parser(tmp_path / 'missing'), ['--tau', '.5'])
+    assert tau_check(a) == (None, None)
+
+
+CKPT = REPO / 'icebow/data/bench/rl_royale/rseries_r3c/rseries_r3c_u0030_barrel2k_cellref.pt'
+
+
+@pytest.mark.skipif(not CKPT.is_file(), reason='live checkpoint not present')
+@pytest.mark.parametrize('extra,expect', [([], 'rocket_area'), (['--spell-aim', 'argmax'], 'argmax'),
+                                          (['--no-live-options'], 'argmax')])
+def test_check_json_reports_options_and_their_source(tmp_path, extra, expect):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text(DEPLOYED)
+    out = subprocess.run([sys.executable, str(REPO / 'scratchpad/gauntlet/L68/live_reader/live_play.py'), '--check',
+                          '--ckpt', str(CKPT), '--live-options-file', str(f), *extra],
+                         capture_output=True, text=True, timeout=300, cwd=REPO)
+    assert out.returncode == 0, out.stdout + out.stderr
+    check = json.loads(out.stdout.strip().splitlines()[-1])
+    assert check['check'] == 'LIVE_CHECK_PASS' and check['decision_options']['spell_aim'] == expect
+    assert check['decision_options']['tau_phase'] == (None if extra == ['--no-live-options'] else [.35, .45, .55])
+    assert check['live_options']['file'] == (None if extra == ['--no-live-options'] else str(f))
+    status = 'ignored' if extra == ['--no-live-options'] else 'applied'
+    assert check['live_options']['status'] == status
+    assert ('[live] --no-live-options:' if status == 'ignored' else '[live] LIVE_OPTIONS applied from') in out.stdout
+
+
+def run_live_play(*args):
+    return subprocess.run([sys.executable, str(REPO / 'scratchpad/gauntlet/L68/live_reader/live_play.py'), *args],
+                          capture_output=True, text=True, timeout=300, cwd=REPO)
+
+
+@pytest.mark.skipif(not CKPT.is_file(), reason='live checkpoint not present')
+def test_check_json_absent_file_is_loud(tmp_path):
+    out = run_live_play('--check', '--ckpt', str(CKPT), '--live-options-file', str(tmp_path / 'missing'))
+    assert out.returncode == 0, out.stdout + out.stderr
+    assert f"[live] LIVE_OPTIONS not found at {tmp_path / 'missing'}: running with PLAIN decision defaults" in out.stdout
+    check = json.loads(out.stdout.strip().splitlines()[-1])
+    assert check['live_options']['status'] == 'ABSENT' and check['live_options']['path'] == str(tmp_path / 'missing')
+
+
+def test_live_play_refuses_tau_alternate_under_tau_phase(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text(DEPLOYED)
+    out = run_live_play('--check', '--tau-alternate', '.35', '.45', '--live-options-file', str(f))
+    assert out.returncode == 2 and '[live] refusing: --tau-alternate' in out.stdout, out.stdout + out.stderr
+
+
+def test_own_effects_deployable_from_the_file_and_explicit_wins(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text('--own-effects\n')
+    ap = parser(f); ap.add_argument('--own-effects', action='store_true')
+    a, rec = parse_with_live_options(ap, [])
+    assert a.own_effects is True and rec['from_file'] == {'own_effects': True}
+    a, rec = parse_with_live_options(ap, ['--no-live-options'])
+    assert a.own_effects is False and rec['status'] == 'ignored'
+    a, rec = parse_with_live_options(ap, ['--own-effects'])
+    assert a.own_effects is True and rec['explicit'] == ['own_effects'] and rec['from_file'] == {}
+
+
+GATE = '--gate-decode hazard_below_tau --gate-hazard-min-elixir 9 --gate-hazard-quiet\n'
+
+
+def test_gate_decode_flags_deployable_from_the_file(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text(DEPLOYED + GATE)
+    opts, rec = parse([], f)
+    assert (opts.gate_decode, opts.gate_hazard_min_elixir, opts.gate_hazard_quiet) == ('hazard_below_tau', 9.0, True)
+    assert {'gate_decode', 'gate_hazard_min_elixir', 'gate_hazard_quiet'} <= set(rec['from_file'])
+    opts, rec = parse(['--gate-decode', 'threshold'], f)                       # explicit wins
+    assert opts.gate_decode == 'threshold' and rec['explicit'] == ['gate_decode']
+    opts, _ = parse([], tmp_path / 'missing')
+    assert (opts.gate_decode, opts.gate_hazard_min_elixir, opts.gate_hazard_quiet) == ('threshold', 0.0, False)
+
+
+def test_gate_hazard_threatened_deployable_from_the_file(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text(DEPLOYED + GATE.rstrip('\n') + ' --gate-hazard-threatened 2\n')
+    opts, rec = parse([], f)
+    assert (opts.gate_hazard_threatened, opts.gate_hazard_threat_radius, opts.gate_hazard_min_elixir) == (2.0, 0.0, 9.0)
+    assert rec['from_file']['gate_hazard_threatened'] == 2.0
+    opts, rec = parse(['--gate-hazard-threatened', '0'], f)                     # explicit wins
+    assert opts.gate_hazard_threatened == 0.0 and rec['explicit'] == ['gate_hazard_threatened']
+
+
+@pytest.mark.skipif(not CKPT.is_file(), reason='live checkpoint not present')
+def test_check_json_reports_gate_decode(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text(DEPLOYED + GATE)
+    out = run_live_play('--check', '--ckpt', str(CKPT), '--live-options-file', str(f))
+    assert out.returncode == 0, out.stdout + out.stderr
+    check = json.loads(out.stdout.strip().splitlines()[-1])
+    assert {k: check['decision_options'][k] for k in ('gate_decode', 'gate_hazard_min_elixir', 'gate_hazard_quiet')} \
+        == dict(gate_decode='hazard_below_tau', gate_hazard_min_elixir=9.0, gate_hazard_quiet=True)
+    assert check['live_options']['from_file']['gate_decode'] == 'hazard_below_tau'
+
+
+def test_iw_press_pstar_deployable_from_the_file_and_explicit_wins(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text('--iw-press-pstar 0.03\n')
+    ap = parser(f); ap.add_argument('--iw-press-pstar', type=float, default=None)
+    a, rec = parse_with_live_options(ap, [])
+    assert a.iw_press_pstar == 0.03 and rec['from_file'] == {'iw_press_pstar': 0.03}
+    a, rec = parse_with_live_options(ap, ['--no-live-options'])
+    assert a.iw_press_pstar is None and rec['status'] == 'ignored'
+    a, rec = parse_with_live_options(ap, ['--iw-press-pstar', '0.05'])
+    assert a.iw_press_pstar == 0.05 and rec['explicit'] == ['iw_press_pstar'] and rec['from_file'] == {}
+
+
+@pytest.mark.parametrize('mode', ['ot', 'ot_behind'])
+def test_lethal_rocket_deployable_from_the_file(tmp_path, mode):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text(DEPLOYED + f'--lethal-rocket {mode}\n')
+    opts, rec = parse([], f)
+    assert opts.lethal_rocket == mode and rec['from_file']['lethal_rocket'] == mode
+    opts, rec = parse(['--lethal-rocket', 'off'], f)                           # explicit wins
+    assert opts.lethal_rocket == 'off' and rec['explicit'] == ['lethal_rocket']
+    assert parse([], tmp_path / 'missing')[0].lethal_rocket == 'off'
+
+
+def test_xbow_dead_lane_deployable_from_the_file(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text(DEPLOYED.rstrip('\n') + ' --xbow-dead-lane block\n')
+    opts, rec = parse([], f)
+    assert opts.xbow_dead_lane == 'block' and rec['from_file']['xbow_dead_lane'] == 'block'
+    assert opts.xbow_class == 'class_sample'
+    opts, rec = parse(['--xbow-dead-lane', 'allow'], f)                        # explicit wins
+    assert opts.xbow_dead_lane == 'allow' and rec['explicit'] == ['xbow_dead_lane']
+    assert parse([], REPO / 'scratchpad/gauntlet/L70/live/LIVE_OPTIONS')[0].xbow_dead_lane == 'block'   # bundle 2 deploys it
+
+
+def test_rocket_dead_target_deployable_from_the_file(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text(DEPLOYED.rstrip('\n') + ' --rocket-dead-target block\n')
+    opts, rec = parse([], f)
+    assert opts.rocket_dead_target == 'block' and rec['from_file']['rocket_dead_target'] == 'block'
+    assert opts.spell_aim == 'rocket_area'
+    opts, rec = parse(['--rocket-dead-target', 'allow'], f)                    # explicit wins
+    assert opts.rocket_dead_target == 'allow' and rec['explicit'] == ['rocket_dead_target']
+    assert parse([], REPO / 'scratchpad/gauntlet/L70/live/LIVE_OPTIONS')[0].rocket_dead_target == 'block'   # deployed 10-09
+
+
+@pytest.mark.skipif(not CKPT.is_file(), reason='live checkpoint not present')
+@pytest.mark.parametrize('mode', ['ot', 'ot_behind'])
+def test_check_json_reports_lethal_rocket(tmp_path, mode):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text(DEPLOYED + f'--lethal-rocket {mode}\n')
+    out = run_live_play('--check', '--ckpt', str(CKPT), '--live-options-file', str(f))
+    assert out.returncode == 0, out.stdout + out.stderr
+    check = json.loads(out.stdout.strip().splitlines()[-1])
+    assert check['decision_options']['lethal_rocket'] == mode
+    assert check['live_options']['from_file']['lethal_rocket'] == mode
+
+
+def test_latency_flags_deployable_from_the_file_and_explicit_wins(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'
+    f.write_text('--fast-input --tap-gap-ms 0 --afford-ticks 23 --early-release-margin 8 --extrapolate 24\n')
+    ap = parser(f)
+    ap.add_argument('--fast-input', action='store_true'); ap.add_argument('--tap-gap-ms', type=int, default=50)
+    ap.add_argument('--afford-ticks', type=int, default=None); ap.add_argument('--early-release-margin', type=int, default=None)
+    ap.add_argument('--extrapolate', type=int, default=26)
+    a, rec = parse_with_live_options(ap, [])
+    assert (a.fast_input, a.tap_gap_ms, a.afford_ticks, a.early_release_margin, a.extrapolate) == (True, 0, 23, 8, 24)
+    a, rec = parse_with_live_options(ap, ['--extrapolate', '26', '--tap-gap-ms', '50'])
+    assert (a.extrapolate, a.tap_gap_ms, a.afford_ticks) == (26, 50, 23) and sorted(rec['explicit']) == ['extrapolate', 'tap_gap_ms']
+    a, rec = parse_with_live_options(ap, ['--no-live-options'])
+    assert (a.fast_input, a.tap_gap_ms, a.afford_ticks, a.early_release_margin, a.extrapolate) == (False, 50, None, None, 26)
+
+
+def test_lethal_log_deployable_from_the_file(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text(DEPLOYED + '--lethal-rocket ot_behind --lethal-log on\n')
+    opts, rec = parse([], f)
+    assert (opts.lethal_rocket, opts.lethal_log) == ('ot_behind', 'on') and rec['from_file']['lethal_log'] == 'on'
+    opts, rec = parse(['--lethal-log', 'off'], f)                               # explicit wins
+    assert opts.lethal_log == 'off' and rec['explicit'] == ['lethal_log']
+    assert parse([], tmp_path / 'missing')[0].lethal_log == 'off'
+
+
+@pytest.mark.skipif(not CKPT.is_file(), reason='live checkpoint not present')
+def test_check_json_reports_lethal_log(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text(DEPLOYED + '--lethal-rocket ot_behind --lethal-log on\n')
+    out = run_live_play('--check', '--ckpt', str(CKPT), '--live-options-file', str(f))
+    assert out.returncode == 0, out.stdout + out.stderr
+    check = json.loads(out.stdout.strip().splitlines()[-1])
+    assert check['decision_options']['lethal_log'] == 'on' and check['live_options']['from_file']['lethal_log'] == 'on'
+
+
+def test_tau_threatened_deployable_from_the_file(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text(DEPLOYED + '--tau-threatened 0.2\n')
+    opts, rec = parse([], f)
+    assert opts.tau_threatened == 0.2 and rec['from_file']['tau_threatened'] == 0.2
+    opts, rec = parse(['--tau-threatened', '0.1'], f)                          # explicit wins
+    assert opts.tau_threatened == 0.1 and rec['explicit'] == ['tau_threatened']
+    assert parse([], tmp_path / 'missing')[0].tau_threatened is None
+
+
+def test_rocket_value_deployable_from_the_file(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'
+    f.write_text(DEPLOYED + '--rocket-value 9 --rocket-value-mode damage --rocket-value-hitbox edge --rocket-value-min-elixir 9 '
+                 '--rocket-value-idle on --rocket-value-lead on --rocket-value-min-y 21\n')
+    opts, rec = parse([], f)
+    assert (opts.rocket_value, opts.rocket_value_mode, opts.rocket_value_hitbox, opts.rocket_value_min_elixir) == (9.0, 'damage', 'edge', 9.0)
+    assert (opts.rocket_value_idle, opts.rocket_value_lead, opts.rocket_value_min_y) == ('on', 'on', 21.0)
+    assert rec['from_file']['rocket_value'] == 9.0 and rec['from_file']['rocket_value_mode'] == 'damage'
+    opts, rec = parse(['--rocket-value', '0'], f)                              # explicit wins
+    assert opts.rocket_value == 0.0 and rec["explicit"] == ["rocket_value"]
+    d = parse([], tmp_path / 'missing')[0]
+    assert d.rocket_value == 0.0 and d.rocket_value_mode == 'cost' and d.rocket_value_hitbox == 'centre' and d.rocket_value_lead == 'off'
+
+
+@pytest.mark.skipif(not CKPT.is_file() or importlib.util.find_spec('cv2') is None, reason='live checkpoint / cv2 not present')
+def test_check_json_reports_rocket_value(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'
+    f.write_text(DEPLOYED + '--rocket-value 9 --rocket-value-mode damage --rocket-value-hitbox edge --rocket-value-min-elixir 9\n')
+    out = run_live_play('--check', '--ckpt', str(CKPT), '--live-options-file', str(f))
+    assert out.returncode == 0, out.stdout + out.stderr
+    check = json.loads(out.stdout.strip().splitlines()[-1])
+    assert check['decision_options']['rocket_value'] == 9.0 and check['decision_options']['rocket_value_mode'] == 'damage'
+    assert check['live_options']['from_file']['rocket_value_min_elixir'] == 9.0
+CARD_LEVELS = '--card-levels Rocket=16 Log=15 Knight=16 Xbow=16 IceWizard=14\n'
+
+
+def test_card_levels_deployable_from_the_file(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text(DEPLOYED + CARD_LEVELS)
+    opts, rec = parse([], f)
+    assert opts.card_levels == (('IceWizard', 14), ('Knight', 16), ('Log', 15), ('Rocket', 16), ('Xbow', 16))
+    assert rec['from_file']['card_levels'] == ['Rocket=16', 'Log=15', 'Knight=16', 'Xbow=16', 'IceWizard=14']
+    opts, rec = parse(['--card-levels', 'Rocket=15'], f)                       # explicit wins
+    assert opts.card_levels == (('Rocket', 15),) and rec['explicit'] == ['card_levels']
+    assert parse([], tmp_path / 'missing')[0].card_levels is None
+
+
+@pytest.mark.skipif(not CKPT.is_file(), reason='live checkpoint not present')
+def test_check_json_reports_card_levels(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text(DEPLOYED + CARD_LEVELS)
+    out = run_live_play('--check', '--ckpt', str(CKPT), '--live-options-file', str(f))
+    assert out.returncode == 0, out.stdout + out.stderr
+    check = json.loads(out.stdout.strip().splitlines()[-1])
+    assert check['decision_options']['card_levels'] == [['IceWizard', 14], ['Knight', 16], ['Log', 15], ['Rocket', 16],
+                                                         ['Xbow', 16]]
+
+
+def test_log_air_deployable_from_the_file(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text(DEPLOYED_FILE.replace('--log-air block', '--log-air retarget'))
+    opts, rec = parse([], f)
+    assert opts.log_air == 'retarget' and rec['from_file']['log_air'] == 'retarget' and opts.log_aim == 'log_barrel'
+    opts, rec = parse(['--log-air', 'block'], f)                                   # explicit wins
+    assert opts.log_air == 'block' and rec['explicit'] == ['log_air']
+    assert parse([], REPO / 'scratchpad/gauntlet/L70/live/LIVE_OPTIONS')[0].log_air == 'block'   # deployed 2026-10-09
+
+
+@pytest.mark.skipif(not CKPT.is_file(), reason='live checkpoint not present')
+def test_check_json_reports_log_air(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text(DEPLOYED_FILE.replace('--log-air block', '--log-air retarget'))
+    out = run_live_play('--check', '--ckpt', str(CKPT), '--live-options-file', str(f))
+    assert out.returncode == 0, out.stdout + out.stderr
+    check = json.loads(out.stdout.strip().splitlines()[-1])
+    assert check['check'] == 'LIVE_CHECK_PASS' and check['decision_options']['log_air'] == 'retarget'
+
+
+def test_rocket_tornado_deployable_from_the_file(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'
+    f.write_text(DEPLOYED + '--rocket-value 9 --rocket-value-mode damage --rocket-value-hitbox edge --rocket-tornado only\n')
+    opts, rec = parse([], f)
+    assert (opts.rocket_value, opts.rocket_tornado) == (9.0, 'only') and rec['from_file']['rocket_tornado'] == 'only'
+    opts, rec = parse(['--rocket-tornado', 'off'], f)                                  # explicit wins
+    assert opts.rocket_tornado == 'off' and 'rocket_tornado' in rec['explicit']
+    assert parse([], tmp_path / 'missing')[0].rocket_tornado == 'off'
+    g = tmp_path / 'LO2'; g.write_text(DEPLOYED + '--rocket-tornado on\n')
+    with pytest.raises(ValueError, match='rocket_value'):                                # the combo needs its V
+        parse([], g)
+
+
+@pytest.mark.skipif(not CKPT.is_file() or importlib.util.find_spec('cv2') is None, reason='live checkpoint / cv2 not present')
+def test_check_json_reports_rocket_tornado(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'
+    f.write_text(DEPLOYED + '--rocket-value 9 --rocket-value-mode damage --rocket-value-hitbox edge --rocket-tornado only\n')
+    out = run_live_play('--check', '--ckpt', str(CKPT), '--live-options-file', str(f), '--follow-up-taps')   # DEPLOYED lacks it: pass it
+    assert out.returncode == 0, out.stdout + out.stderr
+    check = json.loads(out.stdout.strip().splitlines()[-1])
+    assert check['decision_options']['rocket_tornado'] == 'only' and check['live_options']['from_file']['rocket_tornado'] == 'only'
+
+
+def test_follow_up_taps_deployable_from_the_file(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text(DEPLOYED + '--follow-up-taps')
+    ap = parser(f); ap.add_argument('--follow-up-taps', action='store_true')
+    assert parse_with_live_options(ap, [])[0].follow_up_taps is True
+    ap = parser(tmp_path / 'missing'); ap.add_argument('--follow-up-taps', action='store_true')
+    assert parse_with_live_options(ap, [])[0].follow_up_taps is False
+
+
+def test_live_play_refuses_rocket_tornado_without_follow_up_taps(tmp_path):
+    f = tmp_path / 'LIVE_OPTIONS'; f.write_text(DEPLOYED)
+    for mode in ('on', 'only'):
+        out = run_live_play('--check', '--rocket-value', '9', '--rocket-tornado', mode, '--live-options-file', str(f))
+        assert out.returncode == 2 and f'--rocket-tornado {mode} plays its Tornado as a follow-up tap' in out.stdout, out.stdout + out.stderr
+
+
+def test_bait_deck_options_are_generic_and_leave_xbow_and_spell_options_at_defaults():
+    f = REPO / 'scratchpad/gauntlet/L70/live/bait/LIVE_OPTIONS'      # the Log Bait deck has no X-Bow / Rocket / Log / Tornado
+    ap = parser(f); ap.add_argument('--own-effects', action='store_true')
+    a, rec = parse_with_live_options(ap, [])
+    opts = options_from_config(config_from_args(a))
+    plain, _ = parse([], f.with_name('missing'))
+    for k in ('xbow_class', 'xbow_class_floor', 'xbow_dead_lane', 'spell_aim', 'log_aim', 'log_air', 'lethal_rocket',
+              'lethal_log', 'rocket_dead_target', 'rocket_value', 'rocket_tornado', 'gate_decode', 'card_levels', 'tau_phase'):
+        assert getattr(opts, k) == getattr(plain, k), k
+    assert (a.fast_input, a.tap_gap_ms, a.afford_ticks, a.extrapolate, a.identity_ext, a.hero_ability_spec, a.own_effects) == \
+        (True, 0, 23, 24, 'on', 'supplement', True)
+    assert not a.follow_up_taps and rec['explicit'] == [] and rec['status'] == 'applied'
+
+
+def test_no_ability_from_file_is_logged(tmp_path):
+    """L74 ability A/B: an arm's LIVE_OPTIONS '--no-ability' reaches live_play and its header (from_file)."""
+    import argparse
+    from pipeline.decision_options import add_arguments
+    from pipeline.live_options import add_live_options_arguments, parse_with_live_options
+    f = tmp_path / "LIVE_OPTIONS"
+    ap = argparse.ArgumentParser(); add_arguments(ap)
+    ap.add_argument("--no-ability", action="store_true"); add_live_options_arguments(ap, f)
+    f.write_text("--spell-aim rocket_area --no-ability\n")
+    a, rec = parse_with_live_options(ap, [])
+    assert a.no_ability is True and rec["from_file"]["no_ability"] is True
+    f.write_text("--spell-aim rocket_area\n")
+    a, rec = parse_with_live_options(ap, [])
+    assert a.no_ability is False and "no_ability" not in rec["from_file"]

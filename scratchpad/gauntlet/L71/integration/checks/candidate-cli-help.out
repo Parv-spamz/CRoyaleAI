@@ -1,0 +1,106 @@
+usage: live_play_v2.py [-h] [--card-choice {argmax,filtered}]
+                       [--card-ratio CARD_RATIO] [--card-T CARD_T]
+                       [--spell-aim {argmax,rocket_area}]
+                       [--decision-seed DECISION_SEED] [--ckpt CKPT]
+                       [--tau TAU] [--leak LEAK] [--no-anti-leak]
+                       [--public-audit] [--interval-ms INTERVAL_MS]
+                       [--max-seconds MAX_SECONDS] [--dry-run]
+                       [--reader {v1,v2}] [--overlay {both,detector,reader}]
+                       [--no-record] [--device {auto,cuda,cpu}]
+                       [--extrapolate EXTRAPOLATE] [--no-opp-counter]
+                       [--menu-guard] [--no-menu-guard]
+                       [--invite-wait INVITE_WAIT] [--no-ability]
+                       [--matches MATCHES] [--friend FRIEND] [--ladder]
+                       [--wins-today WINS_TODAY] [--clip-every CLIP_EVERY]
+                       [--stop-file STOP_FILE]
+                       [--ckpt-override-file CKPT_OVERRIDE_FILE]
+                       [--nav-dry-run]
+
+options:
+  -h, --help            show this help message and exit
+  --card-choice {argmax,filtered}
+  --card-ratio CARD_RATIO
+  --card-T CARD_T
+  --spell-aim {argmax,rocket_area}
+                        rocket_area: maximise learned cell probability inside
+                        the catalog Rocket radius
+  --decision-seed DECISION_SEED
+                        separate seeded card-choice stream; recorded with each
+                        experiment
+  --ckpt CKPT
+  --tau TAU
+  --leak LEAK           force a play at >= this elixir (unless --no-anti-leak)
+  --no-anti-leak        honour the model's play/wait decision even at full
+                        elixir; disable forced spending
+  --public-audit        log public board/targets and model decisions,
+                        including WAIT, independently of video
+  --interval-ms INTERVAL_MS
+  --max-seconds MAX_SECONDS
+                        PER-MATCH wall-clock cap (reset each match): overtime
+                        ends by 6,000 ticks = 300 s of game time, +
+                        loading/countdown. Hitting it stops the whole run
+  --dry-run             decide and log, never tap
+  --reader {v1,v2}      memory reader: v2 (default since 2026-10-03: evolved
+                        units, projectiles, effects) or v1
+  --overlay {both,detector,reader}
+                        replay style: detector = play.py-style YOLO boxes only
+                        (cosmetic, e.g. for posts), reader = memory-reader
+                        markers + taps, both
+  --no-record           skip the overlaid replay (default: screenrecord +
+                        reader boxes ->
+                        icebow/data/overlayed_replays/live_<stamp>.mp4)
+  --device {auto,cuda,cpu}
+                        where the model runs; auto = cuda when available.
+                        2026-09-26: on CPU with torch's default 16 threads,
+                        other busy jobs pushed decisions from ~40 ms to
+                        0.5-3.4 s
+  --extrapolate EXTRAPOLATE
+                        decide on the board this many ticks ahead, where the
+                        card lands (~26 live; 0 = off). Screen (HANDOFF
+                        L68as): +3.4 pp gen / +6.9 pp v6lat vs no
+                        extrapolation at delay 26
+  --no-opp-counter      feed the model opponent elixir = unknown instead of
+                        the public-events counter
+  --menu-guard          OPT-IN in-match menu guard: a screencap every <= 2 s
+                        is classified; any menu stops the match and taps wait
+                        for a fresh non-menu classification. Off by default:
+                        its screencaps saturated adb live (2026-09-30). Needs
+                        a 900x1600 screen
+  --no-menu-guard       no-op, kept for compatibility (the menu guard is off
+                        unless --menu-guard)
+  --invite-wait INVITE_WAIT
+                        friend loop: seconds to wait on the Social tab for the
+                        friend's invite before sending ours (owner 2026-09-30:
+                        20 s); a random 5-20 s re-delay is used only after
+                        crossed invites
+  --no-ability          never press the hero ability button (default: pressed
+                        by hero_button.should_press when the deck holds a hero
+                        and the button reads ready)
+  --matches MATCHES     play this many matches back to back (default 1 = one
+                        match, no navigation). > 1 needs --friend: between
+                        matches friend_nav.py starts the next FRIENDLY 1v1
+                        against that friend's bot; the previous match's
+                        overlay renders in the background
+  --friend FRIEND       the friend to play when --matches > 1; must be the
+                        friend the nav templates were cropped for
+  --ladder              with --matches > 1: re-queue Trophy Road matches via
+                        ladder_nav.py (Play Again; after the day's 4th win OK
+                        -> open the chests -> Battle) instead of friendlies
+  --wins-today WINS_TODAY
+                        ladder: set today's win count (daily chests come with
+                        wins 1-4); default = ladder_state.json
+  --clip-every CLIP_EVERY
+                        seconds; > 0: record ONLY the first match and then one
+                        match every this many seconds, and post a 60-s
+                        overlaid clip of it to Discord (discord_clip.py) --
+                        all other matches unrecorded
+  --stop-file STOP_FILE
+                        stop the run between matches once this file exists
+  --ckpt-override-file CKPT_OVERRIDE_FILE
+                        2026-10-03 deploy hook: if this file names a
+                        checkpoint, it replaces --ckpt at start; if it changes
+                        to a different checkpoint mid-run, the run exits
+                        between matches so the supervisor restarts on it
+  --nav-dry-run         play nothing: run ONE between-match navigation that
+                        classifies the live screens and logs the tap it WOULD
+                        make, never tapping (navigate by hand to test it)

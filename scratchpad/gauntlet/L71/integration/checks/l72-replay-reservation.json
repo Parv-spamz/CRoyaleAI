@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:/Users/benpe/ClashBot/icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/reserve_candidate_groups.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "REPLAY_GROUPS_RESERVED_NOT_YET_QUALIFIED",
+  "matched": true,
+  "output_sha256": "cb37323b894d0f23a7ee7f51c23674178423474a768e09f5e1b17c19f688d547",
+  "seconds": 9.214181184768677
+}

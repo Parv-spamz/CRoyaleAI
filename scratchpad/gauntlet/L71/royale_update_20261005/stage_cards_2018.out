@@ -1,0 +1,14 @@
+*** PRE-2025 VINTAGE (~2018 client data). The simulator targets the LIVE 2026 game. Every number in this file is EVIDENCE, NOT SPEC. Stats are 2018 level-1 base values under the 2018 rarity-relative level system; balance changes since 2018 are NOT reflected.
+  characters           214 csv columns  59 rows   0 continuation rows
+  buildings            214 csv columns  20 rows   0 continuation rows
+  projectiles           59 csv columns  42 rows   0 continuation rows
+  spells_characters     47 csv columns  58 rows   0 continuation rows
+  spells_buildings      47 csv columns  14 rows   0 continuation rows
+  spells_other          47 csv columns  17 rows   0 continuation rows
+  area_effect_objects   44 csv columns  12 rows   0 continuation rows
+  character_buffs       39 csv columns   9 rows   0 continuation rows
+  rarities              40 csv columns   5 rows  45 continuation rows
+  Hog Rider ladder (base 800, card Rare, ladder Rare from unified level (card local 1)): [800, 880, 968, 1064, 1168, 1280, 1408, 1544]
+  NOTE every Hog ladder product is an exact integer, so this check CANNOT distinguish floor/round/ceil -- rounding mode remains unverified
+cards -> data\derived\cards-2018.json: 78 cards, 2 towers, 79 units, 11 NotInUse rows skipped [cards-2018.1]
+  thin slice: 18/18 present

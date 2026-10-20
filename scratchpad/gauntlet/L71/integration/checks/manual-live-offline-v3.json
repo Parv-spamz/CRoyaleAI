@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:/Users/benpe/ClashBot/icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/live_entry/offline_probe.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "LIVE_OFFLINE_INTEGRATION_PASS",
+  "matched": true,
+  "output_sha256": "4160f27a5e86b23d913c3152eff2368f0b95aefd7c9869761dae0a9e2f6c398b",
+  "seconds": 20.924381256103516
+}

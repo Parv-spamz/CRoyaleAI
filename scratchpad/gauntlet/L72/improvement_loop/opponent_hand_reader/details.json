@@ -1,0 +1,1047 @@
+{
+  "development_descriptive": {
+    "decisions": 10424,
+    "all_eight_revealed": 4428,
+    "full_errors_with_issue": 15,
+    "replays_with_full_error": 48
+  },
+  "per_card": {
+    "skeletons": {
+      "out_claims": 4369,
+      "out_errors": 26,
+      "in_claims": 2350,
+      "in_errors": 38
+    },
+    "tesla": {
+      "out_claims": 2976,
+      "out_errors": 13,
+      "in_claims": 2022,
+      "in_errors": 7
+    },
+    "giant-skeleton": {
+      "out_claims": 225,
+      "out_errors": 2,
+      "in_claims": 113,
+      "in_errors": 0
+    },
+    "ice-wizard": {
+      "out_claims": 3437,
+      "out_errors": 9,
+      "in_claims": 1672,
+      "in_errors": 6
+    },
+    "minion-horde": {
+      "out_claims": 104,
+      "out_errors": 1,
+      "in_claims": 97,
+      "in_errors": 0
+    },
+    "tornado": {
+      "out_claims": 1805,
+      "out_errors": 8,
+      "in_claims": 2564,
+      "in_errors": 7
+    },
+    "knight": {
+      "out_claims": 3697,
+      "out_errors": 13,
+      "in_claims": 1803,
+      "in_errors": 6
+    },
+    "vines": {
+      "out_claims": 114,
+      "out_errors": 0,
+      "in_claims": 74,
+      "in_errors": 0
+    },
+    "x-bow": {
+      "out_claims": 2100,
+      "out_errors": 6,
+      "in_claims": 2405,
+      "in_errors": 0
+    },
+    "balloon": {
+      "out_claims": 351,
+      "out_errors": 2,
+      "in_claims": 178,
+      "in_errors": 0
+    },
+    "lumberjack": {
+      "out_claims": 127,
+      "out_errors": 1,
+      "in_claims": 63,
+      "in_errors": 2
+    },
+    "archers": {
+      "out_claims": 262,
+      "out_errors": 2,
+      "in_claims": 146,
+      "in_errors": 1
+    },
+    "the-log": {
+      "out_claims": 3319,
+      "out_errors": 12,
+      "in_claims": 2428,
+      "in_errors": 9
+    },
+    "rocket": {
+      "out_claims": 1176,
+      "out_errors": 5,
+      "in_claims": 2029,
+      "in_errors": 1
+    },
+    "giant-snowball": {
+      "out_claims": 208,
+      "out_errors": 2,
+      "in_claims": 235,
+      "in_errors": 2
+    },
+    "royal-giant": {
+      "out_claims": 153,
+      "out_errors": 1,
+      "in_claims": 76,
+      "in_errors": 0
+    },
+    "bomb-tower": {
+      "out_claims": 57,
+      "out_errors": 0,
+      "in_claims": 168,
+      "in_errors": 0
+    },
+    "barbarian-barrel": {
+      "out_claims": 769,
+      "out_errors": 4,
+      "in_claims": 595,
+      "in_errors": 4
+    },
+    "guards": {
+      "out_claims": 156,
+      "out_errors": 1,
+      "in_claims": 152,
+      "in_errors": 0
+    },
+    "royal-ghost": {
+      "out_claims": 242,
+      "out_errors": 1,
+      "in_claims": 115,
+      "in_errors": 0
+    },
+    "baby-dragon": {
+      "out_claims": 265,
+      "out_errors": 0,
+      "in_claims": 160,
+      "in_errors": 0
+    },
+    "fireball": {
+      "out_claims": 353,
+      "out_errors": 4,
+      "in_claims": 388,
+      "in_errors": 1
+    },
+    "electro-wizard": {
+      "out_claims": 107,
+      "out_errors": 1,
+      "in_claims": 88,
+      "in_errors": 0
+    },
+    "inferno-dragon": {
+      "out_claims": 298,
+      "out_errors": 1,
+      "in_claims": 213,
+      "in_errors": 2
+    },
+    "goblin-cage": {
+      "out_claims": 125,
+      "out_errors": 0,
+      "in_claims": 124,
+      "in_errors": 0
+    },
+    "bowler": {
+      "out_claims": 442,
+      "out_errors": 3,
+      "in_claims": 257,
+      "in_errors": 0
+    },
+    "electro-giant": {
+      "out_claims": 98,
+      "out_errors": 0,
+      "in_claims": 67,
+      "in_errors": 0
+    },
+    "lightning": {
+      "out_claims": 211,
+      "out_errors": 1,
+      "in_claims": 266,
+      "in_errors": 0
+    },
+    "hog-rider": {
+      "out_claims": 651,
+      "out_errors": 8,
+      "in_claims": 321,
+      "in_errors": 5
+    },
+    "skeleton-army": {
+      "out_claims": 154,
+      "out_errors": 3,
+      "in_claims": 94,
+      "in_errors": 0
+    },
+    "wizard": {
+      "out_claims": 107,
+      "out_errors": 1,
+      "in_claims": 103,
+      "in_errors": 0
+    },
+    "mega-knight": {
+      "out_claims": 102,
+      "out_errors": 2,
+      "in_claims": 80,
+      "in_errors": 0
+    },
+    "firecracker": {
+      "out_claims": 252,
+      "out_errors": 2,
+      "in_claims": 183,
+      "in_errors": 1
+    },
+    "ice-spirit": {
+      "out_claims": 438,
+      "out_errors": 6,
+      "in_claims": 299,
+      "in_errors": 8
+    },
+    "mighty-miner": {
+      "out_claims": 262,
+      "out_errors": 1,
+      "in_claims": 243,
+      "in_errors": 1
+    },
+    "earthquake": {
+      "out_claims": 197,
+      "out_errors": 3,
+      "in_claims": 156,
+      "in_errors": 1
+    },
+    "cannon": {
+      "out_claims": 317,
+      "out_errors": 4,
+      "in_claims": 693,
+      "in_errors": 3
+    },
+    "electro-spirit": {
+      "out_claims": 613,
+      "out_errors": 4,
+      "in_claims": 367,
+      "in_errors": 7
+    },
+    "ram-rider": {
+      "out_claims": 24,
+      "out_errors": 0,
+      "in_claims": 19,
+      "in_errors": 0
+    },
+    "archer-queen": {
+      "out_claims": 96,
+      "out_errors": 2,
+      "in_claims": 63,
+      "in_errors": 0
+    },
+    "rage": {
+      "out_claims": 75,
+      "out_errors": 0,
+      "in_claims": 70,
+      "in_errors": 0
+    },
+    "golem": {
+      "out_claims": 54,
+      "out_errors": 0,
+      "in_claims": 20,
+      "in_errors": 0
+    },
+    "furnace": {
+      "out_claims": 121,
+      "out_errors": 1,
+      "in_claims": 55,
+      "in_errors": 0
+    },
+    "tombstone": {
+      "out_claims": 122,
+      "out_errors": 2,
+      "in_claims": 66,
+      "in_errors": 1
+    },
+    "valkyrie": {
+      "out_claims": 217,
+      "out_errors": 1,
+      "in_claims": 119,
+      "in_errors": 1
+    },
+    "wall-breakers": {
+      "out_claims": 133,
+      "out_errors": 3,
+      "in_claims": 89,
+      "in_errors": 1
+    },
+    "prince": {
+      "out_claims": 54,
+      "out_errors": 3,
+      "in_claims": 35,
+      "in_errors": 0
+    },
+    "bandit": {
+      "out_claims": 68,
+      "out_errors": 1,
+      "in_claims": 20,
+      "in_errors": 0
+    },
+    "goblin-gang": {
+      "out_claims": 208,
+      "out_errors": 3,
+      "in_claims": 144,
+      "in_errors": 1
+    },
+    "arrows": {
+      "out_claims": 186,
+      "out_errors": 4,
+      "in_claims": 182,
+      "in_errors": 0
+    },
+    "golden-knight": {
+      "out_claims": 153,
+      "out_errors": 0,
+      "in_claims": 75,
+      "in_errors": 0
+    },
+    "executioner": {
+      "out_claims": 153,
+      "out_errors": 3,
+      "in_claims": 111,
+      "in_errors": 0
+    },
+    "graveyard": {
+      "out_claims": 150,
+      "out_errors": 0,
+      "in_claims": 174,
+      "in_errors": 0
+    },
+    "zappies": {
+      "out_claims": 257,
+      "out_errors": 0,
+      "in_claims": 160,
+      "in_errors": 0
+    },
+    "freeze": {
+      "out_claims": 163,
+      "out_errors": 2,
+      "in_claims": 160,
+      "in_errors": 0
+    },
+    "battle-ram": {
+      "out_claims": 184,
+      "out_errors": 2,
+      "in_claims": 57,
+      "in_errors": 0
+    },
+    "princess": {
+      "out_claims": 153,
+      "out_errors": 1,
+      "in_claims": 113,
+      "in_errors": 0
+    },
+    "goblin-barrel": {
+      "out_claims": 200,
+      "out_errors": 1,
+      "in_claims": 133,
+      "in_errors": 2
+    },
+    "dart-goblin": {
+      "out_claims": 217,
+      "out_errors": 3,
+      "in_claims": 147,
+      "in_errors": 0
+    },
+    "elixir-collector": {
+      "out_claims": 31,
+      "out_errors": 0,
+      "in_claims": 16,
+      "in_errors": 0
+    },
+    "musketeer": {
+      "out_claims": 248,
+      "out_errors": 1,
+      "in_claims": 218,
+      "in_errors": 1
+    },
+    "goblinstein": {
+      "out_claims": 214,
+      "out_errors": 2,
+      "in_claims": 108,
+      "in_errors": 0
+    },
+    "royal-recruits": {
+      "out_claims": 85,
+      "out_errors": 0,
+      "in_claims": 45,
+      "in_errors": 0
+    },
+    "mini-pekka": {
+      "out_claims": 74,
+      "out_errors": 2,
+      "in_claims": 63,
+      "in_errors": 1
+    },
+    "royal-hogs": {
+      "out_claims": 195,
+      "out_errors": 1,
+      "in_claims": 119,
+      "in_errors": 1
+    },
+    "berserker": {
+      "out_claims": 211,
+      "out_errors": 2,
+      "in_claims": 107,
+      "in_errors": 0
+    },
+    "heal-spirit": {
+      "out_claims": 62,
+      "out_errors": 1,
+      "in_claims": 24,
+      "in_errors": 0
+    },
+    "mega-minion": {
+      "out_claims": 147,
+      "out_errors": 6,
+      "in_claims": 74,
+      "in_errors": 0
+    },
+    "flying-machine": {
+      "out_claims": 12,
+      "out_errors": 0,
+      "in_claims": 2,
+      "in_errors": 0
+    },
+    "cannon-cart": {
+      "out_claims": 149,
+      "out_errors": 1,
+      "in_claims": 126,
+      "in_errors": 0
+    },
+    "skeleton-barrel": {
+      "out_claims": 226,
+      "out_errors": 0,
+      "in_claims": 101,
+      "in_errors": 3
+    },
+    "mother-witch": {
+      "out_claims": 182,
+      "out_errors": 0,
+      "in_claims": 108,
+      "in_errors": 0
+    },
+    "clone": {
+      "out_claims": 19,
+      "out_errors": 1,
+      "in_claims": 17,
+      "in_errors": 0
+    },
+    "ice-golem": {
+      "out_claims": 261,
+      "out_errors": 2,
+      "in_claims": 127,
+      "in_errors": 3
+    },
+    "skeleton-king": {
+      "out_claims": 108,
+      "out_errors": 0,
+      "in_claims": 61,
+      "in_errors": 0
+    },
+    "fisherman": {
+      "out_claims": 139,
+      "out_errors": 0,
+      "in_claims": 83,
+      "in_errors": 1
+    },
+    "giant": {
+      "out_claims": 192,
+      "out_errors": 6,
+      "in_claims": 78,
+      "in_errors": 1
+    },
+    "witch": {
+      "out_claims": 149,
+      "out_errors": 9,
+      "in_claims": 101,
+      "in_errors": 0
+    },
+    "pekka": {
+      "out_claims": 136,
+      "out_errors": 8,
+      "in_claims": 67,
+      "in_errors": 1
+    },
+    "dark-prince": {
+      "out_claims": 157,
+      "out_errors": 6,
+      "in_claims": 65,
+      "in_errors": 0
+    },
+    "bomber": {
+      "out_claims": 178,
+      "out_errors": 3,
+      "in_claims": 97,
+      "in_errors": 3
+    },
+    "fire-spirit": {
+      "out_claims": 169,
+      "out_errors": 2,
+      "in_claims": 95,
+      "in_errors": 1
+    },
+    "goblins": {
+      "out_claims": 126,
+      "out_errors": 0,
+      "in_claims": 67,
+      "in_errors": 0
+    },
+    "mortar": {
+      "out_claims": 148,
+      "out_errors": 0,
+      "in_claims": 85,
+      "in_errors": 0
+    },
+    "minions": {
+      "out_claims": 76,
+      "out_errors": 0,
+      "in_claims": 61,
+      "in_errors": 0
+    },
+    "poison": {
+      "out_claims": 81,
+      "out_errors": 1,
+      "in_claims": 99,
+      "in_errors": 0
+    },
+    "suspicious-bush": {
+      "out_claims": 58,
+      "out_errors": 0,
+      "in_claims": 34,
+      "in_errors": 0
+    },
+    "rascals": {
+      "out_claims": 124,
+      "out_errors": 1,
+      "in_claims": 91,
+      "in_errors": 0
+    },
+    "goblin-drill": {
+      "out_claims": 78,
+      "out_errors": 0,
+      "in_claims": 59,
+      "in_errors": 0
+    },
+    "goblin-demolisher": {
+      "out_claims": 25,
+      "out_errors": 0,
+      "in_claims": 9,
+      "in_errors": 1
+    },
+    "bats": {
+      "out_claims": 185,
+      "out_errors": 1,
+      "in_claims": 99,
+      "in_errors": 3
+    },
+    "lava-hound": {
+      "out_claims": 64,
+      "out_errors": 1,
+      "in_claims": 46,
+      "in_errors": 0
+    },
+    "skeleton-dragons": {
+      "out_claims": 47,
+      "out_errors": 1,
+      "in_claims": 18,
+      "in_errors": 0
+    },
+    "barbarians": {
+      "out_claims": 55,
+      "out_errors": 1,
+      "in_claims": 38,
+      "in_errors": 0
+    },
+    "zap": {
+      "out_claims": 17,
+      "out_errors": 0,
+      "in_claims": 11,
+      "in_errors": 5
+    },
+    "night-witch": {
+      "out_claims": 53,
+      "out_errors": 0,
+      "in_claims": 48,
+      "in_errors": 0
+    },
+    "elixir-golem": {
+      "out_claims": 65,
+      "out_errors": 1,
+      "in_claims": 24,
+      "in_errors": 0
+    },
+    "goblin-hut": {
+      "out_claims": 12,
+      "out_errors": 0,
+      "in_claims": 47,
+      "in_errors": 0
+    },
+    "miner": {
+      "out_claims": 178,
+      "out_errors": 2,
+      "in_claims": 85,
+      "in_errors": 0
+    },
+    "sparky": {
+      "out_claims": 17,
+      "out_errors": 1,
+      "in_claims": 25,
+      "in_errors": 0
+    },
+    "void": {
+      "out_claims": 17,
+      "out_errors": 0,
+      "in_claims": 46,
+      "in_errors": 0
+    },
+    "spirit-empress-air": {
+      "out_claims": 6,
+      "out_errors": 0,
+      "in_claims": 20,
+      "in_errors": 20
+    },
+    "hunter": {
+      "out_claims": 58,
+      "out_errors": 1,
+      "in_claims": 101,
+      "in_errors": 0
+    },
+    "ronin": {
+      "out_claims": 6,
+      "out_errors": 0
+    },
+    "royal-delivery": {
+      "out_claims": 4,
+      "out_errors": 0,
+      "in_claims": 18,
+      "in_errors": 0
+    },
+    "three-musketeers": {
+      "out_claims": 10,
+      "out_errors": 0,
+      "in_claims": 14,
+      "in_errors": 0
+    },
+    "monk": {
+      "out_claims": 37,
+      "out_errors": 1,
+      "in_claims": 31,
+      "in_errors": 0
+    },
+    "inferno-tower": {
+      "out_claims": 48,
+      "out_errors": 0,
+      "in_claims": 104,
+      "in_errors": 0
+    },
+    "magic-archer": {
+      "out_claims": 2,
+      "out_errors": 0
+    },
+    "electro-dragon": {
+      "out_claims": 24,
+      "out_errors": 0,
+      "in_claims": 18,
+      "in_errors": 0
+    },
+    "phoenix": {
+      "out_claims": 28,
+      "out_errors": 0,
+      "in_claims": 12,
+      "in_errors": 0
+    }
+  },
+  "examples": [
+    {
+      "tag": "000YLPJL2Q9V",
+      "side": 1,
+      "tick": 5641,
+      "truth": [
+        "rocket",
+        "the-log",
+        "tornado",
+        "x-bow"
+      ],
+      "prediction": [
+        "rocket",
+        "skeletons",
+        "the-log",
+        "x-bow"
+      ],
+      "issues": {},
+      "ideal_tail": [
+        [
+          5306,
+          "tesla"
+        ],
+        [
+          5364,
+          "knight"
+        ],
+        [
+          5398,
+          "skeletons"
+        ],
+        [
+          5421,
+          "tornado"
+        ],
+        [
+          5471,
+          "ice-wizard"
+        ],
+        [
+          5531,
+          "tesla"
+        ],
+        [
+          5581,
+          "knight"
+        ],
+        [
+          5636,
+          "skeletons"
+        ]
+      ],
+      "public_tail": [
+        [
+          5264,
+          "the-log"
+        ],
+        [
+          5316,
+          "tesla"
+        ],
+        [
+          5367,
+          "knight"
+        ],
+        [
+          5408,
+          "skeletons"
+        ],
+        [
+          5431,
+          "tornado"
+        ],
+        [
+          5481,
+          "ice-wizard"
+        ],
+        [
+          5541,
+          "tesla"
+        ],
+        [
+          5591,
+          "knight"
+        ]
+      ]
+    },
+    {
+      "tag": "0038806231844ee084559043c5f0f430",
+      "side": 0,
+      "tick": 4771,
+      "truth": [
+        "rocket",
+        "skeletons",
+        "the-log",
+        "tornado"
+      ],
+      "prediction": [
+        "knight",
+        "rocket",
+        "skeletons",
+        "tornado"
+      ],
+      "issues": {},
+      "ideal_tail": [
+        [
+          4058,
+          "tesla"
+        ],
+        [
+          4122,
+          "tornado"
+        ],
+        [
+          4205,
+          "skeletons"
+        ],
+        [
+          4244,
+          "the-log"
+        ],
+        [
+          4291,
+          "ice-wizard"
+        ],
+        [
+          4402,
+          "tesla"
+        ],
+        [
+          4655,
+          "x-bow"
+        ],
+        [
+          4761,
+          "knight"
+        ]
+      ],
+      "public_tail": [
+        [
+          3971,
+          "x-bow"
+        ],
+        [
+          4068,
+          "tesla"
+        ],
+        [
+          4132,
+          "tornado"
+        ],
+        [
+          4215,
+          "skeletons"
+        ],
+        [
+          4254,
+          "the-log"
+        ],
+        [
+          4301,
+          "ice-wizard"
+        ],
+        [
+          4412,
+          "tesla"
+        ],
+        [
+          4665,
+          "x-bow"
+        ]
+      ]
+    },
+    {
+      "tag": "008YLLUGQVU9",
+      "side": 1,
+      "tick": 3481,
+      "truth": [
+        "rocket",
+        "skeletons",
+        "tesla",
+        "x-bow"
+      ],
+      "prediction": [
+        "ice-wizard",
+        "rocket",
+        "skeletons",
+        "x-bow"
+      ],
+      "issues": {},
+      "ideal_tail": [
+        [
+          2902,
+          "ice-wizard"
+        ],
+        [
+          3001,
+          "skeletons"
+        ],
+        [
+          3041,
+          "rocket"
+        ],
+        [
+          3151,
+          "tesla"
+        ],
+        [
+          3325,
+          "knight"
+        ],
+        [
+          3405,
+          "the-log"
+        ],
+        [
+          3442,
+          "tornado"
+        ],
+        [
+          3473,
+          "ice-wizard"
+        ]
+      ],
+      "public_tail": [
+        [
+          2651,
+          "the-log"
+        ],
+        [
+          2912,
+          "ice-wizard"
+        ],
+        [
+          3011,
+          "skeletons"
+        ],
+        [
+          3051,
+          "rocket"
+        ],
+        [
+          3161,
+          "tesla"
+        ],
+        [
+          3335,
+          "knight"
+        ],
+        [
+          3415,
+          "the-log"
+        ],
+        [
+          3452,
+          "tornado"
+        ]
+      ]
+    }
+  ],
+  "oracle_only_deck_coverage": {
+    "tornado": 191,
+    "skeletons": 204,
+    "berserker": 14,
+    "baby-dragon": 20,
+    "golem": 5,
+    "mini-pekka": 15,
+    "electro-dragon": 2,
+    "battle-healer": 1,
+    "x-bow": 165,
+    "the-log": 190,
+    "knight": 176,
+    "tesla": 166,
+    "ice-wizard": 165,
+    "rocket": 166,
+    "minions": 12,
+    "night-witch": 4,
+    "arrows": 33,
+    "lightning": 28,
+    "lumberjack": 8,
+    "bomber": 9,
+    "skeleton-barrel": 15,
+    "mortar": 12,
+    "cannon-cart": 14,
+    "barbarian-barrel": 56,
+    "fireball": 38,
+    "rascals": 11,
+    "guards": 14,
+    "zappies": 17,
+    "giant": 12,
+    "witch": 12,
+    "graveyard": 16,
+    "giant-snowball": 16,
+    "bowler": 25,
+    "ice-spirit": 20,
+    "skeleton-army": 16,
+    "goblin-barrel": 12,
+    "cannon": 30,
+    "wall-breakers": 12,
+    "valkyrie": 18,
+    "princess": 10,
+    "dart-goblin": 16,
+    "freeze": 20,
+    "inferno-dragon": 21,
+    "balloon": 25,
+    "miner": 8,
+    "bomb-tower": 14,
+    "musketeer": 12,
+    "ice-golem": 10,
+    "poison": 7,
+    "archers": 12,
+    "goblinstein": 13,
+    "lava-hound": 8,
+    "barbarians": 7,
+    "furnace": 8,
+    "electro-wizard": 14,
+    "bandit": 6,
+    "archer-queen": 7,
+    "royal-ghost": 15,
+    "pekka": 11,
+    "battle-ram": 11,
+    "minion-horde": 9,
+    "goblin-gang": 13,
+    "suspicious-bush": 5,
+    "golden-knight": 8,
+    "executioner": 11,
+    "tombstone": 10,
+    "ram-rider": 2,
+    "royal-hogs": 10,
+    "electro-spirit": 25,
+    "zap": 20,
+    "bats": 10,
+    "heal-spirit": 5,
+    "mega-knight": 10,
+    "hog-rider": 22,
+    "firecracker": 8,
+    "earthquake": 8,
+    "mighty-miner": 10,
+    "royal-giant": 9,
+    "fisherman": 9,
+    "mega-minion": 10,
+    "skeleton-king": 7,
+    "vines": 11,
+    "giant-skeleton": 11,
+    "electro-giant": 6,
+    "goblin-cage": 10,
+    "wizard": 11,
+    "rage": 4,
+    "prince": 3,
+    "mother-witch": 15,
+    "elixir-collector": 2,
+    "royal-recruits": 8,
+    "flying-machine": 2,
+    "clone": 2,
+    "dark-prince": 6,
+    "fire-spirit": 5,
+    "goblins": 8,
+    "goblin-demolisher": 1,
+    "goblin-drill": 3,
+    "royal-delivery": 2,
+    "void": 3,
+    "skeleton-dragons": 5,
+    "elixir-golem": 3,
+    "goblin-hut": 2,
+    "sparky": 3,
+    "spirit-empress": 1,
+    "hunter": 6,
+    "ronin": 1,
+    "three-musketeers": 2,
+    "monk": 2,
+    "inferno-tower": 3,
+    "magic-archer": 1,
+    "mirror": 1,
+    "phoenix": 1
+  }
+}

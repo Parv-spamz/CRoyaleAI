@@ -1,0 +1,9 @@
+.                                                                        [100%]
+============================== warnings summary ===============================
+pipeline/tests/test_royale_runtime.py::RuntimeFiles::test_checkpoint_and_actor_configuration_retain_stamp_and_refuse_old_resume
+pipeline/tests/test_royale_runtime.py::RuntimeFiles::test_checkpoint_and_actor_configuration_retain_stamp_and_refuse_old_resume
+  C:\Users\benpe\ClashBot\pipeline\model_v3.py:92: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+    self.encoder = nn.TransformerEncoder(enc, layers)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+1 passed, 2 warnings in 7.87s

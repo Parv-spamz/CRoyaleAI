@@ -1,0 +1,80 @@
+{
+  "matched": true,
+  "report_sha256": "fd8968a89583fc7307988b1e908880ac4dfd581d2d2c1eb6e28db1ac38875d90",
+  "verifier_sha256": "ca289e66d826d3d9e66edaebb4594529dd4843e35284065e384c51db5cea8177",
+  "mapped_pool_rows": 268718,
+  "sequence_rows": 126802,
+  "windows": 7748,
+  "window_row_references": 138108,
+  "summaries": {
+    "ordinary": {
+      "unique_rows": 268718,
+      "play_rows": 84298,
+      "wait_rows": 184420,
+      "replays": 1978,
+      "cards": {
+        "skeletons": 14010,
+        "tesla": 11873,
+        "x-bow": 7748,
+        "tornado": 6822,
+        "ice-wizard": 13355,
+        "knight": 13760,
+        "the-log": 11923,
+        "rocket": 4807
+      }
+    },
+    "defensive": {
+      "unique_rows": 40370,
+      "play_rows": 15537,
+      "wait_rows": 24833,
+      "replays": 1068,
+      "cards": {
+        "x-bow": 2673,
+        "tornado": 964,
+        "ice-wizard": 2266,
+        "knight": 2350,
+        "skeletons": 2376,
+        "tesla": 1943,
+        "the-log": 1975,
+        "rocket": 990
+      }
+    },
+    "other": {
+      "unique_rows": 89828,
+      "play_rows": 30687,
+      "wait_rows": 59141,
+      "replays": 1829,
+      "cards": {
+        "x-bow": 5742,
+        "knight": 4533,
+        "rocket": 1280,
+        "the-log": 4058,
+        "skeletons": 4757,
+        "tesla": 3825,
+        "tornado": 2261,
+        "ice-wizard": 4231
+      }
+    },
+    "all_windows": {
+      "unique_rows": 126802,
+      "play_rows": 44793,
+      "wait_rows": 82009,
+      "replays": 1920,
+      "cards": {
+        "x-bow": 7748,
+        "tornado": 3154,
+        "ice-wizard": 6391,
+        "knight": 6735,
+        "skeletons": 7002,
+        "rocket": 2225,
+        "the-log": 5910,
+        "tesla": 5628
+      }
+    }
+  },
+  "original_target_arrays_verified": 8,
+  "trainable": false,
+  "training_launched": false,
+  "predictions_run": false,
+  "scope": "Independent complete identity/label and explicit reference mapping; no new mechanics or model claim."
+}

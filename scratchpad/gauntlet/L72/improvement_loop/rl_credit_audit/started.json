@@ -1,0 +1,19 @@
+{
+  "pid": 42188,
+  "utc": "2026-10-06T00:31:53.021701+00:00",
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_credit_audit\\audit.py": "a7d8da3818853736a407e51377d2f26d4d6e5a159e4ae4a95f603f8e5a0617b1",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_credit_audit\\common.py": "d315399bc54736b60ff70c594e5531fc1bcf62e4d5ea5c33914b640b2888782c",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_credit_audit\\run_chain.py": "08b8eef90429d7daff02a39d9832c8868cb946c03bfe73d3d0d471b6d803d70f",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_credit_audit\\verify.py": "cc7b92d6102b024ca5ad15b38bb1c5cad3748288e2cd5d3e7512e5cfadc57d4a",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_credit_audit\\PLAN.md": "f37dacb14dd873e358534c346b850eb2a1319c889fd01f8594fb3c00e44ac5dc",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_credit_audit\\METRICS.md": "448ef38c527e5a41f8d532dd5f05c7ca17339886f0149280dbf534db34981724",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1\\trained.json": "14acac557fa51f0ed0d702c21bc10bc7840a530041097e67d82a824d4b2d0ac5",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1\\prepared.json": "dd4cd5620ee8103a4ddb3ccd996afd083288cd69abacc3c2685bda9eb4ce1c11",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1\\results_verified.json": "bcbea78b70a8a7197475e894564d1942339b33a074339068d728a3c277d8513a",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_gradient_audit\\reviewed.json": "ec37c3c08c453a7d883fb586626e06f86c60e08601765cad3e71c39d21282a99",
+    "pipeline\\rl_royale.py": "e089d89b7569d5c6ee4631e058ee128696a4847970ae5413d78f40e49bed7055",
+    "pipeline\\e1_eval.py": "55199f822f035e3ddf3fab0d74926158aaea92b23abd9fa1425fdbb5e398827d",
+    "icebow\\data\\bench\\development_rl_1_20261005\\train.jsonl": "c416faa2af5f0624997f307a2da0667ec448876394c1b7adb544fcb6efa49ab7"
+  }
+}

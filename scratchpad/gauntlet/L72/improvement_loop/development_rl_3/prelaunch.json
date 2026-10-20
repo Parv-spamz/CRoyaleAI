@@ -1,0 +1,8 @@
+{
+  "complete": true,
+  "source_count": 288,
+  "syntax_files": 8,
+  "schedule_games": 1024,
+  "optimizer_steps": 0,
+  "training_launched": false
+}

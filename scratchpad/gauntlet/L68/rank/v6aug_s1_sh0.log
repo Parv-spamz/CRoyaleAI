@@ -1,0 +1,13 @@
+C:\Users\benpe\ClashBot\pipeline\model_v3.py:92: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(enc, layers)
+{"e1_eval": "eval", "policy": "live", "port": 0, "tasks": 74, "already_done": 0, "grid": "lattice", "tau": 0.27, "noise_off": []}
+[e1_eval] 1/74 00JYPQPRYCPP k=0 loss 1-3 110.0s plays 15/15 wall 52.9s
+[e1_eval] 2/74 00VYPLPJRYRY k=0 win 2-1 217.9s plays 43/45 wall 80.6s
+[e1_eval] 3/74 02RY9GC0U9RV k=0 win 2-0 180.0s plays 32/32 wall 39.3s
+[e1_eval] 4/74 08GPVRL99VUQ k=0 loss 1-2 212.6s plays 41/41 wall 67.3s
+[e1_eval] 5/74 099P9CJY9LYQ k=0 loss 1-1 300.0s plays 66/66 wall 175.5s
+[e1_eval] 6/74 a3674fb6151548f48a032f7e52f33336 k=0 win 1-0 180.0s plays 31/31 wall 20.0s
+[e1_eval] 7/74 aceef0a5ff024470b4b6142ec6046200 k=0 win 2-1 181.8s plays 32/32 wall 17.6s
+[e1_eval] 8/74 c4d6628de619471c853064bf81572e1c k=0 win 3-1 297.1s plays 65/65 wall 27.8s
+[e1_eval] 9/74 da49b77a85a845acb3bb9f5d5c182e9b k=0 loss 1-2 187.4s plays 37/37 wall 12.3s
+{"DONE": {"new_matches": 9, "finished": "2026-09-23 13:16:22", "engine": "royale", "skipped_unsupported": 65, "wall_s_mean": 54.8, "win": 5, "draw": 0, "loss": 4}}

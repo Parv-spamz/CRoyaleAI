@@ -1,0 +1,11 @@
+[
+  {
+    "tag": "01a7c532b0734021880cc0193097e433",
+    "role": "fallback",
+    "split": "training",
+    "attempts": [],
+    "fatal": "AssertionError()",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\deal_recovery\\run_training.py\", line 69, in main\n    rec=driver.drive(item['tag'],port=38031,seed=item['seed'],level=item['level'],\n        elixir_slack=40,tail_cap=7200,run_label=f'l72_deal_training_{attempt}',\n        verbose=False,record_every=10,record_full=True,record_plays=True,\n        drive_abilities=True,record_native=True,record_public_objects=True)\n  File \"C:\\Users\\benpe\\ClashBot\\research\\sandbox_tools\\replay_drive.py\", line 460, in drive\n    final = order_a\n    \n  File \"C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\deal_recovery\\driver_patch.py\", line 52, in recover\n    return resolve(decks,sequence(decks,plays),reset)\n  File \"C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\deal_recovery\\solver.py\", line 54, in resolve\n    state,positions=reset(order)\n                    ~~~~~^^^^^^^\n  File \"C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\deal_recovery\\driver_patch.py\", line 51, in reset\n    return state,positions(state)\n                 ~~~~~~~~~^^^^^^^\n  File \"C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\deal_recovery\\driver_patch.py\", line 35, in positions\n    assert int(state['tick'])==0\n           ^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "usable": false
+  }
+]

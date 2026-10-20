@@ -1,0 +1,56 @@
+{
+  "complete": true,
+  "replays": 20,
+  "repeats": 4,
+  "coverage": {
+    "accepted_ability_events": 61,
+    "frames": 108402,
+    "projectiles_rows": 110623,
+    "area_effects_rows": 27600,
+    "past_motion_tti_known": 69565
+  },
+  "commands": {
+    "source_commands": 1953,
+    "driven_commands": 1942,
+    "accepted_commands": 1940,
+    "skipped_commands": 11
+  },
+  "process_receipt_sha256": "03b28c9a20d2547ec8b06accaa3eb280d1122986e970315c07260b51254ae2f2",
+  "producer_report_sha256": "7607e4274775887fb6d1739a8477d3cc1370acd4b145906bee9f2ffb0da71d40",
+  "script_sha256": "6e03d1cbbe87e5c11601f42020d024419d0641e0f949cfbe5021e90063abd152",
+  "recordings": {
+    "fa25595b6e7748e0bd66912242515f97": "b430ec07c15ebb333394ced5babc85066c14b54cd8c5157f98d4244b477630d8",
+    "feeb08dc32bc446182a06d0f7767d4ea": "bf188ba34383b527d6d54067933d359ed883b9b45c2dd5d154d4434d627000b3",
+    "26c8bfe911b84feb9f36bc645227f659": "1147b3b4627581ffe5555ab9e975d4906a7132fbdaf7cc9eef63797dc088558c",
+    "f073d36c761945f5878de6e0b72d2d8d": "208ba269f4e2063245e9e4e7751efd99ed0b9e7cd7d83623011e33990d5e1b26",
+    "d867d62934d34472a06042cff4ad1a88": "80ff868748e53294a55d3c35f8f7b9c0cb5326095191c00d58fcfa089aedc4dc",
+    "0bf4641e93a443a99bc67374d659b291": "419a82852fca65e6b0ad787270d6322a7b6cee90d348ce81919b588b9ff4998c",
+    "1bd5962de052494294917c0b9b5a8c42": "2a506fa442a0500086bd55ffd95ee9125ecade407c01df3d077cb45f97d1b86c",
+    "b10b030e29fb47918b91faea867b89a0": "c03fa17b737dda0fb22933706365dd6b69ca99050ac49d4e84dac883afc27ef7",
+    "02VY8G2PJ2CP": "a041dde0a7d19fd44be1cc93b29337a498da0c4d2830985db1bf6c461daa8f4f",
+    "72980254d24c456997c8f1e02d121985": "676c6e4ead4d27ae6f2d96ea31280eb182b7b1582bc83add789b4aaf1491e5e7",
+    "09G8U0PCGJJL": "6d6db51434e337755906d996cbc32219644b070fd516d9058f1cf05b1ccc2817",
+    "112831c6755f47e6bfee870f9a09b6fc": "1a2492d2349b7d478ef3df51c26ccd23768d4bf5581c48c5df764616435e817f",
+    "00UYPL99P28R": "46cb235031ad011627aa4791a070104c931666075f0fa2d3051ea35dcdc99862",
+    "08JPVJUUVGP9": "b6530a482d3021fa239d48f2f10feeb7ca75668b073fcde3db343060e36ce832",
+    "09G9JUPP0R2C": "d15d0d61b08d660d96186c3107211767c85787424f5ebe737826c2d51fad4bfa",
+    "d9f06cd6721c4a84a3514350c41c41e0": "9042d607b8695c6f83f01e52ca2ec95e9631c990c230b2072d6b8f5175a9a909",
+    "092PPVPUY8PG": "12725fd550fbccb694ea075359022d1103b2141805ab9887dfe9263c7f64f615",
+    "08UPPVRY0P2V": "4b380c842768fd8d0e49aeae28a05870f94522194cc4b4268ec8bc6d6b821c6f",
+    "08YY89UC20R2": "ef54ef500a6ed3ef6f75a89d7af3f10a62703157dea12693ffb46f0d97146de9",
+    "02GY9GRGYG0Q": "9fa57341ffd42907c5e0f13bc12d8bd1af3265448606c130594f10e8ede73294"
+  },
+  "repeat_tags": [
+    "fa25595b6e7748e0bd66912242515f97",
+    "0bf4641e93a443a99bc67374d659b291",
+    "09G8U0PCGJJL",
+    "d9f06cd6721c4a84a3514350c41c41e0"
+  ],
+  "independent_lifetime_negative_control": true,
+  "model_predictions": 0,
+  "limitations": [
+    "Historical skipped ability commands remain skipped, not verified successes.",
+    "These exposed mechanics fixtures are not fresh model confirmation.",
+    "TTI disappearance is not verified actual live landing truth."
+  ]
+}

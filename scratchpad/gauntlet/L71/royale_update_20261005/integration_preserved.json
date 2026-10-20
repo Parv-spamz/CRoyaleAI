@@ -1,0 +1,29 @@
+{
+  "stash": "5c333e4206a9be215a27e78ea1138b2dd547fac5",
+  "archive": "preintegration_prototypes.zip",
+  "archive_sha256": "ead53bb1c8a58d5372bec9526ec48ab6314a6018248aaa7e879b9aaa12e9f783",
+  "paths": {
+    "scratchpad/gauntlet/L71/barrel_target/GATES.md": "fab8ffa86f555c11ad2cab8604ababa20a20227c71ed698aea59b09f79943b4e",
+    "scratchpad/gauntlet/L71/barrel_target/PROPOSAL.md": "0bb364c7e6f16c9103fb64402841fd269dcf030e160a73fd799273af9b8a0a32",
+    "scratchpad/gauntlet/L71/barrel_target/audit_native.py": "91174afc04467d1d59077f49b9c96ab90b0a5f261329c48f887cbb7a8c6dff29",
+    "scratchpad/gauntlet/L71/barrel_target/audit_pairs.py": "86276d654079ca2c82740ec8782b811d09fc546e4562181bcf469db227e7bdea",
+    "scratchpad/gauntlet/L71/barrel_target/diagnose_policy.py": "c67e4d8f8afd01803329aa669a3b9eced4303b541f003273a514ba70c6c23cad",
+    "scratchpad/gauntlet/L71/barrel_target/diagnose_policy_v2.py": "2f9a81b13e29fa7bc97f6d199594d9827440008ae5f89d3ffff4b826bbdf0843",
+    "scratchpad/gauntlet/L71/barrel_target/learned_target.py": "798526383b85fcb5abc4e83899f668f5a98f6f4586ecbf96d69c1cd4f456a8ae",
+    "scratchpad/gauntlet/L71/barrel_target/native_audit.json": "6acb412aa547d92b1f8d922cde524d39f5235fbdbfa45ed01a882fe71bb58a49",
+    "scratchpad/gauntlet/L71/barrel_target/native_audit.out": "37a24b2cd81290e814a9406b0037692924147418f22d468d6c13a877acd504e7",
+    "scratchpad/gauntlet/L71/barrel_target/paired_flights.json": "9b899508f04dac4b20f9f0065186d0b4472ede2e42095fee20aee86518443ac9",
+    "scratchpad/gauntlet/L71/barrel_target/r1e_fullshot.out": "67dc0d64704343436708ae1157b7ad303821fa66bab3fd8cbbee54da617b40b5",
+    "scratchpad/gauntlet/L71/barrel_target/r1e_fullshot_policy.json": "2d919aa7488e78153527b3cf15b70e4396ba9681213ea1f50cb3a8db8f06720e",
+    "scratchpad/gauntlet/L71/barrel_target/r1e_policy.json": "e540bd1235f8335bbb0e4789da591caf35d218fb07e08def3b34f7664964458b",
+    "scratchpad/gauntlet/L71/barrel_target/r1e_policy.out": "512d99d6b9e18ea545684a9aeaa1b23151491de4d8e1cc951665760a65cb8775",
+    "scratchpad/gauntlet/L71/barrel_target/test_learned_target.py": "044dbcdfd5403208d4f286ddeea5f2d57390e430528aec7da20c26e077d974a8",
+    "scratchpad/gauntlet/L71/context_teaching/GATES.md": "d8b70328aa4f749e879115783a26ef65a5a0752307599c74af9373fcfc9ffb40",
+    "scratchpad/gauntlet/L71/context_teaching/build.out": "5710942842b46a035e8cdf2dff1c1869bce4274f702e5d2e3ea55d4a266df962",
+    "scratchpad/gauntlet/L71/context_teaching/build_contexts.py": "8d8ec1c445b905d35a1d85f619e6a42d46e0b8ce2c77e0a10001a077a0f40c8c",
+    "scratchpad/gauntlet/L71/context_teaching/sampling.py": "1931644b9097dcb58c838614ecdf258c56cae37fadb78a22594d861c6076b2e8",
+    "scratchpad/gauntlet/L71/context_teaching/test_sampling.py": "2f23bcfe69bfa75c261752e89b4aa96273531bec67b89e99c989baf2f40b3163",
+    "scratchpad/gauntlet/L71/xbow_support/PROPOSAL.md": "8867be343cdb844292852225cedeb09b7c8d8e9ebfe66253f2d6ddd21c32a5d8"
+  },
+  "q3_verified_sha256": "96fe2008dea88856530ff2b8794e3243e96765d5998fc9b403fdec020752ebfe"
+}

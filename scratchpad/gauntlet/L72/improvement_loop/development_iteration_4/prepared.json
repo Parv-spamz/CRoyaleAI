@@ -1,0 +1,109 @@
+{
+  "complete": true,
+  "trainable": false,
+  "optimizer_allowed": false,
+  "counts": {
+    "training": {
+      "single_clock": {
+        "rows": 102808,
+        "replays": 1573,
+        "plays": 21187,
+        "waits": 81621,
+        "expert_rockets": 757,
+        "rocket_replays": 665
+      },
+      "double_regulation_clock": {
+        "rows": 51177,
+        "replays": 1484,
+        "plays": 19229,
+        "waits": 31948,
+        "expert_rockets": 994,
+        "rocket_replays": 800
+      },
+      "early_overtime_clock": {
+        "rows": 35674,
+        "replays": 1141,
+        "plays": 13692,
+        "waits": 21982,
+        "expert_rockets": 803,
+        "rocket_replays": 642
+      },
+      "late_overtime_clock": {
+        "rows": 24336,
+        "replays": 814,
+        "plays": 12998,
+        "waits": 11338,
+        "expert_rockets": 1298,
+        "rocket_replays": 682
+      }
+    },
+    "development": {
+      "single_clock": {
+        "rows": 26215,
+        "replays": 405,
+        "plays": 5443,
+        "waits": 20772,
+        "expert_rockets": 177,
+        "rocket_replays": 150
+      },
+      "double_regulation_clock": {
+        "rows": 12943,
+        "replays": 374,
+        "plays": 4812,
+        "waits": 8131,
+        "expert_rockets": 255,
+        "rocket_replays": 204
+      },
+      "early_overtime_clock": {
+        "rows": 9143,
+        "replays": 297,
+        "plays": 3504,
+        "waits": 5639,
+        "expert_rockets": 203,
+        "rocket_replays": 161
+      },
+      "late_overtime_clock": {
+        "rows": 6422,
+        "replays": 215,
+        "plays": 3433,
+        "waits": 2989,
+        "expert_rockets": 320,
+        "rocket_replays": 171
+      }
+    }
+  },
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_4\\prepare.py": "d2f8c1b79be9441e15905ab260ea65ceebff5ffc2a9abb511a1401e7a5980d35",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_4\\PLAN.md": "f8229b86c45450e946b81dce983654639e6d67d20f0f82ae14b3be603d8d6763",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_4\\METRICS.md": "7e077cdba4e3a264eefe53399e9ae2309fab116dcec2587991f468784ad174c5",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\match_adaptation\\prepared.json": "b4156cb9e80ba4047210ac5a8c06e68dc99c78117f9cd02dbd84e6a15a240ade",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\match_adaptation\\verified_v2.json": "b3ec98126a2d3e2c319eaf711a1d5d751cfc2b47ac8bef276b47fbb7817c6a25",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\match_adaptation\\report_v2.json": "0e6bb348e83c376832e30cc07ff1ec00fe67d5eb5242be13c4262ccfad1f6dcf",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\match_adaptation\\capabilities_verified.json": "2554489bd701c8a36d7a3310c0ca479610e385f2c65fb7a3ecf9bbba4adf01a2",
+    "icebow\\data\\bench\\match_adaptation_20261005\\rows.npz": "1ffadb6ec8a81942c6aad7742d4f30bfb6568b672b4d912e788092c52422f829",
+    "icebow\\data\\bench\\match_adaptation_20261005\\rows_v2.jsonl": "914a81572b0cb6f8cdbd2d114eecb65585f47b1a3ff7ced6d1a1ef2cde1c11f6",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\indices.npz": "e539566223e9e109b736175832fc1003a0bdce0636760e9116f495288556a8c3",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\draws.npz": "f7a66504b93a5727e31e8d62b51f71ac4592d513c0f083c5573788a8f4f1d0fe",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\prepared.json": "f2d47910c14e2f2776f5bba1ae3f33775cfcf2125b4de97d7f396d641fdd90b9",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\verified.json": "b6cf77940e59670f1787165d5d68a215e712cfc57e1611dc1e3aaf83de61af5f",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\results_verified_v2.json": "dde17a484ce0694274dbd76e99bd9d6d4b658cb6b8eea4d961b484e9b6b6dd94"
+  },
+  "schedule": "icebow\\data\\bench\\development_iteration_4_20261005\\schedule.npz",
+  "schedule_sha256": "2fdddc7ce933007a78c6670ce86325bb2ef289fe4f7002d1994d075f73d594ce",
+  "draws": 128000,
+  "phase_draws": [
+    32000,
+    32000,
+    32000,
+    32000
+  ],
+  "control_phase_draws": [
+    61563,
+    30530,
+    21382,
+    14525
+  ],
+  "original_labels_preserved": true,
+  "model_predictions": 0,
+  "optimizer_updates": 0
+}

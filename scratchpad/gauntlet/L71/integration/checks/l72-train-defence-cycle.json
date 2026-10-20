@@ -1,0 +1,13 @@
+{
+  "command": [
+    ".\\icebow\\.venv\\Scripts\\python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/diagnose_train_defence_cycle.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "TRAIN_DEFENCE_CYCLE_AUDIT_COMPLETE",
+  "matched": true,
+  "output_sha256": "d56cb48ba1f6973abe412849255804d5392b70908fa904fea8de3a9e6b6a7808",
+  "seconds": 59.63244128227234
+}

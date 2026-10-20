@@ -1,0 +1,5399 @@
+{
+  "jobs": [
+    {
+      "tag": "02f3776ec00145a094be0628d209b0ed",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_02f3776ec00145a094be0628d209b0ed.json",
+      "recording_sha256": "84a76d09768af706d4184f69926f4f4ce1987da2c0ffad449a6d42a7493836f6",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 201,
+        "side": 0,
+        "card": "knight",
+        "x": 9500,
+        "y": 500,
+        "cost": 3,
+        "elixir_before": 9.5778,
+        "hand_before": [
+          "Skeletons",
+          "Xbow",
+          "Rocket",
+          "Tesla"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 201
+      },
+      "job": {
+        "tag": "02f3776ec00145a094be0628d209b0ed",
+        "part": "part-000034.parquet",
+        "signature": "a84427eb2a883682327e840fa29f62ef44c3332c3da018cb857c1d0e5c650c12",
+        "decks": [
+          [
+            "electro-dragon-ev1",
+            "berserker-hero",
+            "elite-barbarians-ev1",
+            "skeleton-dragons",
+            "tornado",
+            "elixir-collector",
+            "barbarian-barrel",
+            "golem"
+          ],
+          [
+            "knight-ev1",
+            "skeletons",
+            "tesla-ev1",
+            "ice-wizard",
+            "the-log",
+            "tornado",
+            "rocket",
+            "x-bow"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 1,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\02f3776ec00145a094be0628d209b0ed",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "ea6eeb8c657b43d93576fabaa3b95bc5e6ceac88c4281bd5692ad7a71e5f527c",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "c10085aa494f121730ccad347a0b750a72cecdb7eb52c7b1e87d52d736f1c1d8",
+        "plays_ext.csv": "8f1ba6bda0595cd6e8e900a93ea2c1ac65648365b27decbb3ea0781d90b3c27b"
+      }
+    },
+    {
+      "tag": "03b7c567b1ae4acd8eee0232cbcecc73",
+      "split": "confirmation",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_03b7c567b1ae4acd8eee0232cbcecc73.json",
+      "recording_sha256": "dddda05e425a45818c6627cf1ca2ed2c553edb5e5aa9812bb3f0343891bf2f64",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 3,
+        "tick": 567,
+        "side": 1,
+        "card": "goblin-hut",
+        "x": 9500,
+        "y": 22500,
+        "cost": 4,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Ghost",
+          "Fireball",
+          "FirespiritHut",
+          "Berserker"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 567
+      },
+      "job": {
+        "tag": "03b7c567b1ae4acd8eee0232cbcecc73",
+        "part": "part-000019.parquet",
+        "signature": "71ac24233c46bc9fb4139ef67f330c71b62e91a5748d69f24ff78e607d786117",
+        "decks": [
+          [
+            "royal-hogs-ev1",
+            "berserker-hero",
+            "furnace-ev1",
+            "royal-ghost",
+            "goblin-hut",
+            "fireball",
+            "barbarian-barrel",
+            "electro-spirit"
+          ],
+          [
+            "witch-ev1",
+            "giant-hero",
+            "zap-ev1",
+            "heal-spirit",
+            "elixir-collector",
+            "rage",
+            "dark-prince",
+            "mini-pekka"
+          ]
+        ],
+        "strata": [
+          "versus_furnace",
+          "versus_witch"
+        ],
+        "split": "confirmation",
+        "index": 428,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\03b7c567b1ae4acd8eee0232cbcecc73",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "90a45d363fddd193978d5951df1740dd15b39c06b4d6282c35252656dd20c3ed",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "dc95bcb1649f77505436e7f8407e372a66fb1afe2fe7ff6316cadd7fe11c5ed8",
+        "plays_ext.csv": "6814eddb5e53b34b6ecabb3d4805b6e2cb457aa2c554243ad67a1215a62c1078"
+      }
+    },
+    {
+      "tag": "097bee258c3a4bb89464ba7df04dd9d4",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_097bee258c3a4bb89464ba7df04dd9d4.json",
+      "recording_sha256": "571e8e80256f68212b0d6297e0bddff08362e938124c2f0b161eed7a85eb7b86",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 2,
+        "tick": 311,
+        "side": 0,
+        "card": "knight",
+        "x": 8499,
+        "y": 500,
+        "cost": 3,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Skeletons",
+          "Xbow",
+          "Rocket",
+          "Tesla"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 311
+      },
+      "job": {
+        "tag": "097bee258c3a4bb89464ba7df04dd9d4",
+        "part": "part-000035.parquet",
+        "signature": "82019a4ad10bad275986f1ddd62a28120c6db989291a0b4f97c045cc659a08e5",
+        "decks": [
+          [
+            "elite-barbarians-ev1",
+            "ice-golem-hero",
+            "golden-knight",
+            "barbarian-barrel",
+            "three-musketeers",
+            "elixir-collector",
+            "royal-ghost",
+            "heal-spirit"
+          ],
+          [
+            "knight-ev1",
+            "skeletons",
+            "tesla-ev1",
+            "ice-wizard",
+            "the-log",
+            "tornado",
+            "rocket",
+            "x-bow"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 5,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\097bee258c3a4bb89464ba7df04dd9d4",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "6b16c5f516fa49e1971fd2ae9f77b2a6f2d2be32fa9acf4c8998e349ff8ba754",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "f4a74ef7bbc260d2e968fa48c929eb2a08e215b4c145423e7491ea73dfc70234",
+        "plays_ext.csv": "e52c386b987c822c50e86c9b616018c5bd5130838d102468fd34c3b5823becc9"
+      }
+    },
+    {
+      "tag": "0a128d17c14943c3854d1da3ea295200",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_0a128d17c14943c3854d1da3ea295200.json",
+      "recording_sha256": "ec0f7e4654a6e867a1e48d6f8a603526d15b0ae946416afc4ca10199ef78fba9",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 1,
+        "tick": 355,
+        "side": 1,
+        "card": "tesla",
+        "x": 9000,
+        "y": 22000,
+        "cost": 4,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Tornado",
+          "Skeletons",
+          "Xbow",
+          "Knight"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 355
+      },
+      "job": {
+        "tag": "0a128d17c14943c3854d1da3ea295200",
+        "part": "part-000019.parquet",
+        "signature": "15461e937cafca498eb78b439265554cc7cd2ad97812581c4219213854e880c3",
+        "decks": [
+          [
+            "knight-ev1",
+            "skeletons",
+            "tesla-ev1",
+            "ice-wizard",
+            "x-bow",
+            "tornado",
+            "the-log",
+            "rocket"
+          ],
+          [
+            "witch-ev1",
+            "berserker-hero",
+            "elite-barbarians-ev1",
+            "golem",
+            "elixir-collector",
+            "vines",
+            "skeleton-dragons",
+            "barbarian-barrel"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "icebow_vs_witch",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "versus_witch",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 7,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\0a128d17c14943c3854d1da3ea295200",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "fc340a4e1c207b5a314d9f1a7cce216fff89ca6c2db8e83de18b796e451c6099",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "1071e12a756bdacef8b0a739687d3f820f4aee646bf63dab0d30bdb0c125a599",
+        "plays_ext.csv": "e1d7e60904be9de74682cad1e0a5c7290c478e1552ccea7b09a1cfa84e48f57f"
+      }
+    },
+    {
+      "tag": "0b50a7cbb3f04286918874afa555dcfd",
+      "split": "development",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_0b50a7cbb3f04286918874afa555dcfd.json",
+      "recording_sha256": "c6857a7ebb24215f0143b3492697dc0f92df74b9ecd0b430de37314ab43dea1a",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 1,
+        "tick": 215,
+        "side": 1,
+        "card": "archers",
+        "x": 10500,
+        "y": 24499,
+        "cost": 3,
+        "elixir_before": 9.827,
+        "hand_before": [
+          "Log",
+          "Knight",
+          "Xbow",
+          "ElectroSpirit"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 215
+      },
+      "job": {
+        "tag": "0b50a7cbb3f04286918874afa555dcfd",
+        "part": "part-000020.parquet",
+        "signature": "d7b18f0c6b134611b61863477460767a33122c32b67c532e81b8ddec853378e7",
+        "decks": [
+          [
+            "tesla-ev1",
+            "knight-hero",
+            "archers-ev1",
+            "skeletons",
+            "x-bow",
+            "electro-spirit",
+            "the-log",
+            "fireball"
+          ],
+          [
+            "witch-ev1",
+            "lumberjack",
+            "mini-pekka-hero",
+            "elite-barbarians",
+            "royal-delivery",
+            "hog-rider",
+            "the-log",
+            "mirror"
+          ]
+        ],
+        "strata": [
+          "versus_witch",
+          "xbow_deck"
+        ],
+        "split": "development",
+        "index": 544,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\0b50a7cbb3f04286918874afa555dcfd",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "6150834ff938261905e0a5118fac0ba899648c35f8c9b39785a59cf42107e813",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "54aafb2431dc5cf672148bda5210f3816a7c64fea3ab05f7ebe0e4aa4790ac4e",
+        "plays_ext.csv": "9b8df940fca1d3ec3451c8ab4b2f14f2f11cc1f791ef7659e76a58c36099ab6f"
+      }
+    },
+    {
+      "tag": "0c67bf65aaaa461189430dd37a7bc233",
+      "split": "confirmation",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_0c67bf65aaaa461189430dd37a7bc233.json",
+      "recording_sha256": "ed024b3048a4741793cf54f5932ec294583a8e8a418e6bd0c8880976942b71b0",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 2,
+        "tick": 363,
+        "side": 1,
+        "card": "berserker",
+        "x": 8499,
+        "y": 31499,
+        "cost": 2,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Zap",
+          "ThreeMusketeers",
+          "MinionHorde",
+          "RageBarbarian"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 363
+      },
+      "job": {
+        "tag": "0c67bf65aaaa461189430dd37a7bc233",
+        "part": "part-000011.parquet",
+        "signature": "6b8c41992845f4fc55f2ee2115f059508d96e2d23406730b61913314985fe516",
+        "decks": [
+          [
+            "lumberjack-ev1",
+            "berserker-hero",
+            "minion-horde-ev1",
+            "rune-giant",
+            "elixir-collector",
+            "heal-spirit",
+            "zap",
+            "three-musketeers"
+          ],
+          [
+            "firecracker-ev1",
+            "knight-hero",
+            "mortar-ev1",
+            "ice-spirit",
+            "goblins",
+            "the-log",
+            "rocket",
+            "tornado"
+          ]
+        ],
+        "strata": [
+          "rocket_deck",
+          "rocket_tornado_deck"
+        ],
+        "split": "confirmation",
+        "index": 369,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\0c67bf65aaaa461189430dd37a7bc233",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "f97373960ac90f5239c0b7252f5f399220aca4babfd032e078f3df1abc6a3147",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "6c3b1d076a04dfac99d5a3af75d896e6f9384941fd7c2a2c852f750d58c23ca4",
+        "plays_ext.csv": "81df8f8d28244585967900aa8ea2609b03f8056eb2dd83115a0b9c2a54dcd2f5"
+      }
+    },
+    {
+      "tag": "0cb8fa88758b4d99bc2016e16c7bbabc",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_0cb8fa88758b4d99bc2016e16c7bbabc.json",
+      "recording_sha256": "9455796f78e2efe102b02d0c90bb0f09a80d41ac76dffa9584709523d8455ec6",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 3,
+        "tick": 463,
+        "side": 1,
+        "card": "ice-wizard",
+        "x": 9500,
+        "y": 21500,
+        "cost": 3,
+        "elixir_before": 9.848,
+        "hand_before": [
+          "Tornado",
+          "Skeletons",
+          "Xbow",
+          "Tesla"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 463
+      },
+      "job": {
+        "tag": "0cb8fa88758b4d99bc2016e16c7bbabc",
+        "part": "part-000000.parquet",
+        "signature": "2cc3146b1f36f1d840356596a261cdf5b7752eb2bc9a67a74cfb7e7ddb3e8c46",
+        "decks": [
+          [
+            "knight-ev1",
+            "skeletons",
+            "tesla-ev1",
+            "ice-wizard",
+            "the-log",
+            "tornado",
+            "rocket",
+            "x-bow"
+          ],
+          [
+            "elite-barbarians-ev1",
+            "berserker-hero",
+            "electro-dragon-ev1",
+            "golem",
+            "barbarian-barrel",
+            "skeleton-dragons",
+            "tornado",
+            "elixir-collector"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 8,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\0cb8fa88758b4d99bc2016e16c7bbabc",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "3f090e8f36de9652236f4bced9ef8d6a937510603598f0f6de4a0d7bff72b228",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "13c10d5c371f5da15fc9c27bd5c4b12a5ada11f160640498d503518100df3e20",
+        "plays_ext.csv": "7d31d721dc6a3529ffb83de9cddea23bfcc37ee0741ca6b0b878b33bc0531bf8"
+      }
+    },
+    {
+      "tag": "0f592090a11a4679891580984b531743",
+      "split": "confirmation",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_0f592090a11a4679891580984b531743.json",
+      "recording_sha256": "eb0a1187369a90e3a9efcba5505ca80f484e09fe1e9673f8aa30bd9d6b4764cc",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 202,
+        "side": 0,
+        "card": "skeletons",
+        "x": 9501,
+        "y": 7501,
+        "cost": 1,
+        "elixir_before": 9.5956,
+        "hand_before": [
+          "Firecracker",
+          "Log",
+          "ElectroSpirit",
+          "HogRider"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 202
+      },
+      "job": {
+        "tag": "0f592090a11a4679891580984b531743",
+        "part": "part-000020.parquet",
+        "signature": "62558789b6b7ce2a30fc015b62fe64582838f6974d5a420fe9b7369c0e2b1299",
+        "decks": [
+          [
+            "zap-ev1",
+            "mini-pekka-hero",
+            "giant-hero",
+            "witch",
+            "rage",
+            "elixir-collector",
+            "heal-spirit",
+            "dark-prince"
+          ],
+          [
+            "firecracker-ev1",
+            "mighty-miner",
+            "cannon-ev1",
+            "hog-rider",
+            "earthquake",
+            "skeletons",
+            "electro-spirit",
+            "the-log"
+          ]
+        ],
+        "strata": [
+          "versus_witch"
+        ],
+        "split": "confirmation",
+        "index": 253,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\0f592090a11a4679891580984b531743",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "5873809673793051c1f7922ae9ded9958324bfb98cae31589cf5a38d71f0dd12",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "62e0f4b304e36179a5744715747a290bd9d9d06a60f275e4d672d1c1bc05f1a2",
+        "plays_ext.csv": "a56ef2fb317ff079c2cbb808fb393a850a9eb7e30b920376a0981eaae9e3703e"
+      }
+    },
+    {
+      "tag": "13f41783d44b43bb9ac36ee7fde9c181",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_13f41783d44b43bb9ac36ee7fde9c181.json",
+      "recording_sha256": "903249a28ec88c5480f955136b882e8233ca772740977287faaff2e20f52d9af",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 213,
+        "side": 0,
+        "card": "heal-spirit",
+        "x": 9501,
+        "y": 501,
+        "cost": 1,
+        "elixir_before": 9.7914,
+        "hand_before": [
+          "AngryBarbarians",
+          "IceGolemite",
+          "ThreeMusketeers",
+          "Assassin"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 213
+      },
+      "job": {
+        "tag": "13f41783d44b43bb9ac36ee7fde9c181",
+        "part": "part-000000.parquet",
+        "signature": "194a0a57448ff630b03d2f3bb7a081dadd00b91133e616da5ab8ecb95726a1bd",
+        "decks": [
+          [
+            "knight-ev1",
+            "skeletons",
+            "tesla-ev1",
+            "ice-wizard",
+            "the-log",
+            "tornado",
+            "rocket",
+            "x-bow"
+          ],
+          [
+            "elite-barbarians-ev1",
+            "golden-knight",
+            "zap-ev1",
+            "ice-golem",
+            "bandit",
+            "three-musketeers",
+            "heal-spirit",
+            "elixir-collector"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 12,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\13f41783d44b43bb9ac36ee7fde9c181",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "a6707fc82ec74df41221094d2448d84786cd8f21924a32aa1fa17f6937e1be9f",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "68bd330363b13f610afd36c30bf5b25861472fa7316a23cfa0e1bcd809a8f00f",
+        "plays_ext.csv": "450820a27cc5dbdd55ccff62228f450de29f9a29af78cc346b48b72731ac0866"
+      }
+    },
+    {
+      "tag": "148359fb8b0146669d68f03600c09086",
+      "split": "confirmation",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_148359fb8b0146669d68f03600c09086.json",
+      "recording_sha256": "5cf4af5821d31d5398fc9a5a79cfaf46fb93556b46d049c36be8ddbd8d361519",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 6,
+        "tick": 847,
+        "side": 0,
+        "card": "elixir-golem",
+        "x": 2499,
+        "y": 14500,
+        "cost": 3,
+        "elixir_before": 6.879,
+        "hand_before": [
+          "Arrows",
+          "Rage",
+          "Golem",
+          "DarkWitch"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 847
+      },
+      "job": {
+        "tag": "148359fb8b0146669d68f03600c09086",
+        "part": "part-000019.parquet",
+        "signature": "4664d5917e5c71410c9f6778610ec28af2ed9c4b3042041f76fd3b7dfd6609eb",
+        "decks": [
+          [
+            "wizard-ev1",
+            "giant-hero",
+            "minion-horde-ev1",
+            "mini-pekka",
+            "rage",
+            "elixir-collector",
+            "dark-prince",
+            "sparky"
+          ],
+          [
+            "witch-ev1",
+            "skeleton-king",
+            "inferno-dragon-ev1",
+            "golem",
+            "elixir-golem",
+            "night-witch",
+            "rage",
+            "arrows"
+          ]
+        ],
+        "strata": [
+          "versus_night-witch",
+          "versus_witch"
+        ],
+        "split": "confirmation",
+        "index": 536,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\148359fb8b0146669d68f03600c09086",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "a7906ce321e39a81d9514bc0547680772b4622ef548dc11e18ac0687e66e38ec",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "9e70e2e286bd6dfd4a5bdaf2b89645a0a87abfc9b58d4703076d8af5af8ef747",
+        "plays_ext.csv": "d7ff76b0c465aafde5249c487baed4d4989c1642e9b7a3667a09950671168978"
+      }
+    },
+    {
+      "tag": "1c79c28c57e8424f86b35b2ed7f4fab1",
+      "split": "development",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_1c79c28c57e8424f86b35b2ed7f4fab1.json",
+      "recording_sha256": "2a495f57323187ca57fda96ca8b579d921838207753c7744fe0d221354a36917",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 2,
+        "tick": 315,
+        "side": 0,
+        "card": "inferno-dragon",
+        "x": 9500,
+        "y": 500,
+        "cost": 4,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Bowler",
+          "Tornado",
+          "BarbLog",
+          "Freeze"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 315
+      },
+      "job": {
+        "tag": "1c79c28c57e8424f86b35b2ed7f4fab1",
+        "part": "part-000035.parquet",
+        "signature": "c31aea98c592ce0b543ccd4356c41cb13e1d769689679b2065e38948667d09ab",
+        "decks": [
+          [
+            "skeletons-ev1",
+            "berserker-hero",
+            "giant-snowball-ev1",
+            "ice-spirit",
+            "x-bow",
+            "electro-spirit",
+            "elixir-collector",
+            "musketeer"
+          ],
+          [
+            "inferno-dragon-ev1",
+            "knight-hero",
+            "baby-dragon-ev1",
+            "bowler",
+            "freeze",
+            "barbarian-barrel",
+            "balloon",
+            "tornado"
+          ]
+        ],
+        "strata": [
+          "xbow_deck"
+        ],
+        "split": "development",
+        "index": 308,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\1c79c28c57e8424f86b35b2ed7f4fab1",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "3513c2b2d7ab5f4f53648380c871fed1724fbd62a7dc8dd76e31b1c01bbe2af4",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "8765f900de34096078f116ca3d40f6f2fdff653f42279f7bc37f5054d534fcd2",
+        "plays_ext.csv": "dece0ccdb8d54f8348cb45305d686b7cd90e5c8153fc9fcb988092275a726412"
+      }
+    },
+    {
+      "tag": "203d3b9e5c9349c0b04ecbd24552786c",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "rejected_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_203d3b9e5c9349c0b04ecbd24552786c.json",
+      "recording_sha256": "02aab26db67c532dd8769dc7ed21bc5e40600509d2c1be1638ba30b119808ae9",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 1,
+        "tick": 223,
+        "side": 0,
+        "card": "ice-wizard",
+        "x": 9500,
+        "y": 500,
+        "cost": 3,
+        "elixir_before": 9.9694,
+        "hand_before": [
+          "Skeletons",
+          "Xbow",
+          "Rocket",
+          "Tesla"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 223
+      },
+      "job": {
+        "tag": "203d3b9e5c9349c0b04ecbd24552786c",
+        "part": "part-000015.parquet",
+        "signature": "ac8112d169140596fa5285951d49d68f8b9c0f4567def6f89d50f36b82d081d0",
+        "decks": [
+          [
+            "elite-barbarians-ev1",
+            "monk",
+            "archers-ev1",
+            "rage",
+            "knight",
+            "elixir-collector",
+            "three-musketeers",
+            "heal-spirit"
+          ],
+          [
+            "knight-ev1",
+            "skeletons",
+            "tesla-ev1",
+            "ice-wizard",
+            "the-log",
+            "tornado",
+            "rocket",
+            "x-bow"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 18,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\203d3b9e5c9349c0b04ecbd24552786c",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "3f9c578a0714a3cc7ce6a4701e140a75262aa2db98d8080100bb8635666d0967",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "a30fcadce0e71944f4cf32c7d919bad47e091f2fdb917c3fb21fab9c6ef4051e",
+        "plays_ext.csv": "1f5b151db9991780ca0c8d4b0202a6238bcc1a5a03dd661b8ad54db9303b3773"
+      }
+    },
+    {
+      "tag": "217bd453b36e4f8b8b554e64972a2034",
+      "split": "development",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_217bd453b36e4f8b8b554e64972a2034.json",
+      "recording_sha256": "f20bfd7edc7defd61a3a1cb2dec2db9ae6b2a935011b9587f3535325b8dd1612",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 2,
+        "tick": 337,
+        "side": 1,
+        "card": "musketeer",
+        "x": 499,
+        "y": 30499,
+        "cost": 4,
+        "elixir_before": 9.9986,
+        "hand_before": [
+          "Skeletons",
+          "IceSpirits",
+          "Log",
+          "Fireball"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 337
+      },
+      "job": {
+        "tag": "217bd453b36e4f8b8b554e64972a2034",
+        "part": "part-000038.parquet",
+        "signature": "70471706e92aa4a6aace1b85be162d46a26443d8e4ac26e5b8b0cb8d6b8264df",
+        "decks": [
+          [
+            "skeletons-ev1",
+            "musketeer-hero",
+            "cannon-ev1",
+            "ice-spirit",
+            "hog-rider",
+            "fireball",
+            "the-log",
+            "ice-golem"
+          ],
+          [
+            "witch-ev1",
+            "giant-hero",
+            "valkyrie-hero",
+            "night-witch",
+            "arrows",
+            "mini-pekka",
+            "rage",
+            "elixir-collector"
+          ]
+        ],
+        "strata": [
+          "versus_night-witch",
+          "versus_witch"
+        ],
+        "split": "development",
+        "index": 558,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\217bd453b36e4f8b8b554e64972a2034",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "2ba1ffc94c4593b4f248f9d07b50846dff2980ba21bffc1fbcf5eb222dd8deef",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "828cda2ee3927ed91c7075940629665ac987d108facf0792335be4073737d4e2",
+        "plays_ext.csv": "6daf2b73b10e9f8b09e5acfea60bb5f932517b52d20d698d107511ff57bbcda2"
+      }
+    },
+    {
+      "tag": "24752a2bac314b86b41a251562f8557f",
+      "split": "confirmation",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_24752a2bac314b86b41a251562f8557f.json",
+      "recording_sha256": "2495d3f47a47588fafc4b37dd383adff41c7b2afb3277f84690a6a34fb6471b1",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 135,
+        "side": 0,
+        "card": "wall-breakers",
+        "x": 9500,
+        "y": 14500,
+        "cost": 2,
+        "elixir_before": 8.403,
+        "hand_before": [
+          "BlowdartGoblin",
+          "MightyMiner",
+          "Log",
+          "Cannon"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 135
+      },
+      "job": {
+        "tag": "24752a2bac314b86b41a251562f8557f",
+        "part": "part-000044.parquet",
+        "signature": "4d4d9279dd99950153978a4b3ed918dd37f9026204a0231e57e35c76c0226662",
+        "decks": [
+          [
+            "inferno-dragon-ev1",
+            "balloon-hero",
+            "goblin-cage-ev1",
+            "zap",
+            "ice-golem",
+            "fireball",
+            "mega-minion",
+            "miner"
+          ],
+          [
+            "dart-goblin-ev1",
+            "mighty-miner",
+            "goblin-barrel-ev1",
+            "the-log",
+            "cannon",
+            "electro-spirit",
+            "wall-breakers",
+            "mirror"
+          ]
+        ],
+        "strata": [],
+        "split": "confirmation",
+        "index": 61,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\24752a2bac314b86b41a251562f8557f",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "3d95150a21a3d236ab97cc374c488c1d4fcd8110d823698f49113850bcbe0508",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "3d6945772adef4af631c64e3fd995a769245422b206f5c6ff8a2d120d2d350fa",
+        "plays_ext.csv": "8d0aa0bfdfc3ad1edc0ffdc074cd6d5e1737c9992a31a081f37bff6d0ebdff18"
+      }
+    },
+    {
+      "tag": "346f992be3074c09ac5c46108dac1984",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_346f992be3074c09ac5c46108dac1984.json",
+      "recording_sha256": "526e9223fccf09a1e41c9c3cb0e04bc15e19b89448c8a22130788aa25f93516f",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 187,
+        "side": 1,
+        "card": "barbarian-barrel",
+        "x": 3500,
+        "y": 17500,
+        "cost": 2,
+        "elixir_before": 9.3286,
+        "hand_before": [
+          "ElectroDragon",
+          "Minions",
+          "Golem",
+          "AngryBarbarians"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 187
+      },
+      "job": {
+        "tag": "346f992be3074c09ac5c46108dac1984",
+        "part": "part-000003.parquet",
+        "signature": "c6b5db2d7b8c1734f1fea9dba208b415916e6230d1e2dfb323201bf80d38a3a4",
+        "decks": [
+          [
+            "elite-barbarians-ev1",
+            "barbarian-barrel-hero",
+            "electro-dragon-ev1",
+            "golem",
+            "elixir-collector",
+            "lumberjack",
+            "minions",
+            "tornado"
+          ],
+          [
+            "tesla-ev1",
+            "skeletons",
+            "knight-ev1",
+            "rocket",
+            "x-bow",
+            "ice-wizard",
+            "tornado",
+            "the-log"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 32,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\346f992be3074c09ac5c46108dac1984",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "a0fe3ac698f3de232aa7baeb552d0027903ccbb0134bc2fa2aa9c49043ac225e",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "3ef9b242bea2c5c52b6ef611ceda2eb8feae2492030b68f55abf9e5039142882",
+        "plays_ext.csv": "fcc93cc50918e9cf83cb4053318861e6605a92bf4ef251c1b6b9a16884c582c3"
+      }
+    },
+    {
+      "tag": "3c1e9d4472914845aa413e2abae010f9",
+      "split": "confirmation",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_3c1e9d4472914845aa413e2abae010f9.json",
+      "recording_sha256": "0ef5f7f51c699e72a9619b4a303f356b296a458a562a6f1e95b4ac67e2126be3",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 1,
+        "tick": 231,
+        "side": 0,
+        "card": "rage",
+        "x": 14500,
+        "y": 26500,
+        "cost": 2,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "ElixirGolem",
+          "SkeletonKing",
+          "Skeletons",
+          "Arrows"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 231
+      },
+      "job": {
+        "tag": "3c1e9d4472914845aa413e2abae010f9",
+        "part": "part-000028.parquet",
+        "signature": "f8203a5064360dc7065448a8e07b5290b48373002682eab0b03f252c1d7a4969",
+        "decks": [
+          [
+            "goblin-drill-ev1",
+            "berserker-hero",
+            "giant-snowball-ev1",
+            "skeletons",
+            "goblin-demolisher",
+            "cannon",
+            "poison",
+            "phoenix"
+          ],
+          [
+            "skeletons-ev1",
+            "skeleton-king",
+            "witch-ev1",
+            "rage",
+            "elixir-collector",
+            "elixir-golem",
+            "arrows",
+            "night-witch"
+          ]
+        ],
+        "strata": [
+          "versus_night-witch",
+          "versus_witch"
+        ],
+        "split": "confirmation",
+        "index": 522,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\3c1e9d4472914845aa413e2abae010f9",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "17b773e0a54bf76499edcc90fdb515cb33742956cfc8a27462f8dcc934350ece",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "7897e499a6d5fc5ccbfe8391e7b24032718f06c2f99296de47df3fa2d5dc4a54",
+        "plays_ext.csv": "6ffb46a5f14fc0c983f0b563b873f04c0cee2f9df682708231e0924641ae5a36"
+      }
+    },
+    {
+      "tag": "40471282469242aeb861e6571a17209e",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_40471282469242aeb861e6571a17209e.json",
+      "recording_sha256": "e6a842ea0bdcff0ac1b0237734feb8b7bfb3ba9dc7ad25124e717b4b4d8c79e1",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 181,
+        "side": 0,
+        "card": "knight",
+        "x": 9501,
+        "y": 501,
+        "cost": 3,
+        "elixir_before": 9.2218,
+        "hand_before": [
+          "Skeletons",
+          "Xbow",
+          "Rocket",
+          "Tesla"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 181
+      },
+      "job": {
+        "tag": "40471282469242aeb861e6571a17209e",
+        "part": "part-000015.parquet",
+        "signature": "f0f56ac0527ff62c024f81cdb0d561ab56f40cf817674718f012abe41bd6c1a8",
+        "decks": [
+          [
+            "elite-barbarians-ev1",
+            "monk",
+            "archers-ev1",
+            "rage",
+            "knight",
+            "elixir-collector",
+            "three-musketeers",
+            "heal-spirit"
+          ],
+          [
+            "knight-ev1",
+            "skeletons",
+            "tesla-ev1",
+            "ice-wizard",
+            "the-log",
+            "tornado",
+            "rocket",
+            "x-bow"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 39,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\40471282469242aeb861e6571a17209e",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "a184ae7ac41b0c86bb6b506559923161e05eff31405378dc6e4017321e5f1dc7",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "58d832590f3403ce7f5aef7e58dfc13b24dca9a53e0d53578452f2b1554a3b04",
+        "plays_ext.csv": "29d1b63bf41639eb89b9223074ad933e47e1e99dace649ef94ca96e63a6a8af8"
+      }
+    },
+    {
+      "tag": "4809e34081164cb4910409b430865099",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "rejected_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_4809e34081164cb4910409b430865099.json",
+      "recording_sha256": "62209d1d7923d84509f3f86ea019b5746a883360987a5d074239d4ff9117a9cb",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 3,
+        "tick": 431,
+        "side": 0,
+        "card": "electro-dragon",
+        "x": 9500,
+        "y": 500,
+        "cost": 5,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Elixir Collector",
+          "Golem",
+          "SkeletonDragons",
+          "BarbLog"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 431
+      },
+      "job": {
+        "tag": "4809e34081164cb4910409b430865099",
+        "part": "part-000047.parquet",
+        "signature": "2850a2191dc032d6e02e50a1ceb22b89529ac7e47d55cdd10f57ba1c7f25d6e6",
+        "decks": [
+          [
+            "knight-ev1",
+            "tornado",
+            "tesla-ev1",
+            "ice-wizard",
+            "rocket",
+            "skeletons",
+            "x-bow",
+            "the-log"
+          ],
+          [
+            "electro-dragon-ev1",
+            "berserker-hero",
+            "elite-barbarians-ev1",
+            "skeleton-dragons",
+            "tornado",
+            "elixir-collector",
+            "barbarian-barrel",
+            "golem"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 42,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\4809e34081164cb4910409b430865099",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "d156fb64be52e7cb6e8240057db445ee62ebe2af01c2b0314c29a8c63a4e875f",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "ba2271d42c67bc25de9b4e2a0303cc1c3c5cce90ede5bfea3d9f7f0371bf15d3",
+        "plays_ext.csv": "f3216bbb650895276ab10bcb36d29d7ebd70e4acb6c0941f572db205cc9b1d81"
+      }
+    },
+    {
+      "tag": "488af28ae0f04dc6a17bb44358af84c4",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_488af28ae0f04dc6a17bb44358af84c4.json",
+      "recording_sha256": "ace6d6ac88d6751bfd86c486c1816d83ff2f09bcd49a881279a7ba4cc7af1f73",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 1,
+        "tick": 382,
+        "side": 0,
+        "card": "knight",
+        "x": 500,
+        "y": 1501,
+        "cost": 3,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Skeletons",
+          "Xbow",
+          "Rocket",
+          "Tesla"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 382
+      },
+      "job": {
+        "tag": "488af28ae0f04dc6a17bb44358af84c4",
+        "part": "part-000048.parquet",
+        "signature": "857b96e6e5874d79c65d690ace5d314478340831fe8b78b562911ebf70c0b586",
+        "decks": [
+          [
+            "elite-barbarians-ev1",
+            "golden-knight",
+            "zap-ev1",
+            "ice-golem",
+            "bandit",
+            "three-musketeers",
+            "heal-spirit",
+            "elixir-collector"
+          ],
+          [
+            "knight-ev1",
+            "skeletons",
+            "tesla-ev1",
+            "tornado",
+            "rocket",
+            "x-bow",
+            "ice-wizard",
+            "the-log"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 43,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\488af28ae0f04dc6a17bb44358af84c4",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "c074ae60bbc8c22e9845bba5d0c1e6651ebab770a1385af61c67fc4c1be1ab90",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "62949524172245a2629eac4f7401f308f6cb184554e7c5b23ed890a33acf6826",
+        "plays_ext.csv": "284aef1d439df5459f06e17d0530e4e746c29adcaa3543a45960ba324e96c3ba"
+      }
+    },
+    {
+      "tag": "4a3f7498dd194acd89d32ca77159bf2a",
+      "split": "confirmation",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_4a3f7498dd194acd89d32ca77159bf2a.json",
+      "recording_sha256": "bd29873041b1738332a347c72c1ef4aacf6c493d7099a2d48403382e0d5e96bc",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 185,
+        "side": 0,
+        "card": "giant-snowball",
+        "x": 12500,
+        "y": 22500,
+        "cost": 2,
+        "elixir_before": 9.293,
+        "hand_before": [
+          "ElectroSpirit",
+          "Musketeer",
+          "Skeletons",
+          "Berserker"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 185
+      },
+      "job": {
+        "tag": "4a3f7498dd194acd89d32ca77159bf2a",
+        "part": "part-000022.parquet",
+        "signature": "99fd8d417bdc196e7cc9db04ca5a80395fc57fab0990f3633298288a74e0eab6",
+        "decks": [
+          [
+            "mega-knight-ev1",
+            "prince",
+            "firecracker-ev1",
+            "zap",
+            "bats",
+            "goblin-gang",
+            "wall-breakers",
+            "miner"
+          ],
+          [
+            "giant-snowball-ev1",
+            "berserker-hero",
+            "skeletons-ev1",
+            "x-bow",
+            "musketeer",
+            "ice-spirit",
+            "electro-spirit",
+            "elixir-collector"
+          ]
+        ],
+        "strata": [
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 580,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\4a3f7498dd194acd89d32ca77159bf2a",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "0d646aee84675ad86a6e2e2ec8bdb76cee1799f8805a61b08d872f32bf35d80d",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "e57c1fd03c5391ab3752b620d4a522b2fdf0ce9f52560cca77c91048705e241e",
+        "plays_ext.csv": "95c26cdeb3aeb710b0c02f42a9f3244315b975ddd98db535bb94db3accfc5905"
+      }
+    },
+    {
+      "tag": "4f7fed54033c462391b10bf8467e58b8",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_4f7fed54033c462391b10bf8467e58b8.json",
+      "recording_sha256": "fc09495053a978599df9d9e8606830b46ab90d4604e4b3cfab074436b24a70f9",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 1,
+        "tick": 486,
+        "side": 0,
+        "card": "zap",
+        "x": 3500,
+        "y": 25500,
+        "cost": 2,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "AngryBarbarians",
+          "ThreeMusketeers",
+          "Valkyrie",
+          "Berserker"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 486
+      },
+      "job": {
+        "tag": "4f7fed54033c462391b10bf8467e58b8",
+        "part": "part-000048.parquet",
+        "signature": "4a619d0523c93cc66d231250fa8eec3f8903c5127d19916f1dce1b24e7ecbd8b",
+        "decks": [
+          [
+            "tesla-ev1",
+            "knight-hero",
+            "skeletons-ev1",
+            "tornado",
+            "ice-wizard",
+            "x-bow",
+            "rocket",
+            "the-log"
+          ],
+          [
+            "elite-barbarians-ev1",
+            "valkyrie-hero",
+            "berserker-hero",
+            "zap",
+            "three-musketeers",
+            "elixir-collector",
+            "heal-spirit",
+            "ice-golem"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 48,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\4f7fed54033c462391b10bf8467e58b8",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "69d1637969796dbbdaf9c58efb4e092870682dda459149b727fd7e9f6e15923a",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "2668f9ec53ed468c44ddb59451f15a6c40f865ca1a72e1fbd449389fefce4e09",
+        "plays_ext.csv": "f5122480c6fc5bb2cb48196f6d76355ee626b7a9f842c51ef5bb2618db94437a"
+      }
+    },
+    {
+      "tag": "5111482055f448c1b84ad1f035d7d5c6",
+      "split": "confirmation",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_5111482055f448c1b84ad1f035d7d5c6.json",
+      "recording_sha256": "ff70188c03c10e736f8d4884703a698b39abd79502391c2bae04b4c288c96a47",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 2,
+        "tick": 235,
+        "side": 1,
+        "card": "berserker",
+        "x": 3499,
+        "y": 22499,
+        "cost": 2,
+        "elixir_before": 8.183,
+        "hand_before": [
+          "ElectroSpirit",
+          "Skeletons",
+          "IceSpirits",
+          "Xbow"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 235
+      },
+      "job": {
+        "tag": "5111482055f448c1b84ad1f035d7d5c6",
+        "part": "part-000018.parquet",
+        "signature": "8bb1fab34cdf1dd9aec065d07466b89f7376f1a9584d4916f99c82330799a837",
+        "decks": [
+          [
+            "skeletons-ev1",
+            "berserker-hero",
+            "giant-snowball-ev1",
+            "ice-spirit",
+            "x-bow",
+            "electro-spirit",
+            "elixir-collector",
+            "musketeer"
+          ],
+          [
+            "giant-snowball-ev1",
+            "mega-minion-hero",
+            "musketeer-ev1",
+            "skeleton-army",
+            "arrows",
+            "hog-rider",
+            "spear-goblins",
+            "x-bow"
+          ]
+        ],
+        "strata": [
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 557,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\5111482055f448c1b84ad1f035d7d5c6",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "c8665163ac9afa9d6dd14f87dfd107ce521c5cb13d978ff98af2afbc4e16938d",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "604e0d846f167b3641df187e8c05af2933f4f79a69d6c7af11b5603d86a1f650",
+        "plays_ext.csv": "ad1a10f96114f510fa2df3bd54b1e1c3d6d9c448e365d2ca70724ef0e834299f"
+      }
+    },
+    {
+      "tag": "511962d005fe49b498e6af92a84e3066",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_511962d005fe49b498e6af92a84e3066.json",
+      "recording_sha256": "d690d25ca54891519ab05db6f3ce086e745bb75ed1c9e92fd400f2bf954b5036",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 1,
+        "tick": 242,
+        "side": 0,
+        "card": "the-log",
+        "x": 3500,
+        "y": 14500,
+        "cost": 2,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Skeletons",
+          "Xbow",
+          "Rocket",
+          "Tesla"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 242
+      },
+      "job": {
+        "tag": "511962d005fe49b498e6af92a84e3066",
+        "part": "part-000024.parquet",
+        "signature": "705a8b46edb3668b441fb54c00c9e271cfe314f1cc5a7b9a510f4a9b0c3a281d",
+        "decks": [
+          [
+            "elite-barbarians-ev1",
+            "monk",
+            "knight-ev1",
+            "rage",
+            "archers",
+            "elixir-collector",
+            "three-musketeers",
+            "heal-spirit"
+          ],
+          [
+            "knight-ev1",
+            "skeletons",
+            "tesla-ev1",
+            "ice-wizard",
+            "the-log",
+            "tornado",
+            "rocket",
+            "x-bow"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 50,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\511962d005fe49b498e6af92a84e3066",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "a2ded1642737878448510d86b8e5984499d81796a26ec869c19d077e47e9b0f2",
+        "repeat": true
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "1e8cc16d4bc16667ad22877d4f512faf28fd81185fc3ab52dc02baff647c6287",
+        "plays_ext.csv": "35c1e699488f9c7e852775a06d58e7201b6f0fb9dc6871c50b50f191e4868fbb"
+      }
+    },
+    {
+      "tag": "52d42408fd934f5ca851c53a27adbad6",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_52d42408fd934f5ca851c53a27adbad6.json",
+      "recording_sha256": "c6195d705d7174aa5ae9b00685d9bbb7df36de7bad4dd2284dfadf3fbfeb6506",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 366,
+        "side": 1,
+        "card": "the-log",
+        "x": 14500,
+        "y": 17500,
+        "cost": 2,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Tornado",
+          "Skeletons",
+          "Xbow",
+          "Knight"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 366
+      },
+      "job": {
+        "tag": "52d42408fd934f5ca851c53a27adbad6",
+        "part": "part-000012.parquet",
+        "signature": "52fe813b2b3f31a7f73235d06a4be91d80ed921964bd0fb55f179ed01eb1c5dd",
+        "decks": [
+          [
+            "skeletons-ev1",
+            "knight-hero",
+            "tesla-ev1",
+            "ice-wizard",
+            "the-log",
+            "rocket",
+            "x-bow",
+            "tornado"
+          ],
+          [
+            "electro-dragon-ev1",
+            "berserker-hero",
+            "elite-barbarians-ev1",
+            "golem",
+            "skeleton-dragons",
+            "tornado",
+            "barbarian-barrel",
+            "elixir-collector"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 51,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\52d42408fd934f5ca851c53a27adbad6",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "ace40d30c2708dcea53e8107f6af768ab394e74b8ecf43f6f87acf6e739f5fbc",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "5e222ee0cbbcf1bafb4d4a962d99e4e728a223cd6f63a7b13e3a0a7fe211ff47",
+        "plays_ext.csv": "8049d1084ed4f17c2a53d127aa77f887ea75cfbbb907649b4ed1576745ffe350"
+      }
+    },
+    {
+      "tag": "5d59ab7ed1084312a770fc82117a5222",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_5d59ab7ed1084312a770fc82117a5222.json",
+      "recording_sha256": "6982733935748a763a0b9b149fa0fce2a9eb0109bf0ebc8b537a9fc989af4b3f",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 204,
+        "side": 0,
+        "card": "knight",
+        "x": 9501,
+        "y": 501,
+        "cost": 3,
+        "elixir_before": 9.6312,
+        "hand_before": [
+          "Skeletons",
+          "Xbow",
+          "Rocket",
+          "Tesla"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 204
+      },
+      "job": {
+        "tag": "5d59ab7ed1084312a770fc82117a5222",
+        "part": "part-000004.parquet",
+        "signature": "40bfe4429e265ea2f6fbd2272eb0c1b55b2c7874c1509f67448341c80ea3a6d7",
+        "decks": [
+          [
+            "elite-barbarians-ev1",
+            "golden-knight",
+            "royal-ghost-ev1",
+            "ice-golem",
+            "three-musketeers",
+            "zap",
+            "heal-spirit",
+            "elixir-collector"
+          ],
+          [
+            "tesla-ev1",
+            "x-bow",
+            "knight-ev1",
+            "ice-wizard",
+            "rocket",
+            "tornado",
+            "the-log",
+            "skeletons"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 55,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\5d59ab7ed1084312a770fc82117a5222",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "5812c5a336b72ae618497d213fe569ad06f4103ac1887ce6559d856905f85c5f",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "bc284b15e427add0a95053dbc6c35162fdd02adf2b063921c7a104c63443c46a",
+        "plays_ext.csv": "a59135f862ec8e3204751500cd99f7019269622e7ff69e0bbe8c7e76cedcab6b"
+      }
+    },
+    {
+      "tag": "5db624c4d0b54ee58010f7691d20727b",
+      "split": "confirmation",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_5db624c4d0b54ee58010f7691d20727b.json",
+      "recording_sha256": "c0751bdc617daba16f449c2dc1c2d95655a4eeaffa997bc970acda42c3ffc1ca",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 2,
+        "tick": 401,
+        "side": 1,
+        "card": "archer-queen",
+        "x": 8500,
+        "y": 31500,
+        "cost": 5,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Berserker",
+          "Skeletons",
+          "Xbow",
+          "ElectroSpirit"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 401
+      },
+      "job": {
+        "tag": "5db624c4d0b54ee58010f7691d20727b",
+        "part": "part-000022.parquet",
+        "signature": "cf3f5c2b2b3a6a58328ea83e2e4d938c9dcc92f7e3de921c1349d0de4f0c4acb",
+        "decks": [
+          [
+            "giant-snowball-ev1",
+            "archer-queen",
+            "berserker-hero",
+            "skeletons",
+            "ice-spirit",
+            "elixir-collector",
+            "electro-spirit",
+            "x-bow"
+          ],
+          [
+            "baby-dragon-ev1",
+            "bowler-hero",
+            "goblin-cage-ev1",
+            "barbarian-barrel",
+            "electro-giant",
+            "ice-wizard",
+            "lightning",
+            "tornado"
+          ]
+        ],
+        "strata": [
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 546,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\5db624c4d0b54ee58010f7691d20727b",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "03e705dfa1037fa1da7cc872646096e14e9914bb9a1461ce0eeacf9a616141b4",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "2d65a985e63b6b225ab9179f3944ab927c2a0dac0656c40903dbb3ddb465ec80",
+        "plays_ext.csv": "0b3628416d466705a7ff3e0879a9a1bb994e8f58f735e751bc92f3ee98c870d5"
+      }
+    },
+    {
+      "tag": "615758134ea34df68a36bc7925b9b434",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_615758134ea34df68a36bc7925b9b434.json",
+      "recording_sha256": "2dede19bb16805456e98e635615f8804afab6e3759fa8c38bf23a97dbe422092",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 188,
+        "side": 0,
+        "card": "heal-spirit",
+        "x": 8500,
+        "y": 501,
+        "cost": 1,
+        "elixir_before": 9.3464,
+        "hand_before": [
+          "AngryBarbarians",
+          "IceGolemite",
+          "ThreeMusketeers",
+          "Assassin"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 188
+      },
+      "job": {
+        "tag": "615758134ea34df68a36bc7925b9b434",
+        "part": "part-000035.parquet",
+        "signature": "d697c1ab25840e8c3ace55e7a5c6ee310ac6df062352976ab1a681c512737ac1",
+        "decks": [
+          [
+            "knight-ev1",
+            "skeletons",
+            "tesla-ev1",
+            "ice-wizard",
+            "the-log",
+            "tornado",
+            "rocket",
+            "x-bow"
+          ],
+          [
+            "elite-barbarians-ev1",
+            "golden-knight",
+            "zap-ev1",
+            "ice-golem",
+            "bandit",
+            "three-musketeers",
+            "heal-spirit",
+            "elixir-collector"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 57,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\615758134ea34df68a36bc7925b9b434",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "d8ed118b6f6575cdc741b7b41de8475ef99c1f84aa10fe0d6eb41b809c48532a",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "996bce24dceb5e08f6cd210c9c8d481a28eba36247566871698da5afb8bdec8c",
+        "plays_ext.csv": "a5d0ddbc4cd4e327d0acd658c10c7d8a4215eb3c1699d24ba9cffa4f287d63fd"
+      }
+    },
+    {
+      "tag": "6864334f034e4e6ea43085aa24d0c206",
+      "split": "development",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_6864334f034e4e6ea43085aa24d0c206.json",
+      "recording_sha256": "32a25f969023108d96be8816cd3050cc0b4e47d00059e7095a75880202725841",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 2,
+        "tick": 337,
+        "side": 0,
+        "card": "goblin-gang",
+        "x": 499,
+        "y": 1500,
+        "cost": 3,
+        "elixir_before": 9.9986,
+        "hand_before": [
+          "Miner",
+          "Log",
+          "SkeletonWarriors",
+          "MinionHorde"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 337
+      },
+      "job": {
+        "tag": "6864334f034e4e6ea43085aa24d0c206",
+        "part": "part-000044.parquet",
+        "signature": "fb7d16ba62e01a24cb6c97560c61626ad4d7cb9589ee2b7ab76a46de3b841791",
+        "decks": [
+          [
+            "witch-ev1",
+            "giant-hero",
+            "zap-ev1",
+            "mini-pekka",
+            "arrows",
+            "dark-prince",
+            "rage",
+            "elixir-collector"
+          ],
+          [
+            "minion-horde-ev1",
+            "barbarians",
+            "princess-ev1",
+            "goblin-gang",
+            "guards",
+            "miner",
+            "wall-breakers",
+            "the-log"
+          ]
+        ],
+        "strata": [
+          "versus_witch"
+        ],
+        "split": "development",
+        "index": 270,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\6864334f034e4e6ea43085aa24d0c206",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "1a8f2cbef64f886c0eb1cb0ec247305675f5e2c077ab07411dca4d1e927b173b",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "e6e441d09eeeca94e1d73aefdc2ac77353fd9777036c2b4672f9ad9d77d1f42b",
+        "plays_ext.csv": "08fd507e4fda09aa23718e76fc01b4ba22f9d725c34c9b9aa8cd4ef96f7e0d0d"
+      }
+    },
+    {
+      "tag": "69f9af064ca04efdbc6e791f38c916a1",
+      "split": "development",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_69f9af064ca04efdbc6e791f38c916a1.json",
+      "recording_sha256": "b15ca08c5dd57d1e80dde6d25822780e84238d987d7d0c353a704a98b87fd071",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 1,
+        "tick": 217,
+        "side": 0,
+        "card": "golden-knight",
+        "x": 16501,
+        "y": 5501,
+        "cost": 4,
+        "elixir_before": 9.8626,
+        "hand_before": [
+          "Cannon",
+          "Rocket",
+          "Skeletons",
+          "Bomber"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 217
+      },
+      "job": {
+        "tag": "69f9af064ca04efdbc6e791f38c916a1",
+        "part": "part-000030.parquet",
+        "signature": "e27d794ee496552121024784ffe62cc793912a4f7dd9bdcd0ccf689e28935082",
+        "decks": [
+          [
+            "dart-goblin-ev1",
+            "berserker-hero",
+            "goblin-barrel-ev1",
+            "skeleton-army",
+            "cannon",
+            "valkyrie",
+            "the-log",
+            "princess"
+          ],
+          [
+            "cannon-ev1",
+            "golden-knight",
+            "bomber-ev1",
+            "skeletons",
+            "electro-giant",
+            "mirror",
+            "tornado",
+            "rocket"
+          ]
+        ],
+        "strata": [
+          "rocket_deck",
+          "rocket_tornado_deck"
+        ],
+        "split": "development",
+        "index": 621,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\69f9af064ca04efdbc6e791f38c916a1",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "bb4fcc29a278c24268a8aaae45fab51d5168a8b5801fa938cb9f6ebba0e48c9f",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "d96ba6314a617fb1fe04fa0b20e8d4a74c78f260c07bbc3dbc97abf13ecbc7a0",
+        "plays_ext.csv": "3f248b79d2345e707272d95ba87f69aee505c663b042a9a1d7c913004bc9408d"
+      }
+    },
+    {
+      "tag": "6b586b4bba144177b82cb24790c7e24e",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "rejected_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_6b586b4bba144177b82cb24790c7e24e.json",
+      "recording_sha256": "7f3118740b6e89de5b5e650094dc938330d4d35c36d0bef51845aec0189685fa",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 158,
+        "side": 0,
+        "card": "knight",
+        "x": 8499,
+        "y": 500,
+        "cost": 3,
+        "elixir_before": 8.8124,
+        "hand_before": [
+          "Skeletons",
+          "Xbow",
+          "Rocket",
+          "Tesla"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 158
+      },
+      "job": {
+        "tag": "6b586b4bba144177b82cb24790c7e24e",
+        "part": "part-000050.parquet",
+        "signature": "2892ef9175f4a03e3ffd4dfe9a53ad3ab07ccd1a4c61aef3ade1de483b5aea91",
+        "decks": [
+          [
+            "electro-dragon-ev1",
+            "berserker-hero",
+            "elite-barbarians-ev1",
+            "skeleton-dragons",
+            "golem",
+            "elixir-collector",
+            "barbarian-barrel",
+            "tornado"
+          ],
+          [
+            "knight-ev1",
+            "the-log",
+            "tesla-ev1",
+            "x-bow",
+            "tornado",
+            "rocket",
+            "ice-wizard",
+            "skeletons"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 61,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\6b586b4bba144177b82cb24790c7e24e",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "6a92fe25e927c6ff71d9ab527b043fc41a4a616a00a2cae1b34415e04c48235c",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "1f1d1128c1e0de4dab0f2b87f21d0faf6420f44d92abc05c2eb6daf209647027",
+        "plays_ext.csv": "279d6350deb81b7dfd516790320a86dca214e9a962c32963c2b6dbfc0566ea75"
+      }
+    },
+    {
+      "tag": "73b8a7dff2084e119a10734ba720d6d9",
+      "split": "development",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_73b8a7dff2084e119a10734ba720d6d9.json",
+      "recording_sha256": "cff15d3132e79c97baa6b13e2f9d18e9fe61816a609fafa6eae1553bd0a6b538",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 3,
+        "tick": 576,
+        "side": 0,
+        "card": "golden-knight",
+        "x": 8500,
+        "y": 501,
+        "cost": 4,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "BattleRam",
+          "IceGolemite",
+          "Ghost",
+          "Elixir Collector"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 576
+      },
+      "job": {
+        "tag": "73b8a7dff2084e119a10734ba720d6d9",
+        "part": "part-000004.parquet",
+        "signature": "21376911bf247f6a5c75e6801122bca5811427ddf917a303db05788647ce374e",
+        "decks": [
+          [
+            "skeleton-army-ev1",
+            "mini-pekka-hero",
+            "mega-minion-hero",
+            "night-witch",
+            "bomber",
+            "golem",
+            "arrows",
+            "lightning"
+          ],
+          [
+            "battle-ram-ev1",
+            "golden-knight",
+            "royal-ghost-ev1",
+            "hunter",
+            "three-musketeers",
+            "barbarian-barrel",
+            "elixir-collector",
+            "ice-golem"
+          ]
+        ],
+        "strata": [
+          "versus_night-witch"
+        ],
+        "split": "development",
+        "index": 587,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\73b8a7dff2084e119a10734ba720d6d9",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "4be82525280768e1e078f75da8f7e0496153ac5ad636191ed9413c58fc34edc3",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "38b135eae5bde385e7cd19c48e7abcafd236eb76e601d613377d4c3799eb4d50",
+        "plays_ext.csv": "0d9d7bf820ec42fe6149a615a4a3f24941a36185590024ed408fc8262e9191f6"
+      }
+    },
+    {
+      "tag": "77659a9010204e1cbacd7c847a00b1e6",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_77659a9010204e1cbacd7c847a00b1e6.json",
+      "recording_sha256": "50484903f50b7e066f32aa4c29be25e218f8b810457152218de09a992d3f7867",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 5,
+        "tick": 546,
+        "side": 1,
+        "card": "the-log",
+        "x": 5500,
+        "y": 17500,
+        "cost": 2,
+        "elixir_before": 8.7188,
+        "hand_before": [
+          "Tornado",
+          "Skeletons",
+          "Xbow",
+          "Rocket"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 546
+      },
+      "job": {
+        "tag": "77659a9010204e1cbacd7c847a00b1e6",
+        "part": "part-000047.parquet",
+        "signature": "43aa1a01cdfa85b7541dc309fdc26b645308d82d936c30d6d70877241ec12125",
+        "decks": [
+          [
+            "knight-ev1",
+            "tornado",
+            "tesla-ev1",
+            "ice-wizard",
+            "rocket",
+            "skeletons",
+            "x-bow",
+            "the-log"
+          ],
+          [
+            "elite-barbarians-ev1",
+            "berserker-hero",
+            "furnace-ev1",
+            "three-musketeers",
+            "elixir-collector",
+            "zap",
+            "bandit",
+            "royal-ghost"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "icebow_vs_furnace",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "versus_furnace",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 67,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\77659a9010204e1cbacd7c847a00b1e6",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "4f7c6df6fa3da178ebb1bb3e3028983baeada1a380fff3a83a14b965099238ae",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "a6de0ea8856c3ff556faf73022278e6f2441db119dae5072652418a5579d9487",
+        "plays_ext.csv": "f27353da3c5d614a23e72f2ff7ea7e8e971e6da2b27982325a3c6b7c0b75c263"
+      }
+    },
+    {
+      "tag": "7830e7981d804f2186ae530916c3de32",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_7830e7981d804f2186ae530916c3de32.json",
+      "recording_sha256": "1393b3244135024da814cc0f10866d5f117ec865b238ad4b51f3fef9354fbd77",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 184,
+        "side": 0,
+        "card": "heal-spirit",
+        "x": 9501,
+        "y": 10501,
+        "cost": 1,
+        "elixir_before": 9.2752,
+        "hand_before": [
+          "AngryBarbarians",
+          "Ghost",
+          "ThreeMusketeers",
+          "Assassin"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 184
+      },
+      "job": {
+        "tag": "7830e7981d804f2186ae530916c3de32",
+        "part": "part-000016.parquet",
+        "signature": "c352109b80a9b3d6dea824f07e7ba23504d5cff7695cac9017b4b5abd982e1d3",
+        "decks": [
+          [
+            "knight-ev1",
+            "skeletons",
+            "tesla-ev1",
+            "ice-wizard",
+            "the-log",
+            "tornado",
+            "rocket",
+            "x-bow"
+          ],
+          [
+            "zap-ev1",
+            "golden-knight",
+            "elite-barbarians-ev1",
+            "elixir-collector",
+            "bandit",
+            "three-musketeers",
+            "heal-spirit",
+            "royal-ghost"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 68,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\7830e7981d804f2186ae530916c3de32",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "5ba6b4fd0c1decb4b6edc27837b114cc54f85a8d24725f1f3add30d87018f38f",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "bf51172ac288715c17aee8f58965c7fde10b9bd1ad3653a82b16d8362cc30bb9",
+        "plays_ext.csv": "b3cc0da13a69318dc3ec460231ae7a5833db59d16c603cbea3914d363af2db85"
+      }
+    },
+    {
+      "tag": "784dc82e4409483f8968066deff7cb6b",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_784dc82e4409483f8968066deff7cb6b.json",
+      "recording_sha256": "0ff92000ab4c05b396dea57242773fb7e11eba4bfe37b9226a5e86c37bbbd43b",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 1,
+        "tick": 306,
+        "side": 1,
+        "card": "ice-wizard",
+        "x": 9500,
+        "y": 31500,
+        "cost": 3,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Tornado",
+          "Skeletons",
+          "Xbow",
+          "Knight"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 306
+      },
+      "job": {
+        "tag": "784dc82e4409483f8968066deff7cb6b",
+        "part": "part-000047.parquet",
+        "signature": "2eeec86d6ceccce36d0ee2b586b779ca744595139066b6eb55df5c5c312b5d1b",
+        "decks": [
+          [
+            "knight-ev1",
+            "tornado",
+            "tesla-ev1",
+            "ice-wizard",
+            "rocket",
+            "skeletons",
+            "x-bow",
+            "the-log"
+          ],
+          [
+            "elite-barbarians-ev1",
+            "berserker-hero",
+            "furnace-ev1",
+            "three-musketeers",
+            "elixir-collector",
+            "zap",
+            "bandit",
+            "royal-ghost"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "icebow_vs_furnace",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "versus_furnace",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 69,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\784dc82e4409483f8968066deff7cb6b",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "4caf28d5bbfe8b8ff845d5139d96c2ba2296d651f29bb96287a8b58ebece08b0",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "11a417435cef0394e208a8aa50ff38900d7b857fb1ef7fea7a23d6ed037d20ee",
+        "plays_ext.csv": "68655d2803e43bc78b91c29044c5d350dc75a33d51def2316fe03e8780f8c0f6"
+      }
+    },
+    {
+      "tag": "7c462cbd03d04ed28530570922dff19b",
+      "split": "development",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_7c462cbd03d04ed28530570922dff19b.json",
+      "recording_sha256": "71abd5891b57bd142a6a6113c486d09456595d5191592420185c63172d99dc1f",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 211,
+        "side": 1,
+        "card": "zap",
+        "x": 3500,
+        "y": 6500,
+        "cost": 2,
+        "elixir_before": 9.7558,
+        "hand_before": [
+          "DarkPrince",
+          "Witch",
+          "MiniPekka",
+          "Giant"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 211
+      },
+      "job": {
+        "tag": "7c462cbd03d04ed28530570922dff19b",
+        "part": "part-000020.parquet",
+        "signature": "554ab4bc114aa429761be54e9880bf758147d907a1cd02508cc2c131bfae175e",
+        "decks": [
+          [
+            "witch-ev1",
+            "giant-hero",
+            "zap-ev1",
+            "mini-pekka",
+            "dark-prince",
+            "arrows",
+            "elixir-collector",
+            "rage"
+          ],
+          [
+            "battle-ram-ev1",
+            "dark-prince-hero",
+            "zap-ev1",
+            "pekka",
+            "magic-archer",
+            "bandit",
+            "electro-wizard",
+            "fireball"
+          ]
+        ],
+        "strata": [
+          "versus_witch"
+        ],
+        "split": "development",
+        "index": 526,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\7c462cbd03d04ed28530570922dff19b",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "73370553534826af634e353f86e7b4c361327f6d1348160d98f3993f70767db5",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "b2484df42e388ccded698588aed0d3bcca367aaef2d5c232a90520534913f81c",
+        "plays_ext.csv": "71a85c5b41a5f2c114796d993d5e58b00d151d6256be1133110eb2f5041c4024"
+      }
+    },
+    {
+      "tag": "852827f4d7ce44b186a0306379f272fc",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_852827f4d7ce44b186a0306379f272fc.json",
+      "recording_sha256": "182347781fae8f902732f50536307a05e2e83a94de254d2d85933b155c9978c3",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 231,
+        "side": 1,
+        "card": "archers",
+        "x": 8499,
+        "y": 31499,
+        "cost": 3,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "BattleRam",
+          "ThreeMusketeers",
+          "Heal",
+          "AngryBarbarians"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 231
+      },
+      "job": {
+        "tag": "852827f4d7ce44b186a0306379f272fc",
+        "part": "part-000031.parquet",
+        "signature": "e327c722bebcc0152aedcd351018c429978c70fdd8912a8c47053c68bdf9e989",
+        "decks": [
+          [
+            "battle-ram-ev1",
+            "monk",
+            "elite-barbarians-ev1",
+            "three-musketeers",
+            "elixir-collector",
+            "archers",
+            "heal-spirit",
+            "zap"
+          ],
+          [
+            "knight-ev1",
+            "skeletons",
+            "tesla-ev1",
+            "ice-wizard",
+            "tornado",
+            "x-bow",
+            "rocket",
+            "the-log"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 77,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\852827f4d7ce44b186a0306379f272fc",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "fd0bd2ec0751d7c51d18fadebc5bd2aa1b0a41a962dcdd263290ed2102fce092",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "ab6ac956b748cbc95089de6147cb5456973205494bac9bd27dad5d322a28ffc0",
+        "plays_ext.csv": "92735555f216f60eacc0da888c3c2fa7a629f27e1c5d4ce033aa3a8aace9841a"
+      }
+    },
+    {
+      "tag": "8af66b53f9e347aaa813b9998c3fedaa",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_8af66b53f9e347aaa813b9998c3fedaa.json",
+      "recording_sha256": "3d4c18cb08170e0755702ed89383f2fdfae15d3bd2973cf64b4e44dccdc72e8b",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 1,
+        "tick": 264,
+        "side": 0,
+        "card": "knight",
+        "x": 8500,
+        "y": 501,
+        "cost": 3,
+        "elixir_before": 9.6992,
+        "hand_before": [
+          "Tornado",
+          "Xbow",
+          "Rocket",
+          "Tesla"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 264
+      },
+      "job": {
+        "tag": "8af66b53f9e347aaa813b9998c3fedaa",
+        "part": "part-000050.parquet",
+        "signature": "4dbf98ba6a4e49f0e107973bb0b9a2accff93c8545cd4a6527f2f2efe953cf37",
+        "decks": [
+          [
+            "electro-dragon-ev1",
+            "berserker-hero",
+            "elite-barbarians-ev1",
+            "skeleton-dragons",
+            "golem",
+            "elixir-collector",
+            "barbarian-barrel",
+            "tornado"
+          ],
+          [
+            "knight-ev1",
+            "the-log",
+            "tesla-ev1",
+            "x-bow",
+            "tornado",
+            "rocket",
+            "ice-wizard",
+            "skeletons"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 81,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\8af66b53f9e347aaa813b9998c3fedaa",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "c82165ae079d059f17af99e117ac38885b419a172cd193172ff43381e741246a",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "3de2e3a1cb5fd1f5949022253b5a4f64ee37b2a3ba12243ac711f97d80eeb3e5",
+        "plays_ext.csv": "9b0a7233f43ce6ac8135b347bd5d2da7e18830d4b8ce7ce885f963a58bed6097"
+      }
+    },
+    {
+      "tag": "8bda3484b2bf4cb2a0ef78bddd7fb73f",
+      "split": "development",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_8bda3484b2bf4cb2a0ef78bddd7fb73f.json",
+      "recording_sha256": "cb2fc74ee59eed3e609bb93611bfb05d38abab7152bfb552551e35b4575957f9",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 5,
+        "tick": 615,
+        "side": 1,
+        "card": "arrows",
+        "x": 9500,
+        "y": 11500,
+        "cost": 3,
+        "elixir_before": 4.947,
+        "hand_before": [
+          "SkeletonArmy",
+          "Musketeer",
+          "MiniPekka",
+          "Lightning"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 615
+      },
+      "job": {
+        "tag": "8bda3484b2bf4cb2a0ef78bddd7fb73f",
+        "part": "part-000022.parquet",
+        "signature": "e973192e1c277c82bfb5293e5417a1798287c72d23de5d7e164915e3b1331ed0",
+        "decks": [
+          [
+            "musketeer-ev1",
+            "mini-pekka-hero",
+            "skeleton-army-ev1",
+            "elixir-collector",
+            "lightning",
+            "arrows",
+            "golem",
+            "night-witch"
+          ],
+          [
+            "musketeer-ev1",
+            "princess",
+            "valkyrie-ev1",
+            "mini-pekka",
+            "hog-rider",
+            "freeze",
+            "the-log",
+            "arrows"
+          ]
+        ],
+        "strata": [
+          "versus_night-witch"
+        ],
+        "split": "development",
+        "index": 76,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\8bda3484b2bf4cb2a0ef78bddd7fb73f",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "3de61a9b788a985098398e00c4322c69c8dc8505f0c256d5ba142600d477e39f",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "2e638bb0e7f186575a8af9d37cca79308d6eff7f48b99e9500067e8c78ba62c2",
+        "plays_ext.csv": "250386c6b661fdfd724dfac635ba164acfb99575d0130d57390cf96dfd10e860"
+      }
+    },
+    {
+      "tag": "8f287422a7944fe88bd671af4f848d62",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "rejected_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_8f287422a7944fe88bd671af4f848d62.json",
+      "recording_sha256": "e8258df15c629c83c53016a3cab0d45c57b87e901061d7f25acb786efcfd4976",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 234,
+        "side": 1,
+        "card": "archers",
+        "x": 8499,
+        "y": 31499,
+        "cost": 3,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "AngryBarbarians",
+          "Rage",
+          "Knight",
+          "Heal"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 234
+      },
+      "job": {
+        "tag": "8f287422a7944fe88bd671af4f848d62",
+        "part": "part-000034.parquet",
+        "signature": "73c7467008cb508381328bec27c456a232ddc8d08bc9c3a5512539a8881c914d",
+        "decks": [
+          [
+            "elite-barbarians-ev1",
+            "monk",
+            "archers-ev1",
+            "rage",
+            "knight",
+            "elixir-collector",
+            "three-musketeers",
+            "heal-spirit"
+          ],
+          [
+            "knight-ev1",
+            "tornado",
+            "tesla-ev1",
+            "ice-wizard",
+            "rocket",
+            "skeletons",
+            "x-bow",
+            "the-log"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 83,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\8f287422a7944fe88bd671af4f848d62",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "4a07af2715ca8e3cd1c7a605c9322256edfc5a80b928d09fb1e6a0e855c480ff",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "38d47d6ed9d96f42403d69fa3b8a84c0e89b5501312b79a8eb98b4f69e80662b",
+        "plays_ext.csv": "aa9faaa7e3fd915ced6e4f813389285c7c952ac2eba1f9f1b2e269310c526409"
+      }
+    },
+    {
+      "tag": "91ee15fcdad14930a71b46efc7f1d082",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_91ee15fcdad14930a71b46efc7f1d082.json",
+      "recording_sha256": "7ba0aaea4ccb700e687e8eadf04fae6ebedabcea75bafd2ad36339b93153661e",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 245,
+        "side": 0,
+        "card": "knight",
+        "x": 8499,
+        "y": 500,
+        "cost": 3,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Skeletons",
+          "Xbow",
+          "Rocket",
+          "Tesla"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 245
+      },
+      "job": {
+        "tag": "91ee15fcdad14930a71b46efc7f1d082",
+        "part": "part-000011.parquet",
+        "signature": "1d3eb9c5d2c634bf60af1bfb4e9e52e25ca1a0bc39dcdc33b66950c84264bdcd",
+        "decks": [
+          [
+            "electro-dragon-ev1",
+            "berserker-hero",
+            "elite-barbarians-ev1",
+            "golem",
+            "skeleton-dragons",
+            "barbarian-barrel",
+            "tornado",
+            "elixir-collector"
+          ],
+          [
+            "tesla-ev1",
+            "skeletons",
+            "knight-ev1",
+            "rocket",
+            "x-bow",
+            "ice-wizard",
+            "tornado",
+            "the-log"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 85,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\91ee15fcdad14930a71b46efc7f1d082",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "1fa3019fb17dc1abb6d7657f4a9a4da704427cb00ee7b22d08d12c3c744cef5b",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "f1d842980e15f2c270bc749a3dbf0e6a1e9282b0bc51e273cf3ac1b209b35458",
+        "plays_ext.csv": "c7f6704f5707acab6cbcb850ae663752cd8f1ad7dbf10784848bac96f7cb031a"
+      }
+    },
+    {
+      "tag": "99c60e3861584fb5b83e7d6513e40ecc",
+      "split": "confirmation",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_99c60e3861584fb5b83e7d6513e40ecc.json",
+      "recording_sha256": "a8f9d8873b8331198048284c8650ed9e9fa148985620f5e55879a20dda896a37",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 2,
+        "tick": 246,
+        "side": 0,
+        "card": "electro-spirit",
+        "x": 9501,
+        "y": 501,
+        "cost": 1,
+        "elixir_before": 9.3788,
+        "hand_before": [
+          "Berserker",
+          "FireSpirits",
+          "Elixir Collector",
+          "Archer"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 246
+      },
+      "job": {
+        "tag": "99c60e3861584fb5b83e7d6513e40ecc",
+        "part": "part-000017.parquet",
+        "signature": "01875d0e36cf6cfbefa0fe7e818560381521f5a3b40ee63a7a18f2ae1e560d96",
+        "decks": [
+          [
+            "skeleton-army-ev1",
+            "balloon-hero",
+            "inferno-dragon-ev1",
+            "fireball",
+            "lava-hound",
+            "bomber",
+            "minions",
+            "giant-snowball"
+          ],
+          [
+            "archers-ev1",
+            "berserker-hero",
+            "skeletons-ev1",
+            "electro-spirit",
+            "x-bow",
+            "fire-spirit",
+            "elixir-collector",
+            "bomber"
+          ]
+        ],
+        "strata": [
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 386,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\99c60e3861584fb5b83e7d6513e40ecc",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "c855449f289439fb40e0e53c19936f0beaa689ce8d785c78ab2a44c1f179cc2d",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "cd1f9fcd4fe50a79dfee910a397b41b38e4f46f7706ecebd476e50deaba1e6e3",
+        "plays_ext.csv": "5d58c2a37c2b728780778ef8684fd08d2313cb264a4a7d3b6c074b5025ca4343"
+      }
+    },
+    {
+      "tag": "9c70250a4b38427199173d081006aeee",
+      "split": "confirmation",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_9c70250a4b38427199173d081006aeee.json",
+      "recording_sha256": "5775af7b2a950fa6c7f5cca9ba09eb3237d1496bbf48243461b845225b72ed45",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 2,
+        "tick": 243,
+        "side": 1,
+        "card": "elixir-collector",
+        "x": 9500,
+        "y": 25500,
+        "cost": 6,
+        "elixir_before": 9.3254,
+        "hand_before": [
+          "Berserker",
+          "Log",
+          "Xbow",
+          "ElectroSpirit"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 243
+      },
+      "job": {
+        "tag": "9c70250a4b38427199173d081006aeee",
+        "part": "part-000033.parquet",
+        "signature": "b96b54d7ef3837ecd6c7e7936a2ebe0cfb35cfdf5a856d6ddaaa3fc4a66f8062",
+        "decks": [
+          [
+            "archers-ev1",
+            "berserker-hero",
+            "skeletons-ev1",
+            "ice-spirit",
+            "x-bow",
+            "elixir-collector",
+            "electro-spirit",
+            "the-log"
+          ],
+          [
+            "cannon-ev1",
+            "ice-golem-hero",
+            "musketeer-ev1",
+            "hog-rider",
+            "fireball",
+            "skeletons",
+            "ice-spirit",
+            "the-log"
+          ]
+        ],
+        "strata": [
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 541,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\9c70250a4b38427199173d081006aeee",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "12f4c4fcce1a7a13626ba809d8875e9eec869794fce2d78c04b31f17228deb94",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "437d762eca5866a23151c5cc25da43e140910ec99d9daa302909a9b7404d14d2",
+        "plays_ext.csv": "0a7828883e8de0a6404cf5f1ea2c61dd2456956fd68526c91d3cc0217524e2b9"
+      }
+    },
+    {
+      "tag": "a11cb21ba6324d39ace590b6b989922f",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "rejected_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_a11cb21ba6324d39ace590b6b989922f.json",
+      "recording_sha256": "d4c10fa322d930704c3f03719874051b0a62868822ed34f2854199d0366a393a",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 4,
+        "tick": 321,
+        "side": 0,
+        "card": "the-log",
+        "x": 2500,
+        "y": 14500,
+        "cost": 2,
+        "elixir_before": 5.7138,
+        "hand_before": [
+          "Skeletons",
+          "Tornado",
+          "Rocket",
+          "Tesla"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 321
+      },
+      "job": {
+        "tag": "a11cb21ba6324d39ace590b6b989922f",
+        "part": "part-000051.parquet",
+        "signature": "4a0004f613bcfd70da9a1a86a10641d1d6183c823098786f2c18742bcd640b3f",
+        "decks": [
+          [
+            "electro-dragon-ev1",
+            "berserker-hero",
+            "elite-barbarians-ev1",
+            "skeleton-dragons",
+            "golem",
+            "tornado",
+            "barbarian-barrel",
+            "elixir-collector"
+          ],
+          [
+            "knight-ev1",
+            "skeletons",
+            "tesla-ev1",
+            "tornado",
+            "rocket",
+            "x-bow",
+            "ice-wizard",
+            "the-log"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 92,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\a11cb21ba6324d39ace590b6b989922f",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "af55dbb7aff9be11cd695aa1f5e2203c41e97388dc13c6f9a3b1195e0cb27333",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "77284df9d179542de2f2cba5975f4b12744d7050ea0ddd17e01f109a20cd59d5",
+        "plays_ext.csv": "c51e655d813de4d48f971eb466aa59b48a2b0f957dd0a1d4cc827a78223dd326"
+      }
+    },
+    {
+      "tag": "a9508e5e17fd4ac8a787eaab8496f50b",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_a9508e5e17fd4ac8a787eaab8496f50b.json",
+      "recording_sha256": "605a22248934c2a91029e5f93ae0c9b3ae05a81cc3f24469d2dc758bd0ef0ef5",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 163,
+        "side": 0,
+        "card": "knight",
+        "x": 8500,
+        "y": 501,
+        "cost": 3,
+        "elixir_before": 8.9014,
+        "hand_before": [
+          "Skeletons",
+          "Xbow",
+          "Rocket",
+          "Tesla"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 163
+      },
+      "job": {
+        "tag": "a9508e5e17fd4ac8a787eaab8496f50b",
+        "part": "part-000050.parquet",
+        "signature": "7f1f1c0c737da7f282b5a391828356cf00516c098b8328fbb91fe0504486c2b8",
+        "decks": [
+          [
+            "elite-barbarians-ev1",
+            "barbarian-barrel-hero",
+            "battle-ram-ev1",
+            "elixir-collector",
+            "hunter",
+            "three-musketeers",
+            "royal-ghost",
+            "heal-spirit"
+          ],
+          [
+            "knight-ev1",
+            "the-log",
+            "tesla-ev1",
+            "x-bow",
+            "tornado",
+            "rocket",
+            "ice-wizard",
+            "skeletons"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 98,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\a9508e5e17fd4ac8a787eaab8496f50b",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "de4880d3815c761f50c544cb9e647fb8685e3d07341395ed6da7032dd92a4549",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "6adfa042ebadf2dbafeb66ddd8f2aa82c1c596b76688f60e5c4080096c155463",
+        "plays_ext.csv": "89a26466251313059e9423c90308fcc0cb4900d7a1e0b5b888fd38727fa16b32"
+      }
+    },
+    {
+      "tag": "aa1e0a338b694fe9afc89c53fa6249bd",
+      "split": "development",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_aa1e0a338b694fe9afc89c53fa6249bd.json",
+      "recording_sha256": "a2fbcf66c5244f6374f771dca57a8758ec956b96541e0802eba779886c5e2ef1",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 1,
+        "tick": 213,
+        "side": 1,
+        "card": "hog-rider",
+        "x": 16500,
+        "y": 17499,
+        "cost": 4,
+        "elixir_before": 9.7914,
+        "hand_before": [
+          "Skeletons",
+          "IceGolemite",
+          "Log",
+          "Fireball"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 213
+      },
+      "job": {
+        "tag": "aa1e0a338b694fe9afc89c53fa6249bd",
+        "part": "part-000051.parquet",
+        "signature": "49ecec58157d8fcd0937b54cdb8fc9eb56aa78625994a3bfc166605584a99f11",
+        "decks": [
+          [
+            "skeletons-ev1",
+            "musketeer-hero",
+            "cannon-ev1",
+            "ice-spirit",
+            "ice-golem",
+            "the-log",
+            "hog-rider",
+            "fireball"
+          ],
+          [
+            "zap-ev1",
+            "giant-hero",
+            "witch-ev1",
+            "arrows",
+            "mini-pekka",
+            "dark-prince",
+            "rage",
+            "elixir-collector"
+          ]
+        ],
+        "strata": [
+          "versus_witch"
+        ],
+        "split": "development",
+        "index": 445,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\aa1e0a338b694fe9afc89c53fa6249bd",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "7071e123a65d1f8fb29c00d293f6a4412df343d0ec4eaa95424185c6d83d0ea5",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "0257f81d64a113d6804891847450905bdb73b20da51a70ebe0fe2171e6c901e1",
+        "plays_ext.csv": "43137d52ef009bd18b275cb455e60c216dd32802641b6ca64ae9b439a9c0551a"
+      }
+    },
+    {
+      "tag": "acb8a793ac4d467e8aca001a846a4bcc",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_acb8a793ac4d467e8aca001a846a4bcc.json",
+      "recording_sha256": "6375d3db62d4175070852d52a75568ccc7f8cd595bb1f1a6f2009df1093d1204",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 227,
+        "side": 0,
+        "card": "ice-golem",
+        "x": 9500,
+        "y": 500,
+        "cost": 2,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "GoldenKnight",
+          "Ghost",
+          "ThreeMusketeers",
+          "AngryBarbarians"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 227
+      },
+      "job": {
+        "tag": "acb8a793ac4d467e8aca001a846a4bcc",
+        "part": "part-000036.parquet",
+        "signature": "c3f7ae8dce4f95d0c5a0bd045c07eab831e4f45167dd6d4ac0b115609a751d56",
+        "decks": [
+          [
+            "knight-ev1",
+            "skeletons",
+            "tesla-ev1",
+            "ice-wizard",
+            "the-log",
+            "tornado",
+            "rocket",
+            "x-bow"
+          ],
+          [
+            "elite-barbarians-ev1",
+            "golden-knight",
+            "royal-ghost-ev1",
+            "three-musketeers",
+            "hunter",
+            "ice-golem",
+            "zap",
+            "elixir-collector"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 100,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\acb8a793ac4d467e8aca001a846a4bcc",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "e22f2a640933965130f023a61424bc8c81e0d4b083f1b66d9bdd81099405b979",
+        "repeat": true
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "6d0812e081cc37450540319c2f88de3b98dca6eeb8beb03cf8c334d399c0af11",
+        "plays_ext.csv": "ea1cf76c273f6b7d40244dad54fef14b3aea9787f45f9b29402e66e63c90bf2a"
+      }
+    },
+    {
+      "tag": "b361615a2cc54bf1972e92b5e4fbae4a",
+      "split": "confirmation",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_b361615a2cc54bf1972e92b5e4fbae4a.json",
+      "recording_sha256": "61a15293078515e27362b372bc29d73b6c428520b2dbd8311e73751b70ee14f8",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 156,
+        "side": 1,
+        "card": "x-bow",
+        "x": 14500,
+        "y": 19500,
+        "cost": 6,
+        "elixir_before": 8.7768,
+        "hand_before": [
+          "ElectroSpirit",
+          "Skeletons",
+          "IceSpirits",
+          "Snowball"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 156
+      },
+      "job": {
+        "tag": "b361615a2cc54bf1972e92b5e4fbae4a",
+        "part": "part-000029.parquet",
+        "signature": "78d090afef323c45249cddf5526786f519df1c610473b7208dbbd634a93ce6e6",
+        "decks": [
+          [
+            "skeletons-ev1",
+            "berserker-hero",
+            "giant-snowball-ev1",
+            "ice-spirit",
+            "x-bow",
+            "electro-spirit",
+            "elixir-collector",
+            "musketeer"
+          ],
+          [
+            "knight-ev1",
+            "wizard-hero",
+            "valkyrie",
+            "giant",
+            "minions",
+            "arrows",
+            "hog-rider",
+            "fire-spirit"
+          ]
+        ],
+        "strata": [
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 495,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\b361615a2cc54bf1972e92b5e4fbae4a",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "a0cd930254606cecf7895c649253d00cdd4490c66260a547d1175452ab59b31b",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "576ff93930fe00080486292e18490b5f1fe5ef7835d24d363884a15b519dd401",
+        "plays_ext.csv": "65af28a81e147c739afcdb871398f647fd3bedab6da20da2a0c32d053a680b8d"
+      }
+    },
+    {
+      "tag": "be958deefe5a46ae859d8b10c14a2087",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_be958deefe5a46ae859d8b10c14a2087.json",
+      "recording_sha256": "87b8dfa2313a8b0922ce3783dc95425f6e241e5658891c7f4c5cfcb9581df536",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 245,
+        "side": 1,
+        "card": "the-log",
+        "x": 14500,
+        "y": 17500,
+        "cost": 2,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Tornado",
+          "Skeletons",
+          "Xbow",
+          "Knight"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 245
+      },
+      "job": {
+        "tag": "be958deefe5a46ae859d8b10c14a2087",
+        "part": "part-000047.parquet",
+        "signature": "2add113e6f1be0e0c6248d3566c2ae3048bc6e18f039d60d40e27d575949029a",
+        "decks": [
+          [
+            "knight-ev1",
+            "tornado",
+            "tesla-ev1",
+            "ice-wizard",
+            "rocket",
+            "skeletons",
+            "x-bow",
+            "the-log"
+          ],
+          [
+            "electro-dragon-ev1",
+            "berserker-hero",
+            "elite-barbarians-ev1",
+            "golem",
+            "skeleton-dragons",
+            "tornado",
+            "barbarian-barrel",
+            "elixir-collector"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 110,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\be958deefe5a46ae859d8b10c14a2087",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "8732b23b04f0f4159ba1cdf868f1c2d2db26d08095739230612c4e6e3fc54c4c",
+        "repeat": true
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "17ea4835bec87364f5389baba4a1a6af08e957d349ef4491107f84d58065c942",
+        "plays_ext.csv": "56199a3f948cd212754adbc7635476610092af79d6ec2a516ef01481cea4729c"
+      }
+    },
+    {
+      "tag": "c21f465151424331ae3ad3aa4d2be702",
+      "split": "development",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_c21f465151424331ae3ad3aa4d2be702.json",
+      "recording_sha256": "a1a0feae39cd21f4078b4f7ad913af43d8cc9a301a0b69c24d7c67041c8d85dd",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 1,
+        "tick": 252,
+        "side": 1,
+        "card": "bowler",
+        "x": 3499,
+        "y": 27499,
+        "cost": 5,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Witch",
+          "Giant",
+          "MiniSparkys",
+          "Berserker"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 252
+      },
+      "job": {
+        "tag": "c21f465151424331ae3ad3aa4d2be702",
+        "part": "part-000016.parquet",
+        "signature": "14acb0e6410e528c1cf71a5eb3ce3c7e2999bdeb63091aef52882e565b5bf56a",
+        "decks": [
+          [
+            "giant-snowball-ev1",
+            "berserker-hero",
+            "witch-ev1",
+            "giant",
+            "graveyard",
+            "zappies",
+            "bowler",
+            "arrows"
+          ],
+          [
+            "minion-horde-ev1",
+            "bowler-hero",
+            "goblin-barrel-ev1",
+            "furnace",
+            "mirror",
+            "fireball",
+            "arrows",
+            "rascals"
+          ]
+        ],
+        "strata": [
+          "versus_furnace",
+          "versus_witch"
+        ],
+        "split": "development",
+        "index": 444,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\c21f465151424331ae3ad3aa4d2be702",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "8f8a562f9555f55f543e875e5f976859d0c5561820273892c5b0c4982ce4d501",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "463308bc30d1ad02170329fe4f3b070c7d735ab30687a544acca178194f4bfaf",
+        "plays_ext.csv": "acc70ae0a394dc58c10af614e5c23fa182c4e00c754c0a8f87862a6d7be3def0"
+      }
+    },
+    {
+      "tag": "c848be440ab045e99adeda6277a8f4c2",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_c848be440ab045e99adeda6277a8f4c2.json",
+      "recording_sha256": "cbc022e9ce95bad5d95b2cc9694e30bcdf45f2745e4c42f2707e398415ab23be",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 1,
+        "tick": 321,
+        "side": 0,
+        "card": "electro-dragon",
+        "x": 8500,
+        "y": 500,
+        "cost": 5,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Berserker",
+          "Golem",
+          "SkeletonDragons",
+          "BarbLog"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 321
+      },
+      "job": {
+        "tag": "c848be440ab045e99adeda6277a8f4c2",
+        "part": "part-000036.parquet",
+        "signature": "051886529662343a43a8e66214c7e0823b9710a696f6d31c2c4f1f26f5153a64",
+        "decks": [
+          [
+            "knight-ev1",
+            "skeletons",
+            "tesla-ev1",
+            "ice-wizard",
+            "the-log",
+            "tornado",
+            "rocket",
+            "x-bow"
+          ],
+          [
+            "electro-dragon-ev1",
+            "berserker-hero",
+            "elite-barbarians-ev1",
+            "golem",
+            "elixir-collector",
+            "tornado",
+            "skeleton-dragons",
+            "barbarian-barrel"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 115,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\c848be440ab045e99adeda6277a8f4c2",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "e54cfc7991c9db0fe1316c83132799618e735c17e7abf4d0267fc38ca7adc7ab",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "caf1014503726254b28575737828664a7167ffe82507c50b946a3f6e2250248d",
+        "plays_ext.csv": "aca2c8c446dabcf10bc600daf333fb288a23f725ead3ed2e940c88b0e8e7a3f1"
+      }
+    },
+    {
+      "tag": "c8947d53adfc4f71ba0586c9c8c30a10",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_c8947d53adfc4f71ba0586c9c8c30a10.json",
+      "recording_sha256": "80ff76c4e645a6b51fe535641c2d62ccc5d104e8024f21686f4bf6d5c0e39bf5",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 284,
+        "side": 0,
+        "card": "knight",
+        "x": 8500,
+        "y": 501,
+        "cost": 3,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Skeletons",
+          "Xbow",
+          "Rocket",
+          "Tesla"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 284
+      },
+      "job": {
+        "tag": "c8947d53adfc4f71ba0586c9c8c30a10",
+        "part": "part-000029.parquet",
+        "signature": "f36168981238b02455a70057dcb704fd857a6b3da8747eb038d3ed565c4bcefd",
+        "decks": [
+          [
+            "electro-dragon-ev1",
+            "berserker-hero",
+            "elite-barbarians-ev1",
+            "skeleton-dragons",
+            "golem",
+            "elixir-collector",
+            "tornado",
+            "barbarian-barrel"
+          ],
+          [
+            "tesla-ev1",
+            "skeletons",
+            "knight-ev1",
+            "ice-wizard",
+            "the-log",
+            "tornado",
+            "rocket",
+            "x-bow"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 116,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\c8947d53adfc4f71ba0586c9c8c30a10",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "7e7f053346fc6dc22016484779eff4280a9849b30c44509c85415698b901fbe5",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "29f86920e688d3ee43d5cad969bb3e237e9a5233fec82f3dda4228dcf31fcaa2",
+        "plays_ext.csv": "330fe3d59b8d736ced77503213d082bc9d43f2a761c30f7b1af5276fe4cd49bc"
+      }
+    },
+    {
+      "tag": "ceeaf743827345cca6a98d73a5fb764b",
+      "split": "confirmation",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_ceeaf743827345cca6a98d73a5fb764b.json",
+      "recording_sha256": "b8c4bf674d39cc476470f69519e36c95cc61bfa48aa6ff0f4c7bce6d414a45fd",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 1,
+        "tick": 275,
+        "side": 0,
+        "card": "rascals",
+        "x": 14500,
+        "y": 14500,
+        "cost": 5,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Bowler",
+          "GoblinBarrel",
+          "MinionHorde",
+          "Arrows"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 275
+      },
+      "job": {
+        "tag": "ceeaf743827345cca6a98d73a5fb764b",
+        "part": "part-000021.parquet",
+        "signature": "e170d013f166a27f552f69f4f00842b820dfd17ab8388c6bb6df427112baba48",
+        "decks": [
+          [
+            "princess-ev1",
+            "berserker-hero",
+            "tesla-ev1",
+            "the-log",
+            "goblin-barrel",
+            "rocket",
+            "skeletons",
+            "electro-spirit"
+          ],
+          [
+            "minion-horde-ev1",
+            "bowler-hero",
+            "goblin-barrel-ev1",
+            "furnace",
+            "mirror",
+            "fireball",
+            "arrows",
+            "rascals"
+          ]
+        ],
+        "strata": [
+          "log_vs_barrel",
+          "rocket_deck",
+          "versus_furnace"
+        ],
+        "split": "confirmation",
+        "index": 555,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\ceeaf743827345cca6a98d73a5fb764b",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "464589037a92a859d71b20a82a6130acc569415d4a4f6bddacf53e83ec3917c8",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "d4d4ea25e27b1fe437db8b6b6a5e4a0d8606817fd0f57a1d497c66315bd762cb",
+        "plays_ext.csv": "db5ea75959448709b5dd8a8c17fddc7b64bd0033e053fb5446054eeed102efe5"
+      }
+    },
+    {
+      "tag": "d43f9316080d48a0916138d2c70d11a3",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "rejected_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_d43f9316080d48a0916138d2c70d11a3.json",
+      "recording_sha256": "6eadfe369b260799631bb7a6c070e43cb9e11a3d144e1c7eac5a594c45b3243c",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 1,
+        "tick": 506,
+        "side": 1,
+        "card": "golem",
+        "x": 3500,
+        "y": 23500,
+        "cost": 8,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Berserker",
+          "SkeletonDragons",
+          "AngryBarbarians",
+          "ElectroDragon"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 506
+      },
+      "job": {
+        "tag": "d43f9316080d48a0916138d2c70d11a3",
+        "part": "part-000029.parquet",
+        "signature": "52edc2840c1e5f6738645ee5a073144c6d084342a5f96927819c6191669e7bfc",
+        "decks": [
+          [
+            "electro-dragon-ev1",
+            "berserker-hero",
+            "elite-barbarians-ev1",
+            "golem",
+            "barbarian-barrel",
+            "skeleton-dragons",
+            "elixir-collector",
+            "tornado"
+          ],
+          [
+            "tesla-ev1",
+            "skeletons",
+            "knight-ev1",
+            "the-log",
+            "ice-wizard",
+            "x-bow",
+            "tornado",
+            "rocket"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 129,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\d43f9316080d48a0916138d2c70d11a3",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "5f1fa88944f397bdc2fb6f529914444e75cba3986489b25ef5eb00b39e710c40",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "2d3ea05bb717cec5fda9787f29705c45b23a174d17f4a415a3fb31859a32f938",
+        "plays_ext.csv": "d33fdb58a6412a0f75c544cb51269252b99d413247f4b442e5d08c76ac9cfc3b"
+      }
+    },
+    {
+      "tag": "d742d9a3856e4615b5ad092a382c59b6",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_d742d9a3856e4615b5ad092a382c59b6.json",
+      "recording_sha256": "ac4ebfe557605f3dc0421c22a598b9d6b9f9886455193602654dcfb810346f85",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 1,
+        "tick": 286,
+        "side": 1,
+        "card": "ice-wizard",
+        "x": 8500,
+        "y": 31500,
+        "cost": 3,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Tornado",
+          "Skeletons",
+          "Xbow",
+          "Knight"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 286
+      },
+      "job": {
+        "tag": "d742d9a3856e4615b5ad092a382c59b6",
+        "part": "part-000035.parquet",
+        "signature": "5a723e414595a11f6a0ee856579c50b90d9d2516d741bfb37499ac29f898b6be",
+        "decks": [
+          [
+            "knight-ev1",
+            "skeletons",
+            "tesla-ev1",
+            "ice-wizard",
+            "the-log",
+            "tornado",
+            "rocket",
+            "x-bow"
+          ],
+          [
+            "baby-dragon-ev1",
+            "bowler-hero",
+            "elite-barbarians-ev1",
+            "mother-witch",
+            "electro-giant",
+            "tornado",
+            "zappies",
+            "elixir-collector"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 133,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\d742d9a3856e4615b5ad092a382c59b6",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "169eb4b22110eb688585b6082b2cf52a0a185954abb1139b02690da25a75fe82",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "6dfe3875bad6784b3da03832b7daab2d7c2f51a44422b4e5c0172a298a6d64bb",
+        "plays_ext.csv": "a3aa609f9e9190e7be2709d2583ef3b4fa2c62c84cc2645766b962c3a3708145"
+      }
+    },
+    {
+      "tag": "d9bd4e3449124192a32e1dbc628d492c",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_d9bd4e3449124192a32e1dbc628d492c.json",
+      "recording_sha256": "2c4b85c116c8f421717fc5f7e6390a3404c0aecf7b9b3a6a92963b46c7aab977",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 236,
+        "side": 0,
+        "card": "knight",
+        "x": 8499,
+        "y": 500,
+        "cost": 3,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Skeletons",
+          "Xbow",
+          "Rocket",
+          "Tesla"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 236
+      },
+      "job": {
+        "tag": "d9bd4e3449124192a32e1dbc628d492c",
+        "part": "part-000039.parquet",
+        "signature": "ecc5bc6d9572c4b8f5f9dcf0672b31db5bb26fee28127cd0fa86e6522eb17f35",
+        "decks": [
+          [
+            "elite-barbarians-ev1",
+            "golden-knight",
+            "royal-ghost-ev1",
+            "three-musketeers",
+            "hunter",
+            "ice-golem",
+            "zap",
+            "elixir-collector"
+          ],
+          [
+            "knight-ev1",
+            "tornado",
+            "tesla-ev1",
+            "ice-wizard",
+            "rocket",
+            "skeletons",
+            "x-bow",
+            "the-log"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 136,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\d9bd4e3449124192a32e1dbc628d492c",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "862ece37f47eb83fbc394495c416f8686670beda23fbd5f0dafe5f0f798d3010",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "cfcc9e4c7814d00c7c82e8e39fb1e0247491aec89a7cc32aaefb13f95446c259",
+        "plays_ext.csv": "9866ab1211bd48f41f9aa75945fe54e10f6cc9d36ffe5ebb9b156e018d97936b"
+      }
+    },
+    {
+      "tag": "dcc82c8fa557442bbe903d8a831ab69a",
+      "split": "confirmation",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "rejected_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_dcc82c8fa557442bbe903d8a831ab69a.json",
+      "recording_sha256": "957c437da971e4956b1cbdd19c21b9edf61ddf30676b5bd5c86e96684a86beb8",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 177,
+        "side": 0,
+        "card": "suspicious-bush",
+        "x": 500,
+        "y": 1501,
+        "cost": 2,
+        "elixir_before": 9.1506,
+        "hand_before": [
+          "SkeletonArmy",
+          "Vines",
+          "Rascals",
+          "SkeletonBalloon"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 177
+      },
+      "job": {
+        "tag": "dcc82c8fa557442bbe903d8a831ab69a",
+        "part": "part-000024.parquet",
+        "signature": "7649ec51c0877e06dfdf4f4ddff4ae96eb686db5ba5d087d4c29a7360f3e7854",
+        "decks": [
+          [
+            "electro-dragon-ev1",
+            "dark-prince-hero",
+            "inferno-dragon-ev1",
+            "barbarian-barrel",
+            "golem",
+            "tornado",
+            "battle-healer",
+            "elixir-collector"
+          ],
+          [
+            "skeleton-barrel-ev1",
+            "skeleton-king",
+            "skeleton-army-ev1",
+            "suspicious-bush",
+            "dart-goblin",
+            "vines",
+            "rascals",
+            "cannon"
+          ]
+        ],
+        "strata": [],
+        "split": "confirmation",
+        "index": 85,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\dcc82c8fa557442bbe903d8a831ab69a",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "e9c4b8581a0430363a22a78a8c927162f993327b8f1789147ab96086817683de",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "3950dbd8a872e5f231cb775d52ffb5c8c42915d62a0122b483b33b3d4c70dbd1",
+        "plays_ext.csv": "07c3cc53ca741e3f77b58c646e5eb55fba0ce3d02a35e95eda589be347e17e33"
+      }
+    },
+    {
+      "tag": "df53d2b014ad4379b6d132e9835615c1",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_df53d2b014ad4379b6d132e9835615c1.json",
+      "recording_sha256": "3e270d3038d19c2fdc1074bd1c0ea55c729fef11410a0a10d10fcb11f6b9ac95",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 322,
+        "side": 0,
+        "card": "the-log",
+        "x": 14500,
+        "y": 14500,
+        "cost": 2,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Skeletons",
+          "Xbow",
+          "Rocket",
+          "Tesla"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 322
+      },
+      "job": {
+        "tag": "df53d2b014ad4379b6d132e9835615c1",
+        "part": "part-000035.parquet",
+        "signature": "e47591019fe30b5d883a96da11ac167e4c21dbd5195095ab04c842564eb13dda",
+        "decks": [
+          [
+            "electro-dragon-ev1",
+            "berserker-hero",
+            "elite-barbarians-ev1",
+            "golem",
+            "skeleton-dragons",
+            "elixir-collector",
+            "tornado",
+            "barbarian-barrel"
+          ],
+          [
+            "knight-ev1",
+            "skeletons",
+            "tesla-ev1",
+            "ice-wizard",
+            "the-log",
+            "tornado",
+            "rocket",
+            "x-bow"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 139,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\df53d2b014ad4379b6d132e9835615c1",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "08d6d0b3da66b8a36365af07e5321570591417f87e0809a31078b25b74f6bdd4",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "33496e4a8b396cab6bb547346a7c3ee65c0416658c1bdf307fd7bb1be63a5928",
+        "plays_ext.csv": "8e44d3e8d838982bb96e3b79f7af2ed3168501536ebbb0804d15cc573b518f49"
+      }
+    },
+    {
+      "tag": "e9d7d5f4689e4902b67c12fe2874d471",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_e9d7d5f4689e4902b67c12fe2874d471.json",
+      "recording_sha256": "a3cd277f50a8457244925a0b599a84be2a6774e4bb577beea44594366dc19c17",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 1,
+        "tick": 226,
+        "side": 0,
+        "card": "ice-wizard",
+        "x": 9500,
+        "y": 500,
+        "cost": 3,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Skeletons",
+          "Xbow",
+          "Rocket",
+          "Tesla"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 226
+      },
+      "job": {
+        "tag": "e9d7d5f4689e4902b67c12fe2874d471",
+        "part": "part-000033.parquet",
+        "signature": "a903b5d3117e8d3e673201d090458f8d349ac6dc2a14e5cb8e69cbe796a22cc7",
+        "decks": [
+          [
+            "archers-ev1",
+            "monk",
+            "elite-barbarians-ev1",
+            "three-musketeers",
+            "heal-spirit",
+            "elixir-collector",
+            "knight",
+            "rage"
+          ],
+          [
+            "knight-ev1",
+            "skeletons",
+            "tesla-ev1",
+            "ice-wizard",
+            "the-log",
+            "tornado",
+            "rocket",
+            "x-bow"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 147,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\e9d7d5f4689e4902b67c12fe2874d471",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "a8b67e3d637b71da7f7eac8f68b8473efbcf336b9f835c055e0dac17a0a7ad3a",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "53280602f84531f6998924070c38298acbf7a3f5317a7e6c57d4dede00a89f13",
+        "plays_ext.csv": "871ce560a7d3001aa1b220925c3d65fed11fb2c769e2e46977057634c5708562"
+      }
+    },
+    {
+      "tag": "eb0e603f52ad4ccfb45be4c7d1512309",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_eb0e603f52ad4ccfb45be4c7d1512309.json",
+      "recording_sha256": "83d905d1c40e7b794a081ebde270f8c91d069229248a58ad86a2a3c7eba4a9be",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 1,
+        "tick": 263,
+        "side": 0,
+        "card": "ice-wizard",
+        "x": 8500,
+        "y": 500,
+        "cost": 3,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Skeletons",
+          "Xbow",
+          "Rocket",
+          "Tesla"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 263
+      },
+      "job": {
+        "tag": "eb0e603f52ad4ccfb45be4c7d1512309",
+        "part": "part-000037.parquet",
+        "signature": "696086ea192668a6f34db4815f299ab9dcdef9ec93ed9402e34f66a9201df43a",
+        "decks": [
+          [
+            "electro-dragon-ev1",
+            "berserker-hero",
+            "elite-barbarians-ev1",
+            "golem",
+            "skeleton-dragons",
+            "elixir-collector",
+            "tornado",
+            "barbarian-barrel"
+          ],
+          [
+            "knight-ev1",
+            "tornado",
+            "tesla-ev1",
+            "ice-wizard",
+            "rocket",
+            "skeletons",
+            "x-bow",
+            "the-log"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 148,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\eb0e603f52ad4ccfb45be4c7d1512309",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "cd70ab52fb0d755b5ae72341ca93b6a49031b750dac16c99de6851550b89664e",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "2cee008f3e511687eda62f531d7dd1d6424402bc496e2c0a3d4e871c3d7f0764",
+        "plays_ext.csv": "522d0adad164422a408ec6ec8fad685fe196743c3d8b819ebb53ed5713614320"
+      }
+    },
+    {
+      "tag": "ef5b178b49a644c9a3d6fd5afd6dc360",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_ef5b178b49a644c9a3d6fd5afd6dc360.json",
+      "recording_sha256": "9d3f9aeaf92c5b854e4e17b7a60e6910b09e348913117d2f10f18f03f40d6d1b",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 6,
+        "tick": 813,
+        "side": 1,
+        "card": "ice-wizard",
+        "x": 8500,
+        "y": 25500,
+        "cost": 3,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Tornado",
+          "Tesla",
+          "Xbow",
+          "Log"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 813
+      },
+      "job": {
+        "tag": "ef5b178b49a644c9a3d6fd5afd6dc360",
+        "part": "part-000035.parquet",
+        "signature": "98f8c47d30d833f052765389c50ee204f26c094d7f2baab15cefb072351b9674",
+        "decks": [
+          [
+            "knight-ev1",
+            "skeletons",
+            "tesla-ev1",
+            "ice-wizard",
+            "the-log",
+            "tornado",
+            "rocket",
+            "x-bow"
+          ],
+          [
+            "elite-barbarians-ev1",
+            "berserker-hero",
+            "witch-ev1",
+            "golem",
+            "skeleton-dragons",
+            "vines",
+            "barbarian-barrel",
+            "elixir-collector"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "icebow_vs_witch",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "versus_witch",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 150,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\ef5b178b49a644c9a3d6fd5afd6dc360",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "63a846eda8922d6a10735d0d2f322b7fd9f5ca5d7ba228b8dea566c11cbadfc3",
+        "repeat": true
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "f4f8e5a5fc01396dff9166717909e2c443857d26c83ddcb11291706a1e6a7129",
+        "plays_ext.csv": "069bb2344806481c4a640ecc36e50767af057850aa5df0deca31220ad44f8f46"
+      }
+    },
+    {
+      "tag": "f14c0e22682049d9a5286791a7345c33",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "rejected_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_f14c0e22682049d9a5286791a7345c33.json",
+      "recording_sha256": "1439c0b5461a7bf816dd1d12a66db746970771c43cf241bfba8ecac00bfd2109",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 2,
+        "tick": 465,
+        "side": 0,
+        "card": "elite-barbarians",
+        "x": 8499,
+        "y": 500,
+        "cost": 6,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "DarkPrince",
+          "Elixir Collector",
+          "Witch",
+          "Arrows"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 465
+      },
+      "job": {
+        "tag": "f14c0e22682049d9a5286791a7345c33",
+        "part": "part-000036.parquet",
+        "signature": "c259ba23c717aff4f4f575180d383928813cdb51a1fd597012a604a92b09e597",
+        "decks": [
+          [
+            "knight-ev1",
+            "skeletons",
+            "tesla-ev1",
+            "ice-wizard",
+            "the-log",
+            "tornado",
+            "rocket",
+            "x-bow"
+          ],
+          [
+            "witch-ev1",
+            "giant-hero",
+            "elite-barbarians-ev1",
+            "zap",
+            "arrows",
+            "dark-prince",
+            "rage",
+            "elixir-collector"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "icebow_vs_witch",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "versus_witch",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 151,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\f14c0e22682049d9a5286791a7345c33",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "92a5d2136c7364dd4c17b0e6a4d3ed5932f828073ccd48283fc7911a490d121f",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "8080791fa51df7d08169c7d4559f28646dcb06febf25cc643c0ccd798f557710",
+        "plays_ext.csv": "2d0b5b7cb813891149064b4566adf0cb17a26a7b6169af2ce305d630b68855a4"
+      }
+    },
+    {
+      "tag": "f4fea504b07942bc856df4443f4f6f5e",
+      "split": "confirmation",
+      "collection": "reserved_icebow_corrected",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\recordings\\replay_f4fea504b07942bc856df4443f4f6f5e.json",
+      "recording_sha256": "52dd3c09ed2d9b95d2cbaca4571ee36c6f33ca35700efaa8c8a21ae56e605dc9",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 295,
+        "side": 0,
+        "card": "the-log",
+        "x": 3500,
+        "y": 14500,
+        "cost": 2,
+        "elixir_before": 10.0,
+        "hand_before": [
+          "Skeletons",
+          "Xbow",
+          "Rocket",
+          "Tesla"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 295
+      },
+      "job": {
+        "tag": "f4fea504b07942bc856df4443f4f6f5e",
+        "part": "part-000007.parquet",
+        "signature": "03b5298e4e1ad8acbf3d4b25f213f87be67de8e400668c6464b589f30a6a8393",
+        "decks": [
+          [
+            "furnace-ev1",
+            "golden-knight",
+            "elite-barbarians-ev1",
+            "three-musketeers",
+            "ice-golem",
+            "zap",
+            "heal-spirit",
+            "elixir-collector"
+          ],
+          [
+            "knight-ev1",
+            "x-bow",
+            "tesla-ev1",
+            "ice-wizard",
+            "the-log",
+            "tornado",
+            "rocket",
+            "skeletons"
+          ]
+        ],
+        "strata": [
+          "exact_icebow",
+          "icebow_vs_furnace",
+          "rocket_deck",
+          "rocket_tornado_deck",
+          "versus_furnace",
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 154,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_icebow_corrected\\crawl\\f4fea504b07942bc856df4443f4f6f5e",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "72e699598ca4159d4882aa6c0406b8834ccc4838ab4a8feb75beed0bc1867b43",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "8295cdbba7a89988ead33bd8ab51c63a1e1e114654e616d7e059f5598da92612",
+        "plays_ext.csv": "9d84c88589385d58187204e9673c0c6d7d6dbfc0b2a02a4926fa65d7156262b7"
+      }
+    },
+    {
+      "tag": "f5dfd39141534d80bdbf53d8e29e345a",
+      "split": "development",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_f5dfd39141534d80bdbf53d8e29e345a.json",
+      "recording_sha256": "103dcd3d23f60303b7b0135383c5d12c4880d60e964162db9cd18efd6f42b8cd",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 161,
+        "side": 0,
+        "card": "barbarian-barrel",
+        "x": 2500,
+        "y": 14500,
+        "cost": 2,
+        "elixir_before": 8.8658,
+        "hand_before": [
+          "Berserker",
+          "Musketeer",
+          "Bats",
+          "BombTower"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 161
+      },
+      "job": {
+        "tag": "f5dfd39141534d80bdbf53d8e29e345a",
+        "part": "part-000001.parquet",
+        "signature": "af4cce2fe48fbc2c937bb07b66eced01f36294ddc78aca7b1def7ea8252664b0",
+        "decks": [
+          [
+            "skeletons-ev1",
+            "berserker-hero",
+            "wizard-hero",
+            "fire-spirit",
+            "x-bow",
+            "electro-spirit",
+            "elixir-collector",
+            "ice-spirit"
+          ],
+          [
+            "bats-ev1",
+            "berserker-hero",
+            "musketeer-ev1",
+            "giant-snowball",
+            "balloon",
+            "bomb-tower",
+            "barbarian-barrel",
+            "miner"
+          ]
+        ],
+        "strata": [
+          "xbow_deck"
+        ],
+        "split": "development",
+        "index": 549,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\f5dfd39141534d80bdbf53d8e29e345a",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "46422f13401da13316a2324d7f111939056599117dfcf1f17a6528ff10d0db2c",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "b4397b8627ffadf199a8e8355df31565f8c937a7ae94bb59112dc7bab23012d8",
+        "plays_ext.csv": "97aa88f74c0ba58a43ea1406f3efe35163f0ab24a1d115d8915bc54c289e37d5"
+      }
+    },
+    {
+      "tag": "f631bcf9ff8f447c91dc116b052db9a9",
+      "split": "development",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_f631bcf9ff8f447c91dc116b052db9a9.json",
+      "recording_sha256": "02018d9c7dbe594f8cbab5b6d2b538422cb1c6e7f9911f029f21b50af759be2c",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 5,
+        "tick": 321,
+        "side": 0,
+        "card": "princess",
+        "x": 8499,
+        "y": 500,
+        "cost": 3,
+        "elixir_before": 8.7138,
+        "hand_before": [
+          "MegaKnight",
+          "SkeletonArmy",
+          "RoyalGiant",
+          "Prince"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 321
+      },
+      "job": {
+        "tag": "f631bcf9ff8f447c91dc116b052db9a9",
+        "part": "part-000018.parquet",
+        "signature": "d1af78bf0d0e4fcdca1f8fc48344a6ba806cd6cec8f2a724cd385b522863d552",
+        "decks": [
+          [
+            "skeletons-ev1",
+            "berserker-hero",
+            "giant-snowball-ev1",
+            "fire-spirit",
+            "x-bow",
+            "electro-spirit",
+            "elixir-collector",
+            "musketeer"
+          ],
+          [
+            "princess-ev1",
+            "prince",
+            "dart-goblin-ev1",
+            "royal-giant",
+            "skeleton-army",
+            "mega-knight",
+            "bats",
+            "goblin-barrel"
+          ]
+        ],
+        "strata": [
+          "xbow_deck"
+        ],
+        "split": "development",
+        "index": 393,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\f631bcf9ff8f447c91dc116b052db9a9",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "af281318fc3f3fc5730715a9d3ce706dc5bfac98a7cb61fb432b3482659b0cfa",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "573713d272162f4e2f79ad1a4f47590184b47fbd43a527e91178963df96bcfa9",
+        "plays_ext.csv": "d79d20be246351308577a9492161e6ba89be9f6e37bf1223ff0eb5837ac36a1c"
+      }
+    },
+    {
+      "tag": "fef70a8d3fb240cb8b2d239d3456641c",
+      "split": "confirmation",
+      "collection": "reserved_pilot",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ],
+      "recording": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\recordings\\replay_fef70a8d3fb240cb8b2d239d3456641c.json",
+      "recording_sha256": "d3bac46b35e9871ac51bcb38a37217b1c1bb8fe50a8106b8ed7d9596e11106cd",
+      "position_based": false,
+      "first_rejection": {
+        "play_index": 0,
+        "tick": 184,
+        "side": 1,
+        "card": "skeletons",
+        "x": 8500,
+        "y": 31500,
+        "cost": 1,
+        "elixir_before": 9.2752,
+        "hand_before": [
+          "Berserker",
+          "Log",
+          "IceSpirits",
+          "ElectroSpirit"
+        ],
+        "delay_ticks": 0,
+        "accepted": false,
+        "result_code": 9,
+        "result_name": "card_not_in_hand",
+        "hand_index": -1,
+        "placement_valid": null,
+        "placement_reason": null,
+        "engine_tick": 184
+      },
+      "job": {
+        "tag": "fef70a8d3fb240cb8b2d239d3456641c",
+        "part": "part-000033.parquet",
+        "signature": "e0b2eb35ffb507e988a14bb086480302f2916ab42f2caee216ecdcf6320e5693",
+        "decks": [
+          [
+            "archers-ev1",
+            "berserker-hero",
+            "skeletons-ev1",
+            "ice-spirit",
+            "x-bow",
+            "elixir-collector",
+            "electro-spirit",
+            "the-log"
+          ],
+          [
+            "minion-horde-ev1",
+            "mini-pekka-hero",
+            "zap-ev1",
+            "giant",
+            "bats",
+            "sparky",
+            "skeleton-army",
+            "arrows"
+          ]
+        ],
+        "strata": [
+          "xbow_deck"
+        ],
+        "split": "confirmation",
+        "index": 469,
+        "crawl": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_pilot\\crawl\\fef70a8d3fb240cb8b2d239d3456641c",
+        "plays_file": "plays_ext.csv",
+        "raw_payload_sha256": "eb787f6b4ab8b3da87f2a36a6b67e60892281c300453639b92ad3fb0a54b6324",
+        "repeat": false
+      },
+      "seed": 424242,
+      "level": 11,
+      "role": "reserved_fallback",
+      "csv_hashes": {
+        "battles.csv": "663e7c29a655121ed44f98d638073ff2fc696e7081a12790a8d1dec7437d22d6",
+        "plays_ext.csv": "c883a38c0e72b3ddaa6e511773a549f411f7356159418724b0e19eee7a53e94e"
+      }
+    }
+  ],
+  "audit_sha256": "bf8ed9a91852b9499fe0897b3b16b3a383956cec6db0aa50e466d0b6354eb10d",
+  "training_verified_sha256": "578f2e7db1a75f18a677995f96d7b431cee707a745e291e0472a0363e35837f9",
+  "plan_sha256": "79d74b5651f728dd7c8d797c3b2e9206c0ac161a5b0a86111bb42e1e2c07a514",
+  "model_predictions": 0,
+  "trainable": false
+}

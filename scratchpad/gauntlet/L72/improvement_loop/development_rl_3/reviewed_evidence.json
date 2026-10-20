@@ -1,0 +1,88 @@
+{
+  "complete": true,
+  "receipts": {
+    "prepare": {
+      "receipt_sha256": "f7c5351a2253be63750972b18317001497600e7c57fc142a19cc850741a72db3",
+      "output_sha256": "6a9d7bf896c9600d195b9a4ff6dfd94812a2401eb9d3be555ae2c950c9bf6e19",
+      "seconds": 15.206881999969482
+    },
+    "train": {
+      "receipt_sha256": "e093adedd6243c3f8daea5e3a9c13d5d95f2bbb7db0baba9d2fafc0b25ce21ed",
+      "output_sha256": "ed101927f6c0b221f132324b4087f46e7063a1033e2398a54efa7223794e692c",
+      "seconds": 13810.484160423279
+    },
+    "training-independent": {
+      "receipt_sha256": "b9d4dc8b66c4784dcbbc1dc3e2e0b7de165ab72a3ecd1ad04b9ac00382739290",
+      "output_sha256": "768174e6d950c0194c88bd39b716585238be97746f90b6df93e39249f712b58b",
+      "seconds": 58.893232583999634
+    },
+    "eval": {
+      "receipt_sha256": "55c68b17d4e4ba53fe0a829a457e4603503ea78af93e661a9054b795ef5c12e4",
+      "output_sha256": "8e92239a51dc528119c8e3d5b210ca8fc5c2fe746a7c9c3de975c7b5c9c48e78",
+      "seconds": 152.88523292541504
+    },
+    "results-independent": {
+      "receipt_sha256": "53c60e754be7313261e8a01ff9b8018d8bf895c6dd0710349485fc6c040c3b23",
+      "output_sha256": "af6310d18dd080f28e22e69f71cea4c5dd21fab27acf78d72b15b015172c19ac",
+      "seconds": 52.11477828025818
+    }
+  },
+  "results_verified_sha256": "8a33cce108f833d46114b3bc08250ccc405b04c1967a04b22771553bc7ae4a73",
+  "training_verified_sha256": "5a2933d0369ab6e6f44b98cd5cb3f36ae28e18fbfc0bc5a931515b9ee514d0fd",
+  "prepared_sha256": "6818a5cd4780ef72ba23293af67c02c8871f0fb7f9c4abc5c251c6ec4d5a8a5c",
+  "trained_sha256": "b7c7c1c0354272d1281808ab78f87487f6cc4b7c87a43e9170eab26aa6ec1cf4",
+  "verdicts": {
+    "full_budget_v5": {
+      "filters": {
+        "ordinary_v5": {
+          "rocket_aim_material": false,
+          "rocket_action_material": false,
+          "late_rocket_material": false,
+          "general_card_noninferior": true,
+          "barrel_correct_nonregression": false,
+          "barrel_wrong_nonregression": false,
+          "witch_nonregression": false,
+          "night_witch_nonregression": false,
+          "furnace_nonregression": false,
+          "defensive_sequence_nonregression": false,
+          "phase_late_overtime_clock_nonregression": false
+        }
+      },
+      "continuation_passed": false
+    },
+    "late_budget_v5": {
+      "filters": {
+        "ordinary_v5": {
+          "rocket_aim_material": false,
+          "rocket_action_material": false,
+          "late_rocket_material": false,
+          "general_card_noninferior": true,
+          "barrel_correct_nonregression": true,
+          "barrel_wrong_nonregression": true,
+          "witch_nonregression": false,
+          "night_witch_nonregression": true,
+          "furnace_nonregression": false,
+          "defensive_sequence_nonregression": false,
+          "phase_late_overtime_clock_nonregression": false
+        },
+        "full_budget_v5": {
+          "rocket_aim_material": false,
+          "rocket_action_material": false,
+          "late_rocket_material": false,
+          "general_card_noninferior": true,
+          "barrel_correct_nonregression": true,
+          "barrel_wrong_nonregression": true,
+          "witch_nonregression": true,
+          "night_witch_nonregression": true,
+          "furnace_nonregression": true,
+          "defensive_sequence_nonregression": true,
+          "phase_late_overtime_clock_nonregression": true
+        }
+      },
+      "continuation_passed": false
+    }
+  },
+  "source_sha256": "36fb91de73eead9edc7518a96fc1aac53f9007591699a68bcd6b2f1351acae5f",
+  "accepted": false,
+  "deployed": false
+}

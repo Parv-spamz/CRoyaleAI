@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/development_iteration_4/prepare.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "PHASE_SCHEDULE_PREPARED",
+  "matched": true,
+  "output_sha256": "08d4e1457839a4d9d90ae8389da595b730f0db62abc8669688bbe3519f413ea7",
+  "seconds": 1.8992760181427002
+}

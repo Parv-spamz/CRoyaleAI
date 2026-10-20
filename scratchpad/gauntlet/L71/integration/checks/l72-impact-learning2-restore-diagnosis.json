@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/impact_learnability_2_restore/diagnose.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "IMPACT_ROOT_RESTORE_DIAGNOSED",
+  "matched": true,
+  "output_sha256": "46bbaa05bd4f510ec1d03ab857af8e75bdce4687a3cfd90ebf55566538a302f4",
+  "seconds": 24.38379144668579
+}

@@ -1,0 +1,26 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pipeline.eval_expert_context",
+    "--data",
+    "icebow/data/pipeline/gen_dataset_v31_public.npz",
+    "--source-data",
+    "icebow/data/pipeline/gen_dataset_v31_public.npz",
+    "--contexts",
+    "icebow/data/bench/context_teaching_20261005",
+    "--ckpt",
+    "icebow/data/bench/rl_royale/rseries_r1e31/rseries_r1e31_u0155.pt",
+    "--out",
+    "icebow/data/bench/expert_context_20261005/r1e_heldout",
+    "--device",
+    "cpu"
+  ],
+  "cwd": "C:\\Users\\benpe\\.codex\\worktrees\\learned-defence\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "EXPERT_CONTEXT_HELDOUT_COMPLETE",
+  "matched": true,
+  "output_sha256": "a6e0792f9b8b9ee89dd6cdccd3775a855366477b0015c90bfd95d4ab2acb9d0c",
+  "seconds": 895.7554779052734
+}

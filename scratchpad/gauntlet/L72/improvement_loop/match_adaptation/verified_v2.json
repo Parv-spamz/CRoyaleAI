@@ -1,0 +1,15 @@
+{
+  "complete": true,
+  "rows": 268718,
+  "report_sha256": "0e6bb348e83c376832e30cc07ff1ec00fe67d5eb5242be13c4262ccfad1f6dcf",
+  "source_sha256": "75ee4faf7eb1f390c6b225107bed6d16da66f013429e3edbea855f00c168e00e",
+  "raw_sources": 1978,
+  "fixtures": {
+    "positive": 1,
+    "negative": 8
+  },
+  "all_raw_rows_matched": true,
+  "new_predictions": false,
+  "optimizer_updates": 0,
+  "direct_lock_or_causal_damage_verified": false
+}

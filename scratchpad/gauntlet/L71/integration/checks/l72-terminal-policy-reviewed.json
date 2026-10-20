@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/review_terminal_policy.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "TERMINAL_POLICY_REVIEW_COMPLETE",
+  "matched": true,
+  "output_sha256": "a4ad2ebf03956c3403e43762ff6adc1403e1957f8f2e96afc850ca9b658ff6a6",
+  "seconds": 0.1541733741760254
+}

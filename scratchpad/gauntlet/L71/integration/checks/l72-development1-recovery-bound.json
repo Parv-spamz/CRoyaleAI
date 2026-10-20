@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/development_iteration_1/bind_recovery.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "DEVELOPMENT_1_RECOVERY_BOUND",
+  "matched": true,
+  "output_sha256": "dadeb2ab641bbe7ed76b56a9b5db0ed70161b876c569e49afdd367dbc349754b",
+  "seconds": 5.3829569816589355
+}

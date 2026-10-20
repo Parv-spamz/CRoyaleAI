@@ -1,0 +1,4826 @@
+[
+ {
+  "tag": "000YLL22U0YL",
+  "why": "Lightning"
+ },
+ {
+  "tag": "000YLL2YLGCC",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "000YLPJL2Q9V",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "000YLPVJ982P",
+  "why": "Miner"
+ },
+ {
+  "tag": "000YLY0JCPGL",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "000YLY2UGCGC",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "000YLY2ULYLR",
+  "why": "Ghost"
+ },
+ {
+  "tag": "000YLY2UVGRL",
+  "why": "Miner"
+ },
+ {
+  "tag": "000YLYCVUJPP",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "000YLYY9V2GJ",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "000YLYYC9G8C",
+  "why": "Ghost"
+ },
+ {
+  "tag": "002YLG0GYGJ8",
+  "why": "RamRider"
+ },
+ {
+  "tag": "002YLLLP2YRR",
+  "why": "Lightning"
+ },
+ {
+  "tag": "002YLLLP9JUR",
+  "why": "Heal"
+ },
+ {
+  "tag": "002YLLVRVVR2",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "002YLQUV22R2",
+  "why": "Lightning"
+ },
+ {
+  "tag": "002YLQV8VRGC",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "002YLYL9JL2R",
+  "why": "Lightning"
+ },
+ {
+  "tag": "0038806231844ee084559043c5f0f430",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "00485df608704479965b36258e419c4b",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "008YLL0G2RQL",
+  "why": "008YLL0G2RQL: no deal fits side 0's recorded plays"
+ },
+ {
+  "tag": "008YLL2GU9QG",
+  "why": "Miner"
+ },
+ {
+  "tag": "008YLL2VJVV8",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "008YLLJ0PV2C",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "008YLLJJJVC2",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "008YLLJRQL2G",
+  "why": "Rage"
+ },
+ {
+  "tag": "008YLQ0CQQYV",
+  "why": "Ghost"
+ },
+ {
+  "tag": "008YLYCGU90Y",
+  "why": "Ghost"
+ },
+ {
+  "tag": "008YLYUGRCCG",
+  "why": "Lightning"
+ },
+ {
+  "tag": "008YLYVUYPR8",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "009YLG0C0LCJ",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "009YLG0CL90V",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "009YLG0JLGQ2",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "009YLQP8JU9Y",
+  "why": "Lightning"
+ },
+ {
+  "tag": "009YLQURY0C8",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "009YLQVLLQG2",
+  "why": "Rage"
+ },
+ {
+  "tag": "00CYPL2VPYJV",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "00CYPL2VU8J8",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "00CYPL800QU9",
+  "why": "Miner"
+ },
+ {
+  "tag": "00CYPL82P0PR",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00CYPL9U82YQ",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "00CYPLP808RV",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "00CYPLQY80CL",
+  "why": "Clone"
+ },
+ {
+  "tag": "00CYPLY2PLJP",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "00CYPQ0290GL",
+  "why": "00CYPQ0290GL: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "00GPCCV0QRUG",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "00GPVPYGJ8JR",
+  "why": "Miner"
+ },
+ {
+  "tag": "00GY90YCPGG0",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "00GYP9JG80U8",
+  "why": "Miner"
+ },
+ {
+  "tag": "00GYP9UC999U",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00GYP9VC09QR",
+  "why": "ElixirGolem"
+ },
+ {
+  "tag": "00GYP9VCRCCL",
+  "why": "Ronin"
+ },
+ {
+  "tag": "00GYP9VVJGRY",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "00GYP9VVV9PR",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00GYPL98Q2JG",
+  "why": "RamRider"
+ },
+ {
+  "tag": "00GYPLYGPCRJ",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "00GYPPLRYGL2",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "00GYPPU8GVUP",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "00GYPY8C0VVJ",
+  "why": "Vines"
+ },
+ {
+  "tag": "00GYPYCQRVPC",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "00JP8L8YURCU",
+  "why": "GoblinDemolisher"
+ },
+ {
+  "tag": "00JPUPJ02LCC",
+  "why": "Ghost"
+ },
+ {
+  "tag": "00JYPG0PQCUR",
+  "why": "Vines"
+ },
+ {
+  "tag": "00JYPG2CQ9VP",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "00JYPG2LQQ98",
+  "why": "Ghost"
+ },
+ {
+  "tag": "00JYPG9P0UUJ",
+  "why": "SuspiciousBush"
+ },
+ {
+  "tag": "00JYPGLRCLU2",
+  "why": "Rage"
+ },
+ {
+  "tag": "00JYPGYG0CL0",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "00JYPGYGYYUQ",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "00JYPGYLU9CP",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "00JYPGYPP80R",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00JYPGYQ8LGC",
+  "why": "DarkMagic"
+ },
+ {
+  "tag": "00JYPGYQG2LP",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "00JYPGYQLQ0Y",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00JYPGYQRRGQ",
+  "why": "Ghost"
+ },
+ {
+  "tag": "00JYPGYQV9V8",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "00JYPGYQYG0P",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00JYPGYRPYC9",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "00JYPGYRU2UJ",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "00JYPGYY88GY",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "00JYPGYY9VG8",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00JYPGYYCUYR",
+  "why": "Miner"
+ },
+ {
+  "tag": "00JYPGYYJYUG",
+  "why": "BossBandit"
+ },
+ {
+  "tag": "00JYPLJCYQLR",
+  "why": "Rage"
+ },
+ {
+  "tag": "00JYPLVLLG9P",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "00JYPQ8QUGYP",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "00JYPQL80YYP",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "00JYPQP92Q2P",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00JYPQQ9V8UY",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00JYPQQG8RY2",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "00JYPQQGU9PL",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "00JYPQQRP8J0",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "00JYPQQUL0CP",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "00JYPQYYV0JV",
+  "why": "Rage"
+ },
+ {
+  "tag": "00LYPG020GCP",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "00LYPG0V90GU",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "00LYPG0VLGLL",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "00LYPG90CGQ9",
+  "why": "00LYPG90CGQ9: no deal fits side 0's recorded plays"
+ },
+ {
+  "tag": "00LYPLCV08L9",
+  "why": "Vines"
+ },
+ {
+  "tag": "00LYPLCV92L0",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "00LYPLCVPJR9",
+  "why": "Elixir Collector"
+ },
+ {
+  "tag": "00LYPLCVQRVY",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00LYPLJLRJ00",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "00LYPLJLYQCR",
+  "why": "00LYPLJLYQCR: no deal fits side 0's recorded plays"
+ },
+ {
+  "tag": "00LYPLR222YQ",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "00LYPLU8C8JP",
+  "why": "Miner"
+ },
+ {
+  "tag": "00LYPLU8VV0C",
+  "why": "Vines"
+ },
+ {
+  "tag": "00LYPQ0C02QP",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00LYPQ0C8PPY",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00LYPQ0CYGLJ",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00LYPQ0JJY8V",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "00LYPQ0JP0V8",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00LYPQ0JQ88V",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00LYPQ0JU2UC",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "00LYPQ28JL8Q",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "00LYPQ28PU22",
+  "why": "00LYPQ28PU22: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "00LYPQ8GPP2Q",
+  "why": "00LYPQ8GPP2Q: no deal fits side 0's recorded plays"
+ },
+ {
+  "tag": "00LYPQ8LGYP2",
+  "why": "Ronin"
+ },
+ {
+  "tag": "00LYPQ8RLUGG",
+  "why": "Vines"
+ },
+ {
+  "tag": "00LYPQPYUCUP",
+  "why": "Miner"
+ },
+ {
+  "tag": "00LYPQUC9P20",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00LYPQUJGUVV",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "00LYPQVC0GGY",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "00LYPQVCQP88",
+  "why": "Miner"
+ },
+ {
+  "tag": "00LYPQVL0Y9V",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "00LYPYV2VCJQ",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "00PYLL2CYJGL",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "00PYLL2JQJR9",
+  "why": "Ronin"
+ },
+ {
+  "tag": "00PYLL8P8L9C",
+  "why": "Ghost"
+ },
+ {
+  "tag": "00PYLL9YUJY9",
+  "why": "Miner"
+ },
+ {
+  "tag": "00PYLLGJ9GCL",
+  "why": "Miner"
+ },
+ {
+  "tag": "00PYLLLU0002",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "00PYLLQ8V8U8",
+  "why": "ElixirGolem"
+ },
+ {
+  "tag": "00PYLLVG8QQ9",
+  "why": "Ghost"
+ },
+ {
+  "tag": "00PYLLYPQQ2L",
+  "why": "GiantBuffer"
+ },
+ {
+  "tag": "00PYLPVRP9LR",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "00PYLYRCCQ80",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "00PYLYRPCQRG",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "00PYLYVPVY8L",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "00QP8YQ92YRC",
+  "why": "DarkMagic"
+ },
+ {
+  "tag": "00QYPG2G92PQ",
+  "why": "Rage"
+ },
+ {
+  "tag": "00QYPQ2JJ9PC",
+  "why": "MergeMaiden"
+ },
+ {
+  "tag": "00QYPQ9VPCVC",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00QYPQ9VQGU8",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "00QYPQ9VRQQ8",
+  "why": "Ghost"
+ },
+ {
+  "tag": "00QYPQJVCV20",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "00QYPQJVL2QG",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "00QYPQR222RP",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "00QYPQRCYQLU",
+  "why": "RamRider"
+ },
+ {
+  "tag": "00QYPQRJ0CJR",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "00QYPQUG2YQU",
+  "why": "Ghost"
+ },
+ {
+  "tag": "00QYPQUPV9QC",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "00QYPQV8UYG0",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "00RYP9GQL89L",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "00RYPL9G0YQV",
+  "why": "Vines"
+ },
+ {
+  "tag": "00RYPLJ02URV",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "00RYPLLLY9QL",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "00RYPLPQPV0U",
+  "why": "Rage"
+ },
+ {
+  "tag": "00RYPLRJ9GCC",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00RYPPJGQYU0",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00RYPYGG82UU",
+  "why": "SuspiciousBush"
+ },
+ {
+  "tag": "00UYPL8VGLUY",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "00UYPL99P28R",
+  "why": "00UYPL99P28R: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "00UYPL99PV2P",
+  "why": "Elixir Collector"
+ },
+ {
+  "tag": "00UYPLL0RLRQ",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "00UYPLLCLCJQ",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00UYPLLGUP02",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "00UYPLLGYCQ2",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "00UYPLLJ9P0R",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "00UYPLLR2JVJ",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00UYPLLU0C0L",
+  "why": "Miner"
+ },
+ {
+  "tag": "00UYPLLU8LYV",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "00UYPLLURY2U",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "00UYPLQPJRQ0",
+  "why": "00UYPLQPJRQ0: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "00UYPLY8JPL0",
+  "why": "GoblinDemolisher"
+ },
+ {
+  "tag": "00UYPLYCQQCL",
+  "why": "Vines"
+ },
+ {
+  "tag": "00UYPLYPLLGC",
+  "why": "Vines"
+ },
+ {
+  "tag": "00UYPP2P8P2Y",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "00UYPQ2Q2Y9J",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "00UYPQQPYGJY",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "00VYPLLJLCLV",
+  "why": "Ghost"
+ },
+ {
+  "tag": "00VYPLPJLC88",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "00VYPLQ2GVJ9",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "00VYPLRLJ880",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00VYPLRUQQV8",
+  "why": "Vines"
+ },
+ {
+  "tag": "00VYPQ00YYR2",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "00VYPQ8LLRP2",
+  "why": "Rage"
+ },
+ {
+  "tag": "00VYPQGY28R2",
+  "why": "GiantBuffer"
+ },
+ {
+  "tag": "00VYPQLRU8U0",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "00VYPQQCLJV8",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "00VYPQQL2JCG",
+  "why": "GiantBuffer"
+ },
+ {
+  "tag": "00VYPQYC2UV9",
+  "why": "00VYPQYC2UV9: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "00VYPQYCLC8P",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "00VYPQYGR8JY",
+  "why": "Ghost"
+ },
+ {
+  "tag": "00VYPQYGYR8Q",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "00VYPQYJJJVQ",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "00VYPQYJVPJQ",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "00VYPQYLLL2L",
+  "why": "Ghost"
+ },
+ {
+  "tag": "00VYPQYQ0LU0",
+  "why": "GoblinCurse"
+ },
+ {
+  "tag": "00VYPQYQR0R0",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "00VYPQYUR99R",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00VYPQYV0Y9C",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "00VYPQYY2R0J",
+  "why": "Ghost"
+ },
+ {
+  "tag": "00VYPQYYJGL0",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "00YPU9U2JUPY",
+  "why": "Elixir Collector"
+ },
+ {
+  "tag": "00YPVVJL9RRG",
+  "why": "Elixir Collector"
+ },
+ {
+  "tag": "00YYP9GQCJGG",
+  "why": "Heal"
+ },
+ {
+  "tag": "00YYP9GQRQ02",
+  "why": "00YYP9GQRQ02: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "00YYP9R9VQYV",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "00YYP9RP2QUQ",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "00YYPLGCJG0Q",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "00YYPLGRJQLU",
+  "why": "Ghost"
+ },
+ {
+  "tag": "00YYPLLVRJUC",
+  "why": "Ghost"
+ },
+ {
+  "tag": "00YYPLQ0PG80",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00YYPPGL0Y8L",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00YYPPRUQGPP",
+  "why": "DarkMagic"
+ },
+ {
+  "tag": "00YYPY2YRJJJ",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "00YYPY90CUCC",
+  "why": "Vines"
+ },
+ {
+  "tag": "00YYPYJ2GPUU",
+  "why": "Lightning"
+ },
+ {
+  "tag": "00YYPYPUYYRP",
+  "why": "00YYPYPUYYRP: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "00YYPYQLYV9C",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "00YYPYQQQ2Q9",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "00YYPYV02L8Q",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "00YYPYV2GUR2",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "00cc8d5914df4733bc21bc47f2bce4b5",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "00cd0f22deb04658849d30114f09af52",
+  "why": "Miner"
+ },
+ {
+  "tag": "011290db7a5a48bcb988559a1e4dff3a",
+  "why": "Rage"
+ },
+ {
+  "tag": "014bd0c8e7314940b4f792f980fa58cf",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "01c7769910314e4db83d129ed6c62512",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "01d096a9dfc94824bc2b64070c41ae00",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "020YPLGYPPLG",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "020YPLRJVL2J",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "020YPLY08YUP",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "020YPY2C8QR0",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "020YPYCVPJJ2",
+  "why": "020YPYCVPJJ2: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "020YPYG9VY08",
+  "why": "Ghost"
+ },
+ {
+  "tag": "020YPYL80RJY",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "020YPYL9CYUL",
+  "why": "Lightning"
+ },
+ {
+  "tag": "020YPYL9R08C",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "020YPYL9VC0C",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "020YPYLP8YR0",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "020YPYLY29LP",
+  "why": "020YPYLY29LP: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "020YPYP8J9PV",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "020YPYQ22GY2",
+  "why": "Lightning"
+ },
+ {
+  "tag": "020YPYR2V2QG",
+  "why": "Rage"
+ },
+ {
+  "tag": "020YPYYQG22L",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "020YPYYQQ8V8",
+  "why": "Lightning"
+ },
+ {
+  "tag": "020YPYYR8Q0P",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "020YPYYVJR0V",
+  "why": "Rage"
+ },
+ {
+  "tag": "022PPLRJJ982",
+  "why": "022PPLRJJ982: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "022PVUYRJRCQ",
+  "why": "Miner"
+ },
+ {
+  "tag": "022YYG2GUJGG",
+  "why": "Lightning"
+ },
+ {
+  "tag": "022YYG8LLL8U",
+  "why": "Lightning"
+ },
+ {
+  "tag": "022YYG8Y928Y",
+  "why": "Lightning"
+ },
+ {
+  "tag": "022YYGG82LP0",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "022YYGGU2V2J",
+  "why": "Vines"
+ },
+ {
+  "tag": "022YYGQ9GC0R",
+  "why": "Ghost"
+ },
+ {
+  "tag": "022YYL8R2GG0",
+  "why": "022YYL8R2GG0: no deal fits side 0's recorded plays"
+ },
+ {
+  "tag": "022YYL8YCYC8",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "022YYLUUPYYV",
+  "why": "BossBandit"
+ },
+ {
+  "tag": "022YYLV98PVR",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "022YYLV9YVJL",
+  "why": "Rage"
+ },
+ {
+  "tag": "022YYQ0RPYY2",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "022YYQ22298V",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "022YYQ2G0LPV",
+  "why": "Lightning"
+ },
+ {
+  "tag": "022YYQ2QJRPV",
+  "why": "Lightning"
+ },
+ {
+  "tag": "022YYQ92909Q",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "022YYQGUYVJL",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "022YYQL0UURG",
+  "why": "Heal"
+ },
+ {
+  "tag": "022YYQL2QLUV",
+  "why": "SuspiciousBush"
+ },
+ {
+  "tag": "022YYQL828PQ",
+  "why": "Vines"
+ },
+ {
+  "tag": "022YYQQ889PQ",
+  "why": "Ghost"
+ },
+ {
+  "tag": "022YYQQ8YGPQ",
+  "why": "GiantBuffer"
+ },
+ {
+  "tag": "022YYQQURP2Y",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "022YYQY0YR92",
+  "why": "Lightning"
+ },
+ {
+  "tag": "022YYQY2Y8C8",
+  "why": "Lightning"
+ },
+ {
+  "tag": "022YYQYV9Y2R",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "022YYYUC8VUJ",
+  "why": "Lightning"
+ },
+ {
+  "tag": "022YYYUCQR2V",
+  "why": "Lightning"
+ },
+ {
+  "tag": "022YYYUCR9VJ",
+  "why": "Lightning"
+ },
+ {
+  "tag": "022YYYUU9LPG",
+  "why": "022YYYUU9LPG: no deal fits side 0's recorded plays"
+ },
+ {
+  "tag": "022YYYUUQGGJ",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "022YYYVURLCJ",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "028YPCJG82UV",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "028YPJRRLYV9",
+  "why": "Miner"
+ },
+ {
+  "tag": "028YPU8CRPQG",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "028YPUGCY8C8",
+  "why": "Miner"
+ },
+ {
+  "tag": "028YPUVCJYY8",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "028YPUVLL8L8",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "028YPUY00RC0",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "029PVRR80PC8",
+  "why": "Miner"
+ },
+ {
+  "tag": "029YPC2U9CGU",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "029YPC9VQQCY",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "029YPCCJCPG8",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "029YPCCL9828",
+  "why": "Lightning"
+ },
+ {
+  "tag": "029YPCVVG8VU",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "029YPJCVURP8",
+  "why": "029YPJCVURP8: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "029YPU92PCCV",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "029YPU9PVU09",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "029YPU9RVVJL",
+  "why": "Lightning"
+ },
+ {
+  "tag": "029YPUPJ0Q00",
+  "why": "Lightning"
+ },
+ {
+  "tag": "029YPUPJ80RC",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "029YPUPJYJR9",
+  "why": "Ronin"
+ },
+ {
+  "tag": "029YPUPLU0JU",
+  "why": "Lightning"
+ },
+ {
+  "tag": "029YPUPRCPP0",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "029YPUY02RLL",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "02CY8PJU8VUQ",
+  "why": "Lightning"
+ },
+ {
+  "tag": "02CY8PRV8C0V",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "02CY8YJJ8GPY",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "02CY8YQ0R0P8",
+  "why": "SuspiciousBush"
+ },
+ {
+  "tag": "02CY8YQJUUJC",
+  "why": "Miner"
+ },
+ {
+  "tag": "02CY8YV20VLJ",
+  "why": "Lightning"
+ },
+ {
+  "tag": "02CY8YVCQ0RJ",
+  "why": "Lightning"
+ },
+ {
+  "tag": "02CY8YYVLC8C",
+  "why": "Ronin"
+ },
+ {
+  "tag": "02GY9G00GY9P",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "02GY9GJCR9P0",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "02GY9GJGYJUV",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "02GY9GJJLR9Q",
+  "why": "DarkMagic"
+ },
+ {
+  "tag": "02GY9GJQU0UR",
+  "why": "Miner"
+ },
+ {
+  "tag": "02GY9GJU20YJ",
+  "why": "Lightning"
+ },
+ {
+  "tag": "02GY9GJV00GV",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "02GY9GJV8CVG",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "02GY9GR902G8",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "02GY9GRGYG0Q",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "02GY9GVRYYRC",
+  "why": "Ghost"
+ },
+ {
+  "tag": "02GY9GY2LJ82",
+  "why": "Rage"
+ },
+ {
+  "tag": "02GY9GY2PRPG",
+  "why": "Vines"
+ },
+ {
+  "tag": "02GY9QCPCL8V",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "02GY9R000JPR",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "02GY9R00RQJC",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "02GY9R029GQV",
+  "why": "Ronin"
+ },
+ {
+  "tag": "02GY9R092YG0",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "02GY9R09LU8J",
+  "why": "Lightning"
+ },
+ {
+  "tag": "02GY9R09YGVG",
+  "why": "RamRider"
+ },
+ {
+  "tag": "02GY9R8RV9PC",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "02GY9RGP28RJ",
+  "why": "GoblinDemolisher"
+ },
+ {
+  "tag": "02GY9RRC0922",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "02GY9RUGQUJC",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "02JY9G00V9CJ",
+  "why": "Lightning"
+ },
+ {
+  "tag": "02JY9G020C2U",
+  "why": "Heal"
+ },
+ {
+  "tag": "02JY9G02LR0U",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "02JY9G02UJL2",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "02JY9G082QC2",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "02JY9G08C0JV",
+  "why": "Mirror"
+ },
+ {
+  "tag": "02JY9G08G2J9",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "02JY9G090029",
+  "why": "BossBandit"
+ },
+ {
+  "tag": "02JY9G8LJPJV",
+  "why": "DarkMagic"
+ },
+ {
+  "tag": "02JY9G99LY0L",
+  "why": "RamRider"
+ },
+ {
+  "tag": "02JY9G99RPRU",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "02JY9G9P2P80",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "02JY9G9PP92L",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "02JY9GG2YPYJ",
+  "why": "Heal"
+ },
+ {
+  "tag": "02JY9GL09YJJ",
+  "why": "Ghost"
+ },
+ {
+  "tag": "02JY9GL22CYR",
+  "why": "Lightning"
+ },
+ {
+  "tag": "02JY9GLCPG82",
+  "why": "Miner"
+ },
+ {
+  "tag": "02JY9GPPVPPG",
+  "why": "GoblinCurse"
+ },
+ {
+  "tag": "02JY9GQYCPCQ",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "02JY9GYLJC9Y",
+  "why": "Ghost"
+ },
+ {
+  "tag": "02JY9GYQ89QY",
+  "why": "SuspiciousBush"
+ },
+ {
+  "tag": "02JY9R00C2UU",
+  "why": "GoblinCurse"
+ },
+ {
+  "tag": "02JY9RLLGUC8",
+  "why": "Lightning"
+ },
+ {
+  "tag": "02JY9RYQVQVV",
+  "why": "RamRider"
+ },
+ {
+  "tag": "02LY9LGUYY92",
+  "why": "Lightning"
+ },
+ {
+  "tag": "02LY9LJV20Q9",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "02LY9LJV8Q0C",
+  "why": "Miner"
+ },
+ {
+  "tag": "02LY9LRLUPRU",
+  "why": "Lightning"
+ },
+ {
+  "tag": "02LY9LU89VCP",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "02LY9LUU2YPG",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "02LY9LVCP20P",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "02LY9Q2RPLRG",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "02LY9QC0UVJ2",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "02LY9QCQ0Q9P",
+  "why": "Vines"
+ },
+ {
+  "tag": "02LY9QGYC8YC",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "02LY9QUVLJUL",
+  "why": "Lightning"
+ },
+ {
+  "tag": "02LY9QVGQ8J0",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "02LY9QVVG0PG",
+  "why": "ThreeMusketeers"
+ },
+ {
+  "tag": "02LY9QVVGCLG",
+  "why": "Lightning"
+ },
+ {
+  "tag": "02LY9QVVLGCY",
+  "why": "Lightning"
+ },
+ {
+  "tag": "02PYPCUGJJYL",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "02PYPCULR2QJ",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "02PYPRUYCVCP",
+  "why": "Vines"
+ },
+ {
+  "tag": "02PYPU2QL0CR",
+  "why": "Ghost"
+ },
+ {
+  "tag": "02PYPU8J2G0R",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "02PYPULJRUJU",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "02PYPULRV008",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "02PYPULVPJ8Q",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "02PYPUP2U8PP",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "02PYPUP88Q2Y",
+  "why": "Rage"
+ },
+ {
+  "tag": "02PYPUQ0JU0C",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "02PYPUQ0QPU8",
+  "why": "Miner"
+ },
+ {
+  "tag": "02PYPUQLQLPU",
+  "why": "Vines"
+ },
+ {
+  "tag": "02PYPURLPG20",
+  "why": "Vines"
+ },
+ {
+  "tag": "02QPGLYCRP2V",
+  "why": "Vines"
+ },
+ {
+  "tag": "02QY9G2J9Q9Q",
+  "why": "GoblinCurse"
+ },
+ {
+  "tag": "02QY9G8G9JJR",
+  "why": "GiantBuffer"
+ },
+ {
+  "tag": "02QY9G8GGQ0Y",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "02QY9G8GJVJY",
+  "why": "Miner"
+ },
+ {
+  "tag": "02QY9G8JQQJY",
+  "why": "SuspiciousBush"
+ },
+ {
+  "tag": "02QY9G8JR0CL",
+  "why": "Ghost"
+ },
+ {
+  "tag": "02QY9G8QQ8C8",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "02QY9GP80JJC",
+  "why": "Miner"
+ },
+ {
+  "tag": "02QY9GP89C0V",
+  "why": "Ghost"
+ },
+ {
+  "tag": "02QY9GPQ2C82",
+  "why": "Miner"
+ },
+ {
+  "tag": "02QY9GPYVYJJ",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "02QY9Q8VCCYQ",
+  "why": "DarkMagic"
+ },
+ {
+  "tag": "02QY9Q8VGVGQ",
+  "why": "Miner"
+ },
+ {
+  "tag": "02QY9Q900RQL",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "02QY9Q90QQ9V",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "02QY9Q928Y8C",
+  "why": "02QY9Q928Y8C: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "02QY9Q92CGV0",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "02QY9Q92QPGC",
+  "why": "Ghost"
+ },
+ {
+  "tag": "02QY9Q98RUYC",
+  "why": "Miner"
+ },
+ {
+  "tag": "02QY9Q9CCQ2J",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "02QY9Q9CVL9V",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "02QY9Q9LCCQQ",
+  "why": "Ghost"
+ },
+ {
+  "tag": "02QY9Q9PCGCP",
+  "why": "Elixir Collector"
+ },
+ {
+  "tag": "02QY9Q9QC999",
+  "why": "Vines"
+ },
+ {
+  "tag": "02QY9QJ99LL8",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "02QY9QL9QUPR",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "02QY9QP0CL00",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "02QY9QP2UJL9",
+  "why": "Ghost"
+ },
+ {
+  "tag": "02QY9QU8VRQP",
+  "why": "Ghost"
+ },
+ {
+  "tag": "02QY9QUJ2L9Q",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "02QY9QUJJQRV",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "02QY9QUQGLUU",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "02QY9QURVJR8",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "02QY9QUVVYUQ",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "02QY9YV0VP9U",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "02RY9GCRRJLJ",
+  "why": "Ghost"
+ },
+ {
+  "tag": "02RY9GU2C2JG",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "02RY9GV29GGV",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "02RY9R02G9UP",
+  "why": "Lightning"
+ },
+ {
+  "tag": "02RY9RLU89J2",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "02RY9RRP28L2",
+  "why": "DarkMagic"
+ },
+ {
+  "tag": "02RY9RUCGPGQ",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "02RY9RVV2LY8",
+  "why": "Ghost"
+ },
+ {
+  "tag": "02RY9RYG89YC",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "02UY8LGC8899",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "02UY8LY2RUUJ",
+  "why": "Miner"
+ },
+ {
+  "tag": "02UY8P2GQQRJ",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "02UY8YCCJVGG",
+  "why": "Lightning"
+ },
+ {
+  "tag": "02UY8YQUQJJY",
+  "why": "02UY8YQUQJJY: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "02UY8YV2PVJV",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "02UY8YYVV9J2",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "02VY8LYR9Q28",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "02VY8QC0CUGL",
+  "why": "Lightning"
+ },
+ {
+  "tag": "02VY8QLC8L8L",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "02VY8QLPCVCU",
+  "why": "Lightning"
+ },
+ {
+  "tag": "02VY8QLVLGJJ",
+  "why": "Lightning"
+ },
+ {
+  "tag": "02VY8QQQURR9",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "02VY8QU98R98",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "02VY8QVPQQ2G",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "02VY8Y90QRLQ",
+  "why": "Ghost"
+ },
+ {
+  "tag": "02YYPJC2JVQQ",
+  "why": "Lightning"
+ },
+ {
+  "tag": "02YYPU8P29C9",
+  "why": "Vines"
+ },
+ {
+  "tag": "02YYPUG02JYV",
+  "why": "02YYPUG02JYV: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "02YYPUG0LLLP",
+  "why": "Lightning"
+ },
+ {
+  "tag": "02YYPUPR20YL",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "02YYPUQ082YP",
+  "why": "Rage"
+ },
+ {
+  "tag": "02YYPUQ0RPG0",
+  "why": "02YYPUQ0RPG0: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "02YYPURCQQ8Q",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "02YYPURL2JYR",
+  "why": "SuspiciousBush"
+ },
+ {
+  "tag": "02YYPURVURC2",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "02YYPUURQVRP",
+  "why": "Miner"
+ },
+ {
+  "tag": "02YYPUV088YU",
+  "why": "Lightning"
+ },
+ {
+  "tag": "02YYPUV2PCG2",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "0313832ac4e540b683d8a8c8ab9d6f46",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "037bf192ca384a529c71de6ce4488518",
+  "why": "GoblinDemolisher"
+ },
+ {
+  "tag": "06f4c8e6dc47470d8ba7ac53a6854ba1",
+  "why": "06f4c8e6dc47470d8ba7ac53a6854ba1: no deal fits side 0's recorded plays"
+ },
+ {
+  "tag": "0729026cda544a00a446a7aefd55a233",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "0737b241b54740659637a1d08be358ca",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "078ac18caf5942fb9a4c5e3bb9f89489",
+  "why": "Ghost"
+ },
+ {
+  "tag": "07b052fe0fcf482eb1b7b61a5f585943",
+  "why": "Ghost"
+ },
+ {
+  "tag": "080Y828UVGJJ",
+  "why": "Lightning"
+ },
+ {
+  "tag": "080Y8G2909LQ",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "080Y8G2VJVP0",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "080Y8G89RVR0",
+  "why": "Vines"
+ },
+ {
+  "tag": "080Y8G98G8U0",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "080Y8G98LRUU",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "080Y8G98UYYQ",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "080Y8G9C2LR8",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "080Y8GPJPCVQ",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "080Y8GQRLR22",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "080Y8QG0U99P",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "080Y8QJ09QVP",
+  "why": "Miner"
+ },
+ {
+  "tag": "080Y8QJ99CLC",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "080Y8QJP9VL2",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "080Y8QLU08GY",
+  "why": "Miner"
+ },
+ {
+  "tag": "080Y8QRLPU22",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "080Y8QULJ2PG",
+  "why": "Lightning"
+ },
+ {
+  "tag": "082PJYYQLQ0L",
+  "why": "RamRider"
+ },
+ {
+  "tag": "082Y8G220VQR",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "082Y8G2QG0YV",
+  "why": "082Y8G2QG0YV: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "082Y8G2QP2LR",
+  "why": "Ronin"
+ },
+ {
+  "tag": "082Y8G82QJJG",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "082Y8G888P0J",
+  "why": "Rage"
+ },
+ {
+  "tag": "082Y8G8RVVLV",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "082Y8G8V9L08",
+  "why": "Vines"
+ },
+ {
+  "tag": "082Y8GL0VJUU",
+  "why": "Ronin"
+ },
+ {
+  "tag": "082Y8GL9PPJJ",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "082Y8GP8R99R",
+  "why": "Lightning"
+ },
+ {
+  "tag": "082Y8L022CQY",
+  "why": "Ghost"
+ },
+ {
+  "tag": "082Y8QC0QG9V",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "082Y8QCJYJYY",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "082Y8QPVYY8G",
+  "why": "Lightning"
+ },
+ {
+  "tag": "082Y8QU0GP2G",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "088Y0CRPLCRR",
+  "why": "Vines"
+ },
+ {
+  "tag": "088Y88J2U9YR",
+  "why": "088Y88J2U9YR: no deal fits side 0's recorded plays"
+ },
+ {
+  "tag": "088Y88L0C0GC",
+  "why": "088Y88L0C0GC: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "088Y88L8G9QC",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "088Y88YYU0RV",
+  "why": "Ghost"
+ },
+ {
+  "tag": "088Y892QCGYL",
+  "why": "Ghost"
+ },
+ {
+  "tag": "088Y898CYJLG",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "088Y89Q8UCG9",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "088Y89Y902LL",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "088Y89YCQLJ8",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "089Y88U0UR2J",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "089Y88UVYQYG",
+  "why": "MergeMaiden"
+ },
+ {
+  "tag": "089Y88Y8RQQQ",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "089Y890LU8UC",
+  "why": "DarkMagic"
+ },
+ {
+  "tag": "089Y892LCQC2",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "089Y89Q2LJ0L",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "08CPVC00YCP8",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "08CPVC0LVYCJ",
+  "why": "Lightning"
+ },
+ {
+  "tag": "08CPVC0Y0PG0",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "08CPVC8UP2UQ",
+  "why": "RamRider"
+ },
+ {
+  "tag": "08CPVJ98RC99",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "08CPVJCP2JPY",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "08CPVJCPP0J2",
+  "why": "08CPVJCPP0J2: no deal fits side 0's recorded plays"
+ },
+ {
+  "tag": "08CPVJQ92GP2",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "08CPVJQ9CJPJ",
+  "why": "Miner"
+ },
+ {
+  "tag": "08CPVJQ9R2GY",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "08CPVJRQVV0C",
+  "why": "Miner"
+ },
+ {
+  "tag": "08CPVRGQRVGP",
+  "why": "Vines"
+ },
+ {
+  "tag": "08CPVRQPJLPG",
+  "why": "Vines"
+ },
+ {
+  "tag": "08CPVRRJ9C2L",
+  "why": "Lightning"
+ },
+ {
+  "tag": "08CPVRRRC0P8",
+  "why": "MergeMaiden"
+ },
+ {
+  "tag": "08CPVRRU8VCQ",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "08GPVGCP0P2P",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08GPVGJG2V29",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "08GPVGVUL8YG",
+  "why": "08GPVGVUL8YG: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "08GPVGVYVPQP",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "08GPVR0QUV99",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "08GPVR808QLP",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "08GPVR9QG0G2",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "08GPVRCR0YL0",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "08GPVRL9CYQR",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08GPVRYUQRUL",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "08JPVCQQUJQC",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08JPVCUCUL02",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "08JPVCUVP28P",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "08JPVCV0292G",
+  "why": "Miner"
+ },
+ {
+  "tag": "08JPVCV08P08",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "08JPVCVULVLR",
+  "why": "Lightning"
+ },
+ {
+  "tag": "08JPVJJGLJ90",
+  "why": "Miner"
+ },
+ {
+  "tag": "08JPVJUUVGP9",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "08JPVJV08C8J",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "08JPVU09CCCP",
+  "why": "Miner"
+ },
+ {
+  "tag": "08JPVU09GV2L",
+  "why": "Miner"
+ },
+ {
+  "tag": "08JPVU09J9J9",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "08JPVU09Q2UP",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "08JPVU09VY80",
+  "why": "Ghost"
+ },
+ {
+  "tag": "08JPVU0PJ20P",
+  "why": "Vines"
+ },
+ {
+  "tag": "08JPVU9GRVVG",
+  "why": "DarkMagic"
+ },
+ {
+  "tag": "08LY80UULGJ0",
+  "why": "08LY80UULGJ0: no deal fits side 0's recorded plays"
+ },
+ {
+  "tag": "08LY80UYR89U",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08LY80V9QCGC",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "08LY80VC29RV",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "08LY822LCC8U",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "08LY82CPVJLP",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08LY82PULUG9",
+  "why": "GoblinDemolisher"
+ },
+ {
+  "tag": "08LY82R8JU08",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "08LY82R8U0Q0",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08LY82VC22UQ",
+  "why": "Rage"
+ },
+ {
+  "tag": "08LY882RUQJ0",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "08LY882YG889",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "08PY88JGQV09",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "08PY88PCQ9C2",
+  "why": "Lightning"
+ },
+ {
+  "tag": "08PY88PQV2YV",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08PY88PR0LJY",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "08PY88PRRPY2",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08PY88PUQVCU",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "08PY88PUY9YP",
+  "why": "Rage"
+ },
+ {
+  "tag": "08PY88UR0V08",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "08PY8920J8UU",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08PY898PPL99",
+  "why": "GiantBuffer"
+ },
+ {
+  "tag": "08PY89LC9U8R",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "08PY89P0UCVQ",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "08QPJCGRJCPU",
+  "why": "Ghost"
+ },
+ {
+  "tag": "08QPVC89J9PJ",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08QPVCPCCRGU",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "08QPVCPCVGVJ",
+  "why": "Lightning"
+ },
+ {
+  "tag": "08QPVCPCYU2U",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08QPVCPU28C0",
+  "why": "DarkMagic"
+ },
+ {
+  "tag": "08QPVCPULY0V",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "08QPVCQQUGQ9",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "08QPVJC8G2JG",
+  "why": "LittlePrince"
+ },
+ {
+  "tag": "08QPVRC0VYC8",
+  "why": "Lightning"
+ },
+ {
+  "tag": "08QPVRGLPQ0V",
+  "why": "Lightning"
+ },
+ {
+  "tag": "08QPVRRJJUV9",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08QPVU2VVUJR",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08QPVU92CLQQ",
+  "why": "Lightning"
+ },
+ {
+  "tag": "08QPVULUYUPV",
+  "why": "Vines"
+ },
+ {
+  "tag": "08QPVUPG8RV8",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08QPVUPP2C2C",
+  "why": "Vines"
+ },
+ {
+  "tag": "08RPVC99QQPV",
+  "why": "GoblinDemolisher"
+ },
+ {
+  "tag": "08RPVCGGPLJJ",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "08RPVCYGRP29",
+  "why": "Vines"
+ },
+ {
+  "tag": "08RPVJUGPCCQ",
+  "why": "GoblinCurse"
+ },
+ {
+  "tag": "08RPVJY02809",
+  "why": "Rage"
+ },
+ {
+  "tag": "08UPPCC02PG8",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "08UPPCCJ8QQV",
+  "why": "08UPPCCJ8QQV: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "08UPPUUP80PL",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08UPPV22GCQ0",
+  "why": "GoblinCurse"
+ },
+ {
+  "tag": "08UPPVCCR9PV",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08UPPVCUL8GP",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "08UPPVCUQ9GV",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "08UPPVGQQY9C",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "08UPPVGUY829",
+  "why": "Miner"
+ },
+ {
+  "tag": "08UPPVJ29980",
+  "why": "ElixirGolem"
+ },
+ {
+  "tag": "08UPPVJ9JR99",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08UPPVJ9Q88P",
+  "why": "Rage"
+ },
+ {
+  "tag": "08UPPVJ9RPJQ",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08UPPVJLRJCC",
+  "why": "MergeMaiden"
+ },
+ {
+  "tag": "08UPPVJLU8Q2",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "08UPPVPCUURG",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "08UPPVR2JJGQ",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08UPPVR2P0CJ",
+  "why": "08UPPVR2P0CJ: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "08UPPVR8RRQQ",
+  "why": "Vines"
+ },
+ {
+  "tag": "08UPPVRUPV8C",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08UPPVRY0P2V",
+  "why": "Ghost"
+ },
+ {
+  "tag": "08UPPVU0P0GQ",
+  "why": "Lightning"
+ },
+ {
+  "tag": "08UPPVVU00R0",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "08V99UCCQ0V0",
+  "why": "DarkMagic"
+ },
+ {
+  "tag": "08VPPCUC9U88",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08VPPCURJQ0G",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "08VPPUJ088L2",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "08VPPUJLGQCG",
+  "why": "SuspiciousBush"
+ },
+ {
+  "tag": "08VPPUQ22U9V",
+  "why": "Lightning"
+ },
+ {
+  "tag": "08VPPVPQYRLU",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "08VPPVQ2VC2Y",
+  "why": "Ghost"
+ },
+ {
+  "tag": "08YY892LJCG9",
+  "why": "Lightning"
+ },
+ {
+  "tag": "08YY892P8Q98",
+  "why": "DarkMagic"
+ },
+ {
+  "tag": "08YY892V8QUU",
+  "why": "Lightning"
+ },
+ {
+  "tag": "08YY89822YRQ",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "08YY8988C0QC",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "08YY8988RCQJ",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "08YY8988V9JL",
+  "why": "GoblinDemolisher"
+ },
+ {
+  "tag": "08YY8989P8J2",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08YY898L9JLC",
+  "why": "DarkMagic"
+ },
+ {
+  "tag": "08YY898LU88C",
+  "why": "Lightning"
+ },
+ {
+  "tag": "08YY898Q09RY",
+  "why": "Lightning"
+ },
+ {
+  "tag": "08YY898QYRPP",
+  "why": "Lightning"
+ },
+ {
+  "tag": "08YY89CY2U99",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "08YY89J02YQU",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "08YY89J0U0L2",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08YY89LJ9UC0",
+  "why": "SuspiciousBush"
+ },
+ {
+  "tag": "08YY89P0J0PP",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "08YY89P28GPG",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "08YY89PVP0VQ",
+  "why": "Rage"
+ },
+ {
+  "tag": "08YY89RC8UCR",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "08YY89RLLULU",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "08YY89UC20R2",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "08YY89UUGVG0",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "08YY89UUPUJY",
+  "why": "08YY89UUPUJY: no deal fits side 0's recorded plays"
+ },
+ {
+  "tag": "08YY89UUURJL",
+  "why": "RamRider"
+ },
+ {
+  "tag": "08YY89V0CY09",
+  "why": "Lightning"
+ },
+ {
+  "tag": "08YY89Y8GL9U",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "08YY89YRR0CG",
+  "why": "08YY89YRR0CG: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "08YY8P00VJ9G",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "08YY8P0LRU0V",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "08YY8P2QQQLV",
+  "why": "Ghost"
+ },
+ {
+  "tag": "08ea06fed2c84d948e4cc2004d21bebd",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "090PPUQQLPUG",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "090PPV008QP8",
+  "why": "090PPV008QP8: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "090PPVJUQPY8",
+  "why": "090PPVJUQPY8: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "090PPVP9JVQU",
+  "why": "Vines"
+ },
+ {
+  "tag": "090PPVVQUQ88",
+  "why": "Vines"
+ },
+ {
+  "tag": "090PY02L2298",
+  "why": "Miner"
+ },
+ {
+  "tag": "090PY0LRJU0G",
+  "why": "Ghost"
+ },
+ {
+  "tag": "090PY0P29Q9U",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "090PY0Q9JV0G",
+  "why": "Lightning"
+ },
+ {
+  "tag": "090PY0Q9PL8G",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "090PY0QY9C02",
+  "why": "Lightning"
+ },
+ {
+  "tag": "090PY0RRGU00",
+  "why": "Lightning"
+ },
+ {
+  "tag": "092PPUC8RUUJ",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "092PPV0YQVC0",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "092PPV9J9RY2",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "092PPVG92VR2",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "092PPVPCRCPC",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "092PPVPCU9LL",
+  "why": "Lightning"
+ },
+ {
+  "tag": "092PPVPUY8PG",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "092PPVPVULCU",
+  "why": "Lightning"
+ },
+ {
+  "tag": "092PPVY0J0J8",
+  "why": "Lightning"
+ },
+ {
+  "tag": "092PPVY0Q0CR",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "092PPVY29Q2V",
+  "why": "Lightning"
+ },
+ {
+  "tag": "092PPVY2RCUL",
+  "why": "Lightning"
+ },
+ {
+  "tag": "092PPVY899LL",
+  "why": "Miner"
+ },
+ {
+  "tag": "092PPVY8PV90",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "092PPVYP0P8G",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "092PPVYR8U2P",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "092PY0Y99C2C",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "098PPCV2V0P0",
+  "why": "Vines"
+ },
+ {
+  "tag": "098PPU9ULJL9",
+  "why": "098PPU9ULJL9: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "098PPUCL2P8Q",
+  "why": "GoblinCurse"
+ },
+ {
+  "tag": "098PPUCQRVPU",
+  "why": "Vines"
+ },
+ {
+  "tag": "098PPUCYV29U",
+  "why": "MergeMaiden"
+ },
+ {
+  "tag": "098PPUQ2899Y",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "098PPUQRV0CR",
+  "why": "Vines"
+ },
+ {
+  "tag": "098PPUUR0YPU",
+  "why": "Lightning"
+ },
+ {
+  "tag": "098PPV29RQCC",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "098PPV8C0P0L",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "098PPVLYV2QY",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "099P9CG8JYCU",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "099P9CGLP9QU",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "099P9CJ220P8",
+  "why": "Lightning"
+ },
+ {
+  "tag": "099P9CJ2P0GQ",
+  "why": "Miner"
+ },
+ {
+  "tag": "099P9CJG0GPU",
+  "why": "Vines"
+ },
+ {
+  "tag": "099P9CJQVRYG",
+  "why": "Vines"
+ },
+ {
+  "tag": "099P9CJYYR8J",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "099P9CL9L2YY",
+  "why": "GiantBuffer"
+ },
+ {
+  "tag": "099P9CL9QC2R",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "099P9CQL0R0R",
+  "why": "SuspiciousBush"
+ },
+ {
+  "tag": "099P9CU2CR0R",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "099P9CVQUYVR",
+  "why": "099P9CVQUYVR: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "099P9JCV298Q",
+  "why": "Vines"
+ },
+ {
+  "tag": "099P9JVRCQ89",
+  "why": "Vines"
+ },
+ {
+  "tag": "099P9JVUPR0R",
+  "why": "Rage"
+ },
+ {
+  "tag": "099P9U008CVC",
+  "why": "Lightning"
+ },
+ {
+  "tag": "099P9U0LJL2P",
+  "why": "Lightning"
+ },
+ {
+  "tag": "09C9JCYLQVRL",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "09C9JUR9YJ9P",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "09C9JUV8YCYP",
+  "why": "Ghost"
+ },
+ {
+  "tag": "09C9JUV98L89",
+  "why": "Vines"
+ },
+ {
+  "tag": "09C9JUYCCLUC",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "09C9JV9GGJ9C",
+  "why": "Lightning"
+ },
+ {
+  "tag": "09C9JV9GQYC8",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "09C9JVLQ0JYR",
+  "why": "09C9JVLQ0JYR: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "09C9JVRQCJCC",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "09C9JVY9LLLY",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "09C9JYRPR9C0",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "09C9Y8PYL8UG",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "09G8JUQGP998",
+  "why": "Lightning"
+ },
+ {
+  "tag": "09G9JCPVPQUJ",
+  "why": "RamRider"
+ },
+ {
+  "tag": "09G9JCVRRUVR",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "09G9JU28VYPC",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "09G9JU9R8RR0",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "09G9JUC0YYVR",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "09G9JUGLV0Q2",
+  "why": "Lightning"
+ },
+ {
+  "tag": "09G9JUJLR828",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "09G9JUP8GV0P",
+  "why": "Lightning"
+ },
+ {
+  "tag": "09G9JUP99P8U",
+  "why": "Lightning"
+ },
+ {
+  "tag": "09G9JUQLQ2RR",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "09G9JUR088LG",
+  "why": "Lightning"
+ },
+ {
+  "tag": "09G9JURJRQRR",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "09G9JURU0V8P",
+  "why": "Ronin"
+ },
+ {
+  "tag": "09G9JURUCY9L",
+  "why": "GoblinDemolisher"
+ },
+ {
+  "tag": "09G9JUYJ2GLU",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "09G9JUYPLJP0",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "09G9JUYPR002",
+  "why": "ThreeMusketeers"
+ },
+ {
+  "tag": "09G9JUYPUPRQ",
+  "why": "09G9JUYPUPRQ: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "09G9JUYPVC8C",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "09G9JUYQJ8J2",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "09J9JU2Q992J",
+  "why": "Lightning"
+ },
+ {
+  "tag": "09J9JUVJQQU9",
+  "why": "RamRider"
+ },
+ {
+  "tag": "09J9JV20CRYC",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "09J9JV20V9CG",
+  "why": "Miner"
+ },
+ {
+  "tag": "09J9JVYCQUPG",
+  "why": "Miner"
+ },
+ {
+  "tag": "09LP9C90JU80",
+  "why": "GoblinDemolisher"
+ },
+ {
+  "tag": "09LP9CCJRUCG",
+  "why": "Lightning"
+ },
+ {
+  "tag": "09LP9CJQY2YU",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "09LP9CPYJQGJ",
+  "why": "Lightning"
+ },
+ {
+  "tag": "09LP9CQRRJPP",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "09LP9CUJL0RJ",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "09LP9CV8VJUU",
+  "why": "Lightning"
+ },
+ {
+  "tag": "09LP9CVJVCGJ",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "09LP9CVLGU22",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "09LP9G8QJ998",
+  "why": "Miner"
+ },
+ {
+  "tag": "09LP9JGULQJP",
+  "why": "Lightning"
+ },
+ {
+  "tag": "09LP9U0GYCG9",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "09LP9U2VCG8G",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "09LP9U898YJ9",
+  "why": "Lightning"
+ },
+ {
+  "tag": "09LP9U8Y8RJR",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "09LP9U999GVL",
+  "why": "Elixir Collector"
+ },
+ {
+  "tag": "09LP9UP8LR2G",
+  "why": "Lightning"
+ },
+ {
+  "tag": "09LP9UPVJJUU",
+  "why": "SuspiciousBush"
+ },
+ {
+  "tag": "09LP9UPVUJ2Y",
+  "why": "Vines"
+ },
+ {
+  "tag": "09LP9UPYJ90P",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "09LP9UY0G8P8",
+  "why": "Lightning"
+ },
+ {
+  "tag": "09LP9UY20QC9",
+  "why": "Lightning"
+ },
+ {
+  "tag": "09LP9UY9JR0L",
+  "why": "Elixir Collector"
+ },
+ {
+  "tag": "09PP9GCCLYQU",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "09PP9R890CJJ",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "09PP9RPL0UGP",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "09QP9C900QPL",
+  "why": "Elixir Collector"
+ },
+ {
+  "tag": "09QP9C92QGPJ",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "09QP9C982P2U",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "09QP9CCU08CU",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "09QP9CUY0Y8V",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "09QP9J008CJR",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "09R9JCGL80L2",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "09R9JCGLJJ82",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "09R9JCGLPLJ2",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "09R9JCJ2UPPQ",
+  "why": "Ghost"
+ },
+ {
+  "tag": "09R9JCJ8880P",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "09R9JCJ8QUU9",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "09R9JCJ8RC90",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "09R9JCJ90J89",
+  "why": "SuspiciousBush"
+ },
+ {
+  "tag": "09R9JCRU2VYU",
+  "why": "Vines"
+ },
+ {
+  "tag": "09R9JCRUYCRC",
+  "why": "Vines"
+ },
+ {
+  "tag": "09R9JCV8JRC8",
+  "why": "Lightning"
+ },
+ {
+  "tag": "09R9JCVRRVP9",
+  "why": "Lightning"
+ },
+ {
+  "tag": "09R9JCYVCC99",
+  "why": "Lightning"
+ },
+ {
+  "tag": "09R9JRUQCU8Y",
+  "why": "RamRider"
+ },
+ {
+  "tag": "09R9JRURU2UV",
+  "why": "Lightning"
+ },
+ {
+  "tag": "09R9JU2RUU22",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "09R9JU9L8JR2",
+  "why": "Ronin"
+ },
+ {
+  "tag": "09R9JULGCVU9",
+  "why": "DarkMagic"
+ },
+ {
+  "tag": "09R9JULGJYQP",
+  "why": "Clone"
+ },
+ {
+  "tag": "09R9JUYYQJCP",
+  "why": "09R9JUYYQJCP: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "09U9JCV00CGC",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "09U9JU2098VL",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "09U9JU288J8Q",
+  "why": "GiantBuffer"
+ },
+ {
+  "tag": "09U9JU2RJUY2",
+  "why": "Rage"
+ },
+ {
+  "tag": "09U9JU8CYG88",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "09U9JURPVQ8J",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "09U9JV28U8PR",
+  "why": "Rage"
+ },
+ {
+  "tag": "09YP9C80QCVJ",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "09YP9C8V2U9J",
+  "why": "Lightning"
+ },
+ {
+  "tag": "09YP9C8YUG8R",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "09YP9C9U2Q9Y",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "09YP9CCVLU2G",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "09YP9CJJGVVC",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "09YP9CUQ08C8",
+  "why": "09YP9CUQ08C8: no deal fits side 0's recorded plays"
+ },
+ {
+  "tag": "09YP9CV8PQ0Q",
+  "why": "ThreeMusketeers"
+ },
+ {
+  "tag": "09YP9JQJJUJG",
+  "why": "Miner"
+ },
+ {
+  "tag": "09YP9JRQGGPG",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "09YP9U0V222Q",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "09YP9U209RC0",
+  "why": "Ghost"
+ },
+ {
+  "tag": "09a19e59529d4ea5b86bff764efa5bfa",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "0ae5db99537748b9ac97185aeaf77d8a",
+  "why": "Vines"
+ },
+ {
+  "tag": "0c38b749e5fe4180b651e1a2097b6920",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "0c51725514c645a58e3e77c73f883180",
+  "why": "0c51725514c645a58e3e77c73f883180: no deal fits side 0's recorded plays"
+ },
+ {
+  "tag": "0c8debc00fb445b197cd9cad293743ca",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "0c9618be81ad48d7b6660e3d89a1b51e",
+  "why": "Ghost"
+ },
+ {
+  "tag": "0dacd637dda44330a0d3ad0246592fd1",
+  "why": "Lightning"
+ },
+ {
+  "tag": "0e702cedd3e44c1b9eed1d016d00c790",
+  "why": "DarkMagic"
+ },
+ {
+  "tag": "0f07dcee63e643e983ff8bc465f3188a",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "0f7473d8addc4707a11b517b934c8245",
+  "why": "Miner"
+ },
+ {
+  "tag": "0f9c2b368d4e437ca2902677ba4334b6",
+  "why": "Lightning"
+ },
+ {
+  "tag": "1034708b863b489f878a0645517eb02f",
+  "why": "Lightning"
+ },
+ {
+  "tag": "1041ab307aed45d5a272fa76556f061f",
+  "why": "Miner"
+ },
+ {
+  "tag": "110ab7c99ce54ca580d25953720b48d9",
+  "why": "110ab7c99ce54ca580d25953720b48d9: no deal fits side 0's recorded plays"
+ },
+ {
+  "tag": "11788e04bdb948b092b82699e5032f36",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "118610d7a7ba485aa7da92ba6e04ef24",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "1236cc513e28455cb35023d8d126e0a6",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "12b2e1da8100480580941c6f6307ef71",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "12ed70d8a9724a63989d0e5d30f0d59d",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "1439549f93284accae16fc4cc5154df5",
+  "why": "Ronin"
+ },
+ {
+  "tag": "144b189ba2564952b27c551422a260e8",
+  "why": "Ronin"
+ },
+ {
+  "tag": "14cdd4ac4f7c4d379dc1a0a003da77e0",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "1576263929f04a6ab9453546e9d3a334",
+  "why": "Vines"
+ },
+ {
+  "tag": "162f8573df9342e49c52383f5c6ffc7c",
+  "why": "Lightning"
+ },
+ {
+  "tag": "16532d3184e64d4b95519d4b9a63b031",
+  "why": "Mirror"
+ },
+ {
+  "tag": "1696e9cc6a0e4e40b48970ff965d68a6",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "16a4bda84a244609a13262c544c01b0f",
+  "why": "SuspiciousBush"
+ },
+ {
+  "tag": "16c541fa6a13485ea294bccc1b6fb17c",
+  "why": "16c541fa6a13485ea294bccc1b6fb17c: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "173e46aef19c4d878305e4adf34b1f4d",
+  "why": "Lightning"
+ },
+ {
+  "tag": "17961585c8424cd7ab79d43011526587",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "17d708600bcb4c8ca8f46503b81998eb",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "1a8305ed2ec54b229309530229a23d11",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "1ab6ae9ef9f443cc87e74713ddcd326d",
+  "why": "Lightning"
+ },
+ {
+  "tag": "1c55835e4428459eaf4ea95c0d9477c2",
+  "why": "1c55835e4428459eaf4ea95c0d9477c2: no deal fits side 0's recorded plays"
+ },
+ {
+  "tag": "1c5d3153f930432c87ee8c84fb69f48d",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "1c917000f86440f38a6b26f02f28a609",
+  "why": "Lightning"
+ },
+ {
+  "tag": "1d8dd637b70a46d18939416598e98fe9",
+  "why": "Vines"
+ },
+ {
+  "tag": "1eb91475bc3b43d8ba9a6ef4d20a5d03",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "1f102f86634b491b97bbe17b0010639a",
+  "why": "Miner"
+ },
+ {
+  "tag": "1f503c44f7334b1d82281eed8ed8a794",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "216325748f4e415ab76de4ad6bf7fbcb",
+  "why": "216325748f4e415ab76de4ad6bf7fbcb: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "21be22918db14a9b960863b726467acf",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "21f451e0ed7d4ad2b26f938c25d0d6c4",
+  "why": "Lightning"
+ },
+ {
+  "tag": "2211fcb36d464447b264ce1bb81a67b0",
+  "why": "SuspiciousBush"
+ },
+ {
+  "tag": "22c371a978c543428b51c339564e8740",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "231acec508d14e3da0bf1aa51cd360a0",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "23ee0f34e2dd4b75a92d836c0642ac12",
+  "why": "Lightning"
+ },
+ {
+  "tag": "248569e5bd99433cb36c6292c68f57f3",
+  "why": "Ghost"
+ },
+ {
+  "tag": "24e229ee290a40baa69d2cbc0f2b6575",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "24f02f8c65464c2ebec15d47fcd1803d",
+  "why": "GoblinGiant"
+ },
+ {
+  "tag": "257c52f36c3845d79dbce3d785c9fdad",
+  "why": "Vines"
+ },
+ {
+  "tag": "265f9d83f1984dabb474160ec657fad9",
+  "why": "Vines"
+ },
+ {
+  "tag": "27e090bb42e34540978165b108b44dab",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "287a631986f6486bab5f797cee29a86f",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "29235858c00343ffad7cf214baa69c09",
+  "why": "29235858c00343ffad7cf214baa69c09: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "29249cc1946f421f9f22b15dc73593e6",
+  "why": "Miner"
+ },
+ {
+  "tag": "296fc965c85b455c826e1b36ef208bc9",
+  "why": "Ghost"
+ },
+ {
+  "tag": "29d6d2ff9e4e496695e63e9109bfb02d",
+  "why": "Ghost"
+ },
+ {
+  "tag": "2b6cfd15362f40d7b1902d9c4fe572ec",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "2be6bff2ac6e4b6e8b82f1f8db5162df",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "2c20606868ac41b0871680bafaf708ec",
+  "why": "2c20606868ac41b0871680bafaf708ec: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "2c2e4b5fc0734bceb00aa5bc29d2fd49",
+  "why": "2c2e4b5fc0734bceb00aa5bc29d2fd49: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "2d31e86ec8df4d8f991cc20f238b9c57",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "2d4519f03ab14c75875dab0c5df6f0ef",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "2d8926844c3240359c5843d9b45ee9a2",
+  "why": "Ghost"
+ },
+ {
+  "tag": "2e471cd1232d4e0ca022bb9b51142c21",
+  "why": "Miner"
+ },
+ {
+  "tag": "2ef54d43967049bf818f8bfd8eaf1346",
+  "why": "Vines"
+ },
+ {
+  "tag": "2f1eaaa8b7b9498a865f4d65ed8f0ca3",
+  "why": "Ghost"
+ },
+ {
+  "tag": "2ff57d4a506f4ed89441a1b6a6658c96",
+  "why": "Elixir Collector"
+ },
+ {
+  "tag": "3006d127e3504373a32eb0c9c94036fd",
+  "why": "Vines"
+ },
+ {
+  "tag": "31cb75befc9945b0870e67c0d1abc61e",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "329e320e1e6e4d4fb79256a9aa18e164",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "33051724cf8d4b53a2884a1d5a45644d",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "33552872e2ae430a8d0d29a629ad28d6",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "336934f4950144e5ae835fd9d1a353ac",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "337175c8fb854181b8ee40fa0a593177",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "33b0260e2d2a4754bad5331704f04238",
+  "why": "Lightning"
+ },
+ {
+  "tag": "3462c110a01440c8a77487856ee8d0a3",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "346c1277451645bb973dd4a4d474b8ec",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "3478ec33a74c4e87b4a7d12a614fbff6",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "34f44aa40ca041e79246d83d6ecec9e3",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "361a66e701b04b8abb5c73f56e7a69b0",
+  "why": "361a66e701b04b8abb5c73f56e7a69b0: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "370b0bfa082a47da9d6b92daf886b617",
+  "why": "Lightning"
+ },
+ {
+  "tag": "37514f81ba7a43e0a2c872129b99b490",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "381b2c66b02c43ad9801814154a918de",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "3a648e6c2381430babee676dfcefaaec",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "3a922b321cad4a808cbcb4110c41250d",
+  "why": "MergeMaiden"
+ },
+ {
+  "tag": "3ac6530643e54979ad8765547a0cc90b",
+  "why": "Miner"
+ },
+ {
+  "tag": "3b571a3a2c4c44108a04065b31b2f545",
+  "why": "Vines"
+ },
+ {
+  "tag": "3ca49b9f26604813a5720fbde292c34f",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "3cb989df830d4119b19b95b9c96b30fa",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "3d08b96881fb469599c31fe17c6d7e7e",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "3d314cc6e07944098727fc44b5b38e4b",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "3dff6fb05c3448e2af58b99c76df03d0",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "3e1f51807b1e4e4abd9f0140a61e68a9",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "3ef44a834c434185a6bfb4601d4f09c3",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "3f36507f5f904b7a8f9b3b626ec37327",
+  "why": "3f36507f5f904b7a8f9b3b626ec37327: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "3f6dc54d060743ee8c0f28521c563c7a",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "3f87442592d84bf3860be82e45752654",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "40f5d394fc0944fda85c2f922ec86c32",
+  "why": "Ronin"
+ },
+ {
+  "tag": "4161ca92cc334eaca98aecf30e1b40dc",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "42f223ccf54d47d097761e81d4461b5c",
+  "why": "Miner"
+ },
+ {
+  "tag": "4336234180af4aafa9cf9b4376bc5273",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "43ca8ca8518b4909a812c60ba3d17882",
+  "why": "Miner"
+ },
+ {
+  "tag": "44660d11c12f4e95a6e7bcfa7da64b15",
+  "why": "Vines"
+ },
+ {
+  "tag": "45aedfb5957e46179de7e0726572e64e",
+  "why": "45aedfb5957e46179de7e0726572e64e: no deal fits side 0's recorded plays"
+ },
+ {
+  "tag": "45d7cd9218c447d1b2b7a1b2249b37b4",
+  "why": "45d7cd9218c447d1b2b7a1b2249b37b4: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "45dd034c33cf417481cc1886cb70f829",
+  "why": "GoblinCurse"
+ },
+ {
+  "tag": "46378b1afa5c43f9b6565e020b0c2762",
+  "why": "Lightning"
+ },
+ {
+  "tag": "46413e9081bd4a5a88a18a0b743fe2b8",
+  "why": "Miner"
+ },
+ {
+  "tag": "489f68bc24d04ad798cfd9747df7f17e",
+  "why": "RamRider"
+ },
+ {
+  "tag": "494a112e64a74483a4ec4133d42439e4",
+  "why": "ElixirGolem"
+ },
+ {
+  "tag": "4a547c2b32d84ef3b1be8f2654f88d1c",
+  "why": "GoblinCurse"
+ },
+ {
+  "tag": "4aba5afc5e3b4bb08b4b957bd04b8bf6",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "4abc8af4b1fc41478c49bdda9c411a4c",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "4b346ac623894ca18ce4cd787b1571e1",
+  "why": "Miner"
+ },
+ {
+  "tag": "4b6fcb89d0f144d3be2b97d45e974447",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "4cad6018640e4f179c521b8d242a3dd2",
+  "why": "Elixir Collector"
+ },
+ {
+  "tag": "4d6778faa4cd44358968a654e4ffa67d",
+  "why": "Vines"
+ },
+ {
+  "tag": "4dc88635db3a4f15963273bde50c50dc",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "50562e02a723466693061b91cd0b99bd",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "52148ce169e94e77abcaf95ea09ed2fe",
+  "why": "ThreeMusketeers"
+ },
+ {
+  "tag": "5243eb0b8bd54503b6abbbb67e77e664",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "5323011504644d3292c1421fe669cf5b",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "533dbe6b3ba849ccbc72a8525486a3a2",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "547728c295b24c1ebadfc0fb88658061",
+  "why": "Miner"
+ },
+ {
+  "tag": "55e83c41b5274de7a25f6bbb48167533",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "55fdecffca7e4ce9b20ba1dfd25d1dbb",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "5664c635a307465181ec35d78b1fd5ef",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "567e613109be408fadf6b533acdb78ad",
+  "why": "Ghost"
+ },
+ {
+  "tag": "56dc9e54149149f9963960dfd7e6cf94",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "56e90810f188481d97aed855ce7478c5",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "5887f3366f3b45109b02597c6defca68",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "59f79fde385a4a5ea974429331cd7edb",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "5a9e8e1181144afa8ffe153931bca65d",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "5adff59a1ed84fb7afdc57bfcd9392d0",
+  "why": "Vines"
+ },
+ {
+  "tag": "5aefce575dca4c6caccca7deac4e747f",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "5bc7b32f91984aa0a326624e6c08c852",
+  "why": "Lightning"
+ },
+ {
+  "tag": "5c1f715c253c41d2879b1e39c1a7d9bb",
+  "why": "5c1f715c253c41d2879b1e39c1a7d9bb: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "5c400e23621f46bca71e32b35a49c422",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "5c8885d83497494c8b33ac941708fd12",
+  "why": "Miner"
+ },
+ {
+  "tag": "5e5ee06b07dc490aa287492911d8f838",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "5f6207c83b7e4325b772979d0cb8d2ac",
+  "why": "MergeMaiden"
+ },
+ {
+  "tag": "60173f02521b42fa8e48e3988a0282df",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "6088d10e0b3b44e081a4eabc7f57b70e",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "60ce814f5f06481f8b2d2bad4eccb90d",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "60ef25155d3040da841586a2e846944d",
+  "why": "Vines"
+ },
+ {
+  "tag": "61c8a243b8f2430a9e6293bce9708e54",
+  "why": "Elixir Collector"
+ },
+ {
+  "tag": "635ae02bf78d4e6498da6cae4da1050c",
+  "why": "DarkMagic"
+ },
+ {
+  "tag": "64d430be7c984787af49f31007520a1c",
+  "why": "64d430be7c984787af49f31007520a1c: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "64d76587337e461288690ca5605724ed",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "6694720811594026919348d6297bcf3c",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "674629ffd03c4d6898876d6faa1572e8",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "67ba72b6e4334d54a4001b5391cd194a",
+  "why": "Heal"
+ },
+ {
+  "tag": "69bce3b09b804c2ca59949b7739a9f34",
+  "why": "Miner"
+ },
+ {
+  "tag": "6c662245ca80441ba3e6ca0254dc77b7",
+  "why": "Mirror"
+ },
+ {
+  "tag": "6ca54baca11e469799154e643e14765e",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "6d28559f829f444a984d20ff06a4ae3a",
+  "why": "Lightning"
+ },
+ {
+  "tag": "6d463ae6b81d4f3688ac42f4d8c3fe5b",
+  "why": "Miner"
+ },
+ {
+  "tag": "6d46550cdb66490897aba79b8db430bb",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "6e5cbf077a514691bafead550701eeea",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "6ec4d5993098453db91c0d557a033f67",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "6fd9e14bcb55435b83c3d5b353319751",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "6fda5df0d959480d988ec187a0cb277c",
+  "why": "DarkMagic"
+ },
+ {
+  "tag": "70144b4e399f417fb9595a7294ed0eba",
+  "why": "Lightning"
+ },
+ {
+  "tag": "70cff5859f604dee9cfc66aedb1655da",
+  "why": "70cff5859f604dee9cfc66aedb1655da: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "70f20df723cd44229660663ba56caa33",
+  "why": "Ghost"
+ },
+ {
+  "tag": "7138f4f3f4d14d6eac40cde97295f0de",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "714e7c206b0f461d91d8e43767e732af",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "71bd20b0adaa4e708ee4a2a0894a0776",
+  "why": "Vines"
+ },
+ {
+  "tag": "737ab27cd5f64815abaef4f0fd4c41cf",
+  "why": "Lightning"
+ },
+ {
+  "tag": "743cfca021084e7383969bfa6d8cefe0",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "74698dee5cb443c98295471c6180d749",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "758a8aa6c62e49eab3978244b9179df2",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "75f927678b0a4dcea4513360af344c72",
+  "why": "Vines"
+ },
+ {
+  "tag": "760c70e0d29a4c0ca7529a9f19da2001",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "7652fdb1a36343c7ba3f5101cd7da1da",
+  "why": "Lightning"
+ },
+ {
+  "tag": "769905d7db0249188e6e3b9c923ae917",
+  "why": "Lightning"
+ },
+ {
+  "tag": "76a36d716ef94cccab1d5258097d26cf",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "76e1b7ca77e04984b3ed74042637e1a2",
+  "why": "76e1b7ca77e04984b3ed74042637e1a2: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "77c9778d49814ceeb149444b20b1f270",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "782e5176b45b4de5ae969c5ce5d2910d",
+  "why": "Lightning"
+ },
+ {
+  "tag": "783dde7f0d134c15a24645dcc9e62b14",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "791adba64eaa4f3fb947bdc9c29aa3ad",
+  "why": "791adba64eaa4f3fb947bdc9c29aa3ad: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "7946f63d0596476095a1b1b05f2a63fa",
+  "why": "DarkMagic"
+ },
+ {
+  "tag": "7a47ff659d73423cb7433da9237ab381",
+  "why": "7a47ff659d73423cb7433da9237ab381: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "7a7cbc6610384997b79e56fa0b973809",
+  "why": "Lightning"
+ },
+ {
+  "tag": "7b85eb9b2e3c4324a7710d233a8d8525",
+  "why": "7b85eb9b2e3c4324a7710d233a8d8525: no deal fits side 0's recorded plays"
+ },
+ {
+  "tag": "7b97bfaa1e34468c986a0ef85370d51d",
+  "why": "Ghost"
+ },
+ {
+  "tag": "7c17414eb46e4c18a85299bf08de7100",
+  "why": "Lightning"
+ },
+ {
+  "tag": "7d543f859864474fae9c3f032997669c",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "7e12059a0dfa458eaa48416e8fa7dca6",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "7e220d1e230f492bbbd2321e332234ff",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "7e373991e9dd4a77bf69d36f89a4b8da",
+  "why": "Rage"
+ },
+ {
+  "tag": "7fb94cff2668407fa9958daa39c6babc",
+  "why": "Lightning"
+ },
+ {
+  "tag": "805ca98c924e4af08c0002b6e776c6ca",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "809593560d264cff8e6217fc43d555d7",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "816d5ac7f5c6463ea5ee348809dba630",
+  "why": "Vines"
+ },
+ {
+  "tag": "82526b620cd24b0abe28638858c50835",
+  "why": "Lightning"
+ },
+ {
+  "tag": "8285f98f659f47b1825dd6088c9ed7a1",
+  "why": "Ghost"
+ },
+ {
+  "tag": "836cde895e1a4e0da9830e7ab5eaeb7d",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "83713772c5a34d7cad865a1888e82638",
+  "why": "MergeMaiden"
+ },
+ {
+  "tag": "83f6d3aef7e649c793db4e42e360066c",
+  "why": "83f6d3aef7e649c793db4e42e360066c: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "84026810036c443bb37cab924ac05888",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "8492ed7e819e4a0d8fedbbcc69258542",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "8545b14711454080bb9f9eae700ba7a9",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "85feb47cb3324122b671c6695be213bc",
+  "why": "RamRider"
+ },
+ {
+  "tag": "882c1b3872014575982d7013f42fef91",
+  "why": "Vines"
+ },
+ {
+  "tag": "889aa95ce1f740f394bd8c6c343e666b",
+  "why": "Miner"
+ },
+ {
+  "tag": "88a9bc65f9b9490bb6910806a298ff69",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "8a6cfb8881064131be720ccf3d38ab99",
+  "why": "8a6cfb8881064131be720ccf3d38ab99: no deal fits side 0's recorded plays"
+ },
+ {
+  "tag": "8b46c0a733bb437284b78d2b94c788cd",
+  "why": "Miner"
+ },
+ {
+  "tag": "8d762c7277c7497cb04db15ecb1a2354",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "8dc4cb03cc614e8e892bb39df92ec2c3",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "8e04ff571e164f0882b6b367c50d60fe",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "8fd55ab485664da187140fecf085081d",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "903b2bc69586444687cb52643846fa6a",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "9070859c67eb4383ab18b587325b33c4",
+  "why": "Vines"
+ },
+ {
+  "tag": "9088452c97204f15ba685b4c552d83af",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "9159053aee5945e0b7b7cd2669e51057",
+  "why": "Vines"
+ },
+ {
+  "tag": "917d12555315410f8767a0d7ad8cddd9",
+  "why": "Ghost"
+ },
+ {
+  "tag": "91e9b46975bf4f34a47c102e0396b0c7",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "920e5b7f17ca47c9bc1223800638b427",
+  "why": "Lightning"
+ },
+ {
+  "tag": "9342db938f4242efb7397abeb19fe8fd",
+  "why": "Vines"
+ },
+ {
+  "tag": "93b97a7f272e412c96473f4bfd87dd9e",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "93bb0921ce4042cf8178afa9212660c4",
+  "why": "Miner"
+ },
+ {
+  "tag": "93c35663178d434ebfe3f66a41a92ea1",
+  "why": "Lightning"
+ },
+ {
+  "tag": "94e74a7037634d2fb219fbde0848d6ef",
+  "why": "Vines"
+ },
+ {
+  "tag": "94ef8a30b1294c89ab5a6447773aa370",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "952fe90923534ec2a5ec2ce1e0b915ed",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "954e0253a53c4b208c4d26280535f3cc",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "955d14380dd748b28276b9f882a35cf5",
+  "why": "Rage"
+ },
+ {
+  "tag": "958667f7d40d454f8beee37a8644c4c4",
+  "why": "958667f7d40d454f8beee37a8644c4c4: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "95ba4b91f9b74b9ca59baaaee8574445",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "9608902a2cae4d5a9c6d499112b14c8c",
+  "why": "Lightning"
+ },
+ {
+  "tag": "96d1f89fb40e4effad8cfa5eff51a6c9",
+  "why": "Lightning"
+ },
+ {
+  "tag": "987dbac1cd2242e0a04d08f7c1cfb513",
+  "why": "Heal"
+ },
+ {
+  "tag": "9887ab9d1606472fb1deea09a98543a6",
+  "why": "GoblinDemolisher"
+ },
+ {
+  "tag": "99396b75de3d4b75993d2ac31e8b473f",
+  "why": "Miner"
+ },
+ {
+  "tag": "9bf14fc5f59d4f23bc1ffce8562e19c6",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "9bfe484f21e34c4d9791a2fb2172c225",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "9c494c13a5f34c00b7c766e7d0bd89b8",
+  "why": "Vines"
+ },
+ {
+  "tag": "9cd0e9ef1e0f47ed99c8c845a0e56d68",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "9da4281e257a4aa0b512d9047e8a9e57",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "9f5eae811623437db2449a4eb0fd9905",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "a0ebcf5b8daa4140b168e1f092c5ba6d",
+  "why": "Ghost"
+ },
+ {
+  "tag": "a1fbf705e726479591e4ab23227ba7af",
+  "why": "Vines"
+ },
+ {
+  "tag": "a2e22fadc877470caa4f65e2975deecf",
+  "why": "DarkMagic"
+ },
+ {
+  "tag": "a4e52efc33fe4c37ba03e46886d11448",
+  "why": "Lightning"
+ },
+ {
+  "tag": "a57fcb9f07e840b49e9a52372d0cf72a",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "a59a85c417e0477898d47ce33d13e91a",
+  "why": "Miner"
+ },
+ {
+  "tag": "a6b2e32513654cfb875b1f387a864ae0",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "a6d7ffd20aa64ceb972c02bb4d8712ba",
+  "why": "SuspiciousBush"
+ },
+ {
+  "tag": "a7023ecdc284441e9db057436cba1d12",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "a839696176fc423f9e5aa942f7d801bd",
+  "why": "Lightning"
+ },
+ {
+  "tag": "a97c2afea3dd4725aac394d2d6bcd82e",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "a9a757c3ddf049a780059ed7c690555b",
+  "why": "Vines"
+ },
+ {
+  "tag": "a9d2d83ef95541c09c7f4474c137f8d9",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "ab223c05211b409d9d6adbdbf720b23c",
+  "why": "MovingCannon"
+ },
+ {
+  "tag": "ac002271cfc045ce80876846fb537b69",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "acc4806428fe46dfb3863f4f0541dccb",
+  "why": "acc4806428fe46dfb3863f4f0541dccb: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "ad11c118f19c482b8ce8cc8c54b9a1b8",
+  "why": "RamRider"
+ },
+ {
+  "tag": "ad55982cf7764f4381ce4fe4412e319e",
+  "why": "Ghost"
+ },
+ {
+  "tag": "aeca0dc19b76427eaa78faec388687e5",
+  "why": "Lightning"
+ },
+ {
+  "tag": "af6a48aa6ae14f198fa4df72188062cf",
+  "why": "Miner"
+ },
+ {
+  "tag": "b16d2010e3a94a37b869932e35b328ed",
+  "why": "Miner"
+ },
+ {
+  "tag": "b2d9c13f77214704a73314243dbbcfaf",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "b317541d1fcf4a46a7aa21651dde253b",
+  "why": "Lightning"
+ },
+ {
+  "tag": "b3724f18d71d4f9f8ffe97ab46d2672b",
+  "why": "Miner"
+ },
+ {
+  "tag": "b3829bb7f3dd40f7bf16cbfd76b20bb2",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "b396520ff1154ba79c6132c66dc92d95",
+  "why": "b396520ff1154ba79c6132c66dc92d95: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "b4ace97e30614ec8b9f82b487f381a17",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "b73df6fb81874244a89db9fa350fb48f",
+  "why": "Vines"
+ },
+ {
+  "tag": "b8333ed36d5a416dbc7d9c5f7aaa2a68",
+  "why": "RamRider"
+ },
+ {
+  "tag": "b8b800b9edc643b78c6a66d6d6115c0d",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "b9f4edf6e2d846a9a9f3c7e69dffe2fb",
+  "why": "Miner"
+ },
+ {
+  "tag": "ba8eb570a80541eea828924a2d4f7c77",
+  "why": "RamRider"
+ },
+ {
+  "tag": "bb0aeffe9fab427183299c71643f48cd",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "bb3d9772643b4d4f8eb79612dff9e759",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "bcf8ec58d03d4bb887367534d6e2d9b7",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "bec10388fba54485be83e95f83f64e09",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "bf13c4c4d6c049c9abdacc5a2f09582e",
+  "why": "Elixir Collector"
+ },
+ {
+  "tag": "c2c20d3fa59d45eb92571e6f092bc70b",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "c371729bfda64536ba70bd585b0fb952",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "c380b61b66bd4e819cf3d12c4bad2916",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "c3ccaa538032406ba5ab61e9de2a0ec2",
+  "why": "Miner"
+ },
+ {
+  "tag": "c6bf981a20b64e72a0530189a2a4fd53",
+  "why": "Miner"
+ },
+ {
+  "tag": "c6d957142f624133803ecc550b4c2e74",
+  "why": "ElixirGolem"
+ },
+ {
+  "tag": "c8068b75b679455b80fcc4bdf443e6da",
+  "why": "c8068b75b679455b80fcc4bdf443e6da: no deal fits side 0's recorded plays"
+ },
+ {
+  "tag": "ca2f14d39d984b96b6a59ce2a6430bcc",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "ca36967c4cd34e6283ad8f78d954e03e",
+  "why": "Lightning"
+ },
+ {
+  "tag": "cabeb28ff26046b2b348ebc1942b62f8",
+  "why": "Miner"
+ },
+ {
+  "tag": "cb0f109bcdca478b8ca9e6fee2b43037",
+  "why": "Lightning"
+ },
+ {
+  "tag": "cb1306ad07c1476087c97657e3d0e35b",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "cb6557d15ab44a159b48520f4312c238",
+  "why": "Miner"
+ },
+ {
+  "tag": "cbc144baa80a4278879c08eedad00de9",
+  "why": "ElixirGolem"
+ },
+ {
+  "tag": "cd233a5e9acb4c2983be46077dc04671",
+  "why": "Ghost"
+ },
+ {
+  "tag": "ce49e7ef79394ae6b64e7b031fb90673",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "cf32e52473ac443698ce6b775e12472e",
+  "why": "Ghost"
+ },
+ {
+  "tag": "cf7d5955281a412e82fa95b463b5f7e5",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "cfa7dfca263a44168f02a4479c2bc1bf",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "cffc0c0275b54173a784c04dfcd3449f",
+  "why": "Ghost"
+ },
+ {
+  "tag": "d02b710b466f45ebb247548a2196ecd4",
+  "why": "Elixir Collector"
+ },
+ {
+  "tag": "d042551fa1da4c859834483471383378",
+  "why": "GoblinDemolisher"
+ },
+ {
+  "tag": "d0d48e1720544396824f235858775194",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "d17e257f2ab04c74ba1bff149d00e409",
+  "why": "Elixir Collector"
+ },
+ {
+  "tag": "d2201f9704814117979bfbaa1425e166",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "d2bf8c3fde894491b1aa0ca28a9137e2",
+  "why": "Ghost"
+ },
+ {
+  "tag": "d3cd4e41fc14492089be8f6bcb6d7573",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "d3ffc574286b4573bc9edb290b3e4b80",
+  "why": "WitchMother"
+ },
+ {
+  "tag": "d4308b9117fc4268817eec93ee52d5a9",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "d45ed8be106343b29bb58f14ecdfc231",
+  "why": "Miner"
+ },
+ {
+  "tag": "d45edcae65d64614a247b3bdb5548292",
+  "why": "Rage"
+ },
+ {
+  "tag": "d4ac40708b4249b2951d9b6e36d457af",
+  "why": "Elixir Collector"
+ },
+ {
+  "tag": "d5d1f9c3f44b4ce68c22d66fdc6554f9",
+  "why": "Lightning"
+ },
+ {
+  "tag": "d6adc415b8a844abba842513a6d09832",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "d72d9050de174218b76536a49e7cd5a7",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "d7fb25b9192f4ab0923961a944a6a7e2",
+  "why": "Miner"
+ },
+ {
+  "tag": "d8f819ab9d514c91964ac36b105b6d0e",
+  "why": "Goblinstein"
+ },
+ {
+  "tag": "da6a7ca4d0c0480188de21656b4181ed",
+  "why": "Miner"
+ },
+ {
+  "tag": "db170329910744b0b976274f157d0eea",
+  "why": "Lightning"
+ },
+ {
+  "tag": "dd2a5aa4aed74c6c80e341ce09eefaaf",
+  "why": "Lightning"
+ },
+ {
+  "tag": "ddbf366491f442b4abd35283af48c45d",
+  "why": "RoyalDelivery"
+ },
+ {
+  "tag": "de8d09e0e4d544899cbe7990cd7d098e",
+  "why": "de8d09e0e4d544899cbe7990cd7d098e: no deal fits side 1's recorded plays"
+ },
+ {
+  "tag": "dee425a330344cf897baff9ad5d5c850",
+  "why": "Miner"
+ },
+ {
+  "tag": "defb96bca032484f9d3b34c2f983a3ce",
+  "why": "GiantBuffer"
+ },
+ {
+  "tag": "e0e4da3c89c8403295324dcaa3b7800d",
+  "why": "Lightning"
+ },
+ {
+  "tag": "e1b3d9a06b804412ad0eefca28a5d674",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "e1d4256462da45d5b663b5863403ab14",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "e2498de1b8f44e54b2e1a7a119cc3afb",
+  "why": "GoblinHut"
+ },
+ {
+  "tag": "e284f6bdb97e436b9311d18644dcb2a5",
+  "why": "Ghost"
+ },
+ {
+  "tag": "e315cfd47ec74dceae1c3b8466e7eced",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "e3a0862a5e294ad3a6ed7d3f567a2ba4",
+  "why": "SkeletonBalloon"
+ },
+ {
+  "tag": "e49e0937ae834b1483f788ae7184dd6a",
+  "why": "GoblinCurse"
+ },
+ {
+  "tag": "e51bdf1ce09f4fe8be88b73cd4d82530",
+  "why": "Lightning"
+ },
+ {
+  "tag": "e54d9d7d10ac45a8ae13c5c8f1e97004",
+  "why": "Lightning"
+ },
+ {
+  "tag": "e6ea842f015f47e4ba968b661739f001",
+  "why": "Heal"
+ },
+ {
+  "tag": "e94353d2cfc44658a2db3dfb1fa6d1ad",
+  "why": "Ghost"
+ },
+ {
+  "tag": "e9caa0d864cc468995efbbf25736d272",
+  "why": "Lightning"
+ },
+ {
+  "tag": "eab5717f761644f594f56ea0b365604e",
+  "why": "Lightning"
+ },
+ {
+  "tag": "ec7d59479b244ba79aec7428847e5c62",
+  "why": "Heal"
+ },
+ {
+  "tag": "ee671aace0a641d285c486e4c9a91bc1",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "eef5be0b3c0244dd9f9eca77727cad32",
+  "why": "DarkMagic"
+ },
+ {
+  "tag": "ef1f6d80ae5d45ebb2ef40644f02371a",
+  "why": "RamRider"
+ },
+ {
+  "tag": "ef8be7bdb70f412cac760e21e7c8622e",
+  "why": "GoblinDrill"
+ },
+ {
+  "tag": "efbe5f26a5cf4730bdf797418c9529eb",
+  "why": "Miner"
+ },
+ {
+  "tag": "f030fe2a853d42f89f8f978943fd18f6",
+  "why": "Miner"
+ },
+ {
+  "tag": "f0fbb75894da41cf9fa8479d398d62f6",
+  "why": "Miner"
+ },
+ {
+  "tag": "f12a82e71fcc44a490740b3e8ea1a216",
+  "why": "Miner"
+ },
+ {
+  "tag": "f146ba72d50a489590e365cd8ed26ff5",
+  "why": "Elixir Collector"
+ },
+ {
+  "tag": "f20cfaa574fb45e49fd12d5ad15cd14b",
+  "why": "Miner"
+ },
+ {
+  "tag": "f25b6574342c499aa37c2b5aa1c44442",
+  "why": "FirespiritHut"
+ },
+ {
+  "tag": "f2f96b4f7ca2498bac00e0378c0492f0",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "f5118ccdfd624ecbac46bc7ef985b531",
+  "why": "BossBandit"
+ },
+ {
+  "tag": "f690b99bab9640e19355f74eaf5928c2",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "f6ee7113c661467ea9eb35f09461afd6",
+  "why": "Ghost"
+ },
+ {
+  "tag": "f85e86d203004ad9b85ac5136754efbb",
+  "why": "Graveyard"
+ },
+ {
+  "tag": "f90e141740dd45888ae6347f8bdf16a3",
+  "why": "Vines"
+ },
+ {
+  "tag": "faacd62ccae64a4a8950dc56d1c56577",
+  "why": "RageBarbarian"
+ },
+ {
+  "tag": "fbb010d6aabe436182ab00d029cd2597",
+  "why": "Vines"
+ },
+ {
+  "tag": "fc4ca1b47f3d4bd1b2c91a6cbf4c9686",
+  "why": "Ghost"
+ },
+ {
+  "tag": "fcbf769edcca4967a5abf5d5d5899eab",
+  "why": "BarbLog"
+ },
+ {
+  "tag": "fdb367b866d1485a83b588aa89c86920",
+  "why": "Lightning"
+ },
+ {
+  "tag": "fe8d2522dd4a41aeb22c06630fd5cd7a",
+  "why": "Lightning"
+ },
+ {
+  "tag": "feee414b6ca94da0b910d098c7514ef9",
+  "why": "Vines"
+ },
+ {
+  "tag": "ff92b907301240ff967bacf51196be62",
+  "why": "Lightning"
+ },
+ {
+  "tag": "ffe078131aa34019b742c17e2c2c35d9",
+  "why": "FirespiritHut"
+ }
+]

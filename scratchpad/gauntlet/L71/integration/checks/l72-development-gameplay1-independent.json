@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_gameplay_1\\verify_results.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "DEVELOPMENT_GAMEPLAY_INDEPENDENT_COMPLETE",
+  "matched": true,
+  "output_sha256": "40fd6fdf27ba098c9f20bda45d6b6428f94d30c96615d135f42c8e305c4cc33f",
+  "seconds": 8.027874231338501
+}

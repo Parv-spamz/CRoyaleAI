@@ -1,0 +1,2034 @@
+# Gauntlet log
+
+Terse cross-loop ledger for `/gauntlet`. One block per iteration, newest at the bottom.
+Full findings go in `HANDOFF.md`; this file exists so the next loop can orient in ~20 lines
+instead of re-reading a 6,500-line handoff.
+
+Format:
+
+```
+## L<n> — <YYYY-MM-DD HH:MM> — <goal, abbreviated>
+DID      one line
+FOUND    the number(s), labelled measured / untested / contradicted
+MEANS    what changed about the plan
+NEXT     the single action the following loop should take
+STATE    what is running, what is queued, what is blocked
+```
+
+---
+
+<!-- no loops yet; /gauntlet appends here -->
+## L1 — 2026-08-30 11:05 — evaluate brainstorm; improve decision-making (spells, defense, x-bow)
+DID      reviewed all 698 lines of LIVE_POLICY_PERFORMANCE_BRAINSTORM.md -> research/BRAINSTORM_REVIEW.md;
+         built tools/response_regret.py v0 (paired per-state regret at enemy-play events, wraps
+         Searcher.candidates/_rollout); prepared the 5y band retune as a gated patch
+         (scratchpad/gauntlet/L1/band_retune.py); verified canvas_stack:1 claim true.
+FOUND    measured: benchmark smoke (1 match, contended box, NOT a result): 7 events, policy waited
+         all 7, a play scored better at 4/7. Doc's numbers check out against the ledger; its 14.1
+         premise is refuted by 5ab. Discovery: TWO defense bands exist -- sim.* (tiles) and env.*
+         (SCREEN-SPACE, foreshortened) -- the live one cannot take tile numbers without calibration.
+MEANS    spine of the doc adopted (benchmark -> joint scorer -> temporal -> world model); two-speed
+         router rejected pending bucket evidence; benchmark doubles as the 5ab power fix.
+NEXT     when ab3 wave 3 lands: final 3-seed read, apply band_retune.py, then a real regret run
+         (8 matches, idle box) on m18000 + ab3 checkpoints as the benchmark's first reference.
+STATE    running: ab3 wave 3 (s43 ~m1175/1500). queued: retune apply, 3-seed read, regret reference.
+         blocked: none. live env.* band flagged, needs screen mapping.
+## L1-final — 2026-08-30 13:10 — 3-seed verdict, retune applied, regret v0 reference
+DID      seed-43 read -> 5ad (bank_hold verdict); applied band_retune.py (10 edits, verified,
+         backups in L1/prepatch/); ran regret v0 reference (m18000 + 3 ab3 ckpts, 278 CSV rows);
+         launched band-validation run (retuned config, seed 41, 1500 matches, workers 0).
+FOUND    measured: bank_hold HARMFUL dose-dependently -- control>bank2>bank6 at ALL 3 seeds,
+         sign test ~0.5%; bank6_s43 total collapse 0.0%. measured: regret v0 within-ckpt --
+         m18000 missed-play FN 58% (oracle view), worst family = enemy buildings (0.40);
+         control_s41 over-play FP 64%. contradicted: cross-ckpt regret rankings INVALID in v0
+         (affordability censoring: <2 affordable cands = event skipped, starved policies look good).
+MEANS    both reward patches dead -> brainstorm's structural thesis is the working hypothesis.
+         Regret v1 must be a FIXED STATE CORPUS (paired across ckpts, kills both confounds).
+NEXT     L2: when band run lands (~16:45): xbow_probe on policy_band_s41.pt (did defensive bows
+         appear in-band?); build corpus-based regret v1; consider belief-view (--reseed-opp) rerun.
+STATE    running: band-validation s41 (data/bench/band_s41.log). done: ab3 (9/9), retune, regret ref.
+         blocked: none. NOTE owner usage 99% til Tue -- keep loops chunky, reports single.
+## L2 — 2026-08-30 18:20 — corpus v1, belief-view check, band null, stack chain launched
+DID      built regret_corpus.py v1 (203 fixed states, replay-based, candidate scores cached);
+         graded 5 ckpts oracle + 3 belief; final band probe vs seed-matched control; launched
+         canvas_stack 1v2 scratch pair overnight (sequential, seed 41).
+FOUND    measured: m18000 worst per-event regret (.384/.371 oracle/belief) vs trained arms
+         (.22-.30) on identical states -- ordering SURVIVES the belief-view control, so the
+         deficit is continuations, not event responses. measured: band retune trained NULL
+         (zero defensive bows persist; dead zone 14v20% noise-sized). contradicted: v0
+         cross-ckpt rankings (affordability censoring).
+MEANS    P2 joint scorer demoted; P3/P4 (temporal + continuations) promoted. Three repair
+         families now measured dead (restraint_hold, bank_hold, placement prior).
+NEXT     L3 when stack chain lands (~7h): grade both on corpus + probe + drills. If stack2
+         helps regret/drills -> GRU case strengthens; if null -> continuations (P4 teacher
+         plans) become the sole frontier.
+STATE    running: stack chain (2x scratch, ~7h). corpora: regret_corpus/ (oracle),
+         regret_corpus_belief/. usage note: owner 99% til Tue -- single report per loop.
+## L3 — 2026-08-31 00:55 — stack2 null-negative; placement data found; crawl near done
+DID      graded stack2 both corpora + probe (after catching the cross-width config trap);
+         launched defbow confirmation (stack1 cfg, seeds 42/43, detached); built + ran the
+         population crawl with placement-aware parser (3 login bugs fixed, token persisted).
+FOUND    measured: stack2 regret WORSE both views (.296/.286 vs stack1 .237/.242) at a 4x
+         throughput tax -> canvas_stack dead at this budget; P4 continuations sole frontier.
+         measured: RoyaleAPI .marker elements carry data-x/y (1000 units/tile), 104/109 join
+         -> 5w corrected, owner's placement claim vindicated. measured: scratch arms produce
+         defensive bows (3/8, 1/4), warm-started arms never do.
+MEANS    roadmap collapsed to one frontier with a fresh human dataset aimed exactly at it.
+NEXT     L4: crawl summary + pro-placement-vs-band check; defbow seeds land ~04:30; then
+         P4 design (teacher plan record in rollout_search) informed by human continuation stats.
+STATE    running: defbow chain (2x1500 scratch), crawl 460/512 replays. done: stack pair,
+         corpora, retune. blocked: none.
+## L4 — 2026-08-31 00:45 — population dataset read; band depth validated, width contradicted
+DID      crawl summary + frame verification + 1,038-bow band check + continuation stats.
+FOUND    measured: pro bow depth p10=19.5 (owner front tile 20 = validated); pros' top-2 tiles
+         (16,20)/(2,20) are lane bows EXCLUDED by the 4-tile width margin (48% of placements);
+         5w anchors confirmed at n=24 (gap 3.85s vs 3.60, rate 11.7 vs 11.3/min); after-bow
+         follow-ups quantified (knight 20% @5.5s median). Join bimodal: markers in ~half of replays.
+MEANS    band width is an owner decision now ON EVIDENCE; P4 has empirical targets.
+NEXT     L5: defbow s42/s43 probes when chain lands (~03:30); P4 teacher-plan design doc.
+STATE    running: defbow chain (s42 ~m1000). done: crawl (520 battles / 45,335 plays / 24 players).
+## L5 — 2026-08-31 03:05 — scratch-defensive-bow CONFIRMED (3 seeds); P4 designed
+DID      probed s42+s43 (s41 from L3); wrote P4_CONTINUATIONS_DESIGN.md; verdict into 5ah.
+FOUND    measured: defensive bows at ALL 3 scratch seeds (3/8, 3/14, 3/10 = 28% pooled) vs
+         0/192 across every warm-started checkpoint. 5ae refined: the prior teaches, the
+         warm start blocks. Scratch arms otherwise weak (locks 0-25%, volume 0.42-0.58/m).
+MEANS    the band+prior mechanism is real; the blocker is warm-start inertia. P4 ready to build.
+NEXT     L6 (owner gates): band-width ruling (5ag), P4 step-1 go-ahead (pure logging), then
+         warm-start-vs-band experiment design.
+STATE    box idle. pending owner: band width, P4 go. crawl + corpora + 3 scratch seeds banked.
+## L6 — 2026-08-31 04:55 — hold loop; spell portraits banked
+DID      read-only crawl2 spell analysis (log/rocket/nado); no config/doctrine/training touched.
+FOUND    measured: log 99% own-half lane modes (doctrine validated); rocket modes 1.5-2 tiles in
+         front of enemy princess, king-rockets ~absent (rule holds); nado bimodal, king-pulls
+         2-3 tiles DEEPER than doctrine's coordinate (flagged, not changed).
+MEANS    all four goal focus areas now carry population evidence.
+NEXT     owner rulings (band width; P4 step-1). Then P4 logging build.
+STATE    box idle; holding.
+## post-gauntlet — 2026-08-31 08:20 — owner rulings executed (gauntlet ended by owner reply)
+DID      band widened per ruling (central 0.389, lane-bow doctrine spots, probe default);
+         P4 step 1 shipped (continuation_log knob, smoke-verified 42 rows) after correcting the
+         design's premise (_rollout idles our side -- no teacher continuations exist to record).
+NEXT     enable continuation_log on the next training run; build continuation_report.py; probe
+         chained-sweep cost for genuine teacher plans; owner may relaunch /gauntlet.
+## L7 — 2026-08-31 09:55 — continuation instrument built; chain cost measured; graphify in flight
+DID      continuation_report.py + 4-ckpt baseline; chained-sweep cost probe (30 events);
+         graphify doc pass dispatched (10 subagents; scratchpad scope bug fixed first).
+FOUND    measured: m18000 after-bow L1-to-pro 0.250 vs trained arms 0.96-1.08 -- the continuation
+         instrument SEES the edge regret missed, ordering matches match strength. measured:
+         chained sweep 0.94x first sweep, total 215ms = 2.0x per searched decision (~0.5x
+         throughput at interval 4, projection). graphify: 5/10 chunks in.
+MEANS    P4 has both its instruments; teacher plans have a measured price; spec next.
+NEXT     L8: merge graphify when doc chunks land; write the PPO run spec; post --questions.
+STATE    5 doc-chunk subagents running. Box otherwise idle.
+## L8 — 2026-08-31 11:10 — graphify merged; PPO spec posted with --questions; BLOCKED on owner
+DID      merged 10 chunks + AST + cluster (12,018n/22,230e/633c, manifest stamped, temps cleaned);
+         wrote research/PPO_RUN_SPEC.md; posted --questions.
+FOUND    all goal items 1-3 done (continuation instrument 5ak, chain cost 5ak, graphify here).
+MEANS    goal item 4 delivered as a spec; launch gated on owner approval per the goal's own terms.
+NEXT     on approval: generate 3 seed configs from current config.yaml (continuation_log ON,
+         distinct checkpoints), launch sequential, report per wave. On modify/reject: revise.
+STATE    box idle. BLOCKED on owner (the goal REQUIRES this stop -- it is the finish line, not a
+         guess avoided).
+## L9 — 2026-08-31 12:05 — APPROVED; geometry run launched; ping fixed
+DID      owner approved the spec (a); launched geo chain (3 scratch seeds, 5aj geometry,
+         continuation_log ON, sequential, detached, ~4h); @here -> @vegetable_leaf in
+         gauntlet_report (owner complaint; bare-name caveat noted, needs <@id> for a true ping).
+NEXT     when geo_chain.done: paired reads (re-probe stack1 trio under def-edge 2.0, probe geo
+         trio, corpus regret both views, continuation_report 32 matches), 5am verdict by the
+         pre-committed rule, report. Then the P4 hazard A/B spec on the fresh corpus.
+STATE    running: geo chain s41 (of 3). Owner confirmed: this is an EXPERIMENT, not the long run.
+## L10 — 2026-08-31 15:05 — geometry verdict NOT PASSED (1/3) + two self-caught flaws; redo queued
+DID      paired reads (6 probes one instrument, regret x2 views, continuation x3); coordinate
+         falsification check on the anomalous seed; 5am written; redo constants fixed.
+FOUND    measured: s41 bows ALL at x=0.6 tiles = wall-clipped lane spot (my 0.11 placement);
+         s42 zero bows (real volume collapse); s43 53% in-band (best ever). Guardrails passed;
+         geo_s41 continuation profile closest-to-pro ever (L1 0.223). Corpus 38,224 rows.
+MEANS    lane-spot mechanism UNTESTED not refuted; constants fixed (0.139/0.861, central 0.390);
+         redo seeds 54-56 queued after parity.
+NEXT     parity chain grades when done (~tomorrow am); then geometry redo; then hazard A/B.
+STATE    running: parity w12_s51. corpus banked. flaws documented in 5am.
+## L11 — 2026-08-31 16:20 — hazard head built + smoked; parity mid-chain; real-run staged
+DID      hazard head wired (model+targets+loss+knob, smoke exit 0); real_run.yaml staged
+         (isolated ckpt, continuation_log ON); PPO_RUN_SPEC addendum committed (gates + launch-
+         on-green + terminal condition = REAL RUN LAUNCH).
+FOUND    parity w12_s51 m=1275+, ZERO fingerprint warnings (assert passing silently).
+NEXT     parity done (~04:30) -> grade pairs -> geometry redo (54-56, ~3h) -> hazard A/B
+         (sized from measured pace) -> REAL RUN. Owner window: tomorrow morning/afternoon.
+STATE    running: parity chain. staged: redo configs implied by fixed constants; hazard smoke cfg;
+         real_run.yaml. gauntlet ends at the real launch.
+## L12 — 2026-09-01 00:40 — parity CLEARED (workers 12); config corruption caught; redo running
+DID      s53 pair graded (-0.018/-0.038); 5an written; config.yaml corruption (live_search_C3,
+         22:13, not script-attributable) restored from git; geo2 chain relaunched with
+         parse-checked configs; owner confirmed scratch + 40k for the real run.
+NEXT     geo2 done ~04:30 -> grade vs stack1 trio (5am rule) -> hazard A/B 61-63 -> REAL LAUNCH.
+STATE    running: geo2 s54. cleared: gate 1 (workers 12). confirmed: scratch, 40k, ping on launch.
+
+## L13 — 2026-09-01 07:15 → 17:55  |  GATES 2+3 RESOLVED, REAL RUN LAUNCHED (gauntlet terminal)
+- Gate 2 geometry redo: CLEAN FAIL 0/3 (in-band 33%/11%/10% vs baselines 38/21/30%) -> lane spots
+  REVERTED, widened central kept (§5ao, commit). Third confirmation placement priors don't teach.
+- Gate 3 hazard A/B: NULL. s61 primary disqualified (control 2 waits; >=15 floor pre-committed),
+  s62 win, s63 tie. Secondaries 3/3 same-sign 1-5 pts = screen; queued as top follow-up (§5ap).
+- REAL RUN launched 17:50: scratch, seed 41, 40k, workers 12, centre-only band, hazard 0, isolated
+  ckpt data/policy_real_20260901.pt, continuation_log ON. Watchdog + tools/real_run_gates.py
+  (5k/10k/20k, snapshot-graded, measured-pace ETA, 2-read regression -> ping) armed, nohup.
+- Box: 2.2 GB available; owner desktop holds ~11 GB (reported, not touched).
+- Process: emulator autostart (~30% throughput theft) was the real redo-overrun cause; killed on OK.
+- Discord: launch report posted with ping. STOP: gauntlet ends at this launch per owner rule.
+- 18:15 OWNER OVERRIDE (post-terminal): hazard head IN. Run killed at m=400 (state recorded),
+  no-hazard artifacts archived, ckpt path verified empty, RELAUNCHED 18:18 coef 0.5 (banner
+  verified), watchdog+gates re-armed, launch-epoch marker added for pace. §5aq.
+
+## POST-GAUNTLET — 2026-09-01 20:00 → 21:15  |  owner-directed throughput profile (§5ar); real run untouched
+- Owner: Soup (LLM fine-tuning CLI) rejected, wrong problem; "if cheap and decisive, do the
+  throughput experiments now". Profiled the trainer cycle with a new opt-in profiler.
+- MEASURED (cpu, real config, idle box, 4 cycles): update 402/572 s = 70%; workers idle 78% of
+  wall (live psutil). Decision rule pre-stated in §6 -> learner on the GPU.
+- BUILT: --device cuda end to end (CPU weight copies at the 3 worker/disk seams, TF32 off,
+  batched tensor assembly proven bit-identical). MEASURED: cycle 143 -> 49 s = 2.92x; ~3,700
+  matches/h steady vs ~1,130. Smoke exit 0, 12-worker bench exit 0, ~0.9 GB VRAM.
+- Found: resume rail guard fed 0..255 inputs (fixed, never fired in a logged run); cell head at
+  m=2300 is 43% beyond |16| (negative rail, gradient-dead) -- queued as a read at the gates; a
+  13-hour runaway regex process from 07:11 (Bash timeout does not kill the child) killed.
+- Real run suspended twice for clean measurements (15:51 total, recorded, dead-man armed),
+  resumed; m=2450 at 21:08, 0 warnings. Blocked on the owner: restart on cuda (recommended) or
+  keep the CPU run (ETA Sep 3 midday). Next gauntlet NOT started (owner has a direction).
+- 21:24 OWNER ORDER: "stop and resume using device cuda; decide resume vs scratch". Decision
+  SCRATCH (ckpt has no hazard head / Adam / league / done_n; rail guard would rescale the cell
+  head x0.031; a resume saves ~45 min of cuda time). CPU run stopped at m=2700 (60W-2116L, EVAL@2000
+  11%/4%, 0 warnings, 27,429 continuation lines), archived to data/bench/aborted_real_cpu_20260901/.
+  RELAUNCHED 21:25:27 --device cuda, seed 41, 40k, 12 workers, hazard 0.5; banner verified;
+  watchdog + gates re-armed; Monitor on the m=1000 snapshot / m=2000 eval (first cuda pass at
+  scale). +7.5 min: 250 matches, 0 warnings, ~0.9 GB VRAM. §5as. Next: cr-native-sandbox assessment
+  (owner-directed, §5at); gauntlet NOT restarted.
+- 2026-09-01 21:5x (owner-directed, outside the gauntlet ladder) cr-native-sandbox ASSESSED, not run:
+  real CR engine (libg.so 15.535.29 x86_64) headless in a rooted AVD, JSON/TCP API, NO renderer (no
+  detector frames). Blocked on owner: 5 hash-gated split APKs from their own install, ~15-20 GB of
+  SDK/JDK installs, emulator contention with the cuda run. Replay->real-match idea MORE feasible than
+  assumed (retraction: plays are 20 Hz ticks in native 1000/cell units, not 1 s / tile-rounded);
+  268 usable replays / 23,490 plays; fidelity self-checks via rejections + final crowns. Better use
+  ranked: sim-parity oracle > real-engine eval > pro-state dataset > RL-in-engine (one throughput
+  measurement decides) > frames (impossible). §5at + research/CR_NATIVE_SANDBOX_ASSESSMENT.md.
+  Discord --questions posted; WAITING. Cuda run at +28 min: 963 matches, 0 warnings.
+- 2026-09-01 22:15 owner answered: Q2 (installs) APPROVED -> done 22:13 (JDK 17.0.20.1, cmdline-tools,
+  SDK 7.9 GB, AVD created, venv; doctor passes all toolchain/AVD checks; WHPX usable per emulator
+  -accel-check; upstream bootstrap bug ANDROID_AVD_HOME worked around); Q3 = after the cuda run; Q1
+  explained, waiting for the owner to read the client version (must be 15.535.29). Cuda run passed
+  episode 2000 at 22:13 (26W-1541L, 0 warnings); EVAL@2000 running (first cuda eval at scale).
+- 2026-09-01 22:22 cuda run: EVAL@2000 ladder 3% / fair 3% (150 each), eval wall 9.1 min (CPU-side, as
+  predicted), 0 warnings -> both cuda-at-scale paths passed. Sandbox runtime: BlueStacks AppCache.json
+  proves CR build 150535029 installed 30.08 (retraction of the "client is newer" reading); pull script
+  ready; waiting for the owner to enable ADB in BlueStacks. §5au.
+- 2026-09-01 22:40 sandbox runtime pulled from the owner's BlueStacks via exec-out (HD-Player adb proxy
+  whitelists getprop/dumpsys/logcat only; pull/sync blocked). Engine payload byte-identical: 14/14 native
+  libs incl. libg.so <libg/sampler hash, local> + asset pack; 4 Play-derived APK wrappers differ (derived.apk.id + re-sign,
+  same sizes). prepare_runtime OK. freeze (template with blanked APK hashes) = owner's call. §5av.
+- 2026-09-01 23:05-23:40 (owner: "run the single replay conversion now, an hour of slowdown is fine")
+  sandbox SMOKE on this box: AVD boot 61.6 s, 5 APKs installed, libg headless load, DataTables, battle
+  from the bootstrap replay IDENTICAL to the author's certified state (rng 3502570521, towers, elixir 6).
+  BLOCKED: nativeStep never advances the tick (0->0 after 100 steps in 33.7 ms; 3/3 deterministic; author
+  reaches tick 100/hash 96598dc9028e1802 on the same path) -> service never listens -> conversion NOT run.
+  libg is packed on disk (static RE impossible; lldb broken here; no capstone) -> next: live /proc/self/mem
+  dump via a local probe-direct-hold mode, plus the cheap locale/tz + full-card-bootstrap tests first.
+  Driver replay_drive.py written and offline-verified (08CPVRRR8PYC: 54 plays, 256 consistent deals/side).
+  Owner stopped the session (compaction); emulator STOPPED (free RAM 3.1 -> 7.7 GB); cuda run untouched
+  (4200 eps, 95W-3262L-2D, EVAL@4000 12%/5%). Full runbook in §5aw.4.
+
+## L1 — 2026-09-02 01:20-02:05 | detector upgrade recon (owner goal: modern detector + <100ms decision)
+- Asked 4 questions BEFORE starting (owner instruction). Rulings: latency not act_period; stop PPO at
+  ~18k eps then board-train; isolated venv only for non-ultralytics; cheap screen then ONE full run.
+- MEASURED: icebow/.venv ultralytics 8.4.107 already ships yolo26 / yolo26-p2 / yolo12 / rt-detr ->
+  the approved venv is probably unnecessary; train.py already takes --model. Bar to beat = board-26
+  (yolo11s, 960px, 120 ep, 23.9 h): mAP50 0.860, mAP50-95 0.704.
+- RETRACTED my own first read of kitka ("88 new classes" -> naming artifact). Truth: sprite library,
+  fills 1 of 45 empty classes, +6,200 crops (+15%) to 128 existing, and 9 evolution classes go from
+  0-7 sprites to 88-540 = from unlearnable-by-synth to represented. That is the whole of its value.
+- ⚠ TRAP: 69/230 classes have ZERO val instances; the 9 kitka classes have 0-2. mAP50 on this val set
+  CANNOT see the kitka change -- a null would be an instrument artifact. Need a held-out SYNTHETIC val
+  from unseen kitka sprites, reported separately. detect-eval is right for the architecture half only.
+- No model trained: GPU is the PPO run's until 18k (watcher armed). Next: paper screen (free), non-GPU
+  latency breakdown, battery watchdog pause/resume rewrite.
+
+## L2 — 2026-09-02 07:13-07:35 | PPO stopped at 18k, YOLO26 smoked, screen launched
+- Watcher fired at 18,000 eps. Before stopping, read the GREEDY eval (not the sampled winrate):
+  ladder 3/12/19/13/7/21/8/10% at EVAL@2000..16000 -> 5-eval avg FLAT 12-14% since 12k; _best.pt has
+  not moved since 03:54 (~12k). Stopping cost nothing measurable -- independent of 4t, not carried from it.
+- Stopped per guardrail: ckpts SHA-verified into data/bench/stopped_real_cuda_18k_20260902/, then
+  Stop-Process; python 20 -> 6, train-sim-ppo 0, RAM 11.1 GB free, GPU idle.
+- YOLO26s SMOKE on our real 230-class data: exit 0, 5.6 ms inference / 0.4 ms postprocess @960 (NMS-free).
+  Paper: yolo26s 48.6 vs yolo11s 47.0 COCO mAP50-95, same params, fewer FLOPs, + ProgLoss/STAL (small objects).
+- LAUNCHED the 2-arm screen (yolo11s control vs yolo26s, identical, fraction 0.35 / 30 ep / 960px, ~2 h each).
+  Screen numbers compare ONLY to each other -- never to board-26's 0.860. That is why the control exists.
+- battery_watchdog.ps1 REWRITTEN to the owner's spec: pause -> sit 90 min -> wait >=25% -> auto-resume,
+  12 cycles; refuses to resume a STRIPPED ckpt (that silently starts a coco8 run -- 3 such folders here).
+- Next: read the screen ~11:30, build the held-out synthetic val from unseen kitka sprites, then the full run.
+
+### L2 addendum (2026-09-02 08:05) -- owner asked about overnight cell/elixir alerts
+Re-read `ppo_watchdog.log` for the stopped run (114 readings). Cell head sat below the 1.27-nat collapse
+line on 83/94 readings after 4k and from the first reading (ep 200) -- a starting state, not an overnight
+event; 28-43 distinct cells throughout (never the 3-cell catastrophe). Elixir>=6 fell 2% -> 0.5% -> 0.02%
+over 8k->18k: a real monotone decline that makes X-Bow/Rocket uncastable and matches the 12-14% plateau.
+L2 report did not read this instrument; corrected in HANDOFF §5ba.6b. Stop decision unchanged.
+Two items queued in §6 for the next PPO run (elixir drift rule; per-card top-cell dump).
+
+## L3 — 2026-09-02 07:40-08:30 | kitka folded in, L1 counts RETRACTED, held-out synthetic val built
+- RETRACTED §5az.4 numbers: `dataset_updates/` is a byte-duplicate of `segment/segment`, so every L1
+  per-class count was ~2x (hunter_evo 546 -> 276). Unique library: 183 classes / 7,792 PNGs. It fills
+  3 empty classes (pekka_evo, giant_snowball_evo, skeleton_army_evo), not 1.
+- Split 80/20 by sha1(name): 6,313 train / 1,479 holdout. Imported train slice into the bank
+  (44,094 -> 48,929 files, +4,835, 0 removed) and the holdout slice into its OWN bank (1,124 / 106 cls).
+  Thin classes now 42-222 sprites each (were 0-19). 5 names needed explicit mappings (dart_goblin_evo had
+  imported 1 sprite before the fix).
+- Built the missing instrument: 1,000 VAL-frame composites from the held-out bank (2,479 pastes, 156
+  classes), own `holdout_val.yaml`. Read per-class AP for pasted classes only; never its overall mAP.
+- (b) kitka crop scale CV 0.27 around 735 px; one composite eyeballed and troop-sized. (b) 10 kitka classes
+  are objects our taxonomy cannot name (goblinstein, goblin_dummy, skeleton_balloon_evo, hogs_evo...) -> §6.
+- NOT regenerated the training synth: the screen reads `data/detect/synth` and regen overwrites in place.
+  First step after the screen. Screen measured 5.4 min/epoch -> both arms ~13:00 (not 11:30).
+- Next: gate-prior builder on the one existing engine recording (CPU) while the screen runs.
+
+## L4 (owner task, mid-gauntlet) — 2026-09-02 09:00-10:10 | hogeq brought up to icebow's version
+- parity 65 identical / 18 declared / 2 UNEXPECTED -> 70 / 15 / 0, `--strict` green from both decks.
+  Ported: katacr_segments.py, sprites.py, reward.py, model.py, sim/drill_env.py, tests/test_aim_assists.py
+  + the five new CLI flags by hand (cli.py is deck-different, so the gate could never have caught it).
+- ⚠ FOUND: hogeq's env.py has always CALLED `log_corridor_cell` behind try/except and its reward.py never
+  defined it -> the Log corridor aim assist was INERT in a deck that runs The Log. Now defined; 16 ported
+  aim tests pass in hogeq. Live-path behaviour change (hogeq is sim-only, nothing in flight).
+- model.py port verified checkpoint-safe: hogeq's policy_sim_ppo_best.pt strict-loads, cell head (11,24,1,1).
+- Two DRIFT notes were STALE: `_env_flag` is in BOTH decks (the real drift was 3 icebow-only drill knobs);
+  reward.py's entry described a gap as a deck opinion. hogeq's "42 known failures" baseline is dead: 1,272
+  OK before the ports, 1,288 OK after. icebow: 1,257 with 1 PRE-EXISTING failure (xbow_front 0.56 -> 0.625
+  from the 5y retune invalidated a test premise; left for an owner call).
+- Corpus: hogeq had none, and the icebow crawl cannot supply it (0 of 520 battles has a hogeq-deck
+  opponent; 5 are 7/8-card neighbours). New `crawl_deck.py` (crawl_icebow.py left frozen), session token
+  borrowed from the icebow crawl -- no owner login needed, probe pulled a 109-card replay with 131 markers.
+- ⚠ BUG in the first pass: RoyaleAPI's "similar decks" for hog 2.6 are card SUBSTITUTIONS, not evo swaps;
+  only 100 of 531 rated players are on the exact base deck, so the top-50-by-rating roster produced
+  14 players walked / 0 battles kept. Roster now filtered by is_variation first; crawl restarted.
+- Next: finish + re-run the crawl to sweep rate-limited players, then hogeq placement priors (5ag's path).
+
+## L5 — 2026-09-02 14:22-15:00 | screen verdict, board-27 CANCELLED (owner ruling), first latency number
+- Screen final, identical args, same val: yolo11s mAP50 0.408 / mAP50-95 0.294 vs yolo26s 0.253 / 0.171.
+  y26s behind at all 30 epochs; gap peaked +0.177 (ep 11-12), closed to +0.150 by ep 30. 36% slower to train.
+  (b) a full-schedule crossover is not excluded (linear extrapolation ~ep 130); not worth 24 GPU-h given:
+- IDLE-BOX latency bench (241 real 1182x668 frames, fp32 @960, 200 calls, the live predict() call):
+  board-24-5 (operating) 29.5 ms median / 35.0 p90 (pre 7.1 / inf 19.6 / post 3.1); board-26 32.6;
+  y11s 31.3; y26s 34.5 (inf 26.1, post 1.1). (c) "NMS-free = faster" CONTRADICTED on this GPU: +3.2 ms net.
+  half=True is deprecated in 8.4.107 and moved nothing consistently.
+- Owner ruling 14:30: a day of board training only if kitka's benefit is significant. It is (b) UNTESTED
+  and invisible on the main val (0-2 instances of those classes) -> board-27 CANCELLED. Right-sized test
+  queued as an owner option: 2-4 h fine-tune from board-26 on kitka synth, read on holdout_val.yaml + the
+  detect-eval promotion gate. Not launched.
+- Consequence: the PPO elixir-fix run (08:20 ruling) is now gated on its prep only, not on board-27.
+- Next: OFFLINE stage timer for play.act_in_match over data/sessions/20260815_222309/video.mp4 (obs build,
+  recognition, threat/canvas, policy forward, LiveSearch.decide) -- the full 100 ms budget breakdown
+  without touching play.py; then the 7 ms preprocess term. Gate-prior prep in parallel (CPU).
+
+
+## L6 — 2026-09-02 15:00-15:25 | GATE-PRIOR RUN LAUNCHED (owner order "launch the elixir fix run")
+- Built + smoked + launched in one loop. tools/gate_prior.py (both decks) fits P(play per 0.6 s window |
+  floor(elixir), phase) from the crawled replays; elixir reconstructed (start 5, engine regen, CardDB cost),
+  error MEASURED: 1.7% (icebow, 519 replays / 23,620 plays) and 2.8% (hogeq, 595 / 30,258) of plays under
+  cost. Both decks bank: single-elixir P(play) ~0.04-0.06 at 3-7 elixir, 0.20-0.25 at 9. Pros made 65% (icebow)
+  / 54% (hogeq) of plays at >=6; the 18k agent spent 0.02% of steps there.
+- Hook in both train_sim_ppo.py: sim.ppo_gate_prior_coef (0.0 = off) x Bernoulli CE of the GATE head toward
+  the table on match rows with play unmasked; engine clock added to the rollout + remote payload for the
+  phase key. Watchdog: ELIXIR>=6 drift rule with its own floor 0.002 (0.05 would have been dead), suppressed
+  when GATE DRIFT fires the same cycle. real_run_gates.py --run <kind>_<date>. Tests 15/15 icebow, 7+1 skip hogeq.
+- Deviation from the 08:20 ruling, stated: no threat key in v0 (needs the engine recording pass).
+- RUN: 15:07, cuda, seed 41, 40k, ONE change vs the 18k run = coef 0.1 (untested first value). Update 200:
+  pi(play) 0.379 vs prior 0.051 on usable rows, 8% of rows usable (= the collapse: nothing affordable on 92%).
+  Watchdog + gates armed on data/policy_gate_20260902.pt. Stale 18k watchdog still alive (kill refused).
+- TRAP (a): 91 watchdog readings of the FROZEN 18k checkpoint: cell_struct 685-14,834x, elixir>=6 0.0-11.3%;
+  the CELL STRUCTURE drift rule fired on an unchanged file. HANDOFF 8 + 5bf.5.
+- hogeq refuses --search-interval with workers>1 (search-in-workers never ported) -- parked in 6.
+- Next: read the run at m~1000 / the m=5k gate; latency-loop offline stage timer (single-thread parts only
+  while the box is contended).
+
+
+## L7 — 2026-09-02 15:45-16:05 | GATE-PRIOR RUN READ AT m=2000: NOT DISTINGUISHABLE FROM THE 18k CONTROL YET
+- Box contended (12 workers + cuda) -> no latency timing. Built tools/gate_prior_probe.py: the watchdog's
+  sampler + per-row affordability + P(play|elixir bucket) vs the pro table, np.random seeded, 12 s/run.
+- (a) 3 seeds each, gate m=2000 vs frozen 18k: affordable rows 25-27% vs 28-29%; P(play) on affordable rows
+  0.41-0.43 vs 0.38-0.41 (pros ~0.06); played/row 11-12% both; 80% of rows below 3 elixir in both; `played`
+  at bucket 3: 0.39-0.45 vs 0.36-0.37 vs pros 0.063. The prior has not moved behaviour by m=2000.
+- (a) the cheap-card collapse from the hand side: skeletons in hand at 1 elixir on 7-9% of rows (expected
+  ~50% under a neutral cycle) -- cheap cards are spent on draw, the hand holds 3-6 cost cards at 1-2 elixir.
+- (c) RETRACTED my 15:42 "direction looks right" read: the 15:45 watchdog reading reversed it, and the
+  watchdog's P(play) mean is ~74% masked rows (nothing affordable) -> HANDOFF 8. Trainer's pi(play) on
+  usable rows, DE-CUMULATED: 0.336 -> 0.316 over 3,800 updates -- flat.
+- Pre-registered m=5k rule (HANDOFF 6): probe gate_m5k.pt on 3 seeds; `played` at bucket 3 >= 0.30 on all
+  three -> ask the owner to relaunch at coef 0.5; < 0.30 on all three -> leave to m=10k; mixed -> read again 7.5k.
+- Next: m=5k gate (~17:00). Run untouched, 0.8 ep/s, ETA ~05:00 09-03.
+
+
+## L8 — 2026-09-02 16:54-17:10 | COEF 0.1 LOSES TO PPO; THE GATE IS THE RIGHT LEVER (counterfactual bank) -- STOPPED TO ASK
+- (a) trainer `GATE PRIOR CE` de-cumulated per 800 updates: pi(play) on usable rows 0.34 -> 0.28 (upd 2400)
+  -> 0.375 (upd 8800), AWAY from the prior 0.059; window CE 0.43 -> 0.61. Probe m=4000, 3 seeds: played at
+  3 elixir 0.42-0.48 (control 0.36-0.37); mean cost of cards played 2.45-2.49 (deck 3.50); x_bow once / 7,200 rows.
+- (a) `--force-bank 6` counterfactual on the same checkpoint: card head picks at mean cost 3.35-3.44
+  (~uniform over hand: skeletons / ice_wizard / x_bow / tesla ~30 each of 190), x_bow on ~15% of plays; same
+  elixir spend per row (0.27) as unforced. The cheap-card collapse is the GATE opening at 1-3 elixir, not a
+  cheap-biased card head.
+- Arithmetic: prior per-usable-row pull = coef x (pi-p) / 0.09 ~ 0.33 at 0.1 vs PPO advantage ~0.8 -> loses
+  (observed). 0.5 -> ~1.7, equilibrium pi ~0.20 at 3 elixir; 1.0 -> ~0.13; pros 0.06. (b) both.
+- STOPPED (--questions): relaunch at coef 0.5? Run untouched at m~4,300; m=5k snapshot still taken.
+- Open side question: file host for the 9 replay mp4s (SwissTransfer needs a captcha -- not scriptable).
+
+
+## L9 — 2026-09-02 17:07-17:45 | m=5k READ MOVED TOWARD THE PRIOR; RELAUNCH ORDER ON HOLD FOR A YES/NO
+- Owner ruled (~17:00, on the m=4k picture): stop and restart at coef 0.5. Waited for the m=5k snapshot as planned.
+- (a) probe `gate_m5k.pt`, 3 seeds: played at 3 elixir 0.299 / 0.279 / 0.305 (m=4k 0.42-0.48; 18k control
+  0.36-0.40); P(play|affordable) 0.28-0.32 (m=4k 0.43-0.45); elixir >=6 0.8-1.6% of rows (m=4k 0.0-0.2%);
+  affordable rows 32-36% (23-25%). First read below control, all seeds, every stat. Plays/row unchanged.
+- (a) trainer's window pi(play) on usable rows still 0.29-0.41 (updates 10.4k-11.6k) -- instruments disagree.
+- (c) PARTIAL RETRACTION of L8 "0.1 cannot win": the arithmetic was (b) and the m=5k probe contradicts it.
+- Pre-registered rule says MIXED -> re-read at 7.5k. Killing is irreversible -> asked the owner: hold to 7.5k
+  (~18:40, recommended) or kill now and relaunch at 0.5 as ordered. No answer = hold and probe at 7.5k.
+- Side task done: 9 replay mp4s zipped as one file, uploaded to gofile (bashupload dead), md5 verified, link sent.
+- Correction: 18k control played@3 is 0.36-0.40 (seed 0 = 0.403), not 0.36-0.37 as written in L7/L8.
+
+
+## L10 — 2026-09-02 18:54-19:10 | m=7.5k = OSCILLATION; coef-0.1 run killed at 7,575, coef-0.5 run launched 18:59
+- Owner 17:50: hold to 18:40 to tell genuine improvement from oscillation. Rule: >=0.30 all seeds -> relaunch.
+- (a) probe live ckpt at m=7,500, 3 seeds: played at 3 elixir 0.376 / 0.301 / 0.401 (m=5k 0.28-0.31; control
+  0.36-0.40); P(play|affordable) 0.34-0.39 (m=5k 0.28-0.32); elixir >=6 0.5-1.0%. Bounced back -> oscillation.
+- (a) trainer's window pi(play) on usable rows per 1,000 updates: flat 0.34-0.37 over 16,800 updates, CE never fell.
+- Verdict: coef 0.1 exerted no sustained pull (L8 claim stands; L9's partial retraction was the oscillation).
+- Killed PID 29460 tree at 18:57 (procs 2 -> 0, exit=1 logged), endpoint in HANDOFF §3. Launched
+  gate05_run_launch.sh 18:59: `GATE PRIOR ON: coef 0.500`, ONE change vs the killed run. Watchdog + gates re-armed.
+- Watch item: free RAM 0.6-1.1 GB at startup (workers 560 MB each). Re-check at m=2k.
+- Next: coef-0.5 m=2k probe (~20:10 at 0.5 ep/s), pre-registered: <=0.25 all seeds = biting; >=0.35 all = ask.
+
+
+
+## L11 — 2026-09-02 19:20-20:25 | coef 0.5 BITES at m=2k; PPO push climbing back in trainer windows; level-16 answered; stale watchdog killed
+- (a) probe gate05_m2k.pt, 3 seeds: played at 3 elixir 0.271 / 0.227 / 0.239 (coef-0.1 m=2k 0.39-0.45; control
+  0.36-0.40; pros 0.063). P(play|affordable) 0.227-0.233 (coef-0.1 0.43-0.45); elixir >=6 3.0-4.0% (0.0-0.2%).
+  Rule: <=0.25 all seeds missed by 0.021 on seed 0; >=0.35 ask-branch far away. Verdict: biting (direction, 3 seeds).
+- (a) trainer window pi(play) per 200 updates: 0.34 -> 0.22 by update 2,000, then back to 0.24-0.29 through 5,600,
+  CE 0.35 -> 0.42-0.44. First coef that moved the trainer's own gate; PPO pushing back. m=5k decides equilibrium.
+- (a) m=2k same seed: avg_rew -18.2 (coef 0.1 -15.2; 18k -13.4); EVAL@2000 5%/2% (n=150, noise). Coef 0.5 worst on
+  reward, (b) banking cost vs simply worse -- unresolved.
+- Side: level-16 sandbox writeup (scratchpad/gauntlet/L11/level16-research.md; (c) HANDOFF:5737 retracted); stale
+  18k watchdog killed; owner's decision-time question answered with a counter-question (act_period vs latency).
+- Trap: two-threshold rule (0.25/0.35) left a dead zone; probe spread at fixed ckpt is ~0.04-0.05. One threshold next.
+- Box 20:08: run at 2,550 eps, 0.62 ep/s, 4.2 GB free. Next: m=5k read (~21:15-21:30), ask-branch = >=0.35 all seeds.
+
+
+## L12 — 2026-09-02 20:30-20:55 | owner order: stage timer + agent_dt weighing. RETRACTION: decision path was measured all along
+- (c) "act_in_match / decision path unmeasured" (§5be, §6, my 20:0x reply): env.py has timed every stage of every
+  decision since 08-12 (`cadence` dict in data/reward_stats/live_*.jsonl, 904 matches; `[cadence]` print). Nobody read it.
+- (a) act_period-0.6 era, 100 matches / 38 sessions since 08-20, per-match means: loop p10 0.664 p50 0.760 p90 0.898 s;
+  wait 0.123; env sum 0.343 (reads 0.131, act 0.058, state 0.056, threat 0.053, grab 0.035, hand 0.012, obs 0.003);
+  trainer residual p50 0.315 (p10 0.08, p90 0.45); pipeline (loop-wait) p50 0.646. 91/100 matches loop>0.66.
+  => trained at 0.6, served at 0.76 (27% mismatch, the 08-12 bug class). Box load per session unrecorded (caveat on
+  the split, not on ">0.6": the p10 match is already over).
+- (a) pros: 43,205 consecutive same-side gaps, 519 replays: <0.6 s 1.4%, <1 s 3.6%, <2 s 18%, p50 4.15 s.
+- Built icebow/tools/latency_stage_timer.py (offline, real Vision/trackers/detector/net, no live-path edits). Smoke
+  on the CONTENDED box (40 frames, upper bounds): detect_state 86 ms, detector 80, threat colour 62, tower-HP OCR
+  22 p50/348 p90, elixir 15, mass 10, hand 5, observe 4; net fwd b1 1.6 ms, DDQN learn step b64 21 ms (cuda).
+  => the 0.3 s trainer residual is NOT the net; (b) live search (on since a410de6 08-29) / doctrine / contention.
+- Weighing (owner delegated): lower agent_dt buys 1.4% of pro combos + (b) placement timing, nothing on reaction
+  (event wake already exists; reaction is pipeline-bound ~0.5 s). Costs: sim retrain, gamma retune, gate prior
+  tables per dt, halved sim throughput, and it cannot be served (pipeline 0.65 > 0.6 today).
+  VERDICT: do not lower agent_dt; make serving honest at 0.6 first (residual split, detect_state at 2 Hz, OCR p90).
+- Repro (cadence): python over live_*.jsonl, sessions >= 20260820_093600, matches with cadence.n>=50, per-match means
+  of cad[k]/n, percentiles across matches. Repro (pros): plays_ext.csv, sort by (battle, side, t), diff t, drop abilities.
+- Trap: an instrument that writes to a JSONL nobody greps does not exist (§8 entry added).
+- Files: tools/latency_stage_timer.py; scratchpad/gauntlet/L12/stage_timer_smoke_{,net_}contended.json. HANDOFF §5bl.
+- Box 20:25: run untouched (gate05, watchdog + gates alive). Next: 21:11 wakeup = m=5k read; idle-box timer run parked.
+
+
+## L13 — 2026-09-02 20:30-20:55 | owner reports tested: X-Bow at dead tower; spell whiffs; ROCKET NEVER CAST in sim
+- (c) "model doesn't know which cells target which tower": tower HP in obs since 08-10; live dead-lane assist since
+  08-16 (reward.py:319); sim reward alive-only. (a) today: 6/6 bows at cell 243, raw==assisted; after took_tower
+  `_defensive` flips and env.py:1823 SKIPS all bow assists -> unassisted constant cell, billed -1 for depth.
+  (a) `_wincon_exec_live` ignores tower alive (sim checks). (c) crawl has no tower-death events.
+- (a) sim probe, greedy no-mask, 36 matches/ckpt: m2k 168 spells, 0-dmg 11%, mask-whiff 11%, nado_bad 19%;
+  18k 496 spells, 0-dmg 9%, mask-whiff 21%, nado_bad 13%. Rocket 0 casts on BOTH (pros 3.4%). Live today
+  spell_waste 25/54 spell plays (other instrument). Mask at ~86% in training -> (b) policy never learned aim.
+- Proposed (owner call): env.py:1823 run defensive bow snap when _defensive; env.py:1574 alive-only anchors.
+- Files: scratchpad/gauntlet/L13/{spell_xbow_probe.py,probe_gate05_m2k.*,probe_18k.*}. HANDOFF §5bm.
+- Run untouched. Next: 21:11 wakeup = m=5k read.
+
+
+## L14 — 2026-09-02 20:55-21:10 | owner ruling on X-Bow defensive doctrine: verified vs pros, APPLIED to live env.py
+- (a) pro blue bows n=1,029: front share 93% (0-30 s) / 82% / 63% (2x) / 54% (OT) / 48% (3x OT); 122/255 replays
+  switch front->back, 70 of them in 2x. Late bows: 54% front when the pro took a crown vs 62% at 0 crowns ->
+  time gate = real soft preference; tower gate = no support (and §5bm measured it harmful).
+- (a) env.py edits (owner-authorised): tower-gated `_defensive` flip removed (OT+chip only); defensive bow snap
+  also when `_defensive`; `_wincon_exec_live` anchors alive-only. 56/57 tests, the failure PRE-EXISTING (stash-verified).
+- NOT done: sim twin (sim/env.py:3149, run live -> §6); OT snap hard vs soft = owner call (flag: overrides ~54% of pro OT bows).
+- (b) edits unexercised live. Files: scratchpad/gauntlet/L14/pro_bow_timing.{py,txt}. HANDOFF §5bn.
+- Run untouched. Next: 21:11 wakeup = m=5k read.
+
+
+## L14b — 2026-09-02 21:10-21:30 | owner steering: OT flip -> SOFT RAMP; agent_dt verdict pinned in HANDOFF §6
+- (a) live env: `_defensive_w` = clamp(s into OT / `env.xbow_defense_ramp_s` 60) while chip < success_frac, else 0;
+  blends the bow reward, scales rocket-cycle credit, is the snap probability. `_defensive` = property (w>=1).
+  `clock.overtime_s` added. 5 new tests; 130/131 (the 1 pre-existing). Unexercised live (b).
+- HANDOFF §6 PRIORITY-C: agent_dt verdict (§5bl.6) with the order of work, so it is not lost.
+- Run untouched. Next: 21:11 wakeup fired? -> m=5k read.
+
+
+## L15 — 2026-09-02 21:15-21:20 | m=5k wakeup landed early (4,425 eps, 0.5 ep/s); no pre-registered read
+- (a) watchdog @4000, both arms: same CELL-COLLAPSE (ent 1.07 vs 1.06 /5.08) and ELIXIR>=6 alerts -> recipe, not coef.
+  P(play) 0.26 vs 0.48, card_ent 1.18 vs 1.82 (coef-0.5 vs 0.1): (b), single sampled readings, not the probe.
+- Trainer EVAL @4000: coef-0.5 13%/10%, coef-0.1 8%/4% -- winrate, logged only.
+- Trap: ETA from one rate reading; next wakeup paced on the snapshot file. Next: 21:41 = m=5k read (rule §3).
+
+
+## L16 — 2026-09-02 21:20-22:10 | FINAL loop (owner order): spell niches; nado_retarget unreachable; m=5k read; gauntlet STOPPED
+- (a) pro reference (6,804 icebow-side casts): log 87% own bridge side; rocket 81% enemy half/tower zone; tornado spread,
+  19% own back/king zone. Class of the preceding enemy play only mildly separates the spells; the crawl has no unit
+  positions, so "what the spell covered" is sim-only.
+- (a) sim, 3 ckpts x 3 seeds x 12 matches, engine truth: LOG zone pro-like (72-85% own bridge) but covers nothing on
+  18-26% of casts, kills on 25-37%; TORNADO king activation 0/1/4 per 36 matches (king asleep at 43-54% of casts),
+  2-14% cast near our king vs pros 19%; clump set up 7-19x, rocket never cashes it; ROCKET 1 cast / 108 matches.
+- (c) `nado_retarget` has NEVER been payable: gate centre-dist <= reach+1.0 (1.8 for hog) vs measured attack distance
+  2.20 (hog) / 2.10 / 2.68 / 2.68 -- engine reach is a gap. Fix queued §6 (one change, after the run).
+- Retracted before recording: my first pass read "0 clump/combo/king/retarget" from ledger keys that do not exist.
+- (a) m=5k read: played@3 0.281/0.269/0.315 -> mixed, not the ask branch; == coef-0.1's own 5k (0.28-0.31). Run continues.
+- HANDOFF §6: agent_dt DEFERRED, YOLOv26 NO-GO (owner). Gauntlet stopped on owner order; new gauntlet next.
+- Files: scratchpad/gauntlet/L16/*. HANDOFF §5bq. Run untouched (2 trainer PIDs before and after).
+
+
+## L17 — 2026-09-02 22:10-22:30 | AGGRO gauntlet loop 1: the obs predictor vs the engine's sticky lock
+- Premise corrected: aggro IS modelled (interactions.predict_targets -> interaction vector + predictive canvas), memoryless.
+- (a) vs engine Unit.target, m5k ckpt, 36 matches x 3 seeds, 60,599 unit-samples: walking 96/93% agree, LOCKED 81%
+  (n=14,268; 1,041 = tower-hitter shown turning to a nearby troop), buildings 25/16%, deploying 0%. Engine target
+  changes 14.4/unit-min, 47% with the old target alive.
+- (a) wiki rules (KTA on damage only + 4 s; nado/log/stun retarget; X-Bow 3.5 s deploy, air can't distract) match the engine.
+- Next: aggro ORACLE over an engine fork (new module + tests; unblocked). Run untouched (5,975 eps). HANDOFF §5br.
+
+
+## L18 — 2026-09-02 22:20-22:30 | AGGRO gauntlet loop 2: engine-backed aggro oracle + tests
+- Built `sim/aggro_oracle.py` (fork engine, advance, read Unit.target back; no re-derived rules) + 8 tests = the owner's questions.
+- (a) X-Bow vs Valkyrie: knight steals the lock if placed <= 1.6 s, fails from 1.8 s = her first hit; valk kills bow then
+  princess after 7.9 s; valk beats knight 26% HP, mini-PEKKA beats knight 56.5%. Hog on princess + reference tornado -> KING.
+- (a) cost: fork 0.5 ms, question 2-3 ms, 31-fork window 83 ms (6-unit board).
+- (b) flagged: engine resets a lock when a body spawns on the locked unit; no 4 s king aim delay. Run untouched (6,000 eps). HANDOFF §5bs.
+
+
+## L19 — 2026-09-02 22:45-23:00 | AGGRO gauntlet loop 3: do the existing aggro drills grade aggro? (c) no
+- (a) knight_guards_the_bow: success = bow alive AND knight played -> passes the step ANY knight lands (bow dies 7-8 s);
+  cell/timing ungraded. Oracle: the knight takes the lock on 23/760 cell x delay combos (river line, <= 1.8 s).
+- (a) nado_the_sneaky_lock, 40 reps ladder roll: reference 47.5%, knight-only 60%, nado-only 0%, knight-in-front-no-nado 80%.
+  The bow never re-locks a tower after the reference pull (2 tiles vs 11.5 reach) -> notes (c). L16 enemies: 5% for every line.
+- (a) trap: `cli drills --level 11` pins the ENEMY only; our bow is L16 -> "nothing 100%". Use ladder or pin 14-16.
+- Next: `sim/aggro_drills.py` with lock-state predicates (tank_for_bow, bow_first_lock). Run untouched (6,950 eps). HANDOFF §5bt.
+
+
+## L20 — 2026-09-02 23:05-23:45 | AGGRO gauntlet loop 4: `sim/aggro_drills.py` -- drills graded on the engine's lock state
+- Built `tank_for_bow` (success = the valk's `target` becomes our knight; failure = her first hit on the bow) and `bow_lane_choice`
+  (success = the bow's FIRST lock after deploy is a tower; failure = a troop) + 4 tests. Explicit `register_all()`, not auto-imported.
+- (a) 40 reps ladder: nothing 0/0, scripted 92/95 (L16 pinned 98/98), knight @4.2 s 0%, far-lane knight 0%, same-lane bow 0%, doctrine 95/90.
+  Knight BEHIND the bow still 88% (he walks past it) -> the drill grades lane + timing, not the row.
+- (a) traps: first legal agent row is y 0.5625 (L19's river-line cells were unreachable -> scripted 0% until the bow moved to 0.60);
+  drill noise lands in the answer's lane (reference 68% with noise) -> `setup` strips it; a Scenario `noise` field waits for the stop.
+- (a) trained policies, greedy masked, 40 reps: gate05 m5k 12% / 0% (tank / lane), pre-run policy_sim_ppo 15% / 35%; doctrine 95 / 90.
+  "No concept of aggro" is measured for these two questions. nado_king_activation 0% for every policy, doctrine 5%.
+- Run untouched (7,825 eps). HANDOFF §5bu.
+
+
+## L21 — 2026-09-03 00:55-01:15 | AGGRO gauntlet loop 5: m10k read TRIPS the owner's rule; coef-0.5 run STOPPED
+- (a) greedy bucket probe, 3 seeds, m10k: elixir>=6 share 0.1 / 0.2 / 0.0% (m5k 1.2/1.3/1.0, m2k 4.0/3.5/3.0); P(play|affordable)
+  0.36/0.35/0.38 (m5k 0.28-0.30); elixir mean 2.09; x-bow plays 1/2/0 per 2,400 rows; played cost still 2.50-2.53. Median 0.1% < 1% -> stop.
+- (a) stopped per ruling: state recorded (10,000 eps, 356W-7653L-10D, best_wr 11.338, gate m10k regret 0.2418/0.2395), ckpt
+  backed up cmp-verified, watchdog stopped first, procs 2 -> 0, ckpt unchanged. Box idle (7.6 GB free).
+- (a) diagnosis cut 1, trainer's own instrument (237 blocks): post-clip gate pressure toward PLAY 199/237 (mean +0.25), unclipped
+  zero-mean (-0.05, 124/237 positive); clip rate PLAY 0.77 vs WAIT 0.01. = the KNOWN clip sign-flip, present all run at coef 0.5.
+  The gate drifted +0.04 P(play|choice); >=6 share is its geometric tail (b). clip_play_mult history = null on winrate/reward at
+  700 matches, which cannot see a 2k->10k drift; repair (b) until graded on the bucket probe.
+- Next: L22 pick the repair with one measurement, implement behind a flag, unit test; then TEST RUN; aggro wiring behind a flag; restart. HANDOFF §5bv.
+
+
+## L22 — 2026-09-03 01:08-02:05 | AGGRO gauntlet loop 6: diagnosis cut 2 -- repair chosen (pressure-conditioned prior)
+- RETRACTED L21's "unclipped gate pressure is zero-mean" (heavy-tailed block sums). ADV BY ACTION, 11.6M samples: play +0.211 vs
+  wait -0.008 -- the PLAY bias is in the advantages.
+- (a) per-term ledger, 24 matches x 3 seeds, m2k/m5k/m10k, two instruments: the 2k->10k reward gain is the wait-side penalty
+  vanishing (sampled threat_miss_idle -2.20 -> -1.11; greedy wait-side -6.5 -> -0.26); x-bow terms flat (sampled) or falling
+  (greedy exec 2.24 -> 0.62 m5k->m10k, total +2.96 -> +0.93). Greedy m2k is a HOARDER (>=6 29.9%, leak -3.8) -- instrument-dependent.
+- (a) the shipped prior is board-blind; refit with "enemy troop played < 6 s ago" from plays_ext.csv: pro P(play) at 5/6/7
+  elixir 0.024/0.030/0.029 quiet vs 0.086/0.068/0.066 pressured (2.3-3.6x, n 3k-10k/cell); pressure on 37% of pro windows.
+- (a) sim opponent, same key, single elixir: pressure 46-52% of steps, quiet median 4.8-5.4 s, bank-length stretches 10-16%
+  vs pros 37% / 9.0 s / 39%. ~1 bankable window per phase vs ~2.7. Bounds any gate repair (b for the size).
+- Decision: repair = pressure-conditioned prior (schema 2 + sim key, flag OFF = today's table). Question posted on the opponent
+  cadence (not blocking). Next: build + unit test, then TEST RUN from scratch graded at m2k/m5k. HANDOFF §5bw.
+
+
+## L23 — 2026-09-03 01:31-01:55 | AGGRO gauntlet loop 7: the repair is BUILT + TEST RUN LAUNCHED (L22's stamps were ~35 min fast; box clock here)
+- Built, one flag: `tools/gate_prior.py --pressure-s 6` (schema 2; blend byte-identical to the shipped table) ->
+  `config/gate_prior_p6.json`; sim key `SimMatchEnv.enemy_troop_min_age()` carried raw as payload `eage`;
+  `sim.ppo_gate_prior_pressure_s` in the trainer (0.0 = gate05 byte-for-byte; W must match the table's, asserted).
+- (a) table W=6, single elixir 5/6/7 elixir: quiet 0.024/0.030/0.028 vs pressure 0.086/0.067/0.067; 38% of single
+  windows pressured (CardDB kind; L22's hand list said 37%). No unknown red cards.
+- (a) 5 new unit tests, 12/12 pass. CPU smoke run flag ON: reaches the loss, `PRESSURE on 57% of usable rows`
+  (untrained policy, 8 matches -- not L22's number). Flag-OFF smoke (gate05_run.yaml, isolated --out): exit 0, original banner, no PRESSURE clause.
+- Staged `data/bench/gatep6_run.yaml` (= gate05_run.yaml + the flag + isolated paths). NOT launched. Next: launch the
+  TEST RUN -- DONE at 01:46: `data/bench/gatep6_run_launch.sh` (same CLI as gate05, cuda, seed 41, from scratch), ckpt
+  `data/policy_gatep6_20260903.pt`, watchdog + gates monitors up; first update `PRESSURE on 44% of usable rows`. Next: m2k read
+  (~1.1 h) with gate_prior_probe seeds 0/1/2 vs gate05's 4.0/3.5/3.0%. HANDOFF §5bx.5.
+
+
+## L24 — 2026-09-03 02:45-02:55 | AGGRO gauntlet loop 8: m2k read of the conditioned-prior test run -- BELOW gate05
+- (a) gate_prior_probe seeds 0/1/2 at m2,350: >=6 share 0.9/0.8/0.5% vs gate05 m2k 4.0/3.5/3.0 (L11) and m5k 1.2/1.3/1.0 (L16);
+  elixir mean 2.2 vs 2.6; P(play|aff) 0.34 vs 0.23. Every seed below every gate05 seed.
+- (a) trainer stat at 5,000 updates: conditioned target averages 0.066 vs blend 0.060 on sim rows because PRESSURE covers 50%
+  of usable rows (pros 38%). (b) net pull-to-wait weaker; quiet windows (~5 s median) too short to bank; the split is a
+  licence to spend under the sim's cadence -- the §5bw.4 caveat materialising.
+- Run continues to the pre-registered m5k read (~03:50). Owner question re-posted with the mechanism: (A) opponent cadence arm
+  (recommended), (B) restart on gate05's blend + aggro wiring, (C) stronger coef on the conditioned table (expect fail). HANDOFF §5by.
+
+
+## L25 — 2026-09-03 03:52-04:25 | AGGRO gauntlet loop 9: gatep6 m5k read -- bar FAILED, tie with gate05; run stopped
+- (a) probe s0/1/2 at m5,150: >=6 share 1.4/1.1/2.0% vs bar (above 4.0/3.5/3.0) -- FAILED; vs gate05 m5k 1.2/1.3/1.0 -- tie.
+  L24's early "worse" closed by m5k; carry "does not help", not "hurts". Bucket P(play) flat 0.22-0.31.
+- (b, strengthened) >=6 share bounded ~1-2% by the opponent model (two tables, same landing). Settled only by path A.
+- Run stopped 04:16 at 5,175 eps (recorded §5bz.4); python 19 -> 1 (Nucleo). Box idle, 9.8 GB free. A/B/C question open.
+- Next: aggro wiring behind a flag (owner-ordered, unblocked) while the question stands. HANDOFF §5bz.
+
+
+## L26 — 2026-09-03 04:21-04:30 | AGGRO gauntlet loop 10: aggro wiring BUILT behind two flags, both OFF (39aa80b)
+- `sim.aggro_drills` (tank_for_bow + bow_lane_choice in; knight_guards_the_bow + nado_the_sneaky_lock retired from the pool,
+  still registered). OFF = the 29-drill gate05 pool exactly (a, verified; the new test caught a registry leak, fixed).
+- `env.nado_retarget_reach_fix`: centre-to-centre -> engine `_gap`. (a) hog at 2.20 tiles is now a targeter and the reference
+  pull earns the credit's predicate; OFF reproduces the never-fires behaviour. 3 new tests from the L16 script.
+- `Scenario.noise` field replaces the `_no_distractors` hook. 83/83 tests across the touched modules. Box idle. A/B/C open.
+- Next: lock-aware `predict_targets` graded by aggro_agreement.py (stopped-window job). HANDOFF §5ca.
+
+
+## L27 — 2026-09-03 04:31-04:48 | AGGRO gauntlet loop 11: lock-aware predict_targets built (flag OFF) and graded
+- Built: `interactions.Hint(engaged, deploying)` + optional `hints` on predict_targets/mover_forecast/interaction_vector/
+  predictive_channels; `view.interaction_state(hints=True)` reads Unit.locked/target + deploy_left; `observation.lock_aware_targets`
+  (default false) feeds it into the sim obs. 6 new tests, 45/45 across touched modules.
+- (a) engine agreement, gate05 m5k, 12 matches x 3 seeds, SAME 60,599 samples as L17: memoryless 74.2% (unchanged), engine-truth
+  hints 95.8% (locked 81.5/80.6 -> 97.8/96.7, deploying 0 -> 100, buildings 25/16 -> 95/95), live-style proxy 89.7%.
+- (b) live has no track memory (per-frame detections), so the flag is a sim-to-real seam; proxy = ceiling with a perfect tracker.
+- Trap: engine `deploy_left` float residue makes every 1.0 s deploy 1.1 s (one sub-tick). Not fixed (engine change).
+- Three default-off changes now wait for the restart; recommended order aggro_drills -> reach fix -> lock-aware (after the live
+  seam is decided). A/B/C still open. Nothing running. HANDOFF §5cb.
+
+
+## L28 — 2026-09-03 05:48-05:52 | AGGRO gauntlet loop 12: HOLD -- produced nothing
+- No owner ruling on A/B/C (L24), no steering, no new commits; box idle (python = Nucleo only, 9.4 GB free).
+- Every aggro item is built default-off (aggro_drills, nado_retarget_reach_fix, lock_aware_targets). The only remaining step
+  is the restart, blocked on the ruling. Checked whether the live-tracker seam could be probed cheaply: data/sessions are raw
+  video + click events (no per-frame detections), so it is a detector-over-video job, not a hold-loop probe. Parked.
+
+
+## L29 — 2026-09-03 06:50-07:05 | AGGRO gauntlet loop 13: Path A prepared -- opponent cadence knob built (default OFF) and screened
+- Cause of §5bw.4's over-pressure found (a): the non-beatdown ScriptedBot has NO elixir rule on its attack branch -- it plays on
+  the first step it can afford any offensive card. Added `sim.bot_attack_floor` (default 0), training-only via make_opponent's
+  `adaptive` gate (eval bots untouched). Identity at 0: deploy-log sha equal on HEAD vs patched, eval- and training-style.
+- Screen (a), m10k sampled policy, 12 matches x 2 seeds per floor, non-beatdown bots: floor 0 press 56% / median 4.8 s /
+  bankable 0.62 per phase; 5-6 barely move; floor 7: 42% / 6.6 s / 2.2; floor 8: 42% / 7.8 s / 2.2; pros 37% / 9.0 s / 2.7.
+  Instrument differs from L22 (training provider vs non-adaptive) -- compare within the table only. 2 seeds = a screen.
+- (b) whether the floor lifts the policy's >=6 share is Path A itself (one change, `sim.bot_attack_floor: 7`, read at m5k).
+- Tests 5/5 new, opponent regression 16/16. Nothing launched; A/B/C still open. HANDOFF §5cc.
+
+
+## L30 — 2026-09-03 07:45-07:52 | AGGRO gauntlet loop 14: owner ruled; Path A LAUNCHED
+- Owner ruling 07:4x: cadence toward pros YES; do A, then C with caution if A fails; aggro flags one at a time, aggro_drills ->
+  reach fix -> lock-aware; "this floor is really good" (opponents that never play their RG / Recruits).
+- Owner's observation CONFIRMED (a): floor 0, 7 of 17 decks holding a >=6 card never fielded it (RG x2, Pekka, E-Barbs x2, 3M,
+  Boss Bandit); floor 7: 0 of 13. m10k policy, 12 matches x 2 seeds per floor.
+- LAUNCHED 07:48 from scratch: floor7_run.yaml = gate05_run.yaml + sim.bot_attack_floor 7.0 (one change), seed 41, ckpt
+  data/policy_floor7_20260903.pt, watchdog + gates up; 19 python after (1 before). Bar: m5k >=6 share > gate05's 1.2/1.3/1.0%.
+- Next: m2k by hand (~09:00), m5k from the gates snapshot. HANDOFF §5cd.
+
+
+## L31 — 2026-09-03 08:52-09:10 | AGGRO gauntlet loop 15: floor7_run m2k screen -- below gate05; Path A's premise fails a cross probe
+- (a) pre-registered probe, floor7 ckpt @m2450, seeds 0/1/2: >=6 share 1.2/1.3/0.5% (gate05 m2k 4.0/3.5/3.0; gatep6 0.9/0.8/0.5;
+  gate05 m5k 1.2/1.3/1.0). P(play|aff) 0.29 (gate05 m2k 0.23) -- more eager, not less.
+- (c) cross probe, fixed ckpt vs floor-0 and floor-7 training bots: gate05 m2k 5.0/4.5/2.4 -> 4.5/3.5/4.3; floor7 1.5/1.8/0.9 ->
+  1.8/1.4/1.0. The opponent's cadence does not move a fixed policy's >=6 share; P(play|aff) unchanged to 2 decimals. The
+  "opponent bounds the bank" premise of Path A is contradicted at m2k; the policy spends at its own rate whatever the windows.
+- Decision: pre-registered -- run to m5k (ETA 10:05-10:20), bar unchanged. Fail -> C with caution = floor 7 + gate_prior_p6 at a
+  stronger coef (one change vs floor7_run). Box: 19 python, physical RAM ~0.6 GB free (paging), probes run one at a time.
+- HANDOFF §5ce.
+
+
+## L32 — 2026-09-03 10:38-10:52 | AGGRO gauntlet loop 16: PATH A FAILED the m5k bar; run stopped; question posted
+- (a) BAR READ, pre-registered probe on data/bench/floor7_m5k.pt (snapshot 10:18), seeds 0/1/2: >=6 share 0.7/0.9/0.5% vs the
+  bar (gate05 m5k) 1.2/1.3/1.0 -- below on 3/3 seeds, and DOWN from its own m2450 read of 1.2/1.3/0.5. FAILED.
+- (a) same-count gates: regret oracle 0.271 vs 0.2291, belief 0.2483 vs 0.2045 (WORSE); x-bow DEFENSIVE 6% vs 28%; deploy rate
+  14.7/min vs 13.3 (pro 11.7, so further away). RETRACTS §5ce.3's hopeful reading -- the higher training winrate (110W vs 58W at
+  m2700) came from a WEAKER banking opponent, not a better policy.
+- (a) mechanism: GATE PRIOR CE line stable over 12.6k updates -- prior wants pi(play) 0.057, policy sits at 0.283, coef 0.5 on
+  10% of rows. The term is under-powered by construction; agrees with L31's cross probe from the other side.
+- (a) only gatep6 (conditioned table) ROSE m2k->m5k (0.73 -> 1.50 mean). C builds on the one arm with a positive trend.
+- Run STOPPED at m5950 (289W-4519L-6D, drills 45%, state recorded first; ckpt + m5k snapshot preserved, resumable). Procs 19 -> 2.
+- STOPPED ON A QUESTION: does C keep bot_attack_floor 7 (owner's cadence preference, carries the regret regression) or run clean
+  (gatep6 + coef only, my recommendation)? HANDOFF §5cf.
+
+
+## L33 — 2026-09-03 10:55-11:30 | AGGRO gauntlet loop 17: owner ruled; Path C LAUNCHED (gatec2_run, coef 2.0, no floor)
+- Ruling 10:5x: coef 2.0; strip bot_attack_floor for C; floor DEFERRED to after C (owner hesitant to drop it permanently --
+  it changes what the bots do and therefore what the model learns).
+- LAUNCHED 11:20 from scratch: gatec2_run.yaml = gatep6_run.yaml + ppo_gate_prior_coef 0.5 -> 2.0 (one change; p6 table,
+  pressure_s 6.0, no floor), seed 41, ckpt data/policy_gatec2_20260903.pt; trainer prints GATE PRIOR ON coef 2.000; 19 python.
+- Pre-registered: m2k screen ~12:25 (vs gatep6 0.9/0.8/0.5, gate05 4.0/3.5/3.0); m5k bar ~14:00: PASS > gatep6's 1.4/1.1/2.0
+  per seed, STRONG > gate05 m2k 4.0/3.5/3.0; in-run: pi(play) on usable rows vs gatep6's 0.242 at 11k updates; caution
+  guards = regret / drills / x-bow split / deploy rate / cell-head alerts. HANDOFF §5cg.
+
+
+## L34 — 2026-09-03 12:24-12:30 | AGGRO gauntlet loop 18: gatec2 m2k screen -- gate05's level, 4-5x gatep6; coef bites on level not shape
+- (a) ledger probe, gatec2 @m2450, seeds 0/1/2: >=6 share 3.5/4.4/3.4% (gate05 m2k 4.0/3.5/3.0; gatep6 0.9/0.8/0.5; floor7
+  1.2/1.3/0.5). P(play|aff) 0.20 (gatep6 0.34). Elixir mean 2.62-2.80.
+- (a) in-run: cumulative pi(play) on usable rows flat 0.150-0.162 from update 800 to 5400 (gatep6 0.242 @11.4k, floor7 0.283).
+  The pre-registered tell is met. Per-bucket P(play) flat 0.17-0.22 across elixir 0-9: the LEVEL is suppressed uniformly,
+  the pro SHAPE (hold at 3-7, spend at 9) is not learned.
+- (a) drills pass-all at m2450: gatec2 39% vs gate05 38%, gatep6 31%, floor7 43% -- no collapse.
+- (b) durability: gate05 stood here at m2k and fell to 1.17 by m5k. Bar unchanged, m5k ~13:55. HANDOFF §5ch.
+
+
+## L35 — 2026-09-03 13:16-13:35 | AGGRO gauntlet loop 19: owner question (elixir/x-bow/spell trend); PYTHONHASHSEED trap found, own numbers retracted
+- MY ERROR (a), against a rule already in this repo's standing rules ("export PYTHONHASHSEED=0 before any labelling run"):
+  greedy EVAL tools need it too; real_run_gates.py:65 sets it, my ad-hoc runs did not. Not a new trap -- a violated one.
+  Same ckpt: 68 vs 79 x-bows, DEFENSIVE 68% vs 49%, tower lock 40% vs 66%; continuation plays 401 (seeded, twice) vs 367/399
+  (unseeded). My first x-bow/continuation runs this loop are RETRACTED. New standing rule.
+- (a) MATCHED m2k card mix (new cardmix.py on continuation_report's exact rollout): SPELL share gatep6 29.4 > floor7 25.2 >
+  gate05 21.6 > gatec2 14.0%, mirrored by x_bow share 3.3 < 5.3 < 8.0 < 13.2%. Total plays 520 -> 401. Support cards
+  (skeletons/ice_wiz/knight) FLAT across all arms -- the coef removed spell plays specifically, not plays in general.
+- (a, unmatched counts) x-bow at m2450: 2.83/match, DEFENSIVE 68% / OFFENSIVE 29% / dead 3% (gate05 m5k 28/48/25, floor7 m5k
+  6/69/25). Directional only until gatec2's own m5k gate.
+- (b) ELIXIR trend NOT callable: 3 non-monotone watchdog points (2.57/2.28/2.71) + one probe point (2.72 at m2450). Said so
+  rather than drawing a line through noise. HANDOFF §5ci.
+
+
+## L36 — 2026-09-03 14:04-14:15 | AGGRO gauntlet loop 20: gatec2 m5k -- bar PASSES, caution guards COLLAPSE = "not a pass"
+- (a) BAR, ledger probe on data/bench/gatec2_m5k.pt (m5200), seeds 0/1/2: >=6 share 2.3/1.7/2.0%. vs gatep6 m5k 1.4/1.1/2.0
+  -> above on 2 seeds, EQUAL on the third (not the clean seed-by-seed sweep the bar asked for); vs gate05 m5k 1.2/1.3/1.0 ->
+  above on all 3. First arm to hold >2% at m5k; keeps 53% of its m2k share vs gate05's 33%.
+- (a) GUARDS FAIL: regret oracle 0.2924 / belief 0.2880 -- WORST of every arm (gate05 0.2291/0.2045, floor7 0.271/0.2483).
+  Cause is one column: waits 22 -> 60 of 203 states, 55%/50% of them wrong. Absolute errors 57/203 (28.2%) vs gate05's
+  36 (17.7%); ALL the excess is wrong waits (33 vs 5) -- its plays are better (24 wrong vs 31). Enemy-troop regret 0.3013.
+  Falsification: converted rates to counts to rule out a "waits more often" artifact; it is not an artifact.
+- (a) causal chain complete: coef 2 lowers the gate LEVEL not SHAPE (L34) -> removes cheap SPELL plays (L35, 29.4->14.0%) ->
+  those are the defensive answers -> declines to defend (L36). Each link measured before the next was known.
+- Verdict per §5cg.2 pre-registration: NOT A PASS ("the prior won by breaking the policy").
+- Not all bad (a): closest arm to pro deploy rate (10.4 vs 11.7), best after-bow L1-to-pro (0.304 vs 0.902), 4.79 bows/match
+  with 16% dead vs 25%. §5ci's 3% dead at m2450 did NOT hold at m5k -- the matched-count caveat was right.
+- QUESTION OPEN (next arm: coef 1.0 / fix coverage / go do the aggro work [my rec] / run to m10k first). Run LEFT RUNNING --
+  m10k gate ~16:45 preserves that option free. HANDOFF §5cj.
+
+
+## L37 — 2026-09-03 14:25-14:40 | AGGRO gauntlet loop 21: owner ruled -- wait for m10k, then aggro work regardless
+- Ruling 14:2x: §5cj option (iv) then (iii). Owner: 5k is early, real chance of a rebound; after m10k move on to aggro
+  regardless -- three direct arms did not budge the elixir share, so likely confounders; aggro flags may move it indirectly.
+- No measurement this loop. gatec2_run untouched: m5900 at 14:25, 0.5 ep/s, drills 39%, 19 python; m10k gate ~16:45-17:00.
+- PRE-REGISTERED (HANDOFF §5ck.2): REBOUND = m10k regret <= gate05 m10k 0.2418 AND wrong waits <= 15/203; HELD = >=6 share
+  above gate05 m10k 0.1-0.2 on 3 seeds. First aggro arm = ONE change `sim.aggro_drills: true`; base = gatec2 m10k ckpt only
+  on rebound+held, else gate05 recipe from scratch seed 41. Read on the ledger + the lock-state drill counters.
+
+
+## L38 — 2026-09-03 14:55-15:15 | AGGRO gauntlet loop 22: owner question (spells) -- new engine-attributed spell probe; suppression is recovering in-run
+- (a) The m5k gate report contains NO spell metrics (one incidental line: the_log = 16% of after-x_bow follow-ups).
+- NEW INSTRUMENT `scratchpad/gauntlet/L38/spellprobe.py`: attributes damage on the ENGINE (wraps _resolve_spell/_resolve_roll/
+  _tick_vortex/_tick_roll; whiff = 0 enemy bodies AND 0 tower damage). Validates EXACTLY against L35 cardmix on the same ckpt
+  (401 plays, 14.0/8.7/4.5/0.7) -> one instrument. NOT comparable to L13's mask-whiff / spell_waste probe.
+- TRAP (a): the Searcher deepcopies the engine and the forks cast spells too -- counting them gave 7 log casts vs 6 log plays.
+  Fixed by an identity test on the live engine; casts == plays is now the probe's validity check.
+- (a) matched m5000: gatec2 SPELL 11.6% vs gate05 28.3, floor7 27.4; log whiff 14% vs 24/32; tornado whiff 0% vs 9/4; tornado
+  catches 5.33 bodies/cast vs 2.74/2.51. Fewer, better-aimed casts -- not loss of aim.
+- (a) IN-RUN TREND gatec2 m2450/m5000/m6800: SPELL 14.0 -> 11.6 -> 19.8%; log 0.63 -> 0.87 -> 1.44/min; nado 0.34 -> 0.24 ->
+  0.68/min; log whiff 73 -> 14 -> 24%. The suppression that caused the L36 regret failure is recovering -> first support for
+  the owner's rebound hypothesis (b as a rebound claim; the m10k regret read decides it).
+- RETRACTED IN-LOOP: my live claim that rocket usage "went up / first non-zero ever". Rocket is 3 casts/16 matches at m2450 AND
+  m5000, 0 at m6800; L35 already had all four arms at 0.4-0.7% rocket share at m2k. Rocket did not go up. HANDOFF §5cl.
+
+
+## L39 — 2026-09-03 16:16-16:30 | AGGRO gauntlet loop 23: 4th spell point + disjoint seed slices -- my own L38 "recovery" RETRACTED
+- (a) NOISE BAND, new `--offset` (same ckpt, SEEDS[16:32]): spell share repeats to 0.4pp (m6800), 0.6pp (gate05 m5000),
+  3.9pp (m8600). Cross-arm gaps (11.6 vs 28.3) are far outside it -> §5cl.2's cross-arm table stands.
+- (c) RETRACTED: §5cl.3's "spell suppression is recovering". Series is 14.0 / 11.6 / 19.8+19.4 / 13.7+9.8 -- up then back
+  down. The m6800 rise was real (both slices agree) and did not persist. No trend; oscillation in a 10-20% band.
+- (a) ROCKET rose at m8600: 10 and 7 casts per 16 matches (2.3% / 1.1% of plays, 0.21 / 0.11 per min) vs 0 at m6800 and 0
+  for gate05/floor7. Highest measured in the project; pros 3.4%. Partly reverses §5cl.4 ("rocket did not go up" -- true
+  through m6800, wrong at m8600). BUT 30% / 14% of those rockets hit nothing (6 elixir each).
+- (a) log whiff at m8600 8% / 15%, best of any ckpt (gate05 24/26%, floor7 32%).
+- (b) matched trainer counters: gatec2 drills last-300 38 -> 42 -> 49% at m5900/6800/8600 while gate05 went 49 -> 47 -> 39;
+  EVAL ladder 2/12/23/27 vs gate05 5/13/17/8/10. Both say "still improving"; neither is a discriminator.
+- LOOP RULE ADDED (.claude/commands/gauntlet.md §2): repeat a headline number on a disjoint seed slice before reporting it.
+- Run untouched, m8800 at 16:23; m10k gate ~17:05. HANDOFF §5cm.
+
+
+## L40 — 2026-09-03 17:15-17:35 | AGGRO gauntlet loop 24: gatec2 m10k read = NO-REBOUND + HELD; gatec2 stopped; aggro arm 1 launched
+- (a) pre-registered §5ck.2 read on `gatec2_m10k.pt`: regret 0.2824 / 0.2805 (bar <= 0.2418) FAIL; wrong waits 33/203
+  (bar <= 15) FAIL -- the SAME 33 as m5k. >=6 share 2.7 / 3.8 / 2.4% on seeds 0/1/2 (gate05 m10k 0.1-0.2) HELD, up from
+  m5k 2.3/1.7/2.0. Outcome 3 of 4: banks by refusing to defend, §5ck.3 chain confirmed at 2x the matches.
+- (a) secondary at m10k vs own m5k: deploy 11.4/min (pro 11.7; m5k 10.4), gap 4.20 s (pro 3.85); x-bow dead 16 -> 35%,
+  defensive 45 -> 23%, offensive dmg 1217 -> 1676; L1-to-pro after x-bow/tesla 0.30/0.39 -> 0.46/0.51 (worse).
+  EVAL@10000 ladder 25% fair 20%; drills 42%/42%.
+- Rule fired as written (base = gate05 recipe, NOT gatec2's ckpt). gatec2 STOPPED at m10150 (best_wr 17.77, 472W-7651L-8D);
+  live+best ckpts backed up to scratchpad/gauntlet/L40, cmp-verified; python 19 -> 1 (Nucleo only) verified.
+- AGGRO ARM 1 launched 17:22: `aggro1_20260903` = gate05_run.yaml + `sim.aggro_drills: true` (3-line diff), same CLI,
+  seed 41, from scratch. Pool verified on the trainer's code path: 29 drills, tank_for_bow + bow_lane_choice in,
+  knight_guards_the_bow + nado_the_sneaky_lock out. Watchdog + gates monitors up; 19 python, 2.1 GB free.
+- Read plan pre-registered in §5cn.4: drill counters (direct) + ledger >=6 share 3 seeds at m2k/m5k (indirect) + regret
+  at the m5k gate vs gate05 m5k. First look ~19:00 (m2000 EVAL), decisive ~20:10 (m5k gate). HANDOFF §5cn.
+
+
+## L41 — 2026-09-03 17:25-17:45 | AGGRO gauntlet loop 25 (owner follow-up): gatec2 m10k stat sheet; "init from gatec2" arm parked
+- Owner: future arm = aggro flag + init from gatec2 ckpt; "best results of any checkpoint" -> (a) on EVAL/crowns/x-bow,
+  (c) on regret/defense. Parked as aggro arm 1b in HANDOFF §6, to run AFTER aggro1's m5k read.
+- (a) gatec2 m10k vs gate05 m10k, both slices: spell share 11.0/9.0 vs 27.2/27.3; log 0.94/0.83 per min whiff 21/22%;
+  tornado 0.20/0.09 per min whiff 27/20% (nearly gone); ROCKET 4/2 casts -- the m8600 rise (10/7) did NOT hold (c).
+- (a) outcome on the greedy rollout 1/16 and 7/16 for the SAME policy on consecutive slices -- n=16 winrate not a
+  discriminator, demonstrated again. Use EVAL@10000: gatec2 25%/20% vs gate05 10%/10%. Crowns 24-40 vs 8-45 per 32.
+- (a) x-bow m10k: 4.33 vs 0.71 per match; tower lock 70% vs 50%; dmg 1676 vs 676; dead placements 35% vs 24%.
+- spellprobe.py gained an OUTCOME line. aggro1 at 600 episodes, 0.7 ep/s, untouched. HANDOFF §5cn.7.
+
+
+## L42 — 2026-09-03 17:50-19:05 | AGGRO gauntlet loop 26 (owner steering): LIVE SPELL AIM FIX (authorized) + aggro1 first look
+- (c) owner's "mapping issue": the warp is shared by troops and spells; a log-only forward bias cannot be it. Owner's
+  own third message (cast delay ~1 s) is the diagnosis the code supports.
+- (a, in code) four defects: env.py gated on CURRENT positions before leading (lead never ran on the cast that needed
+  it); tracks fetched without the base (KB speed fallback dead on fresh tracks); log_hits back-slop 1.73 tiles (x width
+  on the y axis; sim uses 1.0); play.py never led log or tornado, rocket used the deprecated rate, no cast delay.
+- FIX shipped (live only, sim untouched): env.spell_cast_delay_s 1.0 (b); lead-then-gate on led tracks for log/rocket/
+  tornado in env.py AND play.py; back-slop 1 tile; drill_env.report registers aggro drills (report only).
+  Offline: hog +2.0 tiles, knight +1.0, building 0; hog gate fails on led body -> cast 2.24 tiles back.
+- aggro1 m2500: tank_for_bow 36% (gate05 m5k 12% same instrument; §5bt.4 12%), bow_lane 0, nado_king 0 (doctrine 8%);
+  >=6 share 2.5/1.0/1.2; EVAL@2000 4/2%. One seed, 25 reps: a screen. m5k gate (~20:10) is the read.
+- §6 queue += sim spell_delay 0.4 -> 1.0 parity arm after aggro1b (owner). Owner 19:1x: delay is 1.0 s for ALL spells
+  (online sources) -- no measurement owed; the sim's 0.4 is the wrong one.
+- Run untouched (12 trainer procs before/after). HANDOFF §5co.
+
+
+## L43 — 2026-09-03 19:10-20:00 | AGGRO gauntlet loop 27 (owner steering): the CEILING measured; archetype-GA answered; opp-elixir obs mismatch found
+- Owner: "too much scaffolding / GA like Trackmania?" -> answered (c on the analogy, right on entropy collapse ent=0.05-0.06);
+  owner chose (1) measure the ceiling only. Ran it: gatec2_m10k, ladder, 48 paired seeds: policy alone 41.7% / tower -0.91;
+  search teacher (H=12, cells 3) 77.1% / +0.11 (a). Ledger 08-27 said 37.0 -> 85.7 (m18000, n=300). Sim is not the ceiling;
+  the learner is. Distillation (6-PRIORITY-B) is the case, privileged-teacher gap (reseed_opp) must be measured first.
+- Per-archetype (a, screen): policy beatdown 8% / control 46 / cycle 60 / siege 33 (n 12/13/20/3); teacher 58/77/85/100.
+- Owner's archetype-GA: obs already has OpponentMemory + measured detector noise; recommended ONE net + archetype-posterior
+  input over six GA loops (fitness noise x6; nets cannot be averaged). Not started.
+- FOUND (a, code): sim/env.py:643 puts OUR elixir in memory slot 5; live puts the opponent-elixir estimate there (3bc1d45,
+  08-11). Sim policy has never seen opponent elixir. Parity-arm candidate; untouched while aggro1 runs. HANDOFF §5cp.
+
+## L44 — 2026-09-03 20:23-21:00 | AGGRO gauntlet loop 28 -- CLOSE-OUT: aggro1 m5k FAILED all three halves; run stopped; reach fix ON
+- Direct (a): tank_for_bow aggro1 m5k 0%/0% (seeds 5,6) vs gate05 m5k 12%/12%; m2500's 36% did not persist. bow_lane 0,
+  king activation 0 (prior 4-8% = doctrine gap). Indirect (a): >=6 share 2.0/2.1/1.4 vs gate05 2.3/1.7/2.0 -- unchanged.
+  Regret (a): 0.2621, 25 wrong waits vs gate05 0.2291 / 5. Verdict: FAILED; drill curriculum through PPO is not the lever
+  (same message as L43's ceiling: learner-bound).
+- aggro1 STOPPED at ~m5900 (state in §5cq.1/4; python 19 -> 1, Nucleo untouched). aggro1b NOT launched (same mechanism).
+- Owner's reward bug fix switched on: env.nado_retarget_reach_fix true (tests pass). Every prior ckpt predates it.
+- Four remaining aggro levers (king-activation doctrine line, opp-elixir obs slot, sim spell_delay 1.0, distillation)
+  all belong to the next gauntlet's direction. GAUNTLET CLOSED per owner ruling 20:3x. HANDOFF §5cq.
+
+## L45 — 2026-09-03 21:05-21:45 | NEW GAUNTLET: sim->live gap, loop 1 -- c2r launched; live harness built; first sample BLOCKED (display off)
+- c2r PPO resume RUNNING 21:27 (gatec2_m10k best + reach fix, coef 2.0, 12 workers cuda, 0.8 ep/s). Traps: counter restarts
+  at 0 (+10000 absolute), no optimizer state, RAIL GUARD cell-head x0.0556 on resume -- not a pure volume arm. HANDOFF §5cr.1.
+- Live-obs harness: data/bench/live_obs.yaml (eps 0/0, learning off, isolated ckpt+replays) + L45/live_obs_session.py
+  (idle>=15 min gate, foreground-verified, N-match clean stop, foreground-loss hard abort). §5cr.2.
+- BLOCKED (a): display asleep -- foreground 0, CR frame mean 0.0, AC display timeout 20 min < owner idle 81 min. Wake nudge
+  is input outside the game window (classifier blocked it too). Owner question posted. §5cr.3.
+- Correction (a, code): epsilon branch = doctrine/counter-table/advisor/random, not uniform random; the owner's sessions were
+  ~60% that branch, ~40% PPO. §5cr.4. Next: retry the live gate each loop; offline obs-assembly diff meanwhile.
+- L45 cont. (22:0x-22:2x): owner set display timeout Never; waiter armed. FOUND (a): train-rl greedy rule = tau 0.5 vs sim/
+  play.py tau 0.25; gatec2_m10k p(play) p99 0.358 -> 0.5 rule keeps 0.1% of plays (6 vs 581 in 16 sim matches). At eps 0
+  the PPO never plays live; owner's sessions = exploration half + wait-till-9.5-then-bow half. Fix: train.rl_gate_tau 0.25
+  (config.yaml), key absent = legacy (live_obs.yaml baseline / live_obs_tau.yaml). Base-block seam (sim 6 slots vs live 16)
+  measured second-order (gate agree 0.93; detector-fed slots 16+ carry the decision: 0.83). Config-value correction:
+  rl_epsilon_start 0.50 not 0.60. HANDOFF §5cr.7.
+- L45 cont. (22:2x-23:2x): live obs sessions at eps 0. s1 BLIND (my venv error), s1b/s3/s3b FROZEN reads, s2 = the gap:
+  3.3% plays, 69% of decisions at >=9 elixir, one burst then idle. Offline ablation on the live states: ONE slot -- threat
+  31 (opp-memory 5) = opponent-elixir estimate live (mean 0.035) vs OUR elixir in sim; slot31 := own elixir -> p(play)>tau at
+  >=9 elixir 1.7% -> 96.9%; obs image/hand/next/tower are not it. Fix env.opp_mem_slot5 (config, default legacy). s3c with
+  own_elixir + working reads: 58/463 plays (12.5% vs sim 10.8%), elixir 5.2, plays all match long, still 2 losses.
+  Frozen reads (a): fresh WindowCapture on the MATCH_END screen locks 38 px short (dark bottom band), never re-scans ->
+  hand -1 / elixir 9.22 forever; launcher relocks at the first IN_MATCH frame inside reset(). Window drift (a): SW_RESTORE
+  un-maximizes a maximized window (controller.py comment (c)); IsIconic guard. Next seam: live hand reads 2.9/4 slots,
+  x_bow in hand 5% vs 56% sim. c2r m3725, watchdog >=6 share 0.005 (68% below rolling median) -- m5k gate ~23:50. §5cr.8.
+- L46 (2026-09-04 07:2x-08:0x): OVERNIGHT NOTHING RAN -- the 23:46 wakeup never fired; told the owner plainly. Pre-registered
+  c2r gate read (greedy probe, seeds 0/1/2, same instrument same morning): init gatec2_m10k 2.7/3.8/2.4 (reproduces L36),
+  c2r_m5k 3.8/4.0/4.0, c2r_m10k 5.0/6.7/4.9 -- NOT collapsed; first arm whose >=6 share rose init->m5k->m10k on all seeds.
+  Attribution arms not owed. Watchdog "CELL HEAD COLLAPSED" alerts = a threshold (ent<1.27) inside every run's normal
+  band (0.6-1.6); uninformative. Trainer EVAL ladder 19..33%, best 29.9 saved 03:51 (winrate not a discriminator).
+  Stop-path fix shipped (env.py Play Again tap skipped when stop requested; launcher arms stop on the Nth match) -- (b)
+  until a live session runs it. Full drill suite init vs c2r_m10k running in background. HANDOFF §5cs.
+- L46 cont. (2026-09-04 08:0x-08:5x): the owner watched s4 and called the model "blind". Tested, not agreed: TWO input
+  seams, both live-path only, both (a) with before/after on one instrument. (1) tower anchors drawn at frame-detected
+  positions, rows 2-8 px off the sim's: s4 frames re-rendered with the sim's exact tower cells -> gate share at >=9
+  0.085 -> 0.681 (sim ceiling 0.695); shipped `_SIM_TOWERS_BOARD` + alive gating in env.py/replay_bc.py. s5 with that
+  fix alone did NOT recover (4.7% plays) -> RETRACTED "tower anchor = the seam": s5's mechanism was (2) `hand.slots`
+  centres 7-10 px left of the cards in the Play Games window -> x_bow scored 0.42 < 0.5 -> hand = three hoarded spells
+  -> deadlock 67% of decisions (sim 0.0%). Recalibrated slots (unread 13/52 -> 2/52). s6 with both: 53/408 plays
+  (13.0%), elixir 5.68, >=9 share 14%, deadlock 9%, evo cards read+played live for the first time; residual -1 reads are
+  ~1-s deal gaps (0.32-s scan, all runs <= 3 s) -- my "70-s empty slot" reading retracted (10-s stride artefact).
+  Left (b): image still costs ~1/3 of the gate on sim states (0.317 vs 0.483); play.py never renders canonically.
+  c2r reached 20k episodes 08:41; m20k gate not yet posted; drill suite still running. HANDOFF §5cs.6-8.
+- L46c (09:0x-09:2x): c2r m20k gate. Pre-registered 3-seed probe, all four ckpts same instrument same day: >=6 share
+  init 3.0 -> m5k 3.9 -> m10k 5.5 -> best 2.2 -> m20k 1.2 (means). The run PEAKED at m10k and is now below init on all
+  3 seeds; P(play) 0.151 -> 0.202, affordable rows 59% -> 45% (spends earlier, so it is poorer). Does NOT strictly trip
+  the owner's collapse rule (<=1% on ALL 3 seeds; read 1.5/1.0/1.1) -- not restarting on a rule that did not trip;
+  m30k (~14:00) pre-registered as the decisive read. Found (a): the live sessions were initialising from the EVAL-
+  WINRATE-selected `best` ckpt, which reads 2.2 on the mechanism metric vs m10k's 5.5 -- s7 = s6 with the init changed
+  to c2r_m10k, one change. Open-factor slate recorded in §5cs.9. HANDOFF §5cs.9.
+- L46d (09:2x-09:4x): s7 = s6 with ONE change (init c2r_m10k, not the winrate-selected best). 36/365 plays (9.9% vs
+  13.0%), elixir 7.10 vs 5.68, >=9 share 0.31 vs 0.14, play share at >=9 0.123 vs 0.281, zero spells played. Per-match
+  discriminator (play share when rich AND holding a non-spell) s6 0.467/0.087 vs s7 0.333/0.050 -- the arms OVERLAP at
+  2 matches each, so (b) not (a). Direction: the sim's >=6 banking metric points the WRONG WAY live; live init stays
+  `best`. Instrument trap found: npz['elixir'] is capped at 9, elixir_vec*10 is the policy-facing value. HANDOFF §5cs.10.
+- L46e (09:4x-10:2x): owner order -- "do the checkpoint, figure out why the model is so stupid". WHY (a): his train-rl
+  sessions ran rl_epsilon_start 0.5 over 6000 steps (~30 matches) with an epsilon branch that is an explicit expert
+  ("quiet board + >=6 elixir -> X-BOW" + counter table), and the tau-0.5 greedy rule vetoed ~99.9% of the net's plays --
+  so ~40% of his decisions were doctrine plays and essentially every play he watched was the doctrine, not the network.
+  Both masks came off today (eps 0 + tau 0.25): s4-s7 are the first sight of the raw policy, not a regression. Sim drill
+  suite agrees: 9 of 29 drills at 0% vs doctrine 76-100%, incl. bank_to_six_then_bow 0% vs 100%. Checkpoint arm 6 v 6
+  alternated: best 196/1439 plays (13.6%), commits when rich 0.222, bow 0.137; m10k 68/1022 (6.7%), 0.049, 0.019.
+  Rank test on the 6-a-side arm alone U 26/36 (p~0.15) -- direction consistent, not significant; pooled 8-a-side
+  (post-hoc) U 50/64 p<0.05. Live init stays `best`. Fix route proposed: distil the doctrine into the policy.
+  HANDOFF §5cs.11.
+- L47 (2026-09-04 10:3x-11:0x): reverse channel-group swap (sim states + live image, one group at a time), s6 AND
+  s7, 3 pairings each: semantic canvas 3-8 is NOT the seam (0.455-0.524 vs sim 0.483); RGB carries the bulk
+  (0.36-0.45 alone); predictive <=0.05. Then: the gate is PALETTE-SENSITIVE -- same live frames re-styled through
+  DomainRand's own distribution (24 styles) read share>0.25 0.263-0.579 (s6) / 0.360-0.667 (s7); canonical = 12th /
+  29th percentile; style-median 0.439/0.465 ~ sim 0.483. Most of the residual image gap = the canonical palette is
+  a low-gate style; DR did not buy invariance. Fix candidates parked (RGB-off arm first choice) behind distillation.
+  Trap: sim "as recorded" averages over styles, live is one draw. c2r ~23k, m30k read ~14:20. HANDOFF §5cs.13.
+- L47b (2026-09-04 ~11:00-12:00): owner order "spec both distillation teachers and decide". Four legs on the L43
+  ceiling instrument (c2r_best, 48 paired seeds, ladder, DR off): policy 37.5%; DOCTRINE whole-match 14.6% / tower
+  -1.465 (plays 1.5% of rich decisions -- the ">=8 -> cheapest card" rule nominates the log with no cell and holds);
+  SEARCH teacher 79.2% / +0.167; search with reseed-opp 72.9% -> privileged gap ~6pp. Decision: arm D1 = doctrine
+  imitation on DRILL STATES ONLY via the existing search-imitation plumbing (DoctrineSearcher, coef 0.5, all three
+  heads), init gatec2_m10k, 5k matches, pre-registered drill bar (>=3 of the six 0% drills >40% AND 29-mean +5pp).
+  Search teacher rejected as a one-frame distillation target on the ledger's numbers (card distils, winrate +0;
+  gate not one-frame learnable; DAgger co-existed with banking collapse). Nothing launched: c2r running, m30k ~14:20.
+  HANDOFF 5cs.14.
+- L48 (2026-09-04 ~11:30-12:00): owner order "work on the doctrine ... and test the search on the drills". (1)
+  RETRACTION of scale: the stock doctrine reads 14.6% on seeds 5000000+ and 33.3% on 5000048+ (policy 37.5 / 43.8)
+  -- pooled n=96: doctrine 24.0% / td -1.34, policy 40.6% / -0.94 (paired td +0.400 t=3.46), search 80.2% / +0.29.
+  Sign stands, headline was one slice. (2) Search on the 29 drills: doctrine 71.4 / policy 34.2 / search 45.8;
+  search 0% on six restraint drills (never_rocket_their_king 80->8) -- the 12-s scorer spends where the verdict
+  holds; search-on-drills arm CLOSED. (3) Doctrine loses because it is elixir-starved (0-2 elixir at 82% of
+  unanswered pushes), not because of the rich-state freeze (D-1 fixes the leak, td unchanged); hold-after-play is
+  WORSE (-0.349 t=-2.58). (4) Search-regret oracle -> rules: tempo bodies on quiet boards + a generic knight/skeleton
+  body on uncovered pushes = +0.213 tower t=2.14 pooled 96, same ordering on both slices; still 0.19 tower / 12.5pp
+  below the policy. Doctrine not a plausible whole-match teacher; D1 (drill-states-only) spec unchanged. c2r at
+  24.2k, EVAL@24k 31%/21%, m30k ~13:25. HANDOFF 5cs.15.
+- L48b (2026-09-04 ~12:10-12:50): owner steer -- withdrew the "stop authoring" recommendation (cost judgement, not a
+  finding); pre-registered stop = two consecutive rounds < +0.10 tower pooled (96 paired). R1: the tempo knight
+  breaks skeletons_stop_the_wall_breakers 92->8 via the drill's spent>4 bar (pre-threat knight + skeletons = 5);
+  dropped. R2: d6nok (D-1 + skel cycle + D-6) +0.133 t=1.39 vs stock, drills 70.3 (no hard regression); policy
+  +0.268 t=2.46 ahead. R3: D-7 tesla-for-tank -0.024, tesla-for-xbow +0.001 (never fires) -> STOP fires. OWNER
+  REPORT CONFIRMED IN ENGINE: crowns() = dead towers; king kill with a princess standing = 2 not 3. Outcomes
+  right; crown_delta understated (policy -0.354 read / -0.521 real-CR, 8 of 12 king losses undercounted); reward
+  pays per tower. Fix post-c2r; reward semantics (A fix crowns / B report-only) is the owner's call -- report sent
+  with --questions. HANDOFF 5cs.16 + bug-ledger row.
+- L48c (2026-09-04 ~12:20-12:40): owner ruling (A) -- crowns() fixed in engine.py: enemy king dead -> 3, else
+  dead-tower count. Reporting AND reward (take_enemy_tower/lose_own_tower pay x2 on a king-fall with a princess
+  up). Landed while c2r runs: workers/eval envs spawned once at start (remote_pool 289-307, train_sim_ppo 156/1117),
+  so c2r trained wholly on the OLD count; trap = a --resume after this commit splits the run into two reward
+  regimes. Checks: state test 0/1/2/3/3, outcome unchanged, crown_undercount doctrine n=12 engine -0.917 == real
+  -0.917, 165 unittests OK. Post-fix crown_delta is a NEW instrument -- never compare against pre-fix tables.
+  c2r 25.8k at 12:28, 0.64 ep/s -> m30k ~14:15 (13:25 carried earlier was wrong). Compound drills: never enabled
+  or measured (frac 0.0); answer = instrument read next loop, training arm only post-c2r / on a collapsed m30k.
+- L48d (2026-09-04 ~12:40-13:15): owner order -- hogeq re-synced to icebow (2f9cd8e..6cca0a0): 12 shared files
+  byte-copied (crown fix included), 7 declared-different files hand-ported (lock-aware targets, bot attack floor,
+  eage/schema-2 gate prior, cast-delay leads, slot-5 switch, rl_gate_tau, tower anchors, play-again guard, and a
+  NEW play.py Log corridor assist = live behaviour change for hogeq, untested on a screen), config keys at icebow's
+  values, tools (schema-2 gate_prior, probe, latency timer, watchdog drift detector, real_run_gates), 4 deck-neutral
+  tests. NOT ported: nado reach fix, xbow ramp (no bow/nado). Parity strict OK both decks; hogeq suite 1,322 OK /
+  64 skip (3 bow-only tests removed). hogeq's OWN schema-2 table fitted (595 replays): quiet 4.6/4.3/5.5% vs
+  pressure 8.8/8.8/9.7% at 5/6/7 elixir. "CHEAP CARDS" MEASURED on hogeq best (m2000, 3 seeds, sampled probe):
+  mean play cost 2.02-2.05 vs pros 2.61, elixir mean 1.83, >=6 share 0.2%, hog in NO bucket's top-4, P(play) at
+  1-3 elixir 0.5-0.56 vs pros 0.05-0.075. --force-bank 4 (1 seed): same card head picks mm 36 / hog 31 / tesla
+  30, cost 2.96 -> the GATE is the cause, not the card head; same mechanism as icebow 18k. HANDOFF 5cs.18.
+- L49 (2026-09-04 ~13:00-13:35): COMPOUND-DRILL instrument read (drill_compound_frac forced 1.0 in-process; never
+  enabled on disk). Verdict fires on every board (0 timeouts), ~12-13 s, 2-3 components. Pass pooled n=96: nothing
+  ~1%, doctrine 35.4%, c2r_m20k 26.0%, gatec2_m10k 29.2%; seed band 4-6pp -> checkpoints indistinguishable, doctrine
+  6-12pp above. Doctrine's spell/log components 0/N; full-elixir override does not recover them (scarcity
+  contradicted). ROOT CAUSE = GRADING: 12 success predicates in drills_icebow.py read e.units board-globally, so
+  compound_verdict's per-component tag is dead code -- AND the same unused helper is the only thing hiding the
+  drill_noise distractor, which is ON (0.5) in the running c2r and in hogeq (identical pattern, drills_hogeq.py:29).
+  Measured on 10 affected drills, doctrine, n=250/arm: noise 0 78.0%, noise 0.5 66.8%, noise 0.5 + grader hides the
+  distractor 70.4% -> grading bug ~3.6pp (small, real in sign), behavioural ~7.6pp (bow_defends 72->44,
+  bridge_spam 48->20 not recovered). Learner impact untested. Fix (swap to all_enemies_dead/enemy_units, both decks)
+  NOT landed: c2r depends on the drill files; its own experiment after m30k. c2r 27,325 eps at 13:20, 0.5 ep/s,
+  m30k ~14:50; last-epoch gate drift on PLAY -1.08 (largest of 12) -- watch only. HANDOFF 5cs.19.
+- L50 (2026-09-04 14:23-15:3x): THE m30k READ. Snapshot c2r_m30k.pt at 14:56 (log 30050). Sampled-gate probe, same
+  instrument as L44/L46: c2r_m30k >=6 share 3.3/5.2/2.3 (seeds 0/1/2) + 3.2/2.5/3.1 (disjoint 3/4/5) = mean 3.3%,
+  band 2.3-5.2; reference gatec2_m10k 2.7/3.8/2.4 (mean 3.0, reproduces L46 exactly -- deterministic probe). NOT
+  COLLAPSED: no seed <=1%; P(play) 0.16 vs 0.17; play cost 2.7 both. Trajectory m5k 4.0 -> m10k 5.5 -> m20k 1.2 ->
+  m30k 3.3: the m20k dip reversed. EVAL@30k ladder 31% / fair 24% (n=150, context only). Decision: no restart, c2r
+  runs to 40k (~20:30). Owner Q answered: sandbox engine = measuring instrument, not training env; sim-parity oracle
+  step 1 (our sim's crowns-match on the engine's 211 replays) queued next by owner ruling. HANDOFF 5cs.20.
+- L51 (2026-09-04 15:2x-15:5x): SIM-PARITY ORACLE STEP 1 (owner-queued). `scratchpad/gauntlet/L51/sim_replay_drive.py`
+  drives the crawl's real 20 Hz timelines through OUR sim with the engine's conversion (both sides L11 incl. towers
+  3052/4824 = engine, abilities skipped, 40-tick slack). Same 211 tags, same 19,488 plays. Crowns match RoyaleAPI
+  sim 55/211 = 26.1% (winner 44.1%) vs the real engine 77.7% / 80.1%; sim==engine crowns 28.9%; engine-clean 135:
+  28.1%. ONE-DIRECTIONAL: real winners s1 129 / s0 82, engine 111/100, sim 23/188; side 1 = the X-Bow player in
+  211/211. Mirror run (sides swapped) 28.4% with the bias following the deck -> sim symmetric, deck mechanics.
+  Not the cause: heroes (no-ability subset 23%), elixir (1.2% of plays needed slack), tower HP, play counts. Sim
+  games end earlier (median 180 s vs engine 276 s), 3-crown 58 vs real 20. Caveat: open-loop replay penalises the
+  reactive deck first -- but the engine held the real board on the same inputs. Step 2 (engine per-tick diff,
+  emulator, after c2r) now warranted. 31 s wall for the set. c2r 31,325 eps, 17 procs. HANDOFF 5cs.21.
+- L52 (2026-09-04 15:57-16:3x): ORACLE STEP 1b -- tick-level diff of the two engine-recorded clips (`L52/tick_diff.py`)
+  vs a sim per-0.1 s dump. Hog hit 317 = sim 316.8, rocket 1484/342, fireball 172: (c) the L51 hog-damage candidate is
+  contradicted. Three measured divergences, each patched in the DRIVER only (`sim_replay_drive.py --patch`): spells
+  measure blast to the collision edge (rocket 2.24 tiles kills the X-Bow 1561->71; sim untouched), Tesla/Drill sit on
+  tile corners (0.71-tile snap error), hidden Tesla pulls building-targeters on its placement tick. Each fixes its clip
+  (both now 0-1 = real). Population, 211 matches: base 26.1% -> spell_edge 26.5, corner 26.5, edge+corner 28.0,
+  hidden_pull 26.5 (9 changed), all three 26.5% -- NULL. Damage rate: sim on icebow towers 32.2 HP/s vs engine 16.2,
+  on opponent towers 4.2 vs 15.2. 20 sim matches end 3-0 for the opponent before 120 s (real: 20 three-crown matches
+  total); skeleton-army in 8/20 (2.6x), skeleton-king 5/9, witch 5/10, goblin-gang 5/17, minion-horde 4/13. Evo skarmy
+  clip 08QPVCPC9QQU: sim ghosts pile up while Gerry is never hit, 3-0 at 39.6 s. Priority list for oracle step 2
+  written into §6. c2r 32,675 eps, 17 procs, 4 GB free. HANDOFF 5cs.22.
+- L53 (2026-09-04 17:25-17:4x): SIM-ONLY SWARM PROBE (`L53/skarmy_probe.py`). Unanswered evo Skeleton Army vs the L11
+  princess tower: tower dead at 10 s, 3947 total damage (non-evo 2279, tower survives at 773). Knight in front of the
+  tower: evo 3947 -> 3947 (changes nothing), non-evo 2279 -> 407. Ice Wizard: evo -> 0 (splash kills Gerry at 3.1 s,
+  ghosts vanish). Gerry trails 2-4 tiles behind, first shot by the tower at 12.2 s after the last live skeleton dies.
+  `shadow_skeleton_speed_tiles: 1.0` in cards.yaml is read by nothing -- ghosts run at 1.5 t/s (wiki Medium = 1.0);
+  driver patch `--patch shadow_speed`: 3947 -> 3785, population 55/211 -> 55/211 NULL. Clip 08QPVCPC9QQU: the pro's
+  Ice Wizard lands inside 10 live + 5 ghost skeletons and dies in 0.7 s in the sim; the real one stopped the push --
+  the real pack's position at 25.3 s is the first thing oracle step 2 must read. Crowns-match by opponent deck: any
+  skeleton-army 3/32 = 9.4% vs 29.1% rest; other swarm 20.5%; none 31.4% -- side-0 bias in every subset (112/140
+  sim side-0 wins vs real 55/140 even with no swarm card). c2r 35,000 eps, 17 procs, 4 GB free. HANDOFF 5cs.23.
+- L54 (2026-09-04 18:07-18:2x, OWNER ASK: early stop?): m35k read, same instrument as m30k (`gate_prior_probe.py`,
+  seeds 0-5): >=6 share 1.1/1.6/1.4/1.4/0.9/1.2 mean 1.3% (m30k 3.3%, m20k 1.2%, gatec2_m10k 3.0%); P(play) 0.20 and
+  elixir mean 2.5 = the m20k signature (spend mode, visited twice; hold mode m10k/m30k visited twice). Collapse rule
+  NOT met. Internal EVAL flat 12k-36k (ladder avg-5 28-31, fair 19-21), new BEST at 36k is 30 -> 31 = noise; per-4k
+  training winrate 10.2/9.7/8.9%; drill pass-all 45-47% since 8k; entropy 0.05-0.08. Verdict: early stop justifiable,
+  recommended (banked _best.pt at 36k, ~2 h of box for oracle step 2); irreversible, so put to the owner. State
+  recorded: 36,100 eps 18:11, 17 procs, 4.2 GB free. HANDOFF 5cs.24.
+- L55 (2026-09-04 18:18-18:4x, OWNER: stop c2r + "why oscillating" + "tesla in one tile"): c2r killed at 36,375 eps
+  (17 -> 1 python procs, Nucleo untouched, 6.8 GB free; _best.pt = 36k ladder avg-5 31%, backed up to
+  data/bench/c2r_best_36k_backup.pt). Live play_logs (36 matches, 1 W): tesla cell 235 x39/101, x_bow 235 x63/85.
+  `policy_rl.pt` == c2r_best (max |diff| 0.0). Sim placement probe (`L55/place_probe.py`, greedy card+cell as
+  play.py), c2r_best seeds 0-2: tesla -> cell 234 (row 13, col 0, left riverside corner) 52/82 = 63%, x_bow 21/34,
+  tesla_evo 19/27, skeletons -> 423 (front of king) 153/154. LEARNED IN THE SIM, deployed unchanged; the 30% ladder
+  was earned with it (scripted bots do not punish it). Oscillation: >=6 share 3.9/5.5/1.2/3.3/1.3 at m5k..m35k, all
+  else flat 8k-36k, entropy 0.06, cell_struct 3350-5235x, gate PLAY drift negative in every batch on 5-20 play
+  samples -- cause (b): no exploration left + gate updated from a handful of plays. Next: sim Tesla-outcome probe
+  (corner vs centre), then an exploration arm from c2r_best. HANDOFF 5cs.25.
+
+
+## L56 (2026-09-04) -- Tesla-outcome probe: the sim does not reward the corner (nor punish it)
+- Ran `L56/tesla_probe.py` on c2r_best (play.py greedy rule, tau 0.25, no search): 4 arms x 24 matches x
+  2 seeds, only the Tesla cell forced. Per-Tesla damage (upper bound), pooled: own 954 / corner(234) 1040 /
+  lane(274) 690 / centre(314) 1157; per seed corner vs centre 1014 vs 1225 and 1070 vs 1067 (95% CIs +-170,
+  overlapping both seeds); lane below both on both seeds (CIs disjoint). Kills/Tesla 1.64/1.75/1.26/1.64.
+  Match level all noise (W 14/16/10/10 of 48). (a)
+- Scripted bots cross RIGHT 55-64% of the time (8/8 arm-seeds); corner Tesla covers the left bridge only. (a)
+- Placement history (place_probe seed 0): gatec2 m5k 14 distinct Tesla cells -> m10k 234 at 23/29, x_bow 234
+  9/9; c2r resumed that lineage (cell head saturated raw |81|, RAIL GUARD rescale) and kept it 13/30 -> 27/31
+  -> 63%. aggro1 locks 347/233, gate05 327: one cell per card in every arm; skeletons@423 in every checkpoint. (a)
+- Verdict: the placement landscape is flat between corner and centre in the sim; 234 is a drift-and-stick of
+  a coupled cell head (one `cell_conv` for all cards), not a sim payoff. Exploration alone cannot fix it. (b)
+  Hypothesis for why 234 specifically: X-Bow reaches the left princess tower from there (10.4 <= 11.5). (b)
+- Retract L55 (b) "the sim rewards the corner"; lane cell 274 is worse, not better. (c)
+- Next: read the human Tesla/X-Bow cell distribution from the replay corpus (tools/replay_priors.py) -- how
+  far off is 234 from what players do -- then spec a placement-prior arm (one change). Exploration arm parked.
+- Box idle throughout (1 python proc = Nucleo). HANDOFF §5cs.26.
+
+
+## L57 (2026-09-04) -- pro placements vs the locked cells; hidden_pull does not un-flatten the sim
+- Pro corpus (12,220 blue plays, §5ag): X-Bow modal (15,19)/(2,19) = 48% lane bows; the policy's corner
+  X-Bow tile (1.5,18.5) has 24% of pro bows within 1.5 tiles (50% lane-mirrored) -> the X-Bow cell is
+  pro-correct to ~1 tile. Tesla: pros x=9 centre 48%, x 6-11 81%, y 18-22; policy tile = 2.0% of pro
+  Teslas. Skeletons 4.9%, Knight 2.2%. (a)
+- L56 probe rerun with the L52 `hidden_pull` mechanic: pooled dmg/Tesla own 1033 / corner 935 / lane 966 /
+  centre 1029, all CIs overlap; lane rises 690 -> 966, corner = centre unchanged. (a) Missing pull is not
+  why the sim is flat. (c)
+- Decision to owner (STOP): fitted pro placement prior as a KL term on the cell head from c2r_best (mechanism
+  stated: direct gradient, no reward difference needed -- unlike the 3 failed rollout-sampling priors), or
+  opponent-model work, or neither. HANDOFF §5cs.27. Box idle.
+
+
+## L58 (2026-09-04) -- radius-graded reward step 0 built + validation gate; two retractions
+- Built `geometry_reward.py` (P1-P7, bridge block, tornado away/king), 19 tests OK, `sim-view --radii`
+  overlay (flag off byte-identical). Commit c642a73. Nothing wired into env.py yet.
+- RETRACTED (c): the corner X-Bow (1.5,18.5) DOES reach the enemy princess (`_gap` 10.67 < 11.5; a
+  deployed bow damages it 4858->4568 in 6 s). L57/§5cs.27 and doc rev 1-3 said it does not (stale
+  engine comment). RETRACTED (c): the locked troop cells are (9.5,31.3)/(12.5,31.3) behind the king,
+  not (9.3,24.1)/(11.8,24.1) (cell_center mis-conversion); pro skeletons within 1.5 tiles = 8.9%, not 4.9%.
+- Gate on 211 pro replays (5,825 blue plays): pro tile beats the locked tile on the equal-weight SUM for
+  tesla 63/19, tornado 69/29, knight 51/9, ice-wiz 44/22, skeletons 40/22, log 34/32, rocket 16/65, x-bow
+  11/83. Doc §3 rule drops nothing (modal Tesla vs corner on 350 Hog/Giant/PEKKA boards: SUM 88%/6%).
+  Against the pros: P2 on troops (2/23) and spells (rocket 1/71), P7 on skeletons (0.1/7.6); building P5
+  has no placement gradient; snapshot P1 fires on 41% of pro Teslas only. (a)
+- Policy (c2r_best, 3 seeds x 24, 2,485 placements): SUM mean 0.828 -> w 1.21 raw; restricted sum 0.430
+  -> w_geom 2.0 (cap). Rocket never played at tau 0.25. Linear probe: trunk holds ROLE-level enemy
+  identity (39% vs 26%), not card (12% vs 6%) -> no obs change in run 1 stands. (a)
+- Next: step 1 = restrict terms (P2 buildings only, P7 not swarm, building P5 = timing term), path-based
+  P1, wire into sim/env.py with w_geom 2.0, then arms G / G+E. HANDOFF §5cs.29. Box idle.
+- Flag: `config.yaml rl_epsilon_start 0.50 -> 0.85` is modified on disk (18:32 today, not by this
+  session, not committed) -- left untouched.
+
+## L59 (2026-09-05 00:0x-05:0x) -- step 1 wired (arm G), worker config seam fixed, ARM G LAUNCHED 04:49
+- Owner (04:2x): full autonomy overnight on the radii work; decisions on their behalf, recorded in §5cs.30.
+- `geometry_reward.py`: P2 buildings-only, P7 off for swarm, PATH-based P1 (pull_ok), placement_credit in
+  [-0.3, 1.0]; `sim/env.py` +131: graded credit w_time*P5 + w_geom*place*gate paid only when place > 0, X-Bow
+  w_wincon*P6, geo_* record-only ledger; `env.geometry.enabled false` = HEAD reward to 1e-9 (2 matches). (a)
+- Gate rerun: path P1 fires on 53.3% of pro Teslas (snapshot 40.9%, n=807); modal (9,21) 0.543 vs corner 0.143.
+  Hog-vs-Tesla scenario: graded pays +2.85..+3.0 at hog tile 14.7-17.1, 0 at 18.3+; the old binary paid +1.0
+  at 18.3/20.7 and 0 in the pull window -- DISJOINT windows. Pre-placed Tesla still unpaid (env sees no threat
+  on the enemy half) -- parked doctrine change. (a)/(b)
+- SEAM FIX: `remote_pool._worker` re-read config.yaml from disk -> every env-side `--config` key and
+  `--drill-only` never reached the workers. Config records .source; workers load the parent's yaml; proven via
+  the real CLI with --workers 1. c2r unaffected (its one env-side difference resolved equal). Commit 794d030.
+- Found, not fixed: `_trade_reward` keyed by id(u) -> elixir_trade flips 1 step in 512 across processes. (a)
+- ARM G launched 04:49 from c2r_best (sha verified), c2r's exact CLI + `env.geometry.enabled true` as the ONE
+  change; rail guard x0.0430 (raw 105); early curve = c2r's resume shape (avg_rew -29/-34 vs -31/-31). Detached:
+  trainer, ppo_watchdog, `L59/arm_gates.py` (m5k/10k/20k snapshot + place_probe x3 + geo_ledger_probe x2 +
+  gate_prior_probe -> Discord). Baseline (c2r_best under the arm reward, seed 0): tesla scored 24 paid 2, mean
+  P1 0.039; skeletons 53/0. (a)
+- DECISION: G runs alone (9.7 GB RSS, 1.1 GB free); G+E / E queued, yamls + launchers ready. Read at m5k
+  (~2.5 h at 0.6 ep/s), m10k. One seed = screen; three before any claim.
+
+## L59b (2026-09-05 05:1x-05:4x UTC) -- owner: credit is an AND gate; armG v1 stopped, v2 relaunched 05:13 UTC
+- Owner (05:0x): "timing + placement payment should be 2-way ... basically an AND gate, but with some nuance";
+  Chrome may be closed. `_geo_credit` -> `(w_time + w_geom) * place * P5 * gate` when place > 0 (v1 was
+  `w_time*P5 + w_geom*place*gate`, which paid a perfect placement at P5 0.07 +2.07). +5 unit tests, 34 OK,
+  disabled path still byte-identical. Scenario: +2.54/+3.0/+3.0 at hog tile 14.7/15.9/17.1, 0 elsewhere --
+  same window, early row scaled. Baseline c2r_best s0: same 23 fires, credit sum +38.5 (v1 +47.9); tesla
+  paid mean +0.84 (v1 +1.56), P1 0.039 unchanged. (a)
+- armG v1 stopped at 725 eps (10%, avg_rew -15.9), procs 19 -> 1; checkpoint re-seeded from c2r_best (sha
+  d209b41e verified x3). v2 relaunched 05:13 UTC, same CLI, rail guard x0.0430 identical; 125 eps -21.6, 0.7 ep/s.
+- Chrome closed (30 -> 0): available 11.0 GB idle -> 3.6 GB with G running = one arm costs 7.4 GB. G+E still
+  does not fit; half-size arms rejected (--envs sets the PPO batch = a second change vs c2r). DECISION: G alone.
+- m5k ETA ~07:1x UTC via detached arm_gates.py (posts to Discord). Next: read m5k vs the AND baseline.
+
+## L59c (2026-09-05 12:4x-13:2x UTC) -- G read m5k/m10k: placements COLLAPSED; owner: no control, go to E
+- Wakeup at 05:4x UTC never fired; 7 h unattended. arm_gates.py (detached) took and posted both reads anyway.
+- G m5k (3 seeds): tesla@234 13/27, 20/28, 16/31 (distinct 11/7/14); knight@426 18/36, 22/38, 16/36; credits
+  16 (+26/+30); tesla P1 0.104/0.153 (baseline 0.039). m10k: tesla 21/28, 27/31, 24/28 (distinct 5/5/5);
+  KNIGHT 41/41, 36/36, 35/36 (distinct 1/1/2); credits 8-9 (baseline 23); watchdog CELL HEAD COLLAPSED
+  1.08-1.16 of 5.08 nats. Eval ladder 37/39/27/23/36/27/35% m2k..m14k. (a, one training seed)
+- Not attributable to the reward (no geometry-off resume) -- (b). Owner: "No control ... Go straight to E."
+- G stopped at 15,750 eps (procs 19 -> 1, final weights data/bench/armG_m15k7_final.pt sha 3d7713b7).
+- ARM E launched 13:0x UTC: c2r + sim.ppo_cell_entropy_floor 0.05, geometry OFF, same CLI, rail x0.0430;
+  200 eps 12%, 0.8 ep/s. Monitors detached with python -u. m5k ETA ~15:0x UTC.
+- Leak: hung stt.ps1 (PID 22200, 2.3 GB, since 09-04 21:43) -- kill blocked by the classifier; owner to kill.
+
+## L60 (2026-09-05 13:4x-14:4x UTC) -- owner pivot to IL: audit, crawl wave 3 (+88), BC dataset v1 (6,922 pro placements), c2r_best pro-cell agreement 3.3% / 10.9%
+- Owner: "going in circles ... give imitation learning a chance ... sim gradient toward pro play case by
+  case ... crawl players you haven't mined". Answered with labels (HANDOFF §5cs.33): flatness measured
+  (10 days, 25-39% band, cell head re-collapses every arm), circle diagnosis (b): saturated start + a sim
+  where pro play loses (26.1% vs 77.7%). IL yes; "case by case" needs a similarity rule = a model;
+  kNN over a learned embedding vs a BC net, both to be scored on held-out replays. Sandbox engine already
+  runs here (§5ax) -> route 1 = engine states for BC v2.
+- Killed hung stt.ps1 PID 22200 (avail RAM 1.31 -> 3.40 GB). Crawl wave 3: +88 replays (608 total, 46
+  players done, 4 rate-limited for retry), plays_ext 52,587 rows. (a)
+- BC dataset v1 `icebow/data/bc_pro/` (L60/build_bc_dataset.py): 6,922 samples / 268 replays, blue only
+  (icebow is blue in 268/268), split 228/40 replays. Baseline c2r_best top-1 3.26% / top-5 10.92% (chance
+  0.63/3.1); the_log 11.4/37.6, tesla 0.7/2.8, x_bow 0.0/0.3; top-1 on cell 235 27% of the time. (a)
+  Caveat: sim-reconstructed boards, 43.5% of pro plays fall after the sim's own end.
+- Arm E running (2,200 eps, m5k ~15:1x UTC). Question open: stop E after m5k for the engine work?
+
+## L60b (2026-09-05 14:5x-15:3x UTC) -- kNN vs BC vs baseline on 1,004 held-out pro placements: board-blind card prior 13.65/40.04 is the bar; c2r_best 3.49/11.75; trunk embedding near-constant; cell head at the tanh rails
+- Same val rows, pro card's masked map. Card prior (no board) 13.65 / 40.04. kNN raw-PCA-256 k=15 gauss
+  16.24 / 36.16 (+2.6 pt top-1 ~2 SE, marginal; never beats the prior on top-5 below k=150). Trunk
+  embedding z is the WORST key (12.15) and near-constant: pro-to-pro NN cosine median 0.991 vs raw 0.562.
+  BC head-only 8.27/8.27/8.37 (3 seeds), trunk ft 8.47 -- below the static prior; x_bow 0/91. (a)
+- MECHANISM: c2r_best cell head at the tanh rails, 92.4% of masked raw logits |raw| > 8 (mean -23.6),
+  gradient 1e-2..1e-6 -> PPO cannot move it; head-only BC without repair returned the untouched checkpoint.
+  Shipped BC ckpts rescale cell_conv.4 /10.36. (a) Prior nulls §5ae/5am/5ao may be dead-gradient artefacts (b).
+- Unresolved: uninformative boards (26% sim) vs stereotyped deck -- separators: real-record-feature
+  conditioning (cheap), engine dataset v2. Also untested: coordinate channels / prior-initialised bias.
+- Owner: stop E after m5k (E at ~2.6k eps, m5k ~15:5x UTC); then engine work.
+
+## L60c (2026-09-05 14:1x-14:2x UTC) -- arm E read at m3.85k and STOPPED (owner order): entropy floor did not resist the collapse
+- E snapshot m3,850: knight@426 35/39, 35/37, 35/40; tesla distinct 8/6/4; pro-cell agreement 2.59/9.36
+  (baseline 3.49/11.75); cell head 82.4% at the tanh rails 3,850 matches after the guard's x0.043 rescale.
+  (a, one training seed) Worse than the baseline and than G at m5k on every placement metric -> stopped
+  at 3,975 episodes (14:19 UTC), python 21 -> 3, 9.8 GB available. No winrate eval (wrong instrument, wrong sim).
+- New instrument: `L60/rails_read.py <ckpt>` = fraction of masked raw cell logits |raw| > 8 on the val split.
+- Next: sandbox engine per-tick state -> obs renderer -> BC dataset v2; engine throughput measurement.
+
+## L60d (2026-09-05 14:3x-14:5x UTC) -- board-value separators: real context adds <= +1.9/+4.7 over the card prior; prior-initialised bias map is the first BC above the prior
+- M1 real-record context vs prior 13.65/40.04: time 12.95/38.94, engine elixir 14.54/41.93, opp last card
+  13.45/37.85, opp last tile 15.54/44.72 (best), NB combo 15.44/42.13, real-vector kNN k=50 15.84/43.53.
+  (a) Same size as the sim-board kNN gain (+2.6) -> the small board gain is not "wrong boards"; for this
+  deck's placements the per-card prior is nearly everything; opponent's last lane/row is the one live feature.
+  Card choice / timing NOT measured -- the "case by case" claim is untested for those heads.
+- M2 head-only BC: coord channels 9.76/28.29 (x_bow 0/91 still); per-card bias map [10,432] init from the
+  prior 15.44/46.61 (s1 16.24/46.41, s2 15.14/46.51), val CE 3.52 vs prior 3.88; coord+bias 15.54/46.91;
+  bias only (convs frozen) 12.75/40.94. Source head's logits at epoch 0 DEGRADE the prior (9.16/32.47).
+- Consequence: the policy needs `cells + cell_bias_map[None]` (4,320 floats) before the tanh cap -- a
+  model.py change (not env.py), owner's call. Checkpoints carry it as `bc_pro_extra`.
+- Next: L61 engine dataset v2 (running) -> re-score on engine boards; then the model change + BC init.
+
+## L61 (2026-09-05 14:2x-15:0x UTC) -- BC dataset v2 from the REAL engine; checkpoint equally bad on real boards; sim-trained bias-map heads transfer; engine throughput measured
+- 211/211 replays re-driven with full observe before every play: hashes identical to 5ay, 17,901 play frames, 2.34 s/match
+  median with recording. Adapter (FakeEngine into SimMatchEnv._update_vectors) -> icebow/data/bc_pro_v2/: 9,444 samples,
+  101/101 names mapped, 0 dropped; train 8,111 / val 1,333 (v1 split restricted). Sim vs engine at the same play:
+  enemy bodies -0.74 (sim keeps more alive), towers-alive agree 70.7%, elixir +0.16.
+- v2 val: c2r_best 2.78/11.10 (paired same-play: 3.12/10.75 engine vs 3.35/11.33 sim -> NOT a sim-board artefact);
+  prior 12.08/37.66; kNN k15 14.03/37.28, k50 15.38/44.49. Sim-trained bias-map heads on engine boards 15.00/43.51,
+  14.63/44.11, 14.93/43.44 (+2.6-2.9 top-1 ~3 SE, +5.8-6.5 top-5 ~4.5 SE over the v2 prior); trained map alone 10.58 ->
+  the convs add +4.4 on real boards. x_bow 31-34% top-1 (c2r_best 0).
+- Throughput: plays-only 2,800/h/slot; every-10-tick observe 920/h; every-2 260/h; 2 slots one VM 1,516/h (4.26 GB);
+  direct RPC observe ~2 ms (5ay's "~20 ms" was adb -- retracted). Sim trainer ~2,880 matches/h on 16 cores (5cs.35).
+  Opponent for an engine environment is unsolved (ghost / self-play / script) -> owner question.
+- VM stopped. Next (after owner): model.py bias map + BC init + PPO with control; wave-4 crawl roster meanwhile.
+
+## L61b (2026-09-05 15:2x-15:5x UTC) -- owner rulings applied: bias map in model.py; bcA (PPO from the BC init, control) LAUNCHED; crawl wins-first
+- Q1 yes -> `PolicyNet.cell_bias_map` (78e14aa): old checkpoints bit-identical, native BC heads reproduce v1/v2 numbers exactly,
+  suite 1,336/1,337 (1 pre-existing). Rail guard cell criterion max -> p99 (would have shrunk the BC init's convs x0.2).
+- bcA launched 15:5x UTC: init bc_bias_native_s0 (15.44/46.61 sim, 15.00/43.51 engine), c2r config, one change = the init.
+  Guard: "raw p99 9.5 within 2x cap -- left as loaded". Reads at m2k/m5k: does PPO keep or erode the pro agreement?
+- Q2 (owner): mine ~10k icebow replays 10k trophies -> top, wins first; IL + 10k-deck pool + trophy-range ghosts + self-play
+  opponent. Pushbacks: pro-weighted IL teachers; general-deck opponent needs a card-identity head; league not pure
+  alternation; losses are the opponent-side signal; supply/rate unmeasured (~2 replays/min this wave).
+- Wave 4: roster 50 -> 150, 1,445 battles, 834 replays queued, relaunched wins-first.
+
+## L61c (2026-09-05 16:2x-16:4x UTC) -- bcA m2k: PPO erodes the BC init and re-saturates a HEALTHY head in 2,000 matches
+- Pro agreement 15.44/46.61 -> 6.47/21.12 (v1) and 15.00/43.51 -> 6.98/20.11 (v2); rails 83.8% (p99 72.7) from p99 9.5 at load.
+- Mechanism: bias map untouched (corr 0.9995, |d| mean 0.012); cell_conv.4 grows |d|/|w0| 0.777 -> the board-conditioned
+  residual swamps a prior whose max entry is 5.32. Retracts 5cs.34's reading that the frozen head was the CAUSE of the
+  circling: it is the consequence of this gradient. (a, one seed)
+- Leading hypothesis (b): the sim reward prefers non-pro placement (pro play loses in our sim), so any PPO here erodes any
+  pro-like init. Settled by bcB (same init + per-board KL-to-pro-prior) vs bcA at the same m.
+- bcA continues to m5k as the control. New instrument L61/read_ckpt.py (both val sets + rails in one call).
+
+## L62 (2026-09-05 17:0x UTC) -- owner: "kill bcA now and start the engine training". Sim PPO retired from the training path
+- bcA killed at 2,550 eps (4% wr, state in L61/bcA_stop_state.txt), python 17 -> 3, 11.06 GB free. bcB (KL on the sim)
+  NOT built -- the KL term moves to the engine env.
+- Engine env v0 under construction in scratchpad/gauntlet/L62/: EngineMatchEnv (SimMatchEnv interface, ghost opponent,
+  0.5 s decision cadence, engine-only unshaped reward) + ghost pool from the mined battles. Key v0 diagnostics:
+  s/match with a policy in the loop, ghost rejection rate as the match diverges, deck/rating coverage.
+- The sim survives as the obs RENDERER (the adapter drives _update_vectors) and as the fast smoke env; its reward and
+  opponent are what is retired.
+
+## L62b -- 2026-09-05 17:3x UTC -- ghost pool built; owner's Q2 targets measured against the corpus
+- Pool: 447/1,148 battles convert (337 W / 110 L), 314 distinct opponent decks (259 once), 437 humans, 45 ghost plays/match.
+- (c) 10,000 distinct decks NOT reachable by mining: whole corpus 715 decks, 0.56 new/battle and falling (~20-30k battles, extrapolated).
+- (c) No trophy-range coverage: 434/447 Path of Legend (no trophy number), no opponent rating column at all, 81% in one 500-pt band.
+- Cheapest 2x: crawler x/y backfill -> +473 battles, +273 decks (574 replays carry no positions at all).
+- Ghost reactivity: 59.4% of ghost plays within 3 s of an icebow play vs 51.5% null -> ~1 in 12 is a reaction replay destroys.
+- Holes: 5.0% of ghost actions are ability presses the driver drops; 0/447 timelines reach overtime; hand never unique (median 256 deals).
+- Collision: env agent's 202-row pool overwritten at pool.jsonl -> env builder moved to pool_env_v0.jsonl. Trap: disjoint OUTPUT paths per agent.
+- Owner ask: sim_view debugger -> engine. Yes, one renderer two feeds; radii/P1/term readout carry over via the L61 adapter; agent dispatched (L62/engine_view).
+- Outlook: env agent still running (s/match, rejection-vs-time, determinism); then PPO-on-engine + KL control pair. Supply probe for trophy-road players is now mandatory before any "10k replays" promise.
+
+## L62c -- 2026-09-05 17:5x UTC -- EngineMatchEnv v0 built and measured
+- SimMatchEnv-interface env on the real engine; obs = L61 adapter; ghost = recorded human commands; unshaped engine-only reward.
+- (a) inverse cell<->(x,y) exact 9,368/9,368; determinism 3/3; 1,159 matches/h one slot, 1,847/h two slots (BC policy in loop, CPU; cuda not faster).
+- (c) RETRACTED the "rejection rate = divergence" diagnostic: all rejections are the end-of-battle gate; 0 game-state refusals in 799. Ghosts go STALE and RUN OUT: 50% of ghost commands never fire.
+- Engine rule: no deploys before tick 90 (4.5 s countdown); episodes start at tick 90.
+- Sanity 40 matches greedy BC: 4W/36L, 168.6 s mean; humans went 26W/14L on the same battles. Baseline.
+- Limits: fixed seed 424242, levels 11, no ghost reaction, PPO-on-unshaped-reward untested.
+- Next: standalone engine PPO driver; pair control vs KL-to-prior, one slot each, same init/seed; grade by pro agreement.
+
+## L62d -- 2026-09-05 18:1x UTC -- sim_view debugger on the engine (owner ask)
+- One renderer, two feeds: L62/engine_view.py builds an EngineView the unchanged render_frame accepts; radii/P1/term readout intact; 52/52 sim_view tests.
+- (a) pixel checks: tower px error 0 vs SimMatchEnv, mirror exact, radii +5,197 px, P1 band +42,603 px; 1.74 ms/frame; 0 unmapped over 211 recordings.
+- (a) FIRST GROUND-TRUTH READ OF THE RADIUS TABLE: engine reach is centre-to-target-EDGE; table right to 0.1-0.35 for cannon/x_bow/tesla/ice_wiz, but drawn rings + reward P-terms use bare reach -> 0.5-1.0 tiles short. Princess tower first shot 8.48 edge (>= acquisition), table 8.0, wiki 7.5.
+- (c) lingering zones NOT in the bridge's effects (23,169/23,169 frames effects==projectiles). (a) recorder dropped target/timers/ability/level -- one-line recorder change + re-record recovers them.
+- (b) kind 14 = "cannot act" (also flips on frozen/knocked bodies), not only deploying -- the policy obs deploying channel inherits this.
+- Not wired to the live env yet (next: one render call per decision on EngineMatchEnv; ghost staleness marker).
+
+## L62e -- 2026-09-05 18:0x UTC -- first PPO on the real engine launched (owner order)
+- Pair live 17:49:44 UTC: control kl 0 (PID 31628, port 38031) vs KL-to-frozen-init 0.3 (PID 54320, 38032), seed 41, same tag sequence, from bc_bias_native_s0 (m0 checkpoint reproduces the init exactly 15.44/46.61, 15.00/43.51).
+- (a) FINDING: bcA-style critic warm-up on the SHARED trunk moved both arms ~1.15 nats cell-KL from the init before any policy gradient (control raw p99 13.6 vs init 6.3 at m=48); the KL arm recovers to 0.08 within 3 updates. Kept running (shared drift, coef still the only difference). --kl_in_warmup added for re-runs; trunk-frozen warm-up parked.
+- (a, contended) ~12 s/match/arm -> m250 ~18:40 UTC, m500 ~19:30, m2000 ~00:30-01:30 UTC Sep 6. Free RAM 2.2-2.5 GB with both trainers.
+- Owner (18:2x UTC): "reverse engineer the remaining features [buffs/zones], you have my permission" -> RE agent dispatched, host-only phase (static on the 5ax dump + bridge patch + build), VM phase after the pair; generic buffs[] / area_effects[] export is the target, not 7 separate hunts.
+
+## L62f -- 2026-09-05 18:4x UTC -- m250 grade separates the arms; bridge RE done
+- (a) m250 pro agreement (read_ckpt, both val sets): control kl 0 = 11.25/32.97 (v1), 10.95/33.53 (v2) -- DOWN 4.2 top1 / 13.6 top5 from the init, bcA's collapse on schedule. KL 0.3 = 16.73/44.02 (v1), 16.28/42.69 (v2) -- top1 ABOVE the init (+1.29/+1.28), top5 held, rails lower (p99 8.9 vs 9.6). Arm gap +5.48 top1 / +11.05 top5. Not pinned, not collapsed.
+- (a) The control loses the low-frequency cards first: rocket 1.9/18.9 vs KL 13.2/32.1, tornado 1.4/5.6 vs 2.8/22.2.
+- Limits: one checkpoint, one seed, one coef; the across-seed band is unmeasured; the arm gap is far outside any plausible band, the +1.3 top1 rise is not. m500 ~19:30 UTC.
+- (a/c) Bridge RE (owner-authorised, static only, sandbox commit 81e5dff): area effects are the 3M global-id series, NOT 4M -- the v1 gate was listing projectiles twice, which is exactly §5cs.43's effects==projectiles measurement, reached independently. No freeze/stun flag exists: "frozen" is a buff with -100 HitSpeedMultiplier, so a generic buffs[] export is the only faithful one. Buff manager = component[3], instance 0x70 B with remaining/total ms; AEO vtable <addr> with side/x/y/elapsed/life/radius.
+- v2 bridge built (9b63a7a0) but artifacts/ deliberately restored to v1 (82887463, verified) -- the worker pool redeploys by hash on service start and would restart the live trainers. Verification runbook re_verify_bridge.py written, NOT run.
+
+## L62g -- 2026-09-05 19:1x UTC -- RETRACTION: the play gate collapsed; pair killed and relaunched with the pro gate prior
+- Owner watched engA_kl_m253 in sim-view and said it rarely plays. (a) Measured, same instrument (sim, greedy, tau 0.25), 16 matches: init 36.2 plays/match, p(play) max 0.63, crosses tau 22% of decisions; ctrl_m250 1.12 plays/match, max 0.34, 3.6%; kl_m253 **0.12 plays/match, p90 0.2325 max 0.2326, crosses tau 0.0%** -- the gate is a near-constant parked under the threshold. Not masking: 4.0 affordable cards at 100% of decisions (init 1.11 at 59%), plays at 9.5 elixir. 9 of 10 cards never played.
+- (c) RETRACTION of L62f's reading: read_ckpt scores the per-card CELL map conditional on a play and never touches the gate, so it graded the aiming of a policy that does not shoot. The arm gap stands for the cell heads; "KL arm beats the init" does not stand as a claim about play. TRAP: every conditional metric needs an unconditional companion.
+- (b) Cause, and it is my design error: engine_ppo.py dropped ppo_gate_prior_coef 2.0 as "doctrine/scaffold". It is not doctrine -- it is a Bernoulli CE on the GATE HEAD ONLY toward the pro P(play | elixir, phase) table fit from 519 replays / 23,620 plays. bcA had it. The engine run changed environment AND removed the scaffold: two changes.
+- Kill (owner ruling): both arms at m=422, taskkill on 4 PIDs, python procs 7->3, crawler/Nucleo/qemu untouched, free RAM 2.4->8.6 GB, engA checkpoints kept as evidence.
+- Relaunch engB: gate prior 2.0 in BOTH arms (kl_coef 0 vs 0.3 still the only variable), new prefixes/logs, new p_gate / frac_gt_tau / gp_ce readouts in the update line so a collapse is visible next time. Not bundled: explore floors, warm-up fix, kl retune.
+
+## L62h -- 2026-09-05 19:5x UTC -- engB relaunched with the pro gate prior; the gate is alive
+- (a) Update 1, BOTH arms identical (determinism check: same init/seed/ghosts, only kl_coef differs): p_gate 0.2157, p90 0.3815, frac_gt_tau 0.3208, gp_ce 0.5050, gp_target 0.0784. Killed engA KL arm was frac_gt_tau 0.0000.
+- Patch verified offline by the agent: gate-head-only gradient (gate |grad| 33.93, card_head/cell_conv grads None), lookup unit check 27/27, coef 0.0 byte-for-byte equal to the pre-patch file, m0 reproduces the init exactly (all 27 model + gate tensors torch.equal).
+- (a) Calibration: a gate MATCHING the prior sits at frac_gt_tau ~0.05-0.10 (only 8.14% of the table's 212,265 windows exceed tau; the largest single-elixir entry is 0.2033 < 0.25). So the number should FALL and settle there; alarm stays "heading to <=0.02". The prior's real job is restoring STATE DEPENDENCE (targets span 0.010-0.459).
+- (b) Unfixed by design: the table is fitted at dt 0.6 s, engine_ppo decides every 0.5 s (~20% more plays/s than pros). Same in both arms, does not confound. Parked.
+- THREE launch failures, all recorded as traps: (1) my taskkill /T on the engA trainers killed the in-guest WORKER SERVICES too -- restart them before any launch; (2) a multi-line `python -c` preflight mangled by Windows arg passing; (3) that preflight then reported a FALSE death (observe() with no battle -> IndexError) while the service was healthy -- a liveness probe must exercise the caller's own path.
+
+## L62i -- 2026-09-05 20:1x UTC -- owner's 432->576 grid claim TESTED: contradicted, and 576 would cause the failure
+- (c) 432 does NOT snap x-bows back a tile. Measured on all 2,617 real pro x-bow placements through the trainer's own ActionSpace: row pitch 0.499 tiles (NOT 1.333 -- the grid spans 19.7 tiles, not 32; actions.py's "one cell per board tile" docstring is stale), mean |dy| 0.097, p99 backward 0.304.
+- (c) 576 would NOT fix it and makes things worse: pitch 0.374, mean |dy| 0.289 (3x worse), mean backward -0.155.
+- (a) FUNCTIONAL test, 240 pro x-bows within 13.0 tiles of an enemy princess tower: 432 puts 0 out of reach (worst distance added +0.000); 576 puts 132 of 240 = 55.0% OUT of reach. Cause is PHASE not resolution -- pros place on the half-tile lattice, 0.499 aligns with it, 0.374 does not, and an offensive x-bow sits AT the range boundary.
+- (b) The observation is real but the cause is elsewhere: it was seen on engA_kl_m253, the COLLAPSED checkpoint (0.12 plays/match, cell head 1+ nat off the pro prior). At 0.499 tiles/row a ONE-CELL policy error is ~0.5 tiles = exactly the symptom.
+- (b) Phase-preserving alternative if finer control is ever wanted: 48 rows = 0.25 tiles (864 cells), still on the half-tile lattice. Not now -- n_cells is baked into the BC init, both val sets and every checkpoint, so a grid change is a full IL re-fit, not a flag.
+
+## L62j -- 2026-09-05 20:1x-20:4x UTC -- engB m250 graded on three instruments (HANDOFF §5cs.49)
+- read_ckpt: engB control 7.47/26.79 (v1) 6.83/26.86 (v2) -- collapsed FASTER than engA's control (11.25/32.97); engB KL 16.33/44.02 / 14.25/42.76 -- at the init (15.44/46.61, 15.00/43.51), not above it. Arm gap +8.9/+17.2 (v1), driven by the control's fall.
+- Gate ALIVE both arms: engine p_gate 0.058-0.085 vs gp_target 0.09-0.11, p90 0.10-0.16, gp_ce flat 0.30-0.35; sim probe p50/p90/max 0.152/0.201/0.245 (ctrl) 0.194/0.241/0.318 (KL) -- state-dependent, unlike engA's constant 0.2325.
+- Under the deploy rule tau 0.25: control 0 plays/710 decisions, policy-stats 0.1 plays/match; KL 1.5/match (policy-stats, 16 m) vs 21/match (gate_probe, 3 m) -- same rule, 20x swing = tau sits at the gate's p92-95, threshold decides, not policy.
+- RETRACTION: the §5cs.47 alarm "frac_gt_tau < 0.02 = prior failed" was wrong -- only 8.14% of pro windows exceed 0.25, a working prior produces exactly that. Diagnostic = p_gate vs gp_target + p50/p90/max spread.
+- BC init on engine boards (live_view selftest, agent): p(play) mean 0.47, 87% > 0.25 -- 4x the pro rate; it looked active because it was miscalibrated.
+- Owner question posted: deploy rule -- sample the gate (rec.), calibrated tau ~0.10, or keep 0.25. Not changed.
+- Visualizer agent restarted (accidental stop) -- resuming from live_view.py + template + payload; artifact not yet published.
+- Next: m500 grade ~21:15 UTC (same three instruments); publish the live artifact when the agent returns.
+
+## L62k -- 2026-09-05 20:4x-21:1x UTC -- deploy-rule ruling applied + live engine visualizer published (HANDOFF §5cs.50)
+- Owner: "(1) sample the gate; if that doesn't work try (2) tau ~0.10". New src/clashrl/gate_rule.py (ONE GateRule for sim_view, policy_stats, cli drill helper, gate_probe); config sim.ppo_gate_rule: sample; play.py + sim trainer greedy bench untouched. 15/15 sim_view tests; threshold path reproduces §5cs.49 exactly (63 plays).
+- Under SAMPLE (sim, 16 m, seed 4242): init 36.6 plays/match, engB control m250 17.2, engB KL m250 24.5 (were 0.1 / 1.5 under tau 0.25). Only rocket never played (was 9 of 10 cards). Sampled p(play) lower (0.12 vs 0.19) because the policy spends -- gate is elixir-conditioned.
+- Visualizer agent restarted from disk, finished: artifact https://claude.ai/code/artifact/3aca72fa-8f09-40e9-9d59-65c0dc2e03d2 (3.74 MB, 5,268 frames, 527 decisions, radii/fire ring/P1 band/terms/gate/ghosts); live_view.md §1-6 STATUS complete. (c) sim_view HUD says 3x from 180 s; engine says 240 s (display-only).
+- Next: m500 grade under SAMPLE (threshold column kept for comparison to §5cs.49).
+
+## L62l -- 2026-09-05 21:2x-21:5x UTC -- engB KILLED; engine-PPO closed; HANDOFF split (HANDOFF §5cs.51)
+- m500 grade: control 6.87/22.21 (rails frac>8 0.262, p99 18.0 -> 31.25 in the train log at m602) -- degenerating and accelerating. KL 15.64/45.12 v1, 14.03/42.69 v2 -- flat vs init 15.44/46.61 across m0/m250/m500.
+- VERDICT: 4 arms, ~1,500 engine matches, the unshaped engine reward has produced NO measured gain in pro agreement. The leash defends the init; nothing improves it.
+- Owner live-play report tested: "hasn't changed" (a) TRUE + expected; "sloppy/wastes cards" (a) expected at 15.6% top-1; "throwing on purpose" (c) contradicted, no mechanism. Caveats (b): live obs comes from the screen detector, and play.py still uses the tau-0.25 rule. UNRESOLVED: which checkpoint file was loaded.
+- KILL (owner ruling): taskkill shims 40540/72932 + children 56708/71976, 45856/46364. python 7 -> 3, guarded survivors alive (29444/53824 crawler, 63608 uvicorn), qemu 54304 UP with both slots FREE, free RAM 2.4 -> 5.0 GB.
+- NEW TRAP: `_latest.pt` is written only at save_every crossings -- engB_*_latest are byte-identical to m500/m502 and the weights from m500->m609 are gone.
+- HANDOFF.md 12,879 -> 2,325 lines (1.1 MB -> 269 KB), LOSSLESS: old §3 run state, the §5a..§5cs.42 narrative and 270 lines of stale header stack moved verbatim to HANDOFF_ARCHIVE.md (10,800 lines) with a 150-entry index; new compact header + §6 top-of-queue block. Backup scratchpad/gauntlet/L62/HANDOFF_prespllit_backup.md.
+- Next: awaiting the owner's new gauntlet; box idle.
+
+## L63 -- 2026-09-05 22:0x-22:3x UTC -- NEW GAUNTLET (square one, research, propose); owner's "BC overfits" premise tested (HANDOFF §5cs.52)
+- (c) "BC / IL overfits": bc_bias_native_s0 scores 17.62/48.85 on its OWN TRAIN rows vs 15.44/46.61 val (v1; CE 3.26 vs 3.52, H 3.47 nats over ~188 legal cells); on v2 val 15.00 > train 14.09. It underfits: misses the pro cell on 82% of the boards it was fit on, +1.8 over the board-blind histogram (13.65).
+- (a) The legal-placement mask forbids the pro's cell on 3.0-5.1% of rows (train higher than val); cause untested (b). New pipeline must validate its mask against the corpus first.
+- Research fan-out: 5 background agents -> scratchpad/gauntlet/L63/{lit_game_ai,cr_prior_art,recent_2025_2026,assets_audit,lessons}.md, incremental, STATUS line marks done.
+- Five owner questions posted with --questions (live-path guardrail, engine in/out, which ckpt was played live, budget/cloud, grading ladder). Proposal next loop after answers + agent files.
+- Box: nothing training; python 3 (crawler x2 + uvicorn), qemu UP, free RAM 3.9 GB.
+
+## L63b -- 2026-09-05 23:1x UTC -- proposal posted, STOPPED for approval
+- Artifact: https://claude.ai/code/artifact/0e57cffe-d199-46c2-b39c-5922032b6821 (src scratchpad/gauntlet/L63/proposal.html); HANDOFF §5cs.53.
+- Five stages, pre-registered gates: S0 obs contract + corpus rebuild (613 x/y replays, ~3x) + mask <0.5% + scripted bot in engine; S1 imitation v3 (token transformer, full-res head; gate train>17.6, val>15.44+band, 3 seeds); S2 corpus x3->x10 (crawler + detector-as-IDM); S3 engine search teacher + DAgger supervised distillation (no PG); S4 live layer (reranked top-k, live matches re-driven for the teacher). Owner grades live.
+- Diagnosis carried forward (a): underfit board-blind model (17.6/15.4, cos 0.991), PG no gain in 4 arms, sim 26% vs engine 78%, live 1.3%/957.
+- Questions: approve; live-grading mode + block size; crawler stalled on Cloudflare clearance since 17:16 UTC (restart?); cloud for S3.
+- Box: nothing training; python 3; qemu UP, guest services dead.
+
+## L62m -- 2026-09-05 22:0x UTC -- wave-4 crawl finished unattended; corpus measured (HANDOFF §5cs.54)
+*(out of order: written by the L62 close-out session while the new session was already on L63/L63b; renumbered from §5cs.52 after the collision -- see the trap in §5cs.54)*
+- Crawl DONE: 565 new replays in 478 min, exit 0; both crawler PIDs exited. Box now has ONE python (owner's uvicorn). Nothing training, nothing crawling.
+- Corpus: 1,253 battles, 1,237 with plays, **625 (49.9%) with x/y**; 109,963 play rows, 54,148 (49.2%) with x/y; opponent decks 781 raw but **435 usable**. Owner's bar is >1,000 decks -> the real gap is 435->1,000, not 781->1,000.
+- Reading: the x/y-less half is the binding constraint on both board count and deck pool, and has been ~50% across waves. Cheapest next measurement is WHY (untested), not another wave.
+- No experiment run; no re-fit attempted; BC init on disk unchanged.
+
+## L63c -- 2026-09-06 01:5x UTC -- APPROVED; rulings recorded; S0 step 1 done (engine services back, verified)
+- Rulings (§6): approved as written, hogeq inherits everything; live grading = ladder 10,000 trophies, 20-match blocks, EMA, no learning; crawler login when a session is re-opened (wave 4 actually finished 00:44 UTC -- "stalled" was (c)); Hetzner AX162 is $1.16/h or $700+/mo live (my $283/mo was stale, (c)).
+- S3 compute estimate (b, §5cs.55): ~400 slot-hours incl. margin; box alone ~9 days of engine time; GCP $300 trial covers it at any density -> recommend GCP, sign up at S3 start.
+- Engine: services were [false,false]; boot from Bash fails 6/6 (GNU tar reads C:\ as a host) -- TRAP; native PowerShell attempt 1 ok. Liveness via replay_drive on both slots == L61 reference (hash d0874ff2026fa69e, 121/121, 4.4 s).
+- Concurrent-session trap: old L62 gauntlet session wrote §5cs.54 during L63b; owner should close it.
+- Next: S0 step 2, the shared observation contract (engine schema + detector schema -> one obs_builder), then corpus rebuild for both decks.
+
+## L63d -- 2026-09-06 03:0x UTC -- S0 step 2 done: shared obs contract (new pipeline/ package), 19 tests OK
+- Audits: engine obs schema + live path (obs_audit_engine.md, obs_audit_live.md). NO live recording has ground truth; nothing logs tag/battle time -> engine re-drive of live matches impossible from disk (a). Live gate: deployed policy_rl.pt has no algo key -> legacy Q(wait)>=Q(play), the sampled rule never applied live (a, new). Two live gaps new to HANDOFF (no warp on Vision; rl_gate_tau ignored).
+- pipeline/: vocab 232 (230 detector + 2 engine-only), 122/122 cards mapped, sub-spawn thresholds measured (mother_witch hog (b)); BoardState + from_engine/from_live/degrade(0.855/0.886)/to_tokens; 19 unittest OK; independent sweep 161,336 conversions 0 unmapped 0 out-of-range.
+- (c) building kind 12 != deploying: 22% of kind-12 building rows damaged.
+- Stale sessions messaged (ruling 5); clashbot-c9 idle-confirmed. Owner ruling 6: cleanup loop before S1.
+- Next: S0 step 3 corpus rebuild both decks (needs --crawl on replay_drive), step 2b own-click test in parallel.
+
+## L63e -- 2026-09-06 02:5x UTC -- S0 step 3 LAUNCHED: corpus rebuild both decks through the engine, per-play recording
+- replay_drive.py: L61 per-play recording promoted in (--record-plays), --crawl <deck>; replay_batch.py: --crawl/--out/--record-every/--record-plays. Smoke: icebow 000YLY0JCPGL hash == batch_v2 (d0874ff2026fa69e), 121 play_frames; hogeq first tag drives.
+- Tag lists: icebow 619/1,253 fully positioned (54,142 plays), hogeq 296/598 (24,668 plays). EB-evo replays included (engine refuses cleanly).
+- Running: corpus_v3/icebow (37031, ~13 s/replay, ETA ~2 h), corpus_v3/hogeq (37032, ~8 s/replay, ETA ~40 min). Step 2b own-click agent dispatched.
+- (c) machine sleep as the cause of the 3 lost nights: 0 sleep/wake/boot events in 4 days of the System log. Cron :23/:53 added as second trigger.
+- Owner rulings: CR_ENGINE_EXTRACTION_REVIEW.md deleted; README rewritten (74a3e80).
+
+## L63f -- 2026-09-06 03:1x UTC -- S0 step 2b DONE: own-click contract test on 276 real human plays (4 sessions, 17,336 detections)
+- Recall of the placed unit within 1.5 s: same class 0.81 (hogeq 0.55 = class confusion on icebow's detector), any new detection 0.97. x error 0.29 tiles median (unbiased); troop y biased -0.73 tiles (box centre != feet) -> FIXED in from_live (fy = gy + 0.25 h). Conf p50 0.835 (uniform(0.35,1) contradicted); unknown-team 0.25; own units tagged enemy 30%, own spells 42%.
+- degrade() recalibrated: conf mixture, sigma 0.45, unknown 0.25, wrong_team_rate {troop/building 0.15 (b), spell 0.40}. 20 tests OK.
+- label.py defects (not fixed, old path): 9.1% of "plays" are tray taps; select-time stamp; river-line snapping.
+- Batches: icebow 132/619, hogeq 150/296 at 03:07 UTC; icebow background task survived the 10-min mark.
+
+## L63g -- 2026-09-06 04:1x UTC -- first hogeq engine numbers; icebow batch 528/619; scheduled triggers did not fire
+- hogeq: 241/296 converted (52 EB-evo, 3 deal-inference), 98.7% plays accepted, det 27/27 SAME, crowns match 56.4% (65.3% even with zero rejections; icebow 80.8%), engine ends early in 36.5% (median 1,008 ticks). (b) level-11 uniform levels vs level-sensitive hog breakpoints.
+- icebow partial: 421/528 converted (103 EB-evo, 4 duplicated-row tags -- TRAP), 99.2% accepted, crowns 76.2%, 211/211 batch_v2 hashes reproduced.
+- (a) wakeup 23:39 + cron 23:53 local did NOT fire while idle; CronList still showed the one-shot at 00:11. Owner's message was the check.
+
+## L63h -- 2026-09-06 04:2x UTC -- Overnight trigger FIXED: timer tasks replace ScheduleWakeup
+- (a) ScheduleWakeup + CronCreate do not fire while idle (3 nights). (a) A background `sleep 60; echo WAKE` task's exit re-invoked the loop within seconds (task b4t2fo0uo, exit 0).
+- Rule written into .claude/commands/gauntlet.md §4 and HANDOFF §7: end every loop on a timer task (N<=570 s under the Bash cap, chain for longer); long batches stay background tasks. ScheduleWakeup allowed only as a free second trigger.
+- Icebow batch 592/619 at 04:19 UTC; 8-min fallback timer armed (bhlc02vvv).
+- Icebow batch DONE (exit 0): 493/619 converted (120 EB-evo, 6 dup-row tags), 41,015/41,338 accepted 99.2%, crowns 76.9%, early-end 22.9%, det 49/49, 177.6 MB. S1 corpus = 734 replays. Next: cleanup loop (ruling 6), then S1 dataset build.
+
+## L64a -- 2026-09-06 05:1x UTC -- cleanup loop done + S1 dataset builder
+- Cleanup (ruling 6): scratchpad 1.1G -> 557M, 3,297 files deleted after zip backup (ClashBot_archive/scratch_2026-09-06.zip, verified); data/ untouched. TRAP: agent-staged deletions rode inside commit 9adc967 (lead's commit sweeps the index) -- subagents never stage.
+- pipeline/dataset.py: icebow 21,687 play + 56,590 wait rows / 493 replays; hogeq 9,797 + 23,421 / 241. Hand on wait rows reconstructed exactly from hand_before of the next accepted play. 24 tests OK.
+- Next: S1 model + trainer, board-blind baseline on the same val rows first.
+
+## L64b -- 2026-09-06 05:0x UTC -- S1 first run DISCARDED (row-format leak), datasets rebuilt, 6 seeds relaunched
+- Leak (a): gate bal-acc 0.98 came from play frames carrying kind->deploying + effects that compact wait frames lack. Fix `_as_compact`; after it token cols 8-13 identical (0.000) across row types, both decks. Leaked log kept as LEAKED_train_icebow_s0.log (tile 16.8% best -- NOT an S1 number).
+- Rebuilt: same row counts (icebow 21,687/56,590; hogeq 9,797/23,421); 24 tests OK; baselines identical (icebow tile 8.90%, hogeq 11.45%).
+- TRAP: TaskStop on a bash chain leaves the script's bash + python alive (advanced to seed 1) -- kill the PID tree and verify.
+- Running: run_seeds.sh (icebow s0-2, hogeq s0-2, 20 ep) ETA ~1h45. Next: icebow finals, gate sanity (<0.98 expected), then re-score old trunk on new rows.
+
+## L64c -- 2026-09-06 05:2x UTC -- RETRACTION of 5cs.48 (grid pitch), old init re-scored on S1 val, S1 seed 0
+- RETRACTED (a): L62i measured the LIVE ActionSpace (frame fractions x32) -> phantom 0.499 pitch. Trainer grid (_board_action_space): 432 = 1.333 tiles/row (owner was right), 576 = 1.000 with ZERO snap error on 2,657 pro x-bows; 432 max backward snap 0.5 tiles, 0/242 in-reach x-bows lost at either grid (owner's "one tile back / out of reach" still contradicted in magnitude).
+- Old init on the same 3,796 S1 val plays (a): 432 grid 13.70/41.73 (clean 2,072 rows 13.13/41.51; 37/85 val replays were in its train split); 1-tile bins 6.69%.
+- S1 icebow s0 (a, one seed): val tile 18.1% / half 15.4% (baseline 8.9/8.5), card 59.2%, gate bal-acc 0.715 (leak gone), emb cos 0.20. Matched grid: 1-tile new 17.3 vs old 6.7; old's 432 grid new 12.5 vs old 13.7 (clean 13.6 vs 13.1); miss distance mean 4.07 vs 5.28 tiles.
+- Monitor events also re-invoke the loop (a). Next: 3-seed bands per deck (~06:45 UTC).
+
+## L64d -- 2026-09-06 05:5x UTC -- seed 1 agrees; engine play harness for the S1 model
+- icebow s1 (a): val tile 18.34 / half 16.15 (s0: 18.12 / 15.36); old's 432 grid 13.28 vs old 13.70 (clean 14.29 vs 13.13). Band waits on s2.
+- pipeline/engine_play.py (a): S1 model on the real engine vs L62 ghosts; 2-match smoke 1W-1L, 45/47 plays accepted, 8.8 plays/min (pool humans 10.9), deterministic. 3 offline tests OK.
+- Traps: engine refuse code 13 = no elixir (engine_env retry keys on 1050 only); pool entry 02GY9R09LU8J 3-crowns us by t=70 s even with no plays -> 500-match run needs a no-plays control per tag.
+
+## L64e -- 2026-09-06 06:2x UTC -- icebow band closed; no-plays control; L64d trap (2) withdrawn
+- icebow 3 seeds (a): val tile 18.12/18.34/18.20 = 18.22 +/- 0.11 (baseline 8.90); half 15.99 +/- 0.57; card 59.26; gate bal-acc 0.70. Seed 2 best at epoch 20 (schedule maybe short, untested).
+- Old init on its 432 grid (a): ahead of all 3 seeds on all rows (13.70 vs 12.54-13.28) but 37/85 val replays were in its train split; on the 2,072 clean rows all 3 seeds ahead (13.61-14.29 vs 13.13). Miss distance 4.07 vs 5.28 tiles every seed.
+- `--gate none` control (a): passive icebow loses 0-3 at 61 s (099P9CL8L2QJ, the entry the model beat 2-1) and 70 s (02GY9R09LU8J). WITHDRAWN: L64d's "pathological entry" -- undefended = dead in a minute, any entry. Engine reads must be deltas vs the per-tag control. engine_env ghost retry now also keys on code 13.
+- hogeq s0-2 running, ETA ~07:00 UTC.
+
+## L64f -- 2026-09-06 07:5x UTC -- hogeq band closed; first engine read with controls
+- hogeq 3 seeds (a): val tile 21.30/20.58/21.08 = 20.99 +/- 0.36 (baseline 11.45), half 19.26, card 54.91 (42.32); value acc 53.7 (icebow 69.8; crowns mismatch suspected, untested). Best epochs 20/11/18.
+- Engine, icebow s0 ckpt, 100 paired pool entries (a): threshold 75W-25L, sampled 68-32; no-plays control 0-100 (91 s), rate-matched random policy 0-100 (130 s). Model survives +115 +/- 5.5 s on 100/100 entries, crowns against 0.86 vs 3.00. Model win rate identical on entries the pro won (75%) and lost (76%); all 100 engine-terminated.
+- Not established: reactive opponents; old init on this instrument; checkpoint variance (s1 ckpt in flight). Harness: --policy random added.
+
+## L64g -- 2026-09-06 08:5x UTC -- engine checkpoint band closed; rate-matched random buried
+- 3 icebow ckpts x 100 paired entries (a): 75-25 / 71-29 / 71-29, survival +115/+112/+112 s over no-plays (SE ~5.3), crowns against 0.86/0.93/0.86. Val-tile order does not predict engine order; indistinguishable at this n.
+- Random p 0.13 (a): 15.2 plays/min, 7.7 accepted/min, 3W-97L, +44 s. Survival per accepted play ~5.7 s random vs ~11.8 s model.
+- TRAP (a, subagent): 38031/38032 are the direct doors of the SAME two engines as 37031/37032 -- two slots, not four.
+- Next: hogeq on the engine (pool subagent in flight), then S2/S3 per Square One.
+
+## L64h -- 2026-09-06 08:3x UTC -- the x/y-less half was a crawler join bug; re-fetch launched (2.0x positioned corpus)
+- (a) x/y all-or-nothing per replay (icebow 619/612/6 partials, hogeq 296/295/4); no battle field separates the halves (mode, date, rating, player, wave all ~50%). Cause: `data-i` is a per-replay flag; crawl join keyed on it and only looked up "0". Fresh fetch of an uncovered tag: 109/109 markers, all i=1.
+- (a) i=1 half is the other seat's frame (team median tile_y 13.5 vs 18.5) -> rotate (18-x, 32-y) at corpus build; handedness (b), check per-card x histograms after the re-fetch.
+- Re-fetch running (refetch_i1.py, 615 + 299 tags, saved token accepted, raw payloads now kept). Expected: icebow 619 -> ~1,237 positioned replays, hogeq 296 -> 595. Next: hogeq engine read, then corpus v4 + S1 re-run as the data-scaling measurement.
+
+## L64i -- 2026-09-06 09:4x UTC -- hogeq engine band 53/19/44; tau decides the outlier; rotated i=1 half passes first fidelity test
+- (a) hogeq, 100 paired ghost entries seed 0, threshold tau 0.5: s0 53-47 / s1 19-1-80 / s2 44-56; random p0.13 18-82; no-plays 0-100. Survived longer 92/94/93; crowns against 1.40/2.06/1.46 (no-plays 2.87).
+- (a) outlier s1: 17.4 accepted plays/match vs 26.8/24.9, p_gate median 0.361 vs 0.352/0.356, p90 0.484/0.493/0.491, frac>tau 0.059 vs 0.083/0.077; hog 174 vs 293/253, earthquake 52 vs 179/120, elixir at decision 8.73 vs 8.0/8.2. (b) tau decides -> smp_ck1 (same ckpt, --gate sample) running on 37031.
+- (a) rotation of the re-fetched i=1 half (18000-x, 32000-y units), first 80 hogeq tags driven: 64 ok, winner agreement 41/64 = 64.1% (v3 67.2%), accept 97.6% (98.7%), exact crowns 43.8% vs 56.4% (b, n=64), terminal_vs_last_play median -101 vs +120 (b). Handedness: blue tesla left-fraction 0.224 vs 0.279 (mirror would give 0.776) -> rotation confirmed.
+- Re-fetch hogeq 260/299; icebow attempt died on the Cloudflare check, connect() hardened, relaunch after hogeq. replay_drive.py: PLAYS_FILE/set_plays_file + rotation on load; replay_batch.py --plays-file.
+
+## L64j -- 2026-09-06 11:1x UTC -- hogeq band closes under the sampled gate; i=1 half verified; one re-drive trap
+- (a) --gate sample, same 100 entries: s0 85-15 / s1 79-21 / s2 84-16 (sd 3.2) vs threshold 53/19/44 (sd 17.6). Accepted plays/match 32.9/27.4/30.5; mean elixir at decision 3.4; first play 7 s. Rate-matched random p 0.18 (25.0 plays/match): 15-85. RETRACTED: "s1 is the outlier" -- the tau 0.5 rule was. hogeq engine instrument = sample from here.
+- (a) i=1 hogeq half: re-fetch 275/299 (24 RateLimited skips, resumable); drive 222/274 ok (52 evo-card failures, same as v3); winner agreement 65.3% vs 67.2%, acc 98.0 vs 98.7, exact crowns 54.5 vs 56.4; y offset 0.008 tiles over 97 cards -> rotation exact. (b) engine ends before last real play 52% vs 36.5%; hogeq halves differ in real 3-crown rate 17.3% vs 8.1% (icebow halves equal).
+- TRAP: chained drive lacked --record-every 20 -> no wait frames -> v4 would have had 0 new WAIT rows. Deleted; re-drive with v3 flags running (165/274), corpus_v4 + S1 x3 (--tag v4) chained; eval_s1.py reads v3 and v4 checkpoints on the same val rows (reproduces 0.2130).
+- Crawler source fix applied + verified (10/10 payloads identical to the refetch parser). icebow re-fetch 283/615.
+
+## L64k -- 2026-09-06 12:0x UTC -- S1 label trap: floor grid on the pro lattice; naive v4 mixes conventions; `--grid lattice` shipped
+- (a) crawl x/y are 500k or 500k-1 at random for the same point; floor(x*36) puts the lattice ON cell boundaries -> 126/455 hogeq lattice points carry two labels, 71.8% of rows jittered; rotation of the i=1 half flips the side. Naive v4 s0 on v3 val: tile 0.2328 (v3 0.2130) but cell_half 0.1365 (0.2003), NLL 4.18 (3.90). Engine inverse was 250 units off the lattice.
+- (a) fix: model_v3 cell_label/tile_of_cell/cell_xy, train_s1 --grid lattice (stored in ckpt args), eval_s1/engine_play honour it; floor path byte-identical (s1_hogeq_s0 0.2130/0.2003/3.899 reproduced); lattice round-trip 0.000 units; 0 points with two labels.
+- Running: naive v4 x3 to completion (record), chained v3-lattice x3 -> v4-lattice x3 (ETA ~14:00 UTC); icebow i=1 chain armed. Next: lattice bands, then a lattice checkpoint on the sample-gate engine instrument vs 85/79/84.
+
+## L64l -- 2026-09-06 13:5x UTC -- first clean S2 scaling point: hogeq v4-lattice vs v3-lattice
+- (a) v3 val 6,133 rows, 3 seeds each: v3 lattice 20.91/21.02/21.08 (21.00 +/- 0.09), NLL 3.611; v4 lattice 22.84/21.90/22.95 (22.56 +/- 0.58), NLL 3.407; card 57.8 vs 55.0, gate bal 66.6 vs 61.1, value 57.9 vs 55.1.
+- (a) convention-free within-1-tile: v3 floor 26.99, v3 lattice 28.30, naive v4 floor 29.33, v4 lattice 30.76; mean miss 4.65 / 4.59 / 4.41 / 4.28 tiles. Convention +1.3 pp, data +2.5 pp, additive.
+- (a) naive v4 record: floor tile 23.10 +/- 0.32 but cell 13.36 / NLL 4.18-4.24 -- the trap, not a scaling number. Trap: lattice cell_tile == cell_half; never in a column with floor tile.
+- Running: smp_v4lat0 engine read (27/100) vs 85/79/84; icebow i=1 drive 407/560 -> fidelity/handedness -> corpus_v4/icebow -> lattice bands.
+
+## L64m -- 2026-09-06 14:2x UTC -- v4-lattice engine screen (null), icebow i=1 half graded, icebow lattice chain launched
+- (a) s1_hogeq_v4lat_s0 under --gate sample, seed 0, same 100 entries: 82 W / 18 L vs v3 85/79/84; survival +55.8 s (v3 +57.0/+38.6/+51.0); crowns for +1.99 (v3 2.4/2.4/2.36); plays/match 48.2 vs 56.3. One seed; instrument at 80-85% has no headroom for a 1.6 pp placement gain.
+- (a) icebow i1r: 460/560 driven; winner agreement 74.6% vs 78.5% (i=0), accept 0.9897 vs 0.9922, exact crowns 0.722 vs 0.769, terminal-before-last-play 26.7% vs 22.9%; handedness rotation 7.04 < mirror 8.12, 5/113 cards |z|>3. Second witness for 5cs.69 D.
+- (a) corpus_v4/icebow 953 replays, 147,842 rows (v3 78,277), play share 0.274 vs 0.277, frames present. Chain run_icebow_lat.sh launched 14:04 (v3-lat x3 -> v4-lat x3 -> floor place eval).
+
+## L64n -- 2026-09-06 16:2x UTC -- crawl throughput: per-IP not per-account; the backoff was the bottleneck; a retraction
+- (a) A/B/A, same code/box/backlog, 60 replays per shard: 1 account 5.87 then 6.85 replays/min (mean 6.36); 3 accounts 7.81 combined = 1.23x, each shard only 2.58-2.88/min, 429s 60/48 vs 530 (3.01 per replay vs 1.00). The limit is on the IP. Drift ruled out: A2 > A1.
+- (a) refetch_i1.py slept a flat 120 s per 429 AND dropped the tag: 63%/63%/62% of three runs' wall clock. Fix (crawl_par.py / refetch_par.py): 15 s + re-queue, --stats line. One account 3.44 -> 6.36 replays/min (1.8x).
+- (a) RETRACTION of 5cs.72 E "+457 unfetched icebow battles": 16 never fetched, 52 usable-never-driven, 226 attempted-and-failed; the i=1 backfill is exhausted (4 icebow / 2 hogeq left).
+- (a) crawl expand 300 -> only 228 players (ratings boards had 193 fresh); battles 1,253 -> 2,076; replays_done 1,253 -> 1,572 (+319), backlog 504.
+- Owner asked for rotating IPs if the limit was IP-keyed: declined (circumvention infrastructure; also cf_clearance is IP-pinned so rotation forces a fresh challenge each time). Offered the official API route instead.
+
+## L64o -- 2026-09-06 17:4x UTC -- the S2 scaling result replicates on icebow
+- (a) icebow, same v3 val (6,133 rows), 3 seeds per arm: v3 lattice 18.02/18.18/18.31 = 18.17 +/- 0.15; v4 lattice 19.84/20.02/19.65 = 19.84 +/- 0.19. +1.67 pp per doubling vs hogeq's +1.56. NLL 3.326 vs 3.495, card 62.1 vs 59.2, gate bal 74.5 vs 70.2, value 72.2 vs 69.9. No seed overlap.
+- (a) within-1-tile, both decks: hogeq 26.99 floor -> 28.30 lattice -> 30.76 v4 (convention +1.31, data +2.46); icebow 25.76 -> 28.03 -> 29.95 (convention +2.27, data +1.92). The split is deck-dependent -- icebow's floor labels were the more damaged, so it gained more from the fix. Mean miss 4.65->4.28 and 4.07->3.76 tiles.
+- (b) Two points per deck is not a curve. Next: corpus_v5 (+52 never-driven, +~500 fetched today) for the third point; then the hogeq roster past PLAYERS_CAP=50 (expand ported to crawl_deck.py, backup in scratchpad).
+
+## L64p -- 2026-09-06 18:5x UTC -- icebow crawl complete; my CSV writer had shifted every new plays row; corpus_v5 drive + hogeq expansion launched
+- (a) crawl: 2,073/2,076 fetched, one account, fixed backoff. 2,019 usable tags, 953 in corpus_v4, 845 never driven -> v5_tags_icebow.json. RETRACT §5cs.72 E "+457 unfetched": 16 unfetched / 52 undriven / 226 driven-and-failed.
+- (a) bug, mine: crawl_par wrote 13 fields into 12-col plays_ext.csv (attr_i in the middle) and duplicated "plays" in battles rows -> drive KeyError on all 793 new tags. Repaired (_repair_csv_L64p.py, .bak_L64p kept): 63,925 rows moved to plays_ext_i1.csv in its own order, 801 battles rows trimmed. Probe drive 3/5 ok, both failures known classes. crawl_par now reads the live header.
+- (a) launched: corpus_v5 drive 845 tags (29 done: 26 ok / 3 no-native-evolution, ~10 s each, ~2.3 h); hogeq expand --expand-to 300 (54/115 walked, 700 battles). (b) corpus_v5 ~1,450-1,700 replays = x1.5-1.8, not a doubling.
+- (a) shipped c9aa461: engine_play --record-every, match_video.py, daily_clip.sh. Two render bugs found from stills (mirror, tower test).
+
+## L64q (2026-09-06) -- rich renderer, owner request
+- Owner: clip "very blank". Rebuilt match_video.py: labels, hp, attack/aggro rings, target lines, labelled projectiles, tower ranges, elixir/hand/gate/log HUD. engine_play.vis_raw() records the extra fields; model input unchanged. 0587961.
+- Traps: sandbox csv_logic tables hold no values; cv2 putText thickness changes advance.
+- Box: icebow drive 164/845 (33 fails, all evo E-barbs 26000043); hogeq stage 2 40/355 after a 20-min 429 stall, now ~7/min, left running. L64p report posted.
+
+## L64r (2026-09-06) -- hogeq expansion complete; the CSV shift recurred; renderer at spec
+- hogeq: 953 battles / 79 players, ALL fetched (307 via crawl_deck 63 min + the 48 it dropped via crawl_par 7.9 min, merged). battles.csv 953x29, plays_ext_i1.csv 58,002x13, attr_s/attr_i clean, 944 tags with plays.
+- The L64p column shift RECURRED from crawl_deck.py's own writer (26,720 rows); repaired (.bak_L64q) and fixed at source. Trap: csv.DictWriter never checks fieldnames against the file it appends to.
+- Renderer: --own-forms (icebow pool 433/477 evo-knight), bridges 3 tiles (owner correct), river stays 2 rows (owner contradicted, engine docs + troop positions), towers 3x3/4x4. .gitattributes *.sh eol=lf after the owner's run died on CRLF.
+- Drive 452/845 (363 ok / 84 fail, all evo-E-barb). No training this loop. §5cs.76.
+- CORRECTION (same loop): hogeq's driven corpus is corpus_v4 = 463 tags, not 296 (that was corpus_v3's attempt count); never-driven backlog is 478, not ~648. v5_tags_hogeq.json written.
+- E-barb failure class measured: 0/563 ok replays vs 129/134 failures have an evo-E-barb opponent; 18.4% of the whole icebow crawl. Not skill-biased (rating 2072 vs 2057). Every corpus since v3 is blind to that archetype. §5cs.76 E.
+
+## L64s (2026-09-06) -- waiting on v5; transfer probe written and committed, not run
+- v5 icebow chain: s0 epoch 8/20 at ~221 s/epoch (val cell_half_top1 0.1922 at epoch 8, one seed mid-training -- NOT a result); s1/s2 to follow, ~3 h to ICEBOW_V5LAT_DONE. hogeq drive 233/423 (163 ok / 71 fail: 62 evo-E-barb 26000043, 9 hand-assignment).
+- Wrote scratchpad/gauntlet/L64/idm/_transfer_probe.py (arms A own session / B bridgeblock 640x360 / C upscaled). Two bugs caught before first run: Config is a dataclass (.load), whitelist is 46 BASE keys so compare Detection.base. Counts only -- can falsify transfer, cannot confirm it. Deferred: 2.7 GB free, CPU 100%.
+- Box: python train + sandbox drive; no launches. Commit fcb1c24 (rebased over 2 owner README commits).
+
+## L64t (2026-09-06/07) -- THIRD SCALING POINT: icebow v5 20.93 +/- 0.49; three points on one log-linear line
+- corpus_v5/icebow 1,638 replays -> v5lat x3 on the v3 VAL file (3,796 plays): exact cell 21.42 / 20.94 / 20.44 = 20.93 +/- 0.49 (v3 18.17, v4 19.84); card 63.0, 1-tile 31.9, gate bal-acc 75.7, NLL 3.22.
+- Fit cell = a*log2(n)+b over 493/953/1638: a = 1.60 pp per doubling, residuals -0.04/+0.10/-0.05. Pre-registered: x10 (4,930) -> 23.5 %; 30 % needs ~81k. Log-linear vs saturating not separable at 3 points. Corpus scale alone stays in the low 20s -> S3's argument, now with a slope.
+- Noise: v5 seed sd 0.49 vs v4 0.19; binomial per-seed SE 0.66 pp -- 0.19 was the lucky one. All points share the E-barb-blind filter (18.4 % of the crawl).
+- hogeq drive done: 302 ok / 121 fail (62 evo-E-barb), determinism 32/32. hogeq v5 chain running (b7wv22oz1), expected ~23.7 % on 21.00/22.56 instrument. §5cs.77.
+
+## L64u (2026-09-07) -- hogeq third point: the slope replicates; pooled +1.50 +/- 0.13 pp/doubling
+- hogeq corpus_v5 765 replays -> v5lat x3 on the hogeq v3 VAL file (1,817 plays): 22.51 / 23.56 / 23.56 = 23.21 +/- 0.61 (v3 21.00, v4 22.56). Card 60.3, 1t 31.9, gate 71.4, NLL 3.30.
+- Pre-registered 23.7 (icebow slope); measured 23.21, shortfall 0.5 pp vs per-seed SE 0.99 -- held. Own slope 1.34 +/- 0.20 vs icebow 1.60 +/- 0.17 = 1.0 sigma; POOLED 1.50 +/- 0.13 pp per doubling across 2 decks / 6 corpora / 18 runs.
+- RETRACTED before publishing: "both decks bend the same way" is an artifact -- a 3-point least-squares line ALWAYS has alternating residual signs. No curvature is measurable; a 4th point at 4-5k replays is the only test.
+- Means: x10 predicts 23.1-23.5 (icebow) / ~25.5 (hogeq); corpus scaling cannot reach the high 20s. S3 is next; s3_bench.py is the gate. Box now IDLE. §5cs.78.
+
+## L64v (2026-09-07) -- detector transfer does NOT collapse; the clip is unmineable for other reasons
+- Probe (60 frames/arm, conf 0.25): own session 3.72 dets/frame @0.71 conf, bridgeblock.mp4 2.05 @0.59, 47/60 frames with a detection, coherent class mix. Collapse hypothesis unsupported (a). NOT a recall comparison -- different content.
+- CONTRADICTED my own premise: bridgeblock.mp4 is not a phone screen in a landscape frame, it is an EDITED highlight -- panning/zooming crop, caption overlays, no hand, no elixir bar, never the whole board. Arena magnification is HIGHER than our capture.
+- CONTRADICTED arm C: YOLO letterboxes to imgsz 960 longest side, so the upscale is the same tensor as native. C == B, tested nothing. Both corrections written into the probe docstring.
+- Decides the S2 item: mining needs fixed board->pixel mapping + hand + elixir; this clip has none. Sourcing problem, not a detector problem. With a doubling worth 1.50 pp (§5cs.78), recommended to the owner: skip video mining, go to S3. §5cs.79.
+
+## L65 (2026-09-07) -- HunterCR footage measured; S3 VM live with nested virt; sandbox port scoped
+- Footage GOOD (a): 888x1920 / 592x1280 portrait full-screen, fixed camera, whole board + hand + next-card + elixir bar + the game's own deploy label at the ring. 96 % in-battle (menus cut). My 5cs.79 objection does not apply to it.
+- Footage TOO SMALL (a): 19 matches lower bound, ~34 upper, in 96.7 min (~170 s/match). = +1.2-2.1 % corpus = +0.025-0.044 pp at 1.50 pp/doubling. One doubling needs 78-139 video-hours.
+- TWO counting errors retracted (c): run-gap counter said 1 match/file (menus are cut, so no gaps -- opponent name cycled 4x inside "one match"); the name-change replacement thresholded at 0.12 when real changes measure 0.09. Both were uncalibrated thresholds. Fixed: block-reference mask, 0.02, 2-sample persistence.
+- VM (a): owner hit CPUS_ALL_REGIONS=12 global -- I had read the REGIONAL N2_CPUS=200 and said no request was needed, RETRACTED. n2-standard-8 fits, same core-hours for $300. clashbot-s3 up: 8 vCPU, 31 GB, /dev/kvm, 16 vmx, kvm-ok passes. VM core = 0.79x integer / 0.56x float of a local core.
+- Sandbox portability surveyed (subagent, 177 lines, file:line): real libg.so in a stock AOSP 31 x86_64 AVD; slot 37031 = adb-forwarded port to app_process JniHost. No Windows binary in the path; whole port is ~200 lines of PowerShell + two .exe suffixes; half a day, trap = triple-nested quoting at start_direct_service.ps1:145. Blocker is legal: 1.15 GB non-redistributable runtime -> owner's call.
+- NESTED KVM PASSES (a): stock AOSP 31 x86_64 AVD booted headless in 35 s with worker.py flags, adb root gives uid=0, SDK pull 53 s. Bare-metal-class, not degraded. Zero game binaries used. Throughput still unmeasured (needs the runtime = owner Q2). §5cs.80.
+
+## L65c (2026-09-07) -- Linux port written; riskiest lines tested green with zero game binaries
+- Built scratchpad/gauntlet/L65/port/: start_direct_service.sh, stop_direct_service.sh, worker_linux.patch.py (4 platform branches, idempotent, --check), runtime.env.sh.example. NOT applied -- Windows path drives corpora today.
+- Probe on clashbot-s3 (a): launch nesting delivers CLASSPATH + LD_LIBRARY_PATH intact to the guest; backgrounded proc survives adb session close; service_pids awk matcher finds it; adb forward round trip; push + host/guest sha256 agree. Real launch differs only in which binary is exec'd.
+- VERIFIED not asserted (a): GNU tar 1.34 cannot read an APK (a zip), unzip can -- so the .ps1's tar.exe call (bsdtar) becomes unzip. A mechanical transliteration would have died there. Not in the survey.
+- CAUGHT MY OWN BUG (c): first patch draft wrapped `command = [...]` in `if os.name == "nt":` and stopped, leaving command UNDEFINED on Linux. --check said "4 anchors matched" and said nothing about it. An anchor matching is not a replacement being correct.
+- Unmeasured: engine throughput per VM slot -- needs the runtime, which is behind the owner ruling in 5cs.80 H. Everything cheaper than that ruling is now done. §5cs.81.
+
+## L66 (2026-09-07) -- runtime on the VM; channel = 441.6 h; deck identifier built; the pilot is DISCARDED
+- Owner granted Q2. Runtime uploaded to clashbot-s3: 1.1 GB, libg.so sha256 <libg/sampler hash, local> identical both ends = the version freeze survived. No */data/ included.
+- Channel (metadata only): 1,382 videos, 441.6 h, median 17.0 min. Raw supply exceeds the 78-139 h/doubling from 5cs.80 IF enough is icebow.
+- deckid.py/profile.py: read the HAND (fixed slot fractions, NCC vs 2,174 card templates, evo folded to base). FOUR passes, three wrong: (1) whole-crop dot product compared a card against a zoom of a card -- non-icebow p90 outranked the icebow median; fixed by sliding at multiple scales; (2) evo vs base names; (3) kept only each slot's top-2, so an unmatched card scored 0.000 and a KNOWN icebow video read worst_icebow 0.000.
+- PILOT DISCARDED (c): 12 random videos at 20 s each all scored 0.483-0.545 vs known icebow 0.623-0.634 -- looked like a clean 0/12. Controlled test on KNOWN icebow footage: 20 s -> 0.558, 180 s -> 0.625, 180 s with 20 frames -> 0.625. Slice LENGTH decides, frame count does not. Every pilot clip sat in the regime where real icebow reads ~0.56. No conclusion about the icebow fraction survives. Eyeball agreed: the top "negative" (0.545) shows tornado + rocket + greyed x-bow.
+- Real job shape: stage 1 = one match (~180 s, ~30 MB) per video -> ~40 GB for all 1,382; stage 2 = full download of hits only.
+- Caveat unchanged: a doubling is +1.50 pp, and mined data is not engine-quality -- the slope was measured on exact-state sandbox replays and does not transfer to detector-noisy data by assumption. §5cs.82.
+
+## L66b (2026-09-07) -- identifier calibrated; first true positive; hit rate still too uncertain to decide
+- Separation at 180 s (a): known icebow 0.625 / 0.670 / 0.687; DISCOVERED icebow NYAWcJcGU3E 0.730 (per-card 0.730-0.829, all eight); 8 other-deck videos 0.500-0.565. Threshold 0.60, gap 0.060.
+- The retraction is confirmed, not softened (c): NYAWcJcGU3E is the video the discarded 20 s pilot scored 0.545 and called negative. 0.545 -> 0.730 on the same instrument with a longer slice. The pilot INVERTED a positive; a sweep built on it would have written the channel off.
+- Hit rate 1/9 = 11.1%, Wilson 95% CI 2.0-43.5% -> 49 h icebow point estimate, band 9-192 h, against 78-139 h per doubling. Point estimate is SHORT and the band straddles it: nine videos cannot answer this. 100-video sweep running (4-way parallel).
+- Cost measured: 21 MB and ~2 min per video for a 180 s slice; ~26 s/video to profile. All 1,382 = ~29 GB, ~12 h at 4-way. Stage 2 = full download of hits only.
+- Still unmeasured and largest unknown (b): what a mined replay is worth vs a sandbox-driven one. The 1.50 pp/doubling slope was fitted on exact-state engine data; mined data carries detector noise in observation AND label. §5cs.83.
+
+## L66c (2026-09-07) -- FIRST ENGINE SLOT ON LINUX
+- start_direct_service.sh returns {"ready": true, "mode": "serve-direct", "slot": 0, "port": 37031, "guest_pids": [2738], "state": {...}} on clashbot-s3. Readiness required ping AND status over the adb-forwarded socket, so the engine answers, not just launches.
+- The port needed NO repair. Everything 5cs.81 tested in isolation held live: nested launch string, adb forward, push_verified sha skip, unzip-not-tar, ps matcher. First attempt already reached jni_on_load after_system_load ok:true -- the real libg.so loading natively in the guest.
+- NEW TRAP (a): the start script pushes the APKs but does not INSTALL them; that is worker.py:184-194 (adb install-multiple -r -t, base.apk first, all 5 splits). On Windows it happened once at bootstrap and persists in the AVD, so it is invisible until a fresh one. Error names a missing package, not a missing step. Install took 8.2 s.
+- Timings: first start 4m03s (75 MB of .so pushed + sha-verified), second 14.2 s (push_verified skips on hash match). Steady-state slot restart is ~14 s, not 4 min.
+- Unmeasured: engine throughput vs the local 11.24 s/match median -- needs the replay corpus on the VM. That sizes S3. §5cs.84.
+
+## L66d (2026-09-07) -- VM is 5.0x faster on identical work; sweep blocked by bot detection; hit rate 1/20
+- Throughput apples-to-apples (a): same 24 tags, same flags, same 17 successes, BOTH sides 17 files x median 240 frames. Local 12.52 s/match (254 s wall) vs VM 2.48 s/match (48.3 s wall) = 5.0x, on cores that benchmark 0.56-0.79x. Contention is NOT the explanation: local read 12.52 at 64% CPU, worse than the 10.71 measured under full training load. Candidate cause is WHPX vs KVM; untested.
+- NEAR-MISS (c): first VM run said 1.43 s/match -- I had dropped the recording flags, so frames: 0 vs the local corpus's 240. Caught by reading the output files, not the timing line. A throughput number is meaningless until both sides are confirmed to produce the same artifact.
+- S3 sizing (b): 100k driven matches = 69 VM-hours / ~$27 at one slot (347 h locally). Compute is no longer the S3 constraint. Multi-slot (up to 8/AVD) UNTESTED -- next measurement.
+- Sweep blocked (a): 11/100 downloaded, 88 x "Sign in to confirm you're not a bot", 2 timeouts. 4-way parallel tripped detection. Workaround is --cookies-from-browser = authenticating as the owner's account, a materially different risk from anonymous fetching -> back to the owner. Untested cheaper option: slow serial fetching.
+- Hit rate (a): the 10 sweep videos scored 0.487-0.584, none >= 0.60. Combined 1 icebow in 20 = 5.0% [0.9-23.6%] -> 22 h [4-104] vs 78-139 h per doubling. Evidence has moved AGAINST mining as a scaling lever. §5cs.85.
+
+## L66e (2026-09-07) -- VERDICT: stop anonymous mining. Slots scale 2.68x at 4. S3 is the work now
+- Owner ruling: no account risk, so the cookie route is closed; asked for a verdict on anonymous mining.
+- VERDICT NO (b on measured inputs): hit rate 1/20 = 5% [0.9-23.6%] over 441.6 h -> 259-466 matches point, = +0.32 to +0.54 pp; optimistic bound +1.2 to +1.8 pp. Cost: ~46 h of throttled serial fetching (evasion UNTESTED) before a frame is mined, then an unbuilt pipeline (homography, hand/elixir reading, IDM labelling, precision/recall gate), then an UNMEASURED discount because mined replays carry detector noise in observation AND label while the 1.50 pp slope was fitted on exact-state data. Against S3 at 69 VM-hours per 100k exact-state matches. Instruments stay committed and calibrated so re-testing is one command.
+- Slot scaling (a): 1 slot 2.48 s/match = 1,267 matches/h; 4 slots 3.58-3.67 s each = 3,400 matches/h = 2.68x, 67% efficiency, all four returning 17 files. Likely capped by the emulator's -cores 4 on an 8-vCPU host; -cores 8 untested. ~12x the local box either way. §5cs.86.
+
+## L66f (2026-09-07) -- S3 teacher built; first gate run INVALID (sampler, not search)
+- pipeline/s3_teacher.py: re-drive to the branch tick, place a candidate in libg, roll forward, score tower damage dealt-minus-taken + 1/8 unit term. Card teacher-forced to the pro's slot; candidates on the model's own 36x64 lattice; no learned value.
+- Coverage/cost (a): 497/500 states, 84/85 replays, ~22 s/state/slot, 46 min wall on 4 slots at 24 candidates, horizon 120. Every candidate is a full re-drive -- the protocol has no snapshot op.
+- Student baseline on the same 500 (a): v5lat s0/s1/s2 exact cell 21.93 / 23.94 / 21.93, card 64.4 / 60.8 / 63.6, 1t 30.4 / 32.2 / 31.0.
+- GATE RUN INVALID (c): teacher cell 0.00%, dist 12.475 tiles, GATE false on all seeds, p~1e-33. NOT a result -- the teacher used 23 distinct cells across 497 states, and a fixed 24-cell menu cannot land within 0.3 tiles of an arbitrary placement. The failure was guaranteed by the design; the run measures my sampler. Second sampler bug in this file (the first collapsed every proposal onto cx=0).
+- Unmeasured signal (b): teacher py median 5.5 vs pro 39.0 -- search prefers the back of its own half, consistent with the score rewarding safety (a far placement takes no damage, scores ~0, beats a bad trade). Needs its own test after the fix.
+- Fix running: --refine 2 adds a full-resolution local re-search around the best coarse cell, making the PRE-REGISTERED criterion reachable. The criterion itself is unchanged. §5cs.87.
+
+## L66g (2026-09-07) -- sampler fixed, gate STILL fails; both explanations dead or untested
+- Refined run (a): --refine 2, 497/500 states, ~2 h on 4 slots. Distinct teacher cells 23 -> 85, so 5cs.87 D's defect is fixed. Gate unchanged: teacher cell 0.00 / 1t 2.01 / dist 12.562 vs student 21.93-23.94 / 30.4-32.2 / 3.34-3.48. GATE false on all three seeds. Card 100% is teacher-forcing, not evidence.
+- The real fault (a): median teacher py 5.5 vs pro 39.0; 264/497 (53%) in its own back third. Pros sit in a tight band q1 35 - q3 47 the teacher rarely enters.
+- Explanation 1 CONTRADICTED (c): "unit_swing counts our units' hp so hiding scores well". Wrote a v2 damage-only score (enemy tower hp lost + 1/8 enemy unit hp destroyed - own tower hp lost, our units never a gain). On 68 states scored both ways: v2 median py 5.5, back-third 38/68 vs v1 28.5 and 32/68. No help, slightly worse.
+- Explanation 2 UNTESTED (b): 6 s horizon may leave candidates tied, and try_cells keeps the FIRST max while candidates are generated ascending in cy (= the back). Fits both scores. My check (65 distinct best-scores of 68) measures variation ACROSS states, not among candidates WITHIN a state, so it does not test this.
+- STATUS: gate NOT answered; teacher not yet a valid instrument. Nothing licenses "searched targets disagree with pros".
+- Next (specified): per-candidate score dump on ~10 states -> if many tie at the max, lengthen horizon + randomise tie-breaks; if well separated and still at the back, the objective itself needs rethinking. One short run before any further 2 h full-bench pass. §5cs.88.
+
+## L66h (2026-09-07) -- the bias was a TIE-BREAK artifact; fixed, but only partially closes the gap
+- Per-candidate dump (a), 18 states / 854 evals: 39% of candidates tie at the max (median), 6/18 states have >50% tied, score spread median 213 (so NOT flat) -- and the winner's cy median 3.0 equals the lowest cy offered median 3.0. "First wins" + candidates generated ascending in cy resolved every plateau to the back of our own half. 5cs.88 D CONFIRMED: the 12.5-tile bias was tie-break order, not the objective.
+- Fix (a): random tie-break among equal maxima (seeded reservoir). Same 18 states: back-third 7/18 -> 2/18; py med 37.5 -> 32.0 (h120) / 33.0 (h400); mean dist 9.88 -> 9.62 -> 9.09 tiles. Student is 3.34-3.48. Real mechanism confirmed, gap NOT closed.
+- Caution (b): these 18 states are not representative -- the old run scored py med 37.5 / 7-of-18 here vs 5.5 / 53% over all 497, i.e. the subset is where the artifact bit least. Full-bench run (tie-break, h400) in flight; that is the number that counts.
+- STATUS: gate still NOT answered. Two teacher defects found and fixed, one hypothesis dead. Every teacher number so far has been dominated by a defect of mine, not by search.
+- Process traps (a): a deploy printed DEPLOYED while the file was unchanged (echo ran regardless of the copy) -- now every deploy is verified on the far side by grep; and a timeout 3000 ssh wrapper was shorter than the 90-min job it waited on -- long remote runs now use nohup setsid. §5cs.89.
+
+## L66i (2026-09-07) -- S3 GATE ANSWERED: teacher fails, and this time it is NOT an artifact
+- Teacher v3 (2-D stratified candidates + full-lattice refinement + random tie-break + damage-only score + horizon 400), 497/500 states, ~75 min on 4 slots: card 100 (forced), exact cell 0.00, 1t 2.01, mean dist 9.478. Student v5lat: cell 21.93/23.94/21.93, dist 3.34-3.48. GATE false on all three seeds, McNemar p ~1e-33.
+- Progression of teacher dist: 12.475 (coarse) -> 12.562 (refined) -> 9.478 (tie-break + h400).
+- THE ORACLE CHECK (a), the measurement that makes this readable: distance from the pro's cell to the NEAREST candidate the teacher actually evaluated = mean 1.68 / median 1.77 tiles, while the CHOSEN candidate is mean 13.54 / median 14.84. The near-pro placement was available, evaluated, and rejected. Reachability is not the constraint -- the objective is.
+- Established (a): under a greedy one-shot rollout scored by tower damage +/- and enemy units destroyed over 400 ticks, the best-scoring placement is systematically NOT the pro's. NOT established (b): that search cannot beat the student -- one objective failed, not search.
+- Untested causes, in test order: no opponent model (the rollout lets the opponent sit still, so punishable placements look free); horizon short relative to an x-bow deck's chip-damage payoff; greedy single placement ignores sequencing/setup.
+- Caveats: the oracle came from the 18-state pre-tie-break dump (the candidate set is unchanged by that patch so it transfers, but the v3 oracle is strictly unmeasured); and exact-cell 0.00 is itself partly reachability-limited since oracle 1.68 >> the 0.3-tile criterion, so DISTANCE is the honest metric. The pre-registered criterion is reported failed, not revised.
+- Next: opponent model -- replay the opponent's real recorded plays through the rollout window instead of an inert opponent. Free from the replay, one shard, ~20 min, tests the first hypothesis directly. §5cs.90.
+
+## L66j (2026-09-07) -- opponent-model hypothesis NOT SUPPORTED; the leading explanation is dead
+- A/B on one shard (18 states), opponent model the only variable, horizon 400, same candidates/score: opponent=none mean 9.09 / median 6.31 tiles; opponent=replay mean 9.48 / median 8.67. Identical choice 7/18; replay closer than none in only 3/18. No improvement and the sign is wrong.
+- Kills 5cs.90 C's leading explanation (an inert opponent makes punishable placements look free). At n=18 a small effect cannot be excluded, but there is no large one, so it is not why the teacher sits 9.5 tiles out while the student is at 3.4.
+- Scope limit that no version of this test escapes (b): the opponent's recorded plays answered the PRO's placement, not our candidate, so this is "the opponent does what they actually did", not a reactive opponent. Building a reactive one is NOT justified -- the cheap version of the hypothesis just failed.
+- Remaining, in order: (1) horizon sweep 400/1200/2400, one flag one shard -- an x-bow deck's payoff is chip damage over tens of seconds; (2) greedy single placement ignores sequencing, not cheap to test; (3) whether pro agreement is the right target for a search teacher at all -- pros optimise something the engine's damage counter does not measure. (3) is an owner call about the plan.
+- Status: gate answered and failed, cause is the objective, and there is no longer a cheap hypothesis for what the scoring rule should be. Teacher/gate harness/VM/4-slot pipeline all built and working. §5cs.91.
+
+## L66k (2026-09-07) -- TRAP: pgrep/pkill -f match their OWN shell; a "wedged process" I reported twice never existed
+- `pgrep -fc s3_teacher.py` run over ssh matches the remote bash shell itself, because the pattern appears in that shell's command line. It therefore NEVER returns 0 while you are asking, and its floor of 1 is the question, not an answer.
+- Consequence (c): I twice told the owner in chat that the teacher run had "wedged at 497/500 with one process resident". There was no such process -- the residual 1 was my own ssh shell every time, and both full-bench runs had actually completed. The claim never reached HANDOFF, GAUNTLET_LOG or any Discord report, so nothing written needs retracting, but it was wrong when said.
+- Same root cause broke two launches: `pkill -f s3_teacher.py` and then `pkill -f "v3_sh"` each killed the very shell issuing them (the pattern is in its own argv), so the command died before its own `echo LAUNCHED` and returned completely silently -- a launch that fails with no output at all.
+- Reliable forms: `ps -eo pid,args | grep "[s]3_teacher"` for counting (the bracket stops the literal from matching its own regex) and never pkill by a pattern that appears in the issuing command line.
+
+## L66l (2026-09-07) -- horizon hypothesis DEAD (rollout saturates); all three cheap explanations eliminated
+- Sweep (a), same 18 states, horizon the only variable: h400 mean 9.09 / med 6.31 / py med 33.0; h1200 mean 8.35 / med 6.19 / py med 37.5; h2400 IDENTICAL to h1200 in 18/18 states. Within 1 tile: 0/18 in every arm.
+- Saturation is the finding: past ~60 s of rollout the decision does not change in a single state, so the objective is NOT short-sighted. Lengthening buys 0.74 tiles then nothing, against a ~5-tile gap to the student. Retires the "x-bow payoff accrues over tens of seconds" reasoning -- 120 s is most of a match.
+- Three hypotheses, three nulls: unit term (contradicted, slightly worse), opponent model (not supported, closer in 3/18), horizon (dead, saturates). With 5cs.90's oracle check (1.68 tiles available, 13.5 chosen), the finding is localised: a greedy single-placement rollout scored on engine damage does not pick pro placements, and it is not resolution, reachability, tie-breaking, the unit term, the opponent, or the horizon.
+- What is left is not a bug: (1) SEQUENCING -- pro placements are setup for the next card and no single-placement objective can represent that; testing means searching over action sequences, a rebuild. (2) THE TARGET -- 5cs.53's gate assumed placements that win engine exchanges are the placements pros make; three nulls plus the oracle check are consistent with those being different objectives (elixir economy, cycle, tower-race position). If (2) holds, pro agreement is the wrong gate for S3 rather than the teacher being broken.
+- Recommendation: stop patching the objective; the cheap space is exhausted. Owner call posted. My reading favours (2) -- the student reaches 21.9-23.9% by imitation while search reaches 0% while demonstrably able to propose the pro's cell.
+- VM idle, ~$0.39/h, left running because I cannot restart it once stopped. §5cs.92.
+
+## L66m (2026-09-07) -- owner delegated the call: PRO AGREEMENT STAYS; sequencing hypothesis tested and DEAD; oracle-future hypothesis raised
+- Decision (owner: "you decide... I trust your judgement"): keep pro agreement as the S3 gate; the teacher is what changes. Pro agreement is the only calibrated instrument here, the failure is localised to the objective (oracle 1.68 vs chosen 13.5), and a teacher that cannot match pros on pro states has no claim to label off-distribution ones. §5cs.93 A.
+- Test (a): `--opponent both --include-pro` -- pro's OWN follow-ups replayed too, pro's cell added to the 48-cell menu, 65 paired states / 12 tags, h400, v2. Pro rank median 24/49 under both vs 27/49 under replay; top-quartile 36.9% vs 26.2%; co-best 18 vs 15; >500 HP behind 21 vs 26; chosen->pro 10.79 vs 10.26 tiles. Paired rank diff median 0 (26 better / 20 worse / 19 same).
+- Reading (c): supplying the pro's actual sequence does not rescue the pro's placement; the objective ranks the real trajectory below the median random legal cell. The sequence-search rebuild is not worth building. Back-of-board bias is gone (py 33.5 vs pro 39) and the 10-tile gap remains: same depth, wrong place.
+- Per-card screen (a, n 2-13): spells agree (log rank 1 under replay, tornado 5-7, rocket 7); troops/buildings do not (ice-wizard 35, knight 33-37, x-bow 27-33, tesla 23-26).
+- New hypothesis (b): the replayed opponent is an ORACLE future -- against a known future the best cell exploits the exact timing/lane of the next enemy card; a pro's hedge wins only in expectation. Fits: spells immediate, troops hedges, follow-ups irrelevant, replay ~ none (5cs.91). Test: mean over K=4 jittered opponent futures, same futures for every candidate; pro rank up to top quartile => rebuild as expectation teacher; else engine teacher closed. ~2.5 h on 4 slots.
+- Trap: engine services were dead on arrival (all four ports closed) -- they died with the ssh session that started them (5cs.47). Restarted under nohup setsid. UTC stamps on 5cs.90-92 were mislabelled (this loop ran 11:4x-13:1x UTC).
+
+## L66n (2026-09-07) -- oracle-future hypothesis NULL; engine search teacher CLOSED; VM powered off; loop stopped for the owner
+- Test (a): K=4 jittered opponent futures (U(-60,60) ticks, 1 tile sd), same futures for every candidate, both-mode continuation, pro cell in the menu; 65 states / 12 tags. Pro rank median 21/49 (both 24, replay 27); top quartile 40.0% (36.9 / 26.2); paired jit4-both 19 better / 24 worse / 22 same, median 0; chosen->pro 9.51 tiles; teacher picked the pro cell exactly 2/65 (both 6, replay 4) vs student 21.9-23.9%.
+- Verdict (a): five hypotheses, five nulls. No tower-damage rollout objective tried here agrees with pros on troops/buildings; spells agree in every mode. Gate failed in every configuration, not for reachability. Engine search teacher closed. §5cs.94 C.
+- Not established (b): that no teacher can beat the student; that pros are optimal; that the engine is useless (it stays the state source).
+- S3 ends; S4 (live path) is the owner's. One gauntlet-runnable prep measurement offered: offline feature-parity audit of live detector obs vs S1 input features.
+- VM powered off (~9 h billed this window). Restart is an owner gcloud command; disk persists.
+
+## L67a+b (2026-09-07) -- S4 opened: live-shift cost measured; FirstLight_CR reviewed; stopped for owner ruling
+- Live-path guardrail removed by owner ruling (gauntlet.md §6, quoted inline). Survey: play.py on old CNN/18x24/hardcoded tau 0.25; from_live has zero callers; all live inputs exist in scope.
+- Measured (a): degraded twin of v3 VAL (obs_contract.degrade on every BoardState, same rows/targets). v5lat s0/s1/s2 exact cell 21.4/21.0/20.5 -> 16.7/16.6/17.1; card 63.2/63.2/62.7 -> 52.4/48.3/51.1; mean dist 3.54-3.61 -> 4.53-4.64 tiles; gate acc .82 -> .74-.76. The live shift costs more than a corpus doubling buys (+1.5 pp). §5cs.95 A.
+- FirstLight_CR (owner pointer) read in full: offline-only (no capture/ADB), 252,238 RoyaleAPI replays public on HF, 12.7 M-param universal-card LSTM model, PPO at 1,528 concurrent matches / 8 GPUs. NO learning curve in the repo; results are argmax win rates vs frozen opponents; they hit our L62 passive-opponent trap (296/306 wins vs an IL that played <= 3 cards). "Not plateaued" = (b) unsupported. §5cs.95 B.
+- Transferable + cheap: HF shard 0 has 41 exact-icebow sides / 10,000 -> ~2,070 over the dataset (est.) = one more corpus doubling (v6), S2 slope predicts +1.5 pp; skill tier unknown, must be A/B'd on the unchanged v3 VAL. §5cs.95 C.
+- Stopped with --questions: next action (A) v6 corpus doubling from HF vs (B) degradation-augmented v5 retrain. Box idle, VM off.
+
+## L67c (2026-09-07) -- option A run: corpus v6 from FirstLight's HF dataset; headline NULL, card head +1.96 pp; B ruled ON
+- RETRACTED twice: exact-icebow replays in VanguardX101/IL_Replay are 766 of 252,238 (0.30%), not the ~2,070 of §5cs.95 (one outlier shard) nor the ~625 of the 28-shard estimate. Also retracted: "new crowns mismatch 0" from the assembly script (bad key; real 473/603 = 78.4%).
+- Pipeline (a): 52 parts downloaded (sha256 52/52), hf_to_crawl.py -> crawl2, 766 kept / 0 unpositioned / 0 duplicates of our 1,890-battle crawl; driven on both engine slots -> 603 usable, 163 failures ALL the known evo gap (card 26000043); accept 98.8-99.1%, 24.9 s/match, 2.05 h. corpus_v6 = 1,638 + 603 = 2,241; dataset 339,192 rows.
+- Measured on the unchanged v3 VAL (3,796 plays, 3 seeds): exact cell 20.93 +- 0.49 -> 21.04 +- 0.22 (+0.11 pp vs pre-registered +0.7 = NULL); card 63.04 +- 0.28 -> 64.99 +- 0.57 (+1.96 pp, ~4 sd); NLL 3.224 -> 3.167; mean dist 3.571 -> 3.478 tiles. The S2 scaling line does not extend to this corpus; the split (card yes, cell no) is the finding.
+- Degraded twin: 16.35 +- 0.56 vs v5's 16.76 +- 0.24 = no change. A clean-corpus doubling does nothing for the live shift.
+- Untested (b) for the head split: tier (Ranked max-level vs our pro crawl), representation ceiling on placement, or drive label noise (78.4% crowns match). Cheapest discriminator named in §5cs.96 D: score val rows split by source.
+- DECISION (owner delegated the B call): B ON -- obs_contract.degrade as training augmentation, base held at v6, 3 seeds, graded clean AND degraded, both reported whichever way they go.
+
+## L67d (2026-09-07/08) -- the student is wired to the live path; degrade() measured against REAL detector output
+- NEW clashrl/student_live.py + play.py +41 lines behind `play.student_ckpt` (OFF by default -- unset key measured, added block skipped; revert = unset or git revert 597ddb7). LiveReads from play.py's own readers in the CONTRACT tower order, king hp None; from_live -> to_tokens -> S1Model encoded once; deck slot -> tray id on the base key (8 student slots vs 10 live identities); 36x64 lattice cell -> board -> actions.cell_at. Student decides (card, cell) ONLY: deploy_clamp, aim assists and affordability still run; unaffordable/unmappable = WAIT, never a silent fallback to the CNN.
+- Dry run (a), student_dryrun.py, real sessions + real detector, no clicks: 5 runs / 3 sessions / 3 seeds, 223-400 frames each. Student 28.7-37.6 ms median (p95 61), detector 45-80 ms vs act_period 1.5 s -> latency is not a constraint. Play rate 12.6-19.5% at tau 0.5; 4-9 distinct cards, 8-19 distinct cells; no_mappable_card 5-9%. Spell tokens DO appear live (29-78/run) and training rows have zero.
+- FINDING (a), elixir>=5 matched on both sides, gate_dist.py: frac p_play>0.5 = engine v3 VAL .294-.298, degrade() twin .446-.524, REAL LIVE .248-.325 (3 seeds x 3 sessions). Real live tracks the ENGINE; degrade() over-eggs the gate by 15-23 pp. The first, uncontrolled read (.247/.172/.373) was confounded by elixir mix and is SUPERSEDED.
+- Consequence: the degraded VAL is not a proxy for live gating, and a B gain on it is not evidence of a live gain. Placement/card live remain unmeasured (b) -- next: re-point the L63 own-click harness (owner's recorded clicks = live-labelled placements) at the student.
+- Own bugs (a): merge_aug indexed an NpzFile inside a loop (74 MB decompressed per row -> MemoryError); 3 parallel train_s1 = 160 MB free RAM (2.3 GB each, TWO fit on this box). Seeds killed at epoch 0, nothing lost.
+
+## L67e+f (2026-09-08) -- option B graded; the live placement defect named (missing values, not noisy ones) and half-fixed
+- Option B 3 seeds (a): clean v3 VAL 21.56 +- 0.07 (v6lat 21.04 +- 0.22), degraded 19.45 +- 0.05 (16.35 +- 0.56), degraded card 60.4 vs 49.3. Caveats: seed 0 crashed at epoch 13 (CUDA, two trainers + detector on one GPU); the degraded gain is circular (trained on degrade(), graded on degrade()). Live, v6aug plays 0.7-1.3% of frames at tau 0.5 vs v6lat 15% -- a SHIFTED gate (equal-rate tau 0.16 / 0.083), not a broken one. RETRACTS the L67e chat claim that the arm "loses on the thing we care about".
+- (1) Placement (a): matched on units and n, live top-1 cell share 0.25 vs engine 0.07; by bucket, units 2-3 = 0.33 vs 0.10, units 4-6 = 0.24 vs 0.07. Sparsity alone collapses the head too (engine 0-1 units = 0.33), so both information starvation AND a live-specific distortion are real.
+- (2) Stability (a): same-cell 61.4% live vs 38.7% engine at matched decision gaps; median move 6.00 vs 6.04 tiles. No jitter -- the same collapse through a second instrument, not a separate defect.
+- (3) Ablation (a), one detector pass, variants re-scored on cached BoardStates: unit HP 0.400 -> 0.303, scalars 0.400 -> 0.287, all 0.243. Spell tokens 0.417 (WORSE), side resolved 0.390, conf 1.0 0.403 -> all three hypotheses CONTRADICTED, including the spell-token one this log flagged twice.
+- (4) Against PRO LABELS (a): blank_hp 19.47 / fill_hp 20.26; blank_scalars 20.42 / fill_scalars 20.71; blank_both 18.78 / fill_both 20.15 (card 52.11 -> 63.25). Supplying beats flagging everywhere. blank_both is 2.19 pp under clean, vs degrade()'s predicted 4.2 pp -- third sign the corruption model overstates the live penalty.
+- (5) Wired (a): LiveReads.opp_elixir + from_live(unit_hp_default=) + king alive-proxy; play.py hands over the OpponentElixirEstimator value it already computed and discarded. Caught in review: a rescale heuristic that would have turned 0.8 elixir into 8. 20/20 obs_contract tests pass. Verified on 292 real frames: top-1 share 0.411 -> 0.322, distinct 43 -> 51.
+- Owner ruling recorded: his recorded clicks are NOT a quality standard (skill is not pro), so they are never used as placement labels; his sessions serve only as real detector input for label-free instruments.
+
+## L67g-h (2026-09-08 18:00-21:00 UTC) -- the freeze, the ceiling, and two live repairs
+- **Owner report "the model can freeze up mid-match": REAL and now explained.** 600 decisions / 70 plays over 4 matches; not a hang (WAIT lines print throughout) and the RATE is right (9.1 plays/min vs a pro's 8-10.5) -- the distribution is not: ~50 s stretches at 8-10 elixir with 0 plays.
+- **RETRACTED mid-loop:** "the gate ignores elixir", read off play.py's WAIT lines. WAIT is `p < tau`, so the sample is truncated at the threshold and conditioned on the outcome. Engine VAL says the gate is CALIBRATED in elixir (0.046->0.472 vs pro 0.037->0.490); live frames, unconditioned, say the same (p 0.109 -> 0.567 across elixir 0-3 -> 9-10).
+- **Cause found, and it was mine:** supplying the opponent-elixir estimate (wired last loop) cuts the live play rate up to 3.2x (frames over tau: 0.278 none / 0.156 at opp 5 / 0.087 at opp 10), and the estimator RATCHETS upward on every missed enemy play. Two repairs shipped, no retrain: `play.student_opp_elixir` default false, and the estimator now re-baselines on saturation (unit-checked: pinned 10 -> a detected Giant drops it to 5.0; pre-fix it stayed 10.0).
+- **THE CEILING ON PRO AGREEMENT IS 27.5%** (40k pro plays, 2,238 replays, 157 players, pairs across different replays AND different players, blocked on same hand+card+elixir). The student is at 21.04 = 76% of it; within-1-tile 31.87 vs 31.62 (AT the human rate); card 65.0 vs 43.8 (BETTER than a second pro). Imitation is close to exhausted -- corpus growth cannot reach a number pros do not reach with each other.
+- **Reranker headroom is large:** pro's cell in the student's top-3 44.2% / top-5 55.5%, card top-3 97.6%. The answer is in the shortlist; the argmax misses it. Licenses search over THIS model (the +19.9 sigma search result was measured on the old CNN and is not evidence about the student).
+- Owner's deck-veto rule for unknown-team cards was ALREADY live and is measured to work (0 impossible classes survive as mine/unknown after TeamTracker); added to the contract path for the offline harnesses.
+- Retracted twice on the barrel probe (wrong class names -> 0 pairs; then goblin-centroid association -> 12.5 tiles, invalid). Replaced with track-based measurement.
+
+## L67m-n (2026-09-09/10) -- hogeq corpus mined with a MEASURED alias; value reranker collapses in closed loop (shift)
+- **Session stall, stated:** the previous session ended mid-plan; nothing ran after the substitution analysis until this one.
+- **hogeq substitutions (504,476 HF sides):** 117 exact, 1,893 one-card-off. Placement USAGE, not histogram overlap (which could not tell valkyrie from cannon), decides: only **tesla <- cannon** passes (own-half 55.6 vs 53.7%); **ice-spirit <- electro-spirit fails** (58.9 vs 49.6%, median 3 tiles forward) despite 71% of the volume. Alias in `Deck.slot_of` (my side only) + test; 23/23.
+- Traps caught by controls: a nonexistent `battle` column behind a swallowing try/except (reported 0 icebow decks too); RoyaleAPI coords are MILLI-tiles (self-overlap control returned 0.0).
+- **Mined 523 hogeq replays, 397 drivable** (126 hold evo Elite Barbarians, the engine blind spot that also sank 109 of the 121 v5 backlog failures). `run_hogeq_v6.sh` ready. **Parked by owner:** engine VM down, 3.9 GB free vs a 4 GB AVD; runs at the next long idle session.
+- **hogeq live path is a 68-file FORK** (Config.root follows the module), lacking student_live.py; port plan written, nothing edited. Mighty Miner's ability is wired nowhere.
+- **Value reranker:** clean fold regret 0.061-0.064 vs 0.079 always-WAIT, corr 0.66, play 17-20% (search 19.5%). RETRACTED first numbers (head trained on its reporting fold). **Closed loop: 1.5% plays, 0/4 wins, tower -2.61.** Bug-vs-shift test: on search-visited states via the online path the head would play 17.9% -> **covariate shift**, not a feature bug. Open: online corr 0.30 vs 0.66.
+- **Running:** DAgger iteration 1 (3 x 30 matches, beta 0.5) -> retrain on aggregated corpus -> paired closed-loop A/B via `rerank_ab_report.py`.
+- **Reranker verdict (L67n, 5cs.99 S):** head-gated C -1.257 +- 0.291 (t=-4.31) and D1C -1.033 +- 0.342 (t=-3.02) vs the student, 2-7 plays/match; DAgger 1 helped +0.224 +- 0.164 (t=1.36). Rank-only (student gates, head chooses) over THREE disjoint slices: C +0.361 +- 0.311 (t=1.16), D1C +0.252 +- 0.309 (t=0.82), n=36 -- a NULL, heads helped on opposite slices. The learned value head does not carry the search's evaluation into closed loop. Owner decision pending: power up, DAgger 2, or close.
+- **OWNER RULING 2026-09-10: reranker line CLOSED** (over a rank-only power-up and DAgger 2). Open queue, all owner-gated: hogeq engine drive (next long idle session), then the hogeq live port; the live p=0.00 root cause (capture armed, needs session data).
+
+## L67o (2026-09-10/11) -- hogeq v6lat trained on 1,162 replays; calibrated heads up on every seed, exact cell a null
+- **Build:** 397 driven / 0 failed (126 evo-E-barb pre-dropped), corpus 765 -> 1,162, dataset 104,007 -> 159,137 rows. Crowns match 59.4% new vs 56.3% v5 (old gap). No leakage: v3 VAL's 44 replays are all in v6 val.
+- **v3 VAL, 3 seeds each:** exact cell 23.65 +- 0.46 vs v5lat 23.21 +- 0.61 (+0.44, t ~1.0, NOT established). Separated on every seed: cell NLL 3.235 vs 3.301, gate balanced acc 73.83 vs 71.39, value acc 59.92 vs 57.06.
+- **Alias check (owner's condition):** 24.8% of tesla training plays are pro cannon plays; tesla on exact-deck VAL 25.2 vs 22.7 exact cell (overlap) -- no harm measured. Hog rider -2.1 on all seeds is flagged, but 24 per-card tests expect ~2.4 chance separations; untested.
+- **Traps:** `worker stop` keeps the VM unless `--stop-vm` (fixed in script; VM stopped by hand); L63 liveness reference deleted -> `liveness_slots.py`; never edit a running bash script.
+- **Live port checkpoint:** v6lat_s0 (picked on the selection split). Next: hogeq live port.
+- **hogeq live port (5cs.99 U):** student_live.py copied; detect / opponent_elixir / reward now byte-identical to icebow; cli.py live hunks only; play.py 6 hunks by git + 4 by hand (137/138 added lines verbatim, the 138th is the hogeq deck default). Suite 1,319 OK before, 1,319 OK after. Dry run on a real hogeq session: 20/200 plays, 6 distinct cards, never the ability. Parity still fails on 5 PRE-EXISTING training-side files (not bundled). Trap: `git apply --reject`'s reject list named the wrong hunk. Not yet played live; hogeq overlay folder (8 clips) now prunes to 10.
+
+## L67p (2026-09-11) -- owner's long icebow session: no freeze on the board in 77 matches; 3 h 45 min lost to a nav loop
+- **Play 22:17-02:42:** 77 matches (15 overtime), 2,821 plays, 11.96/min, 283 STALL-PLAY (10%). Matches with a >= ~47 s high-elixir freeze: runs 2-7 8/13, run8 0/10, run9 0/77. Stable over 4 h (first vs last half 11.9 vs 12.0 plays/min).
+- **Overtime is NOT the trigger (contradicted):** at equal match clock regulation = overtime; pinned-high WAITs climb from double elixir (0.24/min at 20-60 s -> 0.69 at 120-180 s). Opening waits (t < 10 s) are pro-like: pro first play median 12.0 s.
+- **Root cause still hidden:** the low-gate capture (60/process, p < 0.02) filled in match 1; overlay clips cover matches 1-10 only.
+- **Nav loop 02:42-06:27:** MATCH_END with Play Again LOCATED, ~16,000 taps + 2,059 OK escalations, no ceiling in nav.py. Screen unknown (no screenshot on stall).
+- **Correction:** the student is consulted ~1/s, not 10/s -- decision cadence, not model compute, bounds reaction time.
+- **Asked the owner:** what was on screen at ~06:26; approve a nav escalation ceiling + a per-match STALL-PLAY capture for the next long session.
+- **L67q (5cs.99 W), owner rulings on V:** the stall was a Windows popup. Shipped a navigator ceiling (2 min: desktop screenshot, log front window, force game focus, Escape only if the game is in front; 10 min: stop play.py + text Discord alert) and a freeze capture that records every anti-stall firing (10/match) and late pinned high-elixir waits (6/match) to `data/freeze_states.jsonl`. 11 new tests OK in both trees; full suites hogeq 1,330 OK, icebow 1 PRE-EXISTING failure (test_xbow_into_push, fails on clean a1d31a8 too); capture write path verified with the real checkpoint. Root cause still needs the next long session.
+
+## L67r (2026-09-11) -- freeze root cause: the gate collapses on IMPOSSIBLE play histories; anti-stall forces every opening
+- **Capture worked:** 143 records (75 stall, 68 pinned_hi); re-score error 3.1e-7. 22 stalls fired before the match's first play at t 2.8-5.2 s: the idle clock counts from 0 -> one forced opening play per match (bug).
+- **Bisection (121 states, base p 0.029):** removing every unit changes nothing (0.029); clearing `past` -> 0.319 (40% over tau); removing past card ids -> 0.499 (65%). Noise controls 0.029.
+- **Why:** training never has a card repeated inside the last 3 plays (0.000); 71.9% of freeze states do vs ~16% of all live post-play states. 11% of live plays repeat a card from the previous two (both nights). Deduping past lifts those states 0.019 -> 0.497 (67% over tau). 34 non-repeat freeze states stay pinned (second cause open).
+- **Likely mechanism (untested):** play.py records a play on every tap with no deployment check.
+- **Asked the owner:** ship F1 (enforce the cycle rule in past) + F2 (idle clock from match start)?
+- **L67s (5cs.99 Y), owner "ship both":** F1 -- `record_play` drops a same-card entry among the newest 3 plays (history deque 3 -> 8 so real older plays refill the model's view); F2 -- anti-stall idle clock starts at match start. 24 tests OK in both trees (2,000 random plays never show the model a repeat); real-checkpoint smoke: no forced play at match start, stall after 13 s. Full suites hogeq 1,343 OK; icebow only the pre-existing test_xbow_into_push failure. Next: owner session, same scanner (mid-match stalls/min, opening stalls ~0, past_repeat_dropped).
+
+## L67t (2026-09-11) -- F1+F2 live: freezes fell, the collapse moved to the next-card channel (mis-recorded re-taps, untested)
+- **Run11 (F1+F2, 18 matches):** STALL-PLAY/min 1.09 -> 0.65, pinned-high WAITs/min 0.66 -> 0.47, repeats in captured past 56% -> 0%, stalls at t < 12 s 14 -> 0. Plays/min 12.0 -> 14.3; taps repeating a card from the previous two 10.6% -> 16.2% (62/73 immediate repeats with no WAIT between).
+- **Remaining pin:** next card among the last 3 recorded plays in 72.4% of freeze states (run10 34.7%, training 11.8%); swapping in a legal next card lifts those states 0.039 -> 0.778 (98% over tau).
+- **Reading (untested):** fast re-taps deploy the card that slid into the slot but record the intended card, so `past` lags reality; F1 moved the error from "repeat in past" to "next in past".
+- **Correction:** "next among the last 3 plays" is NOT impossible (training 11.8%); only a repeat inside past is.
+- **Asked the owner:** F3 (timestamped PLAY lines + tray read before/after) and F4 (no re-tap until the tray changes or ~1 s; record the card that actually left).
+- **L67u (5cs.99 AA), owner "logging only":** play.py (both decks) stamps every [student] line with wall time, adds the tray + elixir to PLAY lines, a TAP line at the tap, and TRAY lines at the first read after a tap and at >= 0.5 s. No decision reads them. Offline `tap_audit.py` classifies taps (deployed / not_deployed / retap_on_stale). Scanner unaffected on new-format lines; full suites hogeq 1,343 OK, icebow only the pre-existing test_xbow_into_push failure. F4 not shipped.
+
+## L67v (2026-09-12) -- the repeated taps are the TRAY READER; ~31% of taps deploy nothing; nav ceiling ended the run on a reward screen
+- **Run12 (16 matches):** STALL-PLAY/min 0.45 (run11 0.65, run10 1.09); 13.9 plays/min; captures: repeated past 0, next-in-last-3 75.6%.
+- **Tray reads:** slot 2 unreadable 43.6%; the same card read in two slots 8.6% of decisions; knight and skeletons read in only 16% of decisions. Overlay-clip frames: evolved Knight -> "?", greyed X-Bow -> "ice_wizard". No greyed-card templates; knight_evo has 6 templates.
+- **Elixir check:** 30.9% of taps show no elixir drop (the_log 34%, ice_wizard 42%; x_bow/rocket 0%); 56% when the card was read in two slots.
+- **Nav:** stuck on in-game reward screens (chest "Tap to open", card reveal); ceiling recovered 8x, gave up at 10 min, Discord alert sent, play.py stopped.
+- **Asked the owner:** P1 (greyed slot / double read never tapped), P2 (record a play only if elixir falls), P3 (evo templates), P4 (nav taps the centre on reward screens).
+- **L67w (5cs.99 AC), owner "do p1 and p4":** P1 -- the tap path only gets tray slots with a pink elixir badge (greyed = unaffordable or empty removed) and never a card read in two slots; measured first: badge pink bimodal over 7,624 clip samples (4,544 < 0.01 / ~3,065 >= 0.10), the 372 grey-badge-colourful-crop disagreements are all empty slots. P4 -- nav taps the game centre every 2 s after 8 s on UNKNOWN (reward screens); Escape only on MATCH_END. 38 tests OK in both trees; full suites hogeq 1,357 OK, icebow only the pre-existing test_xbow_into_push failure. P2/P3 not shipped.
+
+## L67x (2026-09-12) -- "model wastes every Tornado": the fake enemy earthquake on our king is real; play.py feeds enemy spells to the aim assists
+- **False detection:** `earthquake` at our king tower (board 0.50, 0.87), tagged enemy, in 48 of 270 captured states; conf 0.40-0.72 vs live threshold 0.35.
+- **Redirects:** the Tornado aim assist moved 46 of 106 run12 Tornados, 41 to the king-activation spot (3 of 10 in the 08:43 run). Code: play.py's TeamTracker lacks `is_spell` (env.py passes it), so enemy spell detections are served to assists; the assist fires on any deep track within 0.16 of the spot.
+- **Frames:** one redirected Tornado landed with every enemy at the far tower (wasted); the model's own Tornados pulled units. "Every time" contradicted.
+- **Model side:** the fake token doubles P(tornado) on the 17 affected states (0.056 -> 0.121).
+- **Correction to X:** bisect's per-side unit arms were no-ops (int keys); board_empty stands.
+- **Asked the owner:** T1 wire is_spell into play.py's tracker; T2 log the assist's trigger; T3 drop spell detections on our king tower from the student input.
+- **L67y (5cs.99 AE), owner "do t1 and t2":** T1 -- play.py's TeamTracker (both decks) gets env.py's filters; the change is `is_spell` (base-folded): enemy non-spawn spells no longer feed the aim assists / threat gate. T2 -- icebow play.py logs `[assist] TORNADO king-spot|nearest cell A->B trigger BASE at (x,y)` whenever the assist moves a cast. New test_play_tracker_wiring.py: 6 OK in each tree; full suites hogeq 1,363 OK, icebow only the pre-existing test_xbow_into_push failure. T3 not shipped.
+
+## L67z (2026-09-12) -- first run with P1+P4+T1+T2: plays/min in the pro band, repeated taps gone, Tornado redirects cut (8 matches)
+- **run14 vs run12:** plays/min 13.9 -> 9.8; STALL-PLAY/min 0.45 -> 0.24; repeated taps 16.5% -> 0; no-elixir-drop taps 30.9% -> 17.4% (the_log 34% -> 0, ice_wizard 42% -> 12%); next-card conflict in captures 76% -> 0 (8 captures); Tornado king-spot redirects 39% -> 14% of Tornados. No nav stalls.
+- **T2 log:** 8 assist moves; triggers are real enemy troops -- and two BUILDINGS (enemy elixir collector; an "enemy x_bow" on our half 31 s after our own X-Bow, very likely ours mis-tagged).
+- **Open:** Skeletons no-drop 23/45 (display rounding vs real, needs clips).
+- **Asked the owner:** N1 (Tornado assist ignores buildings), N2 (why our X-Bow is served as enemy), keep T3 parked; confirmation run owed (one session, 8 matches).
+- **L67aa (5cs.99 AG), owner "ship N1":** `reward.tornado_pullable` drops building tracks; icebow play.py's Tornado assist applies it before the king-activation trigger and the nearest-enemy fallback (run14: 2 of 8 moves aimed at buildings). New test_tornado_pullable.py: 5 OK in both trees; full suites hogeq 1,368 OK, icebow only the pre-existing test_xbow_into_push failure. N2 waits for the owner's next run.
+
+## L67ab (2026-09-12) -- run15: fixes hold; the X-Bow assist turns pro-depth X-Bows into bridge X-Bows (16/17)
+- **Held:** 10.2 plays/min, 0 repeats, 0 freezes, 0 nav stalls, Tornado assist names no buildings. Result screens: 2 W / 6 L (noise at n=8).
+- **X-Bow:** model cell at board y 0.604 (pros 0.609); the play.py assist moved 16/17 forward to y 0.521 -- forward in 94% vs pros 6.5%; 3 in the first 20 s (pros 2.5%).
+- **Card mix:** Tornado 16% (pros 8%), Knight 6% (pros 16%; knight read in 16% of decisions -- evolved Knight unreadable), Rocket 2% (5.6%). Right-lane lean 49% vs 38%.
+- **Open:** Skeletons 26/47 no elixir drop. Asked the owner what they saw; proposed X1 (X-Bow assist), P3 (evo Knight templates).
+- **L67ac (5cs.99 AI), owner "do X1 and P3":** X1 -- live X-Bow assists use board depth 0.58 (not the 0.52 frame band), so the pro-row X-Bow stays put; env.py's band untouched; 3 tests OK both trees. P3 -- 15 Knight tray templates from 6 build clips; on 6 held-out clips unread 18.7% -> 7.1%, knight-read frames 17% -> 65%, 1,007 confident fixes, 1 low-score false change (3 weak templates dropped after a by-eye check). Full suites hogeq 1,371 OK, icebow only the pre-existing test_xbow_into_push failure. Owner's Log-on-air and X-Bow lane-splitting observations recorded as hypotheses for after the run.
+
+## L67ad (2026-09-12) -- run16 (41 matches, X1+P3): X-Bow never attacks; greyed X-Bow read as Ice Wizard blocks the real one
+- **Held:** 11.5 plays/min, 0 freezes, 17 repeats in 1,578 taps, 0 nav failures, no degradation across 2 h 20 min.
+- **X1:** 0 of 85 X-Bows forward; 76 at the pros' two favourite cells (board 0.861/0.139, 0.604), 12.9 tiles from the nearest enemy princess (range 11.5) -- purely defensive, no tower pressure.
+- **P3:** Knight 18% of plays (was 6%), placed at the front row (y 0.55 vs pros 0.64).
+- **Ice Wizard double read:** 198 of 1,578 decisions; clip crops: a greyed X-Bow read as ice_wizard every time; P1 then refuses the real pink Ice Wizard too.
+- **Other:** Tornado 16% (62% enemy half); Rocket 1%; Tesla 9%; Play Again template missed 26x (recovered). First 10 matches 3 W / 7 L, six losses by two crowns (noise-level).
+- **Asked the owner:** which issues they saw; proposed P1b (keep the pink copy of a double read), P5 (greyed X-Bow templates), X2 (an offensive X-Bow rule), N3 (Play Again template).
+
+## L67ae (2026-09-12) -- shipped P1b, P5, X2, N3 + Log-on-air veto; cheap-card collapse measured; hero Ice Wizard
+- **P1b:** a double read keeps the single pink copy (the run16 real Ice Wizard stays playable).
+- **P5:** +20 greyed X-Bow templates; held-out run16: frames with a card read twice 306 -> 15, x_bow reads 412 -> 1,281, high-score changes all carry the 6 badge; residual 22 wrong low-score x_bow reads (~0.3%).
+- **X2:** after an enemy princess falls, X-Bow goes to that tower's pocket (pros 25.2% forward then, 76% dead-lane pocket y 0.391); sticky lane when both are down; config switch.
+- **Log-on-air:** both decks skip a Log whose final corridor holds only air units.
+- **N3:** Play Again accepts a template list and saves one frame per missed results screen (no second template yet -- no frame existed).
+- **Collapse (a):** X-Bow 10% -> 1% of plays from minute 1 to overtime (pros 8-11%); Rocket 1-2% in EVERY phase (pros 3-8%) -- never played, not collapsing; bot median 3 elixir at a play vs pros 7-9; 6-cost affordable at 2-7% of late decisions. Cause (b): affordability mask + low bank; C1 instrumentation proposed.
+- **Trap:** the owner's ice_wizard_hero_*.png are already live Ice Wizard templates (prefix loader).
+- Suites: icebow 1,406 run, 1 failure = the pre-existing test_xbow_into_push clamped-front-row test (fails on clean a1d31a8), 21 skipped; hogeq 1,382 OK (66 skipped).
+
+## L67af (2026-09-12) -- run17 hero matches + engine-RL feasibility + hero data; overnight engine-RL APPROVED
+- **Detector vs hero (a):** 15 live Ice Wizard plays, 45 crops -- hero mostly unboxed (~15 of ~25 on-board crops), sometimes `knight` or an ENEMY box; his deploy effect boxed as enemy `rage` 0.91/0.93.
+- **Own Tornado on own hero (a):** 14:34:45 Tornado assist triggered on "enemy ice_wizard" at our hero's exact position.
+- **Ability button (a):** frame (0.909, 0.765) r 0.062; boxed as enemy `earthquake` 0.91-0.95 -- red box in 17 of 56 sampled frames where visible (30%, pixel heuristic).
+- **Hero data (a):** 0 hero-Ice-Wizard matches in any crawl (all end by 09-06) or the 252k HF dump; press rows hold tick+side only; other heroes pressed once per deploy, median 6.2 s after deploy, late-skewed. Engine has no Ice Wizard hero form.
+- **Engine RL (a):** real libg.so, closed loop works, opponent = non-reacting ghost (S1 wins 72.3%); ~3,600 S1 matches / 8 h idle box (b); engine PPO already failed once on the CNN BC init (flat when leashed, collapsed when free).
+- **Owner:** approved ONE overnight S1 engine-RL experiment validated on held-out recorded opponents; ability metrics beyond troop count; wire a freeze-zone rule if pro data is absent.
+- **Next:** D1 button-region mask, D2 detector labels (hero as ice_wizard), H3 ability rule, E1 RL build.
+
+## L67ag (2026-09-12) -- D1 button mask + H3 Frosty Fella rule shipped (icebow live path)
+- **Button states (a):** run17 strips -- absent / grey (unaffordable) / ready (blue); pixel classifier (blue >= 0.30, grey >= 0.35) agreed with every hand-labelled tile; the red `earthquake` phantom sits on the grey state.
+- **D1:** detections centred on the ability button dropped while it shows (shared `hero_ability.UIMaskedDetector`, wrapped before the perception loop). Revert `hero.mask_ability_button: false`.
+- **H3:** rule press of Frosty Fella when ready + >= 2 elixir + one of: enemy win condition within 4 tiles of our building/tower, >= 2 enemies on our X-Bow, >= 3 enemies inside 2.5 tiles on our half; hero within 7 tiles; logs press / accepted / +7 s outcome. Anisotropic tiles from tower anchors. Revert `hero.enabled: false`.
+- **Not established:** press quality (no offline tracks); offence not covered; T3 king-tower phantom untouched.
+- Suites: icebow 1,422 run, 1 failure = the pre-existing test_xbow_into_push clamped-front-row test (fails on clean a1d31a8), 21 skipped; hogeq 1,398 OK (67 skipped). Label Studio guide + E1 design pending (agents).
+
+## L67ah (2026-09-12) -- E1 engine-RL designed; RETRACTED 72.3% (older seeds, not v6lat) and ~3,600 matches/night (really ~1,440)
+- **Retracted (a):** 72.3 +- 2.3 ghost winrate = 5cs.66 S1 seeds at tau 0.5, not v6lat_s0 (no baseline exists); 15.9 s/match was a 2-match smoke, 100-match runs measured ~21 s/slot -> ~1,440 RL matches/night.
+- **Spec changes (a):** degrade() != live view (live fills HP with 1.0) -> live_view(); v6lat trained clean-only (degraded val cell 16.35 vs 21.04); all 477 pool-v0 ghosts are S1 training replays; 27-38% of S1's wins end vs a silent ghost.
+- **Plan (b):** pool v1 293 held-out / 1,505 train (opponent-disjoint); PPO-clip terminal reward, group baseline, KL leash; pre-registered pass >= +5 pp held-out with CI, pro agreement held, plays/min +-20%, exploit stops. ~15 h build; most likely outcome a null.
+- **Asked the owner:** build as designed, measure the v6lat baseline first (~2 h box, no training code), or park.
+
+## L67ai (2026-09-12) -- run18 (5 matches): Frosty Fella pressed 15x, all 15 accepted, ~8/15 visibly froze enemies; hero_frames.py saved + dry-run
+- **H3 live (a):** 15 presses (12 stacked_push, 3 wincon_at_building), 15 accepted, 0 refused; zone at +7 s: 7 N->0, 4 down, 3 up (lava pups). One press 30 s after deploy (stale hero position).
+- **By eye (b):** ~8 clearly good (tower pushes, Battle Ram, Balloon, Goblin Giant), 1 partial, ~6 no freeze inside the crop (snowman spawns behind the hero's target -- unclear, not proven wasted).
+- **Session (a):** 10.94 plays/min; X-Bow 6.6% of plays, Rocket 1 play; X2 pocket fired twice; Log skip 0; 3 known losses (0-1, 1-2, 1-3), 2 results not captured.
+- **hero_frames.py:** saved to scratchpad/gauntlet/L67; dry run on session 20260912_152220 + live_run11.log -> 26 hero plays, 231 raw frames, no drawn boxes.
+
+## L67aj (2026-09-12) -- E1 option B tooling built and verified offline; not run (box not free)
+- **Built (agent, new files only):** pipeline/e1_view.py, e1_pool.py, e1_eval.py, e1_score.py, tests/test_e1_baseline.py; pool v1 in icebow/data/ghost_pool (local).
+- **Verified (a):** 23 offline tests OK; pool verify sha_ok, rule_mismatch 0, 293 held-out / 1,505 train / 12 dropped, no opponent group on both sides; live-rule actions identical to student_live on 216 constructed states.
+- **Trap:** the corpus was driven from plays_ext_i1.csv (plays_ext.csv lacks positions).
+- **Deviations (b):** ghosts keep their real plays after the pro replay ends; PoolV1Env ghost loop tested only on a fake engine; anti-stall clock from tick 90.
+- **Not run:** free RAM 2.8 GB (needs ~10), Play Games + Roblox + Label Studio up. Runbook ~1 h 20 min; parity gate >= 19/20 first. Waiting for the owner's "box is free".
+
+## L67ak (2026-09-12) -- option B: v6lat_s0 51.9% vs 293 held-out ghosts (live rule); the OLD rule wins 89% vs 52% on the same 100
+- **Box (a):** boot attempt 2 OK; liveness both doors; parity 20/20 hashes; one eval = ~680 MB (not 2 GB) -> one slot; ~12 s/match (not 21); engine stopped at the end (vm_stopped true).
+- **Baseline (a):** 152 W / 141 L = 51.9% (clustered CI 46.1-57.7); decided before the script ended 47.2%; 28.9% of wins after the script; winrate RISES with ghost activity (<=10 plays 29.6%, >30 plays 63.0%); 13.36 plays/min.
+- **Controls (a, 60 paired):** model 58.3% vs none 0% (+58.3, p 6e-11) and rate-matched random 5% (+53.3, p 5e-10).
+- **Rule contrast (a, 100 paired):** tau 0.5 + no mask + no anti-stall + clean obs 89.0% vs live rule 52.0%: +37.0 pp (CI 26-48), 40 vs 3 discordant, p 3e-9; 10.13 vs 13.32 plays/min. Four bundled changes -- not attributed.
+- **Asked the owner:** run the 4-arm attribution screen (one change per arm) before E1.
+
+## L67al (2026-09-12) -- A1 attribution: observation noise costs the live rule 40 pp; tau 0.5 +16, no mask +11, anti-stall 0
+- **Traps fixed (a):** `Start-Process -Wait` waits for descendants (the emulator) -> the first script hung 23 min after a good boot; the in-script scorer's `2>&1` lost its output -> arms re-scored from Bash.
+- **Reproduction (a):** live rule on held-out 0:20 after a new boot = baseline_k0 exactly (20/20 identical outcome/end tick/crowns/plays).
+- **Arms (a, paired vs the live rule's 52/100):** clean obs 92 (+40, CI 31-50, 40 vs 0); tau 0.5 68 (+16, CI 5-27, p .007); no affordability mask 63 (+11, CI 2-21, p .043; 52% of 22.8 attempted plays accepted = implicit waiting); no anti-stall 52 (0 discordant; never fires in the engine).
+- **Overlap (a):** of the old rule's 40 extra wins, clean obs also wins 34, tau 0.5 20, no mask 18.
+- **Owner:** live sessions use v6lat (seed not stated). **Asked:** E2 = v6aug_s1 in the engine at tau 0.27 and rate-matched 0.083 (~40 min + boot); E1 RL stays parked.
+
+## L67an (2026-09-12) -- four repo changes: CNN optional with --student, tools/, requirements, README + guide
+- **play.py (both decks):** no `data/policy.pt` is fine when a student is set -- neutral logits keep the masks valid, perception widths mirror the live policy_rl.pt (threat_dim 52), deck guard only for a real checkpoint; unchanged when a CNN exists. Live start without a CNN untested (needs the game window).
+- **tools/:** hf_download.py (stdlib, resumable), hf_to_crawl.py (deck arg, dedupe skipped when the owner's crawl is missing), build_degraded.py, merge_aug.py, 13 offline tests; old converter == new on a real 5,000-replay part; scratchpad originals deleted.
+- **Trap:** scratchpad/gauntlet/ext is NOT gitignored -> newcomer outputs go under repo-root data/.
+- **requirements:** ultralytics + polars, install CUDA torch first.
+- **Docs:** README status/pointer/tools row; Instructions.txt Stage 14 removed, Stage 4 on tools/, data\ outputs.
+- Suites: icebow 1,430 (1 pre-existing fail), hogeq 1,406 OK, tools 13 OK.
+
+## L67am (2026-09-12) -- E2: v6aug_s1 at tau 0.27 wins 74% vs v6lat 52% in the engine (live rule + live view); holds before ghost exhaustion
+- **Arm A (a):** v6aug_s1 tau 0.27: 74/100 vs v6lat 52 (+22 pp, CI 11-33, 29 vs 7, p 0.0003); 12.7 plays/min.
+- **Arm B (a):** tau 0.083: 45/100 (-7 pp, p 0.28); 0.27 beats 0.083 31 vs 2 on the same entries.
+- **Guard (a):** decided before the script ended v6lat 46.8% -> v6aug 66.2%; paired on 68 common entries 17 vs 6 (p ~0.035); after-script wins 15 -> 27 (half the gain).
+- **Chain (a):** same 100: v6lat 52 -> v6aug 74 -> clean obs 92.
+- **Risk:** v6aug's LIVE gate is shifted (5cs.98: 1.3% plays at tau 0.5 on live frames; 0.083 matched v6lat's live rate) -- live plays/min at 0.27 unmeasured.
+- **Proposed:** live run with `--student data\pipeline\s1_icebow_v6aug_s1.pt --student-gate-tau 0.27`, watch plays/min.
+
+## L67ao (2026-09-12) -- run19 v6aug live: not fewer plays, longer pauses; tau 0.24 = 0.27
+- **stdout, tau 0.27 (a):** v6lat 10.9 plays/min, 1% anti-stall, 27% of match time in >10 s pauses, longest 16-19 s; v6aug 12.2/min, 4% anti-stall, 35%, longest 22-26 s, >15 s pauses 0.64 vs 0.39/min.
+- **freeze captures (a):** v6lat 3 in 5 matches; v6aug 16 (0.27) and 31 (0.24) -- p median ~0.04 at those waits, elixir 8-10.
+- **video counter (a, ~10% high, calibrated on 20:29 stdout):** tau 0.24 12.4/min, 44% in >10 s pauses; tau 0.27 13.4/min, 36% -- no gain from 0.24.
+- **Proposed:** `play.stall_seconds: 8` (one change), v6aug at 0.27; save stdout with Tee-Object.
+
+## L67ap (2026-09-12) -- run20 v6aug tau 0.24 (stdout saved): 9.9 plays/min, 49% of match time in >10 s pauses; stall_seconds 8 set
+- **Banner (a):** v6aug_s1, tau 0.24, anti-stall 9 elixir / 12 s; patched play.py running (CNN still present).
+- **Pauses (a, stdout):** v6lat 0.27 27% / v6aug 0.27 35% / v6aug 0.24 49% of match time in >10 s pauses; plays/min 10.9 / 12.2 / 9.9; anti-stall 1% / 4% / 5%.
+- **Read (b):** 0.24 vs 0.27 is most likely n=3 match variance; the gate sits at ~0.04 in the pauses, below both taus.
+- **Config (owner request):** `play.stall_seconds: 8` added to icebow/config/config.yaml (code default 12). Revert: delete the line.
+
+## L67aq (2026-09-15) -- strategy research (Fable Foreman, 4 scouts): what S1 sees, what engine/live can supply, why beyond-imitation attempts failed
+- **S1 live (a):** unit HP constant 1.0, king HP 1.0, princess tower HP real, no movement/status/range/targets; clean training rows DO carry exact unit HP (train/live mismatch).
+- **Unused live readers (a):** HP bars (detect_obs.read_hp_frac, accuracy unmeasured), velocity (TeamTracker), effect-zone detector classes.
+- **Engine (a):** hp, targets, attack timing, movement direction; status buffs only as an UNVERIFIED export; no save/restore.
+- **Failure causes (a):** sim fidelity, CNN underfit, gate collapse, damage-only greedy search objective, privileged-teacher gap.
+- **Proposed (b):** degrade-component attribution screen -> measure live readers -> S1 v7 with live-matched noisy features -> asymmetric actor-critic / search-DAgger with a learned value.
+
+
+## L67as (2026-09-15) -- step 2 live reader audit: HP-bar reader unusable (3.6%), velocity usable (89%); engine attribution chain launched
+- **RETRACTION (c):** AW proposal (3) put unit HP first on the S1 v7 feature list. `detect_obs.read_hp_frac` returns a bar on **3.6% of detections** (n=9,628), **22.7% of tracks** (n=643). No error to model -- it is a detector project, not a wiring job.
+- **HP where it fires (a):** at-deploy first read median 1.000, 97.3% >= 0.90, 0.9% < 0.70 (112/166 plays matched); jitter median 0.000 (n=51).
+- **HP anomaly (a, unexplained):** 20.2% of consecutive found-read pairs INCREASE by >0.10 (n=178) in decks with no heals -- reader noise or track-identity swap; audit cannot separate.
+- **Velocity (a):** 89.0% of tracks report a velocity; per-class speed overshoots card constants by a consistent **1.08-1.20x across ~15 classes** (shared warp bias, `TILE_X/TILE_Y` vs `actions.BoardWarp`); heading median |angle change| **43.7 deg** (n=5,365) = unusable unsmoothed; stationary buildings read 0.30-0.41 tiles/s (jitter floor).
+- **Charge lead (b):** prince 2.01x, dark_prince 1.63x, mega_knight 1.57x, goblin_giant 1.50x, battle_ram 1.37x sit above the bias cluster -- a derived charging flag from data already computed. Confounded by lava_hound 1.38x and the unquantified warp bias.
+- **v7 order changes (b):** velocity in, unit HP out; static card stats need no reader.
+- **Launched:** `chain_noise_attrib.ps1` (step 1) -- 2 gates + 7 single-component `--noise-off` arms x 100 held-out entries, v6lat_s0, live rule.
+
+
+## L67at (2026-09-15) -- noise attribution gates pass; instrument validated end-to-end; arms running
+- **Gates (a, n=10, same held-out entries):** `gate_live10` 0.50 (CI 0.20-0.80) vs 0.52 live baseline; `gate_allof10` 0.90 (CI 0.70-1.00) vs 0.92 clean. Both endpoints of the 40-point gap reproduce through the full engine path.
+- **Means (a):** `--noise-off` plumbing does not perturb the eval; all-switches-off == clean view outside Python too, not just in the 46 unit tests.
+- **NOT established:** anything per-component; n=10 CIs are +-30pp, gates can only fail informatively.
+- **Boot (a):** 3 attempts (exit=1, exit=1, exit=0), 13 min -- matches the known ~1-in-10 segfault rate; retry loop handled it. Free RAM with VM up 2.7 GB.
+- **RETRACTION (c, mine, same session):** the "~4.5 h" arm estimate I gave last loop was wrong (used 21 s/match from another config). Measured 12 s/match; ~2.5 h stands.
+- **Running:** 7 one-change arms x 100 held-out entries (off_recall 82/100 at check time).
+
+
+## L67az/ba (2026-09-16) -- attribution screen COMPLETE: `scalars` carries ~20 of the ~38-point gap; six arms are nulls
+- **Table (a, n=100 each, held-out 0:100, v6lat_s0, live rule, tau 0.27) vs control 0.52:** recall 0.55 (+3), false_pos 0.58 (+6), position 0.54 (+2), team 0.56 (+4), unit_hp 0.49 (**-3**), **scalars 0.72 (+20)**, conf 0.52 (0). All-8-off gate (n=10) 0.90 (+38); clean obs (E2) 0.92 (+40).
+- **Reading (a):** six arms indistinguishable from control at +-10pp; only `scalars` clears it (0.63 vs 0.62). Individual effects sum +32 of +38 -- roughly ADDITIVE with one dominant term.
+- **RETRACTION (c, mine, stated 4x across L67av-ay):** "the gap is combinatorial, no single component carries it". Contradicted by arm 6. Five consecutive nulls made a forming hunch feel confirmed; should have stayed (b) until the table was complete.
+- **MECHANISM NOT ESTABLISHED:** `scalars` bundles THREE things (e1_view.py:158-163,183) -- exact unfloored my_elixir, true opp_elixir vs unknown, and king tower hp_frac. +20 belongs to all three together; splitting them needs new Noise switches.
+- **UNCONFIRMED:** one 100-opponent slice. Disjoint-slice replication (control + scalars on held-out 100:200, own control) launched as chain_scalars_confirm.ps1.
+- **Retired tonight (both mine, both wrong):** "add unit HP to the observation" (3 instruments now point the other way) and "improve the detector" (recall +3, precision +6, conf 0).
+
+
+## L67bb (2026-09-16) -- scalars finding REPLICATES on a disjoint slice: +24pp (vs +20pp original)
+- **Replication (a, n=100/cell):** held-out 100:200, own control. control 0.47 (0.37-0.57), scalars-off 0.71 (0.62-0.80) = **+24**. Original slice 0:100: 0.52 / 0.72 = **+20**.
+- **CONFIRMED:** 200 distinct held-out opponents, two disjoint slices, each with its own control. Both arms clear their control's upper bound. First replicated positive result in this line.
+- **Control drift (a):** the two controls differ 5pp (0.52 vs 0.47) on identical settings -- pure opponent draw. Reading slice 2 against slice 1's control would have given +19 not +24. The L67au per-slice-control rule paid for itself on first use.
+- **Scale (a):** ~+22pp mean vs a total gap of +38/+40 -- scalars carries ~55-60% of it; the other six arms sum ~+12, none individually distinguishable from zero.
+- **NOT established:** which of the THREE bundled things (exact my_elixir / true opp_elixir / king hp_frac) carries it; live transfer (live already wires opp_elixir, floors my_elixir); single ckpt/tau/seed.
+- **Next (proposed, not started):** split the switch into 3 and run 3 arms + own control, ~1.5 h engine.
+
+
+## L67bc-bg (2026-09-16) -- scalars bundle SPLIT: opponent elixir is the lever (+16 of +20); own elixir 0; king HP +3; additive
+- **Foreman run 2:** O5 split Noise.scalars -> my_elixir/opp_elixir/king_hp (alias kept); verifier PASS_WITH_NOTES (own golden from git show 4bca159, 40/40; RNG state identical per switch); tests hardened (damaged-kings golden, 31 OK). Commits a58412e, eb808e2.
+- **Gate (a):** gate_split3 0.72 == AZ off_scalars 0.72, and 100/100 per-match records identical (only wall_s). Same instrument.
+- **Split (a, n=100, entries 0:100, vs control 0.52):** my_elixir 0.52 (+0; 26 flips, symmetric) | **opp_elixir 0.68 (+16; 22 to win / 6 away)** | king_hp 0.55 (+3; 7 flips) | all three 0.72 (+20). 0+16+3=19 vs 20 -- additive.
+- **ctrl_split (fresh control, same batch, port 38031):** 0.52 -- 100/100 records identical to AZ's ctrl_live100 (port 38032). Cross-service determinism measured; the two ports are interchangeable.
+- **Lean contradicted (c, mine):** "two of three are cheap reader fixes" -- own-elixir precision is worth nothing.
+- **Live (a):** opp_elixir already fed from OpponentElixirEstimator (play-counting: reset 5.0, subtract cost per clustered new enemy deploy, regen, clamp). Accuracy never measured; error sources = detector misses, wrong identity, regen model.
+- **NOT established:** +16 is one slice (bundle replicated, switch alone not); live transfer bounded by unmeasured estimator accuracy; king_hp +3 within noise.
+- **Next (proposed):** replicate opp_elixir on 100:200; measure the estimator vs engine truth offline (engine deploys vs degraded view); v7 with opp_elixir noise matched to the measured error.
+
+
+## L67bh-bi (2026-09-16) -- step 1: opp_elixir REPLICATES on 100:200: 0.73 vs 0.47 (+26); confirmed on 200 opponents
+- **Replication (a, n=100):** off_opp_elixir_slice2 0.73 (0.64-0.82) vs ctrl_slice2 0.47 (0.37-0.57) = **+26**; flips 30 to win / 4 away. Original slice: +16 (22/6). Combined 52/10 over 200 distinct held-out ghosts.
+- **Single switch == bundle on slice 2 (a):** +26 vs +24 (BA). Opponent elixir IS the scalars effect (~55-60% of the whole gap).
+- **Gate (a):** gate_slice2_10 reproduced ctrl_slice2's 10 records exactly; full control not re-run (determinism measured twice in BB) -- recorded as an evidence-based exception to the L67au rule.
+- **NOT established:** live transfer -- live feeds the model None today (play.student_opp_elixir=False); gain bounded by the estimator's accuracy, measured in step 2 (pending).
+- **Trap:** controls differ 5pp between slices, arms 5pp the other way; per-slice anchoring is not optional at n=100.
+
+
+## L67bj (2026-09-16) -- step 2: OpponentElixirEstimator vs engine truth (100 ghosts, 74,065 samples): +76% over-charge under PERFECT detection; pinned at ~0 for 93% of ticks under the live view
+- **Fidelity (a):** all 100 matches reproduce ctrl_live100 outcome/crowns/plays_accepted exactly.
+- **Table (a):** A (perfect, units) MAE 2.51 bias -1.95, charged 14,364 vs 8,179 delivered (+76%); **A_wl** (live whitelist) MAE 2.35 bias +0.74, 7,729 vs 8,179 -- cancellation of two ~3x errors, not accuracy; at opp-play ticks MAE 3.17 bias +1.95; **B** (live view) MAE 5.90 bias -5.90, share|err|<=1 4.7%, 146,102 charged (18x), **est<=1.0 on 92.9% of ticks**.
+- **Per class (a, delivered -> charges):** tombstone 58->442 (7.6x), witch 16->142, miner 28->201, barbarians 14->180 (12.9x), royal_hogs 49->197, skeletons 133->571. Never-played-base share of over-charge: 1%.
+- **Blind spots (a, top-25):** spells never charged >=1,011 elixir; non-whitelisted troops >=1,221 more under A_wl; 34.4% of all ghost plays (43.7% non-spell) outside detector_cards.
+- **RETRACTED (c, mine):** cadence hypothesis (-3.42 -> -3.34 at 5-tick); spawn hypothesis (1% never-played share). Supported (b): cluster_radius splits multi-body cards; single long-lived units re-charged by an UNRESOLVED path (matched tracks refresh; no entity cap).
+- **B is an upper bound (b):** degrade() noise is i.i.d. per sample; real tracks persist. True live error in [2.35, 5.90].
+- **Verifier caught a real bug (a):** attempt-3 truth ledger used scripted (3,796) not delivered (2,429) plays.
+- **v7 consequence (b):** training on today's error teaches the model to ignore the feature (= status quo). Fix + re-measure the estimator first. Proposals: charge-event trace; first-appearance charging + body-count clustering + TeamTracker input; effect-zone classes for spells; then v7.
+
+
+## L67bk-bm (2026-09-16) -- estimator diagnosed (spawns + body splits + fast movers) and V2 measured: -57% over-billing under perfect detection, ~no change under the live view
+- **Trace (a, 5 matches, 195 charges):** first_seen 70; split 92 = SPAWNER OUTPUT under the parent's name (tombstone 27, witch 14, night_witch 8) + body splits; out_of_radius 25 (bandit dash, median jump 0.113); after_expiry 6. forget_s not the bug (all expiries 6.25 s). **My BD retraction of the spawn hypothesis was wrong.**
+- **V2 (R1 spawn suppression r_spawn 0.084 / R2 body counts / R3 speed radius), V1 byte-untouched; verifier caught an end-of-run json crash + R3 silently off in the harness before the engine ran.**
+- **Side-by-side (a, n=100, same det stream, fidelity 100/100):** A: MAE 2.51 -> 2.01, bias -1.95 -> -1.20, charged +76% -> +32%, pinned 18% -> 11%. A_wl: 2.35 -> 2.32. **B (live view): 5.90 -> 5.81, pinned 92.9% -> 91.0%, 18x -> 15x.**
+- **Fixed (a):** tombstone 442 -> ~58, skeleton_army 199 -> 77, goblin_gang out, royal_hogs 197 -> 120. **Remaining (a), named (b):** miner 201 (burrow re-sighting), barbarians 166 (absorption window 1 s << body lifetime), skeleton_barrel 85 / goblins 91 (SPAWNS gaps), witch 84 (r_spawn too tight).
+- **Not fixable on raw dets (a):** knight 65 plays -> 1,289 charges under B. Design change: bill on NEW TeamTracker track IDs (min_hits=2), measurable as B_tt; caveat: i.i.d. degrade makes B_tt optimistic where B is pessimistic -> needs a temporally correlated degrade variant.
+- **Step 3 (a, live, 8084aad):** unanchored NON-deck zones -> enemy (old side-prior tagged enemy poison on my tower as 'mine'); deck-owned zones unchanged (guard). Whitelist prepared, moot while student_opp_elixir=False.
+- **Live status:** estimator OFF live; +16/+26 unrealised. **Next (b):** V2.1 rules (~40 min); B_tt + correlated degrade; only then wire live + v7.
+
+## L67bn (2026-09-17, paused overnight) -- V2.1 + tracker-input + correlated-noise run PREPARED, blocked on the emulator
+- **Committed bce44bb:** V2.1 (R4-R7, 4 verified attempts), harness --tracker/--corr (12 conditions), chain_opp_est_v21.ps1 (smoke arm + guard, then 0:100).
+- **Boot failed 01:06Z:** attempt 1 exit=1 after 2.5 min, attempts 2-6 exit=1 within ~5 s each. crosvm (Google Play Games) running; every successful boot today had crosvm=0 -> hypervisor contention (b). Owner's processes untouched; nine guarded re-checks held.
+- **Owner 2026-09-17 ~01:5xZ:** going to bed, will close the emulator in the morning; loop paused on request.
+- **Resume:** when crosvm=0 and >= 5 GB free: `Start-Process powershell -File scratchpad\gauntlet\L67\e1\chain_opp_est_v21.ps1` (~8 min boot + 2-match smoke + ~1 h). Then: fidelity gate vs ctrl_live100, score conditions A/A_wl/B/B_tt/B_tt_wl/B_corr{S,L}{,_tt,_tt_wl}, HANDOFF section BF, Discord.
+
+
+## L67bn (2026-09-17) -- V2.1 nearly unbiased under perfect detection (MAE 1.51, +6.6% over-billing); tracker-input beats raw under every noise model (2.68-3.88 vs 4.27-5.77)
+- **Fidelity (a):** all 100 matches reproduce ctrl_live100 (outcome/crowns/plays_accepted). Smoke arm cleared its guard first (integrated --tracker --corr loop's first engine contact).
+- **A (perfect detection, V2.1) (a):** MAE 1.51, bias **-0.14**, charged 8,717 vs 8,179 delivered = **+6.6%** (V1 +76%, V2 +32%); within-1 53.3% (V1 36%). Residual classes from BE closed. **= the ceiling for the drop-in-animation idea** (engine first-appearance IS perfect deploy detection).
+- **A_wl (a):** MAE 2.33, bias **+1.69**, charged 5,357 = **-34.5%**. V1's apparent accuracy (+0.74) was two ~3x errors cancelling; shrinking the over-billing unmasked the 34.4%-of-plays whitelist blind spot. **Now the dominant live error -- a coverage/config problem, not an algorithm one.**
+- **Tracker input (a, live-reachable _tt_wl):** memoryless **2.68** (bias -0.42, +10.9% over-charge) vs raw 5.77; SHORT **3.88** vs 5.58; LONG **3.46** vs 4.27. Design is directionally right; the 2.68-3.88 spread is MODEL CHOICE, not measurement.
+- **Unpredicted (a):** the raw estimator IMPROVES as noise persists (5.77 -> 5.58 -> 4.27) -- matched per-sample FP rate + longer lifetimes = fewer DISTINCT phantoms (b); consequently the idealised tracker HURTS under LONG (4.62 vs raw 4.27), rescued only by the whitelist (3.46).
+- **NOT established:** which noise model matches the real detector (SHORT/LONG constants are judgment calls); what MAE is good enough -- the +16/+26 was measured for TRUE opponent elixir, never for an estimate.
+- **Next (b, proposed):** feed the model the ESTIMATOR's value in e1_eval (B_tt_wl quality, MAE ~2.7) and re-run the opp_elixir arm on both slices (~1.5 h) -> converts "MAE 2.7" into "recovers X of +16"; decides wire-live-and-train-v7 vs closing the line with a measured negative. Secondary: whitelist/spell coverage (-34.5%) now outranks further estimator rules.
+
+
+## L67bo-bs (2026-09-18) -- DECISIVE EXPERIMENT: a ~2.6-MAE opponent-elixir estimate recovers the FULL effect of the true value; replicated on 200 opponents, all four gates record-for-record
+- **Gates (a):** gate_off10 == ctrl_live100; gate_true10 == off_opp_elixir; gate_off10_s2 == ctrl_slice2; gate_true10_s2 == off_opp_elixir_slice2 -- all identical on outcome/crowns/plays_accepted. Both endpoints reproduced on BOTH slices before any estimate was fed.
+- **Result (a, n=100/cell, v6lat_s0, tau 0.27):** slice 0:100 control 0.52 -> **estimate 0.70** (CI 0.61-0.79) vs truth 0.68; slice 100:200 control 0.47 -> **estimate 0.73** (CI 0.64-0.82) vs truth 0.73.
+- **Paired flips (a):** 21/3 and 28/2 vs control = **49 to win / 5 away across 200 distinct opponents**; vs TRUTH symmetric (12/10, 12/12) -- the estimate MATCHES truth, does not beat it.
+- **Closed loop stable (a):** estimator MAE 2.660 / 2.595, bias -0.497 / **+0.027**; open-loop was 2.68. Feeding it back did not destabilise it. |plays_accepted| diff vs control 1,192 -> the policy acts on the number.
+- **Robust to estimator quality (a):** sensitivity arm fed a 3.222-MAE estimate still returned 0.67 (CI 0.58-0.76). ~0.55 elixir more error costs ~3pp -- the whole 2.6-3.2 band works.
+- **STRATEGIC CAVEAT (a):** all of this is v6lat_s0. Live runs v6aug_s1, which alone measured 0.74 on the same 0:100 ghosts (5cs.99 AT). The estimate lifts v6lat to roughly v6aug's unaided level; it is NOT shown to improve the deployed checkpoint. Mechanism: v6lat trained WITH exact opp_elixir (live None is its OOD case); v6aug trained on degraded rows with opp_elixir None (an estimate is ITS OOD case). "No retraining needed" holds for v6lat only -- corrected after the owner challenged it.
+- **NOT established:** v6aug + estimate (chain queued, held for owner, ~30 min); live transfer; the mem[5]/CNN path (enabling opp_elixir_v2 changes the CNN's input; no CNN in the harness); single ckpt/tau/seed.
+- **Live:** owner enabled both flags (config.yaml:1291, :1297) for a trial; code defaults still False, revert = delete two lines. Flag change broke 3 committed tests that read the live config (my error), repaired in d72179e.
+
+
+## L67bt-bv (2026-09-18) -- the owner's four live complaints measured: one real live defect (fixed), one is training, two wrong as stated, and one of MY measurements was wrong
+- **RETRACTION (c, owner-corrected):** I reported X-Bows as "all defensive, zero offensive" using a y>0.5 rule I INVENTED. The code defines it: `play.xbow_forward_board_y: 0.58` (config.yaml:1369). Re-measured: **30/30 X-Bows at board y=0.61 -- all OFFENSIVE**, zero defensive (run20 6, run18 11, run12b 13). Owner was right. X-Bow is the card where own-half != defensive (siege range ~11.5 tiles). O21_audit.md section C annotated retracted in place.
+- **Reaction time (c as stated):** median inter-decision gap **~4.2-4.3 s, stable** across all three runs -- no cadence trend. It is PAUSE SHARE: 27% (v6lat 0.27) -> 35% (v6aug 0.27) -> **49% (v6aug 0.24, what the owner runs)**. **Best-evidenced live change available: tau 0.27, not 0.24.**
+- **Rocket (a):** in hand AND elixir>=6 on **128 decisions, played 4 times (<3%)**. NOT gated -- not chosen. Card selection = imitation training, so NOT a live fix and NOT fixable overnight; also explains the absent rocket+tornado combo.
+- **King targeting (c):** no `king_tower_cell` exists; play.py:343-344 deliberately avoids waking the king. Owner's hypothesis unsupported. Match state (1-0/1-1) is tracked by TowerTracker but never logged, so his tower doctrine is currently UNAUDITABLE.
+- **Overtime forwardness:** only run12b reached OT (n=12 non-xbow plays). Median board-y 0.550 regular vs 0.550 OT; enemy half 10% vs 17%. Not supported -- but tiny n and the WRONG SESSION (tonight's was not recorded; newest is 20260912).
+- **FIXED (a, 11c6e2f):** play.py ran the anti-dead-lane `xbow_target_lane_cell` and then `xbow_lock_cell` UNCONDITIONALLY, which snapped to the NEARER princess with no aliveness check -- overwriting the correction. Fix: optional `enemy_alive=None` (None == HEAD, so env.py/training untouched), dead princesses dropped BEFORE the nearest-lane pick, empty set returns None (never the king). 26 tests incl. a precondition test that the pre-fix default WOULD pick the dead lane. Owner first reported this 2026-08-16.
+- **Structural (a):** the doctrine assists are NOT bypassed by the student -- play.py:1045-1047 takes the student's (card, cell) and :1052+ post-processes it (weaker-princess, king-safe pump rocket, xbow lane/lock/pocket), all enabled by default. Placement is already corrected; what training governs is WHICH CARD is played, which is exactly where rocket fails.
+- **Owed (b):** record the next live session (3 of 4 complaints are unauditable without it); log match state + overtime flag; fold rocket selection into the SAME retrain as the opp_elixir noise (5cs.99 BG); port the fix to hogeq; test_xbow_pocket.py still pins source text (third brittle test found tonight).
+
+
+## L67bw (2026-09-18) -- opponent-elixir feed REPLICATES on a disjoint slice (+8), below my pre-registered 0.82 bar
+- Slice 2 = heldout entries **100:200** (disjoint from slice 1's 0:100), ckpt v6aug_s1 (the deployed one), tau 0.27, both arms same batch/module.
+- (a) control `--feed-opp-elixir off` **0.71** (71/100, CI 0.62-0.80); estimate `estimated --feed-noise live` **0.79** (79/100, CI 0.71-0.87).
+- (a) **Paired 100/100 on (tag,k): 16 loss->win, 8 win->loss, 76 unchanged, net +8.** Slice 1 was +11 (flips 16/5, vs an e1_eval anchor = different module, weaker pairing). Pooled 145/200=0.725 -> 164/200=0.82, **+9.5**.
+- (c, against my own prediction) I pre-registered "needs roughly 0.82 to replicate" and it landed **0.79** -- 3 points short. Not moving the bar: the two slices establish a positive effect of roughly **+8 to +11**, not a point value; the entry-weighted CI is +-9pp at n=100, wider than the slice-to-slice difference.
+- (a) Estimator on this slice, live-reachable B_tt_wl: **MAE 2.585, bias +0.163**, |err|<=2 on 48.9% of ticks (perfect-detection ceiling A+ = 1.405). Raw live billing (B) still MAE 5.570 bias **-5.559** -- V1's pinned-low failure reproduced on new entries.
+- (a, read not assumed) **Live wiring == the measured condition.** `opp_elixir_v2: true` + `student_opp_elixir: true` gives play.py:428 V2, :613-615 TeamTracker-confirmed billing filtered to `detector_cards`, :617 update, :975 `_est` -> student. That is B_tt_wl fed to the policy. Both flags already committed on (config.yaml:1291/1297).
+- **NOT established:** no live winrate anywhere; these are engine ghosts with a *modelled* live noise input, not the real detector on real frames. Says nothing about the four behaviour complaints (BH) -- the feed does not touch card selection.
+
+
+## L67bx (2026-09-18) -- board-y direction settled from computing code; TWO more of my claims retracted
+- (a) **Larger board y = OUR side; forward = DECREASING y.** `obs_contract.py:32-35` computes enemy towers at y 0.094/0.203, ours at 0.797/0.906, river 0.5; confirmed in frame space by `config.yaml:1074-1075` and `actions.py:84-85`; the board->frame warp is strictly monotone so the sign cannot flip.
+- (c) **RETRACTION: `xbow_forward_board_y: 0.58` is NOT mis-set.** Board 0.61 -> frame 0.5064 vs cut 0.4890, so `cy >= defense_y` is True and all three assists (`reward.py:445-446/492-493/539-540`) return None = defensive. 0.58 was tuned so the pro row 0.604-0.609 counts defensive (run15 regression: 16/17 bows shoved to the bridge); `test_xbow_live_depth.py:62-66` pins it. Owner right about EFFECT (siege ~11.5 tiles reaches the tower from own half), code right about its own word.
+- (b) **RETRACTION: commit 11c6e2f is probably INERT live.** `play.py:1084-1086` walrus `if`/`elif`: tower down -> pocket overrides wholesale, chain never runs; no tower down -> chain runs but returns None at 0.61 before the aliveness filter. Correct code, 26 tests, no effect on the bows actually played. I reported it to the owner as a fix; overstated.
+- (a) **Tower state DOES gate placement** (my earlier "nothing consumes TowerTracker for placement" was wrong): `play.py:1084-1091` `xbow_pocket_cell(enemy_alive,...)` overrides to board y **0.391 = ENEMY half** once an enemy princess is down (`xbow_pocket_after_tower: true`). **Directly contradicts the owner's "ahead -> defend" doctrine.** Pro-derived, so a genuine doctrine conflict, not a bug -> ASKED the owner, changed nothing.
+- (a) **...but it fires twice in the whole archive.** All 19 `live_run*_utf8.log`: `[assist] XBOW pocket` = 2, both run18, both one-princess-down with the side matching the dead tower. Every other run 0. **Refutes my own hypothesis** that the pocket explains the owner's forward-overtime play. That cause is still unknown.
+- (a) No crown/damage-lead gate on placement exists anywhere live; only per-tower HP (`reward.py:460-465`).
+- **Owed, highest value and cheap:** record a live session. Three of four complaints and now the overtime cause are all unauditable without one.
+
+
+## L67by (2026-09-18) -- OWNER RULING: pocket assist OFF; every tap now stamps match state
+- Owner decided the BJ conflict: *"the pro derived play clearly does not apply at 10,000 trophies, so go with A: switch it off."* Commit f3cf655, two live-path changes.
+- **(1) `xbow_pocket_after_tower: true -> false`** (config.yaml:1371). No more forward override to board y 0.391 when an enemy princess is down; the model's own cell stands. **REVERT: set back to true.**
+- **(a) Expectation stated BEFORE the run:** this assist fired **2x in 19 recorded runs**, so expect little/no visible difference from it alone -- said up front so a null is not misread, and so any overtime change is not misattributed to this switch.
+- **(2) LOGGING ONLY** (play.py:1208): `[student] TAP` lines now carry `ot=<0|1> ot_s=<s> enemy_alive=[..] mine_alive=[..]`. This closes the gap that made 3 of the owner's 4 complaints unmeasurable. Decisions untouched; `try/except` so logging can never kill the live loop. **Appended AFTER `wall=`** because `tap_audit.py`'s regex ends there -- **verified**: old/new lines parse to identical groups.
+- **(a) Verified before handing over a live command:** config parses and reads False; play.py compiles; **full suite 1516 passed / 21 skipped / 1 failed**. The one failure (`test_xbow_into_push.py`, `0.5625 >= env.xbow_front 0.625`) is **PRE-EXISTING -- proven** by restoring the pre-edit config backup and re-running: it fails identically. `env.*` value, unrelated to the `play.*` edit. Not bundled; now owed.
+- Command delivered: `--student data\pipeline\s1_icebow_v6aug_s1.pt --student-gate-tau 0.27`, opp-elixir flags already on (1291/1297).
+- hogeq left ON (no X-Bow in that deck, assist inert).
+- **NOT established:** any live effect of either change -- that is what the overnight run is for. The cause of forward-overtime play is still unknown, but is now auditable for the first time.
+
+
+## L67bz (2026-09-18) -- THE dead-lane bug: the rule was gated behind a cut every real bow sits behind
+- Owner, third report (first 2026-08-16): *"it kept putting xbows in the dead left lane. your fix did nothing."* **He is right.**
+- **(a) CAUSE, exact line.** `reward.xbow_target_lane_cell` rule 1 IS "never bow a dead lane", but line 445 gated every rule behind `cy >= defense_y: return None`. Model's bows sit at board y 0.61 -> frame 0.5064 vs the cut's 0.4890, i.e. BEHIND it. **The rule has never once fired on a bow the model actually plays.**
+- **(a) Explains both failed fixes.** 11c6e2f filtered `xbow_lock_cell`'s candidates at lines 487-491; that function returns None at line **492** for these bows -- it filtered a list discarded on the next line. And the L67by pocket flip removed the only assist still moving them, which is why it got WORSE overnight.
+- **(a) FIX:** `dead_lane_any_depth=False` param; True runs rule 1 at ANY depth (a bow reaches a tower from your own half, siege ~11.5 tiles). Rule 2 stays offensive-only on purpose. **Default False = byte-identical old behaviour, so env.py/TRAINING untouched.** Live flag `play.xbow_dead_lane_any_depth` (default true). REVERT: set false.
+- Added `[assist] XBOW dead-lane cell X->Y enemy_alive [..]` so the next run PROVES it fires. Two of my last three claims here were wrong; a log line beats another confident argument.
+- **(c) RETRACTION, <1 day old:** I called the pocket assist "near-inert -- 2 firings in 19 runs" and predicted no visible change. **Wrong denominator:** the feature landed 2026-09-12 (563e4dc), so only run18/run20 could fire it; run18 fired on **2 of 11 bows (~18%)**. Lesson: the denominator is runs that HAD the feature.
+- Tests: 26 pass incl. a PRECONDITION test that the old default leaves a defensive dead-lane bow untouched, the owner's exact case, mirror case, both-down (never the king), no-HP, depth preserved, rule-2 scope, and offensive-behaviour-identical regression.
+- **NOT established:** that it works LIVE (unit-tested + reasoned, not observed). hogeq has the identical defect, untouched.
+
+
+## L67ca (2026-09-18) -- THE structural finding: the model plays every X-Bow exactly where the assist layer switches off
+- **(a)** X-Bow is the ONLY degenerate card: entropy **0.62-1.97 bits** (2-5 unique cells) vs 2.5-4.25 bits for the_log / skeletons / ice_wizard / tornado. run12b put **84.6% of its 13 bows in ONE cell**. The policy is not broken in general -- every other card varies with the board.
+- **(a)** Its cells decode to **254 = board x 0.139 LEFT, y 0.604** and **267 = x 0.861 RIGHT, y 0.604**: a binary lane pick at ONE fixed depth, side-biased per run.
+- **(a) THE POINT: 0.604 sits behind the 0.58 cut**, which was deliberately tuned so the pro row counts DEFENSIVE. All three assists return None for `cy >= defense_y`. **The entire X-Bow assist layer has been inert BY CONSTRUCTION for every bow.** Confirmed: `[assist] XBOW lane` = **0 across all 19 runs**.
+- **(c) RETRACTION of my framing:** not three defects (11c6e2f lock, L67bz gate, L67by pocket) but ONE -- the policy emits into a region the assist layer defines as out of scope. I patched assists repeatedly without ever checking whether any could fire; that is a one-grep measurement I never ran until tonight.
+- The owner's "it kept putting xbows in the dead left lane" is the **exact predicted behaviour** of this system.
+- L67bz is the first mechanism that can move a bow by tower state at 0.604. Unit-tested, instrumented, **NOT live-verified**.
+- **NOT established:** why the policy is degenerate on this card (likely imitation data); whether raising the cut would be better (would re-enable the run15 bridge-shove regression); **live winrate -- never measured once in this project.**
+
+
+## L67cb (2026-09-18) -- THE LIVE OUTCOME LEDGER: the project's first live match record, ever
+- **(a) Blocking finding:** **no live match outcome has ever been recorded here.** `vision.py` has no results-screen reader (line 11 is a NOTE, not an implementation); `play.py` logged none. Grepped all 19 `live_run*_utf8.log` + every `icebow/data/play_*.log` for `victory|defeat|crowns_for|outcome`: only the bare word `outcome` matched (5 run20, 14 run18) -- those are `[ability] FROSTY outcome +7s` lines. **My earlier grep suggesting outcomes existed was a FALSE POSITIVE; I checked before reporting.** So the owner's "reconstruct the baseline from disk" is impossible -- every winrate ever given to him was engine ghosts.
+- **Change (one file, additive):** `play.py` -- `_ledger`/`_match` beside `prev` (~:1293); `_match["t0"]` in the new-match branch (~:1327); the ledger write right after `_replay_rec.end_match()` (~:1334), a block that already fires **exactly once per match**. Writes `icebow/data/live_matches_<session>.jsonl` + a `[match] WIN 1-0 182s | session 3W-1L-0D of 4` log line. **REVERT: delete the three blocks.**
+- **(a) Outcome source:** `TowerTracker.crown_counts()` (reward.py:722) **plus `king_trending_down()` (reward.py:737)** -- the latter is essential: a king fall ends the match instantly so its latch often cannot finish before the results screen, and **without it every 3-crown win is under-read**. Crowns decide a CR match (equal = draw), so no OCR needed.
+- **(a) Correctness:** `tower_tracker.reset()` runs at match START, not end, so the latches still hold THIS match at the hook. Verified in source.
+- **(a) INSTRUMENT VALIDATED BEFORE ANY LIVE MATCH** (`scratchpad/validate_ledger.py`, 11/11): constructed tower states covering `blue`/`red` inversion (would have logged every win as a loss), both king-latched cases, **both king-TRENDING recoveries**, and the ledger path derivation. Reading the docstring was not treated as verification -- that habit produced this session's retractions.
+- **Limits, stated up front:** ~19 matches/h measured -> ~105-115 matches in 5.5 h -> Wilson CI **about +-9 pts**. Separates 50% from 30%, NOT 45% from 55%. **Cannot distinguish real players from bots** (no reader exists; trophy road serves both), so it measures "winrate vs whatever matchmaking served" -- weaker than the owner's bar. No trophy reader exists; `trophy_hint` dropped rather than faked.
+- **NOT established:** any live winrate (run not executed at time of writing); whether the crown latch holds in LIVE conditions (offline-validated only -- 5 hand-checked matches owed before trusting a long run).
+
+
+## L67cc (2026-09-18) -- the baseline measurement DID NOT HAPPEN: a Windows dialog held the desktop all night
+- Owner granted 6 hours (01:13-07:13) for the project's first live winrate. **Result: 9 matches, all from the first 37 minutes. No winrate.**
+- **(a) Blocker:** "Antivirus protection expired" (owned by **explorer.exe**) held the foreground from ~01:52 to at least 07:04. nav reads `game: False`, force-focus fails, play.py self-stops after 600 s with 0 matches. **Retry loop 02:38-07:04: 22 attempts, every one `matches_started=0`.**
+- **(a) Not clearable programmatically.** Tried and failed: WM_CLOSE to all matching top-level windows; WM_CLOSE + SC_CLOSE to the exact foreground handle AND its root ancestor; SetForegroundWindow/ShowWindow on the game. A synchronous close + `WindowFromPoint`-verified click was **blocked by the permission classifier -- correctly** (auto-dismissing a security warning needs a human) and was NOT retried another way. **Needs one owner click; will kill every future run until dismissed.**
+- **(a) The 9 matches are NOT a winrate:** 3W-6L, Wilson CI **[12.1%, 64.6%]** -- spans hopeless to above the bar. Instrument check only. 0 zero-crown finishes, 1 three-crown recovered by `king_trending_down`, integrity 9 rows vs 9 IN_MATCH OK.
+- **(a) They DO confirm three complaints live:** `[assist] XBOW dead-lane` fired **3 times / 32 bows** (the L67bz fix IS reaching placement -- the check the owner was told to watch for); **rocket 2/261 taps = 0.8%**; **45.1% of match time in >10 s pauses** at tau 0.27; median play gap 4.13 s, p90 14.83 s.
+- **Shipped + committed:** live outcome ledger (validated 11/11 offline AND live on 9 matches), `score_live_baseline.py` (Wilson CI, multi-file pooling, integrity check, behaviour counters), `fg_blocked.ps1`.
+- **(c) RETRACTIONS, all mine:** `outcome.py` already had a validated results-screen reader I missed (my tower-latch proxy mislabels 0-0 timeouts as draws -> biases winrate DOWN); **velocity is NOT the reaction fix** (elixir=10 moves the gate over tau on 21.3% of 658 freeze states vs 11.2% for teleporting the enemy army onto our towers); **tau 0.27 vs 0.24 was never the answer** (gate sits at p~0.04 during freezes, below both); and I called the retry loop "exited far too early" when it had run its full 4.5 h -- elapsed-time misjudgment, a repeat pattern.
+- **Fresh session, first moves:** check the desktop is clear BEFORE launching (would have saved this night); wire `outcome.read_scoreboard` into the match-end hook (recipe `env.py:2272-2326`; ~1 s window, read before `nav.handle` taps); `outcome.gold_frac` 0.10 -> 0.05. Untested cheap lead on pauses: anti-stall needs BOTH >=9 elixir AND 8 s and fires on 4-5% of plays.
+- **NOT established:** any live winrate -- still never measured, once, in this entire project.
+
+
+## L67cd (2026-09-18) -- ROOT CAUSE of both lost sessions: the capture grabs a SCREEN RECTANGLE, so any window on top IS what the bot sees
+- **(a) Mechanism:** `capture.py:43-61` resolves the game's client area to a screen rect and `grab()` captures **that region of the screen**, not the window's pixels. Anything drawn over it is fed to the detector as if it were the game.
+- **(a) What it actually captured:** `run.py diag` -> `data/diag_state.png` shows **a browser displaying the Claude Code conversation**, not Clash Royale. Hence `detect_state -> UNKNOWN` every frame; match_end templates 0.303/0.317 vs thr 0.80; the "Battle button best-match (0.570,0.866)" is a **spurious template hit on page content** vs configured tap [0.492,0.771]; and nav's reward tap (0.500,0.550) / dismiss (0.645,0.905) were **clicking the browser** for minutes. The owner's "can't find the battle button" = the bot was not looking at the game.
+- **(a) SAME failure as the antivirus dialog (BO)** that killed 22 overnight relaunches -- another window over the same rectangle. **Two lost sessions, one root cause.** Not nav, not templates, not the model.
+- Config is fine: `title_contains: "Clash Royale"`, `region: null` (auto-detect each refresh). Trap for later: pinning `window.region` short-circuits `refresh_region()` at `capture.py:44` and a stale rect can never self-correct.
+- **(a) Not fixable in-process:** `SetForegroundWindow`/`ShowWindow` on the game handle failed (Windows blocks foreground-stealing from a background process -- same reason nav's force-focus fails). Synthetic window-rearranging input was declined on judgement (occluding window showed a purchase control) and, for the security dialog, blocked by the permission classifier.
+- **PRE-FLIGHT, would have saved both sessions:** run `python run.py diag` and confirm `data/diag_state.png` shows the ACTUAL game before launching. `detect_state -> UNKNOWN` while on Home means the capture is hijacked -- do not launch. The game must stay on top and unobstructed for the whole run.
+- Banked so far (**not** a winrate): **11 matches**, same ckpt/tau -- 9 from 01:13-01:40 (3W-6L) + 2 from 17:35-17:42 (1W-1L, both overtime). `score_live_baseline.py` pools them.
+- **NOT established:** any live winrate; whether Home detects correctly once unobstructed (the only capture on disk is of the browser).
+
+
+## L67ce (2026-09-18) -- the bot plays NOTHING, silently, when the in-game deck != the configured deck; an IN_MATCH health check does not catch it
+- **(a) Symptom:** 5 ledger rows in ~7 min, durations **51/38/128/85/63 s**, outcomes LOSS 0-1 x3, 0-2, 0-1. None of those end a CR match (one tower down doesn't; 38 s can't three-crown). Decisive: **`taps=0`, `waits=0`** across all five.
+- **(a) Cause:** `run.py diag` -> `data/diag_state.png` shows a **real match** (1:30 left, opp "ENZO PRO" 10000 trophies) but the hand holds **Fireball(4) + 1-cost + 6-cost + 3-cost** -- not icebow. `recognize_hand` matches nothing, `act_in_match` early-returns (`play.py:801`), and the bot stands still while a real opponent dismantles it.
+- **(a) Configured deck** from `load_deck('icebow').cards` (the loader the student itself uses): `tornado, tesla_evo, ice_wizard, x_bow, rocket, knight_evo, the_log, skeletons`. **Two are EVOLUTIONS** -- Evo Tesla and Evo Knight; plain versions won't match templates.
+- **(c) MY VERIFICATION TRAP:** my 6-min health check asserted `IN_MATCH > 0` and printed **"PLAYING OK"**. IN_MATCH was genuinely fine -- the bot *was* in matches. **The check must assert `taps > 0`.** A deck mismatch yields a perfectly healthy state machine driving a policy that never acts.
+- **(c) Correction:** I first called those 5 rows "fabricated". **They are REAL losses** -- the bot genuinely lost because it played nothing. Invalid as a measure of the *policy*, not invalid as outcomes. Quarantined to `...180120.jsonl.INVALID`; the action was right, the first commit message's reasoning was not.
+- **(a) Valid data intact:** scorer now reports **2 files / 11 matches** (9 + 2), 4W-7L, **CI [15.2%, 64.6%]** -- meaningless at n=11, recorded for traceability only. This also **exercised the multi-file pooling path for the first time** (previously only ever run on one file).
+- **PRE-FLIGHT is now TWO checks:** (1) `run.py diag` and LOOK at the capture (BP, window-occlusion); (2) after launch confirm **`taps > 0`**, not `IN_MATCH > 0` (BQ, deck mismatch). Each alone would have saved a session.
+- **NOT established:** why the active deck changed between 17:42 and 18:01; whether a tray-vs-`deck_keys` pre-launch check is feasible -- **not implemented** (`play.py:365-369` warns on checkpoint/deck mismatch, not on a TRAY mismatch).
+
+
+## L67cf (2026-09-18) -- RETRACTION: I killed a HEALTHY run with a check that could never have passed
+- **(c) MY ERROR.** The 3-min abort counted `[student] TAP`/`WAIT` in `icebow/data/play_<ts>.log`. **Those lines print straight to stdout and never go through `log()`, so they never appear in that file.** Control: the known-good 17:35 session played **2 complete matches** and its session log has **0 TAP lines in 20 lines total**. The check read zero regardless of performance -- it was structurally guaranteed to fire.
+- **(a) What the run was really doing:** stdout capture `live_baseline_20260918_182802.log` (20,552 B) shows **26 TAPs, 21 WAITs**, cards `tesla_evo, skeletons, knight, x_bow, tornado, ice_wizard` -- **exactly the configured icebow deck**. Last tap **18:31:15.008**; my abort killed it at **18:31:15**. Mid-match, mid-play.
+- **(c) Corrects `f8b3cdf` (§BQ):** that commit says the 18:28 run aborted on a deck mismatch. **Wrong.** The owner had already fixed the deck. §BQ's *18:08* diagnosis still stands -- the diag screenshot independently showed Fireball and other non-icebow cards -- but the 18:28 abort proves nothing about the deck.
+- **(c) The compounding failure, and the real lesson.** §BQ's remedy was "assert `taps > 0`, not `IN_MATCH > 0`". I implemented it against the wrong file, turning a detection gap into a false positive -- then **trusted the broken instrument over the owner's direct report that the deck was correct**. A check never observed to PASS is not a check; it is an assumption with an if-statement around it. The control that exposed it (grep a known-good log for the same pattern) is one command and belonged before the check was armed.
+- **Data:** valid ledger unchanged at **11 rows** (4W-7L). The 18:28 run wrote no row (killed before MATCH_END). The 5 `.INVALID` rows stay quarantined on the strength of the 18:08 screenshot -- but note my *taps=0* reasoning for them came from the same broken grep and is not itself evidence.
+- **CORRECT INSTRUMENTATION:** count plays from the **stdout capture** (`scratchpad/gauntlet/L67/live_baseline_*.log`). `icebow/data/play_*.log` carries only `log()` output -- state transitions, nav lines, `[match]` rows. All `[student]`/`[assist]` telemetry is stdout-only.
+- **NOT established:** whether the policy plays WELL (26 taps says the pipeline works, nothing about quality); any live winrate -- still never measured.
+
+
+## L67cg (2026-09-18) -- THE FIRST LIVE WINRATE EVER MEASURED: 35.1% over 37 matches (CI 21.8-51.2%)
+- **(a) 37 matches, 13W-22L-2D = 35.1%**, Wilson 95% CI **[21.8%, 51.2%]**; crowns-decided only 36.1%. Median match 183 s, 2.02 h, crowns **23 for / 40 against**. All on `s1_icebow_v6aug_s1.pt` tau 0.27.
+- Per session: 011324 3W-6L (33.3%, n=9) | 173530 1W-1L (n=2) | **190851 3W-5L (37.5%, n=8)** | **194128 6W-10L-2D (33.3%, n=18)**. Three meaningful sessions at 33.3 / 37.5 / 33.3 -- **no heterogeneity**, so pooling is legitimate.
+- **(a) Owner's 50% bar NOT reached.** CI upper edge 51.2% so 50% isn't formally excluded at n=37, but the point estimate is 35% with three sessions concentrated there.
+- **(a) ENGINE-TO-LIVE GAP MEASURED:** same ckpt/tau scored **74% on engine ghosts** (§BI) vs **35.1% live** = **~39 points**. Engine side separately inflated: 29% of engine matches outlive the scripted opponent, 27/29 of those are wins (§BM).
+- **(a) SHARPEST BEHAVIOURAL FINDING: 21 of the owner's 26 matches went to OVERTIME (81%)** -- neither side took a tower in regulation. With 23/40 crowns, the profile is **defends competently, almost never closes**. Points at the win condition; consistent with §BM's X-Bow entropy 0.62-1.97 bits (the deck's win condition is its one degenerate card).
+- **(a) Integrity verified per session:** 190851 8 rows/8 IN_MATCH/8 [match]; 194128 18 rows/19 IN_MATCH -- the 19th cut off mid-play at stop (last line `20:43:59 IN_MATCH`, process gone 20:47). **3 of 37 were 3-crown finishes recovered by `king_trending_down`.**
+- Validity discriminator vs the 10 quarantined `.INVALID` zero-play rows: those ran **38-128 s, 0-1/0-2, `crowns_for` pinned 0, no draws**; these are **median 190/183 s, `crowns_for` up to 2, 2 draws**.
+- **(b) NOT AVAILABLE: no behaviour counters for the owner's sessions** (plays/min, pause share, dead-lane firings, rocket) -- stdout-only and run without redirect. **So 35% cannot be tied to any of the four complaints.** Next time: `> run.log 2>&1`. **TRAP:** `score_live_baseline.py` computes integrity + behaviour from whatever `live_baseline_*.log` exist, i.e. OTHER sessions -- only its winrate block is trustworthy without a redirect.
+- **NOT established:** whether 35% is the ceiling of this checkpoint or this pipeline; trophy-band drift (no trophy reader, and matchmaking pushes everyone toward 50%). Settling the 50% bar needs ~200 matches (+-7 pp) ~= 12 h at ~17 matches/h.

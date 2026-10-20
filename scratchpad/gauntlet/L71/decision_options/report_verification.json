@@ -1,0 +1,12 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+    "scratchpad/gauntlet/L71/decision_options/verify_report.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "PowerShell invoking Python direct subprocess",
+  "exit_code": 0,
+  "expect": "DECISION_REPORT_VERIFIED",
+  "matched": true,
+  "output_sha256": "5794fb7fcee34f901413b708a145e50567fe1ae408b409d96b3bae22ac3d49a6"
+}

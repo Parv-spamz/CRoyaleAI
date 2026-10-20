@@ -1,0 +1,113 @@
+{
+ "run_dirs": [
+  "scratchpad\\gauntlet\\L67\\e1\\attrib_split\\off_opp_elixir\\slot0"
+ ],
+ "duplicates_dropped": 0,
+ "draws": 10000,
+ "boot_seed": 20260912,
+ "run": {
+  "matches": 100,
+  "entries": 100,
+  "W": 68,
+  "D": 0,
+  "L": 32,
+  "winrate": 0.68,
+  "winrate_entry_weighted": {
+   "point": 0.68,
+   "lo": 0.59,
+   "hi": 0.77,
+   "n_entries": 100,
+   "draws": 10000,
+   "seed": 20260912
+  },
+  "unclustered_normal_95": [
+   0.5885706742888257,
+   0.7714293257111744
+  ],
+  "per_seed": {
+   "0": {
+    "n": 100,
+    "wins": 68,
+    "winrate": 0.68
+   }
+  },
+  "per_slot": {
+   "0": {
+    "n": 100,
+    "wins": 68,
+    "winrate": 0.68
+   }
+  },
+  "decided_before_script_end": {
+   "n": 79,
+   "wins": 51,
+   "winrate": 0.6455696202531646
+  },
+  "wins_after_script": 17,
+  "share_of_wins_after_script": 0.25,
+  "buckets": {
+   "ghost_delivered": {
+    "<=10": {
+     "n": 9,
+     "wins": 3,
+     "winrate": 0.3333333333333333,
+     "share_of_wins": 0.04411764705882353
+    },
+    "11-30": {
+     "n": 71,
+     "wins": 52,
+     "winrate": 0.7323943661971831,
+     "share_of_wins": 0.7647058823529411
+    },
+    ">30": {
+     "n": 20,
+     "wins": 13,
+     "winrate": 0.65,
+     "share_of_wins": 0.19117647058823528
+    }
+   },
+   "ghost_distinct_delivered": {
+    "<=3": {
+     "n": 1,
+     "wins": 1,
+     "winrate": 1.0,
+     "share_of_wins": 0.014705882352941176
+    },
+    "4-6": {
+     "n": 10,
+     "wins": 3,
+     "winrate": 0.3,
+     "share_of_wins": 0.04411764705882353
+    },
+    ">6": {
+     "n": 89,
+     "wins": 64,
+     "winrate": 0.7191011235955056,
+     "share_of_wins": 0.9411764705882353
+    }
+   }
+  },
+  "wins_where_real_pro_lost": 33,
+  "matches_where_real_pro_lost": 46,
+  "plays_per_min": 12.059189748138964,
+  "accepted_per_min": 10.924131739406928,
+  "accepted_fraction": 0.9058760967827706,
+  "suggested_p_random": 0.14921050543521383,
+  "plays_attempted_per_match": 37.61,
+  "plays_accepted_per_match": 34.07,
+  "stall_fired_per_match": 0.21,
+  "no_affordable_per_match": 113.87,
+  "mean_seconds": 187.127,
+  "mean_seconds_won": 194.8485294117647,
+  "ghost_refused_per_match": 0.83,
+  "ghost_undelivered_per_match": 13.96,
+  "crowns_for_per_match": 1.35,
+  "crowns_against_per_match": 0.96,
+  "matches_degraded_count_ne_decisions": 0,
+  "wall_s_per_match": 15.207,
+  "policies": {
+   "live": 100
+  }
+ },
+ "controls": {}
+}

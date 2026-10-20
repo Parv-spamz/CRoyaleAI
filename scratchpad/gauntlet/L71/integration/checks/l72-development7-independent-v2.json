@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/recount_development7_v2.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "FROZEN_PROJECTILE_RECOUNT_V2_COMPLETE",
+  "matched": true,
+  "output_sha256": "d84d5dbf2cd64b8da2c3519caf1d43675693cf132d8e39423dd95593e7e0b6e1",
+  "seconds": 40.972172260284424
+}

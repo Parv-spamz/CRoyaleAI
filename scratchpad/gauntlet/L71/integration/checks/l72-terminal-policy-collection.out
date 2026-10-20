@@ -1,0 +1,35 @@
+COMPLETE 1 0_r1e_disabled 4620
+COMPLETE 2 0_r1e_enabled 4620
+COMPLETE 3 0_ordinary_v5_disabled 3600
+COMPLETE 4 0_ordinary_v5_enabled 3600
+COMPLETE 5 1_r1e_disabled 4982
+COMPLETE 6 1_r1e_enabled 4982
+COMPLETE 7 1_ordinary_v5_disabled 4736
+COMPLETE 8 1_ordinary_v5_enabled 4736
+COMPLETE 9 2_r1e_disabled 3600
+COMPLETE 10 2_r1e_enabled 3600
+COMPLETE 11 2_ordinary_v5_disabled 3530
+COMPLETE 12 2_ordinary_v5_enabled 3530
+COMPLETE 13 3_r1e_disabled 5106
+COMPLETE 14 3_r1e_enabled 5106
+COMPLETE 15 3_ordinary_v5_disabled 6095
+COMPLETE 16 3_ordinary_v5_enabled 6095
+COMPLETE 17 4_r1e_disabled 6129
+COMPLETE 18 4_r1e_enabled 6129
+COMPLETE 19 4_ordinary_v5_disabled 3600
+COMPLETE 20 4_ordinary_v5_enabled 3600
+COMPLETE 21 5_r1e_disabled 3960
+COMPLETE 22 5_r1e_enabled 3960
+COMPLETE 23 5_ordinary_v5_disabled 3600
+COMPLETE 24 5_ordinary_v5_enabled 3600
+COMPLETE 25 6_r1e_disabled 3600
+COMPLETE 26 6_r1e_enabled 3600
+COMPLETE 27 6_ordinary_v5_disabled 4493
+COMPLETE 28 6_ordinary_v5_enabled 4493
+COMPLETE 29 7_r1e_disabled 3600
+COMPLETE 30 7_r1e_enabled 3600
+COMPLETE 31 7_ordinary_v5_disabled 3600
+COMPLETE 32 7_ordinary_v5_enabled 3600
+TERMINAL_POLICY_COLLECTION_COMPLETE
+C:\Users\benpe\ClashBot\pipeline\model_v3.py:92: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(enc, layers)

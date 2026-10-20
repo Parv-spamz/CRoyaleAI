@@ -1,0 +1,9 @@
+TRAIN_RESIDUAL_SELECTION_BOUND 789 {"single_pro_log": {"full_rows": 203, "full_replays": 89, "selected": 89}, "single_other_play": {"full_rows": 113, "full_replays": 73, "selected": 73}, "single_wait": {"full_rows": 207, "full_replays": 103, "selected": 103}, "multiple_barrel": {"full_rows": 257, "full_replays": 81, "selected": 81}, "ambiguous_barrel": {"full_rows": 262, "full_replays": 83, "selected": 83}, "other_projectile": {"full_rows": 86475, "full_replays": 1976, "selected": 200}, "no_valid_target": {"full_rows": 180893, "full_replays": 1978, "selected": 200}}
+v5_rocket_barrel__full {"rows": 89, "plays": 89, "action": 25, "card": 86, "aim": 29, "log_fired": 83, "forced_log_same_lane": 67, "gated_correct_lane": 61, "gated_wrong_lane": 22}
+v6_rocket_barrel__full {"rows": 89, "plays": 89, "action": 36, "card": 86, "aim": 40, "log_fired": 83, "forced_log_same_lane": 89, "gated_correct_lane": 83, "gated_wrong_lane": 0}
+v6_rocket_barrel__residual_off {"rows": 89, "plays": 89, "action": 23, "card": 86, "aim": 26, "log_fired": 83, "forced_log_same_lane": 68, "gated_correct_lane": 62, "gated_wrong_lane": 21}
+v6_rocket_both__full {"rows": 89, "plays": 89, "action": 37, "card": 86, "aim": 41, "log_fired": 83, "forced_log_same_lane": 88, "gated_correct_lane": 83, "gated_wrong_lane": 0}
+v6_rocket_both__residual_off {"rows": 89, "plays": 89, "action": 23, "card": 86, "aim": 26, "log_fired": 83, "forced_log_same_lane": 68, "gated_correct_lane": 62, "gated_wrong_lane": 21}
+TRAIN_BARREL_RESIDUAL_COMPLETE
+C:\Users\benpe\ClashBot\pipeline\model_v3.py:92: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(enc, layers)

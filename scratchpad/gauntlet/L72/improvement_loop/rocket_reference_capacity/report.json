@@ -1,0 +1,56 @@
+{
+  "complete": true,
+  "N2_complete": false,
+  "trainable": false,
+  "policy_predictions": 0,
+  "optimizer_updates": 0,
+  "selected_replays": 115,
+  "selected_sides": 115,
+  "started_sha256": "7e6ff5cedafc86ad3a6f249e8908bfa34ae0ada7c00536145984b5f61a1d64ae",
+  "references_sha256": "3ca02dc616a261ae479e4d12436cb932ec1cbf00d14788bff1394e4f3c7acc48",
+  "metrics": {
+    "all_casts": {
+      "casts": 260,
+      "replay_clusters": 100
+    },
+    "landing_unobserved": {
+      "casts": 0,
+      "replay_clusters": 0
+    },
+    "hp_window_known": {
+      "casts": 260,
+      "replay_clusters": 100
+    },
+    "hp_confirmation_within_two_ticks": {
+      "casts": 5,
+      "replay_clusters": 5
+    },
+    "princess_geometric_reference": {
+      "casts": 31,
+      "replay_clusters": 22
+    },
+    "princess_observed_hp_drop": {
+      "casts": 30,
+      "replay_clusters": 21
+    },
+    "princess_observed_finish": {
+      "casts": 0,
+      "replay_clusters": 0
+    },
+    "princess_repeat_reference": {
+      "casts": 5,
+      "replay_clusters": 4
+    },
+    "rocket_then_tornado": {
+      "casts": 26,
+      "replay_clusters": 24
+    },
+    "tornado_then_rocket": {
+      "casts": 1,
+      "replay_clusters": 1
+    }
+  },
+  "landing_sources": {
+    "public_aim_catalog_speed": 260
+  }
+}

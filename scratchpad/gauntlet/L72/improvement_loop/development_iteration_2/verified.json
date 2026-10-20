@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "controls": {
+    "positive": 1,
+    "negative": 3
+  },
+  "prepared_sha256": "699fd78f69b8582826e5063e234305840cc3560d47984f766355868f389611c4",
+  "verifier_sha256": "acf79cfb9d472cb32217bd86d196dcd176ff530d5ba136dd91d0ed845b21e6b6",
+  "counts": {
+    "training": {
+      "rows": 32187,
+      "replays": 856,
+      "plays": 12385,
+      "waits": 19802,
+      "expert_rockets": 767
+    },
+    "development": {
+      "rows": 8183,
+      "replays": 212,
+      "plays": 3152,
+      "waits": 5031,
+      "expert_rockets": 223
+    }
+  },
+  "schedule_reproduced": true,
+  "optimizer_updates": 0
+}

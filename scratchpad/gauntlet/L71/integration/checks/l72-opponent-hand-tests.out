@@ -1,0 +1,24 @@
+..F...............                                                       [100%]
+================================== FAILURES ===================================
+________________ test_partial_reveal_and_four_subsequent_plays ________________
+
+    def test_partial_reveal_and_four_subsequent_plays():
+        r = HandBelief()
+        for i, card in enumerate('abcde'):
+            r.observe([card], tick=i)
+        s = r.snapshot()
+        assert s['in_hand'] == ['a'] and s['out_of_hand'] == list('bcde')
+        assert s['unrevealed_slots'] == 3 and not s['full_hand'] and not s['certified']
+        r.observe(['f', 'g'], tick=10)
+        assert r.snapshot()['in_hand'] == list('abc')
+>       assert r.snapshot()['uncertain'] == ['d']  # unknown order straddles queue end
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: assert [] == ['d']
+E         
+E         Right contains one more item: 'd'
+E         Use -v to get more diff
+
+pipeline\tests\test_opponent_hand.py:79: AssertionError
+=========================== short test summary info ===========================
+FAILED pipeline/tests/test_opponent_hand.py::test_partial_reveal_and_four_subsequent_plays
+1 failed, 17 passed in 4.22s

@@ -1,0 +1,7 @@
+== n_actors 3 start 14:10:29
+== n_actors 3 exit 0 14:23:54
+== n_actors 5 start 14:23:54
+== n_actors 5 exit 0 14:35:20
+per-update stat lines equal: True 3 3
+final weights identical: False max abs diff 5.21540641784668e-06
+== DONE 14:35:25

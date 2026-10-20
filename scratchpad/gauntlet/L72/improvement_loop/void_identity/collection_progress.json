@@ -1,0 +1,712 @@
+[
+  {
+    "tag": "2b117f8ee53347bdb164c32d02d65c98",
+    "split": "confirmation",
+    "attempts": [
+      {
+        "status": "captured",
+        "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\2b117f8ee53347bdb164c32d02d65c98_0.json",
+        "sha256": "0bdb4cdc9d9e5a73b324c6571448c4746c9ce7b8a2e46c48acc61c346153de31",
+        "grade": {
+          "plays_total": 106,
+          "plays_driven": 106,
+          "accepted": 106,
+          "rejected_by_reason": {},
+          "invalid_placement": 0,
+          "elixir_delays": {
+            "n": 0,
+            "max_ticks": 0,
+            "sum_ticks": 0
+          },
+          "skipped": [],
+          "crowns_match": true,
+          "terminal_vs_last_play_ticks": 171
+        },
+        "reasons": [],
+        "usable": true
+      },
+      {
+        "status": "captured",
+        "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\2b117f8ee53347bdb164c32d02d65c98_1.json",
+        "sha256": "86b02d649f7638ba7e5b47c41b03bc78e98ecadb3f5370aa98ed3ddd707d602e",
+        "grade": {
+          "plays_total": 106,
+          "plays_driven": 106,
+          "accepted": 106,
+          "rejected_by_reason": {},
+          "invalid_placement": 0,
+          "elixir_delays": {
+            "n": 0,
+            "max_ticks": 0,
+            "sum_ticks": 0
+          },
+          "skipped": [],
+          "crowns_match": true,
+          "terminal_vs_last_play_ticks": 171
+        },
+        "reasons": [],
+        "usable": true
+      }
+    ],
+    "usable": true,
+    "repeat_equal": true
+  },
+  {
+    "tag": "2ecbb87db5924ebcb3f6e94728506b12",
+    "split": "confirmation",
+    "attempts": [
+      {
+        "status": "captured",
+        "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\2ecbb87db5924ebcb3f6e94728506b12_0.json",
+        "sha256": "c07ebd395f2d919a02c5346caf4db91318f3cb20a6a3d728c66f5a06877fbdd2",
+        "grade": {
+          "plays_total": 99,
+          "plays_driven": 99,
+          "accepted": 99,
+          "rejected_by_reason": {},
+          "invalid_placement": 0,
+          "elixir_delays": {
+            "n": 0,
+            "max_ticks": 0,
+            "sum_ticks": 0
+          },
+          "skipped": [],
+          "crowns_match": true,
+          "terminal_vs_last_play_ticks": 159
+        },
+        "reasons": [],
+        "usable": true
+      },
+      {
+        "status": "captured",
+        "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\2ecbb87db5924ebcb3f6e94728506b12_1.json",
+        "sha256": "8447d3dd29a4202566638676c949e932ac837227e7f4b62ca5c29888743ba59e",
+        "grade": {
+          "plays_total": 99,
+          "plays_driven": 99,
+          "accepted": 99,
+          "rejected_by_reason": {},
+          "invalid_placement": 0,
+          "elixir_delays": {
+            "n": 0,
+            "max_ticks": 0,
+            "sum_ticks": 0
+          },
+          "skipped": [],
+          "crowns_match": true,
+          "terminal_vs_last_play_ticks": 159
+        },
+        "reasons": [],
+        "usable": true
+      }
+    ],
+    "usable": true,
+    "repeat_equal": true
+  },
+  {
+    "tag": "4717f22bf06841ff993bdf2eebfdd479",
+    "split": "confirmation",
+    "attempts": [
+      {
+        "status": "captured",
+        "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\4717f22bf06841ff993bdf2eebfdd479_0.json",
+        "sha256": "b7fd4cdda2b92726110fe87a973870301377714ddfcc1941d35dd1bc7bac0bfe",
+        "grade": {
+          "plays_total": 113,
+          "plays_driven": 66,
+          "accepted": 65,
+          "rejected_by_reason": {
+            "native_rejected": 1
+          },
+          "invalid_placement": 0,
+          "elixir_delays": {
+            "n": 0,
+            "max_ticks": 0,
+            "sum_ticks": 0
+          },
+          "skipped": [
+            {
+              "play_index": 22,
+              "tick": 2061,
+              "side": 0,
+              "kind": "ability",
+              "ability": true,
+              "card": "tombstone",
+              "candidates": [
+                "tombstone"
+              ],
+              "entity_id": null,
+              "x": null,
+              "y": null,
+              "accepted": false,
+              "result_code": null,
+              "result_name": null,
+              "delay_ticks": 0,
+              "placement_valid": null,
+              "engine_tick": 2061,
+              "skipped": "ability: no eligible live entity for attributed card"
+            },
+            {
+              "play_index": 37,
+              "tick": 3023,
+              "side": 0,
+              "kind": "ability",
+              "ability": true,
+              "card": "tombstone",
+              "candidates": [
+                "tombstone"
+              ],
+              "entity_id": null,
+              "x": null,
+              "y": null,
+              "accepted": false,
+              "result_code": null,
+              "result_name": null,
+              "delay_ticks": 0,
+              "placement_valid": null,
+              "engine_tick": 3023,
+              "skipped": "ability: no eligible live entity for attributed card"
+            },
+            {
+              "play_index": 68,
+              "tick": 4479,
+              "side": 1,
+              "card": "x-bow",
+              "skipped": "episode already terminal at tick 4459"
+            }
+          ],
+          "crowns_match": true,
+          "terminal_vs_last_play_ticks": -1506
+        },
+        "reasons": [
+          "undriven_commands",
+          "rejected_commands",
+          "skipped_commands"
+        ],
+        "usable": false
+      },
+      {
+        "status": "captured",
+        "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\4717f22bf06841ff993bdf2eebfdd479_1.json",
+        "sha256": "555673d2c48d55def02a9b7316f147df487c00214e805e4b7dd98a069bc85e3e",
+        "grade": {
+          "plays_total": 113,
+          "plays_driven": 66,
+          "accepted": 65,
+          "rejected_by_reason": {
+            "native_rejected": 1
+          },
+          "invalid_placement": 0,
+          "elixir_delays": {
+            "n": 0,
+            "max_ticks": 0,
+            "sum_ticks": 0
+          },
+          "skipped": [
+            {
+              "play_index": 22,
+              "tick": 2061,
+              "side": 0,
+              "kind": "ability",
+              "ability": true,
+              "card": "tombstone",
+              "candidates": [
+                "tombstone"
+              ],
+              "entity_id": null,
+              "x": null,
+              "y": null,
+              "accepted": false,
+              "result_code": null,
+              "result_name": null,
+              "delay_ticks": 0,
+              "placement_valid": null,
+              "engine_tick": 2061,
+              "skipped": "ability: no eligible live entity for attributed card"
+            },
+            {
+              "play_index": 37,
+              "tick": 3023,
+              "side": 0,
+              "kind": "ability",
+              "ability": true,
+              "card": "tombstone",
+              "candidates": [
+                "tombstone"
+              ],
+              "entity_id": null,
+              "x": null,
+              "y": null,
+              "accepted": false,
+              "result_code": null,
+              "result_name": null,
+              "delay_ticks": 0,
+              "placement_valid": null,
+              "engine_tick": 3023,
+              "skipped": "ability: no eligible live entity for attributed card"
+            },
+            {
+              "play_index": 68,
+              "tick": 4479,
+              "side": 1,
+              "card": "x-bow",
+              "skipped": "episode already terminal at tick 4459"
+            }
+          ],
+          "crowns_match": true,
+          "terminal_vs_last_play_ticks": -1506
+        },
+        "reasons": [
+          "undriven_commands",
+          "rejected_commands",
+          "skipped_commands"
+        ],
+        "usable": false
+      }
+    ],
+    "usable": false,
+    "repeat_equal": true
+  },
+  {
+    "tag": "543d171900e24c6998b15f26b0943249",
+    "split": "confirmation",
+    "attempts": [
+      {
+        "status": "captured",
+        "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\543d171900e24c6998b15f26b0943249_0.json",
+        "sha256": "71816a97142e1515395aaf344ee02f609c285946198e70449e156745498fd003",
+        "grade": {
+          "plays_total": 64,
+          "plays_driven": 50,
+          "accepted": 47,
+          "rejected_by_reason": {
+            "native_rejected": 3
+          },
+          "invalid_placement": 0,
+          "elixir_delays": {
+            "n": 0,
+            "max_ticks": 0,
+            "sum_ticks": 0
+          },
+          "skipped": [
+            {
+              "play_index": 50,
+              "tick": 3701,
+              "side": 0,
+              "card": "ronin",
+              "skipped": "episode already terminal at tick 3688"
+            }
+          ],
+          "crowns_match": true,
+          "terminal_vs_last_play_ticks": -608
+        },
+        "reasons": [
+          "undriven_commands",
+          "rejected_commands",
+          "skipped_commands"
+        ],
+        "usable": false
+      },
+      {
+        "status": "captured",
+        "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\543d171900e24c6998b15f26b0943249_1.json",
+        "sha256": "bf1bfbea1043c83ec0dbb31e40f5af862be95802aef49c0295d5ca0144d506c5",
+        "grade": {
+          "plays_total": 64,
+          "plays_driven": 50,
+          "accepted": 47,
+          "rejected_by_reason": {
+            "native_rejected": 3
+          },
+          "invalid_placement": 0,
+          "elixir_delays": {
+            "n": 0,
+            "max_ticks": 0,
+            "sum_ticks": 0
+          },
+          "skipped": [
+            {
+              "play_index": 50,
+              "tick": 3701,
+              "side": 0,
+              "card": "ronin",
+              "skipped": "episode already terminal at tick 3688"
+            }
+          ],
+          "crowns_match": true,
+          "terminal_vs_last_play_ticks": -608
+        },
+        "reasons": [
+          "undriven_commands",
+          "rejected_commands",
+          "skipped_commands"
+        ],
+        "usable": false
+      }
+    ],
+    "usable": false,
+    "repeat_equal": true
+  },
+  {
+    "tag": "5edd1464c1694599a9047ce4514f6b5e",
+    "split": "confirmation",
+    "attempts": [
+      {
+        "status": "captured",
+        "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\5edd1464c1694599a9047ce4514f6b5e_0.json",
+        "sha256": "bd335143fa30ded14f0429f43650d909b163d4369f9ff0d976bb4c3abbb180bc",
+        "grade": {
+          "plays_total": 117,
+          "plays_driven": 117,
+          "accepted": 117,
+          "rejected_by_reason": {},
+          "invalid_placement": 0,
+          "elixir_delays": {
+            "n": 0,
+            "max_ticks": 0,
+            "sum_ticks": 0
+          },
+          "skipped": [],
+          "crowns_match": true,
+          "terminal_vs_last_play_ticks": 149
+        },
+        "reasons": [],
+        "usable": true
+      },
+      {
+        "status": "captured",
+        "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\5edd1464c1694599a9047ce4514f6b5e_1.json",
+        "sha256": "56c5caf6fdb3e5af74eba95293933242ef182857ce4c7929b363748a8af4f0b7",
+        "grade": {
+          "plays_total": 117,
+          "plays_driven": 117,
+          "accepted": 117,
+          "rejected_by_reason": {},
+          "invalid_placement": 0,
+          "elixir_delays": {
+            "n": 0,
+            "max_ticks": 0,
+            "sum_ticks": 0
+          },
+          "skipped": [],
+          "crowns_match": true,
+          "terminal_vs_last_play_ticks": 149
+        },
+        "reasons": [],
+        "usable": true
+      }
+    ],
+    "usable": true,
+    "repeat_equal": true
+  },
+  {
+    "tag": "8e19bbf73846446c99414cea042b0047",
+    "split": "confirmation",
+    "attempts": [
+      {
+        "status": "captured",
+        "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\8e19bbf73846446c99414cea042b0047_0.json",
+        "sha256": "a1d0e561830186b2079bf06bae797bf370ca3cb3bbcb5cfdb87c413e4cf99648",
+        "grade": {
+          "plays_total": 117,
+          "plays_driven": 116,
+          "accepted": 116,
+          "rejected_by_reason": {},
+          "invalid_placement": 0,
+          "elixir_delays": {
+            "n": 0,
+            "max_ticks": 0,
+            "sum_ticks": 0
+          },
+          "skipped": [
+            {
+              "play_index": 109,
+              "tick": 5785,
+              "side": 0,
+              "kind": "ability",
+              "ability": true,
+              "card": "mega-minion",
+              "candidates": [
+                "mega-minion"
+              ],
+              "entity_id": null,
+              "x": null,
+              "y": null,
+              "accepted": false,
+              "result_code": null,
+              "result_name": null,
+              "delay_ticks": 0,
+              "placement_valid": null,
+              "engine_tick": 5785,
+              "skipped": "ability: no eligible live entity for attributed card"
+            }
+          ],
+          "crowns_match": true,
+          "terminal_vs_last_play_ticks": 151
+        },
+        "reasons": [
+          "undriven_commands",
+          "skipped_commands"
+        ],
+        "usable": false
+      },
+      {
+        "status": "captured",
+        "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\8e19bbf73846446c99414cea042b0047_1.json",
+        "sha256": "50d5407760520597c2cd44d6a5becd41c863776137bb95e587f8e9c7546beda0",
+        "grade": {
+          "plays_total": 117,
+          "plays_driven": 116,
+          "accepted": 116,
+          "rejected_by_reason": {},
+          "invalid_placement": 0,
+          "elixir_delays": {
+            "n": 0,
+            "max_ticks": 0,
+            "sum_ticks": 0
+          },
+          "skipped": [
+            {
+              "play_index": 109,
+              "tick": 5785,
+              "side": 0,
+              "kind": "ability",
+              "ability": true,
+              "card": "mega-minion",
+              "candidates": [
+                "mega-minion"
+              ],
+              "entity_id": null,
+              "x": null,
+              "y": null,
+              "accepted": false,
+              "result_code": null,
+              "result_name": null,
+              "delay_ticks": 0,
+              "placement_valid": null,
+              "engine_tick": 5785,
+              "skipped": "ability: no eligible live entity for attributed card"
+            }
+          ],
+          "crowns_match": true,
+          "terminal_vs_last_play_ticks": 151
+        },
+        "reasons": [
+          "undriven_commands",
+          "skipped_commands"
+        ],
+        "usable": false
+      }
+    ],
+    "usable": false,
+    "repeat_equal": true
+  },
+  {
+    "tag": "9b1151e5aa3d4ee48943ae29b6047f03",
+    "split": "confirmation",
+    "attempts": [
+      {
+        "status": "captured",
+        "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\9b1151e5aa3d4ee48943ae29b6047f03_0.json",
+        "sha256": "2ccf580c3945fd8810ad55fd46d96461637386e613edcf2fe02e51810d84de4b",
+        "grade": {
+          "plays_total": 113,
+          "plays_driven": 113,
+          "accepted": 113,
+          "rejected_by_reason": {},
+          "invalid_placement": 0,
+          "elixir_delays": {
+            "n": 0,
+            "max_ticks": 0,
+            "sum_ticks": 0
+          },
+          "skipped": [],
+          "crowns_match": true,
+          "terminal_vs_last_play_ticks": 135
+        },
+        "reasons": [],
+        "usable": true
+      },
+      {
+        "status": "captured",
+        "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\9b1151e5aa3d4ee48943ae29b6047f03_1.json",
+        "sha256": "b3c23cca7b89d573054452afa67fbb4970b730e053029df5f925daff9369dae2",
+        "grade": {
+          "plays_total": 113,
+          "plays_driven": 113,
+          "accepted": 113,
+          "rejected_by_reason": {},
+          "invalid_placement": 0,
+          "elixir_delays": {
+            "n": 0,
+            "max_ticks": 0,
+            "sum_ticks": 0
+          },
+          "skipped": [],
+          "crowns_match": true,
+          "terminal_vs_last_play_ticks": 135
+        },
+        "reasons": [],
+        "usable": true
+      }
+    ],
+    "usable": true,
+    "repeat_equal": true
+  },
+  {
+    "tag": "9d3fb8c7748846dcb6b384a2664c207a",
+    "split": "confirmation",
+    "attempts": [
+      {
+        "status": "captured",
+        "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\9d3fb8c7748846dcb6b384a2664c207a_0.json",
+        "sha256": "bc215886e25707c992b1515bb5585d021f203e898232a00e017beabf6803b95e",
+        "grade": {
+          "plays_total": 42,
+          "plays_driven": 42,
+          "accepted": 42,
+          "rejected_by_reason": {},
+          "invalid_placement": 0,
+          "elixir_delays": {
+            "n": 0,
+            "max_ticks": 0,
+            "sum_ticks": 0
+          },
+          "skipped": [],
+          "crowns_match": true,
+          "terminal_vs_last_play_ticks": 154
+        },
+        "reasons": [],
+        "usable": true
+      },
+      {
+        "status": "captured",
+        "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\9d3fb8c7748846dcb6b384a2664c207a_1.json",
+        "sha256": "697e8413d05dbec200f00650d31dd952b17e92805b80cb28a3a7b1215fe030fd",
+        "grade": {
+          "plays_total": 42,
+          "plays_driven": 42,
+          "accepted": 42,
+          "rejected_by_reason": {},
+          "invalid_placement": 0,
+          "elixir_delays": {
+            "n": 0,
+            "max_ticks": 0,
+            "sum_ticks": 0
+          },
+          "skipped": [],
+          "crowns_match": true,
+          "terminal_vs_last_play_ticks": 154
+        },
+        "reasons": [],
+        "usable": true
+      }
+    ],
+    "usable": true,
+    "repeat_equal": true
+  },
+  {
+    "tag": "d210185c225f4826bc10a045a2b5834a",
+    "split": "confirmation",
+    "attempts": [
+      {
+        "status": "captured",
+        "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\d210185c225f4826bc10a045a2b5834a_0.json",
+        "sha256": "b61d9bd064c6d179af8db86bd07db8d5f9e7afb3926d3c45884c18a4be3899a3",
+        "grade": {
+          "plays_total": 96,
+          "plays_driven": 96,
+          "accepted": 96,
+          "rejected_by_reason": {},
+          "invalid_placement": 0,
+          "elixir_delays": {
+            "n": 0,
+            "max_ticks": 0,
+            "sum_ticks": 0
+          },
+          "skipped": [],
+          "crowns_match": true,
+          "terminal_vs_last_play_ticks": 94
+        },
+        "reasons": [],
+        "usable": true
+      },
+      {
+        "status": "captured",
+        "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\d210185c225f4826bc10a045a2b5834a_1.json",
+        "sha256": "ea4b230c0338eaf97ce8df10d751cdd9fb184619b1573afad7c5db764bbd4540",
+        "grade": {
+          "plays_total": 96,
+          "plays_driven": 96,
+          "accepted": 96,
+          "rejected_by_reason": {},
+          "invalid_placement": 0,
+          "elixir_delays": {
+            "n": 0,
+            "max_ticks": 0,
+            "sum_ticks": 0
+          },
+          "skipped": [],
+          "crowns_match": true,
+          "terminal_vs_last_play_ticks": 94
+        },
+        "reasons": [],
+        "usable": true
+      }
+    ],
+    "usable": true,
+    "repeat_equal": true
+  },
+  {
+    "tag": "f4d7af9e4625459887dddd5eb0773f8e",
+    "split": "confirmation",
+    "attempts": [
+      {
+        "status": "captured",
+        "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\f4d7af9e4625459887dddd5eb0773f8e_0.json",
+        "sha256": "7d279b02425036eb870118b18f00bfd9e2a7085b3536950eeb160b6b80fe03ec",
+        "grade": {
+          "plays_total": 123,
+          "plays_driven": 123,
+          "accepted": 123,
+          "rejected_by_reason": {},
+          "invalid_placement": 0,
+          "elixir_delays": {
+            "n": 0,
+            "max_ticks": 0,
+            "sum_ticks": 0
+          },
+          "skipped": [],
+          "crowns_match": true,
+          "terminal_vs_last_play_ticks": 167
+        },
+        "reasons": [],
+        "usable": true
+      },
+      {
+        "status": "captured",
+        "path": "icebow\\data\\bench\\native_confirmation_20261005\\reserved_void\\recordings\\f4d7af9e4625459887dddd5eb0773f8e_1.json",
+        "sha256": "b1b28604e9d7ff0bfef5fb25430ce8aaefc3bcb83e66c21f7629993f2445f491",
+        "grade": {
+          "plays_total": 123,
+          "plays_driven": 123,
+          "accepted": 123,
+          "rejected_by_reason": {},
+          "invalid_placement": 0,
+          "elixir_delays": {
+            "n": 0,
+            "max_ticks": 0,
+            "sum_ticks": 0
+          },
+          "skipped": [],
+          "crowns_match": true,
+          "terminal_vs_last_play_ticks": 167
+        },
+        "reasons": [],
+        "usable": true
+      }
+    ],
+    "usable": true,
+    "repeat_equal": true
+  }
+]

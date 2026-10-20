@@ -1,0 +1,104 @@
+{
+  "complete": true,
+  "report_sha256": "b3585c7ec0134f3750873b2ff225274c28ce6fc5637fb6ce6cc3a99ad13a766e",
+  "script_sha256": "898d1a3a25e3d7052090c6a27bae70bdf07436139d802a213746e2ef21828a62",
+  "details_sha256": "0249b2302e72cd0458aadb37230f251efc5b1cb0ff823b3c7c266d04265e2e86",
+  "controls": {
+    "positive": 2,
+    "negative": 9
+  },
+  "live": {
+    "records": 134,
+    "with_public_observations": 105,
+    "no_public_observations": 29,
+    "encounters": {
+      "goblin_barrel": {
+        "records": 11,
+        "confirmed_parent_records": 0,
+        "projectile_records": 10
+      },
+      "witch": {
+        "records": 22,
+        "confirmed_parent_records": 22,
+        "projectile_records": 19
+      },
+      "night_witch": {
+        "records": 2,
+        "confirmed_parent_records": 2,
+        "projectile_records": 0
+      },
+      "furnace": {
+        "records": 3,
+        "confirmed_parent_records": 3,
+        "projectile_records": 3
+      }
+    },
+    "thresholds": {
+      "500": {
+        "records": 73,
+        "towers": 85
+      },
+      "1000": {
+        "records": 80,
+        "towers": 97
+      },
+      "1400": {
+        "records": 85,
+        "towers": 115
+      },
+      "1500": {
+        "records": 86,
+        "towers": 117
+      }
+    },
+    "rocket_ready_records": 56,
+    "rocket_ready_towers": 66
+  },
+  "pro": {
+    "records": 115,
+    "with_public_observations": 115,
+    "no_public_observations": 0,
+    "encounters": {
+      "goblin_barrel": {
+        "records": 0,
+        "confirmed_parent_records": 0,
+        "projectile_records": 0
+      },
+      "witch": {
+        "records": 3,
+        "confirmed_parent_records": 3,
+        "projectile_records": 3
+      },
+      "night_witch": {
+        "records": 10,
+        "confirmed_parent_records": 10,
+        "projectile_records": 0
+      },
+      "furnace": {
+        "records": 12,
+        "confirmed_parent_records": 12,
+        "projectile_records": 12
+      }
+    },
+    "thresholds": {
+      "500": {
+        "records": 49,
+        "towers": 54
+      },
+      "1000": {
+        "records": 57,
+        "towers": 69
+      },
+      "1400": {
+        "records": 63,
+        "towers": 83
+      },
+      "1500": {
+        "records": 65,
+        "towers": 88
+      }
+    },
+    "rocket_ready_records": 0,
+    "rocket_ready_towers": 0
+  }
+}

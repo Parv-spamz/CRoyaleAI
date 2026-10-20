@@ -1,0 +1,13 @@
+START train
+{"command": ["C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_3\\train.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "ROCKET_AIM_FULL_ARM_COMPLETE", "matched": true, "output_sha256": "7d612997dd1797ea8d0d960dbf6dc9c2599d73189428b3c430dfea33fa8b402e", "seconds": 225.93462133407593}
+INSPECTED_CHECK_PASS
+COMPLETE train
+START eval
+{"command": ["C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_3\\evaluate.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "ROCKET_AIM_EVALUATION_COMPLETE", "matched": true, "output_sha256": "3afb519f9623fc87995a9eb8184c9349f6b2ae0a0edfd0c2c0bb31bad6853869", "seconds": 67.86487078666687}
+INSPECTED_CHECK_PASS
+COMPLETE eval
+START independent
+{"command": ["C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_3\\recount.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "ROCKET_AIM_RECOUNT_COMPLETE", "matched": true, "output_sha256": "24e21226174cad2ca6b537a961d166b2900f30b877f3d3924982c67d381ebfdf", "seconds": 54.50058078765869}
+INSPECTED_CHECK_PASS
+COMPLETE independent
+ROCKET_AIM_CHAIN_COMPLETE

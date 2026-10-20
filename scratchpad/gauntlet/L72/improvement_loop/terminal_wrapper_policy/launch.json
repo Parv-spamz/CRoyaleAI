@@ -1,0 +1,7 @@
+{
+  "chain": "terminal_wrapper_policy/run_chain.py",
+  "single_chain": true,
+  "started": "2026-10-05T17:57:26.6264449-04:00",
+  "launcher_pid": 43572,
+  "automatic_resume": false
+}

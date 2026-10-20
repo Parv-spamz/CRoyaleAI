@@ -1,0 +1,10 @@
+C:\Users\benpe\ClashBot\pipeline\model_v3.py:92: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(enc, layers)
+Traceback (most recent call last):
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\live_entry\offline_probe.py", line 98, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\live_entry\offline_probe.py", line 61, in main
+    assert ok, source
+           ^^
+AssertionError: C:\Users\benpe\ClashBot\icebow\data\overlayed_replays\raw\lp_20260930_122643_0.mp4

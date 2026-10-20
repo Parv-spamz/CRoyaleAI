@@ -1,0 +1,60 @@
+{
+  "scope": "Read-only inspection of preserved six-branch first-root output, not full independent qualification",
+  "registered_gate_remains_failed": true,
+  "summary": {
+    "wait": {
+      "raw_sha256": "5366c4796527ff9b8dee8b9fb9e9eb53c91ad3a88d06a009feb711d110c853dd",
+      "effects": {},
+      "ordinary_projectile_frames": 0
+    },
+    "wait_repeat": {
+      "raw_sha256": "d0b8efd8fe0f84c91eae4e78eb1111c3aa9be02852168f5cadcb1238521317b3",
+      "effects": {},
+      "ordinary_projectile_frames": 0
+    },
+    "snapshot": {
+      "raw_sha256": "c3c8900eb76b95344430320d6d19debf211ad36cb639370fade40fe732e99052",
+      "effects": {
+        "5": {
+          "team": 1,
+          "kind": 3,
+          "card_id": -1,
+          "first_tick": 334,
+          "final_delta": 342
+        }
+      },
+      "ordinary_projectile_frames": 0
+    },
+    "forward2": {
+      "raw_sha256": "3ab97ba7d9fcd0d7218e58394fbaa8497a25d920c2a83cc24c0277796fc41d6a",
+      "effects": {
+        "5": {
+          "team": 1,
+          "kind": 3,
+          "card_id": -1,
+          "first_tick": 329,
+          "final_delta": 342
+        }
+      },
+      "ordinary_projectile_frames": 0
+    },
+    "forward4": {
+      "raw_sha256": "35e99ee3af95bb8a9cae7220859e23a8199a7f35c65c7f0320ff4eab6d038b6f",
+      "effects": {
+        "7": {
+          "team": 1,
+          "kind": 0,
+          "card_id": 0,
+          "first_tick": 323,
+          "final_delta": 1484
+        }
+      },
+      "ordinary_projectile_frames": 0
+    },
+    "sideways6": {
+      "raw_sha256": "80e469cdea03633da2e44a61ef7943734656cb183f49b0c36b167d5a959e2485",
+      "effects": {},
+      "ordinary_projectile_frames": 0
+    }
+  }
+}

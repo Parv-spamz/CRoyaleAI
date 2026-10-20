@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "report_sha256": "0e6bb348e83c376832e30cc07ff1ec00fe67d5eb5242be13c4262ccfad1f6dcf",
+  "sources": 1978,
+  "counts": {
+    "replays": 1978,
+    "native_crowns_mismatch": 417,
+    "frames": 1058264,
+    "frames_observed_multiplier": 0,
+    "frames_causal_hits": 0,
+    "entity_rows_with_target_column": 0,
+    "byte_equal_duplicate_frames": 311
+  },
+  "raw_expected_vs_native_final_crowns": {
+    "True": 1561,
+    "False": 417
+  },
+  "grade_flag_disagrees_with_raw": [],
+  "controls": {
+    "positive": 1,
+    "negative": 1,
+    "missing": 1
+  },
+  "verifier_sha256": "0612d6d613f864635fa030b8d7e72c94254152089ed1c67a4860a7dca96bb891",
+  "no_model_calls": true
+}

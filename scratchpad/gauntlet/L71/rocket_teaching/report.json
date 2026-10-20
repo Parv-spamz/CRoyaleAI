@@ -1,0 +1,338 @@
+{
+  "schema": 1,
+  "dataset_sha256": "297763ea0ecaa3be863d2859d3b5c74f1b627ab0ecfef89a80404112ebf9b1a4",
+  "labels_sha256": "d6752a9aba1be94f49b28fe4ec0aad3d40aa0a78636fdeec4d07e6b580ba184e",
+  "source_manifest_sha256": "fa3a5d5780f1a84f3c18ebd68a02512446b4070e4a9ca159d082ca23ae2459fa",
+  "cohorts_sha256": "855fcde2a489ef37b1ab5086f5e4b6ffdc544501c2e3d5d59ca09d2190240c6c",
+  "annotator_sha256": "37af36c4605d4569873c1238a38ffabcc5e3ece6de130a7d96c7dd591b7e1467",
+  "builder_sha256": "61b0587c670e519835938f6167049b7bb210330022ec3462fe49b782333a710b",
+  "catalog_sha256": "9547932de62776a8c1923364fea65ccfe1da256de8d28d3909083d9ebc522fe9",
+  "rows": 3517863,
+  "expert_targets_unchanged": true,
+  "public_only": true,
+  "trainable": true,
+  "mixture": {
+    "ordinary_icebow": 0.8,
+    "geometric_opportunity": 0.1,
+    "expert_sequence": 0.1
+  },
+  "counts": {
+    "replays": 2262
+  },
+  "exclusions_body_observations": {
+    "birth_attributed": 139618,
+    "birth_ambiguous": 1954,
+    "nonbase_form": 796130,
+    "child_or_modified_max_hp": 175362,
+    "shield_or_pull_immunity": 433896
+  },
+  "cohorts": {
+    "pool": {
+      "train": {
+        "rows": 268718,
+        "pro_play": 84298,
+        "pro_wait": 184420,
+        "cards": {
+          "skeletons": 14010,
+          "tesla": 11873,
+          "x-bow": 7748,
+          "tornado": 6822,
+          "ice-wizard": 13355,
+          "knight": 13760,
+          "the-log": 11923,
+          "rocket": 4807
+        }
+      },
+      "validation": {
+        "rows": 38317,
+        "pro_play": 11934,
+        "pro_wait": 26383,
+        "cards": {
+          "ice-wizard": 1913,
+          "the-log": 1676,
+          "knight": 1967,
+          "tesla": 1660,
+          "skeletons": 1964,
+          "tornado": 985,
+          "x-bow": 1098,
+          "rocket": 671
+        }
+      }
+    },
+    "opportunity": {
+      "train": {
+        "rows": 2281,
+        "pro_play": 1138,
+        "pro_wait": 1143,
+        "cards": {
+          "tornado": 118,
+          "skeletons": 177,
+          "rocket": 86,
+          "the-log": 226,
+          "knight": 162,
+          "ice-wizard": 184,
+          "tesla": 167,
+          "x-bow": 18
+        }
+      },
+      "validation": {
+        "rows": 285,
+        "pro_play": 157,
+        "pro_wait": 128,
+        "cards": {
+          "tornado": 17,
+          "tesla": 22,
+          "the-log": 30,
+          "ice-wizard": 28,
+          "rocket": 17,
+          "skeletons": 19,
+          "knight": 24
+        }
+      }
+    },
+    "compact": {
+      "train": {
+        "rows": 1072,
+        "pro_play": 526,
+        "pro_wait": 546,
+        "cards": {
+          "the-log": 119,
+          "knight": 79,
+          "skeletons": 75,
+          "ice-wizard": 69,
+          "tesla": 86,
+          "rocket": 42,
+          "tornado": 42,
+          "x-bow": 14
+        }
+      },
+      "validation": {
+        "rows": 101,
+        "pro_play": 56,
+        "pro_wait": 45,
+        "cards": {
+          "ice-wizard": 10,
+          "the-log": 12,
+          "rocket": 7,
+          "tornado": 4,
+          "skeletons": 8,
+          "knight": 8,
+          "tesla": 7
+        }
+      }
+    },
+    "pull": {
+      "train": {
+        "rows": 1624,
+        "pro_play": 833,
+        "pro_wait": 791,
+        "cards": {
+          "tornado": 86,
+          "skeletons": 137,
+          "rocket": 63,
+          "the-log": 159,
+          "ice-wizard": 142,
+          "knight": 113,
+          "tesla": 123,
+          "x-bow": 10
+        }
+      },
+      "validation": {
+        "rows": 216,
+        "pro_play": 123,
+        "pro_wait": 93,
+        "cards": {
+          "tornado": 15,
+          "tesla": 19,
+          "the-log": 23,
+          "rocket": 11,
+          "knight": 20,
+          "skeletons": 13,
+          "ice-wizard": 22
+        }
+      }
+    },
+    "known": {
+      "train": {
+        "rows": 268718,
+        "pro_play": 84298,
+        "pro_wait": 184420,
+        "cards": {
+          "skeletons": 14010,
+          "tesla": 11873,
+          "x-bow": 7748,
+          "tornado": 6822,
+          "ice-wizard": 13355,
+          "knight": 13760,
+          "the-log": 11923,
+          "rocket": 4807
+        }
+      },
+      "validation": {
+        "rows": 38317,
+        "pro_play": 11934,
+        "pro_wait": 26383,
+        "cards": {
+          "ice-wizard": 1913,
+          "the-log": 1676,
+          "knight": 1967,
+          "tesla": 1660,
+          "skeletons": 1964,
+          "tornado": 985,
+          "x-bow": 1098,
+          "rocket": 671
+        }
+      }
+    },
+    "sequence": {
+      "train": {
+        "rows": 16226,
+        "pro_play": 7357,
+        "pro_wait": 8869,
+        "cards": {
+          "rocket": 4804,
+          "tornado": 619,
+          "skeletons": 686,
+          "tesla": 227,
+          "the-log": 458,
+          "ice-wizard": 263,
+          "knight": 292,
+          "x-bow": 8
+        }
+      },
+      "validation": {
+        "rows": 2284,
+        "pro_play": 1042,
+        "pro_wait": 1242,
+        "cards": {
+          "rocket": 669,
+          "the-log": 60,
+          "tesla": 34,
+          "tornado": 89,
+          "skeletons": 92,
+          "knight": 54,
+          "ice-wizard": 43,
+          "x-bow": 1
+        }
+      }
+    },
+    "combo": {
+      "train": {
+        "rows": 1697,
+        "pro_play": 1004,
+        "pro_wait": 693,
+        "cards": {
+          "rocket": 457,
+          "tornado": 457,
+          "skeletons": 42,
+          "tesla": 3,
+          "the-log": 33,
+          "ice-wizard": 5,
+          "knight": 7
+        }
+      },
+      "validation": {
+        "rows": 271,
+        "pro_play": 154,
+        "pro_wait": 117,
+        "cards": {
+          "rocket": 69,
+          "tornado": 69,
+          "knight": 3,
+          "the-log": 8,
+          "skeletons": 5
+        }
+      }
+    },
+    "finish": {
+      "train": {
+        "rows": 156,
+        "pro_play": 100,
+        "pro_wait": 56,
+        "cards": {
+          "rocket": 65,
+          "skeletons": 11,
+          "tornado": 7,
+          "the-log": 10,
+          "ice-wizard": 1,
+          "tesla": 3,
+          "knight": 3
+        }
+      },
+      "validation": {
+        "rows": 20,
+        "pro_play": 13,
+        "pro_wait": 7,
+        "cards": {
+          "rocket": 10,
+          "the-log": 1,
+          "tesla": 1,
+          "tornado": 1
+        }
+      }
+    }
+  },
+  "sampling_mass": {
+    "pool": 1.0,
+    "opportunity": 0.10833149915145487,
+    "compact": 0.05099572717760188,
+    "pull": 0.07709784179265677,
+    "known": 1.0,
+    "sequence": 0.15926650821197136,
+    "combo": 0.0175273191579361,
+    "finish": 0.0014258473355857242
+  },
+  "seconds": 172.9,
+  "limits": [
+    "Geometric candidates do not prove successful pull or damage.",
+    "Unsupported forms, shields, spawned children and ambiguous births excluded.",
+    "Known means fresh frame; exclusions can make false-negative cohorts.",
+    "Only real expert actions are supervised; no synthetic Rocket/Tornado targets.",
+    "Future outcomes affect offline sampling membership only."
+  ],
+  "manifest_path": "icebow\\data\\bench\\rocket_teaching_20261004",
+  "manifest_sha256": "91c51ca45fc358c834ab3a5ade03e774f595c14a6bafc7baff3e8664f3df3e77",
+  "smoke": {
+    "status": "ROCKET_TRAIN_SMOKE_PASS",
+    "loss": 6.569084644317627,
+    "sampled_cohorts": {
+      "pool": 8,
+      "opportunity": 3,
+      "compact": 0,
+      "pull": 3,
+      "known": 8,
+      "sequence": 3,
+      "combo": 2,
+      "finish": 0
+    },
+    "deployment_evidence": false
+  },
+  "smoke_run": {
+    "args": {
+      "data": "icebow\\data\\pipeline\\gen_dataset_v31_public.npz",
+      "curriculum": "icebow\\data\\bench\\rocket_teaching_20261004",
+      "init_ckpt": "icebow\\data\\bench\\rl_royale\\rseries_r1e31\\rseries_r1e31_u0155.pt",
+      "out": "icebow\\data\\bench\\rocket_teaching_smoke_train_20261004",
+      "arm": "curriculum",
+      "device": "cpu",
+      "steps": 1000,
+      "bs": 8,
+      "lr": 1e-05,
+      "seed": 20261004,
+      "smoke_one_batch": true
+    },
+    "dataset_sha256": "297763ea0ecaa3be863d2859d3b5c74f1b627ab0ecfef89a80404112ebf9b1a4",
+    "curriculum_sha256": "91c51ca45fc358c834ab3a5ade03e774f595c14a6bafc7baff3e8664f3df3e77",
+    "initial_checkpoint_sha256": "76fdfaacbd9c2049cc88792278f06e3f73a56eaf9653791e922d9332dd6751cd",
+    "trainer_sha256": "7b354744803678fcc6a5d25748898af8f7ad867989611e1401752b7b3f5aa39e",
+    "runtime_rules_added": false,
+    "targets": "unchanged expert card/cell/gate/wait/value",
+    "model_architecture_unchanged": true,
+    "heldout_used_for_sampling": false,
+    "selection": "fixed final step; no test-set checkpoint selection"
+  },
+  "checkpoint_trained": false,
+  "live_deployed": false,
+  "expected_training_rocket_play_share": 0.13774906731027006,
+  "uniform_rocket_play_share": 0.057023891432774206
+}

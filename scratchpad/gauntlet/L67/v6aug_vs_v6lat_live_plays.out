@@ -1,0 +1,13 @@
+== run18 15:22 -- v6lat_s0, tau 0.27
+   15:22:36-15:25:38  3.0 min: plays 35 (0 anti-stall) = 11.5/min | first 120 s: 16 | median elixir at play 3
+   15:25:46-15:28:49  3.0 min: plays 33 (0 anti-stall) = 10.8/min | first 120 s: 17 | median elixir at play 3
+   15:28:56-15:31:58  3.0 min: plays 30 (1 anti-stall) =  9.9/min | first 120 s: 16 | median elixir at play 3
+   15:32:05-15:35:46  3.7 min: plays 42 (0 anti-stall) = 11.4/min | first 120 s: 17 | median elixir at play 3
+   TOTAL 4 matches, 12.8 min: 140 plays (1 anti-stall = 1%) = 10.9/min; first-120 s plays per match [16, 17, 16, 17]
+   p at PLAY (non-stall): median 0.43
+== 20:29 -- v6aug_s1, tau 0.27
+   20:29:32-20:33:47  4.2 min: plays 48 (3 anti-stall) = 11.3/min | first 120 s: 13 | median elixir at play 4
+   20:33:54-20:39:02  5.1 min: plays 74 (1 anti-stall) = 14.4/min | first 120 s: 18 | median elixir at play 3
+   20:39:10-20:42:12  3.0 min: plays 29 (2 anti-stall) =  9.6/min | first 120 s: 15 | median elixir at play 3
+   TOTAL 3 matches, 12.4 min: 151 plays (6 anti-stall = 4%) = 12.2/min; first-120 s plays per match [13, 18, 15]
+   p at PLAY (non-stall): median 0.38

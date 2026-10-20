@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "report_sha256": "80bb179dee74fcfdaf11f747fe3e7db933849ac7daf9c181bea24dd08a7f943d",
+  "totals": {
+    "r1e": {
+      "rows": 1127,
+      "sampled_plays": 149,
+      "ratio_maxdev": 8.462185661371207e-06,
+      "fulltime_games": 0
+    },
+    "ordinary_v5": {
+      "rows": 1279,
+      "sampled_plays": 188,
+      "ratio_maxdev": 7.024251685067219e-06,
+      "fulltime_games": 1
+    }
+  },
+  "controls": {
+    "positive": 1,
+    "negative": 9
+  },
+  "optimizer_updates": 0,
+  "new_models": 0,
+  "legacy_dataset_access": false,
+  "deployment_accepted": false
+}

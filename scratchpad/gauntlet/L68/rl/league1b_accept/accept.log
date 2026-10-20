@@ -1,0 +1,9 @@
+[acc] league1b ended Wed Sep 30 06:10:41 EDT 2026
+[acc] candidates: league1b/league1b_u0020.pt league1b/league1b_u0030.pt league1b/league1b_u0075.pt league1/league1_u0010.pt league1/league1_u0020.pt league1/league1_u0075.pt
+[acc] league1b_u0020 "delta_pp":0.33444816053511706,"ci_lo_pp":-3.3444816053511706,"ci_hi_pp":4.013377926421405, Wed Sep 30 06:12:23 EDT 2026
+[acc] league1b_u0030 "delta_pp":-0.33444816053511706,"ci_lo_pp":-4.013377926421405,"ci_hi_pp":3.3444816053511706, Wed Sep 30 06:13:37 EDT 2026
+[acc] league1b_u0075 "delta_pp":-0.6688963210702341,"ci_lo_pp":-4.3478260869565215,"ci_hi_pp":2.6755852842809364, Wed Sep 30 06:30:46 EDT 2026
+[acc] league1_u0010 "delta_pp":-0.6688963210702341,"ci_lo_pp":-4.682274247491638,"ci_hi_pp":3.3444816053511706, Wed Sep 30 06:31:18 EDT 2026
+[acc] league1_u0020 "delta_pp":1.6722408026755853,"ci_lo_pp":-2.0066889632107023,"ci_hi_pp":5.351170568561873, Wed Sep 30 06:31:44 EDT 2026
+[acc] league1_u0075 "delta_pp":0.6688963210702341,"ci_lo_pp":-2.6755852842809364,"ci_hi_pp":4.013377926421405, Wed Sep 30 07:05:57 EDT 2026
+[acc] done Wed Sep 30 07:05:57 EDT 2026

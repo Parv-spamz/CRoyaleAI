@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "updates": 32,
+  "games": 256,
+  "checkpoint": "icebow\\data\\bench\\development_rl_1_20261005\\checkpoints\\u032.pt",
+  "checkpoint_sha256": "3223ccd97561604163d0043f9eadfa3691836eaf58821d1e21618e56e9d4ee9b",
+  "train_log_sha256": "c416faa2af5f0624997f307a2da0667ec448876394c1b7adb544fcb6efa49ab7",
+  "runtime": {
+    "schema": 1,
+    "pins": {
+      "RoyaleSim": "015f9b0084afe574915e3f6ce2f0764c6dec6099",
+      "RoyaleGym": "3117816366b00754da1b56c9543412e4706de62a"
+    },
+    "wheels": {
+      "royalegym-0.1.15-py3-none-any.whl": "51219cef17867069abf22c206c1fbc309b3e8f93927a658e19b543b6ba96156b",
+      "royalesim-0.1.13-cp310-abi3-win_amd64.whl": "ab61577d3926df7a43463f41c479ec31e6864d3702c13075f170d97f3b30406c"
+    },
+    "manifest_sha256": "eb455896367d94107dbf3fd35ffc8f01de097a1ac2c3beebdca00445b2f45903",
+    "card_table": {
+      "cards_json_fnv1a64": "21935265e615e337",
+      "cards_vintage": "15.535.29 client (2026, LIVE build family)",
+      "cards_json_hash_source": "embedded"
+    }
+  },
+  "prepared_sha256": "dd4cd5620ee8103a4ddb3ccd996afd083288cd69abacc3c2685bda9eb4ce1c11",
+  "deployment_accepted": false
+}

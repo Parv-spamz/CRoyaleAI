@@ -1,0 +1,45 @@
+{
+  "public_sources_only": true,
+  "source_executed": false,
+  "github_revision": "eec3887c94faecb7e9108f5d53d24a86b6bf08d5",
+  "dataset_revision": "ba54d0c89db86fd6e31096179a0141635fbef816",
+  "files": {
+    "README.md": {
+      "bytes": 3472,
+      "sha256": "96b33d2da6cc64fa5a541a8219bc74ac2f046d46c29a8db13d110fc7e9841351"
+    },
+    "upstream_tree.json": {
+      "bytes": 118687,
+      "sha256": "835a0970e1a02d0a0d722117b52b1ebef21ce852e5ba9e7cb1c26242c7187a33"
+    },
+    "upstream_metadata.py": {
+      "bytes": 4781,
+      "sha256": "990fe40c5a5c84f55970e9a62c1b55fd0b86a3c4ec56726229b9ed1fd5b9cbc4"
+    },
+    "upstream_parser.py": {
+      "bytes": 8138,
+      "sha256": "71f8c3740f7a03d8536efc9848e8309bcdbfb33346556817b110ce9d0278aedd"
+    },
+    "upstream_cleaner.py": {
+      "bytes": 7365,
+      "sha256": "e33232724d2dbe201c36243b8c7e3475cf201a7ae3ba2b3db40d81449fcb1b49"
+    },
+    "manifest.json": {
+      "bytes": 925,
+      "sha256": "512d72c3ce39ed61b0e3324943b00b9f84148ed2ff055f87a79112b006787177"
+    },
+    "dataset_api.json": {
+      "bytes": 635143,
+      "sha256": "4f593dee3f5b8c537649eac38512bfb8c0f62f3719bd0e0cfac688542f285d03"
+    }
+  },
+  "tree_truncated": false,
+  "original_battle_metadata_paths": [],
+  "legacy_metadata_path": null,
+  "qualified_new_replays": 0,
+  "limitations": [
+    "Publisher source code is not the matching original battle metadata.",
+    "Current metadata matching uses participants and crowns and rejects multiple matches; no faithful join is available here.",
+    "No credentials, browser challenge, bulk raw download, inferred forms or new reservation."
+  ]
+}

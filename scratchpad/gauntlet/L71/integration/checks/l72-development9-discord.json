@@ -1,0 +1,17 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L69/discord/send_report.py",
+    "--id",
+    "model-ordinary-extended-v5-final",
+    "--file",
+    "scratchpad/gauntlet/L72/improvement_loop/development_iteration_9/message.md"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "DELIVERED model-ordinary-extended-v5-final",
+  "matched": true,
+  "output_sha256": "532cd22a40b65006d272f9e42ce8933c1dbbc74d0eba986538cbd11e79577314",
+  "seconds": 0.9161760807037354
+}

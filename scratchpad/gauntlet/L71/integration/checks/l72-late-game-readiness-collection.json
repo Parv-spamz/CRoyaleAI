@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\late_game_readiness\\collect.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 1,
+  "expected": "LATE_GAME_READINESS_COLLECTED",
+  "matched": false,
+  "output_sha256": "bdb2478f00e7d4d09b886e6ff8e47523086522386cae40866260ac2376bf6638",
+  "seconds": 104.68805480003357
+}

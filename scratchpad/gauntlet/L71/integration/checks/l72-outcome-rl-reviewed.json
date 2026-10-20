@@ -1,0 +1,15 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/review_outcome_rl.py",
+    "--phase",
+    "delivery"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "OUTCOME_RL_DELIVERY_REVIEWED",
+  "matched": true,
+  "output_sha256": "ba1e44064296e0e9f9cce8d04a5c1eedb3187e1ff5fdcf686aa9746221f066ec",
+  "seconds": 0.5041968822479248
+}

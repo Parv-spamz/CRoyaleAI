@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/development_iteration_6/prepare.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "SPATIAL_WEIGHTS_PREPARED",
+  "matched": true,
+  "output_sha256": "872bd86fc8e4802fb6e4c71ef16e3ac9cf45996b48b691bfe4872169d19f8f2b",
+  "seconds": 5.31222128868103
+}

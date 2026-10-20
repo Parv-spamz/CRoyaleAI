@@ -1,0 +1,105 @@
+{
+  "complete": true,
+  "policy_predictions": 0,
+  "optimizer_updates": 0,
+  "trained": false,
+  "started_sha256": "99af93552f87d1da61e5ac1422447d1826337e494c594045788233cad13f056e",
+  "details_sha256": "f779517e5218d7448486d0ae34b3980b5e4ea7ec531ce877d2b4addc50c5a843",
+  "live": {
+    "records": 134,
+    "with_public_observations": 105,
+    "no_public_observations": 29,
+    "encounters": {
+      "goblin_barrel": {
+        "records": 11,
+        "confirmed_parent_records": 0,
+        "projectile_records": 10
+      },
+      "witch": {
+        "records": 22,
+        "confirmed_parent_records": 22,
+        "projectile_records": 19
+      },
+      "night_witch": {
+        "records": 2,
+        "confirmed_parent_records": 2,
+        "projectile_records": 0
+      },
+      "furnace": {
+        "records": 3,
+        "confirmed_parent_records": 3,
+        "projectile_records": 3
+      }
+    },
+    "thresholds": {
+      "500": {
+        "records": 88,
+        "towers": 250
+      },
+      "1000": {
+        "records": 92,
+        "towers": 274
+      },
+      "1400": {
+        "records": 95,
+        "towers": 298
+      },
+      "1500": {
+        "records": 95,
+        "towers": 300
+      }
+    },
+    "rocket_ready_records": 72,
+    "rocket_ready_towers": 143
+  },
+  "pro": {
+    "records": 115,
+    "with_public_observations": 115,
+    "no_public_observations": 0,
+    "encounters": {
+      "goblin_barrel": {
+        "records": 0,
+        "confirmed_parent_records": 0,
+        "projectile_records": 0
+      },
+      "witch": {
+        "records": 3,
+        "confirmed_parent_records": 3,
+        "projectile_records": 3
+      },
+      "night_witch": {
+        "records": 10,
+        "confirmed_parent_records": 10,
+        "projectile_records": 0
+      },
+      "furnace": {
+        "records": 12,
+        "confirmed_parent_records": 12,
+        "projectile_records": 12
+      }
+    },
+    "thresholds": {
+      "500": {
+        "records": 49,
+        "towers": 54
+      },
+      "1000": {
+        "records": 57,
+        "towers": 69
+      },
+      "1400": {
+        "records": 63,
+        "towers": 83
+      },
+      "1500": {
+        "records": 65,
+        "towers": 88
+      }
+    },
+    "rocket_ready_records": 0,
+    "rocket_ready_towers": 0
+  },
+  "live_rocket_attempts": 54,
+  "live_rocket_confirmations": 48,
+  "excluded_unclosed": 0
+}

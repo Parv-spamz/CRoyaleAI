@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/hand_retention_integration/check_mirror_replays.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "MIRROR_REPLAYS_VERIFIED",
+  "matched": true,
+  "output_sha256": "c7fc7285043cba42c3c9954ba7488baeef4278972fbff67ecaccc4e949744431",
+  "seconds": 29.004408359527588
+}

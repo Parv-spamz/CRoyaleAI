@@ -1,0 +1,11 @@
+FIXTURE 0 7200 14 4 ['win', 'loss']
+FIXTURE 1 7200 14 4 ['draw', 'draw']
+FIXTURE 2 7200 14 4 ['win', 'loss']
+FIXTURE 3 7200 14 4 ['loss', 'win']
+FIXTURE 4 7200 14 4 ['draw', 'draw']
+FIXTURE 5 7200 14 4 ['draw', 'draw']
+FIXTURE 6 7200 14 4 ['win', 'loss']
+FIXTURE 7 7200 14 4 ['draw', 'draw']
+FIXTURE 0 5995 4 4 ['draw', 'draw']
+FIXTURE 1 5995 4 4 ['draw', 'draw']
+TERMINAL_WRAPPER_NATIVE_COMPLETE

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/development_rl_1_recovery/diagnose.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "OUTCOME_RL_SETUP_RECOVERY_VERIFIED",
+  "matched": true,
+  "output_sha256": "0609bf17fce68d0beb7ea8818eb2069773d388bc41ffd2bc5742d769f22e06b6",
+  "seconds": 34.36795234680176
+}

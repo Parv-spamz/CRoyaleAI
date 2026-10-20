@@ -1,0 +1,374 @@
+{
+  "complete": true,
+  "selection_sha256": "7a6cfcfc3c031f7b63787b0a82c6e96288be24e32ad0d6bb5b2c108cdb762cae",
+  "cache": "icebow\\data\\bench\\train_barrel_residual_20261005\\predictions.npz",
+  "cache_sha256": "77acc09eb619cc002a61c9637e6348ad48da368d892bfdaa0b7658c38145856f",
+  "conditions": [
+    "v5_rocket_barrel__full",
+    "v6_rocket_barrel__full",
+    "v6_rocket_barrel__residual_off",
+    "v6_rocket_both__full",
+    "v6_rocket_both__residual_off"
+  ],
+  "summaries": {
+    "v5_rocket_barrel__full": {
+      "single_pro_log": {
+        "rows": 89,
+        "plays": 89,
+        "action": 25,
+        "card": 86,
+        "aim": 29,
+        "log_fired": 83,
+        "forced_log_same_lane": 67,
+        "gated_correct_lane": 61,
+        "gated_wrong_lane": 22
+      },
+      "single_other_play": {
+        "rows": 73,
+        "plays": 73,
+        "action": 9,
+        "card": 39,
+        "aim": 16,
+        "log_fired": 19,
+        "forced_log_same_lane": 41,
+        "gated_correct_lane": 12,
+        "gated_wrong_lane": 7
+      },
+      "single_wait": {
+        "rows": 103,
+        "plays": 0,
+        "action": 61,
+        "card": 0,
+        "aim": 0,
+        "log_fired": 15,
+        "forced_log_same_lane": 66,
+        "gated_correct_lane": 11,
+        "gated_wrong_lane": 4
+      },
+      "multiple_barrel": {
+        "rows": 81,
+        "plays": 44,
+        "action": 32,
+        "card": 30,
+        "aim": 14,
+        "log_fired": 19
+      },
+      "ambiguous_barrel": {
+        "rows": 83,
+        "plays": 49,
+        "action": 23,
+        "card": 34,
+        "aim": 9,
+        "log_fired": 16
+      },
+      "other_projectile": {
+        "rows": 200,
+        "plays": 63,
+        "action": 120,
+        "card": 47,
+        "aim": 20,
+        "log_fired": 7
+      },
+      "no_valid_target": {
+        "rows": 200,
+        "plays": 67,
+        "action": 120,
+        "card": 39,
+        "aim": 21,
+        "log_fired": 5
+      }
+    },
+    "v6_rocket_barrel__full": {
+      "single_pro_log": {
+        "rows": 89,
+        "plays": 89,
+        "action": 36,
+        "card": 86,
+        "aim": 40,
+        "log_fired": 83,
+        "forced_log_same_lane": 89,
+        "gated_correct_lane": 83,
+        "gated_wrong_lane": 0
+      },
+      "single_other_play": {
+        "rows": 73,
+        "plays": 73,
+        "action": 8,
+        "card": 38,
+        "aim": 17,
+        "log_fired": 20,
+        "forced_log_same_lane": 50,
+        "gated_correct_lane": 18,
+        "gated_wrong_lane": 2
+      },
+      "single_wait": {
+        "rows": 103,
+        "plays": 0,
+        "action": 63,
+        "card": 0,
+        "aim": 0,
+        "log_fired": 13,
+        "forced_log_same_lane": 72,
+        "gated_correct_lane": 11,
+        "gated_wrong_lane": 2
+      },
+      "multiple_barrel": {
+        "rows": 81,
+        "plays": 44,
+        "action": 31,
+        "card": 31,
+        "aim": 13,
+        "log_fired": 19
+      },
+      "ambiguous_barrel": {
+        "rows": 83,
+        "plays": 49,
+        "action": 23,
+        "card": 35,
+        "aim": 9,
+        "log_fired": 16
+      },
+      "other_projectile": {
+        "rows": 200,
+        "plays": 63,
+        "action": 120,
+        "card": 47,
+        "aim": 20,
+        "log_fired": 7
+      },
+      "no_valid_target": {
+        "rows": 200,
+        "plays": 67,
+        "action": 119,
+        "card": 39,
+        "aim": 20,
+        "log_fired": 5
+      }
+    },
+    "v6_rocket_barrel__residual_off": {
+      "single_pro_log": {
+        "rows": 89,
+        "plays": 89,
+        "action": 23,
+        "card": 86,
+        "aim": 26,
+        "log_fired": 83,
+        "forced_log_same_lane": 68,
+        "gated_correct_lane": 62,
+        "gated_wrong_lane": 21
+      },
+      "single_other_play": {
+        "rows": 73,
+        "plays": 73,
+        "action": 8,
+        "card": 38,
+        "aim": 14,
+        "log_fired": 20,
+        "forced_log_same_lane": 41,
+        "gated_correct_lane": 13,
+        "gated_wrong_lane": 7
+      },
+      "single_wait": {
+        "rows": 103,
+        "plays": 0,
+        "action": 63,
+        "card": 0,
+        "aim": 0,
+        "log_fired": 13,
+        "forced_log_same_lane": 67,
+        "gated_correct_lane": 10,
+        "gated_wrong_lane": 3
+      },
+      "multiple_barrel": {
+        "rows": 81,
+        "plays": 44,
+        "action": 30,
+        "card": 31,
+        "aim": 11,
+        "log_fired": 19
+      },
+      "ambiguous_barrel": {
+        "rows": 83,
+        "plays": 49,
+        "action": 22,
+        "card": 35,
+        "aim": 8,
+        "log_fired": 16
+      },
+      "other_projectile": {
+        "rows": 200,
+        "plays": 63,
+        "action": 120,
+        "card": 47,
+        "aim": 20,
+        "log_fired": 7
+      },
+      "no_valid_target": {
+        "rows": 200,
+        "plays": 67,
+        "action": 119,
+        "card": 39,
+        "aim": 20,
+        "log_fired": 5
+      }
+    },
+    "v6_rocket_both__full": {
+      "single_pro_log": {
+        "rows": 89,
+        "plays": 89,
+        "action": 37,
+        "card": 86,
+        "aim": 41,
+        "log_fired": 83,
+        "forced_log_same_lane": 88,
+        "gated_correct_lane": 83,
+        "gated_wrong_lane": 0
+      },
+      "single_other_play": {
+        "rows": 73,
+        "plays": 73,
+        "action": 11,
+        "card": 40,
+        "aim": 20,
+        "log_fired": 21,
+        "forced_log_same_lane": 50,
+        "gated_correct_lane": 19,
+        "gated_wrong_lane": 2
+      },
+      "single_wait": {
+        "rows": 103,
+        "plays": 0,
+        "action": 59,
+        "card": 0,
+        "aim": 0,
+        "log_fired": 14,
+        "forced_log_same_lane": 72,
+        "gated_correct_lane": 12,
+        "gated_wrong_lane": 2
+      },
+      "multiple_barrel": {
+        "rows": 81,
+        "plays": 44,
+        "action": 31,
+        "card": 30,
+        "aim": 14,
+        "log_fired": 19
+      },
+      "ambiguous_barrel": {
+        "rows": 83,
+        "plays": 49,
+        "action": 23,
+        "card": 35,
+        "aim": 9,
+        "log_fired": 15
+      },
+      "other_projectile": {
+        "rows": 200,
+        "plays": 63,
+        "action": 117,
+        "card": 47,
+        "aim": 21,
+        "log_fired": 10
+      },
+      "no_valid_target": {
+        "rows": 200,
+        "plays": 67,
+        "action": 122,
+        "card": 41,
+        "aim": 22,
+        "log_fired": 6
+      }
+    },
+    "v6_rocket_both__residual_off": {
+      "single_pro_log": {
+        "rows": 89,
+        "plays": 89,
+        "action": 23,
+        "card": 86,
+        "aim": 26,
+        "log_fired": 83,
+        "forced_log_same_lane": 68,
+        "gated_correct_lane": 62,
+        "gated_wrong_lane": 21
+      },
+      "single_other_play": {
+        "rows": 73,
+        "plays": 73,
+        "action": 10,
+        "card": 40,
+        "aim": 15,
+        "log_fired": 21,
+        "forced_log_same_lane": 42,
+        "gated_correct_lane": 14,
+        "gated_wrong_lane": 7
+      },
+      "single_wait": {
+        "rows": 103,
+        "plays": 0,
+        "action": 59,
+        "card": 0,
+        "aim": 0,
+        "log_fired": 14,
+        "forced_log_same_lane": 65,
+        "gated_correct_lane": 10,
+        "gated_wrong_lane": 4
+      },
+      "multiple_barrel": {
+        "rows": 81,
+        "plays": 44,
+        "action": 29,
+        "card": 30,
+        "aim": 10,
+        "log_fired": 19
+      },
+      "ambiguous_barrel": {
+        "rows": 83,
+        "plays": 49,
+        "action": 22,
+        "card": 35,
+        "aim": 8,
+        "log_fired": 15
+      },
+      "other_projectile": {
+        "rows": 200,
+        "plays": 63,
+        "action": 117,
+        "card": 47,
+        "aim": 20,
+        "log_fired": 10
+      },
+      "no_valid_target": {
+        "rows": 200,
+        "plays": 67,
+        "action": 122,
+        "card": 41,
+        "aim": 22,
+        "log_fired": 6
+      }
+    }
+  },
+  "invariants": {
+    "v6_rocket_barrel": {
+      "gate_unchanged": true,
+      "card_unchanged": true,
+      "zero_target_rows": 200,
+      "zero_target_logits_unchanged": true,
+      "max_residual": 2.410531520843506
+    },
+    "v6_rocket_both": {
+      "gate_unchanged": true,
+      "card_unchanged": true,
+      "zero_target_rows": 200,
+      "zero_target_logits_unchanged": true,
+      "max_residual": 1.8889703750610352
+    }
+  },
+  "optimizer_updates": 0,
+  "new_checkpoint": false,
+  "live_changed": false,
+  "limits": [
+    "Training-only fixed-weight diagnosis; not unseen performance or acceptance.",
+    "Expert/target geometry is not damage or verified historical landing.",
+    "Between-checkpoint changes include weight and exposure effects."
+  ]
+}

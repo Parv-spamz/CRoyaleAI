@@ -1,0 +1,6 @@
+[rl] START league1b pid 60780 config sha 95e5c037526b argv ['--config', 'pipeline/rl_royale.yaml', '--run', 'league1b', 'init=icebow/data/pipeline/gen_v1_s0/gen_s0.pt', 'league=true', 'noise_off=all', 'opp_elixir=counter', 'action_delay_ticks=26', 'extrapolate_ticks=26', 'max_updates=200', 'screen_seeds=[0]']
+[rl] run league1b: train 299 loadable, held-out 58 loadable (screen uses 58); init icebow/data/pipeline/gen_v1_s0/gen_s0.pt (GENERALIST) grid lattice; conditions (rollouts + screens): noise_off=all opp_elixir=counter action_delay_ticks=26 extrapolate_ticks=26; leash max
+[rl] LEAGUE: 182 census decks + icebow (share 0.2), weights sides^0.5 floor 0.5x mean (max p 0.0387, min 0.0027); opponents mix {'latest': 0.35, 'older': 0.25, 'init': 0.2, 's1': 0.2} (opp policy sample), S1 specialist icebow/data/pipeline/s1_icebow_v6aug_s1.pt (icebow only); snapshot every 10 updates, keep 8
+[rl] init pro agreement (13761 VAL rows, 16s): cell 0.2071 card 0.6457 gate_bal 0.7669
+[rl] init held-out screen: 58 matches, winrate 0.879, plays/min 10.65, guards outlived 0.157 <=10dlv 0.000 refused/m 0.259 (36s)
+[rl] saved C:\Users\benpe\ClashBot\icebow\data\bench\rl_royale\league1b\league1b_u0000.pt

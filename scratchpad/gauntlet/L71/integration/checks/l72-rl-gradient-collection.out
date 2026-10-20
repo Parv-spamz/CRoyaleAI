@@ -1,0 +1,35 @@
+GRADIENT_UPDATE 6 COMPLETE
+GRADIENT_UPDATE 7 COMPLETE
+GRADIENT_UPDATE 8 COMPLETE
+GRADIENT_UPDATE 9 COMPLETE
+GRADIENT_UPDATE 10 COMPLETE
+GRADIENT_UPDATE 11 COMPLETE
+GRADIENT_UPDATE 12 COMPLETE
+GRADIENT_UPDATE 13 COMPLETE
+GRADIENT_UPDATE 14 COMPLETE
+GRADIENT_UPDATE 15 COMPLETE
+GRADIENT_UPDATE 16 COMPLETE
+GRADIENT_UPDATE 17 COMPLETE
+GRADIENT_UPDATE 18 COMPLETE
+GRADIENT_UPDATE 19 COMPLETE
+GRADIENT_UPDATE 20 COMPLETE
+GRADIENT_UPDATE 21 COMPLETE
+GRADIENT_UPDATE 22 COMPLETE
+GRADIENT_UPDATE 23 COMPLETE
+GRADIENT_UPDATE 24 COMPLETE
+GRADIENT_UPDATE 25 COMPLETE
+GRADIENT_UPDATE 26 COMPLETE
+GRADIENT_UPDATE 27 COMPLETE
+GRADIENT_UPDATE 28 COMPLETE
+GRADIENT_UPDATE 29 COMPLETE
+GRADIENT_UPDATE 30 COMPLETE
+GRADIENT_UPDATE 31 COMPLETE
+GRADIENT_UPDATE 32 COMPLETE
+RL_GRADIENT_COLLECTED
+C:\Users\benpe\ClashBot\pipeline\model_v3.py:92: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(enc, layers)
+C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\rl_gradient_audit\collect.py:47: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  result=dict(update=u+1,pre_checkpoint_update=u,cohort_rows=n,sample_rows=len(ix),beta=beta,inputs=inputs,names=names,shapes=shapes,gradient_file=str(vectorpath.relative_to(ROOT)),gradient_sha256=sha(vectorpath),metrics=m,loss_policy=float(pg),loss_critic=float(vf),loss_detached=float(det),ratio_maxdev=vs['ratio_maxdev'],weights_unchanged=True,optimizer_updates=0)
+C:\Users\benpe\ClashBot\pipeline\model_v3.py:92: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(enc, layers)

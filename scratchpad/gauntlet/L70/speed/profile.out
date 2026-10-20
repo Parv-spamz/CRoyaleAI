@@ -1,0 +1,12 @@
+[r1u] reactive rseries_r1u_u0080 exit 0 wins gen 14/24 s1 21/24 Sat Oct  3 11:29:42 EDT 2026
+[r1u] screen rseries_r1u_u0155 vs base "delta_pp":1.3377926421404682,"ci_lo_pp":-2.0066889632107023,"ci_hi_pp":4.682274247491638, Sat Oct  3 11:33:23 EDT 2026
+[r1u] screen rseries_r1u_u0155 vs r1_u0155 "delta_pp":-1.6722408026755853,"ci_lo_pp":-4.682274247491638,"ci_hi_pp":1.3377926421404682, Sat Oct  3 11:33:27 EDT 2026
+[r1u] reactive rseries_r1u_u0155 exit 0 wins gen 11/24 s1 24/24 Sat Oct  3 11:36:55 EDT 2026
+[r1u] all done Sat Oct  3 11:36:55 EDT 2026
+rows 200000 bs 256 steps 60; GPU NVIDIA GeForce RTX 5050 Laptop GPU
+base         244.5 ms/step     1047 rows/s  peak 3522 MiB
+tf32         230.4 ms/step     1111 rows/s  peak 3522 MiB
+bf16         149.8 ms/step     1709 rows/s  peak 2672 MiB
+bf16+tf32    148.6 ms/step     1723 rows/s  peak 2672 MiB
+
+[exited with code 0]

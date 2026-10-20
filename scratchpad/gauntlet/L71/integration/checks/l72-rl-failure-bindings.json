@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/rl_failure_bindings.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "RL_FAILURE_BINDINGS_VERIFIED",
+  "matched": true,
+  "output_sha256": "8d14b87f118c2d92b29f0660034d43aa87dbf35fe18f7fcb1c9a5da097a63cf3",
+  "seconds": 0.15411853790283203
+}

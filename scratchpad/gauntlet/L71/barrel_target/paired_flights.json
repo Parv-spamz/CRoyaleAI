@@ -1,0 +1,268 @@
+{
+  "counts": {
+    "projectile_observations": 7040,
+    "near_cast_target": 5977,
+    "opposite_cast_lane": 1063,
+    "reflected_target_with_simultaneous_cast_target": 1063,
+    "unexplained_far_target": 0
+  },
+  "examples": [
+    {
+      "tag": "93367126d7144d7885c74014a865e397",
+      "tick": 1717,
+      "cast": {
+        "play_index": 20,
+        "tick": 1707,
+        "side": 1,
+        "card": "goblin-barrel",
+        "x": 15500,
+        "y": 7499,
+        "cost": 3,
+        "elixir_before": 9.3846,
+        "hand_before": [
+          "Log",
+          "GoblinBarrel",
+          "BlowdartGoblin",
+          "InfernoTower"
+        ],
+        "delay_ticks": 0,
+        "accepted": true,
+        "result_code": 0,
+        "result_name": "accepted",
+        "hand_index": 1,
+        "placement_valid": true,
+        "placement_reason": "valid",
+        "engine_tick": 1707
+      },
+      "shots": [
+        [
+          "goblin-barrel",
+          1,
+          10150,
+          25180,
+          15500,
+          7499,
+          null
+        ],
+        [
+          "goblin-barrel",
+          1,
+          7850,
+          25180,
+          2500,
+          7499,
+          null
+        ]
+      ],
+      "reflected": true,
+      "simultaneous_cast_target": true
+    },
+    {
+      "tag": "93367126d7144d7885c74014a865e397",
+      "tick": 1727,
+      "cast": {
+        "play_index": 20,
+        "tick": 1707,
+        "side": 1,
+        "card": "goblin-barrel",
+        "x": 15500,
+        "y": 7499,
+        "cost": 3,
+        "elixir_before": 9.3846,
+        "hand_before": [
+          "Log",
+          "GoblinBarrel",
+          "BlowdartGoblin",
+          "InfernoTower"
+        ],
+        "delay_ticks": 0,
+        "accepted": true,
+        "result_code": 0,
+        "result_name": "accepted",
+        "hand_index": 1,
+        "placement_valid": true,
+        "placement_reason": "valid",
+        "engine_tick": 1707
+      },
+      "shots": [
+        [
+          "goblin-barrel",
+          1,
+          11300,
+          21360,
+          15500,
+          7499,
+          null
+        ],
+        [
+          "goblin-barrel",
+          1,
+          6700,
+          21360,
+          2500,
+          7499,
+          null
+        ]
+      ],
+      "reflected": true,
+      "simultaneous_cast_target": true
+    },
+    {
+      "tag": "93367126d7144d7885c74014a865e397",
+      "tick": 1737,
+      "cast": {
+        "play_index": 20,
+        "tick": 1707,
+        "side": 1,
+        "card": "goblin-barrel",
+        "x": 15500,
+        "y": 7499,
+        "cost": 3,
+        "elixir_before": 9.3846,
+        "hand_before": [
+          "Log",
+          "GoblinBarrel",
+          "BlowdartGoblin",
+          "InfernoTower"
+        ],
+        "delay_ticks": 0,
+        "accepted": true,
+        "result_code": 0,
+        "result_name": "accepted",
+        "hand_index": 1,
+        "placement_valid": true,
+        "placement_reason": "valid",
+        "engine_tick": 1707
+      },
+      "shots": [
+        [
+          "goblin-barrel",
+          1,
+          12457,
+          17540,
+          15500,
+          7499,
+          null
+        ],
+        [
+          "goblin-barrel",
+          1,
+          5543,
+          17540,
+          2500,
+          7499,
+          null
+        ]
+      ],
+      "reflected": true,
+      "simultaneous_cast_target": true
+    },
+    {
+      "tag": "93367126d7144d7885c74014a865e397",
+      "tick": 1742,
+      "cast": {
+        "play_index": 20,
+        "tick": 1707,
+        "side": 1,
+        "card": "goblin-barrel",
+        "x": 15500,
+        "y": 7499,
+        "cost": 3,
+        "elixir_before": 9.3846,
+        "hand_before": [
+          "Log",
+          "GoblinBarrel",
+          "BlowdartGoblin",
+          "InfernoTower"
+        ],
+        "delay_ticks": 0,
+        "accepted": true,
+        "result_code": 0,
+        "result_name": "accepted",
+        "hand_index": 1,
+        "placement_valid": true,
+        "placement_reason": "valid",
+        "engine_tick": 1707
+      },
+      "shots": [
+        [
+          "goblin-barrel",
+          1,
+          13036,
+          15630,
+          15500,
+          7499,
+          null
+        ],
+        [
+          "goblin-barrel",
+          1,
+          4964,
+          15630,
+          2500,
+          7499,
+          null
+        ]
+      ],
+      "reflected": true,
+      "simultaneous_cast_target": true
+    },
+    {
+      "tag": "93367126d7144d7885c74014a865e397",
+      "tick": 1752,
+      "cast": {
+        "play_index": 20,
+        "tick": 1707,
+        "side": 1,
+        "card": "goblin-barrel",
+        "x": 15500,
+        "y": 7499,
+        "cost": 3,
+        "elixir_before": 9.3846,
+        "hand_before": [
+          "Log",
+          "GoblinBarrel",
+          "BlowdartGoblin",
+          "InfernoTower"
+        ],
+        "delay_ticks": 0,
+        "accepted": true,
+        "result_code": 0,
+        "result_name": "accepted",
+        "hand_index": 1,
+        "placement_valid": true,
+        "placement_reason": "valid",
+        "engine_tick": 1707
+      },
+      "shots": [
+        [
+          "goblin-barrel",
+          1,
+          14194,
+          11810,
+          15500,
+          7499,
+          null
+        ],
+        [
+          "goblin-barrel",
+          1,
+          3806,
+          11810,
+          2500,
+          7499,
+          null
+        ]
+      ],
+      "reflected": true,
+      "simultaneous_cast_target": true
+    }
+  ],
+  "initial_audit_sha256": "6acb412aa547d92b1f8d922cde524d39f5235fbdbfa45ed01a882fe71bb58a49",
+  "interpretation": "A second reflected projectile is observed, not inferred from a wrong-lane policy action.",
+  "limitations": [
+    "This does not identify which observed flight deserves the best response.",
+    "Shared parent card IDs do not identify a decoy; no secret true-target flag is used.",
+    "Reader offsets remain unverified on saved live Goblin Barrel flights."
+  ]
+}

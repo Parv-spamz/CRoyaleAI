@@ -1,0 +1,8 @@
+
+running 3 tests
+test a_death_spawn_is_not_pushed_off_a_unit_dying_in_its_reap_under_client15535_avoidance_only ... ok
+test an_emission_is_not_pushed_off_a_unit_dying_on_its_tick_under_client15535_avoidance_only ... ok
+test the_shipped_value_is_pushed ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+

@@ -1,0 +1,14 @@
+GAMES 4
+GAMES 8
+GAMES 12
+GAMES 16
+C:\Users\benpe\ClashBot\pipeline\model_v3.py:92: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(enc, layers)
+Traceback (most recent call last):
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\late_game_readiness\collect.py", line 137, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\late_game_readiness\collect.py", line 85, in main
+    assert late_games>=4 and raw_late_rows>=256,('Insufficient fixed late coverage',late_games,raw_late_rows)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('Insufficient fixed late coverage', 4, 91)

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_6\\train.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "SPATIAL_FULL_ARM_COMPLETE",
+  "matched": true,
+  "output_sha256": "f234226ba9255da75f6b3df315d839df7dc0572a1af1a9edec5eccd2c0b54289",
+  "seconds": 204.9630000591278
+}

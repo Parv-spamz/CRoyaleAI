@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L68\live_reader\live_play.py", line 37, in <module>
+    from hero_button import HeroButton, hero_ids, should_press  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L68\live_reader\hero_button.py", line 23, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+    "scratchpad/gauntlet/L71/context_teaching/verify_contexts.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\.codex\\worktrees\\learned-defence\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "EXPERT_CONTEXT_INDEPENDENT_VERIFY_PASS",
+  "matched": true,
+  "output_sha256": "c958fa527db7df70c4352ac64c10c494b99760535353318a11256172a5dc8572",
+  "seconds": 47.206549406051636
+}

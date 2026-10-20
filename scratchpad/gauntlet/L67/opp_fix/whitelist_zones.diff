@@ -1,0 +1,61 @@
+# O12 whitelist_zones.diff -- PREPARED, NOT APPLIED.
+#
+# Adds the six zone spells with a persistent ground visual AND a CardDB cost -- poison, graveyard,
+# rage, freeze, earthquake, tornado -- to `observation.detector_cards` in both icebow/config/config.yaml
+# and hogeq/config/config.yaml. Each was verified to have a detector "_aoe" ground-effect class
+# (pipeline/vocab.py AOE_CLASSES) and an elixir cost (icebow/config/cards_stats.json "cards"),
+# per ticket O12 section 2c. Instant spells (zap, arrows, fireball, rocket, lightning,
+# barbarian_barrel, goblin_barrel, giant_snowball, royal_delivery) are deliberately excluded: they
+# have no persistent visual for TeamTracker to hold a verdict on.
+#
+# Apply only after the estimator re-billing fix (step 2, the tombstone-style 7.6x re-bill of
+# long-lived stationary tracks) is merged -- a persistent zone is exactly the kind of long-lived
+# stationary track that bug re-bills every tick until that fix lands, so whitelisting these now
+# would inflate the opponent-elixir estimate rather than correct it.
+#
+# Revert = git checkout icebow/config/config.yaml hogeq/config/config.yaml (this diff is not
+# applied to the working tree; that command is a no-op today and documented here for after
+# someone runs `git apply` on this file).
+#
+diff --git a/hogeq/config/config.yaml b/hogeq/config/config.yaml
+index 9ff41b2..24ca539 100644
+--- a/hogeq/config/config.yaml
++++ b/hogeq/config/config.yaml
+@@ -507,6 +507,16 @@ observation:
+     - royal_giant          # 334 train boxes
+     - royal_recruits       # 309 train boxes
+     - the_log              # 253 train boxes
++    # -- O12: PERSISTENT-VISUAL ZONE SPELLS -- NOT APPLIED YET, see whitelist_zones.diff header.
++    #    Each has a detector "_aoe" ground-effect class (pipeline/vocab.py AOE_CLASSES) and a
++    #    CardDB cost (icebow/config/cards_stats.json); TeamTracker (O12) now bills a zone with no
++    #    own-play anchor as "enemy" so opponent_elixir.py can see these plays once whitelisted.
++    - poison
++    - graveyard
++    - rage
++    - freeze
++    - earthquake
++    - tornado
+     # -- HOLD until labelled (broken/unmeasured on board-13; ADD here once recall is proven -- NO retrain needed):
+     #    valkyrie (R 0.33 -- DIAGNOSED 2026-08-06, NOT an annotation problem: box-geometry CoV 0.37 is as tight as
+     #    knight/mega_knight. The detector FINDS 6/12 correctly but 2 of them at conf 0.14, and mislabels 4 more as
+diff --git a/icebow/config/config.yaml b/icebow/config/config.yaml
+index ade12fc..b48ecde 100644
+--- a/icebow/config/config.yaml
++++ b/icebow/config/config.yaml
+@@ -492,6 +492,16 @@ observation:
+     - royal_giant          # 334 train boxes
+     - royal_recruits       # 309 train boxes
+     - the_log              # 253 train boxes
++    # -- O12: PERSISTENT-VISUAL ZONE SPELLS -- NOT APPLIED YET, see whitelist_zones.diff header.
++    #    Each has a detector "_aoe" ground-effect class (pipeline/vocab.py AOE_CLASSES) and a
++    #    CardDB cost (icebow/config/cards_stats.json); TeamTracker (O12) now bills a zone with no
++    #    own-play anchor as "enemy" so opponent_elixir.py can see these plays once whitelisted.
++    - poison
++    - graveyard
++    - rage
++    - freeze
++    - earthquake
++    - tornado
+     # -- HOLD until labelled (broken/unmeasured on board-13; ADD here once recall is proven -- NO retrain needed):
+     #    valkyrie (R 0.33 -- DIAGNOSED 2026-08-06, NOT an annotation problem: box-geometry CoV 0.37 is as tight as
+     #    knight/mega_knight. The detector FINDS 6/12 correctly but 2 of them at conf 0.14, and mislabels 4 more as

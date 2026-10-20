@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "report_sha256": "cfb713f16ca438b317710023651d52f5dd5637fa2476a355ac6ec6ccf131a58a",
+  "data_sha256": "cadbb3b142f305674764beede821c76fb6449d4bc50d5b5f0752e8085908996c",
+  "rows": 13824,
+  "training_rows": 9216,
+  "development_rows": 4608,
+  "roots": 192,
+  "branches": 3456,
+  "frames": 542592,
+  "families": {
+    "training": 16,
+    "development": 8
+  },
+  "counts": {
+    "training_crown_0": 5632,
+    "training_body_0": 2848,
+    "training_crown_1": 512,
+    "training_body_1": 224,
+    "development_crown_0": 2816,
+    "development_body_0": 1432,
+    "development_crown_1": 256,
+    "development_body_1": 104
+  },
+  "controls": {
+    "positive": 192,
+    "negative": 16,
+    "private_invariance": 4
+  },
+  "cross_split_state_overlap": 0,
+  "source_sha256": "67a7a74822803a6b92a7b531521cfa9b9d1898f422b1c5df590d2968a134d160",
+  "policy_acceptance": false
+}

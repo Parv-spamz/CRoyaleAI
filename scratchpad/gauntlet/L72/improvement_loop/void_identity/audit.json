@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "sources": {
+    "icebow\\data\\bench\\native_confirmation_20261005\\runtime\\manifest\\runtime-manifest.json": "0fe3cb4be0fdd905fbdee2ef25e86a4e0d80e0e999895a6dd5adc2589249b702",
+    "research\\ext\\cr-native-sandbox\\runtime\\apks\\split_install_time_asset_pack.apk": "ff8986f7a2f5fdac54956a628f8dbc8572cb0ef23b287bd24e59f5e2ee3a3da8",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\void_identity\\PLAN.md": "b591606e6e686fbce3dcbc26bec1c0abb52292198ba17e65b9a8e863994cfa75",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\void_identity\\audit.py": "885bf3de854995f228446a77f2bec9e035e5bb81e39d6e7e9ff312a639102ff2",
+    "research\\ext\\cr-native-sandbox\\native_core\\data\\live_card_catalog.json": "7b01d9ac62e5035493131e974913fd00d6b67dd735703c28f5f496ec6a11722b",
+    "research\\sandbox_tools\\replay_drive.py": "802b11a9ed975ae22b86e5fff91fb280a65bfb965cbf359b8ae426fdf60b6a53",
+    "research\\ext\\cr-native-sandbox\\runtime\\extracted-assets\\csv_logic\\spells_other.csv": "4c1faf785a6d4b4771dc667658540d1eea5e91c6d07121e37787e952bce4b7c4",
+    "research\\ext\\cr-native-sandbox\\runtime\\extracted-assets\\csv_client\\texts.csv": "bc4d6369840734ca8ad6a13ab497b45b03691d3bbd6cf79a36493b2fa661e874",
+    "research\\ext\\cr-native-sandbox\\runtime\\extracted-assets\\csv_logic\\characters\\dark_magic.toml": "9026c4d238aef9a372018d1bf41d458254aa1e1f9a2164a3677b3d625fa7bb2d"
+  },
+  "identity": {
+    "slug": "void",
+    "internal_name": "DarkMagic",
+    "text_key": "TID_SPELL_DARK_MAGIC",
+    "english": "Void",
+    "card_id": 28000023,
+    "catalog_elixir": 5
+  },
+  "original_assets_match_apk": true,
+  "model_predictions": 0,
+  "native_cost_measured": false,
+  "official_cost_revision_url": "https://supercell.com/en/games/clashroyale/blog/news/final-august-balance-changes-826/"
+}

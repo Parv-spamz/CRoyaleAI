@@ -1,0 +1,181 @@
+{
+  "schema": 1,
+  "datasets": [
+    {
+      "path": "icebow\\data\\pipeline\\gen_dataset_starter.npz",
+      "sha256": "b876b554d4e3de83c532eee1ba3484844c6d240c47426583c10847d2163e4c63",
+      "tag_count": 1000,
+      "invalid_tag_count": 2403
+    },
+    {
+      "path": "icebow\\data\\pipeline\\gen_dataset_v1.npz",
+      "sha256": "58557424dd7fe9075ab065e685636a0263137e935bd829f628361c4a0398f4e1",
+      "tag_count": 12258,
+      "invalid_tag_count": 2403
+    },
+    {
+      "path": "icebow\\data\\pipeline\\gen_dataset_v1_lat26.npz",
+      "sha256": "31e22395388c1da98d8f069426f4d90de288470f27d2c6d6c3c084879ec38927",
+      "tag_count": 12258,
+      "invalid_tag_count": 2403
+    },
+    {
+      "path": "icebow\\data\\pipeline\\gen_dataset_v2.npz",
+      "sha256": "a2669b5bff03a488687a24819a184d356b1fac32dd307ec89819436741957db7",
+      "tag_count": 12258,
+      "invalid_tag_count": 2403
+    },
+    {
+      "path": "icebow\\data\\pipeline\\gen_dataset_v3.npz",
+      "sha256": "bf2071033d5894115e69eabb71cc8087970547edd9683b2bd7e85d241800fa12",
+      "tag_count": 12258,
+      "invalid_tag_count": 2403
+    },
+    {
+      "path": "icebow\\data\\pipeline\\gen_dataset_v31_public.npz",
+      "sha256": "297763ea0ecaa3be863d2859d3b5c74f1b627ab0ecfef89a80404112ebf9b1a4",
+      "tag_count": 12258,
+      "invalid_tag_count": 2403
+    },
+    {
+      "path": "icebow\\data\\pipeline\\s1_dataset.npz",
+      "sha256": "434019007e3f1e1d196c5eec362066672d34c953d3a0b95e2f792ec7a9c0cfa6",
+      "tag_count": 0,
+      "invalid_tag_count": 493
+    },
+    {
+      "path": "icebow\\data\\pipeline\\s1_dataset_v4.npz",
+      "sha256": "da72ea22f080f10583103dcb5c138512700ac60cce2621676796cb1a463a012e",
+      "tag_count": 0,
+      "invalid_tag_count": 953
+    },
+    {
+      "path": "icebow\\data\\pipeline\\s1_dataset_v5.npz",
+      "sha256": "625b650349f3ee6d1c0a9f0db0562208e2f332d2c9b615ff474f170359520f90",
+      "tag_count": 0,
+      "invalid_tag_count": 1638
+    },
+    {
+      "path": "icebow\\data\\pipeline\\s1_dataset_v6.npz",
+      "sha256": "f713268bc492868e8990118ed7bb626c36cf4654d0c938c4d50888b02bcf2ec7",
+      "tag_count": 603,
+      "invalid_tag_count": 1638
+    },
+    {
+      "path": "icebow\\data\\pipeline\\s1_dataset_v6aug.npz",
+      "sha256": "3f4495db7dc3eb341cbc4ee6fb77d7994ef96808a6763a7ae80b0759633c8d0e",
+      "tag_count": 603,
+      "invalid_tag_count": 1638
+    },
+    {
+      "path": "hogeq\\data\\pipeline\\s1_dataset.npz",
+      "sha256": "bb0f7e3e383b7dbedb7d68e7d8e02eb1ffb7eeedcaba4edc1dedd80e5ca7a47d",
+      "tag_count": 0,
+      "invalid_tag_count": 241
+    },
+    {
+      "path": "hogeq\\data\\pipeline\\s1_dataset_v4.npz",
+      "sha256": "17f842fd845abd32bc47a3eb897b4dd93c706f86fb398721630e8ee8bae6ea8b",
+      "tag_count": 0,
+      "invalid_tag_count": 463
+    },
+    {
+      "path": "hogeq\\data\\pipeline\\s1_dataset_v5.npz",
+      "sha256": "2f620815be0783ab73d8d2a0a814957146ecbc9c14fa4dda077fbae9d036c9b1",
+      "tag_count": 0,
+      "invalid_tag_count": 765
+    },
+    {
+      "path": "hogeq\\data\\pipeline\\s1_dataset_v6.npz",
+      "sha256": "684623228d505509eeb6db0177e8252d3cd3f38137730e38553084c8a3ae1254",
+      "tag_count": 397,
+      "invalid_tag_count": 765
+    }
+  ],
+  "dataset_files_without_tags": [],
+  "labels_manifest_sha256": "fa3a5d5780f1a84f3c18ebd68a02512446b4070e4a9ca159d082ca23ae2459fa",
+  "prior_evaluation_pins": [
+    {
+      "path": "icebow\\data\\ghost_pool\\pool.jsonl",
+      "sha256": "c2212300c3aac5f4dcdab495d7a7f2950fcf0ea05264489dc1574c37dd732a12",
+      "tag_count": 0
+    },
+    {
+      "path": "icebow\\data\\ghost_pool\\pool_env_v0.jsonl",
+      "sha256": "e71d589a6cc566ee116382ef3d0f3fc5d39a6798bafa9a520daf9e0742489a5e",
+      "tag_count": 0
+    },
+    {
+      "path": "icebow\\data\\ghost_pool\\pool_env_v1.jsonl",
+      "sha256": "c37cb7bd7fe3d1fd1985c789ae610502f0d0b35687e6000e794f82a407badc80",
+      "tag_count": 594
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\generalist\\lat26\\screens\\heldout_A.jsonl",
+      "sha256": "a73f375b431ac202274680b75fb26fdaaf6b32a4450e77023b1cbd5ec7e3741f",
+      "tag_count": 19
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\generalist\\lat26\\screens\\heldout_B.jsonl",
+      "sha256": "b4c315c30a48f7cfbc6d6329bf736fe9effcc1cb5614ba8d9ce313933f626798",
+      "tag_count": 19
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\generalist\\lat26\\screens\\heldout_C.jsonl",
+      "sha256": "ef77d2311ed10270980ae7c0f3ec165d06a672179cefbc7c7edab83c3d83a72a",
+      "tag_count": 19
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\generalist\\lat26\\screens\\heldout_D.jsonl",
+      "sha256": "b4e084255a011d6782eb0bb56caa89d2be7dc477c330527c69cd641ad8de3ef2",
+      "tag_count": 19
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\generalist\\lat26\\screens\\train_A.jsonl",
+      "sha256": "66353cd82bc3034c487cbac4417c0b1cbfb270de40b04bd470e9bd47618bfbb5",
+      "tag_count": 108
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\generalist\\lat26\\screens\\train_B.jsonl",
+      "sha256": "5a50031e3b92198a65612f8b92613383aa3525e5f2248337324619c1c34aab60",
+      "tag_count": 108
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\generalist\\lat26\\screens\\train_C.jsonl",
+      "sha256": "85a2a9f18a088b9ee95576c91c1e3dcb7c0d617b7fc4a505475aeb1b8201d9bd",
+      "tag_count": 108
+    },
+    {
+      "path": "scratchpad\\gauntlet\\L68\\generalist\\lat26\\screens\\train_D.jsonl",
+      "sha256": "4dc46738662bb10b28664b9725447f734b46e7acd3bc2a8cfdd8159805de6795",
+      "tag_count": 108
+    }
+  ],
+  "recording_counts": {
+    "scratchpad\\gauntlet\\ext\\batch_v2": 0,
+    "scratchpad\\gauntlet\\ext\\corpus_gen_pilot": 34245,
+    "scratchpad\\gauntlet\\ext\\corpus_v3": 0,
+    "scratchpad\\gauntlet\\ext\\corpus_v3_i1": 0,
+    "scratchpad\\gauntlet\\ext\\corpus_v3_i1r": 0,
+    "scratchpad\\gauntlet\\ext\\corpus_v4": 0,
+    "scratchpad\\gauntlet\\ext\\corpus_v5": 0,
+    "scratchpad\\gauntlet\\ext\\corpus_v5_new": 0,
+    "scratchpad\\gauntlet\\ext\\corpus_v6": 3000,
+    "scratchpad\\gauntlet\\ext\\corpus_v6_new": 1000,
+    "scratchpad\\gauntlet\\ext\\fetch_public_v1": 0,
+    "scratchpad\\gauntlet\\ext\\public_preflight_remaining": 11
+  },
+  "recording_files": 38256,
+  "unique_recorded_tags": 12258,
+  "unique_historical_exposure_tags": 12258,
+  "candidate_unique_tags": 0,
+  "candidate_file_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "exposure_file_sha256": "92a888f13b7d23b6f39df8a3cfd80ce3f472be05e4d3f98718430274ef98d1d0",
+  "script_sha256": "6b43f76e28bb2794ddeb754244c991070231bb3f24f0c1050a369ddaa5ace882",
+  "limitations": [
+    "All historical train and validation IDs are excluded conservatively.",
+    "Candidate IDs are discovery leads, not certified untouched confirmation.",
+    "Need parent-model provenance, command-content deduplication, availability and label coverage audit.",
+    "No model predictions, label outcomes, or confirmation thresholds inspected or changed."
+  ]
+}

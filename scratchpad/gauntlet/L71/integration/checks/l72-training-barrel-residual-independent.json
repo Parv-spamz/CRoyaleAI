@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/barrel_residual/verify.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "TRAIN_BARREL_RESIDUAL_INDEPENDENT_PASS",
+  "matched": true,
+  "output_sha256": "a48d6c9973118dfff1799b64f7e48ec1617719ba75dc69f9489316004d338c08",
+  "seconds": 35.65279173851013
+}

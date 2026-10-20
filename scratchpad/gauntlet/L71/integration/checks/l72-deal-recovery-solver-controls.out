@@ -1,0 +1,2 @@
+{"positive_checks": 2, "rejected": ["changed_form", "changed_card", "illegal_sequence", "bad_positions", "budget_escalation", "unachievable_bounded_no_repeats"], "reset_counts": [2, 2]}
+DEAL_RECOVERY_SOLVER_CONTROLS_PASS

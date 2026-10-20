@@ -1,0 +1,764 @@
+{
+  "status": "PASS",
+  "errors": {},
+  "coverage": {
+    "accepted_ability_events": 61,
+    "projectiles_rows": 110623,
+    "past_motion_tti_known": 69565,
+    "area_effects_rows": 27600,
+    "frames": 108402,
+    "area_tracks": 734,
+    "projectile_tracks": 10714,
+    "persistent_baby_dragon_aura_refreshes": 64
+  },
+  "replays": [
+    {
+      "tag": "00UYPL99P28R",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 1,
+        "projectiles_rows": 6685,
+        "past_motion_tti_known": 4130,
+        "area_effects_rows": 3678,
+        "frames": 6114,
+        "area_tracks": 87,
+        "projectile_tracks": 648
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 3591,
+        "mean": 0,
+        "median": 0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 87,
+        "mean": 50,
+        "median": 50,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 4130,
+        "mean": 0.0007731454505590668,
+        "median": 0.0,
+        "max": 0.48536030496802596
+      }
+    },
+    {
+      "tag": "02GY9GRGYG0Q",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 4,
+        "projectiles_rows": 3955,
+        "past_motion_tti_known": 2524,
+        "area_effects_rows": 243,
+        "frames": 6127,
+        "area_tracks": 13,
+        "projectile_tracks": 455
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 230,
+        "mean": 0,
+        "median": 0.0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 13,
+        "mean": 76.92307692307692,
+        "median": 50,
+        "max": 400
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 2524,
+        "mean": 0.000150453930779403,
+        "median": 0.0,
+        "max": 0.02338262323514755
+      }
+    },
+    {
+      "tag": "02VY8G2PJ2CP",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 3,
+        "projectiles_rows": 4486,
+        "past_motion_tti_known": 2731,
+        "area_effects_rows": 3517,
+        "persistent_baby_dragon_aura_refreshes": 7,
+        "frames": 5090,
+        "area_tracks": 48,
+        "projectile_tracks": 458
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 3469,
+        "mean": -2.2773133467858173,
+        "median": 0,
+        "max": 2550
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 48,
+        "mean": 50,
+        "median": 50.0,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 2731,
+        "mean": 0.00022888014688353077,
+        "median": 0.0,
+        "max": 0.0545752943926118
+      }
+    },
+    {
+      "tag": "08JPVJUUVGP9",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 3,
+        "projectiles_rows": 5376,
+        "past_motion_tti_known": 3390,
+        "area_effects_rows": 1253,
+        "frames": 6123,
+        "area_tracks": 55,
+        "projectile_tracks": 575
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 1198,
+        "mean": 0,
+        "median": 0.0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 55,
+        "mean": 137.27272727272728,
+        "median": 50,
+        "max": 4850
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 3390,
+        "mean": 7.539495742860217e-05,
+        "median": 0.0,
+        "max": 0.02717639589859573
+      }
+    },
+    {
+      "tag": "08UPPVRY0P2V",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 1,
+        "projectiles_rows": 5219,
+        "past_motion_tti_known": 3309,
+        "area_effects_rows": 399,
+        "frames": 6106,
+        "area_tracks": 30,
+        "projectile_tracks": 567
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 369,
+        "mean": 0,
+        "median": 0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 30,
+        "mean": 45.1,
+        "median": 50.0,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 3309,
+        "mean": 0.001692934988863566,
+        "median": 0.0,
+        "max": 0.5302770629180146
+      }
+    },
+    {
+      "tag": "08YY89UC20R2",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 2,
+        "projectiles_rows": 8910,
+        "past_motion_tti_known": 5951,
+        "area_effects_rows": 1175,
+        "frames": 6127,
+        "area_tracks": 16,
+        "projectile_tracks": 732
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 1159,
+        "mean": 0,
+        "median": 0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 16,
+        "mean": 50,
+        "median": 50.0,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 5951,
+        "mean": 0.003794856900070407,
+        "median": 0.0,
+        "max": 1.3345339909647465
+      }
+    },
+    {
+      "tag": "092PPVPUY8PG",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 2,
+        "projectiles_rows": 4300,
+        "past_motion_tti_known": 2144,
+        "area_effects_rows": 758,
+        "frames": 5257,
+        "area_tracks": 30,
+        "projectile_tracks": 472
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 728,
+        "mean": 0,
+        "median": 0.0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 30,
+        "mean": 43.46666666666667,
+        "median": 50.0,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 2144,
+        "mean": 0.0010719199278045822,
+        "median": 0.0,
+        "max": 0.3822954881599344
+      }
+    },
+    {
+      "tag": "09G8U0PCGJJL",
+      "errors": {},
+      "coverage": {
+        "projectiles_rows": 8671,
+        "past_motion_tti_known": 6248,
+        "area_effects_rows": 120,
+        "frames": 6124,
+        "area_tracks": 6,
+        "projectile_tracks": 798
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 114,
+        "mean": 0,
+        "median": 0.0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 6,
+        "mean": 50,
+        "median": 50.0,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 6248,
+        "mean": 0.001287288458728072,
+        "median": 0.0,
+        "max": 0.3275769739527732
+      }
+    },
+    {
+      "tag": "09G9JUPP0R2C",
+      "errors": {},
+      "coverage": {
+        "projectiles_rows": 3570,
+        "past_motion_tti_known": 2308,
+        "area_effects_rows": 80,
+        "frames": 3674,
+        "area_tracks": 3,
+        "projectile_tracks": 314
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 77,
+        "mean": 0,
+        "median": 0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 3,
+        "mean": 50,
+        "median": 50,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 2308,
+        "mean": 0.00011156402471342765,
+        "median": 0.0,
+        "max": 0.14475284094098698
+      }
+    },
+    {
+      "tag": "0bf4641e93a443a99bc67374d659b291",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 9,
+        "projectiles_rows": 7441,
+        "past_motion_tti_known": 4282,
+        "area_effects_rows": 2208,
+        "persistent_baby_dragon_aura_refreshes": 40,
+        "frames": 6105,
+        "area_tracks": 26,
+        "projectile_tracks": 615
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 2182,
+        "mean": -25.25206232813932,
+        "median": 0.0,
+        "max": 3650
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 26,
+        "mean": 50,
+        "median": 50.0,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 4282,
+        "mean": 0.000666881304498248,
+        "median": 0.0,
+        "max": 0.4084910860371565
+      }
+    },
+    {
+      "tag": "112831c6755f47e6bfee870f9a09b6fc",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 4,
+        "projectiles_rows": 5459,
+        "past_motion_tti_known": 3771,
+        "area_effects_rows": 421,
+        "frames": 5742,
+        "area_tracks": 9,
+        "projectile_tracks": 557
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 412,
+        "mean": 0,
+        "median": 0.0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 9,
+        "mean": 44.55555555555556,
+        "median": 50,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 3771,
+        "mean": 1.862848336320791e-05,
+        "median": 0.0,
+        "max": 0.01473429317956061
+      }
+    },
+    {
+      "tag": "1bd5962de052494294917c0b9b5a8c42",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 4,
+        "projectiles_rows": 4452,
+        "past_motion_tti_known": 2616,
+        "area_effects_rows": 2120,
+        "persistent_baby_dragon_aura_refreshes": 7,
+        "frames": 6120,
+        "area_tracks": 37,
+        "projectile_tracks": 462
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 2083,
+        "mean": -3.8406144983197312,
+        "median": 0,
+        "max": 3900
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 37,
+        "mean": 42.054054054054056,
+        "median": 50,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 2616,
+        "mean": 0.0066758617405057955,
+        "median": 0.0,
+        "max": 0.8292984366801193
+      }
+    },
+    {
+      "tag": "26c8bfe911b84feb9f36bc645227f659",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 1,
+        "projectiles_rows": 5818,
+        "past_motion_tti_known": 4299,
+        "area_effects_rows": 1057,
+        "frames": 4286,
+        "area_tracks": 33,
+        "projectile_tracks": 555
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 1024,
+        "mean": 0,
+        "median": 0.0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 33,
+        "mean": 50,
+        "median": 50,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 4299,
+        "mean": 0.00020171685860436155,
+        "median": 0.0,
+        "max": 0.5536174983692036
+      }
+    },
+    {
+      "tag": "72980254d24c456997c8f1e02d121985",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 3,
+        "projectiles_rows": 5973,
+        "past_motion_tti_known": 4402,
+        "area_effects_rows": 3257,
+        "frames": 3674,
+        "area_tracks": 60,
+        "projectile_tracks": 476
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 3197,
+        "mean": 0,
+        "median": 0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 60,
+        "mean": 50,
+        "median": 50.0,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 4402,
+        "mean": 9.286930026816956e-05,
+        "median": 0.0,
+        "max": 0.2175419670488509
+      }
+    },
+    {
+      "tag": "b10b030e29fb47918b91faea867b89a0",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 2,
+        "projectiles_rows": 3743,
+        "past_motion_tti_known": 2488,
+        "area_effects_rows": 245,
+        "frames": 3666,
+        "area_tracks": 31,
+        "projectile_tracks": 307
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 214,
+        "mean": 0,
+        "median": 0.0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 31,
+        "mean": 50,
+        "median": 50,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 2488,
+        "mean": 0.011782902739372892,
+        "median": 0.0,
+        "max": 1.4924914982397468
+      }
+    },
+    {
+      "tag": "d867d62934d34472a06042cff4ad1a88",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 6,
+        "projectiles_rows": 3949,
+        "past_motion_tti_known": 2421,
+        "area_effects_rows": 549,
+        "persistent_baby_dragon_aura_refreshes": 10,
+        "frames": 6083,
+        "area_tracks": 8,
+        "projectile_tracks": 379
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 541,
+        "mean": -26.709796672828094,
+        "median": 0,
+        "max": 3000
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 8,
+        "mean": 50,
+        "median": 50.0,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 2421,
+        "mean": 0.00033850343998921616,
+        "median": 0.0,
+        "max": 0.09253073770491937
+      }
+    },
+    {
+      "tag": "d9f06cd6721c4a84a3514350c41c41e0",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 4,
+        "projectiles_rows": 5859,
+        "past_motion_tti_known": 3861,
+        "area_effects_rows": 3627,
+        "frames": 6089,
+        "area_tracks": 77,
+        "projectile_tracks": 523
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 3550,
+        "mean": 0,
+        "median": 0.0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 77,
+        "mean": 72.07792207792208,
+        "median": 50,
+        "max": 1750
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 3861,
+        "mean": 0.0012419331086469551,
+        "median": 0.0,
+        "max": 1.0814752470974327
+      }
+    },
+    {
+      "tag": "f073d36c761945f5878de6e0b72d2d8d",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 11,
+        "projectiles_rows": 5574,
+        "past_motion_tti_known": 2315,
+        "area_effects_rows": 2701,
+        "frames": 6114,
+        "area_tracks": 149,
+        "projectile_tracks": 541
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 2552,
+        "mean": 0,
+        "median": 0.0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 149,
+        "mean": 62.80536912751678,
+        "median": 50,
+        "max": 2350
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 2315,
+        "mean": 0.00065197449236173,
+        "median": 0.0,
+        "max": 0.2338543429890251
+      }
+    },
+    {
+      "tag": "fa25595b6e7748e0bd66912242515f97",
+      "errors": {},
+      "coverage": {
+        "projectiles_rows": 3875,
+        "past_motion_tti_known": 2046,
+        "area_effects_rows": 48,
+        "frames": 3674,
+        "area_tracks": 4,
+        "projectile_tracks": 380
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 44,
+        "mean": 0,
+        "median": 0.0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 4,
+        "mean": 50,
+        "median": 50.0,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 2046,
+        "mean": 0.043030756892569695,
+        "median": 0.0,
+        "max": 87.52833333333334
+      }
+    },
+    {
+      "tag": "feeb08dc32bc446182a06d0f7767d4ea",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 1,
+        "projectiles_rows": 7308,
+        "past_motion_tti_known": 4329,
+        "area_effects_rows": 144,
+        "frames": 6107,
+        "area_tracks": 12,
+        "projectile_tracks": 900
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 132,
+        "mean": 0,
+        "median": 0.0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 12,
+        "mean": 50,
+        "median": 50.0,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 4329,
+        "mean": 7.952189747718929e-05,
+        "median": 0.0,
+        "max": 0.04077448628362106
+      }
+    }
+  ],
+  "manifest": [
+    {
+      "path": "replay_00UYPL99P28R.json",
+      "tag": "00UYPL99P28R",
+      "bytes": 8558249,
+      "sha256": "46cb235031ad011627aa4791a070104c931666075f0fa2d3051ea35dcdc99862"
+    },
+    {
+      "path": "replay_02GY9GRGYG0Q.json",
+      "tag": "02GY9GRGYG0Q",
+      "bytes": 7374476,
+      "sha256": "9fa57341ffd42907c5e0f13bc12d8bd1af3265448606c130594f10e8ede73294"
+    },
+    {
+      "path": "replay_02VY8G2PJ2CP.json",
+      "tag": "02VY8G2PJ2CP",
+      "bytes": 7095065,
+      "sha256": "a041dde0a7d19fd44be1cc93b29337a498da0c4d2830985db1bf6c461daa8f4f"
+    },
+    {
+      "path": "replay_08JPVJUUVGP9.json",
+      "tag": "08JPVJUUVGP9",
+      "bytes": 8055390,
+      "sha256": "b6530a482d3021fa239d48f2f10feeb7ca75668b073fcde3db343060e36ce832"
+    },
+    {
+      "path": "replay_08UPPVRY0P2V.json",
+      "tag": "08UPPVRY0P2V",
+      "bytes": 8000703,
+      "sha256": "4b380c842768fd8d0e49aeae28a05870f94522194cc4b4268ec8bc6d6b821c6f"
+    },
+    {
+      "path": "replay_08YY89UC20R2.json",
+      "tag": "08YY89UC20R2",
+      "bytes": 9517646,
+      "sha256": "ef54ef500a6ed3ef6f75a89d7af3f10a62703157dea12693ffb46f0d97146de9"
+    },
+    {
+      "path": "replay_092PPVPUY8PG.json",
+      "tag": "092PPVPUY8PG",
+      "bytes": 6617309,
+      "sha256": "12725fd550fbccb694ea075359022d1103b2141805ab9887dfe9263c7f64f615"
+    },
+    {
+      "path": "replay_09G8U0PCGJJL.json",
+      "tag": "09G8U0PCGJJL",
+      "bytes": 8799193,
+      "sha256": "6d6db51434e337755906d996cbc32219644b070fd516d9058f1cf05b1ccc2817"
+    },
+    {
+      "path": "replay_09G9JUPP0R2C.json",
+      "tag": "09G9JUPP0R2C",
+      "bytes": 4882084,
+      "sha256": "d15d0d61b08d660d96186c3107211767c85787424f5ebe737826c2d51fad4bfa"
+    },
+    {
+      "path": "replay_0bf4641e93a443a99bc67374d659b291.json",
+      "tag": "0bf4641e93a443a99bc67374d659b291",
+      "bytes": 8741251,
+      "sha256": "419a82852fca65e6b0ad787270d6322a7b6cee90d348ce81919b588b9ff4998c"
+    },
+    {
+      "path": "replay_112831c6755f47e6bfee870f9a09b6fc.json",
+      "tag": "112831c6755f47e6bfee870f9a09b6fc",
+      "bytes": 7391480,
+      "sha256": "1a2492d2349b7d478ef3df51c26ccd23768d4bf5581c48c5df764616435e817f"
+    },
+    {
+      "path": "replay_1bd5962de052494294917c0b9b5a8c42.json",
+      "tag": "1bd5962de052494294917c0b9b5a8c42",
+      "bytes": 7939042,
+      "sha256": "2a506fa442a0500086bd55ffd95ee9125ecade407c01df3d077cb45f97d1b86c"
+    },
+    {
+      "path": "replay_26c8bfe911b84feb9f36bc645227f659.json",
+      "tag": "26c8bfe911b84feb9f36bc645227f659",
+      "bytes": 6856511,
+      "sha256": "1147b3b4627581ffe5555ab9e975d4906a7132fbdaf7cc9eef63797dc088558c"
+    },
+    {
+      "path": "replay_72980254d24c456997c8f1e02d121985.json",
+      "tag": "72980254d24c456997c8f1e02d121985",
+      "bytes": 6224384,
+      "sha256": "676c6e4ead4d27ae6f2d96ea31280eb182b7b1582bc83add789b4aaf1491e5e7"
+    },
+    {
+      "path": "replay_b10b030e29fb47918b91faea867b89a0.json",
+      "tag": "b10b030e29fb47918b91faea867b89a0",
+      "bytes": 5343752,
+      "sha256": "c03fa17b737dda0fb22933706365dd6b69ca99050ac49d4e84dac883afc27ef7"
+    },
+    {
+      "path": "replay_d867d62934d34472a06042cff4ad1a88.json",
+      "tag": "d867d62934d34472a06042cff4ad1a88",
+      "bytes": 6845062,
+      "sha256": "80ff868748e53294a55d3c35f8f7b9c0cb5326095191c00d58fcfa089aedc4dc"
+    },
+    {
+      "path": "replay_d9f06cd6721c4a84a3514350c41c41e0.json",
+      "tag": "d9f06cd6721c4a84a3514350c41c41e0",
+      "bytes": 8371168,
+      "sha256": "9042d607b8695c6f83f01e52ca2ec95e9631c990c230b2072d6b8f5175a9a909"
+    },
+    {
+      "path": "replay_f073d36c761945f5878de6e0b72d2d8d.json",
+      "tag": "f073d36c761945f5878de6e0b72d2d8d",
+      "bytes": 8682495,
+      "sha256": "208ba269f4e2063245e9e4e7751efd99ed0b9e7cd7d83623011e33990d5e1b26"
+    },
+    {
+      "path": "replay_fa25595b6e7748e0bd66912242515f97.json",
+      "tag": "fa25595b6e7748e0bd66912242515f97",
+      "bytes": 5512001,
+      "sha256": "b430ec07c15ebb333394ced5babc85066c14b54cd8c5157f98d4244b477630d8"
+    },
+    {
+      "path": "replay_feeb08dc32bc446182a06d0f7767d4ea.json",
+      "tag": "feeb08dc32bc446182a06d0f7767d4ea",
+      "bytes": 9355373,
+      "sha256": "bf188ba34383b527d6d54067933d359ed883b9b45c2dd5d154d4434d627000b3"
+    }
+  ],
+  "limitations": [
+    "TTI disappearance error is not validated landing error; cancellation and object lifetime also cause disappearance.",
+    "Area arithmetic and observed timer progression are necessary but not sufficient for visible expiration semantics.",
+    "Rocket outcomes use recorded landing geometry and HP deltas per owner ruling; a native damage hook is not required."
+  ]
+}

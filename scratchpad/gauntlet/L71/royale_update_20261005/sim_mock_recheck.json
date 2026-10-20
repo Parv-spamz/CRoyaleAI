@@ -1,0 +1,14 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_watch_battle.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim",
+  "data_dir": "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\data",
+  "exit_code": 0,
+  "seconds": 12.24733567237854,
+  "output_sha256": "9b2eca6b5ebfc4941ee83637f1bff47c429184146781d40b55cedff112bd9d51"
+}

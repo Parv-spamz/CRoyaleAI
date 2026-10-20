@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/development_gameplay_1/prepare.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 1,
+  "expected": "GAMEPLAY_SCENARIOS_PREPARED",
+  "matched": false,
+  "output_sha256": "e5e9f7ac53d98d3e1273f89b8d8675fd21819fd32ff6ab9d3c3925593d80a409",
+  "seconds": 1.9789869785308838
+}

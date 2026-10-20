@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/opponent_hand_reader/collect.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "OPPONENT_HAND_COLLECTED",
+  "matched": true,
+  "output_sha256": "1c6d058b70b85e3755e5784dbe8dea044229c5f4de2506f5394df8c4f0c899ee",
+  "seconds": 36.133479833602905
+}

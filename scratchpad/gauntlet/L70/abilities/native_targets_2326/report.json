@@ -1,0 +1,632 @@
+{
+  "status": "MEASURED_NATIVE_TARGETS_UNAMBIGUOUS_SUBSET_NOT_CALIBRATED_POLICY",
+  "source_manifest_sha256": "0426f9890263a2f51e9d128a908cc7693eb24f328d6acf5020d18b76c4bd4fc1",
+  "controller_ids": {
+    "archer-queen": [
+      26000072
+    ],
+    "balloon-hero": [
+      203000006
+    ],
+    "barbarian-barrel-hero": [
+      28000015
+    ],
+    "berserker-hero": [
+      203000076
+    ],
+    "boss-bandit": [
+      26000103
+    ],
+    "bowler-hero": [
+      203000034
+    ],
+    "dark-prince-hero": [
+      203000027
+    ],
+    "giant-hero": [
+      203000003
+    ],
+    "goblins-hero": [
+      203000002
+    ],
+    "goblinstein": [
+      26000099
+    ],
+    "golden-knight": [
+      26000074
+    ],
+    "ice-golem-hero": [
+      203000038
+    ],
+    "knight-hero": [
+      203000000
+    ],
+    "little-prince": [
+      26000093
+    ],
+    "magic-archer-hero": [
+      203000062
+    ],
+    "mega-minion-hero": [
+      203000039
+    ],
+    "mighty-miner": [
+      26000065
+    ],
+    "mini-pekka-hero": [
+      203000018
+    ],
+    "monk": [
+      26000077
+    ],
+    "musketeer-hero": [
+      203000014
+    ],
+    "skeleton-king": [
+      26000069
+    ],
+    "tombstone-hero": [
+      203000088
+    ],
+    "valkyrie-hero": [
+      203000011
+    ],
+    "wizard-hero": [
+      203000017
+    ]
+  },
+  "source_sha256": "f6d8359d5e385b3555aa79c2e72f8053c143977bb3567cdb9ff95330f15bc842",
+  "counts": {
+    "controller_without_unique_deployment": 4515,
+    "accepted_press_without_unique_deployment": 995
+  },
+  "abilities": {
+    "archer-queen": {
+      "accepted_deployments": 2177,
+      "linked_deployments": 2177,
+      "status_counts": {
+        "LINKED": 2177
+      },
+      "pressed_linked_deployments": 1760,
+      "pressed_share": 0.808451998162609,
+      "median_first_delay_s": 9.8,
+      "p10_first_delay_s": 2.5,
+      "p90_first_delay_s": 19.0,
+      "repeated_press_share": 0.0,
+      "share_ci95": [
+        0.7917520059922328,
+        0.8265961954938172
+      ],
+      "median_delay_ci95_s": [
+        9.074375,
+        10.5
+      ]
+    },
+    "balloon-hero": {
+      "accepted_deployments": 6255,
+      "linked_deployments": 5389,
+      "status_counts": {
+        "LINKED": 5389,
+        "MULTIPLE_POSSIBLE_CONTROLLERS": 246,
+        "UNLINKED_ACCEPTED_PRESS_IN_REPLAY": 620
+      },
+      "pressed_linked_deployments": 1878,
+      "pressed_share": 0.34848766004824644,
+      "median_first_delay_s": 7.45,
+      "p10_first_delay_s": 4.75,
+      "p90_first_delay_s": 12.8,
+      "repeated_press_share": 0.0,
+      "share_ci95": [
+        0.3334479985193999,
+        0.36470013989954553
+      ],
+      "median_delay_ci95_s": [
+        7.25,
+        7.6000000000000005
+      ]
+    },
+    "barbarian-barrel-hero": {
+      "accepted_deployments": 4870,
+      "linked_deployments": 4851,
+      "status_counts": {
+        "LINKED": 4851,
+        "NO_OBSERVED_CONTROLLER": 19
+      },
+      "pressed_linked_deployments": 988,
+      "pressed_share": 0.20366934652648938,
+      "median_first_delay_s": 4.55,
+      "p10_first_delay_s": 2.8000000000000003,
+      "p90_first_delay_s": 9.515000000000004,
+      "repeated_press_share": 0.0,
+      "share_ci95": [
+        0.19037957027751026,
+        0.21683734909683686
+      ],
+      "median_delay_ci95_s": [
+        4.45,
+        4.75
+      ]
+    },
+    "berserker-hero": {
+      "accepted_deployments": 33912,
+      "linked_deployments": 33875,
+      "status_counts": {
+        "LINKED": 33875,
+        "NO_OBSERVED_CONTROLLER": 37
+      },
+      "pressed_linked_deployments": 8738,
+      "pressed_share": 0.25794833948339485,
+      "median_first_delay_s": 5.300000000000001,
+      "p10_first_delay_s": 1.6,
+      "p90_first_delay_s": 12.51500000000001,
+      "repeated_press_share": 0.0,
+      "share_ci95": [
+        0.25205684399059686,
+        0.2639815670808002
+      ],
+      "median_delay_ci95_s": [
+        5.2,
+        5.45
+      ]
+    },
+    "boss-bandit": {
+      "accepted_deployments": 562,
+      "linked_deployments": 562,
+      "status_counts": {
+        "LINKED": 562
+      },
+      "pressed_linked_deployments": 354,
+      "pressed_share": 0.6298932384341637,
+      "median_first_delay_s": 9.65,
+      "p10_first_delay_s": 4.5,
+      "p90_first_delay_s": 14.700000000000001,
+      "repeated_press_share": 0.29359430604982206,
+      "share_ci95": [
+        0.5874965148698885,
+        0.6713178556352891
+      ],
+      "median_delay_ci95_s": [
+        9.05,
+        10.25
+      ]
+    },
+    "bowler-hero": {
+      "accepted_deployments": 4354,
+      "linked_deployments": 4354,
+      "status_counts": {
+        "LINKED": 4354
+      },
+      "pressed_linked_deployments": 1386,
+      "pressed_share": 0.3183279742765273,
+      "median_first_delay_s": 12.05,
+      "p10_first_delay_s": 3.7750000000000004,
+      "p90_first_delay_s": 20.3,
+      "repeated_press_share": 0.0,
+      "share_ci95": [
+        0.30281399362569633,
+        0.3345836551951727
+      ],
+      "median_delay_ci95_s": [
+        11.65,
+        12.450000000000001
+      ]
+    },
+    "dark-prince-hero": {
+      "accepted_deployments": 2693,
+      "linked_deployments": 2603,
+      "status_counts": {
+        "LINKED": 2603,
+        "UNLINKED_ACCEPTED_PRESS_IN_REPLAY": 71,
+        "MULTIPLE_POSSIBLE_CONTROLLERS": 18,
+        "NO_OBSERVED_CONTROLLER": 1
+      },
+      "pressed_linked_deployments": 420,
+      "pressed_share": 0.16135228582404917,
+      "median_first_delay_s": 11.375,
+      "p10_first_delay_s": 5.845000000000001,
+      "p90_first_delay_s": 18.015000000000004,
+      "repeated_press_share": 0.0,
+      "share_ci95": [
+        0.14572566426053946,
+        0.17640421849591828
+      ],
+      "median_delay_ci95_s": [
+        10.3,
+        12.100000000000001
+      ]
+    },
+    "giant-hero": {
+      "accepted_deployments": 4658,
+      "linked_deployments": 4658,
+      "status_counts": {
+        "LINKED": 4658
+      },
+      "pressed_linked_deployments": 826,
+      "pressed_share": 0.17732932589094033,
+      "median_first_delay_s": 8.475000000000001,
+      "p10_first_delay_s": 2.9000000000000004,
+      "p90_first_delay_s": 21.75,
+      "repeated_press_share": 0.0,
+      "share_ci95": [
+        0.16476842862651134,
+        0.18955547106254397
+      ],
+      "median_delay_ci95_s": [
+        8.05,
+        9.250625
+      ]
+    },
+    "goblins-hero": {
+      "accepted_deployments": 2842,
+      "linked_deployments": 388,
+      "status_counts": {
+        "NO_OBSERVED_CONTROLLER": 2105,
+        "LINKED": 388,
+        "UNLINKED_ACCEPTED_PRESS_IN_REPLAY": 349
+      },
+      "pressed_linked_deployments": 82,
+      "pressed_share": 0.211340206185567,
+      "median_first_delay_s": 5.375,
+      "p10_first_delay_s": 3.755,
+      "p90_first_delay_s": 7.495,
+      "repeated_press_share": 0.0,
+      "share_ci95": [
+        0.16540715476473988,
+        0.25916472755477993
+      ],
+      "median_delay_ci95_s": [
+        5.15,
+        6.0
+      ]
+    },
+    "goblinstein": {
+      "accepted_deployments": 6027,
+      "linked_deployments": 6024,
+      "status_counts": {
+        "LINKED": 6024,
+        "NO_OBSERVED_CONTROLLER": 3
+      },
+      "pressed_linked_deployments": 2022,
+      "pressed_share": 0.33565737051792827,
+      "median_first_delay_s": 8.0,
+      "p10_first_delay_s": 2.4000000000000004,
+      "p90_first_delay_s": 17.995000000000005,
+      "repeated_press_share": 0.0,
+      "share_ci95": [
+        0.32200790653577005,
+        0.3512277614778813
+      ],
+      "median_delay_ci95_s": [
+        7.725,
+        8.3
+      ]
+    },
+    "golden-knight": {
+      "accepted_deployments": 5364,
+      "linked_deployments": 5363,
+      "status_counts": {
+        "LINKED": 5363,
+        "NO_OBSERVED_CONTROLLER": 1
+      },
+      "pressed_linked_deployments": 3687,
+      "pressed_share": 0.687488346074958,
+      "median_first_delay_s": 5.45,
+      "p10_first_delay_s": 1.4500000000000002,
+      "p90_first_delay_s": 16.45,
+      "repeated_press_share": 0.0,
+      "share_ci95": [
+        0.6717545403835148,
+        0.7036495349382
+      ],
+      "median_delay_ci95_s": [
+        5.2,
+        5.7
+      ]
+    },
+    "ice-golem-hero": {
+      "accepted_deployments": 3370,
+      "linked_deployments": 3368,
+      "status_counts": {
+        "LINKED": 3368,
+        "NO_OBSERVED_CONTROLLER": 2
+      },
+      "pressed_linked_deployments": 331,
+      "pressed_share": 0.09827790973871733,
+      "median_first_delay_s": 3.8000000000000003,
+      "p10_first_delay_s": 1.55,
+      "p90_first_delay_s": 7.800000000000001,
+      "repeated_press_share": 0.0,
+      "share_ci95": [
+        0.08627199136210079,
+        0.11027767812541035
+      ],
+      "median_delay_ci95_s": [
+        3.45,
+        4.25
+      ]
+    },
+    "knight-hero": {
+      "accepted_deployments": 12414,
+      "linked_deployments": 12414,
+      "status_counts": {
+        "LINKED": 12414
+      },
+      "pressed_linked_deployments": 1515,
+      "pressed_share": 0.12203963267278879,
+      "median_first_delay_s": 6.95,
+      "p10_first_delay_s": 1.9200000000000004,
+      "p90_first_delay_s": 16.78000000000001,
+      "repeated_press_share": 0.0,
+      "share_ci95": [
+        0.11573058455480212,
+        0.1292639289545848
+      ],
+      "median_delay_ci95_s": [
+        6.550000000000001,
+        7.45
+      ]
+    },
+    "little-prince": {
+      "accepted_deployments": 1407,
+      "linked_deployments": 1100,
+      "status_counts": {
+        "LINKED": 1100,
+        "UNLINKED_ACCEPTED_PRESS_IN_REPLAY": 223,
+        "MULTIPLE_POSSIBLE_CONTROLLERS": 84
+      },
+      "pressed_linked_deployments": 162,
+      "pressed_share": 0.14727272727272728,
+      "median_first_delay_s": 13.525,
+      "p10_first_delay_s": 6.025,
+      "p90_first_delay_s": 21.580000000000002,
+      "repeated_press_share": 0.0,
+      "share_ci95": [
+        0.12405837707476237,
+        0.1696926362613782
+      ],
+      "median_delay_ci95_s": [
+        11.748125,
+        14.675625
+      ]
+    },
+    "magic-archer-hero": {
+      "accepted_deployments": 1890,
+      "linked_deployments": 1652,
+      "status_counts": {
+        "LINKED": 1652,
+        "UNLINKED_ACCEPTED_PRESS_IN_REPLAY": 185,
+        "MULTIPLE_POSSIBLE_CONTROLLERS": 51,
+        "NO_OBSERVED_CONTROLLER": 2
+      },
+      "pressed_linked_deployments": 158,
+      "pressed_share": 0.09564164648910412,
+      "median_first_delay_s": 8.225000000000001,
+      "p10_first_delay_s": 4.635000000000001,
+      "p90_first_delay_s": 20.430000000000003,
+      "repeated_press_share": 0.0,
+      "share_ci95": [
+        0.08008752158620332,
+        0.11090846608189303
+      ],
+      "median_delay_ci95_s": [
+        6.49875,
+        9.152499999999998
+      ]
+    },
+    "mega-minion-hero": {
+      "accepted_deployments": 4062,
+      "linked_deployments": 4059,
+      "status_counts": {
+        "LINKED": 4059,
+        "NO_OBSERVED_CONTROLLER": 3
+      },
+      "pressed_linked_deployments": 700,
+      "pressed_share": 0.17245627001724562,
+      "median_first_delay_s": 8.200000000000001,
+      "p10_first_delay_s": 3.4000000000000004,
+      "p90_first_delay_s": 17.900000000000002,
+      "repeated_press_share": 0.0,
+      "share_ci95": [
+        0.1581758203979066,
+        0.18538664900395416
+      ],
+      "median_delay_ci95_s": [
+        7.7,
+        8.925625
+      ]
+    },
+    "mighty-miner": {
+      "accepted_deployments": 14745,
+      "linked_deployments": 14744,
+      "status_counts": {
+        "LINKED": 14744,
+        "NO_OBSERVED_CONTROLLER": 1
+      },
+      "pressed_linked_deployments": 5261,
+      "pressed_share": 0.35682311448724907,
+      "median_first_delay_s": 9.0,
+      "p10_first_delay_s": 2.35,
+      "p90_first_delay_s": 17.85,
+      "repeated_press_share": 0.0,
+      "share_ci95": [
+        0.34628176162170843,
+        0.3676758665068611
+      ],
+      "median_delay_ci95_s": [
+        8.8,
+        9.35
+      ]
+    },
+    "mini-pekka-hero": {
+      "accepted_deployments": 4201,
+      "linked_deployments": 4200,
+      "status_counts": {
+        "LINKED": 4200,
+        "NO_OBSERVED_CONTROLLER": 1
+      },
+      "pressed_linked_deployments": 1161,
+      "pressed_share": 0.2764285714285714,
+      "median_first_delay_s": 11.100000000000001,
+      "p10_first_delay_s": 6.5,
+      "p90_first_delay_s": 17.1,
+      "repeated_press_share": 0.0,
+      "share_ci95": [
+        0.26257621147686583,
+        0.29113086734772586
+      ],
+      "median_delay_ci95_s": [
+        10.75,
+        11.4
+      ]
+    },
+    "monk": {
+      "accepted_deployments": 698,
+      "linked_deployments": 694,
+      "status_counts": {
+        "LINKED": 694,
+        "UNLINKED_ACCEPTED_PRESS_IN_REPLAY": 3,
+        "MULTIPLE_POSSIBLE_CONTROLLERS": 1
+      },
+      "pressed_linked_deployments": 463,
+      "pressed_share": 0.6671469740634006,
+      "median_first_delay_s": 6.8500000000000005,
+      "p10_first_delay_s": 2.5200000000000005,
+      "p90_first_delay_s": 18.090000000000003,
+      "repeated_press_share": 0.0,
+      "share_ci95": [
+        0.6204168444076417,
+        0.7135031880544126
+      ],
+      "median_delay_ci95_s": [
+        6.099375,
+        7.25
+      ]
+    },
+    "musketeer-hero": {
+      "accepted_deployments": 3594,
+      "linked_deployments": 2926,
+      "status_counts": {
+        "LINKED": 2926,
+        "UNLINKED_ACCEPTED_PRESS_IN_REPLAY": 524,
+        "MULTIPLE_POSSIBLE_CONTROLLERS": 143,
+        "NO_OBSERVED_CONTROLLER": 1
+      },
+      "pressed_linked_deployments": 450,
+      "pressed_share": 0.15379357484620643,
+      "median_first_delay_s": 15.025,
+      "p10_first_delay_s": 6.345000000000001,
+      "p90_first_delay_s": 24.450000000000014,
+      "repeated_press_share": 0.0,
+      "share_ci95": [
+        0.13782618958409318,
+        0.17007182568458853
+      ],
+      "median_delay_ci95_s": [
+        14.05,
+        15.600000000000001
+      ]
+    },
+    "skeleton-king": {
+      "accepted_deployments": 3912,
+      "linked_deployments": 3324,
+      "status_counts": {
+        "LINKED": 3324,
+        "UNLINKED_ACCEPTED_PRESS_IN_REPLAY": 434,
+        "MULTIPLE_POSSIBLE_CONTROLLERS": 153,
+        "NO_OBSERVED_CONTROLLER": 1
+      },
+      "pressed_linked_deployments": 1607,
+      "pressed_share": 0.483453670276775,
+      "median_first_delay_s": 11.0,
+      "p10_first_delay_s": 5.75,
+      "p90_first_delay_s": 19.8,
+      "repeated_press_share": 0.0,
+      "share_ci95": [
+        0.4659930674661709,
+        0.5026012978879264
+      ],
+      "median_delay_ci95_s": [
+        10.65,
+        11.4
+      ]
+    },
+    "tombstone-hero": {
+      "accepted_deployments": 2641,
+      "linked_deployments": 36,
+      "status_counts": {
+        "MULTIPLE_POSSIBLE_CONTROLLERS": 2596,
+        "LINKED": 36,
+        "UNLINKED_ACCEPTED_PRESS_IN_REPLAY": 9
+      },
+      "pressed_linked_deployments": 0,
+      "pressed_share": 0.0,
+      "median_first_delay_s": null,
+      "p10_first_delay_s": null,
+      "p90_first_delay_s": null,
+      "repeated_press_share": 0.0,
+      "share_ci95": [
+        0.0,
+        0.0
+      ],
+      "median_delay_ci95_s": null
+    },
+    "valkyrie-hero": {
+      "accepted_deployments": 8108,
+      "linked_deployments": 8108,
+      "status_counts": {
+        "LINKED": 8108
+      },
+      "pressed_linked_deployments": 2847,
+      "pressed_share": 0.3511346817957573,
+      "median_first_delay_s": 5.9,
+      "p10_first_delay_s": 1.85,
+      "p90_first_delay_s": 15.100000000000001,
+      "repeated_press_share": 0.0,
+      "share_ci95": [
+        0.33808642577859593,
+        0.36252697016235225
+      ],
+      "median_delay_ci95_s": [
+        5.6000000000000005,
+        6.2
+      ]
+    },
+    "wizard-hero": {
+      "accepted_deployments": 2700,
+      "linked_deployments": 2698,
+      "status_counts": {
+        "LINKED": 2698,
+        "UNLINKED_ACCEPTED_PRESS_IN_REPLAY": 2
+      },
+      "pressed_linked_deployments": 1194,
+      "pressed_share": 0.4425500370644922,
+      "median_first_delay_s": 4.225,
+      "p10_first_delay_s": 1.5,
+      "p90_first_delay_s": 16.1,
+      "repeated_press_share": 0.0,
+      "share_ci95": [
+        0.4186882865245484,
+        0.46714379574743886
+      ],
+      "median_delay_ci95_s": [
+        3.8000000000000003,
+        4.65
+      ]
+    }
+  },
+  "bootstrap": "1000 replay-cluster resamples; seed20261003",
+  "limitations": [
+    "Five-second unique deployment-to-controller attribution window; ambiguous/missing links excluded and counted.",
+    "Goblinstein doctor, hero Goblins flag and hero Tombstone controller are distinguished by the existing public max-HP contract; card ID alone aliases their siblings.",
+    "Survival/readiness eligibility is not observed continuously in historical recordings; targets are deployment shares, not ready-button hazards.",
+    "Native re-drive acceptances are not the original human input timing.",
+    "These targets do not authorize a calibrated policy or satisfy per-ability delay-error acceptance."
+  ],
+  "repair": {
+    "prior": "scratchpad\\gauntlet\\L70\\abilities\\native_targets_2305",
+    "prior_report_sha256": "73cee4790956f8e063538bd8649c09a2f9b0edbb72e462523fce33167fd080fc",
+    "prior_deployments_sha256": "2fbda0ae2e22fe091014d3d1f70d08b210ee50e3a02c96afe7a23589d65bff00",
+    "reread_replays": 2457,
+    "counts_scope": "Repair replay subset only; other deployment records reused exactly."
+  }
+}

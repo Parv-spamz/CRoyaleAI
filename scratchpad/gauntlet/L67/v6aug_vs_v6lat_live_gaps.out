@@ -1,0 +1,11 @@
+== v6lat_s0 tau 0.27 (15:22)
+   15:22: gaps median 3.8s, longest 19s, >10s: 5, >15s: 1
+   15:25: gaps median 4.4s, longest 16s, >10s: 4, >15s: 2
+   15:28: gaps median 5.2s, longest 18s, >10s: 4, >15s: 1
+   15:32: gaps median 4.3s, longest 19s, >10s: 2, >15s: 1
+   TOTAL: median gap 4.3s | gaps >10s 15 (1.17/min) | >15s 5 (0.39/min) | share of match time inside >10s gaps 27%
+== v6aug_s1 tau 0.27 (20:29)
+   20:29: gaps median 3.3s, longest 22s, >10s: 6, >15s: 3
+   20:33: gaps median 3.2s, longest 26s, >10s: 4, >15s: 2
+   20:39: gaps median 4.7s, longest 24s, >10s: 6, >15s: 3
+   TOTAL: median gap 3.5s | gaps >10s 16 (1.29/min) | >15s 8 (0.64/min) | share of match time inside >10s gaps 35%

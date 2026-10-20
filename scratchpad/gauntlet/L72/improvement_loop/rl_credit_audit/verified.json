@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "rows": 73783,
+  "updates": 32,
+  "matches": 256,
+  "groups": 112,
+  "controls": {
+    "positive": 5,
+    "negative": 9
+  },
+  "report_sha256": "4352cd83496da482bb8aed325809e0c2aade60a3027a7cc40dd89960d06feac1",
+  "source_sha256": "cc7b92d6102b024ca5ad15b38bb1c5cad3748288e2cd5d3e7512e5cfadc57d4a",
+  "outputs": {
+    "rows.npz": "2b071c210ab25a4a9dec90e67efc0f6fd8e02c69b3c762dc1dbd0fa9d6cb5d43",
+    "matches.json": "9703901cc8d0ca17f819503eafa261ea746394a166f5d7b39025198c97db50a9",
+    "per_update.json": "c69d298b1915e95f98aa5fd83f26d3e57224c62c3ef7d53676c8c0a2f79dfa20",
+    "per_match.json": "c3be284ae06847ff04aaab52ed396bb7637ed4e9b886e2ecc963a4670440ddd6"
+  },
+  "model_inference": 0,
+  "optimizer_updates": 0,
+  "accepted": false
+}

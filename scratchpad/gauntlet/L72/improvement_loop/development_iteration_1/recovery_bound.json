@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "skip_completed": [
+    "r1e-eval",
+    "v5-train",
+    "v5-portable"
+  ],
+  "no_extra_optimization": true,
+  "original_recipe_unchanged": true,
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\RECOVERY_PLAN.md": "9f3823672a1c055ef4daeee7d51c402ae2a914b9fb41b11c19b0b179d324c3c9",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\portable_checkpoint.py": "1bac0c67391553256683221536639f5c1aef3518c2baec5e4ad9014826af3694",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\evaluate_v2.py": "529acd88deeab67b652f1d2c291fc320b9ff66d4cb0ba7ae81a154a6af1edfc7",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\recount_v2.py": "e01a6491df62c3efe807595ca612dbed08a2a0aa6bd5a542c752383541529de1",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\recovery_common.py": "51bcc3aa5c8f902922bc7252589b024adca1303956e7abc6540327fff067bc25",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\resume_chain.py": "e3106d7a24ffe1dcabde6c4d1cde0e028c8d1d4d9ded9503af2bd5a930b9e22f",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\bind_recovery.py": "1f3284a2eb05a5b71d36a03810c3a516576bf830a5040663becb399245eecac5"
+  },
+  "completed_evidence": {
+    "scratchpad\\gauntlet\\L71\\integration\\checks\\l72-development1-r1e-eval.json": "2527ad6fd7975f61717eb274b1917f2d622d684518aaad1d9710ff300589a7e6",
+    "scratchpad\\gauntlet\\L71\\integration\\checks\\l72-development1-r1e-eval.out": "7010533498b925eb87ab4c038fa70f538e73cb0695f230041e42ca6c27db545b",
+    "scratchpad\\gauntlet\\L71\\integration\\checks\\l72-development1-v5-train.json": "ade53b1e716e559d2333049b10c91b1a0368205ce25d210eb688b2c9548ca9b4",
+    "scratchpad\\gauntlet\\L71\\integration\\checks\\l72-development1-v5-train.out": "efc6ce71da1769b74690a50c516ea1f51c4e4206973a4c09505183495632f66b",
+    "scratchpad\\gauntlet\\L71\\integration\\checks\\l72-development1-v5-eval.json": "336c59de1ebca1c4356a56435367a5bec770d533b54af51da9deaa3361eb734a",
+    "scratchpad\\gauntlet\\L71\\integration\\checks\\l72-development1-v5-eval.out": "f869841854399d720998ebe293cce1b87a584e57bc55fc299e975eda01c760aa",
+    "scratchpad\\gauntlet\\L71\\integration\\checks\\l72-development1-v5-portable.json": "6d0fe079514a6020b79df7c7aa6e587eb0679e8da957eeef7e4472a3bfe4c252",
+    "scratchpad\\gauntlet\\L71\\integration\\checks\\l72-development1-v5-portable.out": "cf9b974337efdda428f0b4efa3115f6b4c89a57613ed0dccbb2d7b49b5f8a41e",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\ordinary_v5\\candidate.pt": "bfcf107e4467416d68f97513bda85cb93f60d7c9356a90fdb244c5582850eb26",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\ordinary_v5\\candidate_portable.pt": "c0ba1ab910df50fdcbe1fcf4191aedd584c86fe94c5a6d3248359bda059db419",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\prelaunch.json": "df8b198a6fa87e8a5429f4fa94261eee42c4c16220b5809bdc3a560edf82c164",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\chain_failed.json": "d08b2b4e6a60a8a03c9809fdf931ff49218fa97f52ca566e22aff7eabbee8850",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\ordinary_v5_portable.json": "ea9bc9390c811a52b76e5f4df855d54114909503c8018b84671279ad5d8fd320",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\ordinary_v5\\result.json": "3b97d510fd8f970a106d67dfb9b040c7d4e1ec85e9b2b49d70d9ace750c6eb41",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\ordinary_v5\\train.jsonl": "1c8d7164b5f437d28d5b8e59af65866949ad897582818cfe652f3cab95dba174",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\r1e_corrected_eval\\report.json": "924281079ad12959397d833930bb805f5d3b7d0d7df87ded3a1bafa7336463d9",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\r1e_corrected_eval\\predictions.npz": "6bae7d05fe8a9eeb67301168007b4c2a90c759a113ec5ab439bab8505b63ffac"
+  }
+}

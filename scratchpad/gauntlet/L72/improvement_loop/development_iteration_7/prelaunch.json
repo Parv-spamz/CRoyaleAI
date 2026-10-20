@@ -1,0 +1,451 @@
+{
+  "complete": true,
+  "optimizer_allowed": true,
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_7\\evaluate.py": "d46412736fff7865b52bec7fd9a41df52ce8867353dfa81c8b68a3b0300c216a",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_7\\experiment.py": "42222a8acbf8ba005dd8dc644db50962b20f998436edf7ce256cbe2fc557056f",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_7\\extra_masks.py": "b003ea1801af9cb6f7441b6ce5569f92ab54a7775fbe4a69b0316c35f53f6e86",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_7\\preflight.py": "e3a2e300a749f68c7935bea8a2eb11c1e620cd4c9eccf9fd8adf9e9c08dfb866",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_7\\recount.py": "2dae3c7e6fa7cfafb89248095ae517545cea6ae07232f1dfbdcfbf606d729b44",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_7\\run_chain.py": "a517370e22671cdf0968def1d563082430698e19992bc92743a6078d7b5ab9c4",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_7\\train.py": "bca9c913cca9da2f63cabaabb53c84478b505f7221557f61c8a0541c859bf5cd",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_7\\PLAN.md": "39169b3d0c0d43bf3c411aa8fb574ed2523ca8c4421ca2c301781bef3c57a610",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_7\\METRICS.md": "02313ae487169076a93a691e34a4ee1c72496b424586d688f04954e5e031d90b",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\ordinary_v5\\candidate_portable.pt": "c0ba1ab910df50fdcbe1fcf4191aedd584c86fe94c5a6d3248359bda059db419",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\results_verified_v2.json": "dde17a484ce0694274dbd76e99bd9d6d4b658cb6b8eea4d961b484e9b6b6dd94",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\ordinary_v5_portable.json": "ea9bc9390c811a52b76e5f4df855d54114909503c8018b84671279ad5d8fd320",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_4\\prelaunch.json": "6c5cee27c242f8b83c37ef1ec898e9b53b2265878cf999bbf8fc4efdd565c19f",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_2\\prelaunch.json": "980d1481449d78f3e67c8721e52f09796ee31bb6537a62191fb98941d6b01bc9",
+    "icebow\\data\\bench\\development_iteration_2_20261005\\schedule.npz": "e7eebb2ef2041f6afc4537d42efdce58dfbb07f55c47fe68a678702b2f121e79",
+    "icebow\\data\\bench\\development_iteration_4_20261005\\development_masks.npz": "6d1649235ca0227f45ec3188e151aaf1af81aa30519b2e68bb919008d8c4b9a8",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\draws.npz": "f7a66504b93a5727e31e8d62b51f71ac4592d513c0f083c5573788a8f4f1d0fe",
+    "icebow\\data\\bench\\match_adaptation_20261005\\rows_v2.jsonl": "914a81572b0cb6f8cdbd2d114eecb65585f47b1a3ff7ced6d1a1ef2cde1c11f6",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_gameplay_1\\reviewed_results.json": "0e60ad466c05318828e122fa2104c5a9da21a646188ec51d2e7139f364923847",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\gameplay_failure_audit\\verified_v2.json": "6ad76805574ee6841d66005d8ea263f9739383112fbde026970f904cac8ec8cf"
+  },
+  "masks_sha256": "6d1649235ca0227f45ec3188e151aaf1af81aa30519b2e68bb919008d8c4b9a8",
+  "schedule_sha256": "f7a66504b93a5727e31e8d62b51f71ac4592d513c0f083c5573788a8f4f1d0fe",
+  "initial_checkpoint_sha256": "c0ba1ab910df50fdcbe1fcf4191aedd584c86fe94c5a6d3248359bda059db419",
+  "denominators": {
+    "witch": {
+      "rows": 726,
+      "replays": 20,
+      "plays": 300
+    },
+    "witch_parent": {
+      "rows": 558,
+      "replays": 20,
+      "plays": 233
+    },
+    "witch_child_only": {
+      "rows": 168,
+      "replays": 18,
+      "plays": 67
+    },
+    "night_witch": {
+      "rows": 373,
+      "replays": 12,
+      "plays": 160
+    },
+    "night_witch_parent": {
+      "rows": 332,
+      "replays": 12,
+      "plays": 145
+    },
+    "night_witch_child_only": {
+      "rows": 41,
+      "replays": 8,
+      "plays": 15
+    },
+    "furnace": {
+      "rows": 1174,
+      "replays": 20,
+      "plays": 480
+    },
+    "furnace_parent": {
+      "rows": 1159,
+      "replays": 20,
+      "plays": 474
+    },
+    "furnace_child_only": {
+      "rows": 15,
+      "replays": 6,
+      "plays": 6
+    },
+    "barrel_pro": {
+      "rows": 63,
+      "replays": 26,
+      "plays": 63
+    },
+    "barrel_other_play": {
+      "rows": 36,
+      "replays": 22,
+      "plays": 36
+    },
+    "barrel_wait": {
+      "rows": 55,
+      "replays": 25,
+      "plays": 0
+    },
+    "barrel_multiple": {
+      "rows": 54,
+      "replays": 18,
+      "plays": 33
+    },
+    "barrel_ambiguous": {
+      "rows": 55,
+      "replays": 19,
+      "plays": 34
+    },
+    "barrel_absent": {
+      "rows": 54372,
+      "replays": 405,
+      "plays": 16973
+    },
+    "rocket": {
+      "rows": 955,
+      "replays": 336,
+      "plays": 955
+    },
+    "all": {
+      "rows": 54723,
+      "replays": 405,
+      "plays": 17192
+    },
+    "finish": {
+      "rows": 31,
+      "replays": 13,
+      "plays": 21
+    },
+    "combo": {
+      "rows": 320,
+      "replays": 75,
+      "plays": 200
+    },
+    "xbow": {
+      "rows": 105,
+      "replays": 10,
+      "plays": 36
+    },
+    "xbow_no_lifetime_target": {
+      "rows": 0,
+      "replays": 0,
+      "plays": 0
+    },
+    "defensive_sequence": {
+      "rows": 8183,
+      "replays": 212,
+      "plays": 3152
+    },
+    "defensive_rocket": {
+      "rows": 223,
+      "replays": 129,
+      "plays": 223
+    },
+    "phase_single_clock": {
+      "rows": 26215,
+      "replays": 405,
+      "plays": 5443
+    },
+    "rocket_single_clock": {
+      "rows": 177,
+      "replays": 150,
+      "plays": 177
+    },
+    "phase_double_regulation_clock": {
+      "rows": 12943,
+      "replays": 374,
+      "plays": 4812
+    },
+    "rocket_double_regulation_clock": {
+      "rows": 255,
+      "replays": 204,
+      "plays": 255
+    },
+    "phase_early_overtime_clock": {
+      "rows": 9143,
+      "replays": 297,
+      "plays": 3504
+    },
+    "rocket_early_overtime_clock": {
+      "rows": 203,
+      "replays": 161,
+      "plays": 203
+    },
+    "phase_late_overtime_clock": {
+      "rows": 6422,
+      "replays": 215,
+      "plays": 3433
+    },
+    "rocket_late_overtime_clock": {
+      "rows": 320,
+      "replays": 171,
+      "plays": 320
+    },
+    "ctx_margin/single_clock/true/equal": {
+      "rows": 7034,
+      "replays": 405,
+      "plays": 1311
+    },
+    "ctx_bow/single_clock/none": {
+      "rows": 15724,
+      "replays": 405,
+      "plays": 3348
+    },
+    "ctx_prior/0": {
+      "rows": 19267,
+      "replays": 405,
+      "plays": 4816
+    },
+    "ctx_high/true": {
+      "rows": 46351,
+      "replays": 405,
+      "plays": 13732
+    },
+    "ctx_grade/true": {
+      "rows": 44690,
+      "replays": 334,
+      "plays": 14027
+    },
+    "ctx_margin/single_clock/true/ahead": {
+      "rows": 8479,
+      "replays": 313,
+      "plays": 1850
+    },
+    "ctx_margin/single_clock/true/behind": {
+      "rows": 10261,
+      "replays": 324,
+      "plays": 2182
+    },
+    "ctx_bow/single_clock/ended_no_enemy_princess_hp_drop": {
+      "rows": 2756,
+      "replays": 120,
+      "plays": 582
+    },
+    "ctx_prior/1": {
+      "rows": 15622,
+      "replays": 366,
+      "plays": 4495
+    },
+    "ctx_bow/single_clock/ongoing": {
+      "rows": 3210,
+      "replays": 304,
+      "plays": 621
+    },
+    "ctx_prior/2": {
+      "rows": 19834,
+      "replays": 294,
+      "plays": 7881
+    },
+    "ctx_margin/double_regulation_clock/true/behind": {
+      "rows": 6667,
+      "replays": 252,
+      "plays": 2475
+    },
+    "ctx_bow/double_regulation_clock/ended_enemy_princess_hp_drop": {
+      "rows": 4703,
+      "replays": 252,
+      "plays": 1829
+    },
+    "ctx_bow/double_regulation_clock/ongoing": {
+      "rows": 3150,
+      "replays": 264,
+      "plays": 1057
+    },
+    "ctx_margin/early_overtime_clock/true/ahead": {
+      "rows": 3995,
+      "replays": 175,
+      "plays": 1529
+    },
+    "ctx_bow/early_overtime_clock/ended_enemy_princess_hp_drop": {
+      "rows": 3919,
+      "replays": 201,
+      "plays": 1549
+    },
+    "ctx_bow/early_overtime_clock/ongoing": {
+      "rows": 1897,
+      "replays": 174,
+      "plays": 670
+    },
+    "ctx_bow/early_overtime_clock/unknown": {
+      "rows": 118,
+      "replays": 86,
+      "plays": 14
+    },
+    "ctx_margin/late_overtime_clock/true/ahead": {
+      "rows": 2927,
+      "replays": 121,
+      "plays": 1570
+    },
+    "ctx_bow/late_overtime_clock/ended_enemy_princess_hp_drop": {
+      "rows": 2918,
+      "replays": 137,
+      "plays": 1607
+    },
+    "ctx_bow/single_clock/unknown": {
+      "rows": 210,
+      "replays": 162,
+      "plays": 8
+    },
+    "ctx_bow/double_regulation_clock/unknown": {
+      "rows": 180,
+      "replays": 133,
+      "plays": 26
+    },
+    "ctx_margin/double_regulation_clock/true/ahead": {
+      "rows": 5366,
+      "replays": 212,
+      "plays": 1960
+    },
+    "ctx_revealed/goblin-barrel": {
+      "rows": 3863,
+      "replays": 30,
+      "plays": 1317
+    },
+    "ctx_bow/double_regulation_clock/none": {
+      "rows": 1979,
+      "replays": 85,
+      "plays": 760
+    },
+    "ctx_margin/early_overtime_clock/true/behind": {
+      "rows": 5141,
+      "replays": 200,
+      "plays": 1973
+    },
+    "ctx_margin/late_overtime_clock/true/behind": {
+      "rows": 3495,
+      "replays": 148,
+      "plays": 1863
+    },
+    "ctx_high/false": {
+      "rows": 8338,
+      "replays": 226,
+      "plays": 3443
+    },
+    "ctx_bow/late_overtime_clock/ongoing": {
+      "rows": 1236,
+      "replays": 104,
+      "plays": 609
+    },
+    "ctx_bow/double_regulation_clock/ended_no_enemy_princess_hp_drop": {
+      "rows": 2931,
+      "replays": 155,
+      "plays": 1140
+    },
+    "ctx_bow/early_overtime_clock/ended_no_enemy_princess_hp_drop": {
+      "rows": 2276,
+      "replays": 125,
+      "plays": 903
+    },
+    "ctx_bow/late_overtime_clock/ended_no_enemy_princess_hp_drop": {
+      "rows": 1579,
+      "replays": 81,
+      "plays": 863
+    },
+    "ctx_margin/single_clock/false/ahead": {
+      "rows": 164,
+      "replays": 13,
+      "plays": 37
+    },
+    "ctx_bow/single_clock/ended_enemy_princess_hp_drop": {
+      "rows": 4315,
+      "replays": 192,
+      "plays": 884
+    },
+    "ctx_bow/late_overtime_clock/unknown": {
+      "rows": 58,
+      "replays": 43,
+      "plays": 14
+    },
+    "ctx_revealed/witch": {
+      "rows": 2227,
+      "replays": 20,
+      "plays": 798
+    },
+    "ctx_margin/double_regulation_clock/false/behind": {
+      "rows": 620,
+      "replays": 36,
+      "plays": 261
+    },
+    "ctx_revealed/furnace": {
+      "rows": 2522,
+      "replays": 20,
+      "plays": 879
+    },
+    "ctx_grade/false": {
+      "rows": 10033,
+      "replays": 71,
+      "plays": 3165
+    },
+    "ctx_margin/double_regulation_clock/true/equal": {
+      "rows": 37,
+      "replays": 3,
+      "plays": 12
+    },
+    "ctx_margin/single_clock/false/behind": {
+      "rows": 263,
+      "replays": 18,
+      "plays": 58
+    },
+    "ctx_margin/double_regulation_clock/false/ahead": {
+      "rows": 253,
+      "replays": 21,
+      "plays": 104
+    },
+    "ctx_bow/early_overtime_clock/none": {
+      "rows": 933,
+      "replays": 35,
+      "plays": 368
+    },
+    "ctx_bow/late_overtime_clock/none": {
+      "rows": 631,
+      "replays": 20,
+      "plays": 340
+    },
+    "ctx_high/unknown": {
+      "rows": 34,
+      "replays": 4,
+      "plays": 17
+    },
+    "ctx_revealed/night-witch": {
+      "rows": 899,
+      "replays": 12,
+      "plays": 338
+    },
+    "ctx_margin/single_clock/false/equal": {
+      "rows": 14,
+      "replays": 3,
+      "plays": 5
+    },
+    "ctx_margin/early_overtime_clock/true/equal": {
+      "rows": 7,
+      "replays": 1,
+      "plays": 2
+    }
+  },
+  "frozen_base_exact": true,
+  "all_initial_outputs_exact": true,
+  "heads_after_learning_exact": true,
+  "no_target_exact": true,
+  "portable_roundtrip": true,
+  "smoke": {
+    "losses": [
+      5.106794834136963,
+      5.106081962585449
+    ],
+    "updates": 2,
+    "counts_as_training": false,
+    "checkpoint_saved": false
+  },
+  "base_training_mode": "eval",
+  "trainable_parameters": [
+    "projectile_target_in.0.weight",
+    "projectile_target_in.0.bias",
+    "projectile_target_in.2.weight",
+    "projectile_target_in.2.bias",
+    "projectile_target_spread.weight"
+  ],
+  "development_policy_predictions": 0,
+  "full_training_updates": 0,
+  "deployment_accepted": false
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\verify_train_aim.py", line 126, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\verify_train_aim.py", line 109, in main
+    assert misses==expected['full_misses']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

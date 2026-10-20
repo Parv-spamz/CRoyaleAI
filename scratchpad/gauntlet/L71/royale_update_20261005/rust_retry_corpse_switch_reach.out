@@ -1,0 +1,9 @@
+
+running 4 tests
+test a_kill_followed_by_a_target_out_of_reach_drops_the_swing ... ok
+test a_tower_replacing_its_victims_in_range_keeps_its_cadence_on_both_values ... ok
+test the_old_value_keeps_the_swing_onto_a_target_out_of_reach ... ok
+test the_shipped_value_is_the_new_one ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+

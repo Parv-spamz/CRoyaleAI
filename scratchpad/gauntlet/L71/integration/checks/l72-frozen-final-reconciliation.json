@@ -1,0 +1,17 @@
+{
+  "command": [
+    ".\\icebow\\.venv\\Scripts\\python.exe",
+    "C:/Users/benpe/.codex/worktrees/learned-defence/ClashBot/scratchpad/gauntlet/L71/context_teaching/score_experiments.py",
+    "--directory",
+    "C:/Users/benpe/.codex/worktrees/learned-defence/ClashBot/scratchpad/gauntlet/L71/context_teaching/experiments",
+    "--out",
+    "C:/Users/benpe/ClashBot/scratchpad/gauntlet/L72/improvement_loop/frozen_reconciled.json"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "EXPERT_EXPERIMENTS_RECONCILED_REQUIRES_REVIEW",
+  "matched": true,
+  "output_sha256": "0484091b8589292934f8355c40072014d11d8804115692c889f68df823cecf0f",
+  "seconds": 3.2674150466918945
+}

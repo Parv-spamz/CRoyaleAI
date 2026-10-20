@@ -1,0 +1,22 @@
+== run18 v6lat 15:22-15:38: 3 capture records
+   why: {'stall': 2, 'pinned_hi': 1}
+   p_play at capture: median 0.119 p90 0.164 max 0.164 | elixir at capture: {9: 1, 10: 2}
+   match 3 start~15:29: captures 2, at t=20s plays=1 -> 3.0/min; idle_s max 13
+   match 5 start~15:36: captures 1, at t=12s plays=0 -> 0.0/min; idle_s max 12
+== 20:29-20:45 session: 16 capture records
+   why: {'stall': 9, 'pinned_hi': 7}
+   p_play at capture: median 0.035 p90 0.122 max 0.170 | elixir at capture: {8: 4, 9: 5, 10: 7}
+   match 1 start~20:29: captures 7, at t=116s plays=11 -> 5.7/min; idle_s max 13
+   match 2 start~20:34: captures 1, at t=12s plays=0 -> 0.0/min; idle_s max 12
+   match 3 start~20:39: captures 3, at t=60s plays=6 -> 6.0/min; idle_s max 24
+   match 4 start~20:42: captures 5, at t=110s plays=12 -> 6.5/min; idle_s max 22
+== tonight 22:35-23:14: 31 capture records
+   why: {'stall': 17, 'pinned_hi': 14}
+   p_play at capture: median 0.037 p90 0.097 max 0.237 | elixir at capture: {8: 9, 9: 6, 10: 16}
+   match 1 start~22:36: captures 8, at t=29s plays=1 -> 2.1/min; idle_s max 16
+   match 2 start~22:39: captures 9, at t=118s plays=15 -> 7.6/min; idle_s max 13
+   match 3 start~22:55: captures 3, at t=111s plays=14 -> 7.6/min; idle_s max 26
+   match 4 start~22:59: captures 4, at t=119s plays=13 -> 6.6/min; idle_s max 12
+   match 5 start~23:02: captures 2, at t=96s plays=12 -> 7.5/min; idle_s max 12
+   match 6 start~23:07: captures 3, at t=26s plays=1 -> 2.3/min; idle_s max 13
+   match 7 start~23:11: captures 2, at t=84s plays=10 -> 7.2/min; idle_s max 24

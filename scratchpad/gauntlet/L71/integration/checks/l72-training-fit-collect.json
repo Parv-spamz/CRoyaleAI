@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\training_fit_audit\\collect.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "TRAINING_FIT_COLLECTED",
+  "matched": true,
+  "output_sha256": "e044b3b3382da316685f4e061235f66ffb695c347fa5266adb94389a9fdec29e",
+  "seconds": 198.02381896972656
+}

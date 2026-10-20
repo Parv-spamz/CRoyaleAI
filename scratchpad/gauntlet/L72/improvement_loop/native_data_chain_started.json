@@ -1,0 +1,11 @@
+{
+  "started_at": "2026-10-05T07:23:14.288300",
+  "sources": {
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\run_native_data_chain.py": "56237a2ad632c1a887dc39d8a4a513e85351c601e5fdf716759e9361f3b68c4e",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\collect_reserved_pilot.py": "fb0852bba51748e9b513bac080c2cb81907a1b99b561bac9165c3d1c124e26c4",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\native_capture_identity.py": "ee1bc6f007718ab8b780449cf19e411a40050d0a9784d5834e4cdb951b62b8b7",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\RESERVED_PILOT_PLAN.md": "ef2403525fb571c1f8a6f8672f90271536eaf2b3e7fd5e5b449e2d0364023307",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\reserved_pilot_prepared.json": "a14ee0af23b07b301488eddebe1b170dcdabe6f3592ad7c1cca904192f3119fa"
+  },
+  "preflight_pid": 27036
+}

@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "prepared_sha256": "b0b4852b306c11437f8d987c9f63c7932493ce9049cd97d4a3405df69219e07d",
+  "rows": 213995,
+  "play": 67106,
+  "independent_regions_and_weights": true,
+  "all_original_labels_matched": true,
+  "scheduled_weights_matched": true,
+  "mirror_bins_verified": 37,
+  "positive_controls": 1,
+  "corruptions_rejected": 3,
+  "optimizer_updates": 0,
+  "predictions": 0
+}

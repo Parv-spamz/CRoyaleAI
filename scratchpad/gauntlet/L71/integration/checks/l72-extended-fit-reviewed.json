@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/review_extended_fit.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "EXTENDED_FIT_REVIEWED",
+  "matched": true,
+  "output_sha256": "9c44a5db264980040a5ec6697411d62b7b6934f52cb70b1c617b77fffcd97f39",
+  "seconds": 0.6159796714782715
+}

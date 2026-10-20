@@ -1,0 +1,17 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "pipeline/tests/test_expert_context.py",
+    "pipeline/tests/test_spatial_projectiles.py",
+    "-q"
+  ],
+  "cwd": "C:\\Users\\benpe\\.codex\\worktrees\\learned-defence\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "12 passed",
+  "matched": true,
+  "output_sha256": "20577b42cc6ed22d647e2f6a43a3c1b12711c794bf3cb9bbe6f2934f1af4b9a9",
+  "seconds": 8.700523376464844
+}

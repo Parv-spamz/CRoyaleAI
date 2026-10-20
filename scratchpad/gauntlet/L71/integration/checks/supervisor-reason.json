@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:/Users/benpe/ClashBot/icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L71/integration/check_supervisor_reason.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\.codex\\worktrees\\learned-defence\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "SUPERVISOR_CHECKPOINT_REASON_PASS",
+  "matched": true,
+  "output_sha256": "0d5e25312dc5ce67b185be004e57aca2847c62f734a3948f411f960d80e21f59",
+  "seconds": 0.4713308811187744
+}

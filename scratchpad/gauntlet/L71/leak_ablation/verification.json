@@ -1,0 +1,9 @@
+{
+  "command": "icebow/.venv/Scripts/python.exe scratchpad/gauntlet/L71/leak_ablation/verify_switch.py",
+  "shell": "PowerShell invoking Python directly",
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "exit_code": 0,
+  "marker_matched": true,
+  "output_sha256": "5bd1484da59cd95aba9598e0da0b728a0cb12d36a886444873013900250b1e54",
+  "timestamp": "2026-10-04T21:51:26.173261-04:00"
+}

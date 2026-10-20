@@ -1,0 +1,66 @@
+{
+  "revision": "ba54d0c89db86fd6e31096179a0141635fbef816",
+  "raw_files": 15452,
+  "unique_raw_ids": 15452,
+  "known_exposed_ids": 0,
+  "unknown_ids": 15452,
+  "metadata": {
+    "manifest.json": {
+      "bytes": 925,
+      "sha256": "512d72c3ce39ed61b0e3324943b00b9f84148ed2ff055f87a79112b006787177",
+      "path": "icebow\\data\\bench\\native_confirmation_20261005\\additional_source\\manifest.json",
+      "keys": [
+        "total_files",
+        "accepted_unique",
+        "duplicates",
+        "parse_errors",
+        "rejected_unique",
+        "unique_parsed",
+        "rejection_counts",
+        "ability_attribution_counts",
+        "accepted_ability_attribution_counts",
+        "accepted_event_counts",
+        "legacy_roster",
+        "metadata_path"
+      ],
+      "rows": null
+    },
+    "matches.jsonl": {
+      "bytes": 899528,
+      "sha256": "19307c14857c1734c9d675f6b3e5d6893289a1f367670b6c170abecb1b113a34",
+      "path": "icebow\\data\\bench\\native_confirmation_20261005\\additional_source\\matches.jsonl",
+      "keys": [
+        "battle_id",
+        "source_file",
+        "request_url",
+        "participant_tags",
+        "crowns",
+        "decks",
+        "content_hash",
+        "warnings"
+      ],
+      "rows": 1592
+    },
+    "events.jsonl": {
+      "bytes": 26729109,
+      "sha256": "3bd0060fa16eb3fed8d97740e1024962f7599d270bab25c256f106077e42d173",
+      "path": "icebow\\data\\bench\\native_confirmation_20261005\\additional_source\\events.jsonl",
+      "keys": [
+        "battle_id",
+        "sequence",
+        "ticks",
+        "seconds",
+        "side",
+        "event_type",
+        "card",
+        "x",
+        "y",
+        "ability_card",
+        "attribution",
+        "ability_icon"
+      ],
+      "rows": 125093
+    }
+  },
+  "predictions": 0
+}

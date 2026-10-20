@@ -1,0 +1,8 @@
+{"index": 0, "tag": "fa25595b6e7748e0bd66912242515f97", "ok": false, "seconds": 64.98, "error": "AssertionError({'final': True, 'log': True, 'frames': False, 'grade': True})"}
+Traceback (most recent call last):
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\capture_native_preflight.py", line 145, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\capture_native_preflight.py", line 127, in main
+    raise RuntimeError('Native preflight failed; preserve output, do not collect reserved data')
+RuntimeError: Native preflight failed; preserve output, do not collect reserved data

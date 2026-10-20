@@ -1,0 +1,2 @@
+{"positive_checks": 2, "rejected_corruptions": ["before_left_boundary", "after_right_boundary", "wrong_side", "outside_pool", "heldout_row", "duplicate_row", "omitted_union_row", "unexpected_future_input", "changed_bow_class", "within_replay_split_leak", "altered_y_gate", "altered_y_xy"]}
+DEFENCE_SEQUENCE_CONTROLS_PASS

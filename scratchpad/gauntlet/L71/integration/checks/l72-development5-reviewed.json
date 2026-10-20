@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/review_development5.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "TOWER_REVIEW_COMPLETE",
+  "matched": true,
+  "output_sha256": "0c69dea4b809ba44e2e8a6128bb5e232dfd95e8d6861b9c0642469c61178dbae",
+  "seconds": 0.307711124420166
+}

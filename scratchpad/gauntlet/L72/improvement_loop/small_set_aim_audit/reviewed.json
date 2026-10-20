@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "receipts": {
+    "collect": {
+      "receipt_sha256": "cd5c03ca2ca0234de1016dea007c0e3e828a0e04436080bad92f2c5706d842cc",
+      "output_sha256": "fac701228fb22dbfe0bf381b18b8fb60a791554bce825a73281379478bd95789",
+      "seconds": 1.1976349353790283
+    },
+    "independent": {
+      "receipt_sha256": "d506a6db7aee7b3ab40a42011c32327e4e8f15ff89b0f31df5a7624bf53930d7",
+      "output_sha256": "ca31b2a17dbf6d638f9aff6bc5e40a57dc33f9c36663d2fde1659cb4a402b159",
+      "seconds": 2.7221639156341553
+    }
+  },
+  "collected_sha256": "41d51c91e30cadc6964a83a0d7de3e17eabdc1d7a0bf9f4007cac130933b5c76",
+  "verified_sha256": "35cbd335e7e61f47c36a9d084da20d8f0359b68c610b0aec20109992c6994f68",
+  "source_sha256": "11a2ed2e8a7784d60f38d44600c9a5aff46f445238fa0ab4d36dd591943808e8",
+  "inference": 0,
+  "optimizer_updates": 0,
+  "accepted": false,
+  "deployed": false
+}

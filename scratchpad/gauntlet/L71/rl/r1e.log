@@ -1,0 +1,14 @@
+[r1e] R8 A/B on 3.1a start 2026-10-04 15:00:02
+[r1e] R8 A/B (3.1a+R8 vs 3.1a) "delta_pp":1.0033444816053512,"ci_lo_pp":-1.6722408026755853,"ci_hi_pp":3.678929765886288, 2026-10-04 15:06:11
+[r1e] base icebow/data/pipeline/gen_v31c_s0/gen_s0.pt (screen scratchpad/gauntlet/L71/gen_v31/train_gen_v31c.jsonl) 2026-10-04 15:06:11
+[r1e] R1e start 2026-10-04 15:06:11
+[r1e] R1e exited 0 --  2026-10-04 20:14:21
+[r1e] reactive base_evo gen 8/24 s1 19/24 2026-10-04 20:17:38
+[r1e] rseries_r1e31_u0080 vs base "delta_pp":-0.33444816053511706,"ci_lo_pp":-3.3444816053511706,"ci_hi_pp":2.6755852842809364, | vs u0155 "delta_pp":-2.0066889632107023,"ci_lo_pp":-5.351170568561873,"ci_hi_pp":1.3377926421404682, 2026-10-04 20:24:07
+[r1e] reactive rseries_r1e31_u0080 gen 16/24 s1 21/24 2026-10-04 20:27:11
+[r1e] reactive rseries_r1e31_u0080_evo gen 11/24 s1 21/24 2026-10-04 20:30:20
+[r1e] rseries_r1e31_u0155 vs base "delta_pp":1.3377926421404682,"ci_lo_pp":-1.6722408026755853,"ci_hi_pp":4.3478260869565215, | vs u0155 "delta_pp":-0.33444816053511706,"ci_lo_pp":-3.3444816053511706,"ci_hi_pp":2.6755852842809364, 2026-10-04 20:36:57
+[r1e] reactive rseries_r1e31_u0155 gen 17/24 s1 21/24 2026-10-04 20:40:07
+[r1e] reactive rseries_r1e31_u0155_evo gen 11/24 s1 21/24 2026-10-04 20:44:24
+posted 823 chars, HTTP 204
+[r1e] all done 2026-10-04 20:44:25

@@ -1,0 +1,51 @@
+{
+  "original_collection_pass": false,
+  "original_failed_receipt_sha256": "3aa00c1f7c029a64f6c51545fc560e1e6cb32a451109e07c05c3003e1ccba34a",
+  "restore_diagnosis_sha256": "afaee6cac73aec283c4091c462c7a6c7581a985e21f6ced71bd9ec305649af07",
+  "complete": true,
+  "preparation_verifier_sha256": "0146e4dd77adf18d5fb2f5135941c278a40f95ddadf2720764bc4b74b7a08c33",
+  "data_verifier_sha256": "9d974d72209eb94ae1417a86b4a45c15db92ece982d2544f3d054734cf1de4e0",
+  "results_verifier_sha256": "a65d6b6b43954eafd54121385c48d6fa2ad464c8bc5612d7938438d0cd81bd62",
+  "receipts": {
+    "prepare": {
+      "receipt_sha256": "ce459d321c011e6a3430ad149dfe56b671d6099ac74fa434a0fac82ebee1c9ed",
+      "output_sha256": "a00c3c664b689dd322021b94a6aee91f3148263d60a4c3b98546898365f9555f",
+      "seconds": 124.15011405944824
+    },
+    "preparation-independent": {
+      "receipt_sha256": "f3d61e9ffbb8166c8f9cd3cf8467847f30ffa8ad27f823e8d3493932c325116f",
+      "output_sha256": "29ca8d89a34b212f47ae28696d7a5a841c0b28f86252ca78e48de627a61644e7",
+      "seconds": 3.468902111053467
+    },
+    "collect": {
+      "receipt_sha256": "b1dac2a8de1a4d0f58d0768c97c1acb44adb240b5fd59c6ee436112c3c588dd7",
+      "output_sha256": "685bf41998acbafe7b04eab8e8b3b3da75afd8e428d48f5e5e07e7da8143f952",
+      "seconds": 485.29642271995544
+    },
+    "data-independent": {
+      "receipt_sha256": "2639b7d8deff085d2ef66b278a6ec3de5c692c1886b0bdc718638ca5be93757e",
+      "output_sha256": "2a81af481d5fd1d8f63cdbe3d3f222aadd97eae16612fb1e5ac67082c6dd90fa",
+      "seconds": 177.15663409233093
+    },
+    "train": {
+      "receipt_sha256": "c003a2362feead457affd140b3b6b1460b5a6ea34d5aaefdc2e25d25a26d056a",
+      "output_sha256": "526034130d7091d4c5447111904dadced16361ee11ccc9a14559f38386ec9a80",
+      "seconds": 35.1286358833313
+    },
+    "results-independent": {
+      "receipt_sha256": "3bb22cf286dbdcc23b1227104447feb7b1f65818f23b108751a4c2469f8a0811",
+      "output_sha256": "f606563c0aedf1922bb9510f3200e4ba7ff7d470fa0d60d55aabae0173caa37a",
+      "seconds": 12.948921203613281
+    }
+  },
+  "filters": {
+    "body_absolute": false,
+    "body_relative": false,
+    "seed_improvements": false,
+    "crown_protection": true
+  },
+  "continuation_pass": false,
+  "policy_acceptance": false,
+  "deployed": false,
+  "source_sha256": "2899cee597485dea070cde091d5a6b33eb5ffa7ceddb96312edce53afe406cd0"
+}

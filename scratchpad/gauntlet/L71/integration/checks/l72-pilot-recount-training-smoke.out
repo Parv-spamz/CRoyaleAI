@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\verify_reserved_pilot.py", line 289, in <module>
+    main(parser.parse_args())
+    ~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\verify_reserved_pilot.py", line 230, in main
+    jobs = verify_sources()
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\verify_reserved_pilot.py", line 180, in verify_sources
+    assert job[key] == bound[key], (job['tag'], key)
+                       ~~~~~^^^^^
+KeyError: 'decks'

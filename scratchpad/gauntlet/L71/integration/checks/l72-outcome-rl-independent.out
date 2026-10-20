@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\development_rl_1_recovery\verify_v2.py", line 6, in <module>
+    ns['main']()
+    ~~~~~~~~~~^^
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\development_rl_1\verify.py", line 50, in main
+    raw=read(rp);con=arrays(cp);updates.append(verify_update(u,log,raw,con,prepared['setups']))
+                                               ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\development_rl_1\verify.py", line 27, in verify_update
+    assert all(len(x)==pos for x in contract.values()) and log['rows']==pos and log['on_policy_maxdev']==ratio_max
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

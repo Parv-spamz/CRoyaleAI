@@ -1,0 +1,130 @@
+{
+  "complete": true,
+  "receipts": {
+    "prepare": {
+      "receipt_sha256": "91391e0402dda6c13d8a6c99e4d2ec2791dc4b5dce383944dc65b1f6a4aeb4a4",
+      "output_sha256": "9510df05046ffd53aed21fc6b6b9b8e0d258ad50b9fecd52d79fec390c985965",
+      "seconds": 81.6018602848053
+    },
+    "train": {
+      "receipt_sha256": "205947ea5df2771b637da734a3334c06fadafa7a26a25eb8589cc5bea83322a0",
+      "output_sha256": "654213f4f54eb78ba432632256e2e8a4338f3909d6f84f06ef6362cfd3b1775a",
+      "seconds": 717.0118811130524
+    },
+    "training-independent": {
+      "receipt_sha256": "45dcd1d6cbcb9bb0a727d6eb658669fa844ed1d7f47309894334e1656d40e430",
+      "output_sha256": "add6c8f487c0c5b51bf4b6c968bf1722eb3d0df03a12cba44482b3ef030ca1a8",
+      "seconds": 6.835611343383789
+    },
+    "eval": {
+      "receipt_sha256": "fde17d5dba766f4901717aaf37cec21bbdf9190ee84426814693120ca9c96381",
+      "output_sha256": "02771d5ec7de33ef445d10e7120007dfbec7ac90f0c0769dd255648dd471d63f",
+      "seconds": 53.48571515083313
+    },
+    "results-independent": {
+      "receipt_sha256": "8c1bb87e800b6d6740127576c0a574b923c6e456435206ac894fb4fb4d6dd537",
+      "output_sha256": "e3407f2302ad75bdcc0798101f165c831d3c3668d4e6c240fab5c518b94349e0",
+      "seconds": 7.800922870635986
+    },
+    "reviewed-evidence": {
+      "receipt_sha256": "d35874e1d93b68526677c85300c45f94a18f33d7238acba3e53f4b193c29b098",
+      "output_sha256": "b169e9f85e82caa26a6d623ff28afa3301a738d39cfb3c45ec27f1d6144cd56b",
+      "seconds": 0.5913631916046143
+    },
+    "discord": {
+      "receipt_sha256": "7c6883fc000c0b3addb4d4fcd058990ed3c89ad1d8c996d4f777c80ed1bc430e",
+      "output_sha256": "3d52b5c2f9a8569f8505cb792a5b354c16fa26fd95b1f4c5d892b41995a74295",
+      "seconds": 1.3725519180297852
+    }
+  },
+  "diagnostic_fit": false,
+  "filters": {
+    "r1e_corrected/native": {
+      "play_fit": false,
+      "rocket_card_fit": false,
+      "rocket_aim_fit": false,
+      "wait_fit": false,
+      "all_card_preserved": false,
+      "all_wait_preserved": false
+    },
+    "r1e_corrected/mirrored": {
+      "play_fit": false,
+      "rocket_card_fit": false,
+      "rocket_aim_fit": false,
+      "wait_fit": false,
+      "all_card_preserved": false,
+      "all_wait_preserved": false
+    },
+    "ordinary_v5/native": {
+      "play_fit": false,
+      "rocket_card_fit": false,
+      "rocket_aim_fit": false,
+      "wait_fit": false,
+      "all_card_preserved": false,
+      "all_wait_preserved": false
+    },
+    "ordinary_v5/mirrored": {
+      "play_fit": false,
+      "rocket_card_fit": false,
+      "rocket_aim_fit": false,
+      "wait_fit": false,
+      "all_card_preserved": false,
+      "all_wait_preserved": false
+    },
+    "assay_final/native": {
+      "play_fit": false,
+      "rocket_card_fit": true,
+      "rocket_aim_fit": false,
+      "wait_fit": true,
+      "all_card_preserved": true,
+      "all_wait_preserved": true
+    },
+    "assay_final/mirrored": {
+      "play_fit": false,
+      "rocket_card_fit": true,
+      "rocket_aim_fit": false,
+      "wait_fit": true,
+      "all_card_preserved": true,
+      "all_wait_preserved": true
+    },
+    "local_cell_final/native": {
+      "play_fit": false,
+      "rocket_card_fit": true,
+      "rocket_aim_fit": false,
+      "wait_fit": true,
+      "all_card_preserved": true,
+      "all_wait_preserved": true
+    },
+    "local_cell_final/mirrored": {
+      "play_fit": false,
+      "rocket_card_fit": true,
+      "rocket_aim_fit": false,
+      "wait_fit": true,
+      "all_card_preserved": true,
+      "all_wait_preserved": true
+    }
+  },
+  "quarantined": true,
+  "eligible_policy_parent": false,
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\close_local_cell_fit_report.py": "71d38bd3ffd69163f2b4e609159305645002610357007f0a5718b5e88d53457e",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\local_cell_fit\\message.md": "8907c35550e86819669e3edb3f62934f82559fe408e000c7f159616ce94b0e09",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\local_cell_fit\\reviewed_evidence.json": "2315f51ae90f0a591fec2c5b99b1a66c12f9c315b3e6c06683f5e96272741055",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\local_cell_fit\\prepared.json": "a8bcb17bf9b6772e110f165f28318d630a8a0dc5d7c7f234cb84ba7be938ee98",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\local_cell_fit\\trained.json": "f1791ef0ecd15e0f6fecdcb40733140603292e78d7c227b80026c3d58cd78dda",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\local_cell_fit\\training_verified.json": "d5f750197efe1534b36d83600d0513951a5b422a496e14724a9631f66e66c39e",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\local_cell_fit\\evaluated.json": "7a3df361cb01e39cf53e62f59ebbf549d4a3a8155bf8ae4ada099968b04f541d",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\local_cell_fit\\results_verified.json": "44fd4be6a33cec7e55a0028815b8ce13b50e49c61010f046a6a91b12507f2e95",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\local_cell_fit\\chain_complete.json": "bc6c3c988a2447c327bac90f044cc17be0c54184608aadd708ee435cf456c601"
+  },
+  "delivery_path": "reports\\discord\\deliveries\\model-local-cell-fit-v5-diagnostic\\delivery.json",
+  "delivery_sha256": "edb15065f9904f02c2959de6e34209f7f5d1d344694797ff20680661c130278c",
+  "message_sha256": "8907c35550e86819669e3edb3f62934f82559fe408e000c7f159616ce94b0e09",
+  "message_ids": [
+    "1556976199878705214",
+    "1556976201904422983",
+    "1556976202869379206"
+  ],
+  "accepted": false,
+  "deployed": false
+}

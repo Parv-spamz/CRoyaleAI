@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "report_sha256": "500c6668b2b10af72c1052228df6ff60085118499f5894b7acf2ca959842245f",
+  "totals": {
+    "games": 64,
+    "late_games": 24,
+    "full_rows": 18995,
+    "late_rows": 1047,
+    "ratio_maxdev": 9.21247497806869e-06,
+    "value_batch_max_difference": 4.622654165009621e-07
+  },
+  "controls": {
+    "positive": 1,
+    "negative": 15
+  },
+  "optimizer_updates": 0,
+  "new_models": 0,
+  "deployed": false,
+  "source_sha256": "dd525db52d230ad263bc27a861fc9b6a9f1a3fd944b3d6e2bb145b969d26a0ac"
+}

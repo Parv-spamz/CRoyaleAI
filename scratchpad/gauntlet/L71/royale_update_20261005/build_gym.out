@@ -1,0 +1,12 @@
+Processing .\RoyaleGym
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: royalegym
+  Building wheel for royalegym (pyproject.toml): started
+  Building wheel for royalegym (pyproject.toml): finished with status 'done'
+  Created wheel for royalegym: filename=royalegym-0.1.15-py3-none-any.whl size=233650 sha256=51219cef17867069abf22c206c1fbc309b3e8f93927a658e19b543b6ba96156b
+  Stored in directory: C:\Users\benpe\AppData\Local\Temp\pip-ephem-wheel-cache-vl6g7zwv\wheels\7d\30\a9\7e887bf12d95a0cb38a3b1a442b57bedf5f06d281b216d6b20
+Successfully built royalegym
+
+[notice] A new release of pip is available: 26.1.2 -> 26.2.1
+[notice] To update, run: C:\Users\benpe\ClashBot\research\ext\Royale\.venv\Scripts\python.exe -m pip install --upgrade pip

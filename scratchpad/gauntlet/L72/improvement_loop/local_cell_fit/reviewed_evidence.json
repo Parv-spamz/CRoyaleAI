@@ -1,0 +1,44 @@
+{
+  "complete": true,
+  "receipts": {
+    "prepare": {
+      "receipt_sha256": "91391e0402dda6c13d8a6c99e4d2ec2791dc4b5dce383944dc65b1f6a4aeb4a4",
+      "output_sha256": "9510df05046ffd53aed21fc6b6b9b8e0d258ad50b9fecd52d79fec390c985965",
+      "seconds": 81.6018602848053
+    },
+    "train": {
+      "receipt_sha256": "205947ea5df2771b637da734a3334c06fadafa7a26a25eb8589cc5bea83322a0",
+      "output_sha256": "654213f4f54eb78ba432632256e2e8a4338f3909d6f84f06ef6362cfd3b1775a",
+      "seconds": 717.0118811130524
+    },
+    "training-independent": {
+      "receipt_sha256": "45dcd1d6cbcb9bb0a727d6eb658669fa844ed1d7f47309894334e1656d40e430",
+      "output_sha256": "add6c8f487c0c5b51bf4b6c968bf1722eb3d0df03a12cba44482b3ef030ca1a8",
+      "seconds": 6.835611343383789
+    },
+    "eval": {
+      "receipt_sha256": "fde17d5dba766f4901717aaf37cec21bbdf9190ee84426814693120ca9c96381",
+      "output_sha256": "02771d5ec7de33ef445d10e7120007dfbec7ac90f0c0769dd255648dd471d63f",
+      "seconds": 53.48571515083313
+    },
+    "results-independent": {
+      "receipt_sha256": "8c1bb87e800b6d6740127576c0a574b923c6e456435206ac894fb4fb4d6dd537",
+      "output_sha256": "e3407f2302ad75bdcc0798101f165c831d3c3668d4e6c240fab5c518b94349e0",
+      "seconds": 7.800922870635986
+    }
+  },
+  "bindings": {
+    "prepared.json": "a8bcb17bf9b6772e110f165f28318d630a8a0dc5d7c7f234cb84ba7be938ee98",
+    "trained.json": "f1791ef0ecd15e0f6fecdcb40733140603292e78d7c227b80026c3d58cd78dda",
+    "training_verified.json": "d5f750197efe1534b36d83600d0513951a5b422a496e14724a9631f66e66c39e",
+    "evaluated.json": "7a3df361cb01e39cf53e62f59ebbf549d4a3a8155bf8ae4ada099968b04f541d",
+    "results_verified.json": "44fd4be6a33cec7e55a0028815b8ce13b50e49c61010f046a6a91b12507f2e95",
+    "chain_complete.json": "bc6c3c988a2447c327bac90f044cc17be0c54184608aadd708ee435cf456c601"
+  },
+  "source_sha256": "69bb00a805162077a784b4a70d15c78a357ed91ef6fe232f65bf2448b99084b2",
+  "diagnostic_fit": false,
+  "quarantined": true,
+  "eligible_policy_parent": false,
+  "accepted": false,
+  "deployed": false
+}

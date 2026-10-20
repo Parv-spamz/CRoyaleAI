@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+    "-u",
+    "scratchpad/gauntlet/L72/improvement_loop/verify_reserved_icebow_corrected.py",
+    "--wait-for-completion"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "CORRECTED_ICEBOW_INDEPENDENTLY_VERIFIED",
+  "matched": true,
+  "output_sha256": "191466c4e12747be8dec82ce0bad0a020bdbbd92326f1e76e80c020bf73dbe1c",
+  "seconds": 846.5881488323212
+}

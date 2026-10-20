@@ -1,0 +1,9 @@
+START collection
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\late_game_readiness_2\\collect.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "LATE_GAME_READINESS_COLLECTED", "matched": true, "output_sha256": "ef4781f3a303650b4f7df07e79222093715bbd07a98ba70f0a22a0d05d1658c3", "seconds": 445.39494156837463}
+INSPECTED_CHECK_PASS
+COMPLETE collection
+START independent
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\late_game_readiness_2\\verify.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "LATE_GAME_READINESS_VERIFIED", "matched": true, "output_sha256": "ba7647c05af7a0cc9b4525c1c6f523b606776f18823004728c90d96e851dac50", "seconds": 1.8980305194854736}
+INSPECTED_CHECK_PASS
+COMPLETE independent
+LATE_GAME_READINESS_CHAIN_COMPLETE

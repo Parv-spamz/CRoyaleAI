@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/void_identity/verify.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "VOID_NATIVE_COST_INDEPENDENT_PASS",
+  "matched": true,
+  "output_sha256": "69d9951ef6ce3c7169c322d6e3958de32a1b751590d31dd3ae90b453b4b136c2",
+  "seconds": 5.582043170928955
+}

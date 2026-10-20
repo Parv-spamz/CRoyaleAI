@@ -1,0 +1,287 @@
+{
+  "counts": {
+    "raw_replays": 252238,
+    "known_id": 12258,
+    "unpositioned_or_empty": 41
+  },
+  "historical_hf_ids": 12258,
+  "historical_signatures": 15237,
+  "unused_unique_command_groups": 239939,
+  "strata": {
+    "rocket_deck": 25063,
+    "rocket_tornado_deck": 5474,
+    "versus_night-witch": 29572,
+    "versus_witch": 17246,
+    "versus_furnace": 32259,
+    "log_vs_barrel": 4764,
+    "xbow_deck": 9333,
+    "exact_icebow": 183,
+    "icebow_vs_furnace": 17,
+    "icebow_vs_witch": 5,
+    "icebow_vs_night-witch": 22
+  },
+  "raw_parts": [
+    {
+      "name": "part-000000.parquet",
+      "sha256": "9f6127099b57d91eef64da308873a2635f72b27ae8fd9d802fc7d1767363b656"
+    },
+    {
+      "name": "part-000001.parquet",
+      "sha256": "b6ac2cb62e0eca70349ec0b0bcde2c554469ff7be98a454e0183dd81e7a1c03e"
+    },
+    {
+      "name": "part-000002.parquet",
+      "sha256": "4bc9c3a9d5157c07963a77a96d23e29b837730b45894a86b5466961a7f354218"
+    },
+    {
+      "name": "part-000003.parquet",
+      "sha256": "ace3f0c0a0a7b002ebf95340f9cf1e0bc25a9bc087014ab1a1ad18dc301e3942"
+    },
+    {
+      "name": "part-000004.parquet",
+      "sha256": "047348f7a0e37ed0205cd514896b1b8563435dd80e82e3134c36cf4a25fa5dfd"
+    },
+    {
+      "name": "part-000005.parquet",
+      "sha256": "41d900961bd633427bf6b5500c2f131ea74f90d1b836d617f0c35bdff9f52f98"
+    },
+    {
+      "name": "part-000006.parquet",
+      "sha256": "0c4ee374821f815ea0042d25bd25875f94b4532d68a7d25da4f1efc37c02775f"
+    },
+    {
+      "name": "part-000007.parquet",
+      "sha256": "29b464de86898b658e836d38b1434dbc88f9e13512041ab7743cd219f09d6be6"
+    },
+    {
+      "name": "part-000008.parquet",
+      "sha256": "be823f715c6f2f11a169ec2332c977b3f08e1db3c2cccc4834920622fc704271"
+    },
+    {
+      "name": "part-000009.parquet",
+      "sha256": "de4054aa29c02e7bbd195ba9bc57530d87f443ffd4d4d7aa03a06e0e4050e511"
+    },
+    {
+      "name": "part-000010.parquet",
+      "sha256": "386b2d17573b48623b98117fbcdac80142937296e96dbe7b74f0fe79f7de5c72"
+    },
+    {
+      "name": "part-000011.parquet",
+      "sha256": "5841811819b7486dc1d31ff7dafdfa71dcb08cbc69b2b6d7e93f981a1ea7259f"
+    },
+    {
+      "name": "part-000012.parquet",
+      "sha256": "03ae983315b8aa5961b6e02fb770296b0325a0178e7f08d5b8b5f22ab5336c93"
+    },
+    {
+      "name": "part-000013.parquet",
+      "sha256": "750816ff6da481dcea73eedc019517e123a914c3af5f2ab9317ff407da9643d7"
+    },
+    {
+      "name": "part-000014.parquet",
+      "sha256": "dedbd417bba33a3b4b05d8018485e59bfdc7e1ffdd047b32f05fc4a19d360fd7"
+    },
+    {
+      "name": "part-000015.parquet",
+      "sha256": "13da741a9cc69753cbe5f6c4b4810dce797e272ccfa93577cf2662c0a1261937"
+    },
+    {
+      "name": "part-000016.parquet",
+      "sha256": "d22166ddddc247d2a9fa5298b022e2f16ce6f9157e14fed841da4dc80d022f98"
+    },
+    {
+      "name": "part-000017.parquet",
+      "sha256": "d199748009ab296c5d7418d97549bc6e20bc972f5b4aa131657e862eae6d094d"
+    },
+    {
+      "name": "part-000018.parquet",
+      "sha256": "57b01bbd082ab172248f823308904bbf82612317711a291085e956e525b5e55e"
+    },
+    {
+      "name": "part-000019.parquet",
+      "sha256": "0950b91a4a66d5f00dd3d8363784156ef4f7f1058f25a23b16ad413ed9369576"
+    },
+    {
+      "name": "part-000020.parquet",
+      "sha256": "223a6b64981e374e35970c995549ba97485dbb4ea7d32fadbcd1ccd55aff1858"
+    },
+    {
+      "name": "part-000021.parquet",
+      "sha256": "180b903cc3146f2932f72edaa4e77b5b605ddde2c4c7ddcc236485145556b2b3"
+    },
+    {
+      "name": "part-000022.parquet",
+      "sha256": "c7e9c829898c94155f1c807a36b7af1e3cac03dcd318c2b2b7b274cd227d28fc"
+    },
+    {
+      "name": "part-000023.parquet",
+      "sha256": "238a8c79c7f15b05a7cb9fae820b9fa5e1c7e29b117615cfa136740c46e8a538"
+    },
+    {
+      "name": "part-000024.parquet",
+      "sha256": "141d04fe9a3d040a3bd99c31b9f4a8523a72e47ba9af577a023e9a0dc3e95f89"
+    },
+    {
+      "name": "part-000025.parquet",
+      "sha256": "d00230c325670381f624eda649f49dc44d3bacd738cab8181c08ec43c498e626"
+    },
+    {
+      "name": "part-000026.parquet",
+      "sha256": "14d1c7b0eb3d9b965a1a5992c7d88162628f68385d749143f96d7487d778ca50"
+    },
+    {
+      "name": "part-000027.parquet",
+      "sha256": "e6f08db9587a36285e4bf3b29add3802cd55ff9cbbcfdae252aadd10e32617be"
+    },
+    {
+      "name": "part-000028.parquet",
+      "sha256": "7cab612a94974a1469be1f32c52c5770c39a48ac68683c2c1289b33268b8d50d"
+    },
+    {
+      "name": "part-000029.parquet",
+      "sha256": "2b98c8d3241f9ef28fed34fde9fed8a9b723c80de9082b1693cbef98864806c0"
+    },
+    {
+      "name": "part-000030.parquet",
+      "sha256": "d5ce0b8d11797693779ba75f428506ff22ea3cb66efe1f24e78c3f58026ee355"
+    },
+    {
+      "name": "part-000031.parquet",
+      "sha256": "45bbd750779e4987def0ebceea24e431612d09f052124a296f187784be00cb09"
+    },
+    {
+      "name": "part-000032.parquet",
+      "sha256": "f332590592016de8da8442044832a627187a43c0591a718a1201fd075cf50312"
+    },
+    {
+      "name": "part-000033.parquet",
+      "sha256": "4ce3b82637a4fa9fac842737d935d866231756a5f342568ac2437e0f11f76d1b"
+    },
+    {
+      "name": "part-000034.parquet",
+      "sha256": "7778817a256636be72c3c2bfcaf8b625277c703c13308bfc493b963e87c1fb3a"
+    },
+    {
+      "name": "part-000035.parquet",
+      "sha256": "b521567b7a44ad2dca14d42d5eaa595fbed0fb582a4b606bd55fcab1695fcebd"
+    },
+    {
+      "name": "part-000036.parquet",
+      "sha256": "582237d1d557f3090f249c53f971d0240b3b6239b4d45dbf02f089804083c6df"
+    },
+    {
+      "name": "part-000037.parquet",
+      "sha256": "4558750c7641f3baf7b4533b87fe56fee62b1873a6a1f083e31fedaadf4cddfb"
+    },
+    {
+      "name": "part-000038.parquet",
+      "sha256": "2e5b11a61346721c985f6dad6b6ed23add48159f8fbb9fa5486cf88f2a8a173e"
+    },
+    {
+      "name": "part-000039.parquet",
+      "sha256": "3a13693f03d371cb6f1f5de268d349c68d32fef641dd7854dca8bd885a36dc85"
+    },
+    {
+      "name": "part-000040.parquet",
+      "sha256": "af659729551ef98cf4bb0cd09054cd930e648d0b7e2eeb6a6cbe59c1b3c82ad1"
+    },
+    {
+      "name": "part-000041.parquet",
+      "sha256": "8b03e039e07378240c8c47b893d3c34ea4cc6358a32d55928b27427a24864390"
+    },
+    {
+      "name": "part-000042.parquet",
+      "sha256": "e640ce7d61ec7926944195eb135e679a74b7859cc0499f12390c375c4e2f79e7"
+    },
+    {
+      "name": "part-000043.parquet",
+      "sha256": "b057228679deadf6232e86b06b68c4c07bbb427e9184f2bca79c1ce9fdb8c36a"
+    },
+    {
+      "name": "part-000044.parquet",
+      "sha256": "31888ee4b45863a1504abc338255a2f100a86b218e95ae8449c52c54b850a99b"
+    },
+    {
+      "name": "part-000045.parquet",
+      "sha256": "4343a1ae74c27a000b509070a657f2da3396b4c7b837e457a1266bcdbb5a152e"
+    },
+    {
+      "name": "part-000046.parquet",
+      "sha256": "d4cdb9d0f280cd2e8c4f23772572ca384e1e10bc132af0a7395de607a3adbc99"
+    },
+    {
+      "name": "part-000047.parquet",
+      "sha256": "b538df31534e6f6c707cb994dde8c5bfb9e1402fb8a77493a78876fc14159695"
+    },
+    {
+      "name": "part-000048.parquet",
+      "sha256": "ec0a094d18cc58326ccce30feb0c9f8ebc81e1c5596e39aa1a8831145d8d1f2b"
+    },
+    {
+      "name": "part-000049.parquet",
+      "sha256": "6f00de6c85c06b410d54e2ebb53d4eef87feeafd592df06c4c2bd4d0ad910614"
+    },
+    {
+      "name": "part-000050.parquet",
+      "sha256": "7ade353c3d31e0afc2104a57a2895a741ae51815976fd035a9bde38263b1c6a6"
+    },
+    {
+      "name": "part-000051.parquet",
+      "sha256": "290a5e5eb92dc604b2fd8dec7f971aa54ada372c76d686f00bf157002d7f8072"
+    }
+  ],
+  "crawl_sources": [
+    {
+      "battles": "icebow\\data\\royaleapi\\crawl2\\battles.csv",
+      "battles_sha256": "7cf3d39587fd2a1b926bf747b5d185514455afc5de6f7ea084df14ca4affbc00",
+      "plays": "icebow\\data\\royaleapi\\crawl2\\plays_ext.csv",
+      "plays_sha256": "f0bb80b370bc904dc7ec1dcb1fdd5f5d4d5d9817d333706db3654c254fa6fe8c",
+      "matched_battles": 1237
+    },
+    {
+      "battles": "icebow\\data\\royaleapi\\crawl2\\battles.csv",
+      "battles_sha256": "7cf3d39587fd2a1b926bf747b5d185514455afc5de6f7ea084df14ca4affbc00",
+      "plays": "icebow\\data\\royaleapi\\crawl2\\plays_ext_i1.csv",
+      "plays_sha256": "240085b208b437c09feb3dcf6c63cad78b6d4c8c3bce9b054cb3b827a4f786dc",
+      "matched_battles": 1406
+    },
+    {
+      "battles": "icebow\\data\\royaleapi\\crawl2\\battles.csv",
+      "battles_sha256": "7cf3d39587fd2a1b926bf747b5d185514455afc5de6f7ea084df14ca4affbc00",
+      "plays": "icebow\\data\\royaleapi\\crawl2\\plays_ext_sh0.csv",
+      "plays_sha256": "0a2f3206ce2bf7830604df627dd256bca08c549115cf22c39cac80a1cabee3da",
+      "matched_battles": 486
+    },
+    {
+      "battles": "hogeq\\data\\royaleapi\\crawl2\\battles.csv",
+      "battles_sha256": "89f52657e0e6acf8ee57c96f84ec5418e8df4e2f9ff379e8edd180be34f9c359",
+      "plays": "hogeq\\data\\royaleapi\\crawl2\\plays_ext.csv",
+      "plays_sha256": "fa37fb2a7294a34420075e71a701e57b206ffd98e31da8bcb73ab8a0a8f18767",
+      "matched_battles": 595
+    },
+    {
+      "battles": "hogeq\\data\\royaleapi\\crawl2\\battles.csv",
+      "battles_sha256": "89f52657e0e6acf8ee57c96f84ec5418e8df4e2f9ff379e8edd180be34f9c359",
+      "plays": "hogeq\\data\\royaleapi\\crawl2\\plays_ext_i1.csv",
+      "plays_sha256": "77c9900772a895f88bf4f04cb9791c98c0ab1d653ecf8a66776a7fdd1c281a02",
+      "matched_battles": 645
+    },
+    {
+      "battles": "hogeq\\data\\royaleapi\\crawl2\\battles.csv",
+      "battles_sha256": "89f52657e0e6acf8ee57c96f84ec5418e8df4e2f9ff379e8edd180be34f9c359",
+      "plays": "hogeq\\data\\royaleapi\\crawl2\\plays_ext_sh0.csv",
+      "plays_sha256": "c93f37b5abac5a70f78aaa51eeb7f11c7f2a4f02c7db8c0333f638b260b03e9f",
+      "matched_battles": 47
+    }
+  ],
+  "exposure_sha256": "55dcd4da14a60d3bf6cc6a30dc0b3b33ce0c61d86f9e191a766277ac7ad957a8",
+  "candidates": "C:\\Users\\benpe\\ClashBot\\icebow\\data\\bench\\confirmation_discovery_20261005\\candidate_commands.jsonl",
+  "candidates_sha256": "809dec2d3e38d0c6f84052708b2b3afce8e19853e0109e19a8f7adcba210894b",
+  "script_sha256": "786060c03cd41f30e6d8c3e76e14751796c15d93b81521f4630e8398fb74ecc9",
+  "limitations": [
+    "Availability only; native reconstruction and final component denominators not established.",
+    "Conservative command-prefix deduplication may merge some distinct games.",
+    "Anonymous sources cannot establish player-disjointness.",
+    "No model predictions or win/finishing labels were inspected."
+  ]
+}

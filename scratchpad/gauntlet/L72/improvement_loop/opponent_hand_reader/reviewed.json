@@ -1,0 +1,46 @@
+{
+  "complete": true,
+  "receipts": {
+    "tests": {
+      "path": "scratchpad\\gauntlet\\L71\\integration\\checks\\l72-opponent-hand-tests.json",
+      "sha256": "67436b67cefe47011233dcfeb9bc483a6c0e6c9957170c563cb9c4614a59a766",
+      "seconds": 5.662206172943115,
+      "exit_code": 1,
+      "matched": false
+    },
+    "tests-v2": {
+      "path": "scratchpad\\gauntlet\\L71\\integration\\checks\\l72-opponent-hand-tests-v2.json",
+      "sha256": "e43c48d2b185252437264d801030eca95c1fe69394924181fb04386f95e0b311",
+      "seconds": 3.9687628746032715,
+      "exit_code": 0,
+      "matched": true
+    },
+    "collect": {
+      "path": "scratchpad\\gauntlet\\L71\\integration\\checks\\l72-opponent-hand-collect.json",
+      "sha256": "a66b7eab35eb0f1b0751eb14aa4e858c5f140cb3fabb0a7ab18ac4b5e78d9cde",
+      "seconds": 36.133479833602905,
+      "exit_code": 0,
+      "matched": true
+    },
+    "independent": {
+      "path": "scratchpad\\gauntlet\\L71\\integration\\checks\\l72-opponent-hand-independent.json",
+      "sha256": "0b016eea5b4d26c6bce647e22dda6b95f500d8d4054b5f3948e5b6a8c9a9088f",
+      "seconds": 11.357862949371338,
+      "exit_code": 0,
+      "matched": true
+    }
+  },
+  "bindings": {
+    "started.json": "f1f756a1c6123cb9ba0f368c8c4c57402dde0fa71ae1621dd7ded711719f38cc",
+    "collected.json": "b92f572d42721105610f695c04c3402c4a5a92eba631beb15500bd82fc7651be",
+    "verified.json": "89283b91305bd2d4e202271b03b24296c89d4f32c455605cdb8a46bf94a332e3",
+    "details.json": "f5f51feafa305f25027eb7f540d8673acf832414f0274f2743f1e64989c09901",
+    "README.md": "a5ff2191cc67a20eb63b877127804bf9a3e5fc5facff4d0507a8c49cd9dc5560",
+    "REVIEW.md": "f3155e2cdfb1471300177ec7b28a549888668fa0947441cfbdc9ef198ea08ad6",
+    "review.py": "60ae4738f9be65b597c87b22b7d137973888d49601d7aeb748fbf34fa2206329"
+  },
+  "scope": "Reader engineering only; conditional public estimates; policy unchanged",
+  "no_new_model": true,
+  "no_training": true,
+  "no_live_change": true
+}

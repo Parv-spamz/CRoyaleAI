@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/void_identity/audit.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "VOID_PINNED_IDENTITY_VERIFIED",
+  "matched": true,
+  "output_sha256": "e4af39cfee067e2922c0443653ed04ef8f26afb6bdedbb6a68a964f0b5408b7d",
+  "seconds": 2.038435935974121
+}

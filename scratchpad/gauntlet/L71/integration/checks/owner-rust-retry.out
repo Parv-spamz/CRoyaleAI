@@ -1,0 +1,33 @@
+RETRY corpse_switch_reach
+corpse_switch_reach 0 [('ok', '4', '0', '0')]
+RETRY curse
+curse 0 [('ok', '9', '0', '0')]
+RETRY death_spawn_at_emission
+death_spawn_at_emission 0 [('ok', '1', '0', '0')]
+RETRY doomed_lane_tower
+doomed_lane_tower 0 [('ok', '3', '0', '0')]
+RETRY evo_battle_ram
+evo_battle_ram 0 [('ok', '5', '0', '0')]
+RETRY evo_dart_goblin
+evo_dart_goblin 0 [('ok', '1', '0', '0')]
+RETRY first_step_dying_contact
+first_step_dying_contact 0 [('ok', '3', '0', '0')]
+RETRY ghost_pair_first_frame
+ghost_pair_first_frame 0 [('ok', '2', '0', '0')]
+RETRY hero_barbarian_barrel
+hero_barbarian_barrel 0 [('ok', '1', '0', '0')]
+RETRY knocked_doomed_avoidance
+knocked_doomed_avoidance 0 [('ok', '1', '0', '0')]
+RETRY line_frame
+line_frame 0 [('ok', '1', '0', '0')]
+RETRY relocation_ties
+relocation_ties 0 [('ok', '3', '0', '0')]
+RETRY retarget_wait_arms
+retarget_wait_arms 0 [('ok', '7', '0', '0')]
+RETRY unit_refs
+unit_refs 0 [('ok', '7', '0', '0')]
+RETRY variant_card
+variant_card 0 [('ok', '11', '0', '0')]
+RETRY warp_hiding
+warp_hiding 0 [('ok', '3', '0', '0')]
+OWNER_RUST_RETRY_PASS

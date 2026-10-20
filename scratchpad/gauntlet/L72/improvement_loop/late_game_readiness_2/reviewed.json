@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "report_sha256": "500c6668b2b10af72c1052228df6ff60085118499f5894b7acf2ca959842245f",
+  "verified_sha256": "61220bd535cf54f4cf3b9b39c9ec2bf3d84f8887b4f6bfe051f4f0c0a3154dfe",
+  "receipts": {
+    "collection": {
+      "receipt_sha256": "dd867f4e38e00509f6b376c435162a1ccb940a4e09b193941cb3a7f7e92b6d53",
+      "output_sha256": "adffa9e6093fef1334598bd5fc1c17493554bf650a9c894511582980b32a6a92",
+      "seconds": 445.39494156837463
+    },
+    "independent": {
+      "receipt_sha256": "9c3417073367f2559f237c90cdd89c6ded145780dfb0d2f2f040c161a3582744",
+      "output_sha256": "ed7dbbfd32e5bfce7a4d809b8d9b628c6d6e78f577e42df216880d72292f9dd3",
+      "seconds": 1.8980305194854736
+    }
+  },
+  "totals": {
+    "games": 64,
+    "late_games": 24,
+    "full_rows": 18995,
+    "late_rows": 1047,
+    "ratio_maxdev": 9.21247497806869e-06,
+    "value_batch_max_difference": 4.622654165009621e-07
+  },
+  "optimizer_updates": 0,
+  "new_models": 0,
+  "policy_accepted": false,
+  "deployed": false,
+  "source_sha256": "7b8cce150c1108de4cadd868bddb0eaf358059456353cec5bd856da446aa9ac5"
+}

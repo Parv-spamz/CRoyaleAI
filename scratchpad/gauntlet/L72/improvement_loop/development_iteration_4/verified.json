@@ -1,0 +1,83 @@
+{
+  "complete": true,
+  "prepared_sha256": "cfa6f3c76f4265325d2f999841438bfbac5f9d2430b842755b50a507e61bf4ca",
+  "verifier_sha256": "6eea6bc88a63c8eb7c73631e869885a66c516f2e0a515939969560c0b1b1f0f9",
+  "controls": {
+    "positive": 1,
+    "negative": 5,
+    "phase_boundaries": true
+  },
+  "counts": {
+    "training": {
+      "single_clock": {
+        "rows": 102808,
+        "replays": 1573,
+        "plays": 21187,
+        "waits": 81621,
+        "expert_rockets": 757,
+        "rocket_replays": 665
+      },
+      "double_regulation_clock": {
+        "rows": 51177,
+        "replays": 1484,
+        "plays": 19229,
+        "waits": 31948,
+        "expert_rockets": 994,
+        "rocket_replays": 800
+      },
+      "early_overtime_clock": {
+        "rows": 35674,
+        "replays": 1141,
+        "plays": 13692,
+        "waits": 21982,
+        "expert_rockets": 803,
+        "rocket_replays": 642
+      },
+      "late_overtime_clock": {
+        "rows": 24336,
+        "replays": 814,
+        "plays": 12998,
+        "waits": 11338,
+        "expert_rockets": 1298,
+        "rocket_replays": 682
+      }
+    },
+    "development": {
+      "single_clock": {
+        "rows": 26215,
+        "replays": 405,
+        "plays": 5443,
+        "waits": 20772,
+        "expert_rockets": 177,
+        "rocket_replays": 150
+      },
+      "double_regulation_clock": {
+        "rows": 12943,
+        "replays": 374,
+        "plays": 4812,
+        "waits": 8131,
+        "expert_rockets": 255,
+        "rocket_replays": 204
+      },
+      "early_overtime_clock": {
+        "rows": 9143,
+        "replays": 297,
+        "plays": 3504,
+        "waits": 5639,
+        "expert_rockets": 203,
+        "rocket_replays": 161
+      },
+      "late_overtime_clock": {
+        "rows": 6422,
+        "replays": 215,
+        "plays": 3433,
+        "waits": 2989,
+        "expert_rockets": 320,
+        "rocket_replays": 171
+      }
+    }
+  },
+  "schedule_reproduced": true,
+  "all_original_labels_equal": true,
+  "optimizer_updates": 0
+}

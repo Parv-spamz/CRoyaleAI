@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\il_gradient_audit\\verify.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "IL_GRADIENT_VERIFIED",
+  "matched": true,
+  "output_sha256": "b07f236cf0e8f92e49cc2671d825291d398cf653b65b752c9b482b94e448471d",
+  "seconds": 24.850927591323853
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "-u",
+    "scratchpad/gauntlet/L72/improvement_loop/deal_recovery/run_reserved.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "RESERVED_DEAL_RECOVERY_CAPTURE_COMPLETE",
+  "matched": true,
+  "output_sha256": "f989615c273f8eaf45794f9cb01516d262b32f3928058b6d880414696d0f8b96",
+  "seconds": 559.4021980762482
+}

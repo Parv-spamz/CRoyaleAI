@@ -1,0 +1,770 @@
+===============================================================================
+ CROYALEAI - THE GENERALIST IMITATION BOT: SET-UP, TRAINING, TESTING, LIVE PLAY
+===============================================================================
+
+This guide takes a brand-new person on a Windows PC from "I just forked the repo"
+to "a model I trained myself plays full Clash Royale matches in a simulator on my
+PC". The last stage (live play in the real game) needs one piece this project
+cannot give you - read the next section first.
+
+Everything runs on YOUR OWN PC. No cloud, no rented GPUs.
+
+You do NOT need to be a programmer. Do the stages IN ORDER and copy-paste the
+commands exactly. Anything shown in an indented block like this:
+
+    some command here
+
+is a command you type into a terminal and press Enter.
+
+HOW THE BOT WORKS (the short version)
+  1. Start from recordings of real matches played by strong players (pro replays).
+     They are already inside the repo.
+  2. Re-play those matches inside a copy of the real game engine running on your
+     PC. This turns each replay into "what the board looked like" + "what the pro
+     did" at every moment, for BOTH players.
+  3. Train ONE neural network for ALL decks (the "generalist") to copy the pros'
+     decisions: which card to play, where to put it, or whether to wait.
+  4. Score it on matches it never trained on.
+  5. Let it play complete matches in RoyaleSim, a fast open-source re-make of the
+     game, to see whether it actually plays well (not just copies well).
+  6. (Owner set-up only) Let it play the real game on an Android emulator, reading
+     the board straight from the game's memory.
+
+This replaces the older "S1" guide (one icebow-only model that saw the game
+through screenshots and a YOLO unit detector). That route still exists in the
+code; see STAGE 15 if you want it.
+
+
+===============================================================================
+ READ THIS FIRST - WHAT THIS PROJECT CANNOT GIVE YOU
+===============================================================================
+
+  * THE GAME ENGINE'S FILES. The engine sandbox code is public, but the game files
+    it runs (APKs, libg.so, assets) are NOT redistributable. You must obtain the
+    EXACT game build 15.535.29 yourself (for example from an Android emulator you
+    own). Any other game version will not run - the sandbox checks file hashes.
+
+  * TRAINED MODELS. No trained model is included (the owner's generalist,
+    gen_v1_s0, is not in the repo). You train your own in this guide.
+
+  * THE LIVE MEMORY READER. The owner's bot plays the real game by reading the
+    board out of the game's memory on a rooted MuMu Player emulator. The reader
+    program (live_sampler) is NOT in this repository and there are no steps here
+    to build it. It only works with one exact game build (Clash Royale
+    versionCode 160402012, x86_64) and breaks when the game updates. Without the
+    reader you can do every stage except STAGE 14.
+
+  * THE OWNER'S TEST SETS. The owner's "ghost screen" (STAGE 13) replays 299 fixed
+    matches; 191 of them come from the owner's private replay crawl, which is not
+    shared. You can still test your model with STAGE 12, which needs nothing
+    private.
+
+Expect the whole guide to take a few days of on-and-off work. Most of the time is
+the computer running on its own (re-playing replays, training).
+
+
+===============================================================================
+ WHAT YOU NEED (checklist)
+===============================================================================
+
+[ ] Windows 10 or 11, 64-bit, with hardware VIRTUALIZATION turned on
+    (Task Manager -> Performance -> CPU -> "Virtualization: Enabled").
+[ ] An NVIDIA GPU. Tested on an 8 GB laptop GPU (RTX 5050). Training the
+    generalist used at most 3.7 GB of GPU memory.
+[ ] RAM: 32 GB recommended. The engine's virtual phone alone uses ~4.2 GB.
+[ ] Free disk: ~45 GB (Android tools ~15-20 GB, engine files ~1 GB, your
+    re-played matches ~1-4 GB, datasets ~0.3 GB each, RoyaleSim ~2 GB, room).
+[ ] Python 3.13 (tested with 3.13.14) from python.org - TICK "Add Python to PATH".
+[ ] Git for Windows (git-scm.com).
+[ ] JDK 17 and the Android SDK command-line tools (needed by the engine sandbox;
+    STAGE 3 tells you where).
+[ ] Rust (rustup.rs) and "Visual Studio 2022 Build Tools" with the C++ tools
+    (needed to build RoyaleSim in STAGE 11).
+[ ] Only for live play (STAGE 14): MuMu Player 15 with root turned on, Clash
+    Royale signed in, and the memory reader (see above).
+[ ] The deck this bot is tuned for ("Icebow X-Bow Control"):
+    Tornado, Evolved Tesla, Ice Wizard, X-Bow, Rocket, Evolved Knight, The Log,
+    Skeletons. The generalist was trained on thousands of decks, but the
+    simulator test (STAGE 12) and the live layer are set up for this one.
+
+
+===============================================================================
+ THE RULES FOR EVERY COMMAND
+===============================================================================
+
+1. Every stage starts with a line saying WHICH FOLDER to be in:
+
+     FOLDER: repo root    = the top folder you cloned (it contains "pipeline",
+                            "icebow", "research", ...)
+     FOLDER: icebow       = the "icebow" folder inside it
+     FOLDER: sandbox      = research\ext\cr-native-sandbox inside it
+     FOLDER: royale       = research\ext\Royale inside it
+
+2. Use PowerShell for every command.
+   (Start menu -> type "PowerShell" -> Enter.)
+
+3. There are THREE separate Python environments. Each command names the one it
+   needs, so you never have to "activate" anything:
+
+     icebow\.venv                          downloads, datasets, training,
+                                           scoring, live play
+     research\ext\cr-native-sandbox\.venv  the real-engine sandbox (STAGES 3-7)
+     research\ext\Royale\.venv             RoyaleSim matches (STAGES 11-13)
+
+4. Never run the engine sandbox, training, RoyaleSim matches and the live bot at
+   the same time, and never two GPU jobs at once. Each one needs a lot of memory;
+   together they crash or slow each other down badly.
+
+
+===============================================================================
+ STAGE 0 - COMPUTER SET-UP (one time)
+===============================================================================
+
+1. Install Python 3.13 (tick "Add Python to PATH").
+2. Install Git for Windows.
+3. Check Python works. In PowerShell:
+
+       python --version
+
+   You should see "Python 3.13.x". If it says "not recognized", re-install Python
+   and tick "Add Python to PATH".
+
+
+===============================================================================
+ STAGE 1 - GET THE CODE
+===============================================================================
+
+1. On GitHub, click "Fork" to make your own copy of the project.
+2. On your fork's page, click the green "Code" button and copy the HTTPS URL.
+3. In PowerShell:
+
+       cd $HOME\Documents
+       git clone <PASTE-YOUR-FORK-URL-HERE>
+       cd .\<the-cloned-folder-name>
+
+   You are now in the REPO ROOT. Remember where it is. The clone is big (about
+   1 GB) because the pro replays come with it.
+
+
+===============================================================================
+ STAGE 2 - INSTALL THE BOT'S PYTHON ENVIRONMENT
+===============================================================================
+FOLDER: icebow, then repo root
+
+1. Create the bot's private Python environment:
+
+       cd .\icebow
+       python -m venv .venv
+       .\.venv\Scripts\python.exe -m pip install --upgrade pip
+
+2. Install PyTorch with CUDA for your NVIDIA card FIRST. Newer cards (RTX 40/50 series):
+
+       .\.venv\Scripts\python.exe -m pip install torch --index-url https://download.pytorch.org/whl/cu128
+
+   Older cards: pick the matching command at https://pytorch.org/get-started/locally/
+   Torch MUST come before the next step: one of the packages needs torch, and if
+   torch is missing pip quietly installs the slow CPU-only version instead.
+
+3. Install the rest of the bot's packages, then go back to the repo root:
+
+       .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+       cd ..
+
+4. Check the training code and the helper tools work:
+
+       icebow\.venv\Scripts\python.exe -m unittest pipeline.tests.test_obs_contract
+       icebow\.venv\Scripts\python.exe -m unittest tools.tests.test_tools
+       icebow\.venv\Scripts\python.exe -m unittest pipeline.tests.test_model_gen pipeline.tests.test_dataset_gen
+
+   Each should end with "OK". The last one takes a few minutes.
+
+
+===============================================================================
+ STAGE 3 - INSTALL THE GAME ENGINE SANDBOX (one time)
+===============================================================================
+FOLDER: repo root, then sandbox
+
+The engine sandbox runs the real game's logic headless inside an Android emulator,
+so replays can be re-played exactly. Its own README is the full reference (it is
+written in Chinese; a browser translator works fine). These are the steps in order.
+
+1. Clone it into EXACTLY this folder (the replay tools look for it there):
+
+       git clone https://github.com/IMAX9D/cr-native-sandbox.git research\ext\cr-native-sandbox
+       cd research\ext\cr-native-sandbox
+
+2. Create its own Python environment and install it:
+
+       python -m venv .venv
+       .\.venv\Scripts\python.exe -m pip install -e .
+
+3. Install JDK 17 and the Android SDK command-line tools as the sandbox README
+   describes (section 1.1).
+
+4. Put the game files for build 15.535.29 (that you obtained yourself) into the
+   sandbox's "runtime" folder, as the README describes (sections 1.3-1.4):
+   runtime\apks, runtime\x86_64-libs, runtime\extracted-assets.
+
+5. Create your settings file and fill in YOUR paths (SDK, JDK, APKs, ...):
+
+       Copy-Item runtime.env.example.ps1 runtime.env.ps1
+       notepad runtime.env.ps1
+
+   IMPORTANT: every NEW PowerShell window that uses the engine must load it first:
+
+       . .\runtime.env.ps1
+
+6. Let the sandbox install the Android pieces it needs, create its virtual phone,
+   and check everything:
+
+       . .\runtime.env.ps1
+       .\scripts\bootstrap.ps1
+       .\scripts\doctor.ps1
+       .\scripts\smoke.ps1
+
+   The smoke test must print "PASS". If it does not, fix that before going on
+   (see TROUBLESHOOTING). Then go back to the repo root:
+
+       cd ..\..\..
+
+
+===============================================================================
+ STAGE 4 - PICK OUT THE PRO REPLAYS (one time)
+===============================================================================
+FOLDER: repo root
+
+The replays come from a public dataset on HuggingFace (VanguardX101/IL_Replay,
+about 252,000 matches in 52 files, ~825 MB). Check the dataset page for its
+licence before you use it. The 52 files are ALREADY in your clone, in
+scratchpad\gauntlet\L67\hf\replays - you do not need to download them.
+
+1. Check the copy in your clone is complete (reads only, downloads nothing):
+
+       icebow\.venv\Scripts\python.exe tools\hf_download.py --dry-run --dest scratchpad\gauntlet\L67\hf
+
+   It must end with "DONE (dry run) have 52 would-fetch 0". If it says some files
+   would be fetched, run the same line WITHOUT --dry-run to fetch them (safe to
+   re-run; finished files are checked and skipped).
+
+2. Pick out the matches of the two decks this project grew up with, Icebow and
+   Hog EQ, and convert them to the format the engine reads. The generalist learns
+   from BOTH players of every match, so the opponents' decks are training data too:
+
+       icebow\.venv\Scripts\python.exe tools\hf_to_crawl.py icebow --hf scratchpad\gauntlet\L67\hf\replays
+       icebow\.venv\Scripts\python.exe tools\hf_to_crawl.py hogeq --hf scratchpad\gauntlet\L67\hf\replays
+
+   You get data\hf_crawl\icebow\ and data\hf_crawl\hogeq\, each with battles.csv,
+   plays_ext.csv and tags.json (the list of matches to re-play). About 766 of the
+   matches use the Icebow deck. A note that the duplicate check was skipped is
+   normal - that check only applies to the project owner's own replays.
+
+   For a much bigger, many-deck set, see STAGE 6B (optional).
+
+
+===============================================================================
+ STAGE 5 - START THE ENGINE
+===============================================================================
+FOLDER: sandbox  (a NEW PowerShell window, left open)
+
+1. Start the virtual phone and the engine service (one "slot"):
+
+       cd <your repo root>\research\ext\cr-native-sandbox
+       . .\runtime.env.ps1
+       .\.venv\Scripts\python.exe -m native_core.worker start --workers 1 --base-port 37031 --transport adb --avd-name royale_worker_api31
+
+   It takes several minutes. About 1 start in 10 fails with a crash inside the
+   engine - that is a known engine bug, not your mistake. Just run the same start
+   command again.
+
+2. Check it answers:
+
+       .\.venv\Scripts\python.exe -m native_core.client --port 37031 ping
+
+Leave this window open. The engine stays running in the background until you stop
+it in STAGE 7.
+
+
+===============================================================================
+ STAGE 6 - RE-PLAY THE PRO MATCHES IN THE ENGINE (builds your corpus)
+===============================================================================
+FOLDER: repo root  (a different PowerShell window)
+
+This re-plays every picked match inside the engine and saves one file per match
+with the board recorded along the way. Run the Icebow set, then the Hog EQ set:
+
+    research\ext\cr-native-sandbox\.venv\Scripts\python.exe research\sandbox_tools\replay_batch.py --crawl data\hf_crawl\icebow --tags data\hf_crawl\icebow\tags.json --out data\corpus_v6\icebow --record-every 20 --record-plays --port 37031 --determinism-every 0
+
+    research\ext\cr-native-sandbox\.venv\Scripts\python.exe research\sandbox_tools\replay_batch.py --crawl data\hf_crawl\hogeq --tags data\hf_crawl\hogeq\tags.json --out data\corpus_v6\hogeq --record-every 20 --record-plays --port 37031 --determinism-every 0
+
+  * DO NOT leave out --record-every 20 or --record-plays. Without them the files
+    look fine but the dataset in STAGE 8 silently gets no "wait" examples.
+  * On the owner's laptop a match took about 8-15 seconds; allow up to 25. For
+    ~766 Icebow matches that is a few hours. If it stops, run the SAME command
+    again - finished matches are skipped.
+  * Some matches fail with "card has no native evolution form". That is a known
+    gap in the engine (it cannot build some evolved cards). For the Icebow set the
+    owner got 603 good matches out of 766.
+
+Check the first finished file really recorded the board: open any
+data\corpus_v6\icebow\replay_*.json in Notepad and search for "frames". It must
+be there and not empty.
+
+
+===============================================================================
+ STAGE 6B - OPTIONAL: A BIG MANY-DECK CORPUS
+===============================================================================
+FOLDER: repo root  (engine still running from STAGE 5)
+
+The owner's generalist (gen_v1) was trained on the Icebow + Hog EQ corpus PLUS a
+"pilot" slice: the 100 most-played decks in the dataset, up to 200 games each
+(17,853 matches). This step builds the same slice. It is BIG: about 36% of those
+matches fail at once (they contain the evolved Elite Barbarians, which the engine
+cannot build), and the rest take the same 8-25 seconds each, so expect well over
+a day of non-stop running on one engine slot (an estimate; the owner ran it on a
+4-slot cloud machine in about 2.4 hours). It ended with 11,415 good matches and
+3.1 GB of files. Skip it for a first run.
+
+1. Choose the matches (writes scratchpad\gauntlet\L68\generalist\pilot_tags.json):
+
+       icebow\.venv\Scripts\python.exe scratchpad\gauntlet\L68\generalist\pilot_select.py
+
+2. Convert them, in chunks of 250 matches:
+
+       icebow\.venv\Scripts\python.exe tools\hf_to_crawl.py --tags-file scratchpad\gauntlet\L68\generalist\pilot_tags.json --chunk 250 --hf scratchpad\gauntlet\L67\hf\replays --out data\hf_crawl\multi
+
+   It ends with "wrote 17853 replays to data\hf_crawl\multi" (the owner's count)
+   and makes folders chunk_000, chunk_001, ... inside it.
+
+3. Re-play every chunk (one long command; re-run it after a stop - finished
+   matches are skipped):
+
+       foreach ($c in Get-ChildItem data\hf_crawl\multi -Directory -Filter chunk_*) { research\ext\cr-native-sandbox\.venv\Scripts\python.exe research\sandbox_tools\replay_batch.py --crawl $c.FullName --tags "$($c.FullName)\tags.json" --out data\corpus_multi --record-every 20 --record-plays --port 37031 --determinism-every 0 }
+
+
+===============================================================================
+ STAGE 7 - STOP THE ENGINE
+===============================================================================
+FOLDER: sandbox  (the STAGE 5 window)
+
+When STAGE 6 (and 6B, if you ran it) is finished, stop the engine AND its virtual
+phone (without --stop-vm the phone keeps ~4 GB of memory):
+
+    .\.venv\Scripts\python.exe -m native_core.worker stop --workers 1 --base-port 37031 --stop-vm
+
+
+===============================================================================
+ STAGE 8 - BUILD THE TRAINING DATASET
+===============================================================================
+FOLDER: repo root
+
+Turn the corpus into rows the network learns from: one row per decision, for both
+players, whatever deck they used. Give every corpus folder after --corpus:
+
+    New-Item -ItemType Directory -Force icebow\data\pipeline
+    icebow\.venv\Scripts\python.exe -m pipeline.dataset_gen --corpus data\corpus_v6\icebow data\corpus_v6\hogeq --out icebow\data\pipeline\gen_dataset_mine.npz
+
+  * If you ran STAGE 6B, add  data\corpus_multi  after  data\corpus_v6\hogeq .
+    A match found in two folders is only used once.
+  * It prints progress lines, then one long line with the totals: "rows",
+    "play_rows", "wait_rows", "val_rows", "decks". For scale: the owner's
+    14,661 matches gave 3,745,692 rows from 4,283 decks in about 9 minutes.
+  * 10% of the matches are kept aside automatically to test the model on (the
+    "val" split).
+  * "v3val_rows": 0 is normal for you. That is a special test set built from the
+    owner's own files.
+  * The October 2026 fix for contradictory "wait" rows (commit 3153fa4) is part of
+    this code, so your dataset already has it. The owner's matching file is
+    gen_dataset_v2.npz; gen_dataset_v1.npz was built before the fix.
+
+
+===============================================================================
+ STAGE 9 - TRAIN THE GENERALIST
+===============================================================================
+FOLDER: repo root
+
+This is the owner's exact recipe for gen_v1_s0 (only the file names differ):
+
+    icebow\.venv\Scripts\python.exe -m pipeline.train_gen --data icebow\data\pipeline\gen_dataset_mine.npz --seed 0 --epochs 4 --val-sample 30000 --grid lattice --out-dir icebow\data\pipeline\gen_mine_s0
+
+  * KEEP --grid lattice and --epochs 4. Without them the trainer uses a different
+    placement grid ("floor") and 20 epochs.
+  * It uses your GPU automatically. The owner's 3.7-million-row dataset took about
+    1 hour per epoch (about 900 rows per second) on the 8 GB laptop GPU; a smaller
+    dataset is quicker.
+  * After every epoch it prints a line of scores. It keeps the best epoch (best
+    placement score on 30,000 val rows) and saves it to:
+        icebow\data\pipeline\gen_mine_s0\gen_s0.pt
+    beside hist_gen_s0.json (every epoch) and final_gen_s0.json (the summary).
+  * Close the game, the engine and RoyaleSim while it trains.
+
+WHAT THE OWNER IS DOING NEXT (for reference, not a step for you): gen_v2 = the
+same command on gen_dataset_v2.npz, saving every epoch, then picking the best
+epoch by a combined play/wait/card/spot score plus simulator matches. The scripts
+are scratchpad\gauntlet\L69\gen_v2\train_gen_v2.sh and select.sh (Git Bash
+scripts with the owner's paths). As of 2026-10-01 gen_v2 is queued, not trained;
+gen_v1_s0 is still the owner's live model.
+
+
+===============================================================================
+ STAGE 10 - CHECK THE MODEL ON HELD-OUT MATCHES
+===============================================================================
+FOLDER: repo root
+
+Score the model on the 10% of matches it never trained on:
+
+    icebow\.venv\Scripts\python.exe -m pipeline.eval_gen --ckpt icebow\data\pipeline\gen_mine_s0\gen_s0.pt --data icebow\data\pipeline\gen_dataset_mine.npz
+
+It prints a few lines and saves the full result next to the model (gen_s0.eval.json).
+Look at the "val_all" line (the "v3val" line is empty for you, see STAGE 8):
+  * card_top1       - how often it picks the same card as the pro
+  * cell_tile_top1  - how often it picks the same tile as the pro
+  * gate_bal_acc    - how well it decides "play now" vs "wait" (0.5 = coin flip)
+For reference, the owner's gen_v1_s0 scored card 0.603, tile 0.216 and
+gate_bal_acc 0.710 on its all-deck val rows (92,189 pro plays). A model trained
+on fewer matches should expect lower numbers.
+
+Copying the pros well does not guarantee playing well. That is what STAGE 12 is for.
+
+
+===============================================================================
+ STAGE 11 - INSTALL ROYALESIM, THE FAST SIMULATOR (one time)
+===============================================================================
+FOLDER: repo root, then royale
+
+RoyaleSim is an open-source re-make of the game engine written in Rust. It plays a
+whole match in well under a minute with no emulator, so it is how this project
+tests models by letting them PLAY. Its README (research\ext\Royale\RoyaleSim\
+README.md, section "Install") is the full reference.
+
+1. Install Rust from https://rustup.rs (run rustup-init.exe, accept the defaults).
+   If it says the Visual Studio C++ build tools are missing, install "Visual
+   Studio 2022 Build Tools" with the "Desktop development with C++" workload,
+   then run rustup-init again. Open a NEW PowerShell window and check:
+
+       rustc --version
+
+   It must say 1.80 or newer.
+
+2. Clone the four RoyaleGym repos into EXACTLY this folder:
+
+       New-Item -ItemType Directory -Force research\ext\Royale
+       cd research\ext\Royale
+       git clone https://github.com/RoyaleGym/RoyaleSim.git
+       git clone https://github.com/RoyaleGym/RoyaleGym.git
+       git clone https://github.com/RoyaleGym/RoyaleViser.git
+       git clone https://github.com/RoyaleGym/RoyaleLearn.git
+
+3. Make its Python environment (this one MUST be Python 3.12 or newer):
+
+       python -m venv .venv
+       .venv\Scripts\python --version
+       .venv\Scripts\python -m pip install maturin pytest hypothesis ruff numpy msgspec mypy
+
+4. Make the card and arena tables. The Copy-Item line matters: it puts the card
+   table the simulator is calibrated on in place:
+
+       cd RoyaleSim
+       ..\.venv\Scripts\python tools\extract_arena.py
+       ..\.venv\Scripts\python tools\extract_cards.py --vintage 2018
+       Copy-Item data\derived\cards-15.535.json data\derived\cards.json
+       ..\.venv\Scripts\python tools\extract_globals.py
+
+   Each prints a page of table names and notes. That is normal, not errors.
+
+5. Build the engine (slow: about 11 minutes on the owner's laptop; it can go
+   quiet for minutes - let it finish). Then go back to the royale folder:
+
+       ..\.venv\Scripts\maturin develop --release
+       cd ..
+
+6. Install the rest of the stack, then PyTorch and PyYAML (this project's code
+   runs inside this environment too):
+
+       .venv\Scripts\python -m pip install -e RoyaleGym
+       .venv\Scripts\python -m pip install -e RoyaleViser
+       .venv\Scripts\python -m pip install -e RoyaleLearn
+       .venv\Scripts\python -m pip install torch --index-url https://download.pytorch.org/whl/cu128
+       .venv\Scripts\python -m pip install pyyaml
+
+7. Check it, then go back to the repo root:
+
+       .venv\Scripts\python -c "import royalesim, royalegym, torch, yaml; print('royale ok')"
+       cd ..\..\..
+
+   It must print "royale ok".
+
+VERSION NOTE: this project was last checked against RoyaleSim commit 369fe33
+(2026-10-01). RoyaleSim changes often. If a later version breaks the stages
+below, go back to that one and rebuild:
+
+       cd research\ext\Royale\RoyaleSim
+       git checkout 369fe33
+       Copy-Item data\derived\cards-15.535.json data\derived\cards.json
+       ..\.venv\Scripts\maturin develop --release
+       cd ..\..\..\..
+
+What the simulator does NOT have: Hero Ice Wizard (it plays the normal Ice
+Wizard) and a few event cards. Evolved Tesla and Evolved Knight do load.
+
+
+===============================================================================
+ STAGE 12 - LET YOUR MODEL PLAY FULL MATCHES IN ROYALESIM
+===============================================================================
+FOLDER: repo root
+
+"Reactive play": your model plays Icebow (with its evolutions) for complete
+matches against a frozen copy of a model playing a deck drawn from the project's
+list of popular decks. Both sides react to each other, like a real match. This is
+the owner's main "does it actually play well" test.
+
+    research\ext\Royale\.venv\Scripts\python.exe -m pipeline.search_s0 --out data\reactive\mine_vs_mine --seeds 0:24 --opps gen --arms plain --gen icebow\data\pipeline\gen_mine_s0\gen_s0.pt --s1 icebow\data\pipeline\gen_mine_s0\gen_s0.pt --forms-mode deck --device cuda --workers 3 --threads 1
+
+  * --gen is the model being tested. --opp-gen is the frozen opponent model; left
+    out, it is the same file as --gen.
+  * --seeds 0:24 = 24 matches. Each seed fixes the opponent's deck and which side
+    you play, so the same seeds give the same match-ups every time.
+  * --s1 is a workaround: the program records a fingerprint of the owner's icebow
+    "S1" model even when it is not playing, and stops if that file is missing.
+    Pointing --s1 at your own model avoids that; with --opps gen it never plays.
+  * The --out folder must be new or empty; the program refuses to overwrite.
+  * The owner's run of 48 such matches took about 11.5 minutes on the GPU.
+
+Results are in data\reactive\mine_vs_mine\summary.json (open it in Notepad).
+Under "plain|gen": "win", "loss", "draw", and "tower_hp_diff_mean" (your tower
+hit points left minus the opponent's, averaged; above 0 is good).
+
+A model against a copy of ITSELF should win about half (the owner's gen_v1 won
+12 of 24 against itself). The useful test is a NEW model against an OLD one: run
+the command with --gen <new model> --opp-gen <old model> and a new --out folder.
+Clearly more than 12 wins out of 24 (and a positive tower_hp_diff_mean) means the
+new one plays better. With 24 matches, a difference of two or three wins can be
+luck.
+
+
+===============================================================================
+ STAGE 13 - THE OWNER'S GHOST SCREEN (owner's files only)
+===============================================================================
+FOLDER: repo root
+
+The owner's other simulator test replays 299 fixed real matches: the opponent
+repeats exactly what the real opponent did (a "ghost"), and your model plays the
+Icebow side under live-like conditions (clean board view, opponent elixir only
+counted from what it can see, a 26-tick delay before a card lands, and the board
+projected 26 ticks ahead). It needs the owner's ghost pool
+(icebow\data\ghost_pool\pool_env_v1.jsonl), which is NOT in the repo and is built
+partly from the owner's private replay crawl, so this stage does not run on a
+fresh fork. It is listed so the owner's numbers in HANDOFF.md make sense.
+
+    research\ext\Royale\.venv\Scripts\python.exe scratchpad\gauntlet\L68\generalist\screen_gen\run_screen.py --ckpt <model.pt> --out <result.jsonl> --split train --only-tags-from scratchpad\gauntlet\L68\generalist\lat26\screens\train_C.jsonl --noise-off all --opp-elixir counter --action-delay 26 --extrapolate 26 --seeds 0 --tau 0.27 --forms-mode deck --device cuda
+
+Then compare two results, B against A (A = the reference):
+
+    research\ext\Royale\.venv\Scripts\python.exe scratchpad\gauntlet\L68\generalist\screen_gen\run_screen.py --pair <A.jsonl> <B.jsonl>
+
+For reference: gen_v1_s0 won 0.926 of the 299 at --tau 0.27 on the 2026-10-01
+engine (about 12 minutes on the GPU). The 299 are mostly wins already, so this
+test cannot show big improvements; STAGE 12 is the more telling one.
+
+
+===============================================================================
+ STAGE 14 - LIVE PLAY WITH THE MEMORY READER (owner set-up only)
+===============================================================================
+FOLDER: repo root
+
+READ "WHAT THIS PROJECT CANNOT GIVE YOU" FIRST. This stage only works on a PC set
+up like the owner's:
+  * MuMu Player 15 installed in its default folder. The program uses
+    C:\Program Files\Netease\MuMuPlayer\nx_device\15.0\shell\adb.exe and the
+    emulator address 127.0.0.1:16384 (both written into live_play.py).
+  * Root turned on in MuMu's settings (the reader needs it).
+  * Clash Royale versionCode 160402012 (x86_64) inside MuMu, signed in.
+  * The reader program already on the emulator at /data/local/tmp/live_sampler.
+  * MuMu's screen set to 900 x 1600 if you use --matches or --menu-guard.
+
+LIVE MATCH MODES:
+  * The live player supports Training Camp, friendly, Classic, ranked and
+    trophy-ladder matches. Start the desired match manually before launching it.
+    The optional --matches/--friend route automates repeated friendly matches.
+  * Play on an idle, plugged-in PC. When other jobs used the CPU, the bot's
+    decisions slowed from ~40 ms to 0.5-3.4 seconds and it played badly. If it
+    prints "CPU-STARVED", stop it and close other jobs.
+
+1. Stop any training, engine or RoyaleSim job.
+2. Open Clash Royale in MuMu and start a Training Camp match.
+3. First a test that decides and logs but NEVER taps:
+
+       icebow\.venv\Scripts\python.exe scratchpad\gauntlet\L68\live_reader\live_play.py --dry-run --ckpt icebow\data\pipeline\gen_mine_s0\gen_s0.pt
+
+4. The real thing (one match):
+
+       icebow\.venv\Scripts\python.exe scratchpad\gauntlet\L68\live_reader\live_play.py --ckpt icebow\data\pipeline\gen_mine_s0\gen_s0.pt
+
+   It waits for the battle clock to start, plays the match, and stops when the
+   match ends. Press Ctrl+C to stop it early.
+
+Useful flags (full list: add --help):
+  --ckpt <file>        the model to play (default: the owner's gen_v1_s0)
+  --tau 0.5            how eager it is to play (default 0.5; lower = plays more
+                       often). The simulator tests use 0.27-0.35.
+  --max-seconds 400    stop after this many seconds per match
+  --no-record          do not record a video (default: a video with the reader's
+                       view drawn on it goes to icebow\data\overlayed_replays\)
+  --overlay reader     what the video shows: reader, detector or both. The
+                       detector option needs the old YOLO detector (STAGE 15);
+                       without it the video just has no detector boxes.
+  --no-ability         never press the hero ability button (pressed by rule
+                       when the deck has a hero)
+  --menu-guard         stop the match if a menu appears (OFF by default: its
+                       screenshots overloaded adb and made taps 3-5 s late)
+  --matches 5 --friend <name>
+                       play 5 friendlies in a row; between matches it goes
+                       back to the friend list and starts the next friendly
+                       1v1 against that friend. It only works for the friend
+                       whose screens the owner cut pictures for
+                       (scratchpad\gauntlet\L69\nav\templates); any other
+                       name is refused. Re-cutting them needs code changes.
+  --invite-wait 20     friend loop: seconds to wait for the friend's invite
+                       before sending one
+  --nav-dry-run --friend <name>
+                       test the friend-loop screens: it classifies the screen
+                       and logs the tap it WOULD make, never tapping
+
+Each match writes a log, live_play_<date>_<time>.jsonl, in
+scratchpad\gauntlet\L68\live_reader\.
+
+
+===============================================================================
+ STAGE 15 - OPTIONAL EXTRAS
+===============================================================================
+
+* THE OLDER SCREEN-READING BOT (S1 + YOLO). Before the generalist, the project
+  trained an icebow-only model ("S1") and played it in Google Play Games for PC by
+  screenshotting the window and finding units with a YOLO detector that you
+  label and train yourself. That code still works with S1 models only - it cannot
+  load a generalist. It is the only live route that does not need the memory
+  reader. Its full guide is the previous version of this file:
+
+      git show afa2db3:icebow/Instructions.txt
+
+* REINFORCEMENT LEARNING (research, not part of this guide). The owner is testing
+  whether self-play in RoyaleSim can improve the generalist after imitation. It is
+  experimental and runs for many hours on the GPU. Start with HANDOFF.md (section
+  3) and scratchpad\gauntlet\L69\reward_plan.md.
+
+* SAVE YOUR WORK: code changes can be pushed with git. Everything in the "data"
+  folders (corpora, datasets, models) stays on your PC on purpose. Do NOT
+  "git add" the scratchpad\gauntlet\L68\live_reader\live_sampler file or game files.
+
+
+===============================================================================
+ TROUBLESHOOTING
+===============================================================================
+
+The engine smoke test (STAGE 3) does not print PASS:
+  Run  .\scripts\doctor.ps1  in the sandbox folder (after  . .\runtime.env.ps1 )
+  and fix what it lists. The most common causes are a wrong path in
+  runtime.env.ps1, virtualization turned off, or game files that are not exactly
+  build 15.535.29.
+
+The engine start (STAGE 5) fails:
+  About 1 start in 10 crashes inside the engine. Run the start command again.
+  If it keeps failing, run the stop command with --stop-vm, then start again.
+
+Replays in STAGE 6 never advance / time out:
+  Make sure only ONE program talks to the engine at a time (close any second
+  replay_batch window). If every replay stalls at the very start, the public
+  sandbox may be missing a fix the project owner uses locally - check the
+  project's issue tracker.
+
+Many replays fail with "card has no native evolution form":
+  Known engine gap (some evolved cards cannot be built, e.g. evolved Elite
+  Barbarians). Those matches are skipped; nothing to fix.
+
+The hf_download check (STAGE 4) says files would be fetched:
+  Your clone is missing some replay files. Run the same line without --dry-run.
+
+The dataset in STAGE 8 has 0 "wait" rows, or many "no_frames":
+  STAGE 6 ran without --record-every 20. Delete that corpus folder and re-run
+  STAGE 6 with the exact command shown.
+
+"CUDA not available" / training is very slow:
+  PyTorch is the CPU build or your NVIDIA driver is old. Redo STAGE 2 step 2 (or
+  STAGE 11 step 6 for RoyaleSim) and update the driver.
+
+Training or a test crashes with "CUDA error" or "out of memory":
+  Something else is using the GPU (another training run, RoyaleSim, the live
+  bot). Run one thing at a time.
+
+"maturin develop" fails (STAGE 11):
+  Rust or the Visual Studio C++ build tools are missing, or the RoyaleSim venv is
+  older than Python 3.12. Redo STAGE 11 steps 1 and 3.
+
+RoyaleSim refuses its card table ("no card of that name"):
+  data\derived\cards.json is an old copy. After every RoyaleSim update run, in
+  research\ext\Royale\RoyaleSim:
+      Copy-Item data\derived\cards-15.535.json data\derived\cards.json
+
+STAGE 12 says "REFUSING: ... exists and is not empty":
+  Use a new --out folder for every run.
+
+STAGE 12 stops with "No such file" for s1_icebow_v6aug_s1.pt:
+  You left out  --s1 <your model>  (see STAGE 12).
+
+STAGE 12 stops with "opponent gen grid ... != self-model grid ...":
+  Both models must be trained with the same grid; use --grid lattice (STAGE 9).
+
+STAGE 13 cannot find the ghost pool:
+  Expected on a fork; that stage needs the owner's files.
+
+live_play says "MuMu not reachable":
+  MuMu is not running, or adb lost it. Start MuMu and try again. The program
+  reconnects and turns on root by itself each start.
+
+live_play stops with "reader_closed" or "reader_silent":
+  The reader could not read the game. Most likely the game updated - the reader
+  only works with one exact game build.
+
+live_play says "refusing: the nav templates are 900x1600":
+  Set MuMu's resolution to 900 x 1600, or play single matches (no --matches).
+
+
+===============================================================================
+ QUICK COMMAND CHEAT-SHEET
+===============================================================================
+
+ Replays -> engine -> dataset -> model   (FOLDER: repo root unless noted)
+   icebow\.venv\Scripts\python.exe tools\hf_download.py --dry-run --dest scratchpad\gauntlet\L67\hf
+   icebow\.venv\Scripts\python.exe tools\hf_to_crawl.py icebow --hf scratchpad\gauntlet\L67\hf\replays
+   icebow\.venv\Scripts\python.exe tools\hf_to_crawl.py hogeq --hf scratchpad\gauntlet\L67\hf\replays
+   (sandbox)  . .\runtime.env.ps1
+   (sandbox)  .\.venv\Scripts\python.exe -m native_core.worker start --workers 1 --base-port 37031 --transport adb --avd-name royale_worker_api31
+   research\ext\cr-native-sandbox\.venv\Scripts\python.exe research\sandbox_tools\replay_batch.py --crawl data\hf_crawl\icebow --tags data\hf_crawl\icebow\tags.json --out data\corpus_v6\icebow --record-every 20 --record-plays --port 37031 --determinism-every 0
+   research\ext\cr-native-sandbox\.venv\Scripts\python.exe research\sandbox_tools\replay_batch.py --crawl data\hf_crawl\hogeq --tags data\hf_crawl\hogeq\tags.json --out data\corpus_v6\hogeq --record-every 20 --record-plays --port 37031 --determinism-every 0
+   (sandbox)  .\.venv\Scripts\python.exe -m native_core.worker stop --workers 1 --base-port 37031 --stop-vm
+   icebow\.venv\Scripts\python.exe -m pipeline.dataset_gen --corpus data\corpus_v6\icebow data\corpus_v6\hogeq --out icebow\data\pipeline\gen_dataset_mine.npz
+   icebow\.venv\Scripts\python.exe -m pipeline.train_gen --data icebow\data\pipeline\gen_dataset_mine.npz --seed 0 --epochs 4 --val-sample 30000 --grid lattice --out-dir icebow\data\pipeline\gen_mine_s0
+   icebow\.venv\Scripts\python.exe -m pipeline.eval_gen --ckpt icebow\data\pipeline\gen_mine_s0\gen_s0.pt --data icebow\data\pipeline\gen_dataset_mine.npz
+
+ Simulator test   (FOLDER: repo root)
+   research\ext\Royale\.venv\Scripts\python.exe -m pipeline.search_s0 --out data\reactive\mine_vs_mine --seeds 0:24 --opps gen --arms plain --gen icebow\data\pipeline\gen_mine_s0\gen_s0.pt --s1 icebow\data\pipeline\gen_mine_s0\gen_s0.pt --forms-mode deck --device cuda --workers 3 --threads 1
+
+ Live play, owner set-up only   (FOLDER: repo root)
+   icebow\.venv\Scripts\python.exe scratchpad\gauntlet\L68\live_reader\live_play.py --dry-run --ckpt icebow\data\pipeline\gen_mine_s0\gen_s0.pt
+   icebow\.venv\Scripts\python.exe scratchpad\gauntlet\L68\live_reader\live_play.py --ckpt icebow\data\pipeline\gen_mine_s0\gen_s0.pt
+
+ Help (any of the programs above)
+   add  --help  to the end of the command
+
+
+===============================================================================
+ NOTE FOR MAC USERS
+===============================================================================
+
+RoyaleSim (STAGES 11-13) also installs on macOS and Linux (its README says how).
+The engine sandbox (STAGES 3-7) was run by the owner on Windows and on a Linux
+cloud machine, never on a Mac. Live play (STAGE 14) is set up only for MuMu
+Player on Windows. A Mac route has not been tested with the generalist.
+
+===============================================================================
+ That's everything. Work through the stages in order. Good luck!
+===============================================================================

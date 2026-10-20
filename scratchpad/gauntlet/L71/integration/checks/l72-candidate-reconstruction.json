@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:/Users/benpe/ClashBot/icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/audit_candidate_reconstruction.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "CANDIDATE_RECONSTRUCTION_AUDITED",
+  "matched": true,
+  "output_sha256": "477f42e92bc936719130234379b050ec7177dc71e115c55760d4aa42dea8c9b5",
+  "seconds": 2.539583444595337
+}

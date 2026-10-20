@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/terminal_wrapper/check_native.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "TERMINAL_WRAPPER_NATIVE_COMPLETE",
+  "matched": true,
+  "output_sha256": "b2df319b35fe8e3c5969b33ab636fb146480eee54c6d30e9887d99c554350b97",
+  "seconds": 64.27002620697021
+}

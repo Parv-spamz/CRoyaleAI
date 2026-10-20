@@ -1,0 +1,16 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "pipeline/tests/test_expert_diagnostics.py",
+    "-q"
+  ],
+  "cwd": "C:\\Users\\benpe\\.codex\\worktrees\\learned-defence\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "3 passed",
+  "matched": true,
+  "output_sha256": "cc591aad89f5953691668ae9521e615616ded26f2a837eb84d6aa717b0c28a0f",
+  "seconds": 5.480901479721069
+}

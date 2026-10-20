@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "replays": 20,
+  "repeats": 4,
+  "inputs_sha256": "cc0c005ae812aa302b8e07c4cd72b9c27574e35600463c12869485b8045471b1",
+  "remote_hashes_sha256": "a89e7b8944f5ef3cb6542a6521597494bffc26b8a48b402368eab784010b473e",
+  "progress_sha256": "74c0333aad9de52e838cc96598be41e040fb736ff7a909decae6113e4f766115",
+  "fields_sha256": "6b56b5d68e7c96f6f364299a802e52c7b4399e3ef1db6b45eba45dc815322736",
+  "negative_control_passed": true
+}

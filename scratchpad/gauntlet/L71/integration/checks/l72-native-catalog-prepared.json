@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/prepare_native_catalog_correction.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "NATIVE_CATALOG_ISOLATED_PREPARED",
+  "matched": true,
+  "output_sha256": "9ab8909bd0a10dbc0cd74c152b28a5589ea8d8ce14358f6c64d5169b5b91bbbf",
+  "seconds": 0.31591248512268066
+}

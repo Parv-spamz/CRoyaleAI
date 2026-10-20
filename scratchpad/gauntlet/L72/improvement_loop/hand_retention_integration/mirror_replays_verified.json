@@ -1,0 +1,7828 @@
+{
+  "complete": true,
+  "totals": {
+    "training/primary/old": {
+      "queries": 2272,
+      "full": 1008,
+      "full_exact": 980,
+      "in_claims": 6222,
+      "in_correct": 6190,
+      "out_claims": 8351,
+      "out_correct": 8297,
+      "issues": 129,
+      "mirror_queries": 0
+    },
+    "training/primary/mirror_successor": {
+      "queries": 2272,
+      "full": 1008,
+      "full_exact": 980,
+      "in_claims": 6222,
+      "in_correct": 6190,
+      "out_claims": 8351,
+      "out_correct": 8297,
+      "issues": 129,
+      "mirror_queries": 0
+    },
+    "development/primary/old": {
+      "queries": 10424,
+      "full": 4354,
+      "full_exact": 4245,
+      "in_claims": 28611,
+      "in_correct": 28448,
+      "out_claims": 38620,
+      "out_correct": 38370,
+      "issues": 719,
+      "mirror_queries": 0
+    },
+    "development/primary/mirror_successor": {
+      "queries": 10424,
+      "full": 4367,
+      "full_exact": 4253,
+      "in_claims": 28680,
+      "in_correct": 28511,
+      "out_claims": 38643,
+      "out_correct": 38394,
+      "issues": 713,
+      "mirror_queries": 41
+    }
+  },
+  "per_replay": {
+    "000YL9U0U8JL": {
+      "training/primary/old": {
+        "queries": 42,
+        "full": 22,
+        "full_exact": 22,
+        "in_claims": 108,
+        "in_correct": 108,
+        "out_claims": 148,
+        "out_correct": 147,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 42,
+        "full": 22,
+        "full_exact": 22,
+        "in_claims": 108,
+        "in_correct": 108,
+        "out_claims": 148,
+        "out_correct": 147,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "000YLL22U0YL": {
+      "training/primary/old": {
+        "queries": 48,
+        "full": 17,
+        "full_exact": 13,
+        "in_claims": 119,
+        "in_correct": 115,
+        "out_claims": 172,
+        "out_correct": 168,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 48,
+        "full": 17,
+        "full_exact": 13,
+        "in_claims": 119,
+        "in_correct": 115,
+        "out_claims": 172,
+        "out_correct": 168,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "000YLL2YLGCC": {
+      "training/primary/old": {
+        "queries": 38,
+        "full": 16,
+        "full_exact": 16,
+        "in_claims": 92,
+        "in_correct": 92,
+        "out_claims": 132,
+        "out_correct": 132,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 38,
+        "full": 16,
+        "full_exact": 16,
+        "in_claims": 92,
+        "in_correct": 92,
+        "out_claims": 132,
+        "out_correct": 132,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "000YLL9RURY8": {
+      "training/primary/old": {
+        "queries": 56,
+        "full": 11,
+        "full_exact": 11,
+        "in_claims": 135,
+        "in_correct": 134,
+        "out_claims": 204,
+        "out_correct": 203,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 56,
+        "full": 11,
+        "full_exact": 11,
+        "in_claims": 135,
+        "in_correct": 134,
+        "out_claims": 204,
+        "out_correct": 203,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "000YLLP9GUCJ": {
+      "training/primary/old": {
+        "queries": 56,
+        "full": 21,
+        "full_exact": 21,
+        "in_claims": 145,
+        "in_correct": 145,
+        "out_claims": 204,
+        "out_correct": 204,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 56,
+        "full": 21,
+        "full_exact": 21,
+        "in_claims": 145,
+        "in_correct": 145,
+        "out_claims": 204,
+        "out_correct": 204,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "000YLLPRPV02": {
+      "training/primary/old": {
+        "queries": 107,
+        "full": 40,
+        "full_exact": 40,
+        "in_claims": 319,
+        "in_correct": 319,
+        "out_claims": 408,
+        "out_correct": 408,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 107,
+        "full": 40,
+        "full_exact": 40,
+        "in_claims": 319,
+        "in_correct": 319,
+        "out_claims": 408,
+        "out_correct": 408,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "000YLPVJ982P": {
+      "training/primary/old": {
+        "queries": 81,
+        "full": 40,
+        "full_exact": 40,
+        "in_claims": 233,
+        "in_correct": 233,
+        "out_claims": 304,
+        "out_correct": 304,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 81,
+        "full": 40,
+        "full_exact": 40,
+        "in_claims": 233,
+        "in_correct": 233,
+        "out_claims": 304,
+        "out_correct": 304,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "000YLY0JCPGL": {
+      "training/primary/old": {
+        "queries": 121,
+        "full": 74,
+        "full_exact": 73,
+        "in_claims": 387,
+        "in_correct": 386,
+        "out_claims": 464,
+        "out_correct": 463,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 121,
+        "full": 74,
+        "full_exact": 73,
+        "in_claims": 387,
+        "in_correct": 386,
+        "out_claims": 464,
+        "out_correct": 463,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "000YLY0PYYQY": {
+      "training/primary/old": {
+        "queries": 33,
+        "full": 0,
+        "full_exact": 0,
+        "in_claims": 55,
+        "in_correct": 55,
+        "out_claims": 112,
+        "out_correct": 112,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 33,
+        "full": 0,
+        "full_exact": 0,
+        "in_claims": 55,
+        "in_correct": 55,
+        "out_claims": 112,
+        "out_correct": 112,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "000YLY2UCC8C": {
+      "training/primary/old": {
+        "queries": 37,
+        "full": 16,
+        "full_exact": 16,
+        "in_claims": 88,
+        "in_correct": 88,
+        "out_claims": 128,
+        "out_correct": 128,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 37,
+        "full": 16,
+        "full_exact": 16,
+        "in_claims": 88,
+        "in_correct": 88,
+        "out_claims": 128,
+        "out_correct": 128,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "000YLY2UGCGC": {
+      "training/primary/old": {
+        "queries": 77,
+        "full": 30,
+        "full_exact": 30,
+        "in_claims": 209,
+        "in_correct": 209,
+        "out_claims": 282,
+        "out_correct": 281,
+        "issues": 26,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 77,
+        "full": 30,
+        "full_exact": 30,
+        "in_claims": 209,
+        "in_correct": 209,
+        "out_claims": 282,
+        "out_correct": 281,
+        "issues": 26,
+        "mirror_queries": 0
+      }
+    },
+    "000YLY2ULYLR": {
+      "training/primary/old": {
+        "queries": 109,
+        "full": 46,
+        "full_exact": 46,
+        "in_claims": 322,
+        "in_correct": 322,
+        "out_claims": 416,
+        "out_correct": 416,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 109,
+        "full": 46,
+        "full_exact": 46,
+        "in_claims": 322,
+        "in_correct": 322,
+        "out_claims": 416,
+        "out_correct": 416,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "000YLY2UVGRL": {
+      "training/primary/old": {
+        "queries": 54,
+        "full": 29,
+        "full_exact": 25,
+        "in_claims": 151,
+        "in_correct": 146,
+        "out_claims": 196,
+        "out_correct": 191,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 54,
+        "full": 29,
+        "full_exact": 25,
+        "in_claims": 151,
+        "in_correct": 146,
+        "out_claims": 196,
+        "out_correct": 191,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "000YLY8RGL0Y": {
+      "training/primary/old": {
+        "queries": 45,
+        "full": 9,
+        "full_exact": 9,
+        "in_claims": 100,
+        "in_correct": 100,
+        "out_claims": 160,
+        "out_correct": 160,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 45,
+        "full": 9,
+        "full_exact": 9,
+        "in_claims": 100,
+        "in_correct": 100,
+        "out_claims": 160,
+        "out_correct": 160,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "000YLYC8VQLJ": {
+      "training/primary/old": {
+        "queries": 65,
+        "full": 12,
+        "full_exact": 11,
+        "in_claims": 140,
+        "in_correct": 139,
+        "out_claims": 240,
+        "out_correct": 239,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 65,
+        "full": 12,
+        "full_exact": 11,
+        "in_claims": 140,
+        "in_correct": 139,
+        "out_claims": 240,
+        "out_correct": 239,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "000YLYCVUJPP": {
+      "training/primary/old": {
+        "queries": 62,
+        "full": 24,
+        "full_exact": 23,
+        "in_claims": 171,
+        "in_correct": 170,
+        "out_claims": 228,
+        "out_correct": 227,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 62,
+        "full": 24,
+        "full_exact": 23,
+        "in_claims": 171,
+        "in_correct": 170,
+        "out_claims": 228,
+        "out_correct": 227,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "000YLYY9V2GJ": {
+      "training/primary/old": {
+        "queries": 85,
+        "full": 44,
+        "full_exact": 44,
+        "in_claims": 245,
+        "in_correct": 245,
+        "out_claims": 320,
+        "out_correct": 320,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 85,
+        "full": 44,
+        "full_exact": 44,
+        "in_claims": 245,
+        "in_correct": 245,
+        "out_claims": 320,
+        "out_correct": 320,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "000YLYYL2GY8": {
+      "training/primary/old": {
+        "queries": 74,
+        "full": 46,
+        "full_exact": 46,
+        "in_claims": 213,
+        "in_correct": 213,
+        "out_claims": 266,
+        "out_correct": 264,
+        "issues": 5,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 74,
+        "full": 46,
+        "full_exact": 46,
+        "in_claims": 213,
+        "in_correct": 213,
+        "out_claims": 266,
+        "out_correct": 264,
+        "issues": 5,
+        "mirror_queries": 0
+      }
+    },
+    "002YLG0G80Y9": {
+      "training/primary/old": {
+        "queries": 122,
+        "full": 101,
+        "full_exact": 101,
+        "in_claims": 428,
+        "in_correct": 428,
+        "out_claims": 468,
+        "out_correct": 468,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 122,
+        "full": 101,
+        "full_exact": 101,
+        "in_claims": 428,
+        "in_correct": 428,
+        "out_claims": 468,
+        "out_correct": 468,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "002YLG0GYGJ8": {
+      "training/primary/old": {
+        "queries": 68,
+        "full": 33,
+        "full_exact": 32,
+        "in_claims": 189,
+        "in_correct": 187,
+        "out_claims": 246,
+        "out_correct": 243,
+        "issues": 21,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 68,
+        "full": 33,
+        "full_exact": 32,
+        "in_claims": 189,
+        "in_correct": 187,
+        "out_claims": 246,
+        "out_correct": 243,
+        "issues": 21,
+        "mirror_queries": 0
+      }
+    },
+    "002YLG9GJ00Q": {
+      "training/primary/old": {
+        "queries": 37,
+        "full": 4,
+        "full_exact": 4,
+        "in_claims": 63,
+        "in_correct": 63,
+        "out_claims": 122,
+        "out_correct": 121,
+        "issues": 8,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 37,
+        "full": 4,
+        "full_exact": 4,
+        "in_claims": 63,
+        "in_correct": 63,
+        "out_claims": 122,
+        "out_correct": 121,
+        "issues": 8,
+        "mirror_queries": 0
+      }
+    },
+    "002YLLLP2YRR": {
+      "training/primary/old": {
+        "queries": 71,
+        "full": 43,
+        "full_exact": 39,
+        "in_claims": 214,
+        "in_correct": 210,
+        "out_claims": 263,
+        "out_correct": 259,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 71,
+        "full": 43,
+        "full_exact": 39,
+        "in_claims": 214,
+        "in_correct": 210,
+        "out_claims": 263,
+        "out_correct": 259,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "002YLLLP9JUR": {
+      "training/primary/old": {
+        "queries": 92,
+        "full": 16,
+        "full_exact": 16,
+        "in_claims": 159,
+        "in_correct": 159,
+        "out_claims": 314,
+        "out_correct": 300,
+        "issues": 35,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 92,
+        "full": 16,
+        "full_exact": 16,
+        "in_claims": 159,
+        "in_correct": 159,
+        "out_claims": 314,
+        "out_correct": 300,
+        "issues": 35,
+        "mirror_queries": 0
+      }
+    },
+    "002YLLVRVVR2": {
+      "training/primary/old": {
+        "queries": 69,
+        "full": 0,
+        "full_exact": 0,
+        "in_claims": 161,
+        "in_correct": 160,
+        "out_claims": 256,
+        "out_correct": 255,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 69,
+        "full": 0,
+        "full_exact": 0,
+        "in_claims": 161,
+        "in_correct": 160,
+        "out_claims": 256,
+        "out_correct": 255,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "002YLQ2G0RGC": {
+      "training/primary/old": {
+        "queries": 63,
+        "full": 24,
+        "full_exact": 23,
+        "in_claims": 158,
+        "in_correct": 157,
+        "out_claims": 226,
+        "out_correct": 225,
+        "issues": 5,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 63,
+        "full": 24,
+        "full_exact": 23,
+        "in_claims": 158,
+        "in_correct": 157,
+        "out_claims": 226,
+        "out_correct": 225,
+        "issues": 5,
+        "mirror_queries": 0
+      }
+    },
+    "002YLQCV8PGU": {
+      "training/primary/old": {
+        "queries": 77,
+        "full": 33,
+        "full_exact": 27,
+        "in_claims": 205,
+        "in_correct": 199,
+        "out_claims": 276,
+        "out_correct": 270,
+        "issues": 8,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 77,
+        "full": 33,
+        "full_exact": 27,
+        "in_claims": 205,
+        "in_correct": 199,
+        "out_claims": 276,
+        "out_correct": 270,
+        "issues": 8,
+        "mirror_queries": 0
+      }
+    },
+    "002YLQGGG0PG": {
+      "training/primary/old": {
+        "queries": 49,
+        "full": 15,
+        "full_exact": 15,
+        "in_claims": 121,
+        "in_correct": 121,
+        "out_claims": 176,
+        "out_correct": 176,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 49,
+        "full": 15,
+        "full_exact": 15,
+        "in_claims": 121,
+        "in_correct": 121,
+        "out_claims": 176,
+        "out_correct": 176,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "002YLQGPLUG2": {
+      "training/primary/old": {
+        "queries": 101,
+        "full": 71,
+        "full_exact": 68,
+        "in_claims": 322,
+        "in_correct": 319,
+        "out_claims": 378,
+        "out_correct": 375,
+        "issues": 5,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 101,
+        "full": 71,
+        "full_exact": 68,
+        "in_claims": 322,
+        "in_correct": 319,
+        "out_claims": 378,
+        "out_correct": 375,
+        "issues": 5,
+        "mirror_queries": 0
+      }
+    },
+    "002YLQUV22R2": {
+      "training/primary/old": {
+        "queries": 44,
+        "full": 6,
+        "full_exact": 6,
+        "in_claims": 83,
+        "in_correct": 83,
+        "out_claims": 156,
+        "out_correct": 156,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 44,
+        "full": 6,
+        "full_exact": 6,
+        "in_claims": 83,
+        "in_correct": 83,
+        "out_claims": 156,
+        "out_correct": 156,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "002YLQV8VRGC": {
+      "training/primary/old": {
+        "queries": 104,
+        "full": 71,
+        "full_exact": 71,
+        "in_claims": 338,
+        "in_correct": 338,
+        "out_claims": 396,
+        "out_correct": 396,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 104,
+        "full": 71,
+        "full_exact": 71,
+        "in_claims": 338,
+        "in_correct": 338,
+        "out_claims": 396,
+        "out_correct": 396,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "002YLQVYLPYU": {
+      "training/primary/old": {
+        "queries": 133,
+        "full": 86,
+        "full_exact": 86,
+        "in_claims": 441,
+        "in_correct": 441,
+        "out_claims": 512,
+        "out_correct": 512,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 133,
+        "full": 86,
+        "full_exact": 86,
+        "in_claims": 441,
+        "in_correct": 441,
+        "out_claims": 512,
+        "out_correct": 512,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "002YLYL9JL2R": {
+      "training/primary/old": {
+        "queries": 52,
+        "full": 8,
+        "full_exact": 6,
+        "in_claims": 108,
+        "in_correct": 106,
+        "out_claims": 178,
+        "out_correct": 174,
+        "issues": 16,
+        "mirror_queries": 0
+      },
+      "training/primary/mirror_successor": {
+        "queries": 52,
+        "full": 8,
+        "full_exact": 6,
+        "in_claims": 108,
+        "in_correct": 106,
+        "out_claims": 178,
+        "out_correct": 174,
+        "issues": 16,
+        "mirror_queries": 0
+      }
+    },
+    "000YLPJL2Q9V": {
+      "development/primary/old": {
+        "queries": 104,
+        "full": 45,
+        "full_exact": 44,
+        "in_claims": 303,
+        "in_correct": 301,
+        "out_claims": 395,
+        "out_correct": 393,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 104,
+        "full": 45,
+        "full_exact": 44,
+        "in_claims": 303,
+        "in_correct": 301,
+        "out_claims": 395,
+        "out_correct": 393,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "000YLYYC9G8C": {
+      "development/primary/old": {
+        "queries": 29,
+        "full": 2,
+        "full_exact": 2,
+        "in_claims": 49,
+        "in_correct": 49,
+        "out_claims": 96,
+        "out_correct": 96,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 29,
+        "full": 2,
+        "full_exact": 2,
+        "in_claims": 49,
+        "in_correct": 49,
+        "out_claims": 96,
+        "out_correct": 96,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "0038806231844ee084559043c5f0f430": {
+      "development/primary/old": {
+        "queries": 93,
+        "full": 47,
+        "full_exact": 46,
+        "in_claims": 286,
+        "in_correct": 285,
+        "out_claims": 352,
+        "out_correct": 350,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 93,
+        "full": 47,
+        "full_exact": 46,
+        "in_claims": 286,
+        "in_correct": 285,
+        "out_claims": 352,
+        "out_correct": 350,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "008YLLJJJVC2": {
+      "development/primary/old": {
+        "queries": 60,
+        "full": 11,
+        "full_exact": 11,
+        "in_claims": 143,
+        "in_correct": 143,
+        "out_claims": 220,
+        "out_correct": 216,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 60,
+        "full": 11,
+        "full_exact": 11,
+        "in_claims": 143,
+        "in_correct": 143,
+        "out_claims": 220,
+        "out_correct": 216,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "008YLLUGQVU9": {
+      "development/primary/old": {
+        "queries": 138,
+        "full": 88,
+        "full_exact": 82,
+        "in_claims": 443,
+        "in_correct": 435,
+        "out_claims": 528,
+        "out_correct": 520,
+        "issues": 1,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 138,
+        "full": 88,
+        "full_exact": 82,
+        "in_claims": 443,
+        "in_correct": 435,
+        "out_claims": 528,
+        "out_correct": 520,
+        "issues": 1,
+        "mirror_queries": 0
+      }
+    },
+    "009Y2C2CJ08G": {
+      "development/primary/old": {
+        "queries": 99,
+        "full": 53,
+        "full_exact": 51,
+        "in_claims": 293,
+        "in_correct": 291,
+        "out_claims": 370,
+        "out_correct": 368,
+        "issues": 19,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 99,
+        "full": 53,
+        "full_exact": 51,
+        "in_claims": 293,
+        "in_correct": 291,
+        "out_claims": 370,
+        "out_correct": 368,
+        "issues": 19,
+        "mirror_queries": 0
+      }
+    },
+    "009YLG0JLGQ2": {
+      "development/primary/old": {
+        "queries": 75,
+        "full": 35,
+        "full_exact": 35,
+        "in_claims": 207,
+        "in_correct": 207,
+        "out_claims": 280,
+        "out_correct": 280,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 75,
+        "full": 35,
+        "full_exact": 35,
+        "in_claims": 207,
+        "in_correct": 207,
+        "out_claims": 280,
+        "out_correct": 280,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "009YLG0JR29Y": {
+      "development/primary/old": {
+        "queries": 63,
+        "full": 20,
+        "full_exact": 20,
+        "in_claims": 147,
+        "in_correct": 147,
+        "out_claims": 226,
+        "out_correct": 215,
+        "issues": 18,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 63,
+        "full": 20,
+        "full_exact": 20,
+        "in_claims": 147,
+        "in_correct": 147,
+        "out_claims": 226,
+        "out_correct": 215,
+        "issues": 18,
+        "mirror_queries": 0
+      }
+    },
+    "009YLGR0QJPC": {
+      "development/primary/old": {
+        "queries": 94,
+        "full": 50,
+        "full_exact": 50,
+        "in_claims": 286,
+        "in_correct": 286,
+        "out_claims": 356,
+        "out_correct": 356,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 94,
+        "full": 50,
+        "full_exact": 50,
+        "in_claims": 286,
+        "in_correct": 286,
+        "out_claims": 356,
+        "out_correct": 356,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "009YLGRPR82J": {
+      "development/primary/old": {
+        "queries": 22,
+        "full": 0,
+        "full_exact": 0,
+        "in_claims": 23,
+        "in_correct": 23,
+        "out_claims": 68,
+        "out_correct": 68,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 22,
+        "full": 0,
+        "full_exact": 0,
+        "in_claims": 23,
+        "in_correct": 23,
+        "out_claims": 68,
+        "out_correct": 68,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "009YLGY2P2C8": {
+      "development/primary/old": {
+        "queries": 123,
+        "full": 105,
+        "full_exact": 99,
+        "in_claims": 437,
+        "in_correct": 431,
+        "out_claims": 472,
+        "out_correct": 465,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 123,
+        "full": 105,
+        "full_exact": 99,
+        "in_claims": 437,
+        "in_correct": 431,
+        "out_claims": 472,
+        "out_correct": 465,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "009YLQURY0C8": {
+      "development/primary/old": {
+        "queries": 81,
+        "full": 61,
+        "full_exact": 59,
+        "in_claims": 266,
+        "in_correct": 264,
+        "out_claims": 304,
+        "out_correct": 302,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 81,
+        "full": 61,
+        "full_exact": 59,
+        "in_claims": 266,
+        "in_correct": 264,
+        "out_claims": 304,
+        "out_correct": 302,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00CPPC8PRQ0U": {
+      "development/primary/old": {
+        "queries": 54,
+        "full": 15,
+        "full_exact": 15,
+        "in_claims": 87,
+        "in_correct": 87,
+        "out_claims": 174,
+        "out_correct": 174,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 54,
+        "full": 15,
+        "full_exact": 15,
+        "in_claims": 87,
+        "in_correct": 87,
+        "out_claims": 174,
+        "out_correct": 174,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00CYPL2VU8J8": {
+      "development/primary/old": {
+        "queries": 99,
+        "full": 25,
+        "full_exact": 25,
+        "in_claims": 272,
+        "in_correct": 272,
+        "out_claims": 376,
+        "out_correct": 376,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 99,
+        "full": 25,
+        "full_exact": 25,
+        "in_claims": 272,
+        "in_correct": 272,
+        "out_claims": 376,
+        "out_correct": 376,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00CYPL80R9CV": {
+      "development/primary/old": {
+        "queries": 17,
+        "full": 0,
+        "full_exact": 0,
+        "in_claims": 11,
+        "in_correct": 11,
+        "out_claims": 48,
+        "out_correct": 48,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 17,
+        "full": 0,
+        "full_exact": 0,
+        "in_claims": 11,
+        "in_correct": 11,
+        "out_claims": 48,
+        "out_correct": 48,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00CYPL82P0PR": {
+      "development/primary/old": {
+        "queries": 26,
+        "full": 1,
+        "full_exact": 1,
+        "in_claims": 33,
+        "in_correct": 33,
+        "out_claims": 84,
+        "out_correct": 83,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 26,
+        "full": 1,
+        "full_exact": 1,
+        "in_claims": 33,
+        "in_correct": 33,
+        "out_claims": 84,
+        "out_correct": 83,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00CYPL9R9PPC": {
+      "development/primary/old": {
+        "queries": 74,
+        "full": 9,
+        "full_exact": 9,
+        "in_claims": 179,
+        "in_correct": 179,
+        "out_claims": 276,
+        "out_correct": 276,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 74,
+        "full": 9,
+        "full_exact": 9,
+        "in_claims": 179,
+        "in_correct": 179,
+        "out_claims": 276,
+        "out_correct": 276,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00CYPL9U82YQ": {
+      "development/primary/old": {
+        "queries": 38,
+        "full": 0,
+        "full_exact": 0,
+        "in_claims": 65,
+        "in_correct": 64,
+        "out_claims": 132,
+        "out_correct": 131,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 38,
+        "full": 0,
+        "full_exact": 0,
+        "in_claims": 65,
+        "in_correct": 64,
+        "out_claims": 132,
+        "out_correct": 131,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00CYPLRUCPYP": {
+      "development/primary/old": {
+        "queries": 126,
+        "full": 89,
+        "full_exact": 86,
+        "in_claims": 411,
+        "in_correct": 407,
+        "out_claims": 476,
+        "out_correct": 470,
+        "issues": 47,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 126,
+        "full": 89,
+        "full_exact": 86,
+        "in_claims": 411,
+        "in_correct": 407,
+        "out_claims": 476,
+        "out_correct": 470,
+        "issues": 47,
+        "mirror_queries": 0
+      }
+    },
+    "00CYPLY2PLJP": {
+      "development/primary/old": {
+        "queries": 99,
+        "full": 70,
+        "full_exact": 70,
+        "in_claims": 323,
+        "in_correct": 323,
+        "out_claims": 376,
+        "out_correct": 376,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 99,
+        "full": 70,
+        "full_exact": 70,
+        "in_claims": 323,
+        "in_correct": 323,
+        "out_claims": 376,
+        "out_correct": 376,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00CYPLYYLPL9": {
+      "development/primary/old": {
+        "queries": 102,
+        "full": 44,
+        "full_exact": 43,
+        "in_claims": 292,
+        "in_correct": 291,
+        "out_claims": 376,
+        "out_correct": 375,
+        "issues": 15,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 102,
+        "full": 44,
+        "full_exact": 43,
+        "in_claims": 292,
+        "in_correct": 291,
+        "out_claims": 376,
+        "out_correct": 375,
+        "issues": 15,
+        "mirror_queries": 0
+      }
+    },
+    "00CYPQ9UUCUG": {
+      "development/primary/old": {
+        "queries": 106,
+        "full": 41,
+        "full_exact": 41,
+        "in_claims": 311,
+        "in_correct": 307,
+        "out_claims": 404,
+        "out_correct": 400,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 106,
+        "full": 41,
+        "full_exact": 41,
+        "in_claims": 311,
+        "in_correct": 307,
+        "out_claims": 404,
+        "out_correct": 400,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00GY90YCPGG0": {
+      "development/primary/old": {
+        "queries": 66,
+        "full": 24,
+        "full_exact": 24,
+        "in_claims": 181,
+        "in_correct": 181,
+        "out_claims": 244,
+        "out_correct": 244,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 66,
+        "full": 24,
+        "full_exact": 24,
+        "in_claims": 181,
+        "in_correct": 181,
+        "out_claims": 244,
+        "out_correct": 244,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00GYP9VVJGRY": {
+      "development/primary/old": {
+        "queries": 65,
+        "full": 23,
+        "full_exact": 23,
+        "in_claims": 173,
+        "in_correct": 173,
+        "out_claims": 240,
+        "out_correct": 240,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 65,
+        "full": 23,
+        "full_exact": 23,
+        "in_claims": 173,
+        "in_correct": 173,
+        "out_claims": 240,
+        "out_correct": 240,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00GYPPLRYGL2": {
+      "development/primary/old": {
+        "queries": 48,
+        "full": 17,
+        "full_exact": 17,
+        "in_claims": 119,
+        "in_correct": 119,
+        "out_claims": 172,
+        "out_correct": 172,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 48,
+        "full": 17,
+        "full_exact": 17,
+        "in_claims": 119,
+        "in_correct": 119,
+        "out_claims": 172,
+        "out_correct": 172,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00GYPYCLULVC": {
+      "development/primary/old": {
+        "queries": 55,
+        "full": 15,
+        "full_exact": 15,
+        "in_claims": 115,
+        "in_correct": 115,
+        "out_claims": 188,
+        "out_correct": 187,
+        "issues": 15,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 55,
+        "full": 15,
+        "full_exact": 15,
+        "in_claims": 115,
+        "in_correct": 115,
+        "out_claims": 188,
+        "out_correct": 187,
+        "issues": 15,
+        "mirror_queries": 0
+      }
+    },
+    "00JP8L8YURCU": {
+      "development/primary/old": {
+        "queries": 62,
+        "full": 13,
+        "full_exact": 12,
+        "in_claims": 152,
+        "in_correct": 151,
+        "out_claims": 228,
+        "out_correct": 227,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 62,
+        "full": 13,
+        "full_exact": 12,
+        "in_claims": 152,
+        "in_correct": 151,
+        "out_claims": 228,
+        "out_correct": 227,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00JYPG2CQ9VP": {
+      "development/primary/old": {
+        "queries": 76,
+        "full": 8,
+        "full_exact": 8,
+        "in_claims": 155,
+        "in_correct": 155,
+        "out_claims": 284,
+        "out_correct": 284,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 76,
+        "full": 8,
+        "full_exact": 8,
+        "in_claims": 155,
+        "in_correct": 155,
+        "out_claims": 284,
+        "out_correct": 284,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00JYPGYQ8LGC": {
+      "development/primary/old": {
+        "queries": 45,
+        "full": 4,
+        "full_exact": 4,
+        "in_claims": 83,
+        "in_correct": 83,
+        "out_claims": 150,
+        "out_correct": 149,
+        "issues": 12,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 45,
+        "full": 4,
+        "full_exact": 4,
+        "in_claims": 83,
+        "in_correct": 83,
+        "out_claims": 150,
+        "out_correct": 149,
+        "issues": 12,
+        "mirror_queries": 0
+      }
+    },
+    "00JYPQU0RPVV": {
+      "development/primary/old": {
+        "queries": 138,
+        "full": 65,
+        "full_exact": 62,
+        "in_claims": 423,
+        "in_correct": 419,
+        "out_claims": 529,
+        "out_correct": 524,
+        "issues": 1,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 138,
+        "full": 65,
+        "full_exact": 62,
+        "in_claims": 423,
+        "in_correct": 419,
+        "out_claims": 529,
+        "out_correct": 524,
+        "issues": 1,
+        "mirror_queries": 0
+      }
+    },
+    "00JYPQYYV0JV": {
+      "development/primary/old": {
+        "queries": 101,
+        "full": 7,
+        "full_exact": 7,
+        "in_claims": 222,
+        "in_correct": 221,
+        "out_claims": 366,
+        "out_correct": 364,
+        "issues": 45,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 101,
+        "full": 7,
+        "full_exact": 7,
+        "in_claims": 222,
+        "in_correct": 221,
+        "out_claims": 366,
+        "out_correct": 364,
+        "issues": 45,
+        "mirror_queries": 0
+      }
+    },
+    "00LYPG90CGQ9": {
+      "development/primary/old": {
+        "queries": 108,
+        "full": 44,
+        "full_exact": 44,
+        "in_claims": 310,
+        "in_correct": 310,
+        "out_claims": 412,
+        "out_correct": 412,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 108,
+        "full": 44,
+        "full_exact": 44,
+        "in_claims": 310,
+        "in_correct": 310,
+        "out_claims": 412,
+        "out_correct": 412,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00LYPLCV92L0": {
+      "development/primary/old": {
+        "queries": 99,
+        "full": 52,
+        "full_exact": 51,
+        "in_claims": 288,
+        "in_correct": 287,
+        "out_claims": 376,
+        "out_correct": 375,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 99,
+        "full": 52,
+        "full_exact": 51,
+        "in_claims": 288,
+        "in_correct": 287,
+        "out_claims": 376,
+        "out_correct": 375,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00LYPLCVQRVY": {
+      "development/primary/old": {
+        "queries": 125,
+        "full": 49,
+        "full_exact": 49,
+        "in_claims": 352,
+        "in_correct": 352,
+        "out_claims": 480,
+        "out_correct": 480,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 125,
+        "full": 49,
+        "full_exact": 49,
+        "in_claims": 352,
+        "in_correct": 352,
+        "out_claims": 480,
+        "out_correct": 480,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00LYPLJLC80L": {
+      "development/primary/old": {
+        "queries": 93,
+        "full": 48,
+        "full_exact": 46,
+        "in_claims": 266,
+        "in_correct": 264,
+        "out_claims": 352,
+        "out_correct": 350,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 93,
+        "full": 48,
+        "full_exact": 46,
+        "in_claims": 266,
+        "in_correct": 264,
+        "out_claims": 352,
+        "out_correct": 350,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00LYPLJLRJ00": {
+      "development/primary/old": {
+        "queries": 54,
+        "full": 0,
+        "full_exact": 0,
+        "in_claims": 119,
+        "in_correct": 119,
+        "out_claims": 196,
+        "out_correct": 196,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 54,
+        "full": 0,
+        "full_exact": 0,
+        "in_claims": 119,
+        "in_correct": 119,
+        "out_claims": 196,
+        "out_correct": 196,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00LYPQ0C8PPY": {
+      "development/primary/old": {
+        "queries": 49,
+        "full": 5,
+        "full_exact": 5,
+        "in_claims": 97,
+        "in_correct": 97,
+        "out_claims": 176,
+        "out_correct": 176,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 49,
+        "full": 5,
+        "full_exact": 5,
+        "in_claims": 97,
+        "in_correct": 97,
+        "out_claims": 176,
+        "out_correct": 176,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00LYPQ0JQ88V": {
+      "development/primary/old": {
+        "queries": 76,
+        "full": 33,
+        "full_exact": 33,
+        "in_claims": 220,
+        "in_correct": 220,
+        "out_claims": 284,
+        "out_correct": 284,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 76,
+        "full": 33,
+        "full_exact": 33,
+        "in_claims": 220,
+        "in_correct": 220,
+        "out_claims": 284,
+        "out_correct": 284,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00LYPQC9LPRL": {
+      "development/primary/old": {
+        "queries": 49,
+        "full": 9,
+        "full_exact": 9,
+        "in_claims": 100,
+        "in_correct": 100,
+        "out_claims": 169,
+        "out_correct": 167,
+        "issues": 13,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 49,
+        "full": 9,
+        "full_exact": 9,
+        "in_claims": 100,
+        "in_correct": 100,
+        "out_claims": 169,
+        "out_correct": 167,
+        "issues": 13,
+        "mirror_queries": 0
+      }
+    },
+    "00LYPQVC0GGY": {
+      "development/primary/old": {
+        "queries": 100,
+        "full": 75,
+        "full_exact": 71,
+        "in_claims": 333,
+        "in_correct": 329,
+        "out_claims": 380,
+        "out_correct": 376,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 100,
+        "full": 75,
+        "full_exact": 71,
+        "in_claims": 333,
+        "in_correct": 329,
+        "out_claims": 380,
+        "out_correct": 376,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00LYPQVCQP88": {
+      "development/primary/old": {
+        "queries": 105,
+        "full": 76,
+        "full_exact": 76,
+        "in_claims": 351,
+        "in_correct": 351,
+        "out_claims": 400,
+        "out_correct": 400,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 105,
+        "full": 76,
+        "full_exact": 76,
+        "in_claims": 351,
+        "in_correct": 351,
+        "out_claims": 400,
+        "out_correct": 400,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00PYL9CQYGV9": {
+      "development/primary/old": {
+        "queries": 95,
+        "full": 33,
+        "full_exact": 32,
+        "in_claims": 281,
+        "in_correct": 280,
+        "out_claims": 360,
+        "out_correct": 358,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 95,
+        "full": 33,
+        "full_exact": 32,
+        "in_claims": 281,
+        "in_correct": 280,
+        "out_claims": 360,
+        "out_correct": 358,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00PYLLPR8YG8": {
+      "development/primary/old": {
+        "queries": 50,
+        "full": 15,
+        "full_exact": 14,
+        "in_claims": 98,
+        "in_correct": 96,
+        "out_claims": 170,
+        "out_correct": 167,
+        "issues": 16,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 50,
+        "full": 15,
+        "full_exact": 14,
+        "in_claims": 98,
+        "in_correct": 96,
+        "out_claims": 170,
+        "out_correct": 167,
+        "issues": 16,
+        "mirror_queries": 0
+      }
+    },
+    "00QP8YQ92YRC": {
+      "development/primary/old": {
+        "queries": 51,
+        "full": 17,
+        "full_exact": 17,
+        "in_claims": 117,
+        "in_correct": 117,
+        "out_claims": 183,
+        "out_correct": 183,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 51,
+        "full": 17,
+        "full_exact": 17,
+        "in_claims": 117,
+        "in_correct": 117,
+        "out_claims": 183,
+        "out_correct": 183,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00QPPC9JC9YG": {
+      "development/primary/old": {
+        "queries": 66,
+        "full": 17,
+        "full_exact": 17,
+        "in_claims": 125,
+        "in_correct": 123,
+        "out_claims": 232,
+        "out_correct": 225,
+        "issues": 20,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 66,
+        "full": 17,
+        "full_exact": 17,
+        "in_claims": 125,
+        "in_correct": 123,
+        "out_claims": 232,
+        "out_correct": 225,
+        "issues": 20,
+        "mirror_queries": 0
+      }
+    },
+    "00QYPQ2JJ9PC": {
+      "development/primary/old": {
+        "queries": 76,
+        "full": 18,
+        "full_exact": 2,
+        "in_claims": 191,
+        "in_correct": 167,
+        "out_claims": 281,
+        "out_correct": 277,
+        "issues": 1,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 76,
+        "full": 18,
+        "full_exact": 2,
+        "in_claims": 191,
+        "in_correct": 167,
+        "out_claims": 281,
+        "out_correct": 277,
+        "issues": 1,
+        "mirror_queries": 0
+      }
+    },
+    "00QYPQ909URL": {
+      "development/primary/old": {
+        "queries": 134,
+        "full": 112,
+        "full_exact": 112,
+        "in_claims": 474,
+        "in_correct": 474,
+        "out_claims": 516,
+        "out_correct": 516,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 134,
+        "full": 112,
+        "full_exact": 112,
+        "in_claims": 474,
+        "in_correct": 474,
+        "out_claims": 516,
+        "out_correct": 516,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00QYPQJVL2QG": {
+      "development/primary/old": {
+        "queries": 93,
+        "full": 23,
+        "full_exact": 23,
+        "in_claims": 250,
+        "in_correct": 250,
+        "out_claims": 352,
+        "out_correct": 352,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 93,
+        "full": 23,
+        "full_exact": 23,
+        "in_claims": 250,
+        "in_correct": 250,
+        "out_claims": 352,
+        "out_correct": 352,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00QYPQRJ0CJR": {
+      "development/primary/old": {
+        "queries": 122,
+        "full": 54,
+        "full_exact": 54,
+        "in_claims": 376,
+        "in_correct": 376,
+        "out_claims": 468,
+        "out_correct": 468,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 122,
+        "full": 54,
+        "full_exact": 54,
+        "in_claims": 376,
+        "in_correct": 376,
+        "out_claims": 468,
+        "out_correct": 468,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00RYPLPVYYRV": {
+      "development/primary/old": {
+        "queries": 52,
+        "full": 10,
+        "full_exact": 10,
+        "in_claims": 90,
+        "in_correct": 89,
+        "out_claims": 174,
+        "out_correct": 166,
+        "issues": 13,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 52,
+        "full": 10,
+        "full_exact": 10,
+        "in_claims": 90,
+        "in_correct": 89,
+        "out_claims": 174,
+        "out_correct": 166,
+        "issues": 13,
+        "mirror_queries": 0
+      }
+    },
+    "00RYPLRVYUP0": {
+      "development/primary/old": {
+        "queries": 54,
+        "full": 25,
+        "full_exact": 25,
+        "in_claims": 146,
+        "in_correct": 146,
+        "out_claims": 196,
+        "out_correct": 196,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 54,
+        "full": 25,
+        "full_exact": 25,
+        "in_claims": 146,
+        "in_correct": 146,
+        "out_claims": 196,
+        "out_correct": 196,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00RYPPJGQYU0": {
+      "development/primary/old": {
+        "queries": 53,
+        "full": 19,
+        "full_exact": 18,
+        "in_claims": 127,
+        "in_correct": 126,
+        "out_claims": 189,
+        "out_correct": 188,
+        "issues": 1,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 53,
+        "full": 19,
+        "full_exact": 18,
+        "in_claims": 127,
+        "in_correct": 126,
+        "out_claims": 189,
+        "out_correct": 188,
+        "issues": 1,
+        "mirror_queries": 0
+      }
+    },
+    "00RYPPUUU08U": {
+      "development/primary/old": {
+        "queries": 51,
+        "full": 3,
+        "full_exact": 3,
+        "in_claims": 113,
+        "in_correct": 113,
+        "out_claims": 183,
+        "out_correct": 183,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 51,
+        "full": 3,
+        "full_exact": 3,
+        "in_claims": 113,
+        "in_correct": 113,
+        "out_claims": 183,
+        "out_correct": 183,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00UYPLLGUP02": {
+      "development/primary/old": {
+        "queries": 112,
+        "full": 79,
+        "full_exact": 78,
+        "in_claims": 374,
+        "in_correct": 373,
+        "out_claims": 427,
+        "out_correct": 426,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 112,
+        "full": 79,
+        "full_exact": 78,
+        "in_claims": 374,
+        "in_correct": 373,
+        "out_claims": 427,
+        "out_correct": 426,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00UYPLYPLLGC": {
+      "development/primary/old": {
+        "queries": 79,
+        "full": 38,
+        "full_exact": 38,
+        "in_claims": 237,
+        "in_correct": 236,
+        "out_claims": 296,
+        "out_correct": 295,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 79,
+        "full": 38,
+        "full_exact": 38,
+        "in_claims": 237,
+        "in_correct": 236,
+        "out_claims": 296,
+        "out_correct": 295,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00UYPQ2JUL8V": {
+      "development/primary/old": {
+        "queries": 122,
+        "full": 49,
+        "full_exact": 43,
+        "in_claims": 360,
+        "in_correct": 354,
+        "out_claims": 462,
+        "out_correct": 456,
+        "issues": 32,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 122,
+        "full": 49,
+        "full_exact": 43,
+        "in_claims": 360,
+        "in_correct": 354,
+        "out_claims": 462,
+        "out_correct": 456,
+        "issues": 32,
+        "mirror_queries": 0
+      }
+    },
+    "00UYPQ2Q2Y9J": {
+      "development/primary/old": {
+        "queries": 82,
+        "full": 4,
+        "full_exact": 4,
+        "in_claims": 198,
+        "in_correct": 198,
+        "out_claims": 308,
+        "out_correct": 308,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 82,
+        "full": 4,
+        "full_exact": 4,
+        "in_claims": 198,
+        "in_correct": 198,
+        "out_claims": 308,
+        "out_correct": 308,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00UYPQ9ULVP2": {
+      "development/primary/old": {
+        "queries": 45,
+        "full": 14,
+        "full_exact": 14,
+        "in_claims": 105,
+        "in_correct": 105,
+        "out_claims": 160,
+        "out_correct": 160,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 45,
+        "full": 14,
+        "full_exact": 14,
+        "in_claims": 105,
+        "in_correct": 105,
+        "out_claims": 160,
+        "out_correct": 160,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00UYPQQPYGJY": {
+      "development/primary/old": {
+        "queries": 60,
+        "full": 16,
+        "full_exact": 15,
+        "in_claims": 152,
+        "in_correct": 150,
+        "out_claims": 220,
+        "out_correct": 218,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 60,
+        "full": 16,
+        "full_exact": 15,
+        "in_claims": 152,
+        "in_correct": 150,
+        "out_claims": 220,
+        "out_correct": 218,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00VYPLJ0Y8JG": {
+      "development/primary/old": {
+        "queries": 138,
+        "full": 67,
+        "full_exact": 64,
+        "in_claims": 399,
+        "in_correct": 396,
+        "out_claims": 532,
+        "out_correct": 528,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 138,
+        "full": 67,
+        "full_exact": 64,
+        "in_claims": 399,
+        "in_correct": 396,
+        "out_claims": 532,
+        "out_correct": 528,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00VYPLPJLC88": {
+      "development/primary/old": {
+        "queries": 102,
+        "full": 52,
+        "full_exact": 51,
+        "in_claims": 314,
+        "in_correct": 313,
+        "out_claims": 387,
+        "out_correct": 386,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 102,
+        "full": 52,
+        "full_exact": 51,
+        "in_claims": 314,
+        "in_correct": 313,
+        "out_claims": 387,
+        "out_correct": 386,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00VYPLVG98PY": {
+      "development/primary/old": {
+        "queries": 60,
+        "full": 15,
+        "full_exact": 14,
+        "in_claims": 153,
+        "in_correct": 152,
+        "out_claims": 219,
+        "out_correct": 218,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 60,
+        "full": 15,
+        "full_exact": 14,
+        "in_claims": 153,
+        "in_correct": 152,
+        "out_claims": 219,
+        "out_correct": 218,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00VYPQ00YYR2": {
+      "development/primary/old": {
+        "queries": 109,
+        "full": 67,
+        "full_exact": 67,
+        "in_claims": 341,
+        "in_correct": 341,
+        "out_claims": 416,
+        "out_correct": 416,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 109,
+        "full": 67,
+        "full_exact": 67,
+        "in_claims": 341,
+        "in_correct": 341,
+        "out_claims": 416,
+        "out_correct": 416,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00VYPQLRU8U0": {
+      "development/primary/old": {
+        "queries": 106,
+        "full": 79,
+        "full_exact": 79,
+        "in_claims": 357,
+        "in_correct": 357,
+        "out_claims": 404,
+        "out_correct": 404,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 106,
+        "full": 79,
+        "full_exact": 79,
+        "in_claims": 357,
+        "in_correct": 357,
+        "out_claims": 404,
+        "out_correct": 404,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00VYPQYJVPJQ": {
+      "development/primary/old": {
+        "queries": 135,
+        "full": 72,
+        "full_exact": 71,
+        "in_claims": 426,
+        "in_correct": 424,
+        "out_claims": 514,
+        "out_correct": 512,
+        "issues": 4,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 135,
+        "full": 72,
+        "full_exact": 71,
+        "in_claims": 426,
+        "in_correct": 424,
+        "out_claims": 514,
+        "out_correct": 512,
+        "issues": 4,
+        "mirror_queries": 0
+      }
+    },
+    "00VYPQYLLL2L": {
+      "development/primary/old": {
+        "queries": 105,
+        "full": 20,
+        "full_exact": 20,
+        "in_claims": 254,
+        "in_correct": 254,
+        "out_claims": 379,
+        "out_correct": 371,
+        "issues": 20,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 105,
+        "full": 20,
+        "full_exact": 20,
+        "in_claims": 254,
+        "in_correct": 254,
+        "out_claims": 379,
+        "out_correct": 371,
+        "issues": 20,
+        "mirror_queries": 0
+      }
+    },
+    "00YPVVJL9RRG": {
+      "development/primary/old": {
+        "queries": 55,
+        "full": 16,
+        "full_exact": 15,
+        "in_claims": 116,
+        "in_correct": 115,
+        "out_claims": 190,
+        "out_correct": 188,
+        "issues": 2,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 55,
+        "full": 16,
+        "full_exact": 15,
+        "in_claims": 116,
+        "in_correct": 115,
+        "out_claims": 190,
+        "out_correct": 188,
+        "issues": 2,
+        "mirror_queries": 0
+      }
+    },
+    "00YY0RLL2QPY": {
+      "development/primary/old": {
+        "queries": 43,
+        "full": 10,
+        "full_exact": 10,
+        "in_claims": 100,
+        "in_correct": 100,
+        "out_claims": 152,
+        "out_correct": 152,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 43,
+        "full": 10,
+        "full_exact": 10,
+        "in_claims": 100,
+        "in_correct": 100,
+        "out_claims": 152,
+        "out_correct": 152,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00YYPL0Y8Y0R": {
+      "development/primary/old": {
+        "queries": 103,
+        "full": 55,
+        "full_exact": 55,
+        "in_claims": 324,
+        "in_correct": 324,
+        "out_claims": 392,
+        "out_correct": 392,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 103,
+        "full": 55,
+        "full_exact": 55,
+        "in_claims": 324,
+        "in_correct": 324,
+        "out_claims": 392,
+        "out_correct": 392,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "00YYPYV2GUR2": {
+      "development/primary/old": {
+        "queries": 106,
+        "full": 63,
+        "full_exact": 63,
+        "in_claims": 329,
+        "in_correct": 329,
+        "out_claims": 404,
+        "out_correct": 404,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 106,
+        "full": 63,
+        "full_exact": 63,
+        "in_claims": 329,
+        "in_correct": 329,
+        "out_claims": 404,
+        "out_correct": 404,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "014bd0c8e7314940b4f792f980fa58cf": {
+      "development/primary/old": {
+        "queries": 82,
+        "full": 35,
+        "full_exact": 34,
+        "in_claims": 240,
+        "in_correct": 237,
+        "out_claims": 308,
+        "out_correct": 305,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 82,
+        "full": 35,
+        "full_exact": 34,
+        "in_claims": 240,
+        "in_correct": 237,
+        "out_claims": 308,
+        "out_correct": 305,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "01d096a9dfc94824bc2b64070c41ae00": {
+      "development/primary/old": {
+        "queries": 59,
+        "full": 24,
+        "full_exact": 24,
+        "in_claims": 158,
+        "in_correct": 154,
+        "out_claims": 216,
+        "out_correct": 212,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 59,
+        "full": 24,
+        "full_exact": 24,
+        "in_claims": 158,
+        "in_correct": 154,
+        "out_claims": 216,
+        "out_correct": 212,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "020YPLGYPPLG": {
+      "development/primary/old": {
+        "queries": 112,
+        "full": 71,
+        "full_exact": 71,
+        "in_claims": 365,
+        "in_correct": 365,
+        "out_claims": 428,
+        "out_correct": 428,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 112,
+        "full": 71,
+        "full_exact": 71,
+        "in_claims": 365,
+        "in_correct": 365,
+        "out_claims": 428,
+        "out_correct": 428,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "020YPLYPQU9R": {
+      "development/primary/old": {
+        "queries": 63,
+        "full": 5,
+        "full_exact": 5,
+        "in_claims": 105,
+        "in_correct": 105,
+        "out_claims": 220,
+        "out_correct": 219,
+        "issues": 19,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 63,
+        "full": 5,
+        "full_exact": 5,
+        "in_claims": 105,
+        "in_correct": 105,
+        "out_claims": 220,
+        "out_correct": 219,
+        "issues": 19,
+        "mirror_queries": 0
+      }
+    },
+    "020YPYL9CYUL": {
+      "development/primary/old": {
+        "queries": 89,
+        "full": 66,
+        "full_exact": 64,
+        "in_claims": 292,
+        "in_correct": 290,
+        "out_claims": 336,
+        "out_correct": 334,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 89,
+        "full": 66,
+        "full_exact": 64,
+        "in_claims": 292,
+        "in_correct": 290,
+        "out_claims": 336,
+        "out_correct": 334,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "020YPYLP8YR0": {
+      "development/primary/old": {
+        "queries": 104,
+        "full": 76,
+        "full_exact": 76,
+        "in_claims": 348,
+        "in_correct": 348,
+        "out_claims": 396,
+        "out_correct": 396,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 104,
+        "full": 76,
+        "full_exact": 76,
+        "in_claims": 348,
+        "in_correct": 348,
+        "out_claims": 396,
+        "out_correct": 396,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "020YPYQ0RRY0": {
+      "development/primary/old": {
+        "queries": 43,
+        "full": 6,
+        "full_exact": 5,
+        "in_claims": 84,
+        "in_correct": 83,
+        "out_claims": 143,
+        "out_correct": 141,
+        "issues": 8,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 43,
+        "full": 6,
+        "full_exact": 5,
+        "in_claims": 84,
+        "in_correct": 83,
+        "out_claims": 143,
+        "out_correct": 141,
+        "issues": 8,
+        "mirror_queries": 0
+      }
+    },
+    "020YPYUC22VR": {
+      "development/primary/old": {
+        "queries": 43,
+        "full": 0,
+        "full_exact": 0,
+        "in_claims": 86,
+        "in_correct": 86,
+        "out_claims": 149,
+        "out_correct": 148,
+        "issues": 1,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 43,
+        "full": 0,
+        "full_exact": 0,
+        "in_claims": 86,
+        "in_correct": 86,
+        "out_claims": 149,
+        "out_correct": 148,
+        "issues": 1,
+        "mirror_queries": 0
+      }
+    },
+    "020YPYYQG22L": {
+      "development/primary/old": {
+        "queries": 5,
+        "full": 0,
+        "full_exact": 0,
+        "in_claims": 0,
+        "in_correct": 0,
+        "out_claims": 6,
+        "out_correct": 6,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 5,
+        "full": 0,
+        "full_exact": 0,
+        "in_claims": 0,
+        "in_correct": 0,
+        "out_claims": 6,
+        "out_correct": 6,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "022YYG0GU0RQ": {
+      "development/primary/old": {
+        "queries": 109,
+        "full": 34,
+        "full_exact": 34,
+        "in_claims": 313,
+        "in_correct": 313,
+        "out_claims": 416,
+        "out_correct": 416,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 109,
+        "full": 34,
+        "full_exact": 34,
+        "in_claims": 313,
+        "in_correct": 313,
+        "out_claims": 416,
+        "out_correct": 416,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "022YYGGU2V2J": {
+      "development/primary/old": {
+        "queries": 55,
+        "full": 16,
+        "full_exact": 16,
+        "in_claims": 123,
+        "in_correct": 123,
+        "out_claims": 200,
+        "out_correct": 200,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 55,
+        "full": 16,
+        "full_exact": 16,
+        "in_claims": 123,
+        "in_correct": 123,
+        "out_claims": 200,
+        "out_correct": 200,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "022YYGY8QRC8": {
+      "development/primary/old": {
+        "queries": 105,
+        "full": 45,
+        "full_exact": 45,
+        "in_claims": 313,
+        "in_correct": 313,
+        "out_claims": 400,
+        "out_correct": 400,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 105,
+        "full": 45,
+        "full_exact": 45,
+        "in_claims": 313,
+        "in_correct": 313,
+        "out_claims": 400,
+        "out_correct": 400,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "022YYLV9YVJL": {
+      "development/primary/old": {
+        "queries": 119,
+        "full": 9,
+        "full_exact": 6,
+        "in_claims": 281,
+        "in_correct": 278,
+        "out_claims": 446,
+        "out_correct": 439,
+        "issues": 36,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 119,
+        "full": 9,
+        "full_exact": 6,
+        "in_claims": 281,
+        "in_correct": 278,
+        "out_claims": 446,
+        "out_correct": 439,
+        "issues": 36,
+        "mirror_queries": 0
+      }
+    },
+    "022YYQPC9JQJ": {
+      "development/primary/old": {
+        "queries": 120,
+        "full": 82,
+        "full_exact": 78,
+        "in_claims": 388,
+        "in_correct": 384,
+        "out_claims": 449,
+        "out_correct": 445,
+        "issues": 2,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 120,
+        "full": 82,
+        "full_exact": 78,
+        "in_claims": 388,
+        "in_correct": 384,
+        "out_claims": 449,
+        "out_correct": 445,
+        "issues": 2,
+        "mirror_queries": 0
+      }
+    },
+    "022YYYUCR9VJ": {
+      "development/primary/old": {
+        "queries": 74,
+        "full": 27,
+        "full_exact": 27,
+        "in_claims": 201,
+        "in_correct": 201,
+        "out_claims": 276,
+        "out_correct": 276,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 74,
+        "full": 27,
+        "full_exact": 27,
+        "in_claims": 201,
+        "in_correct": 201,
+        "out_claims": 276,
+        "out_correct": 276,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "028YPU8CRPQG": {
+      "development/primary/old": {
+        "queries": 51,
+        "full": 29,
+        "full_exact": 29,
+        "in_claims": 143,
+        "in_correct": 143,
+        "out_claims": 184,
+        "out_correct": 184,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 51,
+        "full": 29,
+        "full_exact": 29,
+        "in_claims": 143,
+        "in_correct": 143,
+        "out_claims": 184,
+        "out_correct": 184,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "028YPUVCJYY8": {
+      "development/primary/old": {
+        "queries": 132,
+        "full": 57,
+        "full_exact": 55,
+        "in_claims": 375,
+        "in_correct": 371,
+        "out_claims": 502,
+        "out_correct": 498,
+        "issues": 13,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 132,
+        "full": 57,
+        "full_exact": 55,
+        "in_claims": 375,
+        "in_correct": 371,
+        "out_claims": 502,
+        "out_correct": 498,
+        "issues": 13,
+        "mirror_queries": 0
+      }
+    },
+    "028YPUVLL8L8": {
+      "development/primary/old": {
+        "queries": 141,
+        "full": 67,
+        "full_exact": 63,
+        "in_claims": 441,
+        "in_correct": 434,
+        "out_claims": 544,
+        "out_correct": 537,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 141,
+        "full": 67,
+        "full_exact": 63,
+        "in_claims": 441,
+        "in_correct": 434,
+        "out_claims": 544,
+        "out_correct": 537,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "028YPV0UCPJR": {
+      "development/primary/old": {
+        "queries": 50,
+        "full": 12,
+        "full_exact": 12,
+        "in_claims": 111,
+        "in_correct": 111,
+        "out_claims": 180,
+        "out_correct": 180,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 50,
+        "full": 12,
+        "full_exact": 12,
+        "in_claims": 111,
+        "in_correct": 111,
+        "out_claims": 180,
+        "out_correct": 180,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "029YPCCYL92U": {
+      "development/primary/old": {
+        "queries": 64,
+        "full": 16,
+        "full_exact": 16,
+        "in_claims": 139,
+        "in_correct": 139,
+        "out_claims": 221,
+        "out_correct": 220,
+        "issues": 13,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 64,
+        "full": 16,
+        "full_exact": 16,
+        "in_claims": 139,
+        "in_correct": 139,
+        "out_claims": 221,
+        "out_correct": 220,
+        "issues": 13,
+        "mirror_queries": 0
+      }
+    },
+    "029YPCVVG8VU": {
+      "development/primary/old": {
+        "queries": 17,
+        "full": 0,
+        "full_exact": 0,
+        "in_claims": 11,
+        "in_correct": 11,
+        "out_claims": 48,
+        "out_correct": 48,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 17,
+        "full": 0,
+        "full_exact": 0,
+        "in_claims": 11,
+        "in_correct": 11,
+        "out_claims": 48,
+        "out_correct": 48,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "02CP8J9PJ8PR": {
+      "development/primary/old": {
+        "queries": 141,
+        "full": 65,
+        "full_exact": 63,
+        "in_claims": 440,
+        "in_correct": 437,
+        "out_claims": 544,
+        "out_correct": 541,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 141,
+        "full": 65,
+        "full_exact": 63,
+        "in_claims": 440,
+        "in_correct": 437,
+        "out_claims": 544,
+        "out_correct": 541,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "02CY8L0RRRVL": {
+      "development/primary/old": {
+        "queries": 32,
+        "full": 11,
+        "full_exact": 11,
+        "in_claims": 66,
+        "in_correct": 66,
+        "out_claims": 108,
+        "out_correct": 108,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 32,
+        "full": 11,
+        "full_exact": 11,
+        "in_claims": 66,
+        "in_correct": 66,
+        "out_claims": 108,
+        "out_correct": 108,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "02CY8LQU9JQL": {
+      "development/primary/old": {
+        "queries": 43,
+        "full": 7,
+        "full_exact": 7,
+        "in_claims": 78,
+        "in_correct": 78,
+        "out_claims": 152,
+        "out_correct": 152,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 43,
+        "full": 7,
+        "full_exact": 7,
+        "in_claims": 78,
+        "in_correct": 78,
+        "out_claims": 152,
+        "out_correct": 152,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "02CY8Y009Q00": {
+      "development/primary/old": {
+        "queries": 130,
+        "full": 99,
+        "full_exact": 97,
+        "in_claims": 445,
+        "in_correct": 443,
+        "out_claims": 500,
+        "out_correct": 498,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 130,
+        "full": 99,
+        "full_exact": 97,
+        "in_claims": 445,
+        "in_correct": 443,
+        "out_claims": 500,
+        "out_correct": 498,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "02CY8YCYGCCL": {
+      "development/primary/old": {
+        "queries": 52,
+        "full": 7,
+        "full_exact": 7,
+        "in_claims": 86,
+        "in_correct": 86,
+        "out_claims": 167,
+        "out_correct": 158,
+        "issues": 15,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 52,
+        "full": 7,
+        "full_exact": 7,
+        "in_claims": 86,
+        "in_correct": 86,
+        "out_claims": 167,
+        "out_correct": 158,
+        "issues": 15,
+        "mirror_queries": 0
+      }
+    },
+    "02CY8YQJUUJC": {
+      "development/primary/old": {
+        "queries": 82,
+        "full": 27,
+        "full_exact": 27,
+        "in_claims": 205,
+        "in_correct": 205,
+        "out_claims": 308,
+        "out_correct": 308,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 82,
+        "full": 27,
+        "full_exact": 27,
+        "in_claims": 205,
+        "in_correct": 205,
+        "out_claims": 308,
+        "out_correct": 308,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "02CY8YU8QLJ2": {
+      "development/primary/old": {
+        "queries": 97,
+        "full": 41,
+        "full_exact": 41,
+        "in_claims": 287,
+        "in_correct": 287,
+        "out_claims": 368,
+        "out_correct": 368,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 97,
+        "full": 41,
+        "full_exact": 41,
+        "in_claims": 287,
+        "in_correct": 287,
+        "out_claims": 368,
+        "out_correct": 368,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "02CY8YVCVRVJ": {
+      "development/primary/old": {
+        "queries": 50,
+        "full": 6,
+        "full_exact": 6,
+        "in_claims": 106,
+        "in_correct": 106,
+        "out_claims": 180,
+        "out_correct": 180,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 50,
+        "full": 6,
+        "full_exact": 6,
+        "in_claims": 106,
+        "in_correct": 106,
+        "out_claims": 180,
+        "out_correct": 180,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "02CY8YVYPCJR": {
+      "development/primary/old": {
+        "queries": 119,
+        "full": 41,
+        "full_exact": 39,
+        "in_claims": 284,
+        "in_correct": 280,
+        "out_claims": 429,
+        "out_correct": 424,
+        "issues": 57,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 119,
+        "full": 41,
+        "full_exact": 39,
+        "in_claims": 284,
+        "in_correct": 280,
+        "out_claims": 429,
+        "out_correct": 424,
+        "issues": 57,
+        "mirror_queries": 0
+      }
+    },
+    "02GY9G2URQ2P": {
+      "development/primary/old": {
+        "queries": 101,
+        "full": 35,
+        "full_exact": 33,
+        "in_claims": 252,
+        "in_correct": 250,
+        "out_claims": 369,
+        "out_correct": 357,
+        "issues": 26,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 101,
+        "full": 35,
+        "full_exact": 33,
+        "in_claims": 252,
+        "in_correct": 250,
+        "out_claims": 369,
+        "out_correct": 357,
+        "issues": 26,
+        "mirror_queries": 0
+      }
+    },
+    "02GY9GJGYJUV": {
+      "development/primary/old": {
+        "queries": 84,
+        "full": 14,
+        "full_exact": 13,
+        "in_claims": 183,
+        "in_correct": 181,
+        "out_claims": 298,
+        "out_correct": 295,
+        "issues": 21,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 84,
+        "full": 14,
+        "full_exact": 13,
+        "in_claims": 183,
+        "in_correct": 181,
+        "out_claims": 298,
+        "out_correct": 295,
+        "issues": 21,
+        "mirror_queries": 0
+      }
+    },
+    "02GY9GVRYYRC": {
+      "development/primary/old": {
+        "queries": 47,
+        "full": 6,
+        "full_exact": 6,
+        "in_claims": 85,
+        "in_correct": 85,
+        "out_claims": 162,
+        "out_correct": 159,
+        "issues": 9,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 47,
+        "full": 6,
+        "full_exact": 6,
+        "in_claims": 85,
+        "in_correct": 85,
+        "out_claims": 162,
+        "out_correct": 159,
+        "issues": 9,
+        "mirror_queries": 0
+      }
+    },
+    "02GY9GY2LJ82": {
+      "development/primary/old": {
+        "queries": 114,
+        "full": 79,
+        "full_exact": 79,
+        "in_claims": 374,
+        "in_correct": 374,
+        "out_claims": 436,
+        "out_correct": 436,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 114,
+        "full": 79,
+        "full_exact": 79,
+        "in_claims": 374,
+        "in_correct": 374,
+        "out_claims": 436,
+        "out_correct": 436,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "02GY9R00RQJC": {
+      "development/primary/old": {
+        "queries": 31,
+        "full": 4,
+        "full_exact": 4,
+        "in_claims": 46,
+        "in_correct": 46,
+        "out_claims": 104,
+        "out_correct": 104,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 31,
+        "full": 4,
+        "full_exact": 4,
+        "in_claims": 46,
+        "in_correct": 46,
+        "out_claims": 104,
+        "out_correct": 104,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "02GY9R02LUU8": {
+      "development/primary/old": {
+        "queries": 79,
+        "full": 39,
+        "full_exact": 39,
+        "in_claims": 238,
+        "in_correct": 238,
+        "out_claims": 296,
+        "out_correct": 296,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 79,
+        "full": 39,
+        "full_exact": 39,
+        "in_claims": 238,
+        "in_correct": 238,
+        "out_claims": 296,
+        "out_correct": 296,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "02GY9RG28CU9": {
+      "development/primary/old": {
+        "queries": 66,
+        "full": 36,
+        "full_exact": 35,
+        "in_claims": 185,
+        "in_correct": 184,
+        "out_claims": 238,
+        "out_correct": 236,
+        "issues": 21,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 66,
+        "full": 36,
+        "full_exact": 35,
+        "in_claims": 185,
+        "in_correct": 184,
+        "out_claims": 238,
+        "out_correct": 236,
+        "issues": 21,
+        "mirror_queries": 0
+      }
+    },
+    "02GY9RQJJ9RR": {
+      "development/primary/old": {
+        "queries": 34,
+        "full": 0,
+        "full_exact": 0,
+        "in_claims": 60,
+        "in_correct": 58,
+        "out_claims": 116,
+        "out_correct": 114,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 34,
+        "full": 0,
+        "full_exact": 0,
+        "in_claims": 60,
+        "in_correct": 58,
+        "out_claims": 116,
+        "out_correct": 114,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "02GY9RQRGRCQ": {
+      "development/primary/old": {
+        "queries": 128,
+        "full": 108,
+        "full_exact": 107,
+        "in_claims": 454,
+        "in_correct": 453,
+        "out_claims": 492,
+        "out_correct": 491,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 128,
+        "full": 108,
+        "full_exact": 107,
+        "in_claims": 454,
+        "in_correct": 453,
+        "out_claims": 492,
+        "out_correct": 491,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "02JY9G020C2U": {
+      "development/primary/old": {
+        "queries": 35,
+        "full": 1,
+        "full_exact": 1,
+        "in_claims": 64,
+        "in_correct": 64,
+        "out_claims": 119,
+        "out_correct": 114,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 35,
+        "full": 1,
+        "full_exact": 1,
+        "in_claims": 64,
+        "in_correct": 64,
+        "out_claims": 119,
+        "out_correct": 114,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "02JY9G08C0JV": {
+      "development/primary/old": {
+        "queries": 105,
+        "full": 17,
+        "full_exact": 17,
+        "in_claims": 180,
+        "in_correct": 178,
+        "out_claims": 347,
+        "out_correct": 338,
+        "issues": 38,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 105,
+        "full": 30,
+        "full_exact": 25,
+        "in_claims": 240,
+        "in_correct": 235,
+        "out_claims": 364,
+        "out_correct": 356,
+        "issues": 35,
+        "mirror_queries": 38
+      }
+    },
+    "02JY9G9PP92L": {
+      "development/primary/old": {
+        "queries": 123,
+        "full": 68,
+        "full_exact": 68,
+        "in_claims": 392,
+        "in_correct": 386,
+        "out_claims": 472,
+        "out_correct": 466,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 123,
+        "full": 68,
+        "full_exact": 68,
+        "in_claims": 392,
+        "in_correct": 386,
+        "out_claims": 472,
+        "out_correct": 466,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "02JY9GL22CYR": {
+      "development/primary/old": {
+        "queries": 110,
+        "full": 85,
+        "full_exact": 84,
+        "in_claims": 376,
+        "in_correct": 375,
+        "out_claims": 420,
+        "out_correct": 419,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 110,
+        "full": 85,
+        "full_exact": 84,
+        "in_claims": 376,
+        "in_correct": 375,
+        "out_claims": 420,
+        "out_correct": 419,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "02JY9GRC2CCQ": {
+      "development/primary/old": {
+        "queries": 77,
+        "full": 42,
+        "full_exact": 40,
+        "in_claims": 216,
+        "in_correct": 214,
+        "out_claims": 282,
+        "out_correct": 279,
+        "issues": 18,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 77,
+        "full": 42,
+        "full_exact": 40,
+        "in_claims": 216,
+        "in_correct": 214,
+        "out_claims": 282,
+        "out_correct": 279,
+        "issues": 18,
+        "mirror_queries": 0
+      }
+    },
+    "02JY9GRCGL9J": {
+      "development/primary/old": {
+        "queries": 17,
+        "full": 0,
+        "full_exact": 0,
+        "in_claims": 5,
+        "in_correct": 5,
+        "out_claims": 42,
+        "out_correct": 41,
+        "issues": 3,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 17,
+        "full": 0,
+        "full_exact": 0,
+        "in_claims": 14,
+        "in_correct": 11,
+        "out_claims": 48,
+        "out_correct": 47,
+        "issues": 0,
+        "mirror_queries": 3
+      }
+    },
+    "02JY9RQJVVQG": {
+      "development/primary/old": {
+        "queries": 138,
+        "full": 78,
+        "full_exact": 74,
+        "in_claims": 452,
+        "in_correct": 447,
+        "out_claims": 532,
+        "out_correct": 527,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 138,
+        "full": 78,
+        "full_exact": 74,
+        "in_claims": 452,
+        "in_correct": 447,
+        "out_claims": 532,
+        "out_correct": 527,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "02LY9G09L09R": {
+      "development/primary/old": {
+        "queries": 113,
+        "full": 4,
+        "full_exact": 3,
+        "in_claims": 295,
+        "in_correct": 294,
+        "out_claims": 426,
+        "out_correct": 425,
+        "issues": 4,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 113,
+        "full": 4,
+        "full_exact": 3,
+        "in_claims": 295,
+        "in_correct": 294,
+        "out_claims": 426,
+        "out_correct": 425,
+        "issues": 4,
+        "mirror_queries": 0
+      }
+    },
+    "02LY9LVCP20P": {
+      "development/primary/old": {
+        "queries": 103,
+        "full": 45,
+        "full_exact": 44,
+        "in_claims": 247,
+        "in_correct": 246,
+        "out_claims": 356,
+        "out_correct": 353,
+        "issues": 27,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 103,
+        "full": 45,
+        "full_exact": 44,
+        "in_claims": 247,
+        "in_correct": 246,
+        "out_claims": 356,
+        "out_correct": 353,
+        "issues": 27,
+        "mirror_queries": 0
+      }
+    },
+    "02LY9QCQ0Q9P": {
+      "development/primary/old": {
+        "queries": 93,
+        "full": 26,
+        "full_exact": 26,
+        "in_claims": 244,
+        "in_correct": 244,
+        "out_claims": 352,
+        "out_correct": 352,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 93,
+        "full": 26,
+        "full_exact": 26,
+        "in_claims": 244,
+        "in_correct": 244,
+        "out_claims": 352,
+        "out_correct": 352,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "02LY9QVVG0PG": {
+      "development/primary/old": {
+        "queries": 58,
+        "full": 30,
+        "full_exact": 29,
+        "in_claims": 164,
+        "in_correct": 163,
+        "out_claims": 212,
+        "out_correct": 211,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 58,
+        "full": 30,
+        "full_exact": 29,
+        "in_claims": 164,
+        "in_correct": 163,
+        "out_claims": 212,
+        "out_correct": 211,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "02LY9QVVLGCY": {
+      "development/primary/old": {
+        "queries": 103,
+        "full": 38,
+        "full_exact": 38,
+        "in_claims": 269,
+        "in_correct": 268,
+        "out_claims": 389,
+        "out_correct": 388,
+        "issues": 1,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 103,
+        "full": 38,
+        "full_exact": 38,
+        "in_claims": 269,
+        "in_correct": 268,
+        "out_claims": 389,
+        "out_correct": 388,
+        "issues": 1,
+        "mirror_queries": 0
+      }
+    },
+    "02PY2JULPLQU": {
+      "development/primary/old": {
+        "queries": 100,
+        "full": 14,
+        "full_exact": 13,
+        "in_claims": 189,
+        "in_correct": 188,
+        "out_claims": 354,
+        "out_correct": 348,
+        "issues": 43,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 100,
+        "full": 14,
+        "full_exact": 13,
+        "in_claims": 189,
+        "in_correct": 188,
+        "out_claims": 354,
+        "out_correct": 348,
+        "issues": 43,
+        "mirror_queries": 0
+      }
+    },
+    "02PYPCJVU2PR": {
+      "development/primary/old": {
+        "queries": 49,
+        "full": 1,
+        "full_exact": 1,
+        "in_claims": 80,
+        "in_correct": 80,
+        "out_claims": 162,
+        "out_correct": 160,
+        "issues": 15,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 49,
+        "full": 1,
+        "full_exact": 1,
+        "in_claims": 80,
+        "in_correct": 80,
+        "out_claims": 162,
+        "out_correct": 160,
+        "issues": 15,
+        "mirror_queries": 0
+      }
+    },
+    "02PYPCULR2QJ": {
+      "development/primary/old": {
+        "queries": 65,
+        "full": 26,
+        "full_exact": 26,
+        "in_claims": 153,
+        "in_correct": 152,
+        "out_claims": 234,
+        "out_correct": 233,
+        "issues": 25,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 65,
+        "full": 26,
+        "full_exact": 26,
+        "in_claims": 153,
+        "in_correct": 152,
+        "out_claims": 234,
+        "out_correct": 233,
+        "issues": 25,
+        "mirror_queries": 0
+      }
+    },
+    "02PYPUQLQLPU": {
+      "development/primary/old": {
+        "queries": 58,
+        "full": 12,
+        "full_exact": 12,
+        "in_claims": 148,
+        "in_correct": 148,
+        "out_claims": 212,
+        "out_correct": 212,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 58,
+        "full": 12,
+        "full_exact": 12,
+        "in_claims": 148,
+        "in_correct": 148,
+        "out_claims": 212,
+        "out_correct": 212,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "02QY9G8GJVJY": {
+      "development/primary/old": {
+        "queries": 88,
+        "full": 57,
+        "full_exact": 55,
+        "in_claims": 265,
+        "in_correct": 263,
+        "out_claims": 325,
+        "out_correct": 322,
+        "issues": 9,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 88,
+        "full": 57,
+        "full_exact": 55,
+        "in_claims": 265,
+        "in_correct": 263,
+        "out_claims": 325,
+        "out_correct": 322,
+        "issues": 9,
+        "mirror_queries": 0
+      }
+    },
+    "02QY9G8JQQJY": {
+      "development/primary/old": {
+        "queries": 125,
+        "full": 37,
+        "full_exact": 36,
+        "in_claims": 357,
+        "in_correct": 356,
+        "out_claims": 480,
+        "out_correct": 479,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 125,
+        "full": 37,
+        "full_exact": 36,
+        "in_claims": 357,
+        "in_correct": 356,
+        "out_claims": 480,
+        "out_correct": 479,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    },
+    "02QY9GP89C0V": {
+      "development/primary/old": {
+        "queries": 102,
+        "full": 31,
+        "full_exact": 31,
+        "in_claims": 271,
+        "in_correct": 271,
+        "out_claims": 388,
+        "out_correct": 388,
+        "issues": 0,
+        "mirror_queries": 0
+      },
+      "development/primary/mirror_successor": {
+        "queries": 102,
+        "full": 31,
+        "full_exact": 31,
+        "in_claims": 271,
+        "in_correct": 271,
+        "out_claims": 388,
+        "out_correct": 388,
+        "issues": 0,
+        "mirror_queries": 0
+      }
+    }
+  },
+  "changed_queries": 35,
+  "changed": [
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 1761,
+      "side": 0,
+      "truth": [
+        "goblins",
+        "knight",
+        "tornado",
+        "zap"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "pekka"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "hog-rider"
+        ],
+        "uncertain": [
+          "executioner",
+          "goblins",
+          "pekka"
+        ],
+        "unrevealed_slots": 4,
+        "plays_to_return": {
+          "hog-rider": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 1
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "mirror",
+          "pekka"
+        ],
+        "in_hand": [
+          "goblins"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider",
+          "mirror",
+          "pekka"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 3,
+        "plays_to_return": {
+          "goblins": [
+            0,
+            0
+          ],
+          "executioner": [
+            1,
+            1
+          ],
+          "pekka": [
+            2,
+            2
+          ],
+          "hog-rider": [
+            3,
+            3
+          ],
+          "mirror": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {},
+        "inferred_mirror_plays": 1
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 2273,
+      "side": 0,
+      "truth": [
+        "executioner",
+        "knight",
+        "tornado",
+        "zap"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "pekka"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "goblins",
+          "hog-rider"
+        ],
+        "uncertain": [
+          "executioner",
+          "pekka"
+        ],
+        "unrevealed_slots": 4,
+        "plays_to_return": {
+          "hog-rider": [
+            3,
+            3
+          ],
+          "goblins": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 1
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "mirror",
+          "pekka"
+        ],
+        "in_hand": [
+          "executioner"
+        ],
+        "out_of_hand": [
+          "goblins",
+          "hog-rider",
+          "mirror",
+          "pekka"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 3,
+        "plays_to_return": {
+          "goblins": [
+            4,
+            4
+          ],
+          "executioner": [
+            0,
+            0
+          ],
+          "pekka": [
+            1,
+            1
+          ],
+          "hog-rider": [
+            2,
+            2
+          ],
+          "mirror": [
+            3,
+            3
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {},
+        "inferred_mirror_plays": 1
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 2385,
+      "side": 0,
+      "truth": [
+        "executioner",
+        "knight",
+        "pekka",
+        "tornado"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "pekka"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "goblins",
+          "hog-rider"
+        ],
+        "uncertain": [
+          "executioner",
+          "pekka"
+        ],
+        "unrevealed_slots": 4,
+        "plays_to_return": {
+          "hog-rider": [
+            3,
+            3
+          ],
+          "goblins": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 1
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "mirror",
+          "pekka"
+        ],
+        "in_hand": [
+          "executioner"
+        ],
+        "out_of_hand": [
+          "goblins",
+          "hog-rider",
+          "mirror",
+          "pekka"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 3,
+        "plays_to_return": {
+          "goblins": [
+            4,
+            4
+          ],
+          "executioner": [
+            0,
+            0
+          ],
+          "pekka": [
+            1,
+            1
+          ],
+          "hog-rider": [
+            2,
+            2
+          ],
+          "mirror": [
+            3,
+            3
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {},
+        "inferred_mirror_plays": 1
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 2468,
+      "side": 0,
+      "truth": [
+        "executioner",
+        "hog-rider",
+        "knight",
+        "tornado"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "pekka"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "goblins",
+          "hog-rider",
+          "pekka"
+        ],
+        "uncertain": [
+          "executioner"
+        ],
+        "unrevealed_slots": 4,
+        "plays_to_return": {
+          "hog-rider": [
+            2,
+            2
+          ],
+          "goblins": [
+            3,
+            3
+          ],
+          "pekka": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 1
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "mirror",
+          "pekka"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "pekka"
+        ],
+        "uncertain": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "mirror"
+        ],
+        "unrevealed_slots": 3,
+        "plays_to_return": {
+          "pekka": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 1
+        },
+        "inferred_mirror_plays": 1
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 2577,
+      "side": 0,
+      "truth": [
+        "executioner",
+        "knight",
+        "mirror",
+        "tornado"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "pekka"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "hog-rider"
+        ],
+        "uncertain": [
+          "executioner",
+          "goblins",
+          "pekka"
+        ],
+        "unrevealed_slots": 4,
+        "plays_to_return": {
+          "hog-rider": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 2
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "mirror",
+          "pekka"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "hog-rider",
+          "pekka"
+        ],
+        "uncertain": [
+          "executioner",
+          "goblins",
+          "mirror"
+        ],
+        "unrevealed_slots": 3,
+        "plays_to_return": {
+          "pekka": [
+            3,
+            3
+          ],
+          "hog-rider": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 1
+        },
+        "inferred_mirror_plays": 1
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 2753,
+      "side": 0,
+      "truth": [
+        "goblins",
+        "knight",
+        "mirror",
+        "tornado"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "pekka"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider"
+        ],
+        "uncertain": [
+          "goblins",
+          "pekka"
+        ],
+        "unrevealed_slots": 4,
+        "plays_to_return": {
+          "hog-rider": [
+            3,
+            3
+          ],
+          "executioner": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 2
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "mirror",
+          "pekka"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider",
+          "pekka"
+        ],
+        "uncertain": [
+          "goblins",
+          "mirror"
+        ],
+        "unrevealed_slots": 3,
+        "plays_to_return": {
+          "pekka": [
+            2,
+            2
+          ],
+          "hog-rider": [
+            3,
+            3
+          ],
+          "executioner": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 1
+        },
+        "inferred_mirror_plays": 1
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 2898,
+      "side": 0,
+      "truth": [
+        "goblins",
+        "mirror",
+        "tornado",
+        "zap"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider",
+          "knight"
+        ],
+        "uncertain": [
+          "goblins",
+          "pekka"
+        ],
+        "unrevealed_slots": 3,
+        "plays_to_return": {
+          "hog-rider": [
+            2,
+            2
+          ],
+          "executioner": [
+            3,
+            3
+          ],
+          "knight": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 2
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider",
+          "knight",
+          "pekka"
+        ],
+        "uncertain": [
+          "goblins",
+          "mirror"
+        ],
+        "unrevealed_slots": 2,
+        "plays_to_return": {
+          "pekka": [
+            1,
+            1
+          ],
+          "hog-rider": [
+            2,
+            2
+          ],
+          "executioner": [
+            3,
+            3
+          ],
+          "knight": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 1
+        },
+        "inferred_mirror_plays": 1
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 2957,
+      "side": 0,
+      "truth": [
+        "mirror",
+        "pekka",
+        "tornado",
+        "zap"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight"
+        ],
+        "uncertain": [
+          "pekka"
+        ],
+        "unrevealed_slots": 3,
+        "plays_to_return": {
+          "hog-rider": [
+            1,
+            1
+          ],
+          "executioner": [
+            2,
+            2
+          ],
+          "knight": [
+            3,
+            3
+          ],
+          "goblins": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 2
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka"
+        ],
+        "in_hand": [
+          "pekka"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight"
+        ],
+        "uncertain": [
+          "mirror"
+        ],
+        "unrevealed_slots": 2,
+        "plays_to_return": {
+          "pekka": [
+            0,
+            0
+          ],
+          "hog-rider": [
+            1,
+            1
+          ],
+          "executioner": [
+            2,
+            2
+          ],
+          "knight": [
+            3,
+            3
+          ],
+          "goblins": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 1
+        },
+        "inferred_mirror_plays": 1
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 3355,
+      "side": 0,
+      "truth": [
+        "executioner",
+        "hog-rider",
+        "tornado",
+        "zap"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "pekka"
+        ],
+        "uncertain": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight"
+        ],
+        "unrevealed_slots": 3,
+        "plays_to_return": {
+          "pekka": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 3
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka"
+        ],
+        "in_hand": [
+          "executioner",
+          "hog-rider"
+        ],
+        "out_of_hand": [
+          "goblins",
+          "knight",
+          "mirror",
+          "pekka"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 2,
+        "plays_to_return": {
+          "pekka": [
+            3,
+            3
+          ],
+          "hog-rider": [
+            0,
+            0
+          ],
+          "executioner": [
+            0,
+            0
+          ],
+          "knight": [
+            1,
+            1
+          ],
+          "goblins": [
+            2,
+            2
+          ],
+          "mirror": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 1
+        },
+        "inferred_mirror_plays": 2
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 3391,
+      "side": 0,
+      "truth": [
+        "hog-rider",
+        "knight",
+        "tornado",
+        "zap"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "executioner",
+          "pekka"
+        ],
+        "uncertain": [
+          "goblins",
+          "hog-rider",
+          "knight"
+        ],
+        "unrevealed_slots": 3,
+        "plays_to_return": {
+          "pekka": [
+            3,
+            3
+          ],
+          "executioner": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 3
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka"
+        ],
+        "in_hand": [
+          "hog-rider",
+          "knight"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "goblins",
+          "mirror",
+          "pekka"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 2,
+        "plays_to_return": {
+          "pekka": [
+            2,
+            2
+          ],
+          "hog-rider": [
+            0,
+            0
+          ],
+          "executioner": [
+            4,
+            4
+          ],
+          "knight": [
+            0,
+            0
+          ],
+          "goblins": [
+            1,
+            1
+          ],
+          "mirror": [
+            3,
+            3
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 1
+        },
+        "inferred_mirror_plays": 2
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 3473,
+      "side": 0,
+      "truth": [
+        "goblins",
+        "knight",
+        "tornado",
+        "zap"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider",
+          "pekka"
+        ],
+        "uncertain": [
+          "goblins",
+          "knight"
+        ],
+        "unrevealed_slots": 3,
+        "plays_to_return": {
+          "pekka": [
+            2,
+            2
+          ],
+          "executioner": [
+            3,
+            3
+          ],
+          "hog-rider": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 3
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka"
+        ],
+        "in_hand": [
+          "goblins",
+          "knight"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider",
+          "mirror",
+          "pekka"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 2,
+        "plays_to_return": {
+          "pekka": [
+            1,
+            1
+          ],
+          "hog-rider": [
+            4,
+            4
+          ],
+          "executioner": [
+            3,
+            3
+          ],
+          "knight": [
+            0,
+            0
+          ],
+          "goblins": [
+            0,
+            0
+          ],
+          "mirror": [
+            2,
+            2
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 1
+        },
+        "inferred_mirror_plays": 2
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 3562,
+      "side": 0,
+      "truth": [
+        "goblins",
+        "knight",
+        "pekka",
+        "zap"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka",
+          "tornado"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider",
+          "pekka",
+          "tornado"
+        ],
+        "uncertain": [
+          "goblins",
+          "knight"
+        ],
+        "unrevealed_slots": 2,
+        "plays_to_return": {
+          "pekka": [
+            1,
+            1
+          ],
+          "executioner": [
+            2,
+            2
+          ],
+          "hog-rider": [
+            3,
+            3
+          ],
+          "tornado": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 3
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka",
+          "tornado"
+        ],
+        "in_hand": [
+          "goblins",
+          "knight",
+          "pekka"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider",
+          "mirror",
+          "tornado"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "pekka": [
+            0,
+            0
+          ],
+          "hog-rider": [
+            3,
+            3
+          ],
+          "executioner": [
+            2,
+            2
+          ],
+          "knight": [
+            0,
+            0
+          ],
+          "goblins": [
+            0,
+            0
+          ],
+          "mirror": [
+            1,
+            1
+          ],
+          "tornado": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 1
+        },
+        "inferred_mirror_plays": 2
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 3782,
+      "side": 0,
+      "truth": [
+        "goblins",
+        "knight",
+        "mirror",
+        "pekka"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka",
+          "tornado"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider",
+          "pekka",
+          "tornado"
+        ],
+        "uncertain": [
+          "goblins",
+          "knight"
+        ],
+        "unrevealed_slots": 2,
+        "plays_to_return": {
+          "pekka": [
+            1,
+            1
+          ],
+          "executioner": [
+            2,
+            2
+          ],
+          "hog-rider": [
+            3,
+            3
+          ],
+          "tornado": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 3
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka",
+          "tornado"
+        ],
+        "in_hand": [
+          "goblins",
+          "knight",
+          "pekka"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider",
+          "mirror",
+          "tornado"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "pekka": [
+            0,
+            0
+          ],
+          "hog-rider": [
+            3,
+            3
+          ],
+          "executioner": [
+            2,
+            2
+          ],
+          "knight": [
+            0,
+            0
+          ],
+          "goblins": [
+            0,
+            0
+          ],
+          "mirror": [
+            1,
+            1
+          ],
+          "tornado": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 1
+        },
+        "inferred_mirror_plays": 2
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 3917,
+      "side": 0,
+      "truth": [
+        "executioner",
+        "goblins",
+        "knight",
+        "mirror"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka",
+          "tornado"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "pekka"
+        ],
+        "uncertain": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "tornado"
+        ],
+        "unrevealed_slots": 2,
+        "plays_to_return": {
+          "pekka": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 4
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka",
+          "tornado"
+        ],
+        "in_hand": [
+          "goblins",
+          "knight",
+          "mirror"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider",
+          "pekka",
+          "tornado"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "pekka": [
+            4,
+            4
+          ],
+          "hog-rider": [
+            2,
+            2
+          ],
+          "executioner": [
+            1,
+            1
+          ],
+          "knight": [
+            0,
+            0
+          ],
+          "goblins": [
+            0,
+            0
+          ],
+          "mirror": [
+            0,
+            0
+          ],
+          "tornado": [
+            3,
+            3
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 1
+        },
+        "inferred_mirror_plays": 2
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 4057,
+      "side": 0,
+      "truth": [
+        "goblins",
+        "hog-rider",
+        "knight",
+        "mirror"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka",
+          "tornado"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "executioner",
+          "pekka"
+        ],
+        "uncertain": [
+          "goblins",
+          "hog-rider",
+          "knight",
+          "tornado"
+        ],
+        "unrevealed_slots": 2,
+        "plays_to_return": {
+          "pekka": [
+            3,
+            3
+          ],
+          "executioner": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 4
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka",
+          "tornado"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "executioner"
+        ],
+        "uncertain": [
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka",
+          "tornado"
+        ],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "executioner": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 2
+        },
+        "inferred_mirror_plays": 2
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 4078,
+      "side": 0,
+      "truth": [
+        "goblins",
+        "hog-rider",
+        "mirror",
+        "tornado"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka",
+          "tornado"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "executioner",
+          "knight",
+          "pekka"
+        ],
+        "uncertain": [
+          "goblins",
+          "hog-rider",
+          "tornado"
+        ],
+        "unrevealed_slots": 2,
+        "plays_to_return": {
+          "pekka": [
+            2,
+            2
+          ],
+          "executioner": [
+            3,
+            3
+          ],
+          "knight": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 4
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka",
+          "tornado"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "executioner",
+          "knight"
+        ],
+        "uncertain": [
+          "goblins",
+          "hog-rider",
+          "mirror",
+          "pekka",
+          "tornado"
+        ],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "executioner": [
+            3,
+            3
+          ],
+          "knight": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 2
+        },
+        "inferred_mirror_plays": 2
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 4131,
+      "side": 0,
+      "truth": [
+        "goblins",
+        "mirror",
+        "tornado",
+        "zap"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka",
+          "tornado"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider",
+          "knight",
+          "pekka"
+        ],
+        "uncertain": [
+          "goblins",
+          "tornado"
+        ],
+        "unrevealed_slots": 2,
+        "plays_to_return": {
+          "pekka": [
+            1,
+            1
+          ],
+          "executioner": [
+            2,
+            2
+          ],
+          "knight": [
+            3,
+            3
+          ],
+          "hog-rider": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 4
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka",
+          "tornado"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider",
+          "knight"
+        ],
+        "uncertain": [
+          "goblins",
+          "mirror",
+          "pekka",
+          "tornado"
+        ],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "executioner": [
+            2,
+            2
+          ],
+          "knight": [
+            3,
+            3
+          ],
+          "hog-rider": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 2
+        },
+        "inferred_mirror_plays": 2
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 4312,
+      "side": 0,
+      "truth": [
+        "goblins",
+        "mirror",
+        "pekka",
+        "tornado"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [
+          "pekka"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider",
+          "knight",
+          "zap"
+        ],
+        "uncertain": [
+          "goblins",
+          "tornado"
+        ],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "pekka": [
+            0,
+            0
+          ],
+          "executioner": [
+            1,
+            1
+          ],
+          "knight": [
+            2,
+            2
+          ],
+          "hog-rider": [
+            3,
+            3
+          ],
+          "zap": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 4
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [
+          "goblins",
+          "mirror",
+          "pekka",
+          "tornado"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider",
+          "knight",
+          "zap"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 0,
+        "plays_to_return": {
+          "executioner": [
+            1,
+            1
+          ],
+          "knight": [
+            2,
+            2
+          ],
+          "hog-rider": [
+            3,
+            3
+          ],
+          "zap": [
+            4,
+            4
+          ],
+          "pekka": [
+            0,
+            0
+          ],
+          "goblins": [
+            0,
+            0
+          ],
+          "mirror": [
+            0,
+            0
+          ],
+          "tornado": [
+            0,
+            0
+          ]
+        },
+        "full_hand": true,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 2
+        },
+        "inferred_mirror_plays": 2
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 4555,
+      "side": 0,
+      "truth": [
+        "executioner",
+        "goblins",
+        "mirror",
+        "tornado"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [
+          "executioner"
+        ],
+        "out_of_hand": [
+          "hog-rider",
+          "knight",
+          "pekka",
+          "zap"
+        ],
+        "uncertain": [
+          "goblins",
+          "tornado"
+        ],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "pekka": [
+            4,
+            4
+          ],
+          "executioner": [
+            0,
+            0
+          ],
+          "knight": [
+            1,
+            1
+          ],
+          "hog-rider": [
+            2,
+            2
+          ],
+          "zap": [
+            3,
+            3
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 4
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [
+          "executioner",
+          "goblins",
+          "mirror",
+          "tornado"
+        ],
+        "out_of_hand": [
+          "hog-rider",
+          "knight",
+          "pekka",
+          "zap"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 0,
+        "plays_to_return": {
+          "executioner": [
+            0,
+            0
+          ],
+          "knight": [
+            1,
+            1
+          ],
+          "hog-rider": [
+            2,
+            2
+          ],
+          "zap": [
+            3,
+            3
+          ],
+          "pekka": [
+            4,
+            4
+          ],
+          "goblins": [
+            0,
+            0
+          ],
+          "mirror": [
+            0,
+            0
+          ],
+          "tornado": [
+            0,
+            0
+          ]
+        },
+        "full_hand": true,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 2
+        },
+        "inferred_mirror_plays": 2
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 4721,
+      "side": 0,
+      "truth": [
+        "goblins",
+        "knight",
+        "mirror",
+        "tornado"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [
+          "knight"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider",
+          "pekka",
+          "zap"
+        ],
+        "uncertain": [
+          "goblins",
+          "tornado"
+        ],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "pekka": [
+            3,
+            3
+          ],
+          "executioner": [
+            4,
+            4
+          ],
+          "knight": [
+            0,
+            0
+          ],
+          "hog-rider": [
+            1,
+            1
+          ],
+          "zap": [
+            2,
+            2
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 4
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [
+          "goblins",
+          "knight",
+          "mirror",
+          "tornado"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider",
+          "pekka",
+          "zap"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 0,
+        "plays_to_return": {
+          "executioner": [
+            4,
+            4
+          ],
+          "knight": [
+            0,
+            0
+          ],
+          "hog-rider": [
+            1,
+            1
+          ],
+          "zap": [
+            2,
+            2
+          ],
+          "pekka": [
+            3,
+            3
+          ],
+          "goblins": [
+            0,
+            0
+          ],
+          "mirror": [
+            0,
+            0
+          ],
+          "tornado": [
+            0,
+            0
+          ]
+        },
+        "full_hand": true,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 2
+        },
+        "inferred_mirror_plays": 2
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 4798,
+      "side": 0,
+      "truth": [
+        "goblins",
+        "hog-rider",
+        "mirror",
+        "tornado"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [
+          "hog-rider"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "knight",
+          "pekka",
+          "zap"
+        ],
+        "uncertain": [
+          "goblins",
+          "tornado"
+        ],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "pekka": [
+            2,
+            2
+          ],
+          "executioner": [
+            3,
+            3
+          ],
+          "knight": [
+            4,
+            4
+          ],
+          "hog-rider": [
+            0,
+            0
+          ],
+          "zap": [
+            1,
+            1
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 4
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [
+          "goblins",
+          "hog-rider",
+          "mirror",
+          "tornado"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "knight",
+          "pekka",
+          "zap"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 0,
+        "plays_to_return": {
+          "executioner": [
+            3,
+            3
+          ],
+          "knight": [
+            4,
+            4
+          ],
+          "hog-rider": [
+            0,
+            0
+          ],
+          "zap": [
+            1,
+            1
+          ],
+          "pekka": [
+            2,
+            2
+          ],
+          "goblins": [
+            0,
+            0
+          ],
+          "mirror": [
+            0,
+            0
+          ],
+          "tornado": [
+            0,
+            0
+          ]
+        },
+        "full_hand": true,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 2
+        },
+        "inferred_mirror_plays": 2
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 4861,
+      "side": 0,
+      "truth": [
+        "hog-rider",
+        "mirror",
+        "tornado",
+        "zap"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [
+          "hog-rider",
+          "zap"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "goblins",
+          "knight",
+          "pekka"
+        ],
+        "uncertain": [
+          "tornado"
+        ],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "pekka": [
+            1,
+            1
+          ],
+          "executioner": [
+            2,
+            2
+          ],
+          "knight": [
+            3,
+            3
+          ],
+          "hog-rider": [
+            0,
+            0
+          ],
+          "zap": [
+            0,
+            0
+          ],
+          "goblins": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 4
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [
+          "hog-rider",
+          "mirror",
+          "tornado",
+          "zap"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "goblins",
+          "knight",
+          "pekka"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 0,
+        "plays_to_return": {
+          "executioner": [
+            2,
+            2
+          ],
+          "knight": [
+            3,
+            3
+          ],
+          "hog-rider": [
+            0,
+            0
+          ],
+          "zap": [
+            0,
+            0
+          ],
+          "pekka": [
+            1,
+            1
+          ],
+          "goblins": [
+            4,
+            4
+          ],
+          "tornado": [
+            0,
+            0
+          ],
+          "mirror": [
+            0,
+            0
+          ]
+        },
+        "full_hand": true,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 2
+        },
+        "inferred_mirror_plays": 2
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 4905,
+      "side": 0,
+      "truth": [
+        "hog-rider",
+        "mirror",
+        "pekka",
+        "tornado"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [
+          "hog-rider",
+          "zap"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "goblins",
+          "knight",
+          "pekka"
+        ],
+        "uncertain": [
+          "tornado"
+        ],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "pekka": [
+            1,
+            1
+          ],
+          "executioner": [
+            2,
+            2
+          ],
+          "knight": [
+            3,
+            3
+          ],
+          "hog-rider": [
+            0,
+            0
+          ],
+          "zap": [
+            0,
+            0
+          ],
+          "goblins": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 4
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [
+          "hog-rider",
+          "mirror",
+          "tornado",
+          "zap"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "goblins",
+          "knight",
+          "pekka"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 0,
+        "plays_to_return": {
+          "executioner": [
+            2,
+            2
+          ],
+          "knight": [
+            3,
+            3
+          ],
+          "hog-rider": [
+            0,
+            0
+          ],
+          "zap": [
+            0,
+            0
+          ],
+          "pekka": [
+            1,
+            1
+          ],
+          "goblins": [
+            4,
+            4
+          ],
+          "tornado": [
+            0,
+            0
+          ],
+          "mirror": [
+            0,
+            0
+          ]
+        },
+        "full_hand": true,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 2
+        },
+        "inferred_mirror_plays": 2
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 5175,
+      "side": 0,
+      "truth": [
+        "executioner",
+        "hog-rider",
+        "knight",
+        "tornado"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "pekka"
+        ],
+        "uncertain": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "tornado",
+          "zap"
+        ],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "pekka": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 6
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "mirror",
+          "pekka"
+        ],
+        "uncertain": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "tornado",
+          "zap"
+        ],
+        "unrevealed_slots": 0,
+        "plays_to_return": {
+          "pekka": [
+            3,
+            3
+          ],
+          "mirror": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 3
+        },
+        "inferred_mirror_plays": 3
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 5241,
+      "side": 0,
+      "truth": [
+        "executioner",
+        "goblins",
+        "hog-rider",
+        "tornado"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "knight",
+          "pekka"
+        ],
+        "uncertain": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "tornado",
+          "zap"
+        ],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "pekka": [
+            3,
+            3
+          ],
+          "knight": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 6
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "knight",
+          "mirror",
+          "pekka"
+        ],
+        "uncertain": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "tornado",
+          "zap"
+        ],
+        "unrevealed_slots": 0,
+        "plays_to_return": {
+          "pekka": [
+            2,
+            2
+          ],
+          "mirror": [
+            3,
+            3
+          ],
+          "knight": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 3
+        },
+        "inferred_mirror_plays": 3
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 5266,
+      "side": 0,
+      "truth": [
+        "executioner",
+        "goblins",
+        "tornado",
+        "zap"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "hog-rider",
+          "knight",
+          "pekka"
+        ],
+        "uncertain": [
+          "executioner",
+          "goblins",
+          "tornado",
+          "zap"
+        ],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "pekka": [
+            2,
+            2
+          ],
+          "knight": [
+            3,
+            3
+          ],
+          "hog-rider": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 6
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [
+          "executioner",
+          "goblins",
+          "tornado",
+          "zap"
+        ],
+        "out_of_hand": [
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 0,
+        "plays_to_return": {
+          "pekka": [
+            1,
+            1
+          ],
+          "mirror": [
+            2,
+            2
+          ],
+          "knight": [
+            3,
+            3
+          ],
+          "hog-rider": [
+            4,
+            4
+          ],
+          "zap": [
+            0,
+            0
+          ],
+          "executioner": [
+            0,
+            0
+          ],
+          "goblins": [
+            0,
+            0
+          ],
+          "tornado": [
+            0,
+            0
+          ]
+        },
+        "full_hand": true,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 3
+        },
+        "inferred_mirror_plays": 3
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 5308,
+      "side": 0,
+      "truth": [
+        "goblins",
+        "pekka",
+        "tornado",
+        "zap"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider",
+          "knight",
+          "pekka"
+        ],
+        "uncertain": [
+          "goblins",
+          "tornado",
+          "zap"
+        ],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "pekka": [
+            1,
+            1
+          ],
+          "knight": [
+            2,
+            2
+          ],
+          "hog-rider": [
+            3,
+            3
+          ],
+          "executioner": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 6
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [
+          "goblins",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider",
+          "knight",
+          "mirror"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 0,
+        "plays_to_return": {
+          "pekka": [
+            0,
+            0
+          ],
+          "mirror": [
+            1,
+            1
+          ],
+          "knight": [
+            2,
+            2
+          ],
+          "hog-rider": [
+            3,
+            3
+          ],
+          "executioner": [
+            4,
+            4
+          ],
+          "zap": [
+            0,
+            0
+          ],
+          "goblins": [
+            0,
+            0
+          ],
+          "tornado": [
+            0,
+            0
+          ]
+        },
+        "full_hand": true,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 3
+        },
+        "inferred_mirror_plays": 3
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 5434,
+      "side": 0,
+      "truth": [
+        "goblins",
+        "mirror",
+        "pekka",
+        "zap"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [
+          "pekka"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider",
+          "knight",
+          "tornado"
+        ],
+        "uncertain": [
+          "goblins",
+          "zap"
+        ],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "pekka": [
+            0,
+            0
+          ],
+          "knight": [
+            1,
+            1
+          ],
+          "hog-rider": [
+            2,
+            2
+          ],
+          "executioner": [
+            3,
+            3
+          ],
+          "tornado": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 6
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [
+          "goblins",
+          "mirror",
+          "pekka",
+          "zap"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider",
+          "knight",
+          "tornado"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 0,
+        "plays_to_return": {
+          "pekka": [
+            0,
+            0
+          ],
+          "mirror": [
+            0,
+            0
+          ],
+          "knight": [
+            1,
+            1
+          ],
+          "hog-rider": [
+            2,
+            2
+          ],
+          "executioner": [
+            3,
+            3
+          ],
+          "tornado": [
+            4,
+            4
+          ],
+          "zap": [
+            0,
+            0
+          ],
+          "goblins": [
+            0,
+            0
+          ]
+        },
+        "full_hand": true,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 3
+        },
+        "inferred_mirror_plays": 3
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 5571,
+      "side": 0,
+      "truth": [
+        "goblins",
+        "knight",
+        "mirror",
+        "zap"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [
+          "pekka"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider",
+          "knight",
+          "tornado"
+        ],
+        "uncertain": [
+          "goblins",
+          "zap"
+        ],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "pekka": [
+            0,
+            0
+          ],
+          "knight": [
+            1,
+            1
+          ],
+          "hog-rider": [
+            2,
+            2
+          ],
+          "executioner": [
+            3,
+            3
+          ],
+          "tornado": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 6
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [
+          "goblins",
+          "mirror",
+          "pekka",
+          "zap"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "hog-rider",
+          "knight",
+          "tornado"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 0,
+        "plays_to_return": {
+          "pekka": [
+            0,
+            0
+          ],
+          "mirror": [
+            0,
+            0
+          ],
+          "knight": [
+            1,
+            1
+          ],
+          "hog-rider": [
+            2,
+            2
+          ],
+          "executioner": [
+            3,
+            3
+          ],
+          "tornado": [
+            4,
+            4
+          ],
+          "zap": [
+            0,
+            0
+          ],
+          "goblins": [
+            0,
+            0
+          ]
+        },
+        "full_hand": true,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 3
+        },
+        "inferred_mirror_plays": 3
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 5879,
+      "side": 0,
+      "truth": [
+        "knight",
+        "mirror",
+        "pekka",
+        "tornado"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight"
+        ],
+        "uncertain": [
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "knight": [
+            1,
+            1
+          ],
+          "executioner": [
+            2,
+            2
+          ],
+          "goblins": [
+            3,
+            3
+          ],
+          "hog-rider": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 7
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [
+          "mirror",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 0,
+        "plays_to_return": {
+          "knight": [
+            1,
+            1
+          ],
+          "executioner": [
+            2,
+            2
+          ],
+          "goblins": [
+            3,
+            3
+          ],
+          "hog-rider": [
+            4,
+            4
+          ],
+          "pekka": [
+            0,
+            0
+          ],
+          "zap": [
+            0,
+            0
+          ],
+          "tornado": [
+            0,
+            0
+          ],
+          "mirror": [
+            0,
+            0
+          ]
+        },
+        "full_hand": true,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 4
+        },
+        "inferred_mirror_plays": 3
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 5921,
+      "side": 0,
+      "truth": [
+        "knight",
+        "pekka",
+        "tornado",
+        "zap"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight"
+        ],
+        "uncertain": [
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "knight": [
+            1,
+            1
+          ],
+          "executioner": [
+            2,
+            2
+          ],
+          "goblins": [
+            3,
+            3
+          ],
+          "hog-rider": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 7
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [
+          "mirror",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 0,
+        "plays_to_return": {
+          "knight": [
+            1,
+            1
+          ],
+          "executioner": [
+            2,
+            2
+          ],
+          "goblins": [
+            3,
+            3
+          ],
+          "hog-rider": [
+            4,
+            4
+          ],
+          "pekka": [
+            0,
+            0
+          ],
+          "zap": [
+            0,
+            0
+          ],
+          "tornado": [
+            0,
+            0
+          ],
+          "mirror": [
+            0,
+            0
+          ]
+        },
+        "full_hand": true,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 4
+        },
+        "inferred_mirror_plays": 3
+      }
+    },
+    {
+      "tag": "02JY9G08C0JV",
+      "tick": 5959,
+      "side": 0,
+      "truth": [
+        "executioner",
+        "knight",
+        "pekka",
+        "tornado"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [
+          "knight"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "zap"
+        ],
+        "uncertain": [
+          "pekka",
+          "tornado"
+        ],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "knight": [
+            0,
+            0
+          ],
+          "executioner": [
+            1,
+            1
+          ],
+          "goblins": [
+            2,
+            2
+          ],
+          "hog-rider": [
+            3,
+            3
+          ],
+          "zap": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 7
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "knight",
+          "mirror",
+          "pekka",
+          "tornado",
+          "zap"
+        ],
+        "in_hand": [
+          "knight",
+          "mirror",
+          "pekka",
+          "tornado"
+        ],
+        "out_of_hand": [
+          "executioner",
+          "goblins",
+          "hog-rider",
+          "zap"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 0,
+        "plays_to_return": {
+          "knight": [
+            0,
+            0
+          ],
+          "executioner": [
+            1,
+            1
+          ],
+          "goblins": [
+            2,
+            2
+          ],
+          "hog-rider": [
+            3,
+            3
+          ],
+          "zap": [
+            4,
+            4
+          ],
+          "pekka": [
+            0,
+            0
+          ],
+          "tornado": [
+            0,
+            0
+          ],
+          "mirror": [
+            0,
+            0
+          ]
+        },
+        "full_hand": true,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 4
+        },
+        "inferred_mirror_plays": 3
+      }
+    },
+    {
+      "tag": "02JY9GRCGL9J",
+      "tick": 1383,
+      "side": 0,
+      "truth": [
+        "electro-spirit",
+        "fireball",
+        "fisherman",
+        "hunter"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "barbarian-barrel",
+          "electro-spirit",
+          "fireball",
+          "royal-ghost",
+          "royal-giant",
+          "skeletons"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "barbarian-barrel"
+        ],
+        "uncertain": [
+          "electro-spirit",
+          "fireball",
+          "royal-ghost",
+          "royal-giant",
+          "skeletons"
+        ],
+        "unrevealed_slots": 2,
+        "plays_to_return": {
+          "barbarian-barrel": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 1
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "barbarian-barrel",
+          "electro-spirit",
+          "fireball",
+          "mirror",
+          "royal-ghost",
+          "royal-giant",
+          "skeletons"
+        ],
+        "in_hand": [
+          "electro-spirit",
+          "fireball",
+          "skeletons"
+        ],
+        "out_of_hand": [
+          "barbarian-barrel",
+          "mirror",
+          "royal-ghost",
+          "royal-giant"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "skeletons": [
+            0,
+            0
+          ],
+          "royal-giant": [
+            2,
+            2
+          ],
+          "barbarian-barrel": [
+            3,
+            3
+          ],
+          "fireball": [
+            0,
+            0
+          ],
+          "electro-spirit": [
+            0,
+            0
+          ],
+          "royal-ghost": [
+            1,
+            1
+          ],
+          "mirror": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {},
+        "inferred_mirror_plays": 1
+      }
+    },
+    {
+      "tag": "02JY9GRCGL9J",
+      "tick": 1633,
+      "side": 0,
+      "truth": [
+        "fireball",
+        "fisherman",
+        "hunter",
+        "skeletons"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "barbarian-barrel",
+          "electro-spirit",
+          "fireball",
+          "royal-ghost",
+          "royal-giant",
+          "skeletons"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "barbarian-barrel",
+          "electro-spirit"
+        ],
+        "uncertain": [
+          "fireball",
+          "royal-ghost",
+          "royal-giant",
+          "skeletons"
+        ],
+        "unrevealed_slots": 2,
+        "plays_to_return": {
+          "barbarian-barrel": [
+            3,
+            3
+          ],
+          "electro-spirit": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 1
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "barbarian-barrel",
+          "electro-spirit",
+          "fireball",
+          "mirror",
+          "royal-ghost",
+          "royal-giant",
+          "skeletons"
+        ],
+        "in_hand": [
+          "fireball",
+          "royal-ghost",
+          "skeletons"
+        ],
+        "out_of_hand": [
+          "barbarian-barrel",
+          "electro-spirit",
+          "mirror",
+          "royal-giant"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "skeletons": [
+            0,
+            0
+          ],
+          "royal-giant": [
+            1,
+            1
+          ],
+          "barbarian-barrel": [
+            2,
+            2
+          ],
+          "fireball": [
+            0,
+            0
+          ],
+          "electro-spirit": [
+            4,
+            4
+          ],
+          "royal-ghost": [
+            0,
+            0
+          ],
+          "mirror": [
+            3,
+            3
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {},
+        "inferred_mirror_plays": 1
+      }
+    },
+    {
+      "tag": "02JY9GRCGL9J",
+      "tick": 1666,
+      "side": 0,
+      "truth": [
+        "fisherman",
+        "hunter",
+        "royal-ghost",
+        "skeletons"
+      ],
+      "old": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "barbarian-barrel",
+          "electro-spirit",
+          "fireball",
+          "royal-ghost",
+          "royal-giant",
+          "skeletons"
+        ],
+        "in_hand": [],
+        "out_of_hand": [
+          "barbarian-barrel",
+          "electro-spirit",
+          "fireball"
+        ],
+        "uncertain": [
+          "royal-ghost",
+          "royal-giant",
+          "skeletons"
+        ],
+        "unrevealed_slots": 2,
+        "plays_to_return": {
+          "barbarian-barrel": [
+            2,
+            2
+          ],
+          "electro-spirit": [
+            3,
+            3
+          ],
+          "fireball": [
+            4,
+            4
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {
+          "impossible_early_replay": 1
+        }
+      },
+      "new": {
+        "rules": "standard_8_card_fifo_4_hand",
+        "revealed": [
+          "barbarian-barrel",
+          "electro-spirit",
+          "fireball",
+          "mirror",
+          "royal-ghost",
+          "royal-giant",
+          "skeletons"
+        ],
+        "in_hand": [
+          "royal-ghost",
+          "royal-giant",
+          "skeletons"
+        ],
+        "out_of_hand": [
+          "barbarian-barrel",
+          "electro-spirit",
+          "fireball",
+          "mirror"
+        ],
+        "uncertain": [],
+        "unrevealed_slots": 1,
+        "plays_to_return": {
+          "skeletons": [
+            0,
+            0
+          ],
+          "royal-giant": [
+            0,
+            0
+          ],
+          "barbarian-barrel": [
+            1,
+            1
+          ],
+          "fireball": [
+            4,
+            4
+          ],
+          "electro-spirit": [
+            3,
+            3
+          ],
+          "royal-ghost": [
+            0,
+            0
+          ],
+          "mirror": [
+            2,
+            2
+          ]
+        },
+        "full_hand": false,
+        "certified": false,
+        "conditional_on_complete_events": true,
+        "issues": {},
+        "inferred_mirror_plays": 1
+      }
+    }
+  ],
+  "all_new_tokens_independent": true,
+  "certified": false,
+  "inputs": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\hand_retention_integration\\check_mirror_replays.py": "bb438d5142f08ffdfc7658b9682f6eb17361bcd365d7fc465bbe807f1a74f2a9",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\hand_retention_integration\\MIRROR_REPLAY_METRICS.md": "fd7317e651b3c5c7805a7dab325f5fee93b3456e3ce22f0cae9a26b79cdeeb3d",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\opponent_hand_reader\\collected.json": "b92f572d42721105610f695c04c3402c4a5a92eba631beb15500bd82fc7651be",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\opponent_hand_reader\\verified.json": "89283b91305bd2d4e202271b03b24296c89d4f32c455605cdb8a46bf94a332e3",
+    "icebow\\data\\bench\\opponent_hand_reader_20261006\\events.jsonl": "90c44fbd67a420688d85e2b4eb476deab0f2b90466ab0d02eefc465a2219e7b2",
+    "icebow\\data\\bench\\opponent_hand_reader_20261006\\predictions.jsonl": "476ea606571f4bfe0d2a04378fee41011dc34a783a7e7dc61730dc8ba057552f",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\hand_retention_integration\\sequence_data\\verify.py": "817627fee811e123cd7e8a694793409d85ae385fa5e6de9e6567056b21cab0fd",
+    "pipeline\\opponent_hand_v2.py": "a6140c76ff97b41263c3a3ca3dfb17b11c4146b339f1de75b64b23207329abb1"
+  }
+}

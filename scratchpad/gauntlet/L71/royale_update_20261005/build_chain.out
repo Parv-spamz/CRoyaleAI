@@ -1,0 +1,15 @@
+START stage_arena
+DONE stage_arena
+START stage_cards_2018
+DONE stage_cards_2018
+START stage_globals
+DONE stage_globals
+START stage_wheel_data
+DONE stage_wheel_data
+START build_sim
+DONE build_sim
+START build_gym
+DONE build_gym
+START install_isolated
+DONE install_isolated
+UPSTREAM_PAIR_BUILT_ISOLATED_REQUIRES_TESTS

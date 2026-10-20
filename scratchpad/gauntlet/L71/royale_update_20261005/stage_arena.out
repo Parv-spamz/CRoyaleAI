@@ -1,0 +1,9 @@
+arena -> data\derived\arena.json
+  grid          36x64 half-tiles (18x32 tiles)
+  river rows    [15, 16]
+  bridge 0      x in [2.5, 4.5) width 2.0 centre 3.5
+  bridge 1      x in [13.5, 15.5) width 2.0 centre 14.5
+  king block 0  x in [7.5, 10.5) y in [1.5, 4.5) = 3.0x3.0
+  king block 1  x in [7.5, 10.5) y in [27.5, 30.5) = 3.0x3.0
+  corners       [[0, 14], [0, 17], [17, 14], [17, 17]]
+  GATE          17 gates, 0 failures

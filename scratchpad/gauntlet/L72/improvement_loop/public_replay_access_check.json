@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-10-05T08:27:50.145007",
+  "url": "https://royaleapi.com/decks/stats/ice-wizard,knight,rocket,skeletons,tesla,the-log,tornado,x-bow",
+  "authentication": false,
+  "browser_credentials_read": false,
+  "requests": 1,
+  "status": 403,
+  "bytes": 5690,
+  "sha256": "f9fef3b753bd961b59eccfd4b43cb48e1cfb08bbdc04f7056f7b261d26990414",
+  "challenge_marker": true
+}

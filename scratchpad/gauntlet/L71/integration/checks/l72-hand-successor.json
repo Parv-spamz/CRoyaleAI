@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/hand_retention_integration/check_hand.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "HAND_SUCCESSOR_VERIFIED",
+  "matched": true,
+  "output_sha256": "4683719843cbcea9737bc86e990d852cba00e8b5a4d20f2a6331e871374074fe",
+  "seconds": 2.530876874923706
+}

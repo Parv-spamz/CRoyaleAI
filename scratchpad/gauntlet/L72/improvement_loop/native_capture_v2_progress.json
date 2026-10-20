@@ -1,0 +1,1410 @@
+[
+  {
+    "index": 0,
+    "tag": "fa25595b6e7748e0bd66912242515f97",
+    "recording_sha256": "b430ec07c15ebb333394ced5babc85066c14b54cd8c5157f98d4244b477630d8",
+    "bytes": 5512001,
+    "fields": {
+      "tag": "fa25595b6e7748e0bd66912242515f97",
+      "errors": {},
+      "coverage": {
+        "projectiles_rows": 3875,
+        "past_motion_tti_known": 2046,
+        "area_effects_rows": 48,
+        "frames": 3674,
+        "area_tracks": 4,
+        "projectile_tracks": 380
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 44,
+        "mean": 0,
+        "median": 0.0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 4,
+        "mean": 50,
+        "median": 50.0,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 2046,
+        "mean": 0.043030756892569695,
+        "median": 0.0,
+        "max": 87.52833333333334
+      }
+    },
+    "grade": {
+      "plays_total": 57,
+      "plays_driven": 56,
+      "accepted": 56,
+      "rejected_by_reason": {},
+      "invalid_placement": 0,
+      "elixir_delays": {
+        "n": 0,
+        "max_ticks": 0,
+        "sum_ticks": 0
+      },
+      "skipped": [
+        {
+          "play_index": 51,
+          "tick": 3352,
+          "side": 0,
+          "kind": "ability",
+          "ability": true,
+          "card": null,
+          "candidates": [
+            "giant",
+            "mini-pekka"
+          ],
+          "entity_id": null,
+          "x": null,
+          "y": null,
+          "accepted": false,
+          "result_code": null,
+          "result_name": null,
+          "delay_ticks": 0,
+          "placement_valid": null,
+          "engine_tick": 3352,
+          "skipped": "ability attribution: multiple live candidates"
+        }
+      ],
+      "crowns_match": true,
+      "terminal_vs_last_play_ticks": 136
+    },
+    "historical_log_equal": true,
+    "historical_grade_equal": true,
+    "historical_final_hash_equal": true,
+    "repeat_sha256": "049f4669fb0fb5681c8fe29c1c255429642c1f0ef1472be5e36eb25ac15381e8",
+    "repeat_raw_frames_equal": false,
+    "repeat_equal": {
+      "final": true,
+      "log": true,
+      "grade": true,
+      "canonical_frames": true
+    },
+    "ok": true,
+    "seconds": 65.61
+  },
+  {
+    "index": 1,
+    "tag": "feeb08dc32bc446182a06d0f7767d4ea",
+    "recording_sha256": "bf188ba34383b527d6d54067933d359ed883b9b45c2dd5d154d4434d627000b3",
+    "bytes": 9355373,
+    "fields": {
+      "tag": "feeb08dc32bc446182a06d0f7767d4ea",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 1,
+        "projectiles_rows": 7308,
+        "past_motion_tti_known": 4329,
+        "area_effects_rows": 144,
+        "frames": 6107,
+        "area_tracks": 12,
+        "projectile_tracks": 900
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 132,
+        "mean": 0,
+        "median": 0.0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 12,
+        "mean": 50,
+        "median": 50.0,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 4329,
+        "mean": 7.952189747718929e-05,
+        "median": 0.0,
+        "max": 0.04077448628362106
+      }
+    },
+    "grade": {
+      "plays_total": 116,
+      "plays_driven": 116,
+      "accepted": 116,
+      "rejected_by_reason": {},
+      "invalid_placement": 0,
+      "elixir_delays": {
+        "n": 0,
+        "max_ticks": 0,
+        "sum_ticks": 0
+      },
+      "skipped": [],
+      "crowns_match": true,
+      "terminal_vs_last_play_ticks": 154
+    },
+    "historical_log_equal": true,
+    "historical_grade_equal": true,
+    "historical_final_hash_equal": true,
+    "ok": true,
+    "seconds": 54.31
+  },
+  {
+    "index": 2,
+    "tag": "26c8bfe911b84feb9f36bc645227f659",
+    "recording_sha256": "1147b3b4627581ffe5555ab9e975d4906a7132fbdaf7cc9eef63797dc088558c",
+    "bytes": 6856511,
+    "fields": {
+      "tag": "26c8bfe911b84feb9f36bc645227f659",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 1,
+        "projectiles_rows": 5818,
+        "past_motion_tti_known": 4299,
+        "area_effects_rows": 1057,
+        "frames": 4286,
+        "area_tracks": 33,
+        "projectile_tracks": 555
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 1024,
+        "mean": 0,
+        "median": 0.0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 33,
+        "mean": 50,
+        "median": 50,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 4299,
+        "mean": 0.00020171685860436155,
+        "median": 0.0,
+        "max": 0.5536174983692036
+      }
+    },
+    "grade": {
+      "plays_total": 67,
+      "plays_driven": 67,
+      "accepted": 67,
+      "rejected_by_reason": {},
+      "invalid_placement": 0,
+      "elixir_delays": {
+        "n": 0,
+        "max_ticks": 0,
+        "sum_ticks": 0
+      },
+      "skipped": [],
+      "crowns_match": true,
+      "terminal_vs_last_play_ticks": 112
+    },
+    "historical_log_equal": true,
+    "historical_grade_equal": true,
+    "historical_final_hash_equal": true,
+    "ok": true,
+    "seconds": 39.72
+  },
+  {
+    "index": 3,
+    "tag": "f073d36c761945f5878de6e0b72d2d8d",
+    "recording_sha256": "208ba269f4e2063245e9e4e7751efd99ed0b9e7cd7d83623011e33990d5e1b26",
+    "bytes": 8682495,
+    "fields": {
+      "tag": "f073d36c761945f5878de6e0b72d2d8d",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 11,
+        "projectiles_rows": 5574,
+        "past_motion_tti_known": 2315,
+        "area_effects_rows": 2701,
+        "frames": 6114,
+        "area_tracks": 149,
+        "projectile_tracks": 541
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 2552,
+        "mean": 0,
+        "median": 0.0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 149,
+        "mean": 62.80536912751678,
+        "median": 50,
+        "max": 2350
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 2315,
+        "mean": 0.00065197449236173,
+        "median": 0.0,
+        "max": 0.2338543429890251
+      }
+    },
+    "grade": {
+      "plays_total": 144,
+      "plays_driven": 138,
+      "accepted": 138,
+      "rejected_by_reason": {},
+      "invalid_placement": 0,
+      "elixir_delays": {
+        "n": 0,
+        "max_ticks": 0,
+        "sum_ticks": 0
+      },
+      "skipped": [
+        {
+          "play_index": 34,
+          "tick": 2471,
+          "side": 0,
+          "kind": "ability",
+          "ability": true,
+          "card": null,
+          "candidates": [
+            "valkyrie",
+            "wizard"
+          ],
+          "entity_id": null,
+          "x": null,
+          "y": null,
+          "accepted": false,
+          "result_code": null,
+          "result_name": null,
+          "delay_ticks": 0,
+          "placement_valid": null,
+          "engine_tick": 2471,
+          "skipped": "ability attribution: multiple live candidates"
+        },
+        {
+          "play_index": 54,
+          "tick": 3144,
+          "side": 0,
+          "kind": "ability",
+          "ability": true,
+          "card": "valkyrie",
+          "candidates": [
+            "valkyrie",
+            "wizard"
+          ],
+          "entity_id": null,
+          "x": null,
+          "y": null,
+          "accepted": false,
+          "result_code": null,
+          "result_name": null,
+          "delay_ticks": 0,
+          "placement_valid": null,
+          "engine_tick": 3144,
+          "skipped": "ability: no eligible live entity for attributed card"
+        },
+        {
+          "play_index": 76,
+          "tick": 3941,
+          "side": 0,
+          "kind": "ability",
+          "ability": true,
+          "card": null,
+          "candidates": [
+            "valkyrie",
+            "wizard"
+          ],
+          "entity_id": null,
+          "x": null,
+          "y": null,
+          "accepted": false,
+          "result_code": null,
+          "result_name": null,
+          "delay_ticks": 0,
+          "placement_valid": null,
+          "engine_tick": 3941,
+          "skipped": "ability attribution: multiple live candidates"
+        },
+        {
+          "play_index": 108,
+          "tick": 5051,
+          "side": 0,
+          "kind": "ability",
+          "ability": true,
+          "card": null,
+          "candidates": [
+            "valkyrie",
+            "wizard"
+          ],
+          "entity_id": null,
+          "x": null,
+          "y": null,
+          "accepted": false,
+          "result_code": null,
+          "result_name": null,
+          "delay_ticks": 0,
+          "placement_valid": null,
+          "engine_tick": 5051,
+          "skipped": "ability attribution: multiple live candidates"
+        },
+        {
+          "play_index": 112,
+          "tick": 5126,
+          "side": 0,
+          "kind": "ability",
+          "ability": true,
+          "card": null,
+          "candidates": [
+            "valkyrie",
+            "wizard"
+          ],
+          "entity_id": null,
+          "x": null,
+          "y": null,
+          "accepted": false,
+          "result_code": null,
+          "result_name": null,
+          "delay_ticks": 0,
+          "placement_valid": null,
+          "engine_tick": 5126,
+          "skipped": "ability attribution: multiple live candidates"
+        },
+        {
+          "play_index": 133,
+          "tick": 5674,
+          "side": 0,
+          "kind": "ability",
+          "ability": true,
+          "card": null,
+          "candidates": [
+            "valkyrie",
+            "wizard"
+          ],
+          "entity_id": null,
+          "x": null,
+          "y": null,
+          "accepted": false,
+          "result_code": null,
+          "result_name": null,
+          "delay_ticks": 0,
+          "placement_valid": null,
+          "engine_tick": 5674,
+          "skipped": "ability attribution: multiple live candidates"
+        }
+      ],
+      "crowns_match": false,
+      "terminal_vs_last_play_ticks": 155
+    },
+    "historical_log_equal": true,
+    "historical_grade_equal": true,
+    "historical_final_hash_equal": true,
+    "ok": true,
+    "seconds": 57.99
+  },
+  {
+    "index": 4,
+    "tag": "d867d62934d34472a06042cff4ad1a88",
+    "recording_sha256": "80ff868748e53294a55d3c35f8f7b9c0cb5326095191c00d58fcfa089aedc4dc",
+    "bytes": 6845062,
+    "fields": {
+      "tag": "d867d62934d34472a06042cff4ad1a88",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 6,
+        "projectiles_rows": 3949,
+        "past_motion_tti_known": 2421,
+        "area_effects_rows": 549,
+        "persistent_baby_dragon_aura_refreshes": 10,
+        "frames": 6083,
+        "area_tracks": 8,
+        "projectile_tracks": 379
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 541,
+        "mean": -26.709796672828094,
+        "median": 0,
+        "max": 3000
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 8,
+        "mean": 50,
+        "median": 50.0,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 2421,
+        "mean": 0.00033850343998921616,
+        "median": 0.0,
+        "max": 0.09253073770491937
+      }
+    },
+    "grade": {
+      "plays_total": 62,
+      "plays_driven": 61,
+      "accepted": 61,
+      "rejected_by_reason": {},
+      "invalid_placement": 0,
+      "elixir_delays": {
+        "n": 0,
+        "max_ticks": 0,
+        "sum_ticks": 0
+      },
+      "skipped": [
+        {
+          "play_index": 32,
+          "tick": 2463,
+          "side": 1,
+          "kind": "ability",
+          "ability": true,
+          "card": null,
+          "candidates": [
+            "bowler",
+            "golden-knight"
+          ],
+          "entity_id": null,
+          "x": null,
+          "y": null,
+          "accepted": false,
+          "result_code": null,
+          "result_name": null,
+          "delay_ticks": 0,
+          "placement_valid": null,
+          "engine_tick": 2463,
+          "skipped": "ability attribution: multiple live candidates"
+        }
+      ],
+      "crowns_match": true,
+      "terminal_vs_last_play_ticks": 2324
+    },
+    "historical_log_equal": true,
+    "historical_grade_equal": true,
+    "historical_final_hash_equal": true,
+    "ok": true,
+    "seconds": 63.73
+  },
+  {
+    "index": 5,
+    "tag": "0bf4641e93a443a99bc67374d659b291",
+    "recording_sha256": "419a82852fca65e6b0ad787270d6322a7b6cee90d348ce81919b588b9ff4998c",
+    "bytes": 8741251,
+    "fields": {
+      "tag": "0bf4641e93a443a99bc67374d659b291",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 9,
+        "projectiles_rows": 7441,
+        "past_motion_tti_known": 4282,
+        "area_effects_rows": 2208,
+        "persistent_baby_dragon_aura_refreshes": 40,
+        "frames": 6105,
+        "area_tracks": 26,
+        "projectile_tracks": 615
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 2182,
+        "mean": -25.25206232813932,
+        "median": 0.0,
+        "max": 3650
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 26,
+        "mean": 50,
+        "median": 50.0,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 4282,
+        "mean": 0.000666881304498248,
+        "median": 0.0,
+        "max": 0.4084910860371565
+      }
+    },
+    "grade": {
+      "plays_total": 96,
+      "plays_driven": 95,
+      "accepted": 95,
+      "rejected_by_reason": {},
+      "invalid_placement": 0,
+      "elixir_delays": {
+        "n": 0,
+        "max_ticks": 0,
+        "sum_ticks": 0
+      },
+      "skipped": [
+        {
+          "play_index": 77,
+          "tick": 5329,
+          "side": 1,
+          "kind": "ability",
+          "ability": true,
+          "card": null,
+          "candidates": [
+            "bowler",
+            "golden-knight"
+          ],
+          "entity_id": null,
+          "x": null,
+          "y": null,
+          "accepted": false,
+          "result_code": null,
+          "result_name": null,
+          "delay_ticks": 0,
+          "placement_valid": null,
+          "engine_tick": 5329,
+          "skipped": "ability attribution: multiple live candidates"
+        }
+      ],
+      "crowns_match": true,
+      "terminal_vs_last_play_ticks": 157
+    },
+    "historical_log_equal": true,
+    "historical_grade_equal": true,
+    "historical_final_hash_equal": true,
+    "repeat_sha256": "69d537b29fcc8fdf3693c708ff1ae6d2255ab3909f9a03179a1bf5a0e51bc840",
+    "repeat_raw_frames_equal": false,
+    "repeat_equal": {
+      "final": true,
+      "log": true,
+      "grade": true,
+      "canonical_frames": true
+    },
+    "ok": true,
+    "seconds": 145.57
+  },
+  {
+    "index": 6,
+    "tag": "1bd5962de052494294917c0b9b5a8c42",
+    "recording_sha256": "2a506fa442a0500086bd55ffd95ee9125ecade407c01df3d077cb45f97d1b86c",
+    "bytes": 7939042,
+    "fields": {
+      "tag": "1bd5962de052494294917c0b9b5a8c42",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 4,
+        "projectiles_rows": 4452,
+        "past_motion_tti_known": 2616,
+        "area_effects_rows": 2120,
+        "persistent_baby_dragon_aura_refreshes": 7,
+        "frames": 6120,
+        "area_tracks": 37,
+        "projectile_tracks": 462
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 2083,
+        "mean": -3.8406144983197312,
+        "median": 0,
+        "max": 3900
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 37,
+        "mean": 42.054054054054056,
+        "median": 50,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 2616,
+        "mean": 0.0066758617405057955,
+        "median": 0.0,
+        "max": 0.8292984366801193
+      }
+    },
+    "grade": {
+      "plays_total": 99,
+      "plays_driven": 99,
+      "accepted": 99,
+      "rejected_by_reason": {},
+      "invalid_placement": 0,
+      "elixir_delays": {
+        "n": 0,
+        "max_ticks": 0,
+        "sum_ticks": 0
+      },
+      "skipped": [],
+      "crowns_match": false,
+      "terminal_vs_last_play_ticks": 178
+    },
+    "historical_log_equal": true,
+    "historical_grade_equal": true,
+    "historical_final_hash_equal": true,
+    "ok": true,
+    "seconds": 70.34
+  },
+  {
+    "index": 7,
+    "tag": "b10b030e29fb47918b91faea867b89a0",
+    "recording_sha256": "c03fa17b737dda0fb22933706365dd6b69ca99050ac49d4e84dac883afc27ef7",
+    "bytes": 5343752,
+    "fields": {
+      "tag": "b10b030e29fb47918b91faea867b89a0",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 2,
+        "projectiles_rows": 3743,
+        "past_motion_tti_known": 2488,
+        "area_effects_rows": 245,
+        "frames": 3666,
+        "area_tracks": 31,
+        "projectile_tracks": 307
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 214,
+        "mean": 0,
+        "median": 0.0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 31,
+        "mean": 50,
+        "median": 50,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 2488,
+        "mean": 0.011782902739372892,
+        "median": 0.0,
+        "max": 1.4924914982397468
+      }
+    },
+    "grade": {
+      "plays_total": 58,
+      "plays_driven": 58,
+      "accepted": 58,
+      "rejected_by_reason": {},
+      "invalid_placement": 0,
+      "elixir_delays": {
+        "n": 0,
+        "max_ticks": 0,
+        "sum_ticks": 0
+      },
+      "skipped": [],
+      "crowns_match": false,
+      "terminal_vs_last_play_ticks": 155
+    },
+    "historical_log_equal": true,
+    "historical_grade_equal": true,
+    "historical_final_hash_equal": true,
+    "ok": true,
+    "seconds": 39.79
+  },
+  {
+    "index": 8,
+    "tag": "02VY8G2PJ2CP",
+    "recording_sha256": "a041dde0a7d19fd44be1cc93b29337a498da0c4d2830985db1bf6c461daa8f4f",
+    "bytes": 7095065,
+    "fields": {
+      "tag": "02VY8G2PJ2CP",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 3,
+        "projectiles_rows": 4486,
+        "past_motion_tti_known": 2731,
+        "area_effects_rows": 3517,
+        "persistent_baby_dragon_aura_refreshes": 7,
+        "frames": 5090,
+        "area_tracks": 48,
+        "projectile_tracks": 458
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 3469,
+        "mean": -2.2773133467858173,
+        "median": 0,
+        "max": 2550
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 48,
+        "mean": 50,
+        "median": 50.0,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 2731,
+        "mean": 0.00022888014688353077,
+        "median": 0.0,
+        "max": 0.0545752943926118
+      }
+    },
+    "grade": {
+      "plays_total": 87,
+      "plays_driven": 87,
+      "accepted": 87,
+      "rejected_by_reason": {},
+      "invalid_placement": 0,
+      "elixir_delays": {
+        "n": 0,
+        "max_ticks": 0,
+        "sum_ticks": 0
+      },
+      "skipped": [],
+      "crowns_match": true,
+      "terminal_vs_last_play_ticks": 216
+    },
+    "historical_log_equal": true,
+    "historical_grade_equal": true,
+    "historical_final_hash_equal": true,
+    "ok": true,
+    "seconds": 44.87
+  },
+  {
+    "index": 9,
+    "tag": "72980254d24c456997c8f1e02d121985",
+    "recording_sha256": "676c6e4ead4d27ae6f2d96ea31280eb182b7b1582bc83add789b4aaf1491e5e7",
+    "bytes": 6224384,
+    "fields": {
+      "tag": "72980254d24c456997c8f1e02d121985",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 3,
+        "projectiles_rows": 5973,
+        "past_motion_tti_known": 4402,
+        "area_effects_rows": 3257,
+        "frames": 3674,
+        "area_tracks": 60,
+        "projectile_tracks": 476
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 3197,
+        "mean": 0,
+        "median": 0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 60,
+        "mean": 50,
+        "median": 50.0,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 4402,
+        "mean": 9.286930026816956e-05,
+        "median": 0.0,
+        "max": 0.2175419670488509
+      }
+    },
+    "grade": {
+      "plays_total": 62,
+      "plays_driven": 62,
+      "accepted": 62,
+      "rejected_by_reason": {},
+      "invalid_placement": 0,
+      "elixir_delays": {
+        "n": 0,
+        "max_ticks": 0,
+        "sum_ticks": 0
+      },
+      "skipped": [],
+      "crowns_match": true,
+      "terminal_vs_last_play_ticks": 119
+    },
+    "historical_log_equal": true,
+    "historical_grade_equal": true,
+    "historical_final_hash_equal": true,
+    "ok": true,
+    "seconds": 33.72
+  },
+  {
+    "index": 10,
+    "tag": "09G8U0PCGJJL",
+    "recording_sha256": "6d6db51434e337755906d996cbc32219644b070fd516d9058f1cf05b1ccc2817",
+    "bytes": 8799193,
+    "fields": {
+      "tag": "09G8U0PCGJJL",
+      "errors": {},
+      "coverage": {
+        "projectiles_rows": 8671,
+        "past_motion_tti_known": 6248,
+        "area_effects_rows": 120,
+        "frames": 6124,
+        "area_tracks": 6,
+        "projectile_tracks": 798
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 114,
+        "mean": 0,
+        "median": 0.0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 6,
+        "mean": 50,
+        "median": 50.0,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 6248,
+        "mean": 0.001287288458728072,
+        "median": 0.0,
+        "max": 0.3275769739527732
+      }
+    },
+    "grade": {
+      "plays_total": 119,
+      "plays_driven": 119,
+      "accepted": 119,
+      "rejected_by_reason": {},
+      "invalid_placement": 0,
+      "elixir_delays": {
+        "n": 0,
+        "max_ticks": 0,
+        "sum_ticks": 0
+      },
+      "skipped": [],
+      "crowns_match": true,
+      "terminal_vs_last_play_ticks": 176
+    },
+    "historical_log_equal": true,
+    "historical_grade_equal": true,
+    "historical_final_hash_equal": true,
+    "repeat_sha256": "6e44b071fb24d9bdbfc3ef58c14392bebd28697ead81b69460758cea00d7c8d7",
+    "repeat_raw_frames_equal": false,
+    "repeat_equal": {
+      "final": true,
+      "log": true,
+      "grade": true,
+      "canonical_frames": true
+    },
+    "ok": true,
+    "seconds": 108.96
+  },
+  {
+    "index": 11,
+    "tag": "112831c6755f47e6bfee870f9a09b6fc",
+    "recording_sha256": "1a2492d2349b7d478ef3df51c26ccd23768d4bf5581c48c5df764616435e817f",
+    "bytes": 7391480,
+    "fields": {
+      "tag": "112831c6755f47e6bfee870f9a09b6fc",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 4,
+        "projectiles_rows": 5459,
+        "past_motion_tti_known": 3771,
+        "area_effects_rows": 421,
+        "frames": 5742,
+        "area_tracks": 9,
+        "projectile_tracks": 557
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 412,
+        "mean": 0,
+        "median": 0.0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 9,
+        "mean": 44.55555555555556,
+        "median": 50,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 3771,
+        "mean": 1.862848336320791e-05,
+        "median": 0.0,
+        "max": 0.01473429317956061
+      }
+    },
+    "grade": {
+      "plays_total": 114,
+      "plays_driven": 113,
+      "accepted": 111,
+      "rejected_by_reason": {
+        "native_rejected": 2
+      },
+      "invalid_placement": 0,
+      "elixir_delays": {
+        "n": 0,
+        "max_ticks": 0,
+        "sum_ticks": 0
+      },
+      "skipped": [
+        {
+          "play_index": 113,
+          "tick": 5762,
+          "side": 0,
+          "card": "the-log",
+          "skipped": "episode already terminal at tick 5749"
+        }
+      ],
+      "crowns_match": true,
+      "terminal_vs_last_play_ticks": -13
+    },
+    "historical_log_equal": true,
+    "historical_grade_equal": true,
+    "historical_final_hash_equal": true,
+    "ok": true,
+    "seconds": 44.05
+  },
+  {
+    "index": 12,
+    "tag": "00UYPL99P28R",
+    "recording_sha256": "46cb235031ad011627aa4791a070104c931666075f0fa2d3051ea35dcdc99862",
+    "bytes": 8558249,
+    "fields": {
+      "tag": "00UYPL99P28R",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 1,
+        "projectiles_rows": 6685,
+        "past_motion_tti_known": 4130,
+        "area_effects_rows": 3678,
+        "frames": 6114,
+        "area_tracks": 87,
+        "projectile_tracks": 648
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 3591,
+        "mean": 0,
+        "median": 0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 87,
+        "mean": 50,
+        "median": 50,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 4130,
+        "mean": 0.0007731454505590668,
+        "median": 0.0,
+        "max": 0.48536030496802596
+      }
+    },
+    "grade": {
+      "plays_total": 137,
+      "plays_driven": 137,
+      "accepted": 137,
+      "rejected_by_reason": {},
+      "invalid_placement": 0,
+      "elixir_delays": {
+        "n": 0,
+        "max_ticks": 0,
+        "sum_ticks": 0
+      },
+      "skipped": [],
+      "crowns_match": true,
+      "terminal_vs_last_play_ticks": 192
+    },
+    "historical_log_equal": true,
+    "historical_grade_equal": true,
+    "historical_final_hash_equal": true,
+    "ok": true,
+    "seconds": 47.96
+  },
+  {
+    "index": 13,
+    "tag": "08JPVJUUVGP9",
+    "recording_sha256": "b6530a482d3021fa239d48f2f10feeb7ca75668b073fcde3db343060e36ce832",
+    "bytes": 8055390,
+    "fields": {
+      "tag": "08JPVJUUVGP9",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 3,
+        "projectiles_rows": 5376,
+        "past_motion_tti_known": 3390,
+        "area_effects_rows": 1253,
+        "frames": 6123,
+        "area_tracks": 55,
+        "projectile_tracks": 575
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 1198,
+        "mean": 0,
+        "median": 0.0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 55,
+        "mean": 137.27272727272728,
+        "median": 50,
+        "max": 4850
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 3390,
+        "mean": 7.539495742860217e-05,
+        "median": 0.0,
+        "max": 0.02717639589859573
+      }
+    },
+    "grade": {
+      "plays_total": 126,
+      "plays_driven": 126,
+      "accepted": 126,
+      "rejected_by_reason": {},
+      "invalid_placement": 0,
+      "elixir_delays": {
+        "n": 0,
+        "max_ticks": 0,
+        "sum_ticks": 0
+      },
+      "skipped": [],
+      "crowns_match": true,
+      "terminal_vs_last_play_ticks": 194
+    },
+    "historical_log_equal": true,
+    "historical_grade_equal": true,
+    "historical_final_hash_equal": true,
+    "ok": true,
+    "seconds": 45.83
+  },
+  {
+    "index": 14,
+    "tag": "09G9JUPP0R2C",
+    "recording_sha256": "d15d0d61b08d660d96186c3107211767c85787424f5ebe737826c2d51fad4bfa",
+    "bytes": 4882084,
+    "fields": {
+      "tag": "09G9JUPP0R2C",
+      "errors": {},
+      "coverage": {
+        "projectiles_rows": 3570,
+        "past_motion_tti_known": 2308,
+        "area_effects_rows": 80,
+        "frames": 3674,
+        "area_tracks": 3,
+        "projectile_tracks": 314
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 77,
+        "mean": 0,
+        "median": 0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 3,
+        "mean": 50,
+        "median": 50,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 2308,
+        "mean": 0.00011156402471342765,
+        "median": 0.0,
+        "max": 0.14475284094098698
+      }
+    },
+    "grade": {
+      "plays_total": 50,
+      "plays_driven": 50,
+      "accepted": 50,
+      "rejected_by_reason": {},
+      "invalid_placement": 0,
+      "elixir_delays": {
+        "n": 0,
+        "max_ticks": 0,
+        "sum_ticks": 0
+      },
+      "skipped": [],
+      "crowns_match": true,
+      "terminal_vs_last_play_ticks": 170
+    },
+    "historical_log_equal": true,
+    "historical_grade_equal": true,
+    "historical_final_hash_equal": true,
+    "ok": true,
+    "seconds": 29.3
+  },
+  {
+    "index": 15,
+    "tag": "d9f06cd6721c4a84a3514350c41c41e0",
+    "recording_sha256": "9042d607b8695c6f83f01e52ca2ec95e9631c990c230b2072d6b8f5175a9a909",
+    "bytes": 8371168,
+    "fields": {
+      "tag": "d9f06cd6721c4a84a3514350c41c41e0",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 4,
+        "projectiles_rows": 5859,
+        "past_motion_tti_known": 3861,
+        "area_effects_rows": 3627,
+        "frames": 6089,
+        "area_tracks": 77,
+        "projectile_tracks": 523
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 3550,
+        "mean": 0,
+        "median": 0.0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 77,
+        "mean": 72.07792207792208,
+        "median": 50,
+        "max": 1750
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 3861,
+        "mean": 0.0012419331086469551,
+        "median": 0.0,
+        "max": 1.0814752470974327
+      }
+    },
+    "grade": {
+      "plays_total": 136,
+      "plays_driven": 136,
+      "accepted": 136,
+      "rejected_by_reason": {},
+      "invalid_placement": 0,
+      "elixir_delays": {
+        "n": 0,
+        "max_ticks": 0,
+        "sum_ticks": 0
+      },
+      "skipped": [],
+      "crowns_match": true,
+      "terminal_vs_last_play_ticks": 122
+    },
+    "historical_log_equal": true,
+    "historical_grade_equal": true,
+    "historical_final_hash_equal": true,
+    "repeat_sha256": "4542e1f4863059a882f33555a3159f86d68c0c5c8e4b6c5a21429672107f0e63",
+    "repeat_raw_frames_equal": false,
+    "repeat_equal": {
+      "final": true,
+      "log": true,
+      "grade": true,
+      "canonical_frames": true
+    },
+    "ok": true,
+    "seconds": 92.8
+  },
+  {
+    "index": 16,
+    "tag": "092PPVPUY8PG",
+    "recording_sha256": "12725fd550fbccb694ea075359022d1103b2141805ab9887dfe9263c7f64f615",
+    "bytes": 6617309,
+    "fields": {
+      "tag": "092PPVPUY8PG",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 2,
+        "projectiles_rows": 4300,
+        "past_motion_tti_known": 2144,
+        "area_effects_rows": 758,
+        "frames": 5257,
+        "area_tracks": 30,
+        "projectile_tracks": 472
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 728,
+        "mean": 0,
+        "median": 0.0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 30,
+        "mean": 43.46666666666667,
+        "median": 50.0,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 2144,
+        "mean": 0.0010719199278045822,
+        "median": 0.0,
+        "max": 0.3822954881599344
+      }
+    },
+    "grade": {
+      "plays_total": 89,
+      "plays_driven": 89,
+      "accepted": 89,
+      "rejected_by_reason": {},
+      "invalid_placement": 0,
+      "elixir_delays": {
+        "n": 0,
+        "max_ticks": 0,
+        "sum_ticks": 0
+      },
+      "skipped": [],
+      "crowns_match": true,
+      "terminal_vs_last_play_ticks": 107
+    },
+    "historical_log_equal": true,
+    "historical_grade_equal": true,
+    "historical_final_hash_equal": true,
+    "ok": true,
+    "seconds": 40.2
+  },
+  {
+    "index": 17,
+    "tag": "08UPPVRY0P2V",
+    "recording_sha256": "4b380c842768fd8d0e49aeae28a05870f94522194cc4b4268ec8bc6d6b821c6f",
+    "bytes": 8000703,
+    "fields": {
+      "tag": "08UPPVRY0P2V",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 1,
+        "projectiles_rows": 5219,
+        "past_motion_tti_known": 3309,
+        "area_effects_rows": 399,
+        "frames": 6106,
+        "area_tracks": 30,
+        "projectile_tracks": 567
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 369,
+        "mean": 0,
+        "median": 0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 30,
+        "mean": 45.1,
+        "median": 50.0,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 3309,
+        "mean": 0.001692934988863566,
+        "median": 0.0,
+        "max": 0.5302770629180146
+      }
+    },
+    "grade": {
+      "plays_total": 120,
+      "plays_driven": 120,
+      "accepted": 120,
+      "rejected_by_reason": {},
+      "invalid_placement": 0,
+      "elixir_delays": {
+        "n": 0,
+        "max_ticks": 0,
+        "sum_ticks": 0
+      },
+      "skipped": [],
+      "crowns_match": true,
+      "terminal_vs_last_play_ticks": 194
+    },
+    "historical_log_equal": true,
+    "historical_grade_equal": true,
+    "historical_final_hash_equal": true,
+    "ok": true,
+    "seconds": 46.36
+  },
+  {
+    "index": 18,
+    "tag": "08YY89UC20R2",
+    "recording_sha256": "ef54ef500a6ed3ef6f75a89d7af3f10a62703157dea12693ffb46f0d97146de9",
+    "bytes": 9517646,
+    "fields": {
+      "tag": "08YY89UC20R2",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 2,
+        "projectiles_rows": 8910,
+        "past_motion_tti_known": 5951,
+        "area_effects_rows": 1175,
+        "frames": 6127,
+        "area_tracks": 16,
+        "projectile_tracks": 732
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 1159,
+        "mean": 0,
+        "median": 0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 16,
+        "mean": 50,
+        "median": 50.0,
+        "max": 50
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 5951,
+        "mean": 0.003794856900070407,
+        "median": 0.0,
+        "max": 1.3345339909647465
+      }
+    },
+    "grade": {
+      "plays_total": 105,
+      "plays_driven": 104,
+      "accepted": 104,
+      "rejected_by_reason": {},
+      "invalid_placement": 0,
+      "elixir_delays": {
+        "n": 0,
+        "max_ticks": 0,
+        "sum_ticks": 0
+      },
+      "skipped": [
+        {
+          "play_index": 104,
+          "tick": 5931,
+          "side": 0,
+          "kind": "ability",
+          "ability": true,
+          "card": null,
+          "candidates": [
+            "bowler",
+            "skeleton-king"
+          ],
+          "entity_id": null,
+          "x": null,
+          "y": null,
+          "accepted": false,
+          "result_code": null,
+          "result_name": null,
+          "delay_ticks": 0,
+          "placement_valid": null,
+          "engine_tick": 5931,
+          "skipped": "ability attribution: multiple live candidates"
+        }
+      ],
+      "crowns_match": true,
+      "terminal_vs_last_play_ticks": 205
+    },
+    "historical_log_equal": true,
+    "historical_grade_equal": true,
+    "historical_final_hash_equal": true,
+    "ok": true,
+    "seconds": 52.84
+  },
+  {
+    "index": 19,
+    "tag": "02GY9GRGYG0Q",
+    "recording_sha256": "9fa57341ffd42907c5e0f13bc12d8bd1af3265448606c130594f10e8ede73294",
+    "bytes": 7374476,
+    "fields": {
+      "tag": "02GY9GRGYG0Q",
+      "errors": {},
+      "coverage": {
+        "accepted_ability_events": 4,
+        "projectiles_rows": 3955,
+        "past_motion_tti_known": 2524,
+        "area_effects_rows": 243,
+        "frames": 6127,
+        "area_tracks": 13,
+        "projectile_tracks": 455
+      },
+      "area_elapsed_step_error_ms": {
+        "n": 230,
+        "mean": 0,
+        "median": 0.0,
+        "max": 0
+      },
+      "area_last_remaining_before_disappearance_ms": {
+        "n": 13,
+        "mean": 76.92307692307692,
+        "median": 50,
+        "max": 400
+      },
+      "tti_distance_outside_disappearance_bracket_s": {
+        "n": 2524,
+        "mean": 0.000150453930779403,
+        "median": 0.0,
+        "max": 0.02338262323514755
+      }
+    },
+    "grade": {
+      "plays_total": 109,
+      "plays_driven": 109,
+      "accepted": 109,
+      "rejected_by_reason": {},
+      "invalid_placement": 0,
+      "elixir_delays": {
+        "n": 0,
+        "max_ticks": 0,
+        "sum_ticks": 0
+      },
+      "skipped": [],
+      "crowns_match": true,
+      "terminal_vs_last_play_ticks": 170
+    },
+    "historical_log_equal": true,
+    "historical_grade_equal": true,
+    "historical_final_hash_equal": true,
+    "ok": true,
+    "seconds": 45.89
+  }
+]

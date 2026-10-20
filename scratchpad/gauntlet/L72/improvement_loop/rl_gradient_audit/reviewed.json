@@ -1,0 +1,40 @@
+{
+  "complete": true,
+  "report_sha256": "5265bd2e67c2b775d95f58ed31bf50618dbde61b7759dce3a63a2f0f83ad8c78",
+  "verified_sha256": "e4d3de51a4cbaf2b97eaf37a927f7d35929d3c342688a87bbc88f4e2826167d2",
+  "source_sha256": "2a7096a5c7d37f07543df51c00aa160708addd8dd170275a664f71412e0bfa32",
+  "receipts": {
+    "l72-rl-gradient-collection": {
+      "receipt_sha256": "aa5678fe60c56228412ea5415bbce1504f08fd0838af3378b71aca3540fad300",
+      "output_sha256": "5c62f1e72dc372e7e890a767176546055e5ef79eaf14159b133a639f076bb7b9",
+      "seconds": 244.8504581451416
+    },
+    "l72-rl-gradient-independent": {
+      "receipt_sha256": "8af152fd4fe8844b9ffb0d2f2b96c1c3284ce3de35354bd889ee44cb31b4614b",
+      "output_sha256": "332b8deecbb3ff15588e47187ddad2e970e05161e6b5268d1a3af9b9c695a547",
+      "seconds": 5.377548456192017
+    }
+  },
+  "updates": 27,
+  "rows": 6912,
+  "membership_controls": {
+    "positive": 1,
+    "negative": 4
+  },
+  "critic_larger": 0,
+  "opposed": 13,
+  "vf_share": {
+    "min": 0.02823702698251335,
+    "median": 0.07429765479769838,
+    "max": 0.12905089626236807
+  },
+  "cosine": {
+    "min": -0.16462531723273932,
+    "median": 0.0028504004335399317,
+    "max": 0.15591803170830237
+  },
+  "optimizer_updates": 0,
+  "new_checkpoint": false,
+  "accepted": false,
+  "causal_performance_claim": false
+}

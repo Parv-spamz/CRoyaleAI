@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/tower_aim_localization/exposure.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "TOWER_TRAINING_EXPOSURE_COMPLETE",
+  "matched": true,
+  "output_sha256": "33a5963d7ee4de73e59e85135fb6b8930c43dab186beeca49f403be1721e4b49",
+  "seconds": 1.544499397277832
+}

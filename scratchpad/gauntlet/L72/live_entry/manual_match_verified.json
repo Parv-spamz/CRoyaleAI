@@ -1,0 +1,83 @@
+{
+  "log": "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261005_062759.jsonl",
+  "log_sha256": "b85cb816c91eb3eb3ba1d76b6a467142629890c8d39aa5fa7d210bf9cbf5ef81",
+  "verifier_sha256": "01489081ab744ce28a9803347944d31554ab727b624033d69b510cb526532df8",
+  "start": {
+    "event": "start",
+    "screen": [
+      900,
+      1600
+    ],
+    "tau": 0.35,
+    "leak": 9.5,
+    "dry_run": false,
+    "ckpt": "C:\\Users\\benpe\\ClashBot\\icebow\\data\\bench\\rl_royale\\rseries_r1e31\\rseries_r1e31_u0155.pt",
+    "extrapolate": 26,
+    "opp_counter": true,
+    "device": "cpu",
+    "anti_leak": false,
+    "ckpt_source": "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L70\\live\\CKPT_OVERRIDE",
+    "ckpt_sha256": "76fdfaacbd9c2049cc88792278f06e3f73a56eaf9653791e922d9332dd6751cd",
+    "decision_options": {
+      "card_choice": "argmax",
+      "card_ratio": 0.7,
+      "card_T": 1.0,
+      "spell_aim": "argmax"
+    },
+    "decision_seed": 2968811710,
+    "feature_version": 4,
+    "public_audit": true
+  },
+  "events": {
+    "start": 1,
+    "menu_guard_off": 1,
+    "waiting_clock": 1,
+    "frame": 3009,
+    "button": 215,
+    "decision": 485,
+    "play": 66,
+    "tap_timing": 66,
+    "confirmed": 64,
+    "ability": 3,
+    "ability_confirmed": 3,
+    "unconfirmed": 1,
+    "stop": 1,
+    "recording": 1,
+    "end": 1
+  },
+  "end": {
+    "event": "end",
+    "played": 66,
+    "confirmed": 64,
+    "fails": 1,
+    "seconds": 314.7
+  },
+  "unresolved_attempts": 1,
+  "decision_ms": {
+    "median": 36,
+    "p95": 44,
+    "maximum": 75
+  },
+  "stops": [
+    {
+      "event": "stop",
+      "why": "battle_over_hands_visible",
+      "tick": 6220
+    }
+  ],
+  "unconfirmed": [
+    {
+      "event": "unconfirmed",
+      "tick": 5931,
+      "name": "Knight",
+      "intended": [
+        0.9166666666666666,
+        0.546875
+      ],
+      "p_play": 0.4391964375972748,
+      "elixir": 3.5543,
+      "fails": 1
+    }
+  ],
+  "interpretation": "Owner manual R1e entry evidence only; no new-model acceptance. Audit schema/key check is not a replacement for existing public-input privacy tests. Frame telemetry has separate EVAL_ONLY values; these are excluded from public decision audits."
+}

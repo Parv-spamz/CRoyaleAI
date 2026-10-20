@@ -1,0 +1,12 @@
+elite_base [26000043, 26000043, 26000043]
+elite_evolution [26000043, 13000043, 26000043]
+knight_evolution_control [26000000, 26000000, 13000000]
+elite_evolution_repeat [26000043, 13000043, 26000043]
+Traceback (most recent call last):
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\probe_native_elite_form_v4.py", line 155, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\probe_native_elite_form_v4.py", line 139, in main
+    assert all(e['card_id']==26000043 and e['card_form']=='evolution' for e in entities)
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

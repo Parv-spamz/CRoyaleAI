@@ -1,0 +1,25 @@
+{
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\collect_reserved_pilot.py": "fb0852bba51748e9b513bac080c2cb81907a1b99b561bac9165c3d1c124e26c4",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\native_capture_identity.py": "ee1bc6f007718ab8b780449cf19e411a40050d0a9784d5834e4cdb951b62b8b7",
+    "research\\sandbox_tools\\replay_drive.py": "802b11a9ed975ae22b86e5fff91fb280a65bfb965cbf359b8ae426fdf60b6a53",
+    "research\\sandbox_tools\\validate_public_capture.py": "7e260cc57ae723fdfd8f15272227d4b6f00049fa2765dd0b03c720d82ea95988",
+    "pipeline\\projectile_motion.py": "f5a45eaf5985a0fbe569f8ae7606c909b96c6da62c736a2ecde8c50234593457",
+    "research\\ext\\cr-native-sandbox\\native_core\\__init__.py": "2788d4756ed16a9d8e6820978ab2bd22cc72c69122b17bbf14b7f190c87f5260",
+    "research\\ext\\cr-native-sandbox\\native_core\\card_catalog.py": "11338206b0707fb165e4ff6d8bfcffe5ce494e87e6796c9c21bf3ef20c8a59df",
+    "research\\ext\\cr-native-sandbox\\native_core\\client.py": "eb49a3d3d0cfe051ea77add9d03a6f093b3cea49f77a38164ef2866b5b028e9e",
+    "research\\ext\\cr-native-sandbox\\native_core\\decks.py": "09ecc6f1888766c0f84b163ea923603d24dc23294ac1290954ac638029fea6e4",
+    "research\\ext\\cr-native-sandbox\\native_core\\deployment.py": "1e443b706d9d7a582cdbce1ee40e1aed039705840636e600e99038cbac04c14e",
+    "research\\ext\\cr-native-sandbox\\native_core\\env.py": "f50aa75e05aafa6460bec3c3b650c76e92044135c7105a824dbb704dee9141bc",
+    "research\\ext\\cr-native-sandbox\\native_core\\worker.py": "f62a52ae3c30eaa6c8cc18ddc65695b377d53fe8868609633f2111dc6180eed6",
+    "research\\ext\\cr-native-sandbox\\native_core\\data\\live_card_catalog.json": "7b01d9ac62e5035493131e974913fd00d6b67dd735703c28f5f496ec6a11722b",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\RESERVED_PILOT_PLAN.md": "ef2403525fb571c1f8a6f8672f90271536eaf2b3e7fd5e5b449e2d0364023307"
+  },
+  "jobs_sha256": "33410a6d9b9a6061fcc6f22277844765bf23d31a023f642b6af01aa6f9006173",
+  "prepared_sha256": "a14ee0af23b07b301488eddebe1b170dcdabe6f3592ad7c1cca904192f3119fa",
+  "preflight_receipt_sha256": "03b28c9a20d2547ec8b06accaa3eb280d1122986e970315c07260b51254ae2f2",
+  "preflight_report_sha256": "7607e4274775887fb6d1739a8477d3cc1370acd4b145906bee9f2ffb0da71d40",
+  "model_predictions": 0,
+  "device": "one native CPU emulator; no GPU",
+  "record_every": 10
+}

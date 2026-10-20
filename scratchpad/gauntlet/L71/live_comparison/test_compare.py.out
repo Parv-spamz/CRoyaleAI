@@ -1,0 +1,16 @@
+test_ambiguous_late_or_next_match_navigation_not_joined (__main__.ComparisonTests.test_ambiguous_late_or_next_match_navigation_not_joined) ... ok
+test_bad_end_totals_fail (__main__.ComparisonTests.test_bad_end_totals_fail) ... ok
+test_checkpoint_from_start_not_assumed_global (__main__.ComparisonTests.test_checkpoint_from_start_not_assumed_global) ... ok
+test_incomplete_tail_ignored_internal_corruption_rejected (__main__.ComparisonTests.test_incomplete_tail_ignored_internal_corruption_rejected) ... ok
+test_mismatched_and_duplicate_receipts_fail (__main__.ComparisonTests.test_mismatched_and_duplicate_receipts_fail) ... ok
+test_pair_outcome_and_unread (__main__.ComparisonTests.test_pair_outcome_and_unread) ... ok
+test_receipts_and_missing_data (__main__.ComparisonTests.test_receipts_and_missing_data) ... ok
+test_reject_other_and_dry_runs (__main__.ComparisonTests.test_reject_other_and_dry_runs) ... ok
+test_unfinished_excluded_from_behavior (__main__.ComparisonTests.test_unfinished_excluded_from_behavior) ... ok
+test_wilson_known_values_and_extremes (__main__.ComparisonTests.test_wilson_known_values_and_extremes) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.009s
+
+OK
+LIVE_COMPARISON_TESTS_PASSED

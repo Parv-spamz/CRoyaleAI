@@ -1,0 +1,77 @@
+..............................................s......................... [  5%]
+.......s................................................................ [ 10%]
+........................................................................ [ 15%]
+........................................................................ [ 20%]
+........................................................................ [ 26%]
+........................................................................ [ 31%]
+........................................................................ [ 36%]
+........................................................................ [ 41%]
+........................................................................ [ 47%]
+........................................................................ [ 52%]
+........................................................................ [ 57%]
+.................F............s...............x......................... [ 62%]
+........................................................................ [ 67%]
+.....sssss.............................................................. [ 73%]
+.................
+[throughput] env.step/s  rust 582 (6 live)  mock 500 (7 live)  at 10 ticks/step | engine ticks/s incl. state+mask per 20 ticks: rust 12911  mock 9365
+.s..................................................... [ 78%]
+........................................................................ [ 83%]
+........................................................................ [ 88%]
+........................................................................ [ 94%]
+........................................................................ [ 99%]
+.........                                                                [100%]
+================================== FAILURES ===================================
+______________ test_the_quickstart_trains_and_saves_a_checkpoint ______________
+
+tmp_path = WindowsPath('C:/Users/benpe/AppData/Local/Temp/pytest-of-benpe/pytest-83/test_the_quickstart_trains_and0')
+
+    @pytest.mark.skipif(not core_available(), reason=str(CORE_IMPORT_ERROR))
+    def test_the_quickstart_trains_and_saves_a_checkpoint(tmp_path):
+        script = tmp_path / "quickstart.py"
+        script.write_text(small(QUICKSTART.read_text(encoding="utf-8")), encoding="utf-8")
+        env = dict(os.environ)
+        env["PYTHONPATH"] = os.pathsep.join(
+            [str(QUICKSTART.parents[1]), *filter(None, [env.get("PYTHONPATH")])]
+        )
+        done = subprocess.run(
+            [sys.executable, str(script)], cwd=tmp_path, env=env,
+            capture_output=True, text=True, timeout=900,
+        )
+>       assert done.returncode == 0, done.stderr[-2000:]
+E       AssertionError: Traceback (most recent call last):
+E           File "C:\Users\benpe\AppData\Local\Temp\pytest-of-benpe\pytest-83\test_the_quickstart_trains_and0\quickstart.py", line 56, in <module>
+E             from royalelearn import Learner
+E         ImportError: cannot import name 'Learner' from 'royalelearn' (C:\Users\benpe\ClashBot\research\ext\Royale\RoyaleLearn\royalelearn\__init__.py)
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe', 'C:\\Users\\be...r\' from \'royalelearn\' (C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\RoyaleLearn\\royalelearn\\__init__.py)\n').returncode
+
+tests\test_quickstart.py:61: AssertionError
+============================== warnings summary ===============================
+..\..\Royale\.venv\Lib\site-packages\pygame\pkgdata.py:25
+  C:\Users\benpe\ClashBot\research\ext\Royale\.venv\Lib\site-packages\pygame\pkgdata.py:25: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+    from pkg_resources import resource_stream, resource_exists
+
+tests/test_env_api.py::test_gym_env_with_stochastic_opponent_replays_identically
+  C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleGym\tests\test_env_api.py:421: UserWarning: No engine given, so this is MockEngine: a readable reference implementation, NOT the game. Different card table, spells that resolve instantly rather than travelling, no stuns or knockback. Fine for learning the API; a bot trained against it has not been trained against the game. Pass engine=RustEngine() for the real one -- or engine=RustEngine, the class, when something builds several environments from one set of arguments, as make_gym_vec_env does. The gym ids royalegym/ClashRoyaleRust-v0 and royalegym/ClashRoyaleMock-v0 say which engine they are in their names. Any of those silences this.
+    env = ClashGymEnv(opponent=RandomLegalOpponent(noop_prob=0.5))
+
+tests/test_env_api.py::test_plant_opponent_with_hidden_state_breaks_the_replay
+  C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleGym\tests\test_env_api.py:432: UserWarning: No engine given, so this is MockEngine: a readable reference implementation, NOT the game. Different card table, spells that resolve instantly rather than travelling, no stuns or knockback. Fine for learning the API; a bot trained against it has not been trained against the game. Pass engine=RustEngine() for the real one -- or engine=RustEngine, the class, when something builds several environments from one set of arguments, as make_gym_vec_env does. The gym ids royalegym/ClashRoyaleRust-v0 and royalegym/ClashRoyaleMock-v0 say which engine they are in their names. Any of those silences this.
+    env = ClashGymEnv(opponent=CountingOpponent())
+
+tests/test_env_api.py::test_maskable_ppo_mask_convention
+tests/test_train_harness.py::test_make_gym_vec_env_still_passes_through_what_is_safe_to_share
+  C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleGym\royalegym\env.py:1332: UserWarning: No engine given, so this is MockEngine: a readable reference implementation, NOT the game. Different card table, spells that resolve instantly rather than travelling, no stuns or knockback. Fine for learning the API; a bot trained against it has not been trained against the game. Pass engine=RustEngine() for the real one -- or engine=RustEngine, the class, when something builds several environments from one set of arguments, as make_gym_vec_env does. The gym ids royalegym/ClashRoyaleRust-v0 and royalegym/ClashRoyaleMock-v0 say which engine they are in their names. Any of those silences this.
+    return ClashGymEnv(**made)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+SKIPPED [1] tests\test_architecture_doc.py:125: SKIPPED, NOT PASSED: docs/architecture.md states 1028 passed and 9 skipped at ecbb80b, and this tree is at 3117816. The count is only checkable on the tree it was taken on; anywhere else collection answers a different question. Re-measure and re-pin rather than making this compare numbers from two different trees.
+SKIPPED [1] tests\test_building_footprint.py:1053: SKIPPED, NOT PASSED: MockEngine states 'collision_radius_circle' (mock_engine.FOOTPRINT_MODEL) and RustEngine runs 'tile_box' (footprint_tiles for 14 cards, 11 boxes in its state). MockEngine's building verdicts and its building state are not the engine's while these differ.
+SKIPPED [1] tests\test_readme_program.py:329: SKIPPED, NOT PASSED: the badge states 1028 passed and 9 skipped at ecbb80b, and this tree is at 3117816. The count is only checkable on the tree it was taken on; anywhere else collection answers a different question. Re-measure and re-pin rather than making this compare numbers from two different trees.
+SKIPPED [5] tests\test_rust_engine.py:726: the two engines are reading different card tables, so this comparison would measure the DATA and not the engines. A SKIP IS NOT A PASS -- to run it, the engine's cards.json has to be the 2018 table: this engine reads the card table compiled into it (a wheel built elsewhere), so only an engine built in a RoyaleSim checkout whose data/derived/cards.json is the 2018 table can run it. cards.json vintage '15.535.29 client (2026, LIVE build family)' vs MockEngine's 'retroroyale-2018'. Differences (rust/mock) -- count: Goblins 4/3
+SKIPPED [1] tests\test_rust_spells.py:121: the two engines are reading different card tables, so this comparison would measure the DATA and not the engines. A SKIP IS NOT A PASS -- to run it, the engine's cards.json has to be the 2018 table: this engine reads the card table compiled into it (a wheel built elsewhere), so only an engine built in a RoyaleSim checkout whose data/derived/cards.json is the 2018 table can run it. cards.json vintage '15.535.29 client (2026, LIVE build family)' vs MockEngine's 'retroroyale-2018'. Differences (rust/mock) -- count: SkeletonArmy 15/14; radius: Prince 10800/11700
+XFAIL tests/test_reward_ground_truth.py::test_the_battle_ends_with_the_leader_winning_inside_the_window[rust-red-leads] - the scripted Red-leader battle ends with Blue ahead on the compiled engine. The fixture's mixed absolute/proportional tower hp is FIXED and was not the whole cause: with Red leading the TRAILER takes two crowns (2-1 at tick 3600), which a softened ladder does not explain. The scenario is not a mirror of itself; the seat asymmetry is the open part
+FAILED tests/test_quickstart.py::test_the_quickstart_trains_and_saves_a_checkpoint
+1 failed, 1366 passed, 9 skipped, 1 xfailed, 5 warnings in 1249.07s (0:20:49)

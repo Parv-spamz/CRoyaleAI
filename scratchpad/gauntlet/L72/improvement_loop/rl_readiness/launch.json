@@ -1,0 +1,7 @@
+{
+  "automatic_resume": false,
+  "launcher_pid": 59464,
+  "started": "2026-10-05T18:45:03.1437118-04:00",
+  "chain": "rl_readiness/run_chain.py",
+  "single_chain": true
+}

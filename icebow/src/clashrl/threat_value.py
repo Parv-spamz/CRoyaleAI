@@ -1,0 +1,500 @@
+"""What does it COST to ignore this? The question the bot never asked.
+
+THE GAP THIS FILLS
+------------------
+Every counter rule in this project answers "what beats X". None of them answered "is X worth
+beating". So the policy would spend a card on a lone Skeletons -- and it is not close to correct:
+at tower level 15 an ignored Skeletons deals **17 damage, 0.4% of a Princess Tower**, while the
+cheapest card in the deck costs 1 elixir and a tempo beat. Every guide states the principle
+("if a card don't solve a situation or don't affect the battle, don't play it"; "don't defend
+single weak units when accepting 100-200 damage costs less elixir") but always as prose, never as
+a number, so nothing downstream could act on it.
+
+The number is computable from our own card DB, so it is here rather than in a prompt.
+
+THE MODEL
+---------
+One lone unit walks into a Princess Tower and neither side gets help. The tower kills bodies one
+at a time; each body deals its DPS until the tower reaches it. `FIRST_HIT` reflects the tower's
+slower first shot. The result is expressed as a FRACTION OF OUR OWN TOWER'S HP, because that is
+the currency the decision is actually in.
+
+It is deliberately optimistic about our side (no second tower, no king, no defenders), so a card
+this calls ignorable is ignorable with margin. It is NOT a damage prediction -- it is a triage
+threshold.
+
+THE RANGE CORRECTION, which the naive version got badly wrong
+-------------------------------------------------------------
+The first cut of this table said the enemy PRINCESS was ignorable at 0.4%, and a Dart Goblin at
+1.4%. That is the model's assumption failing, not a fact: a unit whose attack range exceeds the
+tower's 7.5 tiles never enters the trade at all. It chips forever and the tower never answers.
+So anything that outranges the tower is UNBOUNDED, never ignorable, regardless of how little
+health it has. Same for siege.
+"""
+from __future__ import annotations
+
+import math
+
+from typing import Optional
+
+from . import levels
+
+#: Princess Tower hit speed (s) and the slower first shot after acquiring a target.
+TOWER_HIT_SPEED = 0.8
+TOWER_FIRST_HIT = 1.0
+#: Princess Tower attack range in tiles (sim.tower_range).
+TOWER_RANGE = 7.5
+
+#: Below this fraction of our tower, a lone threat is not worth a card.
+IGNORE_FRAC = 0.05
+#: How many waves of its spawn a HUT is worth. Deliberately small: each wave is resolved by the
+#: tower before the next arrives, so they do not pool, and only `tombstone` carries a spawn
+#: `interval` in the card data -- Goblin Hut, Barbarian Hut, Furnace and Goblin Drill have none, so
+#: a lifetime-accurate count cannot be computed for them. Two waves is the conservative reading of
+#: "it keeps producing", and it lands the ordering where the doctrine puts it: a Tombstone's
+#: skeletons stay ignorable, a Goblin Hut's spear goblins become worth a cheap answer.
+_SPAWNER_WAVES = 2.0
+#: Ceiling on a spawner's price. Past a full tower the exact number stops changing any decision --
+#: everything above MUST_ANSWER_FRAC is answered -- and Barbarian Hut times two waves would
+#: otherwise read as six tower-fractions and outrank every real push on the board.
+_SPAWNER_CAP = 1.0
+#: Tower fraction that ONE elixir of enemy advantage eventually costs us. MEASURED across the 113
+#: troops in the card DB: a fully-ignored card costs a median 0.120 tower per elixir of its cost
+#: (p25 0.061, mean 0.154). The conservative p25 is used because elixir HANDED to an opponent is
+#: not damage DELIVERED -- you still defend against whatever they spend it on -- so the cheap end
+#: is the honest one. Used to price elixir-producing buildings, which deal no damage themselves.
+ELIXIR_TO_TOWER = 0.061
+#: Above this, it must be answered -- letting it through loses the tower outright over a match.
+MUST_ANSWER_FRAC = 0.20
+
+
+def _num(c: dict, *keys) -> Optional[float]:
+    for k in keys:
+        v = c.get(k)
+        if v:
+            try:
+                return float(v)
+            except (TypeError, ValueError):
+                pass
+    return None
+
+
+def tower_dps(tower_level: int = 15) -> float:
+    dmg = levels.TOWER_DMG[min(int(tower_level), len(levels.TOWER_DMG) - 1)]
+    return dmg / TOWER_HIT_SPEED
+
+
+def tower_hp(tower_level: int = 15) -> int:
+    return levels.PRINCESS_HP[min(int(tower_level), len(levels.PRINCESS_HP) - 1)]
+
+
+def _bodies(db, base: str, enemy_level: int = 11):
+    """[(hp, dps)] for one card's bodies, or None when the tower cannot resolve it at all."""
+    c = db.get(base) if db is not None else None
+    if not c:
+        return None
+    if str(c.get("type", "")).lower() == "spell":
+        return None                       # a spell is not a body; triage does not apply
+    hp = _num(c, "hitpoints", "hp")
+    dmg = _num(c, "damage", "damage_per_hit")
+    hs = _num(c, "hit_speed", "hit_speed_s")
+    if not hs and (dmg or _num(c, "death_damage")) and hp:
+        flags = c.get("flags") or []
+        if c.get("kamikaze") or "kamikaze" in flags:
+            return None                   # handled by _burst_cost: it hits ONCE and dies
+    if not hp or not dmg or not hs:
+        return None                       # unknown card: never assume it is safe to ignore
+    rng = _num(c, "range", "range_tiles") or 0.0
+    if rng >= TOWER_RANGE or bool(c.get("siege")):
+        return None                       # outranges the tower: it chips forever, unanswered
+    count = max(1, int(c.get("count") or 1))
+    hp = levels.scale(hp, enemy_level, 11)
+    dmg = levels.scale(dmg, enemy_level, 11)
+    return [(hp, dmg / hs)] * count
+
+
+def _dealt(bodies, tower_level: int) -> float:
+    """Damage a group lands while a single-target tower works through it, body by body.
+
+    SUPERLINEAR IN COUNT, which is the whole reason this is not a sum of per-card numbers: each
+    extra body extends the time EVERY surviving body keeps firing. Three Skeletons cost 0.4% of a
+    tower; twelve are not 4 x 0.4%, because the tower needs four times as long to clear them and
+    the tail is shooting for all of it.
+    """
+    dps_t = tower_dps(tower_level)
+    elapsed, dealt = 0.0, 0.0
+    for hp, dps in bodies:
+        elapsed += hp / dps_t                            # tower finishes this body at `elapsed`
+        dealt += dps * max(0.0, elapsed - TOWER_FIRST_HIT)
+    return dealt
+
+
+
+def _burst_cost(db, base: str, tower_level: int, enemy_level: int):
+    """Tower HP a KAMIKAZE card lands on the way in, or None if it is not one.
+
+    These cards have `hitpoints` and `damage` but no `hit_speed`, because they do not have one --
+    they hit once and die. `_bodies` requires all three, so it returned None for every one of them
+    and `ignore_cost_frac` read that as "the tower cannot resolve this" -> inf -> NEVER IGNORABLE.
+    A 1-elixir Ice Spirit therefore outranked a Golem in every priority comparison, and Wall
+    Breakers read as must-answer-at-any-cost (2026-08-20).
+
+    The honest price is the burst itself, once per body, plus anything it leaves behind: a Battle
+    Ram breaks into two Barbarians and a Skeleton Barrel drops seven Skeletons, and those bodies
+    ARE resolved by the tower, so they go through the ordinary superlinear model.
+    """
+    c = db.get(base) if db is not None else None
+    if not c:
+        return None
+    flags = c.get("flags") or []
+    if not (c.get("kamikaze") or "kamikaze" in flags):
+        return None
+    hit = _num(c, "damage", "damage_per_hit") or 0.0
+    if not hit:
+        hit = _num(c, "death_damage") or 0.0
+    count = max(1, int(c.get("count") or 1))
+    dealt = levels.scale(hit, enemy_level, 11) * count
+    spawn = c.get("spawns") or {}
+    n_death = int(spawn.get("on_death") or 0)
+    if n_death and spawn.get("unit"):
+        # what it LEAVES BEHIND still has to be chewed through by the tower
+        sub = _bodies(db, str(spawn["unit"]), enemy_level)
+        if sub:
+            per = sub[0]
+            dealt += _dealt([per] * n_death, tower_level)
+    return dealt
+
+def _economy_cost(db, base: str, tower_level: int, enemy_level: int):
+    """Tower fraction an ELIXIR-PRODUCING building costs if it is left alone, or None.
+
+    A pump deals no damage, so the body model cannot see it and scored it `inf` -- "the tower
+    cannot resolve this" -- which made a collector an infinite, must-answer-at-any-cost threat.
+    Scoring it 0 instead would be the opposite error: the threat is INDIRECT but real. The elixir
+    buys a push you would not otherwise face, it funds further pumps, and in double elixir that
+    advantage arrives as a single push you cannot hold.
+
+    Priced from the card's own numbers -- what it produces, less what it cost them -- converted at
+    the measured tower-per-elixir rate. Deliberately the NET swing: they already paid for it, and
+    that payment is a tempo loss you punish by attacking, not a reason to fear the building more.
+    """
+    c = db.get(base) if db is not None else None
+    if not c:
+        return None
+    every = _num(c, "gen_every_s", "generate_every_s")
+    life = _num(c, "lifetime", "lifetime_s")
+    if not every or not life:
+        return None                       # not a producer: fall through to the body model
+    produced = float(life) / float(every)
+    net = max(0.0, produced - float(_num(c, "elixir") or 0.0))
+    return net * ELIXIR_TO_TOWER
+
+
+def _spawner_cost(db, base: str, tower_level: int, enemy_level: int):
+    """Tower fraction a SPAWNING building costs, priced by the bodies it puts out, or None.
+
+    Huts have hitpoints and no attack, so the body model saw nothing and scored them all `inf` --
+    a Tombstone and a Barbarian Hut equally and infinitely threatening. What separates them is
+    what comes out: a couple of Skeletons is a trickle, three Barbarians is a push, and the card
+    database already knows the difference.
+
+    Priced on ONE WAVE plus the death spawn rather than the lifetime total. A hut's whole output
+    pooled together would rank a Tombstone above a Golem, because `_dealt` is superlinear in count
+    and thirty seconds of skeletons is a lot of them -- but they do not arrive together. The tower
+    resolves each wave before the next, so the group that actually has to be answered is the one
+    standing there at once.
+    """
+    c = db.get(base) if db is not None else None
+    if not c:
+        return None
+    spawn = c.get("spawns") or {}
+    unit = str(spawn.get("unit") or "")
+    if not unit:
+        return None
+    # WHAT COMES OUT, priced as its own card -- not as a body count. Counting bodies made the
+    # `on_death` field dominate and inverted the ordering: a Tombstone (2 + 4 skeletons) scored
+    # ABOVE a Goblin Hut, when the difference that matters is that skeletons are skeletons and
+    # spear goblins are not. Per card at tournament level the DB already separates them cleanly --
+    # skeletons 0.024, spear_goblins 0.045, goblins 0.403, barbarians 3.18 -- so the spawner
+    # inherits that and the ranking comes out of the card data instead of a hand-written table.
+    unit_cost = ignore_cost_frac(db, unit, tower_level, enemy_level)
+    if unit_cost is None or unit_cost != unit_cost or unit_cost == float("inf"):
+        return None
+    # HOW MANY WAVES IT ACTUALLY GETS, from the card's own interval and lifetime. These were prose
+    # in the comments beside the entries ("every 2.2s", "Every 3 seconds... summon a Goblin") and
+    # absent from the data, so the model had to guess a flat two waves for every hut -- which
+    # priced a Goblin Drill (3s period, 10s life) the same as a Barbarian Hut (13.5s, 30s life).
+    # `_SPAWNER_WAVES` survives only as the fallback for a spawner whose interval is still unknown.
+    spawn = (db.get(base) or {}).get("spawns") or {}
+    every = _num(spawn, "interval")
+    # A spawner that WALKS has no lifetime, so this used to fall through to the flat
+    # `_SPAWNER_WAVES`. Its honest bound is how long it SURVIVES, which the sim can
+    # measure: `effective_life_s` carries that measurement (see the cards.yaml comment
+    # for n and spread). Real lifetimes still win -- this is only for the walking case.
+    life = _num(db.get(base) or {}, "lifetime", "lifetime_s", "effective_life_s")
+    waves = (float(life) / float(every)) if (every and life) else _SPAWNER_WAVES
+    return min(_SPAWNER_CAP, unit_cost * max(1.0, waves))
+
+
+def ignore_cost_frac(db, base: str, tower_level: int = 15, enemy_level: int = 11) -> float:
+    """Fraction of one Princess Tower lost if this card walks in unanswered.
+
+    ``inf`` means "the tower cannot resolve this on its own" -- it outranges us, it is a siege
+    building, or we have no stats for it (unknown is never ignorable).
+    """
+    burst = _burst_cost(db, base, tower_level, enemy_level)
+    if burst is not None:
+        return burst / float(tower_hp(tower_level))
+    econ = _economy_cost(db, base, tower_level, enemy_level)
+    if econ is not None:
+        return econ                        # already a tower FRACTION, not raw damage
+    # A SPAWNER IS WORTH AT LEAST WHAT COMES OUT OF IT, whether or not it also shoots. The Furnace
+    # carries damage and a hit speed, so the body model answered first and the spawn was never
+    # priced -- it scored as a lone turret while the Fire Spirits it actually threatens you with
+    # went uncounted. Taking the MAX keeps a pure hut priced by its spawn and an attacking spawner
+    # priced by whichever half is worse, without double-counting the two.
+    spawned = _spawner_cost(db, base, tower_level, enemy_level)
+    bodies = _bodies(db, base, enemy_level)
+    if bodies is None:
+        return spawned if spawned is not None else float("inf")
+    own = _dealt(bodies, tower_level) / float(tower_hp(tower_level))
+    return max(own, spawned) if spawned is not None else own
+
+
+def triage(db, base: str, tower_level: int = 15, enemy_level: int = 11) -> str:
+    """'ignore' | 'cheap' | 'must_answer' -- how much this threat is worth spending on."""
+    f = ignore_cost_frac(db, base, tower_level, enemy_level)
+    if f < IGNORE_FRAC:
+        return "ignore"
+    if f >= MUST_ANSWER_FRAC:
+        return "must_answer"
+    return "cheap"
+
+
+def group_ignore_frac(db, bases, tower_level: int = 15, enemy_level: int = 11) -> float:
+    """Ignore cost of a whole enemy group, pooling every body into ONE clearing queue.
+
+    Not a sum of the per-card numbers, which is what this did first and it was wrong in the
+    direction that matters: four Skeletons cards came to 4 x 0.38% = 1.5% and triaged as
+    "ignorable", when twelve skeletons chewing on a tower plainly are not. The tower kills one
+    body at a time, so every extra body extends the window for all the survivors -- pooling them
+    captures that and summing cannot.
+    """
+    pooled = []
+    for b in bases:
+        bodies = _bodies(db, b, enemy_level)
+        if bodies is None:
+            return float("inf")
+        pooled.extend(bodies)
+    if not pooled:
+        return 0.0
+    return _dealt(pooled, tower_level) / float(tower_hp(tower_level))
+
+
+def cards_from_bodies(db, bases, enemy_level: int = 11):
+    """Collapse a list of BODY bases into the CARD list that produced them.
+
+    Callers see bodies -- the sim iterates `eng.units`, live iterates detector tracks -- but
+    :func:`group_ignore_frac` takes CARDS and expands each into its own bodies. Passing bodies
+    straight in therefore multiplies every squad by its own size: one Skeletons card became nine
+    to twelve skeletons, and a Skeleton Army became two hundred and twenty five.
+
+    Recovering the count as ceil(seen / per_card) keeps the property the pooling was built for --
+    four Skeletons cards really are worse than one, and twelve bodies still collapse to three
+    cards rather than to one. Single-body cards pass through untouched.
+    """
+    seen = {}
+    for b in bases:
+        seen[b] = seen.get(b, 0) + 1
+    out = []
+    for b, n in seen.items():
+        bodies = _bodies(db, b, enemy_level)
+        per = len(bodies) if bodies else 1
+        out.extend([b] * max(1, int(math.ceil(n / float(max(1, per))))))
+    return out
+
+
+def bodies_ignore_frac(db, bases, tower_level: int = 15, enemy_level: int = 11) -> float:
+    """:func:`group_ignore_frac` for a list of BODIES rather than cards.
+
+    This is what essentially every caller actually has, and calling the card-level function with
+    body-level data is what made a lone Skeletons trickle score nine times the ignore threshold.
+    """
+    return group_ignore_frac(db, cards_from_bodies(db, bases, enemy_level),
+                             tower_level=tower_level, enemy_level=enemy_level)
+
+
+def catch_value_frac(db, bases, tower_level: int = 15, enemy_level: int = 11) -> float:
+    """Tower fractions a set of enemy BODIES is worth REMOVING -- the value of catching them.
+
+    This is :func:`bodies_ignore_frac`'s currency and almost its answer, but it may not BE
+    ``bodies_ignore_frac``, and the reason is measured. That function routes everything through
+    ``_bodies``, which returns ``None`` for any card the crown tower cannot model as a clearing
+    queue -- a kamikaze body (Wall Breakers, every Spirit), a spell-summoned barrel, a siege
+    building -- and ``group_ignore_frac`` turns a single ``None`` into ``inf`` for the WHOLE
+    group. MEASURED on the sim's own ladder pool, 2026-08-27:
+
+        bodies_ignore_frac(['wall_breakers'])  inf     ignore_cost_frac('wall_breakers')  0.1415
+        bodies_ignore_frac(['fire_spirit'])    inf     ignore_cost_frac('fire_spirit')    0.0468
+        bodies_ignore_frac(['ice_spirit'])     inf     ignore_cost_frac('ice_spirit')     0.0249
+
+    A veto that reads ``inf`` as "enormously valuable" would wave through every cast on a board
+    holding one Ice Spirit, which is the opposite of the truth (0.0249 is half the ignore
+    threshold). So the pooled model is used where it applies and the per-card burst/economy price
+    is SUMMED for the bodies it cannot model -- summing is right for those, because a Wall Breaker's
+    cost is burst damage that does not queue behind anything.
+
+    ``inf`` still propagates when a card is genuinely unresolvable (a Mortar, an X-Bow, an unknown
+    card): the tower cannot answer it at all, so no threshold should ever refuse to.
+    """
+    cards = cards_from_bodies(db, bases, enemy_level)
+    pooled, extra = [], 0.0
+    for c in cards:
+        if _bodies(db, c, enemy_level) is not None:
+            pooled.append(c)
+            continue
+        f = ignore_cost_frac(db, c, tower_level=tower_level, enemy_level=enemy_level)
+        if not math.isfinite(f):
+            return float("inf")            # unresolvable by the tower -> never veto the answer
+        extra += f
+    base = (group_ignore_frac(db, pooled, tower_level=tower_level, enemy_level=enemy_level)
+            if pooled else 0.0)
+    if not math.isfinite(base):
+        return float("inf")
+    return base + extra
+
+
+# ---------------------------------------------------------------------------------------------
+# CAN THIS CARD EVEN ANSWER THAT? (2026-08-20, user report: "the advisor is suggesting unrealistic
+# counters... placing knight on a balloon (knight can't even see the balloon) or rocketing wall
+# breakers (a horrible elixir trade)".)
+#
+# The advisor prompt already forbade both IN WORDS and still produced them, exactly like the triage
+# tier above: the fix is KB-grounded CODE that vetoes the pick, not a louder sentence. Used by the
+# live advisor path and by the sim's doctrine so both sides refuse the same impossible answers.
+
+# Spells that cannot touch a flying unit: the log ROLLS along the ground, the quake SHAKES it.
+GROUND_ONLY_SPELLS = frozenset({"the_log", "earthquake", "barbarian_barrel"})
+# Spawn spells are threats in their own right (units land), so they are never "just a spell".
+SPAWN_SPELL_BASES = frozenset({"graveyard", "goblin_barrel", "royal_delivery"})
+# A spell this much MORE expensive than everything it would erase is a losing trade by itself.
+SPELL_OVERKILL_MARGIN = 3.0
+
+
+def can_touch(db, base: str, threat_bases) -> bool:
+    """False when every unit in the threat FLIES and `base` cannot reach the air.
+
+    Air is answered by an air-attacking troop/building, by tornado (it repositions flying units
+    even though it deals no real damage), or by a damage spell that is not ground-only. A knight
+    cannot see a balloon at all -- that suggestion was the user's report, and it came from a
+    table that only reasoned about roles.
+    """
+    bases = [b for b in (threat_bases or ()) if b]
+    if not bases:
+        return True
+    if not all(bool(db.is_flying(b)) for b in bases):
+        return True                      # something in the group walks -> any card can engage it
+    if db.attacks_air(base):
+        return True
+    if base == "tornado":
+        return True                      # pulls air: repositioning IS the answer (king activation)
+    return db.kind(base) == "spell" and base not in GROUND_ONLY_SPELLS
+
+
+def trade_sane(db, base: str, threat_bases) -> bool:
+    """False for a SPELL that costs far more than the whole group it would erase.
+
+    Only spells are judged: a troop survives its defence and keeps working, so its cost is not
+    spent the way a spell's is. Rocket (6) on wall breakers (2) is the reported case -- a 4-elixir
+    loss for a hit the log takes for 2.
+    """
+    if db.kind(base) != "spell" or base in SPAWN_SPELL_BASES:
+        return True
+    bases = [b for b in (threat_bases or ()) if b]
+    if not bases:
+        return True
+    group = sum(float(db.elixir(b) or 0.0) for b in bases)
+    cost = float(db.elixir(base) or 0.0)
+    return cost < group + SPELL_OVERKILL_MARGIN
+
+
+def primary_threat(db, bases, tower_level: int = 15, enemy_level: int = 11):
+    """The member of the group that decides what an answer has to be able to reach.
+
+    Ranked by what each card costs to IGNORE on its own -- the same triage number every other
+    tier here uses -- so a Balloon outranks the Skeletons walking beside it by the margin the
+    card database says it should, rather than by a hand-written list of "important" cards.
+    """
+    best, best_v = None, -1.0
+    for b in dict.fromkeys(b for b in (bases or ()) if b):
+        try:
+            v = float(group_ignore_frac(db, [b], tower_level=tower_level, enemy_level=enemy_level))
+        except Exception:  # noqa: BLE001 -- an unknown card is not the primary threat
+            continue
+        if v > best_v:
+            best, best_v = b, v
+    return best
+
+
+def misses_primary(db, base: str, bases, tower_level: int = 15, enemy_level: int = 11):
+    """Why `base` cannot reach the group's PRIMARY threat, or None when it can.
+
+    Deliberately NOT folded into `pick_invalid`. That function answers "is this card a legal
+    answer at all", and its callers use it as a hard veto; this one answers "is this card an
+    answer to the thing that actually matters here", which is only a veto when something better
+    is available. A Log on the skeletons beside a Balloon is the wrong answer when the hand holds
+    a Tornado, and the best available play when it does not -- and only the caller knows which.
+    """
+    prime = primary_threat(db, bases, tower_level=tower_level, enemy_level=enemy_level)
+    if not prime or not base:
+        return None
+    if can_touch(db, base, [prime]):
+        return None
+    return "cannot touch %s, the biggest thing on the board" % prime
+
+
+def pick_invalid(db, base: str, threat_bases):
+    """Why `base` cannot answer this threat group, or None when it is a legal answer."""
+    if not base:
+        return None
+    if not can_touch(db, base, threat_bases):
+        return "cannot touch an all-air group"
+    if not trade_sane(db, base, threat_bases):
+        group = sum(float(db.elixir(b) or 0.0) for b in (threat_bases or ()) if b)
+        return "a %.0f-elixir spell on a %.0f-elixir group" % (float(db.elixir(base) or 0.0), group)
+    return None
+
+
+# ---------------------------------------------------------------------------------------------
+# ARE THEY BUILDING IN THE BACK? (2026-08-20, user rule.)
+#
+# The beatdown signature: elixir committed deep in their OWN half with nothing on ours yet. It is
+# the one board where a full elixir bar should buy a DEFENSIVE X-Bow rather than an offensive one
+# -- the offensive bow walks into a push that is already paid for and is blocked before it locks.
+#
+# Coordinates: both the sim and the live frame put THEIR princesses at y ~ 0.204 and treat y > 0.42
+# as our half, so one threshold pair serves both sides.
+BACK_Y = 0.28              # at or behind their princess line
+OUR_HALF_Y = 0.42          # the river line _needs_answer already triages on
+BACK_MIN_ELIXIR = 4.0      # a lone cheap card in the back is cycling, not building
+
+
+def massing_in_back(db, units, back_y: float = BACK_Y, our_half_y: float = OUR_HALF_Y,
+                    min_elixir: float = BACK_MIN_ELIXIR) -> bool:
+    """True when they are BUILDING: `units` is [(x, y, base)] of enemy units.
+
+    Requires BOTH halves of the signature -- meaningful elixir parked deep in their half, and
+    nothing of theirs committed on ours. Once a push crosses the river this goes False and the
+    ordinary defensive path (counter table, threat gate) takes over, which is why the caller can
+    treat it as "the board is quiet BUT it is about to stop being quiet".
+    """
+    back = 0.0
+    for u in (units or ()):
+        try:
+            x, y, base = float(u[0]), float(u[1]), str(u[2])
+        except Exception:  # noqa: BLE001 -- a malformed track is not a beatdown
+            continue
+        if y > our_half_y:
+            return False                      # already committed on our half: this is a defence
+        if y <= back_y and base:
+            back += float(db.elixir(base) or 0.0)
+    return back >= min_elixir

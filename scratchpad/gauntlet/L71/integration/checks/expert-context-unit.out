@@ -1,0 +1,12 @@
+............                                                             [100%]
+============================== warnings summary ===============================
+pipeline/tests/test_expert_context.py::test_actual_r1e_migration_preserves_all_initial_outputs
+pipeline/tests/test_spatial_projectiles.py::test_zero_initialization_preserves_tiny_outputs
+pipeline/tests/test_spatial_projectiles.py::test_version_six_checkpoint_roundtrip_and_expert_backward
+pipeline/tests/test_spatial_projectiles.py::test_version_six_checkpoint_roundtrip_and_expert_backward
+pipeline/tests/test_spatial_projectiles.py::test_unknown_target_mirroring_and_padding_stay_unknown
+  C:\Users\benpe\.codex\worktrees\learned-defence\ClashBot\pipeline\model_v3.py:92: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+    self.encoder = nn.TransformerEncoder(enc, layers)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+12 passed, 5 warnings in 6.67s

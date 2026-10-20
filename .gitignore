@@ -1,0 +1,131 @@
+# --- Virtual environments (huge; recreate from requirements.txt) ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Python caches ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# --- Recordings, datasets & trained weights (large / regenerable) ---
+# Gameplay videos, labeled datasets, and policy checkpoints live under data/.
+data/
+*.mp4
+*.avi
+*.mkv
+*.parquet
+scratchpad/gauntlet/L67/hf/
+scratchpad/**/*.npz
+
+# --- Label Studio exports & detector training output (transient working artifacts) ---
+annotation_export*/
+runs/
+
+# --- Scratch / diagnostics ---
+**/tmp_*.py
+**/diag_*.png
+**/_cand_*.png
+**/_candidates.png
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Card reference pictures (third-party art, regenerable) ---
+# `run.py cards-art` re-downloads these from the Fandom wiki whenever they are needed.
+# Not committed: they are someone else's images and cost ~2.6 MB.
+icebow/templates/cardart/
+
+# --- Stale push worktrees + root-level model weights (large / regenerable) ---
+_push_worktree/
+*.pt
+
+# Kept on purpose (small + needed): src/**/hp_digits.npz, templates/**/*.png
+data/webcache/
+
+# --- Graphify knowledge-graph output (regenerable; can embed file contents) ---
+# graph.json/graph.html hold extracted code structure and text, so a committed graph is a second
+# copy of the repo that no one reviews. Regenerate with `/graphify .` instead of committing it.
+graphify-out/
+raw/
+
+# scratch probes written during diagnosis
+s_tmp.py
+align_tmp.py
+wr_eval_tmp.py
+
+# unlazy gate ledger (ephemeral, session-local)
+/scratch/
+/GATES.md
+.unlazy/
+.unlazy-hook-state.json
+
+# --- Third-party clones under research/ext/ (assessed, not vendored) ---
+research/ext/
+scratchpad/gauntlet/L66/clips/
+scratchpad/gauntlet/L66/clips180/
+scratchpad/gauntlet/L66/*.mp4
+scratchpad/gauntlet/L66/*.webm
+scratchpad/gauntlet/L66/sweep180/
+
+# --- Engine-driven replay corpora and HF crawl conversions (GBs; local data, never committed) ---
+scratchpad/gauntlet/ext/corpus_*/
+scratchpad/gauntlet/L68/generalist/pilot/crawl/
+scratchpad/gauntlet/L68/generalist/pilot/bytediff/
+
+# personal Claude Code permission rules
+.claude/settings.local.json
+
+# live memory-reader binary (not ours to redistribute)
+scratchpad/gauntlet/L68/live_reader/live_sampler
+
+# reader purge (L74/reader_purge): the live memory reader is local-only. These files stay on disk but are never tracked.
+# Launch values for the reader: icebow/data/reader_config.json (icebow/data/ is ignored as well; listed for clarity).
+icebow/data/reader_config.json
+**/re_live_sampler*
+**/live_sampler*
+**/re_peek*
+scratchpad/gauntlet/L70/reader/
+scratchpad/gauntlet/ext/dump/
+scratchpad/gauntlet/ext/re/
+scratchpad/gauntlet/L62/re_*
+scratchpad/gauntlet/L62/bridge_re.md
+scratchpad/gauntlet/L68/live_reader/chain_scan.c
+scratchpad/gauntlet/L68/live_reader/probe1.jsonl
+scratchpad/gauntlet/L73/hero_dedupe/explore.py
+scratchpad/gauntlet/L71/integration/checks/l72-reader-character-passive-v2.out
+scratchpad/gauntlet/L72/improvement_loop/native_elite_form_probe.json
+scratchpad/gauntlet/L72/improvement_loop/native_elite_form_probe_v2.json
+scratchpad/gauntlet/L72/improvement_loop/native_elite_form_probe_v3.json
+scratchpad/gauntlet/L72/improvement_loop/native_elite_form_probe_v4.json
+scratchpad/gauntlet/L72/improvement_loop/native_elite_form_probe_v5.json
+scratchpad/gauntlet/L72/improvement_loop/native_rebuilt_service_start.out
+scratchpad/gauntlet/L72/improvement_loop/native_service_crash.log
+scratchpad/gauntlet/L72/improvement_loop/native_service_guest.log
+scratchpad/gauntlet/L72/improvement_loop/native_service_start.err
+scratchpad/gauntlet/L72/improvement_loop/reader_character_identity/PASSIVE_PLAN.md
+scratchpad/gauntlet/L72/improvement_loop/reader_character_identity/PASSIVE_V2_PLAN.md
+scratchpad/gauntlet/L72/improvement_loop/reader_character_identity/build_successor.py
+scratchpad/gauntlet/L72/improvement_loop/reader_character_identity/character_name.h
+scratchpad/gauntlet/L72/improvement_loop/reader_character_identity/decoder_test.c
+scratchpad/gauntlet/L72/improvement_loop/reader_character_identity/format_original.c
+scratchpad/gauntlet/L72/improvement_loop/reader_character_identity/format_successor.c
+scratchpad/gauntlet/L72/improvement_loop/reader_character_identity/live_sampler3.c
+scratchpad/gauntlet/L72/improvement_loop/reader_character_identity/passive.py
+scratchpad/gauntlet/L72/improvement_loop/reader_character_identity/passive_started.json
+scratchpad/gauntlet/L72/improvement_loop/reader_character_identity/passive_v2.json
+scratchpad/gauntlet/L72/improvement_loop/reader_character_identity/passive_v2.py
+scratchpad/gauntlet/L72/improvement_loop/reader_character_identity/passive_v2_identity.json
+scratchpad/gauntlet/L72/improvement_loop/reader_character_identity/passive_v2_started.json
+scratchpad/gauntlet/L72/improvement_loop/reader_character_identity/qualify.py
+scratchpad/gauntlet/L72/improvement_loop/void_identity/probe.json
+scratchpad/gauntlet/L74/reader_purge/UNTRACK.txt
+scratchpad/gauntlet/L74/reader_purge/UNTRACK_REASONS.md

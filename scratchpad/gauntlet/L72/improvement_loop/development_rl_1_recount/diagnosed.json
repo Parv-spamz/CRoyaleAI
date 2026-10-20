@@ -1,0 +1,341 @@
+{
+  "complete": true,
+  "updates": [
+    {
+      "update": 1,
+      "rows": 2139,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 8.116124447581348e-06,
+      "recounted": 8.116124447581348e-06,
+      "difference": 0.0,
+      "exact": true
+    },
+    {
+      "update": 2,
+      "rows": 2181,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 7.6019196972129794e-06,
+      "recounted": 7.6019196972129794e-06,
+      "difference": 0.0,
+      "exact": true
+    },
+    {
+      "update": 3,
+      "rows": 2103,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 9.679752853688753e-06,
+      "recounted": 9.679752853688753e-06,
+      "difference": 0.0,
+      "exact": true
+    },
+    {
+      "update": 4,
+      "rows": 2164,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 8.140304188430195e-06,
+      "recounted": 8.140304188430195e-06,
+      "difference": 0.0,
+      "exact": true
+    },
+    {
+      "update": 5,
+      "rows": 2045,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 1.0049132331739155e-05,
+      "recounted": 1.0049132331739157e-05,
+      "difference": 1.6940658945086007e-21,
+      "exact": false
+    },
+    {
+      "update": 6,
+      "rows": 2375,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 9.593853155126415e-06,
+      "recounted": 9.593853155126413e-06,
+      "difference": -1.6940658945086007e-21,
+      "exact": false
+    },
+    {
+      "update": 7,
+      "rows": 2080,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 6.846322686589271e-06,
+      "recounted": 6.846322686589271e-06,
+      "difference": 0.0,
+      "exact": true
+    },
+    {
+      "update": 8,
+      "rows": 2190,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 8.929317518510286e-06,
+      "recounted": 8.929317518510286e-06,
+      "difference": 0.0,
+      "exact": true
+    },
+    {
+      "update": 9,
+      "rows": 2510,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 6.722278502333401e-06,
+      "recounted": 6.722278502333402e-06,
+      "difference": 8.470329472543003e-22,
+      "exact": false
+    },
+    {
+      "update": 10,
+      "rows": 2400,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 7.426992230362402e-06,
+      "recounted": 7.426992230362402e-06,
+      "difference": 0.0,
+      "exact": true
+    },
+    {
+      "update": 11,
+      "rows": 2189,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 1.0523134893717997e-05,
+      "recounted": 1.0523134893717997e-05,
+      "difference": 0.0,
+      "exact": true
+    },
+    {
+      "update": 12,
+      "rows": 2457,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 7.182016552663634e-06,
+      "recounted": 7.182016552663635e-06,
+      "difference": 8.470329472543003e-22,
+      "exact": false
+    },
+    {
+      "update": 13,
+      "rows": 2726,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 7.635071908591058e-06,
+      "recounted": 7.635071908591056e-06,
+      "difference": -1.6940658945086007e-21,
+      "exact": false
+    },
+    {
+      "update": 14,
+      "rows": 2621,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 1.0813031827691314e-05,
+      "recounted": 1.0813031827691314e-05,
+      "difference": 0.0,
+      "exact": true
+    },
+    {
+      "update": 15,
+      "rows": 2458,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 7.815523787179637e-06,
+      "recounted": 7.815523787179637e-06,
+      "difference": 0.0,
+      "exact": true
+    },
+    {
+      "update": 16,
+      "rows": 2270,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 7.985593179302807e-06,
+      "recounted": 7.985593179302805e-06,
+      "difference": -1.6940658945086007e-21,
+      "exact": false
+    },
+    {
+      "update": 17,
+      "rows": 2389,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 1.2660399504229387e-05,
+      "recounted": 1.2660399504229387e-05,
+      "difference": 0.0,
+      "exact": true
+    },
+    {
+      "update": 18,
+      "rows": 2326,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 9.613514009767935e-06,
+      "recounted": 9.613514009767935e-06,
+      "difference": 0.0,
+      "exact": true
+    },
+    {
+      "update": 19,
+      "rows": 2296,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 7.248835682197295e-06,
+      "recounted": 7.248835682197295e-06,
+      "difference": 0.0,
+      "exact": true
+    },
+    {
+      "update": 20,
+      "rows": 2357,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 8.082162572490366e-06,
+      "recounted": 8.082162572490366e-06,
+      "difference": 0.0,
+      "exact": true
+    },
+    {
+      "update": 21,
+      "rows": 2430,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 8.48961559892184e-06,
+      "recounted": 8.48961559892184e-06,
+      "difference": 0.0,
+      "exact": true
+    },
+    {
+      "update": 22,
+      "rows": 2155,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 8.74633076627551e-06,
+      "recounted": 8.74633076627551e-06,
+      "difference": 0.0,
+      "exact": true
+    },
+    {
+      "update": 23,
+      "rows": 2395,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 7.863772582084749e-06,
+      "recounted": 7.863772582084749e-06,
+      "difference": 0.0,
+      "exact": true
+    },
+    {
+      "update": 24,
+      "rows": 2580,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 5.943614608930649e-06,
+      "recounted": 5.943614608930649e-06,
+      "difference": 0.0,
+      "exact": true
+    },
+    {
+      "update": 25,
+      "rows": 1962,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 6.181795704223262e-06,
+      "recounted": 6.181795704223261e-06,
+      "difference": -8.470329472543003e-22,
+      "exact": false
+    },
+    {
+      "update": 26,
+      "rows": 2424,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 9.392652807277257e-06,
+      "recounted": 9.392652807277257e-06,
+      "difference": 0.0,
+      "exact": true
+    },
+    {
+      "update": 27,
+      "rows": 2159,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 9.852301124247424e-06,
+      "recounted": 9.852301124247422e-06,
+      "difference": -1.6940658945086007e-21,
+      "exact": false
+    },
+    {
+      "update": 28,
+      "rows": 2260,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 8.531277302186407e-06,
+      "recounted": 8.531277302186407e-06,
+      "difference": 0.0,
+      "exact": true
+    },
+    {
+      "update": 29,
+      "rows": 2410,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 6.994107925476756e-06,
+      "recounted": 6.994107925476756e-06,
+      "difference": 0.0,
+      "exact": true
+    },
+    {
+      "update": 30,
+      "rows": 2332,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 6.294202517663962e-06,
+      "recounted": 6.2942025176639615e-06,
+      "difference": -8.470329472543003e-22,
+      "exact": false
+    },
+    {
+      "update": 31,
+      "rows": 2172,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 7.040133406578957e-06,
+      "recounted": 7.040133406578956e-06,
+      "difference": -8.470329472543003e-22,
+      "exact": false
+    },
+    {
+      "update": 32,
+      "rows": 2228,
+      "contract_lengths_exact": true,
+      "row_count_exact": true,
+      "logged": 1.200897775019063e-05,
+      "recounted": 1.200897775019063e-05,
+      "difference": 0.0,
+      "exact": true
+    }
+  ],
+  "rows": 73783,
+  "original_exact_summary_passed": false,
+  "all_per_row_original_ratio_limits_passed": true,
+  "max_summary_difference": 1.6940658945086007e-21,
+  "bindings": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1_recount\\diagnose.py": "50c8a193be75f4f1ca97964c54a3c7b04d6fe08105e78f586ec14fcc2c36ec46",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1_recount\\PLAN.md": "47cffede96ab6fe95220322a9768bd93a59a9f902fca93444c5c825ab2417838",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1\\verify.py": "e5fcce95f8865f84c80c2956565c5f533ba89e63b3d28c0605ccf452bbc40b10",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1_recovery\\verify_v2.py": "f5c3cb7b7007158fe378db01d51d2e84d6a910d43e372b97c5471c102dea7199",
+    "scratchpad\\gauntlet\\L71\\integration\\checks\\l72-outcome-rl-independent.json": "0e5d9392c84289f1cbfb015fde2e67fd53e51063020bf18e2feb464813418877",
+    "scratchpad\\gauntlet\\L71\\integration\\checks\\l72-outcome-rl-independent.out": "13ccf83b07f83649d3e9e29f8f4f06ca5c7218bcd9b4e83270b1c555ae3ec812",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1\\trained.json": "14acac557fa51f0ed0d702c21bc10bc7840a530041097e67d82a824d4b2d0ac5",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1\\evaluated.json": "079cab029608c647dfd43cd333ce62f39dc3ea3b6a854f50afe8279178a9a2fa"
+  },
+  "new_inference": false,
+  "new_optimization": false
+}

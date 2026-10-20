@@ -1,0 +1,11 @@
+ClashBot L72 model: defense_sequence_v5
+Verdict: REJECTED by registered development continuation criteria; NOT ACCEPTED for deployment.
+
+1000 finite updates, original expert labels, v5 architecture and same R1e initialization/control recipe. Only20% defensive-sequence exposure changed. All54723 development predictions were independently recounted. Parent exposure means developmental evidence, not untouched generalization. R1e below uses the same corrected observations.
+
+Defense full-action agreement:3984/8183 (212 replay groups), versus ordinary_v5 control4011 and R1e3952. Delta versus control -0.33pp; required +2pp. Expert Rocket full actions within those sequences:21/223 versus24 control and15 R1e; required an increase.
+Witch335/726 versus339 control,332 R1e; Night Witch161/373 versus161,156; Furnace548/1174 versus549,538. Witch and Furnace nonregression checks failed.
+Primary Barrel63 rows/26 groups:40correct-lane/22wrong/1not-fired Logs, unchanged versus control; R1e36/20/7.
+General expert card11388/17192 versus11403 control,11348 R1e. Full actions31778/54723 versus31962,30968. All expert Rocket full actions72/955 versus77,54. Rocket/Tornado-context action99/320 versus96,91, but this does not prove successful physical combos or safe1-3Rocket cycles.
+
+No gameplay superiority, positive elixir trade or deployment claim. This rejects the20% imitation-exposure recipe, not the broad defensive-X-Bow hypothesis. Next controlled trial isolates Rocket aim-loss emphasis using unchanged expert labels/ordinary sampling and the supported generic target-residual architecture. No new live model installed; STOP remains intact. Failed results and per-replay counts preserved.

@@ -1,0 +1,137 @@
+
+=================================== ERRORS ====================================
+_____________ ERROR collecting tests/test_addressable_episodes.py _____________
+tests\test_addressable_episodes.py:44: in <module>
+    DECK = card_ids(MIXED_DECK, MockEngine())
+                                ^^^^^^^^^^^^
+royalegym\mock_engine.py:524: in __init__
+    self._load_cards(card_names)
+royalegym\mock_engine.py:599: in _load_cards
+    raise FileNotFoundError(
+E   FileNotFoundError: MockEngine reads the 2018 card tables from C:\Users\benpe\ClashBot\research\ext\Royale-20261005\runtime\royalesim\data\raw\retroroyale-2018\csv_logic, and characters.csv, buildings.csv, projectiles.csv, area_effect_objects.csv, spells_characters.csv, spells_buildings.csv, spells_other.csv is not there. An installed engine does not carry them. Use the real engine instead (make_env() does by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.
+_______________ ERROR collecting tests/test_deck_curriculum.py ________________
+tests\test_deck_curriculum.py:51: in <module>
+    CARDS = MockEngine().cards()
+            ^^^^^^^^^^^^
+royalegym\mock_engine.py:524: in __init__
+    self._load_cards(card_names)
+royalegym\mock_engine.py:599: in _load_cards
+    raise FileNotFoundError(
+E   FileNotFoundError: MockEngine reads the 2018 card tables from C:\Users\benpe\ClashBot\research\ext\Royale-20261005\runtime\royalesim\data\raw\retroroyale-2018\csv_logic, and characters.csv, buildings.csv, projectiles.csv, area_effect_objects.csv, spells_characters.csv, spells_buildings.csv, spells_other.csv is not there. An installed engine does not carry them. Use the real engine instead (make_env() does by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.
+_______________ ERROR collecting tests/test_env_action_mask.py ________________
+tests\test_env_action_mask.py:41: in <module>
+    _CARDS = MockEngine().cards()
+             ^^^^^^^^^^^^
+royalegym\mock_engine.py:524: in __init__
+    self._load_cards(card_names)
+royalegym\mock_engine.py:599: in _load_cards
+    raise FileNotFoundError(
+E   FileNotFoundError: MockEngine reads the 2018 card tables from C:\Users\benpe\ClashBot\research\ext\Royale-20261005\runtime\royalesim\data\raw\retroroyale-2018\csv_logic, and characters.csv, buildings.csv, projectiles.csv, area_effect_objects.csv, spells_characters.csv, spells_buildings.csv, spells_other.csv is not there. An installed engine does not carry them. Use the real engine instead (make_env() does by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.
+___________________ ERROR collecting tests/test_env_api.py ____________________
+tests\test_env_api.py:449: in <module>
+    REGULATION_LEFT = _vector_offset("clock")  # first slot of the clock block
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_env_api.py:445: in _vector_offset
+    n_cards = len(ClashParallelEnv().engine.cards())
+                  ^^^^^^^^^^^^^^^^^^
+royalegym\env.py:269: in __init__
+    self.engine: Engine = engine if engine is not None else MockEngine()
+                                                            ^^^^^^^^^^^^
+royalegym\mock_engine.py:524: in __init__
+    self._load_cards(card_names)
+royalegym\mock_engine.py:599: in _load_cards
+    raise FileNotFoundError(
+E   FileNotFoundError: MockEngine reads the 2018 card tables from C:\Users\benpe\ClashBot\research\ext\Royale-20261005\runtime\royalesim\data\raw\retroroyale-2018\csv_logic, and characters.csv, buildings.csv, projectiles.csv, area_effect_objects.csv, spells_characters.csv, spells_buildings.csv, spells_other.csv is not there. An installed engine does not carry them. Use the real engine instead (make_env() does by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.
+______________ ERROR collecting tests/test_env_mask_property.py _______________
+tests\test_env_mask_property.py:84: in <module>
+    ENGINE = MockEngine()
+             ^^^^^^^^^^^^
+royalegym\mock_engine.py:524: in __init__
+    self._load_cards(card_names)
+royalegym\mock_engine.py:599: in _load_cards
+    raise FileNotFoundError(
+E   FileNotFoundError: MockEngine reads the 2018 card tables from C:\Users\benpe\ClashBot\research\ext\Royale-20261005\runtime\royalesim\data\raw\retroroyale-2018\csv_logic, and characters.csv, buildings.csv, projectiles.csv, area_effect_objects.csv, spells_characters.csv, spells_buildings.csv, spells_other.csv is not there. An installed engine does not carry them. Use the real engine instead (make_env() does by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.
+_______________ ERROR collecting tests/test_env_mock_engine.py ________________
+tests\test_env_mock_engine.py:36: in <module>
+    _CARDS = MockEngine().cards()
+             ^^^^^^^^^^^^
+royalegym\mock_engine.py:524: in __init__
+    self._load_cards(card_names)
+royalegym\mock_engine.py:599: in _load_cards
+    raise FileNotFoundError(
+E   FileNotFoundError: MockEngine reads the 2018 card tables from C:\Users\benpe\ClashBot\research\ext\Royale-20261005\runtime\royalesim\data\raw\retroroyale-2018\csv_logic, and characters.csv, buildings.csv, projectiles.csv, area_effect_objects.csv, spells_characters.csv, spells_buildings.csv, spells_other.csv is not there. An installed engine does not carry them. Use the real engine instead (make_env() does by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.
+___________________ ERROR collecting tests/test_env_obs.py ____________________
+tests\test_env_obs.py:43: in <module>
+    _CARDS = MockEngine().cards()
+             ^^^^^^^^^^^^
+royalegym\mock_engine.py:524: in __init__
+    self._load_cards(card_names)
+royalegym\mock_engine.py:599: in _load_cards
+    raise FileNotFoundError(
+E   FileNotFoundError: MockEngine reads the 2018 card tables from C:\Users\benpe\ClashBot\research\ext\Royale-20261005\runtime\royalesim\data\raw\retroroyale-2018\csv_logic, and characters.csv, buildings.csv, projectiles.csv, area_effect_objects.csv, spells_characters.csv, spells_buildings.csv, spells_other.csv is not there. An installed engine does not carry them. Use the real engine instead (make_env() does by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.
+__________________ ERROR collecting tests/test_env_render.py __________________
+tests\test_env_render.py:46: in <module>
+    ("Knight", "Giant", "Minions", "Valkyrie", "Cannon", "Fireball", "Zap", "Log"), MockEngine()
+                                                                                    ^^^^^^^^^^^^
+royalegym\mock_engine.py:524: in __init__
+    self._load_cards(card_names)
+royalegym\mock_engine.py:599: in _load_cards
+    raise FileNotFoundError(
+E   FileNotFoundError: MockEngine reads the 2018 card tables from C:\Users\benpe\ClashBot\research\ext\Royale-20261005\runtime\royalesim\data\raw\retroroyale-2018\csv_logic, and characters.csv, buildings.csv, projectiles.csv, area_effect_objects.csv, spells_characters.csv, spells_buildings.csv, spells_other.csv is not there. An installed engine does not carry them. Use the real engine instead (make_env() does by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.
+___________________ ERROR collecting tests/test_evaluate.py ___________________
+tests\test_evaluate.py:36: in <module>
+    DECK = card_ids(MIXED_DECK, MockEngine())
+                                ^^^^^^^^^^^^
+royalegym\mock_engine.py:524: in __init__
+    self._load_cards(card_names)
+royalegym\mock_engine.py:599: in _load_cards
+    raise FileNotFoundError(
+E   FileNotFoundError: MockEngine reads the 2018 card tables from C:\Users\benpe\ClashBot\research\ext\Royale-20261005\runtime\royalesim\data\raw\retroroyale-2018\csv_logic, and characters.csv, buildings.csv, projectiles.csv, area_effect_objects.csv, spells_characters.csv, spells_buildings.csv, spells_other.csv is not there. An installed engine does not carry them. Use the real engine instead (make_env() does by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.
+__________ ERROR collecting tests/test_obs_responds_to_the_state.py ___________
+tests\test_obs_responds_to_the_state.py:60: in <module>
+    _CARDS = MockEngine().cards()
+             ^^^^^^^^^^^^
+royalegym\mock_engine.py:524: in __init__
+    self._load_cards(card_names)
+royalegym\mock_engine.py:599: in _load_cards
+    raise FileNotFoundError(
+E   FileNotFoundError: MockEngine reads the 2018 card tables from C:\Users\benpe\ClashBot\research\ext\Royale-20261005\runtime\royalesim\data\raw\retroroyale-2018\csv_logic, and characters.csv, buildings.csv, projectiles.csv, area_effect_objects.csv, spells_characters.csv, spells_buildings.csv, spells_other.csv is not there. An installed engine does not carry them. Use the real engine instead (make_env() does by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.
+_____________ ERROR collecting tests/test_state_mutator_names.py ______________
+tests\test_state_mutator_names.py:15: in <module>
+    CARDS = list(MockEngine().cards())
+                 ^^^^^^^^^^^^
+royalegym\mock_engine.py:524: in __init__
+    self._load_cards(card_names)
+royalegym\mock_engine.py:599: in _load_cards
+    raise FileNotFoundError(
+E   FileNotFoundError: MockEngine reads the 2018 card tables from C:\Users\benpe\ClashBot\research\ext\Royale-20261005\runtime\royalesim\data\raw\retroroyale-2018\csv_logic, and characters.csv, buildings.csv, projectiles.csv, area_effect_objects.csv, spells_characters.csv, spells_buildings.csv, spells_other.csv is not there. An installed engine does not carry them. Use the real engine instead (make_env() does by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.
+________________ ERROR collecting tests/test_train_harness.py _________________
+tests\test_train_harness.py:59: in <module>
+    DECK = card_ids(MIXED_DECK, MockEngine())
+                                ^^^^^^^^^^^^
+royalegym\mock_engine.py:524: in __init__
+    self._load_cards(card_names)
+royalegym\mock_engine.py:599: in _load_cards
+    raise FileNotFoundError(
+E   FileNotFoundError: MockEngine reads the 2018 card tables from C:\Users\benpe\ClashBot\research\ext\Royale-20261005\runtime\royalesim\data\raw\retroroyale-2018\csv_logic, and characters.csv, buildings.csv, projectiles.csv, area_effect_objects.csv, spells_characters.csv, spells_buildings.csv, spells_other.csv is not there. An installed engine does not carry them. Use the real engine instead (make_env() does by default, or pass engine=RustEngine()), or set ROYALESIM_DATA_DIR to the data/ folder of a RoyaleSim checkout.
+============================== warnings summary ===============================
+..\..\Royale\.venv\Lib\site-packages\pygame\pkgdata.py:25
+  C:\Users\benpe\ClashBot\research\ext\Royale\.venv\Lib\site-packages\pygame\pkgdata.py:25: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+    from pkg_resources import resource_stream, resource_exists
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+ERROR tests/test_addressable_episodes.py - FileNotFoundError: MockEngine read...
+ERROR tests/test_deck_curriculum.py - FileNotFoundError: MockEngine reads the...
+ERROR tests/test_env_action_mask.py - FileNotFoundError: MockEngine reads the...
+ERROR tests/test_env_api.py - FileNotFoundError: MockEngine reads the 2018 ca...
+ERROR tests/test_env_mask_property.py - FileNotFoundError: MockEngine reads t...
+ERROR tests/test_env_mock_engine.py - FileNotFoundError: MockEngine reads the...
+ERROR tests/test_env_obs.py - FileNotFoundError: MockEngine reads the 2018 ca...
+ERROR tests/test_env_render.py - FileNotFoundError: MockEngine reads the 2018...
+ERROR tests/test_evaluate.py - FileNotFoundError: MockEngine reads the 2018 c...
+ERROR tests/test_obs_responds_to_the_state.py - FileNotFoundError: MockEngine...
+ERROR tests/test_state_mutator_names.py - FileNotFoundError: MockEngine reads...
+ERROR tests/test_train_harness.py - FileNotFoundError: MockEngine reads the 2...
+!!!!!!!!!!!!!!!!!! Interrupted: 12 errors during collection !!!!!!!!!!!!!!!!!!!
+1 warning, 12 errors in 8.60s

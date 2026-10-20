@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/match_adaptation/duplicate_controls.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "MATCH_DUPLICATE_CONTROLS_PASS",
+  "matched": true,
+  "output_sha256": "e17c58497e28170701ab489c83eda4681ebc9ce774be324ad233a3607750baa5",
+  "seconds": 0.3771553039550781
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/verify_corrected_icebow_initial.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "CORRECTED_ICEBOW_INITIAL_FOUR_RECORDS_VERIFIED",
+  "matched": true,
+  "output_sha256": "0aec8b421f8238386d57db8d3b336c1f3e401af97a066fa49cc34ba5e357d02a",
+  "seconds": 3.2487690448760986
+}

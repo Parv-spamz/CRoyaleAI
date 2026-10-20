@@ -1,0 +1,8 @@
+{
+  "device": "cpu",
+  "threads": 1,
+  "samples": 200,
+  "median_ms": 2.567149989772588,
+  "p95_ms": 3.0654000001959503,
+  "note": "Helper only, excludes model inference. No CUDA timing or live adoption."
+}

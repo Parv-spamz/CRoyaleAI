@@ -1,0 +1,2 @@
+{"positive_checks": 2, "rejected_corruptions": ["reordered_source_rows", "missing_source_rows", "reordered_corrected_rows", "missing_corrected_rows", "duplicate_mapping", "changed_rep", "changed_side", "changed_tick", "changed_split", "changed_deck_id", "changed_off", "changed_v3val", "changed_y_gate", "changed_y_xy", "changed_tag", "heldout_mapping", "lost_reference", "future_input", "vocabulary", "timing", "release_contract"]}
+DEFENCE_BINDING_CONTROLS_PASS

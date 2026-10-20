@@ -1,0 +1,17 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "pipeline/tests/test_decision_options.py",
+    "pipeline/tests/test_live_gen_afford.py",
+    "pipeline/tests/test_e1_batch.py",
+    "pipeline/tests/test_e1_eval_gen.py",
+    "pipeline/tests/test_search_s0.py",
+    "-q"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "PowerShell invoking Python direct subprocess",
+  "exit_code": 0,
+  "output_sha256": "b575230e8ad4dd1fbe2d850e9f319f22593937b134ce16491eb18a80b1b5fde9"
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/match_adaptation/verify_capabilities.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "MATCH_CAPABILITIES_INDEPENDENT_COMPLETE",
+  "matched": true,
+  "output_sha256": "6a2c3b6394a3c51164e0da37f50f6593b2eab1165abeba00b1acf1d2aae7577a",
+  "seconds": 65.58230638504028
+}

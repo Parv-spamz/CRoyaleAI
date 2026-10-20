@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/review_rl_credit.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "RL_CREDIT_REVIEWED",
+  "matched": true,
+  "output_sha256": "524a0ed64a771695567eaf37d7facdf27719fe4ffef5fbc280960f5c5203ea39",
+  "seconds": 0.17272233963012695
+}

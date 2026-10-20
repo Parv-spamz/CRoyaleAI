@@ -1,0 +1,11 @@
+ClashBot development model: tower_spatial_v7 — DEVELOPMENT / NOT ACCEPTED.
+1000 finite updates; all 54,723 development rows independently recounted. Only a generic public crown-state spatial representation was added; ordinary exposure and original expert labels/loss retained. No Rocket rule, hidden king HP or live change.
+
+Same corrected-input R1e / ordinary_v6 / candidate:
+Rocket forced aim within 1 tile: 290 / 293 / 328 of 955. Full expert Rocket actions: 54 / 73 / 85. Candidate gains +3.66pp aim and +1.26pp action miss the frozen +5pp/+2pp floors.
+Late Rocket actions: 14 / 21 / 32 of 320 (+3.44pp vs control, passes). Replay action gains/losses/ties: 11/0/160 late; 13/2/321 overall. Overall aim: 45/14/277.
+Barrel correct/wrong/not-fired: 36/20/7; 55/7/1; 60/2/1 of 63. Full actions 18/30/30.
+Witch actions: 332/341/341 of 726; Night Witch 156/161/162 of 373; Furnace 538/550/549 of 1174. Furnace protection FAILS (one replay loses one row).
+Defense actions 3952/4009/4015 of 8183; late all actions 1949/1993/2007 of 6422. General card 11348/11399/11401 of 17192; all actions 30968/31988/32017 of 54723.
+
+Verdict: reject this candidate under unchanged continuation criteria. Late Rocket execution and Barrel gains are useful development evidence, not gameplay, safe cycling, tiebreak or acceptance proof. Parent exposure is disclosed; no untouched confirmation used. Next diagnose target-region versus within-region errors from existing caches before choosing a remedy. Final component/gameplay/statistical gates remain. Owner STOP intact; no live restart.

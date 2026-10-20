@@ -1,0 +1,124 @@
+{
+  "complete": true,
+  "report_sha256": "1f2aea4760b679ec6761a1cf16f08cadb238870246c28e04c174e53f2e4370e7",
+  "receipt_sha256": "4bed7eaf937719d2fec6258b43f665f961716f0d19da0a6e1fc927039c20acbe",
+  "details": [
+    {
+      "seed": 0,
+      "cap": 5995,
+      "original_decisions": 4,
+      "enabled_decisions": 4,
+      "outcome": [
+        "draw",
+        "draw"
+      ],
+      "end_tick": 5995
+    },
+    {
+      "seed": 0,
+      "cap": 7200,
+      "original_decisions": 14,
+      "enabled_decisions": 4,
+      "outcome": [
+        "win",
+        "loss"
+      ],
+      "end_tick": 6165
+    },
+    {
+      "seed": 1,
+      "cap": 5995,
+      "original_decisions": 4,
+      "enabled_decisions": 4,
+      "outcome": [
+        "draw",
+        "draw"
+      ],
+      "end_tick": 5995
+    },
+    {
+      "seed": 1,
+      "cap": 7200,
+      "original_decisions": 14,
+      "enabled_decisions": 4,
+      "outcome": [
+        "draw",
+        "draw"
+      ],
+      "end_tick": 6148
+    },
+    {
+      "seed": 2,
+      "cap": 7200,
+      "original_decisions": 14,
+      "enabled_decisions": 4,
+      "outcome": [
+        "win",
+        "loss"
+      ],
+      "end_tick": 6165
+    },
+    {
+      "seed": 3,
+      "cap": 7200,
+      "original_decisions": 14,
+      "enabled_decisions": 4,
+      "outcome": [
+        "loss",
+        "win"
+      ],
+      "end_tick": 6165
+    },
+    {
+      "seed": 4,
+      "cap": 7200,
+      "original_decisions": 14,
+      "enabled_decisions": 4,
+      "outcome": [
+        "draw",
+        "draw"
+      ],
+      "end_tick": 6148
+    },
+    {
+      "seed": 5,
+      "cap": 7200,
+      "original_decisions": 14,
+      "enabled_decisions": 4,
+      "outcome": [
+        "draw",
+        "draw"
+      ],
+      "end_tick": 6148
+    },
+    {
+      "seed": 6,
+      "cap": 7200,
+      "original_decisions": 14,
+      "enabled_decisions": 4,
+      "outcome": [
+        "win",
+        "loss"
+      ],
+      "end_tick": 6165
+    },
+    {
+      "seed": 7,
+      "cap": 7200,
+      "original_decisions": 14,
+      "enabled_decisions": 4,
+      "outcome": [
+        "draw",
+        "draw"
+      ],
+      "end_tick": 6148
+    }
+  ],
+  "controls": {
+    "positive": 1,
+    "corruptions": 10
+  },
+  "models_or_predictions": 0,
+  "production_integrated": false,
+  "final_acceptance": false
+}

@@ -1,0 +1,357 @@
+{
+  "schema": 1,
+  "complete": false,
+  "pending": [
+    "reactive_r1e",
+    "ghost_v4_uniform",
+    "reactive_v4_uniform",
+    "ghost_v4_rocket",
+    "reactive_v4_rocket",
+    "ghost_v5_uniform",
+    "reactive_v5_uniform",
+    "ghost_v5_rocket",
+    "reactive_v5_rocket",
+    "ghost_v5_rocket_xbow",
+    "reactive_v5_rocket_xbow",
+    "ghost_v5_rocket_barrel",
+    "reactive_v5_rocket_barrel",
+    "ghost_v6_rocket_barrel",
+    "reactive_v6_rocket_barrel",
+    "ghost_v6_rocket_both",
+    "reactive_v6_rocket_both"
+  ],
+  "plan_sha256": "dff54a33686e3c6adc9f27db6ef2002c258881e7ebcab2279c2094400bb342ca",
+  "receipts": {
+    "train_v4_uniform": "8b1f8caeb2c8dcd95555a396fabc5e7a1c440f4d77e7295b75417229b69f6a8a",
+    "heldout_v4_uniform": "58a2baff69e6b8aee2985d66fbecc243e0402543f4bbc9d840bef0eed5b9ae8a",
+    "train_v4_rocket": "9c11a2fa2918f0607a0a35ff6f4b46d0a9e8885613694878ad21bb5fe58e30ef",
+    "heldout_v4_rocket": "268f672e8aceb69d0a2c0f9faf17a2525f9d43e2b002994dc6f07f7045d1e2f2",
+    "train_v5_uniform": "ff08adbc2063c67b99787c35fbf0747eb3d5ef7315f5c0ef60d1a1700bbaa936",
+    "heldout_v5_uniform": "c9e6db6eb69a2833f8aff992a355fd7d0560b15efb884fc9df496ce326e4b7c4",
+    "train_v5_rocket": "d330ac5d73fe1f2172902c3fbd2e4b0dc6bf7d6f48905ee4608bf6f66efebe5b",
+    "heldout_v5_rocket": "b8ef5eb6911ad1559ac070ca003ded57667f4d98cc7a3726ba91a949507b0b37",
+    "train_v5_rocket_xbow": "88810e66e00b9bb19a74d4de960ae29cbdd51cfe9fa3db6da68b9cc59261adca",
+    "heldout_v5_rocket_xbow": "9534bbe5db6a2be5ab924476e4dbdd2a008af9cf7acfa2b01fe3734412c5e1af",
+    "train_v5_rocket_barrel": "6c9297d4a00abb0291bd69723811e8a3618c42707369a2f8157c2087aa5ffe40",
+    "heldout_v5_rocket_barrel": "c8aaeabc952e0d190795b00cd9d773365286ec48aa5e457347137f7a938a82d7",
+    "train_v6_rocket_barrel": "5bb265faf265aa4174fdced8dbf1a65d1141a58d64f0aeaffb35a391a39151c7",
+    "heldout_v6_rocket_barrel": "0cb9bc08160f9b5a827ba807919220d0ffe532a5cbfc4d2c0d682b37263a8f35",
+    "train_v6_rocket_both": "1fd5bd8732703c05d8dad65e128ad896e7d56febc950ff15c18b538432a78b1a",
+    "heldout_v6_rocket_both": "fd7f2e464cb59d4604119719cd9095bffd8dff2fd46e9feb909f1d4026800a94",
+    "ghost_r1e": "8cee80f83d4dedb076a82594c908f615daa9b27783b65e1af3ee79ce3afd6ad5"
+  },
+  "training": {
+    "v4_uniform": {
+      "final_loss": 5.194491386413574,
+      "sampled": {
+        "pool": 128000,
+        "opportunity": 1065,
+        "compact": 515,
+        "pull": 736,
+        "known": 128000,
+        "sequence": 7771,
+        "combo": 879,
+        "finish": 88,
+        "barrel": 649,
+        "barrel_multiple": 136,
+        "xbow": 382,
+        "xbow_no_lifetime_target": 19
+      },
+      "checkpoint_sha256": "de98a465affe3c71a12f46c5f0c6bbad10d3917cc172eb1b6bfe6a1497fb6617"
+    },
+    "v4_rocket": {
+      "final_loss": 5.059478282928467,
+      "sampled": {
+        "pool": 128000,
+        "opportunity": 13634,
+        "compact": 6419,
+        "pull": 9732,
+        "known": 128000,
+        "sequence": 20308,
+        "combo": 2279,
+        "finish": 185,
+        "barrel": 589,
+        "barrel_multiple": 118,
+        "xbow": 395,
+        "xbow_no_lifetime_target": 29
+      },
+      "checkpoint_sha256": "ab98da7882ae4e559d87e834089cb80b5be50cb6dd17da740aa0c674b96de0a3"
+    },
+    "v5_uniform": {
+      "final_loss": 5.194197177886963,
+      "sampled": {
+        "pool": 128000,
+        "opportunity": 1065,
+        "compact": 515,
+        "pull": 736,
+        "known": 128000,
+        "sequence": 7771,
+        "combo": 879,
+        "finish": 88,
+        "barrel": 649,
+        "barrel_multiple": 136,
+        "xbow": 382,
+        "xbow_no_lifetime_target": 19
+      },
+      "checkpoint_sha256": "1010c2282b5f9d059e9ab3405745612ec8176582a858cdde67b77d5aa18c3ac1"
+    },
+    "v5_rocket": {
+      "final_loss": 5.066813945770264,
+      "sampled": {
+        "pool": 128000,
+        "opportunity": 13634,
+        "compact": 6419,
+        "pull": 9732,
+        "known": 128000,
+        "sequence": 20308,
+        "combo": 2279,
+        "finish": 185,
+        "barrel": 589,
+        "barrel_multiple": 118,
+        "xbow": 395,
+        "xbow_no_lifetime_target": 29
+      },
+      "checkpoint_sha256": "248964139af5bc8b8ad3c14c56568dfc4d6b7aa6ec40f962093e4632a83014c9"
+    },
+    "v5_rocket_xbow": {
+      "final_loss": 5.302938938140869,
+      "sampled": {
+        "pool": 128000,
+        "opportunity": 13767,
+        "compact": 6312,
+        "pull": 9931,
+        "known": 128000,
+        "sequence": 20777,
+        "combo": 2221,
+        "finish": 192,
+        "barrel": 639,
+        "barrel_multiple": 113,
+        "xbow": 6822,
+        "xbow_no_lifetime_target": 343
+      },
+      "checkpoint_sha256": "c863125496dcab39c7bfbabafb884157984f5b8a91cce219277fb7631de4d45a"
+    },
+    "v5_rocket_barrel": {
+      "final_loss": 5.590163707733154,
+      "sampled": {
+        "pool": 128000,
+        "opportunity": 13889,
+        "compact": 6614,
+        "pull": 9873,
+        "known": 128000,
+        "sequence": 20348,
+        "combo": 2182,
+        "finish": 186,
+        "barrel": 6886,
+        "barrel_multiple": 1329,
+        "xbow": 368,
+        "xbow_no_lifetime_target": 23
+      },
+      "checkpoint_sha256": "8f37299f9481a33b98cb525bc557d0b870f40df8ba420ef6b85fc021c2dd585e"
+    },
+    "v6_rocket_barrel": {
+      "final_loss": 5.597671031951904,
+      "sampled": {
+        "pool": 128000,
+        "opportunity": 13889,
+        "compact": 6614,
+        "pull": 9873,
+        "known": 128000,
+        "sequence": 20348,
+        "combo": 2182,
+        "finish": 186,
+        "barrel": 6886,
+        "barrel_multiple": 1329,
+        "xbow": 368,
+        "xbow_no_lifetime_target": 23
+      },
+      "checkpoint_sha256": "a0a6a15e2d1542e3a1dcfc14b295a9a3ba9003633b1a05e2b6da66fe7160a9b0"
+    },
+    "v6_rocket_both": {
+      "final_loss": 5.591829299926758,
+      "sampled": {
+        "pool": 128000,
+        "opportunity": 13794,
+        "compact": 6404,
+        "pull": 9898,
+        "known": 128000,
+        "sequence": 20623,
+        "combo": 2267,
+        "finish": 211,
+        "barrel": 6899,
+        "barrel_multiple": 1316,
+        "xbow": 6713,
+        "xbow_no_lifetime_target": 370
+      },
+      "checkpoint_sha256": "b96adcac328f5306d4339fa2416daf9328ae74ce0f272d64be23800f18f782da"
+    }
+  },
+  "verdicts": {
+    "v4_uniform": {
+      "primary_control": "r1e",
+      "heldout_gates": {
+        "global_vs_source": true,
+        "global_vs_control": true
+      },
+      "gameplay_gates": {
+        "gameplay_pending": false
+      },
+      "paired": {},
+      "passes": false,
+      "ghost": null,
+      "reactive": null
+    },
+    "v4_rocket": {
+      "primary_control": "v4_uniform",
+      "heldout_gates": {
+        "global_vs_source": true,
+        "global_vs_control": true,
+        "rocket_recall_improves": true,
+        "finishing_rocket_observed": false,
+        "combo_rocket_improves": true,
+        "combo_tornado_improves": false
+      },
+      "gameplay_gates": {
+        "gameplay_pending": false
+      },
+      "paired": {},
+      "passes": false,
+      "ghost": null,
+      "reactive": null
+    },
+    "v5_uniform": {
+      "primary_control": "v4_uniform",
+      "heldout_gates": {
+        "global_vs_source": true,
+        "global_vs_control": true,
+        "spawner_action_improves": false,
+        "night_witch_within_two_pp": false
+      },
+      "gameplay_gates": {
+        "gameplay_pending": false
+      },
+      "paired": {},
+      "passes": false,
+      "ghost": null,
+      "reactive": null
+    },
+    "v5_rocket": {
+      "primary_control": "v5_uniform",
+      "heldout_gates": {
+        "global_vs_source": true,
+        "global_vs_control": true,
+        "spawner_action_improves": false,
+        "night_witch_within_two_pp": true,
+        "rocket_recall_improves": true,
+        "finishing_rocket_observed": false,
+        "combo_rocket_improves": true,
+        "combo_tornado_improves": false
+      },
+      "gameplay_gates": {
+        "gameplay_pending": false
+      },
+      "paired": {},
+      "passes": false,
+      "ghost": null,
+      "reactive": null
+    },
+    "v5_rocket_xbow": {
+      "primary_control": "v5_rocket",
+      "heldout_gates": {
+        "global_vs_source": true,
+        "global_vs_control": true,
+        "spawner_action_improves": false,
+        "night_witch_within_two_pp": false,
+        "rocket_recall_improves": true,
+        "finishing_rocket_observed": false,
+        "combo_rocket_improves": true,
+        "combo_tornado_improves": false,
+        "xbow_action_improves": false,
+        "useful_xbow_within_two_pp": true
+      },
+      "gameplay_gates": {
+        "gameplay_pending": false
+      },
+      "paired": {},
+      "passes": false,
+      "ghost": null,
+      "reactive": null
+    },
+    "v5_rocket_barrel": {
+      "primary_control": "v5_rocket",
+      "heldout_gates": {
+        "global_vs_source": true,
+        "global_vs_control": true,
+        "spawner_action_improves": false,
+        "night_witch_within_two_pp": false,
+        "rocket_recall_improves": true,
+        "finishing_rocket_observed": false,
+        "combo_rocket_improves": true,
+        "combo_tornado_improves": true,
+        "barrel_correct_fires_improve": true,
+        "barrel_wrong_fires_nonincreasing": true
+      },
+      "gameplay_gates": {
+        "gameplay_pending": false
+      },
+      "paired": {},
+      "passes": false,
+      "ghost": null,
+      "reactive": null
+    },
+    "v6_rocket_barrel": {
+      "primary_control": "v5_rocket_barrel",
+      "heldout_gates": {
+        "global_vs_source": false,
+        "global_vs_control": true,
+        "spawner_action_improves": false,
+        "night_witch_within_two_pp": false,
+        "rocket_recall_improves": true,
+        "finishing_rocket_observed": false,
+        "combo_rocket_improves": true,
+        "combo_tornado_improves": true,
+        "barrel_correct_fires_improve": true,
+        "barrel_wrong_fires_nonincreasing": true
+      },
+      "gameplay_gates": {
+        "gameplay_pending": false
+      },
+      "paired": {},
+      "passes": false,
+      "ghost": null,
+      "reactive": null
+    },
+    "v6_rocket_both": {
+      "primary_control": "v6_rocket_barrel",
+      "heldout_gates": {
+        "global_vs_source": true,
+        "global_vs_control": true,
+        "spawner_action_improves": false,
+        "night_witch_within_two_pp": false,
+        "rocket_recall_improves": true,
+        "finishing_rocket_observed": false,
+        "combo_rocket_improves": true,
+        "combo_tornado_improves": true,
+        "xbow_action_improves": true,
+        "useful_xbow_within_two_pp": true,
+        "barrel_correct_fires_improve": true,
+        "barrel_wrong_fires_nonincreasing": true
+      },
+      "gameplay_gates": {
+        "gameplay_pending": false
+      },
+      "paired": {},
+      "passes": false,
+      "ghost": null,
+      "reactive": null
+    }
+  },
+  "provisional_selection": null,
+  "review_required": true,
+  "deployed": false,
+  "limitations": [
+    "Imitation and simulator outcomes remain distinct from live outcomes.",
+    "Full review must retain the one-factor component comparisons and reject unsupported claims.",
+    "Rocket area aiming requires its separately declared same-checkpoint comparison."
+  ]
+}

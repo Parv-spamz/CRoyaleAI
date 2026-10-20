@@ -1,0 +1,19 @@
+GAMES 4
+GAMES 8
+GAMES 12
+GAMES 16
+GAMES 20
+GAMES 24
+GAMES 28
+GAMES 32
+GAMES 36
+GAMES 40
+GAMES 44
+GAMES 48
+GAMES 52
+GAMES 56
+GAMES 60
+GAMES 64
+LATE_GAME_READINESS_COLLECTED
+C:\Users\benpe\ClashBot\pipeline\model_v3.py:92: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(enc, layers)

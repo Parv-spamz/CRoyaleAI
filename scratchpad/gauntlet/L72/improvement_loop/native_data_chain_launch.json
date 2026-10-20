@@ -1,0 +1,7 @@
+{
+  "launcher_pid": 43696,
+  "purpose": "Wait for existing 20-replay preflight; then fixed645-replay native CPU pilot",
+  "started_at": "2026-10-05T07:23:14.0457333-04:00",
+  "python": "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+  "driver": "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\run_native_data_chain.py"
+}

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+    "scratchpad/gauntlet/L71/context_teaching/run_experiments.py",
+    "--out",
+    "scratchpad/gauntlet/L71/context_teaching/experiments",
+    "--wait-q3",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L71\\decision_options\\q3",
+    "--dry-run"
+  ],
+  "cwd": "C:\\Users\\benpe\\.codex\\worktrees\\learned-defence\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "\"jobs\": 34",
+  "matched": true,
+  "output_sha256": "1dac906c52d3b4d27f733e9ed39b36f24a7a9dcc6b4db9362621d8ffdae4a19b",
+  "seconds": 1.7039170265197754
+}

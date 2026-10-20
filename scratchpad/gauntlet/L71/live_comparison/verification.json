@@ -1,0 +1,22 @@
+{
+  "test_compare.py": {
+    "exit": 0,
+    "expect": "LIVE_COMPARISON_TESTS_PASSED",
+    "matched": true,
+    "sha256": "46dbab832a0fd0a12caac4a881bcb10403ba186c520b0243ed5973b2235afe86",
+    "bytes": 1278,
+    "cwd": "C:\\Users\\benpe\\ClashBot",
+    "python": "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+    "shell": "direct subprocess from PowerShell"
+  },
+  "verify_report.py": {
+    "exit": 0,
+    "expect": "LIVE_COMPARISON_VERIFIED",
+    "matched": true,
+    "sha256": "d8b2b1a565d4616381ad7fca631403421e1f04205e492ce8c323c35cbdd24dff",
+    "bytes": 101,
+    "cwd": "C:\\Users\\benpe\\ClashBot",
+    "python": "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+    "shell": "direct subprocess from PowerShell"
+  }
+}

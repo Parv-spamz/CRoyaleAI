@@ -1,0 +1,15 @@
+{
+  "command": [
+    "pwsh",
+    "-NoProfile",
+    "-File",
+    "scratchpad/gauntlet/L72/improvement_loop/rebuild_native_worker.ps1"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "REBUILT_NATIVE_WORKER_ATTESTED",
+  "matched": true,
+  "output_sha256": "c04896690b12d1295af6b5a462f5092871928218109f03467edfb31d9efdf0d4",
+  "seconds": 33.24178671836853
+}

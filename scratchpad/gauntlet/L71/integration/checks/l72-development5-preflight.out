@@ -1,0 +1,6 @@
+{"smoke_losses": [5.335096836090088, 5.361062526702881], "controls": {"scalar_layout": true, "unknown_hp_invariant": true, "dead_zero": true, "mirror_scatter": true, "geometry_sources": {"scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_000YL9U0U8JL.json": "08fcea3eec123aa838da89710f82241133ffd6c3c313d6f2776425c3f9619008", "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_000YLL22U0YL.json": "5674824524c95f7687e5c64c44c4e7390d6f1e277a9c1de818181df8d89a6a8f", "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_000YLL2YLGCC.json": "d5ad358711ab6e6f309950ebdfab3f5061580b28e6242fc946e77495aa7c9586", "scratchpad\\gauntlet\\ext\\corpus_v6\\icebow_public_v1\\j000\\replay_000YLL9RURY8.json": "58652c84561cca70dd82304a8eaa4152f9ace54e5e140dff62d5533144bf7a17"}, "observer_sides": 2, "positive_controls": 2, "corruptions_rejected": 8}}
+TOWER_PREFLIGHT_COMPLETE
+C:\Users\benpe\ClashBot\pipeline\model_v3.py:92: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(enc, layers)
+C:\Users\benpe\ClashBot\pipeline\model_v3.py:92: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(enc, layers)

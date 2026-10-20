@@ -1,0 +1,41 @@
+{
+ "A": "scratchpad\\gauntlet\\L68\\generalist\\lat26\\screens\\heldout_B.jsonl",
+ "B": "scratchpad\\gauntlet\\L68\\generalist\\lat26\\screens\\heldout_C.jsonl",
+ "A_screen": {
+  "n": 58,
+  "winrate": 0.8448275862068966,
+  "exploit": {
+   "outlived_win_share": 0.22448979591836735,
+   "low_delivered_win_share": 0.0,
+   "ghost_refused_per_match": 0.29310344827586204
+  },
+  "plays_per_min": 10.722522180318528
+ },
+ "B_vs_A": {
+  "n": 58,
+  "winrate": 0.8793103448275862,
+  "exploit": {
+   "outlived_win_share": 0.19607843137254902,
+   "low_delivered_win_share": 0.0196078431372549,
+   "ghost_refused_per_match": 0.29310344827586204
+  },
+  "plays_per_min": 10.732375085557837,
+  "paired": 58,
+  "paired_entries": 58,
+  "delta_pp": 3.4482758620689653,
+  "ci_lo_pp": -6.896551724137931,
+  "ci_hi_pp": 13.793103448275861,
+  "better": 6,
+  "worse": 4,
+  "exploit_init": {
+   "outlived_win_share": 0.22448979591836735,
+   "low_delivered_win_share": 0.0,
+   "ghost_refused_per_match": 0.29310344827586204
+  },
+  "exploit_cand": {
+   "outlived_win_share": 0.19607843137254902,
+   "low_delivered_win_share": 0.0196078431372549,
+   "ghost_refused_per_match": 0.29310344827586204
+  }
+ }
+}

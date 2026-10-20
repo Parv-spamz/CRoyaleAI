@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:/Users/benpe/ClashBot/research/ext/Royale/.venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "pipeline/tests/test_royale_runtime.py",
+    "pipeline/tests/test_royale_port.py",
+    "pipeline/tests/test_body_identity.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 1,
+  "expected": "32 passed",
+  "matched": false,
+  "output_sha256": "6fbdacc4700a7bb53026f0bfaa31c6fd4602ab1b5f57b7f5f48d4e66a2110a7e",
+  "seconds": 20.885318994522095
+}

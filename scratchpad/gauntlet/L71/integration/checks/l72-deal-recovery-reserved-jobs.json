@@ -1,0 +1,14 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/deal_recovery/verify_reserved.py",
+    "--jobs-only"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "RESERVED_DEAL_JOBS_VERIFIED",
+  "matched": true,
+  "output_sha256": "c8c31978ee71634795ecd04f20f84d69720be14094970efb253b3cdfb41bf3b7",
+  "seconds": 0.2651493549346924
+}

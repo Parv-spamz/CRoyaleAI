@@ -1,0 +1,8 @@
+
+running 3 tests
+test a_warping_hero_is_hidden_from_its_first_step_under_client15535_first_step ... ok
+test the_old_value_hides_it_on_its_arrival_alone ... ok
+test the_shipped_value_is_arrival ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+

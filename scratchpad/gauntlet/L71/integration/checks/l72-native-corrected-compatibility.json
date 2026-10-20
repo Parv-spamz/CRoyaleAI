@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/preflight_reserved_native_corrected.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "RESERVED_NATIVE_CORRECTED_FORMS_PREFLIGHT_COMPLETE",
+  "matched": true,
+  "output_sha256": "19131cc9542c2f8eba735cde92f528ab14fb5e0046b051480fe4c46686405dad",
+  "seconds": 99.69452619552612
+}

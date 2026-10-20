@@ -1,0 +1,25 @@
+{
+  "inputs": {
+    "icebow\\data\\bench\\spawner_identity_20261005\\gen_dataset_v5_public.npz": "a48f1bbd09ef177fbec27aa5ef15b961f0c4100b6475438f0124fec00f2be461",
+    "icebow\\data\\bench\\match_adaptation_20261005\\rows.npz": "1ffadb6ec8a81942c6aad7742d4f30bfb6568b672b4d912e788092c52422f829",
+    "icebow\\data\\bench\\development_iteration_4_20261005\\development_masks.npz": "6d1649235ca0227f45ec3188e151aaf1af81aa30519b2e68bb919008d8c4b9a8",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\indices.npz": "e539566223e9e109b736175832fc1003a0bdce0636760e9116f495288556a8c3",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\prepared.json": "f2d47910c14e2f2776f5bba1ae3f33775cfcf2125b4de97d7f396d641fdd90b9",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\match_adaptation\\prepared.json": "b4156cb9e80ba4047210ac5a8c06e68dc99c78117f9cd02dbd84e6a15a240ade",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_7\\results_verified_v2.json": "bd0e3b1983ddf4d057e97af7b8269804f68e11409b43973668fd7ae9ec322527",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_7\\reviewed_results.json": "e423b6cb78e1da5d417b1edb1870bbdee083bc73dbb5eee477cb5cd17e4c97f9",
+    "pipeline\\model_gen.py": "826c14cdef9db44378ccd613fc6b5f09ffafd5218e6d18bb6a9d2e15841468db",
+    "pipeline\\model_v3.py": "104f7f297499cfd8c20e45b75441fd7b6062f133062429974542794bf8177f1d",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\r1e_corrected_eval\\predictions.npz": "6bae7d05fe8a9eeb67301168007b4c2a90c759a113ec5ab439bab8505b63ffac",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\ordinary_v5_eval_v2\\predictions.npz": "51b7cc5c050ec09480ab200e52ae0b796268975739e8354ec5f75a9471216cfd",
+    "icebow\\data\\bench\\development_iteration_1_20261005\\ordinary_v6_eval_v2\\predictions.npz": "96812f6053f6ad6d847e51fbdeadb256302a562d1551edf322066b287b148f3f",
+    "icebow\\data\\bench\\development_iteration_7_20261005\\frozen_base_projectile_v6_eval\\predictions.npz": "b94b63031ac52eea0e1c0a58dc9d6bf5e1219263098229c6c23f0d5f58d3b6a0",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\frozen_branch_rocket\\audit.py": "c4e42b894eadd4de24131e45c25f90f506d93cede574350f986efea28b7bddb5",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\frozen_branch_rocket\\data_io.py": "d791de7e1fe2e3ad8a1462cb5493e949fa094d85dc7756c3210bd110f0821799",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\frozen_branch_rocket\\verify.py": "354b1bb83dce1be3909819d4b51d8682d58ad4c38fd98110496aa24ee727792e",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\frozen_branch_rocket\\PLAN.md": "c94e42ce9fd0dbe46359ed13c81ec32d561ff59ea031cdd125b02d30ca96ad88",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\frozen_branch_rocket\\METRICS.md": "53da9ef2f5c06484b2d7d4b6b8812e03cedf03320da4a8e3ca4677000446a504"
+  },
+  "predictions": 0,
+  "optimizer_updates": 0
+}

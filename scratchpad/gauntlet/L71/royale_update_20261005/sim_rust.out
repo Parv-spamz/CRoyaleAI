@@ -1,0 +1,3385 @@
+   Compiling target-lexicon v0.12.16
+   Compiling once_cell v1.21.4
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling pyo3-build-config v0.22.6
+   Compiling unicode-ident v1.0.24
+   Compiling autocfg v1.5.1
+   Compiling serde_core v1.0.229
+   Compiling pyo3-macros-backend v0.22.6
+   Compiling pyo3-ffi v0.22.6
+   Compiling libc v0.2.189
+   Compiling memoffset v0.9.1
+   Compiling syn v2.0.119
+   Compiling heck v0.5.0
+   Compiling zmij v1.0.23
+   Compiling pyo3 v0.22.6
+   Compiling syn v3.0.5
+   Compiling serde_json v1.0.151
+   Compiling serde v1.0.229
+   Compiling pyo3-macros v0.22.6
+   Compiling serde_derive v1.0.229
+   Compiling itoa v1.0.18
+   Compiling cfg-if v1.0.4
+   Compiling indoc v2.0.7
+   Compiling unindent v0.2.4
+   Compiling royalesim v0.1.13 (C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\crates\royalesim)
+   Compiling memchr v2.8.3
+    Finished `gate` profile [optimized] target(s) in 38m 08s
+     Running unittests src\lib.rs (target\gate\deps\royalesim-4f1659f885c4a4a7.exe)
+
+running 117 tests
+test arena::tests::boxes_may_touch_but_not_overlap ... ok
+test arena::tests::lanes ... ok
+test arena::tests::a_three_by_three_box_is_judged_whole ... ok
+test arena::tests::closed_cells_make_water_rotation_symmetric ... ok
+test arena::tests::push_out_leaves_disc_touching_not_inside ... ok
+test arena::tests::shipped_arena_has_the_gated_geometry ... ok
+test arena::tests::segment_tests ... ok
+test arena::tests::push_out_dead_centre_ties_go_to_each_teams_own_side_and_own_left ... ok
+test arena::tests::placement_snaps_to_the_grid_and_the_box_is_tile_aligned ... ok
+test arena::tests::placement_size_comes_from_the_collision_radius ... ok
+test arena::tests::water_and_bridges ... ok
+test arena::tests::the_box_zone_gives_both_seats_the_same_verdict ... ok
+test arena::tests::the_snap_is_the_same_for_both_seats ... ok
+test card::tests::rarity_table_parses_from_supercell_csv ... ok
+test combat::tests::crown_tower_reduction_follows_the_registry_rounding ... ok
+test combat::tests::a_pingpong_throw_stands_on_its_previous_point_on_the_apex_tick ... ok
+test card::tests::absent_towers_are_filled_and_flagged ... ok
+test card::tests::fallback_is_labelled_and_has_towers ... ok
+test card::tests::hog_rider_ladder_is_exact_and_not_pow_1_1 ... ok
+test card::tests::a_reflected_attack_block_loads_whole_or_refuses_the_card ... ok
+test entity::tests::generational_ids_do_not_resurrect ... ok
+test card::tests::spells_and_bad_cards_are_rejected_not_silently_dropped ... ok
+test fixed::tests::in_range_edge_accounts_for_target_radius ... ok
+test card::tests::the_rider_resolves_to_its_own_row_not_the_card ... ok
+test card::tests::a_morph_target_named_like_its_card_is_not_the_card ... ok
+test fixed::tests::isqrt_handles_arena_scale_without_overflow ... ok
+test fixed::tests::isqrt_is_exact_on_perfect_squares ... ok
+test card::tests::the_volley_disc_is_the_spells_radius_and_the_single_carriers_its_own ... ok
+test fixed::tests::millitile_conversion_is_exact ... ok
+test fixed::tests::speed_conversion_is_exact_under_every_hypothesis ... ok
+test fixed::tests::step_toward_never_overshoots ... ok
+test formation::tests::ring_count_doubles_with_a_second_summon ... ok
+test entity::tests::hash_matches_brute_force ... ok
+test formation::tests::sine_table_shape ... ok
+test formation::tests::stagger_rules ... ok
+test jump16402::tests::the_landing_node_is_the_first_dry_node_past_the_water_run_or_the_goal ... ok
+test fixed::tests::isqrt_truncates_and_never_overshoots ... ok
+test jump16402::tests::the_landing_test_is_two_jump_speeds_short_of_the_centre_after_the_move ... ok
+test move16402::tests::a_push_aims_l_away_along_the_source_line_and_caps_at_max ... ok
+test move16402::tests::a_tie_inside_one_group_goes_by_creation_order ... ok
+test move16402::tests::a_unit_the_other_side_does_not_push_is_passed_over_by_its_enemies_alone ... ok
+test move16402::tests::a_waiting_member_read_as_static_refreshes_a_running_offset ... ok
+test move16402::tests::an_isolated_walk_step_is_the_measured_law ... ok
+test move16402::tests::decay_walks_the_offset_to_zero_by_tens ... ok
+test move16402::tests::loaded_mass_gives_buildings_their_mass ... ok
+test move16402::tests::the_ladder_reads_150_down_to_zero_then_one_step_back ... ok
+test path16402::tests::the_box_is_half_open_and_snaps_the_centre_up ... ok
+test move16402::tests::the_rotation_turns_the_step_by_atan2_of_the_offset ... ok
+test move16402::tests::the_spawn_push_of_battle_f_sc2_is_reproduced ... ok
+test move16402::tests::nearest_land_returns_the_clamped_point_off_water_and_the_first_octagonal_minimum_on_it ... ok
+test move16402::tests::the_ladder_speed_is_the_smallest_triangular_cover ... ok
+test path16402::tests::a_straight_walk_on_a_flat_grid_is_the_parent_chain_goal_first ... ok
+test path16402::tests::heap_ties_stay_put_and_the_right_child_is_tried_first ... ok
+test path16402::tests::the_goal_cell_prefers_dry_unboxed_cells_nearest_the_mover ... ok
+test path16402::tests::the_samepath_test_only_fires_when_the_change_touched_a_list ... ok
+test path16402::tests::water_is_priced_not_refused_and_ignores_the_box ... ok
+test path2026::tests::cell_geometry_matches_the_oracle_encoding ... ok
+test path2026::tests::the_heading_law_is_floored_and_truncated ... ok
+test path2026::tests::the_stomp_schedule_gives_the_giant_twelve_ticks_then_two ... ok
+test path::tests::a_red_projectile_step_is_the_rotation_of_the_blue_one ... ok
+test path::tests::advance_arrives_exactly_with_leftover ... ok
+test path::tests::advance_is_odd_symmetric ... ok
+test path::tests::advance_diagonal_has_no_truncation_drift ... ok
+test path::tests::octile_costs ... ok
+test path::tests::stacked_obstacles_are_chosen_independently_of_list_order ... ok
+test path::tests::stacked_unit_blockers_are_chosen_independently_of_list_order ... ok
+test card::tests::the_old_shortcut_still_serves_firespirits ... ok
+test path2026::tests::the_arrive_predicate_uses_the_frozen_segment ... ok
+test path2026::tests::terrain_costs_are_road_five_plain_eight_water_blocked ... ok
+test path2026::tests::a_plan_is_the_rotation_of_the_rotated_plan ... ok
+test path2026::tests::occlusion_is_a_half_open_box_of_the_collision_radius ... ok
+test path2026::tests::a_route_may_end_on_the_king_block_but_never_in_the_river ... ok
+test path2026::tests::the_walk_plan_is_the_oracles_column_six ... ok
+test path2026::tests::every_tie_break_the_ledger_accepts_is_actually_wired_to_the_search ... ok
+test path2026::tests::the_measured_heuristic_is_chebyshev_and_both_forms_are_admissible ... ok
+test py::tests::every_reason_code_has_a_name ... ok
+test path2026::tests::an_occluded_cell_is_a_price_the_search_will_pay_and_a_block_is_not ... ok
+test py::tests::the_build_stamp_is_a_commit_or_says_it_does_not_know ... ok
+test path2026::tests::heuristic_matches_the_brute_force_minimum ... ok
+test py::tests::a_named_goblin_drill_reports_its_buildings_footprint ... ok
+test py::tests::every_row_but_a_crown_tower_has_a_card_id_in_the_default_catalogue ... ok
+test py::tests::each_player_reports_its_deck_and_forms_and_a_restored_battle_too ... ok
+test py::tests::the_default_catalogue_lists_catalogue_order_first ... ok
+test py::tests::the_mirror_and_the_variant_card_carry_their_rules_in_the_catalogue_and_their_prices_in_state_json ... ok
+test py::tests::the_export_rows_match_their_field_lists_and_every_new_field_carries_something ... ok
+test arena::tests::deploy_zones ... ok
+test py::tests::a_refused_pairing_is_refused_on_every_path ... ok
+test arena::tests::rect_point_rule_equals_the_cell_rule ... ok
+test py::tests::spells_are_in_the_catalogue_with_their_deploy_rule_and_show_up_in_state_json ... ok
+test state::tests::shipped_calibration_loads_every_field ... ok
+test state::tests::slot_deploys_report_why_and_scenario_setup_is_consistent ... ok
+test state::tests::mana_is_exact_over_a_full_bar ... ok
+test status::tests::freeze_is_zero ... ok
+test status::tests::no_buff_is_the_identity ... ok
+test status::tests::only_the_strongest_of_each_sign_counts ... ok
+test status::tests::positive_then_negative_in_that_order ... ok
+test status::tests::rage_is_thirty_percent_truncated ... ok
+test status::tests::the_selector_reads_its_own_column ... ok
+test tests::phase_order_is_the_documented_one ... ok
+test tests::rng_differs_across_seeds ... ok
+test tests::rng_below_is_in_bounds_and_covers_the_range ... ok
+test tests::rng_is_reproducible_from_a_seed ... ok
+test tests::team_other_is_an_involution ... ok
+test card::tests::shipped_spells_load_with_the_shapes_their_data_implies ... ok
+test py::tests::the_protocol_name_lists_match_what_the_rows_carry ... ok
+test state::tests::charge_keys_load_their_shipped_arms_and_refuse_an_unimplemented_name ... ok
+test state::tests::calibration_values_are_read_not_inlined ... ok
+test py::tests::the_symmetric_selection_is_a_calibration_the_loader_accepts ... ok
+test state::tests::a_heal_pulse_lands_after_the_ticks_hits ... ok
+test py::tests::a_calibration_override_changes_only_what_it_names_and_refuses_what_it_cannot ... ok
+test py::tests::an_evolved_cannon_reports_under_its_base_card ... ok
+test state::tests::formation_siblings_have_distinct_yield_keys_and_towers_own_frame_team_seq ... ok
+test py::tests::load_refuses_a_card_outside_the_catalogue_in_hand_queue_spawns_or_board ... ok
+test state::tests::card_values_apply_to_the_table_they_correct_and_leave_every_other_table_alone ... ok
+test py::tests::a_unit_reports_the_card_whose_play_put_it_down ... ok
+test py::tests::a_named_goblin_drill_reports_the_footprint_the_battle_places ... ok
+test py::tests::simultaneous_commands_do_not_depend_on_their_list_order ... ok
+
+test result: ok. 117 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.56s
+
+     Running tests\action_group_spawn_order.rs (target\gate\deps\action_group_spawn_order-dda2910afff657ed.exe)
+
+running 3 tests
+test the_shipped_value_is_listed ... ok
+test a_hide_pairs_x_minus_500_goblin_is_created_first_under_client15535_reversed ... ok
+test the_old_value_creates_them_in_the_listed_order ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\api.rs (target\gate\deps\api-48d32c06decc071e.exe)
+
+running 4 tests
+test check_deploy_reports_unknown_and_unsupported_cards_apart ... ok
+test not_in_hand_and_not_enough_elixir_are_distinguishable ... ok
+test check_deploy_never_mutates_and_agrees_with_deploy ... ok
+test accessors_agree_with_each_other ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+
+     Running tests\archer_queen_cape.rs (target\gate\deps\archer_queen_cape-6416c677f85b648f.exe)
+
+running 1 test
+test the_cape_hides_the_archer_queen_and_speeds_her_attack_for_3500_ms ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\area_buff_time16402.rs (target\gate\deps\area_buff_time16402-6eb9645cf2d4ffa1.exe)
+
+running 4 tests
+test the_column_is_refused_where_no_area_hangs_a_buff_and_at_zero ... ok
+test a_listed_death_area_hangs_its_buff_time ... ok
+test a_listed_freeze_holds_for_its_16402_buff_time ... ok
+test the_shipped_list_holds_the_16402_buff_time_and_the_old_arm_the_tables ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\attack_facing.rs (target\gate\deps\attack_facing-16e43044b8056640.exe)
+
+running 3 tests
+test the_shipped_value_is_toward_target ... ok
+test under_kept_the_facing_does_not_follow_the_target ... ok
+test an_attacking_unit_faces_its_target_on_every_attack_tick_under_toward_target ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\attract_onset.rs (target\gate\deps\attract_onset-e93e128bf0c38ea9.exe)
+
+running 4 tests
+test the_shipped_value_is_area_first_tick ... ok
+test the_new_arm_pulls_one_tick_later_for_the_same_21_moves ... ok
+test the_old_arm_pulls_from_the_areas_first_tick ... ok
+test the_pulse_lands_on_the_same_tick_under_both_arms ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\attract_water_edge.rs (target\gate\deps\attract_water_edge-96c11e4f1b0c51a7.exe)
+
+running 3 tests
+test the_shipped_arm_is_the_walk_rule ... ok
+test the_old_arm_pulls_it_into_the_river ... ok
+test a_pulled_ground_unit_stops_at_the_water ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\avoidance_drop_segment.rs (target\gate\deps\avoidance_drop_segment-ab699aed4410f5c4.exe)
+
+running 5 tests
+test the_shipped_value_is_the_kept_segment ... ok
+test a_drop_keeps_the_segment ... ok
+test without_a_drop_the_two_arms_walk_the_same_track ... ok
+test the_old_arm_refreezes_from_the_start_of_the_tick ... ok
+test a_reached_pop_refreezes_from_the_end_of_the_tick ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\avoidance_tie_order.rs (target\gate\deps\avoidance_tie_order-ed8f76ab360cdbdd.exe)
+
+running 3 tests
+test the_scan_meets_a_tie_in_creation_order ... ok
+test the_later_created_right_blocker_decides_from_the_lower_slot ... ok
+test the_later_created_left_blocker_decides_from_the_lower_slot ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\barb_log.rs (target\gate\deps\barb_log-95d48d22f06d6afd.exe)
+
+running 4 tests
+test the_loader_reads_the_barbarian_barrel_as_a_roll_releasing_one_barbarian ... ok
+test the_barbarian_stands_its_spawn_deploy_time ... ok
+test the_roll_releases_one_barbarian_on_its_end_point ... ok
+test under_tick_after_landing_the_release_comes_one_tick_later ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\barrage_reach.rs (target\gate\deps\barrage_reach-8e2a55bda8f18796.exe)
+
+running 2 tests
+test the_ledger_ships_data_radius_edge ... ok
+test a_barrage_bomb_reaches_its_radius_plus_the_victims ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\battle.rs (target\gate\deps\battle-876e9c7cd4d8f37b.exe)
+
+running 7 tests
+test the_frozen_foil_still_packs_the_crowd ... ok
+test the_shipped_arm_keeps_the_crowd_apart_where_frozen_does_not ... ok
+test scripted_battle_finishes_with_plausible_result ... ok
+test scripted_battle_with_spells_finishes_and_is_deterministic ... ok
+test different_seeds_are_allowed_to_differ_only_through_the_rng ... ok
+test determinism_gate_detects_a_one_unit_perturbation ... ok
+test determinism_same_seed_same_script_identical_hash_every_tick ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.38s
+
+     Running tests\boss_bandit.rs (target\gate\deps\boss_bandit-b9604e71bfcd3b73.exe)
+
+running 3 tests
+test its_press_warps_it_6000_back_700_ms_after_its_trigger ... ok
+test a_press_mid_dash_waits_for_the_dash_to_end ... ok
+test it_has_two_charges_the_second_after_a_3000_ms_cooldown ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\building_spell_reach.rs (target\gate\deps\building_spell_reach-39d1f850e09890bc.exe)
+
+running 4 tests
+test the_shipped_value_is_the_square_since_the_round_12_flip ... ok
+test a_fireball_off_a_cannons_corner_hits_it_under_the_square_and_misses_it_under_the_disc ... ok
+test the_square_is_strict ... ok
+test a_troop_keeps_the_disc_under_both_arms ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\cage_captive_shots.rs (target\gate\deps\cage_captive_shots-12dba582d9fc75a2.exe)
+
+running 2 tests
+test the_tower_holds_the_captive_through_the_tick_after_the_snap ... ok
+test a_tower_shot_lands_on_the_dragged_captive ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\cast_hold_heading.rs (target\gate\deps\cast_hold_heading-9d012fe89ca33bb9.exe)
+
+running 3 tests
+test the_shipped_arm_counts_the_heading ... ok
+test a_walker_turns_at_a_cast_beside_it ... ok
+test the_old_arm_passes_her_by ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests\chain_landed_body.rs (target\gate\deps\chain_landed_body-50f9ab1ced40c491.exe)
+
+running 3 tests
+test the_shipped_value_is_landed_body ... ok
+test a_landed_champion_is_no_body_to_his_chains_end ... ok
+test the_old_value_pushes_him_at_once ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\chained_hits.rs (target\gate\deps\chained_hits-3e12e95a41092294.exe)
+
+running 3 tests
+test an_electro_spirit_hits_nine_along_a_line_of_skeletons ... ok
+test each_hop_waits_three_ticks_then_flies_at_the_shot_s_speed ... ok
+test an_electro_dragon_shot_hits_three_along_a_line_of_knights ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\charge.rs (target\gate\deps\charge-055b9fac0880fb09.exe)
+
+running 13 tests
+test the_prince_walks_42_ticks_at_speed_60_and_doubles_from_the_43rd_walking_tick_as_measured ... ok
+test a_prince_alone_walks_the_run_up_at_base_speed_then_at_the_multiplied_speed ... ok
+test a_symmetric_two_prince_scene_with_a_mid_run_up_zap_from_both_seats_stays_its_own_mirror_every_tick ... ok
+test a_zap_on_the_charging_prince_zeroes_the_run_up_and_it_walks_the_full_run_up_again ... ok
+test a_knight_in_the_lane_takes_the_charged_hit_instead_of_the_tower_and_the_prince_re_arms ... ok
+test dark_prince_and_battle_ram_load_with_charge_and_charge_on_their_own_run_up ... ok
+test every_charger_doubles_on_the_walking_tick_the_captures_measured ... ok
+test the_first_landed_hit_on_the_princess_tower_is_damage_special_scaled_and_the_second_is_damage ... ok
+test a_snapshot_mid_run_up_and_one_while_charged_resume_hash_for_hash_and_both_columns_are_hashed ... ok
+test every_charge_candidate_moves_a_measurable_behaviour ... ok
+test the_battle_ram_dies_on_its_charged_hit_and_its_barbarians_take_over ... ok
+test every_unit_without_a_charge_block_has_effective_speed_equal_to_speed_on_every_card_and_every_tick ... ok
+test the_loader_refuses_a_partial_or_non_positive_charge_block_and_a_charging_building ... ok
+
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.83s
+
+     Running tests\chase_drop_growing_away.rs (target\gate\deps\chase_drop_growing_away-52e7085e3b5812cb.exe)
+
+running 4 tests
+test the_drop_ticks_rescan_passes_over_a_troop_walking_away ... ok
+test the_drop_ticks_rescan_takes_a_troop_whose_distance_fell ... ok
+test a_first_pick_takes_a_troop_walking_away ... ok
+test a_target_entering_its_attack_in_the_pass_is_let_go ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\chase_drop_knocked.rs (target\gate\deps\chase_drop_knocked-aa920780dd4c33d5.exe)
+
+running 4 tests
+test the_shipped_value_is_the_new_one ... ok
+test the_old_value_lets_the_sliding_target_go ... ok
+test a_target_pushed_past_the_limit_is_kept ... ok
+test a_runner_that_is_not_sliding_is_let_go_on_the_edge ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\chase_drop_measure.rs (target\gate\deps\chase_drop_measure-2dd87f8b93d7acd1.exe)
+
+running 4 tests
+test the_shipped_arm_is_max_abs ... ok
+test the_old_arm_lets_it_go ... ok
+test a_target_past_the_limit_across_alone_is_kept ... ok
+test both_arms_let_a_target_past_the_limit_up_the_lane_go ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\chase_drop_walking_away.rs (target\gate\deps\chase_drop_walking_away-7f411e5c05b67cf8.exe)
+
+running 4 tests
+test the_shipped_arm_is_any_target ... ok
+test a_runner_walking_away_is_let_go_on_the_edge_under_both_arms ... ok
+test a_rescan_takes_a_troop_past_the_limit_that_does_not_walk ... ok
+test a_rescan_passes_over_a_troop_past_the_limit_that_walks_away ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\chase_hold.rs (target\gate\deps\chase_hold-fef09fa7f3939034.exe)
+
+running 3 tests
+test a_target_never_inside_the_limit_is_kept_past_round_sight ... ok
+test a_target_past_round_sight_inside_the_chase_limit_is_kept ... ok
+test the_shipped_arm_lets_a_never_inside_target_go_past_the_limit ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\chase_hold_scope.rs (target\gate\deps\chase_hold_scope-17b67d7d2e68bf38.exe)
+
+running 3 tests
+test the_shipped_value_is_every_holder ... ok
+test the_old_value_keeps_the_target_past_round_sight ... ok
+test a_holder_whose_launch_left_from_beyond_reach_lets_a_target_past_round_sight_go ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests\chase_rescan_pass_over.rs (target\gate\deps\chase_rescan_pass_over-b6002bc219e83905.exe)
+
+running 3 tests
+test the_shipped_value_is_drop_tick ... ok
+test a_first_pick_takes_a_receding_troop_under_client15535_receding_lane_walk ... ok
+test a_unit_walking_for_its_tower_passes_over_a_receding_troop_under_client15535_receding_lane_walk ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\clone.rs (target\gate\deps\clone-416f7797fbccaa1b.exe)
+
+running 14 tests
+test a_charged_prince_keeps_its_charge_and_its_copy_starts_uncharged ... ok
+test a_copied_battle_rams_death_spawns_are_copies ... ok
+test a_copied_guard_survives_one_zap_and_dies_to_the_second ... ok
+test a_unit_that_appears_after_the_cast_is_not_copied ... ok
+test a_row_that_sets_ignore_clone_is_not_copied ... ok
+test each_own_troop_inside_is_copied_once_on_the_cast_tick ... ok
+test in_a_fight_the_original_keeps_its_target_and_the_copy_starts_fresh ... ok
+test a_second_clone_over_a_pair_copies_the_original_alone ... ok
+test the_sliding_pair_pushes_its_neighbours_and_is_not_pushed ... ok
+test the_pair_slides_125_a_tick_apart_for_ten_ticks_along_the_owner_axis ... ok
+test the_copy_takes_its_originals_buffs_under_each_arm ... ok
+test the_copy_takes_the_clones_level ... ok
+test the_clone_loads_as_its_action_with_the_tables_rules ... ok
+test a_copy_is_state ... ok
+
+test result: ok. 14 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+     Running tests\clone_copy_deploy.rs (target\gate\deps\clone_copy_deploy-0aaf7b5213d32122.exe)
+
+running 4 tests
+test the_shipped_value_is_deployed ... ok
+test the_new_arms_copy_waits_out_its_originals_deploy ... ok
+test the_old_arms_copy_walks_when_the_hold_ends ... ok
+test the_original_first_walks_when_its_deploy_ends_under_both_arms ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\command_delay.rs (target\gate\deps\command_delay-db398b69a4748120.exe)
+
+running 5 tests
+test a_second_building_on_a_waiting_tile_runs_relocated_and_paid ... ok
+test a_button_press_waits_too ... ok
+test red_at_zero_plays_at_once_while_blue_waits ... ok
+test a_play_waits_k_ticks_and_then_runs_as_a_play_at_once ... ok
+test a_snapshot_keeps_a_waiting_play ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running tests\corpse_switch_reach.rs (target\gate\deps\corpse_switch_reach-85363b95c1279d71.exe)
+error: test failed, to rerun pass `--test corpse_switch_reach`
+
+Caused by:
+  could not execute process `C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\crates\royalesim\target\gate\deps\corpse_switch_reach-85363b95c1279d71.exe` (never executed)
+
+Caused by:
+  An Application Control policy has blocked this file. (os error 4551)
+     Running tests\crown_tower_spell_reach.rs (target\gate\deps\crown_tower_spell_reach-84a7a3be5669106e.exe)
+
+running 4 tests
+test the_square_is_strict_and_the_same_for_both_kinds ... ok
+test the_shipped_arm_is_client_square_1000_strict ... ok
+test the_old_arm_reads_the_tower_as_a_disc ... ok
+test the_client_arm_reaches_a_tower_by_its_square ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\curse.rs (target\gate\deps\curse-b15812edb206b1bb.exe)
+error: test failed, to rerun pass `--test curse`
+
+Caused by:
+  could not execute process `C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\crates\royalesim\target\gate\deps\curse-b15812edb206b1bb.exe` (never executed)
+
+Caused by:
+  An Application Control policy has blocked this file. (os error 4551)
+     Running tests\dark_magic.rs (target\gate\deps\dark_magic-5c68a15552d16efd.exe)
+
+running 8 tests
+test a_knight_inside_by_its_radius_alone_is_struck ... ok
+test a_knight_that_appears_after_the_first_strike_is_struck_by_the_next_two ... ok
+test a_lone_cannon_loses_the_first_tier_on_c_plus_32 ... ok
+test a_hidden_tesla_is_neither_counted_nor_struck ... ok
+test a_crown_tower_beside_a_cannon_takes_the_second_tier ... ok
+test the_tier_follows_the_count_at_each_strike ... ok
+test a_lone_crown_tower_loses_one_tier_on_c_plus_32_56_and_80 ... ok
+test the_void_loads_as_count_tiers_of_the_rows ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.16s
+
+     Running tests\dash_attack.rs (target\gate\deps\dash_attack-2c2bf857de217e2b.exe)
+
+running 11 tests
+test every_dash_step_is_the_walks_arithmetic_with_no_snap ... ok
+test a_mega_knight_put_down_inside_its_trigger_stands_from_its_first_tick_and_jumps_on_the_seventeenth ... ok
+test a_target_first_seen_inside_dash_min_range_is_walked_into ... ok
+test a_mega_knight_jumps_to_its_goal_cell_and_lands_its_blow_on_the_constant_time ... ok
+test a_standing_bandit_faces_its_dash_goal_cell ... ok
+test the_bandit_takes_no_tower_arrow_from_its_entry_to_the_arrival_plus_one ... ok
+test the_bandits_first_melee_after_the_dash_lands_on_the_arrival_plus_19 ... ok
+test the_shipped_value_is_client_dash_and_under_none_the_bandit_walks_in ... ok
+test a_melee_unit_without_a_dash_walks_into_range_under_both_values ... ok
+test a_bandit_stands_then_dashes_into_its_target_stopping_on_the_first_half_step_within_range ... ok
+test the_loader_reads_the_dash_blocks_and_drops_none ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
+     Running tests\dash_chain_aim.rs (target\gate\deps\dash_chain_aim-a38c920ce01196bd.exe)
+
+running 1 test
+test a_chain_dash_heads_for_its_goal_cell_under_client15535_goal_cell ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\dash_chain_immunity.rs (target\gate\deps\dash_chain_immunity-a0535b792e739df2.exe)
+
+running 2 tests
+test the_shipped_arm_reads_no_immunity ... ok
+test a_shot_landing_in_his_chain_does_nothing ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\dash_first_sight_trigger.rs (target\gate\deps\dash_first_sight_trigger-a747fdd57413213b.exe)
+
+running 5 tests
+test the_shipped_value_is_first_sight_tick ... ok
+test a_bandit_put_down_inside_its_trigger_dashes_on_the_first_sight_plus_16 ... ok
+test a_mega_knight_put_down_inside_its_trigger_jumps_on_the_first_sight_plus_17 ... ok
+test next_tick_is_the_pre_flip_engine ... ok
+test a_walking_trigger_is_the_same_under_both_values ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\dash_pushback.rs (target\gate\deps\dash_pushback-9695c6287702aff5.exe)
+
+running 4 tests
+test the_shipped_value_is_client_ladder_from_landing ... ok
+test the_jump_blow_slides_the_knight_down_the_ladder_away_from_the_landing_point ... ok
+test not_read_is_the_pre_flip_engine ... ok
+test a_victim_that_ignores_pushback_is_not_moved_under_either_value ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\death_area_effect.rs (target\gate\deps\death_area_effect-e5a2589b7b7c2b12.exe)
+
+running 6 tests
+test an_ice_golems_death_slows_the_enemy_inside_its_area_damages_it_with_its_disc_and_leaves_the_one_outside_alone ... ok
+test the_slow_runs_out_after_its_bufftime_and_the_walk_comes_back ... ok
+test both_seats_release_the_same_area_and_it_does_the_same_thing ... ok
+test a_battle_saved_while_the_area_is_in_the_air_reloads_and_resumes_the_same_battle ... ok
+test a_cards_json_whose_area_effect_table_is_missing_the_named_row_refuses_the_card ... ok
+test the_loader_reads_the_named_area_effect_row_onto_the_card_and_refuses_the_rest_by_name ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+     Running tests\death_bomb.rs (target\gate\deps\death_bomb-a8fdf3bdda12d2b4.exe)
+
+running 7 tests
+test every_death_bomb_row_loads_as_a_timed_impact_and_only_a_death_releases_one ... ok
+test a_death_bomb_never_becomes_an_entity_and_leaves_no_phantom_target ... ok
+test a_death_bomb_spares_its_own_side_and_costs_the_enemy_exactly_its_amount ... ok
+test a_death_bomb_lands_a_fuse_after_the_death_for_its_own_rows_damage ... ok
+test the_plain_bombs_keep_their_fuse_under_every_container_timing ... ok
+test the_bomb_is_the_same_on_both_seats ... ok
+test a_bomb_still_counting_down_survives_a_save_and_goes_off_on_the_same_tick ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running tests\death_bomb_obstacle.rs (target\gate\deps\death_bomb_obstacle-a6f276088f50ab4f.exe)
+
+running 1 test
+test a_route_planned_during_a_fuse_goes_round_the_bomb_under_client15535_fused_building ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\death_bomb_timing_scope.rs (target\gate\deps\death_bomb_timing_scope-bc4dc8f8cf3c2f33.exe)
+
+running 4 tests
+test the_shipped_arm_times_containers_alone ... ok
+test a_plain_bomb_lands_on_its_fuses_last_tick ... ok
+test the_old_arm_lands_it_on_the_tick_after ... ok
+test a_bomb_a_button_drops_lands_on_the_tick_after_its_fuse_under_either_arm ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\death_damage_tick.rs (target\gate\deps\death_damage_tick-61ab4a54bbfe854f.exe)
+
+running 2 tests
+test the_15535_arm_lands_the_blow_on_the_death_tick ... ok
+test the_shipped_arm_lands_it_on_the_tick_after ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\death_ring_axis.rs (target\gate\deps\death_ring_axis-db3795c7b318b07a.exe)
+
+running 1 test
+test a_death_ring_lies_at_its_members_heading_degree ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.20s
+
+     Running tests\death_ring_order.rs (target\gate\deps\death_ring_order-33afc71ea8198024.exe)
+
+running 2 tests
+test the_old_arm_makes_the_one_behind_first ... ok
+test a_dying_battle_ram_makes_the_barbarian_ahead_first ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\death_slide_aim.rs (target\gate\deps\death_slide_aim-532ed7f080df83cb.exe)
+
+running 7 tests
+test the_step_toward_the_end_point_is_the_clients_step_where_the_current_ray_is_not ... ok
+test the_ledger_ships_fixed_end_point ... ok
+test a_containers_members_carry_their_container_rings_direction_at_its_radius ... ok
+test a_pup_pushed_off_its_ring_line_ends_on_its_end_point_under_fixed_end_point_and_off_it_under_current_ray ... ok
+test every_pup_carries_its_end_point_from_birth_under_fixed_end_point_and_none_under_current_ray ... ok
+test a_lone_pup_that_nothing_pushes_ends_exactly_on_its_end_point_under_both_arms ... ok
+test a_snapshot_mid_slide_resumes_and_the_end_point_is_hashed_under_fixed_end_point_alone ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.14s
+
+     Running tests\death_slide_birth.rs (target\gate\deps\death_slide_birth-1ba6059ac53c77e6.exe)
+
+running 5 tests
+test the_shipped_value_is_the_new_arm ... ok
+test the_container_members_are_born_one_step_toward_their_end_points ... ok
+test the_lava_pups_are_born_one_step_toward_their_end_points ... ok
+test the_golemites_on_the_axis_are_born_on_the_same_points_under_both_arms ... ok
+test the_end_points_are_the_sine_tables_under_both_arms ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\death_slide_stop.rs (target\gate\deps\death_slide_stop-84ff61061e35dfb7.exe)
+
+running 4 tests
+test the_shipped_value_is_the_new_arm ... ok
+test a_pup_stops_after_its_move_count_short_of_its_end_point_when_pushes_bent_its_path ... ok
+test the_move_count_is_inert_under_current_ray ... ok
+test the_golemites_make_five_moves_to_their_end_points_under_both_arms ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\death_spawn_at_emission.rs (target\gate\deps\death_spawn_at_emission-c8d0fa50a94bd875.exe)
+error: test failed, to rerun pass `--test death_spawn_at_emission`
+
+Caused by:
+  could not execute process `C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\crates\royalesim\target\gate\deps\death_spawn_at_emission-c8d0fa50a94bd875.exe` (never executed)
+
+Caused by:
+  An Application Control policy has blocked this file. (os error 4551)
+     Running tests\death_spawn_pushback.rs (target\gate\deps\death_spawn_pushback-eb098abc40a55d54.exe)
+
+running 13 tests
+test the_radial_step_stops_on_the_radius_and_never_pulls_a_member_back_in ... ok
+test the_pups_never_pass_the_radius_and_stop_on_it ... ok
+test under_the_frame_planned_search_the_slide_is_the_plain_radial_step ... ok
+test open_a_red_death_lays_the_same_absolute_ring_as_a_blue_one ... ok
+test the_members_are_born_on_the_fixed_ring_at_250_whatever_the_heading ... ok
+test the_old_arm_is_the_pre_flip_engine_and_the_measured_arm_ships ... ok
+test the_battle_rams_barbarians_keep_the_facing_ring_under_the_new_arm ... ok
+test a_sliding_member_takes_no_target_until_the_slide_is_over ... ok
+test open_member_k_in_creation_order_takes_angle_k_and_the_first_golemite_the_650_track ... ok
+test the_golemites_slide_out_as_measured_then_walk ... ok
+test the_loader_reads_death_spawn_pushback_off_every_row ... ok
+test a_flagged_row_whose_death_spawn_is_a_building_takes_no_slide ... ok
+test a_snapshot_mid_slide_resumes_hash_for_hash ... ok
+
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running tests\deflect_contact.rs (target\gate\deps\deflect_contact-639180ee0a7648a6.exe)
+
+running 3 tests
+test the_shipped_value_is_hidden ... ok
+test a_deflecting_monk_pushes_a_giant_on_him_under_client15535_pushes ... ok
+test the_old_value_pushes_nothing ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\deploy_area_effect_deploy_time.rs (target\gate\deps\deploy_area_effect_deploy_time-0e4d00aac552b82a.exe)
+
+running 3 tests
+test the_shipped_value_is_client_one_tick_longer ... ok
+test a_scenario_wizard_is_the_same_under_both_values ... ok
+test a_played_wizard_first_moves_a_tick_later_than_under_the_old_value ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\deploy_effects.rs (target\gate\deps\deploy_effects-fed202a5480b3c90.exe)
+
+running 3 tests
+test a_played_mega_knight_lands_its_blow_on_its_sixth_tick ... ok
+test a_setup_mega_knight_lands_no_blow ... ok
+test a_setup_battle_healer_still_heals ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\deploying_heading.rs (target\gate\deps\deploying_heading-79de4d15a4b7359e.exe)
+
+running 2 tests
+test under_the_zeroed_foil_the_walker_turns_round_the_deploying_member ... ok
+test a_walker_goes_straight_past_a_same_facing_neighbour_that_is_still_deploying ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\direct_hit_buff_countdown.rs (target\gate\deps\direct_hit_buff_countdown-a9d283d0cf86512d.exe)
+
+running 2 tests
+test the_shipped_value_is_resolve_landing ... ok
+test an_instant_hits_stun_holds_a_tick_fewer_under_client15535_landing_tick ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\dismount_river.rs (target\gate\deps\dismount_river-9928a861322c4b9c.exe)
+
+running 2 tests
+test a_hero_freed_on_its_leaps_last_tick_takes_the_leap_step_first_under_client15535_leap_lands_first ... ok
+test a_hop_onto_the_river_lands_on_the_nearest_land_rows_centre_under_client15535_land_row_centre ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\doomed_drop_swing.rs (target\gate\deps\doomed_drop_swing-7303ec8b0c84e8b1.exe)
+
+running 4 tests
+test the_shipped_value_is_the_new_arm_and_the_laws_it_leans_on_ship ... ok
+test the_old_arm_restarts_the_swing ... ok
+test a_doomed_drop_to_an_enemy_out_of_reach_cancels_the_swing_under_both_arms ... ok
+test a_doomed_drop_to_an_enemy_in_reach_keeps_the_swing ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\doomed_lane_tower.rs (target\gate\deps\doomed_lane_tower-977edd8e8589b464.exe)
+error: test failed, to rerun pass `--test doomed_lane_tower`
+
+Caused by:
+  could not execute process `C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\crates\royalesim\target\gate\deps\doomed_lane_tower-977edd8e8589b464.exe` (never executed)
+
+Caused by:
+  An Application Control policy has blocked this file. (os error 4551)
+     Running tests\doomed_own_update.rs (target\gate\deps\doomed_own_update-7f5f60a981a88552.exe)
+
+running 2 tests
+test a_ram_killed_by_its_own_hit_lays_its_barbarians_on_its_last_point ... ok
+test walks_pushes_the_doomed_ram_first ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\doomed_set_shots.rs (target\gate\deps\doomed_set_shots-1e7145c44f456a95.exe)
+
+running 3 tests
+test the_shipped_value_is_client_homing_only ... ok
+test a_bomb_in_flight_dooms_nothing_under_client_homing_only ... ok
+test the_old_value_counts_the_bomb ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\doomed_target_drop.rs (target\gate\deps\doomed_target_drop-06ee87702b580d0e.exe)
+
+running 8 tests
+test the_shipped_value_is_projectile_attackers_walk_drop ... ok
+test walking_minions_keep_the_target_until_the_eta_reaches_600_ms ... ok
+test a_minion_that_has_fired_at_its_target_keeps_it_once_it_is_doomed ... ok
+test a_knight_with_no_projectile_keeps_a_doomed_target ... ok
+test walking_minions_drop_a_knight_doomed_by_a_tower_arrow_on_the_next_tick ... ok
+test an_attacker_in_its_attack_keeps_a_doomed_target_beyond_its_keep_reach ... ok
+test a_rescan_never_takes_a_doomed_unit_the_attacker_has_shot_at ... ok
+test a_walking_attacker_drops_a_doomed_target_it_has_shot_at ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\elixir_collector.rs (target\gate\deps\elixir_collector-74176f003a87ab03.exe)
+
+running 14 tests
+test the_blank_hit_speed_exemption_needs_a_mana_block_on_an_inert_building ... ok
+test unshuffled_the_omitted_card_swaps_with_the_first_card_behind_the_hand ... ok
+test the_collector_loads_as_an_inert_building_that_never_targets ... ok
+test an_overflowing_payout_fills_to_ten ... ok
+test its_death_pays_its_owner_one_elixir_drained_out_or_destroyed ... ok
+test the_opponent_gains_nothing ... ok
+test the_next_payout_is_259_ticks_after_the_release ... ok
+test double_elixir_leaves_the_interval_alone_under_fixed_interval ... ok
+test a_payout_due_at_ten_elixir_is_held_and_paid_with_the_first_spend ... ok
+test first_payout_259_ticks_after_the_deploy_end_then_every_260 ... ok
+test a_stunned_collector_holds_its_timer_under_true_and_not_under_false ... ok
+test the_payout_timer_is_state ... ok
+test a_deck_without_one_deals_exactly_as_before ... ok
+test an_omitted_card_is_never_dealt_into_the_starting_hand ... ok
+
+test result: ok. 14 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.13s
+
+     Running tests\elixir_golem_split.rs (target\gate\deps\elixir_golem_split-cf568ec43147bb46.exe)
+
+running 4 tests
+test in_the_open_each_half_steps_out_and_turns_back_in_at_a_full_step ... ok
+test a_goblin_giants_riders_spear_goblins_are_not_steered ... ok
+test the_corpus_split_steps_out_and_turns_in_to_the_native_unit ... ok
+test the_battle_rams_barbarians_read_the_blocker_while_they_deploy ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests\embedded_cards.rs (target\gate\deps\embedded_cards-a37b542c54094845.exe)
+
+running 2 tests
+test the_compiled_in_table_is_the_committed_file ... ok
+test the_compiled_in_table_loads_the_same_cards ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests\enchant.rs (target\gate\deps\enchant-a436c6262cf083fd.exe)
+
+running 20 tests
+test the_first_projectile_leaves_27_ticks_after_he_appears ... ok
+test he_does_not_stop_walking_when_he_enchants ... ok
+test a_tagged_unit_is_never_picked ... ok
+test a_shot_that_hits_nothing_still_counts ... ok
+test an_enchanted_friend_is_not_sent_another ... ok
+test an_empty_pick_is_retried_every_tick ... ok
+test a_splash_bonus_reaches_every_victim ... ok
+test the_projectile_enchants_on_its_landing_tick ... ok
+test the_rune_giant_loads_with_his_enchant ... ok
+test the_crown_tower_bonus_is_its_own_column ... ok
+test the_enchant_outlives_him_by_100_ticks ... ok
+test picks_the_nearest_troops_air_in_buildings_out ... ok
+test a_stun_at_the_pick_waits_for_its_end ... ok
+test the_bonus_lands_on_every_third_attack ... ok
+test the_bonus_is_scaled_by_the_rune_giants_level ... ok
+test the_first_projectile_under_each_named_arm ... ok
+test the_reach_on_start_of_tick_positions ... ok
+test a_free_place_refills_after_the_cooldown ... ok
+test per_mille_of_the_level1_bonus_then_scaled ... ok
+test a_rune_giant_battle_survives_save_and_load ... ok
+
+test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.26s
+
+     Running tests\entity_level.rs (target\gate\deps\entity_level-25988f07973c091c.exe)
+
+running 8 tests
+test a_spawned_and_a_death_spawned_unit_read_their_parents_level ... ok
+test a_mirror_raises_its_own_level_not_the_copied_cards ... ok
+test a_mirrors_copy_reads_its_card_level_plus_one ... ok
+test a_played_unit_reads_its_card_level_and_a_tower_its_tower_level ... ok
+test a_rider_reads_its_mounts_uid_and_every_other_entity_minus_one ... ok
+test each_deck_card_plays_at_its_own_level_on_each_side ... ok
+test a_clones_copy_reads_the_level_the_clone_gives_it ... ok
+test a_deck_level_list_of_the_wrong_length_is_refused_and_one_kept_through_a_snapshot ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests\equal_distance_tie.rs (target\gate\deps\equal_distance_tie-853a8bb57e52e983.exe)
+
+running 6 tests
+test the_shipped_arm_is_own_frame_high_x ... ok
+test a_blue_goblin_on_the_centre_line_takes_the_right_tower_under_own_frame_high_x ... ok
+test the_old_arm_takes_the_left_tower ... ok
+test a_tie_between_two_troops_goes_to_the_later_created ... ok
+test a_tower_tie_goes_to_the_clients_later_created_tower ... ok
+test both_arms_are_seat_symmetric ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_archer.rs (target\gate\deps\evo_archer-2e31f67d7e514933.exe)
+
+running 3 tests
+test a_target_within_the_reach_and_both_radii_takes_her_plain_arrow ... ok
+test the_next_swing_s_entry_is_chosen_at_the_hit_that_ends_this_one ... ok
+test a_target_beyond_her_reach_takes_the_power_arrow ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\evo_baby_dragon.rs (target\gate\deps\evo_baby_dragon-c40b5ffd47425ec5.exe)
+
+running 4 tests
+test the_third_play_is_the_evolved_dragon ... ok
+test the_wind_outlives_its_dragon_by_2000_ms ... ok
+test it_speeds_its_own_side_but_not_itself ... ok
+test the_wind_slows_enemies_in_its_rectangle_from_the_tick_after_the_attack ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests\evo_barbarians.rs (target\gate\deps\evo_barbarians-f7754fea97f84e51.exe)
+
+running 1 test
+test its_barbarians_rage_from_the_tick_after_their_first_hit ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\evo_bats.rs (target\gate\deps\evo_bats-c7fdc87f81c804f0.exe)
+
+running 2 tests
+test each_hit_heals_it_38_nine_and_nineteen_ticks_on_past_its_maximum ... ok
+test the_heal_stops_at_twice_its_maximum ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\evo_battle_ram.rs (target\gate\deps\evo_battle_ram-741a8cb381ee9bf3.exe)
+error: test failed, to rerun pass `--test evo_battle_ram`
+
+Caused by:
+  could not execute process `C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\crates\royalesim\target\gate\deps\evo_battle_ram-741a8cb381ee9bf3.exe` (never executed)
+
+Caused by:
+  An Application Control policy has blocked this file. (os error 4551)
+     Running tests\evo_bomber.rs (target\gate\deps\evo_bomber-888e2cf9e4187e26.exe)
+
+running 2 tests
+test a_bounce_spares_what_the_throws_landing_hit ... ok
+test the_bomb_bounces_twice_along_its_line_2500_each ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_chain_hop_first_step.rs (target\gate\deps\evo_chain_hop_first_step-efb51b1457f93995.exe)
+
+running 3 tests
+test the_shipped_value_is_next_tick ... ok
+test the_old_value_lands_it_a_tick_later ... ok
+test a_first_hop_within_a_step_lands_on_its_shots_tick_under_client15535_creation_tick ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\evo_chain_hop_reach.rs (target\gate\deps\evo_chain_hop_reach-08a467cab8b5deac.exe)
+
+running 4 tests
+test the_shipped_value_is_inclusive ... ok
+test the_old_value_reaches_the_radius ... ok
+test a_hop_passes_over_a_unit_at_exactly_its_radius_under_client15535_strict ... ok
+test both_values_reach_inside_it ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\evo_chain_hop_wait.rs (target\gate\deps\evo_chain_hop_wait-82291004cbd2df94.exe)
+
+running 2 tests
+test the_shipped_arm_hops_at_once ... ok
+test every_hop_after_the_first_waits_two_ticks ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\evo_chain_shot_launch.rs (target\gate\deps\evo_chain_shot_launch-dddf1939ea9853df.exe)
+
+running 2 tests
+test the_shipped_value_is_fire_tick ... ok
+test an_evo_electro_dragons_shot_lands_a_tick_later_under_client15535_next_tick ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\evo_copy_count.rs (target\gate\deps\evo_copy_count-fa57c16f12691613.exe)
+
+running 2 tests
+test the_shipped_arm_counts_the_group_after_the_ticks_deaths ... ok
+test a_hit_on_a_full_group_with_a_member_dying_makes_no_copy ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\evo_dart_goblin.rs (target\gate\deps\evo_dart_goblin-225ca4aab429edc4.exe)
+error: test failed, to rerun pass `--test evo_dart_goblin`
+
+Caused by:
+  could not execute process `C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\crates\royalesim\target\gate\deps\evo_dart_goblin-225ca4aab429edc4.exe` (never executed)
+
+Caused by:
+  An Application Control policy has blocked this file. (os error 4551)
+     Running tests\evo_electro_dragon.rs (target\gate\deps\evo_electro_dragon-bccf037da9550792.exe)
+
+running 1 test
+test his_chain_hops_by_its_last_two_hits_without_end_and_his_next_shot_starts_another ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_elite_barbarians.rs (target\gate\deps\evo_elite_barbarians-2ecc36973497db30.exe)
+
+running 4 tests
+test the_second_play_is_the_evolved_one ... ok
+test a_throw_under_way_is_thrown_though_its_target_leaves_the_window ... ok
+test each_member_throws_its_spear_at_the_end_of_its_windup ... ok
+test the_thrower_walks_raged_from_11_frames_after_its_throw ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_executioner.rs (target\gate\deps\evo_executioner-5c3989079f00719b.exe)
+
+running 2 tests
+test a_strong_hit_on_the_way_out_pushes_its_victim_away_and_the_back_hit_does_not ... ok
+test the_axe_is_strong_on_a_victim_whose_edge_is_within_2500_of_his ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests\evo_firecracker.rs (target\gate\deps\evo_firecracker-e037405d710a12d2.exe)
+
+running 2 tests
+test a_sparks_fireworks_stand_where_its_flight_ends ... ok
+test the_rockets_fireworks_pulse_12_from_ten_ticks_after_the_landing ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_furnace.rs (target\gate\deps\evo_furnace-e126ebb5c22238f6.exe)
+
+running 3 tests
+test an_attack_starts_its_quick_spawn_22_ticks_on_then_every_47_and_48 ... ok
+test walking_its_spawns_come_110_then_100_ticks_apart ... ok
+test a_walk_of_20_ticks_ends_its_quick_spawn ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_goblin_barrel.rs (target\gate\deps\evo_goblin_barrel-ac102591bfeaad74.exe)
+
+running 1 test
+test its_decoy_barrel_lands_on_the_mirrored_point_with_three_goblin_dummies ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_goblin_cage.rs (target\gate\deps\evo_goblin_cage-a6deb4a942fe5f52.exe)
+
+running 4 tests
+test the_cages_death_lets_a_knight_go_on_its_point_unpushed_by_its_brawler ... ok
+test the_cages_death_lets_its_captive_go_on_its_point_standing_a_tick ... ok
+test after_its_captives_death_the_next_troop_in_reach_is_grabbed_10_ticks_on ... ok
+test a_knight_is_grabbed_3_ticks_after_it_comes_in_reach_held_dragged_and_hit_every_20_ticks ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\evo_goblin_drill.rs (target\gate\deps\evo_goblin_drill-9e1f09986f62c5b7.exe)
+
+running 2 tests
+test at_two_thirds_its_building_goes_under_39_ticks_unhurt_and_puts_down_two_goblins ... ok
+test a_hides_goblins_are_targets_from_their_8th_frame ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_goblin_giant.rs (target\gate\deps\evo_goblin_giant-f02ca8226f521166.exe)
+
+running 2 tests
+test below_half_it_makes_a_goblin_behind_it_2_ticks_on_then_43_and_44_ticks_apart ... ok
+test on_the_red_side_behind_is_up ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\evo_hunter.rs (target\gate\deps\evo_hunter-39b94b808c8a75cc.exe)
+
+running 2 tests
+test what_his_net_lands_on_stands_still_3000_ms ... ok
+test his_net_comes_9_ticks_after_he_takes_a_target_in_reach_then_every_105 ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests\evo_ice_spirits.rs (target\gate\deps\evo_ice_spirits-3d588f9655100f31.exe)
+
+running 1 test
+test its_area_stands_where_the_shot_landed_and_hits_once_3000_ms_on ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_inferno_dragon.rs (target\gate\deps\evo_inferno_dragon-8c0b2b3896cd08f9.exe)
+
+running 4 tests
+test the_third_play_is_the_evolved_dragon ... ok
+test a_zap_on_it_zeroes_its_count ... ok
+test its_hits_ramp_by_their_count_across_targets ... ok
+test its_count_falls_to_0_7000_ms_after_its_last_hit ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests\evo_knight.rs (target\gate\deps\evo_knight-b169fae5dfeb4bf7.exe)
+
+running 1 test
+test a_musketeers_217_lands_as_86_while_it_has_not_hit ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests\evo_lumberjack.rs (target\gate\deps\evo_lumberjack-eafa87e43e76995f.exe)
+
+running 3 tests
+test the_base_lumberjack_leaves_no_ghost ... ok
+test its_ghost_appears_on_his_death_point_twelve_ticks_on_and_lives_110_ticks_on_the_rage ... ok
+test its_ghost_out_of_the_rage_goes_a_second_and_five_ticks_after_the_last_pulse_that_reached_it ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_mega_knight.rs (target\gate\deps\evo_mega_knight-85852e787cee5ed9.exe)
+
+running 1 test
+test every_second_hit_throws_its_target_toward_its_king ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_minion_horde.rs (target\gate\deps\evo_minion_horde-febe6615e9d4c697.exe)
+
+running 3 tests
+test the_second_play_is_the_evolved_horde ... ok
+test a_zapped_minion_takes_nothing_from_the_next_zap ... ok
+test the_ghost_ends_3000_ms_on_and_comes_once ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\evo_mortar.rs (target\gate\deps\evo_mortar-eeb4bda3c158ae9c.exe)
+
+running 2 tests
+test the_third_play_is_the_evolved_mortar ... ok
+test each_shot_puts_a_goblin_down_where_it_lands_on_its_landing_frame ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_musketeer_snipe.rs (target\gate\deps\evo_musketeer_snipe-fc70babacbb94fab.exe)
+
+running 8 tests
+test a_plain_shots_start_40_ticks_after_the_third_snipe_inside_her_ordinary_reach ... ok
+test d_a_spell_in_flight_is_not_pending_damage ... ok
+test b2_a_knight_2000_to_her_side_is_taken_once_inside_the_side_clip_plus_its_radius ... ok
+test a_she_steps_between_snipes ... ok
+test b1_a_knight_1000_to_her_side_is_sniped_three_times ... ok
+test c_the_knight_in_reach_first_then_three_snipes_at_the_giant ... ok
+test a_the_first_snipe_leaves_15_ticks_after_her_deploy_end_then_every_19 ... ok
+test a_three_snipes_of_391_at_speed_2650_at_the_measured_distances ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_pekka.rs (target\gate\deps\evo_pekka-20bb1b629d52ef41.exe)
+
+running 3 tests
+test the_victims_size_is_its_hitpoints_at_level_10 ... ok
+test a_kill_heals_her_no_higher_than_her_maximum ... ok
+test a_kill_heals_her_by_the_victims_size_one_heal_10_ticks_on ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_princess.rs (target\gate\deps\evo_princess-727837522a1df8fb.exe)
+
+running 2 tests
+test her_death_leaves_a_blow_that_reaches_3000_past_the_edges ... ok
+test her_first_and_third_volleys_leave_a_freezing_area_the_second_does_not ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_royal_ghost.rs (target\gate\deps\evo_royal_ghost-a60f08b9be167a85.exe)
+
+running 5 tests
+test its_blow_strikes_what_it_hit_once_on_the_hits_tick_plus_6 ... ok
+test the_third_play_is_the_evolved_ghost ... ok
+test the_pair_starts_visible ... ok
+test a_hit_while_hidden_puts_the_pair_down_on_the_next_tick ... ok
+test its_next_hits_make_none_until_it_has_hidden_again ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_royal_giant.rs (target\gate\deps\evo_royal_giant-80df822843d36eb4.exe)
+
+running 1 test
+test each_shot_pushes_the_enemies_around_him_on_the_next_tick ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests\evo_royal_hogs.rs (target\gate\deps\evo_royal_hogs-8bc2727905607b05.exe)
+
+running 3 tests
+test under_99_percent_a_hog_lands_12_ticks_on_and_its_blow_takes_43 ... ok
+test the_third_play_is_the_evolved_hogs ... ok
+test a_hog_that_strikes_lands_11_ticks_after_its_first_hit ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_royal_recruits.rs (target\gate\deps\evo_royal_recruits-a8312412ccc7920e.exe)
+
+running 2 tests
+test the_second_play_is_the_evolved_recruits ... ok
+test a_recruit_runs_up_only_once_its_shield_is_gone ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_skeleton_army.rs (target\gate\deps\evo_skeleton_army-4ef7362c8c6675f3.exe)
+
+running 8 tests
+test the_play_puts_its_general_down_behind_the_tap ... ok
+test the_generals_death_takes_its_spectrals_and_ends_them ... ok
+test a_soldier_dying_while_the_general_lives_leaves_a_spectral ... ok
+test the_general_stands_on_its_point_through_its_deploy ... ok
+test the_general_still_pushes_a_unit_off_it ... ok
+test nothing_targets_a_spectral ... ok
+test a_spectral_takes_no_damage ... ok
+test the_third_play_is_the_evolved_army ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_skeleton_barrel.rs (target\gate\deps\evo_skeleton_barrel-5a244513f5a16422.exe)
+
+running 3 tests
+test the_third_play_is_the_evolved_barrel ... ok
+test under_75_percent_it_drops_seven_skeletons_13_ticks_on ... ok
+test its_death_drops_seven_more_12_ticks_after ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_snowball.rs (target\gate\deps\evo_snowball-2a0c37ab9b89566e.exe)
+
+running 5 tests
+test the_third_play_is_the_evolved_snowball ... ok
+test the_ball_rolls_300_a_tick_and_strikes_and_takes_on_its_third_tick ... ok
+test a_pair_is_let_go_150_either_side_the_first_made_ahead ... ok
+test a_lone_captive_is_let_go_on_the_end_point_and_walks_slowed ... ok
+test a_captive_is_dragged_at_the_ball_then_rides_it ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_tesla.rs (target\gate\deps\evo_tesla-eb87f03e2feacc73.exe)
+
+running 2 tests
+test the_ring_stops_what_it_takes_for_500_ms ... ok
+test the_ring_takes_each_enemy_once_as_it_grows ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_valkyrie.rs (target\gate\deps\evo_valkyrie-7198be7340b087bb.exe)
+
+running 3 tests
+test no_enemy_pushes_her_after_her_hit ... ok
+test each_hit_pulls_the_enemies_around_her_from_the_second_tick_for_ten ... ok
+test the_tornado_pulses_42_once_on_the_ninth_tick ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests\evo_wall_breakers.rs (target\gate\deps\evo_wall_breakers-6f8bedb1c2d349e6.exe)
+
+running 3 tests
+test the_blow_takes_86_percent_off_a_crown_tower ... ok
+test a_kamikaze_leaves_no_runner_and_no_blow ... ok
+test a_killed_one_leaves_a_runner_on_its_point_and_a_blow_of_192_on_the_next_tick ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_witch.rs (target\gate\deps\evo_witch-165ad16b5c499a93.exe)
+
+running 3 tests
+test a_skeleton_of_her_interval_waves_sends_no_soul ... ok
+test each_skeleton_she_spawned_that_dies_heals_her_153_on_its_death_plus_21 ... ok
+test her_interval_waves_come_on_her_creation_plus_179_then_every_140 ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests\evo_wizard.rs (target\gate\deps\evo_wizard-fdc4031c1ccba1b7.exe)
+
+running 1 test
+test its_shields_loss_blasts_3000_around_it ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\evo_zap.rs (target\gate\deps\evo_zap-58031450f7d1a2e3.exe)
+
+running 2 tests
+test the_third_play_is_the_evolved_zap ... ok
+test the_evolved_zap_strikes_again_30_frames_later_and_wider ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+
+     Running tests\evolution.rs (target\gate\deps\evolution-2d632b82a6503250.exe)
+
+running 8 tests
+test a_barrage_bomb_lands_before_the_move_pass ... ok
+test evo_skeletons_copy_on_every_group_hit ... ok
+test evo_cannon_drops_its_barrage ... ok
+test evo_musketeer_spends_three_snipes ... ok
+test an_evo_copy_is_made_exactly_ahead_of_its_hitter_after_the_move ... ok
+test an_evo_copy_on_the_river_bank_goes_outward_then_behind_under_client15535_ahead_outward_behind ... ok
+test a_deck_card_marked_evolved_plays_its_form_every_third_play ... ok
+test forms_take_slots_after_every_existing_card ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+
+     Running tests\fall_and_resume.rs (target\gate\deps\fall_and_resume-d1768aa2fce4f8c9.exe)
+
+running 3 tests
+test a_windup_paused_by_a_freeze_is_dropped_when_the_new_target_is_out_of_reach ... ok
+test a_troop_on_a_crown_tower_a_strike_fells_is_not_pushed_by_it ... ok
+test a_troop_on_a_building_that_falls_this_tick_is_not_pushed_by_it ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\fall_grounding.rs (target\gate\deps\fall_grounding-412932a64f756e05.exe)
+
+running 3 tests
+test the_landing_keeps_the_avoidance_offset ... ok
+test the_hog_leaves_the_air_on_the_tick_after_its_landing_tick ... ok
+test a_ground_only_enemy_takes_the_landed_hog_two_ticks_after_its_landing_tick ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\fallen_lane_tower_pick.rs (target\gate\deps\fallen_lane_tower_pick-a0623882f1c4c0e8.exe)
+
+running 6 tests
+test the_shipped_value_is_the_new_one ... ok
+test the_old_value_walks_to_the_tower_of_the_current_x ... ok
+test without_a_spawn_lane_the_new_value_reads_nothing ... ok
+test a_troop_whose_spawn_lane_tower_is_down_walks_to_the_king ... ok
+test a_troop_whose_spawn_lane_tower_stands_walks_to_the_tower_of_its_x ... ok
+test with_both_princess_towers_standing_the_value_does_not_matter ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\far_area_hit.rs (target\gate\deps\far_area_hit-28125cc69f63992b.exe)
+
+running 2 tests
+test a_skeleton_kings_hit_1000_past_reach_lands ... ok
+test a_skeleton_kings_hit_2000_past_reach_is_void ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\far_building_scan.rs (target\gate\deps\far_building_scan-ba14de3c84da6213.exe)
+
+running 4 tests
+test the_giant_takes_a_cannon_6231_across ... ok
+test the_giant_ignores_a_cannon_6811_across ... ok
+test the_giant_ignores_a_cannon_more_than_7000_across ... ok
+test the_giant_takes_a_cannon_6697_across ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\far_shot_select.rs (target\gate\deps\far_shot_select-94a6ae6e5cecdfaf.exe)
+
+running 3 tests
+test the_shipped_value_is_as_attack_select ... ok
+test the_old_value_picks_at_the_hit_before ... ok
+test the_evo_archers_arrow_is_picked_at_her_load_start_under_client15535_at_load_start ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\first_step_dying_bodies.rs (target\gate\deps\first_step_dying_bodies-e2b00bc593fcf08e.exe)
+
+running 5 tests
+test the_shipped_value_is_seen ... ok
+test an_emission_steps_off_a_unit_doomed_on_its_creation_tick ... ok
+test with_nothing_dying_beside_it_the_first_step_is_the_same_under_both_values ... ok
+test a_death_spawn_is_pushed_off_a_unit_dying_with_its_parent ... ok
+test a_snapshot_under_the_new_value_resumes_hash_for_hash ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running tests\first_step_dying_contact.rs (target\gate\deps\first_step_dying_contact-63e9d25ba9d2cfe9.exe)
+error: test failed, to rerun pass `--test first_step_dying_contact`
+
+Caused by:
+  could not execute process `C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\crates\royalesim\target\gate\deps\first_step_dying_contact-63e9d25ba9d2cfe9.exe` (never executed)
+
+Caused by:
+  An Application Control policy has blocked this file. (os error 4551)
+     Running tests\fly_direct_paths.rs (target\gate\deps\fly_direct_paths-e48195b783eeb01b.exe)
+
+running 2 tests
+test not_read_flies_the_barrel_at_its_cell ... ok
+test a_skeleton_barrel_faces_the_towers_centre_on_every_tick_it_flies ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\formations.rs (target\gate\deps\formations-bda44d5a9aa08e5b.exe)
+
+running 12 tests
+test sine_table_is_round_sin_times_1024 ... ok
+test the_ring_is_seat_symmetric_under_the_rotation ... ok
+test the_ground_clamp_holds_a_bank_deploy_on_the_bank_and_the_bounds_clamp_the_edge ... ok
+test the_shipped_ground_clamp_is_the_measured_per_side_formula ... ok
+test the_column_clamp_is_dropped_once_its_column_reaches_past_the_river ... ok
+test goblin_gang_and_rascals_summon_both_units_on_one_ring ... ok
+test nearest_lane_is_left_of_the_centre_column_and_swaps_under_the_rotation ... ok
+test every_formation_candidate_moves_a_behaviour ... ok
+test members_leave_deploy_state_k_delays_apart ... ok
+test a_scripted_battle_with_swarms_keeps_every_invariant ... ok
+test every_measured_corpus_formation_is_reproduced_member_by_member ... ok
+test every_corpus_member_the_clamp_arms_separate_is_the_per_side_one_exactly ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.41s
+
+     Running tests\furnace.rs (target\gate\deps\furnace-898e484eeb1323fb.exe)
+
+running 10 tests
+test the_loader_takes_the_interval_block_only_with_exactly_its_graph ... ok
+test the_spirit_is_a_target_from_its_eighth_frame ... ok
+test the_spirit_takes_the_furnaces_level ... ok
+test the_spirit_deploys_on_the_actions_500 ... ok
+test the_furnace_does_not_drain ... ok
+test the_spirit_stands_1500_owner_forward_whatever_the_facing ... ok
+test a_setup_furnace_starts_its_timer_by_the_arm ... ok
+test both_start_origins_give_f_plus_38_at_deploy_time_1000 ... ok
+test the_furnace_is_a_troop_card_with_an_interval_spawner ... ok
+test first_spirit_38_ticks_after_the_first_frame_then_every_100 ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests\ghost_pair_first_frame.rs (target\gate\deps\ghost_pair_first_frame-8ddff3400743d630.exe)
+error: test failed, to rerun pass `--test ghost_pair_first_frame`
+
+Caused by:
+  could not execute process `C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\crates\royalesim\target\gate\deps\ghost_pair_first_frame-8ddff3400743d630.exe` (never executed)
+
+Caused by:
+  An Application Control policy has blocked this file. (os error 4551)
+     Running tests\goal_target.rs (target\gate\deps\goal_target-1281b43d0891b58d.exe)
+
+running 4 tests
+test both_keys_ship_at_their_new_values ... ok
+test a_flyer_over_the_river_ranks_water_like_dry_ground_only_under_not_demoted ... ok
+test a_flyer_created_before_its_target_reads_the_start_of_tick_position_under_either_value ... ok
+test a_flyer_created_after_its_target_reads_the_targets_moved_position_under_creation_order ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\goblin_curse.rs (target\gate\deps\goblin_curse-bb845aa96cf893d1.exe)
+
+running 10 tests
+test a_building_is_never_marked ... ok
+test the_parent_damage_never_lands ... ok
+test the_battle_ram_takes_the_damage_and_the_slow_but_never_the_mark ... ok
+test goblin_curse_loads_as_a_zero_fuse_over_its_curse_circle ... ok
+test two_curses_on_one_unit_share_one_slot_a_known_divergence ... ok
+test a_crown_tower_takes_ten_a_pulse ... ok
+test the_circle_applies_from_c_plus_1_to_c_plus_120 ... ok
+test a_cursed_troop_that_dies_becomes_a_goblin_for_the_caster ... ok
+test a_standing_giant_takes_six_pulses_of_35 ... ok
+test a_curse_survives_a_save_with_its_source_level ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+
+     Running tests\goblin_giant.rs (target\gate\deps\goblin_giant-cb37c4d013e462cc.exe)
+
+running 4 tests
+test the_arc_at_the_six_measured_headings ... ok
+test a_giant_killed_walking_leaves_each_riders_spear_goblin_at_its_position_plus_the_offset ... ok
+test the_loader_takes_the_giants_two_riders_and_puts_them_on_the_arc ... ok
+test every_tick_a_rider_stands_on_the_arc_behind_where_its_giant_stood_a_tick_before ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\goblin_hut.rs (target\gate\deps\goblin_hut-6b3af3841780ac35.exe)
+
+running 5 tests
+test the_loader_reads_the_huts_controller_and_no_spawner ... ok
+test an_air_troop_wakes_the_hut ... ok
+test a_building_in_reach_from_the_start_gives_waves_on_f_plus_20_63_and_107 ... ok
+test level_points_put_the_first_wave_on_the_larger_x_side_and_the_second_on_the_other ... ok
+test the_controllers_clock_is_state ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
+     Running tests\goblinstein.rs (target\gate\deps\goblinstein-6498a142e2a47c69.exe)
+
+running 2 tests
+test its_doctor_stands_1000_left_and_3500_behind_its_monster ... ok
+test its_tether_hits_what_stands_by_the_line_every_10_ticks_from_the_press_plus_20 ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\golden_knight.rs (target\gate\deps\golden_knight-276272e89f1ddc31.exe)
+
+running 12 tests
+test the_shipped_values_are_the_measured_arms_since_the_round_10_ship ... ok
+test the_press_row_walks_and_the_dash_moves_400_a_tick_to_a_250_hit_with_the_blow ... ok
+test a_waiting_press_re_decides_its_target_each_tick_and_dashes_at_a_knight_put_down_mid_run ... ok
+test the_button_is_charged_from_his_first_frame_and_a_press_takes_the_charge ... ok
+test the_chain_takes_the_closest_target_not_yet_hit_and_never_the_same_one_twice ... ok
+test the_pending_run_starts_the_tick_after_the_press_s_first ... ok
+test one_tick_standing_then_the_chain_ends_and_he_attacks_from_the_next ... ok
+test without_a_post_kill_wait_the_measured_end_only_drops_the_target ... ok
+test under_the_measured_end_he_holds_no_target_for_two_ticks_then_takes_one_by_the_ordinary_rule ... ok
+test a_press_with_nothing_in_reach_runs_him_at_twice_his_walk_and_dashes_at_his_target_in_reach ... ok
+test under_the_measured_cycle_his_first_ordinary_hit_lands_on_h_plus_19 ... ok
+test the_charge_comes_back_the_cooldown_after_the_chain_ends_and_never_under_none ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\hand_refill.rs (target\gate\deps\hand_refill-a5f46f81a88f2760.exe)
+
+running 4 tests
+test a_play_with_the_timer_idle_refills_on_the_same_tick ... ok
+test a_second_play_waits_for_the_timer_and_slots_fill_lowest_first ... ok
+test the_period_is_ten_ticks_in_double_elixir ... ok
+test the_oracles_refill_scene_runs_tick_for_tick ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running tests\hash_continuity.rs (target\gate\deps\hash_continuity-8f63e7d11617588c.exe)
+
+running 4 tests
+test the_comparison_names_the_first_tick_that_moved ... ok
+test removing_the_rows_loaded_since_the_parent_realigns_every_index ... ok
+test the_2018_table_hashes_as_its_parent_did ... ok
+test the_15535_table_hashes_as_its_parent_did ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.14s
+
+     Running tests\heal_pulse_landing.rs (target\gate\deps\heal_pulse_landing-c8e1c476b23c7a3f.exe)
+
+running 3 tests
+test the_shipped_value_is_after_hits ... ok
+test a_full_units_pulse_is_lost_before_a_shot_under_client15535_before_buffered_hits ... ok
+test the_old_value_keeps_the_pulse_after_the_shot ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.22s
+
+     Running tests\held_facing.rs (target\gate\deps\held_facing-b611d31b6c60b2bf.exe)
+
+running 2 tests
+test unchanged_leaves_a_held_units_facing ... ok
+test a_held_unit_turns_its_facing_toward_its_waypoint ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\held_press_route.rs (target\gate\deps\held_press_route-e516b6cb2d227479.exe)
+
+running 2 tests
+test the_shipped_value_is_kept ... ok
+test a_held_heros_press_plans_its_route_afresh_under_client15535_replanned ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\held_route.rs (target\gate\deps\held_route-37e99e5df777b879.exe)
+
+running 1 test
+test a_zapped_hog_rider_keeps_its_route_through_the_stun ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\held_unit_avoidance.rs (target\gate\deps\held_unit_avoidance-45b201dcece71924.exe)
+
+running 4 tests
+test the_shipped_value_is_the_new_arm ... ok
+test a_held_unit_starts_no_offset_and_the_walker_turns_by_its_own_side ... ok
+test the_old_arm_starts_the_held_units_offset_and_the_walker_reads_its_sign ... ok
+test a_held_units_running_offset_decays_and_the_static_in_its_look_circle_does_not_refresh_it ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\held_unit_contact.rs (target\gate\deps\held_unit_contact-15fb809e4a5cad06.exe)
+
+running 7 tests
+test the_shipped_value_is_the_new_arm ... ok
+test the_old_arm_walks_into_a_held_unit ... ok
+test a_held_unit_is_pushed_by_the_unit_walking_into_it ... ok
+test a_held_unit_with_nobody_near_stands_still ... ok
+test a_stunned_knight_is_moved_by_the_giant_walking_through_it ... ok
+test the_old_arm_holds_the_stunned_knight_and_throws_the_giant ... ok
+test a_stunned_knight_with_nothing_overlapping_stands_under_both_arms ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\held_waypoint_test.rs (target\gate\deps\held_waypoint_test-d8f4c24878b9e858.exe)
+
+running 1 test
+test a_held_unit_pushed_past_its_waypoint_pops_it_under_client15535_run ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\hero_balloon.rs (target\gate\deps\hero_balloon-89b58e48ddd9c8a8.exe)
+
+running 5 tests
+test with_nothing_in_reach_the_trooper_drops_on_the_balloon_on_p_plus_5 ... ok
+test a_pick_killed_in_flight_leaves_its_point_as_the_aim ... ok
+test the_nearer_troop_is_picked ... ok
+test the_throw_lands_on_the_golem_on_p_plus_27 ... ok
+test the_hero_balloon_drops_the_base_balloons_bomb ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\hero_barbarian_barrel.rs (target\gate\deps\hero_barbarian_barrel-99789f7ea1a81f7c.exe)
+error: test failed, to rerun pass `--test hero_barbarian_barrel`
+
+Caused by:
+  could not execute process `C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\crates\royalesim\target\gate\deps\hero_barbarian_barrel-99789f7ea1a81f7c.exe` (never executed)
+
+Caused by:
+  An Application Control policy has blocked this file. (os error 4551)
+     Running tests\hero_berserker.rs (target\gate\deps\hero_berserker-939f4fbc3f79ec51.exe)
+
+running 6 tests
+test the_press_is_one_charge_for_3_elixir ... ok
+test the_bear_walks_at_a_successor_out_of_its_reach ... ok
+test the_rage_hits_for_167_every_4_frames ... ok
+test the_bear_takes_its_next_target_on_the_loss_plus_1 ... ok
+test the_raged_hero_keeps_1_hp_and_dies_after_the_rage ... ok
+test the_raged_hero_stands_its_cast_then_walks_half_again_as_fast_for_4000_ms ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\hero_bowler.rs (target\gate\deps\hero_bowler-568467cb284e83bd.exe)
+
+running 3 tests
+test its_siege_form_lasts_its_buffs_7300_ms ... ok
+test its_far_entry_reaches_a_knight_9000_off_from_150_out ... ok
+test its_siege_shoots_mortar_shells_from_its_near_entry_39_ticks_apart ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\hero_dark_prince.rs (target\gate\deps\hero_dark_prince-1f2e12ea8bc4c02c.exe)
+
+running 6 tests
+test its_mounts_blow_takes_307_off_a_knight_2200_away_on_the_press_plus_12_and_knocks_it_back_from_the_next_tick ... ok
+test a_red_heros_hops_go_up_and_its_mount_appears_at_its_own_offset ... ok
+test its_mount_appears_behind_it_on_the_trigger_and_stands_from_its_third_frame_to_the_press_plus_23 ... ok
+test it_hops_through_a_knight_in_its_way_for_its_first_second ... ok
+test its_press_hops_it_2000_back_in_ten_ticks_and_holds_it_to_the_press_plus_40 ... ok
+test a_press_while_it_leaps_the_river_waits_for_its_landing ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\hero_forms.rs (target\gate\deps\hero_forms-cb5ec0dba520906b.exe)
+
+running 16 tests
+test a_cast_does_not_stop_her_target_search ... ok
+test a_press_under_a_freeze_waits_for_the_thaw ... ok
+test the_hero_card_cycles_and_replays_while_she_lives ... ok
+test a_press_while_she_deploys_waits_for_her_deploy_end ... ok
+test hero_musketeer_plays_and_puts_her_turret_down ... ok
+test a_cast_keeps_her_target_and_restarts_her_attack_clock ... ok
+test the_turret_is_at_the_heros_level ... ok
+test the_turret_goes_down_in_the_river_and_across_the_bridge ... ok
+test the_storm_outlives_the_golem ... ok
+test a_free_press_holds_before_it_moves ... ok
+test a_waited_press_steps_once_before_its_hold ... ok
+test the_turret_is_placed_as_a_building_off_its_own_towers ... ok
+test the_ice_golem_storm_is_not_refunded_once_made ... ok
+test hero_ice_golem_storm_rides_on_the_golem ... ok
+test a_hero_killed_before_her_turret_gets_the_elixir_back ... ok
+test the_forms_load_after_every_other_slot ... ok
+
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+     Running tests\hero_giant.rs (target\gate\deps\hero_giant-54ab7f1ddc3f6848.exe)
+
+running 3 tests
+test a_thrown_unit_flies_through_the_giant ... ok
+test the_slap_holds_the_giant_and_throws_its_pick_toward_the_centre ... ok
+test a_unit_that_ignores_pushback_is_thrown_as_any_other ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\hero_goblins.rs (target\gate\deps\hero_goblins-0b00a17f55d633b6.exe)
+
+running 4 tests
+test its_press_puts_two_dummies_down_toward_the_centre_and_takes_the_flag ... ok
+test the_flags_dummies_are_targets_from_their_8th_frame ... ok
+test a_second_goblins_play_tags_the_first_ones_and_leaves_no_flag ... ok
+test the_last_goblins_death_leaves_the_flag_and_its_button_for_5000_ms ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\hero_knight.rs (target\gate\deps\hero_knight-cb9c69c90cb2c765.exe)
+
+running 4 tests
+test it_comes_with_no_shield_and_the_press_sets_512 ... ok
+test the_taunt_leaves_a_building_only_attacker_on_its_building ... ok
+test the_taunt_turns_an_enemy_on_the_hero ... ok
+test shots_after_the_press_fall_on_the_shield_until_one_breaks_it ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\hero_magic_archer.rs (target\gate\deps\hero_magic_archer-29b965ac4cb287cd.exe)
+
+running 4 tests
+test its_decoy_stands_on_its_point_then_the_hero_hides_and_warps_back ... ok
+test after_its_warp_its_walk_is_planned_from_where_it_landed ... ok
+test its_next_shot_is_the_middle_arrow_and_two_copies_beside_it ... ok
+test its_decoy_is_killed_7000_ms_after_its_creation ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\hero_mega_minion.rs (target\gate\deps\hero_mega_minion-b4496179da4a997e.exe)
+
+running 3 tests
+test the_warp_steps_up_to_its_speed_and_stands_on_its_pick ... ok
+test its_button_waits_1500_ms_and_a_pick ... ok
+test its_strike_shot_takes_156 ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\hero_mini_pekka.rs (target\gate\deps\hero_mini_pekka-c8ef2d8aa26df88a.exe)
+
+running 6 tests
+test the_press_sets_it_one_level_up_and_heals_30_percent_of_what_it_misses_on_p_plus_4 ... ok
+test its_cast_keeps_its_target_and_freezes_its_swing ... ok
+test its_blows_after_the_press_take_the_new_levels_damage ... ok
+test each_hit_fills_8_seconds_of_its_bar ... ok
+test the_quest_fills_a_stack_in_22_seconds_from_its_first_second ... ok
+test the_heal_comes_before_the_level_as_six_scenes_measure ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\hero_newest_copy.rs (target\gate\deps\hero_newest_copy-9a4c8784d004c2eb.exe)
+
+running 2 tests
+test a_new_copy_brings_a_fresh_charge ... ok
+test the_newest_copy_holds_the_button_and_its_death_leaves_none ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\hero_tombstone.rs (target\gate\deps\hero_tombstone-791081911e69845d.exe)
+
+running 5 tests
+test its_press_makes_its_monster_active_at_full_hitpoints_and_its_tomb_dies_on_the_press_plus_3 ... ok
+test its_active_monsters_death_puts_four_skeletons_down_around_its_last_point_on_the_next_tick ... ok
+test a_second_play_of_its_card_kills_a_monster_still_waiting ... ok
+test its_active_monster_steps_106_106_beside_its_tomb_then_stands_to_the_press_plus_40 ... ok
+test with_no_press_its_monster_dies_50_ticks_after_its_tomb_and_a_press_20_ticks_after_the_tomb_is_taken ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\hero_turret.rs (target\gate\deps\hero_turret-01ca266259572b3f.exe)
+
+running 4 tests
+test the_shipped_arms ... ok
+test the_turrets_blow_lands_on_c2_under_client_on_landing_action_at_2 ... ok
+test the_turret_takes_no_update_on_its_creation_tick_under_client_next_tick ... ok
+test no_enemy_targets_the_turret_before_c7_under_client_8th_frame_action_buildings ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\hero_valkyrie.rs (target\gate\deps\hero_valkyrie-dc4cda254dde4689.exe)
+
+running 6 tests
+test with_none_in_the_circle_she_waits_then_spins_from_the_tick_one_comes ... ok
+test without_a_press_a_kill_costs_her_no_retarget_wait ... ok
+test her_blow_falls_fourteen_times_five_ticks_apart_from_p_plus_1 ... ok
+test after_the_last_blow_she_rests_8_ticks_then_hits_from_her_load ... ok
+test she_walks_her_chain_taking_the_next_as_she_reaches_one ... ok
+test every_hit_on_her_is_cut_15_percent_until_the_last_blow ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\hero_wizard.rs (target\gate\deps\hero_wizard-7f35d9a23e6a6118.exe)
+
+running 4 tests
+test a_ground_only_attacker_drops_it_on_the_trigger ... ok
+test its_areas_pull_toward_the_point_1000_ahead_of_the_hit ... ok
+test its_first_shot_after_the_cast_hits_on_p_plus_25 ... ok
+test the_unit_its_shot_strikes_is_not_pushed_by_its_own_side ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\hide.rs (target\gate\deps\hide-218706dfa8fe40b7.exe)
+
+running 25 tests
+test hidden_occludes_path_false_is_refused_at_load ... ok
+test a_hidden_tesla_ignores_zap_stun ... ok
+test a_hidden_footprint_still_refuses_a_deploy_on_it ... ok
+test losing_its_target_sends_the_tesla_under_exactly_hide_time_later ... ok
+test a_knight_mid_swing_on_a_deploying_tesla_drops_it_when_it_goes_under_and_reacquires_it_when_up ... ok
+test targetable_while_rising_lets_the_knight_lock_on_the_tick_the_rise_begins ... ok
+test hidden_immune_false_lets_a_fireball_hit_a_hidden_tesla ... ok
+test under_the_rising_phase_arm_a_knight_targets_a_rising_tesla_before_it_is_up ... ok
+test a_knight_entering_sight_starts_the_rise_next_tick_up_after_up_time_and_the_first_shot_follows ... ok
+test under_the_shipped_rise_law_a_knight_entering_sight_surfaces_the_tesla_attacking_and_its_first_shot_lands_seven_ticks_later ... ok
+test a_two_seat_hide_scene_is_its_own_mirror_every_tick ... ok
+test a_fireball_on_a_hidden_tesla_changes_nothing_and_on_an_up_tesla_deals_the_data_damage ... ok
+test starts_hidden_false_stands_the_tesla_up_at_deploy_end_and_it_goes_under_after_hide_time ... ok
+test a_hidden_tesla_is_not_targeted_by_a_giant_that_sees_it_but_that_it_cannot_see ... ok
+test under_the_shipped_rise_law_losing_its_target_sends_the_tesla_under_six_ticks_later ... ok
+test under_the_shipped_rise_law_a_knight_mid_swing_on_a_deploying_tesla_drops_it_on_the_surfacing_tick_and_reacquires_it_the_next ... ok
+test a_hidden_tesla_still_dies_at_lifetime_expiry ... ok
+test hide_delay_time_since_last_shot_counts_from_the_shot_not_from_the_kill ... ok
+test under_the_shipped_rise_law_an_enemy_in_reach_at_the_waits_end_is_taken_without_going_under ... ok
+test under_the_shipped_rise_law_targetable_while_rising_moves_nothing_and_the_knight_locks_on_the_tick_after_the_surfacing ... ok
+test under_the_shipped_rise_law_hide_delay_time_since_last_shot_still_counts_hide_time_from_the_shot ... ok
+test rise_trigger_separates_sight_from_attack_range_on_a_card_whose_sight_exceeds_its_range ... ok
+test under_the_shipped_rise_law_a_snapshot_taken_on_the_surfacing_tick_resumes_hash_for_hash ... ok
+test a_snapshot_taken_mid_rise_resumes_hash_for_hash ... ok
+test the_loader_refuses_a_partial_hide_block_and_reads_teslas_whole ... ok
+
+test result: ok. 25 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.26s
+
+     Running tests\hook_buildings.rs (target\gate\deps\hook_buildings-3a2dada432a4fe95.exe)
+
+running 3 tests
+test the_shipped_value_is_client_pull_self ... ok
+test the_old_arm_walks_to_melee_range ... ok
+test the_new_arm_hooks_the_tower_and_pulls_him_to_it ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\hook_drag_route.rs (target\gate\deps\hook_drag_route-b7a14059b764c274.exe)
+
+running 5 tests
+test the_shipped_value_is_dropped ... ok
+test the_old_arm_walks_back_to_the_held_route ... ok
+test the_dragged_giant_walks_on_from_where_the_drag_left_it ... ok
+test a_knight_that_attacks_after_the_drag_runs_the_same_under_both_arms ... ok
+test the_scene_leaves_the_held_route_behind_the_giant ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\hook_first_strike.rs (target\gate\deps\hook_first_strike-7ce903fe06298d6d.exe)
+
+running 1 test
+test the_first_hit_lands_on_the_release_tick ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\hook_landing.rs (target\gate\deps\hook_landing-dd203a98958c7961.exe)
+
+running 3 tests
+test the_shipped_value_is_client_hook_point ... ok
+test the_old_arm_leaves_the_victim_where_it_walked ... ok
+test the_new_arm_sets_the_victim_onto_the_hook ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\hook_release.rs (target\gate\deps\hook_release-7230a3240c259e1a.exe)
+
+running 3 tests
+test the_shipped_arm_idles_it_a_tick ... ok
+test the_victim_idles_the_tick_after_the_stop ... ok
+test the_old_arm_frees_it_the_tick_after_the_stop ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\hook_transform.rs (target\gate\deps\hook_transform-6b4f1bace2aa972f.exe)
+
+running 2 tests
+test a_hook_that_lands_on_a_broken_cart_drags_nothing ... ok
+test a_cart_that_breaks_mid_drag_ends_the_drag_and_frees_the_fisherman ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\idle_buff.rs (target\gate\deps\idle_buff-4bd4b0e4957b207a.exe)
+
+running 4 tests
+test the_super_knights_shield_leaves_1_while_it_idles_and_202_while_it_attacks ... ok
+test an_idle_evo_knight_takes_80_of_a_202_hit ... ok
+test the_idle_buffs_return_is_state ... ok
+test the_loader_walks_the_idle_chain_through_the_buff_refusal ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.24s
+
+     Running tests\illegal_troop_tap.rs (target\gate\deps\illegal_troop_tap-7024d1171252cc77.exe)
+
+running 4 tests
+test the_play_path_takes_the_tap ... ok
+test a_single_on_the_enemy_half_stands_on_the_own_front_row ... ok
+test a_bridge_tap_into_an_open_lane_stands ... ok
+test a_bridge_tap_plays_as_the_tap_behind_the_river ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\invisibility.rs (target\gate\deps\invisibility-e0765d4623fcf9c0.exe)
+
+running 6 tests
+test the_loader_reads_the_ghosts_idle_invisibility ... ok
+test a_zap_lands_on_an_invisible_ghost ... ok
+test the_tower_first_targets_the_ghost_on_the_tick_after_its_first_hit ... ok
+test the_tower_drops_the_ghost_46_ticks_after_its_last_hit ... ok
+test the_exported_invisible_bit_is_the_targeting_predicate ... ok
+test the_ghosts_reveal_is_state ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running tests\jump16402.rs (target\gate\deps\jump16402-de8eaf666cd3aca6.exe)
+
+running 9 tests
+test every_live_hop_replays_from_its_trigger_frame ... ok
+test a_ground_unit_chasing_a_flying_target_takes_the_boxed_cell ... ok
+test a_jumper_routes_across_priced_water_where_a_walker_takes_the_bridge ... ok
+test a_jumper_whose_next_node_is_a_bridge_cell_walks_across ... ok
+test the_shipped_cards_json_carries_the_jump_blocks_and_the_shipped_hog_leaps ... ok
+test the_hog_rider_reproduces_through_the_engine ... ok
+test the_prince_reproduces_through_the_engine_with_its_run_up_held_across_the_leap ... ok
+test the_walk_priced_water_foil_walks_the_river_at_speed ... ok
+test the_leap_is_deterministic_and_survives_a_save_mid_air ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\jump_landing_contact.rs (target\gate\deps\jump_landing_contact-9298ec88875d3312.exe)
+
+running 2 tests
+test client_next_tick_ships ... ok
+test a_lander_is_no_contact_body_on_its_landing_tick_under_client_next_tick ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\jump_landing_scope.rs (target\gate\deps\jump_landing_scope-45f9d22677c022ad.exe)
+
+running 1 test
+test a_lander_is_no_body_for_its_landing_ticks_first_updates_under_whole_tick ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
+     Running tests\kamikaze_contact.rs (target\gate\deps\kamikaze_contact-a84f75c5f9f69b35.exe)
+
+running 2 tests
+test a_dying_kamikaze_pushes_nobody ... ok
+test as_doomed_pushes_with_the_dying_kamikaze ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\kamikaze_launch_pass.rs (target\gate\deps\kamikaze_launch_pass-fc9c6d377d2c96aa.exe)
+
+running 1 test
+test a_walker_holding_a_kamikaze_takes_its_next_target_on_the_launch_tick_under_client15535_gone_at_launch ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\kamikaze_mutual_launch.rs (target\gate\deps\kamikaze_mutual_launch-071bd9bc752fb3bf.exe)
+
+running 3 tests
+test a_holder_that_is_no_launching_kamikaze_still_lets_it_go ... ok
+test the_engines_arm_launches_both ... ok
+test a_launching_spirit_launches_at_one_that_launched_before_it_under_client15535_launcher_reads_start ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\king_area_spawn_unit.rs (target\gate\deps\king_area_spawn_unit-32c2fa230bf7e46e.exe)
+
+running 2 tests
+test the_old_arm_lays_the_tap_where_it_was_given ... ok
+test spawn_unit_relocates_a_goblins_tap_on_the_own_king_to_row_0 ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\knockback.rs (target\gate\deps\knockback-0a55b3cef66b3998.exe)
+
+running 5 tests
+test two_pushes_on_one_unit_in_one_tick_follow_the_stacking_rule_of_each_arm ... ok
+test settle_never_leaves_a_ground_unit_on_water_off_the_arena_or_in_a_footprint ... ok
+test sweep_building_footprints ... ok
+test sweep_arena_edges ... ok
+test sweep_river_banks_and_bridges ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.51s
+
+     Running tests\knockback16402.rs (target\gate\deps\knockback16402-9af7496e785ebab0.exe)
+
+running 9 tests
+test the_length_is_capped_at_max_pushback_length ... ok
+test the_live_giant_ladder_is_reproduced_step_for_step ... ok
+test the_back_step_drops_the_path_and_the_next_tick_replans ... ok
+test a_victim_on_the_impact_goes_by_the_zero_vector_rule ... ok
+test the_charge_tail_runs_inside_the_ladder ... ok
+test deploying_units_ignore_pushback_and_the_water_edge_under_the_ladder ... ok
+test a_rotation_symmetric_pair_of_pushes_keeps_the_battle_its_own_mirror ... ok
+test the_ladder_is_deterministic_and_survives_a_save_mid_way ... ok
+test each_log_arm_pushes_an_off_axis_knight_from_its_own_source_where_a_fireball_pushes_it_radially ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.18s
+
+     Running tests\knocked_doomed_avoidance.rs (target\gate\deps\knocked_doomed_avoidance-13806d4c8b5b4374.exe)
+error: test failed, to rerun pass `--test knocked_doomed_avoidance`
+
+Caused by:
+  could not execute process `C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\crates\royalesim\target\gate\deps\knocked_doomed_avoidance-13806d4c8b5b4374.exe` (never executed)
+
+Caused by:
+  An Application Control policy has blocked this file. (os error 4551)
+     Running tests\knocked_target_hold.rs (target\gate\deps\knocked_target_hold-ccdeb47f06eb9bab.exe)
+
+running 2 tests
+test the_shipped_arm_keeps_a_knocked_units_target ... ok
+test a_recoiling_sparky_lets_a_target_past_its_sight_go ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\ladder_end_route.rs (target\gate\deps\ladder_end_route-20303cc267d7bc7a.exe)
+
+running 1 test
+test a_knockback_ladder_leaves_the_route_under_the_15535_arm ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\ladder_path_request.rs (target\gate\deps\ladder_path_request-ab0b498f06c6285f.exe)
+
+running 3 tests
+test the_shipped_value_is_ladder_end ... ok
+test a_knocked_unit_with_no_route_plans_on_its_ladder_under_client15535_on_ladder ... ok
+test the_old_value_plans_only_when_the_ladder_ends ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\launch_beyond_cancel.rs (target\gate\deps\launch_beyond_cancel-ac57be8cbe497ad2.exe)
+
+running 4 tests
+test the_shipped_value_is_not_launched ... ok
+test a_launch_inside_the_cancel_range_is_made_under_not_launched ... ok
+test the_old_value_launches ... ok
+test a_launch_past_the_cancel_range_is_not_made_under_not_launched ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\launch_beyond_position.rs (target\gate\deps\launch_beyond_position-d4f4642584f7a8ef.exe)
+
+running 3 tests
+test the_shipped_value_is_start_of_tick ... ok
+test a_tower_lets_go_of_a_target_past_reach_after_its_launch_under_client15535_after_move ... ok
+test the_old_value_holds_it ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\launch_past_target.rs (target\gate\deps\launch_past_target-2db13a6713c9f3cc.exe)
+
+running 2 tests
+test a_homing_shot_starts_its_radius_out_past_a_near_target ... ok
+test the_shipped_arm_starts_it_no_farther_than_the_target ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests\legacy_avoidance.rs (target\gate\deps\legacy_avoidance-248b9ccbf425805e.exe)
+
+running 2 tests
+test a_legacy_walker_does_not_step_around_an_attached_rider ... ok
+test a_legacy_walker_does_not_step_around_a_miner_under_ground ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests\levels.rs (target\gate\deps\levels-955da6ee75845927.exe)
+
+running 5 tests
+test the_fixture_measures_95_of_109_rows_and_names_every_miss ... ok
+test the_crown_towers_scale_on_the_globals_percent_ladder_the_live_captures_measured ... ok
+test the_loader_takes_its_rarities_from_the_file_and_refuses_an_unknown_reading ... ok
+test every_live_max_hp_is_the_engines_scaled_hitpoints ... ok
+test the_card_rarity_reading_is_refuted_by_the_live_rows ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.21s
+
+     Running tests\life_state_aim.rs (target\gate\deps\life_state_aim-68126472388bea13.exe)
+
+running 6 tests
+test both_keys_ship_their_new_arms ... ok
+test the_first_look_reads_the_post_move_position_under_the_old_arm ... ok
+test the_first_look_reads_the_start_of_tick_position_under_the_new_arm ... ok
+test a_lost_aim_is_re_picked_when_the_wave_is_due_under_the_old_arm ... ok
+test a_lost_aim_is_re_picked_on_the_tick_and_held_under_the_new_arm ... ok
+test a_wake_from_sleep_reads_the_post_move_position_under_the_new_arm ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\life_state_wave.rs (target\gate\deps\life_state_wave-e9f8a21ea97281d5.exe)
+
+running 5 tests
+test both_keys_ship_at_their_new_arms ... ok
+test the_wave_point_is_normalised_then_rotated ... ok
+test a_wave_stands_on_its_creation_point_on_its_first_frame ... ok
+test the_one_division_arm_puts_the_unpushed_wave_on_its_point ... ok
+test the_old_first_update_arm_pushes_the_wave_on_its_creation_tick ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\lifetime.rs (target\gate\deps\lifetime-b18562644a0460b0.exe)
+
+running 11 tests
+test a_troop_with_a_lifetime_is_still_refused_as_a_death_spawn ... ok
+test the_2018_cannon_cart_stays_refused ... ok
+test a_troop_lifetime_expires_under_the_expiry_arm ... ok
+test only_buildings_and_transformation_targets_carry_a_lifetime ... ok
+test a_card_with_no_lifetime_never_drains ... ok
+test damage_comes_off_the_drained_pool_and_brings_the_death_forward_by_its_own_ticks ... ok
+test a_tombstone_that_bleeds_out_still_leaves_its_death_spawn ... ok
+test the_expiry_arm_keeps_the_hitpoints_and_kills_at_the_column ... ok
+test the_drain_rate_is_two_truncating_divisions_of_the_cards_own_numbers ... ok
+test a_snapshot_mid_drain_resumes_hitpoint_for_hitpoint ... ok
+test a_building_bleeds_its_lifetime_away_tick_by_tick_and_dies_when_the_pool_is_empty ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.32s
+
+     Running tests\line_frame.rs (target\gate\deps\line_frame-601c88903517274c.exe)
+error: test failed, to rerun pass `--test line_frame`
+
+Caused by:
+  could not execute process `C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\crates\royalesim\target\gate\deps\line_frame-601c88903517274c.exe` (never executed)
+
+Caused by:
+  An Application Control policy has blocked this file. (os error 4551)
+     Running tests\line_lane.rs (target\gate\deps\line_lane-a61c06f642befc61.exe)
+
+running 2 tests
+test a_line_kept_in_its_lane_is_laid_alike ... ok
+test a_line_moved_over_the_middle_takes_its_centres_lane_under_client15535_line_centre ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\line_placement.rs (target\gate\deps\line_placement-8a765d258c5aa320.exe)
+
+running 3 tests
+test the_royal_recruits_line_stands_where_the_client_put_it ... ok
+test a_line_is_taken_on_its_own_princess_box_and_refused_on_an_enemy_building ... ok
+test a_line_put_down_stands_where_the_client_put_it ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+
+     Running tests\little_prince.rs (target\gate\deps\little_prince-e758a162b7dd5605.exe)
+
+running 6 tests
+test his_guards_charge_hits_a_knight_near_its_path_once ... ok
+test his_guard_appears_behind_him_and_charges_to_a_fixed_point_ahead ... ok
+test his_guards_charge_pushes_by_a_ladder_rearmed_every_tick ... ok
+test his_guards_first_hit_after_its_charge_is_a_whole_swing_on ... ok
+test a_stun_starts_his_ramp_again ... ok
+test his_shots_quicken_twice_after_his_third_and_sixth ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\live_bottle_taps.rs (target\gate\deps\live_bottle_taps-b939c4f75c45ea47.exe)
+
+running 6 tests
+test the_shipped_value_is_the_new_one ... ok
+test the_other_sides_bottle_is_not_read ... ok
+test a_candidate_on_another_own_bottle_does_not_fit ... ok
+test the_old_value_lays_the_tap_on_the_bottle ... ok
+test a_tap_on_a_live_own_bottle_is_laid_a_tile_over ... ok
+test a_tap_after_the_release_is_not_moved ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\load_first_hit_kill_wait.rs (target\gate\deps\load_first_hit_kill_wait-e366fa16a492b7fa.exe)
+
+running 2 tests
+test the_shipped_arm_waits ... ok
+test a_sparky_whose_target_dies_mid_swing_takes_the_next_at_once ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\load_first_hit_leave.rs (target\gate\deps\load_first_hit_leave-3d7fdef477936c9b.exe)
+
+running 2 tests
+test the_shipped_arm_runs_the_timer_on ... ok
+test a_leaving_sparky_gets_its_windup_back ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\load_timer_target_loss.rs (target\gate\deps\load_timer_target_loss-52fe92ef7314fae9.exe)
+
+running 8 tests
+test the_shipped_arm_runs_on ... ok
+test the_old_arm_runs_a_stunned_units_timer_down ... ok
+test the_old_arm_runs_it_on ... ok
+test a_stunned_unit_keeps_its_load_timer ... ok
+test a_dead_loss_runs_it_on_under_the_held_arm ... ok
+test an_unheld_live_loss_runs_it_on_under_the_held_arm ... ok
+test the_timer_stands_after_a_walking_loss ... ok
+test a_knockback_ladder_runs_the_load_timer_under_client15535_stands_while_held ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\loadable_census.rs (target\gate\deps\loadable_census-5ecea099f1d720ec.exe)
+
+running 5 tests
+test a_first_clause_ends_at_a_colon_or_semicolon_outside_parentheses ... ok
+test the_comparison_names_every_row_that_moved ... ok
+test the_census_of_a_small_file_is_exact ... ok
+test the_2018_table_loads_exactly_the_pinned_rows ... ok
+test the_15535_table_loads_exactly_the_pinned_rows ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests\lost_target_swing.rs (target\gate\deps\lost_target_swing-b3c1e5acc1496ae9.exe)
+
+running 3 tests
+test the_shipped_value_is_cancelled ... ok
+test a_swing_runs_on_onto_a_target_in_reach_after_its_target_turns_ghost ... ok
+test the_old_value_restarts_the_swing ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\lumberjack.rs (target\gate\deps\lumberjack-000c06609a944d2d.exe)
+
+running 4 tests
+test an_enemy_princess_tower_beside_the_death_loses_54_on_x_plus_13 ... ok
+test an_own_knight_inside_walks_raged_from_x_plus_13 ... ok
+test an_enemy_knight_beside_the_death_loses_179_on_x_plus_13 ... ok
+test the_loader_reads_the_death_area_as_the_bottles_fuse_over_the_rage ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running tests\mana_on_death.rs (target\gate\deps\mana_on_death-7a56285bcd0098df.exe)
+
+running 5 tests
+test each_elixir_golem_generation_pays_the_opponent ... ok
+test the_payment_is_capped_at_ten ... ok
+test under_the_elixir_arm_the_same_row_fills_the_opponent_to_ten ... ok
+test a_death_pays_the_other_side_in_thousandths_of_an_elixir ... ok
+test two_deaths_on_one_tick_pay_the_sum ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running tests\mechanics.rs (target\gate\deps\mechanics-e9da5b13ff23ac6f.exe)
+
+running 20 tests
+test planners_agree_air_is_one_straight_leg_and_ground_is_not ... ok
+test separation_is_independent_of_insertion_order ... ok
+test range_is_edge_to_edge_1600_vs_radius_500 ... ok
+test ranged_damage_comes_from_the_projectile_and_lands_on_arrival ... ok
+test equal_split_moves_both_equally ... ok
+test mass_weighted_golem_barely_moves_skeleton_moves_far ... ok
+test two_units_that_kill_each_other_on_the_same_tick_both_die ... ok
+test valkyrie_splash_is_centred_on_the_valkyrie_not_her_target ... ok
+test hog_rider_retargets_to_a_cannon_exactly_when_it_enters_sight ... ok
+test giant_targets_only_buildings_and_never_hits_a_troop ... ok
+test opposing_giants_pass_each_other_on_a_bridge ... ok
+test melee_unit_attacks_from_range_plus_both_radii_without_moving ... ok
+test target_is_locked_once_the_windup_has_started ... ok
+test a_unit_pushed_into_a_footprint_is_pushed_back_out ... ok
+test default_tower_follows_lane_by_x_and_falls_back_to_the_king ... ok
+test default_tower_is_decided_in_the_units_own_frame ... ok
+test hog_rider_is_not_bulldozed_back_across_the_river_by_a_giant ... ok
+test air_units_ignore_the_grid ... ok
+test the_three_path_models_produce_distinguishable_tracks ... ok
+test no_path_model_ever_puts_a_ground_unit_on_water ... ok
+
+test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running tests\mighty_miner.rs (target\gate\deps\mighty_miner-67f17ee0fac0df2d.exe)
+
+running 3 tests
+test his_button_is_a_champions ... ok
+test his_press_drops_a_bomb_and_takes_him_under_ground_to_the_other_lane ... ok
+test his_bomb_strikes_and_pushes_twenty_ticks_after_the_trigger ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\minion_giant.rs (target\gate\deps\minion_giant-4fa1c7e2f16916d4.exe)
+
+running 1 test
+test the_minion_giant_loads_last_and_plays_its_datamined_card ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\mirror.rs (target\gate\deps\mirror-41fef287a30b2e60.exe)
+
+running 39 tests
+test centre_line_units_really_start_on_the_centre_line ... ok
+test equidistant_tie_is_really_a_tie ... ok
+test mirror_check_rejects_the_reflection ... ok
+test every_asymmetric_calib_key_is_selectable_from_python ... ok
+test mirror_check_itself_detects_an_asymmetry ... ok
+test fireball_cross_really_lands_on_a_deploying_knight_at_the_impact ... ok
+test mirror_goblin_drill_to_the_enemy_side ... ok
+test mirror_fireballs_land_on_each_others_troops_on_one_tick ... ok
+test mirror_knights_meet_head_on ... ok
+test mirror_delivery_and_curse ... ok
+test mirror_graveyard ... ok
+test mirror_knight_vs_knight_single_unit ... ok
+test mirror_equidistant_target_tie ... ok
+test mirror_collector_and_furnace ... ok
+test mirror_logs_roll_through_each_other_on_the_centre_column ... ok
+test mirror_miner_to_the_enemy_side ... ok
+test mirror_miner_to_its_own_side ... ok
+test a_summon_on_the_flip_band_is_symmetric_only_in_its_own_frame ... ok
+test mirror_clone ... ok
+test mirror_push_to_exactly_mid_river_ejects_to_each_seats_own_bank ... ok
+test mirror_transformations ... ok
+test mirror_vines_and_void ... ok
+test mirror_building_targeter_vs_defensive_building ... ok
+test mirror_skeleton_barrel_and_suspicious_bush ... ok
+test mirror_riders ... ok
+test mirror_zap_arrows_and_goblin_barrels_from_both_seats ... ok
+test twin_giants_on_one_bridge_is_not_a_symmetric_configuration ... ok
+test mirror_multi_unit_archers_minions_skeletons ... ok
+test mirror_ronin_elixir_golem_and_lumberjack ... ok
+test the_symmetric_config_is_a_calibration_the_loader_accepts ... ok
+test the_shipped_search_is_absolute_grid_not_seat_symmetric ... ok
+test mirror_knight_vs_knight_full_battle_is_a_draw ... ok
+test mirror_splash_vs_swarm ... ok
+test mirror_scripted_full_battle_is_a_draw ... ok
+test mirror_multi_unit_on_the_centre_line ... ok
+test mirror_hand_played_mirror_empress_collector_and_tunnellers ... ok
+test mirror_musketeers_mother_witch_and_rune_giant ... ok
+test mirror_multi_unit_deploys_through_deploy_with_red_first ... ok
+test mirror_holds_under_every_path_and_push_model ... ok
+
+test result: ok. 39 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.69s
+
+     Running tests\mirror_card.rs (target\gate\deps\mirror_card-3ac58984bd3ab098.exe)
+
+running 9 tests
+test the_loader_reads_the_mirror_and_its_level_offset ... ok
+test a_copy_past_the_last_level_is_refused_and_debits_nothing ... ok
+test with_nothing_to_copy_the_mirror_is_refused_and_a_refused_play_is_not_recorded ... ok
+test the_copy_stands_one_level_up ... ok
+test a_fireball_copy_is_the_fireball_cast_one_level_up ... ok
+test a_mirror_replays_the_last_card_one_level_up_for_its_cost_plus_its_own ... ok
+test the_copy_is_placed_by_the_copied_cards_rule ... ok
+test the_last_play_survives_a_save ... ok
+test the_last_play_is_state_where_a_mirror_is_in_the_deck_and_only_there ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running tests\monk_combo.rs (target\gate\deps\monk_combo-957fa47bae58e31a.exe)
+
+running 4 tests
+test the_shipped_values_are_the_measured_arms_since_the_round_12_flip ... ok
+test the_hits_run_140_140_422_across_a_kill ... ok
+test the_third_hit_pushes_the_target_away_from_the_hit_tick ... ok
+test the_every_row_arm_starts_a_walking_monk_and_mighty_miner_within_range_plus_the_target_radius ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\monk_deflect.rs (target\gate\deps\monk_deflect-8378e74d1c82aee3.exe)
+
+running 4 tests
+test a_shot_at_him_is_caught_at_his_deflect_areas_edge ... ok
+test a_giant_on_him_is_not_pushed_by_him_while_it_is_active ... ok
+test a_giant_walking_into_him_does_not_move_him_while_it_is_active ... ok
+test the_deflect_holds_the_monk_cuts_every_hit_to_35_percent_and_sends_the_shots_back ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\net_initial_cooldown.rs (target\gate\deps\net_initial_cooldown-989d196a532b25b8.exe)
+
+running 3 tests
+test the_shipped_value_is_after_deploy ... ok
+test his_first_net_comes_9_ticks_after_he_takes_a_target_in_reach_as_his_deploy_ends ... ok
+test the_old_value_waits_out_the_deploy_first ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\net_launch.rs (target\gate\deps\net_launch-5c6c8f8a7eadc9cd.exe)
+
+running 3 tests
+test the_shipped_value_is_extra_and_wait ... ok
+test the_old_value_starts_it_the_extra_out_and_waits ... ok
+test his_net_starts_at_his_edge_plus_its_extra_and_steps_next_tick_under_client15535_edge_next_tick ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\observable.rs (target\gate\deps\observable-df9509ae92d6698e.exe)
+
+running 7 tests
+test the_catalogue_names_each_cards_evolution_cycle ... ok
+test the_row_carries_the_four_columns_after_the_mount ... ok
+test a_clones_copy_carries_bit_5 ... ok
+test a_princes_run_up_is_watched_and_a_knights_is_not ... ok
+test a_miner_under_ground_carries_its_landing_point ... ok
+test a_monks_deflect_is_active_with_its_ticks_left ... ok
+test an_inferno_towers_ramp_climbs_on_its_target ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\oracle2026.rs (target\gate\deps\oracle2026-68d14d77eb31b2ec.exe)
+
+running 13 tests
+test g4_the_goal_rule_holds_two_sided_on_every_oracle_path ... ok
+test the_half_tile_cannon_offsets_are_duplicate_experiments ... ok
+test g6_fixture_each_king_is_owned_by_the_side_whose_half_it_stands_in ... ok
+test the_occlusion_box_admits_every_path_the_game_took ... ok
+test g3_the_oracle_paths_are_legal_under_the_engines_grid ... ok
+test the_two_rival_occlusion_shapes_are_the_ones_the_corpus_refutes ... ok
+test the_fixtures_reach_is_the_card_datas ... ok
+test g1_engine_path_costs_exactly_what_the_oracle_path_costs ... ok
+test g5_the_engine_path_is_eight_connected_and_never_revisits_a_cell ... ok
+test a_box_is_priced_and_only_the_goal_may_sit_on_the_bit_sixteen_block ... ok
+test g6_the_trace_fitted_arm_is_still_runnable_and_still_wrong_about_the_order ... ok
+test g6_the_client_search_reproduces_every_published_node_sequence ... ok
+test g6_friendly_only_occlusion_is_a_control_the_published_paths_refute ... ok
+
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.16s
+
+     Running tests\own_building_taps.rs (target\gate\deps\own_building_taps-494dee5a0f063719.exe)
+
+running 5 tests
+test the_shipped_values_are_the_measured_arms ... ok
+test a_ring_relocation_goes_to_the_tile_nearest_the_raw_tap ... ok
+test a_scenario_building_is_laid_where_a_play_tapped_there_lands ... ok
+test a_heal_cast_on_an_own_cannon_releases_its_spirit_where_the_troops_go ... ok
+test a_troop_tap_on_an_own_cannon_goes_where_the_client_laid_it ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.26s
+
+     Running tests\parry.rs (target\gate\deps\parry-a41550c24261c823.exe)
+
+running 18 tests
+test parry_pick_orders_by_creation_then_amount ... ok
+test a_counter_graph_of_another_shape_is_refused ... ok
+test the_loader_reads_the_ronins_counter ... ok
+test a_countered_hit_leaves_the_ronin_standing ... ok
+test the_counter_is_ready_while_deploying ... ok
+test the_reflect_is_not_scaled_by_the_ronins_level ... ok
+test a_reflect_is_never_itself_countered ... ok
+test a_counter_whose_attacker_dies_first_answers_nothing ... ok
+test the_countered_attacker_keeps_its_target_and_swings_at_a_twentieth ... ok
+test a_ready_counter_takes_nothing_and_the_attacker_takes_twice_its_hit_six_ticks_later ... ok
+test same_tick_hits_are_picked_by_the_arm ... ok
+test the_next_counter_is_ready_seventy_ticks_after_the_counter ... ok
+test a_row_that_stops_the_walk_but_not_the_clock_is_not_a_stun ... ok
+test same_tick_hits_are_picked_by_creation_not_by_slot ... ok
+test the_counter_restarts_the_ronins_own_swing ... ok
+test only_a_ground_melee_hit_is_countered ... ok
+test a_reflect_in_flight_survives_a_save ... ok
+test the_counter_cooldown_is_state ... ok
+
+test result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.16s
+
+     Running tests\pass_kill_chase.rs (target\gate\deps\pass_kill_chase-4f39d9bedb0e0af6.exe)
+
+running 2 tests
+test in_reach_both_arms_wait ... ok
+test a_chaser_out_of_reach_takes_its_next_target_on_the_kill_tick ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests\pellet_building_reach.rs (target\gate\deps\pellet_building_reach-45c8569f505d0499.exe)
+
+running 2 tests
+test the_shipped_arm_reaches_the_square ... ok
+test a_pellet_reaches_a_buildings_square_under_client15535_rounded_square ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\placement.rs (target\gate\deps\placement-ed839c5e982f0c2c.exe)
+
+running 9 tests
+test a_cannon_never_stands_where_its_footprint_does_not_fit ... ok
+test a_cannon_is_three_tiles_and_a_tesla_is_two ... ok
+test flush_against_a_tower_is_legal_and_one_tile_in_is_not ... ok
+test an_unfittable_tap_moves_rather_than_being_refused ... ok
+test the_refuse_arm_still_refuses ... ok
+test odd_sizes_take_a_tile_centre_and_even_sizes_a_corner ... ok
+test a_troop_may_stand_inside_a_building_box ... ok
+test both_seats_place_a_rotated_tap_the_same_way ... ok
+test a_deploy_reports_the_point_the_building_took ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\post_kill_wait.rs (target\gate\deps\post_kill_wait-6c5ec3448c25c59f.exe)
+
+running 5 tests
+test the_shipped_arm_is_the_attack_finish_condition ... ok
+test projectile_homing_is_read_from_the_card_table ... ok
+test every_attack_finish_override_unit_is_one_the_card_table_knows ... ok
+test every_unit_on_the_post_kill_wait_list_is_one_the_card_table_knows ... ok
+test a_multi_unit_cards_members_carry_the_games_unit_name ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\post_kill_wait_heading.rs (target\gate\deps\post_kill_wait_heading-b2343018c6c4f357.exe)
+
+running 1 test
+test a_waiting_unit_blocks_a_walker_on_every_tick_of_its_wait ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.18s
+
+     Running tests\press_route.rs (target\gate\deps\press_route-e43e7f4be2283978.exe)
+
+running 1 test
+test a_ground_heros_press_plans_its_route_afresh_under_client15535_replanned ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\projectile_hold_scope.rs (target\gate\deps\projectile_hold_scope-2afd389e83c69a13.exe)
+
+running 5 tests
+test the_shipped_value_is_client_troop_in_attack ... ok
+test the_old_value_holds_the_walking_troops_target ... ok
+test a_walking_troop_takes_a_nearer_enemy_inside_its_hold ... ok
+test a_troop_in_its_attack_holds_a_leaving_target ... ok
+test with_no_nearer_enemy_the_walker_keeps_its_target ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\projectile_y_offset.rs (target\gate\deps\projectile_y_offset-4593e0461730beda.exe)
+
+running 6 tests
+test the_shipped_value_is_client_forward_y_and_the_king_tower_is_the_only_loaded_row_with_the_column ... ok
+test the_old_arm_bears_a_king_shot_at_the_start_radius_point ... ok
+test the_moved_start_lands_the_first_hit_a_tick_earlier ... ok
+test a_king_shot_is_born_past_its_start_radius_point_along_its_own_forward_y ... ok
+test a_princess_shot_is_born_at_the_start_radius_point_under_both_arms ... ok
+test a_hero_row_applies_its_offset_under_both_arms_once ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\push_load_timer.rs (target\gate\deps\push_load_timer-d349256f9b385c20.exe)
+
+running 6 tests
+test the_shipped_value_is_the_new_one ... ok
+test a_pushed_unit_reenters_with_its_load_timer_run_down ... ok
+test the_old_value_resets_the_timer_and_swings_late ... ok
+test a_unit_back_after_its_load_time_swings_the_same_on_both_values ... ok
+test the_old_value_reloads_the_pushed_musketeers_timer ... ok
+test a_pushed_musketeer_keeps_the_unpushed_controls_load_timer ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.19s
+
+     Running tests\random_delay_stream.rs (target\gate\deps\random_delay_stream-a26809faa0614618.exe)
+
+running 3 tests
+test the_shipped_arm_draws_from_the_battle_stream ... ok
+test a_volley_draws_its_delays_from_the_battle_stream ... ok
+test the_old_arm_leaves_the_battle_stream ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\reach.rs (target\gate\deps\reach-4c520fc8583af652.exe)
+
+running 8 tests
+test a_melee_first_hit_lands_hit_speed_minus_load_time_after_the_target_came_into_range ... ok
+test the_princess_towers_first_arrow_leaves_hit_speed_minus_load_time_after_it_takes_the_target ... ok
+test the_charged_hit_lands_on_the_arrival_tick_with_no_load_time_windup ... ok
+test a_tower_arrow_is_born_at_the_start_radius_and_takes_its_first_step_the_next_tick ... ok
+test a_melee_unit_stops_at_range_plus_both_radii_from_a_crown_tower ... ok
+test the_same_reach_holds_against_a_building_whose_radius_differs ... ok
+test a_swing_at_remainder_tick_ms_does_not_survive_the_target_stepping_out_of_reach ... ok
+test every_reach_and_cycle_candidate_moves_a_measurable_behaviour_and_the_loader_refuses_the_rest ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running tests\reach_loss_switch.rs (target\gate\deps\reach_loss_switch-038ae1355a0ae3d6.exe)
+
+running 6 tests
+test the_shipped_values_are_projectile_attackers_only_and_keep_when_dead_or_in_reach ... ok
+test a_launch_beyond_reach_ends_the_hold_on_the_next_tick ... ok
+test a_direct_striker_switches_to_an_enemy_in_reach_and_keeps_its_swing ... ok
+test a_projectile_attacker_holds_a_leaving_target_to_reach_plus_500 ... ok
+test a_crown_tower_drops_a_started_shot_500_past_its_reach ... ok
+test with_no_other_enemy_the_swing_finishes_on_the_leaving_target ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\recoil_route.rs (target\gate\deps\recoil_route-c4e784a7780e708d.exe)
+
+running 3 tests
+test the_shipped_value_is_kept ... ok
+test the_rams_recoil_plans_a_fresh_route_under_client15535_replanned ... ok
+test the_old_value_keeps_the_route_through_the_recoil ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\reflect_attack.rs (target\gate\deps\reflect_attack-e065b847613cc511.exe)
+
+running 8 tests
+test the_card_table_gives_the_electro_giant_a_full_stop_reflect_and_no_other_card_one ... ok
+test a_princess_towers_shot_from_beyond_the_reach_is_not_answered ... ok
+test under_not_read_the_knight_hits_every_24_ticks_and_takes_nothing ... ok
+test a_plain_giant_answers_nothing ... ok
+test a_shot_launched_from_inside_the_reach_is_not_answered ... ok
+test a_hit_from_beyond_the_reach_is_not_answered ... ok
+test each_answer_is_192_the_reflected_attack_damage_at_the_battles_level ... ok
+test each_hit_on_the_electro_giant_is_answered_in_its_tick_and_the_stun_stretches_the_period_to_33 ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\release_first_update.rs (target\gate\deps\release_first_update-7427df05215fdedc.exe)
+
+running 1 test
+test a_goblin_born_on_a_skeleton_is_pushed_on_its_first_frame ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\release_timing.rs (target\gate\deps\release_timing-1c460bdf60a80c7c.exe)
+
+running 4 tests
+test a_golems_golemites_exist_on_the_tick_it_dies_moving_and_step_on_the_next ... ok
+test a_battle_rams_barbarians_exist_on_the_tick_it_dies_and_deploy_their_whole_time ... ok
+test under_the_next_spawn_phase_foil_every_release_is_a_tick_late_and_already_counting ... ok
+test a_barrels_goblins_exist_on_its_vanishing_frame_and_deploy_one_frame_longer_than_a_deploy ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.16s
+
+     Running tests\relocation_ties.rs (target\gate\deps\relocation_ties-aa6ea48b5ebd424c.exe)
+error: test failed, to rerun pass `--test relocation_ties`
+
+Caused by:
+  could not execute process `C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\crates\royalesim\target\gate\deps\relocation_ties-aa6ea48b5ebd424c.exe` (never executed)
+
+Caused by:
+  An Application Control policy has blocked this file. (os error 4551)
+     Running tests\replay_parity.rs (target\gate\deps\replay_parity-cdbc468b194fd08f.exe)
+
+running 35 tests
+test a_corpus_troop_is_resolved_on_the_board_of_its_tap_tick ... ok
+test a_scenario_deploy_seen_as_a_centroid_or_never_seen_is_played_at_its_tapped_tile ... ok
+test a_skeleton_is_looked_for_among_both_its_death_parents ... ok
+test a_buff_death_spawn_is_rooted_cardless ... ok
+test a_scheduled_death_areas_unit_is_looked_for_over_its_schedule ... ok
+test a_mirror_row_plays_the_card_it_copied ... ok
+test a_tunnelling_deploy_is_played_at_its_destination ... ok
+test a_scenario_building_row_is_laid_from_its_raw_tap ... ok
+test a_scenario_troop_row_is_played_at_its_raw_tap_under_the_snap ... ok
+test group_pairing_prefers_the_same_size_inside_the_window_and_leaves_an_extra_wave_unmatched ... ok
+test members_on_one_point_pair_by_their_first_hp ... ok
+test a_spawners_emission_whose_unit_is_a_card_is_rooted_through_its_spawner ... ok
+test a_form_row_spawns_its_form_and_its_units_score_as_the_base_card ... ok
+test a_calibration_override_reaches_the_battle_config_names_itself_and_refuses_a_key_the_ledger_lacks ... ok
+test a_skeleton_kings_soul_is_rooted_to_its_king ... ok
+test every_deploy_is_issued_the_tick_before_and_its_units_exist_on_the_recorded_tick ... ok
+test the_same_row_resolves_elsewhere_once_a_building_stands_on_its_landing_tile ... ok
+test a_prefix_play_stops_before_the_first_unloadable_deploy ... ok
+test an_evo_goblin_barrels_decoy_dummies_are_rooted_to_the_goblin_barrel ... ok
+test a_suspicious_bushs_goblins_are_rooted_to_the_bush ... ok
+test a_capture_runs_its_clients_own_mechanics ... ok
+test a_clones_copy_is_rooted_as_clone ... ok
+test the_matching_is_one_to_one_on_both_sides ... ok
+test the_cards_json_hash_is_fnv1a64_and_the_fixture_carries_the_engine_s ... ok
+test the_engine_meets_the_isolated_walk_floor_on_the_sample ... ok
+test the_sample_is_the_documented_battle_and_playable ... ok
+test the_sample_rows_are_resolved_on_their_tap_ticks ... ok
+test the_score_stops_at_the_end_only_when_both_battles_are_over ... ok
+test a_repeated_tick_is_scored_once ... ok
+test a_truth_entity_with_no_hitpoints_takes_no_pair ... ok
+test the_replay_is_deterministic ... ok
+test a_runs_overrides_are_in_its_notes_and_its_own_field_not_among_the_level_deviations ... ok
+test a_dummy_nothing_targets_is_not_scored ... ok
+test the_score_counters_are_consistent ... ok
+test a_capture_runs_the_card_values_of_the_client_that_recorded_it ... ok
+
+test result: ok. 35 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.31s
+
+     Running tests\retarget_wait_arms.rs (target\gate\deps\retarget_wait_arms-20b78678d0fd9deb.exe)
+error: test failed, to rerun pass `--test retarget_wait_arms`
+
+Caused by:
+  could not execute process `C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\crates\royalesim\target\gate\deps\retarget_wait_arms-20b78678d0fd9deb.exe` (never executed)
+
+Caused by:
+  An Application Control policy has blocked this file. (os error 4551)
+     Running tests\rider.rs (target\gate\deps\rider-8bbdfb3e483e264e.exe)
+
+running 11 tests
+test the_loader_takes_the_ram_riders_rider_and_refuses_the_shapes_it_does_not_simulate ... ok
+test the_rider_dies_with_the_ram_at_full_hp ... ok
+test after_a_landing_the_rider_takes_an_unsnared_troop_over_the_nearer_snared_one ... ok
+test the_rider_enters_at_750_and_launches_7_ticks_later_then_every_22_each_bola_landing_for_104 ... ok
+test the_rider_takes_a_troop_and_never_a_building ... ok
+test a_red_ram_rider_is_the_rotation_of_a_blue_one ... ok
+test the_rider_is_born_one_creation_after_the_ram_at_its_point_and_level_and_deploys_with_it ... ok
+test the_rider_stands_where_the_ram_stood_a_tick_before ... ok
+test nothing_targets_the_rider_and_nothing_lands_on_it ... ok
+test a_bola_landing_clears_the_riders_target_for_one_tick_and_keeps_its_progress ... ok
+test a_battle_with_a_live_rider_resumes_identically_after_a_save ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+
+     Running tests\ring_degree.rs (target\gate\deps\ring_degree-f2f0aeae919afa3c.exe)
+
+running 2 tests
+test rounded_degree_picks_the_nearest_whole_degree ... ok
+test a_death_ring_lies_at_the_rounded_degree_and_its_members_keep_the_heading ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\royal_delivery.rs (target\gate\deps\royal_delivery-d73be4cf027c50a1.exe)
+
+running 6 tests
+test the_crate_lands_on_c_plus_40 ... ok
+test it_hits_by_the_edge_air_and_ground_and_not_its_own_side ... ok
+test it_hits_an_enemy_building ... ok
+test one_recruit_for_the_caster_on_the_landing_point ... ok
+test royal_delivery_loads_as_a_centre_strike_that_releases_one_recruit ... ok
+test a_battle_saved_with_the_crate_in_the_air_resumes_it ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+     Running tests\samepath_segment.rs (target\gate\deps\samepath_segment-7f3c0709e5295b37.exe)
+
+running 4 tests
+test the_shipped_value_is_client_restarted_since_the_round_10_flip ... ok
+test a_samepath_replan_restarts_the_segment_from_the_start_of_the_tick ... ok
+test the_old_arm_keeps_the_segment ... ok
+test without_a_building_change_the_two_arms_walk_the_same_track ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\save_load.rs (target\gate\deps\save_load-767804f74dae65be.exe)
+
+running 10 tests
+test state_hash_sees_spells_in_flight ... ok
+test restore_into_an_existing_state_matches_load ... ok
+test an_enchant_naming_a_card_without_one_is_refused ... ok
+test pending_spawns_and_the_rng_round_trip ... ok
+test load_rejects_corruption_and_foreign_card_data ... ok
+test spells_in_flight_stuns_and_knockback_slides_round_trip ... ok
+test snapshot_mid_battle_actually_contains_the_hard_parts ... ok
+test save_then_load_resumes_the_identical_battle ... ok
+test save_is_reasonably_small_and_fast ... ok
+test a_snapshot_from_any_tick_resumes_the_identical_battle ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 53.55s
+
+     Running tests\scan_reach.rs (target\gate\deps\scan_reach-15ed6124bbfb3ce1.exe)
+
+running 2 tests
+test the_shipped_arm_reaches_its_own_radius ... ok
+test a_scan_sees_a_crown_tower_from_its_crown_sight_under_client15535_plus_own_radius ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\scheduled_area.rs (target\gate\deps\scheduled_area-d072bcb06eb85be3.exe)
+
+running 7 tests
+test the_first_skeleton_deploys_ten_ticks_and_is_acquirable_from_its_eighth_frame ... ok
+test the_graveyard_hits_nothing ... ok
+test each_skeleton_comes_on_its_tick_at_its_slot ... ok
+test a_slot_off_the_arena_is_clamped_and_a_slot_on_the_river_is_kept ... ok
+test a_cast_past_the_centre_line_mirrors_and_a_side_1_cast_is_the_rotation ... ok
+test the_loader_reads_the_graveyard_as_a_scheduled_area_of_twelve_entries ... ok
+test a_battle_with_a_graveyard_resumes_as_the_same_battle_and_its_clock_is_state ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.14s
+
+     Running tests\scheduled_first_update.rs (target\gate\deps\scheduled_first_update-d2aa347e99b2a023.exe)
+
+running 6 tests
+test the_shipped_value_is_client_creation_tick ... ok
+test the_new_arm_pushes_the_skeleton_on_its_creation_tick ... ok
+test the_old_arm_takes_the_push_a_tick_later ... ok
+test with_no_neighbour_both_arms_put_the_skeleton_on_its_slot ... ok
+test the_old_arm_runs_a_push_behind_on_a_crown_tower ... ok
+test the_new_arm_pushes_a_skeleton_born_in_a_crown_tower_on_its_first_frame ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\sequential_strike.rs (target\gate\deps\sequential_strike-a2d868856db05e37.exe)
+
+running 6 tests
+test the_pass_takes_the_taunt_on_the_tick_the_target_phase_does ... ok
+test a_unit_struck_down_in_the_pass_still_strikes ... ok
+test an_attackers_post_kill_wait_runs_as_under_client16402 ... ok
+test a_walker_with_its_target_in_reach_reads_the_pass_as_it_began ... ok
+test a_walker_reads_a_kill_on_its_tick_when_created_after_the_striker ... ok
+test a_strike_that_breaks_an_evo_shield_sets_off_its_blast_as_a_buffered_hit_does ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\setup_spawn_order.rs (target\gate\deps\setup_spawn_order-316075922232075f.exe)
+
+running 3 tests
+test batch_validates_everything_first_and_names_the_list_entry ... ok
+test canonical_order_is_team_then_own_frame_y_x_card_name_hp ... ok
+test setup_list_order_cannot_reach_the_battle ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.33s
+
+     Running tests\shot_at_hiding_building.rs (target\gate\deps\shot_at_hiding_building-2bdc38130b2b1e11.exe)
+
+running 2 tests
+test the_shipped_arm_drops_it ... ok
+test a_bomb_in_flight_lands_on_the_tesla_gone_under ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\skeleton_barrel.rs (target\gate\deps\skeleton_barrel-6b88a3af035b9b69.exe)
+
+running 21 tests
+test the_barrel_and_its_container_load ... ok
+test a_container_slot_on_the_river_is_put_on_the_bank ... ok
+test the_old_kamikaze_arm_keeps_the_barrel_attacking_at_full_hitpoints ... ok
+test the_container_hits_to_the_edge_air_and_deploying_units_and_spares_its_ring ... ok
+test the_death_pushback_is_the_knockback_ladder_from_the_death_point ... ok
+test the_old_arm_lays_the_container_ring_at_its_radius_with_no_slide ... ok
+test the_expire_arm_drains_a_full_hp_barrel_the_same ... ok
+test the_container_ring_slides_out_for_four_ticks_and_stops ... ok
+test an_enemy_first_targets_a_ring_skeleton_on_t_plus_19 ... ok
+test the_container_releases_its_skeletons_and_hits_on_t_plus_12 ... ok
+test a_container_bursts_where_a_covering_unit_pushes_it ... ok
+test under_units_at_fuse_end_the_skeletons_come_a_tick_before_the_hit ... ok
+test the_old_push_arm_moves_nothing ... ok
+test under_the_old_timing_both_come_on_t_plus_13 ... ok
+test only_the_arm_that_reaches_every_bomb_pushes_from_the_giant_skeletons ... ok
+test the_kamikaze_drains_53_a_tick_from_its_fire_and_is_gone_ten_ticks_later ... ok
+test the_ring_skeletons_deploy_ten_frames_and_first_step_on_t_plus_23 ... ok
+test the_container_ring_is_the_measured_seven_mirrored_by_half_and_turned_by_side ... ok
+test a_barrel_saved_mid_fuse_resumes_hash_for_hash ... ok
+test a_ring_saved_mid_slide_resumes_and_its_cap_is_state ... ok
+test a_barrel_saved_mid_drain_resumes_and_its_drain_is_state ... ok
+
+test result: ok. 21 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+     Running tests\skeleton_king.rs (target\gate\deps\skeleton_king-f6af4ef4264fb699.exe)
+
+running 12 tests
+test his_button_is_a_champions ... ok
+test the_client_generator_shuffles_his_directions ... ok
+test a_deploying_copy_is_out_of_the_contact_law ... ok
+test with_one_soul_his_copies_take_the_clients_phase ... ok
+test a_copy_drawn_onto_the_river_stands_where_the_clients_did ... ok
+test a_copy_born_on_a_unit_is_pushed_on_its_first_frame ... ok
+test three_deaths_before_the_press_make_nine ... ok
+test from_the_clients_state_his_copies_stand_where_the_clients_did ... ok
+test a_copy_drawn_onto_a_building_is_drawn_anew ... ok
+test his_press_puts_down_six_one_hitpoint_copies_every_five_ticks ... ok
+test an_ignore_resurrect_death_is_no_soul ... ok
+test a_copy_drawn_onto_a_bomb_on_its_fuse_is_drawn_anew ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests\slap_flight_targets.rs (target\gate\deps\slap_flight_targets-98b8a6cf649765bc.exe)
+
+running 2 tests
+test the_shipped_arm_leaves_a_thrown_unit_a_ground_target ... ok
+test a_ground_only_holder_lets_a_thrown_unit_go ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\snipe_repick.rs (target\gate\deps\snipe_repick-80b0f10ff51be7f1.exe)
+
+running 2 tests
+test the_clients_next_snipe_takes_her_last_target_first ... ok
+test the_engines_next_snipe_takes_the_nearest_ahead ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\soul_offset_rounding.rs (target\gate\deps\soul_offset_rounding-6c90f01bfe5e2908.exe)
+
+running 3 tests
+test the_shipped_value_is_floor ... ok
+test the_old_value_and_the_new_agree_on_every_positive_axis ... ok
+test a_copys_negative_offset_divides_toward_zero_under_client15535_toward_zero ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\soul_point_base.rs (target\gate\deps\soul_point_base-680be2d1605ea8d1.exe)
+
+running 2 tests
+test the_shipped_value_is_pre_move ... ok
+test his_copies_are_drawn_around_his_post_move_point_under_client15535_post_move ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\spawn_acquire_delay.rs (target\gate\deps\spawn_acquire_delay-535f7c7ad8553c3f.exe)
+
+running 12 tests
+test open_area_damage_lands_on_a_unit_inside_its_delay ... ok
+test under_next_spawn_phase_the_delay_counts_from_the_members_own_first_frame ... ok
+test open_a_death_damage_disc_lands_on_a_unit_inside_its_delay ... ok
+test with_the_death_spawn_slide_the_two_rules_run_side_by_side ... ok
+test open_a_hidden_tesla_rises_for_a_death_spawn_once_its_delay_is_over ... ok
+test a_hand_played_troop_is_targeted_on_its_first_frame_under_both_arms ... ok
+test the_old_arm_targets_on_f1_and_the_new_arm_ships ... ok
+test a_tombstones_periodic_skeleton_is_targeted_at_once_and_its_death_skeletons_wait ... ok
+test a_death_spawn_is_first_targeted_on_its_8th_frame ... ok
+test open_a_death_spawned_building_is_targeted_at_once ... ok
+test a_snapshot_mid_delay_resumes_hash_for_hash ... ok
+test a_snapshot_with_the_death_spawn_still_queued_resumes_hash_for_hash ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+     Running tests\spawn_chain.rs (target\gate\deps\spawn_chain-a31407035bac539f.exe)
+
+running 7 tests
+test the_chain_stops_at_max_chain_depth ... ok
+test the_level_check_walks_the_whole_chain ... ok
+test a_chain_loads_and_numbers_breadth_first ... ok
+test a_failing_link_refuses_every_card_that_reaches_it ... ok
+test every_link_reports_the_card_at_the_top ... ok
+test a_card_refused_by_a_table_row_leaves_no_unit_behind ... ok
+test the_elixir_golem_chain_loads_and_plays ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\spawn_pathfind.rs (target\gate\deps\spawn_pathfind-55e80c86bc739773.exe)
+
+running 14 tests
+test the_loader_refuses_a_tunnelling_card_of_a_shape_nobody_measured ... ok
+test the_loader_reads_both_walks_and_the_drills_building_from_its_units_row ... ok
+test the_drills_destination_is_its_buildings_footprint ... ok
+test a_tunnelling_card_goes_down_on_the_enemy_side_but_not_on_water ... ok
+test the_dig_leaves_its_building_on_the_destination_the_frame_after_its_last ... ok
+test the_digs_route_is_the_flat_cost_search_to_its_destinations_cell ... ok
+test nothing_targets_or_hits_a_miner_under_ground ... ok
+test not_modelled_refuses_a_tunnelling_card_at_the_deck_and_at_every_play ... ok
+test a_miner_walks_under_ground_at_650_and_comes_up_on_the_tile_centre_it_was_played_at ... ok
+test the_creation_step_puts_the_first_frame_more_than_one_step_out ... ok
+test the_building_deploys_20_frames_drains_from_f_plus_21_and_leaves_its_pair_on_the_x_axis ... ok
+test goblin_drill_damage_lands_on_the_buildings_first_frame ... ok
+test a_save_mid_walk_replays_the_walk ... ok
+test a_tunnellers_destination_is_state ... ok
+
+test result: ok. 14 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+     Running tests\spawn_pathfind_step.rs (target\gate\deps\spawn_pathfind_step-0783a6e8495d56fe.exe)
+
+running 4 tests
+test the_goblin_drills_dig_walks_the_recorded_tunnel ... ok
+test a_miner_played_west_walks_the_recorded_tunnel ... ok
+test a_miner_played_on_its_kings_tile_comes_up_the_tick_after_its_first_frame ... ok
+test one_step_is_the_engine_before_the_key ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\spawn_point_measured.rs (target\gate\deps\spawn_point_measured-22123ead3b494992.exe)
+
+running 6 tests
+test a_set_spawn_radius_emits_on_a_ring_and_not_forward ... ok
+test a_blank_spawn_radius_emits_at_the_tangent_of_the_two_circles ... ok
+test a_set_angle_shift_follows_the_spawners_facing ... ok
+test the_refuted_arms_still_behave_as_they_did ... ok
+test both_seats_emit_the_same_way ... ok
+test a_blank_angle_shift_does_not_follow_the_spawners_facing ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\spawn_unit_resolved.rs (target\gate\deps\spawn_unit_resolved-d531e6ff0c27f61f.exe)
+
+running 8 tests
+test an_observed_single_troops_point_is_not_resolved_on_the_board ... ok
+test an_observed_group_still_resolves ... ok
+test under_the_old_arm_the_two_lay_one_point ... ok
+test an_observed_troop_point_is_not_snapped_again ... ok
+test a_spell_goes_down_as_through_spawn_unit ... ok
+test an_observed_single_troop_behind_its_own_king_keeps_its_point ... ok
+test a_lone_building_keeps_its_own_point_under_the_tap_snap ... ok
+test an_observed_single_troop_behind_its_column_back_bound_is_not_clamped ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\spawned_first_step.rs (target\gate\deps\spawned_first_step-da28f12834b26e54.exe)
+
+running 9 tests
+test the_shipped_value_is_same_tick ... ok
+test a_death_spawn_steers_round_its_dying_building_on_its_first_frame ... ok
+test a_skeleton_emitted_beside_an_enemy_is_in_its_attack_on_its_first_frame ... ok
+test an_emitted_skeleton_takes_its_first_step_on_its_creation_tick ... ok
+test a_dying_tombstones_four_skeletons_take_one_step_together ... ok
+test a_death_spawn_pushback_rows_members_are_inert_on_the_death_frame ... ok
+test a_death_spawn_born_in_a_slot_freed_by_the_ticks_kill_still_steps ... ok
+test a_battle_with_no_spawner_and_no_death_spawn_runs_the_same_under_both_values ... ok
+test a_snapshot_under_the_new_value_resumes_hash_for_hash ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running tests\spawner.rs (target\gate\deps\spawner-40a8b8ce38c4e5fb.exe)
+
+running 20 tests
+test a_death_spawn_whose_grid_reaches_past_its_radius_is_pulled_back_onto_it ... ok
+test spawn_limit_caps_a_spawners_live_units_and_a_death_frees_a_place_at_the_next_wave ... ok
+test golem_killed_leaves_two_golemites_on_the_radius_and_its_death_damage_lands ... ok
+test lava_hound_killed_leaves_six_flying_pups ... ok
+test a_hut_with_goblins_inside_its_footprint_never_takes_a_target ... ok
+test a_battle_rams_barbarians_land_on_the_axis_to_the_tower_it_hit ... ok
+test a_witch_ring_is_created_south_west_north_east_under_client_descending_angle ... ok
+test tombstone_spawns_its_wave_of_skeletons_per_pause_on_the_predicted_ticks ... ok
+test tombstone_expiring_by_lifetime_leaves_its_death_spawn_skeletons ... ok
+test witch_spawns_a_wave_of_skeletons_interval_apart_starting_start_time_after_activation ... ok
+test a_hut_spawns_its_wave_per_pause_on_the_predicted_ticks ... ok
+test a_zap_on_a_tombstone_delays_its_next_wave_by_exactly_the_stun ... ok
+test a_symmetric_tombstone_and_golem_scene_stays_its_own_mirror_every_tick ... ok
+test under_buffed_a_zap_holds_a_tombstone_by_its_stun_under_either_stun_pauses_arm ... ok
+test loader_reads_both_blocks_from_cards_json_shares_the_unit_table_and_rejects_broken_chains ... ok
+test a_slowed_tombstone_waits_longer_under_the_shipped_buffed_and_on_time_under_tick_ms ... ok
+test every_spawner_candidate_moves_a_measurable_behaviour ... ok
+test a_snapshot_mid_countdown_and_mid_wave_resumes_hash_for_hash ... ok
+test a_dark_witch_lands_both_bats_at_once_around_her_spawn_radius_and_a_rams_barbarians_take_the_blocks_deploy_time ... ok
+test scripted_battle_with_tombstone_and_witch_keeps_every_invariant ... ok
+
+test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.28s
+
+     Running tests\spectral_first_update.rs (target\gate\deps\spectral_first_update-966e07a6bf875512.exe)
+
+running 1 test
+test a_spectral_takes_its_first_update_on_its_birth_tick_under_client15535_same_tick ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\spectral_parent_blocker.rs (target\gate\deps\spectral_parent_blocker-a8a720b3cf4d8264.exe)
+
+running 3 tests
+test the_shipped_value_is_none ... ok
+test a_spectral_turns_round_its_dying_soldier_on_its_first_frame_under_client15535_static ... ok
+test the_old_value_walks_straight ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\spell_summon.rs (target\gate\deps\spell_summon-c1abbf18712449f1.exe)
+
+running 10 tests
+test the_loader_reads_rage_as_a_fuse_and_heal_as_a_summon ... ok
+test the_rages_damage_lands_on_the_eleventh_tick_after_the_cast ... ok
+test the_heal_spirit_deploys_like_a_one_unit_troop ... ok
+test the_rage_buffs_the_casters_side_only ... ok
+test the_rages_first_raged_step_is_the_eleventh_tick_after_the_cast ... ok
+test the_heal_spirits_shot_heals_its_own_side_in_scaled_rate_pulses ... ok
+test a_unit_that_walks_out_after_the_cast_plus_82_keeps_the_full_buff_time ... ok
+test the_rage_buff_ends_sooner_when_bound_to_its_area ... ok
+test the_rage_buffs_an_own_building_inside_it ... ok
+test a_spell_objects_chain_depth_is_state ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+
+     Running tests\spells.rs (target\gate\deps\spells-f97d9e329523320e.exe)
+
+running 30 tests
+test barrel_flight_releases_nothing_until_it_lands_and_its_goblins_exist_on_the_landing_frame ... ok
+test log_pair_arms_are_accepted_alone_and_together ... ok
+test log_hits_ground_enemies_only ... ok
+test fireball_flight_launches_from_the_caster_king_and_lands_on_distance_over_speed ... ok
+test arrows_damage_scales_hits_once_per_wave_and_does_not_push ... ok
+test barrel_near_the_river_never_releases_a_goblin_onto_water ... ok
+test barrel_releases_goblins_at_the_barrel_level_with_the_barrel_deploy_time ... ok
+test area_spells_hit_air_and_ground_enemies_and_never_friends ... ok
+test log_front_edge_touching_a_tower_hits_only_when_it_rolls_minus_y_under_client15535_max_y_edge_open ... ok
+test log_pair_pushes_a_mid_roll_hit_from_the_tick_end_centre ... ok
+test log_pair_hits_on_the_landing_tick_and_pushes_from_the_next ... ok
+test log_travel_arm_pushes_forward_and_moves_ignore_pushback_units ... ok
+test zap_damage_scales_and_crown_towers_take_the_reduced_share ... ok
+test log_width_edge_is_rect_vs_circle_to_the_subtile ... ok
+test log_timing_airborne_then_roll_from_the_tap_at_speed_to_range ... ok
+test zap_forces_a_retarget_on_resume ... ok
+test zap_stun_freezes_movement_for_exactly_ceil_duration_ticks ... ok
+test log_pierces_hits_each_victim_once_and_damage_scales ... ok
+test fireball_knockback_is_radial_fixed_distance_troops_only_and_respects_ignore_pushback ... ok
+test aoe_radius_edge_is_inclusive_to_the_subtile_under_the_registry ... ok
+test log_behind_the_tap_is_pushed_back_toward_the_caster_in_either_seat ... ok
+test spell_placement_follows_the_card_data ... ok
+test log_pair_keeps_the_axis_cases ... ok
+test fireball_damage_to_troop_building_and_crown_tower_scales_with_level_and_rounds_by_the_registry ... ok
+test zap_refresh_never_shortens_a_longer_stun ... ok
+test log_travel_arm_never_pushes_backward_or_sideways_in_either_seat ... ok
+test knockback_resets_a_windup ... ok
+test arrows_waves_come_from_the_data ... ok
+test zap_stun_pauses_windup_and_cooldown_for_exactly_ceil_duration_ticks ... ok
+test knockback_interrupts_a_unit_between_shots_and_the_old_arm_freezes_its_cooldown ... ok
+
+test result: ok. 30 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.34s
+
+     Running tests\spin_begin.rs (target\gate\deps\spin_begin-f261ee14302bfb10.exe)
+
+running 1 test
+test a_spin_begins_the_tick_after_its_press_under_client15535_next_tick ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\stacked_tie.rs (target\gate\deps\stacked_tie-ed39ad830be44ce2.exe)
+
+running 2 tests
+test constructed_stacked_buildings_keep_the_rotation ... ok
+test constructed_stacked_troops_keep_the_rotation ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\status.rs (target\gate\deps\status-c89b66e8a5eecb1e.exe)
+
+running 21 tests
+test a_pulse_is_the_share_of_the_level_scaled_per_second_figure ... ok
+test the_composition_law_holds_on_every_walkers_speed ... ok
+test every_switchable_candidate_moves_something ... ok
+test an_ice_spirit_hands_its_victim_the_same_freeze ... ok
+test an_attack_buff_lands_on_the_splash_victims_only ... ok
+test a_slow_scales_the_walk_and_the_attack_advance ... ok
+test a_buff_expires_on_the_stuns_alignment ... ok
+test an_earthquake_deals_a_building_its_own_percent ... ok
+test a_held_unit_still_runs_its_load_timer_down ... ok
+test a_second_application_refreshes_the_slot_it_never_adds_one ... ok
+test a_slowed_walker_actually_walks_slower_in_the_battle ... ok
+test a_freeze_is_a_whole_unit_hold_of_its_bufftime ... ok
+test a_freeze_does_the_same_on_both_seats ... ok
+test the_composition_truncates_where_rounding_would_differ ... ok
+test a_pulsing_area_does_not_stack_with_itself ... ok
+test a_poison_pulses_its_per_second_damage_once_a_second ... ok
+test a_poison_leaves_a_crown_tower_its_own_percent ... ok
+test the_offset_arm_waits_the_listed_value_not_one_hit_speed ... ok
+test the_engine_runs_the_old_arms_too ... ok
+test the_pulsing_area_offsets_are_read_from_the_ledger ... ok
+test an_unimplemented_candidate_is_refused_at_load ... ok
+
+test result: ok. 21 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.18s
+
+     Running tests\straight_shot_bodies.rs (target\gate\deps\straight_shot_bodies-6904fcaeafe13050.exe)
+
+running 2 tests
+test hunter_pellets_fly_through_a_miner_under_ground ... ok
+test hunter_pellets_fly_through_a_hidden_tesla ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\strike_timing16402.rs (target\gate\deps\strike_timing16402-28441f3f6c9e06f1.exe)
+
+running 10 tests
+test an_area_hit_speed_off_a_striking_area_is_refused ... ok
+test under_none_the_tables_460_strikes_on_d_plus_10_and_19 ... ok
+test each_arm_runs_its_own_lightning_row ... ok
+test the_shipped_engine_runs_the_tables_lightning_and_at_life_end ... ok
+test under_client16402_and_at_life_end_the_third_strike_is_lost ... ok
+test the_15_535_29_row_runs_the_same_battle_under_either_end ... ok
+test under_client16402_and_with_last_strike_three_knights_lose_on_d_plus_11_21_and_31 ... ok
+test the_lightning_does_not_read_spells_strike_due ... ok
+test under_client16402_the_strikes_land_on_d_plus_11_and_21 ... ok
+test the_area_ends_with_its_last_strike_or_its_life ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\strike_under_ground.rs (target\gate\deps\strike_under_ground-f1329c50180d15c4.exe)
+
+running 1 test
+test a_sequential_strike_spares_a_miner_under_ground ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\strikes.rs (target\gate\deps\strikes-14aa9557e4282f34.exe)
+
+running 7 tests
+test a_target_within_the_170_margin_is_struck ... ok
+test a_tie_goes_to_the_earlier_created ... ok
+test a_princess_tower_alone_loses_a_quarter_of_one_strike_once ... ok
+test the_loader_reads_lightning_as_a_striking_area ... ok
+test three_strikes_land_on_d_plus_10_19_and_28_the_highest_hp_first ... ok
+test a_striking_areas_clock_is_state ... ok
+test a_knight_about_to_leave_reach_is_not_struck ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.26s
+
+     Running tests\struck_contact_order.rs (target\gate\deps\struck_contact_order-2e2e39e2a141c21a.exe)
+
+running 2 tests
+test a_struck_troop_does_not_push_its_striker ... ok
+test a_struck_troop_pushes_only_the_movers_before_its_striker ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\stun_clears_target.rs (target\gate\deps\stun_clears_target-b85facf7d2c70faa.exe)
+
+running 3 tests
+test the_shipped_arm_is_client_cleared ... ok
+test the_old_arm_keeps_the_target_through_the_stun ... ok
+test a_landing_stun_clears_the_target_under_client_cleared ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\suspicious_bush.rs (target\gate\deps\suspicious_bush-d6bb73db4fc18874.exe)
+
+running 5 tests
+test a_bush_dies_in_reach_and_leaves_two_goblins_on_the_twelfth_and_thirteenth_ticks ... ok
+test a_bush_a_zap_kills_mid_walk_leaves_its_goblins_about_its_last_step_and_hurts_nobody ... ok
+test nothing_targets_the_bush_and_a_knight_in_its_place_is_targeted ... ok
+test the_goblins_turn_with_the_owner_and_tiles_owner_frame_puts_them_1000_out ... ok
+test the_loader_reads_the_bush_as_an_invisible_kamikaze_with_a_scheduled_death_area ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running tests\target_rank_distance.rs (target\gate\deps\target_rank_distance-22a79e486b9804b2.exe)
+
+running 5 tests
+test the_shipped_value_is_client16402_centre ... ok
+test of_two_enemies_whose_integer_distances_tie_the_nearer_is_taken ... ok
+test a_walker_takes_an_enemy_nearer_than_its_tower_by_centre ... ok
+test the_old_value_keeps_the_tower ... ok
+test an_enemy_in_sight_but_farther_than_the_tower_is_not_taken ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\territory.rs (target\gate\deps\territory-995b3bb640d7926a.exe)
+
+running 4 tests
+test buildings_stay_own_half_after_a_princess_falls ... ok
+test the_pocket_is_eight_half_rows_past_the_far_bank ... ok
+test territory_is_rotation_invariant ... ok
+test troop_deploy_legality_matches_the_rect_model_everywhere ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+
+     Running tests\three_musketeers.rs (target\gate\deps\three_musketeers-17d6337b4e124ff2.exe)
+
+running 9 tests
+test the_loader_takes_the_selector_and_the_members_only_in_their_one_shape ... ok
+test the_loader_reads_three_members_their_offsets_and_the_selector ... ok
+test the_members_leave_their_deploy_state_two_ticks_apart_each_its_own_record ... ok
+test an_air_target_inside_the_reach_takes_the_shot ... ok
+test the_entry_is_chosen_when_the_swing_starts ... ok
+test a_ground_building_at_the_reach_takes_the_bayonet_and_one_unit_further_the_shot ... ok
+test side_0_stands_its_members_at_the_negated_offsets ... ok
+test side_1_is_the_rotation_under_the_shipped_arm_and_mirrors_x_on_its_own_left_under_the_other ... ok
+test a_swing_under_way_keeps_its_entry_across_a_save ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running tests\throughput.rs (target\gate\deps\throughput-ac582a8ca75c9497.exe)
+
+running 3 tests
+test throughput_brawl_20_to_40_entities ... ignored, timing; run with --release -- --ignored --nocapture
+test throughput_scripted_battle ... ignored, timing; run with --release -- --ignored --nocapture
+test throughput_scripted_battle_with_spells ... ignored, timing; run with --release -- --ignored --nocapture
+
+test result: ok. 0 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\thrown_unit_death_blow.rs (target\gate\deps\thrown_unit_death_blow-3d131dab370be60e.exe)
+
+running 3 tests
+test the_shipped_value_is_reached ... ok
+test the_old_value_lets_the_blow_reach_it ... ok
+test a_thrown_trooper_is_not_reached_by_its_landing_ticks_death_blow_under_client15535_unreached ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\tick_order.rs (target\gate\deps\tick_order-8d5b2afc7699b2a5.exe)
+
+running 9 tests
+test the_phase_trace_is_the_orders_own_list ... ok
+test a_knight_whose_skeleton_target_dies_walks_the_tick_after_it_is_gone ... ok
+test the_move_pass_runs_in_creation_order_not_slot_order ... ok
+test a_troop_killed_before_the_move_pass_is_a_static_obstacle_under_client_doomed_static ... ok
+test a_unit_dying_this_tick_is_seen_by_earlier_movers_and_not_by_later_ones ... ok
+test a_unit_finishing_its_deploy_stands_still_that_tick_and_steps_on_spawn_plus_deploy_time ... ok
+test entering_range_does_not_step_on_the_transition_tick ... ok
+test a_reloaded_battle_keeps_the_creation_order ... ok
+test every_candidate_runs_the_scripted_battle_deterministically_and_the_orders_differ ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.36s
+
+     Running tests\tiebreak.rs (target\gate\deps\tiebreak-0f31113f3466483e.exe)
+
+running 15 tests
+test the_drain_steps_sit_where_both_clients_measured_them ... ok
+test shipped_calibration_selects_the_clients_drain ... ok
+test a_level_overtime_freezes_and_clears_the_board ... ok
+test fraction_is_exact_integer_arithmetic_not_a_rounded_percentage ... ok
+test none_draw_is_the_old_engine_a_level_match_stays_a_draw ... ok
+test a_destroyed_princess_does_not_count_as_a_zero_hp_tower ... ok
+test a_command_waiting_at_the_clear_is_reported_dropped ... ok
+test the_tiebreak_fires_only_when_overtime_runs_out ... ok
+test absolute_the_side_with_the_weaker_weakest_tower_loses ... ok
+test the_drain_runs_as_the_client_and_the_first_fall_wins ... ok
+test level_towers_drain_one_tick_and_draw ... ok
+test lowest_towers_level_with_the_others_unequal_is_the_exact_draw ... ok
+test absolute_compares_a_king_against_a_princess_in_raw_points ... ok
+test an_exact_tie_is_a_draw_under_every_rule ... ok
+test the_verdict_is_the_same_from_both_seats ... ok
+
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running tests\tower_tap_push.rs (target\gate\deps\tower_tap_push-f097a417d2d2917e.exe)
+
+running 7 tests
+test the_shipped_value_is_the_axis_push ... ok
+test the_kings_ties_go_the_arena_order ... ok
+test every_princess_box_tap_lands_as_on_client_15535 ... ok
+test a_tap_on_a_tile_line_lands_on_the_lower_row ... ok
+test the_old_value_is_the_ring_search ... ok
+test the_raw_tap_not_its_tile_decides ... ok
+test a_tap_on_a_downed_princess_box_stays ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\transform.rs (target\gate\deps\transform-10e02dcb3457df2d.exe)
+
+running 22 tests
+test a_transformation_graph_with_one_more_class_is_refused_with_todays_message ... ok
+test both_seats_transform_on_the_same_tick ... ok
+test a_transformed_unit_reports_its_catalogue_card ... ok
+test the_loader_reads_both_transformations ... ok
+test a_kamikaze_killed_mid_run_still_blasts ... ok
+test the_new_row_deploy_time_arm_deploys_the_cannon ... ok
+test the_kamikaze_form_drains_3_25_a_tick ... ok
+test the_crossing_tick_arm_changes_the_cart_on_its_crossing_tick ... ok
+test the_broken_cannon_drains_three_a_tick_on_its_max_hp ... ok
+test a_demolisher_crossed_by_a_tower_shot_switches_two_ticks_after_its_trigger ... ok
+test a_cart_broken_by_a_tower_shot_becomes_its_cannon_in_place ... ok
+test the_kamikaze_blast_lands_two_ticks_after_its_last_frame ... ok
+test the_threshold_compares_at_or_below ... ok
+test the_reset_always_arm_drops_the_carts_target_on_the_switch ... ok
+test the_rebind_takes_every_row_column_from_the_new_row_and_keeps_the_entity ... ok
+test the_ranged_form_killed_from_above_half_in_one_tick_blasts_and_never_transforms ... ok
+test the_shipped_arm_leaves_the_demolisher_without_its_blast ... ok
+test a_unit_healed_back_above_the_line_schedules_nothing_twice ... ok
+test a_melee_crossing_is_read_on_its_tick_under_the_sequential_strike_order ... ok
+test only_the_demolishers_taunt_cancel_carries_an_action_taunt ... ok
+test a_pending_transformation_survives_a_save ... ok
+test a_pending_transformation_is_hashed ... ok
+
+test result: ok. 22 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+     Running tests\tri_wizards.rs (target\gate\deps\tri_wizards-14fce828ab18b798.exe)
+
+running 8 tests
+test the_loader_reads_the_area_as_three_entries ... ok
+test a_play_puts_down_what_the_client_put_down ... ok
+test no_unit_of_the_area_waits_for_its_eighth_frame ... ok
+test in_the_clients_scene_the_knight_takes_the_triwizard_on_c_plus_6_and_the_ice_wizard_on_c_plus_7 ... ok
+test a_side_1_play_is_the_rotation ... ok
+test the_electro_wizards_area_lands_where_it_appears ... ok
+test without_its_area_the_card_puts_the_triwizard_down_alone ... ok
+test a_battle_saved_on_any_frame_of_the_area_resumes_as_the_same_battle ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.30s
+
+     Running tests\triple_elixir.rs (target\gate\deps\triple_elixir-a1a013da77b7f8bb.exe)
+
+running 1 test
+test the_regen_triples_from_the_step_into_tick_4801 ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+
+     Running tests\troop_death_pushback.rs (target\gate\deps\troop_death_pushback-017c33e5225f7be6.exe)
+
+running 2 tests
+test a_golem_shot_dead_pushes_from_the_next_tick ... ok
+test a_golem_struck_down_in_the_pass_pushes_on_its_death_tick ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\troop_relocation_ties.rs (target\gate\deps\troop_relocation_ties-3a7cb963b304c9c4.exe)
+
+running 2 tests
+test the_client_arm_ties_in_the_arena_order ... ok
+test the_shipped_arm_mirrors_the_seats ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests\unit_hitpoints.rs (target\gate\deps\unit_hitpoints-ece76f933ea4ff7b.exe)
+
+running 6 tests
+test the_tri_wizards_list_their_three_units_at_the_clients_hitpoints ... ok
+test a_death_spawn_and_a_second_summon_are_listed ... ok
+test a_level_the_ladder_lacks_is_refused_by_name ... ok
+test every_way_a_unit_comes_is_a_row ... ok
+test the_rows_are_the_battles_card_data_not_the_tables ... ok
+test the_own_row_is_the_catalogues_hitpoints_for_every_card ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\unit_refs.rs (target\gate\deps\unit_refs-5cf35f79b5797973.exe)
+error: test failed, to rerun pass `--test unit_refs`
+
+Caused by:
+  could not execute process `C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\crates\royalesim\target\gate\deps\unit_refs-5cf35f79b5797973.exe` (never executed)
+
+Caused by:
+  An Application Control policy has blocked this file. (os error 4551)
+     Running tests\variable_damage_walk_reach.rs (target\gate\deps\variable_damage_walk_reach-7d472fb17d96114f.exe)
+
+running 7 tests
+test the_shipped_value_is_the_every_row_arm_since_the_round_12_flip ... ok
+test the_new_value_reaches_the_inferno_dragons_row_and_not_the_mighty_miners ... ok
+test a_walking_inferno_dragon_stops_only_inside_range_plus_the_target_radius ... ok
+test the_old_value_stops_inside_both_radii ... ok
+test a_standing_inferno_dragon_keeps_its_place_inside_both_radii ... ok
+test a_baby_dragon_stops_inside_both_radii_under_both_values ... ok
+test a_walking_inferno_dragons_goal_cell_lies_within_range_of_its_target ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\variant_card.rs (target\gate\deps\variant_card-c4720b967f68832b.exe)
+error: test failed, to rerun pass `--test variant_card`
+
+Caused by:
+  could not execute process `C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\crates\royalesim\target\gate\deps\variant_card-c4720b967f68832b.exe` (never executed)
+
+Caused by:
+  An Application Control policy has blocked this file. (os error 4551)
+     Running tests\vines.rs (target\gate\deps\vines-cb9463b3bd504cb5.exe)
+
+running 8 tests
+test a_tower_a_mortar_and_a_cannon_are_caught_on_c_plus_18_19_and_21 ... ok
+test a_unit_that_appears_after_the_first_catch_is_caught_by_the_third ... ok
+test a_shield_counts_in_the_rank ... ok
+test a_hidden_tesla_is_caught_held_and_pulsed_and_stays_hidden ... ok
+test each_catch_pulses_twice_twenty_ticks_apart ... ok
+test a_caught_balloon_is_a_ground_target_until_c_plus_60 ... ok
+test a_grounded_flier_and_a_snare_that_reaches_a_hidden_building_are_state ... ok
+test the_vines_load_as_ranked_catches_of_the_rows ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.19s
+
+     Running tests\walking_keep_reach.rs (target\gate\deps\walking_keep_reach-20ebd4e4e74fedf5.exe)
+
+running 3 tests
+test the_shipped_value_is_own_radius ... ok
+test a_walking_inferno_dragon_takes_a_nearer_enemy_past_the_reach_it_walks_to ... ok
+test the_old_value_keeps_the_far_target ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\warp_hiding.rs (target\gate\deps\warp_hiding-0f7f4fe2470da5a0.exe)
+error: test failed, to rerun pass `--test warp_hiding`
+
+Caused by:
+  could not execute process `C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\crates\royalesim\target\gate\deps\warp_hiding-0f7f4fe2470da5a0.exe` (never executed)
+
+Caused by:
+  An Application Control policy has blocked this file. (os error 4551)
+     Running tests\water_landing.rs (target\gate\deps\water_landing-c8ad0a378eccb740.exe)
+
+running 4 tests
+test a_red_units_point_takes_the_arenas_ties ... ok
+test each_measured_point_lands_where_the_clients_did ... ok
+test a_golden_knights_hop_whose_blow_lands_over_the_river_ends_on_land ... ok
+test a_bandits_dash_that_ends_over_the_river_ends_on_land ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+   Doc-tests royalesim
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+error: 16 targets failed:
+    `--test corpse_switch_reach`
+    `--test curse`
+    `--test death_spawn_at_emission`
+    `--test doomed_lane_tower`
+    `--test evo_battle_ram`
+    `--test evo_dart_goblin`
+    `--test first_step_dying_contact`
+    `--test ghost_pair_first_frame`
+    `--test hero_barbarian_barrel`
+    `--test knocked_doomed_avoidance`
+    `--test line_frame`
+    `--test relocation_ties`
+    `--test retarget_wait_arms`
+    `--test unit_refs`
+    `--test variant_card`
+    `--test warp_hiding`

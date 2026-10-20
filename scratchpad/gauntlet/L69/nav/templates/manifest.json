@@ -1,0 +1,293 @@
+{
+ "friend": "JinxTheCat",
+ "frame": [
+  900,
+  1600
+ ],
+ "templates": {
+  "results_ok": {
+   "file": "results_ok.png",
+   "source": "raw/results_131619.png",
+   "box": [
+    344,
+    1410,
+    554,
+    1492
+   ],
+   "region": [
+    250,
+    1300,
+    650,
+    1580
+   ],
+   "threshold": 0.85,
+   "tap": true
+  },
+  "results_name": {
+   "file": "results_name.png",
+   "source": "raw/results_131619.png",
+   "box": [
+    304,
+    428,
+    590,
+    480
+   ],
+   "region": [
+    100,
+    300,
+    800,
+    620
+   ],
+   "threshold": 0.85,
+   "tap": false
+  },
+  "main_tab": {
+   "file": "main_tab.png",
+   "source": "raw/after_ok_131638.png",
+   "box": [
+    380,
+    1434,
+    520,
+    1598
+   ],
+   "region": [
+    300,
+    1400,
+    600,
+    1600
+   ],
+   "threshold": 0.85,
+   "tap": false
+  },
+  "social_hdr": {
+   "file": "social_hdr.png",
+   "source": "raw/friends_list_130251.png",
+   "box": [
+    80,
+    500,
+    218,
+    546
+   ],
+   "region": [
+    40,
+    470,
+    300,
+    580
+   ],
+   "threshold": 0.85,
+   "tap": false
+  },
+  "row_name": {
+   "file": "row_name.png",
+   "source": "raw/friends_list_130915.png",
+   "box": [
+    200,
+    1112,
+    384,
+    1146
+   ],
+   "region": [
+    80,
+    575,
+    830,
+    1250
+   ],
+   "threshold": 0.85,
+   "tap": true
+  },
+  "popup_hdr": {
+   "file": "popup_hdr.png",
+   "source": "raw/friend_entry_130350.png",
+   "box": [
+    118,
+    1006,
+    270,
+    1038
+   ],
+   "region": [
+    0,
+    300,
+    420,
+    1560
+   ],
+   "threshold": 0.85,
+   "tap": false
+  },
+  "popup_fb": {
+   "file": "popup_fb.png",
+   "source": "raw/friend_entry_130350.png",
+   "box": [
+    94,
+    1272,
+    292,
+    1352
+   ],
+   "region": [
+    0,
+    300,
+    420,
+    1600
+   ],
+   "threshold": 0.85,
+   "tap": true,
+   "anchor": {
+    "of": "popup_hdr",
+    "dxdy": [
+     -1.0,
+     290.0
+    ],
+    "tol": 25
+   }
+  },
+  "bt_name": {
+   "file": "bt_name.png",
+   "source": "raw/battle_type_130729.png",
+   "box": [
+    530,
+    252,
+    714,
+    290
+   ],
+   "region": [
+    0,
+    150,
+    900,
+    420
+   ],
+   "threshold": 0.85,
+   "tap": false
+  },
+  "bt_1v1": {
+   "file": "bt_1v1.png",
+   "source": "raw/battle_type_130729.png",
+   "box": [
+    354,
+    418,
+    544,
+    466
+   ],
+   "region": [
+    40,
+    370,
+    860,
+    520
+   ],
+   "threshold": 0.85,
+   "tap": true
+  },
+  "pend_name": {
+   "file": "pend_name.png",
+   "source": "raw/invite_sent_130520.png",
+   "box": [
+    372,
+    144,
+    540,
+    180
+   ],
+   "region": [
+    0,
+    0,
+    900,
+    420
+   ],
+   "threshold": 0.85,
+   "tap": false
+  },
+  "pend_cancel": {
+   "file": "pend_cancel.png",
+   "source": "raw/invite_sent_130520.png",
+   "box": [
+    650,
+    112,
+    850,
+    186
+   ],
+   "region": [
+    400,
+    0,
+    900,
+    420
+   ],
+   "threshold": 0.85,
+   "tap": true,
+   "anchor": {
+    "of": "pend_name",
+    "dxdy": [
+     294.0,
+     -13.0
+    ],
+    "tol": 25
+   }
+  },
+  "inc_name": {
+   "file": "inc_name.png",
+   "source": "raw/invite_incoming_131227.png",
+   "box": [
+    368,
+    604,
+    536,
+    636
+   ],
+   "region": [
+    0,
+    0,
+    900,
+    1300
+   ],
+   "threshold": 0.85,
+   "tap": false
+  },
+  "inc_1v1": {
+   "file": "inc_1v1.png",
+   "source": "raw/invite_incoming_131227.png",
+   "box": [
+    246,
+    634,
+    660,
+    670
+   ],
+   "region": [
+    0,
+    0,
+    900,
+    1300
+   ],
+   "threshold": 0.85,
+   "tap": false,
+   "anchor": {
+    "of": "inc_name",
+    "dxdy": [
+     1.0,
+     32.0
+    ],
+    "tol": 25
+   }
+  },
+  "inc_accept": {
+   "file": "inc_accept.png",
+   "source": "raw/invite_incoming_131227.png",
+   "box": [
+    472,
+    700,
+    678,
+    778
+   ],
+   "region": [
+    0,
+    0,
+    900,
+    1300
+   ],
+   "threshold": 0.85,
+   "tap": true,
+   "anchor": {
+    "of": "inc_name",
+    "dxdy": [
+     123.0,
+     119.0
+    ],
+    "tol": 25
+   }
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/deal_recovery/verify_v4.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "DEAL_RECOVERY_TRAINING_INDEPENDENT_PASS",
+  "matched": true,
+  "output_sha256": "27a391805a489cd1500a0e3415d7e7385fd8ce76bcffef781e85aaa2e8004f28",
+  "seconds": 1.2121000289916992
+}

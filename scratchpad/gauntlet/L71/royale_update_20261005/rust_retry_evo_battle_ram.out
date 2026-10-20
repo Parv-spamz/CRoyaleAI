@@ -1,0 +1,10 @@
+
+running 5 tests
+test a_struck_troop_steps_straight_off_the_rams_line ... ok
+test its_barbarians_rage_from_the_tick_after_their_first_hit ... ok
+test the_push_switches_on_16_ticks_into_the_charge_and_strikes_once ... ok
+test the_ram_lives_through_its_hit_recoils_and_charges_on ... ok
+test the_third_play_is_the_evolved_ram ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+

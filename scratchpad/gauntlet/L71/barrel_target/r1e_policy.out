@@ -1,0 +1,3 @@
+[41s] 249 held-out rows with a visible enemy Goblin Barrel
+{"total_visible_barrel_rows": 249, "known_playable": {"n": 95, "log_choices": 49, "gated_log_choices": 43, "forced_log_same_lane": 67, "forced_log_swapped_lane": 28, "changed_lane_with_target": 0}, "pro_log": {"n": 39, "log_choices": 34, "gated_log_choices": 34, "forced_log_same_lane": 28, "forced_log_swapped_lane": 11, "changed_lane_with_target": 0}, "pro_log_same_lane": {"n": 39, "log_choices": 34, "gated_log_choices": 34, "forced_log_same_lane": 28, "forced_log_swapped_lane": 11, "changed_lane_with_target": 0}, "seconds": 133.98064541816711}
+BARREL_POLICY_DIAGNOSTIC_COMPLETE

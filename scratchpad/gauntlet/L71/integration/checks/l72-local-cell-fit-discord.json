@@ -1,0 +1,17 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L69/discord/send_report.py",
+    "--id",
+    "model-local-cell-fit-v5-diagnostic",
+    "--file",
+    "scratchpad/gauntlet/L72/improvement_loop/local_cell_fit/message.md"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "DELIVERED model-local-cell-fit-v5-diagnostic",
+  "matched": true,
+  "output_sha256": "15a4a31e232211d8381e163b0ec9e8bde684ee5a8734eda6b17c2a254be34b6b",
+  "seconds": 1.3725519180297852
+}

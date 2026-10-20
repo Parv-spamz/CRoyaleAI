@@ -1,0 +1,18 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L68/live_reader/live_play.py",
+    "--ckpt",
+    "icebow/data/bench/development_iteration_5_20261005/tower_spatial_v7/candidate.pt",
+    "--check",
+    "--device",
+    "cpu"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 1,
+  "expected": "LIVE_CHECK_PASS",
+  "matched": false,
+  "output_sha256": "da6b7e3ef9ad617bebbc198feb55a2ca515f1b715c95b7fd8ea6645a1d029a75",
+  "seconds": 5.01205587387085
+}

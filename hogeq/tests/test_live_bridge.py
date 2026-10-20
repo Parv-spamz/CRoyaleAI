@@ -1,0 +1,197 @@
+"""The LIVE -> SimEngine bridge, and the size of what it cannot see.
+
+HANDOFF ruled live search out on four grounds, only one of which was compute. This module exists
+because the owner accepted the measured ceiling deliberately ("a gain is a gain") -- so the job is
+to make the capped gain reachable AND to keep the cap measurable.
+
+The test that matters is not "the bridge builds an engine". It is "the bridge reports how wrong it
+is", because in live play there is no ground truth to diff against and this is the only place the
+error can be sized honestly.
+"""
+from __future__ import annotations
+
+import random
+import sys
+import unittest
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+for _p in (str(ROOT / "src"), str(ROOT / "tests")):
+    if _p not in sys.path:
+        sys.path.insert(0, _p)
+
+from clashrl.cards import CardDB                                  # noqa: E402
+from clashrl.sim import live_bridge as LB                         # noqa: E402
+from clashrl.sim.engine import SimEngine, Unit, build_spec        # noqa: E402
+from test_sim_status_effects import DummyCfg                      # noqa: E402
+
+_DB = CardDB(path=ROOT / "config" / "cards.yaml")
+
+
+def _truth():
+    """A real engine with bodies at REAL (partial) hp -- the thing live cannot see."""
+    eng = SimEngine(DummyCfg(), _DB, random.Random(0))
+    eng.reset()
+    eng.units.clear()
+    for k, team, x, y, frac in (("knight", 1, 0.40, 0.35, 0.40),
+                                ("musketeer", 1, 0.60, 0.30, 1.00),
+                                ("giant", 1, 0.50, 0.25, 0.55),
+                                ("skeletons", 0, 0.50, 0.62, 1.00)):
+        sp = build_spec(_DB, k, 11)
+        u = Unit(spec=sp, team=team, x=x, y=y, hp=sp.hp * frac)
+        u.deploy_left = 0.0
+        eng.units.append(u)
+    return eng
+
+
+class LiveBridgeTests(unittest.TestCase):
+
+    def test_it_rebuilds_every_body_it_was_shown(self):
+        eng = _truth()
+        obs = LB.observe_as_detector(eng, rng=random.Random(1))
+        rb = LB.build_engine(DummyCfg(), _DB, random.Random(0), obs)
+        e = LB.reconstruction_error(eng, rb)
+        self.assertEqual(e["bodies_rebuilt"], e["bodies_true"])
+        self.assertEqual(e["bodies_missing"], 0.0)
+
+    def test_HP_IS_THE_DOMINANT_ERROR_and_it_is_reported(self):
+        """THE POINT OF THIS MODULE. Live cannot read troop HP, so the bridge gives every body its
+        spec maximum. MEASURED on a board holding a 40%-hp Knight and a 55%-hp Giant: the rebuilt
+        state carries +77% more hitpoints than reality -- with PERFECT positions and NO dropout.
+
+        HANDOFF led with the quarter-tile position error (62% of the gain, saturating). This says
+        the HP blocker may bite harder still, and it is total by construction rather than a
+        parameter that can be improved. Any live-search result has to be read against it.
+        """
+        eng = _truth()
+        obs = LB.observe_as_detector(eng, rng=random.Random(1))
+        rb = LB.build_engine(DummyCfg(), _DB, random.Random(0), obs)
+        e = LB.reconstruction_error(eng, rb)
+        self.assertAlmostEqual(e["pos_err_mean_tiles"], 0.0, places=6)
+        self.assertGreater(e["hp_overstate_frac"], 0.5,
+                           "the bridge is not over-stating HP -- has it started reading real HP?")
+        self.assertGreater(e["hp_rebuilt"], e["hp_true"])
+
+    def test_reading_the_HP_BAR_removes_almost_all_of_the_overstatement(self):
+        """OWNER PUSHBACK, 2026-08-28, and they were right: I called the HP error "total by
+        construction". It never was -- `troop_hp.read_hp_fraction` has existed as a scaffold the
+        whole time and the bridge simply never called it.
+
+        The point is not just that it improves, but WHY it improves so much: assuming full HP is a
+        ONE-DIRECTIONAL bias that compounds over every body, while bar-reading error is RANDOM and
+        largely cancels. A deliberately crude reader still gets most of the way there.
+        """
+        eng = _truth()
+        def over(**kw):
+            obs = LB.observe_as_detector(eng, rng=random.Random(1), **kw)
+            rb = LB.build_engine(DummyCfg(), _DB, random.Random(0), obs)
+            return LB.reconstruction_error(eng, rb)["hp_overstate_frac"]
+        none_read = over(read_hp=False)
+        perfect = over(read_hp=True, hp_err=0.0)
+        sloppy = over(read_hp=True, hp_err=0.25)
+        self.assertGreater(none_read, 0.5, "the no-read baseline is no longer overstating")
+        self.assertAlmostEqual(perfect, 0.0, places=6)
+        self.assertLess(abs(sloppy), 0.15,
+                        f"a +-25%% bar reader left {100*sloppy:.1f}%% bias -- error is not cancelling")
+        self.assertLess(abs(sloppy), none_read / 4.0,
+                        "bar-reading must beat assume-full-HP by a wide margin, not marginally")
+
+    def test_no_bar_means_full_hp_not_missing_data(self):
+        """read_hp_fraction returns None when NO BAR IS DRAWN, and Clash Royale only draws one once
+        a unit is damaged. So None -> 1.0 is the CORRECT reading, not a fallback."""
+        eng = _truth()
+        obs = LB.observe_as_detector(eng, rng=random.Random(1))
+        for b in obs:
+            b["hp_frac"] = None
+        rb = LB.build_engine(DummyCfg(), _DB, random.Random(0), obs)
+        for u in rb.units:
+            self.assertAlmostEqual(u.hp, u.spec.hp, places=3)
+
+    def test_it_parses_the_TRACKERS_REAL_TUPLE_FORMAT(self):
+        """THE BUG THAT SHIPPED TWICE. `enemy_tracks(with_base=True)` yields (x, y, ..., base) --
+        NOT (name, x, y). Reading it the wrong way turned the string "knight" into tr[0..2] =
+        'k','n','i', produced zero bodies, and made every decision skip on min_bodies.
+        """
+        class _A:
+            @staticmethod
+            def frame_to_board(fx, fy):
+                return float(fx), float(fy)
+        rows = LB.tracks_to_bodies(_DB, [(0.5, 0.3, 0.0, 0.0, "knight"),
+                                         (0.6, 0.4, 0.0, 0.0, "musketeer")], _A())
+        self.assertEqual([r["key"] for r in rows], ["knight", "musketeer"])
+        self.assertAlmostEqual(rows[0]["x"], 0.5, places=6)
+        self.assertAlmostEqual(rows[0]["y"], 0.3, places=6)
+
+    def test_a_track_without_with_base_is_dropped_not_guessed(self):
+        """No identity at index 4 means we do not know the card. Dropping is right; inventing one
+        would inject a phantom body into every rollout."""
+        class _A:
+            @staticmethod
+            def frame_to_board(fx, fy):
+                return float(fx), float(fy)
+        self.assertEqual(LB.tracks_to_bodies(_DB, [(0.5, 0.3, 0.0, 0.0)], _A()), [])
+
+    def test_it_works_with_the_REAL_ActionSpace_not_just_a_stub(self):
+        """THE BUG MY OWN TESTS COULD NOT SEE. `frame_to_board` lives on BoardWarp, NOT on
+        ActionSpace -- so `actions.frame_to_board(...)` raises AttributeError. Every test above
+        passed a STUB that HAD the method, i.e. a stub MORE CAPABLE THAN THE REAL OBJECT, so they
+        all passed while live dropped every track.
+
+        MEASURED in a live run before the fix: seen=49, frame_to_board_failed=49, every decision.
+        """
+        from clashrl.actions import ActionSpace
+        from clashrl.config import Config
+        a = ActionSpace(Config.load(ROOT / "config" / "config.yaml"))
+        self.assertFalse(hasattr(a, "frame_to_board"),
+                         "ActionSpace grew the method -- this test's premise is stale")
+        drops = {}
+        rows = LB.tracks_to_bodies(_DB, [(0.5, 0.4, 0, 0, "knight"),
+                                         (0.6, 0.3, 0, 0, "musketeer")], a, drops=drops)
+        self.assertEqual([r["key"] for r in rows], ["knight", "musketeer"])
+        self.assertNotIn("frame_to_board_failed", drops)
+
+    def test_a_missing_converter_is_reported_ONCE_not_smeared_over_every_track(self):
+        """A broad except around the per-track call turned one structural error into N silent
+        drops. An object with no converter at all must say so, not look like bad tracks."""
+        class _Useless:
+            pass
+        drops = {}
+        rows = LB.tracks_to_bodies(_DB, [(0.5, 0.4, 0, 0, "knight")] * 20, _Useless(), drops=drops)
+        self.assertEqual(rows, [])
+        self.assertEqual(drops.get("NO_frame_to_board_on_actions"), 1,
+                         "the missing converter was not reported exactly once")
+
+    def test_position_error_is_reported_faithfully(self):
+        """The bridge must not flatter itself: injected jitter has to show up in the report."""
+        eng = _truth()
+        prev = -1.0
+        for sigma in (0.0, 0.25, 0.5):
+            obs = LB.observe_as_detector(eng, pos_sigma=sigma, rng=random.Random(1))
+            rb = LB.build_engine(DummyCfg(), _DB, random.Random(0), obs)
+            err = LB.reconstruction_error(eng, rb)["pos_err_mean_tiles"]
+            self.assertGreater(err, prev, f"error did not rise with sigma={sigma}")
+            prev = err
+
+    def test_dropout_is_reported_as_missing_bodies(self):
+        eng = _truth()
+        obs = LB.observe_as_detector(eng, drop=1.0, rng=random.Random(3))
+        rb = LB.build_engine(DummyCfg(), _DB, random.Random(0), obs)
+        e = LB.reconstruction_error(eng, rb)
+        self.assertEqual(e["bodies_rebuilt"], 0.0)
+        self.assertEqual(e["bodies_missing"], e["bodies_true"])
+
+    def test_spells_and_non_bodies_never_become_units(self):
+        """A detector class with no KB row, or a spell, must not be deployed as a troop."""
+        class _A:
+            @staticmethod
+            def frame_to_board(fx, fy):
+                return 0.5, 0.5
+        rows = LB.tracks_to_bodies(_DB, [{"base": "fireball", "x": 1, "y": 1},
+                                         {"base": "not_a_real_card", "x": 1, "y": 1},
+                                         {"base": "king_tower", "x": 1, "y": 1},
+                                         {"base": "knight", "x": 1, "y": 1}], _A())
+        self.assertEqual([r["key"] for r in rows], ["knight"])
+
+
+if __name__ == "__main__":
+    unittest.main()

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/close_development9_report.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "ORDINARY_EXTENDED_REPORT_REVIEWED",
+  "matched": true,
+  "output_sha256": "28e1caa545bb48625583458cae8b10958f98f203d116b398b28fff18b3f51968",
+  "seconds": 0.09565424919128418
+}

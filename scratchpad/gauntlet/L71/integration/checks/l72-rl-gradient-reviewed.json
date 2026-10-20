@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/review_rl_gradient.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "RL_GRADIENT_REVIEWED",
+  "matched": true,
+  "output_sha256": "71c8188c0e5a8e688f6993f20d663223a95f2ffb12f3048dab6f18c1044bdc4b",
+  "seconds": 1.402845859527588
+}

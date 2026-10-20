@@ -1,0 +1,11 @@
+ClashBot L72 development model: ordinary_v5
+Verdict: NOT ACCEPTED for deployment. This is the corrected-input ordinary-IL control, not a demonstrated gameplay improvement over R1e.
+
+Completed 1000 finite updates (batch128), same R1e start, original expert labels, final step only. Independent recount:54723 development rows/405 replay groups;17192 expert PLAY rows. R1e comparison below uses the SAME corrected observations. Parent R1e has historical exposure to these inner-development replays; this is not untouched confirmation.
+
+Full expert action agreement (correct WAIT, or gated correct card with aim within1tile):31962/54723 versus R1e30968/54723. Expert card agreement:11403/17192 versus11348/17192.
+Primary Barrel63 rows/26 replays:40 correct-lane Logs,22 wrong,1 not fired; R1e36 correct,20 wrong,7 not fired. Full action20/63 versus18/63. More wrong-lane Logs remain a problem.
+Witch action339/726 vs332; Night Witch161/373 vs156; Furnace549/1174 vs538. These measure imitation agreement, not damage prevention.
+Expert Rocket full actions77/955 vs54/955. Legacy narrow finishing subset: forced-expert aim within1tile1/21 PLAY rows vs2/21; weak aim remains. Rocket/Tornado-context action96/320 vs91/320; this is not a confirmed successful combo or safe Rocket cycle.
+
+No new gameplay win-rate result, final statistical acceptance or live deployment. All final component/gameplay/Q4/Q5 gates remain. Original serialization failure retained; a separate metadata-only checkpoint copy preserves every trained tensor and loads normally. Owner farming remains R1e.

@@ -1,0 +1,11 @@
+ClashBot DEVELOPMENT gameplay addendum - October 5. New matched gameplay evidence for previously reported models; this does not repeat their IL reports. NOT ACCEPTED / NO DEPLOYMENT.
+
+All 192 fixed updated-engine reactive games completed and independently verified: 64 per model (32 gen + 32 S1). R1e uses original feature4 inputs; v5/v6 use corrected inputs. Primary architecture comparison is v6-v5.
+
+Wins: R1e 45/64 (15 gen,30 S1); ordinary_v5 42/64 (14,28); ordinary_v6 39/64 (11,28). v6 paired difference vs R1e -9.375pp, descriptive seed-cluster95% CI[-21.875,+3.125]; vs v5 -4.6875pp[-12.5,+3.125]. v6 wins where v5 loses in2 games, loses where v5 wins in5,57 same. These intervals do not establish significant harm or improvement. Frozen continuation FAILS gen-v5 and overall-R1e point floors.
+
+Accepted plays R1e/v5/v6:2443/2668/2586; terminal-unlanded20/27/35. Frozen other-refusal totals14/21/32 include game_over13/21/31, plus out_of_territory1/0/1. Thus that filter also fails, but most counted refusals are terminal-phase responses, not ordinary card-legality errors. Original counts/verdict preserved; terminal accounting diagnosis follows.
+
+Descriptive telemetry: accepted Rockets42/73/70; estimated tower Rockets3/8/4 (v6 one unknown impact), narrow observed finishes0/0/0, repeated tower-cycle labels0/1/0, Rocket->Tornado labels0/0/0. These are existing geometry/HP-coincidence labels, not complete physical opportunities or causal damage proof. Offline Barrel gains did not establish stronger gameplay.
+
+Collection1173.79s and independent8.03s exit0. Runtime/checkpoints/forms/membership bound; no optimization or new checkpoint. Final untouched component, gameplay, power, Q4/Q5 gates remain open. Live STOP intact. Next: diagnose terminal-phase accounting and failure trajectories before further learning.

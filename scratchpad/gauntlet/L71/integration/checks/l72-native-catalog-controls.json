@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/native_catalog_overlay.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "NATIVE_CATALOG_ISOLATED_CONTROLS_PASS",
+  "matched": true,
+  "output_sha256": "2c41c50189699d916e697e43d603e6eff2a49b5fc9219332676812fcef2cafb4",
+  "seconds": 0.29427099227905273
+}

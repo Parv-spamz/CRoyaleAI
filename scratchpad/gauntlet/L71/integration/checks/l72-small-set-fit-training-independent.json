@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\small_set_fit\\verify_training.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "SMALL_SET_FIT_TRAINING_VERIFIED",
+  "matched": true,
+  "output_sha256": "8ae9ab60720c03373ae83d878de840c55c61e4a321be551d08f9c79dd36f05bb",
+  "seconds": 6.90880274772644
+}

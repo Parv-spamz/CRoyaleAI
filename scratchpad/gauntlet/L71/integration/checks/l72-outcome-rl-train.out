@@ -1,0 +1,20 @@
+C:\Users\benpe\ClashBot\pipeline\model_v3.py:92: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(enc, layers)
+Traceback (most recent call last):
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\development_rl_1\train.py", line 82, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\development_rl_1\train.py", line 41, in main
+    E.run_selfplay_batch(factory,policy,opps,RL.rollout_jobs([(s['index'],s,0) for s in ss],u),cfg,8,on_result=results.append)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\benpe\ClashBot\pipeline\e1_eval.py", line 1258, in run_selfplay_batch
+    fill()
+    ~~~~^^
+  File "C:\Users\benpe\ClashBot\pipeline\e1_eval.py", line 1248, in fill
+    m = SelfPlayMatch(env, spec, k, {**cfg, **over, "entry_index": i},
+                      {**ocfg, **{x: v for x, v in over.items() if x != "obs_seed"}, "entry_index": i},
+                      learner, opp)
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\development_rl_1\train.py", line 25, in __init__
+    assert self.initial==expected['initial_state_sha256'] and self.env.loaded_forms==expected['forms'] and not self.env.form_fallbacks
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

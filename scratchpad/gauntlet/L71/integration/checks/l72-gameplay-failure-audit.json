@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/gameplay_failure_audit/audit.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 1,
+  "expected": "GAMEPLAY_FAILURE_AUDIT_COMPLETE",
+  "matched": false,
+  "output_sha256": "be86262354392d67153d46ce5e6f0d199f22b6375514e2fef250b7b9d7707ff1",
+  "seconds": 2.114363431930542
+}

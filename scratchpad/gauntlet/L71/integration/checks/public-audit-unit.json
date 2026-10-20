@@ -1,0 +1,16 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "pipeline/tests/test_public_decision_audit.py",
+    "-q"
+  ],
+  "cwd": "C:\\Users\\benpe\\.codex\\worktrees\\learned-defence\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "5 passed",
+  "matched": true,
+  "output_sha256": "1eef4d68e42a6e11c2a6c0cac3901031b1fada0fb0a1302154217fc5040225cc",
+  "seconds": 6.282461404800415
+}

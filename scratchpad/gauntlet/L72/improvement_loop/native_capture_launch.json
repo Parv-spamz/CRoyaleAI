@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-10-05T07:22:22",
+  "driver": "capture_native_preflight_v2.py",
+  "launcher_pair": [
+    34780,
+    42224
+  ],
+  "worker_pair": [
+    40524,
+    27036
+  ],
+  "emulator_pair": [
+    37516,
+    43112
+  ],
+  "serial": "emulator-5560",
+  "public_port": 38031,
+  "service_port": 37031,
+  "completed": 6,
+  "last_ok": true,
+  "exec_session": 12651,
+  "progress": "native_capture_v2_progress.json",
+  "receipt": "scratchpad/gauntlet/L71/integration/checks/l72-native-capture-v2.json",
+  "owner_live_pair": [
+    37424,
+    29536
+  ],
+  "reserved_collection_started": false
+}

@@ -1,0 +1,14 @@
+
+running 9 tests
+test a_building_she_kills_leaves_no_hog ... ok
+test a_curse_lasts_its_5000_ms ... ok
+test a_cursed_unit_that_dies_to_anything_leaves_a_hog_and_an_uncursed_one_does_not ... ok
+test the_carriers_own_death_spawn_still_happens ... ok
+test the_golem_takes_the_hit_but_never_the_curse_and_its_golemite_does ... ok
+test the_hog_is_born_1100_ahead_of_a_standing_victim ... ok
+test the_impact_that_kills_also_curses ... ok
+test the_red_scene_is_the_rotation_and_a_curse_survives_a_save ... ok
+test the_witch_loads_with_one_curse ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.23s
+

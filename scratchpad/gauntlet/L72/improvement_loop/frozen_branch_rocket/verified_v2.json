@@ -1,0 +1,17 @@
+{
+  "complete": true,
+  "helper_sha256": "04e00c4931f9699c7d632d06d6ab02b5916b28fac5e7b324ba94e8b6f5dfa7a1",
+  "failed_receipt_sha256": "4541ba13ac9b623100eac7ff7c55d8af25d81e2e9661e0a7391d351a81880798",
+  "rows": 54723,
+  "groups": 229,
+  "models": 4,
+  "rocket_rows": 955,
+  "controls": {
+    "positive": 6,
+    "negative": 10
+  },
+  "report_sha256": "2b10f4053dedfce507d1cdf2aab87283747e7324c9ce7d87ed3a29adef6ed302",
+  "started_sha256": "bdd9003f400c030f93746036bf8566efdbca4a77dbee1e5be9e5cdfbaa1dcf55",
+  "predictions": 0,
+  "optimizer_updates": 0
+}

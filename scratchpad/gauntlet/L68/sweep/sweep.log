@@ -1,0 +1,34 @@
+MACHINE
+  gpu                      NVIDIA GeForce RTX 5050 Laptop GPU
+  vram_total_mb            8151
+  max_sm_clock_mhz         3090
+  compute_capability       12.0
+  ram_total_mb             32164
+  cpu                      Intel64 Family 6 Model 204 Stepping 2, GenuineIntel
+  cpu_count                16
+  platform                 Windows-11-10.0.26200-SP0
+  python                   3.13.14
+
+PROFILE  laptop  (auto; largest both axes support)
+  note: workstation: RAM is enough (32164 MB) but it assumes 12 GB VRAM and this card has 8151 MB. Not chosen automatically -- picking on RAM alone is how a benchmark becomes an out-of-memory error twenty minutes in.
+  note:    try it anyway with --profile workstation and read vram_peak_mb: the reference machine peaks at 1882 MB on `laptop`, so 8151 MB is unlikely to be the binding constraint. If it OOMs, that is a 3-minute answer rather than a lost run.
+
+--- workers=1 ---
+    env_ms_per_game_step 2.31186  env share 0.33156167979002626
+
+--- workers=2 ---
+    env_ms_per_game_step 2.77565  env share 0.43579626972740315
+
+--- workers=3 ---
+    env_ms_per_game_step 2.40045  env share 0.20579710144927535
+
+WORKER SWEEP -- is the engine cost intrinsic, or contention?
+workers   env_ms_per_game_step   update_timesteps/s       env share       
+1         2.31186                356.021                  33.2%           
+2         2.77565                338.266                  43.6%           
+3         2.40045                148.553                  20.6%           
+
+  per-step cost is flat within 1.20x across worker counts -> INTRINSIC.
+  On this hardware the engine is the dominant term and replacing it attacks the real cost.
+
+wrote C:\Users\benpe\ClashBot\scratchpad\gauntlet\L68\sweep\hardware_bench_sweep.json

@@ -1,0 +1,34 @@
+📦 Including license file `LICENSE`
+🍹 Building a mixed python/rust project
+🔗 Found pyo3 bindings with abi3-py3.10 support
+📡 Using build options bindings from pyproject.toml
+   Compiling target-lexicon v0.12.16
+   Compiling once_cell v1.21.4
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.24
+   Compiling quote v1.0.47
+   Compiling pyo3-build-config v0.22.6
+   Compiling serde_core v1.0.229
+   Compiling autocfg v1.5.1
+   Compiling libc v0.2.189
+   Compiling pyo3-ffi v0.22.6
+   Compiling pyo3-macros-backend v0.22.6
+   Compiling memoffset v0.9.1
+   Compiling syn v2.0.119
+   Compiling heck v0.5.0
+   Compiling zmij v1.0.23
+   Compiling pyo3 v0.22.6
+   Compiling syn v3.0.5
+   Compiling serde v1.0.229
+   Compiling serde_json v1.0.151
+   Compiling serde_derive v1.0.229
+   Compiling pyo3-macros v0.22.6
+   Compiling memchr v2.8.3
+   Compiling cfg-if v1.0.4
+   Compiling royalesim v0.1.13 (C:\Users\benpe\ClashBot\research\ext\Royale-20261005\RoyaleSim\crates\royalesim)
+   Compiling itoa v1.0.18
+   Compiling unindent v0.2.4
+   Compiling indoc v2.0.7
+    Finished `release` profile [optimized] target(s) in 15m 00s
+📦 Including files matching "python/royalesim/data/**/*"
+📦 Built wheel for abi3 Python ≥ 3.10 to C:\Users\benpe\ClashBot\research\ext\Royale-20261005\wheels\royalesim-0.1.13-cp310-abi3-win_amd64.whl

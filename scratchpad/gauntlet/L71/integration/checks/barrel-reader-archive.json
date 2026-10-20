@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+    "scratchpad/gauntlet/L71/barrel_target/audit_reader_archive.py",
+    "--root",
+    "C:\\Users\\benpe\\ClashBot"
+  ],
+  "cwd": "C:\\Users\\benpe\\.codex\\worktrees\\learned-defence\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "BARREL_READER_ARCHIVE_AUDITED",
+  "matched": true,
+  "output_sha256": "44d3132a746338f60b74da834aae98c80cd4a7b1ff554f07c2267d8449ddf2d1",
+  "seconds": 0.6628420352935791
+}

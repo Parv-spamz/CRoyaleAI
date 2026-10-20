@@ -1,0 +1,8 @@
+{
+  "complete": true,
+  "prepared_sha256": "0cdfebb47543e3a3244ac7e4e6e5d26cca13114adab8bdc086a5d7913010b86b",
+  "scenarios": 64,
+  "policy_setups": 192,
+  "policy_predictions": 0,
+  "optimizer_updates": 0
+}

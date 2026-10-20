@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/review_gameplay1.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "GAMEPLAY_REVIEW_COMPLETE",
+  "matched": true,
+  "output_sha256": "d3413371b6710de84f99b71932b6d2e1edd2720b54ed5e369e892e27c87a88a2",
+  "seconds": 9.119017601013184
+}

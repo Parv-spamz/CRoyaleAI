@@ -1,0 +1,10 @@
+ClashBot NEW model outcome_lambda1_v5: REJECTED for continuation. NOT ACCEPTED / NOT DEPLOYED.
+Only learning change: GAE lambda .95->1, original ordinary_v5 parent. All32 updates/256 training games complete; final checkpoint only; finite/no guard stop.
+Fixed development counts: corrected-input R1e / ordinary_v5 / previous outcome_rl_v5 / new candidate. Parent exposure disclosed; these are agreement counts, not physical hits or untouched evidence.
+Rocket aim <=1tile 290/292/288/295/955; full Rocket 54/77/68/77/955; late Rocket 14/22/19/21/320.
+Barrel correct 36/40/40/38, wrong 20/22/21/23, nonfired 7/1/2/2, of63.
+Witch 332/339/342/335/726; Night Witch 156/161/166/158/373; Furnace 538/549/556/542/1174; defense 3952/4011/4092/3941/8183.
+Late all 1949/1984/2049/2006/6422; general card 11348/11403/11396/11344/17192; all action 30968/31962/32684/31847/54723. PLAY/WAIT aggregates do not prove physical defensive value.
+Fails all3 Rocket material floors and Barrel/Witch/Night Witch/Furnace/defense protections; general-card and late-all protections pass.
+All71003 training rows/outcomes/returns/probabilities and54723 development predictions independently reconcile; exact canonical probability summary passes. Original RL1 failure remains preserved.
+No gameplay superiority, cycling/finishing/adaptation proof or deployment. All final material/component/statistical/untouched/gameplay/Q4/Q5 gates stay open. Owner STOP intact.

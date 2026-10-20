@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/match_adaptation/prepare.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "MATCH_ADAPTATION_PREPARED",
+  "matched": true,
+  "output_sha256": "4e7553c903e35638761a26ed777e033f929b06501e9b0ea2c3c9eb6e36ada304",
+  "seconds": 11.550972700119019
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:/Users/benpe/ClashBot/icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/audit_replay_inventory.py",
+    "--suffix",
+    "v2"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "LOCAL_REPLAY_INVENTORY_COMPLETE",
+  "matched": true,
+  "output_sha256": "3203c96aed74a7edd7803a30ef6462100169f89e5a1a92150aead39682e77196",
+  "seconds": 7.890065670013428
+}

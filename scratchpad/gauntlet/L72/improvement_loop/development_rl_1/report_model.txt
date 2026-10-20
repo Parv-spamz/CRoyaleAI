@@ -1,0 +1,10 @@
+ClashBot NEW model outcome_rl_v5: REJECTED for development continuation. NOT ACCEPTED / NOT DEPLOYED.
+Outcome-only PPO:32 updates/256 fresh training games (5 critic-only+27 policy), final checkpoint only. No new tactical rules or spell-frequency reward.
+Fixed internal-development counts below: corrected-input R1e / ordinary_v5 control / candidate. Parent exposure disclosed; these are not untouched or physical-hit results.
+Rocket forced aim <=1 tile: 290/292/288/955; full expert actions 54/77/68/955; late Rocket actions 14/22/19/320.
+Barrel correct 36/40/40, wrong 20/22/21, not-fired 7/1/2, of 63.
+Full actions Witch 332/339/342/726; Night Witch 156/161/166/373; Furnace 538/549/556/1174; defense 3952/4011/4092/8183.
+Late all actions 1949/1984/2049/6422; general card 11348/11403/11396/17192.
+Failed fixed filters: rocket_aim_material, rocket_action_material, late_rocket_material, original_probability_summary_exact. All54723 rows and paired replay counts independently reconciled.
+Original verifier exact summary comparison failed (max difference1.7e-21); retained as FALSE. Every per-row original1e-4 probability bound passes. Separate recount completed, no tolerance waiver.
+No new gameplay superiority, safe Rocket cycling/finishing or adaptation proof. All final component/statistical/untouched/gameplay gates remain. Owner STOP intact. Initial setup failure and verified JSON-key recovery preserved; no completed training rerun.

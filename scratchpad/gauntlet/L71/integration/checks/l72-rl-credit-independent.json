@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\rl_credit_audit\\verify.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "RL_CREDIT_VERIFIED",
+  "matched": true,
+  "output_sha256": "81db80a67c64abf1bd7cf629529c3110139fe76c24b6631c1e04965205e42be7",
+  "seconds": 8.635452032089233
+}

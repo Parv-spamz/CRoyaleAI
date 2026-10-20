@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "report_sha256": "e263b40d610acfd0338a74540173bb706e96f6d27d27d9303c0eca2a1c4fe536",
+  "started_sha256": "6de454a4ef5a37e10a1ba5283e83961185b7652448090048eaab324ed09ff4ed",
+  "rows": 54723,
+  "models": 3,
+  "groups": 97,
+  "controls": {
+    "positive": 4,
+    "negative": 9,
+    "own_dead_tower_excluded": true,
+    "lattice_boundary_checked": true
+  },
+  "predictions": 0,
+  "optimizer_updates": 0
+}

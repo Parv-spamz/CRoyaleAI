@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:/Users/benpe/ClashBot/icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/audit_unused_hf.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "UNUSED_HF_INVENTORY_COMPLETE",
+  "matched": true,
+  "output_sha256": "8937871c6847c36d59f814a3ee80036db413a53071ccaae4236c8dee2f89a59a",
+  "seconds": 385.60407638549805
+}

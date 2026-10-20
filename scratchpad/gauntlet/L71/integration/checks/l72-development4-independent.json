@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_4\\recount.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "PHASE_RECOUNT_COMPLETE",
+  "matched": true,
+  "output_sha256": "a3fa496778abc2024b07a16215f91a4dee5d684f73135f513c7a95c4635d880c",
+  "seconds": 66.14876818656921
+}

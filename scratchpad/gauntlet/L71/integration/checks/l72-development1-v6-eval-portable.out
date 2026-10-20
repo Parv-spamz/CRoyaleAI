@@ -1,0 +1,8 @@
+DEVELOPMENT_PREDICTED 0
+DEVELOPMENT_PREDICTED 12800
+DEVELOPMENT_PREDICTED 25600
+DEVELOPMENT_PREDICTED 38400
+DEVELOPMENT_PREDICTED 51200
+DEVELOPMENT_1_EVALUATION_COMPLETE
+C:\Users\benpe\ClashBot\pipeline\model_v3.py:92: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(enc, layers)

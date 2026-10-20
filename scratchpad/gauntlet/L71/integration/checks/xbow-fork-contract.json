@@ -1,0 +1,17 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "scratchpad/gauntlet/L71/xbow_support/test_counterfactual.py",
+    "pipeline/tests/test_expert_diagnostics.py",
+    "-q"
+  ],
+  "cwd": "C:\\Users\\benpe\\.codex\\worktrees\\learned-defence\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "4 passed",
+  "matched": true,
+  "output_sha256": "8fff23f2aef345fe1cd7cc603334012895cb6f1812f0962b6530a3d239bd071d",
+  "seconds": 8.870493650436401
+}

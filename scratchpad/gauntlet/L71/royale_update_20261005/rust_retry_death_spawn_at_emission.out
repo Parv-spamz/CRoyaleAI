@@ -1,0 +1,6 @@
+
+running 1 test
+test every_unit_on_the_death_at_emission_list_is_a_spawner_with_a_death_spawn ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/review_local_cell_contribution.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "LOCAL_CELL_CONTRIBUTION_REVIEWED",
+  "matched": true,
+  "output_sha256": "495d4a29ee6d1d2e84809aeebefd34ecc50dee66362064d06c4d0aff77edd1b7",
+  "seconds": 0.5928792953491211
+}

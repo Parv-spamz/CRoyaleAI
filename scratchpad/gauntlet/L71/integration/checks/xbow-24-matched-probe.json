@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "-u",
+    "scratchpad/gauntlet/L71/xbow_support/counterfactual.py",
+    "--out",
+    "icebow/data/bench/xbow_counterfactual_20261005",
+    "--seeds",
+    "24"
+  ],
+  "cwd": "C:\\Users\\benpe\\.codex\\worktrees\\learned-defence\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "XBOW_MATCHED_COUNTERFACTUAL_COMPLETE",
+  "matched": true,
+  "output_sha256": "f2edc73b89c787a94767a2fe81fd41f7ec2d1380c69d202592d9032fdf631bd5",
+  "seconds": 515.1052689552307
+}

@@ -1,0 +1,4498 @@
+{
+  "complete": true,
+  "rows": 73783,
+  "matches": 256,
+  "updates": 32,
+  "groups": {
+    "all/all/all": {
+      "n": 73783,
+      "matches": 256,
+      "updates": 32,
+      "positive": 40121,
+      "negative": 33662,
+      "zero": 0,
+      "advantage_mean": 1.1074693982680498e-18,
+      "abs_advantage_mean": 0.6700653136451635,
+      "return_mean": 0.1274923689128111,
+      "value_mean": 0.13971935877725358,
+      "weighted_advantage": -0.18622195315695783,
+      "weighted_abs_advantage": 21.28625314129285,
+      "gate_sampled": 73697,
+      "gate_score": -0.12854852733644526,
+      "abs_gate_score": 3.693581396058542,
+      "direct_terminal_mean": -0.00043517175490895966,
+      "accepted": 10886,
+      "refused": 16,
+      "unlanded": 74,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 144.0,
+        "max": 433.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 117.3,
+        "max": 303.9
+      },
+      "terminal_coefficient": {
+        "min": 1.574099865442968e-10,
+        "median": 0.0005470129200657684,
+        "max": 0.99994
+      }
+    },
+    "all/all/win": {
+      "n": 36589,
+      "matches": 127,
+      "updates": 32,
+      "positive": 24166,
+      "negative": 12423,
+      "zero": 0,
+      "advantage_mean": 0.3151109995587579,
+      "abs_advantage_mean": 0.6126993646431096,
+      "return_mean": 0.4604277089675136,
+      "value_mean": 0.41326668359811186,
+      "weighted_advantage": 5.128689740195064,
+      "weighted_abs_advantage": 9.546709332571247,
+      "gate_sampled": 36539,
+      "gate_score": -0.006846707122918624,
+      "abs_gate_score": 1.566421578386088,
+      "direct_terminal_mean": 0.06789041860788574,
+      "accepted": 5194,
+      "refused": 6,
+      "unlanded": 34,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 144.0,
+        "max": 431.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 115.0,
+        "max": 303.9
+      },
+      "terminal_coefficient": {
+        "min": 1.7443642929955234e-10,
+        "median": 0.0005499748687571895,
+        "max": 0.99994
+      }
+    },
+    "all/all/loss": {
+      "n": 37194,
+      "matches": 129,
+      "updates": 32,
+      "positive": 15955,
+      "negative": 21239,
+      "zero": 0,
+      "advantage_mean": -0.3099853837408021,
+      "abs_advantage_mean": 0.7264981444252934,
+      "return_mean": -0.20002742345320249,
+      "value_mean": -0.1293784276364256,
+      "weighted_advantage": -5.314911693352022,
+      "weighted_abs_advantage": 11.739543808721603,
+      "gate_sampled": 37158,
+      "gate_score": -0.12170182021352664,
+      "abs_gate_score": 2.127159817672454,
+      "direct_terminal_mean": -0.06764937366339675,
+      "accepted": 5692,
+      "refused": 10,
+      "unlanded": 40,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 144.0,
+        "max": 433.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 119.3,
+        "max": 302.45
+      },
+      "terminal_coefficient": {
+        "min": 1.574099865442968e-10,
+        "median": 0.0005436264062691277,
+        "max": 0.99994
+      }
+    },
+    "all/PLAY/all": {
+      "n": 10976,
+      "matches": 256,
+      "updates": 32,
+      "positive": 5438,
+      "negative": 5538,
+      "zero": 0,
+      "advantage_mean": -0.11870465537323692,
+      "abs_advantage_mean": 0.9053945172886811,
+      "return_mean": 0.07369216958648851,
+      "value_mean": 0.10704651059708131,
+      "weighted_advantage": -0.5877870865884189,
+      "weighted_abs_advantage": 4.183217229809818,
+      "gate_sampled": 10890,
+      "gate_score": -0.2748331732948026,
+      "abs_gate_score": 1.9335749457170954,
+      "direct_terminal_mean": -0.011957039776853336,
+      "accepted": 10886,
+      "refused": 16,
+      "unlanded": 74,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 86.0,
+        "max": 427.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 80.0,
+        "max": 300.15
+      },
+      "terminal_coefficient": {
+        "min": 2.1485720571569422e-10,
+        "median": 0.011014463812734474,
+        "max": 0.99994
+      }
+    },
+    "all/PLAY/win": {
+      "n": 5234,
+      "matches": 127,
+      "updates": 32,
+      "positive": 3480,
+      "negative": 1754,
+      "zero": 0,
+      "advantage_mean": 0.425353903957345,
+      "abs_advantage_mean": 0.7775929850658859,
+      "return_mean": 0.5162578575637704,
+      "value_mean": 0.4491500367988945,
+      "weighted_advantage": 0.9528009014012111,
+      "weighted_abs_advantage": 1.6963366331182628,
+      "gate_sampled": 5184,
+      "gate_score": 0.4212803483926155,
+      "abs_gate_score": 0.8048520838424679,
+      "direct_terminal_mean": 0.13326347238598688,
+      "accepted": 5194,
+      "refused": 6,
+      "unlanded": 34,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 87.0,
+        "max": 423.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 78.275,
+        "max": 299.55
+      },
+      "terminal_coefficient": {
+        "min": 2.642001268894845e-10,
+        "median": 0.010317849485322349,
+        "max": 0.99994
+      }
+    },
+    "all/PLAY/loss": {
+      "n": 5742,
+      "matches": 129,
+      "updates": 32,
+      "positive": 1958,
+      "negative": 3784,
+      "zero": 0,
+      "advantage_mean": -0.6146298555711237,
+      "abs_advantage_mean": 1.0218893308822217,
+      "return_mean": -0.3297193265599923,
+      "value_mean": -0.20479080325528545,
+      "weighted_advantage": -1.5405879879896296,
+      "weighted_abs_advantage": 2.486880596691555,
+      "gate_sampled": 5706,
+      "gate_score": -0.6961135216874181,
+      "abs_gate_score": 1.128722861874628,
+      "direct_terminal_mean": -0.14432976019836252,
+      "accepted": 5692,
+      "refused": 10,
+      "unlanded": 40,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 85.0,
+        "max": 427.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 80.975,
+        "max": 300.15
+      },
+      "terminal_coefficient": {
+        "min": 2.1485720571569422e-10,
+        "median": 0.011571586530338556,
+        "max": 0.99994
+      }
+    },
+    "all/WAIT/all": {
+      "n": 62807,
+      "matches": 256,
+      "updates": 32,
+      "positive": 34683,
+      "negative": 28124,
+      "zero": 0,
+      "advantage_mean": 0.02074453957961133,
+      "abs_advantage_mean": 0.6289397489916814,
+      "return_mean": 0.13689436212703432,
+      "value_mean": 0.1454291870069982,
+      "weighted_advantage": 0.40156513343146094,
+      "weighted_abs_advantage": 17.103035911483033,
+      "gate_sampled": 62807,
+      "gate_score": 0.14628464595835738,
+      "abs_gate_score": 1.7600064503414463,
+      "direct_terminal_mean": 0.0015783621411354538,
+      "accepted": 0,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 152.0,
+        "max": 433.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 122.5,
+        "max": 303.9
+      },
+      "terminal_coefficient": {
+        "min": 1.574099865442968e-10,
+        "median": 0.0003525968029580728,
+        "max": 0.99994
+      }
+    },
+    "all/WAIT/win": {
+      "n": 31355,
+      "matches": 127,
+      "updates": 32,
+      "positive": 20686,
+      "negative": 10669,
+      "zero": 0,
+      "advantage_mean": 0.2967084684912342,
+      "abs_advantage_mean": 0.585174146678102,
+      "return_mean": 0.4511081427818078,
+      "value_mean": 0.4072767786179525,
+      "weighted_advantage": 4.175888838793854,
+      "weighted_abs_advantage": 7.8503726994529845,
+      "gate_sampled": 31355,
+      "gate_score": -0.42812705551553415,
+      "abs_gate_score": 0.7615694945436202,
+      "direct_terminal_mean": 0.0569778826973585,
+      "accepted": 0,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 152.0,
+        "max": 431.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 120.1,
+        "max": 303.9
+      },
+      "terminal_coefficient": {
+        "min": 1.7443642929955234e-10,
+        "median": 0.0003613321768142452,
+        "max": 0.99994
+      }
+    },
+    "all/WAIT/loss": {
+      "n": 31452,
+      "matches": 129,
+      "updates": 32,
+      "positive": 13997,
+      "negative": 17455,
+      "zero": 0,
+      "advantage_mean": -0.2543682987462164,
+      "abs_advantage_mean": 0.6725703753601883,
+      "return_mean": -0.17635036292798353,
+      "value_mean": -0.11561084971440176,
+      "weighted_advantage": -3.7743237053623924,
+      "weighted_abs_advantage": 9.25266321203005,
+      "gate_sampled": 31452,
+      "gate_score": 0.5744117014738914,
+      "abs_gate_score": 0.9984369557978262,
+      "direct_terminal_mean": -0.05365030271452949,
+      "accepted": 0,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 153.0,
+        "max": 433.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 124.82499999999999,
+        "max": 302.45
+      },
+      "terminal_coefficient": {
+        "min": 1.574099865442968e-10,
+        "median": 0.00034084656857701426,
+        "max": 0.99994
+      }
+    },
+    "all/Rocket/all": {
+      "n": 280,
+      "matches": 160,
+      "updates": 32,
+      "positive": 147,
+      "negative": 133,
+      "zero": 0,
+      "advantage_mean": -0.125153928459773,
+      "abs_advantage_mean": 0.7581931653822128,
+      "return_mean": 0.2724551013949428,
+      "value_mean": 0.3052011927522887,
+      "weighted_advantage": -0.011919596188184466,
+      "weighted_abs_advantage": 0.0854387208596484,
+      "gate_sampled": 278,
+      "gate_score": -0.006926494378922508,
+      "abs_gate_score": 0.02559806776515508,
+      "direct_terminal_mean": 0.005445066621637998,
+      "accepted": 279,
+      "refused": 0,
+      "unlanded": 1,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 111.5,
+        "max": 404.0
+      },
+      "lag_seconds": {
+        "min": 1.0,
+        "median": 95.025,
+        "max": 285.2
+      },
+      "terminal_coefficient": {
+        "min": 7.107209772702632e-10,
+        "median": 0.002928975069593886,
+        "max": 0.9988006837538238
+      }
+    },
+    "all/Rocket/win": {
+      "n": 173,
+      "matches": 90,
+      "updates": 32,
+      "positive": 110,
+      "negative": 63,
+      "zero": 0,
+      "advantage_mean": 0.21876623065973647,
+      "abs_advantage_mean": 0.6048784173400856,
+      "return_mean": 0.5270362529022922,
+      "value_mean": 0.49798097556726867,
+      "weighted_advantage": 0.017480483025130705,
+      "weighted_abs_advantage": 0.0428927260437704,
+      "gate_sampled": 172,
+      "gate_score": 0.0047743631126849085,
+      "abs_gate_score": 0.010229310527580292,
+      "direct_terminal_mean": 0.07599512045056095,
+      "accepted": 172,
+      "refused": 0,
+      "unlanded": 1,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 116.0,
+        "max": 404.0
+      },
+      "lag_seconds": {
+        "min": 1.0,
+        "median": 98.0,
+        "max": 285.2
+      },
+      "terminal_coefficient": {
+        "min": 7.107209772702632e-10,
+        "median": 0.002239446158989926,
+        "max": 0.9988006837538238
+      }
+    },
+    "all/Rocket/loss": {
+      "n": 107,
+      "matches": 70,
+      "updates": 32,
+      "positive": 37,
+      "negative": 70,
+      "zero": 0,
+      "advantage_mean": -0.6812117558212228,
+      "abs_advantage_mean": 1.0060758888521941,
+      "return_mean": -0.13915741459357545,
+      "value_mean": -0.006489484135482879,
+      "weighted_advantage": -0.02940007921331517,
+      "weighted_abs_advantage": 0.042545994815878,
+      "gate_sampled": 106,
+      "gate_score": -0.011700857491607415,
+      "abs_gate_score": 0.015368757237574785,
+      "direct_terminal_mean": -0.10862184284007856,
+      "accepted": 107,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 1.0,
+        "median": 110.0,
+        "max": 290.0
+      },
+      "lag_seconds": {
+        "min": 10.2,
+        "median": 90.3,
+        "max": 255.5
+      },
+      "terminal_coefficient": {
+        "min": 2.7177191509268485e-07,
+        "median": 0.0031884334587760606,
+        "max": 0.9373170399183662
+      }
+    },
+    "all/card:ice_wizard/all": {
+      "n": 1843,
+      "matches": 256,
+      "updates": 32,
+      "positive": 932,
+      "negative": 911,
+      "zero": 0,
+      "advantage_mean": -0.11739641160380197,
+      "abs_advantage_mean": 0.8756142736666424,
+      "return_mean": 0.06732734024802689,
+      "value_mean": 0.10074284592347336,
+      "weighted_advantage": -0.0945622315514873,
+      "weighted_abs_advantage": 0.6752251934821583,
+      "gate_sampled": 1826,
+      "gate_score": -0.02983055694106831,
+      "abs_gate_score": 0.27447862363036624,
+      "direct_terminal_mean": -0.012461007712699897,
+      "accepted": 1825,
+      "refused": 2,
+      "unlanded": 16,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 80.0,
+        "max": 400.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 74.65,
+        "max": 295.9
+      },
+      "terminal_coefficient": {
+        "min": 8.62635941211005e-10,
+        "median": 0.014661080526542244,
+        "max": 0.99994
+      }
+    },
+    "all/card:ice_wizard/win": {
+      "n": 874,
+      "matches": 127,
+      "updates": 32,
+      "positive": 596,
+      "negative": 278,
+      "zero": 0,
+      "advantage_mean": 0.4025729871116477,
+      "abs_advantage_mean": 0.7285163091249546,
+      "return_mean": 0.5280979803249054,
+      "value_mean": 0.46494970902033916,
+      "weighted_advantage": 0.14978919080424918,
+      "weighted_abs_advantage": 0.26283579411612895,
+      "gate_sampled": 864,
+      "gate_score": 0.05856483331147018,
+      "abs_gate_score": 0.11624152054902902,
+      "direct_terminal_mean": 0.1423135820253514,
+      "accepted": 865,
+      "refused": 0,
+      "unlanded": 9,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 80.5,
+        "max": 400.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 71.95,
+        "max": 295.9
+      },
+      "terminal_coefficient": {
+        "min": 8.707483639051906e-10,
+        "median": 0.01488563306936148,
+        "max": 0.99994
+      }
+    },
+    "all/card:ice_wizard/loss": {
+      "n": 969,
+      "matches": 129,
+      "updates": 32,
+      "positive": 336,
+      "negative": 633,
+      "zero": 0,
+      "advantage_mean": -0.5863884182883252,
+      "abs_advantage_mean": 1.0082908691356156,
+      "return_mean": -0.34826970766445187,
+      "value_mean": -0.2277574619678174,
+      "weighted_advantage": -0.2443514223557365,
+      "weighted_abs_advantage": 0.41238939936602925,
+      "gate_sampled": 962,
+      "gate_score": -0.0883953902525385,
+      "abs_gate_score": 0.1582371030813372,
+      "direct_terminal_mean": -0.15206161806466773,
+      "accepted": 960,
+      "refused": 2,
+      "unlanded": 7,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 80.0,
+        "max": 400.0
+      },
+      "lag_seconds": {
+        "min": 0.15,
+        "median": 77.0,
+        "max": 294.75
+      },
+      "terminal_coefficient": {
+        "min": 8.62635941211005e-10,
+        "median": 0.014539192071286703,
+        "max": 0.9998200107997841
+      }
+    },
+    "all/card:knight_evo/all": {
+      "n": 1988,
+      "matches": 256,
+      "updates": 32,
+      "positive": 1027,
+      "negative": 961,
+      "zero": 0,
+      "advantage_mean": -0.04041854709541589,
+      "abs_advantage_mean": 0.8935289189954186,
+      "return_mean": 0.07772974078879158,
+      "value_mean": 0.09813809248587128,
+      "weighted_advantage": -0.036356585095537214,
+      "weighted_abs_advantage": 0.7503288916837936,
+      "gate_sampled": 1974,
+      "gate_score": -0.011576541811341289,
+      "abs_gate_score": 0.3066544989149545,
+      "direct_terminal_mean": -0.011174175910104611,
+      "accepted": 1973,
+      "refused": 4,
+      "unlanded": 11,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 84.0,
+        "max": 427.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 79.525,
+        "max": 299.0
+      },
+      "terminal_coefficient": {
+        "min": 2.1485720571569422e-10,
+        "median": 0.011916593773150401,
+        "max": 0.99994
+      }
+    },
+    "all/card:knight_evo/win": {
+      "n": 963,
+      "matches": 127,
+      "updates": 32,
+      "positive": 672,
+      "negative": 291,
+      "zero": 0,
+      "advantage_mean": 0.514781361692044,
+      "abs_advantage_mean": 0.7916695152072117,
+      "return_mean": 0.5186484514733687,
+      "value_mean": 0.4373005172730488,
+      "weighted_advantage": 0.21567778312154967,
+      "weighted_abs_advantage": 0.3206848566647725,
+      "gate_sampled": 953,
+      "gate_score": 0.08403910071487378,
+      "abs_gate_score": 0.13436830245058373,
+      "direct_terminal_mean": 0.13390991353723808,
+      "accepted": 957,
+      "refused": 2,
+      "unlanded": 4,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 86.0,
+        "max": 421.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 78.5,
+        "max": 297.85
+      },
+      "terminal_coefficient": {
+        "min": 2.9268983237667453e-10,
+        "median": 0.01115077955769875,
+        "max": 0.99994
+      }
+    },
+    "all/card:knight_evo/loss": {
+      "n": 1025,
+      "matches": 129,
+      "updates": 32,
+      "positive": 355,
+      "negative": 670,
+      "zero": 0,
+      "advantage_mean": -0.5620356321318295,
+      "abs_advantage_mean": 0.9892270710422901,
+      "return_mean": -0.336518764956816,
+      "value_mean": -0.22050914172881353,
+      "weighted_advantage": -0.2520343682170869,
+      "weighted_abs_advantage": 0.4296440350190211,
+      "gate_sampled": 1021,
+      "gate_score": -0.09561564252621506,
+      "abs_gate_score": 0.17228619646437082,
+      "direct_terminal_mean": -0.14748244726404708,
+      "accepted": 1016,
+      "refused": 2,
+      "unlanded": 7,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 84.0,
+        "max": 427.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 80.05,
+        "max": 299.0
+      },
+      "terminal_coefficient": {
+        "min": 2.1485720571569422e-10,
+        "median": 0.012367301681398067,
+        "max": 0.99994
+      }
+    },
+    "all/card:rocket/all": {
+      "n": 280,
+      "matches": 160,
+      "updates": 32,
+      "positive": 147,
+      "negative": 133,
+      "zero": 0,
+      "advantage_mean": -0.125153928459773,
+      "abs_advantage_mean": 0.7581931653822128,
+      "return_mean": 0.2724551013949428,
+      "value_mean": 0.3052011927522887,
+      "weighted_advantage": -0.011919596188184466,
+      "weighted_abs_advantage": 0.0854387208596484,
+      "gate_sampled": 278,
+      "gate_score": -0.006926494378922508,
+      "abs_gate_score": 0.02559806776515508,
+      "direct_terminal_mean": 0.005445066621637998,
+      "accepted": 279,
+      "refused": 0,
+      "unlanded": 1,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 111.5,
+        "max": 404.0
+      },
+      "lag_seconds": {
+        "min": 1.0,
+        "median": 95.025,
+        "max": 285.2
+      },
+      "terminal_coefficient": {
+        "min": 7.107209772702632e-10,
+        "median": 0.002928975069593886,
+        "max": 0.9988006837538238
+      }
+    },
+    "all/card:rocket/win": {
+      "n": 173,
+      "matches": 90,
+      "updates": 32,
+      "positive": 110,
+      "negative": 63,
+      "zero": 0,
+      "advantage_mean": 0.21876623065973647,
+      "abs_advantage_mean": 0.6048784173400856,
+      "return_mean": 0.5270362529022922,
+      "value_mean": 0.49798097556726867,
+      "weighted_advantage": 0.017480483025130705,
+      "weighted_abs_advantage": 0.0428927260437704,
+      "gate_sampled": 172,
+      "gate_score": 0.0047743631126849085,
+      "abs_gate_score": 0.010229310527580292,
+      "direct_terminal_mean": 0.07599512045056095,
+      "accepted": 172,
+      "refused": 0,
+      "unlanded": 1,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 116.0,
+        "max": 404.0
+      },
+      "lag_seconds": {
+        "min": 1.0,
+        "median": 98.0,
+        "max": 285.2
+      },
+      "terminal_coefficient": {
+        "min": 7.107209772702632e-10,
+        "median": 0.002239446158989926,
+        "max": 0.9988006837538238
+      }
+    },
+    "all/card:rocket/loss": {
+      "n": 107,
+      "matches": 70,
+      "updates": 32,
+      "positive": 37,
+      "negative": 70,
+      "zero": 0,
+      "advantage_mean": -0.6812117558212228,
+      "abs_advantage_mean": 1.0060758888521941,
+      "return_mean": -0.13915741459357545,
+      "value_mean": -0.006489484135482879,
+      "weighted_advantage": -0.02940007921331517,
+      "weighted_abs_advantage": 0.042545994815878,
+      "gate_sampled": 106,
+      "gate_score": -0.011700857491607415,
+      "abs_gate_score": 0.015368757237574785,
+      "direct_terminal_mean": -0.10862184284007856,
+      "accepted": 107,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 1.0,
+        "median": 110.0,
+        "max": 290.0
+      },
+      "lag_seconds": {
+        "min": 10.2,
+        "median": 90.3,
+        "max": 255.5
+      },
+      "terminal_coefficient": {
+        "min": 2.7177191509268485e-07,
+        "median": 0.0031884334587760606,
+        "max": 0.9373170399183662
+      }
+    },
+    "all/card:skeletons/all": {
+      "n": 2085,
+      "matches": 256,
+      "updates": 32,
+      "positive": 991,
+      "negative": 1094,
+      "zero": 0,
+      "advantage_mean": -0.16064609035118946,
+      "abs_advantage_mean": 0.9295894832310355,
+      "return_mean": 0.07082295212993478,
+      "value_mean": 0.11113236003558484,
+      "weighted_advantage": -0.15258476006525112,
+      "weighted_abs_advantage": 0.8176055789398666,
+      "gate_sampled": 2082,
+      "gate_score": -0.06917646428080225,
+      "abs_gate_score": 0.3874727955374442,
+      "direct_terminal_mean": -0.011660782695138115,
+      "accepted": 2071,
+      "refused": 3,
+      "unlanded": 11,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 85.0,
+        "max": 423.0
+      },
+      "lag_seconds": {
+        "min": 0.1,
+        "median": 79.05,
+        "max": 298.9
+      },
+      "terminal_coefficient": {
+        "min": 2.642001268894845e-10,
+        "median": 0.011841649906385004,
+        "max": 0.9998800036000001
+      }
+    },
+    "all/card:skeletons/win": {
+      "n": 993,
+      "matches": 127,
+      "updates": 32,
+      "positive": 644,
+      "negative": 349,
+      "zero": 0,
+      "advantage_mean": 0.4135291627355929,
+      "abs_advantage_mean": 0.7884794567507077,
+      "return_mean": 0.5184268804445229,
+      "value_mean": 0.45287814184508907,
+      "weighted_advantage": 0.17466090462684178,
+      "weighted_abs_advantage": 0.3245683117430479,
+      "gate_sampled": 991,
+      "gate_score": 0.08057074074102197,
+      "abs_gate_score": 0.15457758953639905,
+      "direct_terminal_mean": 0.13887196301695715,
+      "accepted": 985,
+      "refused": 1,
+      "unlanded": 7,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 86.0,
+        "max": 423.0
+      },
+      "lag_seconds": {
+        "min": 0.1,
+        "median": 78.0,
+        "max": 298.9
+      },
+      "terminal_coefficient": {
+        "min": 2.642001268894845e-10,
+        "median": 0.011040928205931728,
+        "max": 0.9998800036000001
+      }
+    },
+    "all/card:skeletons/loss": {
+      "n": 1092,
+      "matches": 129,
+      "updates": 32,
+      "positive": 347,
+      "negative": 745,
+      "zero": 0,
+      "advantage_mean": -0.6827669935702142,
+      "abs_advantage_mean": 1.0579065677502344,
+      "return_mean": -0.336201499167122,
+      "value_mean": -0.19963097452195885,
+      "weighted_advantage": -0.32724566469209293,
+      "weighted_abs_advantage": 0.49303726719681873,
+      "gate_sampled": 1091,
+      "gate_score": -0.14974720502182423,
+      "abs_gate_score": 0.23289520600104513,
+      "direct_terminal_mean": -0.14854632893333464,
+      "accepted": 1086,
+      "refused": 2,
+      "unlanded": 4,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 83.0,
+        "max": 395.0
+      },
+      "lag_seconds": {
+        "min": 0.15,
+        "median": 79.95,
+        "max": 296.75
+      },
+      "terminal_coefficient": {
+        "min": 1.1333801347392757e-09,
+        "median": 0.01277058668709104,
+        "max": 0.9998200107997841
+      }
+    },
+    "all/card:tesla_evo/all": {
+      "n": 1284,
+      "matches": 256,
+      "updates": 32,
+      "positive": 667,
+      "negative": 617,
+      "zero": 0,
+      "advantage_mean": -0.07106076607596012,
+      "abs_advantage_mean": 0.8514971029677058,
+      "return_mean": 0.08007992810862083,
+      "value_mean": 0.10396725169898999,
+      "weighted_advantage": -0.042161768699347596,
+      "weighted_abs_advantage": 0.453320418551607,
+      "gate_sampled": 1272,
+      "gate_score": -0.018803763092709612,
+      "abs_gate_score": 0.19729576433993812,
+      "direct_terminal_mean": 0.01050107255307992,
+      "accepted": 1274,
+      "refused": 2,
+      "unlanded": 8,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 93.0,
+        "max": 411.0
+      },
+      "lag_seconds": {
+        "min": 0.5,
+        "median": 82.725,
+        "max": 295.7
+      },
+      "terminal_coefficient": {
+        "min": 4.901083440746136e-10,
+        "median": 0.007793588682638819,
+        "max": 0.9994001619740832
+      }
+    },
+    "all/card:tesla_evo/win": {
+      "n": 609,
+      "matches": 127,
+      "updates": 32,
+      "positive": 423,
+      "negative": 186,
+      "zero": 0,
+      "advantage_mean": 0.4344923392112733,
+      "abs_advantage_mean": 0.7546420603613156,
+      "return_mean": 0.49887628591072747,
+      "value_mean": 0.43019052836491045,
+      "weighted_advantage": 0.11173835398434553,
+      "weighted_abs_advantage": 0.1888132414379734,
+      "gate_sampled": 604,
+      "gate_score": 0.04647831622960734,
+      "abs_gate_score": 0.08576004106815202,
+      "direct_terminal_mean": 0.13008176576273567,
+      "accepted": 602,
+      "refused": 2,
+      "unlanded": 5,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 88.0,
+        "max": 411.0
+      },
+      "lag_seconds": {
+        "min": 0.5,
+        "median": 76.15,
+        "max": 295.7
+      },
+      "terminal_coefficient": {
+        "min": 4.901083440746136e-10,
+        "median": 0.009840850603260148,
+        "max": 0.9994001619740832
+      }
+    },
+    "all/card:tesla_evo/loss": {
+      "n": 675,
+      "matches": 129,
+      "updates": 32,
+      "positive": 244,
+      "negative": 431,
+      "zero": 0,
+      "advantage_mean": -0.5271820121795531,
+      "abs_advantage_mean": 0.9388818747414709,
+      "return_mean": -0.2977674524861687,
+      "value_mean": -0.1903586379151515,
+      "weighted_advantage": -0.15390012268369313,
+      "weighted_abs_advantage": 0.26450717711363364,
+      "gate_sampled": 668,
+      "gate_score": -0.06528207932231696,
+      "abs_gate_score": 0.1115357232717861,
+      "direct_terminal_mean": -0.09738728620940951,
+      "accepted": 672,
+      "refused": 0,
+      "unlanded": 3,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 96.0,
+        "max": 408.0
+      },
+      "lag_seconds": {
+        "min": 0.5,
+        "median": 90.5,
+        "max": 294.8
+      },
+      "terminal_coefficient": {
+        "min": 5.722559707451613e-10,
+        "median": 0.006683197212543285,
+        "max": 0.9994001619740832
+      }
+    },
+    "all/card:the_log/all": {
+      "n": 1914,
+      "matches": 256,
+      "updates": 32,
+      "positive": 989,
+      "negative": 925,
+      "zero": 0,
+      "advantage_mean": -0.07443040740202769,
+      "abs_advantage_mean": 0.9139731430168453,
+      "return_mean": 0.06731131332281066,
+      "value_mean": 0.09314046912398775,
+      "weighted_advantage": -0.07096733452518436,
+      "weighted_abs_advantage": 0.7294823777032896,
+      "gate_sampled": 1895,
+      "gate_score": -0.03576045221344086,
+      "abs_gate_score": 0.3762210307205007,
+      "direct_terminal_mean": -0.013861000138270857,
+      "accepted": 1899,
+      "refused": 3,
+      "unlanded": 12,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 85.0,
+        "max": 424.0
+      },
+      "lag_seconds": {
+        "min": 0.1,
+        "median": 79.625,
+        "max": 300.15
+      },
+      "terminal_coefficient": {
+        "min": 2.5111062833769814e-10,
+        "median": 0.01148237794777335,
+        "max": 0.9998800036000001
+      }
+    },
+    "all/card:the_log/win": {
+      "n": 910,
+      "matches": 127,
+      "updates": 32,
+      "positive": 601,
+      "negative": 309,
+      "zero": 0,
+      "advantage_mean": 0.4492934354824485,
+      "abs_advantage_mean": 0.7971415907575777,
+      "return_mean": 0.5127696236754414,
+      "value_mean": 0.4405215125764761,
+      "weighted_advantage": 0.1674219439114572,
+      "weighted_abs_advantage": 0.2998938218830574,
+      "gate_sampled": 899,
+      "gate_score": 0.08433113132973663,
+      "abs_gate_score": 0.16183823394791985,
+      "direct_terminal_mean": 0.1399657073648607,
+      "accepted": 905,
+      "refused": 0,
+      "unlanded": 5,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 85.0,
+        "max": 419.0
+      },
+      "lag_seconds": {
+        "min": 0.1,
+        "median": 77.65,
+        "max": 299.55
+      },
+      "terminal_coefficient": {
+        "min": 3.240766373701507e-10,
+        "median": 0.011589296394357757,
+        "max": 0.9998800036000001
+      }
+    },
+    "all/card:the_log/loss": {
+      "n": 1004,
+      "matches": 129,
+      "updates": 32,
+      "positive": 388,
+      "negative": 616,
+      "zero": 0,
+      "advantage_mean": -0.5491203446777979,
+      "abs_advantage_mean": 1.0198662830127951,
+      "return_mean": -0.33644074088126696,
+      "value_mean": -0.22171685113673376,
+      "weighted_advantage": -0.23838927843664154,
+      "weighted_abs_advantage": 0.42958855582023225,
+      "gate_sampled": 996,
+      "gate_score": -0.12009158354317746,
+      "abs_gate_score": 0.21438279677258085,
+      "direct_terminal_mean": -0.1532856055444957,
+      "accepted": 994,
+      "refused": 3,
+      "unlanded": 7,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 85.5,
+        "max": 424.0
+      },
+      "lag_seconds": {
+        "min": 0.5,
+        "median": 80.9,
+        "max": 300.15
+      },
+      "terminal_coefficient": {
+        "min": 2.5111062833769814e-10,
+        "median": 0.011263857580428227,
+        "max": 0.9994001619740832
+      }
+    },
+    "all/card:tornado/all": {
+      "n": 819,
+      "matches": 237,
+      "updates": 32,
+      "positive": 322,
+      "negative": 497,
+      "zero": 0,
+      "advantage_mean": -0.35782489620883845,
+      "abs_advantage_mean": 1.0347275935770701,
+      "return_mean": -0.04716126458308777,
+      "value_mean": 0.02785396470357035,
+      "weighted_advantage": -0.12814659225729547,
+      "weighted_abs_advantage": 0.3534068926766505,
+      "gate_sampled": 819,
+      "gate_score": -0.06428667817318404,
+      "abs_gate_score": 0.16662242582832604,
+      "direct_terminal_mean": -0.054803728310840745,
+      "accepted": 807,
+      "refused": 2,
+      "unlanded": 10,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 56.0,
+        "max": 380.0
+      },
+      "lag_seconds": {
+        "min": 0.3,
+        "median": 57.0,
+        "max": 294.65
+      },
+      "terminal_coefficient": {
+        "min": 2.4196515056273966e-09,
+        "median": 0.05293945000924913,
+        "max": 0.9996400539956805
+      }
+    },
+    "all/card:tornado/win": {
+      "n": 318,
+      "matches": 109,
+      "updates": 32,
+      "positive": 184,
+      "negative": 134,
+      "zero": 0,
+      "advantage_mean": 0.384356357442291,
+      "abs_advantage_mean": 0.8612292661395037,
+      "return_mean": 0.5615676198189891,
+      "value_mean": 0.497898917000755,
+      "weighted_advantage": 0.04940144034486135,
+      "weighted_abs_advantage": 0.11279253108943868,
+      "gate_sampled": 318,
+      "gate_score": 0.020769183454867994,
+      "abs_gate_score": 0.05388667744040971,
+      "direct_terminal_mean": 0.19400313926266582,
+      "accepted": 316,
+      "refused": 1,
+      "unlanded": 1,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 56.0,
+        "max": 359.0
+      },
+      "lag_seconds": {
+        "min": 1.0,
+        "median": 57.875,
+        "max": 294.15
+      },
+      "terminal_coefficient": {
+        "min": 7.178159504721042e-09,
+        "median": 0.05343638820057428,
+        "max": 0.9988006837538238
+      }
+    },
+    "all/card:tornado/loss": {
+      "n": 501,
+      "matches": 128,
+      "updates": 32,
+      "positive": 138,
+      "negative": 363,
+      "zero": 0,
+      "advantage_mean": -0.8289100033167411,
+      "abs_advantage_mean": 1.1448522804536092,
+      "return_mean": -0.4335400774371006,
+      "value_mean": -0.27049792118566063,
+      "weighted_advantage": -0.17754803260215682,
+      "weighted_abs_advantage": 0.24061436158721178,
+      "gate_sampled": 501,
+      "gate_score": -0.08505586162805204,
+      "abs_gate_score": 0.11273574838791633,
+      "direct_terminal_mean": -0.212729045453306,
+      "accepted": 491,
+      "refused": 1,
+      "unlanded": 9,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 57.0,
+        "max": 380.0
+      },
+      "lag_seconds": {
+        "min": 0.3,
+        "median": 55.0,
+        "max": 294.65
+      },
+      "terminal_coefficient": {
+        "min": 2.4196515056273966e-09,
+        "median": 0.05078676589790857,
+        "max": 0.9996400539956805
+      }
+    },
+    "all/card:x_bow/all": {
+      "n": 763,
+      "matches": 254,
+      "updates": 32,
+      "positive": 363,
+      "negative": 400,
+      "zero": 0,
+      "advantage_mean": -0.1434312285847125,
+      "abs_advantage_mean": 0.9265015602908597,
+      "return_mean": 0.14842667278740337,
+      "value_mean": 0.18667155516751766,
+      "weighted_advantage": -0.051088218206131276,
+      "weighted_abs_advantage": 0.3184091559128043,
+      "gate_sampled": 744,
+      "gate_score": -0.03847222240333379,
+      "abs_gate_score": 0.1992317389804107,
+      "direct_terminal_mean": -0.007000820194717736,
+      "accepted": 758,
+      "refused": 0,
+      "unlanded": 5,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 142.0,
+        "max": 407.0
+      },
+      "lag_seconds": {
+        "min": 0.5,
+        "median": 119.45,
+        "max": 298.85
+      },
+      "terminal_coefficient": {
+        "min": 6.059635678352567e-10,
+        "median": 0.000588194756000719,
+        "max": 0.9994001619740832
+      }
+    },
+    "all/card:x_bow/win": {
+      "n": 394,
+      "matches": 127,
+      "updates": 32,
+      "positive": 250,
+      "negative": 144,
+      "zero": 0,
+      "advantage_mean": 0.34149718840559723,
+      "abs_advantage_mean": 0.8232737329441765,
+      "return_mean": 0.47230418811096814,
+      "value_mean": 0.422115942480499,
+      "weighted_advantage": 0.06663080158277551,
+      "weighted_abs_advantage": 0.14385535014007378,
+      "gate_sampled": 383,
+      "gate_score": 0.04175267949835272,
+      "abs_gate_score": 0.08795040832239423,
+      "direct_terminal_mean": 0.06303323500227256,
+      "accepted": 392,
+      "refused": 0,
+      "unlanded": 2,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 140.0,
+        "max": 407.0
+      },
+      "lag_seconds": {
+        "min": 0.5,
+        "median": 117.5,
+        "max": 298.85
+      },
+      "terminal_coefficient": {
+        "min": 6.059635678352567e-10,
+        "median": 0.0006564047443937194,
+        "max": 0.9994001619740832
+      }
+    },
+    "all/card:x_bow/loss": {
+      "n": 369,
+      "matches": 127,
+      "updates": 32,
+      "positive": 113,
+      "negative": 256,
+      "zero": 0,
+      "advantage_mean": -0.6612138743684036,
+      "abs_advantage_mean": 1.036723142877833,
+      "return_mean": -0.19739376362854374,
+      "value_mean": -0.06472434890108571,
+      "weighted_advantage": -0.11771901978890677,
+      "weighted_abs_advantage": 0.17455380577273055,
+      "gate_sampled": 361,
+      "gate_score": -0.08022490190168652,
+      "abs_gate_score": 0.11128133065801646,
+      "direct_terminal_mean": -0.081779730079851,
+      "accepted": 366,
+      "refused": 0,
+      "unlanded": 3,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 143.0,
+        "max": 404.0
+      },
+      "lag_seconds": {
+        "min": 0.5,
+        "median": 122.75,
+        "max": 297.95
+      },
+      "terminal_coefficient": {
+        "min": 7.114889936206111e-10,
+        "median": 0.0005708836702181579,
+        "max": 0.9994001619740832
+      }
+    },
+    "warmup/all/all": {
+      "n": 10632,
+      "matches": 40,
+      "updates": 5,
+      "positive": 6079,
+      "negative": 4553,
+      "zero": 0,
+      "advantage_mean": 7.351363895185386e-18,
+      "abs_advantage_mean": 0.6422748529120417,
+      "return_mean": 0.2585139042639048,
+      "value_mean": 0.2805760999131703,
+      "weighted_advantage": 0.018907495785495346,
+      "weighted_abs_advantage": 3.207351942067856,
+      "gate_sampled": 10627,
+      "gate_score": -0.03236655637990669,
+      "abs_gate_score": 0.5704705130117909,
+      "direct_terminal_mean": -0.003552716321413792,
+      "accepted": 1529,
+      "refused": 1,
+      "unlanded": 13,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 132.0,
+        "max": 423.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 107.5,
+        "max": 301.7
+      },
+      "terminal_coefficient": {
+        "min": 2.6293496713782656e-10,
+        "median": 0.0009892504126363228,
+        "max": 0.99994
+      }
+    },
+    "warmup/all/win": {
+      "n": 4939,
+      "matches": 19,
+      "updates": 5,
+      "positive": 3628,
+      "negative": 1311,
+      "zero": 0,
+      "advantage_mean": 0.36395118430540047,
+      "abs_advantage_mean": 0.5132980191711315,
+      "return_mean": 0.624588459592344,
+      "value_mean": 0.5789892914496308,
+      "weighted_advantage": 0.8749250513996127,
+      "weighted_abs_advantage": 1.199529642070471,
+      "gate_sampled": 4937,
+      "gate_score": 0.008498329650918762,
+      "abs_gate_score": 0.19322145288463513,
+      "direct_terminal_mean": 0.07532296783525656,
+      "accepted": 701,
+      "refused": 0,
+      "unlanded": 5,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 129.0,
+        "max": 423.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 103.5,
+        "max": 301.7
+      },
+      "terminal_coefficient": {
+        "min": 2.6293496713782656e-10,
+        "median": 0.0011386276420526338,
+        "max": 0.99994
+      }
+    },
+    "warmup/all/loss": {
+      "n": 5693,
+      "matches": 21,
+      "updates": 5,
+      "positive": 2451,
+      "negative": 3242,
+      "zero": 0,
+      "advantage_mean": -0.3157482696793207,
+      "abs_advantage_mean": 0.7541695625284749,
+      "return_mean": -0.059076510063718765,
+      "value_mean": 0.02168575159091859,
+      "weighted_advantage": -0.8560175556141173,
+      "weighted_abs_advantage": 2.0078222999973843,
+      "gate_sampled": 5690,
+      "gate_score": -0.040864886030825456,
+      "abs_gate_score": 0.3772490601271558,
+      "direct_terminal_mean": -0.07198184051775929,
+      "accepted": 828,
+      "refused": 1,
+      "unlanded": 8,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 135.0,
+        "max": 378.0
+      },
+      "lag_seconds": {
+        "min": 0.4,
+        "median": 110.4,
+        "max": 301.0
+      },
+      "terminal_coefficient": {
+        "min": 2.6463722028153164e-09,
+        "median": 0.0008622212200156364,
+        "max": 0.9995201007879053
+      }
+    },
+    "warmup/PLAY/all": {
+      "n": 1543,
+      "matches": 40,
+      "updates": 5,
+      "positive": 770,
+      "negative": 773,
+      "zero": 0,
+      "advantage_mean": -0.19934309091728505,
+      "abs_advantage_mean": 0.8947682185798357,
+      "return_mean": 0.19616497849871384,
+      "value_mean": 0.25479268871204025,
+      "weighted_advantage": -0.13883178892205783,
+      "weighted_abs_advantage": 0.6378066500095632,
+      "gate_sampled": 1538,
+      "gate_score": -0.061063450951065204,
+      "abs_gate_score": 0.3109805512572777,
+      "direct_terminal_mean": -0.023984130436894485,
+      "accepted": 1529,
+      "refused": 1,
+      "unlanded": 13,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 77.0,
+        "max": 411.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 72.5,
+        "max": 296.65
+      },
+      "terminal_coefficient": {
+        "min": 4.901083440746136e-10,
+        "median": 0.0179880843342408,
+        "max": 0.99994
+      }
+    },
+    "warmup/PLAY/win": {
+      "n": 706,
+      "matches": 19,
+      "updates": 5,
+      "positive": 499,
+      "negative": 207,
+      "zero": 0,
+      "advantage_mean": 0.413810227355874,
+      "abs_advantage_mean": 0.625800254161574,
+      "return_mean": 0.6673548038947227,
+      "value_mean": 0.6111097211850713,
+      "weighted_advantage": 0.14040730857614525,
+      "weighted_abs_advantage": 0.20666778294147253,
+      "gate_sampled": 704,
+      "gate_score": 0.07317939692744833,
+      "abs_gate_score": 0.10499712223970696,
+      "direct_terminal_mean": 0.1343824242851162,
+      "accepted": 701,
+      "refused": 0,
+      "unlanded": 5,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 77.5,
+        "max": 411.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 71.75,
+        "max": 296.65
+      },
+      "terminal_coefficient": {
+        "min": 4.901083440746136e-10,
+        "median": 0.01721325600043532,
+        "max": 0.99994
+      }
+    },
+    "warmup/PLAY/loss": {
+      "n": 837,
+      "matches": 21,
+      "updates": 5,
+      "positive": 271,
+      "negative": 566,
+      "zero": 0,
+      "advantage_mean": -0.7165309555539043,
+      "abs_advantage_mean": 1.1216396437641758,
+      "return_mean": -0.20127829119015384,
+      "value_mean": -0.04575668395935753,
+      "weighted_advantage": -0.2792390974982031,
+      "weighted_abs_advantage": 0.4311388670680905,
+      "gate_sampled": 834,
+      "gate_score": -0.13424284787851354,
+      "abs_gate_score": 0.20598342901757075,
+      "direct_terminal_mean": -0.15756452187505407,
+      "accepted": 828,
+      "refused": 1,
+      "unlanded": 8,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 76.0,
+        "max": 362.0
+      },
+      "lag_seconds": {
+        "min": 0.5,
+        "median": 73.5,
+        "max": 293.0
+      },
+      "terminal_coefficient": {
+        "min": 6.070753425776343e-09,
+        "median": 0.018409411113421655,
+        "max": 0.9994001619740832
+      }
+    },
+    "warmup/WAIT/all": {
+      "n": 9089,
+      "matches": 40,
+      "updates": 5,
+      "positive": 5309,
+      "negative": 3780,
+      "zero": 0,
+      "advantage_mean": 0.03384160955939828,
+      "abs_advantage_mean": 0.5994101523701332,
+      "return_mean": 0.269098610222282,
+      "value_mean": 0.2849532374952303,
+      "weighted_advantage": 0.15773928470755322,
+      "weighted_abs_advantage": 2.5695452920582924,
+      "gate_sampled": 9089,
+      "gate_score": 0.028696894571158517,
+      "abs_gate_score": 0.2594899617545132,
+      "direct_terminal_mean": -8.416400760735485e-05,
+      "accepted": 0,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 140.0,
+        "max": 423.0
+      },
+      "lag_seconds": {
+        "min": 0.4,
+        "median": 111.55,
+        "max": 301.7
+      },
+      "terminal_coefficient": {
+        "min": 2.6293496713782656e-10,
+        "median": 0.0006699784365106709,
+        "max": 0.9995201007879053
+      }
+    },
+    "warmup/WAIT/win": {
+      "n": 4233,
+      "matches": 19,
+      "updates": 5,
+      "positive": 3129,
+      "negative": 1104,
+      "zero": 0,
+      "advantage_mean": 0.3556354544699092,
+      "abs_advantage_mean": 0.49453435796081907,
+      "return_mean": 0.6174556840011606,
+      "value_mean": 0.5736320924434365,
+      "weighted_advantage": 0.7345177428234675,
+      "weighted_abs_advantage": 0.9928618591289985,
+      "gate_sampled": 4233,
+      "gate_score": -0.06468106727652959,
+      "abs_gate_score": 0.08822433064492818,
+      "direct_terminal_mean": 0.06547274901796366,
+      "accepted": 0,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 136.0,
+        "max": 423.0
+      },
+      "lag_seconds": {
+        "min": 0.4,
+        "median": 107.5,
+        "max": 301.7
+      },
+      "terminal_coefficient": {
+        "min": 2.6293496713782656e-10,
+        "median": 0.0007946691899124216,
+        "max": 0.9995201007879053
+      }
+    },
+    "warmup/WAIT/loss": {
+      "n": 4856,
+      "matches": 21,
+      "updates": 5,
+      "positive": 2180,
+      "negative": 2676,
+      "zero": 0,
+      "advantage_mean": -0.2466677284772971,
+      "abs_advantage_mean": 0.6908309179662259,
+      "return_mean": -0.03456603007961123,
+      "value_mean": 0.03331040532971208,
+      "weighted_advantage": -0.5767784581159142,
+      "weighted_abs_advantage": 1.5766834329292938,
+      "gate_sampled": 4856,
+      "gate_score": 0.0933779618476881,
+      "abs_gate_score": 0.17126563110958506,
+      "direct_terminal_mean": -0.0572304598966605,
+      "accepted": 0,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 143.0,
+        "max": 378.0
+      },
+      "lag_seconds": {
+        "min": 0.4,
+        "median": 115.0,
+        "max": 301.0
+      },
+      "terminal_coefficient": {
+        "min": 2.6463722028153164e-09,
+        "median": 0.0005698398979214274,
+        "max": 0.9995201007879053
+      }
+    },
+    "warmup/Rocket/all": {
+      "n": 27,
+      "matches": 21,
+      "updates": 5,
+      "positive": 12,
+      "negative": 15,
+      "zero": 0,
+      "advantage_mean": -0.4146077489515647,
+      "abs_advantage_mean": 0.8268189162741422,
+      "return_mean": 0.2891214308817845,
+      "value_mean": 0.3896760221571596,
+      "weighted_advantage": -0.0057016201156418625,
+      "weighted_abs_advantage": 0.010567180478285122,
+      "gate_sampled": 27,
+      "gate_score": -0.003312926775623457,
+      "abs_gate_score": 0.00458247984694663,
+      "direct_terminal_mean": -0.056097079961313044,
+      "accepted": 27,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 4.0,
+        "median": 94.0,
+        "max": 228.0
+      },
+      "lag_seconds": {
+        "min": 12.95,
+        "median": 75.9,
+        "max": 159.0
+      },
+      "terminal_coefficient": {
+        "min": 6.9757098377965015e-06,
+        "median": 0.00739587970596471,
+        "max": 0.801946289730701
+      }
+    },
+    "warmup/Rocket/win": {
+      "n": 11,
+      "matches": 9,
+      "updates": 5,
+      "positive": 8,
+      "negative": 3,
+      "zero": 0,
+      "advantage_mean": 0.2268986479771371,
+      "abs_advantage_mean": 0.4453913417909652,
+      "return_mean": 0.5916164622881015,
+      "value_mean": 0.5710759717400448,
+      "weighted_advantage": 0.001217704193429826,
+      "weighted_abs_advantage": 0.0021011564003115546,
+      "gate_sampled": 11,
+      "gate_score": 0.0004952598674349614,
+      "abs_gate_score": 0.0005431180769143152,
+      "direct_terminal_mean": 0.015295467729415242,
+      "accepted": 11,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 54.0,
+        "median": 135.0,
+        "max": 228.0
+      },
+      "lag_seconds": {
+        "min": 36.0,
+        "median": 95.0,
+        "max": 157.0
+      },
+      "terminal_coefficient": {
+        "min": 6.9757098377965015e-06,
+        "median": 0.0008815771678389512,
+        "max": 0.060022295568240416
+      }
+    },
+    "warmup/Rocket/loss": {
+      "n": 16,
+      "matches": 12,
+      "updates": 5,
+      "positive": 4,
+      "negative": 12,
+      "zero": 0,
+      "advantage_mean": -0.8556433968400473,
+      "abs_advantage_mean": 1.0890503737313262,
+      "return_mean": 0.08115609678994154,
+      "value_mean": 0.2649635568189259,
+      "weighted_advantage": -0.006919324309071689,
+      "weighted_abs_advantage": 0.008466024077973568,
+      "gate_sampled": 16,
+      "gate_score": -0.0038081866430584197,
+      "abs_gate_score": 0.004039361770032316,
+      "direct_terminal_mean": -0.10517945649868873,
+      "accepted": 16,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 4.0,
+        "median": 74.5,
+        "max": 181.0
+      },
+      "lag_seconds": {
+        "min": 12.95,
+        "median": 72.125,
+        "max": 159.0
+      },
+      "terminal_coefficient": {
+        "min": 7.675500143252817e-05,
+        "median": 0.02012209116057282,
+        "max": 0.801946289730701
+      }
+    },
+    "warmup/card:ice_wizard/all": {
+      "n": 265,
+      "matches": 40,
+      "updates": 5,
+      "positive": 139,
+      "negative": 126,
+      "zero": 0,
+      "advantage_mean": -0.21910324705190062,
+      "abs_advantage_mean": 0.7727699960704618,
+      "return_mean": 0.21509596904453798,
+      "value_mean": 0.2773126813706741,
+      "weighted_advantage": -0.02689757583210078,
+      "weighted_abs_advantage": 0.09257523998953049,
+      "gate_sampled": 264,
+      "gate_score": -0.00788599547171524,
+      "abs_gate_score": 0.03865301780698038,
+      "direct_terminal_mean": -0.011581043540441373,
+      "accepted": 259,
+      "refused": 0,
+      "unlanded": 6,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 72.0,
+        "max": 333.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 65.9,
+        "max": 290.15
+      },
+      "terminal_coefficient": {
+        "min": 2.8146686831343e-08,
+        "median": 0.023081601192409776,
+        "max": 0.99994
+      }
+    },
+    "warmup/card:ice_wizard/win": {
+      "n": 124,
+      "matches": 19,
+      "updates": 5,
+      "positive": 96,
+      "negative": 28,
+      "zero": 0,
+      "advantage_mean": 0.34562053533664233,
+      "abs_advantage_mean": 0.47090419876669565,
+      "return_mean": 0.7003024414979744,
+      "value_mean": 0.6560133686287503,
+      "weighted_advantage": 0.018998640392764783,
+      "weighted_abs_advantage": 0.026255830016559206,
+      "gate_sampled": 123,
+      "gate_score": 0.008351832922581058,
+      "abs_gate_score": 0.011102247438567607,
+      "direct_terminal_mean": 0.1630073026442275,
+      "accepted": 120,
+      "refused": 0,
+      "unlanded": 4,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 69.5,
+        "max": 308.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 62.0,
+        "max": 290.15
+      },
+      "terminal_coefficient": {
+        "min": 1.0469830724250625e-07,
+        "median": 0.026555218514263807,
+        "max": 0.99994
+      }
+    },
+    "warmup/card:ice_wizard/loss": {
+      "n": 141,
+      "matches": 21,
+      "updates": 5,
+      "positive": 43,
+      "negative": 98,
+      "zero": 0,
+      "advantage_mean": -0.7157397648971443,
+      "abs_advantage_mean": 1.0382406263234192,
+      "return_mean": -0.21161043226203008,
+      "value_mean": -0.055729057778272334,
+      "weighted_advantage": -0.04589621622486557,
+      "weighted_abs_advantage": 0.06631940997297128,
+      "gate_sampled": 141,
+      "gate_score": -0.0162378283942963,
+      "abs_gate_score": 0.02755077036841278,
+      "direct_terminal_mean": -0.16511973096525653,
+      "accepted": 139,
+      "refused": 0,
+      "unlanded": 2,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 73.0,
+        "max": 333.0
+      },
+      "lag_seconds": {
+        "min": 1.05,
+        "median": 68.0,
+        "max": 267.5
+      },
+      "terminal_coefficient": {
+        "min": 2.8146686831343e-08,
+        "median": 0.02188808591402662,
+        "max": 0.9987407557127986
+      }
+    },
+    "warmup/card:knight_evo/all": {
+      "n": 284,
+      "matches": 40,
+      "updates": 5,
+      "positive": 145,
+      "negative": 139,
+      "zero": 0,
+      "advantage_mean": -0.15448103267754484,
+      "abs_advantage_mean": 0.8891384408958515,
+      "return_mean": 0.21594806341271736,
+      "value_mean": 0.2655780204230396,
+      "weighted_advantage": -0.019926705284985302,
+      "weighted_abs_advantage": 0.11606796908981595,
+      "gate_sampled": 283,
+      "gate_score": -0.006481782851556045,
+      "abs_gate_score": 0.050801809058607074,
+      "direct_terminal_mean": -0.011975484041089791,
+      "accepted": 282,
+      "refused": 0,
+      "unlanded": 2,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 76.5,
+        "max": 381.0
+      },
+      "lag_seconds": {
+        "min": 1.0,
+        "median": 71.5,
+        "max": 290.5
+      },
+      "terminal_coefficient": {
+        "min": 2.33326990790194e-09,
+        "median": 0.018075803185583328,
+        "max": 0.9988006837538238
+      }
+    },
+    "warmup/card:knight_evo/win": {
+      "n": 132,
+      "matches": 19,
+      "updates": 5,
+      "positive": 98,
+      "negative": 34,
+      "zero": 0,
+      "advantage_mean": 0.4698392283081645,
+      "abs_advantage_mean": 0.6459304948706374,
+      "return_mean": 0.6772532187171114,
+      "value_mean": 0.611084890281634,
+      "weighted_advantage": 0.029233868498819877,
+      "weighted_abs_advantage": 0.039506803934071785,
+      "gate_sampled": 131,
+      "gate_score": 0.015060949174770664,
+      "abs_gate_score": 0.019227472508800438,
+      "direct_terminal_mean": 0.14624335138437725,
+      "accepted": 131,
+      "refused": 0,
+      "unlanded": 1,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 75.0,
+        "max": 381.0
+      },
+      "lag_seconds": {
+        "min": 1.0,
+        "median": 69.6,
+        "max": 277.7
+      },
+      "terminal_coefficient": {
+        "min": 2.33326990790194e-09,
+        "median": 0.01953070500264864,
+        "max": 0.9988006837538238
+      }
+    },
+    "warmup/card:knight_evo/loss": {
+      "n": 152,
+      "matches": 21,
+      "updates": 5,
+      "positive": 47,
+      "negative": 105,
+      "zero": 0,
+      "advantage_mean": -0.6966538909019766,
+      "abs_advantage_mean": 1.1003453413914321,
+      "return_mean": -0.18465904514109846,
+      "value_mean": -0.034467419191003094,
+      "weighted_advantage": -0.049160573783805186,
+      "weighted_abs_advantage": 0.07656116515574415,
+      "gate_sampled": 152,
+      "gate_score": -0.021542732026326714,
+      "abs_gate_score": 0.03157433654980664,
+      "direct_terminal_mean": -0.14937605164741644,
+      "accepted": 151,
+      "refused": 0,
+      "unlanded": 1,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 78.5,
+        "max": 359.0
+      },
+      "lag_seconds": {
+        "min": 1.0,
+        "median": 75.35,
+        "max": 290.5
+      },
+      "terminal_coefficient": {
+        "min": 7.101902411213626e-09,
+        "median": 0.016339042429436634,
+        "max": 0.9988006837538238
+      }
+    },
+    "warmup/card:rocket/all": {
+      "n": 27,
+      "matches": 21,
+      "updates": 5,
+      "positive": 12,
+      "negative": 15,
+      "zero": 0,
+      "advantage_mean": -0.4146077489515647,
+      "abs_advantage_mean": 0.8268189162741422,
+      "return_mean": 0.2891214308817845,
+      "value_mean": 0.3896760221571596,
+      "weighted_advantage": -0.0057016201156418625,
+      "weighted_abs_advantage": 0.010567180478285122,
+      "gate_sampled": 27,
+      "gate_score": -0.003312926775623457,
+      "abs_gate_score": 0.00458247984694663,
+      "direct_terminal_mean": -0.056097079961313044,
+      "accepted": 27,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 4.0,
+        "median": 94.0,
+        "max": 228.0
+      },
+      "lag_seconds": {
+        "min": 12.95,
+        "median": 75.9,
+        "max": 159.0
+      },
+      "terminal_coefficient": {
+        "min": 6.9757098377965015e-06,
+        "median": 0.00739587970596471,
+        "max": 0.801946289730701
+      }
+    },
+    "warmup/card:rocket/win": {
+      "n": 11,
+      "matches": 9,
+      "updates": 5,
+      "positive": 8,
+      "negative": 3,
+      "zero": 0,
+      "advantage_mean": 0.2268986479771371,
+      "abs_advantage_mean": 0.4453913417909652,
+      "return_mean": 0.5916164622881015,
+      "value_mean": 0.5710759717400448,
+      "weighted_advantage": 0.001217704193429826,
+      "weighted_abs_advantage": 0.0021011564003115546,
+      "gate_sampled": 11,
+      "gate_score": 0.0004952598674349614,
+      "abs_gate_score": 0.0005431180769143152,
+      "direct_terminal_mean": 0.015295467729415242,
+      "accepted": 11,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 54.0,
+        "median": 135.0,
+        "max": 228.0
+      },
+      "lag_seconds": {
+        "min": 36.0,
+        "median": 95.0,
+        "max": 157.0
+      },
+      "terminal_coefficient": {
+        "min": 6.9757098377965015e-06,
+        "median": 0.0008815771678389512,
+        "max": 0.060022295568240416
+      }
+    },
+    "warmup/card:rocket/loss": {
+      "n": 16,
+      "matches": 12,
+      "updates": 5,
+      "positive": 4,
+      "negative": 12,
+      "zero": 0,
+      "advantage_mean": -0.8556433968400473,
+      "abs_advantage_mean": 1.0890503737313262,
+      "return_mean": 0.08115609678994154,
+      "value_mean": 0.2649635568189259,
+      "weighted_advantage": -0.006919324309071689,
+      "weighted_abs_advantage": 0.008466024077973568,
+      "gate_sampled": 16,
+      "gate_score": -0.0038081866430584197,
+      "abs_gate_score": 0.004039361770032316,
+      "direct_terminal_mean": -0.10517945649868873,
+      "accepted": 16,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 4.0,
+        "median": 74.5,
+        "max": 181.0
+      },
+      "lag_seconds": {
+        "min": 12.95,
+        "median": 72.125,
+        "max": 159.0
+      },
+      "terminal_coefficient": {
+        "min": 7.675500143252817e-05,
+        "median": 0.02012209116057282,
+        "max": 0.801946289730701
+      }
+    },
+    "warmup/card:skeletons/all": {
+      "n": 298,
+      "matches": 40,
+      "updates": 5,
+      "positive": 139,
+      "negative": 159,
+      "zero": 0,
+      "advantage_mean": -0.24221263910642696,
+      "abs_advantage_mean": 0.97536941816046,
+      "return_mean": 0.18362039531637325,
+      "value_mean": 0.24876245842560038,
+      "weighted_advantage": -0.032534860359646395,
+      "weighted_abs_advantage": 0.1365189713347807,
+      "gate_sampled": 298,
+      "gate_score": -0.01574697265182138,
+      "abs_gate_score": 0.0670196116744119,
+      "direct_terminal_mean": -0.03090675960107375,
+      "accepted": 298,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 73.5,
+        "max": 383.0
+      },
+      "lag_seconds": {
+        "min": 1.5,
+        "median": 69.15,
+        "max": 287.65
+      },
+      "terminal_coefficient": {
+        "min": 2.100728137788854e-09,
+        "median": 0.021641118951298263,
+        "max": 0.9982015651233966
+      }
+    },
+    "warmup/card:skeletons/win": {
+      "n": 136,
+      "matches": 19,
+      "updates": 5,
+      "positive": 93,
+      "negative": 43,
+      "zero": 0,
+      "advantage_mean": 0.45522929096614595,
+      "abs_advantage_mean": 0.6695681433836613,
+      "return_mean": 0.6633330355079131,
+      "value_mean": 0.5985925199522174,
+      "weighted_advantage": 0.030593728853711782,
+      "weighted_abs_advantage": 0.04330538098168711,
+      "gate_sampled": 136,
+      "gate_score": 0.014144713267971891,
+      "abs_gate_score": 0.0201702855678807,
+      "direct_terminal_mean": 0.13533092133245528,
+      "accepted": 136,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 1.0,
+        "median": 76.0,
+        "max": 383.0
+      },
+      "lag_seconds": {
+        "min": 2.0,
+        "median": 70.575,
+        "max": 287.65
+      },
+      "terminal_coefficient": {
+        "min": 2.100728137788854e-09,
+        "median": 0.018879648530813517,
+        "max": 0.9477226655737506
+      }
+    },
+    "warmup/card:skeletons/loss": {
+      "n": 162,
+      "matches": 21,
+      "updates": 5,
+      "positive": 46,
+      "negative": 116,
+      "zero": 0,
+      "advantage_mean": -0.827719444599451,
+      "abs_advantage_mean": 1.2320914759977721,
+      "return_mean": -0.21910132731356147,
+      "value_mean": -0.04492203767081892,
+      "weighted_advantage": -0.06312858921335818,
+      "weighted_abs_advantage": 0.09321359035309358,
+      "gate_sampled": 162,
+      "gate_score": -0.029891685919793277,
+      "abs_gate_score": 0.0468493261065312,
+      "direct_terminal_mean": -0.17046431890329564,
+      "accepted": 162,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 71.5,
+        "max": 322.0
+      },
+      "lag_seconds": {
+        "min": 1.5,
+        "median": 69.15,
+        "max": 259.5
+      },
+      "terminal_coefficient": {
+        "min": 4.917649186951524e-08,
+        "median": 0.0235335344279137,
+        "max": 0.9982015651233966
+      }
+    },
+    "warmup/card:tesla_evo/all": {
+      "n": 161,
+      "matches": 40,
+      "updates": 5,
+      "positive": 89,
+      "negative": 72,
+      "zero": 0,
+      "advantage_mean": -0.12535087562382258,
+      "abs_advantage_mean": 0.8172935344209137,
+      "return_mean": 0.19220213632606956,
+      "value_mean": 0.23820223751011224,
+      "weighted_advantage": -0.00698768999421273,
+      "weighted_abs_advantage": 0.058041555551056945,
+      "gate_sampled": 160,
+      "gate_score": -0.0027353644563672436,
+      "abs_gate_score": 0.02605482084404573,
+      "direct_terminal_mean": 0.00849113430946247,
+      "accepted": 161,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 1.0,
+        "median": 84.0,
+        "max": 411.0
+      },
+      "lag_seconds": {
+        "min": 2.0,
+        "median": 74.3,
+        "max": 295.7
+      },
+      "terminal_coefficient": {
+        "min": 4.901083440746136e-10,
+        "median": 0.012405204723723886,
+        "max": 0.9477226655737506
+      }
+    },
+    "warmup/card:tesla_evo/win": {
+      "n": 76,
+      "matches": 19,
+      "updates": 5,
+      "positive": 57,
+      "negative": 19,
+      "zero": 0,
+      "advantage_mean": 0.39803669191769925,
+      "abs_advantage_mean": 0.666418768455484,
+      "return_mean": 0.6653117139593919,
+      "value_mean": 0.6138026429731064,
+      "weighted_advantage": 0.014592726398704176,
+      "weighted_abs_advantage": 0.02258650394000488,
+      "gate_sampled": 76,
+      "gate_score": 0.007176681106623263,
+      "abs_gate_score": 0.010334975112894856,
+      "direct_terminal_mean": 0.1350982341843513,
+      "accepted": 76,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 1.0,
+        "median": 79.0,
+        "max": 411.0
+      },
+      "lag_seconds": {
+        "min": 2.0,
+        "median": 69.0,
+        "max": 295.7
+      },
+      "terminal_coefficient": {
+        "min": 4.901083440746136e-10,
+        "median": 0.01606854746004696,
+        "max": 0.9477226655737506
+      }
+    },
+    "warmup/card:tesla_evo/loss": {
+      "n": 85,
+      "matches": 21,
+      "updates": 5,
+      "positive": 32,
+      "negative": 53,
+      "zero": 0,
+      "advantage_mean": -0.5933209360138891,
+      "abs_advantage_mean": 0.9521933251664743,
+      "return_mean": -0.23081348602843046,
+      "value_mean": -0.09762871325680016,
+      "weighted_advantage": -0.021580416392916905,
+      "weighted_abs_advantage": 0.03545505161105207,
+      "gate_sampled": 84,
+      "gate_score": -0.00991204556299051,
+      "abs_gate_score": 0.015719845731150872,
+      "direct_terminal_mean": -0.10471050793161459,
+      "accepted": 85,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 2.0,
+        "median": 85.0,
+        "max": 281.0
+      },
+      "lag_seconds": {
+        "min": 3.5,
+        "median": 77.45,
+        "max": 233.5
+      },
+      "terminal_coefficient": {
+        "min": 4.2645313730805737e-07,
+        "median": 0.011561518950566884,
+        "max": 0.8987173356747035
+      }
+    },
+    "warmup/card:the_log/all": {
+      "n": 278,
+      "matches": 40,
+      "updates": 5,
+      "positive": 146,
+      "negative": 132,
+      "zero": 0,
+      "advantage_mean": -0.15201693833863122,
+      "abs_advantage_mean": 0.8964354721704029,
+      "return_mean": 0.1861478773450218,
+      "value_mean": 0.23782837723353326,
+      "weighted_advantage": -0.01894333045950681,
+      "weighted_abs_advantage": 0.11431068085793662,
+      "gate_sampled": 278,
+      "gate_score": -0.006761882176347892,
+      "abs_gate_score": 0.06004369334607547,
+      "direct_terminal_mean": -0.028915135320251813,
+      "accepted": 275,
+      "refused": 1,
+      "unlanded": 2,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 79.5,
+        "max": 396.0
+      },
+      "lag_seconds": {
+        "min": 0.5,
+        "median": 76.15,
+        "max": 287.5
+      },
+      "terminal_coefficient": {
+        "min": 1.0687298848119085e-09,
+        "median": 0.015539396502432842,
+        "max": 0.9994001619740832
+      }
+    },
+    "warmup/card:the_log/win": {
+      "n": 128,
+      "matches": 19,
+      "updates": 5,
+      "positive": 87,
+      "negative": 41,
+      "zero": 0,
+      "advantage_mean": 0.3768598141234074,
+      "abs_advantage_mean": 0.6365220175755879,
+      "return_mean": 0.6543183384328599,
+      "value_mean": 0.6054056845399706,
+      "weighted_advantage": 0.023111548245890776,
+      "weighted_abs_advantage": 0.038478154459528145,
+      "gate_sampled": 128,
+      "gate_score": 0.01395270446403024,
+      "abs_gate_score": 0.022938869972603575,
+      "direct_terminal_mean": 0.12831449028157768,
+      "accepted": 128,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 1.0,
+        "median": 83.0,
+        "max": 396.0
+      },
+      "lag_seconds": {
+        "min": 2.4,
+        "median": 77.225,
+        "max": 287.2
+      },
+      "terminal_coefficient": {
+        "min": 1.0687298848119085e-09,
+        "median": 0.012889513573842002,
+        "max": 0.9428448658304581
+      }
+    },
+    "warmup/card:the_log/loss": {
+      "n": 150,
+      "matches": 21,
+      "updates": 5,
+      "positive": 59,
+      "negative": 91,
+      "zero": 0,
+      "advantage_mean": -0.6033251004395709,
+      "abs_advantage_mean": 1.1182282867579783,
+      "return_mean": -0.21335758278326675,
+      "value_mean": -0.07583759166795988,
+      "weighted_advantage": -0.04205487870539759,
+      "weighted_abs_advantage": 0.07583252639840848,
+      "gate_sampled": 150,
+      "gate_score": -0.020714586640378126,
+      "abs_gate_score": 0.0371048233734719,
+      "direct_terminal_mean": -0.16308441583381295,
+      "accepted": 147,
+      "refused": 1,
+      "unlanded": 2,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 77.0,
+        "max": 355.0
+      },
+      "lag_seconds": {
+        "min": 0.5,
+        "median": 73.975,
+        "max": 287.5
+      },
+      "terminal_coefficient": {
+        "min": 8.750719967217221e-09,
+        "median": 0.017734985761883808,
+        "max": 0.9994001619740832
+      }
+    },
+    "warmup/card:tornado/all": {
+      "n": 120,
+      "matches": 35,
+      "updates": 5,
+      "positive": 41,
+      "negative": 79,
+      "zero": 0,
+      "advantage_mean": -0.5539881817060065,
+      "abs_advantage_mean": 1.1103184903282268,
+      "return_mean": 0.07439373773402683,
+      "value_mean": 0.19598942273299247,
+      "weighted_advantage": -0.03147073535948493,
+      "weighted_abs_advantage": 0.062468769718986634,
+      "gate_sampled": 120,
+      "gate_score": -0.02113761524310662,
+      "abs_gate_score": 0.032832167346375236,
+      "direct_terminal_mean": -0.09901379974240875,
+      "accepted": 117,
+      "refused": 0,
+      "unlanded": 3,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 51.0,
+        "max": 329.0
+      },
+      "lag_seconds": {
+        "min": 0.5,
+        "median": 48.0,
+        "max": 294.15
+      },
+      "terminal_coefficient": {
+        "min": 3.415682702982115e-08,
+        "median": 0.06879724712054919,
+        "max": 0.9994001619740832
+      }
+    },
+    "warmup/card:tornado/win": {
+      "n": 45,
+      "matches": 14,
+      "updates": 5,
+      "positive": 25,
+      "negative": 20,
+      "zero": 0,
+      "advantage_mean": 0.32456219148806426,
+      "abs_advantage_mean": 0.6303245652253736,
+      "return_mean": 0.6688047305308752,
+      "value_mean": 0.6239814954701963,
+      "weighted_advantage": 0.007358563473457254,
+      "weighted_abs_advantage": 0.013814258867696385,
+      "gate_sampled": 45,
+      "gate_score": 0.0032819067651408376,
+      "abs_gate_score": 0.006179831490365576,
+      "direct_terminal_mean": 0.167067442911464,
+      "accepted": 45,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 2.0,
+        "median": 55.0,
+        "max": 285.0
+      },
+      "lag_seconds": {
+        "min": 3.0,
+        "median": 57.05,
+        "max": 294.15
+      },
+      "terminal_coefficient": {
+        "min": 3.147209416532326e-07,
+        "median": 0.055482184586628694,
+        "max": 0.8931802237246282
+      }
+    },
+    "warmup/card:tornado/loss": {
+      "n": 75,
+      "matches": 21,
+      "updates": 5,
+      "positive": 16,
+      "negative": 59,
+      "zero": 0,
+      "advantage_mean": -1.081118405622449,
+      "abs_advantage_mean": 1.398314845389939,
+      "return_mean": -0.2822528579440821,
+      "value_mean": -0.0608058209093299,
+      "weighted_advantage": -0.038829298832942186,
+      "weighted_abs_advantage": 0.048654510851290245,
+      "gate_sampled": 75,
+      "gate_score": -0.02441952200824746,
+      "abs_gate_score": 0.026652335856009665,
+      "direct_terminal_mean": -0.2586625453347324,
+      "accepted": 72,
+      "refused": 0,
+      "unlanded": 3,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 41.0,
+        "max": 329.0
+      },
+      "lag_seconds": {
+        "min": 0.5,
+        "median": 44.0,
+        "max": 264.0
+      },
+      "terminal_coefficient": {
+        "min": 3.415682702982115e-08,
+        "median": 0.11713521684756052,
+        "max": 0.9994001619740832
+      }
+    },
+    "warmup/card:x_bow/all": {
+      "n": 110,
+      "matches": 40,
+      "updates": 5,
+      "positive": 59,
+      "negative": 51,
+      "zero": 0,
+      "advantage_mean": 0.06039219797735216,
+      "abs_advantage_mean": 0.8755659872713369,
+      "return_mean": 0.2746074654628844,
+      "value_mean": 0.28722777520204185,
+      "weighted_advantage": 0.0036307284835209843,
+      "weighted_abs_advantage": 0.047256282989170666,
+      "gate_sampled": 108,
+      "gate_score": 0.0029990886754726665,
+      "abs_gate_score": 0.03099295133383528,
+      "direct_terminal_mean": -0.011451570671551864,
+      "accepted": 110,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 4.0,
+        "median": 140.5,
+        "max": 368.0
+      },
+      "lag_seconds": {
+        "min": 3.5,
+        "median": 117.5,
+        "max": 296.65
+      },
+      "terminal_coefficient": {
+        "min": 4.586346670233017e-09,
+        "median": 0.0006281772271199173,
+        "max": 0.8110923954464198
+      }
+    },
+    "warmup/card:x_bow/win": {
+      "n": 54,
+      "matches": 19,
+      "updates": 5,
+      "positive": 35,
+      "negative": 19,
+      "zero": 0,
+      "advantage_mean": 0.5513534052810591,
+      "abs_advantage_mean": 0.7724483540882326,
+      "return_mean": 0.6256266586076328,
+      "value_mean": 0.5467423285860443,
+      "weighted_advantage": 0.015300528519366773,
+      "weighted_abs_advantage": 0.020619694341613478,
+      "gate_sampled": 54,
+      "gate_score": 0.010715349358895425,
+      "abs_gate_score": 0.014500322071679889,
+      "direct_terminal_mean": 0.04766579080303776,
+      "accepted": 54,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 10.0,
+        "median": 135.0,
+        "max": 368.0
+      },
+      "lag_seconds": {
+        "min": 14.5,
+        "median": 117.5,
+        "max": 296.65
+      },
+      "terminal_coefficient": {
+        "min": 4.586346670233017e-09,
+        "median": 0.0008446442425739614,
+        "max": 0.5880557727905185
+      }
+    },
+    "warmup/card:x_bow/loss": {
+      "n": 56,
+      "matches": 21,
+      "updates": 5,
+      "positive": 24,
+      "negative": 32,
+      "zero": 0,
+      "advantage_mean": -0.4130346804940795,
+      "abs_advantage_mean": 0.9750008478407588,
+      "return_mean": -0.0638753279266944,
+      "value_mean": 0.03698159872461084,
+      "weighted_advantage": -0.011669800035845784,
+      "weighted_abs_advantage": 0.026636588647557188,
+      "gate_sampled": 54,
+      "gate_score": -0.0077162606834227584,
+      "abs_gate_score": 0.01649262926215539,
+      "direct_terminal_mean": -0.0684575978077633,
+      "accepted": 56,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 4.0,
+        "median": 150.0,
+        "max": 362.0
+      },
+      "lag_seconds": {
+        "min": 3.5,
+        "median": 116.475,
+        "max": 293.0
+      },
+      "terminal_coefficient": {
+        "min": 6.070753425776343e-09,
+        "median": 0.0003983640466598321,
+        "max": 0.8110923954464198
+      }
+    },
+    "policy/all/all": {
+      "n": 63151,
+      "matches": 216,
+      "updates": 27,
+      "positive": 34042,
+      "negative": 29109,
+      "zero": 0,
+      "advantage_mean": 1.3501785924405319e-18,
+      "abs_advantage_mean": 0.6747440705692748,
+      "return_mean": 0.10543379559088703,
+      "value_mean": 0.11600494615105497,
+      "weighted_advantage": -0.20512944894245314,
+      "weighted_abs_advantage": 18.078901199224997,
+      "gate_sampled": 63070,
+      "gate_score": -0.09618197095653858,
+      "abs_gate_score": 3.1231108830467513,
+      "direct_terminal_mean": 8.969299515167806e-05,
+      "accepted": 9357,
+      "refused": 15,
+      "unlanded": 61,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 146.0,
+        "max": 433.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 119.05,
+        "max": 303.9
+      },
+      "terminal_coefficient": {
+        "min": 1.574099865442968e-10,
+        "median": 0.0004910203982484389,
+        "max": 0.99994
+      }
+    },
+    "policy/all/win": {
+      "n": 31650,
+      "matches": 108,
+      "updates": 27,
+      "positive": 20538,
+      "negative": 11112,
+      "zero": 0,
+      "advantage_mean": 0.3074894617242028,
+      "abs_advantage_mean": 0.6282109995652612,
+      "return_mean": 0.4348103330643213,
+      "value_mean": 0.38740557901110856,
+      "weighted_advantage": 4.253764688795452,
+      "weighted_abs_advantage": 8.347179690500777,
+      "gate_sampled": 31602,
+      "gate_score": -0.015345036773837395,
+      "abs_gate_score": 1.373200125501453,
+      "direct_terminal_mean": 0.06673056519133014,
+      "accepted": 4493,
+      "refused": 6,
+      "unlanded": 29,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 146.0,
+        "max": 431.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 117.0,
+        "max": 303.9
+      },
+      "terminal_coefficient": {
+        "min": 1.7443642929955234e-10,
+        "median": 0.0004853815758617228,
+        "max": 0.99994
+      }
+    },
+    "policy/all/loss": {
+      "n": 31501,
+      "matches": 108,
+      "updates": 27,
+      "positive": 13504,
+      "negative": 17997,
+      "zero": 0,
+      "advantage_mean": -0.30894388951369856,
+      "abs_advantage_mean": 0.7214972433979796,
+      "return_mean": -0.22550069572793444,
+      "value_mean": -0.15667941402864394,
+      "weighted_advantage": -4.4588941377379046,
+      "weighted_abs_advantage": 9.73172150872422,
+      "gate_sampled": 31468,
+      "gate_score": -0.0808369341827012,
+      "abs_gate_score": 1.7499107575452981,
+      "direct_terminal_mean": -0.06686639109770405,
+      "accepted": 4864,
+      "refused": 9,
+      "unlanded": 32,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 145.0,
+        "max": 433.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 121.2,
+        "max": 302.45
+      },
+      "terminal_coefficient": {
+        "min": 1.574099865442968e-10,
+        "median": 0.00049993493830898,
+        "max": 0.99994
+      }
+    },
+    "policy/PLAY/all": {
+      "n": 9433,
+      "matches": 216,
+      "updates": 27,
+      "positive": 4668,
+      "negative": 4765,
+      "zero": 0,
+      "advantage_mean": -0.10551424871104395,
+      "abs_advantage_mean": 0.9071327107486357,
+      "return_mean": 0.053658718494411374,
+      "value_mean": 0.08287897610843703,
+      "weighted_advantage": -0.448955297666361,
+      "weighted_abs_advantage": 3.5454105798002553,
+      "gate_sampled": 9352,
+      "gate_score": -0.21376972234373745,
+      "abs_gate_score": 1.622594394459818,
+      "direct_terminal_mean": -0.009989712215267049,
+      "accepted": 9357,
+      "refused": 15,
+      "unlanded": 61,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 88.0,
+        "max": 427.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 81.0,
+        "max": 300.15
+      },
+      "terminal_coefficient": {
+        "min": 2.1485720571569422e-10,
+        "median": 0.010087677702042906,
+        "max": 0.99994
+      }
+    },
+    "policy/PLAY/win": {
+      "n": 4528,
+      "matches": 108,
+      "updates": 27,
+      "positive": 2981,
+      "negative": 1547,
+      "zero": 0,
+      "advantage_mean": 0.4271537793285108,
+      "abs_advantage_mean": 0.8012603145752597,
+      "return_mean": 0.4926990138999778,
+      "value_mean": 0.4238974888358555,
+      "weighted_advantage": 0.8123935928250657,
+      "weighted_abs_advantage": 1.4896688501767903,
+      "gate_sampled": 4480,
+      "gate_score": 0.3481009514651672,
+      "abs_gate_score": 0.699854961602761,
+      "direct_terminal_mean": 0.13308900682927635,
+      "accepted": 4493,
+      "refused": 6,
+      "unlanded": 29,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 89.0,
+        "max": 423.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 79.5,
+        "max": 299.55
+      },
+      "terminal_coefficient": {
+        "min": 2.642001268894845e-10,
+        "median": 0.009499216646852616,
+        "max": 0.99994
+      }
+    },
+    "policy/PLAY/loss": {
+      "n": 4905,
+      "matches": 108,
+      "updates": 27,
+      "positive": 1687,
+      "negative": 3218,
+      "zero": 0,
+      "advantage_mean": -0.5972412275006677,
+      "abs_advantage_mean": 1.0048677178583287,
+      "return_mean": -0.351636787641451,
+      "value_mean": -0.2319287355388108,
+      "weighted_advantage": -1.2613488904914267,
+      "weighted_abs_advantage": 2.0557417296234646,
+      "gate_sampled": 4872,
+      "gate_score": -0.5618706738089047,
+      "abs_gate_score": 0.9227394328570568,
+      "direct_terminal_mean": -0.14207135132509222,
+      "accepted": 4864,
+      "refused": 9,
+      "unlanded": 32,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 87.0,
+        "max": 427.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 82.15,
+        "max": 300.15
+      },
+      "terminal_coefficient": {
+        "min": 2.1485720571569422e-10,
+        "median": 0.010551373043515128,
+        "max": 0.99994
+      }
+    },
+    "policy/WAIT/all": {
+      "n": 53718,
+      "matches": 216,
+      "updates": 27,
+      "positive": 29374,
+      "negative": 24344,
+      "zero": 0,
+      "advantage_mean": 0.018528536209301873,
+      "abs_advantage_mean": 0.6339361096844334,
+      "return_mean": 0.11452561401769099,
+      "value_mean": 0.121821939996917,
+      "weighted_advantage": 0.2438258487239078,
+      "weighted_abs_advantage": 14.533490619424741,
+      "gate_sampled": 53718,
+      "gate_score": 0.11758775138719887,
+      "abs_gate_score": 1.5005164885869333,
+      "direct_terminal_mean": 0.0018596589162559601,
+      "accepted": 0,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 154.0,
+        "max": 433.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 124.5,
+        "max": 303.9
+      },
+      "terminal_coefficient": {
+        "min": 1.574099865442968e-10,
+        "median": 0.00031013324494390596,
+        "max": 0.99994
+      }
+    },
+    "policy/WAIT/win": {
+      "n": 27122,
+      "matches": 108,
+      "updates": 27,
+      "positive": 17557,
+      "negative": 9565,
+      "zero": 0,
+      "advantage_mean": 0.28751158287631895,
+      "abs_advantage_mean": 0.5993205306335719,
+      "return_mean": 0.42514585600422794,
+      "value_mean": 0.3813132787498279,
+      "weighted_advantage": 3.4413710959703856,
+      "weighted_abs_advantage": 6.857510840323986,
+      "gate_sampled": 27122,
+      "gate_score": -0.36344598823900454,
+      "abs_gate_score": 0.673345163898692,
+      "direct_terminal_mean": 0.055652067155174234,
+      "accepted": 0,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 154.0,
+        "max": 431.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 122.15,
+        "max": 303.9
+      },
+      "terminal_coefficient": {
+        "min": 1.7443642929955234e-10,
+        "median": 0.000311717709831999,
+        "max": 0.99994
+      }
+    },
+    "policy/WAIT/loss": {
+      "n": 26596,
+      "matches": 108,
+      "updates": 27,
+      "positive": 11817,
+      "negative": 14779,
+      "zero": 0,
+      "advantage_mean": -0.2557742984915117,
+      "abs_advantage_mean": 0.6692362952393087,
+      "return_mean": -0.20223789189142524,
+      "value_mean": -0.14280146538947383,
+      "weighted_advantage": -3.1975452472464783,
+      "weighted_abs_advantage": 7.675979779100755,
+      "gate_sampled": 26596,
+      "gate_score": 0.48103373962620344,
+      "abs_gate_score": 0.8271713246882413,
+      "direct_terminal_mean": -0.052996623842652954,
+      "accepted": 0,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 155.0,
+        "max": 433.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 126.8,
+        "max": 302.45
+      },
+      "terminal_coefficient": {
+        "min": 1.574099865442968e-10,
+        "median": 0.0003076946008006262,
+        "max": 0.99994
+      }
+    },
+    "policy/Rocket/all": {
+      "n": 253,
+      "matches": 139,
+      "updates": 27,
+      "positive": 135,
+      "negative": 118,
+      "zero": 0,
+      "advantage_mean": -0.09426359979068855,
+      "abs_advantage_mean": 0.7508694686467104,
+      "return_mean": 0.2706764812520782,
+      "value_mean": 0.29618609238101784,
+      "weighted_advantage": -0.006217976072542602,
+      "weighted_abs_advantage": 0.07487154038136329,
+      "gate_sampled": 251,
+      "gate_score": -0.0036135676032990503,
+      "abs_gate_score": 0.02101558791820845,
+      "direct_terminal_mean": 0.012012805585035933,
+      "accepted": 252,
+      "refused": 0,
+      "unlanded": 1,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 112.0,
+        "max": 404.0
+      },
+      "lag_seconds": {
+        "min": 1.0,
+        "median": 97.75,
+        "max": 285.2
+      },
+      "terminal_coefficient": {
+        "min": 7.107209772702632e-10,
+        "median": 0.00280814015037462,
+        "max": 0.9988006837538238
+      }
+    },
+    "policy/Rocket/win": {
+      "n": 162,
+      "matches": 81,
+      "updates": 27,
+      "positive": 102,
+      "negative": 60,
+      "zero": 0,
+      "advantage_mean": 0.21821402948386354,
+      "abs_advantage_mean": 0.6157077866674951,
+      "return_mean": 0.5226511769563421,
+      "value_mean": 0.4930177350864012,
+      "weighted_advantage": 0.01626277883170088,
+      "weighted_abs_advantage": 0.040791569643458855,
+      "gate_sampled": 161,
+      "gate_score": 0.0042791032452499465,
+      "abs_gate_score": 0.009686192450665976,
+      "direct_terminal_mean": 0.08011670180816961,
+      "accepted": 161,
+      "refused": 0,
+      "unlanded": 1,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 113.0,
+        "max": 404.0
+      },
+      "lag_seconds": {
+        "min": 1.0,
+        "median": 98.75,
+        "max": 285.2
+      },
+      "terminal_coefficient": {
+        "min": 7.107209772702632e-10,
+        "median": 0.002678510379530625,
+        "max": 0.9988006837538238
+      }
+    },
+    "policy/Rocket/loss": {
+      "n": 91,
+      "matches": 58,
+      "updates": 27,
+      "positive": 33,
+      "negative": 58,
+      "zero": 0,
+      "advantage_mean": -0.6505424563014295,
+      "abs_advantage_mean": 0.9914869684338851,
+      "return_mean": -0.17789385615551245,
+      "value_mean": -0.05421749133625804,
+      "weighted_advantage": -0.02248075490424348,
+      "weighted_abs_advantage": 0.03407997073790443,
+      "gate_sampled": 90,
+      "gate_score": -0.007892670848548996,
+      "abs_gate_score": 0.01132939546754247,
+      "direct_terminal_mean": -0.10922709758142182,
+      "accepted": 91,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 1.0,
+        "median": 111.0,
+        "max": 290.0
+      },
+      "lag_seconds": {
+        "min": 10.2,
+        "median": 93.0,
+        "max": 255.5
+      },
+      "terminal_coefficient": {
+        "min": 2.7177191509268485e-07,
+        "median": 0.002994855797983151,
+        "max": 0.9373170399183662
+      }
+    },
+    "policy/card:ice_wizard/all": {
+      "n": 1578,
+      "matches": 216,
+      "updates": 27,
+      "positive": 793,
+      "negative": 785,
+      "zero": 0,
+      "advantage_mean": -0.10031636636061685,
+      "abs_advantage_mean": 0.8928853342262038,
+      "return_mean": 0.04251194948055196,
+      "value_mean": 0.07109075061706767,
+      "weighted_advantage": -0.06766465571938651,
+      "weighted_abs_advantage": 0.5826499534926277,
+      "gate_sampled": 1562,
+      "gate_score": -0.02194456146935307,
+      "abs_gate_score": 0.23582560582338583,
+      "direct_terminal_mean": -0.012608783698535455,
+      "accepted": 1566,
+      "refused": 2,
+      "unlanded": 10,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 82.0,
+        "max": 400.0
+      },
+      "lag_seconds": {
+        "min": 0.15,
+        "median": 76.1,
+        "max": 295.9
+      },
+      "terminal_coefficient": {
+        "min": 8.62635941211005e-10,
+        "median": 0.013861748281948983,
+        "max": 0.9998200107997841
+      }
+    },
+    "policy/card:ice_wizard/win": {
+      "n": 750,
+      "matches": 108,
+      "updates": 27,
+      "positive": 500,
+      "negative": 250,
+      "zero": 0,
+      "advantage_mean": 0.41198912580511526,
+      "abs_advantage_mean": 0.77110817803752,
+      "return_mean": 0.4996268427442914,
+      "value_mean": 0.4333605172984153,
+      "weighted_advantage": 0.1307905504114844,
+      "weighted_abs_advantage": 0.23657996409956977,
+      "gate_sampled": 741,
+      "gate_score": 0.05021300038888912,
+      "abs_gate_score": 0.10513927311046142,
+      "direct_terminal_mean": 0.13889222021636388,
+      "accepted": 745,
+      "refused": 0,
+      "unlanded": 5,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 82.0,
+        "max": 400.0
+      },
+      "lag_seconds": {
+        "min": 0.15,
+        "median": 73.44999999999999,
+        "max": 295.9
+      },
+      "terminal_coefficient": {
+        "min": 8.707483639051906e-10,
+        "median": 0.013861748281948983,
+        "max": 0.9998200107997841
+      }
+    },
+    "policy/card:ice_wizard/loss": {
+      "n": 828,
+      "matches": 108,
+      "updates": 27,
+      "positive": 293,
+      "negative": 535,
+      "zero": 0,
+      "advantage_mean": -0.5643611962208813,
+      "abs_advantage_mean": 1.003190729324649,
+      "return_mean": -0.3715413958670381,
+      "value_mean": -0.25705215398560227,
+      "weighted_advantage": -0.19845520613087095,
+      "weighted_abs_advantage": 0.34606998939305794,
+      "gate_sampled": 821,
+      "gate_score": -0.07215756185824218,
+      "abs_gate_score": 0.13068633271292443,
+      "direct_terminal_mean": -0.1498379539113066,
+      "accepted": 821,
+      "refused": 2,
+      "unlanded": 5,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 82.0,
+        "max": 400.0
+      },
+      "lag_seconds": {
+        "min": 0.15,
+        "median": 77.725,
+        "max": 294.75
+      },
+      "terminal_coefficient": {
+        "min": 8.62635941211005e-10,
+        "median": 0.013812105320139595,
+        "max": 0.9998200107997841
+      }
+    },
+    "policy/card:knight_evo/all": {
+      "n": 1704,
+      "matches": 216,
+      "updates": 27,
+      "positive": 882,
+      "negative": 822,
+      "zero": 0,
+      "advantage_mean": -0.02140813283172774,
+      "abs_advantage_mean": 0.8942606653453465,
+      "return_mean": 0.054693353684803936,
+      "value_mean": 0.07023143782967659,
+      "weighted_advantage": -0.01642987981055191,
+      "weighted_abs_advantage": 0.6342609225939776,
+      "gate_sampled": 1691,
+      "gate_score": -0.005094758959785245,
+      "abs_gate_score": 0.25585268985634746,
+      "direct_terminal_mean": -0.011040624554940414,
+      "accepted": 1691,
+      "refused": 4,
+      "unlanded": 9,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 85.0,
+        "max": 427.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 80.8,
+        "max": 299.0
+      },
+      "terminal_coefficient": {
+        "min": 2.1485720571569422e-10,
+        "median": 0.011594866811608245,
+        "max": 0.99994
+      }
+    },
+    "policy/card:knight_evo/win": {
+      "n": 831,
+      "matches": 108,
+      "updates": 27,
+      "positive": 574,
+      "negative": 257,
+      "zero": 0,
+      "advantage_mean": 0.5219201843234182,
+      "abs_advantage_mean": 0.8148193956938878,
+      "return_mean": 0.4934549144382615,
+      "value_mean": 0.4096957793222266,
+      "weighted_advantage": 0.18644391462272983,
+      "weighted_abs_advantage": 0.2811780527307007,
+      "gate_sampled": 822,
+      "gate_score": 0.06897815154010312,
+      "abs_gate_score": 0.11514082994178329,
+      "direct_terminal_mean": 0.13195081149653728,
+      "accepted": 826,
+      "refused": 2,
+      "unlanded": 3,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 88.0,
+        "max": 421.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 80.6,
+        "max": 297.85
+      },
+      "terminal_coefficient": {
+        "min": 2.9268983237667453e-10,
+        "median": 0.009941743987735573,
+        "max": 0.99994
+      }
+    },
+    "policy/card:knight_evo/loss": {
+      "n": 873,
+      "matches": 108,
+      "updates": 27,
+      "positive": 308,
+      "negative": 565,
+      "zero": 0,
+      "advantage_mean": -0.5385969433196158,
+      "abs_advantage_mean": 0.9698800182438142,
+      "return_mean": -0.3629594034585217,
+      "value_mean": -0.25290128585910815,
+      "weighted_advantage": -0.20287379443328174,
+      "weighted_abs_advantage": 0.35308286986327697,
+      "gate_sampled": 869,
+      "gate_score": -0.07407291049988834,
+      "abs_gate_score": 0.14071185991456417,
+      "direct_terminal_mean": -0.14715274753177657,
+      "accepted": 865,
+      "refused": 2,
+      "unlanded": 6,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 84.0,
+        "max": 427.0
+      },
+      "lag_seconds": {
+        "min": 0.05,
+        "median": 81.5,
+        "max": 299.0
+      },
+      "terminal_coefficient": {
+        "min": 2.1485720571569422e-10,
+        "median": 0.012166369380075186,
+        "max": 0.99994
+      }
+    },
+    "policy/card:rocket/all": {
+      "n": 253,
+      "matches": 139,
+      "updates": 27,
+      "positive": 135,
+      "negative": 118,
+      "zero": 0,
+      "advantage_mean": -0.09426359979068855,
+      "abs_advantage_mean": 0.7508694686467104,
+      "return_mean": 0.2706764812520782,
+      "value_mean": 0.29618609238101784,
+      "weighted_advantage": -0.006217976072542602,
+      "weighted_abs_advantage": 0.07487154038136329,
+      "gate_sampled": 251,
+      "gate_score": -0.0036135676032990503,
+      "abs_gate_score": 0.02101558791820845,
+      "direct_terminal_mean": 0.012012805585035933,
+      "accepted": 252,
+      "refused": 0,
+      "unlanded": 1,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 112.0,
+        "max": 404.0
+      },
+      "lag_seconds": {
+        "min": 1.0,
+        "median": 97.75,
+        "max": 285.2
+      },
+      "terminal_coefficient": {
+        "min": 7.107209772702632e-10,
+        "median": 0.00280814015037462,
+        "max": 0.9988006837538238
+      }
+    },
+    "policy/card:rocket/win": {
+      "n": 162,
+      "matches": 81,
+      "updates": 27,
+      "positive": 102,
+      "negative": 60,
+      "zero": 0,
+      "advantage_mean": 0.21821402948386354,
+      "abs_advantage_mean": 0.6157077866674951,
+      "return_mean": 0.5226511769563421,
+      "value_mean": 0.4930177350864012,
+      "weighted_advantage": 0.01626277883170088,
+      "weighted_abs_advantage": 0.040791569643458855,
+      "gate_sampled": 161,
+      "gate_score": 0.0042791032452499465,
+      "abs_gate_score": 0.009686192450665976,
+      "direct_terminal_mean": 0.08011670180816961,
+      "accepted": 161,
+      "refused": 0,
+      "unlanded": 1,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 113.0,
+        "max": 404.0
+      },
+      "lag_seconds": {
+        "min": 1.0,
+        "median": 98.75,
+        "max": 285.2
+      },
+      "terminal_coefficient": {
+        "min": 7.107209772702632e-10,
+        "median": 0.002678510379530625,
+        "max": 0.9988006837538238
+      }
+    },
+    "policy/card:rocket/loss": {
+      "n": 91,
+      "matches": 58,
+      "updates": 27,
+      "positive": 33,
+      "negative": 58,
+      "zero": 0,
+      "advantage_mean": -0.6505424563014295,
+      "abs_advantage_mean": 0.9914869684338851,
+      "return_mean": -0.17789385615551245,
+      "value_mean": -0.05421749133625804,
+      "weighted_advantage": -0.02248075490424348,
+      "weighted_abs_advantage": 0.03407997073790443,
+      "gate_sampled": 90,
+      "gate_score": -0.007892670848548996,
+      "abs_gate_score": 0.01132939546754247,
+      "direct_terminal_mean": -0.10922709758142182,
+      "accepted": 91,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 1.0,
+        "median": 111.0,
+        "max": 290.0
+      },
+      "lag_seconds": {
+        "min": 10.2,
+        "median": 93.0,
+        "max": 255.5
+      },
+      "terminal_coefficient": {
+        "min": 2.7177191509268485e-07,
+        "median": 0.002994855797983151,
+        "max": 0.9373170399183662
+      }
+    },
+    "policy/card:skeletons/all": {
+      "n": 1787,
+      "matches": 216,
+      "updates": 27,
+      "positive": 852,
+      "negative": 935,
+      "zero": 0,
+      "advantage_mean": -0.14704405815809451,
+      "abs_advantage_mean": 0.9219552243564026,
+      "return_mean": 0.052012858078698834,
+      "value_mean": 0.08818117407015416,
+      "weighted_advantage": -0.12004989970560476,
+      "weighted_abs_advantage": 0.6810866076050859,
+      "gate_sampled": 1784,
+      "gate_score": -0.05342949162898088,
+      "abs_gate_score": 0.32045318386303223,
+      "direct_terminal_mean": -0.008451324878703412,
+      "accepted": 1773,
+      "refused": 3,
+      "unlanded": 11,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 86.0,
+        "max": 423.0
+      },
+      "lag_seconds": {
+        "min": 0.1,
+        "median": 79.95,
+        "max": 298.9
+      },
+      "terminal_coefficient": {
+        "min": 2.642001268894845e-10,
+        "median": 0.010903989588099888,
+        "max": 0.9998800036000001
+      }
+    },
+    "policy/card:skeletons/win": {
+      "n": 857,
+      "matches": 108,
+      "updates": 27,
+      "positive": 551,
+      "negative": 306,
+      "zero": 0,
+      "advantage_mean": 0.4069116394691341,
+      "abs_advantage_mean": 0.8073498635394106,
+      "return_mean": 0.4954312712395975,
+      "value_mean": 0.4297542732073184,
+      "weighted_advantage": 0.14406717577313,
+      "weighted_abs_advantage": 0.2812629307613608,
+      "gate_sampled": 855,
+      "gate_score": 0.06642602747305008,
+      "abs_gate_score": 0.13440730396851835,
+      "direct_terminal_mean": 0.1394339019540543,
+      "accepted": 849,
+      "refused": 1,
+      "unlanded": 7,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 87.0,
+        "max": 423.0
+      },
+      "lag_seconds": {
+        "min": 0.1,
+        "median": 78.85,
+        "max": 298.9
+      },
+      "terminal_coefficient": {
+        "min": 2.642001268894845e-10,
+        "median": 0.010377453282608659,
+        "max": 0.9998800036000001
+      }
+    },
+    "policy/card:skeletons/loss": {
+      "n": 930,
+      "matches": 108,
+      "updates": 27,
+      "positive": 301,
+      "negative": 629,
+      "zero": 0,
+      "advantage_mean": -0.6575172117780246,
+      "abs_advantage_mean": 1.0275646805071148,
+      "return_mean": -0.35659959361903254,
+      "value_mean": -0.22658027319925417,
+      "weighted_advantage": -0.26411707547873475,
+      "weighted_abs_advantage": 0.39982367684372516,
+      "gate_sampled": 929,
+      "gate_score": -0.11985551910203096,
+      "abs_gate_score": 0.18604587989451393,
+      "direct_terminal_mean": -0.14472835648695434,
+      "accepted": 924,
+      "refused": 2,
+      "unlanded": 4,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 85.5,
+        "max": 395.0
+      },
+      "lag_seconds": {
+        "min": 0.15,
+        "median": 80.8,
+        "max": 296.75
+      },
+      "terminal_coefficient": {
+        "min": 1.1333801347392757e-09,
+        "median": 0.011187834694955299,
+        "max": 0.9998200107997841
+      }
+    },
+    "policy/card:tesla_evo/all": {
+      "n": 1123,
+      "matches": 216,
+      "updates": 27,
+      "positive": 578,
+      "negative": 545,
+      "zero": 0,
+      "advantage_mean": -0.06327741110071003,
+      "abs_advantage_mean": 0.8564007312277533,
+      "return_mean": 0.06400541740246836,
+      "value_mean": 0.08472252087477748,
+      "weighted_advantage": -0.03517407870513487,
+      "weighted_abs_advantage": 0.39527886300055004,
+      "gate_sampled": 1112,
+      "gate_score": -0.01606839863634237,
+      "abs_gate_score": 0.1712409434958924,
+      "direct_terminal_mean": 0.010789229327098093,
+      "accepted": 1113,
+      "refused": 2,
+      "unlanded": 8,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 95.0,
+        "max": 408.0
+      },
+      "lag_seconds": {
+        "min": 0.5,
+        "median": 85.1,
+        "max": 294.8
+      },
+      "terminal_coefficient": {
+        "min": 5.722559707451613e-10,
+        "median": 0.0068298922988928555,
+        "max": 0.9994001619740832
+      }
+    },
+    "policy/card:tesla_evo/win": {
+      "n": 533,
+      "matches": 108,
+      "updates": 27,
+      "positive": 366,
+      "negative": 167,
+      "zero": 0,
+      "advantage_mean": 0.4396905178122333,
+      "abs_advantage_mean": 0.76722174175877,
+      "return_mean": 0.47514440498821614,
+      "value_mean": 0.4040094388522971,
+      "weighted_advantage": 0.09714562758564135,
+      "weighted_abs_advantage": 0.16622673749796849,
+      "gate_sampled": 528,
+      "gate_score": 0.039301635122984076,
+      "abs_gate_score": 0.07542506595525716,
+      "direct_terminal_mean": 0.129366471954025,
+      "accepted": 526,
+      "refused": 2,
+      "unlanded": 5,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 89.0,
+        "max": 384.0
+      },
+      "lag_seconds": {
+        "min": 0.5,
+        "median": 77.15,
+        "max": 292.9
+      },
+      "terminal_coefficient": {
+        "min": 2.009510036725295e-09,
+        "median": 0.009499786616950017,
+        "max": 0.9994001619740832
+      }
+    },
+    "policy/card:tesla_evo/loss": {
+      "n": 590,
+      "matches": 108,
+      "updates": 27,
+      "positive": 212,
+      "negative": 378,
+      "zero": 0,
+      "advantage_mean": -0.5176535231525723,
+      "abs_advantage_mean": 0.9369641234090553,
+      "return_mean": -0.3074133629080462,
+      "value_mean": -0.20371803384050727,
+      "weighted_advantage": -0.13231970629077622,
+      "weighted_abs_advantage": 0.22905212550258158,
+      "gate_sampled": 584,
+      "gate_score": -0.05537003375932645,
+      "abs_gate_score": 0.09581587754063522,
+      "direct_terminal_mean": -0.09633224579180369,
+      "accepted": 587,
+      "refused": 0,
+      "unlanded": 3,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 99.0,
+        "max": 408.0
+      },
+      "lag_seconds": {
+        "min": 0.5,
+        "median": 91.425,
+        "max": 294.8
+      },
+      "terminal_coefficient": {
+        "min": 5.722559707451613e-10,
+        "median": 0.0056657344629427115,
+        "max": 0.9994001619740832
+      }
+    },
+    "policy/card:the_log/all": {
+      "n": 1636,
+      "matches": 216,
+      "updates": 27,
+      "positive": 843,
+      "negative": 793,
+      "zero": 0,
+      "advantage_mean": -0.06124638808639457,
+      "abs_advantage_mean": 0.9169532606790158,
+      "return_mean": 0.0471178140574227,
+      "value_mean": 0.06855413755036081,
+      "weighted_advantage": -0.052024004065677545,
+      "weighted_abs_advantage": 0.6151716968453529,
+      "gate_sampled": 1617,
+      "gate_score": -0.028998570037092972,
+      "abs_gate_score": 0.3161773373744252,
+      "direct_terminal_mean": -0.01130290137262862,
+      "accepted": 1624,
+      "refused": 2,
+      "unlanded": 10,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 86.0,
+        "max": 424.0
+      },
+      "lag_seconds": {
+        "min": 0.1,
+        "median": 80.25,
+        "max": 300.15
+      },
+      "terminal_coefficient": {
+        "min": 2.5111062833769814e-10,
+        "median": 0.010932167727778046,
+        "max": 0.9998800036000001
+      }
+    },
+    "policy/card:the_log/win": {
+      "n": 782,
+      "matches": 108,
+      "updates": 27,
+      "positive": 514,
+      "negative": 268,
+      "zero": 0,
+      "advantage_mean": 0.46114957810899226,
+      "abs_advantage_mean": 0.8234322625827627,
+      "return_mean": 0.48960052458471304,
+      "value_mean": 0.4135327990070038,
+      "weighted_advantage": 0.14431039566556642,
+      "weighted_abs_advantage": 0.26141566742352923,
+      "gate_sampled": 771,
+      "gate_score": 0.07037842686570638,
+      "abs_gate_score": 0.13889936397531627,
+      "direct_terminal_mean": 0.14187281195138274,
+      "accepted": 777,
+      "refused": 0,
+      "unlanded": 5,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 85.0,
+        "max": 419.0
+      },
+      "lag_seconds": {
+        "min": 0.1,
+        "median": 77.65,
+        "max": 299.55
+      },
+      "terminal_coefficient": {
+        "min": 3.240766373701507e-10,
+        "median": 0.011589296394357757,
+        "max": 0.9998800036000001
+      }
+    },
+    "policy/card:the_log/loss": {
+      "n": 854,
+      "matches": 108,
+      "updates": 27,
+      "positive": 329,
+      "negative": 525,
+      "zero": 0,
+      "advantage_mean": -0.5395996030334584,
+      "abs_advantage_mean": 1.0025895844627044,
+      "return_mean": -0.3580595625612436,
+      "value_mean": -0.24733967188651837,
+      "weighted_advantage": -0.19633439973124395,
+      "weighted_abs_advantage": 0.3537560294218237,
+      "gate_sampled": 846,
+      "gate_score": -0.09937699690279936,
+      "abs_gate_score": 0.17727797339910897,
+      "direct_terminal_mean": -0.15156450303466246,
+      "accepted": 847,
+      "refused": 2,
+      "unlanded": 5,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 86.0,
+        "max": 424.0
+      },
+      "lag_seconds": {
+        "min": 0.5,
+        "median": 82.69999999999999,
+        "max": 300.15
+      },
+      "terminal_coefficient": {
+        "min": 2.5111062833769814e-10,
+        "median": 0.010806434924653456,
+        "max": 0.9994001619740832
+      }
+    },
+    "policy/card:tornado/all": {
+      "n": 699,
+      "matches": 202,
+      "updates": 27,
+      "positive": 281,
+      "negative": 418,
+      "zero": 0,
+      "advantage_mean": -0.32414879569430316,
+      "abs_advantage_mean": 1.0217506155940388,
+      "return_mean": -0.06802907613967395,
+      "value_mean": -0.0010104916104935312,
+      "weighted_advantage": -0.09667585689781054,
+      "weighted_abs_advantage": 0.29093812295766386,
+      "gate_sampled": 699,
+      "gate_score": -0.04314906293007742,
+      "abs_gate_score": 0.1337902584819508,
+      "direct_terminal_mean": -0.04721401647709517,
+      "accepted": 690,
+      "refused": 2,
+      "unlanded": 7,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 57.0,
+        "max": 380.0
+      },
+      "lag_seconds": {
+        "min": 0.3,
+        "median": 57.8,
+        "max": 294.65
+      },
+      "terminal_coefficient": {
+        "min": 2.4196515056273966e-09,
+        "median": 0.0501057314530421,
+        "max": 0.9996400539956805
+      }
+    },
+    "policy/card:tornado/win": {
+      "n": 273,
+      "matches": 95,
+      "updates": 27,
+      "positive": 159,
+      "negative": 114,
+      "zero": 0,
+      "advantage_mean": 0.3942125386435372,
+      "abs_advantage_mean": 0.8992904805758988,
+      "return_mean": 0.5438911729983485,
+      "value_mean": 0.47711607439590203,
+      "weighted_advantage": 0.042042876871404095,
+      "weighted_abs_advantage": 0.0989782722217423,
+      "gate_sampled": 273,
+      "gate_score": 0.017487276689727157,
+      "abs_gate_score": 0.04770684595004413,
+      "direct_terminal_mean": 0.19844308921066614,
+      "accepted": 271,
+      "refused": 1,
+      "unlanded": 1,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 56.0,
+        "max": 359.0
+      },
+      "lag_seconds": {
+        "min": 1.0,
+        "median": 58.25,
+        "max": 281.6
+      },
+      "terminal_coefficient": {
+        "min": 7.178159504721042e-09,
+        "median": 0.05316545990592805,
+        "max": 0.9988006837538238
+      }
+    },
+    "policy/card:tornado/loss": {
+      "n": 426,
+      "matches": 107,
+      "updates": 27,
+      "positive": 122,
+      "negative": 304,
+      "zero": 0,
+      "advantage_mean": -0.7845071155868629,
+      "abs_advantage_mean": 1.100228589443692,
+      "return_mean": -0.46017515129150527,
+      "value_mean": -0.307415544473747,
+      "weighted_advantage": -0.13871873376921465,
+      "weighted_abs_advantage": 0.19195985073592153,
+      "gate_sampled": 426,
+      "gate_score": -0.06063633961980457,
+      "abs_gate_score": 0.08608341253190668,
+      "direct_terminal_mean": -0.20464216167136473,
+      "accepted": 419,
+      "refused": 1,
+      "unlanded": 6,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 57.0,
+        "max": 380.0
+      },
+      "lag_seconds": {
+        "min": 0.3,
+        "median": 57.45,
+        "max": 294.65
+      },
+      "terminal_coefficient": {
+        "min": 2.4196515056273966e-09,
+        "median": 0.04940435726283655,
+        "max": 0.9996400539956805
+      }
+    },
+    "policy/card:x_bow/all": {
+      "n": 653,
+      "matches": 214,
+      "updates": 27,
+      "positive": 304,
+      "negative": 349,
+      "zero": 0,
+      "advantage_mean": -0.17776595587694388,
+      "abs_advantage_mean": 0.9350818252711774,
+      "return_mean": 0.1271711028114418,
+      "value_mean": 0.16973252882173262,
+      "weighted_advantage": -0.054718946689652256,
+      "weighted_abs_advantage": 0.27115287292363366,
+      "gate_sampled": 636,
+      "gate_score": -0.04147131107880646,
+      "abs_gate_score": 0.1682387876465754,
+      "direct_terminal_mean": -0.006251076622816125,
+      "accepted": 648,
+      "refused": 0,
+      "unlanded": 5,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 142.0,
+        "max": 407.0
+      },
+      "lag_seconds": {
+        "min": 0.5,
+        "median": 120.0,
+        "max": 298.85
+      },
+      "terminal_coefficient": {
+        "min": 6.059635678352567e-10,
+        "median": 0.000588194756000719,
+        "max": 0.9994001619740832
+      }
+    },
+    "policy/card:x_bow/win": {
+      "n": 340,
+      "matches": 108,
+      "updates": 27,
+      "positive": 215,
+      "negative": 125,
+      "zero": 0,
+      "advantage_mean": 0.30816708337243565,
+      "abs_advantage_mean": 0.8313459989977676,
+      "return_mean": 0.4479529722085566,
+      "value_mean": 0.40232233998138306,
+      "weighted_advantage": 0.05133027306340873,
+      "weighted_abs_advantage": 0.1232356557984603,
+      "gate_sampled": 329,
+      "gate_score": 0.031037330139457295,
+      "abs_gate_score": 0.07345008625071434,
+      "direct_terminal_mean": 0.06547394672803336,
+      "accepted": 338,
+      "refused": 0,
+      "unlanded": 2,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 142.0,
+        "max": 407.0
+      },
+      "lag_seconds": {
+        "min": 0.5,
+        "median": 117.325,
+        "max": 298.85
+      },
+      "terminal_coefficient": {
+        "min": 6.059635678352567e-10,
+        "median": 0.0005947224550890843,
+        "max": 0.9994001619740832
+      }
+    },
+    "policy/card:x_bow/loss": {
+      "n": 313,
+      "matches": 106,
+      "updates": 27,
+      "positive": 89,
+      "negative": 224,
+      "zero": 0,
+      "advantage_mean": -0.705616541643043,
+      "abs_advantage_mean": 1.047766109402038,
+      "return_mean": -0.2212820460544337,
+      "value_mean": -0.08292094016958095,
+      "weighted_advantage": -0.106049219753061,
+      "weighted_abs_advantage": 0.14791721712517336,
+      "gate_sampled": 307,
+      "gate_score": -0.07250864121826375,
+      "abs_gate_score": 0.09478870139586107,
+      "direct_terminal_mean": -0.08416324256303602,
+      "accepted": 310,
+      "refused": 0,
+      "unlanded": 3,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 143.0,
+        "max": 404.0
+      },
+      "lag_seconds": {
+        "min": 0.5,
+        "median": 123.0,
+        "max": 297.95
+      },
+      "terminal_coefficient": {
+        "min": 7.114889936206111e-10,
+        "median": 0.0005766328523704664,
+        "max": 0.9994001619740832
+      }
+    },
+    "policy/Rocket/distance:0-10": {
+      "n": 9,
+      "matches": 9,
+      "updates": 7,
+      "positive": 9,
+      "negative": 0,
+      "zero": 0,
+      "advantage_mean": 1.6857672194887678,
+      "abs_advantage_mean": 1.6857672194887678,
+      "return_mean": 0.9315534743638368,
+      "value_mean": 0.6699086920352958,
+      "weighted_advantage": 0.0065627684675569585,
+      "weighted_abs_advantage": 0.0065627684675569585,
+      "gate_sampled": 9,
+      "gate_score": 0.0022459998327729424,
+      "abs_gate_score": 0.0022459998327729424,
+      "direct_terminal_mean": 0.774114611641862,
+      "accepted": 8,
+      "refused": 0,
+      "unlanded": 1,
+      "unknown": 0,
+      "remaining": {
+        "min": 0.0,
+        "median": 6.0,
+        "max": 11.0
+      },
+      "lag_seconds": {
+        "min": 1.0,
+        "median": 6.0,
+        "max": 8.5
+      },
+      "terminal_coefficient": {
+        "min": 0.5630276476761459,
+        "median": 0.731308472579156,
+        "max": 0.9988006837538238
+      }
+    },
+    "policy/Rocket/distance:10-30": {
+      "n": 31,
+      "matches": 31,
+      "updates": 19,
+      "positive": 10,
+      "negative": 21,
+      "zero": 0,
+      "advantage_mean": -1.1677044883598304,
+      "abs_advantage_mean": 1.5959256225157787,
+      "return_mean": -0.035144636144606424,
+      "value_mean": 0.17885826201552188,
+      "weighted_advantage": -0.01365365747655957,
+      "weighted_abs_advantage": 0.01934432261654066,
+      "gate_sampled": 31,
+      "gate_score": -0.004521278639062247,
+      "abs_gate_score": 0.005253381083337245,
+      "direct_terminal_mean": -0.16035988735202442,
+      "accepted": 31,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 1.0,
+        "median": 20.0,
+        "max": 41.0
+      },
+      "lag_seconds": {
+        "min": 10.2,
+        "median": 22.2,
+        "max": 30.0
+      },
+      "terminal_coefficient": {
+        "min": 0.1177694770076665,
+        "median": 0.35084647864393126,
+        "max": 0.9373170399183662
+      }
+    },
+    "policy/Rocket/distance:30-60": {
+      "n": 43,
+      "matches": 42,
+      "updates": 24,
+      "positive": 25,
+      "negative": 18,
+      "zero": 0,
+      "advantage_mean": -0.02188759527232542,
+      "abs_advantage_mean": 0.65097227904863,
+      "return_mean": 0.3930502050006327,
+      "value_mean": 0.4092290068562601,
+      "weighted_advantage": 0.0002752196555317021,
+      "weighted_abs_advantage": 0.010977380913341262,
+      "gate_sampled": 43,
+      "gate_score": -0.0009178438812520308,
+      "abs_gate_score": 0.0029014012519982405,
+      "direct_terminal_mean": 0.02409480951118097,
+      "accepted": 43,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 23.0,
+        "median": 51.0,
+        "max": 81.0
+      },
+      "lag_seconds": {
+        "min": 30.85,
+        "median": 47.0,
+        "max": 59.5
+      },
+      "terminal_coefficient": {
+        "min": 0.014652286252941396,
+        "median": 0.06983923076070728,
+        "max": 0.2946264371139728
+      }
+    },
+    "policy/Rocket/distance:60+": {
+      "n": 170,
+      "matches": 112,
+      "updates": 27,
+      "positive": 91,
+      "negative": 79,
+      "zero": 0,
+      "advantage_mean": -0.011062294038696276,
+      "abs_advantage_mean": 0.5725445193831682,
+      "return_mean": 0.2605029023115109,
+      "value_mean": 0.2692026454516441,
+      "weighted_advantage": 0.000597693280928303,
+      "weighted_abs_advantage": 0.037987068383924405,
+      "gate_sampled": 168,
+      "gate_score": -0.00042044491575771403,
+      "abs_gate_score": 0.010614805750100022,
+      "direct_terminal_mean": 4.287063040769903e-05,
+      "accepted": 170,
+      "refused": 0,
+      "unlanded": 0,
+      "unknown": 0,
+      "remaining": {
+        "min": 53.0,
+        "median": 171.0,
+        "max": 404.0
+      },
+      "lag_seconds": {
+        "min": 60.5,
+        "median": 135.025,
+        "max": 285.2
+      },
+      "terminal_coefficient": {
+        "min": 7.107209772702632e-10,
+        "median": 0.0001339453697811971,
+        "max": 0.06118538888783548
+      }
+    }
+  },
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_credit_audit\\audit.py": "a7d8da3818853736a407e51377d2f26d4d6e5a159e4ae4a95f603f8e5a0617b1",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_credit_audit\\common.py": "d315399bc54736b60ff70c594e5531fc1bcf62e4d5ea5c33914b640b2888782c",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_credit_audit\\run_chain.py": "08b8eef90429d7daff02a39d9832c8868cb946c03bfe73d3d0d471b6d803d70f",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_credit_audit\\verify.py": "cc7b92d6102b024ca5ad15b38bb1c5cad3748288e2cd5d3e7512e5cfadc57d4a",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_credit_audit\\PLAN.md": "f37dacb14dd873e358534c346b850eb2a1319c889fd01f8594fb3c00e44ac5dc",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_credit_audit\\METRICS.md": "448ef38c527e5a41f8d532dd5f05c7ca17339886f0149280dbf534db34981724",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1\\trained.json": "14acac557fa51f0ed0d702c21bc10bc7840a530041097e67d82a824d4b2d0ac5",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1\\prepared.json": "dd4cd5620ee8103a4ddb3ccd996afd083288cd69abacc3c2685bda9eb4ce1c11",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1\\results_verified.json": "bcbea78b70a8a7197475e894564d1942339b33a074339068d728a3c277d8513a",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\rl_gradient_audit\\reviewed.json": "ec37c3c08c453a7d883fb586626e06f86c60e08601765cad3e71c39d21282a99",
+    "pipeline\\rl_royale.py": "e089d89b7569d5c6ee4631e058ee128696a4847970ae5413d78f40e49bed7055",
+    "pipeline\\e1_eval.py": "55199f822f035e3ddf3fab0d74926158aaea92b23abd9fa1425fdbb5e398827d",
+    "icebow\\data\\bench\\development_rl_1_20261005\\train.jsonl": "c416faa2af5f0624997f307a2da0667ec448876394c1b7adb544fcb6efa49ab7"
+  },
+  "inputs": {
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u000.json": "01bc1444e97dd1cd7f37386c24a2c2d58a605b79127e4c466908c234a2ec5243",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u000_contract.npz": "d6626ed6e031d0ecbdc2cda659af84f431ea7848911b5aa2049a8c3dc18f59d7",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u000_0.npz": "a39dae8b4ed1bcda13ae11adc30c51a99eab80929427127b46b4234c7be4d8d6",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u000_1.npz": "5d584089863c7848348b58d774a3f0bea916a09dfd1abc31e1eff2d6aa3ea32d",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u000_2.npz": "df84fb841d84a2c927afc71e3a20fa9a181b69b8654dd625e3f67ad9fe6133f8",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u000_3.npz": "d4f6b13da0c432604b017a85d587b0b59d691366fd73d63a327ca63ba6c2e42b",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u000_4.npz": "5e719d4ba04b967a83902ef4b591c7804deca842719893e067d5858d99df971c",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u000_5.npz": "16667f2c2607ab36acfc159dab83fb96e0b3543fe8e5520134b795bba6ccf06e",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u000_6.npz": "85e0c18d2f48fcf5d066c24b665010c36b003ee5a70a9d161b97ed951deb145e",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u000_7.npz": "f745fea44d08cacffaab30ac18f47c8b030f5da297d588abb31f7af68306cc37",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u001.json": "eacc30cdafb6e641dbff5b68f95788985de5cddc165a7e4b05e7607e2f4fa5e7",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u001_contract.npz": "1a200d8a04812202c95e40260ba89efa7bd48537723285968357ea97ea3dd69e",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u001_0.npz": "6e68fb1a8ac20a6b732562b1ee0fd952913608c786894c1d210cdf8862ea2874",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u001_1.npz": "b8f01aaa8a9e51af6d3e7bb29bdb9a4678aa57f5b7a73ae00f745df5f21681d6",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u001_2.npz": "21a34fdf7d0f0b0ff1232a7ef49af5c33588f2cfec4018111df2a836add77b1b",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u001_3.npz": "c8151ad9413b0d3e09fdcb0545acc939dcadd4abb69cd5faa795fd487b7056d1",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u001_4.npz": "51a6574f517e84ae16dce6fd4be93d3f66afe2f581dd04d0118aa1db75041fb8",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u001_5.npz": "5def1e745b5e86b430a4cd10075eee8bc6155409e97d6ee016f138fe7167d8a3",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u001_6.npz": "78771b5b1a710799b4688b510698956e2200be68e534e2acfe52d63ec6b05558",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u001_7.npz": "31919d85000ad2675d400d796d970d6920287f933631b099b964483d585699eb",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u002.json": "ad117809d1633fb83dfea6a5f37cdcbde9e0191e922dc0eb73d4faedc5fc6bb9",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u002_contract.npz": "bf6c72b16dc14d7160d50a831139943bed79b2489cea5f632e7d4e8977edb200",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u002_0.npz": "f16b7b33cd2d3cd9e31930d0df135edc116ff9c0d9aaef20686c6e69cc1d3dc0",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u002_1.npz": "884e95dec8f2d52514cf8cd377c7cb63dc2bbd6a3c0f3e0925d09139fd45a230",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u002_2.npz": "f57cc699d48fddf98f57267fcf209a2d7386a95cdc9ded800f6f6cd2cf902bff",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u002_3.npz": "2cb0a6341d2dd87bb66892954fb5e8de60f2cd9ed291a57ff9adb71506dff026",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u002_4.npz": "2d2aaeab775d3f2eed06a14abc4dfd45cbd6211df26860ac72a8d1e5a8a3d9b7",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u002_5.npz": "b17ee6d68d696afad3c38ff2096d97981518c10bbcd455813ff617deb3656ec4",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u002_6.npz": "bdbfdd138a66add0bd45f6f807571ce4b153951bbef6a6992b2f64d3106857cf",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u002_7.npz": "c27d4bb78b371778511b70faf8925939f754e64ec80dd18aa5bba4fe53ec2495",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u003.json": "e55ee14c8e5616b081459c60ba5c7e74948cf7211c6c02c85825a2ae4d46022d",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u003_contract.npz": "f4313cd235ae62b6b604812bcce6141b155753cc65b2af524f3466451773e384",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u003_0.npz": "45055562de84f14a721a53e6eb6e2c122d4be2103bdc5d0afc20f37c5ff80eb5",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u003_1.npz": "f1c40ac7c3fa42459727932f1759768718811a07bf4a6eef777a1741e0622efe",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u003_2.npz": "1f933fccced44e37a3e2724c1964beee0f2ce308dd68b5bcd9de06e83fcc84eb",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u003_3.npz": "bc495158f473c21d5c5f05d331f7bf1a9da1bc06a58d88784bc8947eb032f782",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u003_4.npz": "008a8ee5fd79ac3f9955b6e3fd45d2f00b5f43540e9efc5a40c0cb3e831cde29",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u003_5.npz": "64e9816c6a4ec550a0a34ed454309b86b01b88251b2010e750c957e2350c0767",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u003_6.npz": "6d31a176787e5bec7820c5aa2b63a505acbba6531fba3dd6a81aa8f561351f98",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u003_7.npz": "b67c47c8a2411cc25978a74b1812defb2ef4844caf562ec9a617f22d0eae2ac3",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u004.json": "91ef629b8238745d94b6b7cc48f594940a77c0b7b3f0eb6f5a540de279f63004",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u004_contract.npz": "5023660cbc46d494fd4fd288f870801236a18a04690ec6d94c7f8af6338307cb",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u004_0.npz": "2a23271abcea4d2d3253956e81a11e4fdb1555a8f46d324478e95119c1b7d45f",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u004_1.npz": "dc4d9130ca37a503488a180f91007f6491f58d8cd859de02a20ed3fc68305522",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u004_2.npz": "202ca8c2dd5389616367b1281fa8e6504617c2bad9bc0e475d8c85b99cc99324",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u004_3.npz": "d628e2932a8fe0a2bf8ce4303f29c04c2c5044929fdfe911196e1248d242a128",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u004_4.npz": "8b3d9caf9f4b35b039553c89cd8637b8d24e3abc7357b79d7b8db5fa719c7596",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u004_5.npz": "357384a62906a244e8eb75972a11d745f32a264c0792e843255d5738d0e96afc",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u004_6.npz": "824b5e651bdef27ce757032d57ca0f8aae46d4ac85740baf42e6b887e7bb349b",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u004_7.npz": "379d268381c4101a74586527f8688fc74392f717a1b3d7413bc27727c7e048cb",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u005.json": "e0bbd8bc9d2e0647dd3c8b43cdc5f4604fe54509ec82071be88cbb71989f852c",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u005_contract.npz": "6b3807f798c51e68862667468ab8d541a4539c79e0e2497e578aefd287f6556f",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u005_0.npz": "4e59fb8adaf3649f9b3a5ec6fe245bfeb0d4d70fcb7b36eb27dcf16b1f5eeacb",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u005_1.npz": "684c22ed25c2f446bace9bf3394ef54a316e68ee8b45651a45869af28376aa21",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u005_2.npz": "8d29a992e2434560f1c029db63ea18dd39486d92e23911d5ea423f1a9b22ca04",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u005_3.npz": "fe2012145b61e24975f0d0b7aeaa6579897be3d153ce8e50dd757ce1f94a9f52",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u005_4.npz": "1976f0507ada16f02562a58171bc2610f5d13072aeb5462f88114bc1a33135ed",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u005_5.npz": "0bbcf3128284e4767e9aac6f5cb3e15d0db462db67ab0e19fae73bd9d22c50bf",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u005_6.npz": "dcf6e5fc2808e0240def13b06fc838d10f3af1ae49832c35d771ab5a0a3eb88a",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u005_7.npz": "1c0bb43618f5d1d72f9885a34d474864745581d5cbc1b919736c645cbc131105",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u006.json": "1d15273061850f338fb4d89f6b4d64c095ffd82f5ea4c70bf7250afd532e7b4e",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u006_contract.npz": "1b2736f351d1c8a4888aaca452dd7644d3318a9a907f38830d288fa47e9ded77",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u006_0.npz": "11c2b7836ebba466d7932357048f560e35854e02dfe7deae4e136e93efdd8674",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u006_1.npz": "356baf72ad8a893d2f6676e88b04e90410a7508e0bf78dc6ec2a7e3d48f42cc5",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u006_2.npz": "de9c7f38cf4dd003e510f4c786f5adf0743342481a4b904df4fd2be5bd151cb8",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u006_3.npz": "4ebc07dfa59aa2d94cc98c152d212c1d5e6b2119e8dd45de320c2d58952bd822",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u006_4.npz": "d8126756f906d70ed874f3b79bcd28b6304b6fcacfdb41b7da64bee69225d8ac",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u006_5.npz": "70b3bcde5063062a961eeaa9369e04cc3eb0b20592674f7eb8e92a781fc17d10",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u006_6.npz": "032a32486aec01995175e65eea07a32f4ed15316ceed335f16c444dd83c6be04",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u006_7.npz": "6a07ca73c03b02883cd3c8e21e86522e742179ce299b743d9cbf13b0d7b50135",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u007.json": "79a3790e43c8e9a90d2c562977cde456153938ac013a0359c42b05fb085fe195",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u007_contract.npz": "59b5c01e526eead289c5ef7664612cb4c91f9592d5223eba7a0c06c4e15475dc",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u007_0.npz": "100e3aadcf99c1cfc8b32d3b8b7bad1838a3fe5f0c438ce13173f38659817cf4",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u007_1.npz": "72f1858f51fc849de1e11e5790d5acb0cb6dfe7a006a6ed6f597fbbe9e500832",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u007_2.npz": "f510e0f20a0862d6103b1210068e4eb3cc726136bd10ea3f2eeb3b99de71e0e1",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u007_3.npz": "a7e7bdf30a5f4a5b5cbf9061dd96b1940f9bc022820fd41d439c3e507e98c535",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u007_4.npz": "d951fae8916b0544817bc5a8cc0de327f57ea4bd1a7483031df79e5f3248dbc5",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u007_5.npz": "e94df3c3613170485f716a49abcefe65a8eafda9c6cf61f99a57f1449235f21f",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u007_6.npz": "770db175e4b1363149b841c0874d953a301444ba9df35a02b0b06da88e55d92a",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u007_7.npz": "47a480e45d7a300c520e5198dc90bec69aa4b6af7a458faa31d9c9066b7bf590",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u008.json": "2a19a64bc8151d24782ddc87413ac0693603a287df0c470516c6be13523196b0",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u008_contract.npz": "c1a0b038ba877972aa6819e192ecb4cbb83c8d879e3bc9f3c57612705409e9c8",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u008_0.npz": "420aecfde8ee89748728939654590b7974e112ac398d5b4b5c915243c8616845",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u008_1.npz": "6283c24922886ef18787041b930fc4e35b983c01dcb97cde63ee47016072d63a",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u008_2.npz": "b2c2e5ca565b26f3244dbede483e8c734f225d8462c48d9e6ee369e3a134b7b7",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u008_3.npz": "8d53e58ea9e1ca217a409905610ed2e4c84932dd4ac5715db885527b8923c026",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u008_4.npz": "85503588c9fe58378fe1d9f4ebead14381377fcf8e635e760c50cab51916c525",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u008_5.npz": "a4209dd91d7c96a6832374b80bc35b38916517a6cb91b0c589b0930d9331ea83",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u008_6.npz": "3254da2e0bb37ff1a1658358edfb2fdca8bb9ec7ff16c46d0bbde43139423f94",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u008_7.npz": "791f74407c5a464e93de8da791b1494f3ac6fdd31560a03aad7d00da41ba5d7e",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u009.json": "b297d3f6a93e8d4bc825d031ba299df0c01d5b16136121d43507f8bcda2905c9",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u009_contract.npz": "1a4b46cb987f639afc7d972407c08769ac952359955e4146c52be0a8859904bd",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u009_0.npz": "9cfe8526f1f45528e39cf1424b22e346415da470d8e8c52c82df4628bb2429f2",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u009_1.npz": "159308e6d32414a723a6e30bd1cc98fcc0d1df0f9c73d7c03789de3266f3aa87",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u009_2.npz": "6b9d6a218d7b6928a817735eb2c74257585ba05eae2e6e5c3dde3055d7fcfef6",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u009_3.npz": "5cc4157a6f70472185f6472a677a2ffe824131f95c3aa566208b65b3b5c884f7",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u009_4.npz": "f00e00d6ebf9cc2858f8feca2c0ea97288dc7c5076687627a8f1da9e74bd2c25",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u009_5.npz": "be82563116b02db9a9f311254741cebaa9a70c933115b98ded1163aa54dea02b",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u009_6.npz": "6df6198528483c69fea7087a22418658e757cdaac3647da7a3ad5762266bade3",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u009_7.npz": "f796180f705a2245365d566ce671997571a8623a54a43861bd16de877cb6240b",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u010.json": "c8f708497bd9df847c8f83d4cea7ce3de7aeaaa9da0f08ede2e54c3f8cb37205",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u010_contract.npz": "a465804e20b1cd687667373b8525179ba259d7230ca4f80644ebc73133230056",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u010_0.npz": "bda8b2c8c28c109b995fd0c32a990f7e3b897225d4b72170686eeccaf2eba1fe",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u010_1.npz": "d76b8b3c820b3e5fdc2e1e8bcf05091624b03b46e61dec50a3deb4ded46b4504",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u010_2.npz": "e36ddeef726aa9fff0bd95e13479ab468ca72fba4592a27b0fb847c68f51de17",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u010_3.npz": "400b694ba3cc44f3bf815de137eddc970a54f7f1335b1031e8a5ef549d895120",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u010_4.npz": "e0cf8ba67e017a5ee82dc5c821bf8d6ad00f62ffbf1da2792e16098997ca2b8f",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u010_5.npz": "faa7c4d100a4b5fdb5ea1d8339ec557d6035cacadedc952c3c53cf97ab3c2c62",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u010_6.npz": "2895d32ec94f2b2dbdd4691e51fd44828420999d7a0b6c1694fc03bdf4db83c4",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u010_7.npz": "2ca62ab12b3ff20c4e966d412d14eab09e8f9f1d2c306eae45bb55665c8f82f8",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u011.json": "dd147cd9c4f5adcaab0f9d16e8d159e4e8e05113eb6a663823e238ea058f68f9",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u011_contract.npz": "126f68514f466f0b97eca051efb46a0880ad346768e775e68a3c7148e8c0d984",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u011_0.npz": "671e8b9ac889b2c299bc5336576becd01972e7d3f334050a6b44cce7f0664341",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u011_1.npz": "d59e64c4948bc015453545693d05b0b53c09cc2ee73c90c04b594b0ebc1969a9",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u011_2.npz": "e100b807781df6948d656a72a26a845e82cc6cf48d34fa49e79ec30421e4f44a",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u011_3.npz": "5e6f6e0d7bce445efeffd33857c3265fd7dd9a34482b25c87d948fbad647e104",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u011_4.npz": "8561f49777a74d20b440bcb5246ac2a1c93694472bf5a06b617fe4948186cb88",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u011_5.npz": "3a23d1d7ce80769ece1acfb7cd8ce38d842c72b722e9c4100028c5697ab99b5e",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u011_6.npz": "3bb4c4dcf340fde6bd7b9688360d93ab21abb05e76ba87376f7a0e447e24b7a6",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u011_7.npz": "4a971f8353d8f1d22b4c674f7d9068a265e79dea336608c6ad2d6c9e67149875",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u012.json": "b92839ceec8626377e5696a5ea02653065cf456a3ee1789da01d69d1a3d8424b",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u012_contract.npz": "efb8185f9835fb96cd677949bd8b53fafdb8ac2e4c414b2aa284d40f3862f578",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u012_0.npz": "349c0438748a0778e1e9e3b57ab4800f477f4f39b2af860ae14fc8200d220c06",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u012_1.npz": "9081c6872144ea0f50a9ed4cb35e0c39b19d76fbb918442f3eba8871a613b8ec",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u012_2.npz": "b0df5ee75c334a4d6f9e1f7c30e1d7858f2a9cc161dea673834f8ed748d09058",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u012_3.npz": "0ea78b7ebb9c66be4b822475ec737cddf3136f3f3de55d748dd8f27638dfc9cc",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u012_4.npz": "3fd39b6172e14f4c31271b25328535632ed4f490a04588c96a2ed507fb22612f",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u012_5.npz": "6457f1ce769c04d19327b68def02992d7574acf3940f1f209411d7f892b4fce1",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u012_6.npz": "1e0c6daffc22ae4352b30fce2ec419b63f62a3409b0bf6cce7a6889fbd6514cc",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u012_7.npz": "adb4811a14aa628a51780d540e2f26b66b754f359b8668480dddd75f7f988d83",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u013.json": "07272ecf42f7c13bd5ad94d3d8cc55536fa0da845320f71a2cc93705853a9c50",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u013_contract.npz": "7402dbf79dee3b006661f90085e12875fb7d35ae2fb7ae4c0266f3bbae526d74",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u013_0.npz": "3ab56a767309b555ea7a2929e92c1bff33ab5f63edd17ad9b7e8a448d6ff4fa2",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u013_1.npz": "627e3d8197423b396e1a30b438d5cb275d571a8a24f24be5c1bd754fb1e19295",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u013_2.npz": "6f5dc2ad6a4626f7a6328668a3e38658627705cabddef441e5e08fdad069117c",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u013_3.npz": "db44360ff933177f1a23c5efc54749de55ae1c545e5fc239e9c5ead852cf5b06",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u013_4.npz": "1448fdd0f6d2a5f8f960a5b91b28db9ab354b0e247340ccc7cfd7c5f89b1c148",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u013_5.npz": "f0aae6960dd6e9057aa6b14f4727d22f1ce3569ff6e3cdfbe08055da45beb87e",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u013_6.npz": "2dd5d41bac385b1893e38f1a9be6cb96968fb93ebc5ea596cd08c12eef170fe1",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u013_7.npz": "17b4f710848235e344edcaa7d38c12832ffc9e26d3a65acc83d9e568b91563cb",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u014.json": "4959cbbe691249ba57a25df467c431c745b0a19e85ab5f9e1832d08f0068735a",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u014_contract.npz": "85632c1ea09b44108b2bad7d11eff08c87ecd6104c5ec623527378434c64dd8a",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u014_0.npz": "5cf3dfd29b7a669c129c234f3253683a96d6336d4f3171b8cd7a728332a61bb9",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u014_1.npz": "da9b76f66abcc2222a9287618af639c4b3e72977f4b72f621e365b91708b7de1",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u014_2.npz": "58e0458625dab1ad778f5ceace3be5a1fea3ccc0b435a0257e861b9a924963a5",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u014_3.npz": "7ee473c366fbbc1a1a234613b13e409486aa899ccb290b718fbc087bfef9b60f",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u014_4.npz": "9468b7b94cae70697df563e5bc9569252ff411e7cbb0025e86ae148c7bc6cd24",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u014_5.npz": "8e6181494eee7f00cb0754dff6001ea41dd1d3b150a8897f94c5e48855ef75b8",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u014_6.npz": "fc31a410398e6de854ae3d2bf057fddf4f4156d363389c6165bc83e47a719a22",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u014_7.npz": "688db9f807361a3dbb32e35fd01543724d760ee7affab5678db5c0722cb7edd2",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u015.json": "ccc507397438c97de9d718efc96544990e7620aaf0e05d5aa1d6216068df0cd5",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u015_contract.npz": "2f320f6eeb59ba3814c7f2db35d9ba8e350d25600f6e450449e28081a40a1b36",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u015_0.npz": "a67cf71eba8d0bcfbb581ac6f58c1dc9c9e6cb39ea16b20ace408b8f15fadb3c",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u015_1.npz": "5bdacc4189a9a884e923791f303ebfb8848051ffe4adb544d50556efa00db72a",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u015_2.npz": "f0c0f0e6c96397a3342d357763434d8fde0f3138ff8c3b8799416b43223aaf89",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u015_3.npz": "d5c5832e46cae51d07060f8c986e756b270b53490d0d11f8518b093d1dec36dc",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u015_4.npz": "7e25d578ed8f4748c35ba806635c59a098603f023037cb7990b3fb5ef343dcd6",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u015_5.npz": "f8b50985c4b6fdbdb79e6331ef8360b5e1038f20b690b70ce3e0034842cc9e20",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u015_6.npz": "5835e2b6648ca8c22fd500bcd383a53e6f942e2af68ba6b2bf18d030072ab41b",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u015_7.npz": "7ea6601a13198428629921fc0550c34935af86387658f6ae0184c4ac8afdc34e",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u016.json": "f43bfd68c56627c1dd36b920344a8c7d75beaf185672f6a717b9817fc58cb126",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u016_contract.npz": "e409a537543f6c293f434116448b7962212fc863e5ea3563ed131a19ed34828b",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u016_0.npz": "40555f1e9faf6e467fadf94bd3c5ff786ce08978dcce08c7a816d77eee78e03b",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u016_1.npz": "352c17d3a9951a0ec700901d8f4ba6cd0e5ca86cf9d8f88807f914ff44337147",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u016_2.npz": "115e5e24c6efd16014d721b863ecb8d7c378c160838f06cebf79846c97243807",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u016_3.npz": "9f699c0cdbf1ba466f0551d1ce1cc2043de258ced75f5d6b89c555c8003885a1",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u016_4.npz": "d8c59156068c45cc8c166cc74af3502edc5a5bb4db40e4cb1d8a5ccbeaf2c7d9",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u016_5.npz": "a14c411443845563ba230bca5f4cf46d1a5241142634c7bc1a9fcc6c4a0b29ea",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u016_6.npz": "7c226cf09bde2960eddddba967603272160a2a2f6f5957b5c1b8fc1aa64fa7e1",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u016_7.npz": "c5354d3cea62c9bf4c1fbe5d6e4d13d1808e366a0eb7867c9acf6769fc310885",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u017.json": "1aac30be27c4bba78a3a4dd04bcd4423ff7150c61ce4e3d9f706d9c2172fd3a8",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u017_contract.npz": "7a5fcb07a044d76af3203ec2f482bbc603f584e34019488d015522eb5933b71a",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u017_0.npz": "43bc8d515e00a319aac96dfde7bfbddbb36c834116f29001e3e366642c818450",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u017_1.npz": "e8a8f42996b63bc9aa036b492d01850ceb1e470140eb81799c53745d2616c3f0",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u017_2.npz": "cba04ac3bc0cdcaa7ba7fdad1d38d5ab7b0479f52cc1ef5b064b10c31d5babbc",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u017_3.npz": "1ff0cac80525c88d3f6693034751e78a9a00d49a4685a4f47e59e04e4f97e539",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u017_4.npz": "e68df78c8eab8d448606dc055fd3d42953159cefba313c2964fb9c98c205d3d9",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u017_5.npz": "41bb015ef16bd0bbed5b24b0e57e12f8573264c8f23c71c60e6aad06d9806334",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u017_6.npz": "3cd689616d20a86240aa4833594e5537adda9ccb600ee0b6348b14f4923802f4",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u017_7.npz": "b3d5d153fd75a1559f6dc1960a2a0567f22ed314ac43696c6b488def066a96fe",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u018.json": "6980bd35bb775a52b8f92a8ce632b709d2ea8ad84c59910a774477662185420b",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u018_contract.npz": "209937992144dbbbf1405e4043abdafa96baf2fc1182ecf858941fba2cafa0ed",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u018_0.npz": "e6f9074bd26d5fb147cb4560416d54ba82618f90c254ded5e9c0db9c65a15b87",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u018_1.npz": "92dcc1210b8a0d827192081bdf1cd43c0a4c1392dd5a7a959d40ae168fd8c71f",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u018_2.npz": "629c8a604769c867e0d0c699457b1bdb56f54e26c5d7c95c54aaf1c2c45e3c00",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u018_3.npz": "2a80e4c6337bad70357226a2809b59335427cae0e8fdc66cbff785802d7fda28",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u018_4.npz": "41f5d0373b57acf6985694c39988c57cd46759d3c28f7548a2f11266948a3f24",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u018_5.npz": "f6b249529b3febda55878237e9dbcca58b478e52f71f4246bf7054c3de6d5b2a",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u018_6.npz": "66807de82b7e3f7b66dad21ddf37cccc820fb00fc7b8e2d1a264280adf481b8a",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u018_7.npz": "3408d50b4b91bc2e5f56e8e1482dbf8e8b1f4d12e2702be86aed1f5c921c2c86",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u019.json": "fdf86f733800c8674006b6bbc7b4a329e5af5d16b991a411693529edfe674d22",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u019_contract.npz": "bf0521a7eaebf90bab6318af73762932a0bfa7999c59082879447cbd09cd369c",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u019_0.npz": "4ebdea32306bf0770ff0765acbc33384faae8ca363ead81e0a0880ede0f26355",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u019_1.npz": "40e52736bd620506c348fb6fed7892585df40451da418253aae4a68d45bef6c0",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u019_2.npz": "3b9578eff60f66e08fc181dff11f206bd063b6ee18579cb9404b447112b6b182",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u019_3.npz": "3081465320dbf482f26224d2845df2aadacfcfc51d901f7fda3bd2f6c7a69c42",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u019_4.npz": "c09bff5bdd7c935d6fceb400c582db989685045422aaa2ff388987858d659827",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u019_5.npz": "a29739dfe576c84e0baca30078c55986f0e7c4a496998d81bf253cbd6084c60e",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u019_6.npz": "eadd6c18d31c86306f3496c295475f8a5445371a1bf444f9ff1f01ca7681c6b5",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u019_7.npz": "62867166bd3d18b3f045a7784a34b207a3421c22a57916321666e101c976a37f",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u020.json": "e4a6a5f0b0ff927c908ec8c5a354b15591d5946e327ce4fa738cab7af26bb100",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u020_contract.npz": "7e0d28029ef1e172eee4bc8b275c7a1dd7c02ff637fbc7384040b0524867f69a",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u020_0.npz": "eabeb01503ca768304b839404c98c02ef3c4f92fed8f7eb64e63faf1d957fe9e",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u020_1.npz": "6b4adafdb9d9bdcfe5f77495dac9fc2892507003eab0d7efb4717db77a981914",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u020_2.npz": "17ca9f97794396fde453a82fd3d0f00f98ccfd580f04e538a901527b9a38ee45",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u020_3.npz": "d591d584a831063b855d1b2f0f005fb81ae6bab76a5cd69ef53a3cd86903e49e",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u020_4.npz": "93679feb0db5868b71d89e1b589d29fc398aed64f0f79732e4aadaaa2dee8e9b",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u020_5.npz": "caba5aed0952c9cd2493eb1e1bc912c4992ec83d15d2e8c206196f69376056e2",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u020_6.npz": "b5d25ddaf33bfd62c2082e9742885b6ca3a9e87e6d61ed2eb8b641251f93e42b",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u020_7.npz": "211527d221c6540f63b218874f8f912e7fa12482d0903df0d98edc89302c376c",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u021.json": "e976bd05b57fe84e52cd308fd04f30a0a081678ddac0ebbff31d7cc2184211fd",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u021_contract.npz": "fddcf0af995bb4d257f1e6641ad2b0c95da330435c65a1b408fc6a2f71911c8f",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u021_0.npz": "e176675b9d3f03f5cea5ab40f37ff0a098e3652264b747911d3589612c981bf8",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u021_1.npz": "8193aac34e8897df7dbcc9d8573be0d1dc9639b519df316502361106a98f10a8",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u021_2.npz": "c98e5ec01a3114f6691f109eb1f78537e9d5390a985a251c5ce41749899a603b",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u021_3.npz": "2a6cf239241b623d9845dd8107a8a93e3a6750e612050cc43827e81252edb47e",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u021_4.npz": "3748537188cde3cf48e0e47e7e1590b4036133486d625819b2a2022e35ef0974",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u021_5.npz": "4c04996bd31157db7cab903adff718ea415bb5c1ef7fc23d8ef64786348bb1b9",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u021_6.npz": "4d8773bc19adb1cceb592afcc68c5bcedf0d10900dd5bcd42e317043e25ce045",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u021_7.npz": "2549f39c0cc46232b6b9905999e998d28e6115568ffc5ed0331f9e8ae29a0273",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u022.json": "21678d5c978a6aeb8cf6f3defe4b47f8c55a75a0e62248edd1099e66dde78a41",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u022_contract.npz": "3b7208520962062b345c1b107669dbcc749f0b4fed74a30f9a7aecb9c4bc581b",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u022_0.npz": "764c2cc5d3986b1bbd592e5b80c7243d6522c17beef5063c02dcf9f36262dd56",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u022_1.npz": "614cedb28cca7d73f93ed2448ef480006d002efc2faa815baf1145c35d4929c8",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u022_2.npz": "cb5e0c5a7c6afc5ecec0e82b4e0d556ff48c08274b7bbe76bdd67f280b100779",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u022_3.npz": "2727912ec7085e405ab2c00a049ead3dbef0290e983ab14a63b2a576da8cdf2e",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u022_4.npz": "d61a0a93f930fd5b315fe4aa9610a27c6efdacefd94222813c37f54c0fc3b3bd",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u022_5.npz": "e3fcb59686eff6883434c980c035806b755ad98f96f29d7bb56648526564b82e",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u022_6.npz": "75a7d74ab9bec463b2a1b97510be12bddf7dc0a17294536e044c2e9f82e5d1db",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u022_7.npz": "e97425ac80103c94b09c4af007a712ac8c7055743feb56c46dbc38b05a8eb1ff",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u023.json": "d5f52306ba24d5afcd10286439ca233cdab222869133721db79ad04d79586d8f",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u023_contract.npz": "aa7a0d953a5168705cd334da8fa83c3815966bec788d6ac73653a3217d3d1466",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u023_0.npz": "5dc4a6f858219ed0bb6a111b9c8ce1dc70b0be93952308da925f21404fd2417b",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u023_1.npz": "ab4be7366088281cc89fa164866f34ebf13a4ee50c9f12c8044bef91858a55ef",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u023_2.npz": "ced1b58eeb56fea6cda7144dd7f1dabbe55d84f76e9d31bd8aa2e50932f129f7",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u023_3.npz": "ba35bcdee166157331234403a0c3b46f515d436b255360bd40c75948256ef82b",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u023_4.npz": "ae2e7918161d269a3b5f439412fcb3c67e39bfca4b1f2cb2b6c086bb5d2343de",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u023_5.npz": "8c7fcd41ef46d974a43af0d0f44ec9eec5351fca1910b25dc2cbe63e19ce6991",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u023_6.npz": "1ad266e544a53dbf153510c43657fd48fd205687e1c1d893cb6fe0c72de810bb",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u023_7.npz": "2109697bb02eaf59bfe9010f589c8b1fe1af910c25a7c009c5823573cebeb8bb",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u024.json": "9d7447234e5b8393ccae00d7e0e192719fae9dad9eaa2359cf41a1589d3f3483",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u024_contract.npz": "e08f975316441ee087f82e35acd6eb6e6d2c2cc78dd8c4d22232d1f3892abdf2",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u024_0.npz": "48ef6571eeffced650e16919d31ac2e959be305f01b652398985e8c9a270c3c5",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u024_1.npz": "7ff48920bb798cb32dd1d317a35ca958d67ae1027bb5bdd0ad8297bfa2bb6618",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u024_2.npz": "52f0d63e29ac528f3077cbeae5aa485603a95e955b15b1f2943db50b395682db",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u024_3.npz": "bae933c39c943f6023c1a03297bcc3d7da58f9a6617b8077b5f80ecc917a2949",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u024_4.npz": "0602af36a6defbaa65e86a37c8d1cc9ecb2b48ca6b41bbe0f06ecd38246e552d",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u024_5.npz": "9c5a987289ba70bba3695a88b6635ba804c63273fa7d546a72bb863a497aa7b0",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u024_6.npz": "e870d34f59adadfbc47663ca6ebf9d445ab6f22dfb900d2edad06ee54166ef51",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u024_7.npz": "1f62da9d57fb6ae6b7bed2e795eae94574e38be247ec074af3d0ef1cb070ec4d",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u025.json": "5c55c5ad826f3527e1c5ec34ecaa05c134d7a23fe51aa60c142d5984180e3469",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u025_contract.npz": "cf8f751918452fce3177709bb9695d5e5bc01b5ac6733efd8b9bd73604560386",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u025_0.npz": "6a61fd3cb244e653309e4db7af91fe162aba94d139417e3bb64f39c355054e21",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u025_1.npz": "5c18a76feb0e2e3f8e2377774749fefcbc82606b8ed29df93b4911a02c10e518",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u025_2.npz": "a658bcbec9f618e465f52ff047923333d7c475b579e22870dd0dc18e9b5cdcf8",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u025_3.npz": "cc341e279077a8d523fc81b5dccf21d468a4384b164d496818ef3a93b4107f01",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u025_4.npz": "19eea3c60d3d8ac86a8514f7a9e8958c2114986a77f7c78a9df2d693d5b3e91f",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u025_5.npz": "3294f02e35ed13d83a5346910b30013ae53f7c80302d0a6c6b7ebdf09d2334cc",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u025_6.npz": "62217a9da3c3d8f764c4841deba892605e3a3bc2f74c919a4fb23681a9e8841c",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u025_7.npz": "3bfd4fa00bad0bd6bac43a3778d688c43b564044a877271a7eb096bf0ac41df6",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u026.json": "b3e6f23dbb2ff0547a4107855e940168b57b7297acbbb62e568c6a80cdb2cb01",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u026_contract.npz": "5d915ecaed3f8a88126e33d3ec407a26cd8fb8be705749442e219f7f6ee91716",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u026_0.npz": "c09a215ee6575c5b9a0d984b58a2250f4595289db7dcf0d9815f0cea7fcb16cb",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u026_1.npz": "82397c122c451cc9b39f65e34273d2d16f6d6861a4702321efae4b8873054fd2",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u026_2.npz": "a24c65e3b88a6087a84a3604a690ae2aa7c3ebcf4485aa93c399c9847a346c60",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u026_3.npz": "5ff5bdb907cb7d4339ec89ff49937f0e392bee8fb57f28fc8944b22bab59f8df",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u026_4.npz": "d59cd2bbaf3f6a0d627a60c6c817ff4104809a1bac10a1dea004aab5630a9d96",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u026_5.npz": "c0824a9db8c2f58a6b1fb180469749ad17ba107df9d8ca609011b6feeccf836c",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u026_6.npz": "48871fb71082a88baff49eaab8674d4df7688326fe09b8dd43c7bf820324bc6e",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u026_7.npz": "3f1051d3012f59b2166b4d99f7e8661a6114df6f274a9ed366eca3f89a91d84d",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u027.json": "f32e519e42e99bba544f8c6ddecf6791ff632ccfcf27c8a79612bbf8b4786384",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u027_contract.npz": "20769e466e99722be22656bc454c3443a2315477d89144c16f1b8dbbdede1ef2",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u027_0.npz": "978723db9a28f134fbd8198e3cf34bb1e66aa106de2448899575b2ac5f8ff404",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u027_1.npz": "6702f1d60560db230c11547c75bcbd5145b61d2a4db19d8e40d44d5f51bf4a5a",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u027_2.npz": "cf1df8603bec7706eb8aba60c770e458bc2b1aea3e204f2db5bfff44cd132dce",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u027_3.npz": "9c9502f4bc1a2bc74abc790450902256539b6302d1d0ca6e88e0d6fec848e14a",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u027_4.npz": "5200c0278cf05d1c1ea467bcbaec13b56ddfccc782bdac942ee7b1daf6595a2e",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u027_5.npz": "8f3cfa005e25c7f103f33c59ceae094c6f73df23ddaff7bbe5bbb964593eaff9",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u027_6.npz": "1c7993f2fc53bb714628a5c368de8c59d21b811c979e0abf74baff653233e5b7",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u027_7.npz": "eaf885b5658131e41601d87ee9530996bc9d2949f6e4517bd28d797cdb6b4330",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u028.json": "e8b0e026dd018041e36ec6fa26a173d3a08701e88249239cc3d28106a066ee82",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u028_contract.npz": "5f2e25965fc6aadaaa2b96ad13e370e9cf694844ce4d9e8e9a9b0cfeb297962d",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u028_0.npz": "3023cb9bffe6613bac93abfbf2a7089cbb5bfc6f74e606b4fb41bd59dcd82f3c",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u028_1.npz": "53a50c802d629c7dd3ef8dd9b6530190c2d557cf2dbc6c334037ca3dc1e65815",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u028_2.npz": "3d0644078ff8941adf7b3ec4e286c77c206f5e891860f96635a1865ea2b991fb",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u028_3.npz": "5d63397e0bcf6a8f2e88112c451a6886908b4f2be675c833d5cb429c6b930ecc",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u028_4.npz": "c7f5af5bdf002146e1febd7a9984ec125de04ea5878d9651d6a87b7a3367133d",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u028_5.npz": "e08375ddb2bde450a88daf504aab087205d1b7e7b1ae04e8eb7d6155e274ee0f",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u028_6.npz": "fce6197b77f69f284cbfcef7d144c139bfac5f1bd6b9e92ae669c4a0f2dad294",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u028_7.npz": "a69f15ac7c0da33c0762b5e0f0c3ae10c9d3f771a64941692eec76214353faf3",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u029.json": "aa417617657e8618e4ac9f953413ab3148a156b5a595d26452b1327ec87db3b2",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u029_contract.npz": "2b4a54a952026768f1d39089776c1ec92867c69d7caa7ed4dee7240a397bfac0",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u029_0.npz": "6bbe2767325ac8beb219ffb078de88a5829d96bf7ae514fd973f16117e889700",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u029_1.npz": "a9544902003e78e0cdc9ee13c0f107e08ff5b3dfbba96f92e2ed12a6b3348750",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u029_2.npz": "e91f2c62aa15681fb850448092e2dab544fed084a4436b4d6f5123eef1a98702",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u029_3.npz": "6b7995a04c43cf13b35bdfb5dee3f4fa33f5fa4ad03269c21e39d02d0e90d875",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u029_4.npz": "d623bac980f839f053eaf2dc86c2c6d8c5d4fc0eb23aceb946d80d98fd227b7b",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u029_5.npz": "75e8a856f23496461845a6632a8a28112c91d08b4c46f3b9f6a382d40240d497",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u029_6.npz": "95aa2e9864b72e0862861e36a55015c03b8fb70fd8b6571e4047b7d1a7964d29",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u029_7.npz": "2fe95d45808024462abafcba1b3f62f1e4fdcb07ec79d16aa03be0f2701824ba",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u030.json": "13e8ddf108bcea76d752aeeb79bae840708caba6eda4240391795e60918e495a",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u030_contract.npz": "d0d333eed40787980d936dc2937474d0a9b3104a86cae7b5ffc9a87c43784aad",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u030_0.npz": "13bfe367b6b8fbe3f61bae4a34801f112ae913a45fe23729d26096a19e11d60e",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u030_1.npz": "5dd13e42315bb01f87530200e1635a941edf4e0c19c858e0d7a87a2c27e504c0",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u030_2.npz": "98b754b97ff95c9ead22e4a18a1f8d3845ad6090dae58f2dfa839c9f9df62229",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u030_3.npz": "8ff7b6b6759055d1252da72763dfde30c91b7c11d6e80ed57e69c84155e68f63",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u030_4.npz": "57d752883635eccf4d50cba69efee0c73ffae27836c6e27d1f6152a0159f0ee0",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u030_5.npz": "c448e26aa9f1e6744ceca65a764c6fbf627ff5690a216c5796d062ae10f22aa4",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u030_6.npz": "5974870feb8a4e96fe8dd8b3fcaafaacaacb04a13eda9f8f67393ae184109d7b",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u030_7.npz": "a08937900d66353d7385aaff21a71e745ef5924d2aec377df7dc8b0b00ecf799",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u031.json": "e53a6120c6d6e5fa401261b9240219f36c465010493096c5ea3478cbaa5f508c",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u031_contract.npz": "3ae28c3a3955a7e9bbad682b3db95cada92fb420e7b91b378cbf8f959771b4ba",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u031_0.npz": "07b0f5674229119b15ccc0c3d4eb0f5fcc6991486208fe6c84fd8658a13276a0",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u031_1.npz": "f43f1e17f861f4dd1c8df09b8e1c1c5725386533a3edfdf7f0a7b99c1dc99572",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u031_2.npz": "d6d6d12352aebf0eeb5cdab586ffdefe7f481c2d926dcb679325e13b46e1171a",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u031_3.npz": "585547312c9b73312fda01672f18b308018c4dfbf0a217c164323b6d59cdb4f9",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u031_4.npz": "3a3286a72401aad0f9d2410c60d8e8f4b43e10e1c6e7334c381d4a28e33d5dcf",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u031_5.npz": "fbd3a33b5a4a8f058b09df14b4389ff289d6f60c685134a7e8d140d641166c6d",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u031_6.npz": "b08c7e6dc05728cb6b24d050e87f9fc8d82386c9410bd893fafc88d07ef3016e",
+    "icebow\\data\\bench\\development_rl_1_20261005\\rollouts\\u031_7.npz": "4135866a2fdeae4f6c513bdaa76550b99d0224461047f7c536869c341a65d34b"
+  },
+  "outputs": {
+    "rows.npz": "2b071c210ab25a4a9dec90e67efc0f6fd8e02c69b3c762dc1dbd0fa9d6cb5d43",
+    "matches.json": "9703901cc8d0ca17f819503eafa261ea746394a166f5d7b39025198c97db50a9",
+    "per_update.json": "c69d298b1915e95f98aa5fd83f26d3e57224c62c3ef7d53676c8c0a2f79dfa20",
+    "per_match.json": "c3be284ae06847ff04aaab52ed396bb7637ed4e9b886e2ecc963a4670440ddd6"
+  },
+  "model_inference": 0,
+  "optimizer_updates": 0,
+  "accepted": false
+}

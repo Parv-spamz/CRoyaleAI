@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\impact_learnability_2_recovery\\verify_results.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "IMPACT_LEARNING_RESULTS_VERIFIED",
+  "matched": true,
+  "output_sha256": "765f24553e13024b912c0c983b8d57b1e3f92cca9d43557a9aff7f53b7f7204d",
+  "seconds": 12.948921203613281
+}

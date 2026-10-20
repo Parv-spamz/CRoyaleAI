@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/match_adaptation/verify_preflight.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "MATCH_ADAPTATION_VERIFY_PREFLIGHT_PASS",
+  "matched": true,
+  "output_sha256": "e923c62ae489c98453fd70254628155bacd1c025b9a02a20f06ec8fcdc8bdfde",
+  "seconds": 1.8776359558105469
+}

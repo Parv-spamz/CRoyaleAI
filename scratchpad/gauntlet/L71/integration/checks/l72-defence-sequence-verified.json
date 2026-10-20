@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:/Users/benpe/ClashBot/icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/verify_defence_sequences.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "DEFENCE_SEQUENCE_INDEPENDENTLY_VERIFIED",
+  "matched": true,
+  "output_sha256": "917fd7d050baa4fcf8962bf67f8e0814ed3734f3aecfb16b78fcfdf70a4752e9",
+  "seconds": 4.3371734619140625
+}

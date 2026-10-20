@@ -1,0 +1,6 @@
+__pycache__/
+.pytest_cache/
+.test_tmp/
+.test_work/
+verification_plan/
+results/

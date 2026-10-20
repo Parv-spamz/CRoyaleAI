@@ -1,0 +1,206 @@
+{
+  "complete": true,
+  "original_readiness_pass": false,
+  "coverage": {
+    "games": 16,
+    "late_games": 4,
+    "full_rows": 4365,
+    "late_rows": 91,
+    "per_game": [
+      {
+        "index": 0,
+        "boundary": 4800,
+        "end_tick": 6107,
+        "full_decisions": 453,
+        "full_contributing": 403,
+        "late_decisions": 74,
+        "late_contributing": 67,
+        "late_play": 23,
+        "late_wait": 44
+      },
+      {
+        "index": 1,
+        "boundary": 4800,
+        "end_tick": 4973,
+        "full_decisions": 383,
+        "full_contributing": 290,
+        "late_decisions": 9,
+        "late_contributing": 8,
+        "late_play": 4,
+        "late_wait": 4
+      },
+      {
+        "index": 2,
+        "boundary": 4800,
+        "end_tick": 3600,
+        "full_decisions": 283,
+        "full_contributing": 217,
+        "late_decisions": 0,
+        "late_contributing": 0,
+        "late_play": 0,
+        "late_wait": 0
+      },
+      {
+        "index": 3,
+        "boundary": 4800,
+        "end_tick": 4986,
+        "full_decisions": 392,
+        "full_contributing": 344,
+        "late_decisions": 13,
+        "late_contributing": 12,
+        "late_play": 3,
+        "late_wait": 9
+      },
+      {
+        "index": 4,
+        "boundary": 4800,
+        "end_tick": 4879,
+        "full_decisions": 383,
+        "full_contributing": 307,
+        "late_decisions": 6,
+        "late_contributing": 4,
+        "late_play": 2,
+        "late_wait": 2
+      },
+      {
+        "index": 5,
+        "boundary": 4800,
+        "end_tick": 4803,
+        "full_decisions": 389,
+        "full_contributing": 332,
+        "late_decisions": 0,
+        "late_contributing": 0,
+        "late_play": 0,
+        "late_wait": 0
+      },
+      {
+        "index": 6,
+        "boundary": 4800,
+        "end_tick": 3600,
+        "full_decisions": 291,
+        "full_contributing": 250,
+        "late_decisions": 0,
+        "late_contributing": 0,
+        "late_play": 0,
+        "late_wait": 0
+      },
+      {
+        "index": 7,
+        "boundary": 4800,
+        "end_tick": 3600,
+        "full_decisions": 291,
+        "full_contributing": 226,
+        "late_decisions": 0,
+        "late_contributing": 0,
+        "late_play": 0,
+        "late_wait": 0
+      },
+      {
+        "index": 8,
+        "boundary": 4800,
+        "end_tick": 3600,
+        "full_decisions": 287,
+        "full_contributing": 249,
+        "late_decisions": 0,
+        "late_contributing": 0,
+        "late_play": 0,
+        "late_wait": 0
+      },
+      {
+        "index": 9,
+        "boundary": 4800,
+        "end_tick": 3600,
+        "full_decisions": 290,
+        "full_contributing": 230,
+        "late_decisions": 0,
+        "late_contributing": 0,
+        "late_play": 0,
+        "late_wait": 0
+      },
+      {
+        "index": 10,
+        "boundary": 4800,
+        "end_tick": 4200,
+        "full_decisions": 333,
+        "full_contributing": 256,
+        "late_decisions": 0,
+        "late_contributing": 0,
+        "late_play": 0,
+        "late_wait": 0
+      },
+      {
+        "index": 11,
+        "boundary": 4800,
+        "end_tick": 3600,
+        "full_decisions": 289,
+        "full_contributing": 242,
+        "late_decisions": 0,
+        "late_contributing": 0,
+        "late_play": 0,
+        "late_wait": 0
+      },
+      {
+        "index": 12,
+        "boundary": 4800,
+        "end_tick": 3600,
+        "full_decisions": 289,
+        "full_contributing": 261,
+        "late_decisions": 0,
+        "late_contributing": 0,
+        "late_play": 0,
+        "late_wait": 0
+      },
+      {
+        "index": 13,
+        "boundary": 4800,
+        "end_tick": 3919,
+        "full_decisions": 317,
+        "full_contributing": 270,
+        "late_decisions": 0,
+        "late_contributing": 0,
+        "late_play": 0,
+        "late_wait": 0
+      },
+      {
+        "index": 14,
+        "boundary": 4800,
+        "end_tick": 3600,
+        "full_decisions": 290,
+        "full_contributing": 238,
+        "late_decisions": 0,
+        "late_contributing": 0,
+        "late_play": 0,
+        "late_wait": 0
+      },
+      {
+        "index": 15,
+        "boundary": 4800,
+        "end_tick": 3600,
+        "full_decisions": 293,
+        "full_contributing": 250,
+        "late_decisions": 0,
+        "late_contributing": 0,
+        "late_play": 0,
+        "late_wait": 0
+      }
+    ]
+  },
+  "controls": {
+    "positive": 1,
+    "negative": 8
+  },
+  "new_games": 0,
+  "model_inference": false,
+  "backward": false,
+  "optimizer_updates": 0,
+  "original_collected_sha256": "4ef7f1c7e1fb2df1be51dd561cb2969f98d7cd9b7305d150e303d6db50700bb9",
+  "failed_receipt_sha256": "e95803f2e5ee79e0fe65a48adddf7b744da9db95b6f219cefe4e04779592bb96",
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\late_game_readiness_coverage\\audit.py": "dcb5ab3bc8c444eaaa6ad5d140274b98e330a6439d25fc9010bd244ae989dcec",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\late_game_readiness_coverage\\PLAN.md": "0e3efa6c5fe584aa5a0d57ec771f326229f6966a53204331802885cc27499f01",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\late_game_readiness\\collect.py": "0f608cdf267728a585c7a6ac7cc33794cac2161f62c6c0a44c62f9b504aba50e",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\late_game_readiness\\selection.py": "89010124adb2c6a3d82ebac12f30b975cbb401d2012109e832b9884155845c63",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\late_game_readiness\\PLAN.md": "a5ac70cb6f2bafad0f8de0edc3eda69e823e6c97ef4dcb161c07f2d91c688aea",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\late_game_readiness\\METRICS.md": "8f5d8f5fc8dc1ca408d6ff6535ca44375ce803c7e1b470e8b869ba3007984845"
+  }
+}

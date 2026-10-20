@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/close_impact_learning2_report.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "IMPACT_LEARNING_REPORT_REVIEWED",
+  "matched": true,
+  "output_sha256": "61a32233990dc42531b9178da14b8ad813c45dcb5d49e8602b85ba747dff1af6",
+  "seconds": 0.10654520988464355
+}

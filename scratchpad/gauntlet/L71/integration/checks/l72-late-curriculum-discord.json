@@ -1,0 +1,17 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L69/discord/send_report.py",
+    "--id",
+    "model-late-curriculum-pair-final",
+    "--file",
+    "scratchpad/gauntlet/L72/improvement_loop/development_rl_3/message.md"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "DELIVERED model-late-curriculum-pair-final",
+  "matched": true,
+  "output_sha256": "462f2a66c11afdf51fad724c8ff025c2c18eac592f7c2fc639a2e0ce7b18e346",
+  "seconds": 2.075859785079956
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_6\\recount.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "SPATIAL_RECOUNT_COMPLETE",
+  "matched": true,
+  "output_sha256": "dca53fbdd3e05348aa5e69a2933845db8f47497134a6efa1da9ffd4ca1f4682d",
+  "seconds": 38.21256613731384
+}

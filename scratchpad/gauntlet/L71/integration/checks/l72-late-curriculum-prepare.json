@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_3\\prepare.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "LATE_CURRICULUM_PREPARED",
+  "matched": true,
+  "output_sha256": "750655a71d8880600bcf94ac9e78a4743bfaff3e26d1613a8ad63a7f04b33eab",
+  "seconds": 15.206881999969482
+}

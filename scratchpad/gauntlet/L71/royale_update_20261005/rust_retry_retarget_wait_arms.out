@@ -1,0 +1,12 @@
+
+running 7 tests
+test a_new_target_in_reach_is_taken_at_once_under_both_arms ... ok
+test a_unit_without_the_inferno_takes_the_cannon_at_once_under_both_arms ... ok
+test the_new_arm_serves_the_rest_of_the_wait_after_the_freeze ... ok
+test the_new_arm_waits_five_ticks_then_takes_the_cannon_where_it_stands ... ok
+test the_old_arm_takes_the_cannon_on_the_reach_loss ... ok
+test the_old_arm_takes_the_next_target_when_the_freeze_ends ... ok
+test the_shipped_values_are_the_new_arms ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+

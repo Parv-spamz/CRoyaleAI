@@ -1,0 +1,17 @@
+{
+  "command": [
+    "C:/Users/benpe/ClashBot/research/ext/Royale/.venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "pipeline/tests/test_royale_runtime.py::RuntimeFiles::test_checkpoint_and_actor_configuration_retain_stamp_and_refuse_old_resume",
+    "pipeline/tests/test_royale_forms.py::TestPlumbing::test_rl_config_key_and_actor"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 1,
+  "expected": "2 passed",
+  "matched": false,
+  "output_sha256": "497c267ee4192df0f0bcaeebeb8aa23f1a2fa37a8e469f7bca33e7b6c52872cd",
+  "seconds": 13.890228509902954
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "pwsh",
+    "-NoProfile",
+    "-File",
+    "scratchpad/gauntlet/L72/improvement_loop/verify_native_host.ps1"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "NATIVE_LOCAL_HOST_VERIFIED_NOT_STARTED",
+  "matched": true,
+  "output_sha256": "fdc496707032e05adcef155ee4952c4d8c2f2ccd57645b63595e2c2f98a4c272",
+  "seconds": 7.061498403549194
+}

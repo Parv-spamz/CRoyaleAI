@@ -1,0 +1,13 @@
+{
+  "complete": true,
+  "roots": 192,
+  "commands": 288,
+  "prepared_sha256": "5064ed95fe2f1416627a80a1cd077e2db8619ef86e5c0e48a7c02cfe16cda25b",
+  "controls": {
+    "positive": 192,
+    "negative": 7
+  },
+  "models_loaded": 0,
+  "optimizer_updates": 0,
+  "source_sha256": "082d2b44a3d09fa70289a0c0cf36800666f28536d63ad183a28a0d6d7c0f7bd7"
+}

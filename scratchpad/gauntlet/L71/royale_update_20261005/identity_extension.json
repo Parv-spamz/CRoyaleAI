@@ -1,0 +1,425 @@
+{
+  "prior_source_sha256": "b024e931aefd17aed6df246255b59689eb6acf66e4848694c24211302f97f59c",
+  "current_source_sha256": "7efaea22cdb3e7e323faeb3da40fad139f501ce898b702cdf370ce97cfead41f",
+  "previous_unambiguous_cases": 228,
+  "regressions": [
+    [
+      [
+        "furnace",
+        0
+      ],
+      343,
+      [
+        [
+          47,
+          0,
+          "parent"
+        ]
+      ],
+      [
+        [
+          41,
+          0,
+          "child"
+        ],
+        [
+          47,
+          0,
+          "parent"
+        ]
+      ]
+    ],
+    [
+      [
+        "furnace",
+        1
+      ],
+      343,
+      [
+        [
+          47,
+          1,
+          "parent"
+        ]
+      ],
+      [
+        [
+          41,
+          0,
+          "child"
+        ],
+        [
+          47,
+          1,
+          "parent"
+        ]
+      ]
+    ]
+  ],
+  "added": [
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 101,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 111,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 122,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 134,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 147,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 162,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 178,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 195,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 215,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 236,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 259,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 284,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        0
+      ],
+      "max_hp": 312,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 101,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 111,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 122,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 134,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 147,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 162,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 178,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 195,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 215,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 236,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 259,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 284,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    },
+    {
+      "parent_form": [
+        "furnace",
+        1
+      ],
+      "max_hp": 312,
+      "identities": [
+        [
+          41,
+          0,
+          "child"
+        ]
+      ]
+    }
+  ]
+}

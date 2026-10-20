@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "training_only": true,
+  "trainable": false,
+  "training_launched": false,
+  "predictions_run": false,
+  "policy_inputs_changed": false,
+  "activation": "none",
+  "release_block": "N2 fresh cohort, power/multiplicity and experiment design unmet",
+  "mode": "strict verified positional identity; row ordinal retained as tie breaker",
+  "dataset": "icebow\\data\\bench\\spawner_identity_20261005\\gen_dataset_v5_public.npz",
+  "feature_version": 5,
+  "dataset_rows": 3517863,
+  "mapped_pool_rows": 268718,
+  "sequence_rows": 126802,
+  "windows": 7748,
+  "window_row_references": 138108,
+  "sources": {
+    "icebow\\data\\pipeline\\gen_dataset_v31_public.npz": "297763ea0ecaa3be863d2859d3b5c74f1b627ab0ecfef89a80404112ebf9b1a4",
+    "icebow\\data\\bench\\spawner_identity_20261005\\gen_dataset_v5_public.npz": "a48f1bbd09ef177fbec27aa5ef15b961f0c4100b6475438f0124fec00f2be461",
+    "icebow\\data\\bench\\spawner_identity_20261005\\manifest.json": "4863ca3b84e9b4a1bd0e7496fa3981f0b8698ce4addcc5889eed08290e2ead21",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\defence_sequence_prepared.json": "bf44934f1d4af86c9b94f283107bb2dd2ead75e244fff5af237b85007ef79e66",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\defence_sequence_verified.json": "d34922e822f37a715d739688947de372734b26ea0d987d539f4445ba6ec3bec6",
+    "icebow\\data\\bench\\defence_sequence_prep_20261005\\index.npz": "a186307cb59ba42ae82a967c67b12a42c334b34608df75f2f28e53564667c6c4",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\verify_defence_sequences.py": "85c02dd36fe5b3327036d673436dfecde6ec30a490080855b763ce90b059c24c",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\bind_defence_sequences.py": "5b994ac7c9a0138771e2b76f2b4c1ab667509a01fcad524f15a36adabeb716df",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\DEFENCE_CROSSWALK_PLAN.md": "150635f1120cc0de9b1299ec2c2c77bcfc9c158eeaf87d3ae49555f54a17cf8a",
+    "scratchpad\\gauntlet\\L71\\integration\\checks\\spawner-final-data.json": "e6218035675f4088a845970eb7c817ca88791f4425c64382f9add1a66dc4749a",
+    "scratchpad\\gauntlet\\L71\\integration\\checks\\spawner-final-data.out": "6b1755138a2b5f9ba2a94fab3cbfbe724db6486131dc3db0ccbb7d737c5ba267",
+    "scratchpad\\gauntlet\\L71\\integration\\checks\\l72-defence-sequence-verified.json": "257ddace7fb68b3238e1d9bfa99711bbd6a928385dc22291e8fa6eba7c917006",
+    "scratchpad\\gauntlet\\L71\\integration\\checks\\l72-defence-sequence-verified.out": "fd978cbfd9a2320a65683920d85b3ab93ff3fd0ef2539acf78990b1ddc059cc0"
+  },
+  "artifacts": {
+    "icebow\\data\\bench\\defence_sequence_v5_binding_20261005\\index.npz": "a186307cb59ba42ae82a967c67b12a42c334b34608df75f2f28e53564667c6c4",
+    "icebow\\data\\bench\\defence_sequence_v5_binding_20261005\\crosswalk.npz": "f85f4dde5931f14001e39e1faf29a507369105f147c1b757a833308aded3ce30"
+  },
+  "identity_array_hashes": {
+    "tags": "382259c2b181661a2b8e7d5688c6e9ce19e99a56a3f8ce7e9e99f5c6811e40a7",
+    "rep": "f5d59f5379d8801cb8d6cdeaf62a01c0884efa43270ddf9d90b1f536301602c4",
+    "side": "18a17c5c0657121cc50e114537757d694229a67ba0c7f2d6022d3ad2a4347c37",
+    "tick": "2631a0c5fc51859112053066ecffed666edfb1afa61052a63c7f94c0f3e44eaf",
+    "split": "0dd44e69984a1e33ea3cf6ebe3ecbe866b83f7b891a974a6f52d10c495bc7052",
+    "deck_id": "6e1cbf0a89b4f8f395a2e922534ff1fd64db3ef5fe6c4465d819b6b08b2b8d45",
+    "off": "60363e094124b9433c5ece4eff548626605a2dfa68a1173bb28491ebc91bfd15",
+    "v3val": "5486dfe5bf27dd2297664f72bf7ab49222fad06b635e43a716de894620a751a8"
+  },
+  "original_target_hashes": {
+    "y_card": {
+      "pool": "23cafa7877efe3e1014d9f4de79648f29f336ac141af7f1380fdd3d9bf5df63d",
+      "sequence_union": "1c2f41dad64ca60379ca1dec9ed0ad15ca2ed8090cfa2eb45b025053fdcecfd0"
+    },
+    "y_cell": {
+      "pool": "8ae0fc35ead834c6c6f661928ffda247234c31a522bc0738026e497d945eba89",
+      "sequence_union": "4aca8068d2d03f2f5ae4bbf4577d3064a902275aa88840652ed883d253428cdc"
+    },
+    "y_crowns": {
+      "pool": "91e8cab7380b3319576fe9683e9cab8efd180bb5d3e4e43ecc7b6cc4066e5f4c",
+      "sequence_union": "d1ca4d5c7af20725d4ea8842cdc0b11205992c43844b81a93be1a9ff59530974"
+    },
+    "y_gate": {
+      "pool": "658ad6b908952704cbece5ac532b4063f601a5d0b8813359ebd30f45a090b9dc",
+      "sequence_union": "f7d43b3ca84b94e0671eb23d6dd7f650c5e7d5feb79acdfc6ebd744c6051fed5"
+    },
+    "y_hand_pos": {
+      "pool": "e52906bc5400e39c291873cc401c7bf1fbca7bb00c5ebea6d7838ac04e97c15e",
+      "sequence_union": "341dd8388c916b82154ebfadac891db880be5edc055530768bc9bb584e26a79e"
+    },
+    "y_wait_card": {
+      "pool": "a2431a98c773f460bd721887596ce3943982aae288b720aef827165937712b0f",
+      "sequence_union": "cde47408e6c1fd18a510f40f82214adf15f2a915e24a32d88619b5288b97d8d3"
+    },
+    "y_wait_dt": {
+      "pool": "1cb3f7f9883275fe58906c9bfe8d2b117ef27653ec0590a2a0a577f4a4b3347e",
+      "sequence_union": "ff9036481eef14501ad17d0df780d0cd0a909f87bb35ac8ae4d05dbedd602ad6"
+    },
+    "y_xy": {
+      "pool": "ed7dffec7aef91c5633b829414b9668bfd33e1177ce4d69d84147a28efab5319",
+      "sequence_union": "ec085ec0b4a94f9cf5d163245ff46e211233d7db24d419ae7641be563aebfd09"
+    }
+  },
+  "public_contracts": {
+    "grid": "lattice",
+    "shift_ticks": 0,
+    "public_observation": "periodic_native_bodies_and_spell_sightings_v1",
+    "public_timing_contract": "R6_catalog_distance_speed_all_frames_v1",
+    "opponent_elixir": "public_counter_strictly_prior_sightings"
+  },
+  "limitations": [
+    "Historical exposed training data, not fresh confirmation.",
+    "No reordering support, outcome filtering, mixture selection, new labels or trainer activation.",
+    "Reuses verified body-column mechanics; this check only binds sequence references.",
+    "Original sparse rows, overlapping windows, unsuccessful defenses and truncated coverage retained."
+  ]
+}

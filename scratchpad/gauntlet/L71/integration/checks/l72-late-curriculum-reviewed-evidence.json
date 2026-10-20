@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/review_late_curriculum.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "LATE_CURRICULUM_EVIDENCE_REVIEWED",
+  "matched": true,
+  "output_sha256": "593985f427f56174ecc84ac1bc536e671c752eacd402599d2a6192e823404333",
+  "seconds": 0.35120391845703125
+}

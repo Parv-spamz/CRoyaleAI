@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/development_iteration_1/verify_prelaunch.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "DEVELOPMENT_1_PRELAUNCH_PASS",
+  "matched": true,
+  "output_sha256": "c85a03e96169f152a62535a16121a26d92e0e18a65b81a2ff41a89365e0d90e6",
+  "seconds": 178.87627458572388
+}

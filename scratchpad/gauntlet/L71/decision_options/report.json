@@ -1,0 +1,663 @@
+{
+  "dataset": "icebow\\data\\pipeline\\gen_dataset_v31_public.npz",
+  "dataset_sha256": "297763ea0ecaa3be863d2859d3b5c74f1b627ab0ecfef89a80404112ebf9b1a4",
+  "labels_sha256": "d6752a9aba1be94f49b28fe4ec0aad3d40aa0a78636fdeec4d07e6b580ba184e",
+  "rows": 38317,
+  "pro_plays": 11934,
+  "pro_rockets": 671,
+  "replays": 284,
+  "split": "validation (1)",
+  "device": "cpu",
+  "threads": 1,
+  "rocket_radius_tiles": 2.0,
+  "rule": "reject agreement drop >0.01 or confident override >1e-12; four frozen settings only",
+  "limits": "Teacher-forced card/target agreement, not wins. Finishing subset is actual pro finishing Rocket plays, not all potential one/two-Rocket opportunities. No next-Rocket planning is measured.",
+  "models": {
+    "r1e": {
+      "checkpoint": "icebow/data/bench/rl_royale/rseries_r1e31/rseries_r1e31_u0155.pt",
+      "checkpoint_sha256": "76fdfaacbd9c2049cc88792278f06e3f73a56eaf9653791e922d9332dd6751cd",
+      "feature_version": 4,
+      "cache": "icebow\\data\\bench\\decision_options_20261004\\r1e.npz",
+      "cache_sha256": "ccf3d8e80ce5fa2fed6fe5c63c2f31718a46852050d32a9dc1f09ced9622c4ad",
+      "baseline": {
+        "agreement": 0.6458857047092341,
+        "agreement_n": 11934,
+        "changed_probability": 0.0,
+        "confident_override": 0.0,
+        "confident_n": 7959,
+        "rocket_recall": 0.14157973174366617,
+        "rocket_false_fire": 0.008079552517091361,
+        "rocket_on_pro_wait": 0.006837536849000982,
+        "contexts": {
+          "pro_rocket": {
+            "n": 671,
+            "rocket_choice": 0.14157973174366617,
+            "gate_pass_035": 0.8897168405365127,
+            "rocket_gated_035": 0.12071535022354694,
+            "rocket_gated_027": 0.12965722801788376
+          },
+          "other_pro_play": {
+            "n": 11263,
+            "rocket_choice": 0.008079552517091361,
+            "gate_pass_035": 0.8023617153511498,
+            "rocket_gated_035": 0.0074580484773151025,
+            "rocket_gated_027": 0.007635621060108319
+          },
+          "pro_tower_rocket": {
+            "n": 179,
+            "rocket_choice": 0.1340782122905028,
+            "gate_pass_035": 0.8603351955307262,
+            "rocket_gated_035": 0.10614525139664804,
+            "rocket_gated_027": 0.11731843575418995
+          },
+          "pro_finishing_rocket": {
+            "n": 10,
+            "rocket_choice": 0.0,
+            "gate_pass_035": 0.9,
+            "rocket_gated_035": 0.0,
+            "rocket_gated_027": 0.0
+          },
+          "late_pro_tower_rocket": {
+            "n": 146,
+            "rocket_choice": 0.0821917808219178,
+            "gate_pass_035": 0.8835616438356164,
+            "rocket_gated_035": 0.07534246575342465,
+            "rocket_gated_027": 0.07534246575342465
+          }
+        }
+      },
+      "candidates": [
+        {
+          "agreement": 0.6323624000525578,
+          "agreement_n": 11934,
+          "changed_probability": 0.1320844692924929,
+          "confident_override": 0.01663107024665143,
+          "confident_n": 7959,
+          "rocket_recall": 0.15022392273232446,
+          "rocket_false_fire": 0.009477570679314673,
+          "rocket_on_pro_wait": 0.00798532141455972,
+          "contexts": {
+            "pro_rocket": {
+              "n": 671,
+              "rocket_choice": 0.15022392273232446,
+              "gate_pass_035": 0.8897168405365127,
+              "rocket_gated_035": 0.1307868827320241,
+              "rocket_gated_027": 0.13863704601578974
+            },
+            "other_pro_play": {
+              "n": 11263,
+              "rocket_choice": 0.009477570679314673,
+              "gate_pass_035": 0.8023617153511498,
+              "rocket_gated_035": 0.008717204930084639,
+              "rocket_gated_027": 0.008917387638514586
+            },
+            "pro_tower_rocket": {
+              "n": 179,
+              "rocket_choice": 0.15788922384983678,
+              "gate_pass_035": 0.8603351955307262,
+              "rocket_gated_035": 0.1303843585464256,
+              "rocket_gated_027": 0.14155754290396752
+            },
+            "pro_finishing_rocket": {
+              "n": 10,
+              "rocket_choice": 0.0,
+              "gate_pass_035": 0.9,
+              "rocket_gated_035": 0.0,
+              "rocket_gated_027": 0.0
+            },
+            "late_pro_tower_rocket": {
+              "n": 146,
+              "rocket_choice": 0.11690738000604121,
+              "gate_pass_035": 0.8835616438356164,
+              "rocket_gated_035": 0.11058292186007826,
+              "rocket_gated_027": 0.11058292186007826
+            }
+          },
+          "ratio": 0.5,
+          "temperature": 0.7,
+          "agreement_delta_pp": -1.3523304656676283,
+          "passes_offline": false
+        },
+        {
+          "agreement": 0.6306629046182992,
+          "agreement_n": 11934,
+          "changed_probability": 0.14310174016695607,
+          "confident_override": 0.019621955243731316,
+          "confident_n": 7959,
+          "rocket_recall": 0.15117604348996144,
+          "rocket_false_fire": 0.009664271120508565,
+          "rocket_on_pro_wait": 0.00814481726330005,
+          "contexts": {
+            "pro_rocket": {
+              "n": 671,
+              "rocket_choice": 0.15117604348996144,
+              "gate_pass_035": 0.8897168405365127,
+              "rocket_gated_035": 0.13176296849108585,
+              "rocket_gated_027": 0.13956757155422375
+            },
+            "other_pro_play": {
+              "n": 11263,
+              "rocket_choice": 0.009664271120508565,
+              "gate_pass_035": 0.8023617153511498,
+              "rocket_gated_035": 0.008877705963626796,
+              "rocket_gated_027": 0.00908637072838713
+            },
+            "pro_tower_rocket": {
+              "n": 179,
+              "rocket_choice": 0.15933157907955675,
+              "gate_pass_035": 0.8603351955307262,
+              "rocket_gated_035": 0.13170709038114245,
+              "rocket_gated_027": 0.14288027473868434
+            },
+            "pro_finishing_rocket": {
+              "n": 10,
+              "rocket_choice": 0.0,
+              "gate_pass_035": 0.9,
+              "rocket_gated_035": 0.0,
+              "rocket_gated_027": 0.0
+            },
+            "late_pro_tower_rocket": {
+              "n": 146,
+              "rocket_choice": 0.11861727567522037,
+              "gate_pass_035": 0.8835616438356164,
+              "rocket_gated_035": 0.11214615596963023,
+              "rocket_gated_027": 0.11214615596963023
+            }
+          },
+          "ratio": 0.5,
+          "temperature": 1.0,
+          "agreement_delta_pp": -1.5222800090934907,
+          "passes_offline": false
+        },
+        {
+          "agreement": 0.6413392685823153,
+          "agreement_n": 11934,
+          "changed_probability": 0.08017230470032194,
+          "confident_override": 0.0,
+          "confident_n": 7959,
+          "rocket_recall": 0.14716715452837412,
+          "rocket_false_fire": 0.008561603530505429,
+          "rocket_on_pro_wait": 0.007051411881999716,
+          "contexts": {
+            "pro_rocket": {
+              "n": 671,
+              "rocket_choice": 0.14716715452837412,
+              "gate_pass_035": 0.8897168405365127,
+              "rocket_gated_035": 0.12842647474414223,
+              "rocket_gated_027": 0.13671189616229246
+            },
+            "other_pro_play": {
+              "n": 11263,
+              "rocket_choice": 0.008561603530505429,
+              "gate_pass_035": 0.8023617153511498,
+              "rocket_gated_035": 0.00796599682522974,
+              "rocket_gated_027": 0.008098959632752215
+            },
+            "pro_tower_rocket": {
+              "n": 179,
+              "rocket_choice": 0.15274752994446425,
+              "gate_pass_035": 0.8603351955307262,
+              "rocket_gated_035": 0.12717765976261372,
+              "rocket_gated_027": 0.1383508441201556
+            },
+            "pro_finishing_rocket": {
+              "n": 10,
+              "rocket_choice": 0.0,
+              "gate_pass_035": 0.9,
+              "rocket_gated_035": 0.0,
+              "rocket_gated_027": 0.0
+            },
+            "late_pro_tower_rocket": {
+              "n": 146,
+              "rocket_choice": 0.10974137621901338,
+              "gate_pass_035": 0.8835616438356164,
+              "rocket_gated_035": 0.10578927510564871,
+              "rocket_gated_027": 0.10578927510564871
+            }
+          },
+          "ratio": 0.7,
+          "temperature": 0.7,
+          "agreement_delta_pp": -0.45464361269188514,
+          "passes_offline": true
+        },
+        {
+          "agreement": 0.6410993437002199,
+          "agreement_n": 11934,
+          "changed_probability": 0.08348303666430489,
+          "confident_override": 0.0,
+          "confident_n": 7959,
+          "rocket_recall": 0.1476421335738043,
+          "rocket_false_fire": 0.008607366111615692,
+          "rocket_on_pro_wait": 0.0070717157082721156,
+          "contexts": {
+            "pro_rocket": {
+              "n": 671,
+              "rocket_choice": 0.1476421335738043,
+              "gate_pass_035": 0.8897168405365127,
+              "rocket_gated_035": 0.12908192613399308,
+              "rocket_gated_027": 0.13734088794606536
+            },
+            "other_pro_play": {
+              "n": 11263,
+              "rocket_choice": 0.008607366111615692,
+              "gate_pass_035": 0.8023617153511498,
+              "rocket_gated_035": 0.008010660322220614,
+              "rocket_gated_027": 0.008143665025874389
+            },
+            "pro_tower_rocket": {
+              "n": 179,
+              "rocket_choice": 0.15355401166672566,
+              "gate_pass_035": 0.8603351955307262,
+              "rocket_gated_035": 0.12811197696782645,
+              "rocket_gated_027": 0.13928516132536833
+            },
+            "pro_finishing_rocket": {
+              "n": 10,
+              "rocket_choice": 0.0,
+              "gate_pass_035": 0.9,
+              "rocket_gated_035": 0.0,
+              "rocket_gated_027": 0.0
+            },
+            "late_pro_tower_rocket": {
+              "n": 146,
+              "rocket_choice": 0.11070757284002905,
+              "gate_pass_035": 0.8835616438356164,
+              "rocket_gated_035": 0.10691220153110463,
+              "rocket_gated_027": 0.10691220153110463
+            }
+          },
+          "ratio": 0.7,
+          "temperature": 1.0,
+          "agreement_delta_pp": -0.4786361009014195,
+          "passes_offline": true
+        }
+      ],
+      "aim": {
+        "all_pro_rocket": {
+          "n": 671,
+          "argmax_target_coverage": 0.6065573770491803,
+          "area_target_coverage": 0.6855439642324889
+        },
+        "tower": {
+          "n": 179,
+          "argmax_target_coverage": 0.4860335195530726,
+          "area_target_coverage": 0.6256983240223464
+        },
+        "finishing": {
+          "n": 10,
+          "argmax_target_coverage": 0.0,
+          "area_target_coverage": 0.3
+        }
+      },
+      "vocabulary_mapping": {
+        "identity_mapping": true,
+        "changed_ids": []
+      }
+    },
+    "r1": {
+      "checkpoint": "icebow/data/bench/rl_royale/rseries_r1/rseries_r1_u0155.pt",
+      "checkpoint_sha256": "ae2b842084aaa8668f8dd5754f3280bbf78b7d5aec0351079396577879ab5475",
+      "feature_version": 1,
+      "cache": "icebow\\data\\bench\\decision_options_20261004\\r1_vocab_corrected.npz",
+      "cache_sha256": "433298214743c6ea7efe92e00e9a6fa3e1df12bca0fe260f50219697a7157ed5",
+      "baseline": {
+        "agreement": 0.6338193397016927,
+        "agreement_n": 11934,
+        "changed_probability": 0.0,
+        "confident_override": 0.0,
+        "confident_n": 7676,
+        "rocket_recall": 0.09687034277198212,
+        "rocket_false_fire": 0.004794459735416852,
+        "rocket_on_pro_wait": null,
+        "contexts": {
+          "pro_rocket": {
+            "n": 671,
+            "rocket_choice": 0.09687034277198212,
+            "gate_pass_035": 0.9090909090909091,
+            "rocket_gated_035": 0.08047690014903129,
+            "rocket_gated_027": 0.08345752608047691
+          },
+          "other_pro_play": {
+            "n": 11263,
+            "rocket_choice": 0.004794459735416852,
+            "gate_pass_035": 0.7682677794548521,
+            "rocket_gated_035": 0.004439314569830418,
+            "rocket_gated_027": 0.0045281008612270265
+          },
+          "pro_tower_rocket": {
+            "n": 179,
+            "rocket_choice": 0.10614525139664804,
+            "gate_pass_035": 0.8603351955307262,
+            "rocket_gated_035": 0.08379888268156424,
+            "rocket_gated_027": 0.08379888268156424
+          },
+          "pro_finishing_rocket": {
+            "n": 10,
+            "rocket_choice": 0.0,
+            "gate_pass_035": 0.9,
+            "rocket_gated_035": 0.0,
+            "rocket_gated_027": 0.0
+          },
+          "late_pro_tower_rocket": {
+            "n": 146,
+            "rocket_choice": 0.04794520547945205,
+            "gate_pass_035": 0.910958904109589,
+            "rocket_gated_035": 0.04794520547945205,
+            "rocket_gated_027": 0.04794520547945205
+          }
+        }
+      },
+      "candidates": [
+        {
+          "agreement": 0.6190406899986234,
+          "agreement_n": 11934,
+          "changed_probability": 0.14386281905602272,
+          "confident_override": 0.019375254701255694,
+          "confident_n": 7676,
+          "rocket_recall": 0.11573699702588501,
+          "rocket_false_fire": 0.006460490823034523,
+          "rocket_on_pro_wait": null,
+          "contexts": {
+            "pro_rocket": {
+              "n": 671,
+              "rocket_choice": 0.11573699702588501,
+              "gate_pass_035": 0.9090909090909091,
+              "rocket_gated_035": 0.09820347491082786,
+              "rocket_gated_027": 0.10137670399438266
+            },
+            "other_pro_play": {
+              "n": 11263,
+              "rocket_choice": 0.006460490823034523,
+              "gate_pass_035": 0.7682677794548521,
+              "rocket_gated_035": 0.006045653474600374,
+              "rocket_gated_027": 0.0061451029334505846
+            },
+            "pro_tower_rocket": {
+              "n": 179,
+              "rocket_choice": 0.12462919872358727,
+              "gate_pass_035": 0.8603351955307262,
+              "rocket_gated_035": 0.09839723933450463,
+              "rocket_gated_027": 0.10038855077946872
+            },
+            "pro_finishing_rocket": {
+              "n": 10,
+              "rocket_choice": 0.03431292658979988,
+              "gate_pass_035": 0.9,
+              "rocket_gated_035": 0.03431292658979988,
+              "rocket_gated_027": 0.03431292658979988
+            },
+            "late_pro_tower_rocket": {
+              "n": 146,
+              "rocket_choice": 0.0641543878880914,
+              "gate_pass_035": 0.910958904109589,
+              "rocket_gated_035": 0.0641543878880914,
+              "rocket_gated_027": 0.0641543878880914
+            }
+          },
+          "ratio": 0.5,
+          "temperature": 0.7,
+          "agreement_delta_pp": -1.4778649703069302,
+          "passes_offline": false
+        },
+        {
+          "agreement": 0.617340335712162,
+          "agreement_n": 11934,
+          "changed_probability": 0.15559542127725703,
+          "confident_override": 0.022813724159082296,
+          "confident_n": 7676,
+          "rocket_recall": 0.11760604755217295,
+          "rocket_false_fire": 0.006679978985624567,
+          "rocket_on_pro_wait": null,
+          "contexts": {
+            "pro_rocket": {
+              "n": 671,
+              "rocket_choice": 0.11760604755217295,
+              "gate_pass_035": 0.9090909090909091,
+              "rocket_gated_035": 0.09997547277235423,
+              "rocket_gated_027": 0.10309239186501493
+            },
+            "other_pro_play": {
+              "n": 11263,
+              "rocket_choice": 0.006679978985624567,
+              "gate_pass_035": 0.7682677794548521,
+              "rocket_gated_035": 0.006248650906744355,
+              "rocket_gated_027": 0.006357567953521117
+            },
+            "pro_tower_rocket": {
+              "n": 179,
+              "rocket_choice": 0.12673605478772892,
+              "gate_pass_035": 0.8603351955307262,
+              "rocket_gated_035": 0.10027135203488229,
+              "rocket_gated_027": 0.1022372755403641
+            },
+            "pro_finishing_rocket": {
+              "n": 10,
+              "rocket_choice": 0.03882757082234783,
+              "gate_pass_035": 0.9,
+              "rocket_gated_035": 0.03882757082234783,
+              "rocket_gated_027": 0.03882757082234783
+            },
+            "late_pro_tower_rocket": {
+              "n": 146,
+              "rocket_choice": 0.06626865780020615,
+              "gate_pass_035": 0.910958904109589,
+              "rocket_gated_035": 0.06626865780020615,
+              "rocket_gated_027": 0.06626865780020615
+            }
+          },
+          "ratio": 0.5,
+          "temperature": 1.0,
+          "agreement_delta_pp": -1.6479003989530727,
+          "passes_offline": false
+        },
+        {
+          "agreement": 0.6274009118467021,
+          "agreement_n": 11934,
+          "changed_probability": 0.08983585319606568,
+          "confident_override": 0.0,
+          "confident_n": 7676,
+          "rocket_recall": 0.10672657347958454,
+          "rocket_false_fire": 0.005281363462474484,
+          "rocket_on_pro_wait": null,
+          "contexts": {
+            "pro_rocket": {
+              "n": 671,
+              "rocket_choice": 0.10672657347958454,
+              "gate_pass_035": 0.9090909090909091,
+              "rocket_gated_035": 0.08980111481550902,
+              "rocket_gated_027": 0.09331375678807932
+            },
+            "other_pro_play": {
+              "n": 11263,
+              "rocket_choice": 0.005281363462474484,
+              "gate_pass_035": 0.7682677794548521,
+              "rocket_gated_035": 0.004982296079837158,
+              "rocket_gated_027": 0.005015004588284659
+            },
+            "pro_tower_rocket": {
+              "n": 179,
+              "rocket_choice": 0.11099450791408134,
+              "gate_pass_035": 0.8603351955307262,
+              "rocket_gated_035": 0.08609501735596468,
+              "rocket_gated_027": 0.08864813919899756
+            },
+            "pro_finishing_rocket": {
+              "n": 10,
+              "rocket_choice": 0.0,
+              "gate_pass_035": 0.9,
+              "rocket_gated_035": 0.0,
+              "rocket_gated_027": 0.0
+            },
+            "late_pro_tower_rocket": {
+              "n": 146,
+              "rocket_choice": 0.05074711626867318,
+              "gate_pass_035": 0.910958904109589,
+              "rocket_gated_035": 0.05074711626867318,
+              "rocket_gated_027": 0.05074711626867318
+            }
+          },
+          "ratio": 0.7,
+          "temperature": 0.7,
+          "agreement_delta_pp": -0.6418427854990583,
+          "passes_offline": true
+        },
+        {
+          "agreement": 0.6270543119024544,
+          "agreement_n": 11934,
+          "changed_probability": 0.09349570947472617,
+          "confident_override": 0.0,
+          "confident_n": 7676,
+          "rocket_recall": 0.10711874409169644,
+          "rocket_false_fire": 0.0053125776810456285,
+          "rocket_on_pro_wait": null,
+          "contexts": {
+            "pro_rocket": {
+              "n": 671,
+              "rocket_choice": 0.10711874409169644,
+              "gate_pass_035": 0.9090909090909091,
+              "rocket_gated_035": 0.09020347029295289,
+              "rocket_gated_027": 0.09370592740019124
+            },
+            "other_pro_play": {
+              "n": 11263,
+              "rocket_choice": 0.0053125776810456285,
+              "gate_pass_035": 0.7682677794548521,
+              "rocket_gated_035": 0.005014412539180496,
+              "rocket_gated_027": 0.005046218806855803
+            },
+            "pro_tower_rocket": {
+              "n": 179,
+              "rocket_choice": 0.11149310931063448,
+              "gate_pass_035": 0.8603351955307262,
+              "rocket_gated_035": 0.08652177840876824,
+              "rocket_gated_027": 0.0891467405955507
+            },
+            "pro_finishing_rocket": {
+              "n": 10,
+              "rocket_choice": 0.0,
+              "gate_pass_035": 0.9,
+              "rocket_gated_035": 0.0,
+              "rocket_gated_027": 0.0
+            },
+            "late_pro_tower_rocket": {
+              "n": 146,
+              "rocket_choice": 0.05127524064715725,
+              "gate_pass_035": 0.910958904109589,
+              "rocket_gated_035": 0.05127524064715725,
+              "rocket_gated_027": 0.05127524064715725
+            }
+          },
+          "ratio": 0.7,
+          "temperature": 1.0,
+          "agreement_delta_pp": -0.6765027799238266,
+          "passes_offline": true
+        }
+      ],
+      "aim": {
+        "all_pro_rocket": {
+          "n": 671,
+          "argmax_target_coverage": 0.5901639344262295,
+          "area_target_coverage": 0.6572280178837556
+        },
+        "tower": {
+          "n": 179,
+          "argmax_target_coverage": 0.41899441340782123,
+          "area_target_coverage": 0.5586592178770949
+        },
+        "finishing": {
+          "n": 10,
+          "argmax_target_coverage": 0.0,
+          "area_target_coverage": 0.2
+        }
+      },
+      "vocabulary_mapping": {
+        "identity_mapping": false,
+        "changed_ids": [
+          {
+            "card": "suspicious-bush",
+            "source_id": 109,
+            "model_id": 108
+          },
+          {
+            "card": "tesla",
+            "source_id": 110,
+            "model_id": 109
+          },
+          {
+            "card": "the-log",
+            "source_id": 111,
+            "model_id": 110
+          },
+          {
+            "card": "three-musketeers",
+            "source_id": 112,
+            "model_id": 111
+          },
+          {
+            "card": "tombstone",
+            "source_id": 113,
+            "model_id": 112
+          },
+          {
+            "card": "tornado",
+            "source_id": 114,
+            "model_id": 113
+          },
+          {
+            "card": "valkyrie",
+            "source_id": 115,
+            "model_id": 114
+          },
+          {
+            "card": "vines",
+            "source_id": 116,
+            "model_id": 115
+          },
+          {
+            "card": "void",
+            "source_id": 117,
+            "model_id": 116
+          },
+          {
+            "card": "wall-breakers",
+            "source_id": 118,
+            "model_id": 117
+          },
+          {
+            "card": "witch",
+            "source_id": 119,
+            "model_id": 118
+          },
+          {
+            "card": "wizard",
+            "source_id": 120,
+            "model_id": 119
+          },
+          {
+            "card": "x-bow",
+            "source_id": 121,
+            "model_id": 120
+          },
+          {
+            "card": "zap",
+            "source_id": 122,
+            "model_id": 121
+          },
+          {
+            "card": "zappies",
+            "source_id": 123,
+            "model_id": 122
+          }
+        ],
+        "note": "Own hand/next/deck/labels/past remapped by name; v1 ignores added public identity arrays."
+      }
+    }
+  },
+  "rows_by_model": {
+    "r1e": 38317,
+    "r1": 11934
+  },
+  "row_scope": "Common comparison is all 11934 held-out pro PLAY rows. R1e additionally includes WAIT rows; corrected old R1 evaluates PLAY rows only, so old pro-WAIT metrics are null.",
+  "correction": "Old R1 reevaluated with card identities mapped by name. Original old-R1 run is invalid and excluded.",
+  "elapsed_seconds": 313.6092622280121
+}

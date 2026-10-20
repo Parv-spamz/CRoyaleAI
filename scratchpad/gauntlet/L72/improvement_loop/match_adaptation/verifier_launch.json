@@ -1,0 +1,24 @@
+{
+  "created": "2026-10-05T14:48:56.3329593-04:00",
+  "model_calls": false,
+  "command": [
+    "scratchpad/gauntlet/L71/integration/run_check.py",
+    "--name",
+    "l72-match-adaptation-independent-v2",
+    "--expect",
+    "MATCH_ADAPTATION_INDEPENDENT_COMPLETE",
+    "--",
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/match_adaptation/verify.py",
+    "--wait"
+  ],
+  "pid": 16936,
+  "sources": {
+    "verify_preflight.json": "a888124421802b7c8970aadcb28e01e8ea638315bf4daf6d237a74cf8cf1967c",
+    "verify.py": "75ee4faf7eb1f390c6b225107bed6d16da66f013429e3edbea855f00c168e00e",
+    "io_utils.py": "e8982d97ae20a4ac869aa46c0a62391864b77563c4e9b078a8bf0923e4dfd15e",
+    "prepared.json": "b4156cb9e80ba4047210ac5a8c06e68dc99c78117f9cd02dbd84e6a15a240ade",
+    "METRICS.md": "383f82eec971bee64c1ac00ce2a2f0fbd2945e58e6476ddd3b92b08a535db431"
+  },
+  "waits_for": "l72-match-adaptation-audit-v2.json successful receipt"
+}

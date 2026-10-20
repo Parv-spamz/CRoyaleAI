@@ -1,0 +1,1411 @@
+{
+ "n_ticks": 2955,
+ "n_matches": 5,
+ "port": 38031,
+ "split": "heldout",
+ "entries": "0:5",
+ "seeds": "0",
+ "ckpt": "icebow\\data\\pipeline\\s1_icebow_v6lat_s0.pt",
+ "decide_every": 10,
+ "estimator_step": 5,
+ "n_detector_cards": 46,
+ "matches": [
+  {
+   "tag": "000YLL9RURY8",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 34,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "000YLLP2UC98",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 1,
+   "crowns_against": 3,
+   "plays_accepted": 14,
+   "decisions": 157,
+   "end_tick": 1656,
+   "n_ticks": 314
+  },
+  {
+   "tag": "000YLY2VQ92P",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 0,
+   "crowns_against": 1,
+   "plays_accepted": 35,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  },
+  {
+   "tag": "000YLYJULG22",
+   "k": 0,
+   "outcome": "loss",
+   "crowns_for": 0,
+   "crowns_against": 3,
+   "plays_accepted": 17,
+   "decisions": 242,
+   "end_tick": 2508,
+   "n_ticks": 484
+  },
+  {
+   "tag": "000YLYYCJ8VY",
+   "k": 0,
+   "outcome": "win",
+   "crowns_for": 1,
+   "crowns_against": 0,
+   "plays_accepted": 34,
+   "decisions": 360,
+   "end_tick": 3681,
+   "n_ticks": 719
+  }
+ ],
+ "plays_accepted_by_match": {
+  "000YLL9RURY8:0": 34,
+  "000YLLP2UC98:0": 14,
+  "000YLY2VQ92P:0": 35,
+  "000YLYJULG22:0": 17,
+  "000YLYYCJ8VY:0": 34
+ },
+ "over_charge_at_end_by_match": [
+  {
+   "tag": "000YLL9RURY8",
+   "k": 0,
+   "Aplus": 55.0,
+   "A": 55.0,
+   "A_wl": 35.0,
+   "B": 1280.0
+  },
+  {
+   "tag": "000YLLP2UC98",
+   "k": 0,
+   "Aplus": 42.0,
+   "A": 42.0,
+   "A_wl": -10.0,
+   "B": 750.0
+  },
+  {
+   "tag": "000YLY2VQ92P",
+   "k": 0,
+   "Aplus": 51.0,
+   "A": 51.0,
+   "A_wl": -31.0,
+   "B": 1205.5
+  },
+  {
+   "tag": "000YLYJULG22",
+   "k": 0,
+   "Aplus": 56.0,
+   "A": 56.0,
+   "A_wl": -7.0,
+   "B": 820.0
+  },
+  {
+   "tag": "000YLYYCJ8VY",
+   "k": 0,
+   "Aplus": 191.0,
+   "A": 191.0,
+   "A_wl": 65.0,
+   "B": 1629.5
+  }
+ ],
+ "ghost_delivered_by_base": {
+  "witch": [
+   4,
+   20.0
+  ],
+  "bowler": [
+   4,
+   20.0
+  ],
+  "giant": [
+   5,
+   25.0
+  ],
+  "graveyard": [
+   2,
+   10.0
+  ],
+  "giant_snowball": [
+   5,
+   10.0
+  ],
+  "guards": [
+   3,
+   9.0
+  ],
+  "zappies": [
+   4,
+   16.0
+  ],
+  "arrows": [
+   2,
+   6.0
+  ],
+  "archers": [
+   2,
+   6.0
+  ],
+  "elixir_golem": [
+   1,
+   3.0
+  ],
+  "night_witch": [
+   1,
+   4.0
+  ],
+  "electro_dragon": [
+   1,
+   5.0
+  ],
+  "skeleton_king": [
+   1,
+   4.0
+  ],
+  "wall_breakers": [
+   4,
+   8.0
+  ],
+  "mega_knight": [
+   3,
+   21.0
+  ],
+  "prince": [
+   4,
+   20.0
+  ],
+  "minions": [
+   4,
+   12.0
+  ],
+  "bandit": [
+   4,
+   12.0
+  ],
+  "archer_queen": [
+   3,
+   15.0
+  ],
+  "zap": [
+   2,
+   4.0
+  ],
+  "mini_pekka": [
+   2,
+   8.0
+  ],
+  "skeleton_army": [
+   1,
+   3.0
+  ],
+  "sparky": [
+   1,
+   6.0
+  ],
+  "minion_horde": [
+   1,
+   5.0
+  ],
+  "inferno_dragon": [
+   3,
+   12.0
+  ],
+  "poison": [
+   1,
+   4.0
+  ],
+  "valkyrie": [
+   3,
+   12.0
+  ],
+  "tombstone": [
+   3,
+   9.0
+  ]
+ },
+ "ghost_scripted_by_base": {
+  "witch": [
+   6,
+   30.0
+  ],
+  "bowler": [
+   4,
+   20.0
+  ],
+  "giant": [
+   11,
+   55.0
+  ],
+  "graveyard": [
+   6,
+   30.0
+  ],
+  "giant_snowball": [
+   9,
+   18.0
+  ],
+  "guards": [
+   3,
+   9.0
+  ],
+  "zappies": [
+   6,
+   24.0
+  ],
+  "arrows": [
+   6,
+   18.0
+  ],
+  "archers": [
+   5,
+   15.0
+  ],
+  "elixir_golem": [
+   4,
+   12.0
+  ],
+  "night_witch": [
+   4,
+   16.0
+  ],
+  "electro_dragon": [
+   2,
+   10.0
+  ],
+  "skeleton_king": [
+   3,
+   12.0
+  ],
+  "goblin_machine": [
+   2,
+   10.0
+  ],
+  "lightning": [
+   3,
+   18.0
+  ],
+  "wall_breakers": [
+   4,
+   8.0
+  ],
+  "mega_knight": [
+   3,
+   21.0
+  ],
+  "prince": [
+   4,
+   20.0
+  ],
+  "minions": [
+   6,
+   18.0
+  ],
+  "bandit": [
+   4,
+   12.0
+  ],
+  "archer_queen": [
+   3,
+   15.0
+  ],
+  "zap": [
+   8,
+   16.0
+  ],
+  "mini_pekka": [
+   8,
+   32.0
+  ],
+  "skeleton_army": [
+   3,
+   9.0
+  ],
+  "sparky": [
+   6,
+   36.0
+  ],
+  "minion_horde": [
+   7,
+   35.0
+  ],
+  "inferno_dragon": [
+   5,
+   20.0
+  ],
+  "poison": [
+   6,
+   24.0
+  ],
+  "valkyrie": [
+   7,
+   28.0
+  ],
+  "tombstone": [
+   6,
+   18.0
+  ]
+ },
+ "finished": "2026-09-16 18:19:25",
+ "Aplus_perfect_detection_with_spells": {
+  "n_ticks": 2955,
+  "mae": 3.3574207445008457,
+  "mean_bias": -3.130033468697124,
+  "p90_abs_err": 6.8192,
+  "share_abs_err_le_1_0": 0.1692047377326565,
+  "share_abs_err_le_2_0": 0.35736040609137054,
+  "by_phase": {
+   "single": {
+    "n": 2162,
+    "mae": 3.199187881591119,
+    "mean_bias": -3.002735892691952,
+    "p90_abs_err": 6.434
+   },
+   "double": {
+    "n": 742,
+    "mae": 3.8297664420485176,
+    "mean_bias": -3.4966125336927223,
+    "p90_abs_err": 7.749300000000001
+   },
+   "overtime": {
+    "n": 51,
+    "mae": 3.193086274509804,
+    "mean_bias": -3.193086274509804,
+    "p90_abs_err": 6.9278
+   }
+  },
+  "opp_play_ticks": {
+   "n": 74,
+   "mae": 2.547833783783784,
+   "bias": -1.7261986486486485
+  },
+  "my_play_ticks": {
+   "n": 134,
+   "mae": 3.3898828358208957,
+   "bias": -3.065264925373134
+  },
+  "by_match": {
+   "n_matches": 5,
+   "mae_median": 3.3648243393602226,
+   "mae_p90": 4.3594256959861095
+  },
+  "by_truth_cap": {
+   "near_cap_ge_9": {
+    "n": 650,
+    "mae": 3.8223516923076923,
+    "mean_bias": -3.7772018461538464
+   },
+   "below_cap": {
+    "n": 2305,
+    "mae": 3.226312234273319,
+    "mean_bias": -2.947534793926247
+   }
+  },
+  "overcharge": {
+   "top": [
+    {
+     "base": "witch",
+     "ghost_plays": 4,
+     "ghost_elixir": 20.0,
+     "charges": 30,
+     "charged_elixir": 150.0,
+     "over_charge": 130.0
+    },
+    {
+     "base": "tombstone",
+     "ghost_plays": 3,
+     "ghost_elixir": 9.0,
+     "charges": 34,
+     "charged_elixir": 102.0,
+     "over_charge": 93.0
+    },
+    {
+     "base": "bandit",
+     "ghost_plays": 4,
+     "ghost_elixir": 12.0,
+     "charges": 15,
+     "charged_elixir": 45.0,
+     "over_charge": 33.0
+    },
+    {
+     "base": "night_witch",
+     "ghost_plays": 1,
+     "ghost_elixir": 4.0,
+     "charges": 9,
+     "charged_elixir": 36.0,
+     "over_charge": 32.0
+    },
+    {
+     "base": "skeleton_army",
+     "ghost_plays": 1,
+     "ghost_elixir": 3.0,
+     "charges": 11,
+     "charged_elixir": 33.0,
+     "over_charge": 30.0
+    },
+    {
+     "base": "zappies",
+     "ghost_plays": 4,
+     "ghost_elixir": 16.0,
+     "charges": 11,
+     "charged_elixir": 44.0,
+     "over_charge": 28.0
+    },
+    {
+     "base": "minion_horde",
+     "ghost_plays": 1,
+     "ghost_elixir": 5.0,
+     "charges": 6,
+     "charged_elixir": 30.0,
+     "over_charge": 25.0
+    },
+    {
+     "base": "skeletons",
+     "ghost_plays": 0,
+     "ghost_elixir": 0.0,
+     "charges": 16,
+     "charged_elixir": 16.0,
+     "over_charge": 16.0
+    },
+    {
+     "base": "wall_breakers",
+     "ghost_plays": 4,
+     "ghost_elixir": 8.0,
+     "charges": 11,
+     "charged_elixir": 22.0,
+     "over_charge": 14.0
+    },
+    {
+     "base": "giant_snowball",
+     "ghost_plays": 5,
+     "ghost_elixir": 10.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -10.0
+    },
+    {
+     "base": "graveyard",
+     "ghost_plays": 2,
+     "ghost_elixir": 10.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -10.0
+    },
+    {
+     "base": "guards",
+     "ghost_plays": 3,
+     "ghost_elixir": 9.0,
+     "charges": 6,
+     "charged_elixir": 18.0,
+     "over_charge": 9.0
+    },
+    {
+     "base": "minions",
+     "ghost_plays": 4,
+     "ghost_elixir": 12.0,
+     "charges": 7,
+     "charged_elixir": 21.0,
+     "over_charge": 9.0
+    },
+    {
+     "base": "archers",
+     "ghost_plays": 2,
+     "ghost_elixir": 6.0,
+     "charges": 4,
+     "charged_elixir": 12.0,
+     "over_charge": 6.0
+    },
+    {
+     "base": "arrows",
+     "ghost_plays": 2,
+     "ghost_elixir": 6.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -6.0
+    },
+    {
+     "base": "poison",
+     "ghost_plays": 1,
+     "ghost_elixir": 4.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -4.0
+    },
+    {
+     "base": "zap",
+     "ghost_plays": 2,
+     "ghost_elixir": 4.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -4.0
+    },
+    {
+     "base": "elixir_golemite",
+     "ghost_plays": 0,
+     "ghost_elixir": 0.0,
+     "charges": 2,
+     "charged_elixir": 3.0,
+     "over_charge": 3.0
+    },
+    {
+     "base": "elixir_blob",
+     "ghost_plays": 0,
+     "ghost_elixir": 0.0,
+     "charges": 2,
+     "charged_elixir": 1.0,
+     "over_charge": 1.0
+    },
+    {
+     "base": "archer_queen",
+     "ghost_plays": 3,
+     "ghost_elixir": 15.0,
+     "charges": 3,
+     "charged_elixir": 15.0,
+     "over_charge": 0.0
+    },
+    {
+     "base": "bowler",
+     "ghost_plays": 4,
+     "ghost_elixir": 20.0,
+     "charges": 4,
+     "charged_elixir": 20.0,
+     "over_charge": 0.0
+    },
+    {
+     "base": "electro_dragon",
+     "ghost_plays": 1,
+     "ghost_elixir": 5.0,
+     "charges": 1,
+     "charged_elixir": 5.0,
+     "over_charge": 0.0
+    },
+    {
+     "base": "elixir_golem",
+     "ghost_plays": 1,
+     "ghost_elixir": 3.0,
+     "charges": 1,
+     "charged_elixir": 3.0,
+     "over_charge": 0.0
+    },
+    {
+     "base": "giant",
+     "ghost_plays": 5,
+     "ghost_elixir": 25.0,
+     "charges": 5,
+     "charged_elixir": 25.0,
+     "over_charge": 0.0
+    },
+    {
+     "base": "inferno_dragon",
+     "ghost_plays": 3,
+     "ghost_elixir": 12.0,
+     "charges": 3,
+     "charged_elixir": 12.0,
+     "over_charge": 0.0
+    }
+   ],
+   "n_bases": 31,
+   "total_charged_elixir": 684.0,
+   "total_ghost_elixir": 289.0,
+   "total_over_charge": 395.0,
+   "over_charge_share_from_bases_never_played": 0.0292
+  }
+ },
+ "A_perfect_detection": {
+  "n_ticks": 2955,
+  "mae": 3.3574207445008457,
+  "mean_bias": -3.130033468697124,
+  "p90_abs_err": 6.8192,
+  "share_abs_err_le_1_0": 0.1692047377326565,
+  "share_abs_err_le_2_0": 0.35736040609137054,
+  "by_phase": {
+   "single": {
+    "n": 2162,
+    "mae": 3.199187881591119,
+    "mean_bias": -3.002735892691952,
+    "p90_abs_err": 6.434
+   },
+   "double": {
+    "n": 742,
+    "mae": 3.8297664420485176,
+    "mean_bias": -3.4966125336927223,
+    "p90_abs_err": 7.749300000000001
+   },
+   "overtime": {
+    "n": 51,
+    "mae": 3.193086274509804,
+    "mean_bias": -3.193086274509804,
+    "p90_abs_err": 6.9278
+   }
+  },
+  "opp_play_ticks": {
+   "n": 74,
+   "mae": 2.547833783783784,
+   "bias": -1.7261986486486485
+  },
+  "my_play_ticks": {
+   "n": 134,
+   "mae": 3.3898828358208957,
+   "bias": -3.065264925373134
+  },
+  "by_match": {
+   "n_matches": 5,
+   "mae_median": 3.3648243393602226,
+   "mae_p90": 4.3594256959861095
+  },
+  "by_truth_cap": {
+   "near_cap_ge_9": {
+    "n": 650,
+    "mae": 3.8223516923076923,
+    "mean_bias": -3.7772018461538464
+   },
+   "below_cap": {
+    "n": 2305,
+    "mae": 3.226312234273319,
+    "mean_bias": -2.947534793926247
+   }
+  },
+  "overcharge": {
+   "top": [
+    {
+     "base": "witch",
+     "ghost_plays": 4,
+     "ghost_elixir": 20.0,
+     "charges": 30,
+     "charged_elixir": 150.0,
+     "over_charge": 130.0
+    },
+    {
+     "base": "tombstone",
+     "ghost_plays": 3,
+     "ghost_elixir": 9.0,
+     "charges": 34,
+     "charged_elixir": 102.0,
+     "over_charge": 93.0
+    },
+    {
+     "base": "bandit",
+     "ghost_plays": 4,
+     "ghost_elixir": 12.0,
+     "charges": 15,
+     "charged_elixir": 45.0,
+     "over_charge": 33.0
+    },
+    {
+     "base": "night_witch",
+     "ghost_plays": 1,
+     "ghost_elixir": 4.0,
+     "charges": 9,
+     "charged_elixir": 36.0,
+     "over_charge": 32.0
+    },
+    {
+     "base": "skeleton_army",
+     "ghost_plays": 1,
+     "ghost_elixir": 3.0,
+     "charges": 11,
+     "charged_elixir": 33.0,
+     "over_charge": 30.0
+    },
+    {
+     "base": "zappies",
+     "ghost_plays": 4,
+     "ghost_elixir": 16.0,
+     "charges": 11,
+     "charged_elixir": 44.0,
+     "over_charge": 28.0
+    },
+    {
+     "base": "minion_horde",
+     "ghost_plays": 1,
+     "ghost_elixir": 5.0,
+     "charges": 6,
+     "charged_elixir": 30.0,
+     "over_charge": 25.0
+    },
+    {
+     "base": "skeletons",
+     "ghost_plays": 0,
+     "ghost_elixir": 0.0,
+     "charges": 16,
+     "charged_elixir": 16.0,
+     "over_charge": 16.0
+    },
+    {
+     "base": "wall_breakers",
+     "ghost_plays": 4,
+     "ghost_elixir": 8.0,
+     "charges": 11,
+     "charged_elixir": 22.0,
+     "over_charge": 14.0
+    },
+    {
+     "base": "giant_snowball",
+     "ghost_plays": 5,
+     "ghost_elixir": 10.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -10.0
+    },
+    {
+     "base": "graveyard",
+     "ghost_plays": 2,
+     "ghost_elixir": 10.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -10.0
+    },
+    {
+     "base": "guards",
+     "ghost_plays": 3,
+     "ghost_elixir": 9.0,
+     "charges": 6,
+     "charged_elixir": 18.0,
+     "over_charge": 9.0
+    },
+    {
+     "base": "minions",
+     "ghost_plays": 4,
+     "ghost_elixir": 12.0,
+     "charges": 7,
+     "charged_elixir": 21.0,
+     "over_charge": 9.0
+    },
+    {
+     "base": "archers",
+     "ghost_plays": 2,
+     "ghost_elixir": 6.0,
+     "charges": 4,
+     "charged_elixir": 12.0,
+     "over_charge": 6.0
+    },
+    {
+     "base": "arrows",
+     "ghost_plays": 2,
+     "ghost_elixir": 6.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -6.0
+    },
+    {
+     "base": "poison",
+     "ghost_plays": 1,
+     "ghost_elixir": 4.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -4.0
+    },
+    {
+     "base": "zap",
+     "ghost_plays": 2,
+     "ghost_elixir": 4.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -4.0
+    },
+    {
+     "base": "elixir_golemite",
+     "ghost_plays": 0,
+     "ghost_elixir": 0.0,
+     "charges": 2,
+     "charged_elixir": 3.0,
+     "over_charge": 3.0
+    },
+    {
+     "base": "elixir_blob",
+     "ghost_plays": 0,
+     "ghost_elixir": 0.0,
+     "charges": 2,
+     "charged_elixir": 1.0,
+     "over_charge": 1.0
+    },
+    {
+     "base": "archer_queen",
+     "ghost_plays": 3,
+     "ghost_elixir": 15.0,
+     "charges": 3,
+     "charged_elixir": 15.0,
+     "over_charge": 0.0
+    },
+    {
+     "base": "bowler",
+     "ghost_plays": 4,
+     "ghost_elixir": 20.0,
+     "charges": 4,
+     "charged_elixir": 20.0,
+     "over_charge": 0.0
+    },
+    {
+     "base": "electro_dragon",
+     "ghost_plays": 1,
+     "ghost_elixir": 5.0,
+     "charges": 1,
+     "charged_elixir": 5.0,
+     "over_charge": 0.0
+    },
+    {
+     "base": "elixir_golem",
+     "ghost_plays": 1,
+     "ghost_elixir": 3.0,
+     "charges": 1,
+     "charged_elixir": 3.0,
+     "over_charge": 0.0
+    },
+    {
+     "base": "giant",
+     "ghost_plays": 5,
+     "ghost_elixir": 25.0,
+     "charges": 5,
+     "charged_elixir": 25.0,
+     "over_charge": 0.0
+    },
+    {
+     "base": "inferno_dragon",
+     "ghost_plays": 3,
+     "ghost_elixir": 12.0,
+     "charges": 3,
+     "charged_elixir": 12.0,
+     "over_charge": 0.0
+    }
+   ],
+   "n_bases": 31,
+   "total_charged_elixir": 684.0,
+   "total_ghost_elixir": 289.0,
+   "total_over_charge": 395.0,
+   "over_charge_share_from_bases_never_played": 0.0292
+  }
+ },
+ "A_wl_live_whitelist": {
+  "n_ticks": 2955,
+  "mae": 2.0223558037225042,
+  "mean_bias": -0.1231960744500846,
+  "p90_abs_err": 5.1104,
+  "share_abs_err_le_1_0": 0.438917089678511,
+  "share_abs_err_le_2_0": 0.5932318104906937,
+  "by_phase": {
+   "single": {
+    "n": 2162,
+    "mae": 1.8919582793709528,
+    "mean_bias": -0.4114981498612396,
+    "p90_abs_err": 5.1104
+   },
+   "double": {
+    "n": 742,
+    "mae": 2.312553638814016,
+    "mean_bias": 0.6960067385444744,
+    "p90_abs_err": 5.0369
+   },
+   "overtime": {
+    "n": 51,
+    "mae": 3.328094117647059,
+    "mean_bias": 0.1799529411764706,
+    "p90_abs_err": 6.7493
+   }
+  },
+  "opp_play_ticks": {
+   "n": 74,
+   "mae": 2.624113513513514,
+   "bias": 1.5732945945945946
+  },
+  "my_play_ticks": {
+   "n": 134,
+   "mae": 2.0754992537313433,
+   "bias": 0.0417574626865672
+  },
+  "by_match": {
+   "n_matches": 5,
+   "mae_median": 2.0226585987261143,
+   "mae_p90": 2.5545582475660638
+  },
+  "by_truth_cap": {
+   "near_cap_ge_9": {
+    "n": 650,
+    "mae": 1.522975076923077,
+    "mean_bias": -1.3058526153846155
+   },
+   "below_cap": {
+    "n": 2305,
+    "mae": 2.1631790021691972,
+    "mean_bias": 0.2103079392624729
+   }
+  },
+  "overcharge": {
+   "top": [
+    {
+     "base": "witch",
+     "ghost_plays": 4,
+     "ghost_elixir": 20.0,
+     "charges": 30,
+     "charged_elixir": 150.0,
+     "over_charge": 130.0
+    },
+    {
+     "base": "skeletons",
+     "ghost_plays": 0,
+     "ghost_elixir": 0.0,
+     "charges": 16,
+     "charged_elixir": 16.0,
+     "over_charge": 16.0
+    },
+    {
+     "base": "zappies",
+     "ghost_plays": 4,
+     "ghost_elixir": 16.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -16.0
+    },
+    {
+     "base": "archer_queen",
+     "ghost_plays": 3,
+     "ghost_elixir": 15.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -15.0
+    },
+    {
+     "base": "bandit",
+     "ghost_plays": 4,
+     "ghost_elixir": 12.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -12.0
+    },
+    {
+     "base": "giant_snowball",
+     "ghost_plays": 5,
+     "ghost_elixir": 10.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -10.0
+    },
+    {
+     "base": "graveyard",
+     "ghost_plays": 2,
+     "ghost_elixir": 10.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -10.0
+    },
+    {
+     "base": "guards",
+     "ghost_plays": 3,
+     "ghost_elixir": 9.0,
+     "charges": 6,
+     "charged_elixir": 18.0,
+     "over_charge": 9.0
+    },
+    {
+     "base": "minions",
+     "ghost_plays": 4,
+     "ghost_elixir": 12.0,
+     "charges": 7,
+     "charged_elixir": 21.0,
+     "over_charge": 9.0
+    },
+    {
+     "base": "tombstone",
+     "ghost_plays": 3,
+     "ghost_elixir": 9.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -9.0
+    },
+    {
+     "base": "wall_breakers",
+     "ghost_plays": 4,
+     "ghost_elixir": 8.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -8.0
+    },
+    {
+     "base": "archers",
+     "ghost_plays": 2,
+     "ghost_elixir": 6.0,
+     "charges": 4,
+     "charged_elixir": 12.0,
+     "over_charge": 6.0
+    },
+    {
+     "base": "arrows",
+     "ghost_plays": 2,
+     "ghost_elixir": 6.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -6.0
+    },
+    {
+     "base": "electro_dragon",
+     "ghost_plays": 1,
+     "ghost_elixir": 5.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -5.0
+    },
+    {
+     "base": "minion_horde",
+     "ghost_plays": 1,
+     "ghost_elixir": 5.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -5.0
+    },
+    {
+     "base": "night_witch",
+     "ghost_plays": 1,
+     "ghost_elixir": 4.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -4.0
+    },
+    {
+     "base": "poison",
+     "ghost_plays": 1,
+     "ghost_elixir": 4.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -4.0
+    },
+    {
+     "base": "skeleton_king",
+     "ghost_plays": 1,
+     "ghost_elixir": 4.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -4.0
+    },
+    {
+     "base": "zap",
+     "ghost_plays": 2,
+     "ghost_elixir": 4.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -4.0
+    },
+    {
+     "base": "elixir_golem",
+     "ghost_plays": 1,
+     "ghost_elixir": 3.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -3.0
+    },
+    {
+     "base": "skeleton_army",
+     "ghost_plays": 1,
+     "ghost_elixir": 3.0,
+     "charges": 0,
+     "charged_elixir": 0.0,
+     "over_charge": -3.0
+    },
+    {
+     "base": "bowler",
+     "ghost_plays": 4,
+     "ghost_elixir": 20.0,
+     "charges": 4,
+     "charged_elixir": 20.0,
+     "over_charge": 0.0
+    },
+    {
+     "base": "giant",
+     "ghost_plays": 5,
+     "ghost_elixir": 25.0,
+     "charges": 5,
+     "charged_elixir": 25.0,
+     "over_charge": 0.0
+    },
+    {
+     "base": "inferno_dragon",
+     "ghost_plays": 3,
+     "ghost_elixir": 12.0,
+     "charges": 3,
+     "charged_elixir": 12.0,
+     "over_charge": 0.0
+    },
+    {
+     "base": "mega_knight",
+     "ghost_plays": 3,
+     "ghost_elixir": 21.0,
+     "charges": 3,
+     "charged_elixir": 21.0,
+     "over_charge": 0.0
+    }
+   ],
+   "n_bases": 29,
+   "total_charged_elixir": 341.0,
+   "total_ghost_elixir": 289.0,
+   "total_over_charge": 52.0,
+   "over_charge_share_from_bases_never_played": 0.0469
+  }
+ },
+ "B_degraded_live": {
+  "n_ticks": 2955,
+  "mae": 6.212413401015229,
+  "mean_bias": -6.212047851099831,
+  "p90_abs_err": 9.5596,
+  "share_abs_err_le_1_0": 0.05245346869712352,
+  "share_abs_err_le_2_0": 0.0751269035532995,
+  "by_phase": {
+   "single": {
+    "n": 2162,
+    "mae": 6.214486123959296,
+    "mean_bias": -6.214145698427382,
+    "p90_abs_err": 9.542040000000002
+   },
+   "double": {
+    "n": 742,
+    "mae": 6.155139757412399,
+    "mean_bias": -6.154675876010782,
+    "p90_abs_err": 9.53898
+   },
+   "overtime": {
+    "n": 51,
+    "mae": 6.957821568627451,
+    "mean_bias": -6.957821568627451,
+    "p90_abs_err": 10.0
+   }
+  },
+  "opp_play_ticks": {
+   "n": 74,
+   "mae": 4.063448648648649,
+   "bias": -4.063448648648649
+  },
+  "my_play_ticks": {
+   "n": 134,
+   "mae": 6.0075223880597015,
+   "bias": -6.0075223880597015
+  },
+  "by_match": {
+   "n_matches": 5,
+   "mae_median": 5.943160500695411,
+   "mae_p90": 7.22630629767104
+  },
+  "by_truth_cap": {
+   "near_cap_ge_9": {
+    "n": 650,
+    "mae": 8.453002615384614,
+    "mean_bias": -8.453002615384614
+   },
+   "below_cap": {
+    "n": 2305,
+    "mae": 5.580576963123645,
+    "mean_bias": -5.580108329718004
+   }
+  },
+  "overcharge": {
+   "top": [
+    {
+     "base": "ice_wizard",
+     "ghost_plays": 0,
+     "ghost_elixir": 0.0,
+     "charges": 78,
+     "charged_elixir": 234.0,
+     "over_charge": 234.0
+    },
+    {
+     "base": "knight",
+     "ghost_plays": 0,
+     "ghost_elixir": 0.0,
+     "charges": 78,
+     "charged_elixir": 234.0,
+     "over_charge": 234.0
+    },
+    {
+     "base": "witch",
+     "ghost_plays": 4,
+     "ghost_elixir": 20.0,
+     "charges": 45,
+     "charged_elixir": 225.0,
+     "over_charge": 205.0
+    },
+    {
+     "base": "mega_knight",
+     "ghost_plays": 3,
+     "ghost_elixir": 21.0,
+     "charges": 27,
+     "charged_elixir": 189.0,
+     "over_charge": 168.0
+    },
+    {
+     "base": "zappies",
+     "ghost_plays": 4,
+     "ghost_elixir": 16.0,
+     "charges": 41,
+     "charged_elixir": 164.0,
+     "over_charge": 148.0
+    },
+    {
+     "base": "giant",
+     "ghost_plays": 5,
+     "ghost_elixir": 25.0,
+     "charges": 31,
+     "charged_elixir": 155.0,
+     "over_charge": 130.0
+    },
+    {
+     "base": "tombstone",
+     "ghost_plays": 3,
+     "ghost_elixir": 9.0,
+     "charges": 46,
+     "charged_elixir": 138.0,
+     "over_charge": 129.0
+    },
+    {
+     "base": "bowler",
+     "ghost_plays": 4,
+     "ghost_elixir": 20.0,
+     "charges": 29,
+     "charged_elixir": 145.0,
+     "over_charge": 125.0
+    },
+    {
+     "base": "mini_pekka",
+     "ghost_plays": 2,
+     "ghost_elixir": 8.0,
+     "charges": 31,
+     "charged_elixir": 124.0,
+     "over_charge": 116.0
+    },
+    {
+     "base": "tesla",
+     "ghost_plays": 0,
+     "ghost_elixir": 0.0,
+     "charges": 29,
+     "charged_elixir": 116.0,
+     "over_charge": 116.0
+    },
+    {
+     "base": "valkyrie",
+     "ghost_plays": 3,
+     "ghost_elixir": 12.0,
+     "charges": 31,
+     "charged_elixir": 124.0,
+     "over_charge": 112.0
+    },
+    {
+     "base": "electro_dragon",
+     "ghost_plays": 1,
+     "ghost_elixir": 5.0,
+     "charges": 21,
+     "charged_elixir": 105.0,
+     "over_charge": 100.0
+    },
+    {
+     "base": "skeletons",
+     "ghost_plays": 0,
+     "ghost_elixir": 0.0,
+     "charges": 98,
+     "charged_elixir": 98.0,
+     "over_charge": 98.0
+    },
+    {
+     "base": "wizard",
+     "ghost_plays": 0,
+     "ghost_elixir": 0.0,
+     "charges": 19,
+     "charged_elixir": 95.0,
+     "over_charge": 95.0
+    },
+    {
+     "base": "goblin_drill",
+     "ghost_plays": 0,
+     "ghost_elixir": 0.0,
+     "charges": 23,
+     "charged_elixir": 92.0,
+     "over_charge": 92.0
+    },
+    {
+     "base": "elixir_collector",
+     "ghost_plays": 0,
+     "ghost_elixir": 0.0,
+     "charges": 15,
+     "charged_elixir": 90.0,
+     "over_charge": 90.0
+    },
+    {
+     "base": "goblin_cage",
+     "ghost_plays": 0,
+     "ghost_elixir": 0.0,
+     "charges": 22,
+     "charged_elixir": 88.0,
+     "over_charge": 88.0
+    },
+    {
+     "base": "musketeer",
+     "ghost_plays": 0,
+     "ghost_elixir": 0.0,
+     "charges": 22,
+     "charged_elixir": 88.0,
+     "over_charge": 88.0
+    },
+    {
+     "base": "night_witch",
+     "ghost_plays": 1,
+     "ghost_elixir": 4.0,
+     "charges": 23,
+     "charged_elixir": 92.0,
+     "over_charge": 88.0
+    },
+    {
+     "base": "mortar",
+     "ghost_plays": 0,
+     "ghost_elixir": 0.0,
+     "charges": 21,
+     "charged_elixir": 84.0,
+     "over_charge": 84.0
+    },
+    {
+     "base": "archer_queen",
+     "ghost_plays": 3,
+     "ghost_elixir": 15.0,
+     "charges": 19,
+     "charged_elixir": 95.0,
+     "over_charge": 80.0
+    },
+    {
+     "base": "minion_horde",
+     "ghost_plays": 1,
+     "ghost_elixir": 5.0,
+     "charges": 17,
+     "charged_elixir": 85.0,
+     "over_charge": 80.0
+    },
+    {
+     "base": "bandit",
+     "ghost_plays": 4,
+     "ghost_elixir": 12.0,
+     "charges": 30,
+     "charged_elixir": 90.0,
+     "over_charge": 78.0
+    },
+    {
+     "base": "elite_barbarians",
+     "ghost_plays": 0,
+     "ghost_elixir": 0.0,
+     "charges": 13,
+     "charged_elixir": 78.0,
+     "over_charge": 78.0
+    },
+    {
+     "base": "skeleton_army",
+     "ghost_plays": 1,
+     "ghost_elixir": 3.0,
+     "charges": 27,
+     "charged_elixir": 81.0,
+     "over_charge": 78.0
+    }
+   ],
+   "n_bases": 112,
+   "total_charged_elixir": 5974.0,
+   "total_ghost_elixir": 289.0,
+   "total_over_charge": 5685.0,
+   "over_charge_share_from_bases_never_played": 0.6045
+  }
+ }
+}

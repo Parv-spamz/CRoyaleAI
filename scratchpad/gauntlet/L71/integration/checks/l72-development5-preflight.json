@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/development_iteration_5/preflight.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "TOWER_PREFLIGHT_COMPLETE",
+  "matched": true,
+  "output_sha256": "420a86b00751afb362d2531339b0c488738c1d48cdfa11709b4842161caf7ed7",
+  "seconds": 132.05063152313232
+}

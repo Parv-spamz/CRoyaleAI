@@ -1,0 +1,1515 @@
+{
+  "complete": true,
+  "results_sha256": "da0cb4a92d5d3e8c42e5a83f9ebdb826b05aa109134f7c19d64319dbe2d85356",
+  "receipts": {
+    "l72-development3-preflight.json": {
+      "sha256": "81667e1c98604057bebf88dc92c3c88b6ef7f98f61d3703a5af9d0af4dc5c66a",
+      "output_file_sha256": "65447dbcdcd9fa4bd872a643102ab5cb09ca88dd21f69b5d9d16b715d9f7f447",
+      "exit_code": 0
+    },
+    "l72-development3-train.json": {
+      "sha256": "6d5ad24840499140a2b0e8266bcdeee750903759dc521b46e7ebcf81d8467efa",
+      "output_file_sha256": "cf0471a6336ad9ae9bcf5eea48133b06e06253125b8f3d843c8946321b51dbb0",
+      "exit_code": 0
+    },
+    "l72-development3-eval.json": {
+      "sha256": "7eb187cfa5e928518ba76750643c6782885a13b246d4e0979bb8ae7706213bec",
+      "output_file_sha256": "5d1f7f79637dd2bf679ee927e0f0713b5de38a47658e9908a06b7e9a92ff55d8",
+      "exit_code": 0
+    },
+    "l72-development3-independent.json": {
+      "sha256": "6e1f1a67461465c75d1680409a7a56ee3244bdc3c223c22ff7575202026193bd",
+      "output_file_sha256": "e31e3ec6c14c0382e6fa01dde50a6d16185afb28cc10e81498f0dc233ae0b2ff",
+      "exit_code": 0
+    },
+    "l72-development3-discord.json": {
+      "sha256": "6852ad20cd3ab00b85e80b4009bcfbd6eddeff0698bf8ebc8e19961c25dc0dbb",
+      "output_file_sha256": "0a384b84ff515040450ab528b819452367770d0c62d2b9996ca9a20babab06ec",
+      "exit_code": 0
+    }
+  },
+  "finite_updates": 1000,
+  "paired": {
+    "r1e_corrected": {
+      "witch": {
+        "action": {
+          "net_rows": 9,
+          "replays_more": 7,
+          "replays_less": 2,
+          "replays_same": 11
+        },
+        "card": {
+          "net_rows": 5,
+          "replays_more": 7,
+          "replays_less": 3,
+          "replays_same": 10
+        },
+        "aim1": {
+          "net_rows": 5,
+          "replays_more": 5,
+          "replays_less": 1,
+          "replays_same": 14
+        },
+        "log_correct": {
+          "net_rows": 5,
+          "replays_more": 3,
+          "replays_less": 1,
+          "replays_same": 16
+        },
+        "log_wrong": {
+          "net_rows": 3,
+          "replays_more": 3,
+          "replays_less": 1,
+          "replays_same": 16
+        }
+      },
+      "witch_parent": {
+        "action": {
+          "net_rows": 11,
+          "replays_more": 8,
+          "replays_less": 2,
+          "replays_same": 10
+        },
+        "card": {
+          "net_rows": 6,
+          "replays_more": 7,
+          "replays_less": 3,
+          "replays_same": 10
+        },
+        "aim1": {
+          "net_rows": 5,
+          "replays_more": 5,
+          "replays_less": 1,
+          "replays_same": 14
+        },
+        "log_correct": {
+          "net_rows": 3,
+          "replays_more": 3,
+          "replays_less": 1,
+          "replays_same": 16
+        },
+        "log_wrong": {
+          "net_rows": 2,
+          "replays_more": 3,
+          "replays_less": 1,
+          "replays_same": 16
+        }
+      },
+      "witch_child_only": {
+        "action": {
+          "net_rows": -2,
+          "replays_more": 0,
+          "replays_less": 2,
+          "replays_same": 16
+        },
+        "card": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 17
+        },
+        "aim1": {
+          "net_rows": 0,
+          "replays_more": 1,
+          "replays_less": 1,
+          "replays_same": 16
+        },
+        "log_correct": {
+          "net_rows": 2,
+          "replays_more": 2,
+          "replays_less": 0,
+          "replays_same": 16
+        },
+        "log_wrong": {
+          "net_rows": 1,
+          "replays_more": 1,
+          "replays_less": 0,
+          "replays_same": 17
+        }
+      },
+      "night_witch": {
+        "action": {
+          "net_rows": 6,
+          "replays_more": 5,
+          "replays_less": 2,
+          "replays_same": 5
+        },
+        "card": {
+          "net_rows": -2,
+          "replays_more": 2,
+          "replays_less": 3,
+          "replays_same": 7
+        },
+        "aim1": {
+          "net_rows": 0,
+          "replays_more": 2,
+          "replays_less": 2,
+          "replays_same": 8
+        },
+        "log_correct": {
+          "net_rows": 1,
+          "replays_more": 2,
+          "replays_less": 1,
+          "replays_same": 9
+        },
+        "log_wrong": {
+          "net_rows": 0,
+          "replays_more": 1,
+          "replays_less": 1,
+          "replays_same": 10
+        }
+      },
+      "night_witch_parent": {
+        "action": {
+          "net_rows": 6,
+          "replays_more": 5,
+          "replays_less": 2,
+          "replays_same": 5
+        },
+        "card": {
+          "net_rows": -2,
+          "replays_more": 2,
+          "replays_less": 3,
+          "replays_same": 7
+        },
+        "aim1": {
+          "net_rows": 0,
+          "replays_more": 2,
+          "replays_less": 2,
+          "replays_same": 8
+        },
+        "log_correct": {
+          "net_rows": 1,
+          "replays_more": 2,
+          "replays_less": 1,
+          "replays_same": 9
+        },
+        "log_wrong": {
+          "net_rows": 0,
+          "replays_more": 1,
+          "replays_less": 1,
+          "replays_same": 10
+        }
+      },
+      "night_witch_child_only": {
+        "action": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 8
+        },
+        "card": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 8
+        },
+        "aim1": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 8
+        },
+        "log_correct": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 8
+        },
+        "log_wrong": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 8
+        }
+      },
+      "furnace": {
+        "action": {
+          "net_rows": 10,
+          "replays_more": 8,
+          "replays_less": 6,
+          "replays_same": 6
+        },
+        "card": {
+          "net_rows": 6,
+          "replays_more": 7,
+          "replays_less": 5,
+          "replays_same": 8
+        },
+        "aim1": {
+          "net_rows": 3,
+          "replays_more": 7,
+          "replays_less": 6,
+          "replays_same": 7
+        },
+        "log_correct": {
+          "net_rows": 8,
+          "replays_more": 6,
+          "replays_less": 1,
+          "replays_same": 13
+        },
+        "log_wrong": {
+          "net_rows": 8,
+          "replays_more": 6,
+          "replays_less": 0,
+          "replays_same": 14
+        }
+      },
+      "furnace_parent": {
+        "action": {
+          "net_rows": 12,
+          "replays_more": 9,
+          "replays_less": 6,
+          "replays_same": 5
+        },
+        "card": {
+          "net_rows": 7,
+          "replays_more": 7,
+          "replays_less": 5,
+          "replays_same": 8
+        },
+        "aim1": {
+          "net_rows": 3,
+          "replays_more": 7,
+          "replays_less": 6,
+          "replays_same": 7
+        },
+        "log_correct": {
+          "net_rows": 8,
+          "replays_more": 6,
+          "replays_less": 1,
+          "replays_same": 13
+        },
+        "log_wrong": {
+          "net_rows": 8,
+          "replays_more": 6,
+          "replays_less": 0,
+          "replays_same": 14
+        }
+      },
+      "furnace_child_only": {
+        "action": {
+          "net_rows": -2,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 5
+        },
+        "card": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 5
+        },
+        "aim1": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 6
+        },
+        "log_correct": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 6
+        },
+        "log_wrong": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 6
+        }
+      },
+      "barrel_pro": {
+        "action": {
+          "net_rows": 13,
+          "replays_more": 9,
+          "replays_less": 0,
+          "replays_same": 17
+        },
+        "card": {
+          "net_rows": 6,
+          "replays_more": 6,
+          "replays_less": 0,
+          "replays_same": 20
+        },
+        "aim1": {
+          "net_rows": 13,
+          "replays_more": 9,
+          "replays_less": 0,
+          "replays_same": 17
+        },
+        "log_correct": {
+          "net_rows": 20,
+          "replays_more": 14,
+          "replays_less": 0,
+          "replays_same": 12
+        },
+        "log_wrong": {
+          "net_rows": -14,
+          "replays_more": 0,
+          "replays_less": 9,
+          "replays_same": 17
+        }
+      },
+      "barrel_other_play": {
+        "action": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 21
+        },
+        "card": {
+          "net_rows": 3,
+          "replays_more": 3,
+          "replays_less": 0,
+          "replays_same": 19
+        },
+        "aim1": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 21
+        },
+        "log_correct": {
+          "net_rows": 1,
+          "replays_more": 1,
+          "replays_less": 0,
+          "replays_same": 21
+        },
+        "log_wrong": {
+          "net_rows": 0,
+          "replays_more": 1,
+          "replays_less": 1,
+          "replays_same": 20
+        }
+      },
+      "barrel_wait": {
+        "action": {
+          "net_rows": 5,
+          "replays_more": 5,
+          "replays_less": 0,
+          "replays_same": 20
+        },
+        "card": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 25
+        },
+        "aim1": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 25
+        },
+        "log_correct": {
+          "net_rows": -2,
+          "replays_more": 0,
+          "replays_less": 2,
+          "replays_same": 23
+        },
+        "log_wrong": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 24
+        }
+      },
+      "barrel_multiple": {
+        "action": {
+          "net_rows": 2,
+          "replays_more": 2,
+          "replays_less": 0,
+          "replays_same": 16
+        },
+        "card": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 17
+        },
+        "aim1": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 18
+        },
+        "log_correct": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 18
+        },
+        "log_wrong": {
+          "net_rows": 1,
+          "replays_more": 1,
+          "replays_less": 0,
+          "replays_same": 17
+        }
+      },
+      "barrel_ambiguous": {
+        "action": {
+          "net_rows": 2,
+          "replays_more": 2,
+          "replays_less": 0,
+          "replays_same": 17
+        },
+        "card": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 18
+        },
+        "aim1": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 19
+        },
+        "log_correct": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 19
+        },
+        "log_wrong": {
+          "net_rows": 1,
+          "replays_more": 1,
+          "replays_less": 0,
+          "replays_same": 18
+        }
+      },
+      "barrel_absent": {
+        "action": {
+          "net_rows": 1017,
+          "replays_more": 323,
+          "replays_less": 35,
+          "replays_same": 47
+        },
+        "card": {
+          "net_rows": 35,
+          "replays_more": 154,
+          "replays_less": 132,
+          "replays_same": 119
+        },
+        "aim1": {
+          "net_rows": 95,
+          "replays_more": 154,
+          "replays_less": 106,
+          "replays_same": 145
+        },
+        "log_correct": {
+          "net_rows": 94,
+          "replays_more": 125,
+          "replays_less": 70,
+          "replays_same": 210
+        },
+        "log_wrong": {
+          "net_rows": 61,
+          "replays_more": 98,
+          "replays_less": 61,
+          "replays_same": 246
+        }
+      },
+      "rocket": {
+        "action": {
+          "net_rows": 20,
+          "replays_more": 22,
+          "replays_less": 4,
+          "replays_same": 310
+        },
+        "card": {
+          "net_rows": 102,
+          "replays_more": 83,
+          "replays_less": 1,
+          "replays_same": 252
+        },
+        "aim1": {
+          "net_rows": -4,
+          "replays_more": 20,
+          "replays_less": 24,
+          "replays_same": 292
+        },
+        "log_correct": {
+          "net_rows": 3,
+          "replays_more": 4,
+          "replays_less": 1,
+          "replays_same": 331
+        },
+        "log_wrong": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 335
+        }
+      },
+      "all": {
+        "action": {
+          "net_rows": 1038,
+          "replays_more": 327,
+          "replays_less": 32,
+          "replays_same": 46
+        },
+        "card": {
+          "net_rows": 45,
+          "replays_more": 159,
+          "replays_less": 130,
+          "replays_same": 116
+        },
+        "aim1": {
+          "net_rows": 105,
+          "replays_more": 161,
+          "replays_less": 107,
+          "replays_same": 137
+        },
+        "log_correct": {
+          "net_rows": 113,
+          "replays_more": 134,
+          "replays_less": 69,
+          "replays_same": 202
+        },
+        "log_wrong": {
+          "net_rows": 47,
+          "replays_more": 97,
+          "replays_less": 69,
+          "replays_same": 239
+        }
+      },
+      "finish": {
+        "action": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 12
+        },
+        "card": {
+          "net_rows": 5,
+          "replays_more": 5,
+          "replays_less": 0,
+          "replays_same": 8
+        },
+        "aim1": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 12
+        },
+        "log_correct": {
+          "net_rows": 2,
+          "replays_more": 2,
+          "replays_less": 0,
+          "replays_same": 11
+        },
+        "log_wrong": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 13
+        }
+      },
+      "combo": {
+        "action": {
+          "net_rows": 6,
+          "replays_more": 8,
+          "replays_less": 3,
+          "replays_same": 64
+        },
+        "card": {
+          "net_rows": 21,
+          "replays_more": 19,
+          "replays_less": 1,
+          "replays_same": 55
+        },
+        "aim1": {
+          "net_rows": 11,
+          "replays_more": 16,
+          "replays_less": 7,
+          "replays_same": 52
+        },
+        "log_correct": {
+          "net_rows": 6,
+          "replays_more": 6,
+          "replays_less": 0,
+          "replays_same": 69
+        },
+        "log_wrong": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 74
+        }
+      },
+      "xbow": {
+        "action": {
+          "net_rows": -4,
+          "replays_more": 2,
+          "replays_less": 2,
+          "replays_same": 6
+        },
+        "card": {
+          "net_rows": -2,
+          "replays_more": 0,
+          "replays_less": 2,
+          "replays_same": 8
+        },
+        "aim1": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 10
+        },
+        "log_correct": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 10
+        },
+        "log_wrong": {
+          "net_rows": 4,
+          "replays_more": 1,
+          "replays_less": 0,
+          "replays_same": 9
+        }
+      },
+      "xbow_no_lifetime_target": {
+        "action": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 0
+        },
+        "card": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 0
+        },
+        "aim1": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 0
+        },
+        "log_correct": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 0
+        },
+        "log_wrong": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 0
+        }
+      },
+      "defensive_sequence": {
+        "action": {
+          "net_rows": 63,
+          "replays_more": 81,
+          "replays_less": 43,
+          "replays_same": 88
+        },
+        "card": {
+          "net_rows": -1,
+          "replays_more": 54,
+          "replays_less": 55,
+          "replays_same": 103
+        },
+        "aim1": {
+          "net_rows": 4,
+          "replays_more": 42,
+          "replays_less": 38,
+          "replays_same": 132
+        },
+        "log_correct": {
+          "net_rows": 41,
+          "replays_more": 49,
+          "replays_less": 15,
+          "replays_same": 148
+        },
+        "log_wrong": {
+          "net_rows": 26,
+          "replays_more": 30,
+          "replays_less": 7,
+          "replays_same": 175
+        }
+      },
+      "defensive_rocket": {
+        "action": {
+          "net_rows": 6,
+          "replays_more": 9,
+          "replays_less": 3,
+          "replays_same": 117
+        },
+        "card": {
+          "net_rows": 26,
+          "replays_more": 24,
+          "replays_less": 0,
+          "replays_same": 105
+        },
+        "aim1": {
+          "net_rows": -3,
+          "replays_more": 7,
+          "replays_less": 10,
+          "replays_same": 112
+        },
+        "log_correct": {
+          "net_rows": 1,
+          "replays_more": 2,
+          "replays_less": 1,
+          "replays_same": 126
+        },
+        "log_wrong": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 129
+        }
+      }
+    },
+    "ordinary_v6": {
+      "witch": {
+        "action": {
+          "net_rows": 0,
+          "replays_more": 2,
+          "replays_less": 2,
+          "replays_same": 16
+        },
+        "card": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 19
+        },
+        "aim1": {
+          "net_rows": 1,
+          "replays_more": 1,
+          "replays_less": 0,
+          "replays_same": 19
+        },
+        "log_correct": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 20
+        },
+        "log_wrong": {
+          "net_rows": 1,
+          "replays_more": 1,
+          "replays_less": 0,
+          "replays_same": 19
+        }
+      },
+      "witch_parent": {
+        "action": {
+          "net_rows": 1,
+          "replays_more": 2,
+          "replays_less": 1,
+          "replays_same": 17
+        },
+        "card": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 20
+        },
+        "aim1": {
+          "net_rows": 1,
+          "replays_more": 1,
+          "replays_less": 0,
+          "replays_same": 19
+        },
+        "log_correct": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 20
+        },
+        "log_wrong": {
+          "net_rows": 1,
+          "replays_more": 1,
+          "replays_less": 0,
+          "replays_same": 19
+        }
+      },
+      "witch_child_only": {
+        "action": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 17
+        },
+        "card": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 17
+        },
+        "aim1": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 18
+        },
+        "log_correct": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 18
+        },
+        "log_wrong": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 18
+        }
+      },
+      "night_witch": {
+        "action": {
+          "net_rows": 1,
+          "replays_more": 1,
+          "replays_less": 0,
+          "replays_same": 11
+        },
+        "card": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 12
+        },
+        "aim1": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 11
+        },
+        "log_correct": {
+          "net_rows": 1,
+          "replays_more": 1,
+          "replays_less": 0,
+          "replays_same": 11
+        },
+        "log_wrong": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 11
+        }
+      },
+      "night_witch_parent": {
+        "action": {
+          "net_rows": 1,
+          "replays_more": 1,
+          "replays_less": 0,
+          "replays_same": 11
+        },
+        "card": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 12
+        },
+        "aim1": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 11
+        },
+        "log_correct": {
+          "net_rows": 1,
+          "replays_more": 1,
+          "replays_less": 0,
+          "replays_same": 11
+        },
+        "log_wrong": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 11
+        }
+      },
+      "night_witch_child_only": {
+        "action": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 8
+        },
+        "card": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 8
+        },
+        "aim1": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 8
+        },
+        "log_correct": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 8
+        },
+        "log_wrong": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 8
+        }
+      },
+      "furnace": {
+        "action": {
+          "net_rows": -2,
+          "replays_more": 1,
+          "replays_less": 2,
+          "replays_same": 17
+        },
+        "card": {
+          "net_rows": 1,
+          "replays_more": 1,
+          "replays_less": 0,
+          "replays_same": 19
+        },
+        "aim1": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 19
+        },
+        "log_correct": {
+          "net_rows": -4,
+          "replays_more": 0,
+          "replays_less": 2,
+          "replays_same": 18
+        },
+        "log_wrong": {
+          "net_rows": 2,
+          "replays_more": 2,
+          "replays_less": 0,
+          "replays_same": 18
+        }
+      },
+      "furnace_parent": {
+        "action": {
+          "net_rows": -2,
+          "replays_more": 1,
+          "replays_less": 2,
+          "replays_same": 17
+        },
+        "card": {
+          "net_rows": 1,
+          "replays_more": 1,
+          "replays_less": 0,
+          "replays_same": 19
+        },
+        "aim1": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 19
+        },
+        "log_correct": {
+          "net_rows": -4,
+          "replays_more": 0,
+          "replays_less": 2,
+          "replays_same": 18
+        },
+        "log_wrong": {
+          "net_rows": 2,
+          "replays_more": 2,
+          "replays_less": 0,
+          "replays_same": 18
+        }
+      },
+      "furnace_child_only": {
+        "action": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 6
+        },
+        "card": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 6
+        },
+        "aim1": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 6
+        },
+        "log_correct": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 6
+        },
+        "log_wrong": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 6
+        }
+      },
+      "barrel_pro": {
+        "action": {
+          "net_rows": 1,
+          "replays_more": 1,
+          "replays_less": 0,
+          "replays_same": 25
+        },
+        "card": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 26
+        },
+        "aim1": {
+          "net_rows": 1,
+          "replays_more": 1,
+          "replays_less": 0,
+          "replays_same": 25
+        },
+        "log_correct": {
+          "net_rows": 1,
+          "replays_more": 1,
+          "replays_less": 0,
+          "replays_same": 25
+        },
+        "log_wrong": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 25
+        }
+      },
+      "barrel_other_play": {
+        "action": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 22
+        },
+        "card": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 22
+        },
+        "aim1": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 22
+        },
+        "log_correct": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 22
+        },
+        "log_wrong": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 22
+        }
+      },
+      "barrel_wait": {
+        "action": {
+          "net_rows": 1,
+          "replays_more": 1,
+          "replays_less": 0,
+          "replays_same": 24
+        },
+        "card": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 25
+        },
+        "aim1": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 25
+        },
+        "log_correct": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 25
+        },
+        "log_wrong": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 25
+        }
+      },
+      "barrel_multiple": {
+        "action": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 18
+        },
+        "card": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 18
+        },
+        "aim1": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 18
+        },
+        "log_correct": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 18
+        },
+        "log_wrong": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 18
+        }
+      },
+      "barrel_ambiguous": {
+        "action": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 19
+        },
+        "card": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 19
+        },
+        "aim1": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 19
+        },
+        "log_correct": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 19
+        },
+        "log_wrong": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 19
+        }
+      },
+      "barrel_absent": {
+        "action": {
+          "net_rows": 18,
+          "replays_more": 75,
+          "replays_less": 62,
+          "replays_same": 268
+        },
+        "card": {
+          "net_rows": -6,
+          "replays_more": 21,
+          "replays_less": 25,
+          "replays_same": 359
+        },
+        "aim1": {
+          "net_rows": 1,
+          "replays_more": 38,
+          "replays_less": 38,
+          "replays_same": 329
+        },
+        "log_correct": {
+          "net_rows": -3,
+          "replays_more": 19,
+          "replays_less": 19,
+          "replays_same": 367
+        },
+        "log_wrong": {
+          "net_rows": -1,
+          "replays_more": 11,
+          "replays_less": 12,
+          "replays_same": 382
+        }
+      },
+      "rocket": {
+        "action": {
+          "net_rows": 1,
+          "replays_more": 4,
+          "replays_less": 3,
+          "replays_same": 329
+        },
+        "card": {
+          "net_rows": -3,
+          "replays_more": 2,
+          "replays_less": 5,
+          "replays_same": 329
+        },
+        "aim1": {
+          "net_rows": -7,
+          "replays_more": 7,
+          "replays_less": 14,
+          "replays_same": 315
+        },
+        "log_correct": {
+          "net_rows": 1,
+          "replays_more": 1,
+          "replays_less": 0,
+          "replays_same": 335
+        },
+        "log_wrong": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 336
+        }
+      },
+      "all": {
+        "action": {
+          "net_rows": 18,
+          "replays_more": 75,
+          "replays_less": 64,
+          "replays_same": 266
+        },
+        "card": {
+          "net_rows": -6,
+          "replays_more": 21,
+          "replays_less": 25,
+          "replays_same": 359
+        },
+        "aim1": {
+          "net_rows": 2,
+          "replays_more": 39,
+          "replays_less": 39,
+          "replays_same": 327
+        },
+        "log_correct": {
+          "net_rows": -2,
+          "replays_more": 20,
+          "replays_less": 19,
+          "replays_same": 366
+        },
+        "log_wrong": {
+          "net_rows": -2,
+          "replays_more": 11,
+          "replays_less": 13,
+          "replays_same": 381
+        }
+      },
+      "finish": {
+        "action": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 13
+        },
+        "card": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 12
+        },
+        "aim1": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 13
+        },
+        "log_correct": {
+          "net_rows": 1,
+          "replays_more": 1,
+          "replays_less": 0,
+          "replays_same": 12
+        },
+        "log_wrong": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 12
+        }
+      },
+      "combo": {
+        "action": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 74
+        },
+        "card": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 75
+        },
+        "aim1": {
+          "net_rows": -2,
+          "replays_more": 0,
+          "replays_less": 2,
+          "replays_same": 73
+        },
+        "log_correct": {
+          "net_rows": 1,
+          "replays_more": 1,
+          "replays_less": 0,
+          "replays_same": 74
+        },
+        "log_wrong": {
+          "net_rows": -1,
+          "replays_more": 0,
+          "replays_less": 1,
+          "replays_same": 74
+        }
+      },
+      "xbow": {
+        "action": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 10
+        },
+        "card": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 10
+        },
+        "aim1": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 10
+        },
+        "log_correct": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 10
+        },
+        "log_wrong": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 10
+        }
+      },
+      "xbow_no_lifetime_target": {
+        "action": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 0
+        },
+        "card": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 0
+        },
+        "aim1": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 0
+        },
+        "log_correct": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 0
+        },
+        "log_wrong": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 0
+        }
+      },
+      "defensive_sequence": {
+        "action": {
+          "net_rows": 6,
+          "replays_more": 15,
+          "replays_less": 10,
+          "replays_same": 187
+        },
+        "card": {
+          "net_rows": -3,
+          "replays_more": 2,
+          "replays_less": 5,
+          "replays_same": 205
+        },
+        "aim1": {
+          "net_rows": -1,
+          "replays_more": 8,
+          "replays_less": 9,
+          "replays_same": 195
+        },
+        "log_correct": {
+          "net_rows": 2,
+          "replays_more": 7,
+          "replays_less": 5,
+          "replays_same": 200
+        },
+        "log_wrong": {
+          "net_rows": 1,
+          "replays_more": 3,
+          "replays_less": 2,
+          "replays_same": 207
+        }
+      },
+      "defensive_rocket": {
+        "action": {
+          "net_rows": -2,
+          "replays_more": 0,
+          "replays_less": 2,
+          "replays_same": 127
+        },
+        "card": {
+          "net_rows": -2,
+          "replays_more": 0,
+          "replays_less": 2,
+          "replays_same": 127
+        },
+        "aim1": {
+          "net_rows": -3,
+          "replays_more": 2,
+          "replays_less": 5,
+          "replays_same": 122
+        },
+        "log_correct": {
+          "net_rows": 1,
+          "replays_more": 1,
+          "replays_less": 0,
+          "replays_same": 128
+        },
+        "log_wrong": {
+          "net_rows": 0,
+          "replays_more": 0,
+          "replays_less": 0,
+          "replays_same": 129
+        }
+      }
+    }
+  },
+  "report_message_sha256": "52c7a62f4acf04a0f39725edb0dfeab610d78e25a89a5e6d4d60b602d4173491",
+  "delivery_chunks": 1,
+  "rejected": true,
+  "developmental_only": true,
+  "deployment_accepted": false
+}

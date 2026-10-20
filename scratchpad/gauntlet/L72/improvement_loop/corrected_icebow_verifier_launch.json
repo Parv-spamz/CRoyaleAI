@@ -1,0 +1,23 @@
+{
+  "started_at": "2026-10-05T09:33:06.5130779-04:00",
+  "pid": 38292,
+  "command": [
+    "-u",
+    "scratchpad/gauntlet/L71/integration/run_check.py",
+    "--name",
+    "l72-corrected-icebow-independent",
+    "--expect",
+    "CORRECTED_ICEBOW_INDEPENDENTLY_VERIFIED",
+    "--",
+    "C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe",
+    "-u",
+    "scratchpad/gauntlet/L72/improvement_loop/verify_reserved_icebow_corrected.py",
+    "--wait-for-completion"
+  ],
+  "source_hashes": {
+    "verify_reserved_icebow_corrected.py": "662d21211d5e771d4f48a1aa63c251ea38ca47071f455d1c3b9d9f67959ddafb",
+    "verify_native_preflight.py": "6e03d1cbbe87e5c11601f42020d024419d0641e0f949cfbe5021e90063abd152",
+    "NATIVE_CATALOG_CORRECTION_PLAN.md": "d61a5b76c12724c5d34403d0f63957f918ca0c07fb7f1f26f31556a693fc8cfb"
+  },
+  "purpose": "Read-only independent reconciliation after new162 Icebow collection, no model/native service calls"
+}

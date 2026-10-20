@@ -1,0 +1,76 @@
+......FF.....F                                                           [100%]
+================================== FAILURES ===================================
+________ test_empty_refill_slot_is_omitted_then_returns_to_public_hand ________
+
+    def test_empty_refill_slot_is_omitted_then_returns_to_public_hand():
+        env = RoyaleSelfPlayEnv()
+        try:
+            before = env.reset(DECK, DECK, seed=7)
+            available = [x['name'] for x in before['players'][0]['hand']]
+            name = min(available, key=lambda n: env.costs(0)[DECK.index(n)])
+            result = env.act(0, DECK.index(name), 9000, 10000)
+            assert result['accepted']
+            after = env.raw()['players'][0]['hand']
+>           assert len(after) == 3
+E           AssertionError: assert 4 == 3
+E            +  where 4 = len([{'hand_index': 0, 'name': 'Tornado'}, {'hand_index': 1, 'name': 'Xbow'}, {'hand_index': 2, 'name': 'Tesla'}, {'hand_index': 3, 'name': 'IceWizard'}])
+
+pipeline\tests\test_royale_port.py:25: AssertionError
+____________ test_tower_drain_reaches_real_terminal_outcome[None] _____________
+
+weak_side = None
+
+    @pytest.mark.parametrize('weak_side', [None, 0, 1])
+    def test_tower_drain_reaches_real_terminal_outcome(weak_side):
+        env = RoyaleSelfPlayEnv(warmup_ticks=0)
+        try:
+            env.reset(DECK, DECK, seed=7)
+            hp = [[3000, 1000, 1000], [3000, 1000, 1000]]
+            if weak_side is not None:
+                hp[weak_side][1] = 100
+            env.core.reset(7, MatchSetup(decks=[env.deck_ids[0], env.deck_ids[1]],
+                shuffle=ShuffleMode.NONE, start_tick=5999, tower_hp=hp))
+            env.tick = 5999
+            env.advance_to(6000)
+            assert not env.done  # An old immediate tiebreak would end here.
+            env.advance_to(7200)
+            assert env.terminated and env.episode['termination_reason'] == 'game_over'
+>           assert 6000 < env.tick <= 6147
+E           assert 6148 <= 6147
+E            +  where 6148 = <pipeline.royale_env.RoyaleSelfPlayEnv object at 0x0000021136E13ED0>.tick
+
+pipeline\tests\test_royale_port.py:47: AssertionError
+_ test_originating_card_children_resolve_through_repeated_waves[FirespiritHut-fire_spirit] _
+
+parent = 'FirespiritHut', child = 'fire_spirit'
+
+    @pytest.mark.parametrize('parent,child', [('Witch','skeletons'), ('DarkWitch','bats'), ('FirespiritHut','fire_spirit')])
+    def test_originating_card_children_resolve_through_repeated_waves(parent, child):
+        env = RoyaleSelfPlayEnv(feature_version=5, tail_cap=800)
+        try:
+            deck = [parent, 'Knight', 'Skeletons', 'Log', 'Rocket', 'Tesla', 'IceWizard', 'Tornado']
+            env.reset(deck, deck, seed=1)
+            assert env.act(1, 0, 3500, 28500)['accepted']
+            seen, arrivals = set(), Counter()
+            for tick in range(100, 701, 10):
+                for entity in env.advance_to(tick)['entities']:
+                    if entity['side'] != 1 or entity['hp'] <= 0 or entity['entity_id'] in seen:
+                        continue
+                    seen.add(entity['entity_id'])
+                    identity = resolve(entity['name'], entity['max_hp'])
+                    if identity.cls == vocab.unit_id(child):
+                        assert entity['name'] == parent
+                        assert identity.form == 0
+                        arrivals[tick] += 1
+>           assert sum(arrivals.values()) >= 4 and len(arrivals) >= 2
+E           assert (0 >= 4)
+E            +  where 0 = sum(dict_values([]))
+E            +    where dict_values([]) = <built-in method values of Counter object at 0x0000021136E6ADA0>()
+E            +      where <built-in method values of Counter object at 0x0000021136E6ADA0> = Counter().values
+
+pipeline\tests\test_royale_port.py:97: AssertionError
+=========================== short test summary info ===========================
+FAILED pipeline/tests/test_royale_port.py::test_empty_refill_slot_is_omitted_then_returns_to_public_hand
+FAILED pipeline/tests/test_royale_port.py::test_tower_drain_reaches_real_terminal_outcome[None]
+FAILED pipeline/tests/test_royale_port.py::test_originating_card_children_resolve_through_repeated_waves[FirespiritHut-fire_spirit]
+3 failed, 11 passed in 17.11s

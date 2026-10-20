@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/small_set_aim_audit/verify.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "SMALL_SET_AIM_VERIFIED",
+  "matched": true,
+  "output_sha256": "24e8d234ada87057ef1738c2ea5496c64082da35f36c98da56788520506d4840",
+  "seconds": 2.7221639156341553
+}

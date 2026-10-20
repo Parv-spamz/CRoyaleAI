@@ -1,0 +1,68 @@
+{
+  "authorization": "Owner explicitly requested disabling hardcoded anti-leak and redeploying R1e live.",
+  "prepared_at": "2026-10-04T21:46:29.491968-04:00",
+  "old_pids": [
+    32668,
+    35272,
+    7820,
+    9536
+  ],
+  "checkpoint": "C:\\Users\\benpe\\ClashBot\\icebow\\data\\bench\\rl_royale\\rseries_r1e31\\rseries_r1e31_u0155.pt",
+  "checkpoint_sha256": "76fdfaacbd9c2049cc88792278f06e3f73a56eaf9653791e922d9332dd6751cd",
+  "before_sha256": {
+    "scratchpad/gauntlet/L68/live_reader/live_play.py": "8cc57d24275b4c9c3e6d9d32919d15486bd7f0b6afc2e411b68205e4484cb1ce",
+    "scratchpad/gauntlet/L70/live/run_live.sh": "2dca35b2551b313999f3b807399c55d938ecf98507d18288b09d71b173cd2a4a",
+    "scratchpad/gauntlet/L70/live/CKPT_OVERRIDE": "bfcb2c67e152443cf3cb7c002a94e54a8e8e5f9e9c24d57c1b93570c51cb6194"
+  },
+  "settings": {
+    "tau": 0.35,
+    "leak": 9.5,
+    "anti_leak": false,
+    "card_choice": "unchanged argmax",
+    "cell_choice": "unchanged argmax"
+  },
+  "after_sha256": {
+    "scratchpad/gauntlet/L68/live_reader/live_play.py": "a1f28128fdee92ddaad398d23c5ee7a83ac73d42919d431db2419fe24d180cc5",
+    "scratchpad/gauntlet/L70/live/run_live.sh": "72768c1d1f2ea47403887e9d1ad8595bc5048670e983db3303bf8d7e4db83f4a",
+    "scratchpad/gauntlet/L70/live/CKPT_OVERRIDE": "bfcb2c67e152443cf3cb7c002a94e54a8e8e5f9e9c24d57c1b93570c51cb6194"
+  },
+  "old_run_clean_exit": "2026-10-04 21:48:07 EDT; STOP observed before match 16, supervisor done 21:48:08",
+  "last_pre_change_log": "scratchpad/gauntlet/L68/live_reader/live_play_20261004_214258.jsonl",
+  "first_experiment_match": "scratchpad/gauntlet/L68/live_reader/live_play_20261004_215110.jsonl",
+  "first_experiment_match_local": "2026-10-04 21:51:10 EDT",
+  "verification_at": "2026-10-04T21:51:59.465160-04:00",
+  "live_start": {
+    "event": "start",
+    "screen": [
+      900,
+      1600
+    ],
+    "tau": 0.35,
+    "leak": 9.5,
+    "dry_run": false,
+    "ckpt": "C:/Users/benpe/ClashBot/icebow/data/bench/rl_royale/rseries_r1e31/rseries_r1e31_u0155.pt",
+    "extrapolate": 26,
+    "opp_counter": true,
+    "device": "cuda",
+    "anti_leak": false
+  },
+  "source_prefix_bytes": 378517,
+  "source_prefix_sha256": "3cf4bd59a5b8bd2171b2f3728e1af05b3ca58136d8ef9eeed0eaca55828a244f",
+  "plays_observed": 7,
+  "confirmed_observed": 7,
+  "forced_observed": 0,
+  "first_confirmed": {
+    "event": "confirmed",
+    "tick": 196,
+    "name": "Log",
+    "intended": [
+      0.8055555555555556,
+      0.546875
+    ],
+    "elixir_drop": 1.5372,
+    "spawn": [],
+    "err_tiles": null,
+    "latency_s": 1.301
+  },
+  "process_note": "One live worker (5424) under Python venv launcher (37388); bash entries form its supervisor wrapper chain."
+}

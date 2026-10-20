@@ -1,0 +1,48 @@
+{
+  "complete": true,
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1_recovery\\diagnose.py": "19711746696a6635b9ecda3a488387c7b522178cb0266ca844667e224c79f9fc",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1_recovery\\recovery.py": "652713a352ed5d0f9287fcd62531121fb29ac2bc0c6ed1de83117db8fbff6fdc",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1_recovery\\run_chain.py": "b77f027b1469d035c21daac733bd5384d586e0dd6eb05d93d3bce7bec0ef2d6e",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1_recovery\\train_v2.py": "653f15acc5e21c8447c92a221b9ac776a07e5ac6e7a6a0fcd7ee06a34b5e63ad",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1_recovery\\verify_v2.py": "f5c3cb7b7007158fe378db01d51d2e84d6a910d43e372b97c5471c102dea7199",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1_recovery\\PLAN.md": "59dd11bb7b68ca35aa883fb2f8d2136bce989efd210a29f53d4156b926839712"
+  },
+  "original_failure": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1\\prepared.json": "dd4cd5620ee8103a4ddb3ccd996afd083288cd69abacc3c2685bda9eb4ce1c11",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1\\training_started.json": "b9561495f4d71e1d1ab69e2454bf3170a600078e4817a0c6647acecf7beaf9ce",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\development_rl_1\\chain_failed.json": "558a75425dc437a7b62645058141202bc7d11af1043edf0d892ad92032c79963",
+    "scratchpad\\gauntlet\\L71\\integration\\checks\\l72-outcome-rl-train.json": "df3d8c18fc9acc1f8509a1d9535ceee6aae8e9813aa17c059af8e8bd792a5016",
+    "scratchpad\\gauntlet\\L71\\integration\\checks\\l72-outcome-rl-train.out": "941112f50d88f9e0c9b847edaf08042cd1d448c4c730c631f370299176785c67"
+  },
+  "runtime": {
+    "schema": 1,
+    "pins": {
+      "RoyaleSim": "015f9b0084afe574915e3f6ce2f0764c6dec6099",
+      "RoyaleGym": "3117816366b00754da1b56c9543412e4706de62a"
+    },
+    "wheels": {
+      "royalegym-0.1.15-py3-none-any.whl": "51219cef17867069abf22c206c1fbc309b3e8f93927a658e19b543b6ba96156b",
+      "royalesim-0.1.13-cp310-abi3-win_amd64.whl": "ab61577d3926df7a43463f41c479ec31e6864d3702c13075f170d97f3b30406c"
+    },
+    "manifest_sha256": "eb455896367d94107dbf3fd35ffc8f01de097a1ac2c3beebdca00445b2f45903",
+    "card_table": {
+      "cards_json_fnv1a64": "21935265e615e337",
+      "cards_vintage": "15.535.29 client (2026, LIVE build family)",
+      "cards_json_hash_source": "embedded"
+    }
+  },
+  "original_raw_form_comparison": false,
+  "canonical_form_comparison": true,
+  "native_initial_sha256": "752cfbb32a4904b24a31b9d4208e3e958e0156ef82c90f35a93914c1acb30639",
+  "prepared_setups_structurally_checked": 256,
+  "native_setups_diagnosed": 1,
+  "policy_decisions": 0,
+  "optimizer_updates": 0,
+  "outputs_empty": true,
+  "warmup_freezes_nonvalue": true,
+  "controls": {
+    "positive": 1,
+    "negative": 5
+  }
+}

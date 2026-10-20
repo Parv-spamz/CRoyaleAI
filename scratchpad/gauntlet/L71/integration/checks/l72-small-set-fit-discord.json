@@ -1,0 +1,17 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L69/discord/send_report.py",
+    "--id",
+    "model-small-set-fit-v5-diagnostic",
+    "--file",
+    "scratchpad/gauntlet/L72/improvement_loop/small_set_fit/message.md"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "DELIVERED model-small-set-fit-v5-diagnostic",
+  "matched": true,
+  "output_sha256": "9586ddbb4a37c04343cfea5c06b41eec340890dbdad6e100005374d58fc4fa1b",
+  "seconds": 0.7653005123138428
+}

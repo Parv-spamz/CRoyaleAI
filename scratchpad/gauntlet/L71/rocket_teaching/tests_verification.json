@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "pipeline/tests/test_rocket_teaching.py",
+    "-q"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "PowerShell invoking Python direct subprocess",
+  "exit_code": 0,
+  "expect": "11 passed",
+  "matched": true,
+  "output_sha256": "32551fb43d0df0bc9c206370293a601fba39b7788c705fa5cc4d513f75fad27f"
+}

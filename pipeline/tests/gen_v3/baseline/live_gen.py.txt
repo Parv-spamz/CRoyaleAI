@@ -1,0 +1,139 @@
+"""Generalist (GenModel) decision from a live memory-reader frame (L68 live reader).
+
+Builds ONE row exactly as ``dataset_gen`` does for training (``to_tokens`` board + ``sc`` with the deck-slot columns
+7..51 zeroed, card-identity hand / next / deck arrays by the checkpoint's ``card_vocab``, past = my last PAST_K
+confirmed plays as (card, form, x, y, seconds ago)) and runs gate -> card pointer -> cell head.
+
+Opponent elixir: the owner's rule forbids the opponent's hidden value, so it comes from
+``pipeline.opp_elixir_count.LiveOppElixir`` -- a counter over PUBLIC board events (start 6.0, regen schedule, minus
+the cost of each opponent play it sees). ``observe(frame)`` must see EVERY active+coherent frame (not only the ones
+it decides on). RoyaleSim screen (HANDOFF L68ao, 58 matches): hidden 0.879 -> counter 0.983 for this generalist.
+``use_counter=False`` feeds None (unknown) instead.
+"""
+from __future__ import annotations
+
+from typing import Any, Mapping, Optional, Sequence
+
+import numpy as np
+import torch
+
+from .dataset import PAST_K
+from .dataset_gen import SC_SLOT_COLS, card_key
+from .eval_gen import load_model
+from . import vocab
+from .e1_eval import allowed_slots
+from .live_mem import board_state, deck_of, my_side_of
+from .model_v3 import cell_xy
+from collections import deque
+
+from .extrapolate import extrapolate
+from .opp_elixir_count import LiveOppElixir, card_cost, regen_between
+from .obs_contract import to_tokens
+from .train_s1 import MAX_U
+
+FORM_PAD = 3
+
+
+class GenPilot:
+    def __init__(self, ckpt, device: str = "cpu", gate_tau: float = 0.5, use_counter: bool = True,
+                 extrapolate_ticks: int = 0):
+        self.model, st = load_model(ckpt, torch.device(device))
+        self.model.eval()
+        self.gid = {k: i for i, k in enumerate(st["card_vocab"])}          # 0 = <pad>
+        self.grid = str(st["args"].get("grid", "lattice"))
+        self.dev, self.gate_tau = torch.device(device), float(gate_tau)
+        self.past: list[tuple[int, int, float, float, float]] = []       # (card gid, form, x, y, t_sec) confirmed
+        self.history: dict = {}
+        self.opp = LiveOppElixir() if use_counter else None
+        self.opp_est: float | None = None
+        # Board extrapolation (pipeline/extrapolate.py, HANDOFF L68as): decide on the board H ticks ahead, where our
+        # card will land (~26 ticks after the decision frame live). Velocity window ~10 ticks, as the screen arm.
+        self.ext_h = int(extrapolate_ticks)
+        self.frames: deque = deque(maxlen=30)            # (tick, raw reader frame), fed by observe()
+
+    def reset_match(self) -> None:
+        self.past.clear()
+        self.history.clear()
+        self.frames.clear()
+        if self.opp:
+            self.opp.reset()
+        self.opp_est = None
+
+    def observe(self, frame: Mapping[str, Any]) -> float | None:
+        """Feed the opponent-elixir counter one active+coherent frame (call on EVERY such frame)."""
+        if self.opp:
+            self.opp_est = self.opp.update(frame)
+        if self.frames and int(frame["game_tick"]) < self.frames[-1][0]:
+            self.frames.clear()                          # tick went backwards: a new match
+        self.frames.append((int(frame["game_tick"]), frame))
+        return self.opp_est
+
+    def record_play(self, card: int, form: int, xy: tuple[float, float], t_sec: float) -> None:
+        self.past.append((card, form, float(xy[0]), float(xy[1]), float(t_sec)))
+
+    def _card(self, name: str) -> int:
+        k = card_key(name)
+        if k not in self.gid:
+            raise KeyError(f"card {name!r} ({k}) not in the generalist's card_vocab")
+        return self.gid[k]
+
+    def row(self, frame: Mapping[str, Any]) -> tuple[dict, dict]:
+        side = my_side_of(frame)
+        _, names = deck_of(frame, side)
+        me = next(p for p in frame["players"] if int(p["side"]) == side)
+        forms = list(me.get("deck_form_flags") or [0] * 8)                # reader 0/1/2 = base/evo/hero (as ours)
+        opp = self.opp_est
+        if self.ext_h:
+            # ALWAYS advance (prev None -> clock + my elixir only), so history ages never jump by H mid-match
+            tick = int(frame["game_tick"])
+            prev = next((f for t, f in reversed(self.frames) if t <= tick - 10), None)
+            frame = extrapolate(frame, prev, self.ext_h, side)
+            if opp is not None:
+                opp = min(10.0, opp + regen_between(tick, tick + self.ext_h))
+        bs = board_state(frame, history=self.history, opp_elixir=opp)
+        tok, mask, sc = to_tokens(bs, MAX_U)
+        sc = sc.copy()
+        sc[SC_SLOT_COLS] = 0.0
+        deck = [self._card(n) for n in names]
+        hand = [(deck[d], forms[d]) if d >= 0 else (0, FORM_PAD) for d in me["hand_deck_indices"]]
+        nd = int(me["next_deck_index"])
+        nxt = (deck[nd], forms[nd]) if nd >= 0 else (0, FORM_PAD)
+        order = np.argsort(deck, kind="stable")                           # dataset_gen: canonical deck order
+        past = np.tile(np.array([0, FORM_PAD, -1, -1, -1], np.float32), (PAST_K, 1))
+        for i, (c, f, x, y, t) in enumerate(reversed(self.past[-PAST_K:])):
+            past[i] = (c, f, x, y, bs.t_sec - t)
+        T = lambda a, dt=torch.long: torch.as_tensor(np.asarray(a), dtype=dt, device=self.dev).unsqueeze(0)  # noqa: E731
+        b = {"tok": T(tok, torch.float32), "mask": T(mask, torch.bool), "sc": T(sc, torch.float32),
+             "past": T(past, torch.float32),
+             "hand_card": T([h[0] for h in hand]), "hand_form": T([h[1] for h in hand]),
+             "next_card": T([nxt[0]]).squeeze(0), "next_form": T([nxt[1]]).squeeze(0),
+             "deck_card": T(np.asarray(deck)[order]), "deck_form": T(np.asarray(forms)[order])}
+        # Affordability, as the sim's live rule (e1_eval.allowed_slots): int(elixir the model's own input shows, i.e. at
+        # tick+H when extrapolating) vs the card's cost. Unknown cost (Mirror, pad slot) -> 0 = never blocks.
+        costs = [(card_cost(vocab.engine_key(names[d])) or 0.0) if d >= 0 else 0.0 for d in me["hand_deck_indices"]]
+        info = {"bs": bs, "hand": hand, "hand_deck_indices": list(me["hand_deck_indices"]), "names": names,
+                "costs": costs, "el_int": int(bs.my_elixir)}
+        return b, info
+
+    @torch.no_grad()
+    def decide(self, frame: Mapping[str, Any]) -> dict:
+        """{'play': bool, 'p_play', 'hand_pos', 'deck_index', 'card', 'form', 'xy' (my board frame), 'bs'}."""
+        b, info = self.row(frame)
+        out = self.model(b)
+        p = float(torch.sigmoid(out["gate"][0]))
+        # sim rule (e1_eval.live_decide): argmax over hand slots we can afford; none affordable -> wait
+        allowed = allowed_slots(np.array([h[0] > 0 for h in info["hand"]]), info["costs"], info["el_int"])
+        if not allowed.any():
+            return {"play": False, "no_affordable": True, "p_play": p, "hand_pos": -1, "deck_index": -1, "card": 0,
+                    "form": FORM_PAD, "bs": info["bs"], "name": None, "el_int": info["el_int"]}
+        logits = out["card"][0].masked_fill(~torch.from_numpy(allowed).to(out["card"].device), float("-inf"))
+        pos = int(logits.argmax())
+        card, form = info["hand"][pos]
+        d = {"play": p > self.gate_tau and card > 0, "p_play": p, "hand_pos": pos, "no_affordable": False,
+             "deck_index": info["hand_deck_indices"][pos], "card": card, "form": form, "bs": info["bs"],
+             "name": info["names"][info["hand_deck_indices"][pos]] if card > 0 else None}
+        if card > 0:
+            enc_card = torch.tensor([card], device=self.dev)
+            logits = self.model(b, card=enc_card, form=torch.tensor([form], device=self.dev))["cell"][0]
+            d["xy"] = cell_xy(int(logits.argmax()), self.grid)
+        return d

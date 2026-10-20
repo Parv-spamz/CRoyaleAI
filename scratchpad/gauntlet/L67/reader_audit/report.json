@@ -1,0 +1,416 @@
+{
+ "command": "python tools/live_reader_audit.py data/sessions/20260912_152220 ../scratchpad/gauntlet/L67/live_run18_utf8.log --out ../scratchpad/gauntlet/L67/reader_audit --max-minutes 18 --hz 5 --crops 30 --seed 0",
+ "session_dir": "data\\sessions\\20260912_152220",
+ "log": "../scratchpad/gauntlet/L67/live_run18_utf8.log",
+ "processing": {
+  "video_fps": 12.0,
+  "video_frames": 11850,
+  "stride_frames": 3,
+  "effective_hz": 4.0,
+  "state_checked_frames": 3950,
+  "in_match_frames": 3650,
+  "frames_with_detections_pass": 3650,
+  "detections_total": 9628,
+  "elapsed_s": 445.9,
+  "stop_reason": "completed the session",
+  "min_hits_for_a_track": 2
+ },
+ "hp_reader": {
+  "read_rate_overall": {
+   "share": 0.03593685085168259,
+   "n": 9628
+  },
+  "read_rate_by_team": {
+   "enemy": {
+    "share": 0.02621580547112462,
+    "n": 5264
+   },
+   "mine": {
+    "share": 0.0478958381771681,
+    "n": 4301
+   },
+   "unknown": {
+    "share": 0.031746031746031744,
+    "n": 63
+   }
+  },
+  "read_rate_by_class_top10": {
+   "knight": {
+    "share": 0.05361596009975062,
+    "n": 1604
+   },
+   "skeletons": {
+    "share": 0.019909502262443438,
+    "n": 1105
+   },
+   "tesla": {
+    "share": 0.03427172582619339,
+    "n": 817
+   },
+   "x_bow": {
+    "share": 0.07346938775510205,
+    "n": 735
+   },
+   "the_log": {
+    "share": 0.02813852813852814,
+    "n": 462
+   },
+   "skeleton_dragons": {
+    "share": 0.0374331550802139,
+    "n": 374
+   },
+   "royal_recruits": {
+    "share": 0.012244897959183673,
+    "n": 245
+   },
+   "lava_hound": {
+    "share": 0.09401709401709402,
+    "n": 234
+   },
+   "earthquake": {
+    "share": 0.0,
+    "n": 225
+   },
+   "bats": {
+    "share": 0.0430622009569378,
+    "n": 209
+   }
+  },
+  "track_read_rate_overall": {
+   "share": 0.22706065318818042,
+   "n_tracks": 643
+  },
+  "track_read_rate_by_team": {
+   "enemy": {
+    "share": 0.16169154228855723,
+    "n_tracks": 402
+   },
+   "mine": {
+    "share": 0.3403361344537815,
+    "n_tracks": 238
+   },
+   "unknown": {
+    "share": 0.0,
+    "n_tracks": 3
+   }
+  },
+  "at_deploy": {
+   "plays_in_window": 166,
+   "matched": 112,
+   "unmatched_no_own_unit_seen": 54,
+   "median_first_read": 1.0,
+   "share_ge_0_90": 0.9732142857142857,
+   "share_lt_0_70": 0.008928571428571428,
+   "window_s": 1.5,
+   "radius_norm": 0.15
+  },
+  "monotonicity": {
+   "share_increase_gt_0_10": 0.20224719101123595,
+   "n_consecutive_pairs": 178
+  },
+  "jitter": {
+   "median_abs_diff": 0.0,
+   "n_pairs_dt_0.15_0.35s": 51
+  }
+ },
+ "velocity": {
+  "share_tracks_old_enough": {
+   "share": 0.8895800933125972,
+   "n_tracks": 643,
+   "age_threshold_s": 0.5
+  },
+  "direction_stability_median_abs_angle_change_deg": 43.670942471242704,
+  "n_segment_pairs_for_direction": 5365,
+  "by_class": {
+   "skeletons": {
+    "n": 503,
+    "median_tiles_s": 1.764205978435665,
+    "p25": 1.5053543595775882,
+    "p75": 1.9642008852470645,
+    "card_speed_tiles_s": 1.5,
+    "ratio_measured_over_card": 1.17613731895711
+   },
+   "knight": {
+    "n": 487,
+    "median_tiles_s": 1.1871951512791816,
+    "p25": 0.8917304771923951,
+    "p75": 1.5279693403359313,
+    "card_speed_tiles_s": 1.0,
+    "ratio_measured_over_card": 1.1871951512791816
+   },
+   "the_log": {
+    "n": 197,
+    "median_tiles_s": 3.5886775808606397,
+    "p25": 3.129528785468476,
+    "p75": 3.9877100262969534,
+    "card_speed_tiles_s": null,
+    "ratio_measured_over_card": null
+   },
+   "royal_recruits": {
+    "n": 115,
+    "median_tiles_s": 1.1438075692785425,
+    "p25": 0.8588260250692531,
+    "p75": 1.4281872867757333,
+    "card_speed_tiles_s": 1.0,
+    "ratio_measured_over_card": 1.1438075692785425
+   },
+   "night_witch": {
+    "n": 98,
+    "median_tiles_s": 1.1996818353424685,
+    "p25": 0.9645649014201227,
+    "p75": 1.436264806213865,
+    "card_speed_tiles_s": 1.0,
+    "ratio_measured_over_card": 1.1996818353424685
+   },
+   "bomber": {
+    "n": 89,
+    "median_tiles_s": 1.179012239842822,
+    "p25": 0.8246731473267157,
+    "p75": 1.6172794858732469,
+    "card_speed_tiles_s": 1.0,
+    "ratio_measured_over_card": 1.179012239842822
+   },
+   "firecracker": {
+    "n": 73,
+    "median_tiles_s": 1.7274176673012562,
+    "p25": 1.566016202027893,
+    "p75": 2.0076995669596163,
+    "card_speed_tiles_s": 1.5,
+    "ratio_measured_over_card": 1.1516117782008375
+   },
+   "tesla": {
+    "n": 72,
+    "median_tiles_s": 0.40644174197375216,
+    "p25": 0.2498038044037661,
+    "p75": 0.9038619028499572,
+    "card_speed_tiles_s": null,
+    "ratio_measured_over_card": null
+   },
+   "bats": {
+    "n": 72,
+    "median_tiles_s": 2.2780132708621093,
+    "p25": 1.8621093119033205,
+    "p75": 2.7463352652077315,
+    "card_speed_tiles_s": 2.0,
+    "ratio_measured_over_card": 1.1390066354310546
+   },
+   "x_bow": {
+    "n": 59,
+    "median_tiles_s": 0.3004764819783401,
+    "p25": 0.21302751036452394,
+    "p75": 0.3732301532989234,
+    "card_speed_tiles_s": null,
+    "ratio_measured_over_card": null
+   },
+   "balloon": {
+    "n": 54,
+    "median_tiles_s": 1.1505111586804486,
+    "p25": 0.8283908700544196,
+    "p75": 1.3248134236582236,
+    "card_speed_tiles_s": 1.0,
+    "ratio_measured_over_card": 1.1505111586804486
+   },
+   "skeleton_dragons": {
+    "n": 53,
+    "median_tiles_s": 1.4907307765375113,
+    "p25": 0.6239552784588557,
+    "p75": 2.336363845291179,
+    "card_speed_tiles_s": 1.5,
+    "ratio_measured_over_card": 0.9938205176916742
+   },
+   "battle_ram": {
+    "n": 49,
+    "median_tiles_s": 1.3664889240177416,
+    "p25": 0.9978681612687087,
+    "p75": 2.3429319042875862,
+    "card_speed_tiles_s": 1.0,
+    "ratio_measured_over_card": 1.3664889240177416
+   },
+   "lava_hound": {
+    "n": 40,
+    "median_tiles_s": 1.0318663555091225,
+    "p25": 0.700344279403042,
+    "p75": 1.2748418372428225,
+    "card_speed_tiles_s": 0.75,
+    "ratio_measured_over_card": 1.3758218073454966
+   },
+   "goblin_giant": {
+    "n": 35,
+    "median_tiles_s": 1.5011390863097682,
+    "p25": 0.7416400731580399,
+    "p75": 2.3008766218385475,
+    "card_speed_tiles_s": 1.0,
+    "ratio_measured_over_card": 1.5011390863097682
+   },
+   "golem": {
+    "n": 35,
+    "median_tiles_s": 0.7669955716003934,
+    "p25": 0.5091270372887581,
+    "p75": 1.1985963158597404,
+    "card_speed_tiles_s": 0.75,
+    "ratio_measured_over_card": 1.022660762133858
+   },
+   "mega_knight": {
+    "n": 33,
+    "median_tiles_s": 1.5678419141822948,
+    "p25": 0.6738879457120808,
+    "p75": 2.5334586527049123,
+    "card_speed_tiles_s": 1.0,
+    "ratio_measured_over_card": 1.5678419141822948
+   },
+   "phoenix": {
+    "n": 33,
+    "median_tiles_s": 1.297364720500224,
+    "p25": 1.0270548596178453,
+    "p75": 1.7891816076350904,
+    "card_speed_tiles_s": 1.0,
+    "ratio_measured_over_card": 1.297364720500224
+   },
+   "prince": {
+    "n": 33,
+    "median_tiles_s": 2.0068887411911964,
+    "p25": 1.6830847557846365,
+    "p75": 2.6907136300914005,
+    "card_speed_tiles_s": 1.0,
+    "ratio_measured_over_card": 2.0068887411911964
+   },
+   "guards": {
+    "n": 28,
+    "median_tiles_s": 1.6272930702219375,
+    "p25": 1.1402940864093578,
+    "p75": 2.0980283533476745,
+    "card_speed_tiles_s": 1.5,
+    "ratio_measured_over_card": 1.084862046814625
+   },
+   "electro_wizard": {
+    "n": 24,
+    "median_tiles_s": 1.9138477075403368,
+    "p25": 1.2378195639715033,
+    "p75": 2.2214124632081313,
+    "card_speed_tiles_s": 1.5,
+    "ratio_measured_over_card": 1.275898471693558
+   },
+   "lumberjack": {
+    "n": 23,
+    "median_tiles_s": 2.2819352152183097,
+    "p25": 1.8939289597219275,
+    "p75": 2.7318215939509125,
+    "card_speed_tiles_s": 2.0,
+    "ratio_measured_over_card": 1.1409676076091548
+   },
+   "elixir_golemite": {
+    "n": 22,
+    "median_tiles_s": 1.181099311724396,
+    "p25": 0.8353644759251498,
+    "p75": 1.4087964226736451,
+    "card_speed_tiles_s": 1.0,
+    "ratio_measured_over_card": 1.181099311724396
+   },
+   "royal_recruit": {
+    "n": 21,
+    "median_tiles_s": 1.1869257988400763,
+    "p25": 1.0771628774823683,
+    "p75": 1.2981361822593442,
+    "card_speed_tiles_s": null,
+    "ratio_measured_over_card": null
+   },
+   "elixir_golem": {
+    "n": 16,
+    "median_tiles_s": 0.7132794895811867,
+    "p25": 0.4429908761508067,
+    "p75": 0.9965320993295796,
+    "card_speed_tiles_s": 0.75,
+    "ratio_measured_over_card": 0.9510393194415823
+   },
+   "dark_prince": {
+    "n": 16,
+    "median_tiles_s": 1.6333076388771786,
+    "p25": 1.0523703104771975,
+    "p75": 2.297189457865168,
+    "card_speed_tiles_s": 1.0,
+    "ratio_measured_over_card": 1.6333076388771786
+   },
+   "lava_pups": {
+    "n": 11,
+    "median_tiles_s": 1.1300021913172307,
+    "p25": 0.9099947398347026,
+    "p75": 1.4902864666841407,
+    "card_speed_tiles_s": 1.0,
+    "ratio_measured_over_card": 1.1300021913172307
+   },
+   "goblin_demolisher": {
+    "n": 10,
+    "median_tiles_s": 1.162027192355684,
+    "p25": 1.0312929928996202,
+    "p75": 1.2321155218026754,
+    "card_speed_tiles_s": 1.0,
+    "ratio_measured_over_card": 1.162027192355684
+   },
+   "golden_knight": {
+    "n": 10,
+    "median_tiles_s": 1.171092898514996,
+    "p25": 0.886970073143921,
+    "p75": 1.3507235792346752,
+    "card_speed_tiles_s": 1.0,
+    "ratio_measured_over_card": 1.171092898514996
+   },
+   "baby_dragon": {
+    "n": 10,
+    "median_tiles_s": 1.6098500547616075,
+    "p25": 0.9970879448920574,
+    "p75": 2.094475155306176,
+    "card_speed_tiles_s": 1.5,
+    "ratio_measured_over_card": 1.0732333698410716
+   },
+   "earthquake": {
+    "n": 9,
+    "median_tiles_s": 0.2906494056947702,
+    "p25": 0.21921618856130698,
+    "p75": 0.3216697279596447,
+    "card_speed_tiles_s": null,
+    "ratio_measured_over_card": null
+   },
+   "ice_wizard": {
+    "n": 9,
+    "median_tiles_s": 1.2060173753023566,
+    "p25": 1.1344021331270462,
+    "p75": 1.555584814149392,
+    "card_speed_tiles_s": 1.0,
+    "ratio_measured_over_card": 1.2060173753023566
+   },
+   "witch": {
+    "n": 9,
+    "median_tiles_s": 1.0882916699260305,
+    "p25": 1.0390865442966541,
+    "p75": 1.2296811492565345,
+    "card_speed_tiles_s": 1.0,
+    "ratio_measured_over_card": 1.0882916699260305
+   },
+   "elixir_blob": {
+    "n": 8,
+    "median_tiles_s": 0.9534595887491937,
+    "p25": 0.4871295450808396,
+    "p75": 1.6545762242106556,
+    "card_speed_tiles_s": 1.5,
+    "ratio_measured_over_card": 0.6356397258327958
+   },
+   "rage": {
+    "n": 8,
+    "median_tiles_s": 0.42181344541688703,
+    "p25": 0.20342161102147185,
+    "p75": 0.9211722941512959,
+    "card_speed_tiles_s": null,
+    "ratio_measured_over_card": null
+   }
+  },
+  "thresholds": {
+   "move_min_tiles_s": 0.15,
+   "straight_angle_deg": 30.0,
+   "max_segment_dt_s": 1.0,
+   "min_class_samples": 8,
+   "tile_x_frame_units": 0.045454545454545456,
+   "tile_y_frame_units": 0.02157894736842105,
+   "speed_field": "cards_stats.json 'speed_tiles' (tiles per second -- verified against known tiers: giant 0.75 [Slow], ice_wizard 1.0 [Medium], skeletons 1.5 [Fast], hog_rider/ice_spirit 2.0 [Very Fast])"
+  }
+ }
+}

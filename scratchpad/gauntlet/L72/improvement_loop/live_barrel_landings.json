@@ -1,0 +1,929 @@
+{
+  "source_sha256": {
+    "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261005_064528.jsonl": "df542c7abf9b0155542b2be22df721d6f7cc3b33e047d8623b1216ba31504a47",
+    "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261005_064842.jsonl": "5b467ea785dc8b9271f618a7dae6ba2ec50682a87dd98ff636bff20722199df4",
+    "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261005_065159.jsonl": "4a98fd1d21998432cd1dbc37f460168c42f4ae2896a271d04a75c135218e76ff",
+    "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261005_065516.jsonl": "a010de94ef567805290f3f151fb4db6c5dc643422558a2505b94288a7d54d34f",
+    "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261005_065932.jsonl": "23e772d85a21d26064b9651a1541a5d3c44a2255145f2203e24178d16de47f96",
+    "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261005_070248.jsonl": "36f76ff8b0a6105d67957de3594080b0c813e16747473bb6433de8de1a0bfc29",
+    "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261005_070510.jsonl": "df5f9cec5618701a7eea062b94f58f3877416ee42f353cfc7821032695a7dc85",
+    "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261005_070935.jsonl": "d587ecbbdf2c628d025668f18b6f7017aab8ac72fa0b23217b9d9ecba9432d3f",
+    "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261005_071253.jsonl": "9235a08dfb481bd4060a2a4025d630a06ab378e368cbaf67ef3975780ba21750",
+    "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261005_071827.jsonl": "11228d9405b7dc41aabf7b2fde4acd6e7ecc24857fd798ffe971caf5ecfd8cee",
+    "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261005_072350.jsonl": "b6a2e1ba98371b568e846d4b2eedf70b157900b1532201236d4389f9655afa38",
+    "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261005_072708.jsonl": "131d252872ac0964f80db80156524b9cf032951a95093fdb5155cf37f88e231c",
+    "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261005_073020.jsonl": "d82ea792924d9e2b4c31e215620b06d0d7513c751215bb01ffac4b1b922ae4ed",
+    "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261005_073515.jsonl": "2943a11c42b7a95996864aa8925ceaf8eb420bcdbb88bea117b31fe4370afcc7",
+    "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261005_073833.jsonl": "c3cec155a274ca72c162e2c9c91f67ca451613b93ead947ca347dc42e0f757a9",
+    "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261005_074149.jsonl": "05f9e3b7337be24032d6dc67da896860264db33aa15ba58c94ef201da43bd16f",
+    "scratchpad\\gauntlet\\L68\\live_reader\\live_play_20261005_074514.jsonl": "07612ca9cc7159f15922205d7c7df837fbb9d44b3f8f9bd46c8d855e3f904658"
+  },
+  "checkpoints": {
+    "76fdfaacbd9c2049cc88792278f06e3f73a56eaf9653791e922d9332dd6751cd": 17
+  },
+  "counts": {
+    "ambiguous_multi_projectile_frames": 4,
+    "log_files": 17,
+    "flight_segments": 14,
+    "matched_spawns": 8,
+    "matched_lanes": 8,
+    "spawning_triplets": 8,
+    "preemptive_log:confirmed:wrong_lane": 4,
+    "unmatched:observation_gap": 2,
+    "unmatched:not_exactly_three_new_goblins": 4,
+    "preemptive_log:confirmed:correct_lane": 2
+  },
+  "centroid_error_tiles": {
+    "n": 8,
+    "median": 0.0974079824171776,
+    "maximum": 0.3823995874009861
+  },
+  "flights": [
+    {
+      "file": "live_play_20261005_064842.jsonl",
+      "exploratory": true,
+      "key": [
+        0,
+        3499,
+        25500
+      ],
+      "observer_side": 1,
+      "first_tick": 272,
+      "last_tick": 310,
+      "first_frame": 12,
+      "last_frame": 14,
+      "observations": 3,
+      "first_absent_tick": 337,
+      "matched": true,
+      "new_goblins": [
+        {
+          "side": 0,
+          "x": 3499,
+          "y": 27127,
+          "card_id": 28000004,
+          "hp": 293,
+          "max_hp": 293,
+          "kind": 14,
+          "address": "0x7283c71a4be0",
+          "category": 5000006
+        },
+        {
+          "side": 0,
+          "x": 2090,
+          "y": 24687,
+          "card_id": 28000004,
+          "hp": 293,
+          "max_hp": 293,
+          "kind": 14,
+          "address": "0x7283c723b7d0",
+          "category": 5000007
+        },
+        {
+          "side": 0,
+          "x": 4901,
+          "y": 24687,
+          "card_id": 28000004,
+          "hp": 293,
+          "max_hp": 293,
+          "kind": 14,
+          "address": "0x7283c7254c80",
+          "category": 5000008
+        }
+      ],
+      "centroid_raw": [
+        3496.6666666666665,
+        25500.333333333332
+      ],
+      "error_tiles": 0.002357022603955137,
+      "all_spawning_kind14": true,
+      "target_own_xy": [
+        0.8056111111111111,
+        0.796875
+      ],
+      "centroid_own_xy": [
+        0.8057407407407408,
+        0.7968854166666667
+      ],
+      "lane_equal": true,
+      "preemptive_log_attempts": [
+        {
+          "tick": 282,
+          "xy": [
+            0.1944,
+            0.8594
+          ],
+          "confirmed": true,
+          "receipt_tick": 308,
+          "target_lane": "right",
+          "log_lane": "left",
+          "correct_lane": false
+        }
+      ]
+    },
+    {
+      "file": "live_play_20261005_064842.jsonl",
+      "exploratory": true,
+      "key": [
+        0,
+        3499,
+        25500
+      ],
+      "observer_side": 1,
+      "first_tick": 976,
+      "last_tick": 1012,
+      "first_frame": 67,
+      "last_frame": 71,
+      "observations": 5,
+      "first_absent_tick": 1062,
+      "matched": false,
+      "new_goblins": [
+        {
+          "side": 0,
+          "x": 3499,
+          "y": 27127,
+          "card_id": 28000004,
+          "hp": 293,
+          "max_hp": 293,
+          "kind": 15,
+          "address": "0x7283c7227d50",
+          "category": 5000027
+        },
+        {
+          "side": 0,
+          "x": 2090,
+          "y": 24687,
+          "card_id": 28000004,
+          "hp": 293,
+          "max_hp": 293,
+          "kind": 15,
+          "address": "0x7283c725e080",
+          "category": 5000028
+        },
+        {
+          "side": 0,
+          "x": 4901,
+          "y": 24687,
+          "card_id": 28000004,
+          "hp": 293,
+          "max_hp": 293,
+          "kind": 15,
+          "address": "0x7283c71f76a0",
+          "category": 5000029
+        }
+      ],
+      "unmatched_reason": "observation_gap",
+      "preemptive_log_attempts": [
+        {
+          "tick": 1012,
+          "xy": [
+            0.1944,
+            0.8594
+          ],
+          "confirmed": true,
+          "receipt_tick": 1060,
+          "target_lane": "right",
+          "log_lane": "left",
+          "correct_lane": false
+        }
+      ]
+    },
+    {
+      "file": "live_play_20261005_064842.jsonl",
+      "exploratory": true,
+      "key": [
+        0,
+        3499,
+        25500
+      ],
+      "observer_side": 1,
+      "first_tick": 3142,
+      "last_tick": 3170,
+      "first_frame": 247,
+      "last_frame": 248,
+      "observations": 2,
+      "first_absent_tick": 3198,
+      "matched": false,
+      "new_goblins": [],
+      "unmatched_reason": "not_exactly_three_new_goblins",
+      "preemptive_log_attempts": [
+        {
+          "tick": 3142,
+          "xy": [
+            0.8056,
+            0.8594
+          ],
+          "confirmed": true,
+          "receipt_tick": 3168,
+          "target_lane": "right",
+          "log_lane": "right",
+          "correct_lane": true
+        }
+      ]
+    },
+    {
+      "file": "live_play_20261005_064842.jsonl",
+      "exploratory": true,
+      "key": [
+        0,
+        3499,
+        25500
+      ],
+      "observer_side": 1,
+      "first_tick": 3458,
+      "last_tick": 3488,
+      "first_frame": 272,
+      "last_frame": 274,
+      "observations": 3,
+      "first_absent_tick": 3538,
+      "matched": false,
+      "new_goblins": [
+        {
+          "side": 0,
+          "x": 3499,
+          "y": 27127,
+          "card_id": 28000004,
+          "hp": 293,
+          "max_hp": 293,
+          "kind": 15,
+          "address": "0x7283c7238be0",
+          "category": 5000093
+        },
+        {
+          "side": 0,
+          "x": 2090,
+          "y": 24687,
+          "card_id": 28000004,
+          "hp": 293,
+          "max_hp": 293,
+          "kind": 15,
+          "address": "0x7283c718bbd0",
+          "category": 5000094
+        },
+        {
+          "side": 0,
+          "x": 4901,
+          "y": 24687,
+          "card_id": 28000004,
+          "hp": 293,
+          "max_hp": 293,
+          "kind": 15,
+          "address": "0x7283c72522e0",
+          "category": 5000095
+        }
+      ],
+      "unmatched_reason": "observation_gap",
+      "preemptive_log_attempts": [
+        {
+          "tick": 3488,
+          "xy": [
+            0.8056,
+            0.8594
+          ],
+          "confirmed": true,
+          "receipt_tick": 3536,
+          "target_lane": "right",
+          "log_lane": "right",
+          "correct_lane": true
+        }
+      ]
+    },
+    {
+      "file": "live_play_20261005_070510.jsonl",
+      "exploratory": false,
+      "key": [
+        1,
+        1499,
+        6499
+      ],
+      "observer_side": 0,
+      "first_tick": 1044,
+      "last_tick": 1094,
+      "first_frame": 73,
+      "last_frame": 78,
+      "observations": 6,
+      "first_absent_tick": 1100,
+      "matched": true,
+      "new_goblins": [
+        {
+          "side": 1,
+          "x": 1499,
+          "y": 5920,
+          "card_id": 28000004,
+          "hp": 221,
+          "max_hp": 221,
+          "kind": 14,
+          "address": "0x7283c718cc00",
+          "category": 5000034
+        },
+        {
+          "side": 1,
+          "x": 997,
+          "y": 6787,
+          "card_id": 28000004,
+          "hp": 221,
+          "max_hp": 221,
+          "kind": 14,
+          "address": "0x7283c71b12c0",
+          "category": 5000035
+        },
+        {
+          "side": 1,
+          "x": 1998,
+          "y": 6787,
+          "card_id": 28000004,
+          "hp": 221,
+          "max_hp": 221,
+          "kind": 14,
+          "address": "0x7283c7237020",
+          "category": 5000036
+        }
+      ],
+      "centroid_raw": [
+        1498.0,
+        6498.0
+      ],
+      "error_tiles": 0.0014142135623730952,
+      "all_spawning_kind14": true,
+      "target_own_xy": [
+        0.08327777777777778,
+        0.79690625
+      ],
+      "centroid_own_xy": [
+        0.08322222222222223,
+        0.7969375
+      ],
+      "lane_equal": true,
+      "preemptive_log_attempts": []
+    },
+    {
+      "file": "live_play_20261005_070510.jsonl",
+      "exploratory": false,
+      "key": [
+        1,
+        3499,
+        3499
+      ],
+      "observer_side": 0,
+      "first_tick": 2053,
+      "last_tick": 2104,
+      "first_frame": 161,
+      "last_frame": 164,
+      "observations": 4,
+      "first_absent_tick": 2135,
+      "matched": false,
+      "new_goblins": [
+        {
+          "side": 1,
+          "x": 3499,
+          "y": 2879,
+          "card_id": 28000004,
+          "hp": 110,
+          "max_hp": 221,
+          "kind": 14,
+          "address": "0x7283c72477c0",
+          "category": 5000063
+        },
+        {
+          "side": 1,
+          "x": 2900,
+          "y": 3681,
+          "card_id": 28000004,
+          "hp": 110,
+          "max_hp": 221,
+          "kind": 14,
+          "address": "0x7283c7200600",
+          "category": 5000064
+        }
+      ],
+      "unmatched_reason": "not_exactly_three_new_goblins",
+      "preemptive_log_attempts": []
+    },
+    {
+      "file": "live_play_20261005_070510.jsonl",
+      "exploratory": false,
+      "key": [
+        1,
+        2499,
+        3499
+      ],
+      "observer_side": 0,
+      "first_tick": 2854,
+      "last_tick": 2906,
+      "first_frame": 228,
+      "last_frame": 232,
+      "observations": 5,
+      "first_absent_tick": 2934,
+      "matched": false,
+      "new_goblins": [
+        {
+          "side": 1,
+          "x": 2090,
+          "y": 2570,
+          "card_id": 28000004,
+          "hp": 221,
+          "max_hp": 221,
+          "kind": 14,
+          "address": "0x7283c731a360",
+          "category": 5000096
+        },
+        {
+          "side": 1,
+          "x": 3030,
+          "y": 2915,
+          "card_id": 28000004,
+          "hp": 63,
+          "max_hp": 221,
+          "kind": 14,
+          "address": "0x7283c726ef10",
+          "category": 5000098
+        }
+      ],
+      "unmatched_reason": "not_exactly_three_new_goblins",
+      "preemptive_log_attempts": []
+    },
+    {
+      "file": "live_play_20261005_070510.jsonl",
+      "exploratory": false,
+      "key": [
+        1,
+        2499,
+        4499
+      ],
+      "observer_side": 0,
+      "first_tick": 3697,
+      "last_tick": 3729,
+      "first_frame": 295,
+      "last_frame": 297,
+      "observations": 3,
+      "first_absent_tick": 3757,
+      "matched": true,
+      "new_goblins": [
+        {
+          "side": 1,
+          "x": 2128,
+          "y": 3778,
+          "card_id": 28000004,
+          "hp": 221,
+          "max_hp": 221,
+          "kind": 14,
+          "address": "0x7283c7257d10",
+          "category": 5000133
+        },
+        {
+          "side": 1,
+          "x": 1903,
+          "y": 4785,
+          "card_id": 28000004,
+          "hp": 221,
+          "max_hp": 221,
+          "kind": 14,
+          "address": "0x7283c7331310",
+          "category": 5000134
+        },
+        {
+          "side": 1,
+          "x": 2896,
+          "y": 4842,
+          "card_id": 28000004,
+          "hp": 221,
+          "max_hp": 221,
+          "kind": 14,
+          "address": "0x7283c72a8520",
+          "category": 5000135
+        }
+      ],
+      "centroid_raw": [
+        2309.0,
+        4468.333333333333
+      ],
+      "error_tiles": 0.19245894223040005,
+      "all_spawning_kind14": true,
+      "target_own_xy": [
+        0.13883333333333334,
+        0.85940625
+      ],
+      "centroid_own_xy": [
+        0.12827777777777777,
+        0.8603645833333333
+      ],
+      "lane_equal": true,
+      "preemptive_log_attempts": [
+        {
+          "tick": 3701,
+          "xy": [
+            0.8056,
+            0.8594
+          ],
+          "confirmed": true,
+          "receipt_tick": 3727,
+          "target_lane": "left",
+          "log_lane": "right",
+          "correct_lane": false
+        }
+      ]
+    },
+    {
+      "file": "live_play_20261005_070510.jsonl",
+      "exploratory": false,
+      "key": [
+        1,
+        2499,
+        6499
+      ],
+      "observer_side": 0,
+      "first_tick": 4338,
+      "last_tick": 4387,
+      "first_frame": 345,
+      "last_frame": 348,
+      "observations": 4,
+      "first_absent_tick": 4397,
+      "matched": true,
+      "new_goblins": [
+        {
+          "side": 1,
+          "x": 2110,
+          "y": 5697,
+          "card_id": 28000004,
+          "hp": 221,
+          "max_hp": 221,
+          "kind": 14,
+          "address": "0x7283c7201630",
+          "category": 5000175
+        },
+        {
+          "side": 1,
+          "x": 1753,
+          "y": 6755,
+          "card_id": 28000004,
+          "hp": 221,
+          "max_hp": 221,
+          "kind": 14,
+          "address": "0x7283c72d31a0",
+          "category": 5000176
+        },
+        {
+          "side": 1,
+          "x": 2608,
+          "y": 7009,
+          "card_id": 28000004,
+          "hp": 221,
+          "max_hp": 221,
+          "kind": 14,
+          "address": "0x7283c72cc050",
+          "category": 5000177
+        }
+      ],
+      "centroid_raw": [
+        2157.0,
+        6487.0
+      ],
+      "error_tiles": 0.34221046155838075,
+      "all_spawning_kind14": true,
+      "target_own_xy": [
+        0.13883333333333334,
+        0.79690625
+      ],
+      "centroid_own_xy": [
+        0.11983333333333333,
+        0.79728125
+      ],
+      "lane_equal": true,
+      "preemptive_log_attempts": []
+    },
+    {
+      "file": "live_play_20261005_070510.jsonl",
+      "exploratory": false,
+      "key": [
+        1,
+        1499,
+        7499
+      ],
+      "observer_side": 0,
+      "first_tick": 4893,
+      "last_tick": 4910,
+      "first_frame": 381,
+      "last_frame": 383,
+      "observations": 3,
+      "first_absent_tick": 4948,
+      "matched": true,
+      "new_goblins": [
+        {
+          "side": 1,
+          "x": 1499,
+          "y": 6920,
+          "card_id": 28000004,
+          "hp": 221,
+          "max_hp": 221,
+          "kind": 14,
+          "address": "0x7283c730f840",
+          "category": 5000213
+        },
+        {
+          "side": 1,
+          "x": 997,
+          "y": 7787,
+          "card_id": 28000004,
+          "hp": 221,
+          "max_hp": 221,
+          "kind": 14,
+          "address": "0x7283c736feb0",
+          "category": 5000214
+        },
+        {
+          "side": 1,
+          "x": 1998,
+          "y": 7787,
+          "card_id": 28000004,
+          "hp": 221,
+          "max_hp": 221,
+          "kind": 14,
+          "address": "0x7283c7322bd0",
+          "category": 5000215
+        }
+      ],
+      "centroid_raw": [
+        1498.0,
+        7498.0
+      ],
+      "error_tiles": 0.0014142135623730952,
+      "all_spawning_kind14": true,
+      "target_own_xy": [
+        0.08327777777777778,
+        0.76565625
+      ],
+      "centroid_own_xy": [
+        0.08322222222222223,
+        0.7656875
+      ],
+      "lane_equal": true,
+      "preemptive_log_attempts": []
+    },
+    {
+      "file": "live_play_20261005_074149.jsonl",
+      "exploratory": false,
+      "key": [
+        1,
+        13500,
+        6499
+      ],
+      "observer_side": 0,
+      "first_tick": 700,
+      "last_tick": 730,
+      "first_frame": 47,
+      "last_frame": 50,
+      "observations": 4,
+      "first_absent_tick": 740,
+      "matched": true,
+      "new_goblins": [
+        {
+          "side": 1,
+          "x": 13242,
+          "y": 5772,
+          "card_id": 28000004,
+          "hp": 293,
+          "max_hp": 293,
+          "kind": 14,
+          "address": "0x7283c7255810",
+          "category": 5000027
+        },
+        {
+          "side": 1,
+          "x": 13804,
+          "y": 6941,
+          "card_id": 28000004,
+          "hp": 293,
+          "max_hp": 293,
+          "kind": 14,
+          "address": "0x7283c7264ae0",
+          "category": 5000028
+        },
+        {
+          "side": 1,
+          "x": 12854,
+          "y": 6760,
+          "card_id": 28000004,
+          "hp": 293,
+          "max_hp": 293,
+          "kind": 14,
+          "address": "0x7283c7274de0",
+          "category": 5000029
+        }
+      ],
+      "centroid_raw": [
+        13300.0,
+        6491.0
+      ],
+      "error_tiles": 0.20015993605114887,
+      "all_spawning_kind14": true,
+      "target_own_xy": [
+        0.75,
+        0.79690625
+      ],
+      "centroid_own_xy": [
+        0.7388888888888889,
+        0.79715625
+      ],
+      "lane_equal": true,
+      "preemptive_log_attempts": []
+    },
+    {
+      "file": "live_play_20261005_074149.jsonl",
+      "exploratory": false,
+      "key": [
+        1,
+        14500,
+        6499
+      ],
+      "observer_side": 0,
+      "first_tick": 2054,
+      "last_tick": 2094,
+      "first_frame": 166,
+      "last_frame": 170,
+      "observations": 5,
+      "first_absent_tick": 2104,
+      "matched": true,
+      "new_goblins": [
+        {
+          "side": 1,
+          "x": 14500,
+          "y": 5472,
+          "card_id": 28000004,
+          "hp": 293,
+          "max_hp": 293,
+          "kind": 14,
+          "address": "0x7283c71e2060",
+          "category": 5000058
+        },
+        {
+          "side": 1,
+          "x": 15389,
+          "y": 7009,
+          "card_id": 28000004,
+          "hp": 293,
+          "max_hp": 293,
+          "kind": 14,
+          "address": "0x7283c71f25b0",
+          "category": 5000059
+        },
+        {
+          "side": 1,
+          "x": 13611,
+          "y": 7009,
+          "card_id": 28000004,
+          "hp": 293,
+          "max_hp": 293,
+          "kind": 14,
+          "address": "0x7283c71c5680",
+          "category": 5000060
+        }
+      ],
+      "centroid_raw": [
+        14500.0,
+        6496.666666666667
+      ],
+      "error_tiles": 0.0023333333333330304,
+      "all_spawning_kind14": true,
+      "target_own_xy": [
+        0.8055555555555556,
+        0.79690625
+      ],
+      "centroid_own_xy": [
+        0.8055555555555556,
+        0.7969791666666667
+      ],
+      "lane_equal": true,
+      "preemptive_log_attempts": []
+    },
+    {
+      "file": "live_play_20261005_074149.jsonl",
+      "exploratory": false,
+      "key": [
+        1,
+        499,
+        5499
+      ],
+      "observer_side": 0,
+      "first_tick": 3055,
+      "last_tick": 3109,
+      "first_frame": 251,
+      "last_frame": 255,
+      "observations": 5,
+      "first_absent_tick": 3137,
+      "matched": false,
+      "new_goblins": [
+        {
+          "side": 1,
+          "x": 618,
+          "y": 4927,
+          "card_id": 28000004,
+          "hp": 293,
+          "max_hp": 293,
+          "kind": 15,
+          "address": "0x7283c71ed270",
+          "category": 5000088
+        },
+        {
+          "side": 1,
+          "x": 143,
+          "y": 5694,
+          "card_id": 28000004,
+          "hp": 293,
+          "max_hp": 293,
+          "kind": 15,
+          "address": "0x7283c7256a90",
+          "category": 5000089
+        }
+      ],
+      "unmatched_reason": "not_exactly_three_new_goblins",
+      "preemptive_log_attempts": [
+        {
+          "tick": 3073,
+          "xy": [
+            0.8056,
+            0.8594
+          ],
+          "confirmed": true,
+          "receipt_tick": 3099,
+          "target_lane": "left",
+          "log_lane": "right",
+          "correct_lane": false
+        }
+      ]
+    },
+    {
+      "file": "live_play_20261005_074149.jsonl",
+      "exploratory": false,
+      "key": [
+        1,
+        3499,
+        7499
+      ],
+      "observer_side": 0,
+      "first_tick": 3647,
+      "last_tick": 3675,
+      "first_frame": 296,
+      "last_frame": 297,
+      "observations": 2,
+      "first_absent_tick": 3705,
+      "matched": true,
+      "new_goblins": [
+        {
+          "side": 1,
+          "x": 3437,
+          "y": 7456,
+          "card_id": 28000004,
+          "hp": 293,
+          "max_hp": 293,
+          "kind": 14,
+          "address": "0x7283c71b19b0",
+          "category": 5000110
+        },
+        {
+          "side": 1,
+          "x": 2732,
+          "y": 8166,
+          "card_id": 28000004,
+          "hp": 293,
+          "max_hp": 293,
+          "kind": 14,
+          "address": "0x7283c7268260",
+          "category": 5000111
+        },
+        {
+          "side": 1,
+          "x": 4119,
+          "y": 8003,
+          "card_id": 28000004,
+          "hp": 78,
+          "max_hp": 293,
+          "kind": 14,
+          "address": "0x7283c71e9650",
+          "category": 5000112
+        }
+      ],
+      "centroid_raw": [
+        3429.3333333333335,
+        7875.0
+      ],
+      "error_tiles": 0.3823995874009861,
+      "all_spawning_kind14": true,
+      "target_own_xy": [
+        0.1943888888888889,
+        0.76565625
+      ],
+      "centroid_own_xy": [
+        0.19051851851851853,
+        0.75390625
+      ],
+      "lane_equal": true,
+      "preemptive_log_attempts": []
+    }
+  ],
+  "script_sha256": "24343df0107cc416a8e9ba9eae344bb313e50fe3fdc6656015e9c9ee5dde719d",
+  "plan_sha256": "62c35bf9e01e73015fa1bf7f29789cf4dae59ac72a6f5191961a7951286a9d6c",
+  "limitations": [
+    "First-observed goblin centroid is a temporal public landing proxy, not exact impact or damage attribution.",
+    "The 06:48 example was exploratory; no candidate acceptance is established.",
+    "Missing, rapidly killed or ambiguous spawns remain unmatched, not successful predictions."
+  ]
+}

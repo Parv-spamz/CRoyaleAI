@@ -1,0 +1,25 @@
+{
+  "complete": true,
+  "report_sha256": "4472527895c6f4b745887091695a9e2c2c314f9320ced1f2312ecfe1491adcaf",
+  "verified_sha256": "2b14920da34e3591c11ee14b1e73a1a3edd9af76baa6bf20a83e0995115bc30e",
+  "receipts": {
+    "collection": {
+      "receipt_sha256": "d199b3ca6b701b687dc7b8210a532909d7c5efcbd4bcc0573454ffb1784614e6",
+      "output_sha256": "3d47df8ff345fb7c20d3809df3b9f6895d3acf6c5eeed97fcf5c17b638d8f314",
+      "seconds": 513.3768529891968
+    },
+    "independent": {
+      "receipt_sha256": "a3299897cd79be81984c835c06561556c2122d9d0a58672877d39cf026b548c4",
+      "output_sha256": "03b73ccd232c4370734a54d41ab82f0d1d3e87997820fccdc9901e1d1163eafa",
+      "seconds": 70.8196792602539
+    }
+  },
+  "games": 32,
+  "pairs": 16,
+  "fulltime_pairs": 2,
+  "removed_decisions": 30,
+  "engineering_only": true,
+  "production_changed": false,
+  "new_models": 0,
+  "deployment_accepted": false
+}

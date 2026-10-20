@@ -1,0 +1,14 @@
+{
+  "command": [
+    "cargo",
+    "test",
+    "--profile",
+    "gate",
+    "--no-fail-fast"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale-20261005\\RoyaleSim\\crates\\royalesim",
+  "exit_code": 101,
+  "seconds": 3023.2121500968933,
+  "output_sha256": "2656924c25a004b3a0bb53136e75d0825a139cfd8bc66b16fbaa4d1d6630d512",
+  "runtime_manifest_sha256": "eb455896367d94107dbf3fd35ffc8f01de097a1ac2c3beebdca00445b2f45903"
+}

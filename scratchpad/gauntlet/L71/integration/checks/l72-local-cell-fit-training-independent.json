@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\local_cell_fit\\verify_training.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "LOCAL_CELL_FIT_TRAINING_VERIFIED",
+  "matched": true,
+  "output_sha256": "c3525eb2e72dcd78e42b2b1aa94f827ca5ba1633dd0a1d5a9d9e5565ae465002",
+  "seconds": 6.835611343383789
+}

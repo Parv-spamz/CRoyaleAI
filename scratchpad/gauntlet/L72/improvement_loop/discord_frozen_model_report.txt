@@ -1,0 +1,16 @@
+ClashBot new-model report: all8 L71 IL candidates REJECTED; none deployed. All34 jobs complete. Each candidate:1000 optimizer updates,128000 training draws. Nine prediction caches independently recounted (344853 rows); exact receipts/hashes reconciled.
+
+Matched OLD-runtime results. Columns: ghost wins/299; reactive wins/48; gated Rocket recall/671; correct/wrong-lane Barrel Logs/39. R1e baseline:285;32;81;23/11.
+v4_uniform: 283;27;151;26/12 -- REJECT
+v4_rocket: 274;25;342;28/10 -- REJECT
+v5_uniform: 277;28;147;25/13 -- REJECT
+v5_rocket: 281;27;345;28/10 -- REJECT
+v5_rocket_xbow: 283;29;318;28/9 -- REJECT
+v5_rocket_barrel: 283;22;328;29/8 -- REJECT
+v6_rocket_barrel: 281;21;327;36/1 -- REJECT
+v6_rocket_both: 270;31;321;37/1 -- REJECT
+
+Every candidate:0/10 aimed expert finishing Rockets and zero actual Rocket finish-offs in both game screens. All corrected-body arms fail mandatory spawner improvement; none establishes the requested Night Witch improvement. Full combined v6 has37 correct/1 wrong Barrel response, but ghost270 vs285 (-5.02pp, paired95% CI[-8.70,-1.34]) and reactive31 vs32. Barrel gains cannot waive losses elsewhere.
+Rocket-only v4:226 ghost Rockets/41 tower Rockets vs R1e42/5, yet274 vs285 wins (-3.68pp,95% CI[-7.02,-0.33]). Simply using more Rockets hurts here. Extra X-Bow exposure does not establish resource/tower benefit. Sampling and Rocket-area options also failed and remain off.
+
+Next: isolate aim, spawner adaptation and the generic target residual; test expert efficient-defense/defensive-X-Bow-to-princess-Rocket sequences under fixed controls. Existing defensive_xbow_rocket_cycle label only encodes placement, not follow-up Rockets. Fresh confirmation reconstruction/design must finish before successor training; new RL uses the updated verified simulator. These historical results are not fresh confirmation or live-landing proof. R1e remains the owner manual-farming comparator, not the final replacement outcome. Detailed evidence: L72/improvement_loop/FROZEN_FINAL_REVIEW.md and bound JSON/receipts.

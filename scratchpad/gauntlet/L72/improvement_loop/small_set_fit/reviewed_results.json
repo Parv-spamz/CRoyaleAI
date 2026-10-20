@@ -1,0 +1,101 @@
+{
+  "complete": true,
+  "receipts": {
+    "prepare": {
+      "receipt_sha256": "2e99fa260ca099e674ef18e952144815af05da72f2b929ce497b363a68dfba4b",
+      "output_sha256": "deee1111ebf73a91c78686ea064dd752decfd05a865b6f2b6f0bc1794b56c80b",
+      "seconds": 67.42128872871399
+    },
+    "train": {
+      "receipt_sha256": "65031c238a3552500a12ac6ded9642081b2c6a57066d8fd6411ecb5bd4a11f9b",
+      "output_sha256": "9eed3ada2483ebd39181c698539180fd1bf39d851c590984cf50595027a3eb30",
+      "seconds": 707.0898234844208
+    },
+    "training-independent": {
+      "receipt_sha256": "3f8f112c507c029c416048c748958944bd22a77f769485878cd74d4a3cc67599",
+      "output_sha256": "6fb5199ebaaee877507f51794199f178d1469607ca5c2f352bd957c419878f6f",
+      "seconds": 6.90880274772644
+    },
+    "eval": {
+      "receipt_sha256": "3ee91259f3bd83a9c4964732902de3de61ba32be63749e887111858ab2b4dc18",
+      "output_sha256": "8ca2b0dd880c608831f842976fd115333f58d0557b03adef51865eab207abbef",
+      "seconds": 55.13953137397766
+    },
+    "results-independent": {
+      "receipt_sha256": "046f0102a81103289408abba43a81c07c730f482957455f01aaef5c8418572b6",
+      "output_sha256": "b6e47e1759970aa5a057c26112a162d08befc1537fd8c0110de6052746f95620",
+      "seconds": 7.540836334228516
+    },
+    "reviewed-evidence": {
+      "receipt_sha256": "232fda1834bd632302c3b51c4d0d46a57bbc2f055b7cfdf4afe2aad88bf0807e",
+      "output_sha256": "20c37367bafeb5bfff2827431afe0bf38e61c2557ae7912c31ac57fccfc144b3",
+      "seconds": 0.5782880783081055
+    },
+    "discord": {
+      "receipt_sha256": "c63e2a632fc91f8be97994ecabd7bef1e029cc61513de06ce7669091836f112b",
+      "output_sha256": "af86c36117122f76cc6520b869e771f64a0e1a165187812cdcd029a55977f32a",
+      "seconds": 0.7653005123138428
+    }
+  },
+  "diagnostic_fit": false,
+  "filters": {
+    "r1e_corrected/native": {
+      "play_fit": false,
+      "rocket_card_fit": false,
+      "rocket_aim_fit": false,
+      "wait_fit": false
+    },
+    "r1e_corrected/mirrored": {
+      "play_fit": false,
+      "rocket_card_fit": false,
+      "rocket_aim_fit": false,
+      "wait_fit": false
+    },
+    "ordinary_v5/native": {
+      "play_fit": false,
+      "rocket_card_fit": false,
+      "rocket_aim_fit": false,
+      "wait_fit": false
+    },
+    "ordinary_v5/mirrored": {
+      "play_fit": false,
+      "rocket_card_fit": false,
+      "rocket_aim_fit": false,
+      "wait_fit": false
+    },
+    "assay_final/native": {
+      "play_fit": false,
+      "rocket_card_fit": true,
+      "rocket_aim_fit": false,
+      "wait_fit": true
+    },
+    "assay_final/mirrored": {
+      "play_fit": false,
+      "rocket_card_fit": true,
+      "rocket_aim_fit": false,
+      "wait_fit": true
+    }
+  },
+  "quarantined": true,
+  "eligible_policy_parent": false,
+  "sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\close_small_set_fit_report.py": "9443b1a143fd7c843e7c03c3393768080b4518a7adda76c4ec1d163c3a3b322f",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\small_set_fit\\message.md": "d69078488766c998618f5a2693d3653c4649b2badb21d97c230c60f953496ce3",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\small_set_fit\\reviewed_evidence.json": "e350214083731bcdb4329d9de0c52a130851cbfd7ebef7596052104ef5824efa",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\small_set_fit\\prepared.json": "da6a65961edae27bc188b8992ef04e87155a1c9cdd6492d1fb9707ddeb3906e6",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\small_set_fit\\trained.json": "d354bb844db7e9065a312983557ae5b9c8c9bf6d8fec3d01f665beb45a39818a",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\small_set_fit\\training_verified.json": "fda2279deb0cf36ddf2cf3de9e95da47f1399a3667a8e8a2b6b769ecedd56975",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\small_set_fit\\evaluated.json": "dccdc8db877dff50497c419ab2da660d1757171e3bff1bb5bc741fcc7b7841e4",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\small_set_fit\\results_verified.json": "6aac249092068c638fc7c653236cd359056b464ebfdc3948f7da4427801df7d1",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\small_set_fit\\chain_complete.json": "bc6c3c988a2447c327bac90f044cc17be0c54184608aadd708ee435cf456c601"
+  },
+  "delivery_path": "reports\\discord\\deliveries\\model-small-set-fit-v5-diagnostic\\delivery.json",
+  "delivery_sha256": "0f965b331ee4af21cf1e1fb64958b8cb61426314ffa6700305ba164015fd281a",
+  "message_sha256": "d69078488766c998618f5a2693d3653c4649b2badb21d97c230c60f953496ce3",
+  "message_ids": [
+    "1556965420752175196",
+    "1556965422559924255"
+  ],
+  "accepted": false,
+  "deployed": false
+}

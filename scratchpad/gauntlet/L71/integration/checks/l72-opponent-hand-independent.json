@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/ext/Royale/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/opponent_hand_reader/verify.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "OPPONENT_HAND_VERIFIED",
+  "matched": true,
+  "output_sha256": "b4d1644804827d1e4f694fa4039b09a732bb4ea7b7a3f3e691ead5dcfd1ea3d4",
+  "seconds": 11.357862949371338
+}

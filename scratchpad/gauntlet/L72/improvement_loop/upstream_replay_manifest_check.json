@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-10-05T07:51:25.421945",
+  "public_api": "https://huggingface.co/api/datasets/VanguardX101/IL_Replay",
+  "revision": "059d43a02138a34b1b3009cc2acc7630fb99a638",
+  "manifest_url": "https://huggingface.co/datasets/VanguardX101/IL_Replay/resolve/059d43a02138a34b1b3009cc2acc7630fb99a638/manifest.json",
+  "api_sha256": "5876028f6932e43faa78189b2cf38af58295f89ff8af63f9654fc9f4ef2fe2f8",
+  "remote_manifest_sha256": "ffcf5b2eea21932de76fe8ab1a63a2e19bd605ee02718482ebd3d82c774299fc",
+  "local_manifest_sha256": "ffcf5b2eea21932de76fe8ab1a63a2e19bd605ee02718482ebd3d82c774299fc",
+  "local_replay_parts": 52,
+  "remote_replay_parts": 52,
+  "new_or_changed": [],
+  "removed": [],
+  "remote_matches": 252238,
+  "credentials_used": false
+}

@@ -1,0 +1,67 @@
+{
+  "complete": true,
+  "replays": 160,
+  "accounting": {
+    "log_entries": 13047,
+    "matching_play_frame_hand": 12696,
+    "primary": 12696,
+    "missing_or_non_four_card_hand": 351
+  },
+  "summary": {
+    "training/primary/ideal": {
+      "queries": 2272,
+      "full_predictions": 1058,
+      "full_exact": 1058,
+      "full_errors": 0,
+      "in_claims": 6461,
+      "in_correct": 6461,
+      "out_claims": 8448,
+      "out_correct": 8448,
+      "unrevealed_slots": 3267,
+      "issue_queries": 0
+    },
+    "training/primary/public": {
+      "queries": 2272,
+      "full_predictions": 1008,
+      "full_exact": 980,
+      "full_errors": 28,
+      "in_claims": 6222,
+      "in_correct": 6190,
+      "out_claims": 8351,
+      "out_correct": 8297,
+      "unrevealed_slots": 3321,
+      "issue_queries": 129
+    },
+    "development/primary/ideal": {
+      "queries": 10424,
+      "full_predictions": 4692,
+      "full_exact": 4692,
+      "full_errors": 0,
+      "in_claims": 29878,
+      "in_correct": 29878,
+      "out_claims": 39100,
+      "out_correct": 39100,
+      "unrevealed_slots": 14414,
+      "issue_queries": 0
+    },
+    "development/primary/public": {
+      "queries": 10424,
+      "full_predictions": 4354,
+      "full_exact": 4245,
+      "full_errors": 109,
+      "in_claims": 28611,
+      "in_correct": 28448,
+      "out_claims": 38620,
+      "out_correct": 38370,
+      "unrevealed_slots": 14842,
+      "issue_queries": 719
+    }
+  },
+  "outputs": {
+    "by_replay.json": "defecacb902d25ceda8f9aeab43445dfdd41297fe475d43b8cb5af3d415422d3",
+    "events.jsonl": "90c44fbd67a420688d85e2b4eb476deab0f2b90466ab0d02eefc465a2219e7b2",
+    "predictions.jsonl": "476ea606571f4bfe0d2a04378fee41011dc34a783a7e7dc61730dc8ba057552f"
+  },
+  "started_sha256": "f1f756a1c6123cb9ba0f368c8c4c57402dde0fa71ae1621dd7ded711719f38cc",
+  "scope": "Recorded native re-drives; conditional public estimates; no model change"
+}

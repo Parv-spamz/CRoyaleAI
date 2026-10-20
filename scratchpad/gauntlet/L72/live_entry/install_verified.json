@@ -1,0 +1,6 @@
+{
+  "canonical_sha256": "f450d28bccd4f958e988bcd8b61fe67e67568807d9fb5ec328b7157e48c96154",
+  "tested_prepared_sha256": "a42f60410c9cebc8e4add32085909a50761b01c9a29e2a30b526545587529679",
+  "only_removed_line": "# Candidate Q1/Q2 entry point; original live_play.py untouched. Source SHA256 a1f28128fdee92ddaad398d23c5ee7a83ac73d42919d431db2419fe24d180cc5",
+  "semantic_code_unchanged_after_tests": true
+}

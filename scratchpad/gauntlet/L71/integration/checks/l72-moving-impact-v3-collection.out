@@ -1,0 +1,9 @@
+ROOT s0_p0_l11_n1 {'wait': 0, 'wait_repeat': 0, 'snapshot': 0, 'forward2': 0, 'forward4': 1, 'sideways6': 0}
+Traceback (most recent call last):
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\moving_impact_readiness_v3\collect.py", line 195, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\benpe\ClashBot\scratchpad\gauntlet\L72\improvement_loop\moving_impact_readiness_v3\collect.py", line 106, in main
+    assert len(results) == count and all(r.status == DeployStatus.OK for r in results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

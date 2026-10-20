@@ -1,0 +1,21 @@
+{
+  "complete": true,
+  "positive": 1,
+  "negative": 9,
+  "source_sha256": "75ee4faf7eb1f390c6b225107bed6d16da66f013429e3edbea855f00c168e00e",
+  "exact_membership_fragment_sha256": "72fa179c281e1f8cf0780f9c734545d07b3c330379acaefe9ba42f699ab5e2d2",
+  "source_fragment": "r=json.loads(line);row_id=r['id'];assert row_id in lookup and row_id not in seen;seen.add(row_id)\ni=lookup[row_id];base={k:a[k][i] for k in FIELDS}\nassert r['rep']==int(base['rep']) and r['side']==int(base['side']) and r['tick']==int(base['tick'])\nassert r['tag']==binding['tags'][int(base['rep'])] and r['part']==('development' if a['part'][i] else 'training')\nassert r['play']==int(base['y_gate']) and r['expert_card']==cv[int(base['y_card'])]\n",
+  "full_audit_repeated": false,
+  "executed_corruptions": [
+    "id",
+    "rep",
+    "side",
+    "tick",
+    "tag",
+    "part",
+    "play",
+    "expert_card",
+    "duplicate_id"
+  ],
+  "execution": "inline Python; exact compiled fragment preserved; no full audit repeated"
+}

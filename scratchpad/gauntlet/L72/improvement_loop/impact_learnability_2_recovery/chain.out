@@ -1,0 +1,17 @@
+START collect
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\impact_learnability_2_recovery\\collect.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "IMPACT_LEARNING_DATA_COLLECTED", "matched": true, "output_sha256": "1eae426ef307ff7b63c4e068dab7948bb77f6deb6bef2c49bd322580f1770692", "seconds": 485.29642271995544}
+INSPECTED_CHECK_PASS
+COMPLETE collect
+START data-independent
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\impact_learnability_2_recovery\\verify_data.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "IMPACT_LEARNING_DATA_VERIFIED", "matched": true, "output_sha256": "aad696de5ccba5b51cce668e2cd27b4b21fcc2652bac911b0e994c1c43edff86", "seconds": 177.15663409233093}
+INSPECTED_CHECK_PASS
+COMPLETE data-independent
+START train
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\impact_learnability_2_recovery\\train.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "IMPACT_LEARNING_TRAINED", "matched": true, "output_sha256": "de3ea1c9f02871c8e1e6c9ef2a6ecc4045bacdbd98f89d87d217c241d5085854", "seconds": 35.1286358833313}
+INSPECTED_CHECK_PASS
+COMPLETE train
+START results-independent
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\impact_learnability_2_recovery\\verify_results.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "IMPACT_LEARNING_RESULTS_VERIFIED", "matched": true, "output_sha256": "765f24553e13024b912c0c983b8d57b1e3f92cca9d43557a9aff7f53b7f7204d", "seconds": 12.948921203613281}
+INSPECTED_CHECK_PASS
+COMPLETE results-independent
+IMPACT_LEARNING_CHAIN_COMPLETE

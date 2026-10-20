@@ -1,0 +1,21 @@
+START prepare
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_10\\prepare.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "ORDINARY_NO_DROPOUT_PREPARED", "matched": true, "output_sha256": "68b4df9857df1b600981108a6c554ab949c222d22c72b0e9d9c5270066c8009e", "seconds": 72.82383561134338}
+INSPECTED_CHECK_PASS
+COMPLETE prepare
+START train
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_10\\train.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "ORDINARY_NO_DROPOUT_TRAINED", "matched": true, "output_sha256": "cd3e8e77c8daedc697f3d5767ee77ae11c5b244c81908503a8be02b94669cb80", "seconds": 1257.577097415924}
+INSPECTED_CHECK_PASS
+COMPLETE train
+START training-independent
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_10\\verify_training.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "ORDINARY_NO_DROPOUT_TRAINING_VERIFIED", "matched": true, "output_sha256": "30da7d1e078860eb2a5e583a8d935123e82075e9fc8b1049187449b02f9b9828", "seconds": 4.482316017150879}
+INSPECTED_CHECK_PASS
+COMPLETE training-independent
+START eval
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_10\\evaluate.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "ORDINARY_NO_DROPOUT_EVALUATED", "matched": true, "output_sha256": "808d88841ddba081028b1eeb881ed330de1bee73c1463ebf3fbf100912cdfaf1", "seconds": 79.59463906288147}
+INSPECTED_CHECK_PASS
+COMPLETE eval
+START results-independent
+{"command": ["C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_10\\verify_results.py"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "ORDINARY_NO_DROPOUT_RESULTS_VERIFIED", "matched": true, "output_sha256": "27c72fd1a17165647afeae50d35b1d02deb764e921d7c8c0ad7371633dbe74c3", "seconds": 69.31998634338379}
+INSPECTED_CHECK_PASS
+COMPLETE results-independent
+ORDINARY_NO_DROPOUT_CHAIN_COMPLETE

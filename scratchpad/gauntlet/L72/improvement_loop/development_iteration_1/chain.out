@@ -1,0 +1,10 @@
+START r1e-eval
+{"command": ["C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\evaluate.py", "--arm", "r1e_corrected"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "DEVELOPMENT_1_EVALUATION_COMPLETE", "matched": true, "output_sha256": "765121c7ea7dd539f0fe511d3247b14c26515ca2660aae379bf36eea8a8dd6f1", "seconds": 66.01062560081482}
+INSPECTED_CHECK_PASS
+COMPLETE r1e-eval
+START v5-train
+{"command": ["C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\train.py", "--arm", "ordinary_v5"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 0, "expected": "DEVELOPMENT_1_FULL_ARM_COMPLETE", "matched": true, "output_sha256": "682c1cabb20e91ee48b72ecb48960f857161d5526987a8e6856a7819c93574c9", "seconds": 222.695219039917}
+INSPECTED_CHECK_PASS
+COMPLETE v5-train
+START v5-eval
+{"command": ["C:\\Users\\benpe\\ClashBot\\icebow\\.venv\\Scripts\\python.exe", "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\development_iteration_1\\evaluate.py", "--arm", "ordinary_v5"], "cwd": "C:\\Users\\benpe\\ClashBot", "shell": "none; subprocess argument vector", "exit_code": 1, "expected": "DEVELOPMENT_1_EVALUATION_COMPLETE", "matched": false, "output_sha256": "456963f55f4e9bb2dde4a1c15ca18217f268da3a2493204c94053db1df062bcb", "seconds": 50.527982234954834}

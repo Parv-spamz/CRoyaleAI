@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\benpe\\ClashBot\\research\\ext\\Royale\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\benpe\\ClashBot\\scratchpad\\gauntlet\\L72\\improvement_loop\\dropout_free_fit\\verify_training.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "DROPOUT_FREE_FIT_TRAINING_VERIFIED",
+  "matched": true,
+  "output_sha256": "28cd91e36b6697893f87f5bca01c3c7a4ad7f0eac2a918c208329cc134c2594d",
+  "seconds": 6.791633367538452
+}

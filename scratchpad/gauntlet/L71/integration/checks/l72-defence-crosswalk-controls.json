@@ -1,0 +1,14 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/verify_defence_binding.py",
+    "--self-test"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "DEFENCE_BINDING_CONTROLS_PASS",
+  "matched": true,
+  "output_sha256": "c6f6a2cd9e4ddb80f4a30597c619aada1b9449b87732f3e6b5abbb4a15e68608",
+  "seconds": 0.5661485195159912
+}

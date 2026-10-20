@@ -1,0 +1,1437 @@
+{
+  "complete": true,
+  "replays": 162,
+  "totals": {
+    "usable": 80,
+    "excluded": 82,
+    "reason:undriven_commands": 47,
+    "reason:rejected_commands": 59,
+    "reason:skipped_commands": 47,
+    "reason:crown_mismatch": 48
+  },
+  "by_split": {
+    "confirmation": {
+      "usable": 80,
+      "excluded": 82
+    }
+  },
+  "by_stratum": {
+    "confirmation:exact_icebow": {
+      "usable": 80,
+      "excluded": 82
+    },
+    "confirmation:rocket_deck": {
+      "usable": 80,
+      "excluded": 82
+    },
+    "confirmation:rocket_tornado_deck": {
+      "usable": 80,
+      "excluded": 82
+    },
+    "confirmation:xbow_deck": {
+      "usable": 80,
+      "excluded": 82
+    },
+    "confirmation:icebow_vs_furnace": {
+      "usable": 10,
+      "excluded": 5
+    },
+    "confirmation:versus_furnace": {
+      "usable": 10,
+      "excluded": 5
+    },
+    "confirmation:icebow_vs_witch": {
+      "excluded": 3
+    },
+    "confirmation:versus_witch": {
+      "excluded": 3
+    },
+    "confirmation:icebow_vs_night-witch": {
+      "excluded": 11,
+      "usable": 9
+    },
+    "confirmation:versus_night-witch": {
+      "excluded": 11,
+      "usable": 9
+    }
+  },
+  "commands": {
+    "source_commands": 12957,
+    "driven_commands": 11833,
+    "accepted_commands": 11423,
+    "skipped_commands": 62,
+    "repeat": 17
+  },
+  "coverage": {
+    "accepted_ability_events": 316,
+    "projectiles_rows": 61986,
+    "past_motion_tti_known": 14002,
+    "area_effects_rows": 24506,
+    "frames": 81279,
+    "area_tracks": 4153,
+    "projectile_tracks": 46075,
+    "persistent_baby_dragon_aura_refreshes": 13
+  },
+  "exact_icebow": [
+    {
+      "tag": "01c90c5ccc3a401888c7c42d47c18813",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "02f3776ec00145a094be0628d209b0ed",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "04d87cf157b14e0e85ff84fe059e0db8",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "060812c75cdf45f08e8e58c9b05fdecc",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "0818a443d2c54d20b9ef005406648fca",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "097bee258c3a4bb89464ba7df04dd9d4",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "09f639f7623a43c085d9af0dd433494e",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "0a128d17c14943c3854d1da3ea295200",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ]
+    },
+    {
+      "tag": "0cb8fa88758b4d99bc2016e16c7bbabc",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ]
+    },
+    {
+      "tag": "0cf0fb5888444adf8cde74db3b5caccd",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "107c0e855cde4699b873ea4b83f0b945",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "119428f46a034eeea84309af4029cf43",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "13f41783d44b43bb9ac36ee7fde9c181",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ]
+    },
+    {
+      "tag": "17b000ad9ce84c41923b528265409fb1",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "1948b877654a475280242c05d725266b",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "1aa421d46a904cd881af65918dd4303c",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "1e3bca5da52a4d729d6ffec1e3c2f431",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "1fbc71140efe485c8f6ff6c181e794de",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "203d3b9e5c9349c0b04ecbd24552786c",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "rejected_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "21bf959d61da4d7093a8afbc93e3d0f0",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "21c067772f434c69a9cefb52d0f3148b",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "223c88e8753c4c348bc0091850e74b89",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "223f1e3737ab4779b74e12de9fbcae4c",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "23a756de18dd42a78a9481930070b837",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "23c6012eccd646dc98cc9238e8063029",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "24305607d87b4332847f999adf9e45ec",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "265d434f17244e9590e584473225349f",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "2b6e9b281212497ca169cd2688cfcba4",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "31a0056abcb24f639996a5e012f3417d",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "338f575506704ea08601e4441b8bfa36",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "3412868827c343dd956322304040940b",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "344af528739240f0ac2f6dac1b059412",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "346f992be3074c09ac5c46108dac1984",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "3483356a35d64123a374dc4d0127e620",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "3519f449b6d14e118deb073744e5af21",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "3acb13f0c30e4f46b4505f0a044946a2",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "3bbbd763494640c49d3d7b21e1a5e9ef",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "3d9adf2e5ac248e39ec0846bcb7a821b",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "3f7b9bf3703a4d738be08c7804f78023",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "40471282469242aeb861e6571a17209e",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "439f84fb0b94416fb6f33e0624803ab5",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "43d4199ed82243e8a5ba4e92f4f5f8ea",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "4809e34081164cb4910409b430865099",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "rejected_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "488af28ae0f04dc6a17bb44358af84c4",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "4b5e1f45d2d845a4aed4268d401d95dd",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "4caca5b71eaa46f08639da3815ff2f03",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "4e8d7608cf29486eb5e354fe2e2eac15",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "4ed92fa6084e4e11b50cd810613714b0",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "4f7fed54033c462391b10bf8467e58b8",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "4fbafe34ce6a47728b0519b350ed7962",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "511962d005fe49b498e6af92a84e3066",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ]
+    },
+    {
+      "tag": "52d42408fd934f5ca851c53a27adbad6",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "530419bd4ea840ce81468b61927850bf",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ]
+    },
+    {
+      "tag": "54689ea27a86424e9fe73f7ffcbc411d",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "57cf318d53a445abb63377893b5ee142",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "5d59ab7ed1084312a770fc82117a5222",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "5fbbbbc1898243c89d3bd1a4c17667fb",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "615758134ea34df68a36bc7925b9b434",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "6163c45baaf44dec9cbcff3ed50b5edd",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "62e5470add1e474a9998eefafe8628b5",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "6674819abccb4b8d889ad238a4123606",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "6b586b4bba144177b82cb24790c7e24e",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "rejected_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "6c914bdaf0c546809c1a659345e9f9fc",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "6f78959ef6f4467aa1075a70d4268ea4",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "70e058e1feab41f39b27494d429b8a10",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "71bbd482dc1149c9a5fe89a0019601a1",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "76c98259919746fd96d409e7f15f84e4",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "77659a9010204e1cbacd7c847a00b1e6",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "7830e7981d804f2186ae530916c3de32",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "784dc82e4409483f8968066deff7cb6b",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "7a143770ce7740ca9000fed6e02b6551",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "7a4c0a1289354f2aba963f178feb48d3",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "7c79fdf6dc9d40e2ae5d32bfd702d8fe",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ]
+    },
+    {
+      "tag": "7f9ee8a66ab64c758a4bec1edf3f8b04",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "801ce7c91f34480a9367334fa8f98b19",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "8314a953979842c784299abee7d6e136",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "83a1caa8c5414b4c995208b6c59e5099",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "852827f4d7ce44b186a0306379f272fc",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "877aebf867c646ffae7ff4d883c9e5a0",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "88fdfed7c878442b813ad7ec28865522",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "89170b08166b45f9a224365d7a5657fd",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "8af66b53f9e347aaa813b9998c3fedaa",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "8ca3b501f4cc4ec8a15648370e28cc63",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "8f287422a7944fe88bd671af4f848d62",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "rejected_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "8f2e53307aba4dc8ab2a6d7653397e80",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "91ee15fcdad14930a71b46efc7f1d082",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "924702e1ab994e19be81dfbac101f5b2",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "9427dd3582294d2abbeff8eb27247737",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "97cbb6b5f94b4e5bbb4b944ff3b8d6b1",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "98504ee4d78c4b84853a4b4907fad1db",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "99245605759040deb5ac5f70eac81b66",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "9ff5b8e7949d41f29657ac60db1b9f00",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "a11cb21ba6324d39ace590b6b989922f",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "rejected_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "a2652dfe5d73461a9ec108652ad1c2fa",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ]
+    },
+    {
+      "tag": "a3d3fe34595f46f98edebaad0904269b",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "a42592796c424ee697b1022b5784895b",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "a584dac6636447aa924b6329e084c7f1",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "a889defd83bd4a7ab00385da5acb6ee6",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "a9508e5e17fd4ac8a787eaab8496f50b",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "aaf81e8bcac0403d89adec9f444226eb",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "acb8a793ac4d467e8aca001a846a4bcc",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ]
+    },
+    {
+      "tag": "b0b2d5a4ab22467ebfd4cd12673e59f0",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "b1e3c6b0cc584a9a968f9e64fa47825d",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "b224463b3ff34e8f885ce06703033cbb",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "b3ad1419424a4db79b84a0676a77e4a9",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "b485911b0f0d42508b827650f3dfa248",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "rejected_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "b66a7949bd60428dac09407012d84674",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "b8426d420aee466a83338e6bd1c34b2c",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "bb953f7e10214949b482c9151adacc32",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "bd28df2aac2343278962c7d8f93d2e50",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "be958deefe5a46ae859d8b10c14a2087",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "c02730f55b924c37ba5a82c70f9c7b07",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "c225b97964804aed94a02b9794fa8beb",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "c4922ad823824a9aa7c4516801a52bec",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "c4cf2d38a96240fc957708abce6c159b",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "c848be440ab045e99adeda6277a8f4c2",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "c8947d53adfc4f71ba0586c9c8c30a10",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "c8b574c234d64552999c588d5b766792",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ]
+    },
+    {
+      "tag": "c90dc96d02d141cb8986ab5f0d40c465",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "c949e62bdb5946b8bd51eec235f02ede",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "cbe9b9e086d040aeb78612d43bdbf453",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "cc5d306ec1a544daa33dfafd4121f5be",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "cd1ac5db265e4349a424d90efdadb6ab",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "cd259d6944b64330b2b9bc044b917b75",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "cf58ba065f6e462ca027486bc2b37531",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "cff95751b1684ea88f0b5809fb737e93",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "d0ba63315ad7458ba169f1ed46df3924",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "d169c30339fb463abcfcdabfb5c53c8d",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "d382035ac9a64175897ab8a71c4ddce4",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "d43f9316080d48a0916138d2c70d11a3",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "rejected_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "d464d55efa444efab6a6a75e694d5bdb",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "d48f923bdd344a15bdbda25a655e4818",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "d527d55826174eb690948962ff47433b",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "d742d9a3856e4615b5ad092a382c59b6",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "d746eddf56c240968e51baa362a82991",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "d8c58c2b433342b5bcab2398f3a229ca",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "d9bd4e3449124192a32e1dbc628d492c",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "de1f0be2d15e4667a4b07818edc138a7",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "de448754ddde46cc90ed9b89d28082f8",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "df53d2b014ad4379b6d132e9835615c1",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "rejected_commands"
+      ]
+    },
+    {
+      "tag": "e27a876a33cb4f6ea71a4f277af55bec",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "e5762a068cd944f282da509ff6897d14",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands"
+      ]
+    },
+    {
+      "tag": "e64c2a2fc35742388d6487e2504be106",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "e6a8072d48a644a6bff64c87fd3d5b18",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "e858bee960234bc8af8b485e67cce092",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "e90160a2c22f4764b76d7dd2160046ca",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "e917eb783ada4727b08eb050facba97a",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "e9d7d5f4689e4902b67c12fe2874d471",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "eb0e603f52ad4ccfb45be4c7d1512309",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "eb10135e86f645b19b4cc14e4c82f2b2",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "ef5b178b49a644c9a3d6fd5afd6dc360",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "f14c0e22682049d9a5286791a7345c33",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "rejected_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "f33c8074ed43437aa796805403215085",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "f407974c05eb4b3495d71e674059ea3f",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "f4fea504b07942bc856df4443f4f6f5e",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "undriven_commands",
+        "rejected_commands",
+        "skipped_commands",
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "f6284757db38417a9c23c3bd139e334c",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "f68b8e84e45f45b382831489c3c90465",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "f78229c994f94e348164fbb60897c08e",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "f8158e8fb0df425987ac99750969bd0d",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "f966736cef974f65a1b6f8e034737e46",
+      "split": "confirmation",
+      "usable": false,
+      "reasons": [
+        "crown_mismatch"
+      ]
+    },
+    {
+      "tag": "fc327c9941d4490b9acc7f801e662e25",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    },
+    {
+      "tag": "ff967e6be8f24bd080d65f9a2b4c23dd",
+      "split": "confirmation",
+      "usable": true,
+      "reasons": []
+    }
+  ],
+  "repeats_verified": [
+    "01c90c5ccc3a401888c7c42d47c18813",
+    "107c0e855cde4699b873ea4b83f0b945",
+    "21c067772f434c69a9cefb52d0f3148b",
+    "3412868827c343dd956322304040940b",
+    "439f84fb0b94416fb6f33e0624803ab5",
+    "511962d005fe49b498e6af92a84e3066",
+    "6674819abccb4b8d889ad238a4123606",
+    "7a143770ce7740ca9000fed6e02b6551",
+    "89170b08166b45f9a224365d7a5657fd",
+    "99245605759040deb5ac5f70eac81b66",
+    "acb8a793ac4d467e8aca001a846a4bcc",
+    "be958deefe5a46ae859d8b10c14a2087",
+    "cbe9b9e086d040aeb78612d43bdbf453",
+    "d464d55efa444efab6a6a75e694d5bdb",
+    "e27a876a33cb4f6ea71a4f277af55bec",
+    "ef5b178b49a644c9a3d6fd5afd6dc360",
+    "fc327c9941d4490b9acc7f801e662e25"
+  ],
+  "source_excluded_scheduled_repeats": [],
+  "usable_original_deck_counts": {
+    "confirmation": {
+      "arrows,berserker-hero,dart-goblin,elite-barbarians-ev1,goblin-gang,guards,suspicious-bush,wall-breakers-ev1": 1,
+      "ice-wizard,knight-hero,rocket,skeletons-ev1,tesla-ev1,the-log,tornado,x-bow": 2,
+      "ice-wizard,knight-ev1,rocket,skeletons,tesla-ev1,the-log,tornado,x-bow": 77,
+      "bandit,barbarian-barrel,elite-barbarians-ev1,fireball,magic-archer-hero,royal-ghost,royal-hogs-ev1,zappies": 1,
+      "barbarian-barrel,cannon-cart,elite-barbarians-ev1,fireball,goblinstein,minions,mortar-ev1,skeletons": 3,
+      "bats,cannon,elite-barbarians-ev1,freeze,giant-snowball,ice-spirit,miner,skeletons-ev1": 1,
+      "arrows,battle-ram-ev1,elite-barbarians-ev1,furnace,giant-skeleton,golden-knight,skeleton-dragons,zappies": 2,
+      "arrows,bomber,elite-barbarians-ev1,giant,lightning,mega-minion-hero,mini-pekka,zap-ev1": 1,
+      "barbarian-barrel,battle-ram-ev1,elite-barbarians-ev1,giant-skeleton,mother-witch,vines,wizard-hero,zappies": 11,
+      "archer-queen,cannon,earthquake,elite-barbarians-ev1,freeze,ram-rider,valkyrie-hero,zap": 1,
+      "dark-prince,electro-wizard,elite-barbarians-ev1,giant-hero,heal-spirit,rage,sparky,zap-ev1": 1,
+      "arrows,elite-barbarians-ev1,fireball,inferno-dragon-ev1,rune-giant,skeleton-dragons,tombstone-hero,zap": 1,
+      "barbarian-barrel,berserker-hero,elite-barbarians-ev1,fireball,hog-rider,hunter,ice-spirit,magic-archer-hero": 1,
+      "baby-dragon-ev1,bowler,elite-barbarians-ev1,golden-knight,inferno-dragon,rune-giant,tornado,zappies": 1,
+      "arrows,dark-prince,elite-barbarians-ev1,giant,mega-minion-hero,mother-witch,sparky,zap-ev1": 1,
+      "arrows,berserker,bomber,elite-barbarians-ev1,golem,mega-minion-hero,night-witch,zap-ev1": 1,
+      "berserker-hero,dark-prince,elite-barbarians-ev1,fireball,hog-rider,minions,musketeer-ev1,zap": 1,
+      "bomber,dark-prince,elite-barbarians-ev1,fireball,mega-minion-hero,rage,rune-giant,zap-ev1": 1,
+      "berserker-hero,dart-goblin,elite-barbarians-ev1,rascals,skeleton-army-ev1,suspicious-bush,vines,wall-breakers": 1,
+      "bats,elite-barbarians-ev1,fireball,goblin-gang,goblinstein,miner,mortar-ev1,zap": 1,
+      "bomber,elite-barbarians-ev1,fireball,mega-minion-hero,prince,rage,rune-giant,zap-ev1": 2,
+      "bandit,battle-ram-ev1,elite-barbarians-ev1,giant-skeleton,golden-knight,skeleton-dragons,vines,zappies": 1,
+      "arrows,bandit,battle-ram-ev1,elite-barbarians-ev1,golden-knight,heal-spirit,mother-witch,zappies": 2,
+      "arrows,bomber,elite-barbarians-ev1,golem,mini-pekka-hero,night-witch,phoenix,zap-ev1": 2,
+      "bomber,electro-dragon-ev1,elite-barbarians-ev1,golem,mega-minion-hero,night-witch,skeleton-army,zap": 1,
+      "elite-barbarians-ev1,executioner-ev1,freeze,hog-rider,ice-golem,mini-pekka-hero,minions,zap": 1,
+      "arrows,dark-prince,elite-barbarians-ev1,golem,night-witch,phoenix,wizard-hero,zap-ev1": 1,
+      "arrows,battle-ram-ev1,elite-barbarians-ev1,golden-knight,heal-spirit,mother-witch,royal-ghost,zappies": 1,
+      "barbarian-barrel-hero,bats-ev1,elite-barbarians-ev1,mega-knight,miner,musketeer,wall-breakers,zap": 1,
+      "boss-bandit,elite-barbarians-ev1,freeze,guards,hog-rider,hunter,magic-archer-hero,zap": 1,
+      "berserker-hero,elite-barbarians-ev1,executioner-ev1,freeze,hog-rider,hunter,skeletons,zap": 1,
+      "barbarian-barrel,elite-barbarians-ev1,furnace-ev1,golem,minions,valkyrie-hero,vines,zappies": 2,
+      "boss-bandit,elite-barbarians-ev1,executioner,freeze,guards,hog-rider,minion-horde-ev1,zap": 2,
+      "dark-prince,elite-barbarians-ev1,furnace,golem,vines,wizard-hero,zap-ev1,zappies": 1,
+      "arrows,battle-ram-ev1,cannon-cart,elite-barbarians-ev1,golden-knight,heal-spirit,mother-witch,zappies": 2,
+      "arrows,bomber,elite-barbarians-ev1,golem,night-witch,phoenix,valkyrie-hero,zap-ev1": 1,
+      "barbarian-barrel,berserker-hero,electro-spirit,elite-barbarians-ev1,fireball,furnace,goblin-hut,royal-hogs-ev1": 1,
+      "barbarian-barrel,berserker-hero,elite-barbarians-ev1,goblin-curse,graveyard,guards,wizard,zap-ev1": 1,
+      "arrows,barbarian-barrel,elite-barbarians-ev1,furnace,minions,mortar,skeleton-barrel-ev1,skeletons": 1,
+      "bomber,dark-prince,elite-barbarians-ev1,fireball,giant-hero,mega-minion,rage,zap-ev1": 1,
+      "baby-dragon,balloon-hero,barbarian-barrel,bowler,elite-barbarians-ev1,freeze,inferno-dragon-ev1,tornado": 1,
+      "berserker-hero,elite-barbarians-ev1,giant-snowball-ev1,ice-wizard,rocket,tesla,the-log,x-bow": 1,
+      "arrows,battle-ram-ev1,elite-barbarians-ev1,fireball,heal-spirit,skeleton-dragons,valkyrie-hero,zappies": 1,
+      "dark-prince,elite-barbarians-ev1,fireball,furnace,golem,guards,mega-minion-hero,zap-ev1": 1,
+      "bandit,elite-barbarians-ev1,fireball,furnace,golem,mega-minion-hero,royal-ghost,zap-ev1": 1,
+      "bomber,elite-barbarians-ev1,fireball,golem,lumberjack,mega-minion-hero,night-witch,zap-ev1": 1,
+      "arrows,elite-barbarians-ev1,giant-hero,goblin-gang,minion-horde-ev1,skeleton-army,sparky,zap": 1,
+      "dark-prince-hero,electro-wizard,elite-barbarians-ev1,goblin-giant,heal-spirit,rage,sparky,zap-ev1": 1,
+      "barbarian-barrel,elite-barbarians-ev1,freeze,giant-skeleton,hog-rider,minion-horde-ev1,royal-ghost,wizard-hero": 1,
+      "berserker-hero,electro-spirit,elite-barbarians-ev1,fireball,ice-wizard,royal-giant-ev1,tesla,the-log": 1,
+      "berserker-hero,elite-barbarians-ev1,furnace-ev1,hog-rider,ice-spirit,minions,poison,the-log": 1,
+      "berserker-hero,electro-wizard,elite-barbarians-ev1,goblin-giant-ev1,minions,rage,sparky,zap": 1,
+      "cannon-ev1,electro-spirit,elite-barbarians-ev1,fireball,hog-rider,musketeer-hero,skeletons,the-log": 1,
+      "berserker-hero,bomber,electro-dragon-ev1,elite-barbarians-ev1,golem,heal-spirit,skeleton-dragons,tornado": 1,
+      "boss-bandit,elite-barbarians-ev1,executioner,freeze,hog-rider,minion-horde-ev1,royal-ghost,zap": 1,
+      "bomber-ev1,elite-barbarians-ev1,freeze,hog-rider,ice-golem-hero,minions,tesla,zap": 1,
+      "ice-wizard,knight-ev1,rocket,skeletons-ev1,tesla,the-log,tornado,x-bow": 1,
+      "dark-prince,elite-barbarians-ev1,giant-hero,minions,mother-witch,sparky,vines,zap-ev1": 1,
+      "berserker-hero,elite-barbarians-ev1,fireball,heal-spirit,minions,mother-witch,rune-giant,zap-ev1": 2,
+      "arrows,baby-dragon-ev1,elite-barbarians-ev1,golem,lightning,night-witch,valkyrie-hero,zappies": 1,
+      "barbarian-barrel,battle-ram-ev1,elite-barbarians-ev1,golden-knight,heal-spirit,ice-golem,three-musketeers,zap": 1,
+      "berserker-hero,cannon,dart-goblin-ev1,elite-barbarians-ev1,fireball,rune-giant,skeletons,zap": 1,
+      "arrows,bomber,elite-barbarians-ev1,golem,lumberjack-ev1,mega-minion-hero,night-witch,zap": 1
+    }
+  },
+  "summary_sha256": "572be3d6624decff0f9b52852afc1348b92ab3c56231446bc4c709c2f1f88930",
+  "collection_receipt_sha256": "2b7247d2f629a97dcfdec1abae348c99a03fd240418b4e4a2e028c8985fcc06c",
+  "producer_report_sha256": "fe9deae492eb18f81aff31f7459ccfb9e8213875968ea7eb0d8b901a774ec36e",
+  "script_sha256": "662d21211d5e771d4f48a1aa63c251ea38ca47071f455d1c3b9d9f67959ddafb",
+  "repeat_oracle_sha256": "6e03d1cbbe87e5c11601f42020d024419d0641e0f949cfbe5021e90063abd152",
+  "verification_sources": {
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\verify_reserved_icebow_corrected.py": "662d21211d5e771d4f48a1aa63c251ea38ca47071f455d1c3b9d9f67959ddafb",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\verify_native_preflight.py": "6e03d1cbbe87e5c11601f42020d024419d0641e0f949cfbe5021e90063abd152",
+    "scratchpad\\gauntlet\\L72\\improvement_loop\\NATIVE_CATALOG_CORRECTION_PLAN.md": "d61a5b76c12724c5d34403d0f63957f918ca0c07fb7f1f26f31556a693fc8cfb",
+    "research\\sandbox_tools\\validate_public_capture.py": "7e260cc57ae723fdfd8f15272227d4b6f00049fa2765dd0b03c720d82ea95988"
+  },
+  "model_predictions": 0,
+  "N2_complete": false,
+  "limitations": [
+    "Reconstruction counts are not tactical opportunity denominators or statistical power.",
+    "General-deck examples do not replace missing exact-Icebow component evidence.",
+    "Public timings/recorded outcomes retain preflight semantic limits."
+  ]
+}

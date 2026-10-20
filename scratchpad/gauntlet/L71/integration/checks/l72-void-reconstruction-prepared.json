@@ -1,0 +1,13 @@
+{
+  "command": [
+    "icebow/.venv/Scripts/python.exe",
+    "scratchpad/gauntlet/L72/improvement_loop/void_identity/reconstruct_prepare.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "VOID_RECONSTRUCTION_PREPARED",
+  "matched": true,
+  "output_sha256": "5f2401e15d9edc7f8796da6b166410781635ac823a606336f64b3a49b28dc6b1",
+  "seconds": 8.458704948425293
+}

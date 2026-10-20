@@ -1,0 +1,13 @@
+{
+  "command": [
+    ".\\icebow\\.venv\\Scripts\\python.exe",
+    "scratchpad/gauntlet/L72/live_entry/verify_manual_match.py"
+  ],
+  "cwd": "C:\\Users\\benpe\\ClashBot",
+  "shell": "none; subprocess argument vector",
+  "exit_code": 0,
+  "expected": "OWNER_MANUAL_MATCH_RECOUNTED",
+  "matched": true,
+  "output_sha256": "d4dffbbc8086afdb47848dd66d9928b8f8891d7808cf8f805ec780a2d1113bf7",
+  "seconds": 0.32837843894958496
+}
