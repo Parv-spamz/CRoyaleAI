@@ -1,5 +1,5 @@
 # CRoyaleAI
-### Autonomous Neural Policy & Constrained Reinforcement Learning for Imperfect-Information RTS
+### Autonomous Neural Policy & Constrained Reinforcement Learning that learns to play CLash Royale using RTS
 
 <p align="left">
   <img src="https://img.shields.io/badge/Task-Imperfect--Information%20RTS-0A0E17?style=flat-square&labelColor=1E2638" alt="Task" />
